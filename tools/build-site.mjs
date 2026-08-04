@@ -3,7 +3,7 @@
  * build-site.mjs — 一键构建「系统化思维」多页知识网站
  *
  * 输入: data/*.md (419篇原始文章) + knowledge/taxonomy.json (13章分类)
- * 输出: site-content/ (index.html + 13个章节页 + 共享CSS)
+ * 输出: docs/ (index.html + 13个章节页 + 共享CSS, GitHub Pages 的 /docs 路径)
  *
  * 用法: node tools/build-site.mjs
  */
@@ -15,7 +15,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const DATA_DIR = join(ROOT, "data");
 const TAXONOMY_PATH = join(ROOT, "knowledge", "taxonomy.json");
-const OUT_DIR = join(ROOT, "site-content");
+const OUT_DIR = join(ROOT, "docs");
 const CHAPTERS_DIR = join(OUT_DIR, "chapters");
 
 // ─── 1. 读取分类体系 ──────────────────────────────────────
