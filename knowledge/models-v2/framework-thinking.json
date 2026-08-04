@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0.0",
+  "id": "framework-thinking",
+  "meta": {
+    "name": "框架思维三步法",
+    "category": "04",
+    "tags": [
+      "结构化",
+      "框架",
+      "MECE",
+      "分析"
+    ],
+    "source": ""
+  },
+  "engine": {
+    "core_question": "如何把一个混沌的复杂问题变成一个可拆解、可操作的结构化框架？",
+    "trigger_signals": [
+      "面对复杂问题无从下手",
+      "团队讨论总是跑题",
+      "需要快速建立对新领域的认知骨架",
+      "做决策时感觉要素太多互相缠绕"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "定边界",
+        "action": "先划定范围：时间空间概念边界。明确不做什么。",
+        "thinking_question": "如果只有30分钟讨论这个问题，哪些话题必须排除？",
+        "expected_output": "边界声明：讨论范围/不涉及/时间框架",
+        "pitfall": "边界太宽无法聚焦，太窄遗漏关键因素"
+      },
+      {
+        "step": 2,
+        "name": "找要素",
+        "action": "用MECE原则列出所有关键要素。可借助已知框架快速梳理。",
+        "thinking_question": "如果画成思维导图，一级节点应该有哪些？",
+        "expected_output": "MECE要素清单3-7个一级每含2-5二级",
+        "pitfall": "要素层级混乱。把细节当一级要素"
+      },
+      {
+        "step": 3,
+        "name": "建连接",
+        "action": "分析因果/增强回路/调节回路。找到杠杆解。",
+        "thinking_question": "如果只能改变一个要素，改变哪个能让系统朝期望方向移动最多？",
+        "expected_output": "关系图：核心要素/连接类型/杠杆点",
+        "pitfall": "把所有要素当独立变量。如果分析中没有循环回路说明不够深入"
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "现在就以框架思维模式运行。按三步法帮我建立结构化分析框架。每步完成后进入下一步。不让要素超过7个一级项。",
+    "activation_phrase": "请用框架思维三步法...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 4,
+    "prompt_effectiveness": 4,
+    "overall": 5
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0.0",
+  "id": "pyramid-principle",
+  "meta": {
+    "name": "金字塔原理",
+    "category": "11",
+    "tags": [
+      "表达",
+      "沟通",
+      "结构化",
+      "逻辑"
+    ],
+    "source": ""
+  },
+  "engine": {
+    "core_question": "如何把零散想法组织成结论先行以上统下归类分组逻辑递进的清晰表达？",
+    "trigger_signals": [
+      "需要工作汇报方案陈述公开演讲",
+      "写了很多但读者说抓不住重点",
+      "脑子里想法多但说不清楚",
+      "团队沟通中常出现误解和不必要讨论"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "结论先行",
+        "action": "在表达开始前确定唯一中心论点。整个表达只服务这一个论点。",
+        "thinking_question": "如果听众只记得一句话希望他记住什么？",
+        "expected_output": "一句话中心论点不超过30字",
+        "pitfall": "中心论点是描述性的不是判断性的。关于XX的分析不是结论。XX应该做YY才是结论"
+      },
+      {
+        "step": 2,
+        "name": "以上统下",
+        "action": "用3-5个分论点支撑核心。每个分论点回应核心论点的为什么或怎么做。",
+        "thinking_question": "如果我是听众听完核心结论后最自然的3-5个疑问是什么？",
+        "expected_output": "3-5个分论点每个有效支撑核心结论",
+        "pitfall": "分论点之间有重叠或遗漏。用MECE检查"
+      },
+      {
+        "step": 3,
+        "name": "归类分组",
+        "action": "每个分论点下用MECE组织论据。同组内论据属同一逻辑范畴。",
+        "thinking_question": "这些论据按什么逻辑分类？有没有论据放错组了？",
+        "expected_output": "每组论据+支持细节组内MECE",
+        "pitfall": "把不同层级内容混在一起。论据和分论点不能同级"
+      },
+      {
+        "step": 4,
+        "name": "逻辑递进",
+        "action": "每组内论据按时间顺序/结构顺序/程度顺序排列。不随机堆放。",
+        "thinking_question": "如果按重要性排序哪个该最先说？按时间线呢？",
+        "expected_output": "每组论据有明确排列顺序",
+        "pitfall": "把多个逻辑顺序混用。同一组内只用一种顺序"
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "现在就以金字塔原理模式运行。帮我组织思路形成结论先行以上统下归类分组逻辑递进的清晰表达。如果输入混乱先问核心判断是什么。",
+    "activation_phrase": "请用金字塔原理...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 4,
+    "prompt_effectiveness": 4,
+    "overall": 5
+  }
+}
