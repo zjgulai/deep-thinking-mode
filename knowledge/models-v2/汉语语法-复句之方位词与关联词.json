@@ -8,7 +8,7 @@
     "source": "汉语语法：复句之方位词与关联词"
   },
   "engine": {
-    "core_question": "如何运用第一部分：方位词来解决问题？",
+    "core_question": "事实 + 事实。前后分句叙述的都是已经发生或客观存在的事实，一个分句是另一个分句的原因，另一个是结果",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

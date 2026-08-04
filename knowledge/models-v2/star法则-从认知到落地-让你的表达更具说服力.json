@@ -8,7 +8,7 @@
     "source": "STAR法则：从认知到落地，让你的表达更具说服力"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？如何定义它？",
+    "core_question": "，其价值贯穿职场表达与个人成长，兼具实用表达价值与思维培养价值，结合其高频应用场景，核心作用可拆解为6点，每一点都贴合实际工作需求：",
     "trigger_signals": [
       "你在该场景下的具体职责与核心目标，目标优先量化，让方向更清晰、成果更易衡量，比如“两周内将投诉率下降30%”“月度销售额提升15%”；若任务复杂，",
       "你为达成目标主动采取的具体步骤与行动，突出个人贡献，而非团队整体行为。表述时按逻辑顺序展开，清晰体现你的思考、决策与执行力，避免用“我们做了”模糊个人作用，"
@@ -27,9 +27,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

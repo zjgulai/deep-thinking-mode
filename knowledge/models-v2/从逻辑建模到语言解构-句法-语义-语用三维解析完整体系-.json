@@ -8,12 +8,8 @@
     "source": "从逻辑建模到语言解构｜句法‑语义‑语用三维解析完整体系。"
   },
   "engine": {
-    "core_question": "如何有效地完成这件事？",
-    "trigger_signals": [
-      "句法：背景铺垫+主干判断+价值阐释双层结构",
-      "语义：以专科能力建设为核心攻坚任务，支撑基层体系与分级诊疗落地",
-      "语用：重点强调专科能力建设的长期性、核心性、基础性战略地位"
-    ],
+    "core_question": "不是文字积累不足，而是没有语法维度的高阶拆解能力",
+    "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],
@@ -28,9 +24,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

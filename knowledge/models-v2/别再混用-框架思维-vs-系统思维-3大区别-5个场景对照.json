@@ -8,9 +8,8 @@
     "source": "别再混用！框架思维 vs 系统思维：3大区别+5个场景对照"
   },
   "engine": {
-    "core_question": "如何有效地完成这件事？",
+    "core_question": "概括：框架看清结构，系统看透循环",
     "trigger_signals": [
-      "你这件事的隐患和长远后果。",
       "你当前面临的工作问题，判断它是“反复出现的顽固问题”还是“需要快速汇报的任务”，然后选择对应的思维进行分析。写下你的结论。"
     ],
     "stop_conditions": [],
@@ -27,9 +26,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

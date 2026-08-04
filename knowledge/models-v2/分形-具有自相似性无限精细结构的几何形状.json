@@ -8,7 +8,7 @@
     "source": "分形，具有自相似性无限精细结构的几何形状"
   },
   "engine": {
-    "core_question": "如何运用1. **定义与特征**来解决问题？",
+    "core_question": "这件事的本质是什么？1. **定义与特征**如何定义它？",
     "trigger_signals": [
       "*   自相似性作为认知工具",
       "复杂系统的模式复用",
@@ -20,16 +20,16 @@
         "step": 1,
         "name": "**有限与无限的统一**",
         "action": "**有限与无限的统一**",
-        "thinking_question": "这一步要回答什么核心问题？",
-        "expected_output": "这一步完成后应该得到什么？",
+        "thinking_question": "",
+        "expected_output": "",
         "pitfall": ""
       },
       {
         "step": 2,
         "name": "**从线性思维到尺度思维**",
         "action": "**从线性思维到尺度思维**",
-        "thinking_question": "这一步要回答什么核心问题？",
-        "expected_output": "这一步完成后应该得到什么？",
+        "thinking_question": "",
+        "expected_output": "",
         "pitfall": ""
       }
     ],
@@ -40,14 +40,14 @@
     }
   },
   "codex": {
-    "system_prompt": "你现在以「1. **定义与特征**」思维模式运行。面对问题时的推理协议：\n\nStep 1 - **有限与无限的统一**：**有限与无限的统一** 追问：这一步要回答什么核心问题？\n\nStep 2 - **从线性思维到尺度思维**：**从线性思维到尺度思维** 追问：这一步要回答什么核心问题？\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "system_prompt": "你现在以「1. **定义与特征**」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - **有限与无限的统一**：**有限与无限的统一**\n\nStep 2 - **从线性思维到尺度思维**：**从线性思维到尺度思维**\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出你的分析，再进入下一步。如果某步骤不适用当前问题，说明原因后继续。",
     "activation_phrase": "请用1. **定义与特征**分析...",
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 5,
+    "reasoning_completeness": 4,
     "example_coverage": 0,
     "prompt_effectiveness": 3,
-    "overall": 5
+    "overall": 4
   }
 }

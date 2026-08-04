@@ -11,10 +11,8 @@
     "source": "内耗根源：DMN四大功能卡在循环模式"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
-    "trigger_signals": [
-      "你“想休息”却停不下来？"
-    ],
+    "core_question": "这个问题的根本原因是什么？内耗根源揭秘如何找到它？",
+    "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

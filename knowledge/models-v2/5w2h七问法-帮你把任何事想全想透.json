@@ -8,7 +8,7 @@
     "source": "5W2H七问法，帮你把任何事想全想透"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？如何定义它？",
+    "core_question": "这件事的本质是什么？5W2H七问法，帮你把任何事想全想透如何定义它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

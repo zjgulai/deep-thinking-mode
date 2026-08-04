@@ -8,7 +8,7 @@
     "source": "7种高效提问方法，帮你跳出思维、高效破局"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？如何定义它？",
+    "core_question": "这件事的本质是什么？7种高效提问方法，帮你跳出思维、高效破局如何定义它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -24,9 +24,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 1
   }
 }

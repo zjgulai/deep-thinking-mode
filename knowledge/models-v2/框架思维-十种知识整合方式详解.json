@@ -8,7 +8,7 @@
     "source": "框架思维：十种知识整合方式详解"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "按照既定类别、层级与维度，对零散信息进行分类归纳，让信息逻辑更清晰、内容更规整，进而形成系统的信息体系",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

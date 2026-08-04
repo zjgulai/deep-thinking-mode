@@ -8,7 +8,7 @@
     "source": "压力是否产生及强度如何，主要取决于个体对压力源的解读"
   },
   "engine": {
-    "core_question": "如何有效地完成这件事？",
+    "core_question": "如何有效完成这件事？“看待方式”是核心开关，但并非唯一因素的操作路径是什么？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

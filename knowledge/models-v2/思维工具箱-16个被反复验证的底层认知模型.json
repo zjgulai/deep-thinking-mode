@@ -10,10 +10,9 @@
     "source": "思维工具箱：16个被反复验证的底层认知模型"
   },
   "engine": {
-    "core_question": "在多个选项中，哪个是最优选择？",
+    "core_question": "记住：框架是认知的脚手架，让你不再面对混乱束手无策",
     "trigger_signals": [
-      "你可以把它当作思维工具箱的索引——每个工具都对应一篇深度文章，按需取用，边查边学。",
-      "你不再面对混乱束手无策。"
+      "你可以把它当作思维工具箱的索引——每个工具都对应一篇深度文章，按需取用，边查边学。"
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -29,9 +28,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 1
   }
 }

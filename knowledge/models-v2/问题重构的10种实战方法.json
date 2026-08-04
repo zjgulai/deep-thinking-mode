@@ -15,7 +15,7 @@
     "source": "问题重构的10种实战方法"
   },
   "engine": {
-    "core_question": "如何运用问题重构的10种实战方法来解决问题？",
+    "core_question": "核心是解决问题前，先明确“该解决的真正问题”，避免方向偏差，是一套可直接套用的实用思维方法",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

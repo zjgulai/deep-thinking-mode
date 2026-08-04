@@ -8,7 +8,7 @@
     "source": "思维工具箱：三把剃刀+二八法则+系统思维，一套完整的认知避坑指南"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "这个问题的根本原因是什么？思维工具箱：三把剃刀+二八法则+系统思维，一套完整的认知避坑指南如何找到它？",
     "trigger_signals": [
       "--------",
       "核心：能用粗心、愚蠢、疏忽解释的事，不要归咎于恶意。",
@@ -28,9 +28,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

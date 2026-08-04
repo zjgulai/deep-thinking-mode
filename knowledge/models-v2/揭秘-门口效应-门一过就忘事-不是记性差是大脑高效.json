@@ -8,7 +8,7 @@
     "source": "揭秘“门口效应”：门一过就忘事，不是记性差是大脑高效"
   },
   "engine": {
-    "core_question": "如何运用揭秘“门口效应”：门一过就忘事，不是记性差是大脑高效来解决问题？",
+    "core_question": "不是大脑认知懈怠，而是大脑为高效管理记忆，自动启动的“认知整理”机制",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -24,9 +24,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 1
   }
 }

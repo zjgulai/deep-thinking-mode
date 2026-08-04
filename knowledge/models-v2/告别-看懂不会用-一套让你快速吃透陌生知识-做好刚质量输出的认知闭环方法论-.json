@@ -8,7 +8,7 @@
     "source": "告别“看懂不会用”：一套让你快速吃透陌生知识、做好刚质量输出的认知闭环方法论。"
   },
   "engine": {
-    "core_question": "如何运用告别“看懂不会用”：一套让你快速吃透陌生知识、做好刚质量输出的认知闭环方法论。来解决问题？",
+    "core_question": "5步构建认知与能力的正向循环",
     "trigger_signals": [
       "你快速吃透陌生知识、做好刚质量输出的认知闭环方法论。",
       "你是否也有过这样的职场困扰？—— 卫健委的政策文件读了半天，还是抓不住核心要求；梳理了大量医院建设资料，汇报时却逻辑混乱、重点模糊；学了很多管理理论，",
@@ -29,9 +29,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

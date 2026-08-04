@@ -8,7 +8,7 @@
     "source": "先定义问题，再解决问题：三层漏斗+九步清单，让每一份努力都精准有效"
   },
   "engine": {
-    "core_question": "，导致问题反复复发、无法根治。症状是结果，根源是成因，只治表象、不治内核，问题永难解决",
+    "core_question": "客观现状与预期的落差，且持续产生损失与风险",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

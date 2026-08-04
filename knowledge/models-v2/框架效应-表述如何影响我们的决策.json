@@ -11,7 +11,7 @@
     "source": "框架效应：表述如何影响我们的决策"
   },
   "engine": {
-    "core_question": "如何有效地完成这件事？",
+    "core_question": "核心是“怎么说比说什么更重要”，颠覆了“个体偏好稳定”的传统经济学假设",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

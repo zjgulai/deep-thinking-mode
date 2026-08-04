@@ -8,7 +8,7 @@
     "source": "知识的十一维结构化深度研究——从实践定义到本体局限。"
   },
   "engine": {
-    "core_question": "在多个选项中，哪个是最优选择？",
+    "core_question": "这件事的本质是什么？知识的十一维结构化深度研究——从实践定义到本体局限。如何定义它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

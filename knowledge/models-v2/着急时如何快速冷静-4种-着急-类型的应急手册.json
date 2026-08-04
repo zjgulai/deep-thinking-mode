@@ -8,7 +8,7 @@
     "source": "着急时如何快速冷静？——4种“着急”类型的应急手册"
   },
   "engine": {
-    "core_question": "如何有效地完成这件事？",
+    "core_question": "如何有效完成这件事？着急时如何快速冷静？——4种“着急”类型的应急手册的操作路径是什么？",
     "trigger_signals": [
       "*   核心触发：事情脱离预期",
       "典型内心独白：“乱了！全乱了！”",
@@ -30,9 +30,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

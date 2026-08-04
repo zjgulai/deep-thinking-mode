@@ -8,7 +8,7 @@
     "source": "框架缩放力：驾驭框架的底层心法"
   },
   "engine": {
-    "core_question": "“为什么？”“根本原理是什么？”",
+    "core_question": "，将抽象原理转化为可拆解流程。",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -24,9 +24,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 1
   }
 }

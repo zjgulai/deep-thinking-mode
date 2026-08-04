@@ -8,7 +8,7 @@
     "source": "告别无效努力：7条原则，把每一次练习都变成硬本领"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "很简单：大多数人的专业硬本领，不靠天生天赋，而是靠长期、有目标、可迭代的高质量练习日积月累练成的",
     "trigger_signals": [
       "你的起点，刻意练习，才能真正决定你的人生上限。",
       "你的核心竞争力，让普通人也能稳步进阶、持续蜕变。"
@@ -27,9 +27,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

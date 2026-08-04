@@ -8,7 +8,7 @@
     "source": "拆解复杂难题：从混乱到清晰的系统化分解法"
   },
   "engine": {
-    "core_question": "如何运用拆解复杂难题：从混乱到清晰的系统化分解法来解决问题？",
+    "core_question": "如何有效完成这件事？拆解复杂难题：从混乱到清晰的系统化分解法的操作路径是什么？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -24,9 +24,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 1
   }
 }

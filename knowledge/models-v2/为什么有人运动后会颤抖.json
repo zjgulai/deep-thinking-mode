@@ -8,7 +8,7 @@
     "source": "为什么有人运动后会颤抖"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "这个问题的根本原因是什么？为什么有人运动后会颤抖如何找到它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

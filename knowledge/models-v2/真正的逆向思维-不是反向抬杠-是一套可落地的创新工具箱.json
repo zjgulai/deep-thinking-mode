@@ -8,8 +8,11 @@
     "source": "真正的逆向思维：不是反向抬杠，是一套可落地的创新工具箱"
   },
   "engine": {
-    "core_question": "如何运用真正的逆向思维：不是反向抬杠，是一套可落地的创新工具箱来解决问题？",
-    "trigger_signals": [],
+    "core_question": "问题定义错误。重构问题、替换解题路径，即可化难为易",
+    "trigger_signals": [
+      "---------------",
+      "--------------"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],
@@ -24,9 +27,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 3,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 3
   }
 }

@@ -8,7 +8,7 @@
     "source": "10-10-10决策法：情绪上头时，用三个问题叫停冲动"
   },
   "engine": {
-    "core_question": "情绪平复后，我会为当下的言行难堪、后悔吗？",
+    "core_question": "用时间距离，拉开被情绪压缩的认知距离",
     "trigger_signals": [
       "10-10法则。",
       "----------------"
@@ -27,9 +27,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

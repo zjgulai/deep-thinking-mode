@@ -18,16 +18,16 @@
         "step": 1,
         "name": "分层改进策略",
         "action": "分层改进策略",
-        "thinking_question": "这一步要回答什么核心问题？",
-        "expected_output": "这一步完成后应该得到什么？",
+        "thinking_question": "",
+        "expected_output": "",
         "pitfall": ""
       },
       {
         "step": 2,
         "name": "实施路径设计",
         "action": "实施路径设计",
-        "thinking_question": "这一步要回答什么核心问题？",
-        "expected_output": "这一步完成后应该得到什么？",
+        "thinking_question": "",
+        "expected_output": "",
         "pitfall": ""
       }
     ],
@@ -38,14 +38,14 @@
     }
   },
   "codex": {
-    "system_prompt": "你现在以「“四层归因分析”解决复杂问题的核心工具」思维模式运行。面对问题时的推理协议：\n\nStep 1 - 分层改进策略：分层改进策略 追问：这一步要回答什么核心问题？\n\nStep 2 - 实施路径设计：实施路径设计 追问：这一步要回答什么核心问题？\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "system_prompt": "你现在以「“四层归因分析”解决复杂」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - 分层改进策略：分层改进策略\n\nStep 2 - 实施路径设计：实施路径设计\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出你的分析，再进入下一步。如果某步骤不适用当前问题，说明原因后继续。",
     "activation_phrase": "请用“四层归因分析”解决复杂问题的核心工具分析...",
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 5,
+    "reasoning_completeness": 4,
     "example_coverage": 0,
     "prompt_effectiveness": 3,
-    "overall": 5
+    "overall": 4
   }
 }

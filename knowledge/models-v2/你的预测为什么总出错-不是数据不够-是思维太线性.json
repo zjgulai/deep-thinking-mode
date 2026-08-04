@@ -8,7 +8,7 @@
     "source": "你的预测为什么总出错？不是数据不够，是思维太线性"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "本质是读懂人类的动态适应性",
     "trigger_signals": [
       "你的预测为什么总出错？不是数据不够，",
       "你的预判思维已完成了从线性外推到动态演化的核心跃迁。"
@@ -27,9 +27,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

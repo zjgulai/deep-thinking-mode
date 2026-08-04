@@ -8,7 +8,7 @@
     "source": "人为什么没法绝对理性？一文读懂有限理性"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "很简单：现实规律稳定，知名度高的城市往往人口更多，靠“认不认识”这一个简单线索，比复杂数据分析更高效、更省脑力",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -24,9 +24,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 1
   }
 }

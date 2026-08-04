@@ -8,9 +8,8 @@
     "source": "WOOP思维：直面阻碍、知行合一的科学行动框架"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "是将心理比对（怀揣愿景同时正视现实阻碍）与执行意图（制定具象“If-Then”行动预案）深度结合，既保留正向期待，又提前预判困难、制定应对对策，将障碍应对方案转化为大脑自动化行动脚本，从根源破解“想做却不做”的执行难题",
     "trigger_signals": [
-      "Then”行动预案）深度结合，既保留正向期待，又提前预判困难、制定应对对策，将障碍应对方案转化为大脑自动化行动脚本，从根源破解“想做却不做”的执行难题。",
       "Obstacle"
     ],
     "stop_conditions": [],
@@ -27,9 +26,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

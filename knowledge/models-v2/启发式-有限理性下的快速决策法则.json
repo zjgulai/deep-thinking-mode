@@ -12,7 +12,7 @@
     "source": "启发式——有限理性下的快速决策法则"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "这件事的本质是什么？启发式——有限理性下的快速决策法则如何定义它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

@@ -8,7 +8,7 @@
     "source": "20%低效习惯，藏着80%的时间内耗"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "时间焦虑的根源是少数反复出现的低效行为，掌控这20%的习惯，可缓解80%的内耗",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

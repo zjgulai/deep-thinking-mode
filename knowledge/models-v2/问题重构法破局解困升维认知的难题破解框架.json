@@ -8,7 +8,7 @@
     "source": "问题重构法破局解困升维认知的难题破解框架"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "看待问题的方式，比问题本身更重要",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

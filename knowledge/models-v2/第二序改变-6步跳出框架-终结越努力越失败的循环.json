@@ -8,13 +8,13 @@
     "source": "第二序改变：6步跳出框架，终结越努力越失败的循环"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
+    "core_question": "：在梦里拼命跑，不如直接醒来。",
     "trigger_signals": [
       "你一直在用“低层次”的方式解决问题。",
       "你只需要记住一句话：在梦里拼命跑，不如直接醒来。",
       "你在梦里被坏人追，跑得再快、再努力，也逃不掉。",
       "你加班、优化、自律——如果这些动作本身就是问题的一部分，那做得再多也没用。",
-      "你需要的是跳出当前的思维框架。"
+      "你一直用同一类方法，每次失败后只想着“再努力一点”，说明你被困在第一序。"
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -30,9 +30,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

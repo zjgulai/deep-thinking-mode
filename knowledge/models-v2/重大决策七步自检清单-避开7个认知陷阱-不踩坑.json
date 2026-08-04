@@ -8,7 +8,7 @@
     "source": "重大决策七步自检清单：避开7个认知陷阱，不踩坑"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？如何定义它？",
+    "core_question": "不是帮你“速战速决”的，而是在你要签字、投资、跳槽，甚至忍不住要吵架的关键时刻，拉你一把、泼盆冷水——帮你跳出认知误区，别被冲动带偏，少走点弯路，让",
     "trigger_signals": [
       "你“速战速决”的，而是在你要签字、投资、跳槽，甚至忍不住要吵架的关键时刻，拉你一把、泼盆冷水——帮你跳出认知误区，别被冲动带偏，少走点弯路，",
       "你的“理性大脑”罢工——当下觉得“这事必成”，回头看大概率会拍大腿。",
@@ -28,9 +28,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

@@ -8,7 +8,7 @@
     "source": "逆向思维：打破定式、高效破局的创新思维框架"
   },
   "engine": {
-    "core_question": "如何运用逆向思维：打破定式、高效破局的创新思维框架来解决问题？",
+    "core_question": "（一）定义：跳出常规的反向探索",
     "trigger_signals": [
       "--------------",
       "--------------",
@@ -30,9 +30,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

@@ -13,10 +13,9 @@
     "source": "快速识别4种着急类型，并提供应急方法"
   },
   "engine": {
-    "core_question": "如何有效地完成这件事？",
+    "core_question": "如何有效完成这件事？快速识别4种着急类型，并提供应急方法的操作路径是什么？",
     "trigger_signals": [
-      "3-3接地法”：立刻说出你看到的3样东西、听到的3种声音、活动身体的3个部位。这个动作能强行把注意力从失控的想象拉回当下，中断大脑的警报。",
-      "10-10法则”：问自己10分钟后、10个月后、10年后分别怎么看这件事。时间视角能中止社会比较带来的焦虑。"
+      "3-3接地法”：立刻说出你看到的3样东西、听到的3种声音、活动身体的3个部位。这个动作能强行把注意力从失控的想象拉回当下，中断大脑的警报。"
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -32,9 +31,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 1
   }
 }

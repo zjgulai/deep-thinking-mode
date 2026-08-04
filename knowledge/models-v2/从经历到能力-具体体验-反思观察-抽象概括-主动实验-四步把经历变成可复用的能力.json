@@ -8,7 +8,7 @@
     "source": "从经历到能力：具体体验+反思观察+抽象概括+主动实验，四步把经历变成可复用的能力"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？如何定义它？",
+    "core_question": "这件事的本质是什么？从经历到能力：具体体验+反思观察+抽象概括+主动实验，四步把经历变成可复用的能力如何定义它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],

@@ -8,7 +8,7 @@
     "source": "真正高级的清醒，是逻辑严谨。"
   },
   "engine": {
-    "core_question": "在多个选项中，哪个是最优选择？",
+    "core_question": "不是枯燥的哲学符号，而是一套可落地的「思维标尺」",
     "trigger_signals": [
       "你嘴笨，是绝大多数人，从未掌握人类判断的底层逻辑。",
       "你说话不严谨、容易被杠，本质就是用错了句式。",
@@ -29,9 +29,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 3,
+    "reasoning_completeness": 2,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 3
+    "overall": 2
   }
 }

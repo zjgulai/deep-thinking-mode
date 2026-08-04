@@ -8,8 +8,14 @@
     "source": "5 Whys分析法：从表象到本质，高效解决问题的核心工具"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？",
-    "trigger_signals": [],
+    "core_question": "核心是：通过反复追问（通常5次左右），跳出表象定位根本原因，进而制定有效解决方案",
+    "trigger_signals": [
+      "----------------",
+      "简化为：现象（问题）→ 为什么？→ 第一层原因 → 为什么？→ …… → 根本原因，最终实现“治本”。",
+      "问：为什么停？答：超负荷导致保险丝断。",
+      "问：为什么超负荷？答：轴承润滑不足。",
+      "问：为什么润滑不足？答：润滑油泵吸不上油。"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],
@@ -24,9 +30,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 3,
     "example_coverage": 0,
     "prompt_effectiveness": 1,
-    "overall": 2
+    "overall": 3
   }
 }
