@@ -1,0 +1,39 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构的10种实战方法",
+  "meta": {
+    "name": "问题重构的10种实战方法",
+    "category": "02",
+    "tags": [
+      "问题重构",
+      "思维模型",
+      "思维框架",
+      "框架思维",
+      "结构化思维",
+      "高效解决问题"
+    ],
+    "source": "问题重构的10种实战方法"
+  },
+  "engine": {
+    "core_question": "如何运用问题重构的10种实战方法来解决问题？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题重构的10种实战方法的方式思考这个问题。",
+    "activation_phrase": "请用问题重构的10种实战方法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

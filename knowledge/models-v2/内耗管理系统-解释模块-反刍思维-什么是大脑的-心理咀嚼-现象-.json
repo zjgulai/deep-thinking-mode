@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "内耗管理系统-解释模块-反刍思维-什么是大脑的-心理咀嚼-现象-",
+  "meta": {
+    "name": "解释模块 · 反刍思维：什么是大脑的“心理咀嚼”现象？",
+    "category": "10",
+    "tags": [],
+    "source": "内耗管理系统 · 解释模块 · 反刍思维：什么是大脑的“心理咀嚼”现象？"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "你走出来，反刍让你陷进去。",
+      "你难以集中注意力、解决问题。同时强化负向认知偏见：你越来越只看到自己的“不够好”和世界的“不安全”。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在脑中无限循环。      *   **负面焦点**：内容围绕失败、损失、不公、自我怀疑。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以解释模块 · 反刍思维：什么是大脑的“心理咀嚼”现象？的方式思考这个问题。",
+    "activation_phrase": "请用解释模块 · 反刍思维：什么是大脑的“心理咀嚼”现象？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

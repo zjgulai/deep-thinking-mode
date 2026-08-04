@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "结构化思维-从混乱到清晰-解锁高效思考密码",
+  "meta": {
+    "name": "结构化思维：从混乱到清晰，解锁高效思考密码",
+    "category": "07",
+    "tags": [],
+    "source": "结构化思维：从混乱到清晰，解锁高效思考密码"
+  },
+  "engine": {
+    "core_question": "为“树干”，分支为子问题或影响因素，分为问题树、原因树、决策树三类，能将大问题拆分为小任务，精准定位关键突破口",
+    "trigger_signals": [
+      "--------",
+      "提升思考效率，避免无效内耗；增强逻辑性，降低犯错概率；优化沟通效果，减少沟通成本；促进创新，挖掘解决方案；便于复盘，助力持续成长。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "分析销售额下降，按“内部因素（产品、团队、运营）”和“外部因素（市场、竞品、政策）”划分，既能精准定位，又无遗漏。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以结构化思维：从混乱到清晰，解锁高效思考密码的方式思考这个问题。",
+    "activation_phrase": "请用结构化思维：从混乱到清晰，解锁高效思考密码分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

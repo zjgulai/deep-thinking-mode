@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "着急时如何快速冷静-4种-着急-类型的应急手册",
+  "meta": {
+    "name": "着急时如何快速冷静？——4种“着急”类型的应急手册",
+    "category": "09",
+    "tags": [],
+    "source": "着急时如何快速冷静？——4种“着急”类型的应急手册"
+  },
+  "engine": {
+    "core_question": "如何有效地完成这件事？",
+    "trigger_signals": [
+      "*   核心触发：事情脱离预期",
+      "典型内心独白：“乱了！全乱了！”",
+      "身体信号：呼吸急促、肌肉紧绷",
+      "*   核心触发：deadline逼近",
+      "典型内心独白：“来不及了！”"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "项目出意外、计划被打乱、孩子生病等“突发失控”。  🔧 工具箱2：时间压迫型着急 → 2分钟启动法（2分钟） -----------------------------"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以着急时如何快速冷静？——4种“着急”类型的应急手册的方式思考这个问题。",
+    "activation_phrase": "请用着急时如何快速冷静？——4种“着急”类型的应急手册分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "六种提问方式-帮你从不同角度撬开僵局",
+  "meta": {
+    "name": "六种提问方式，帮你从不同角度撬开僵局",
+    "category": "04",
+    "tags": [],
+    "source": "六种提问方式，帮你从不同角度撬开僵局"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "强制大脑脱离下意识的浅层快思考，转入精细化深度慢思考。当你需要为自身观点举证时，思维盲区会自动暴露，让人看清自身认知局限，达成自知自省。",
+      "围绕任意观点，循环使用六类追问："
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "。  为什么有用 -----  强制大脑脱离下意识的浅层快思考，转入精细化深度慢思考。当你需要为自身观点举证时，思维盲区会自动暴露，让人看清自身认知局限，达成自知自省。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以六种提问方式，帮你从不同角度撬开僵局的方式思考这个问题。",
+    "activation_phrase": "请用六种提问方式，帮你从不同角度撬开僵局分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

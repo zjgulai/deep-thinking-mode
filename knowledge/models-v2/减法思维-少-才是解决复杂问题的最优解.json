@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "减法思维-少-才是解决复杂问题的最优解",
+  "meta": {
+    "name": "减法思维：少，才是解决复杂问题的最优解",
+    "category": "02",
+    "tags": [],
+    "source": "减法思维：少，才是解决复杂问题的最优解"
+  },
+  "engine": {
+    "core_question": "假如这个环节从一开始就不存在，我们会承受实质性损失吗？若答案是毫无影响，或是只为规避多年从未发生的极小概率风险，直接删除",
+    "trigger_signals": [
+      "你下意识想“再多加点什么”，立刻反问自己——有什么可以直接拿掉？",
+      "你的核心意图，这段表达就是无效噪音。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "策略一：流程无痛删减——剔除无价值中间节点 ---------------------"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以减法思维：少，才是解决复杂问题的最优解的方式思考这个问题。",
+    "activation_phrase": "请用减法思维：少，才是解决复杂问题的最优解分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

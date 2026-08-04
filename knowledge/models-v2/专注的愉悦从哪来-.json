@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0.0",
+  "id": "专注的愉悦从哪来-",
+  "meta": {
+    "name": "专注的愉悦从哪来？",
+    "category": "07",
+    "tags": [
+      "专注的愉悦",
+      "多巴胺",
+      "内啡肽",
+      "大脑网络",
+      "DMN",
+      "专注力",
+      "心流"
+    ],
+    "source": "专注的愉悦从哪来？"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以专注的愉悦从哪来？的方式思考这个问题。",
+    "activation_phrase": "请用专注的愉悦从哪来？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

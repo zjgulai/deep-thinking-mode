@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "前景理论-破解人类风险决策的密码",
+  "meta": {
+    "name": "前景理论：破解人类风险决策的密码",
+    "category": "06",
+    "tags": [],
+    "source": "前景理论：破解人类风险决策的密码"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以前景理论：破解人类风险决策的密码的方式思考这个问题。",
+    "activation_phrase": "请用前景理论：破解人类风险决策的密码分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "角色互换-墙上苍蝇-两架心理航拍机-让你在冲突中看见盲区",
+  "meta": {
+    "name": "角色互换+墙上苍蝇：两架心理航拍机，让你在冲突中看见盲区",
+    "category": "06",
+    "tags": [],
+    "source": "角色互换+墙上苍蝇：两架心理航拍机，让你在冲突中看见盲区"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "-------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "最容易让你从“对话”滑入“对抗”？被对方打断？解释时感到不被相信？某种特定的批评语气？找出典型触发场景，这是你最需要启用视角切换的节点。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以角色互换+墙上苍蝇：两架心理航拍机，让你在冲突中看见盲区的方式思考这个问题。",
+    "activation_phrase": "请用角色互换+墙上苍蝇：两架心理航拍机，让你在冲突中看见盲区分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

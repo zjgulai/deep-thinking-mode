@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0.0",
+  "id": "快速识别4种着急类型-并提供应急方法",
+  "meta": {
+    "name": "快速识别4种着急类型，并提供应急方法",
+    "category": "09",
+    "tags": [
+      "情绪管理",
+      "冷静方法",
+      "职场急救",
+      "认知科学"
+    ],
+    "source": "快速识别4种着急类型，并提供应急方法"
+  },
+  "engine": {
+    "core_question": "如何有效地完成这件事？",
+    "trigger_signals": [
+      "3-3接地法”：立刻说出你看到的3样东西、听到的3种声音、活动身体的3个部位。这个动作能强行把注意力从失控的想象拉回当下，中断大脑的警报。",
+      "10-10法则”：问自己10分钟后、10个月后、10年后分别怎么看这件事。时间视角能中止社会比较带来的焦虑。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以快速识别4种着急类型，并提供应急方法的方式思考这个问题。",
+    "activation_phrase": "请用快速识别4种着急类型，并提供应急方法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

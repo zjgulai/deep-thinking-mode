@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0.0",
+  "id": "情绪需要的是空间而非压制-这里的空间指的是什么",
+  "meta": {
+    "name": "1. **觉察与承认的空间**",
+    "category": "10",
+    "tags": [
+      "wechat_redirec"
+    ],
+    "source": "情绪需要的是空间而非压制，这里的空间指的是什么"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "你”转变为“被你看见”。",
+      "你不去评判这种感受的好坏，只是观察它的能量如何在体内呈现、变化、最终减弱。情绪像波浪，有升起、达到顶峰、然后消散的自然过程。",
+      "你可以在这里安全地探索：“为什么这件事会触发我这么强烈的反应？它联系着我过去的什么经历或深层的什么需求（如被尊重、被爱、安全感）？",
+      "你不会因为下雨而责备天空一样，你也不因为有了某种情绪而责备自己。这种无条件的接纳，是情绪能自由流动和消散的前提。",
+      "你的身心健康和人际关系。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1. **觉察与承认的空间**的方式思考这个问题。",
+    "activation_phrase": "请用1. **觉察与承认的空间**分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

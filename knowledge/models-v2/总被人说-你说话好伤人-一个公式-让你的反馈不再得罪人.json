@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "总被人说-你说话好伤人-一个公式-让你的反馈不再得罪人",
+  "meta": {
+    "name": "总被人说“你说话好伤人”？一个公式，让你的反馈不再得罪人",
+    "category": "11",
+    "tags": [],
+    "source": "总被人说“你说话好伤人”？一个公式，让你的反馈不再得罪人"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "你说话好伤人”？一个公式，",
+      "你赶紧往回找补：“我不是那个意思……”但为时已晚。",
+      "你做了什么”，而是“你是一个什么样的人”。",
+      "你安全表达、不触发对抗的沟通公式：SBI反馈模型。",
+      "你没有回防，对方直接得分。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "“我没有听到你对那个议题的看法，会后我又单独花时间去问你，整个决策多花了半天。”"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以总被人说“你说话好伤人”？一个公式，让你的反馈不再得罪人的方式思考这个问题。",
+    "activation_phrase": "请用总被人说“你说话好伤人”？一个公式，让你的反馈不再得罪人分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

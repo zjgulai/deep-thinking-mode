@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0.0",
+  "id": "-四层归因分析-解决复杂问题的核心工具",
+  "meta": {
+    "name": "“四层归因分析”解决复杂问题的核心工具",
+    "category": "04",
+    "tags": [],
+    "source": "“四层归因分析”解决复杂问题的核心工具"
+  },
+  "engine": {
+    "core_question": "；通过正向解决，可以从根本上消除问题的产生机制",
+    "trigger_signals": [
+      "\\*\"因果链条\"\\*\\* 表示：结果 ← 直接原因 ← 根本原因 ← 深层原因。通过反向追溯，可以从表面问题逐步深入到组织的核心问题；通过正向解决，可以从根本上消除问题的产生机制。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "分层改进策略",
+        "action": "分层改进策略",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "实施路径设计",
+        "action": "实施路径设计",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "和实践案例，全面解析这一重要的管理分析工具。   一、四层归因逻辑的理论基础与核心概念"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「“四层归因分析”解决复杂问题的核心工具」思维模式运行。面对问题时的推理协议：\n\nStep 1 - 分层改进策略：分层改进策略 追问：这一步要回答什么核心问题？\n\nStep 2 - 实施路径设计：实施路径设计 追问：这一步要回答什么核心问题？\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "activation_phrase": "请用“四层归因分析”解决复杂问题的核心工具分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

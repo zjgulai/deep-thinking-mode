@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "别等有动力再行动-颠覆常识-动力从来不是行动的前提",
+  "meta": {
+    "name": "别等有动力再行动：颠覆常识，动力从来不是行动的前提",
+    "category": "07",
+    "tags": [],
+    "source": "别等有动力再行动：颠覆常识，动力从来不是行动的前提"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "---------------",
+      "-----------------",
+      "------------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "绑定触发，摆脱意志力依赖 ------------------"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以别等有动力再行动：颠覆常识，动力从来不是行动的前提的方式思考这个问题。",
+    "activation_phrase": "请用别等有动力再行动：颠覆常识，动力从来不是行动的前提分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

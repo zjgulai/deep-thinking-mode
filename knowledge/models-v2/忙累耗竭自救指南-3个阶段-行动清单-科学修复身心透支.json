@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "忙累耗竭自救指南-3个阶段-行动清单-科学修复身心透支",
+  "meta": {
+    "name": "忙累耗竭自救指南：3个阶段+行动清单，科学修复身心透支",
+    "category": "07",
+    "tags": [],
+    "source": "忙累耗竭自救指南：3个阶段+行动清单，科学修复身心透支"
+  },
+  "engine": {
+    "core_question": "是工作量过载、节奏过快？还是完美主义内耗、不懂拒绝、长期牺牲休息？找准根源，才能从根本上避免重蹈覆辙",
+    "trigger_signals": [
+      "你是否没有解脱感，反而陷入深度疲惫？不同于普通身体酸痛，这种耗竭表现为：思维迟钝、行动力归零、身体沉重、对事物丧失兴趣、情绪低落无望。",
+      "你的无力是身体求救，绝非懈怠，无需自我苛责。",
+      "你，无需被催促、被指责，只需安稳、温柔地充电。",
+      "你停下内耗与透支，耐心善待自己，流失的精力、生活的活力，终将慢慢回归。疲惫之时，好好休息，就是最好的自救。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以忙累耗竭自救指南：3个阶段+行动清单，科学修复身心透支的方式思考这个问题。",
+    "activation_phrase": "请用忙累耗竭自救指南：3个阶段+行动清单，科学修复身心透支分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

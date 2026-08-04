@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "5w2h分析法-结构化反省-高效突破自我的工具",
+  "meta": {
+    "name": "5W2H分析法：结构化反省，高效突破自我的工具",
+    "category": "07",
+    "tags": [],
+    "source": "5W2H分析法：结构化反省，高效突破自我的工具"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "操作步骤-实战举例”快速落地，贴合自我反省需求：",
+      "--------",
+      "问题诊断：针对拖延、内耗等个人困扰，定位根源。",
+      "自我规划：制定可落地的个人提升计划。",
+      "方案细化：将粗略想法转化为具体反省改进方案。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "？  How  How  如何  方法/流程是什么？  How much"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以5W2H分析法：结构化反省，高效突破自我的工具的方式思考这个问题。",
+    "activation_phrase": "请用5W2H分析法：结构化反省，高效突破自我的工具分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

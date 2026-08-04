@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "决策心理学20个核心概念-从底层逻辑到决策优化",
+  "meta": {
+    "name": "决策心理学20个核心概念：从底层逻辑到决策优化",
+    "category": "06",
+    "tags": [],
+    "source": "决策心理学20个核心概念：从底层逻辑到决策优化"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，兼顾学术严谨性与实用度，快速吃透决策心理的核心规律。  第一部分 基础机制：决策行为的底层逻辑"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以决策心理学20个核心概念：从底层逻辑到决策优化的方式思考这个问题。",
+    "activation_phrase": "请用决策心理学20个核心概念：从底层逻辑到决策优化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

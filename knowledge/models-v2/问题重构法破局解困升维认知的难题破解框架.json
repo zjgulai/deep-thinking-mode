@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构法破局解困升维认知的难题破解框架",
+  "meta": {
+    "name": "问题重构法破局解困升维认知的难题破解框架",
+    "category": "03",
+    "tags": [],
+    "source": "问题重构法破局解困升维认知的难题破解框架"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "。      五、经典实战案例      电梯投诉难题：初始问题为电梯慢、投诉多，常规方案成本高；重构核心为无意义等待引发负面情绪，落地装镜子转移注意力，低成本解决问题。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题重构法破局解困升维认知的难题破解框架的方式思考这个问题。",
+    "activation_phrase": "请用问题重构法破局解困升维认知的难题破解框架分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

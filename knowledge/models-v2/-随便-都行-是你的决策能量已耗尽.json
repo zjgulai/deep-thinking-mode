@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "-随便-都行-是你的决策能量已耗尽",
+  "meta": {
+    "name": "“随便，都行”是你的决策能量已耗尽",
+    "category": "07",
+    "tags": [],
+    "source": "“随便，都行”是你的决策能量已耗尽"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [
+      "你认知最清醒的时候（通常是早晨）。",
+      "你的“认知CEO”能量告急的信号。最有效的应对是：立刻通过“动起来+补充能量”为其充电，同时通过“建立习惯、规划决策时机”来精简它的日常工作，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "提前决定好一周的外卖选择，或设定网购的时间与金额限制。  科学管理专注周期： ---------"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以“随便，都行”是你的决策能量已耗尽的方式思考这个问题。",
+    "activation_phrase": "请用“随便，都行”是你的决策能量已耗尽分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

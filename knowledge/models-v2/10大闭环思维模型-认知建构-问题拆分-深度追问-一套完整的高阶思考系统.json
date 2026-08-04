@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "10大闭环思维模型-认知建构-问题拆分-深度追问-一套完整的高阶思考系统",
+  "meta": {
+    "name": "10大闭环思维模型：认知建构+问题拆分+深度追问，一套完整的高阶思考系统",
+    "category": "11",
+    "tags": [],
+    "source": "10大闭环思维模型：认知建构+问题拆分+深度追问，一套完整的高阶思考系统"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "你看懂位置红利与资源流向，精准抢占核心枢纽位。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，是结构化思维的标准化预制工具。  有什么用：快速切入陌生领域，不用从零摸索，全方位覆盖思考维度，杜绝认知盲区。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以10大闭环思维模型：认知建构+问题拆分+深度追问，一套完整的高阶思考系统的方式思考这个问题。",
+    "activation_phrase": "请用10大闭环思维模型：认知建构+问题拆分+深度追问，一套完整的高阶思考系统分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

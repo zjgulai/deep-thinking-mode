@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0.0",
+  "id": "多巴胺的核心功能-远不止-快乐-",
+  "meta": {
+    "name": "一、多巴胺是什么？（一句话概括）",
+    "category": "07",
+    "tags": [],
+    "source": "多巴胺的核心功能：远不止“快乐”"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "*激素**（通过血液传递信息）的功能。它最广为人知的身份是“快乐分子”，但现代科学发现，这个标签过于简化，甚至具有误导性。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**追求“自然奖励”而非“超常刺激”**",
+        "action": "**追求“自然奖励”而非“超常刺激”**",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**拥抱“不确定性”**",
+        "action": "**拥抱“不确定性”**",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**实践“延迟满足”**",
+        "action": "**实践“延迟满足”**",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**保证充足睡眠**",
+        "action": "**保证充足睡眠**",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "尝试新的上班路线、探索新的爱好，这能带来健康的多巴胺刺激。"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「一、多巴胺是什么？（一句话概括）」思维模式运行。面对问题时的推理协议：\n\nStep 1 - **追求“自然奖励”而非“超常刺激”**：**追求“自然奖励”而非“超常刺激”** 追问：这一步要回答什么核心问题？\n\nStep 2 - **拥抱“不确定性”**：**拥抱“不确定性”** 追问：这一步要回答什么核心问题？\n\nStep 3 - **实践“延迟满足”**：**实践“延迟满足”** 追问：这一步要回答什么核心问题？\n\nStep 4 - **保证充足睡眠**：**保证充足睡眠** 追问：这一步要回答什么核心问题？\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "activation_phrase": "请用一、多巴胺是什么？（一句话概括）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

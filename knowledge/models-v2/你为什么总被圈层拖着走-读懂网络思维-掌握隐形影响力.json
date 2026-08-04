@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "你为什么总被圈层拖着走-读懂网络思维-掌握隐形影响力",
+  "meta": {
+    "name": "你为什么总被圈层拖着走？读懂网络思维，掌握隐形影响力",
+    "category": "10",
+    "tags": [],
+    "source": "你为什么总被圈层拖着走？读懂网络思维，掌握隐形影响力"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "你为什么总被圈层拖着走？读懂网络思维，",
+      "你在网络中的位置，是否占据信息、资源流转的必经通路，直接决定你的资源权重与圈层地位。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "落地：破解三大人生圈层困境  很多人的自律失败，从来不是输给懒惰，而是输给了圈层网络的隐形锁定。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以你为什么总被圈层拖着走？读懂网络思维，掌握隐形影响力的方式思考这个问题。",
+    "activation_phrase": "请用你为什么总被圈层拖着走？读懂网络思维，掌握隐形影响力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

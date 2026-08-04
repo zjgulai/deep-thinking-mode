@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "血清素是一个负责-稳定与满足-的超级管家",
+  "meta": {
+    "name": "血清素是一个负责“稳定与满足”的超级管家",
+    "category": "10",
+    "tags": [],
+    "source": "血清素是一个负责“稳定与满足”的超级管家"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "你保持清醒、平静和专注。",
+      "你可能更渴望碳水化合物（如面包、甜食），因为吃这些食物能短暂地提升血清素，让你感到安慰和满足。",
+      "你在处理人际关系时更平和。",
+      "你专注于当下，培养满足感，这被证明可以影响血清素系统。",
+      "你“心潮澎湃”，而是让你“心如止水”。它管理着你的情绪、睡眠、食欲和社交，确保你的内部生态系统稳定运行。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以血清素是一个负责“稳定与满足”的超级管家的方式思考这个问题。",
+    "activation_phrase": "请用血清素是一个负责“稳定与满足”的超级管家分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

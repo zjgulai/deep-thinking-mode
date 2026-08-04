@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "description": "思维模型推理引擎协议 — Codex 可执行格式",
+  "model_structure": {
+    "meta": {
+      "id": "唯一标识 (如 'first-principles')",
+      "name": "模型名 (如 '第一性原理')",
+      "category": "所属章节ID",
+      "tags": ["标签数组"],
+      "source": "原始出处"
+    },
+    "engine": {
+      "core_question": "这个模型解决什么问题？一句话",
+      "trigger_signals": ["触发信号数组 — 什么时候该用这个模型？"],
+      "stop_conditions": ["停止条件 — 什么时候不该用？"],
+      "reasoning_protocol": [
+        {
+          "step": 1,
+          "name": "步骤名称",
+          "action": "Codex 要做什么操作",
+          "thinking_question": "这一步的核心追问",
+          "expected_output": "这一步应该产出什么",
+          "pitfall": "常见误区"
+        }
+      ],
+      "decision_points": [
+        {
+          "condition": "判断条件",
+          "if_true": "下一步做什么",
+          "if_false": "下一步做什么"
+        }
+      ],
+      "output_format": {
+        "structure": "输出应包含的模块 (如: 根因/证据链/行动建议)",
+        "example": "一个完整输出的示例骨架"
+      }
+    },
+    "codex": {
+      "system_prompt": "可直接粘贴的 Codex 系统提示词",
+      "activation_phrase": "用户该说什么来激活这个模型 (如 '请用第一性原理分析...')",
+      "fallback": "当模型不适用时，Codex 应如何回退"
+    },
+    "quality": {
+      "reasoning_completeness": "1-5: 推理链是否完整可执行",
+      "example_coverage": "1-5: 示例是否覆盖主要路径",
+      "prompt_effectiveness": "1-5: 提示词是否能实际提升输出质量",
+      "overall": "综合评分 (取最低分)"
+    }
+  }
+}

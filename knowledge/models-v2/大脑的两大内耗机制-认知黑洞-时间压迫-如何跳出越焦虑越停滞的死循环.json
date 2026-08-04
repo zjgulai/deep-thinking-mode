@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "大脑的两大内耗机制-认知黑洞-时间压迫-如何跳出越焦虑越停滞的死循环",
+  "meta": {
+    "name": "大脑的两大内耗机制：认知黑洞+时间压迫，如何跳出越焦虑越停滞的死循环",
+    "category": "07",
+    "tags": [],
+    "source": "大脑的两大内耗机制：认知黑洞+时间压迫，如何跳出越焦虑越停滞的死循环"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "你终止精神内耗、夺回认知主动权。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以大脑的两大内耗机制：认知黑洞+时间压迫，如何跳出越焦虑越停滞的死循环的方式思考这个问题。",
+    "activation_phrase": "请用大脑的两大内耗机制：认知黑洞+时间压迫，如何跳出越焦虑越停滞的死循环分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

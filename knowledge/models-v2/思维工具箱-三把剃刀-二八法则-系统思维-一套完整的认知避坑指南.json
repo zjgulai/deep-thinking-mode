@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "思维工具箱-三把剃刀-二八法则-系统思维-一套完整的认知避坑指南",
+  "meta": {
+    "name": "思维工具箱：三把剃刀+二八法则+系统思维，一套完整的认知避坑指南",
+    "category": "08",
+    "tags": [],
+    "source": "思维工具箱：三把剃刀+二八法则+系统思维，一套完整的认知避坑指南"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "--------",
+      "核心：能用粗心、愚蠢、疏忽解释的事，不要归咎于恶意。",
+      "--------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，全文干货无废话，手机随时翻看，遇事直接套用。  一、三把剃刀（归因场景）：停止恶意脑补，客观还原真相"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以思维工具箱：三把剃刀+二八法则+系统思维，一套完整的认知避坑指南的方式思考这个问题。",
+    "activation_phrase": "请用思维工具箱：三把剃刀+二八法则+系统思维，一套完整的认知避坑指南分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

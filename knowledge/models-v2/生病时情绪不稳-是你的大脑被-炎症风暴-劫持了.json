@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "生病时情绪不稳-是你的大脑被-炎症风暴-劫持了",
+  "meta": {
+    "name": "生病时情绪不稳，是你的大脑被“炎症风暴”劫持了",
+    "category": "10",
+    "tags": [],
+    "source": "生病时情绪不稳，是你的大脑被“炎症风暴”劫持了"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "你“不够坚强”，而是一场真实的**生理风暴**正在你的大脑中上演。其核心原因在于**炎症信号**对大脑功能的深刻改变。",
+      "你生病时，免疫系统会释放大量名为 **细胞因子**（如白细胞介素、肿瘤坏死因子）的化学信使来对抗病原体。然而，这些物质的作用范围远超感染部位，",
+      "你对负面刺激更敏感、更容易感到焦虑、烦躁和不安。",
+      "你慢下来、保存能量、并专注于修复自身**。它驱使你休息、回避社交（避免传染），从而将全部资源用于康复。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以生病时情绪不稳，是你的大脑被“炎症风暴”劫持了的方式思考这个问题。",
+    "activation_phrase": "请用生病时情绪不稳，是你的大脑被“炎症风暴”劫持了分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

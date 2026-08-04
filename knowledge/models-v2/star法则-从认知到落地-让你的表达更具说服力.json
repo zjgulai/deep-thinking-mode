@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "star法则-从认知到落地-让你的表达更具说服力",
+  "meta": {
+    "name": "STAR法则：从认知到落地，让你的表达更具说服力",
+    "category": "11",
+    "tags": [],
+    "source": "STAR法则：从认知到落地，让你的表达更具说服力"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "你在该场景下的具体职责与核心目标，目标优先量化，让方向更清晰、成果更易衡量，比如“两周内将投诉率下降30%”“月度销售额提升15%”；若任务复杂，",
+      "你为达成目标主动采取的具体步骤与行动，突出个人贡献，而非团队整体行为。表述时按逻辑顺序展开，清晰体现你的思考、决策与执行力，避免用“我们做了”模糊个人作用，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，同时能培养结构化思考能力，是职场沟通与个人成长的必备工具。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以STAR法则：从认知到落地，让你的表达更具说服力的方式思考这个问题。",
+    "activation_phrase": "请用STAR法则：从认知到落地，让你的表达更具说服力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

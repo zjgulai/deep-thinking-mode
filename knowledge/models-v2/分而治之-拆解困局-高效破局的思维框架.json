@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "分而治之-拆解困局-高效破局的思维框架",
+  "meta": {
+    "name": "分而治之：拆解困局、高效破局的思维框架",
+    "category": "04",
+    "tags": [
+      "高效破局方法论",
+      "框架思维",
+      "思维框架",
+      "思维模型"
+    ],
+    "source": "分而治之：拆解困局、高效破局的思维框架"
+  },
+  "engine": {
+    "core_question": "如何运用分而治之：拆解困局、高效破局的思维框架来解决问题？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "适用，驾驭复杂、告别内耗，高效成事。      五、实战六步法      定边界：理清问题范围、目标与约束      做拆分：搭建WBS结构，自顶向下/自底向上      验质量：核查MECE、粒度、依赖关系      攻难题：按序推进，专注执行      整合果：验收成果，解决兼容冲突      再优化：递归拆分新难题，灵活调整"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分而治之：拆解困局、高效破局的思维框架的方式思考这个问题。",
+    "activation_phrase": "请用分而治之：拆解困局、高效破局的思维框架分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

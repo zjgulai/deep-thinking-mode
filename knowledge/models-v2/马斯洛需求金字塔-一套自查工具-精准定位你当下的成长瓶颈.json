@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "马斯洛需求金字塔-一套自查工具-精准定位你当下的成长瓶颈",
+  "meta": {
+    "name": "马斯洛需求金字塔：一套自查工具，精准定位你当下的成长瓶颈",
+    "category": "10",
+    "tags": [],
+    "source": "马斯洛需求金字塔：一套自查工具，精准定位你当下的成长瓶颈"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "你精准找准内心缺口，逐层突破成长瓶颈。",
+      "你的所有情绪。缺安全感则焦虑谨慎，缺归属感则敏感孤独，缺尊重感则自卑拧巴。未被满足的需求，就是当下的人生主旋律。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "纠结跳槽时，抛开薪资、头衔、面子，判断自己当下最需要的是稳定、轻松氛围还是成长价值，刚需优先，无需反复内耗。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以马斯洛需求金字塔：一套自查工具，精准定位你当下的成长瓶颈的方式思考这个问题。",
+    "activation_phrase": "请用马斯洛需求金字塔：一套自查工具，精准定位你当下的成长瓶颈分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

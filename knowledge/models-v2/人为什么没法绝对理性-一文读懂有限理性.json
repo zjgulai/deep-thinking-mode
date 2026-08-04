@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "人为什么没法绝对理性-一文读懂有限理性",
+  "meta": {
+    "name": "人为什么没法绝对理性？一文读懂有限理性",
+    "category": "09",
+    "tags": [],
+    "source": "人为什么没法绝对理性？一文读懂有限理性"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "差距极大，具体对比一看就懂：  原始进化环境  现代社会环境"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以人为什么没法绝对理性？一文读懂有限理性的方式思考这个问题。",
+    "activation_phrase": "请用人为什么没法绝对理性？一文读懂有限理性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

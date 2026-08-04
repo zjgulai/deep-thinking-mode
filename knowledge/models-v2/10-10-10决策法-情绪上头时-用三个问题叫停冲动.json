@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "10-10-10决策法-情绪上头时-用三个问题叫停冲动",
+  "meta": {
+    "name": "10-10-10决策法：情绪上头时，用三个问题叫停冲动",
+    "category": "10",
+    "tags": [],
+    "source": "10-10-10决策法：情绪上头时，用三个问题叫停冲动"
+  },
+  "engine": {
+    "core_question": "情绪平复后，我会为当下的言行难堪、后悔吗？",
+    "trigger_signals": [
+      "10-10法则。",
+      "----------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，情绪涌上心头的几秒内，默念三问即可叫停冲动。同时，拉长十年维度来看，大部分纠结无关对错，只关乎执念——法则帮你接纳“足够好”，告别完美主义内耗。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以10-10-10决策法：情绪上头时，用三个问题叫停冲动的方式思考这个问题。",
+    "activation_phrase": "请用10-10-10决策法：情绪上头时，用三个问题叫停冲动分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

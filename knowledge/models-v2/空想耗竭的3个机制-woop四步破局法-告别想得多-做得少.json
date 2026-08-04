@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "空想耗竭的3个机制-woop四步破局法-告别想得多-做得少",
+  "meta": {
+    "name": "空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少",
+    "category": "07",
+    "tags": [],
+    "source": "空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少"
+  },
+  "engine": {
+    "core_question": "如何有效地完成这件事？",
+    "trigger_signals": [
+      "---------------------",
+      "------------------",
+      "-----------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "能够规避挫败、维护自尊，通过替代性满足快速缓解焦虑。  长期依赖这种模式会形成心理惰性：无需努力就能获得心理慰藉，使人沉溺空想舒适区，逐渐丧失直面困难、落地执行的勇气。这也是多数人向往成功、却迟迟不动手的核心原因。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少的方式思考这个问题。",
+    "activation_phrase": "请用空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

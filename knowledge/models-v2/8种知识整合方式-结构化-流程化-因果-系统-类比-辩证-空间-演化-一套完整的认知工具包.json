@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "8种知识整合方式-结构化-流程化-因果-系统-类比-辩证-空间-演化-一套完整的认知工具包",
+  "meta": {
+    "name": "8种知识整合方式：结构化+流程化+因果+系统+类比+辩证+空间+演化，一套完整的认知工具包",
+    "category": "08",
+    "tags": [],
+    "source": "8种知识整合方式：结构化+流程化+因果+系统+类比+辩证+空间+演化，一套完整的认知工具包"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "学习市场营销知识时，拆解为产品、价格、渠道、促销四大核心板块，再针对每个板块细化细分知识点；学习唐朝历史时，摒弃零散史实记忆，按政治、经济、文化、军事、外交五大维度归类整理。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以8种知识整合方式：结构化+流程化+因果+系统+类比+辩证+空间+演化，一套完整的认知工具包的方式思考这个问题。",
+    "activation_phrase": "请用8种知识整合方式：结构化+流程化+因果+系统+类比+辩证+空间+演化，一套完整的认知工具包分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

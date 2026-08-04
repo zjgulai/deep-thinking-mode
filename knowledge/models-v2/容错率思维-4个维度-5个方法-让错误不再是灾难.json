@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "容错率思维-4个维度-5个方法-让错误不再是灾难",
+  "meta": {
+    "name": "容错率思维：4个维度+5个方法，让错误不再是灾难",
+    "category": "10",
+    "tags": [],
+    "source": "容错率思维：4个维度+5个方法，让错误不再是灾难"
+  },
+  "engine": {
+    "core_question": "如何有效地完成这件事？",
+    "trigger_signals": [
+      "你出错的空间，究竟有多大。",
+      "你按压它、拉扯它，它总能恢复原状。容错率低的系统，像一块玻璃：一点划痕，就会让它整片碎裂。生活里的焦虑、自责、崩盘感，往往不是因为错误本身太严重，",
+      "你放纵错误，而是让你在被错误击中时，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "日程过满，一次迟到就让全天计划报废。而高容错率系统拥有“隔离墙”，错误的影响被限制在局部。就像防火墙阻止病毒扩散，有缓冲的时间、备用的方案，就能让一次失误仅仅是一次失误，而不是一场灾难。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以容错率思维：4个维度+5个方法，让错误不再是灾难的方式思考这个问题。",
+    "activation_phrase": "请用容错率思维：4个维度+5个方法，让错误不再是灾难分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

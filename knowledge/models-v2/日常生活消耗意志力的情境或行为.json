@@ -1,0 +1,89 @@
+{
+  "schema_version": "2.0.0",
+  "id": "日常生活消耗意志力的情境或行为",
+  "meta": {
+    "name": "日常生活消耗意志力的情境或行为",
+    "category": "09",
+    "tags": [],
+    "source": "日常生活消耗意志力的情境或行为"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**重大或繁琐的决策**",
+        "action": "**重大或繁琐的决策**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**情绪与冲动的调节**",
+        "action": "**情绪与冲动的调节**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**长时间专注或屏蔽干扰**",
+        "action": "**长时间专注或屏蔽干扰**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**身体疲劳与生理匮乏**",
+        "action": "**身体疲劳与生理匮乏**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**自我控制的连锁效应**",
+        "action": "**自我控制的连锁效应**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "**拖延与任务切换**",
+        "action": "**拖延与任务切换**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "**奖励或动机变化**",
+        "action": "**奖励或动机变化**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "后，可采取“先大事后小事”“减少选择”“及时补充糖分与休息”“把同类任务集中”等策略，让有限的意志力用在最重要的目标上。"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「日常生活消耗意志力的情境或行为」思维模式运行。面对问题时的推理协议：\n\nStep 1 - **重大或繁琐的决策**：**重大或繁琐的决策**\n\nStep 2 - **情绪与冲动的调节**：**情绪与冲动的调节**\n\nStep 3 - **长时间专注或屏蔽干扰**：**长时间专注或屏蔽干扰**\n\nStep 4 - **身体疲劳与生理匮乏**：**身体疲劳与生理匮乏**\n\nStep 5 - **自我控制的连锁效应**：**自我控制的连锁效应**\n\nStep 6 - **拖延与任务切换**：**拖延与任务切换**\n\nStep 7 - **奖励或动机变化**：**奖励或动机变化**\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "activation_phrase": "请用日常生活消耗意志力的情境或行为分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "30分钟落地第一性原理-五层追问-验证清单-行动指南",
+  "meta": {
+    "name": "30分钟落地第一性原理：五层追问+验证清单+行动指南",
+    "category": "04",
+    "tags": [],
+    "source": "30分钟落地第一性原理：五层追问+验证清单+行动指南"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "使用者面临具体问题（工作、生活、自我提升等），需快速定位根本原理、验证真伪时适用，无需复杂工具，全程约30分钟。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以30分钟落地第一性原理：五层追问+验证清单+行动指南的方式思考这个问题。",
+    "activation_phrase": "请用30分钟落地第一性原理：五层追问+验证清单+行动指南分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

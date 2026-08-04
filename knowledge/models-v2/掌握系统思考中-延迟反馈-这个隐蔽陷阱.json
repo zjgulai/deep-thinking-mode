@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0.0",
+  "id": "掌握系统思考中-延迟反馈-这个隐蔽陷阱",
+  "meta": {
+    "name": "掌握系统思考中“延迟反馈”这个隐蔽陷阱",
+    "category": "05",
+    "tags": [
+      "系统思维",
+      "延迟反馈",
+      "决策",
+      "长期主义",
+      "框架思维",
+      "系统思考"
+    ],
+    "source": "掌握系统思考中“延迟反馈”这个隐蔽陷阱"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [
+      "你快速掌握系统思考中“延迟反馈”这个隐蔽陷阱，包含两种延迟类型、四步识别法和核心口诀。",
+      "你加码，结果突然过猛。记住：连续三次没反应，别加码，水在路上。",
+      "你以为没事，结果后爆炸。记住：看着当下平静，脑补两周后的画面。",
+      "你正在坚持但短期内看不到结果的事，判断它是淋浴效应还是醉酒效应，预计反馈会在多久后到达？"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以掌握系统思考中“延迟反馈”这个隐蔽陷阱的方式思考这个问题。",
+    "activation_phrase": "请用掌握系统思考中“延迟反馈”这个隐蔽陷阱分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

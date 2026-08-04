@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "解码精神熵增-从内心混乱到掌控自我-读懂-认知-的核心价值",
+  "meta": {
+    "name": "解码精神熵增：从内心混乱到掌控自我，读懂“认知”的核心价值",
+    "category": "09",
+    "tags": [],
+    "source": "解码精神熵增：从内心混乱到掌控自我，读懂“认知”的核心价值"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一块规整的冰、一栋结构完整的建筑、一个处于安静专注状态的大脑）；"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以解码精神熵增：从内心混乱到掌控自我，读懂“认知”的核心价值的方式思考这个问题。",
+    "activation_phrase": "请用解码精神熵增：从内心混乱到掌控自我，读懂“认知”的核心价值分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

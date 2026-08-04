@@ -1,0 +1,84 @@
+{
+  "schema_version": "2.0.0",
+  "id": "erg动机理论-读懂动态人性需求-停止无谓自我内耗",
+  "meta": {
+    "name": "ERG动机理论：读懂动态人性需求，停止无谓自我内耗",
+    "category": "07",
+    "tags": [],
+    "source": "ERG动机理论：读懂动态人性需求，停止无谓自我内耗"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [
+      "-----------",
+      "------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "生存层：近期是否因钱财、健康缺乏安全感？",
+        "action": "生存层：近期是否因钱财、健康缺乏安全感？",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "关系层：近期是否孤独缺爱，过度渴求他人认",
+        "action": "关系层：近期是否孤独缺爱，过度渴求他人认可？",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "成长层：近期是否生活重复，缺少成长与新鲜",
+        "action": "成长层：近期是否生活重复，缺少成长与新鲜感？",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "：复盘退行行为，锁定挫折源头",
+        "action": "：复盘退行行为，锁定挫折源头",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "：疏通根源而非克制表象",
+        "action": "：疏通根源而非克制表象",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "：设置最小日常投入，筑牢心理兜底防线",
+        "action": "：设置最小日常投入，筑牢心理兜底防线",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「ERG动机理论：读懂动态人性需求，停止无谓自我内耗」思维模式运行。面对问题时的推理协议：\n\nStep 1 - 生存层：近期是否因钱财、健康缺乏安全感？：生存层：近期是否因钱财、健康缺乏安全感？ 追问：这一步要回答什么核心问题？\n\nStep 2 - 关系层：近期是否孤独缺爱，过度渴求他人认：关系层：近期是否孤独缺爱，过度渴求他人认可？ 追问：这一步要回答什么核心问题？\n\nStep 3 - 成长层：近期是否生活重复，缺少成长与新鲜：成长层：近期是否生活重复，缺少成长与新鲜感？ 追问：这一步要回答什么核心问题？\n\nStep 4 - ：复盘退行行为，锁定挫折源头：：复盘退行行为，锁定挫折源头 追问：这一步要回答什么核心问题？\n\nStep 5 - ：疏通根源而非克制表象：：疏通根源而非克制表象 追问：这一步要回答什么核心问题？\n\nStep 6 - ：设置最小日常投入，筑牢心理兜底防线：：设置最小日常投入，筑牢心理兜底防线 追问：这一步要回答什么核心问题？\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "activation_phrase": "请用ERG动机理论：读懂动态人性需求，停止无谓自我内耗分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

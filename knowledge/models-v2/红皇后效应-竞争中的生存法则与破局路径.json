@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "红皇后效应-竞争中的生存法则与破局路径",
+  "meta": {
+    "name": "红皇后效应：竞争中的生存法则与破局路径",
+    "category": "03",
+    "tags": [],
+    "source": "红皇后效应：竞争中的生存法则与破局路径"
+  },
+  "engine": {
+    "core_question": "如何运用红皇后效应：竞争中的生存法则与破局路径来解决问题？",
+    "trigger_signals": [
+      "-----------",
+      "---------------",
+      "------------",
+      "-------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，提出“红皇后假说”，解释物种恒定灭绝风险定律——物种灭绝概率与存在时长无关。其核心是：竞争环境中，个体或组织唯有持续进步才能维持相对地位，突破则需更快速度，恰如“逆水行舟，不进则退”。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以红皇后效应：竞争中的生存法则与破局路径的方式思考这个问题。",
+    "activation_phrase": "请用红皇后效应：竞争中的生存法则与破局路径分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

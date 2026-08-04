@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "id": "苏格拉底式提问实操指南-层层追问",
+  "meta": {
+    "name": "苏格拉底式提问实操指南：层层追问",
+    "category": "04",
+    "tags": [
+      "苏格拉底式提问",
+      "框架思维",
+      "思维框架",
+      "思维模型",
+      "如何提问"
+    ],
+    "source": "苏格拉底式提问实操指南：层层追问"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？如何定义它？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "追问聚焦核心，规避归因偏差",
+        "action": "追问聚焦核心，规避归因偏差",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "层层突破，直击本质",
+        "action": "层层突破，直击本质",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "场景1：面对“理所当然”的主张",
+        "action": "场景1：面对“理所当然”的主张",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "核心信息",
+        "action": "核心信息",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "提问法",
+        "action": "提问法",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "场景2：面对“反复发生”的现象",
+        "action": "场景2：面对“反复发生”的现象",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "核心信息",
+        "action": "核心信息",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "实操（2.0）      2.1 场景1：面对“理所当然”的主张"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「苏格拉底式提问实操指南：层层追问」思维模式运行。面对问题时的推理协议：\n\nStep 1 - 追问聚焦核心，规避归因偏差：追问聚焦核心，规避归因偏差 追问：这一步要回答什么核心问题？\n\nStep 2 - 层层突破，直击本质：层层突破，直击本质 追问：这一步要回答什么核心问题？\n\nStep 3 - 场景1：面对“理所当然”的主张：场景1：面对“理所当然”的主张 追问：这一步要回答什么核心问题？\n\nStep 4 - 核心信息：核心信息 追问：这一步要回答什么核心问题？\n\nStep 5 - 提问法：提问法 追问：这一步要回答什么核心问题？\n\nStep 6 - 场景2：面对“反复发生”的现象：场景2：面对“反复发生”的现象 追问：这一步要回答什么核心问题？\n\nStep 7 - 核心信息：核心信息 追问：这一步要回答什么核心问题？\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "activation_phrase": "请用苏格拉底式提问实操指南：层层追问分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

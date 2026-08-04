@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0.0",
+  "id": "人为什么会拖延",
+  "meta": {
+    "name": "**第一部分：情绪与心理核心 —— “逃避不适”**",
+    "category": "07",
+    "tags": [],
+    "source": "**第一部分：情绪与心理核心 —— “逃避不适”**"
+  },
+  "engine": {
+    "core_question": "如何运用**第一部分：情绪与心理核心 —— “逃避不适”**来解决问题？",
+    "trigger_signals": [
+      "*执行功能障碍**",
+      "**任务启动困难**：这是拖延的关键生理表现。即使理智上知道该做什么，但就像“大脑的引擎打不着火”一样，无法从静止状态切换到行动状态。",
+      "**与ADHD的联系**：对于注意缺陷多动障碍（ADHD）人群，拖延是核心症状。这与大脑前额叶皮层发育及多巴胺、去甲肾上腺素等神经递质功能异常有关。他们更难规划未来、预估时间、抑制"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**时间不一致偏好**",
+        "action": "**时间不一致偏好**",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**未来折扣**",
+        "action": "**未来折扣**",
+        "thinking_question": "这一步要回答什么核心问题？",
+        "expected_output": "这一步完成后应该得到什么？",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「**第一部分：情绪与心理核心 —— “逃避不适”**」思维模式运行。面对问题时的推理协议：\n\nStep 1 - **时间不一致偏好**：**时间不一致偏好** 追问：这一步要回答什么核心问题？\n\nStep 2 - **未来折扣**：**未来折扣** 追问：这一步要回答什么核心问题？\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "activation_phrase": "请用**第一部分：情绪与心理核心 —— “逃避不适”**分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

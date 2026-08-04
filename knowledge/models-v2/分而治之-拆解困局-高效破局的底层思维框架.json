@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "分而治之-拆解困局-高效破局的底层思维框架",
+  "meta": {
+    "name": "分而治之：拆解困局、高效破局的底层思维框架",
+    "category": "02",
+    "tags": [],
+    "source": "分而治之：拆解困局、高效破局的底层思维框架"
+  },
+  "engine": {
+    "core_question": "如何运用分而治之：拆解困局、高效破局的底层思维框架来解决问题？",
+    "trigger_signals": [
+      "----------------",
+      "-----------",
+      "-----------",
+      "------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "适用：小到日常任务规划、错题整理，大到项目攻坚、软件开发，均可灵活应用。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分而治之：拆解困局、高效破局的底层思维框架的方式思考这个问题。",
+    "activation_phrase": "请用分而治之：拆解困局、高效破局的底层思维框架分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

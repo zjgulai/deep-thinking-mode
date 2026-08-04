@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "启发式-有限理性下的快速决策法则",
+  "meta": {
+    "name": "启发式——有限理性下的快速决策法则",
+    "category": "06",
+    "tags": [
+      "决策心理学解析",
+      "启发式决策法则",
+      "决策心理学"
+    ],
+    "source": "启发式——有限理性下的快速决策法则"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以启发式——有限理性下的快速决策法则的方式思考这个问题。",
+    "activation_phrase": "请用启发式——有限理性下的快速决策法则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "别再混用-框架思维-vs-系统思维-3大区别-5个场景对照",
+  "meta": {
+    "name": "别再混用！框架思维 vs 系统思维：3大区别+5个场景对照",
+    "category": "07",
+    "tags": [],
+    "source": "别再混用！框架思维 vs 系统思维：3大区别+5个场景对照"
+  },
+  "engine": {
+    "core_question": "如何有效地完成这件事？",
+    "trigger_signals": [
+      "你这件事的隐患和长远后果。",
+      "你当前面临的工作问题，判断它是“反复出现的顽固问题”还是“需要快速汇报的任务”，然后选择对应的思维进行分析。写下你的结论。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "对照  框架思维与系统思维是职场核心思考工具，却常被混用。二者互为补充，但核心逻辑、适用场景差异显著。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以别再混用！框架思维 vs 系统思维：3大区别+5个场景对照的方式思考这个问题。",
+    "activation_phrase": "请用别再混用！框架思维 vs 系统思维：3大区别+5个场景对照分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

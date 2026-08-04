@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "拆解工具箱-按流程拆-按要素拆-按层级拆-一套完整的任务降维指南",
+  "meta": {
+    "name": "拆解工具箱：按流程拆、按要素拆、按层级拆，一套完整的任务降维指南",
+    "category": "00",
+    "tags": [],
+    "source": "拆解工具箱：按流程拆、按要素拆、按层级拆，一套完整的任务降维指南"
+  },
+  "engine": {
+    "core_question": "写在最左边：项目为什么持续延期？",
+    "trigger_signals": [
+      "你不是懒。你是被“整体”这个词绑架了。",
+      "你不会再喊“大家按时完工”这种空口号，而是落地成一个具体动作：项目启动前，增加原型演示环节，拿到客户书面签字。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "环节，拿到客户书面签字。  这把工具什么时候用？问题“说不清原因”——项目总延期、团队总扯皮、用户总流失但不知道哪里出问题——别急着给方案，先画树。挖到能被一个具体动作解决的原因，才算挖到底。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以拆解工具箱：按流程拆、按要素拆、按层级拆，一套完整的任务降维指南的方式思考这个问题。",
+    "activation_phrase": "请用拆解工具箱：按流程拆、按要素拆、按层级拆，一套完整的任务降维指南分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

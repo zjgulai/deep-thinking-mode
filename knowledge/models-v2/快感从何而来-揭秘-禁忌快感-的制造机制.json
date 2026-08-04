@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "快感从何而来-揭秘-禁忌快感-的制造机制",
+  "meta": {
+    "name": "快感从何而来？——揭秘“禁忌快感”的制造机制",
+    "category": "07",
+    "tags": [],
+    "source": "快感从何而来？——揭秘“禁忌快感”的制造机制"
+  },
+  "engine": {
+    "core_question": "如何运用快感从何而来？——揭秘“禁忌快感”的制造机制来解决问题？",
+    "trigger_signals": [
+      "你自主做出决定——“不管了，再看一章”。",
+      "你知道一个行为是“被禁止的”，大脑的奖赏系统（如腹侧被盖区、伏隔核）会异常活跃。此时，多巴胺分泌增加，它不仅让你期待小说情节，更让你渴望“打破规则”这件事本身。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以快感从何而来？——揭秘“禁忌快感”的制造机制的方式思考这个问题。",
+    "activation_phrase": "请用快感从何而来？——揭秘“禁忌快感”的制造机制分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

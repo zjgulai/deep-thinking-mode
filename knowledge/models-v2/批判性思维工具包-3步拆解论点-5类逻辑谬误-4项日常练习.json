@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "批判性思维工具包-3步拆解论点-5类逻辑谬误-4项日常练习",
+  "meta": {
+    "name": "批判性思维工具包：3步拆解论点+5类逻辑谬误+4项日常练习",
+    "category": "02",
+    "tags": [],
+    "source": "批判性思维工具包：3步拆解论点+5类逻辑谬误+4项日常练习"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [
+      "你刷到热门观点就下意识认同，被情绪和话术裹挟，事后才发现被误导。这是大脑的惯性偷懒，而批判性思维，就是帮你主动核验信息的清醒工具。",
+      "你没做过管理，没资格提制度建议。” 观点质量和身份无关，属于无效辩驳。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "“他不吸烟，所以一定长寿”。隐藏假设是“不吸烟就能长寿”，忽略饮食、基因、作息等关键变量，逻辑完全站不住脚。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以批判性思维工具包：3步拆解论点+5类逻辑谬误+4项日常练习的方式思考这个问题。",
+    "activation_phrase": "请用批判性思维工具包：3步拆解论点+5类逻辑谬误+4项日常练习分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

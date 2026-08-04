@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "反向提问-用问题回答问题-轻松掌握对话主动权",
+  "meta": {
+    "name": "反向提问：用问题回答问题，轻松掌握对话主动权",
+    "category": "02",
+    "tags": [],
+    "source": "反向提问：用问题回答问题，轻松掌握对话主动权"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "-------------------",
+      "----------------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "1\\. 澄清式反问：理顺模糊、宽泛的问题 --------------------"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以反向提问：用问题回答问题，轻松掌握对话主动权的方式思考这个问题。",
+    "activation_phrase": "请用反向提问：用问题回答问题，轻松掌握对话主动权分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

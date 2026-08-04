@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "30个框架效应实战话术-换种说法-商业-职场沟通效率翻倍",
+  "meta": {
+    "name": "30个框架效应实战话术：换种说法，商业&职场沟通效率翻倍",
+    "category": "06",
+    "tags": [],
+    "source": "30个框架效应实战话术：换种说法，商业&职场沟通效率翻倍"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [
+      "你把事实，框在“获益”里，还是“损失”里。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，分为商业营销、职场管理两大核心场景，每组提供两种对比话术，并拆解背后的心理逻辑，可直接套用、落地即用。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以30个框架效应实战话术：换种说法，商业&职场沟通效率翻倍的方式思考这个问题。",
+    "activation_phrase": "请用30个框架效应实战话术：换种说法，商业&职场沟通效率翻倍分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

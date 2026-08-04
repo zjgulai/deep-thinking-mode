@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "系统思维实用指南-拆解报复性熬夜-轻松打破内耗循环",
+  "meta": {
+    "name": "系统思维实用指南：拆解报复性熬夜，轻松打破内耗循环",
+    "category": "10",
+    "tags": [],
+    "source": "系统思维实用指南：拆解报复性熬夜，轻松打破内耗循环"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "你拆解问题、找到可落地的破局方法，核心是打破熬夜背后的恶性循环。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，聚焦系统思维的实用性，教你拆解问题、找到可落地的破局方法，核心是打破熬夜背后的恶性循环。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以系统思维实用指南：拆解报复性熬夜，轻松打破内耗循环的方式思考这个问题。",
+    "activation_phrase": "请用系统思维实用指南：拆解报复性熬夜，轻松打破内耗循环分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

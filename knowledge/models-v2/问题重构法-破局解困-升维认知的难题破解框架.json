@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构法-破局解困-升维认知的难题破解框架",
+  "meta": {
+    "name": "问题重构法：破局解困、升维认知的难题破解框架",
+    "category": "03",
+    "tags": [],
+    "source": "问题重构法：破局解困、升维认知的难题破解框架"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [
+      "*奥卡姆剃刀**",
+      "*苏格拉底式提问**"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "、避坑要点全维度拆解，帮你从被动解决问题的执行者，升级为主动定义问题的决策者。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题重构法：破局解困、升维认知的难题破解框架的方式思考这个问题。",
+    "activation_phrase": "请用问题重构法：破局解困、升维认知的难题破解框架分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

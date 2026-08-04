@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "效率洁癖-被绩效驯化的自我审判者",
+  "meta": {
+    "name": "效率洁癖：被绩效驯化的自我审判者",
+    "category": "09",
+    "tags": [],
+    "source": "效率洁癖：被绩效驯化的自我审判者"
+  },
+  "engine": {
+    "core_question": "如何运用效率洁癖：被绩效驯化的自我审判者来解决问题？",
+    "trigger_signals": [
+      "-----------------------",
+      "----------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以效率洁癖：被绩效驯化的自我审判者的方式思考这个问题。",
+    "activation_phrase": "请用效率洁癖：被绩效驯化的自我审判者分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

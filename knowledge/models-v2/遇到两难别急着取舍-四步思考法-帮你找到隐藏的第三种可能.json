@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "遇到两难别急着取舍-四步思考法-帮你找到隐藏的第三种可能",
+  "meta": {
+    "name": "遇到两难别急着取舍：四步思考法，帮你找到隐藏的第三种可能",
+    "category": "07",
+    "tags": [],
+    "source": "遇到两难别急着取舍：四步思考法，帮你找到隐藏的第三种可能"
+  },
+  "engine": {
+    "core_question": "破局：如何兼顾A、B的核心优势，创造出优于两者的全新方案C？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "认定商业战略只能在「低成本」和「差异化」中二选一，最终只能取舍让步，得出一个平庸、无竞争力的折中方案。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以遇到两难别急着取舍：四步思考法，帮你找到隐藏的第三种可能的方式思考这个问题。",
+    "activation_phrase": "请用遇到两难别急着取舍：四步思考法，帮你找到隐藏的第三种可能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

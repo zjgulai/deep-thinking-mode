@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "为什么冷静后总后悔-读懂大脑的劫持机制-不再被情绪拖着走",
+  "meta": {
+    "name": "为什么冷静后总后悔？读懂大脑的劫持机制，不再被情绪拖着走",
+    "category": "02",
+    "tags": [],
+    "source": "为什么冷静后总后悔？读懂大脑的劫持机制，不再被情绪拖着走"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "-------------",
+      "------------",
+      "------------",
+      "-----------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "判定为危险，把他人的善意、中性态度错当成敌意。  2\\. 理性慢车道（准但滞后） ---------------"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以为什么冷静后总后悔？读懂大脑的劫持机制，不再被情绪拖着走的方式思考这个问题。",
+    "activation_phrase": "请用为什么冷静后总后悔？读懂大脑的劫持机制，不再被情绪拖着走分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

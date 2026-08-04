@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0.0",
+  "id": "接纳的三个层次-从认知到行为的深度转化",
+  "meta": {
+    "name": "接纳的三个层次：从认知到行为的深度转化",
+    "category": "01",
+    "tags": [
+      "wechat_redirec"
+    ],
+    "source": "接纳的三个层次：从认知到行为的深度转化"
+  },
+  "engine": {
+    "core_question": "如何运用接纳的三个层次：从认知到行为的深度转化来解决问题？",
+    "trigger_signals": [
+      "**R识别**(Recognize)：识别当下情绪是什么",
+      "**A允许**(Allow)：允许它存在，不加评判",
+      "**I探究**(Investigate)：带着好奇探究身体的感受",
+      "**N不认同**(Non-identify)：明白情绪只是体验，不是你的全部"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**循环上升路径**：",
+        "action": "**循环上升路径**：",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**危机中的快速应用**：",
+        "action": "**危机中的快速应用**：",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**长期培养的接纳心智**：",
+        "action": "**长期培养的接纳心智**：",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "**：作家尼尔·盖曼在写不下去时会选择“要么写，要么什么都不做（但不允许做其他事）”，往往静坐的无聊会催生写作的动力。"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「接纳的三个层次：从认知到行为的深度转化」思维模式运行。面对问题时的推理协议：\n\nStep 1 - **循环上升路径**：：**循环上升路径**：\n\nStep 2 - **危机中的快速应用**：：**危机中的快速应用**：\n\nStep 3 - **长期培养的接纳心智**：：**长期培养的接纳心智**：\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "activation_phrase": "请用接纳的三个层次：从认知到行为的深度转化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

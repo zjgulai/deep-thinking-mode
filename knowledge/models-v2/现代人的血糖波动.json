@@ -1,0 +1,76 @@
+{
+  "schema_version": "2.0.0",
+  "id": "现代人的血糖波动",
+  "meta": {
+    "name": "原始人的血糖模式：平稳的“慢充”",
+    "category": "12",
+    "tags": [],
+    "source": "现代人的血糖波动"
+  },
+  "engine": {
+    "core_question": "如何运用原始人的血糖模式：平稳的“慢充”来解决问题？",
+    "trigger_signals": [
+      "**心血管疾病：** 血糖波动会损伤血管内皮，增加炎症水平，是动脉粥样硬化的风险因素。",
+      "**认知功能下降与情绪波动：** 大脑依赖稳定的葡萄糖供应。血糖的剧烈起伏会导致注意力不集中、烦躁、焦虑和“脑雾”。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**摄入高GI食物** → 血糖**急剧飙升**。",
+        "action": "**摄入高GI食物** → 血糖**急剧飙升**。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "身体为了降低血糖，**大量分泌胰岛素**。",
+        "action": "身体为了降低血糖，**大量分泌胰岛素**。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "由于可能存在胰岛素抵抗和胰岛素分泌过多，血糖被迅速",
+        "action": "由于可能存在胰岛素抵抗和胰岛素分泌过多，血糖被迅速压得过低，导致**反应性低血糖**。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "在低血糖阶段，身体会**极度渴望**新一轮的快速能",
+        "action": "在低血糖阶段，身体会**极度渴望**新一轮的快速能量（高糖食物）来提升血糖。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "于是，你再次摄入高GI食物……循环往复。",
+        "action": "于是，你再次摄入高GI食物……循环往复。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「原始人的血糖模式：平稳的“慢充”」思维模式运行。面对问题时的推理协议：\n\nStep 1 - **摄入高GI食物** → 血糖**急剧飙升**。：**摄入高GI食物** → 血糖**急剧飙升**。\n\nStep 2 - 身体为了降低血糖，**大量分泌胰岛素**。：身体为了降低血糖，**大量分泌胰岛素**。\n\nStep 3 - 由于可能存在胰岛素抵抗和胰岛素分泌过多，血糖被迅速：由于可能存在胰岛素抵抗和胰岛素分泌过多，血糖被迅速压得过低，导致**反应性低血糖**。\n\nStep 4 - 在低血糖阶段，身体会**极度渴望**新一轮的快速能：在低血糖阶段，身体会**极度渴望**新一轮的快速能量（高糖食物）来提升血糖。\n\nStep 5 - 于是，你再次摄入高GI食物……循环往复。：于是，你再次摄入高GI食物……循环往复。\n\n约束：严格按照上述步骤顺序推理，不要跳过任何一步。如果某个步骤在当前问题中不适用，说明原因后继续下一步。",
+    "activation_phrase": "请用原始人的血糖模式：平稳的“慢充”分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "个人成长与通用思维框架",
+  "meta": {
+    "name": "个人成长与通用思维框架",
+    "category": "08",
+    "tags": [],
+    "source": "个人成长与通用思维框架"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "→重申，极简表达；适用：即兴发言、短汇报、高效沟通      共情聆听：从被动听到共情，搭信任桥梁；适用：调解冲突、深度沟通      三明治反馈法：肯定+建议+鼓励，降抵触易接受；适用：绩效沟通、日常反馈      模块四：理性决策与判断      决策矩阵：量化对比，理性择优；步骤：列选项→定标准→打分筛选；适用：两难决策、方案选型      二阶思维：不只看当下，更看长期连锁影响；适用：重大决策、风险防控      10/10/10法则：跳当下情绪，长远视角做决定；适用：人生抉择、克制冲动"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以个人成长与通用思维框架的方式思考这个问题。",
+    "activation_phrase": "请用个人成长与通用思维框架分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

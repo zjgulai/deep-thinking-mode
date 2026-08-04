@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "揭秘-门口效应-门一过就忘事-不是记性差是大脑高效",
+  "meta": {
+    "name": "揭秘“门口效应”：门一过就忘事，不是记性差是大脑高效",
+    "category": "00",
+    "tags": [],
+    "source": "揭秘“门口效应”：门一过就忘事，不是记性差是大脑高效"
+  },
+  "engine": {
+    "core_question": "如何运用揭秘“门口效应”：门一过就忘事，不是记性差是大脑高效来解决问题？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "包括：  *   从客厅进入书房后，忘记需寻找的书籍；"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以揭秘“门口效应”：门一过就忘事，不是记性差是大脑高效的方式思考这个问题。",
+    "activation_phrase": "请用揭秘“门口效应”：门一过就忘事，不是记性差是大脑高效分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

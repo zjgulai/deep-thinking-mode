@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "10种结构化逻辑关系",
+  "meta": {
+    "name": "10种结构化逻辑关系",
+    "category": "11",
+    "tags": [],
+    "source": "10种结构化逻辑关系"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "老旧”等多个具体问题，归纳出“课程设计需优化”的核心结论，这是归纳逻辑。      10\\. 循环关系      设计培训的闭环流程：培训实施→收集反馈→优化课程→再次培训，形成持续改进的循环，是循环逻辑。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以10种结构化逻辑关系的方式思考这个问题。",
+    "activation_phrase": "请用10种结构化逻辑关系分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

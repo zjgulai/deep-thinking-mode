@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "情绪内耗的3个机制-为什么接纳比对抗更高效-",
+  "meta": {
+    "name": "情绪内耗的3个机制：为什么接纳比对抗更高效？",
+    "category": "09",
+    "tags": [],
+    "source": "情绪内耗的3个机制：为什么接纳比对抗更高效？"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？",
+    "trigger_signals": [
+      "你抗拒坏情绪、强迫自己稳住状态时，大脑会同步启动两个高耗能后台程序：持续扫描自身状态的问题监控程序、强行压抑不适感的情绪压制程序。",
+      "你自我对抗、否定负面情绪时，杏仁核会判定为双重威胁：外部事情不顺，内部自我攻击。身体持续开启应激模式，分泌大量压力皮质醇。",
+      "你得以冷静梳理现状、分清优先级、做出理性决策，从慌乱内耗切换为从容应对。",
+      "你能清晰看清处境、找准出路。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以情绪内耗的3个机制：为什么接纳比对抗更高效？的方式思考这个问题。",
+    "activation_phrase": "请用情绪内耗的3个机制：为什么接纳比对抗更高效？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

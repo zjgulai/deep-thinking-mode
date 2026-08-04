@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ooda循环不确定环境下的快速决策与行动法则",
+  "meta": {
+    "name": "OODA循环不确定环境下的快速决策与行动法则",
+    "category": "08",
+    "tags": [
+      "框架思维",
+      "思维框架",
+      "思维模型"
+    ],
+    "source": "OODA循环不确定环境下的快速决策与行动法则"
+  },
+  "engine": {
+    "core_question": "在多个选项中，哪个是最优选择？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "决策规则，采用“满意原则”，摒弃完美主义。      4\\. 小步行动：拆解行动为小型试验，重视反馈并优化下一轮方案。      5\\. 缩短周期：开展快速循环训练，定期优化低效环节。      核心总结      OODA循环是“在行动中思考、在思考中行动”的科学思维方式，核心是动态适配。内化后可应对不确定环境，以快速循环效率适应变化，通过持续迭代找到最优决策路径。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以OODA循环不确定环境下的快速决策与行动法则的方式思考这个问题。",
+    "activation_phrase": "请用OODA循环不确定环境下的快速决策与行动法则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}
