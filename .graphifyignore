@@ -5,3 +5,5 @@
 /tests/fixtures/
 /.codex/
 /graphify-out/
+/data/
+/ref/
