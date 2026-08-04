@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "chapters": [
+    {
+      "id": "00",
+      "order": 0,
+      "slug": "overview-and-toolbox",
+      "title": "综合索引与工具箱",
+      "description": "模型总览与选型、组合工具箱与闭环、跨主题导航",
+      "baseline_source_count": 10,
+      "subchapters": [
+        { "id": "00-01", "order": 1, "slug": "model-overview-and-selection", "title": "模型总览与选型" },
+        { "id": "00-02", "order": 2, "slug": "composition-toolbox", "title": "组合工具箱与闭环" },
+        { "id": "00-03", "order": 3, "slug": "cross-topic-navigation", "title": "跨主题导航" }
+      ],
+      "allowed_tags": ["模型总览", "选型", "工具箱", "跨主题"]
+    },
+    {
+      "id": "01",
+      "order": 1,
+      "slug": "metacognition-and-boundaries",
+      "title": "元认知与认知边界",
+      "description": "观察者视角、认知融合与解离、批判性与整合思维、模型边界与过拟合",
+      "baseline_source_count": 15,
+      "subchapters": [
+        { "id": "01-01", "order": 1, "slug": "observer-perspective", "title": "观察者视角" },
+        { "id": "01-02", "order": 2, "slug": "cognitive-fusion-and-dissociation", "title": "认知融合与解离" },
+        { "id": "01-03", "order": 3, "slug": "critical-integration", "title": "批判性与整合思维" },
+        { "id": "01-04", "order": 4, "slug": "model-boundaries-overfitting", "title": "模型边界与过拟合" }
+      ],
+      "allowed_tags": ["元认知", "认知边界", "观察者视角", "批判性", "整合思维", "过拟合"]
+    },
+    {
+      "id": "02",
+      "order": 2,
+      "slug": "formal-logic-language",
+      "title": "形式逻辑、概念与语言",
+      "description": "概念与定义、判断与推理、论证、命题等价与逻辑关系、句法语义语用",
+      "baseline_source_count": 16,
+      "subchapters": [
+        { "id": "02-01", "order": 1, "slug": "concept-definition", "title": "概念与定义" },
+        { "id": "02-02", "order": 2, "slug": "logic-inference", "title": "判断与推理" },
+        { "id": "02-03", "order": 3, "slug": "argumentation", "title": "论证" },
+        { "id": "02-04", "order": 4, "slug": "propositional-relationships", "title": "命题等价与逻辑关系" },
+        { "id": "02-05", "order": 5, "slug": "syntax-and-semantics", "title": "句法语义语用" }
+      ],
+      "allowed_tags": ["形式逻辑", "概念", "定义", "判断", "论证", "命题", "语义"]
+    },
+    {
+      "id": "03",
+      "order": 3,
+      "slug": "problem-framing-and-questioning",
+      "title": "问题定义与提问重构",
+      "description": "问题识别、精准定义、重构方法、苏格拉底与爱因斯坦式提问、破解导航",
+      "baseline_source_count": 41,
+      "subchapters": [
+        { "id": "03-01", "order": 1, "slug": "problem-identification", "title": "问题识别" },
+        { "id": "03-02", "order": 2, "slug": "precise-definition", "title": "精准定义" },
+        { "id": "03-03", "order": 3, "slug": "reframing-method", "title": "重构方法" },
+        { "id": "03-04", "order": 4, "slug": "socratic-and-einstein-questioning", "title": "苏格拉底与爱因斯坦式提问" },
+        { "id": "03-05", "order": 5, "slug": "de-mystification", "title": "破解导航" }
+      ],
+      "allowed_tags": ["问题定义", "提问", "重构", "突破", "苏格拉底提问"]
+    },
+    {
+      "id": "04",
+      "order": 4,
+      "slug": "structured-root-cause-analysis",
+      "title": "结构化分析与根因拆解",
+      "description": "结构化与框架思维、逻辑树与MECE、5 Whys、鱼骨图、冰山、第一性原理",
+      "baseline_source_count": 38,
+      "subchapters": [
+        { "id": "04-01", "order": 1, "slug": "structured-framework", "title": "结构化与框架思维" },
+        { "id": "04-02", "order": 2, "slug": "logic-tree-mece", "title": "逻辑树与MECE" },
+        { "id": "04-03", "order": 3, "slug": "five-whys", "title": "5 Whys" },
+        { "id": "04-04", "order": 4, "slug": "fishbone-model", "title": "鱼骨图" },
+        { "id": "04-05", "order": 5, "slug": "iceberg-model", "title": "冰山" },
+        { "id": "04-06", "order": 6, "slug": "first-principles", "title": "第一性原理" }
+      ],
+      "allowed_tags": ["根因", "结构化", "框架", "MECE", "5 Whys", "鱼骨图", "冰山模型", "第一性原理"]
+    },
+    {
+      "id": "05",
+      "order": 5,
+      "slug": "systems-complexity-networks",
+      "title": "系统、网络与复杂性",
+      "description": "系统核心、系统基模、延迟反馈、网络与弱连接、涌现与动态关系",
+      "baseline_source_count": 28,
+      "subchapters": [
+        { "id": "05-01", "order": 1, "slug": "system-core", "title": "系统核心" },
+        { "id": "05-02", "order": 2, "slug": "systems-baseline-model", "title": "系统基模" },
+        { "id": "05-03", "order": 3, "slug": "delayed-feedback", "title": "延迟反馈" },
+        { "id": "05-04", "order": 4, "slug": "network-and-weak-links", "title": "网络与弱连接" },
+        { "id": "05-05", "order": 5, "slug": "emergence", "title": "涌现与动态关系" }
+      ],
+      "allowed_tags": ["系统", "网络", "复杂性", "延迟反馈", "涌现", "弱连接"]
+    },
+    {
+      "id": "06",
+      "order": 6,
+      "slug": "decisions-risk-and-biases",
+      "title": "决策、风险与认知偏差",
+      "description": "决策流程、启发式、前景理论、框架效应、概率风险、逆向思维",
+      "baseline_source_count": 49,
+      "subchapters": [
+        { "id": "06-01", "order": 1, "slug": "decision-process", "title": "决策流程" },
+        { "id": "06-02", "order": 2, "slug": "heuristics", "title": "启发式" },
+        { "id": "06-03", "order": 3, "slug": "prospect-theory", "title": "前景理论" },
+        { "id": "06-04", "order": 4, "slug": "framing-effect", "title": "框架效应" },
+        { "id": "06-05", "order": 5, "slug": "probability-risk", "title": "概率风险" },
+        { "id": "06-06", "order": 6, "slug": "counterfactual", "title": "逆向思维" }
+      ],
+      "allowed_tags": ["决策", "风险", "认知偏差", "前景理论", "启发式", "逆向思维"]
+    },
+    {
+      "id": "07",
+      "order": 7,
+      "slug": "action-habits-execution",
+      "title": "行动、习惯与执行",
+      "description": "拖延、动力、多巴胺、习惯、福格模型、WOOP、SOP",
+      "baseline_source_count": 32,
+      "subchapters": [
+        { "id": "07-01", "order": 1, "slug": "procrastination", "title": "拖延" },
+        { "id": "07-02", "order": 2, "slug": "motivation", "title": "动力" },
+        { "id": "07-03", "order": 3, "slug": "dopamine", "title": "多巴胺" },
+        { "id": "07-04", "order": 4, "slug": "habit-building", "title": "习惯" },
+        { "id": "07-05", "order": 5, "slug": "fogg-model", "title": "福格模型" },
+        { "id": "07-06", "order": 6, "slug": "woop", "title": "WOOP" },
+        { "id": "07-07", "order": 7, "slug": "sop", "title": "SOP" }
+      ],
+      "allowed_tags": ["行动", "习惯", "拖延", "动力", "福格模型", "WOOP", "SOP"]
+    },
+    {
+      "id": "08",
+      "order": 8,
+      "slug": "learning-knowledge-growth",
+      "title": "学习、知识与成长",
+      "description": "知识整合、经验学习、复盘、刻意练习、成长陷阱、自我效能",
+      "baseline_source_count": 43,
+      "subchapters": [
+        { "id": "08-01", "order": 1, "slug": "knowledge-integration", "title": "知识整合" },
+        { "id": "08-02", "order": 2, "slug": "experiential-learning", "title": "经验学习" },
+        { "id": "08-03", "order": 3, "slug": "retrospective-review", "title": "复盘" },
+        { "id": "08-04", "order": 4, "slug": "deliberate-practice", "title": "刻意练习" },
+        { "id": "08-05", "order": 5, "slug": "growth-traps", "title": "成长陷阱" },
+        { "id": "08-06", "order": 6, "slug": "self-efficacy", "title": "自我效能" }
+      ],
+      "allowed_tags": ["学习", "知识", "成长", "复盘", "刻意练习", "自我效能"]
+    },
+    {
+      "id": "09",
+      "order": 9,
+      "slug": "attention-energy-time",
+      "title": "时间、专注与精力",
+      "description": "时间块、帕累托、注意力、心流、疲劳、精力、睡眠与恢复",
+      "baseline_source_count": 29,
+      "subchapters": [
+        { "id": "09-01", "order": 1, "slug": "time-blocking", "title": "时间块" },
+        { "id": "09-02", "order": 2, "slug": "pareto-principle", "title": "帕累托" },
+        { "id": "09-03", "order": 3, "slug": "attention-control", "title": "注意力" },
+        { "id": "09-04", "order": 4, "slug": "flow-state", "title": "心流" },
+        { "id": "09-05", "order": 5, "slug": "fatigue", "title": "疲劳" },
+        { "id": "09-06", "order": 6, "slug": "energy-and-restoration", "title": "精力、睡眠与恢复" }
+      ],
+      "allowed_tags": ["时间", "专注", "精力", "睡眠", "心流", "帕累托"]
+    },
+    {
+      "id": "10",
+      "order": 10,
+      "slug": "emotions-stress-overload",
+      "title": "情绪、压力与内耗",
+      "description": "内耗管理系统、情绪调节、焦虑反刍、压力失控、意志力、情绪急救",
+      "baseline_source_count": 65,
+      "subchapters": [
+        { "id": "10-01", "order": 1, "slug": "internal-friction-management", "title": "内耗管理系统" },
+        { "id": "10-02", "order": 2, "slug": "emotional-regulation", "title": "情绪调节" },
+        { "id": "10-03", "order": 3, "slug": "anxiety-rumination", "title": "焦虑反刍" },
+        { "id": "10-04", "order": 4, "slug": "stress-escape", "title": "压力失控" },
+        { "id": "10-05", "order": 5, "slug": "willpower", "title": "意志力" },
+        { "id": "10-06", "order": 6, "slug": "emotional-first-aid", "title": "情绪急救" }
+      ],
+      "allowed_tags": ["情绪", "压力", "内耗", "焦虑", "意志力"]
+    },
+    {
+      "id": "11",
+      "order": 11,
+      "slug": "communication-expression-relations",
+      "title": "沟通、表达与关系",
+      "description": "金字塔、STAR、SBI、反馈冲突、框架说服、人际视角与关系",
+      "baseline_source_count": 22,
+      "subchapters": [
+        { "id": "11-01", "order": 1, "slug": "pyramid-principle", "title": "金字塔" },
+        { "id": "11-02", "order": 2, "slug": "star-method", "title": "STAR" },
+        { "id": "11-03", "order": 3, "slug": "sbi-method", "title": "SBI" },
+        { "id": "11-04", "order": 4, "slug": "feedback-conflict", "title": "反馈冲突" },
+        { "id": "11-05", "order": 5, "slug": "persuasive-framing", "title": "框架说服" },
+        { "id": "11-06", "order": 6, "slug": "interpersonal-relations", "title": "人际视角与关系" }
+      ],
+      "allowed_tags": ["沟通", "表达", "关系", "反馈", "STAR", "SBI"]
+    },
+    {
+      "id": "12",
+      "order": 12,
+      "slug": "neuroscience-body-health",
+      "title": "脑科学、身体与健康",
+      "description": "脑区、默认模式网络、神经递质、自主神经、运动代谢、睡眠与健康风险",
+      "baseline_source_count": 30,
+      "subchapters": [
+        { "id": "12-01", "order": 1, "slug": "brain-regions", "title": "脑区" },
+        { "id": "12-02", "order": 2, "slug": "default-mode-network", "title": "默认模式网络" },
+        { "id": "12-03", "order": 3, "slug": "neurotransmitters", "title": "神经递质" },
+        { "id": "12-04", "order": 4, "slug": "autonomic-nervous-system", "title": "自主神经" },
+        { "id": "12-05", "order": 5, "slug": "metabolic-activity", "title": "运动代谢" },
+        { "id": "12-06", "order": 6, "slug": "sleep-and-health-risk", "title": "睡眠与健康风险" }
+      ],
+      "allowed_tags": ["脑科学", "身体", "健康", "神经递质", "睡眠"]
+    }
+  ],
+  "content_types": ["canonical", "card", "case", "comparison", "series", "related"],
+  "risk_flags": ["needs_ocr", "needs_medical_review", "needs_logic_review", "evidence_limited"]
+}

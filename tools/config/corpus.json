@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "baseline_commit": "f876ce90d24ed486cae4060b1a4fe7b0813e9492",
+  "baseline_source_count": 418,
+  "baseline_source_url_count": 418,
+  "baseline_body_image_count": 237,
+  "source_id_algorithm": "hmac-sha256-private-locator-first-32",
+  "cleaner_version": "1.0.0"
+}

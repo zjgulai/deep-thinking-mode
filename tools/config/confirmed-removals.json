@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "entries": [
+    {
+      "canonical_url_sha256": "896c5568a4c320d8d1aba20895b166947a492cbe16508af6000e527abf5e9ab1",
+      "trimmed_line_sha256": "07729259ac53bca3154a02d01a0d92f23af81a8e6326a9f739c9872ec08c2353"
+    },
+    {
+      "canonical_url_sha256": "896c5568a4c320d8d1aba20895b166947a492cbe16508af6000e527abf5e9ab1",
+      "trimmed_line_sha256": "88242bceb42c9c1315284fbafb3515287a4ef0572d1bff8cb1e2ab8bc31a276d"
+    },
+    {
+      "canonical_url_sha256": "a30b39b9e378d038d6c1c216ef2dffed3fd89c913b18d8cbebf50c42702282d5",
+      "trimmed_line_sha256": "c6b692ca3fc2ae731cc3b021b5c1fb610cf5829a118ff4148b1549a4c3969169"
+    },
+    {
+      "canonical_url_sha256": "5cc36138cde1aa2c2af2567e5e20daf4d77dd847a5f0b5bdb5f3c2a7420ec8ac",
+      "trimmed_line_sha256": "d636981573df790341d9df95f6cceae72fde69c10b43f5451663a644a012dd81"
+    },
+    {
+      "canonical_url_sha256": "d2f66df7124978d73465b6b893fe5db973834327ecc5ec177c7d33da90d2d3de",
+      "trimmed_line_sha256": "e405cf2d67b22b2485542462ea2d1b4abd2adce2a427a405cef898135cb4c5f2"
+    }
+  ]
+}

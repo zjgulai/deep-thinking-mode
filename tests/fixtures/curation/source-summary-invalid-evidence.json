@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "source_id": "src_0123456789abcdef0123456789abcdef",
+  "cleaned_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "summary_status": "draft",
+  "evidence_mode": "cleaned_text",
+  "core_question": {
+    "claim_id": "q_question",
+    "text": "无证据正文陈述",
+    "claim_status": "source_claim",
+    "evidence_refs": []
+  },
+  "core_conclusion": null,
+  "key_concepts": [],
+  "mechanisms": [
+    {
+      "claim_id": "m1",
+      "text": "单条结论",
+      "claim_status": "source_claim",
+      "evidence_refs": []
+    }
+  ],
+  "methods": [],
+  "use_cases": [],
+  "limitations": [],
+  "unique_contributions": [],
+  "candidate_model_ids": []
+}

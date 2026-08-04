@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "matching_disclaimer": "本地关键词导航，不是 AI 诊断或专业建议。",
+  "max_auxiliary_models": 2,
+  "safety_rules": [],
+  "model_tombstones": [],
+  "model_relations": [],
+  "routes": [
+    {
+      "route_id": "r01",
+      "priority": 1,
+      "title": "重复路由",
+      "trigger_terms": [{"term": "问题", "weight": 1}],
+      "exclude_terms": [],
+      "minimum_score": 1,
+      "required_context_fields": [
+        "situation",
+        "goal",
+        "facts",
+        "assumptions",
+        "constraints",
+        "attempted",
+        "desired_output"
+      ],
+      "primary_model_id": "mdl-problem-reframing",
+      "auxiliary_model_ids": [],
+      "clarifying_questions": ["核心问题是什么？"],
+      "stop_conditions": ["涉及人身安全风险请暂停"],
+      "safety_gate": "general",
+      "output_sections": [
+        "问题重述",
+        "模型匹配",
+        "综合分析",
+        "行动步骤",
+        "验证指标"
+      ],
+      "test_cases": []
+    },
+    {
+      "route_id": "r01",
+      "priority": 2,
+      "title": "重复路由",
+      "trigger_terms": [{"term": "解决", "weight": 1}],
+      "exclude_terms": [],
+      "minimum_score": 1,
+      "required_context_fields": [
+        "situation",
+        "goal",
+        "facts",
+        "assumptions",
+        "constraints",
+        "attempted",
+        "desired_output"
+      ],
+      "primary_model_id": "mdl-problem-reframing",
+      "auxiliary_model_ids": [],
+      "clarifying_questions": ["是否已有行动尝试？"],
+      "stop_conditions": ["涉及人身安全风险请暂停"],
+      "safety_gate": "general",
+      "output_sections": [
+        "问题重述",
+        "模型匹配",
+        "综合分析",
+        "行动步骤",
+        "验证指标"
+      ],
+      "test_cases": []
+    }
+  ]
+}
