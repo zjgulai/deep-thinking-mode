@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "框架效应-表述如何影响我们的决策",
   "meta": {
-    "name": "框架效应：表述如何影响我们的决策",
+    "name": "框架效应",
     "category": "06",
     "tags": [
       "框架效应",
@@ -22,8 +22,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以框架效应：表述如何影响我们的决策的方式思考这个问题。",
-    "activation_phrase": "请用框架效应：表述如何影响我们的决策分析...",
+    "system_prompt": "请以框架效应的方式思考。",
+    "activation_phrase": "请用框架效应分析...",
     "fallback": ""
   },
   "quality": {

@@ -26,7 +26,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以问题重构的10种实战方法的方式思考这个问题。",
+    "system_prompt": "请以问题重构的10种实战方法的方式思考。",
     "activation_phrase": "请用问题重构的10种实战方法分析...",
     "fallback": ""
   },

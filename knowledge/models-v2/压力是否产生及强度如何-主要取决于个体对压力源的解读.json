@@ -2,13 +2,13 @@
   "schema_version": "2.0.0",
   "id": "压力是否产生及强度如何-主要取决于个体对压力源的解读",
   "meta": {
-    "name": "“看待方式”是核心开关，但并非唯一因素",
+    "name": "“看待方式”是核心开关，但并非",
     "category": "09",
     "tags": [],
     "source": "压力是否产生及强度如何，主要取决于个体对压力源的解读"
   },
   "engine": {
-    "core_question": "如何有效完成这件事？“看待方式”是核心开关，但并非唯一因素的操作路径是什么？",
+    "core_question": "如何有效完成这件事？“看待方式”是核心开关，但并非的操作路径是什么？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -19,8 +19,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以“看待方式”是核心开关，但并非唯一因素的方式思考这个问题。",
-    "activation_phrase": "请用“看待方式”是核心开关，但并非唯一因素分析...",
+    "system_prompt": "请以“看待方式”是核心开关，但并非的方式思考。",
+    "activation_phrase": "请用“看待方式”是核心开关，但并非分析...",
     "fallback": ""
   },
   "quality": {

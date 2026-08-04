@@ -24,7 +24,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以真正高级的清醒，是逻辑严谨。的方式思考这个问题。",
+    "system_prompt": "请以真正高级的清醒，是逻辑严谨。的方式思考。",
     "activation_phrase": "请用真正高级的清醒，是逻辑严谨。分析...",
     "fallback": ""
   },

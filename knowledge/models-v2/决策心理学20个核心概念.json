@@ -19,7 +19,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以决策心理学20个核心概念的方式思考这个问题。",
+    "system_prompt": "请以决策心理学20个核心概念的方式思考。",
     "activation_phrase": "请用决策心理学20个核心概念分析...",
     "fallback": ""
   },

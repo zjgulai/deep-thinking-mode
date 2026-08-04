@@ -2,13 +2,13 @@
   "schema_version": "2.0.0",
   "id": "框架思维不是万能药-正视局限方显认知高度",
   "meta": {
-    "name": "框架思维不是万能药：正视局限方显认知高度",
+    "name": "框架思维不是万能药",
     "category": "08",
     "tags": [],
     "source": "框架思维不是万能药：正视局限方显认知高度"
   },
   "engine": {
-    "core_question": "如何有效完成这件事？框架思维不是万能药：正视局限方显认知高度的操作路径是什么？",
+    "core_question": "如何有效完成这件事？框架思维不是万能药的操作路径是什么？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -19,8 +19,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以框架思维不是万能药：正视局限方显认知高度的方式思考这个问题。",
-    "activation_phrase": "请用框架思维不是万能药：正视局限方显认知高度分析...",
+    "system_prompt": "请以框架思维不是万能药的方式思考。",
+    "activation_phrase": "请用框架思维不是万能药分析...",
     "fallback": ""
   },
   "quality": {

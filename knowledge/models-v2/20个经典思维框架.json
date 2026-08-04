@@ -22,7 +22,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以20个经典思维框架的方式思考这个问题。",
+    "system_prompt": "请以20个经典思维框架的方式思考。",
     "activation_phrase": "请用20个经典思维框架分析...",
     "fallback": ""
   },

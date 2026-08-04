@@ -2,13 +2,13 @@
   "schema_version": "2.0.0",
   "id": "读懂论证-高手说服-作文拿分-辩赢他人-最终靠的都是论证",
   "meta": {
-    "name": "读懂论证：高手说服、作文拿分、辩赢他人，最终靠的都是论证",
+    "name": "读懂论证",
     "category": "02",
     "tags": [],
     "source": "读懂论证：高手说服、作文拿分、辩赢他人，最终靠的都是论证"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？读懂论证：高手说服、作文拿分、辩赢他人，最终靠的都是论证如何找到它？",
+    "core_question": "这个问题的根本原因是什么？读懂论证如何找到它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -19,8 +19,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以读懂论证：高手说服、作文拿分、辩赢他人，最终靠的都是论证的方式思考这个问题。",
-    "activation_phrase": "请用读懂论证：高手说服、作文拿分、辩赢他人，最终靠的都是论证分析...",
+    "system_prompt": "请以读懂论证的方式思考。",
+    "activation_phrase": "请用读懂论证分析...",
     "fallback": ""
   },
   "quality": {

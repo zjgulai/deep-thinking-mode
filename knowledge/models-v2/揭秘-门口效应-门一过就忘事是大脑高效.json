@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "揭秘-门口效应-门一过就忘事是大脑高效",
   "meta": {
-    "name": "揭秘“门口效应”：门一过就忘事是大脑高效",
+    "name": "揭秘“门口效应”",
     "category": "02",
     "tags": [
       "认知科学"
@@ -10,7 +10,7 @@
     "source": "揭秘“门口效应”：门一过就忘事是大脑高效"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？揭秘“门口效应”：门一过就忘事是大脑高效如何定义它？",
+    "core_question": "这件事的本质是什么？揭秘“门口效应”如何定义它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -21,8 +21,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以揭秘“门口效应”：门一过就忘事是大脑高效的方式思考这个问题。",
-    "activation_phrase": "请用揭秘“门口效应”：门一过就忘事是大脑高效分析...",
+    "system_prompt": "请以揭秘“门口效应”的方式思考。",
+    "activation_phrase": "请用揭秘“门口效应”分析...",
     "fallback": ""
   },
   "quality": {

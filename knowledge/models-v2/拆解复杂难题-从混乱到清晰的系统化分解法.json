@@ -2,13 +2,13 @@
   "schema_version": "2.0.0",
   "id": "拆解复杂难题-从混乱到清晰的系统化分解法",
   "meta": {
-    "name": "拆解复杂难题：从混乱到清晰的系统化分解法",
+    "name": "拆解复杂难题",
     "category": "04",
     "tags": [],
     "source": "拆解复杂难题：从混乱到清晰的系统化分解法"
   },
   "engine": {
-    "core_question": "如何有效完成这件事？拆解复杂难题：从混乱到清晰的系统化分解法的操作路径是什么？",
+    "core_question": "如何有效完成这件事？拆解复杂难题的操作路径是什么？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -19,8 +19,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以拆解复杂难题：从混乱到清晰的系统化分解法的方式思考这个问题。",
-    "activation_phrase": "请用拆解复杂难题：从混乱到清晰的系统化分解法分析...",
+    "system_prompt": "请以拆解复杂难题的方式思考。",
+    "activation_phrase": "请用拆解复杂难题分析...",
     "fallback": ""
   },
   "quality": {

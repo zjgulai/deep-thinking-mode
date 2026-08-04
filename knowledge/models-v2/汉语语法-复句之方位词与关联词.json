@@ -19,7 +19,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以第一部分：方位词的方式思考这个问题。",
+    "system_prompt": "请以第一部分：方位词的方式思考。",
     "activation_phrase": "请用第一部分：方位词分析...",
     "fallback": ""
   },

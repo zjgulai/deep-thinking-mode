@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "5w2h分析法-结构化反省-高效突破自我的工具",
   "meta": {
-    "name": "5W2H分析法：结构化反省，高效突破自我的工具",
+    "name": "5W2H分析法",
     "category": "07",
     "tags": [],
     "source": "5W2H分析法：结构化反省，高效突破自我的工具"
@@ -21,8 +21,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以5W2H分析法：结构化反省，高效突破自我的工具的方式思考这个问题。",
-    "activation_phrase": "请用5W2H分析法：结构化反省，高效突破自我的工具分析...",
+    "system_prompt": "请以5W2H分析法的方式思考。",
+    "activation_phrase": "请用5W2H分析法分析...",
     "fallback": ""
   },
   "quality": {

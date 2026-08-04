@@ -27,7 +27,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以框架缩放三层对照表的方式思考这个问题。",
+    "system_prompt": "请以框架缩放三层对照表的方式思考。",
     "activation_phrase": "请用框架缩放三层对照表分析...",
     "fallback": ""
   },

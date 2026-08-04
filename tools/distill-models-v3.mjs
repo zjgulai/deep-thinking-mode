@@ -61,14 +61,25 @@ function distillV2(text) {
   const lines = text.split("\n");
   const m = { name: "", core_question: "", trigger_signals: [], stop_conditions: [], reasoning_protocol: [], example_trace: "", tags: [] };
 
-  // 模型名
+  // 模型名 — 激进精简到15字以内
   for (let i = 0; i < 8; i++) {
     const t = lines[i]?.trim() || "";
     const h = t.match(/^#+\s*(.+)/);
     if (h) { m.name = h[1]; break; }
     if (t.length > 4 && !/^[=*-]/.test(t) && !m.name) m.name = t;
   }
-  m.name = m.name.replace(/^.*?[·•]\s*/g, "").replace(/（[^）]{0,30}速查[^）]*）/, "").replace(/\s*[:-]\s*(?:终极|完整|高阶|实操|落地|深度|全网|超精).*$/, "").replace(/__.*$/, "").replace(/^[\s·•]+/, "").trim().slice(0, 50);
+  m.name = m.name
+    .replace(/^.*?[·•]/g, "")           // 去系列前缀
+    .replace(/[：:]\s*(?:终极|完整|高阶|实操|落地|深度|全网|超精|一套|帮你).*$/, "")  // 去冒号后修饰
+    .replace(/（[^）]*速查[^）]*）/, "")
+    .replace(/__.*$/, "")
+    .replace(/^[\s·•：:]+/, "")
+    .trim();
+  // 如果还是太长，取前15字
+  if (m.name.length > 15) {
+    const colonPos = m.name.indexOf("：");
+    m.name = colonPos > 2 ? m.name.slice(0, colonPos) : m.name.slice(0, 15);
+  }
 
   // 正文起点
   let bs = 0;
@@ -121,11 +132,21 @@ function distillV2(text) {
     if (steps && steps.length >= 2) {
       m.reasoning_protocol = steps.map((s, idx) => {
         let label = s.replace(/^[\s\d\.、①②③④⑤⑥⑦⑧⑨⑩步骤Step第步\)]+/g, "").trim();
+        // 取冒号前作为name（≤12字），冒号后作为action
         const colonIdx = label.indexOf("：");
-        const shortName = colonIdx > 2 ? label.slice(0, colonIdx).slice(0, 15) : label.slice(0, 15);
-        return { step: idx + 1, name: shortName, action: label.slice(0, 150), thinking_question: "", expected_output: "", pitfall: "" };
+        let shortName, actionText;
+        if (colonIdx > 1 && colonIdx <= 10) {
+          shortName = label.slice(0, colonIdx);
+          actionText = label.slice(colonIdx + 1).trim();
+        } else {
+          shortName = label.slice(0, 10);
+          actionText = label.slice(0, 140);
+        }
+        // 如果action以name开头（重复），去掉重复前缀
+        if (actionText.startsWith(shortName)) actionText = actionText.slice(shortName.length).replace(/^[：:\s]+/, "");
+        return { step: idx + 1, name: shortName, action: actionText || label.slice(0, 140), thinking_question: "", expected_output: "", pitfall: "" };
       })
-      .filter(s => !/训练|搭配|组合|避坑|延伸|阅读|常见|误区|注意|补充|日常/.test(s.name))
+      .filter(s => s.name.length >= 2 && !/训练|搭配|组合|避坑|延伸|阅读|常见|误区|注意|补充|日常|http|mmbiz/i.test(s.name))
       .filter((s, i, arr) => i === 0 || s.name !== arr[i-1].name)
       .slice(0, 5);
     }
@@ -162,8 +183,8 @@ function buildPrompt(model) {
   const steps = model.reasoning_protocol.map(s =>
     `Step ${s.step} - ${s.name}：${s.action}`
   ).join('\n\n');
-  const shortName = model.name.length > 8 ? model.name.slice(0, 8) + '...' : model.name;
-  return `你现在以「${shortName}」思维模式运行。严格遵循以下推理协议：\n\n${steps}\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出你的分析，再进入下一步。如果某步骤不适用当前问题，说明原因后继续。`;
+  const cleanName = model.name.slice(0, 12);
+  return `你现在以「${cleanName}」思维模式运行。严格遵循以下推理协议：\n\n${steps}\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。`;
 }
 
 // ─── 质量评分 v3 ─────────────────────────────────────────
@@ -216,8 +237,8 @@ for (const f of files) {
       output_format: { structure: "", example: mdl.example_trace }
     },
     codex: {
-      system_prompt: prompt || `请以${mdl.name}的方式思考这个问题。`,
-      activation_phrase: `请用${mdl.name}分析...`,
+      system_prompt: prompt || `请以${mdl.name}的方式思考。`,
+      activation_phrase: `请用${mdl.name.slice(0,15)}分析...`,
       fallback: ""
     },
     quality: { reasoning_completeness: quality, example_coverage: 0, prompt_effectiveness: prompt ? 3 : 1, overall: quality }

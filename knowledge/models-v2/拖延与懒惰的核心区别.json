@@ -25,7 +25,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以拖延与懒惰的核心区别的方式思考这个问题。",
+    "system_prompt": "请以拖延与懒惰的核心区别的方式思考。",
     "activation_phrase": "请用拖延与懒惰的核心区别分析...",
     "fallback": ""
   },

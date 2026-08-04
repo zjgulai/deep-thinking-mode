@@ -27,7 +27,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以面对不好的情绪，对抗还是接纳的方式思考这个问题。",
+    "system_prompt": "请以面对不好的情绪，对抗还是接纳的方式思考。",
     "activation_phrase": "请用面对不好的情绪，对抗还是接纳分析...",
     "fallback": ""
   },

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "解码精神熵增-从内心混乱到掌控自我",
   "meta": {
-    "name": "解码精神熵增：从内心混乱到掌控自我",
+    "name": "解码精神熵增",
     "category": "09",
     "tags": [
       "精神熵增解码",
@@ -14,7 +14,7 @@
     "source": "解码精神熵增：从内心混乱到掌控自我"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？解码精神熵增：从内心混乱到掌控自我如何找到它？",
+    "core_question": "这个问题的根本原因是什么？解码精神熵增如何找到它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -25,8 +25,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以解码精神熵增：从内心混乱到掌控自我的方式思考这个问题。",
-    "activation_phrase": "请用解码精神熵增：从内心混乱到掌控自我分析...",
+    "system_prompt": "请以解码精神熵增的方式思考。",
+    "activation_phrase": "请用解码精神熵增分析...",
     "fallback": ""
   },
   "quality": {

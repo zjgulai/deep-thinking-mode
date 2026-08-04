@@ -22,7 +22,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以内耗根源揭秘的方式思考这个问题。",
+    "system_prompt": "请以内耗根源揭秘的方式思考。",
     "activation_phrase": "请用内耗根源揭秘分析...",
     "fallback": ""
   },

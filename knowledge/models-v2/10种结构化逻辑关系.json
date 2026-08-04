@@ -19,7 +19,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以10种结构化逻辑关系的方式思考这个问题。",
+    "system_prompt": "请以10种结构化逻辑关系的方式思考。",
     "activation_phrase": "请用10种结构化逻辑关系分析...",
     "fallback": ""
   },

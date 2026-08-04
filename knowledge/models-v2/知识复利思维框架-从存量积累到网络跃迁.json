@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "知识复利思维框架-从存量积累到网络跃迁",
   "meta": {
-    "name": "知识复利思维框架：从存量积累到网络跃迁",
+    "name": "知识复利思维框架",
     "category": "08",
     "tags": [
       "知识复利",
@@ -24,8 +24,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以知识复利思维框架：从存量积累到网络跃迁的方式思考这个问题。",
-    "activation_phrase": "请用知识复利思维框架：从存量积累到网络跃迁分析...",
+    "system_prompt": "请以知识复利思维框架的方式思考。",
+    "activation_phrase": "请用知识复利思维框架分析...",
     "fallback": ""
   },
   "quality": {

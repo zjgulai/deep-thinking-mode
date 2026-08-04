@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "容错率自检卡",
   "meta": {
-    "name": "容错率自检卡 \\* { margin: 0; padding: 0; outline: 0; } b",
+    "name": "容错率自检卡 \\* { mar",
     "category": "00",
     "tags": [
       "576B95;",
@@ -84,8 +84,8 @@
     }
   },
   "codex": {
-    "system_prompt": "你现在以「容错率自检卡 \\* { 」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - ; } .\\_\\_page\\_content\\_\\：; } .\\_\\_page\\_content\\_\\_ { max-width: 667px; margin: 0 auto; padding: 20px; text-size-adjust: 100%; color: rgba(0, 0, 0, 0.9); padding-bottom: 64px\n\nStep 2 - ; margin-bottom: 14px; fo：; margin-bottom: 14px; font-weight: 500; } .\\_\\_meta\\_\\_ { color: rgba(0, 0, 0, 0.3); font-size: 15px; line-height: 20px; hyphens: auto; word-break:\n\nStep 3 - ; background-color: rgba(：; background-color: rgba(0, 0, 0, 0.05); padding: 0 4px; margin: 0 10px 10px 0; } blockquote.source { padding: 10px; margin: 30px 0; border-left: 5p\n\nStep 4 - ; color: rgba(0, 0, 0, 0.：; color: rgba(0, 0, 0, 0.7); margin-bottom: 12px; } .pay\\_subscribe\\_hint { font-size: 13px; color: rgba(0, 0, 0, 0.4); } .\\_\\_bottom-bar\\_\\_ { displ\n\nStep 5 - ; } .\\_\\_bottom-bar\\_\\_ .：; } .\\_\\_bottom-bar\\_\\_ .left { display: flex; align-items: center; font-size: 15px; white-space: nowrap; } .\\_\\_bottom-bar\\_\\_ .right { display: fl\n\nStep 6 - ; font-size: 14px; } .\\_\\：; font-size: 14px; } .\\_\\_bottom-bar\\_\\_ .sns\\_opr\\_btn:not(:last-child) { margin-right: 16px; } .\\_\\_bottom-bar\\_\\_ .sns\\_opr\\_btn > img { margin-r\n\nStep 7 - ，内部截止日提前2天。例：30分钟通勤按45分钟算：，内部截止日提前2天。例：30分钟通勤按45分钟算。\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出你的分析，再进入下一步。如果某步骤不适用当前问题，说明原因后继续。",
-    "activation_phrase": "请用容错率自检卡 \\* { margin: 0; padding: 0; outline: 0; } b分析...",
+    "system_prompt": "你现在以「容错率自检卡 \\* { 」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - ; } .\\_\\_page\\_content\\_\\：; } .\\_\\_page\\_content\\_\\_ { max-width: 667px; margin: 0 auto; padding: 20px; text-size-adjust: 100%; color: rgba(0, 0, 0, 0.9); padding-bottom: 64px\n\nStep 2 - ; margin-bottom: 14px; fo：; margin-bottom: 14px; font-weight: 500; } .\\_\\_meta\\_\\_ { color: rgba(0, 0, 0, 0.3); font-size: 15px; line-height: 20px; hyphens: auto; word-break:\n\nStep 3 - ; background-color: rgba(：; background-color: rgba(0, 0, 0, 0.05); padding: 0 4px; margin: 0 10px 10px 0; } blockquote.source { padding: 10px; margin: 30px 0; border-left: 5p\n\nStep 4 - ; color: rgba(0, 0, 0, 0.：; color: rgba(0, 0, 0, 0.7); margin-bottom: 12px; } .pay\\_subscribe\\_hint { font-size: 13px; color: rgba(0, 0, 0, 0.4); } .\\_\\_bottom-bar\\_\\_ { displ\n\nStep 5 - ; } .\\_\\_bottom-bar\\_\\_ .：; } .\\_\\_bottom-bar\\_\\_ .left { display: flex; align-items: center; font-size: 15px; white-space: nowrap; } .\\_\\_bottom-bar\\_\\_ .right { display: fl\n\nStep 6 - ; font-size: 14px; } .\\_\\：; font-size: 14px; } .\\_\\_bottom-bar\\_\\_ .sns\\_opr\\_btn:not(:last-child) { margin-right: 16px; } .\\_\\_bottom-bar\\_\\_ .sns\\_opr\\_btn > img { margin-r\n\nStep 7 - ，内部截止日提前2天。例：30分钟通勤按45分钟算：，内部截止日提前2天。例：30分钟通勤按45分钟算。\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用容错率自检卡 \\* { mar分析...",
     "fallback": ""
   },
   "quality": {

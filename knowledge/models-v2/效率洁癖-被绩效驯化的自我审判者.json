@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "效率洁癖-被绩效驯化的自我审判者",
   "meta": {
-    "name": "效率洁癖：被绩效驯化的自我审判者",
+    "name": "效率洁癖",
     "category": "09",
     "tags": [],
     "source": "效率洁癖：被绩效驯化的自我审判者"
@@ -22,8 +22,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以效率洁癖：被绩效驯化的自我审判者的方式思考这个问题。",
-    "activation_phrase": "请用效率洁癖：被绩效驯化的自我审判者分析...",
+    "system_prompt": "请以效率洁癖的方式思考。",
+    "activation_phrase": "请用效率洁癖分析...",
     "fallback": ""
   },
   "quality": {

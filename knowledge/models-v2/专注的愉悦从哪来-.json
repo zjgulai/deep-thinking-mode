@@ -27,7 +27,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以专注的愉悦从哪来？的方式思考这个问题。",
+    "system_prompt": "请以专注的愉悦从哪来？的方式思考。",
     "activation_phrase": "请用专注的愉悦从哪来？分析...",
     "fallback": ""
   },

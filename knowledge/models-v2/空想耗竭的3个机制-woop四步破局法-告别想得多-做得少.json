@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "空想耗竭的3个机制-woop四步破局法-告别想得多-做得少",
   "meta": {
-    "name": "空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少",
+    "name": "空想耗竭的3个机制+WOOP四步破局法",
     "category": "07",
     "tags": [],
     "source": "空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少"
@@ -23,8 +23,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少的方式思考这个问题。",
-    "activation_phrase": "请用空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少分析...",
+    "system_prompt": "请以空想耗竭的3个机制+WOOP四步破局法的方式思考。",
+    "activation_phrase": "请用空想耗竭的3个机制+WOOP四分析...",
     "fallback": ""
   },
   "quality": {

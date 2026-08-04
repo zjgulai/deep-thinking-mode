@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "涌现思维-从蚂蚁的智慧-看懂你该怎么成长",
   "meta": {
-    "name": "涌现思维：从蚂蚁的智慧，看懂你该怎么成长",
+    "name": "涌现思维",
     "category": "05",
     "tags": [],
     "source": "涌现思维：从蚂蚁的智慧，看懂你该怎么成长"
@@ -21,8 +21,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以涌现思维：从蚂蚁的智慧，看懂你该怎么成长的方式思考这个问题。",
-    "activation_phrase": "请用涌现思维：从蚂蚁的智慧，看懂你该怎么成长分析...",
+    "system_prompt": "请以涌现思维的方式思考。",
+    "activation_phrase": "请用涌现思维分析...",
     "fallback": ""
   },
   "quality": {

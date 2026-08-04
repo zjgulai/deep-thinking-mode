@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "ooda循环不确定环境下的快速决策与行动法则",
   "meta": {
-    "name": "OODA循环不确定环境下的快速决策与行动法则",
+    "name": "OODA循环不确定环境下的快速",
     "category": "08",
     "tags": [
       "框架思维",
@@ -26,8 +26,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以OODA循环不确定环境下的快速决策与行动法则的方式思考这个问题。",
-    "activation_phrase": "请用OODA循环不确定环境下的快速决策与行动法则分析...",
+    "system_prompt": "请以OODA循环不确定环境下的快速的方式思考。",
+    "activation_phrase": "请用OODA循环不确定环境下的快速分析...",
     "fallback": ""
   },
   "quality": {

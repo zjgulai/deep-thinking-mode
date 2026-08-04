@@ -19,7 +19,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以运动后为什么会发晕的方式思考这个问题。",
+    "system_prompt": "请以运动后为什么会发晕的方式思考。",
     "activation_phrase": "请用运动后为什么会发晕分析...",
     "fallback": ""
   },

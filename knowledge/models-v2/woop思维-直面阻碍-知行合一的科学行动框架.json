@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "woop思维-直面阻碍-知行合一的科学行动框架",
   "meta": {
-    "name": "WOOP思维：直面阻碍、知行合一的科学行动框架",
+    "name": "WOOP思维",
     "category": "07",
     "tags": [],
     "source": "WOOP思维：直面阻碍、知行合一的科学行动框架"
@@ -21,8 +21,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以WOOP思维：直面阻碍、知行合一的科学行动框架的方式思考这个问题。",
-    "activation_phrase": "请用WOOP思维：直面阻碍、知行合一的科学行动框架分析...",
+    "system_prompt": "请以WOOP思维的方式思考。",
+    "activation_phrase": "请用WOOP思维分析...",
     "fallback": ""
   },
   "quality": {

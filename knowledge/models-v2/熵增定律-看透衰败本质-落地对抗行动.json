@@ -2,13 +2,13 @@
   "schema_version": "2.0.0",
   "id": "熵增定律-看透衰败本质-落地对抗行动",
   "meta": {
-    "name": "熵增定律：看透衰败本质、落地对抗行动",
+    "name": "熵增定律",
     "category": "02",
     "tags": [],
     "source": "熵增定律：看透衰败本质、落地对抗行动"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？熵增定律：看透衰败本质、落地对抗行动如何定义它？",
+    "core_question": "这件事的本质是什么？熵增定律如何定义它？",
     "trigger_signals": [
       "**应对方法**"
     ],
@@ -21,8 +21,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以熵增定律：看透衰败本质、落地对抗行动的方式思考这个问题。",
-    "activation_phrase": "请用熵增定律：看透衰败本质、落地对抗行动分析...",
+    "system_prompt": "请以熵增定律的方式思考。",
+    "activation_phrase": "请用熵增定律分析...",
     "fallback": ""
   },
   "quality": {

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "思维工具箱-16个被反复验证的底层认知模型",
   "meta": {
-    "name": "思维工具箱：16个被反复验证的底层认知模型",
+    "name": "思维工具箱",
     "category": "04",
     "tags": [
       "wechat_redirec"
@@ -23,8 +23,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以思维工具箱：16个被反复验证的底层认知模型的方式思考这个问题。",
-    "activation_phrase": "请用思维工具箱：16个被反复验证的底层认知模型分析...",
+    "system_prompt": "请以思维工具箱的方式思考。",
+    "activation_phrase": "请用思维工具箱分析...",
     "fallback": ""
   },
   "quality": {

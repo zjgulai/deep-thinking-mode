@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "问题的六重面目-读懂问题的6种本质",
   "meta": {
-    "name": "问题的六重面目：读懂问题的6种本质",
+    "name": "问题的六重面目",
     "category": "08",
     "tags": [],
     "source": "问题的六重面目：读懂问题的6种本质"
@@ -25,8 +25,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以问题的六重面目：读懂问题的6种本质的方式思考这个问题。",
-    "activation_phrase": "请用问题的六重面目：读懂问题的6种本质分析...",
+    "system_prompt": "请以问题的六重面目的方式思考。",
+    "activation_phrase": "请用问题的六重面目分析...",
     "fallback": ""
   },
   "quality": {

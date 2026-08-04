@@ -25,7 +25,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以什么是真正的休息的方式思考这个问题。",
+    "system_prompt": "请以什么是真正的休息的方式思考。",
     "activation_phrase": "请用什么是真正的休息分析...",
     "fallback": ""
   },

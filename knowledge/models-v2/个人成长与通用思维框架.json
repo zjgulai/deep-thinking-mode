@@ -19,7 +19,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以个人成长与通用思维框架的方式思考这个问题。",
+    "system_prompt": "请以个人成长与通用思维框架的方式思考。",
     "activation_phrase": "请用个人成长与通用思维框架分析...",
     "fallback": ""
   },

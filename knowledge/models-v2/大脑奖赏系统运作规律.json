@@ -25,7 +25,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以大脑奖赏系统运作规律的方式思考这个问题。",
+    "system_prompt": "请以大脑奖赏系统运作规律的方式思考。",
     "activation_phrase": "请用大脑奖赏系统运作规律分析...",
     "fallback": ""
   },

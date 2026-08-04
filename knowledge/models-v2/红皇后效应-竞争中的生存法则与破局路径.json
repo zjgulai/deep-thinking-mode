@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "id": "红皇后效应-竞争中的生存法则与破局路径",
   "meta": {
-    "name": "红皇后效应：竞争中的生存法则与破局路径",
+    "name": "红皇后效应",
     "category": "03",
     "tags": [],
     "source": "红皇后效应：竞争中的生存法则与破局路径"
@@ -24,8 +24,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以红皇后效应：竞争中的生存法则与破局路径的方式思考这个问题。",
-    "activation_phrase": "请用红皇后效应：竞争中的生存法则与破局路径分析...",
+    "system_prompt": "请以红皇后效应的方式思考。",
+    "activation_phrase": "请用红皇后效应分析...",
     "fallback": ""
   },
   "quality": {

@@ -2,13 +2,13 @@
   "schema_version": "2.0.0",
   "id": "5w2h七问法-帮你把任何事想全想透",
   "meta": {
-    "name": "5W2H七问法，帮你把任何事想全想透",
+    "name": "5W2H七问法，帮你把任何事想",
     "category": "07",
     "tags": [],
     "source": "5W2H七问法，帮你把任何事想全想透"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？5W2H七问法，帮你把任何事想全想透如何定义它？",
+    "core_question": "这件事的本质是什么？5W2H七问法，帮你把任何事想如何定义它？",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -19,8 +19,8 @@
     }
   },
   "codex": {
-    "system_prompt": "请以5W2H七问法，帮你把任何事想全想透的方式思考这个问题。",
-    "activation_phrase": "请用5W2H七问法，帮你把任何事想全想透分析...",
+    "system_prompt": "请以5W2H七问法，帮你把任何事想的方式思考。",
+    "activation_phrase": "请用5W2H七问法，帮你把任何事想分析...",
     "fallback": ""
   },
   "quality": {

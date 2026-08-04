@@ -21,7 +21,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以穷思竭虑的心理学解读的方式思考这个问题。",
+    "system_prompt": "请以穷思竭虑的心理学解读的方式思考。",
     "activation_phrase": "请用穷思竭虑的心理学解读分析...",
     "fallback": ""
   },

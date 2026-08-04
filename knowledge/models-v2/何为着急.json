@@ -24,7 +24,7 @@
     }
   },
   "codex": {
-    "system_prompt": "请以四大核心类型的方式思考这个问题。",
+    "system_prompt": "请以四大核心类型的方式思考。",
     "activation_phrase": "请用四大核心类型分析...",
     "fallback": ""
   },
