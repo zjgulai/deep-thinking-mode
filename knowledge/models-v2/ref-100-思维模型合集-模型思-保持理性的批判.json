@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-保持理性的批判",
+  "meta": {
+    "name": "保持理性的批判",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):保持理性的批判",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "位置。理性的批判精神是波普尔 证伪主义的精髓和本质。“科学的方法是批判的方法”，“批判是任何理 智发展的主要动力”。不迷信权威，不束缚于教条，得出科学结论之后 不固步自封，而是准备随时接受批判和否定。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以保持理性的批判的方式思考这个问题。",
+    "activation_phrase": "请用保持理性的批判分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

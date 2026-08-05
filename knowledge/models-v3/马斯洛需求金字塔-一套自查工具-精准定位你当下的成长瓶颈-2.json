@@ -5,7 +5,8 @@
     "name": "马斯洛需求金字塔",
     "category": "10",
     "tags": [],
-    "skill_name": "马斯洛需求金字塔"
+    "skill_name": "马斯洛需求金字塔",
+    "sourceTitle": "马斯洛需求金字塔：一套自查工具，精准定位你当下的成长瓶颈"
   },
   "core_definition": "核心是生活的确定性，包含稳定收入、存款保障、人身健康、无未知风险",
   "when_to_use": {
@@ -63,7 +64,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

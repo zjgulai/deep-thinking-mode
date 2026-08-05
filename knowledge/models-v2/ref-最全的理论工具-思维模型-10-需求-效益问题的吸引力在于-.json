@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-需求-效益问题的吸引力在于-",
+  "meta": {
+    "name": "需求——效益问题的吸引力在于：",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):需求——效益问题的吸引力在于：",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "僵化的公式。你用固定不变的模式去销售，那当然是必败无疑；",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，  “一台速度更快的设备可以给 您怎样的帮助”，也许会得到“这当然会除去生产中的瓶颈问题，并且可以使熟"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以需求——效益问题的吸引力在于：的方式思考这个问题。",
+    "activation_phrase": "请用需求——效益问题的吸引力在于：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

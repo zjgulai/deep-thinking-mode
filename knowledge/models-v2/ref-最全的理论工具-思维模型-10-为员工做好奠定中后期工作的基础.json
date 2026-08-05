@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-为员工做好奠定中后期工作的基础",
+  "meta": {
+    "name": "为员工做好奠定中后期工作的基础",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):为员工做好奠定中后期工作的基础",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "之所以说职业锚是中后期职业工作的基础。是因为职业锚是员工在通过工作 经验的积累后产生的，它反映了该员工价值观和被发现的才干。当员工抛锚于某 一种职业工作过程，就是自我认知过程。就是把职业工作与自我观相结合的过程， 开始决定成年期的主要生活",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以为员工做好奠定中后期工作的基础的方式思考这个问题。",
+    "activation_phrase": "请用为员工做好奠定中后期工作的基础分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

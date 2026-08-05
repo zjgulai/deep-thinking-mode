@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-忽视基准概率-对结果的先验概率不敏感",
+  "meta": {
+    "name": "忽视基准概率，对结果的先验概率不敏感",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):忽视基准概率，对结果的先验概率不敏感",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "大学生，朋友们形容她稍微有些不切实际、情绪化和",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "股票经纪人给你推荐两只股票，A 股票只是简单介绍，B 股票进"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以忽视基准概率，对结果的先验概率不敏感的方式思考这个问题。",
+    "activation_phrase": "请用忽视基准概率，对结果的先验概率分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

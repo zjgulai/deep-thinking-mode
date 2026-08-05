@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-简单性原理",
+  "meta": {
+    "name": "简单性原理",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):简单性原理",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "自然界既是简单的，又是复杂的。科学理论体系的构建，在尊重客观 事实的前提下，应用简单性原则选择相对简单的体系是合理的。科学 理论的简单性原理，对科学研究提出了具体要求： 一是正确性，即理论与实践的一致，科学知识与经验事实的一致；  1263",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "物理学从简单性原则的普遍要求出发，建立了各子学科作为基石"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以简单性原理的方式思考这个问题。",
+    "activation_phrase": "请用简单性原理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

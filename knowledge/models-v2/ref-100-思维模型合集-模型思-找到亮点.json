@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-找到亮点",
+  "meta": {
+    "name": "找到亮点",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):找到亮点",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "案例:杰里斯特宁工作于国际慈善组织“救助儿童会”,在 1990 年的时候, 应越南政府邀请,去协助改善当地儿童营养不良的问题,经过大量的研 究报告,确定了儿童营养不良的原因是一系列综合问题共同作用导致的 结果,包括卫生状况差,生活贫困,没有",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "杰里斯特宁工作于国际慈善组织“救助儿童会”,在 1990 年的时候,"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以找到亮点的方式思考这个问题。",
+    "activation_phrase": "请用找到亮点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-不要刻意要求组边界与标准一致",
+  "meta": {
+    "name": "不要刻意要求组边界与标准一致",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):不要刻意要求组边界与标准一致",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在制作频数表和直方图时如果给出了标准值，则将分组的边界值确定在标准值 处，使之能明确区分合格品与不良品。 3.4.5. 应用示范  如下表为某工程 10 组试块的抗压强度数据 150 个，但很难直接判断其质量 状况是否正常、稳定和受控情况，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以不要刻意要求组边界与标准一致的方式思考这个问题。",
+    "activation_phrase": "请用不要刻意要求组边界与标准一致分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

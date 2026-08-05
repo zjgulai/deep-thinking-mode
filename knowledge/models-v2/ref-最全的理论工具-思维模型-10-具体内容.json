@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-具体内容",
+  "meta": {
+    "name": "具体内容",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):具体内容",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "2.1. 收益性指标  分析收益性指标，目的在于观察客户一定时期的收益及获利能力。主要指标 含义及计算公式如下表所示：  收益性指标 收益性比率 基础含义 计算公式",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以具体内容的方式思考这个问题。",
+    "activation_phrase": "请用具体内容分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

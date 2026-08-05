@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-供货商的影响力-活力-能力",
+  "meta": {
+    "name": "供货商的影响力、活力、能力",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):供货商的影响力、活力、能力",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "当企业有许多供货商时，企业将有多种选择；但当供货商很少时，供货商就 享有掌控权。形成供货商议价力量的主要原因就是基本的劳务或主要的零组件由 少数厂商供应，且没有替代品，同时本身又欠缺向上游整合的能力。 \f http://wiki.mbal",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以供货商的影响力、活力、能力的方式思考这个问题。",
+    "activation_phrase": "请用供货商的影响力、活力、能力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

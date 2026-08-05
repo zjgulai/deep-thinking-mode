@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-与头脑风暴法的区别",
+  "meta": {
+    "name": "与头脑风暴法的区别",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):与头脑风暴法的区别",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "头脑风暴法要明确提出主题，并且尽可能地提出具体的课题。与此相反，戈 登法并不明确地表示课题，而是在给出抽象的主题之后，寻求卓越的构想。例如， 在寻求烤面包器的构想时，按照头脑风暴法就是提出一个新的烤面包器的构想的 课题。但是，就同一个课题",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "， 在寻求烤面包器的构想时，按照头脑风暴法就是提出一个新的烤面包器的构想的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以与头脑风暴法的区别的方式思考这个问题。",
+    "activation_phrase": "请用与头脑风暴法的区别分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

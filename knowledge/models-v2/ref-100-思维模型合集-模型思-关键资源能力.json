@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-关键资源能力",
+  "meta": {
+    "name": "关键资源能力",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):关键资源能力",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）资源就是企业所控制的，能够使企业构思和设计好的战略得到实 施，从而来提高企业经营效果和效率，包括全部的财产、能力、竞争 力、数据、信息、知识等。企业的资源主要有以下几类： 金融资源：来自各利益相关者的货币资源或可交换为货币的资源。 实",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以关键资源能力的方式思考这个问题。",
+    "activation_phrase": "请用关键资源能力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

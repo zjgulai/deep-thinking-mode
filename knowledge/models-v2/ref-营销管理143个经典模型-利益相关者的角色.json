@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-利益相关者的角色",
+  "meta": {
+    "name": "利益相关者的角色",
+    "category": "06",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:利益相关者的角色",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "问题。  除了对战略制定产生影响以外，利益相关者分析也是评价战略的有力工具。战略评价可以 通过确定持反对意见的股东和他们对一些有争议的问题的影响力来完成。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以利益相关者的角色的方式思考这个问题。",
+    "activation_phrase": "请用利益相关者的角色分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

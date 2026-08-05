@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-保持开放",
+  "meta": {
+    "name": "保持开放",
+    "category": "04",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):保持开放",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "解答智力测验考试题目的能力，具体的智能数值就是最后的分",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "写一部小说，从构思到结尾；下一盘棋，棋手预料每走一"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以保持开放的方式思考这个问题。",
+    "activation_phrase": "请用保持开放分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

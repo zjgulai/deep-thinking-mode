@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-外部效应论",
+  "meta": {
+    "name": "外部效应论",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):外部效应论",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "外部效应指在实际经济活动中，生产者或消费者的活动对其他生产者或消费 者带来的非市场性影响。这种影响可能是有益的，也可能是有害的，有益的影响 被称为外部经济性；有害的影响被称为外部不经济性。在绿色供应链管理中，节 约资源、环境保护不仅给企业",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以外部效应论的方式思考这个问题。",
+    "activation_phrase": "请用外部效应论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

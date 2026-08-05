@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-申辩讨论",
+  "meta": {
+    "name": "申辩讨论",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):申辩讨论",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/  检查完毕，评审组汇总情况，将各单位负责人请到奥迪特质量评审现场，宣 布检查情况，若缺陷责任部门有不同的意见可以申辨，以找准缺陷的真正原因。 (上海桑塔纳奥迪特质量评审认为评审组的判定准确",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以申辩讨论的方式思考这个问题。",
+    "activation_phrase": "请用申辩讨论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

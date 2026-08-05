@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-分支",
+  "meta": {
+    "name": "分支",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):分支",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "接着再连二级分支和三级分支，依次类推。各分支之间不能断，从一 点钟方向开始画，顺时针方向展开。 这样就很容易地理解和记住更多的东西。这就像一棵有生命的大树， 树杈从主干生出，向四面八方发散，整幅图就气韵流畅，自然相连， 富有生机感。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分支的方式思考这个问题。",
+    "activation_phrase": "请用分支分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

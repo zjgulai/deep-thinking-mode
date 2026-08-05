@@ -5,7 +5,8 @@
     "name": "**1\\. 理论背景与核心机制",
     "category": "09",
     "tags": [],
-    "skill_name": "**1-.-理论背景与核心机制"
+    "skill_name": "**1-.-理论背景与核心机制",
+    "sourceTitle": "大脑焦虑：杏仁核通道和皮层通道"
   },
   "core_definition": "如何有效完成这件事？**1\\. 理论背景与核心机制的操作路径是什么？",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

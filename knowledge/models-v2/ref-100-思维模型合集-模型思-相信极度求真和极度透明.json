@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-相信极度求真和极度透明",
+  "meta": {
+    "name": "相信极度求真和极度透明",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):相信极度求真和极度透明",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "你喜欢大家都实事求是和公开透明，还是把真实想法隐藏在心底？ 你喜欢把问题、错误、弱点、分歧都摆到桌面上认真讨论，还是不把 问题直接摆明也不进行讨论？ 你喜欢任何人都有权提出批评意见，还是只喜欢自上而下的批评方 法？ 你喜欢通过大量数据对人进",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以相信极度求真和极度透明的方式思考这个问题。",
+    "activation_phrase": "请用相信极度求真和极度透明分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-参考书目",
+  "meta": {
+    "name": "参考书目",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):参考书目",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "[1]Houben．G，Lenie．K，Vanhof．K．A Knowledge Based SWOT ——analysis System as an Instrument for Strategic Planning in Small a",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以参考书目的方式思考这个问题。",
+    "activation_phrase": "请用参考书目分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

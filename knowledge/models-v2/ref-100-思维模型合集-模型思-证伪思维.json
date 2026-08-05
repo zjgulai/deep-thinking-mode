@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-证伪思维",
+  "meta": {
+    "name": "证伪思维",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):证伪思维",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "卡尔·波普尔是伟大哲学家和科学家,是证伪主义的创始人,他指出科学 研究应该采用证伪原则而非证实原则。科学和非科学的区别就是是否 具备可证伪性。  87 / 1937 \f举个例子:比如说天下乌鸦全是黑的,具备可证伪性,因为你去找到白乌 鸦就可",
+    "trigger_signals": [
+      "如果你说乌鸦是神灵的化身,这句好就不好证伪,就不"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说天下乌鸦全是黑的,具备可证伪性,因为你去找到白乌"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以证伪思维的方式思考这个问题。",
+    "activation_phrase": "请用证伪思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

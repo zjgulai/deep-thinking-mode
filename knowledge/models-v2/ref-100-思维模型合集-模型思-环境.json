@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-环境",
+  "meta": {
+    "name": "环境",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):环境",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "不确定性的世界，是一个复杂的世界，生物进化是",
+    "trigger_signals": [
+      "如果你智商测试分数很高，请不要骄傲，因为你智力不一定高，如果",
+      "如果你是老板，面对一个连续迟到了 3 天的员",
+      "如果你今年没有颠覆掉你去年比较喜欢的思想，说"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "调整自己的世界观来融合这种新消息，或者是认定新消息是错误"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以环境的方式思考这个问题。",
+    "activation_phrase": "请用环境分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

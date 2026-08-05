@@ -5,7 +5,8 @@
     "name": "你的预测为什么总出错？不是数据",
     "category": "07",
     "tags": [],
-    "skill_name": "你的预测为什么总出错？不是数据"
+    "skill_name": "你的预测为什么总出错？不是数据",
+    "sourceTitle": "你的预测为什么总出错？不是数据不够，是思维太线性"
   },
   "core_definition": "本质是读懂人类的动态适应性",
   "when_to_use": {
@@ -59,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -5,7 +5,8 @@
     "name": "告别“看懂不会用”",
     "category": "08",
     "tags": [],
-    "skill_name": "告别“看懂不会用”"
+    "skill_name": "告别“看懂不会用”",
+    "sourceTitle": "告别“看懂不会用”：一套让你快速吃透陌生知识、做好刚质量输出的认知闭环方法论。"
   },
   "core_definition": "5步构建认知与能力的正向循环",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-个人的增长",
+  "meta": {
+    "name": "个人的增长",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):个人的增长",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对人体有益的病毒，天花就是坏病毒，他会引",
+    "trigger_signals": [
+      "如果我们能够很好的理解信息和病毒传播的背后机理，就可以预测和",
+      "如果你是一名创业者，拥有好的产品，就要学会利用广播模型和扩散",
+      "如果你是一名管理者，要学会利用广播模型和扩散模型去传播优秀的"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "股市上一个小道消息就可以让你投入巨额资金"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以个人的增长的方式思考这个问题。",
+    "activation_phrase": "请用个人的增长分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -10,7 +10,8 @@
       "思维框架",
       "思维模型"
     ],
-    "skill_name": "分而治之"
+    "skill_name": "分而治之",
+    "sourceTitle": "分而治之：拆解困局、高效破局的思维框架"
   },
   "core_definition": "这件事的本质是什么？分而治之如何定义它？",
   "when_to_use": {
@@ -63,7 +64,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

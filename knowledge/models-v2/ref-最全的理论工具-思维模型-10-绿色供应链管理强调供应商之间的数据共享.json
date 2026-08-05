@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-绿色供应链管理强调供应商之间的数据共享",
+  "meta": {
+    "name": "绿色供应链管理强调供应商之间的数据共享",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绿色供应链管理强调供应商之间的数据共享",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "数据共享包含绿色材料的选取、产品设计、对供应商的评估和挑选、绿色生 产、运输和分销、包装、销售和废物的回收等过程的数据。供应商、制造商和回 收商以及执法部门和用户之间的联系都是通过 In ternet 网来实现的。因此, 绿色 供应链管理",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以绿色供应链管理强调供应商之间的数据共享的方式思考这个问题。",
+    "activation_phrase": "请用绿色供应链管理强调供应商之间的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

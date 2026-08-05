@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-网络效应的概念",
+  "meta": {
+    "name": "网络效应的概念",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):网络效应的概念",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "当一种产品对用户的价值随着采用相同产品或可兼容产品的用户增加 而增大时，即出现了网络外部性。也就是“网络效应”。在学术上，关于 网络外部性和网络效应拥有不同的解释，便于理解方便，本篇文章所 说的网络外部性就是指网络效应。 例如：微信用的人越",
+    "trigger_signals": [
+      "如果你身边的人，每个人都用"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "微信用的人越多，对你越有好处，因为你只要下载一个微信，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以网络效应的概念的方式思考这个问题。",
+    "activation_phrase": "请用网络效应的概念分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

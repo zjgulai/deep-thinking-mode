@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-发散思维",
+  "meta": {
+    "name": "发散思维",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):发散思维",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "精神放松：可以先做一个小游戏，使参与人员身体和精神处于放松状 态。 自由畅谈：参加者不应该受任何条条框框限制，放松思想，让思维自 由驰骋。从不同角度，不同层次，不同方位，大胆地展开想象，尽可 能地标新立异，与众不同，提出独创性的想法。 延迟",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以发散思维的方式思考这个问题。",
+    "activation_phrase": "请用发散思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

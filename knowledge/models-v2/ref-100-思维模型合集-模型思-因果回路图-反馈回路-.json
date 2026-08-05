@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-因果回路图-反馈回路-",
+  "meta": {
+    "name": "因果回路图（反馈回路）",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):因果回路图（反馈回路）",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "系统输出与来自外部环境的输入的关系",
+    "trigger_signals": [
+      "如果你破坏了这个回路——比如蒙住眼睛，从而无法观察杯"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "像倒杯咖啡或茶这种看起来似乎非常简单、我们每天都不假思索"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以因果回路图（反馈回路）的方式思考这个问题。",
+    "activation_phrase": "请用因果回路图（反馈回路）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

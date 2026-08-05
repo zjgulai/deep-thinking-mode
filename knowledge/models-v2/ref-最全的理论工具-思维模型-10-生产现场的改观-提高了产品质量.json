@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-生产现场的改观-提高了产品质量",
+  "meta": {
+    "name": "生产现场的改观，提高了产品质量",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):生产现场的改观，提高了产品质量",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "由于治理了生产现场的脏、乱、差现象，多年的垃圾得到清理，油污棉纱、油 漆、杂物任意丢弃的现象大大减少，就减少了火灾发生的可能性，由于放置物品 的规范化和科学化。现场布置合理，主要生产车间还设立了安全通道。并确保通 道畅通，天上掉物，地面绊",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以生产现场的改观，提高了产品质量的方式思考这个问题。",
+    "activation_phrase": "请用生产现场的改观，提高了产品质量分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

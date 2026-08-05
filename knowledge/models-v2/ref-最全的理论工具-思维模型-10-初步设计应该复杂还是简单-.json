@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-初步设计应该复杂还是简单-",
+  "meta": {
+    "name": "初步设计应该复杂还是简单？",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):初步设计应该复杂还是简单？",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "社团系统（corporate system ）",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，所有的面谈必须在小组能确定重要作业之前完成）"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以初步设计应该复杂还是简单？的方式思考这个问题。",
+    "activation_phrase": "请用初步设计应该复杂还是简单？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

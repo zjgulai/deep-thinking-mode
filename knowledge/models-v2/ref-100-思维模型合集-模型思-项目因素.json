@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-项目因素",
+  "meta": {
+    "name": "项目因素",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):项目因素",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "项目因素包括决策风险和决策目标。 研究发现在决策风险和承诺升级之间有负相关，高风险的情况，因为 害怕大的损失，所以决策者不会承诺升级。如果有新的更好的项目可 供选择，将大大降低承诺升级。如果没有更好的替代方案，未来充满 了不确定性，受到沉没",
+    "trigger_signals": [
+      "如果你发现有更好的一个金融投资项"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "回到前面开饭店的案例，如果你发现有更好的一个金融投资项"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以项目因素的方式思考这个问题。",
+    "activation_phrase": "请用项目因素分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

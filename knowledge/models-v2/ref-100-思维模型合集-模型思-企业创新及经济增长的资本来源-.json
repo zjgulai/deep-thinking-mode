@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-企业创新及经济增长的资本来源-",
+  "meta": {
+    "name": "企业创新及经济增长的资本来源。",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):企业创新及经济增长的资本来源。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "德鲁克提出的管理的三大任务；“5”是指德鲁克列举的管",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "自由落体、单摆运动属于简单的物理系统。但是大气系统、"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业创新及经济增长的资本来源。的方式思考这个问题。",
+    "activation_phrase": "请用企业创新及经济增长的资本来源。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

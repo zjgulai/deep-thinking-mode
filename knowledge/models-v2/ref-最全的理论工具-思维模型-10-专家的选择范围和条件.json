@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-专家的选择范围和条件",
+  "meta": {
+    "name": "专家的选择范围和条件",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):专家的选择范围和条件",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1）内部专家和外部专家：内部专家指对预测的问题而言，单位、行业、领 域内的专家。一般顺序是，先选内部专家，这样可使选择工作易于进行；然后再 选外部专家。外部专家的人选可用内部专家举荐、信息查询等方法进行。  2）专家的结构：应有各种知识结",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以专家的选择范围和条件的方式思考这个问题。",
+    "activation_phrase": "请用专家的选择范围和条件分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

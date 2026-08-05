@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-决策树的思维模型相当科学-相当客观-相当",
+  "meta": {
+    "name": "决策树的思维模型相当科学、相当客观、相当",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):决策树的思维模型相当科学、相当客观、相当",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "中会一一举例阐述。 2 决策树的四要素  92 / 1937 \f93 / 1937 \f案例分析——阿帅开饭店创业决策分析（单维度） 中型饭店：投资 60 万，在 10 年里，生意好，每年可平均盈利 20 万， 生意不好则每年平均亏损 4 万",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "阐述。 2 决策树的四要素  92 / 1937"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以决策树的思维模型相当科学、相当客观、相当的方式思考这个问题。",
+    "activation_phrase": "请用决策树的思维模型相当科学、相当分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

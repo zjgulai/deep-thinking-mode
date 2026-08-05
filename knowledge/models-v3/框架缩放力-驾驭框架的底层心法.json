@@ -5,7 +5,8 @@
     "name": "框架缩放力：驾驭框架的底层心法",
     "category": "11",
     "tags": [],
-    "skill_name": "框架缩放力-驾驭框架的底层心法"
+    "skill_name": "框架缩放力-驾驭框架的底层心法",
+    "sourceTitle": "框架缩放力：驾驭框架的底层心法"
   },
   "core_definition": "，将抽象原理转化为可拆解流程。",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

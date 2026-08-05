@@ -5,7 +5,8 @@
     "name": "总被人说“你说话好伤人”？一个",
     "category": "11",
     "tags": [],
-    "skill_name": "总被人说“你说话好伤人”？一个"
+    "skill_name": "总被人说“你说话好伤人”？一个",
+    "sourceTitle": "总被人说“你说话好伤人”？一个公式，让你的反馈不再得罪人"
   },
   "core_definition": "不是因为内容不对，而是踩了同一条红线：对方听到的不是“你做了什么”，而是“你是一个什么样的人”",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

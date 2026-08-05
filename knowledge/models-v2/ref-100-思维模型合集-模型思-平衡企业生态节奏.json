@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-平衡企业生态节奏",
+  "meta": {
+    "name": "平衡企业生态节奏",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):平衡企业生态节奏",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业要拿捏好“做大蛋糕”与“切蛋糕”的分寸，实行企业与生态系统的协 同发展。例如苏宁、国美、天猫、京东要平衡自身和商家的利益分配， 实行共生共赢。 步骤六：时间驾驭 时间就是生命，企业对时间的驾驭决定了是否能够在竞争中取胜，能 否把握“以时",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "苏宁、国美、天猫、京东要平衡自身和商家的利益分配，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以平衡企业生态节奏的方式思考这个问题。",
+    "activation_phrase": "请用平衡企业生态节奏分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

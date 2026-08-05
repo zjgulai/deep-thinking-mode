@@ -5,7 +5,8 @@
     "name": "成长必经的混乱期",
     "category": "02",
     "tags": [],
-    "skill_name": "成长必经的混乱期"
+    "skill_name": "成长必经的混乱期",
+    "sourceTitle": "成长必经的混乱期：旧自我消散，新自我尚未成型，怎么办？"
   },
   "core_definition": "这个问题的根本原因是什么？成长必经的混乱期如何找到它？",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

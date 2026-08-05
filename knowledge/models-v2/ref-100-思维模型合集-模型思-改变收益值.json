@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-改变收益值",
+  "meta": {
+    "name": "改变收益值",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):改变收益值",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "“公地悲剧”告诉我们，所有人都能免费使用的资源，必定无法长久维持。 如果大海可以任意捕鱼，很快海里的鱼就会枯竭。如果草原可以无限 制放牧，草原终究会退化成沙漠。如果工厂的废水可以任意排放，河 流将会变成污流。如果工厂可以任意排放二氧化碳，那",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "碳排放少的企业，可以通过出售碳指标获得利润"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以改变收益值的方式思考这个问题。",
+    "activation_phrase": "请用改变收益值分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

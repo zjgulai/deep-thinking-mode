@@ -5,7 +5,8 @@
     "name": "读懂论证",
     "category": "02",
     "tags": [],
-    "skill_name": "读懂论证"
+    "skill_name": "读懂论证",
+    "sourceTitle": "读懂论证：高手说服、作文拿分、辩赢他人，最终靠的都是论证"
   },
   "core_definition": "这个问题的根本原因是什么？读懂论证如何找到它？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

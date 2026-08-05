@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-福格行为模型-",
+  "meta": {
+    "name": "福格行为模型：",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):福格行为模型：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "福格行为模型来源于福格和美国说服技术实验室的研究，它是一种有 效探寻行为原因的模型。模型本身非常非常简单，只包含三个基本元 素：动机，能力，触发条件。也就是说任何一个行为的发生，都需要 同时满足以上三个要素——人们需要有产生行为的动机、要有",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，让对方帮 一个小忙，街上陌生人问路，向对方借支笔等等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以福格行为模型：的方式思考这个问题。",
+    "activation_phrase": "请用福格行为模型：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

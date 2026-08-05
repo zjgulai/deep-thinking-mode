@@ -5,7 +5,8 @@
     "name": "分而治之",
     "category": "02",
     "tags": [],
-    "skill_name": "分而治之"
+    "skill_name": "分而治之",
+    "sourceTitle": "分而治之：拆解困局、高效破局的底层思维框架"
   },
   "core_definition": "为分兵合击、各个击破，避开正面强攻，通过拆分削弱问题阻力",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

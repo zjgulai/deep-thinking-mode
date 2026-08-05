@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-岗位管理-position-manage",
+  "meta": {
+    "name": "岗位管理(position manage",
+    "category": "07",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):岗位管理(position manage",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/  岗位管理是以组织中的岗位为对象，科学地进行岗位设置、岗位分析、岗位 描述、岗位监控和岗位评估等一系列活动的管理过程。我们认为，岗位必须在分 析和评价的基础上进行管理，岗位管理较之于岗位分",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以岗位管理(position manage的方式思考这个问题。",
+    "activation_phrase": "请用岗位管理(position m分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

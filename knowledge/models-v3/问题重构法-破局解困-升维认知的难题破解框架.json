@@ -5,7 +5,8 @@
     "name": "问题重构法",
     "category": "03",
     "tags": [],
-    "skill_name": "问题重构法"
+    "skill_name": "问题重构法",
+    "sourceTitle": "问题重构法：破局解困、升维认知的难题破解框架"
   },
   "core_definition": "不是逃避问题，也不否定问题的客观存在，而是通过切换视角、调整边界、推翻伪假设，重新锚定问题本质，让无解难题变得可解，甚至将危机转化为机遇",
   "when_to_use": {
@@ -63,7 +64,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

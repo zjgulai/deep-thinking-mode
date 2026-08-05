@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-必知必会13个个人精进方法-要么第一-要么不做-4-做个群主-服务群",
+  "meta": {
+    "name": "要么第一，要么不做 4.做个群主，服务群",
+    "category": "11",
+    "tags": [],
+    "source": "ref:必知必会13个个人精进方法:要么第一，要么不做 4.做个群主，服务群",
+    "sourceTitle": "必知必会13个个人精进方法",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "By商业分析家Suri \f 杠精沟通术（1）  - 用绿灯思维｜双赢思维｜全局思维与杠精沟通 - 杠精是如何炼成的？  红灯 狭隘的固执己见者 固执的利己主义者  思维  局部  ｒｉ  利己  思维  Ｓｕ 思维 固执狭隘的  析 利己",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以要么第一，要么不做 4.做个群主，服务群的方式思考这个问题。",
+    "activation_phrase": "请用要么第一，要么不做 4.做个群分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

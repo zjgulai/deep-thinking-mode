@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-罗伯特-西蒙斯-战略实施中的绩效评估和控",
+  "meta": {
+    "name": "罗伯特·西蒙斯《战略实施中的绩效评估和控",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):罗伯特·西蒙斯《战略实施中的绩效评估和控",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ LIFO 管理系统 —美国应用最广、发展最早的行为风格行为  系统之一 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以罗伯特·西蒙斯《战略实施中的绩效评估和控的方式思考这个问题。",
+    "activation_phrase": "请用罗伯特·西蒙斯《战略实施中的绩分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-购买者的议价能力",
+  "meta": {
+    "name": "购买者的议价能力",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:购买者的议价能力",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "标准化产品，同时向多个卖主购买产品在经济上也完全可",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以购买者的议价能力的方式思考这个问题。",
+    "activation_phrase": "请用购买者的议价能力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

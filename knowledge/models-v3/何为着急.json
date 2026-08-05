@@ -5,7 +5,8 @@
     "name": "四大核心类型",
     "category": "09",
     "tags": [],
-    "skill_name": "四大核心类型"
+    "skill_name": "四大核心类型",
+    "sourceTitle": "四大核心类型"
   },
   "core_definition": "*   **核心触发**：对局面失去掌控的恐惧。事情没有按照预期或计划发展。      *   **内心独白**：“这样下去不行！”“乱了，全乱了！”“我得马上做点什么把它拉回正轨！”      *   **典型情境**：项目出现意外漏洞、孩子生病打乱全天安排、交通堵塞可能错过重要会议。      ",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

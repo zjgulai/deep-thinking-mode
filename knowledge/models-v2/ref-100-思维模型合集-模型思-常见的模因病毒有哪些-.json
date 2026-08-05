@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-常见的模因病毒有哪些-",
+  "meta": {
+    "name": "常见的模因病毒有哪些？",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):常见的模因病毒有哪些？",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "通过暴力、破坏、恐吓等手段，制造社会恐慌、",
+    "trigger_signals": [
+      "如果我们经常听说某件事情，那么它就会自然而"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "五行币传销、权健传销、河北华平酸碱平衡仪传销等公司都是传"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以常见的模因病毒有哪些？的方式思考这个问题。",
+    "activation_phrase": "请用常见的模因病毒有哪些？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

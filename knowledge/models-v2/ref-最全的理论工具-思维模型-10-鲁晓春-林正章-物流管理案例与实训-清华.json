@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-鲁晓春-林正章-物流管理案例与实训-清华",
+  "meta": {
+    "name": "鲁晓春、林正章，物流管理案例与实训，清华",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):鲁晓春、林正章，物流管理案例与实训，清华",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ 绿色供应链管理  —可持续发展的供应链管理模式 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以鲁晓春、林正章，物流管理案例与实训，清华的方式思考这个问题。",
+    "activation_phrase": "请用鲁晓春、林正章，物流管理案例与分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

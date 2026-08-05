@@ -5,7 +5,8 @@
     "name": "知识的结构化",
     "category": "04",
     "tags": [],
-    "skill_name": "知识的结构化"
+    "skill_name": "知识的结构化",
+    "sourceTitle": "知识的结构化：从孤立知识点到框架思维的跃迁"
   },
   "core_definition": "与分支，再逐步填充细节，避免“只见树木，不见森林”",
   "when_to_use": {
@@ -59,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

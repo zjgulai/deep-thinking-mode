@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-网络效应可能造成-市场失灵-的表现-",
+  "meta": {
+    "name": "网络效应可能造成“市场失灵”的表现。",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):网络效应可能造成“市场失灵”的表现。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "这是因为网络效应挑战了传统经济学的边际收益递减规律。例如：我 们吃第一个冰激凌的时候，感觉非常美味。吃第二个时候感觉就不好 吃了。吃第三个的时候，就很想吐了，这就是边际收益递减规律。而 企业每生产一个冰激凌都会付出一个冰激凌的成本，市场是有",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "我 们吃第一个冰激凌的时候，感觉非常美味"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以网络效应可能造成“市场失灵”的表现。的方式思考这个问题。",
+    "activation_phrase": "请用网络效应可能造成“市场失灵”的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

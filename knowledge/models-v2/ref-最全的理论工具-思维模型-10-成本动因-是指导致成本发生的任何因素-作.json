@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-成本动因-是指导致成本发生的任何因素-作",
+  "meta": {
+    "name": "成本动因。是指导致成本发生的任何因素。作",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):成本动因。是指导致成本发生的任何因素。作",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "利用回归分析，比较各成本动因与成本间的相关程度",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "产品质量检验费，不应该按产量分配给产 品，而应该按照产品接受的检验劳务量（作业量）来分配，就可以看作一种长期"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以成本动因。是指导致成本发生的任何因素。作的方式思考这个问题。",
+    "activation_phrase": "请用成本动因。是指导致成本发生的任分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

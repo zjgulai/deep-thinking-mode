@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-处理的步骤",
+  "meta": {
+    "name": "处理的步骤",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):处理的步骤",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "问题 1：是否可以付诸实施？ 如果你的回答是不可以：那么这就是一些不需要采取行动的任务。一  991 / 1937 \f般有三种情况： 垃圾：如果是些没用的事情，例如参加一个没有意义的会议，你考虑 后不参加，就把这条任务删除。 储备：例如你想",
+    "trigger_signals": [
+      "如果你的回答是不可以：那么这就是一些不需要采取行动的任务。一",
+      "当我们筛选出可以采取行动的任务时，这时",
+      "如果你自己并不是最佳的执行者）；"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "参加一个没有意义的会议，你考虑 后不参加，就把这条任务删除"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以处理的步骤的方式思考这个问题。",
+    "activation_phrase": "请用处理的步骤分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

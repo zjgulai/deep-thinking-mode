@@ -5,7 +5,8 @@
     "name": "“看待方式”是核心开关，但并非",
     "category": "09",
     "tags": [],
-    "skill_name": "“看待方式”是核心开关，但并非"
+    "skill_name": "“看待方式”是核心开关，但并非",
+    "sourceTitle": "压力是否产生及强度如何，主要取决于个体对压力源的解读"
   },
   "core_definition": "如何有效完成这件事？“看待方式”是核心开关，但并非的操作路径是什么？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

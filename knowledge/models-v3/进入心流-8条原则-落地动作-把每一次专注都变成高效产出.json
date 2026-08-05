@@ -5,7 +5,8 @@
     "name": "进入心流",
     "category": "09",
     "tags": [],
-    "skill_name": "进入心流"
+    "skill_name": "进入心流",
+    "sourceTitle": "进入心流：8条原则+落地动作，把每一次专注都变成高效产出"
   },
   "core_definition": "是：专注是做事的手段，愉悦是过程的副产品，心流的本质是重建意识秩序，杜绝精神能量的无效耗散",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

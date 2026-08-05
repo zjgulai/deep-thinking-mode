@@ -5,7 +5,8 @@
     "name": "巧用多巴胺驱动长期奋斗",
     "category": "07",
     "tags": [],
-    "skill_name": "巧用多巴胺驱动长期奋斗"
+    "skill_name": "巧用多巴胺驱动长期奋斗",
+    "sourceTitle": "巧用多巴胺驱动长期奋斗：把艰难目标变成让人上瘾的事"
   },
   "core_definition": "大脑的欲望驱动机制，它主要被两大要素激活：对奖励的期待、结果的不确定性",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

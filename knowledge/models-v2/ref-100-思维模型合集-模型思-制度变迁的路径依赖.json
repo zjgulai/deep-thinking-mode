@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-制度变迁的路径依赖",
+  "meta": {
+    "name": "制度变迁的路径依赖",
+    "category": "04",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):制度变迁的路径依赖",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "诺贝尔经济学奖得主诺思将路径依赖理论引入制度变迁分析框架中， 开拓了制度变迁的路径依赖理论。 制度变迁一旦走上了某一条路径，它的既定方向会在以后的发展中得 到自我强化。沿着既定的路径，经济和政治制度的变迁可能进入良性 循环的轨道，迅速优化；",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "委内瑞拉的经济危机——被资源诅咒的国家 曾经的南美首富："
+    }
+  },
+  "codex": {
+    "system_prompt": "请以制度变迁的路径依赖的方式思考这个问题。",
+    "activation_phrase": "请用制度变迁的路径依赖分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

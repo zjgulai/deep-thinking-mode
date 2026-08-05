@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-规范性从众动机-顺从-",
+  "meta": {
+    "name": "规范性从众动机(顺从)",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):规范性从众动机(顺从)",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人的意见,其目的是为了获得奖励或避免处罚。故规范化影响能够导致 顺从,个体为了获得认可或避免责难的一种策略,但并不意味着真正的 态度改变。 例如:等红灯的时候,看见没有多少车,我是不是可以过去呢?当你发现旁 边好几个人都在等待的时候,你心里",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "等红灯的时候,看见没有多少车,我是不是可以过去呢?当你发现旁"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以规范性从众动机(顺从)的方式思考这个问题。",
+    "activation_phrase": "请用规范性从众动机(顺从)分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -10,7 +10,8 @@
       "深度思考",
       "认知偏误"
     ],
-    "skill_name": "“越想越错”的4个认知陷阱，3"
+    "skill_name": "“越想越错”的4个认知陷阱，3",
+    "sourceTitle": "“越想越错”的4个认知陷阱，3个科学破解法"
   },
   "core_definition": "这个问题的根本原因是什么？“越想越错”的4个认知陷阱，3如何找到它？",
   "when_to_use": {
@@ -67,7 +68,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

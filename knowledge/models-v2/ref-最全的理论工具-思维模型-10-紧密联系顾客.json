@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-紧密联系顾客",
+  "meta": {
+    "name": "紧密联系顾客",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):紧密联系顾客",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业必须通过某些有效的方式在业务、需求等方面与顾客建立关联，形成一 种互助、互求、互需的关系，把顾客与企业联系在一起，减少顾客的流失，以此 来提高顾客的忠诚度，赢得长期而稳定的市场。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以紧密联系顾客的方式思考这个问题。",
+    "activation_phrase": "请用紧密联系顾客分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

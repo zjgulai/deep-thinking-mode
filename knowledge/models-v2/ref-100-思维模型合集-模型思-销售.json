@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-销售",
+  "meta": {
+    "name": "销售",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):销售",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "电话销售话术中，也需要善于设计登门槛效应。可以打扰 1 分钟时间  1932 / 1937 \f吗？给您赠送价值 1 万元的免费保单。可以打扰 1 分钟吗？给您的孩 子免费赠送了北京名师的课程。可以打扰您 2 分钟吗？做一个老用户 回访。1",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以销售的方式思考这个问题。",
+    "activation_phrase": "请用销售分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

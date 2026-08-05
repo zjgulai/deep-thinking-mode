@@ -5,7 +5,8 @@
     "name": "系统思维",
     "category": "07",
     "tags": [],
-    "skill_name": "系统思维"
+    "skill_name": "系统思维",
+    "sourceTitle": "系统思维：看清关联、高效破局的底层认知框架"
   },
   "core_definition": "任何事物都是相互关联的系统，系统行为由元素连接结构决定",
   "when_to_use": {
@@ -65,7 +66,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

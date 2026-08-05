@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自我意识-认识自己的情绪-",
+  "meta": {
+    "name": "自我意识（认识自己的情绪）",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自我意识（认识自己的情绪）",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "自我意识是对内在心理的持续关注，是自我观察，保持中立客观的跳 出自己看自己。 日本有个古老的传说。有一次，一位好斗的武士质问一位禅师，让他 解释何为天堂、何为地狱。禅师叱责道：“粗鄙之辈，何足论道！” 武士感到受了侮辱，暴跳如雷。他从刀鞘中",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "有述情障碍的人很少哭，不过一旦他们哭出来，他们的泪水很"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自我意识（认识自己的情绪）的方式思考这个问题。",
+    "activation_phrase": "请用自我意识（认识自己的情绪）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

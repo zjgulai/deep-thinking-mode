@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-制订实施计划",
+  "meta": {
+    "name": "制订实施计划",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):制订实施计划",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "根据对象制订实施计划，这时要使系统图中最低级的手段进一步具体化、精 练化，并决定其实施内容、日程和承担的任务等事项。 主要用途  在质量管理活动中，下面几个方面经常用到系统分析图法：  ①在开发新产品中，将满足用户要求的设计质量进行系统地",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以制订实施计划的方式思考这个问题。",
+    "activation_phrase": "请用制订实施计划分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-非-sr思维模型",
+  "meta": {
+    "name": "非 SR思维模型",
+    "category": "07",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:非 SR思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在刺激－反应中间加上思考的过程,即刺激－思考－反应, 从而由被动的必須反应转向主动有选择反应",
+    "trigger_signals": [
+      "当我们遇到类似上面的问题时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以非 SR思维模型的方式思考这个问题。",
+    "activation_phrase": "请用非 SR思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

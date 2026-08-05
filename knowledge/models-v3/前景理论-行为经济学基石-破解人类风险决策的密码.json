@@ -5,7 +5,8 @@
     "name": "前景理论",
     "category": "06",
     "tags": [],
-    "skill_name": "前景理论"
+    "skill_name": "前景理论",
+    "sourceTitle": "前景理论：行为经济学基石，破解人类风险决策的密码"
   },
   "core_definition": "前景理论：行为经济学基石，破解人类风险决策的密码  前景理论被誉为行为经济学的基石，打破了传统理性决策模型的桎梏，从人类真实心理活动出发，重新诠释风险场景下的决策逻辑，是经济学、金融学、心理学等多个领域的核心基础理论。  一、理论背景  前景理论问世之前，学界主流采用期望效用理论开展风险决策分析。该",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

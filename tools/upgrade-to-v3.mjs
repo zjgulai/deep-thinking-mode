@@ -17,7 +17,23 @@ if (!existsSync(OUT)) mkdirSync(OUT, { recursive: true });
 // ─── 从 data/ 原文补充字段（当V2字段为空时） ──────────────
 function loadSourceText(sourceFile) {
   if (!sourceFile) return null;
-  // sourceFile 可能是文件名（含.md）或不含.md
+  
+  // 书籍来源：ref:书名:模型名 格式，从 ref-extracted/ 查找
+  if (sourceFile.startsWith("ref:")) {
+    const parts = sourceFile.split(":");
+    const bookTitle = parts[1] || "";
+    const refDir = join(ROOT, "ref-extracted");
+    if (existsSync(refDir)) {
+      const refFiles = readdirSync(refDir);
+      const match = refFiles.find(f => f.includes(bookTitle.slice(0, 20)));
+      if (match) {
+        try { return readFileSync(join(refDir, match), "utf8"); } catch { return null; }
+      }
+    }
+    return null;
+  }
+  
+  // data/ 文件
   const candidates = [
     join(DATA, sourceFile),
     join(DATA, sourceFile.endsWith('.md') ? sourceFile : sourceFile + '.md'),
@@ -212,7 +228,7 @@ function upgradeV2toV3(v2) {
   const withModel = `运用${name}后，能够按照结构化的推理协议逐步分析问题：${smartSlice(definition, 60)}，从而得出有依据的结论，而不是可替换的猜测。`;
 
   const activation = codex.activation_phrase || `请用${name}帮我分析：`;
-  
+   
   return {
     schema_version: "3.0.0",
     id: (v2.id || name).toLowerCase().replace(/[\s\/\\:：]/g, "-").slice(0, 50),
@@ -220,7 +236,9 @@ function upgradeV2toV3(v2) {
       name,
       category: v2.meta?.category || "00",
       tags: v2.meta?.tags || [],
-      skill_name: name.toLowerCase().replace(/[\s\/\\:：]/g, "-").slice(0, 40)
+      skill_name: name.toLowerCase().replace(/[\s\/\\:：]/g, "-").slice(0, 40),
+      ...(v2.meta?.sourceType ? { sourceType: v2.meta.sourceType } : {}),
+      ...(v2.meta?.sourceTitle ? { sourceTitle: v2.meta.sourceTitle } : {})
     },
     core_definition: smartSlice(definition, 150),
     when_to_use: {

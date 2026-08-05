@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-信息畅通原则",
+  "meta": {
+    "name": "信息畅通原则",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):信息畅通原则",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "为保证绩效反馈渠道的畅通有效，必须编制一套完整的“360 度反馈评价问 卷”，这要求人事工作者能认真分析拟评价对象的工作，抽取出典型的工作行为， 编制评价问卷，对评价结果进行统计处理，并向被评价者和评价者提供反馈。采 用这种方法所编制的问",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以信息畅通原则的方式思考这个问题。",
+    "activation_phrase": "请用信息畅通原则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

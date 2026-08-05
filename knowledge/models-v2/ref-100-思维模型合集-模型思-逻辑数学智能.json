@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-逻辑数学智能",
+  "meta": {
+    "name": "逻辑数学智能",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):逻辑数学智能",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "逻辑思维和数学思维能力较强。有突出的演绎推理、归纳推理、纯逻 辑推理等能力。特别喜欢人事与数字相关的工作。喜欢提出问题并依 靠推理进行思考，寻找答案及背后的规律及原理。逻辑数学智能突出 的从事科学家、数学家、精算师等职业能更好发挥才能。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以逻辑数学智能的方式思考这个问题。",
+    "activation_phrase": "请用逻辑数学智能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

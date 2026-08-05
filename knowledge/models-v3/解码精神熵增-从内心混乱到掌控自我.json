@@ -11,7 +11,8 @@
       "思维框架",
       "思维模型"
     ],
-    "skill_name": "解码精神熵增"
+    "skill_name": "解码精神熵增",
+    "sourceTitle": "解码精神熵增：从内心混乱到掌控自我"
   },
   "core_definition": "这个问题的根本原因是什么？解码精神熵增如何找到它？",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

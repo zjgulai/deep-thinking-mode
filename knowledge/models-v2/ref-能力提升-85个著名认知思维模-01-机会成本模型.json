@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-01-机会成本模型",
+  "meta": {
+    "name": "01 机会成本模型",
+    "category": "08",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:01 机会成本模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "为了某种东西而所要放弃另一些东西的最大价值;也可以理解为在面临多方",
+    "trigger_signals": [
+      "当你用低层次的维度去思考问题时可能会感觉问题无法解決,而切换为更高维度时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "子  收益  读书 能  得  取 代  价"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以01 机会成本模型的方式思考这个问题。",
+    "activation_phrase": "请用01 机会成本模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

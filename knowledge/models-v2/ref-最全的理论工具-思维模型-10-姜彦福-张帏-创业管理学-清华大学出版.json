@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-姜彦福-张帏-创业管理学-清华大学出版",
+  "meta": {
+    "name": "姜彦福, 张帏．创业管理学，清华大学出版",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):姜彦福, 张帏．创业管理学，清华大学出版",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "17 \f http://wiki.mbalib.com/ 波特五力分析模型 --行业竞争战略最流行的分析工具，不仅被 用在战略分析，而且也被用于投资项目的可  行性研究和编制商业计划书的前期研究中 \f http://wiki.mbalib",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以姜彦福, 张帏．创业管理学，清华大学出版的方式思考这个问题。",
+    "activation_phrase": "请用姜彦福, 张帏．创业管理学，清分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

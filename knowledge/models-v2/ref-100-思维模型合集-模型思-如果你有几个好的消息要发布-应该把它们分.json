@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-如果你有几个好的消息要发布-应该把它们分",
+  "meta": {
+    "name": "如果你有几个好的消息要发布，应该把它们分",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):如果你有几个好的消息要发布，应该把它们分",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "天你老板奖励了你１０００块钱，而且你今天在一家百货商店抽奖的 时候还抽中了１０００ 块钱，那么你应该把这两个好消息分两天告 诉你妻子，这样的话她会开心两次。根据前景理论，分别经历两次获 得所带来的高兴程度之和要大于把两个获得加起来一次所经历",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以如果你有几个好的消息要发布，应该把它们分的方式思考这个问题。",
+    "activation_phrase": "请用如果你有几个好的消息要发布，应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

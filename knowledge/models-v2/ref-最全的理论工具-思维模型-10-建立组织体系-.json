@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立组织体系-",
+  "meta": {
+    "name": "建立组织体系。",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立组织体系。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "落实各个层次以 \f http://wiki.mbalib.com/ 至每一个员工在 TPM 活动体系中的职能。以公司级推进组织为例，公司 TPM 推 进委员会的基本职能是：制订 TPM 方针；批准推进",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立组织体系。的方式思考这个问题。",
+    "activation_phrase": "请用建立组织体系。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

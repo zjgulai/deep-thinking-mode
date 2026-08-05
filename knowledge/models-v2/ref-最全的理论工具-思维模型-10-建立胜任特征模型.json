@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立胜任特征模型",
+  "meta": {
+    "name": "建立胜任特征模型",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立胜任特征模型",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "通过行为访谈报告提炼胜任特征，对行为事件访谈报告进行内容分析，记录各种 胜任特征在报告中出现的频次。然后对优秀组和普通组的要素指标发生频次和相 关的程度统计指标进行比较，找出两组的共性与差异特征。根据不同的主题进行 特征归类，并根据频次的集",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立胜任特征模型的方式思考这个问题。",
+    "activation_phrase": "请用建立胜任特征模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

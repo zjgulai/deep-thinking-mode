@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-开展-tps-深入培训",
+  "meta": {
+    "name": "开展 TPS 深入培训",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):开展 TPS 深入培训",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对于任何一个企业，都有自己的企业理念、企业文化。运用 TPS 最主要的问 题就是 TPS 的思想与企业的文化传统、理念以及企业员工多年的工作经验相冲 \f http://wiki.mbalib.com/ 突。比如， 传统的观念认为，零部件的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "， 传统的观念认为，零部件的在库越多，生产越安全"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以开展 TPS 深入培训的方式思考这个问题。",
+    "activation_phrase": "请用开展 TPS 深入培训分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

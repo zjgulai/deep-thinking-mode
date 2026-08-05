@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-指标体系的建立较困难",
+  "meta": {
+    "name": "指标体系的建立较困难",
+    "category": "03",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):指标体系的建立较困难",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "平衡计分卡对传统业绩评价体系的突破就在于它引进了非财务指标，克服了 \f http://wiki.mbalib.com/ 单一依靠财务指标评价的局限性。然而，这又带来了另外的问题，即如何建立 非 财务指标体系、如何确立非财务指标的标准以及如",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以指标体系的建立较困难的方式思考这个问题。",
+    "activation_phrase": "请用指标体系的建立较困难分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

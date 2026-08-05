@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-两个模型都依赖于财务报表的帐面数据-而忽",
+  "meta": {
+    "name": "两个模型都依赖于财务报表的帐面数据，而忽",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):两个模型都依赖于财务报表的帐面数据，而忽",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "测结果的可靠性和及时性；  2. 由于模型缺乏对违约和违约风险的系统认识，理论基础比较薄弱，从而难以令人信服；  3. 两个模型都假设在解释变量中存在着线性关系，而现实的经济现象是非线性的，因而也削弱了预 测结果的准确程度，使得违约模型不能",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以两个模型都依赖于财务报表的帐面数据，而忽的方式思考这个问题。",
+    "activation_phrase": "请用两个模型都依赖于财务报表的帐面分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

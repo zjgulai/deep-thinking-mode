@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-运用讲故事模型",
+  "meta": {
+    "name": "运用讲故事模型",
+    "category": "04",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):运用讲故事模型",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "坎贝尔在 1949 年出版的《千面英雄》一书中说到,任何时代和任何文化 里的所有神话故事,其基本要素都是一样的,而且主要故事情节也是一 样的。所以,他认为世界上没有什么新故事,人们只是在复述同样的故事。  808 / 1937 \f自从人类早",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "《哈利波特》, 《蜘蛛侠》,《速度与激情》,都遵循了英雄之旅故事框架"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以运用讲故事模型的方式思考这个问题。",
+    "activation_phrase": "请用运用讲故事模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

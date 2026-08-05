@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-好奇心-对世界的兴趣",
+  "meta": {
+    "name": "好奇心、对世界的兴趣",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):好奇心、对世界的兴趣",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "好奇心使我们对不符合预想的事物产生尝试的兴趣。好奇的人不会容 忍模棱两可的情境，他们会去追求真相。好奇心可以是很特定的（如 只对玫瑰花），也可以是很广泛的（对每一件事都睁大眼睛去观察）。 好奇心驱使我们主动地追随新奇的事物，而不是被动地吸收",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以好奇心、对世界的兴趣的方式思考这个问题。",
+    "activation_phrase": "请用好奇心、对世界的兴趣分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

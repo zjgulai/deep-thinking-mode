@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-实践极度求真和极度透明的原则",
+  "meta": {
+    "name": "实践极度求真和极度透明的原则",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):实践极度求真和极度透明的原则",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "义务。有问题应各抒己见，直到彼此达成一致",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "涉及个人的健康状况或很私密的 问题、知识产权或安全保卫的敏感细节"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实践极度求真和极度透明的原则的方式思考这个问题。",
+    "activation_phrase": "请用实践极度求真和极度透明的原则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

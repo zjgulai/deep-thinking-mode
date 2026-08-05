@@ -5,7 +5,8 @@
     "name": "拖延与懒惰的核心区别",
     "category": "07",
     "tags": [],
-    "skill_name": "拖延与懒惰的核心区别"
+    "skill_name": "拖延与懒惰的核心区别",
+    "sourceTitle": "拖延与懒惰的核心区别"
   },
   "core_definition": "拖延与懒惰的核心区别  让我们用一个核心比喻来开始：  > **懒惰是引擎熄火，而拖延是引擎空转甚至倒转。**   > 前者是**没有动力启动**，后者是**动力被刹车死死踩住**。  下面我们从多个维度进行详细对比和阐释：  * * *  ### **1\\. 内在状态：意愿与情绪的战场**  维度",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

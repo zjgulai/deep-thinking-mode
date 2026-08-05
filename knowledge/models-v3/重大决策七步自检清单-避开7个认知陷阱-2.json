@@ -9,7 +9,8 @@
       "框架思维",
       "思维框架"
     ],
-    "skill_name": "重大决策七步自检清单"
+    "skill_name": "重大决策七步自检清单",
+    "sourceTitle": "重大决策七步自检清单：避开7个认知陷阱，"
   },
   "core_definition": "：决策看未来，不被过去绑架",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

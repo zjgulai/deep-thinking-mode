@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-激发智力",
+  "meta": {
+    "name": "激发智力",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):激发智力",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "领导者实施惩罚和控制的权力。对于领导者的强制权，下属会害",
+    "trigger_signals": [
+      "罗宾斯，玛丽·库尔特",
+      "罗宾斯，蒂莫西·贾奇"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "能够让员工停职或降职，或者分配给他们不开心或不喜欢的工作"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以激发智力的方式思考这个问题。",
+    "activation_phrase": "请用激发智力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

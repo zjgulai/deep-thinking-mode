@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-阅读力的价值",
+  "meta": {
+    "name": "阅读力的价值",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):阅读力的价值",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "阅读为我们提供了一个与伟人对话的绝佳路径，阅读在我们的人生中， 也具有着不可替代的价值。  1624 / 1937 \f（1）获取信息和知识、解决问题 阅读可以帮助我们快递获取信息和知识，阅读力强的人往往能够通过 阅读短时间内掌握知识。刘润老",
+    "trigger_signals": [
+      "当我在工作或生活中碰到问题的时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "黄金思维圈、批判性思维等。通过阅读大量的学习和掌握这"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以阅读力的价值的方式思考这个问题。",
+    "activation_phrase": "请用阅读力的价值分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

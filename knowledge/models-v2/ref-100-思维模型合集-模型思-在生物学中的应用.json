@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-在生物学中的应用",
+  "meta": {
+    "name": "在生物学中的应用",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):在生物学中的应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "混沌在生物学研究中的应用主要集中在生态学中的种群变化;医学诊断 疾病等方面。  459 / 1937 \f4、在经济学中的应用 像自然界的所有领域一样,在经济领域同样存在着混沌现象,蝴蝶效应。 对此,美国赛纳尔公司首席执行官尼尔·帕特森对此有",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在生物学中的应用的方式思考这个问题。",
+    "activation_phrase": "请用在生物学中的应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

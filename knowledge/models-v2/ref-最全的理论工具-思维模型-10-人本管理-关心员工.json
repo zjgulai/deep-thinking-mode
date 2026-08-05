@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-人本管理-关心员工",
+  "meta": {
+    "name": "人本管理，关心员工",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):人本管理，关心员工",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "服务产品质量的高低直接取决于服务的提供者的服务技能和服务热情的高 低。员工一般工作压力较大，可自由支配的时间较少，管理者应把员工当做渴望 得到关怀、理解和尊重的有血有肉的人来看待，充分尊重他们的劳动，维护他们 的权益，从生活上多关心员工，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以人本管理，关心员工的方式思考这个问题。",
+    "activation_phrase": "请用人本管理，关心员工分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

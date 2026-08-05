@@ -5,7 +5,8 @@
     "name": "重大决策七步自检清单",
     "category": "06",
     "tags": [],
-    "skill_name": "重大决策七步自检清单"
+    "skill_name": "重大决策七步自检清单",
+    "sourceTitle": "重大决策七步自检清单：避开7个认知陷阱，不踩坑"
   },
   "core_definition": "不是帮你“速战速决”的，而是在你要签字、投资、跳槽，甚至忍不住要吵架的关键时刻，拉你一把、泼盆冷水——帮你跳出认知误区，别被冲动带偏，少走点弯路，让",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

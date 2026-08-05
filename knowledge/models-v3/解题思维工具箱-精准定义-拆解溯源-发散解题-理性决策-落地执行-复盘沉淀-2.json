@@ -5,7 +5,8 @@
     "name": "解题思维工具箱",
     "category": "08",
     "tags": [],
-    "skill_name": "解题思维工具箱"
+    "skill_name": "解题思维工具箱",
+    "sourceTitle": "解题思维工具箱：精准定义+拆解溯源+发散解题+理性决策+落地执行+复盘沉淀"
   },
   "core_definition": "一套可以刻意练习、持续习得的思维与行动习惯",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

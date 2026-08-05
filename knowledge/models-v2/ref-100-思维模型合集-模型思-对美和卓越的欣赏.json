@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-对美和卓越的欣赏",
+  "meta": {
+    "name": "对美和卓越的欣赏",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):对美和卓越的欣赏",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "你停下来去闻路边的玫瑰，你欣赏各领域中美好和卓越的东西，不论 是自然的还是人为的，不论是数学的还是科学的。你对美好的东西充 满了敬畏与惊喜，看一场精彩的球赛，目睹人类无私的高尚行为，都 会激荡你的灵魂并使你奋发。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以对美和卓越的欣赏的方式思考这个问题。",
+    "activation_phrase": "请用对美和卓越的欣赏分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

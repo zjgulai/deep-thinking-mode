@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-通过间接获得成功",
+  "meta": {
+    "name": "通过间接获得成功",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):通过间接获得成功",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "重视他人的成功和业务的成功是非常重要的。集团高管的工作有效性， 在很大程度上依赖于他们帮助下属及其业务取得成功，判断事业部总 经理的战略管理能力和授权能力，以及推动项目的进度。  1163 / 1937 \f判断集团高管工作理念是否转变的三个",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以通过间接获得成功的方式思考这个问题。",
+    "activation_phrase": "请用通过间接获得成功分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

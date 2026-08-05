@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-率先探索了移动通信企业应用六西格玛管理法",
+  "meta": {
+    "name": "率先探索了移动通信企业应用六西格玛管理法",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):率先探索了移动通信企业应用六西格玛管理法",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "上海移动实践六西格玛质量管理法的道路，也是移动通信企业系统地运用六 西格玛质量管理法提升服务质量的先例和摸索之路。在服务业尚就应用六西格玛 管理法提 高服务质量进行争论和试验的同时，上海移动对于六西格玛管理法的 牛刀小试，或许可以看做是一",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以率先探索了移动通信企业应用六西格玛管理法的方式思考这个问题。",
+    "activation_phrase": "请用率先探索了移动通信企业应用六西分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-半衰期模型",
+  "meta": {
+    "name": "半衰期模型",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):半衰期模型",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在半衰期模型中，每 H 周期，数量就会衰减一半。假设世界上分布着 1000 个原子，每个原子每过 1 秒都有 50%的概率衰变，那么： 1 秒后：衰变了接近 500 个原子，还剩 500 个原子 2 秒后：还剩 250 个原子 3 秒后：还",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "你买了一个手机或者笔记本电脑，花了 1 万元，每年折旧一半，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以半衰期模型的方式思考这个问题。",
+    "activation_phrase": "请用半衰期模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

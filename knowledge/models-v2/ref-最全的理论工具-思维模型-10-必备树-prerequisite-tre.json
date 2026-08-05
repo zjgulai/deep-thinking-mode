@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-必备树-prerequisite-tre",
+  "meta": {
+    "name": "必备树（Prerequisite Tre",
+    "category": "07",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):必备树（Prerequisite Tre",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "就是，让那些将与这些转变直接相关的人来制定实施 转变所需的行动方案。这个工作是思维流程法中最有力的一环，也是 TOC 与其 他那些追求持续改 进的思维流程方法相比最显著的一个特色。用来显示克服障 碍路",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以必备树（Prerequisite Tre的方式思考这个问题。",
+    "activation_phrase": "请用必备树（Prerequisit分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

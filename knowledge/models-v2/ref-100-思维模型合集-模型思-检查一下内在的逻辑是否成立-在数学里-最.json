@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-检查一下内在的逻辑是否成立-在数学里-最",
+  "meta": {
+    "name": "检查一下内在的逻辑是否成立。在数学里，最",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):检查一下内在的逻辑是否成立。在数学里，最",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "论是否合理，而主要是看推导逻辑是否真正成立，而在其他事情亦也 是如此。比如：疫情来临的大米、盐、口罩的抢购行为在国内显然就 不太明智。因为国内的物资供应能力和产业链都比较全面，不可能长 期断货，民众看到的多是短期的现象，内在的逻辑是当今中国",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "疫情来临的大米、盐、口罩的抢购行为在国内显然就"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以检查一下内在的逻辑是否成立。在数学里，最的方式思考这个问题。",
+    "activation_phrase": "请用检查一下内在的逻辑是否成立。在分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

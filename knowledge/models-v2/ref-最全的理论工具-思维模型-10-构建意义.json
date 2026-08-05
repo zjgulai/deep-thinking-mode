@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-构建意义",
+  "meta": {
+    "name": "构建意义",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):构建意义",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "构建顾客金字塔，对于企业实现有效的顾客管理具有十分重要的意义。 首先，它有利于引导企业正确地配置营销资源  这种直观的顾客价值展现可以帮助营销管理者识别那些创造了企业 80％利 润的 20％的优质客户，从而可以有效地将有限的营销资源集中在",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以构建意义的方式思考这个问题。",
+    "activation_phrase": "请用构建意义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-领导者的决策",
+  "meta": {
+    "name": "领导者的决策",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):领导者的决策",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/  领导者在实施决策时，应对所决策的内容应用为什么一为什么分析法判断其 可行性，针对具体条款还应多提几个为什么，以确保决策不失误。如某企业在上 暖仓项目时，对技术条款争议较大，企业领导者应用",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以领导者的决策的方式思考这个问题。",
+    "activation_phrase": "请用领导者的决策分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

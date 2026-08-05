@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-搞好建章立制和考核工作-强化日常管理",
+  "meta": {
+    "name": "搞好建章立制和考核工作，强化日常管理",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):搞好建章立制和考核工作，强化日常管理",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "为了巩固清理整顿定置的成果，把定置管理纳入口常管理的轨道，根据厂部 要求，船体车间制定了《船体车间定置管理工作条例》，对责任区划分、责任人、 日常管理要求和措施，与经济责任制挂钩考核的办法等都作了详细的规定，出台 以后，下发到每个生产班组",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以搞好建章立制和考核工作，强化日常管理的方式思考这个问题。",
+    "activation_phrase": "请用搞好建章立制和考核工作，强化日分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

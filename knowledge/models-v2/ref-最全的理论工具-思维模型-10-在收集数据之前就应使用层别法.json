@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-在收集数据之前就应使用层别法",
+  "meta": {
+    "name": "在收集数据之前就应使用层别法",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):在收集数据之前就应使用层别法",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在解决日常问题时,经常会发现对于收集来的数据必须浪费相当多的精神来 分类,并作再一次的统计工作.在得到不适合的数据,如此又得重新收集,费时又费 力.所以在收集数据之前应该考虑数据的条件背景以后,先把它层别化,再开始收 集数据.(在做查检时",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在收集数据之前就应使用层别法的方式思考这个问题。",
+    "activation_phrase": "请用在收集数据之前就应使用层别法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

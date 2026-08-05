@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-基本含义",
+  "meta": {
+    "name": "基本含义",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):基本含义",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1958 年，美国管理学家本杰明·施奈德（Benjamin Schneider ）和大卫·鲍 恩（David E. Bowen）经过近 8 年的实证明研究，在一篇论文中提出“满意镜” 这一理论。  随后哈佛商学院著名教授詹姆斯·赫斯克特（",
+    "trigger_signals": [
+      "施奈德和大卫·鲍恩认为，员工对工作的满意程度和顾客满意程度"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以基本含义的方式思考这个问题。",
+    "activation_phrase": "请用基本含义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

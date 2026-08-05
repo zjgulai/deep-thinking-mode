@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-检验显著性",
+  "meta": {
+    "name": "检验显著性",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):检验显著性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们可以利用正态分布的规律来检验各种平均值的显著性差异。显著 性检验就是事先对总体（随机变量）的参数或总体分布形式做出一个 假设，然后利用样本信息来判断这个假设（备择假设）是否合理，即 判断总体的真实情况与原假设是否有显著性差异。其原理就是",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "现在提出这样一个假设，即旧金山的通勤时间与洛杉矶的通勤"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以检验显著性的方式思考这个问题。",
+    "activation_phrase": "请用检验显著性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

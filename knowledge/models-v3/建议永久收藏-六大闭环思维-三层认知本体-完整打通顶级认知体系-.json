@@ -5,7 +5,8 @@
     "name": "建议永久收藏",
     "category": "02",
     "tags": [],
-    "skill_name": "建议永久收藏"
+    "skill_name": "建议永久收藏",
+    "sourceTitle": "建议永久收藏：六大闭环思维+三层认知本体，完整打通顶级认知体系。"
   },
   "core_definition": "→匹配熟悉旧知识→建立对应关系→跨领域复用逻辑，大幅降低专业内容理解门槛",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

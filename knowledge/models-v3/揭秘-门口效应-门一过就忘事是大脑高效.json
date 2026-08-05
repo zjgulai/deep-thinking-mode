@@ -7,7 +7,8 @@
     "tags": [
       "认知科学"
     ],
-    "skill_name": "揭秘“门口效应”"
+    "skill_name": "揭秘“门口效应”",
+    "sourceTitle": "揭秘“门口效应”：门一过就忘事是大脑高效"
   },
   "core_definition": "这件事的本质是什么？揭秘“门口效应”如何定义它？",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-麦肯锡结构化战略思维-第1章-结构化战略思维是什么",
+  "meta": {
+    "name": "第1章 结构化战略思维是什么",
+    "category": "02",
+    "tags": [],
+    "source": "ref:《麦肯锡结构化战略思维》:第1章 结构化战略思维是什么",
+    "sourceTitle": "《麦肯锡结构化战略思维》",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "学习如何学习的认知方法，是批判性",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "医生谈药理、码农聊IT、创业者诉苦难，以及任何人聊娱乐八"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第1章 结构化战略思维是什么的方式思考这个问题。",
+    "activation_phrase": "请用第1章 结构化战略思维是什么分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

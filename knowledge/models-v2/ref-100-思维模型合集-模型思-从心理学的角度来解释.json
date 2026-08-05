@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-从心理学的角度来解释",
+  "meta": {
+    "name": "从心理学的角度来解释",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):从心理学的角度来解释",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "如果你老担心一件事情会失败，如担心、惶恐等，自然从心理上就会 紧张。事实上，“越怕出错，越会出事”的就是在形容一种对难以预料或 无法控制之事的恐惧或担忧，是一种展示负面心理暗示作用的心魔。 负面心理暗示会对人的心态及行为造成不良影响。美国斯",
+    "trigger_signals": [
+      "如果你老担心一件事情会失败，如担心、惶恐等，自然从心理上就会"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "你戴着眼镜打篮球，一再告诫自己“别把眼镜摔坏了”，大脑里就会"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以从心理学的角度来解释的方式思考这个问题。",
+    "activation_phrase": "请用从心理学的角度来解释分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

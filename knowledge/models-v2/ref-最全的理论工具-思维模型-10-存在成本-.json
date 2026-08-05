@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-存在成本-",
+  "meta": {
+    "name": "存在成本。",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):存在成本。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "移动通信企业存在运营成本。服务过程往往贯穿在运营商在产品推广、业务 受理、费用收取和投诉处理等一系列运营流程之中，运营商在这些流程中，投入 了大量运营成本。正是由于移动通信企业存在这些“运营成本”，所以公司就能 利用六西格玛管理法，通过提",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以存在成本。的方式思考这个问题。",
+    "activation_phrase": "请用存在成本。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

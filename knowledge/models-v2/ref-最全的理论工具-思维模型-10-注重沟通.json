@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-注重沟通",
+  "meta": {
+    "name": "注重沟通",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):注重沟通",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "引入宽带薪酬制度需要让管理层和员工作及时全面地沟通，让全体员工能清 晰地理解企业的报酬决定因素以及企业发展的策略，激励员工重视个人与企业发 展的一致性，并让员工看到自己将来在企业的前途。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以注重沟通的方式思考这个问题。",
+    "activation_phrase": "请用注重沟通分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

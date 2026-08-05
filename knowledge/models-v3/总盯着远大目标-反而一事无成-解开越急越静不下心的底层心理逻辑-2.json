@@ -5,7 +5,8 @@
     "name": "总盯着远大目标，反而一事无成？",
     "category": "09",
     "tags": [],
-    "skill_name": "总盯着远大目标，反而一事无成？"
+    "skill_name": "总盯着远大目标，反而一事无成？",
+    "sourceTitle": "总盯着远大目标，反而一事无成？解开越急越静不下心的底层心理逻辑"
   },
   "core_definition": "这个问题的根本原因是什么？总盯着远大目标，反而一事无成？如何找到它？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

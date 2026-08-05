@@ -5,7 +5,8 @@
     "name": "减法思维",
     "category": "02",
     "tags": [],
-    "skill_name": "减法思维"
+    "skill_name": "减法思维",
+    "sourceTitle": "减法思维：少，才是解决复杂问题的最优解"
   },
   "core_definition": "比起不断叠加，删减剥离更能触达问题本质",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

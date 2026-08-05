@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立新的人力资源管理的理念和思想",
+  "meta": {
+    "name": "建立新的人力资源管理的理念和思想",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立新的人力资源管理的理念和思想",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "能力、员工业绩水平、员工能力素质特征、行为特征结合起来，利 用标竿分析，挖掘其中存在的内在联系，而传统的能力素质往往并不严格要求按 照这种模式去建立。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立新的人力资源管理的理念和思想的方式思考这个问题。",
+    "activation_phrase": "请用建立新的人力资源管理的理念和思分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

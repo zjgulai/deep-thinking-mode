@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-杰伊-寇里-jay-curry-等著-陈",
+  "meta": {
+    "name": "杰伊·寇里(Jay Curry)等著，陈",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):杰伊·寇里(Jay Curry)等著，陈",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "际(台湾)公司，2000 \f http://wiki.mbalib.com/ 植田 T 理论  —典型的竞争性理论策略工具 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以杰伊·寇里(Jay Curry)等著，陈的方式思考这个问题。",
+    "activation_phrase": "请用杰伊·寇里(Jay Curry分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

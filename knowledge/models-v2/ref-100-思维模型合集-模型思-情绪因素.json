@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-情绪因素",
+  "meta": {
+    "name": "情绪因素",
+    "category": "10",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):情绪因素",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人们对物品的主观估价受情绪的影响，研究发现，不论是消极情绪还 是积极情绪都在禀赋效应的产生过程中扮演着重要的角色。过去的积 极情绪会增强禀赋效应，消极情绪会减弱禀赋效应。 例如：小李投资了一套房产，太太一直在打理，租客经常换来换去， 并且把",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "小李投资了一套房产，太太一直在打理，租客经常换来换去，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以情绪因素的方式思考这个问题。",
+    "activation_phrase": "请用情绪因素分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

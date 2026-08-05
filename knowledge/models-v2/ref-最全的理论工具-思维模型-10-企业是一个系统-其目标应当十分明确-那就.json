@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业是一个系统-其目标应当十分明确-那就",
+  "meta": {
+    "name": "企业是一个系统，其目标应当十分明确，那就",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业是一个系统，其目标应当十分明确，那就",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "多的利润  2．一切妨碍企业实现整体目标的因素都是约束  按照意大利经济学家帕拉图的原理，对系统有重大影响的往往是少数几个 约束，为数不多，但至少有一个。约束有各种类型，不仅有物质型的，如市场、 物料、能力、资金等，而且还有非物质型的，如后",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "一套解决约束的流程。",
+        "action": "一套解决约束的流程。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "一套日常管理工具。可用来大大提高管理效能",
+        "action": "一套日常管理工具。可用来大大提高管理效能，例如：如何有效沟通、",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "把 TOC 应用到具体领域的具有创新性的",
+        "action": "把 TOC 应用到具体领域的具有创新性的实证方案。这些领域涉及生产、",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "如何有效沟通、 如何双赢地解决冲突、如何团队协作、如何进行权利分配等"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「企业是一个系统，其目标应」思维模式运行。\n\nStep 1 - 一套解决约束的流程。：一套解决约束的流程。\n\nStep 2 - 一套日常管理工具。可用来大大提高管理效能：一套日常管理工具。可用来大大提高管理效能，例如：如何有效沟通、\n\nStep 3 - 把 TOC 应用到具体领域的具有创新性的：把 TOC 应用到具体领域的具有创新性的实证方案。这些领域涉及生产、\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用企业是一个系统，其目标应当十分分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

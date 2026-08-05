@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-系统性",
+  "meta": {
+    "name": "系统性",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):系统性",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "包括引进、安装、调试、使用、维护、维修、改造，直到报废更新的各个阶段作 为 管理对象，涉及设备的各个子系统以及设备的每一个部件、零件，构成以事 后维修、预防维修、改善维修和维修预防为主导的全系统生产维修体系。同时， TPM 要 求对设备环境",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以系统性的方式思考这个问题。",
+    "activation_phrase": "请用系统性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

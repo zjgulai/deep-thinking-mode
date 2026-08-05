@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-首席执行官面临的五个挑战",
+  "meta": {
+    "name": "首席执行官面临的五个挑战",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):首席执行官面临的五个挑战",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "挑战一：善于平衡短期和长期利益，实现可持续发展。 挑战二：设 定公司的发展方向。 挑战三：培育公司的软实力。 挑战四：执行 到位，他们必须把公司的战略执行到位。 挑战五：管理全球化背景 下的公司。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以首席执行官面临的五个挑战的方式思考这个问题。",
+    "activation_phrase": "请用首席执行官面临的五个挑战分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

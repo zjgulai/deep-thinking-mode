@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-按项目的交付物进行静态分解",
+  "meta": {
+    "name": "按项目的交付物进行静态分解",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按项目的交付物进行静态分解",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "项目的最终交付物可以是实物产品，也可以是一项服务，在进行静态的工作 结构分解时，从交付物的功能结构为出发点进行分解。例如可以将办公楼建设项 目分解为研发中心、生产运营中心、市场营销中心、行政服务中心、总裁办公室、 会议中心、绿化区几个功能",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "可以将办公楼建设项 目分解为研发中心、生产运营中心、市场营销中心、行政服务中心、总裁办公室、"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以按项目的交付物进行静态分解的方式思考这个问题。",
+    "activation_phrase": "请用按项目的交付物进行静态分解分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

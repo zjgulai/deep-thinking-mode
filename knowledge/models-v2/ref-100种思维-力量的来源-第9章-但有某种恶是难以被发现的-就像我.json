@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100种思维-力量的来源-第9章-但有某种恶是难以被发现的-就像我",
+  "meta": {
+    "name": "第9章。但有某种恶是难以被发现的，就像我",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100种思维  力量的来源 (帕斯卡):第9章。但有某种恶是难以被发现的，就像我",
+    "sourceTitle": "100种思维  力量的来源 (帕斯卡)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "原罪 就是距离我们最遥远的神秘",
+    "trigger_signals": [
+      "当我们要对马和狗的本性做出判断时",
+      "如果我让人相信了一种谎言，我就该受",
+      "如果我引诱其他人归属我，我也应该受到责备。我应该向那"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "怀疑主义者提出了反对教育、 习俗、态度、国家和相似性的痕迹"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第9章。但有某种恶是难以被发现的，就像我的方式思考这个问题。",
+    "activation_phrase": "请用第9章。但有某种恶是难以被发现分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

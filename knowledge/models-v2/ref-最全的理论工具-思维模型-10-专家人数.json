@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-专家人数",
+  "meta": {
+    "name": "专家人数",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):专家人数",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "专家人数过多多少都不恰当，人数过少则限制了代表性；人数太多则难于组 织，工作量也大。人数的多少应以达到所需的可信度为宜，经研究，可信度在专 家人数超过 15 人后，随人数增加可信度增加较少。一般说来，以 10~50 人为宜， 对重大问题，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，说明事件发生的 时间、叙述争论问题和事件或迟或早发生的理由"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以专家人数的方式思考这个问题。",
+    "activation_phrase": "请用专家人数分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

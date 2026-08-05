@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-某多多推广",
+  "meta": {
+    "name": "某多多推广",
+    "category": "03",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):某多多推广",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "很多人很烦某多多，但其商业结构上的运作成功，极其高明，回想自 己的同学群家人群，有几个群没有被拼多多轰炸过。某多多病毒推广， 1000 元红包，只差砍掉 1 毛钱就可以拿到，然后希望你点击砍一刀， 这个请求门槛设计得够绝。等你实施了砍一刀的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以某多多推广的方式思考这个问题。",
+    "activation_phrase": "请用某多多推广分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

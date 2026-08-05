@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-双目标清单思维模型",
+  "meta": {
+    "name": "双目标清单思维模型",
+    "category": "05",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:双目标清单思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 双目标清单系统 Two-List System,也叫 25-5 生产力法则,有目标是非常重",
+    "trigger_signals": [
+      "如果我们把人生分为几个阶段的话,那么在每一个阶段当中,都是可以",
+      "当我们清楚的了解自身条件的可能,在天时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以双目标清单思维模型的方式思考这个问题。",
+    "activation_phrase": "请用双目标清单思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -5,7 +5,8 @@
     "name": "什么是真正的休息",
     "category": "09",
     "tags": [],
-    "skill_name": "什么是真正的休息"
+    "skill_name": "什么是真正的休息",
+    "sourceTitle": "什么是真正的休息"
   },
   "core_definition": "这件事的本质是什么？什么是真正的休息如何定义它？",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

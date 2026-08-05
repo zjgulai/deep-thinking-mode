@@ -5,7 +5,8 @@
     "name": "决策心理学20个核心概念",
     "category": "06",
     "tags": [],
-    "skill_name": "决策心理学20个核心概念"
+    "skill_name": "决策心理学20个核心概念",
+    "sourceTitle": "决策心理学20个核心概念：从底层逻辑到决策优化"
   },
   "core_definition": "这个问题的根本原因是什么？决策心理学20个核心概念如何找到它？",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

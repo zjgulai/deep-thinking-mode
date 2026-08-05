@@ -5,7 +5,8 @@
     "name": "个人成长与通用思维框架",
     "category": "08",
     "tags": [],
-    "skill_name": "个人成长与通用思维框架"
+    "skill_name": "个人成长与通用思维框架",
+    "sourceTitle": "个人成长与通用思维框架"
   },
   "core_definition": "如何有效完成这件事？个人成长与通用思维框架的操作路径是什么？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

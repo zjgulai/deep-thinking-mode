@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-音乐智能",
+  "meta": {
+    "name": "音乐智能",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):音乐智能",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "音乐是世界的语言。人类学家列维·斯特劳斯曾经说过：我们如果能够 诠释音乐，我们就能找到一把通向所有人心灵的钥匙。纵观历史，不 同的国度，不同文化背景，音乐都是一种普遍的本能。人类从幼儿开 始，就具有一种与生俱来的感知音乐的能力，能准确的识别",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以音乐智能的方式思考这个问题。",
+    "activation_phrase": "请用音乐智能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-如果你有一个大大的坏消息和一个小小的好消",
+  "meta": {
+    "name": "如果你有一个大大的坏消息和一个小小的好消",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):如果你有一个大大的坏消息和一个小小的好消",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "规范性的经济学，也就是教育人们应该怎样做",
+    "trigger_signals": [
+      "如果你还活着，就可以把支票拿去兑现，你愿意赌一次吗？",
+      "如果你想看演出，必须再花３００元买",
+      "如果你在上海想买一个二手房，面积是１００平米，去年房东"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "让我们来做这样一个实验。 Ａ．你一定能赚３００００元"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以如果你有一个大大的坏消息和一个小小的好消的方式思考这个问题。",
+    "activation_phrase": "请用如果你有一个大大的坏消息和一个分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

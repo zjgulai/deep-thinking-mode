@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业成本管理方面的问题",
+  "meta": {
+    "name": "企业成本管理方面的问题",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业成本管理方面的问题",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业对于绿色供应链投入的成本包括人力成本、资产成本、信息成本、以及 物流成本，并且在绿色供应链中，各个成员企业还必须考虑供应链的社会成本， 即供应链由于环境保护、产品维修以及产品的回收所带来的成本。这些成本的投 入是否能为企业带来预期的收",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业成本管理方面的问题的方式思考这个问题。",
+    "activation_phrase": "请用企业成本管理方面的问题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

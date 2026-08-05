@@ -5,7 +5,8 @@
     "name": "框架思维：十种知识整合方式详解",
     "category": "04",
     "tags": [],
-    "skill_name": "框架思维-十种知识整合方式详解"
+    "skill_name": "框架思维-十种知识整合方式详解",
+    "sourceTitle": "框架思维：十种知识整合方式详解"
   },
   "core_definition": "按照既定类别、层级与维度，对零散信息进行分类归纳，让信息逻辑更清晰、内容更规整，进而形成系统的信息体系",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

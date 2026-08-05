@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-使组织获得正确的反馈",
+  "meta": {
+    "name": "使组织获得正确的反馈",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):使组织获得正确的反馈",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "职业锚是员工经过搜索，所确定的长期职业贡献区或职业定位。这一搜索定 位过程，依循着员工的需要、动机和价值观进行。所以，职业锚清楚的反映出员 工职业追求与抱负。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以使组织获得正确的反馈的方式思考这个问题。",
+    "activation_phrase": "请用使组织获得正确的反馈分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

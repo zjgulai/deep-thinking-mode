@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-进行书面工作评价",
+  "meta": {
+    "name": "进行书面工作评价",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):进行书面工作评价",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "很多公司都有对员工的工作考评，在工作考评后不仅要有及时的考评沟通， 还要有书面的工作评价。工作评价可以每半年进行一次，在工作评价中要诚恳地 对员工的优 缺点进行分析和总结。在员工拿到自己的工作评价时，对自身的情 况会有一个客观的了解，并且",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以进行书面工作评价的方式思考这个问题。",
+    "activation_phrase": "请用进行书面工作评价分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

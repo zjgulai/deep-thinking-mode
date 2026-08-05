@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-清洁",
+  "meta": {
+    "name": "清洁",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):清洁",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "果，使其保持完美和最佳状态， 并将整理、整顿、清扫、安全进行到底，使之 制度化、标准化。清洁的目的是为了坚持前几个管理环节的成果。 实施清洁活动的要点： (1)职责明确。公司里所有的区域或设备都应有明确的整理、整顿、清扫、安全 的责任者，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以清洁的方式思考这个问题。",
+    "activation_phrase": "请用清洁分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

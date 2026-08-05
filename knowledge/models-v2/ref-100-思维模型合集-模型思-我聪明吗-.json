@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-我聪明吗-",
+  "meta": {
+    "name": "我聪明吗？",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):我聪明吗？",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "获得（语言，数学等）知识的能力，它决定于后天的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "类比、演绎推理能力，形成抽象概念的能力 等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以我聪明吗？的方式思考这个问题。",
+    "activation_phrase": "请用我聪明吗？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

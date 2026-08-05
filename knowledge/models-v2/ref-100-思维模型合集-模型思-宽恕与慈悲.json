@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-宽恕与慈悲",
+  "meta": {
+    "name": "宽恕与慈悲",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):宽恕与慈悲",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "慈悲的人原谅那些曾对不起他们的人，他们永远会给别人第二次机会， 他们处世的原则是慈悲而不是复仇。当他们宽恕别人时，他们的主要 动机或行为就转向积极（仁慈、慷慨）而较少消极（回避或报复）。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以宽恕与慈悲的方式思考这个问题。",
+    "activation_phrase": "请用宽恕与慈悲分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

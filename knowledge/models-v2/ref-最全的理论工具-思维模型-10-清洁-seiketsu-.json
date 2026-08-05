@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-清洁-seiketsu-",
+  "meta": {
+    "name": "清洁(SEIKETSU)",
+    "category": "12",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):清洁(SEIKETSU)",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "多污染的地方，3S 贵在坚持，不能半途而废，否则",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以清洁(SEIKETSU)的方式思考这个问题。",
+    "activation_phrase": "请用清洁(SEIKETSU)分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -5,7 +5,8 @@
     "name": "第1篇",
     "category": "10",
     "tags": [],
-    "skill_name": "第1篇"
+    "skill_name": "第1篇",
+    "sourceTitle": "第1篇：拖延的内心戏：当恐惧与焦虑成为行动的黑客"
   },
   "core_definition": "如何有效完成这件事？第1篇的操作路径是什么？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

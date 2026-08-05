@@ -5,7 +5,8 @@
     "name": "第一性原理践行指南",
     "category": "04",
     "tags": [],
-    "skill_name": "第一性原理践行指南"
+    "skill_name": "第一性原理践行指南",
+    "sourceTitle": "第一性原理践行指南"
   },
   "core_definition": "层层追问“为什么”，剥离表象至不可反驳的底层规律",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

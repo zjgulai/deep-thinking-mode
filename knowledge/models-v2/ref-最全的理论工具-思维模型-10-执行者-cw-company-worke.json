@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-执行者-cw-company-worke",
+  "meta": {
+    "name": "执行者 CW（Company Worke",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):执行者 CW（Company Worke",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "A 典型特征：保守；顺从；务实可靠。  B 积极特性：有组织能力、实践经验；工作勤奋；有自我约束力  C 能容忍的弱点：缺乏灵活性；对没有把握的主意不感兴趣  D 在团队中的作用  1、把谈话与建议转换为实际步骤  2、考虑什么是行得通的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以执行者 CW（Company Worke的方式思考这个问题。",
+    "activation_phrase": "请用执行者 CW（Company 分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

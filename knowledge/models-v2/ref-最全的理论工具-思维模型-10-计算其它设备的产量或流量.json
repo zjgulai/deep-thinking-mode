@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-计算其它设备的产量或流量",
+  "meta": {
+    "name": "计算其它设备的产量或流量",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):计算其它设备的产量或流量",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "确定了瓶颈设备的产量或流量后，以瓶颈为中心按“拉动式”以瓶颈设备为 基准由后向前排定。按“推动式”以瓶颈设备为基准由前往后安排。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以计算其它设备的产量或流量的方式思考这个问题。",
+    "activation_phrase": "请用计算其它设备的产量或流量分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

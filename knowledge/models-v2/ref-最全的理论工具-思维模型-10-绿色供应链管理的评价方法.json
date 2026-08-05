@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-绿色供应链管理的评价方法",
+  "meta": {
+    "name": "绿色供应链管理的评价方法",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绿色供应链管理的评价方法",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "既有坚实的理论背景, 又能客观地反映专家和决策者主观",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以绿色供应链管理的评价方法的方式思考这个问题。",
+    "activation_phrase": "请用绿色供应链管理的评价方法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

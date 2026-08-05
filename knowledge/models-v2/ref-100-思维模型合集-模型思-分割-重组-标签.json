@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-分割-重组-标签",
+  "meta": {
+    "name": "分割、重组、标签",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):分割、重组、标签",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "注意力是有限且连贯的，这是由大脑自我最大化记忆表层的机制所决 定的。我们只能对整个环境中的一部分做出反应。在一段时间内，我 们可能会依次关注各个部分，直至覆盖整个环境为止。所以，我们在 具体处理问题和进行创新的过程中，可以划分小的独立单元、",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "5 亿，竞标结果是美",
+        "action": "5 亿，竞标结果是美",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "25 亿获得独家播映权。",
+        "action": "25 亿获得独家播映权。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "5 亿美元。当《华盛",
+        "action": "5 亿美元。当《华盛",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "1976 年在加拿大蒙特利尔举办的第 21 届奥运会，亏损 10 亿美元；1980 年"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「分割、重组、标签」思维模式运行。\n\nStep 1 - 5 亿，竞标结果是美：5 亿，竞标结果是美\n\nStep 2 - 25 亿获得独家播映权。：25 亿获得独家播映权。\n\nStep 3 - 5 亿美元。当《华盛：5 亿美元。当《华盛\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用分割、重组、标签分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

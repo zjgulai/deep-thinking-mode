@@ -5,7 +5,8 @@
     "name": "情绪内耗的3个机制",
     "category": "09",
     "tags": [],
-    "skill_name": "情绪内耗的3个机制"
+    "skill_name": "情绪内耗的3个机制",
+    "sourceTitle": "情绪内耗的3个机制：为什么接纳比对抗更高效？"
   },
   "core_definition": "很简单：对抗是在原有问题上，新增一层自我内耗；接纳是停止自我拉扯，把全部精力用来解决真正的问题",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

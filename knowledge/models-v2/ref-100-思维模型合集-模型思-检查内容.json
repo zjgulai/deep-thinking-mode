@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-检查内容",
+  "meta": {
+    "name": "检查内容",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):检查内容",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "时间管理工具，更是一个生活工作管理工具，在信息",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在飞机上我们可以写方案或 者看书等。 标准 2 一时间："
+    }
+  },
+  "codex": {
+    "system_prompt": "请以检查内容的方式思考这个问题。",
+    "activation_phrase": "请用检查内容分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

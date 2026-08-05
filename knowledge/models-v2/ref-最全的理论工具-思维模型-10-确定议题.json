@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-确定议题",
+  "meta": {
+    "name": "确定议题",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定议题",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "支持人宣布开会，真正的主题不宣布，而是提出与主题相关的实质性的问题 让与会者自由发言，若戈登法的主题是\"开启\" ，那么实质性的问题可以是“新 型罐头盒的起子设计”，若主题是\"储藏\" ，实质性问题就可以是\"城市停车场设 计”，若主题是“无摩",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以确定议题的方式思考这个问题。",
+    "activation_phrase": "请用确定议题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

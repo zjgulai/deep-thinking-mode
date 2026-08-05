@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-均衡化生产和标准作业是-jit-生产制的",
+  "meta": {
+    "name": "均衡化生产和标准作业是 JIT 生产制的",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):均衡化生产和标准作业是 JIT 生产制的",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "操作工人加工工件时，运送工件、在机",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以均衡化生产和标准作业是 JIT 生产制的的方式思考这个问题。",
+    "activation_phrase": "请用均衡化生产和标准作业是 JIT分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

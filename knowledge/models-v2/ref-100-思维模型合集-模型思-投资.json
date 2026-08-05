@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-投资",
+  "meta": {
+    "name": "投资",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):投资",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "风险投资人，一般在公司创办早期进行投资，风险极大，",
+    "trigger_signals": [
+      "如果你是一个风险投资人，一般在公司创办早期进行投资，风险极大，",
+      "如果你是一名股票投资者，我们不宜采用风险投资的策略，上市往往"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以投资的方式思考这个问题。",
+    "activation_phrase": "请用投资分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

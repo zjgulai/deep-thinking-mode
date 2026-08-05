@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-该企业的机会-威胁分析",
+  "meta": {
+    "name": "该企业的机会、威胁分析",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):该企业的机会、威胁分析",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "由于该企业是一家玻璃企业，所以对它来自于外部的机会和威胁分析应着重于整个玻璃行业 的竞争态势分析，现就几个重要的考察指标结合该行业实际状况加以分析。如表9所示： 表 9： 行业竞争因素分析表 分析主要指标 指标简述 玻璃行业表现症状(激烈",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以该企业的机会、威胁分析的方式思考这个问题。",
+    "activation_phrase": "请用该企业的机会、威胁分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

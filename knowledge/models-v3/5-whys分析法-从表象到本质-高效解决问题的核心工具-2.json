@@ -5,7 +5,8 @@
     "name": "5 Whys分析法",
     "category": "04",
     "tags": [],
-    "skill_name": "5-whys分析法"
+    "skill_name": "5-whys分析法",
+    "sourceTitle": "5 Whys分析法：从表象到本质，高效解决问题的核心工具"
   },
   "core_definition": "核心是：通过反复追问（通常5次左右），跳出表象定位根本原因，进而制定有效解决方案",
   "when_to_use": {
@@ -66,7 +67,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

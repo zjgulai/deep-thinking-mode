@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-意义感-不仅要追求财富-还要追求意义感-",
+  "meta": {
+    "name": "意义感。不仅要追求财富,还要追求意义感。",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):意义感。不仅要追求财富,还要追求意义感。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "融合了技术、认知科学、人类需求",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "独具匠心的花园、环行小路、艺术气 息的走廊和温馨如家的病房等等,医生们已经意识到这些都有助于患者"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以意义感。不仅要追求财富,还要追求意义感。的方式思考这个问题。",
+    "activation_phrase": "请用意义感。不仅要追求财富,还要追分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-我爱学习吗-",
+  "meta": {
+    "name": "我爱学习吗？",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):我爱学习吗？",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "听起来让很多人龇牙的问题，我就是其中之一，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以我爱学习吗？的方式思考这个问题。",
+    "activation_phrase": "请用我爱学习吗？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

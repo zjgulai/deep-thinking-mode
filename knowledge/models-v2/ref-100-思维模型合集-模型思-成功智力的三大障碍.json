@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-成功智力的三大障碍",
+  "meta": {
+    "name": "成功智力的三大障碍",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):成功智力的三大障碍",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "第一大障碍是权威人物的负面期望。当这些权威人物，不管是老师、 领导、老板、家长不看好你的时候，常常会导致你成为平庸之辈。具 有成功智力的人无视负面期望，即使这些期望源自于智商或类似测验 的低得分。他们不会因他人的评论而停止向目标前进的脚步，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以成功智力的三大障碍的方式思考这个问题。",
+    "activation_phrase": "请用成功智力的三大障碍分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

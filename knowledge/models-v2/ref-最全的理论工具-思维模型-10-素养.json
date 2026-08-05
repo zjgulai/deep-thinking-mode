@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-素养",
+  "meta": {
+    "name": "素养",
+    "category": "07",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):素养",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "好遵守规章制度、积极向上的工作习惯． 养成良好的文明习惯及团队精神。 素养的推行方法： (1) 各部门利用班前班后会等方式向全体员工宣传解说．并要求员工身体力行； (2) 印发“员工素养活动推行” 标志、卡片或标语， 发给员工阅读和保存；",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以素养的方式思考这个问题。",
+    "activation_phrase": "请用素养分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-创业",
+  "meta": {
+    "name": "创业",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):创业",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们是工作还是创业？如果你不能成为公司的高管，也不能获得公司 的股权分配，那么一个基础的工作，随着时间的积累，你的收入只能 获得线性增长，你拥有的财富很难指数级增长。  1708 / 1937 \f例如：一名职场人士通过不断的换工作来提升收入",
+    "trigger_signals": [
+      "如果你不能成为公司的高管，也不能获得公司",
+      "如果你有 100 万，在你面前有一个投资虚拟货币"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一名职场人士通过不断的换工作来提升收入，通过 10 年时间换"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以创业的方式思考这个问题。",
+    "activation_phrase": "请用创业分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

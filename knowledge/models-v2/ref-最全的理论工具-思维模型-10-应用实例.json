@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-应用实例",
+  "meta": {
+    "name": "应用实例",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):应用实例",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "6.1. 案例 1：基于SWOT分析法的企业竞争情报案例分析：IBM公司  运用SWOT分析IBM这一企业，必须对企业自身有一个充分的认识和了解，从实践的角度来加 深对企业竞争情报理论的理解。 1. IBM公司简介  IBM，即国际商业机器",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "1：基于SWOT分析法的企业竞争情报案例分析：IBM公司"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以应用实例的方式思考这个问题。",
+    "activation_phrase": "请用应用实例分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

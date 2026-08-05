@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-类比推理",
+  "meta": {
+    "name": "类比推理",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):类比推理",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "类比推理是根据两个或两类对象有部分属性相同，从而推出它们的其 他属性也相同的推理。 例如： A 具有特性 R、S、T、U、V、W、X 和 Y。 B 具有特性 R、S、T、U、V、W、X 和 Y。 A 具有特性 Z。 所以，B 也具有特性 Z",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "A 具有特性 R、S、T、U、V、W、X 和 Y"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以类比推理的方式思考这个问题。",
+    "activation_phrase": "请用类比推理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-动机越强-行为就越有可能做到-",
+  "meta": {
+    "name": "动机越强，行为就越有可能做到。",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):动机越强，行为就越有可能做到。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "当动机足够强烈的时候，一般我们可以做特别难的事情，比如学英语， 跑马拉松等。当动机一般强的时候。我们会去做相对比较容易的事情， 比如散散步，看会儿书等。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "学英语， 跑马拉松等。当动机一般强的时候"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以动机越强，行为就越有可能做到。的方式思考这个问题。",
+    "activation_phrase": "请用动机越强，行为就越有可能做到。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -5,7 +5,8 @@
     "name": "真正的深度学习",
     "category": "06",
     "tags": [],
-    "skill_name": "真正的深度学习"
+    "skill_name": "真正的深度学习",
+    "sourceTitle": "真正的深度学习：用四个视角，把书本知识变成自己的认知"
   },
   "core_definition": "不做被动的信息接收者，要做主动的知识建构者",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

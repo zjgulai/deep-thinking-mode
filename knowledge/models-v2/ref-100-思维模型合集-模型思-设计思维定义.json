@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-设计思维定义",
+  "meta": {
+    "name": "设计思维定义",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):设计思维定义",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "理念：以人为 本的设计（HumanCenterDesign）＋同理心（Empathy）。 从服务对象最根本需求出发，将问题和挑战转化为创新的机遇，并通  62 / 1937 \f过快速设计原型及反复测试",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说电 动车就是新的，区别于传统燃油汽车。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以设计思维定义的方式思考这个问题。",
+    "activation_phrase": "请用设计思维定义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -5,7 +5,8 @@
     "name": "福格行为模型",
     "category": "07",
     "tags": [],
-    "skill_name": "福格行为模型"
+    "skill_name": "福格行为模型",
+    "sourceTitle": "福格行为模型：一个公式+三种提示+五个简化方向，让行为改变自动发生"
   },
   "core_definition": "福格行为模型：一个公式+三种提示+五个简化方向，让行为改变自动发生  斯坦福大学 B.J. 福格教授提出的福格行为模型，是解读人类行为的经典理论，广泛用于习惯养成、行为改变、产品设计等领域。  一、核心公式：B = MAP  所有行为的发生，都遵循同一个公式：  行为 (B) = 动机 (M) + ",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

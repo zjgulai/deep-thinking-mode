@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-智力多因素论",
+  "meta": {
+    "name": "智力多因素论",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):智力多因素论",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1938 年，美国心理学家瑟斯顿对芝加哥大学的学生实施了 56 个能力测 验，提出智力由 7 种基本心理能力构成：字词流畅性，词语理解，空 间能力，知觉速度，计数能力，归纳推理能力和记忆能力，并且各基 本能力之间彼此独立。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以智力多因素论的方式思考这个问题。",
+    "activation_phrase": "请用智力多因素论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

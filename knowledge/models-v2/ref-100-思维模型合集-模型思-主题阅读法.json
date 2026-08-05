@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-主题阅读法",
+  "meta": {
+    "name": "主题阅读法",
+    "category": "01",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):主题阅读法",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "的理论和观点，短 时间内快速的浏览所有的书籍。 画出思",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，我之前每周都设定一个阅读目标，像批判性"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以主题阅读法的方式思考这个问题。",
+    "activation_phrase": "请用主题阅读法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

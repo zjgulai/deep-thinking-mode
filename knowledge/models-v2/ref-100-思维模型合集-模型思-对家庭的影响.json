@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-对家庭的影响",
+  "meta": {
+    "name": "对家庭的影响",
+    "category": "10",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):对家庭的影响",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "情绪智力高的人对婚姻和家庭会产生积极的影响，情绪智力低下对婚 姻和家庭伤害极大。 2018 年民政部统计数据显示，中国的离婚率持续上升，其中排名前五 的省份为：黑龙江 63％，天津 62％，吉林 62％，辽宁 54％，重庆 53％。 每年的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以对家庭的影响的方式思考这个问题。",
+    "activation_phrase": "请用对家庭的影响分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

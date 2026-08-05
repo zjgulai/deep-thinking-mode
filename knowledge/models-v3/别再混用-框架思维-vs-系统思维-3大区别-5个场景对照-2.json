@@ -5,7 +5,8 @@
     "name": "别再混用！框架思维 vs 系统思维",
     "category": "07",
     "tags": [],
-    "skill_name": "别再混用！框架思维-vs-系统思维"
+    "skill_name": "别再混用！框架思维-vs-系统思维",
+    "sourceTitle": "别再混用！框架思维 vs 系统思维：3大区别+5个场景对照"
   },
   "core_definition": "概括：框架看清结构，系统看透循环",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-勇敢与勇气",
+  "meta": {
+    "name": "勇敢与勇气",
+    "category": "10",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):勇敢与勇气",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一个勇敢的人是能够将恐惧情绪与自己的行为分开的人，他会抗拒要 逃跑的冲动，面对恐惧情境，他不去理会主观和生理反应所带来的不 适。胆大妄为和冲动并不是勇敢，虽然害怕但仍能面对危险才是勇敢。 现在勇敢的意义已超越了战场上的勇敢及身体上的勇敢，还",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以勇敢与勇气的方式思考这个问题。",
+    "activation_phrase": "请用勇敢与勇气分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

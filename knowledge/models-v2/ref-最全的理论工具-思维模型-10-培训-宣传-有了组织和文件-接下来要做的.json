@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-培训-宣传-有了组织和文件-接下来要做的",
+  "meta": {
+    "name": "培训、宣传。有了组织和文件，接下来要做的",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):培训、宣传。有了组织和文件，接下来要做的",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "员工， 主要内容是“5S”基本知识， 以及“5S”指导性文件。宣传可以起到 潜移默化的作用，旨在从根本上提升员工的“5S”意识。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以培训、宣传。有了组织和文件，接下来要做的的方式思考这个问题。",
+    "activation_phrase": "请用培训、宣传。有了组织和文件，接分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

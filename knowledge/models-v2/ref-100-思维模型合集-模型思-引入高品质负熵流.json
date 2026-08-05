@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-引入高品质负熵流",
+  "meta": {
+    "name": "引入高品质负熵流",
+    "category": "12",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):引入高品质负熵流",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "任何一个生命体必须引入负熵来对抗熵增。生命需要摄入高品质的负 熵才能保持健康。例如：人类只有吃健康的食物才能保持身体的健康， 而如果吃蝙蝠、果子狸等野生动物，就可能被病毒感染，导致传染性 肺炎，最终害人害己。同理，一个国家、一个社会、一个企",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "人类只有吃健康的食物才能保持身体的健康，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以引入高品质负熵流的方式思考这个问题。",
+    "activation_phrase": "请用引入高品质负熵流分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

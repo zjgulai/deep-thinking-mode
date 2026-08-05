@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-可能丧失部分客户-如果采用成本领先战略的",
+  "meta": {
+    "name": "可能丧失部分客户。如果采用成本领先战略的",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:可能丧失部分客户。如果采用成本领先战略的",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "略的厂家的产品价格差距拉得很大，在这种情况下，用户为了大量节省费用，放弃取得差异的厂 家所拥有的产品特征、服务或形象，转而选择物美价廉的产品；",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以可能丧失部分客户。如果采用成本领先战略的的方式思考这个问题。",
+    "activation_phrase": "请用可能丧失部分客户。如果采用成本分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

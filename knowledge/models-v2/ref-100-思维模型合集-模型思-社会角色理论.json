@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-社会角色理论",
+  "meta": {
+    "name": "社会角色理论",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):社会角色理论",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "个体在社会结构中占有一定的地位,围绕这一地位,社会各方面对其存 在各种期望,从而形成一个角色。角色的扮演和实现过程,实际上就是个 体为了适应和满足社会和群体对其设定的期望而不断修正自己态度和 改变自己行为模式的过程。无论个体本身是否认同,个",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以社会角色理论的方式思考这个问题。",
+    "activation_phrase": "请用社会角色理论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

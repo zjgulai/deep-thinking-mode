@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-组建角色搭配合理的团队-",
+  "meta": {
+    "name": "组建角色搭配合理的团队。",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):组建角色搭配合理的团队。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "根据团队角色的思想，在组建团队时，不仅要关注单个成员的能力，更应该 注重成员问的合理组合，重视成员间的角色搭配。一个好的团队，既需要出谋划 策的创新者，又需要将工作落实和维护的完成者．既需要提供和推广新思想的资 源调查者，又需要将概念转变",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以组建角色搭配合理的团队。的方式思考这个问题。",
+    "activation_phrase": "请用组建角色搭配合理的团队。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

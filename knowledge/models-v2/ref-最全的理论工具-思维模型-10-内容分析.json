@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-内容分析",
+  "meta": {
+    "name": "内容分析",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):内容分析",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "3X3 矩阵，描绘了各项业务的前景和公司竞争力；每一项业务",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，在一个吸引力相对较弱的行业中，拥有很 强的竞争地 位，则可能需要采取不同的策略，因为在缺乏吸引力的行业中继续"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以内容分析的方式思考这个问题。",
+    "activation_phrase": "请用内容分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

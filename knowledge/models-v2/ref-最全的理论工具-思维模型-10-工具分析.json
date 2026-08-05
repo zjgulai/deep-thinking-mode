@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-工具分析",
+  "meta": {
+    "name": "工具分析",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具分析",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "最为悲观的对策，是处在最困难的情况下不得不采取的对策；WO对策和",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，通常采用的一种简明 扼要的方法——PEST 分析：主要从政治、经济、社会文化和技术等角度分析环境变化对企业产生"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以工具分析的方式思考这个问题。",
+    "activation_phrase": "请用工具分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

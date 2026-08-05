@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-杠杆原理",
+  "meta": {
+    "name": "杠杆原理",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):杠杆原理",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "简单机械。通常，人们把在力的作用下能绕着固定点转动",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "营销虽然省力了，但是利用了脑袋里的资源，杠杆是一种"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以杠杆原理的方式思考这个问题。",
+    "activation_phrase": "请用杠杆原理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

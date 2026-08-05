@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-组织机构-",
+  "meta": {
+    "name": "组织机构。",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):组织机构。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "成立一个权威的工作机构专职从事奥迪特质量评审工作，这种机构必须是领 导授权的常设机构，其主要职责是制定奥迪特质量检查项目，编制评审指导书或 评审卡，组织奥迪特质量评审，并负责对评审内容给予奖惩，质量缺陷立项处理。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以组织机构。的方式思考这个问题。",
+    "activation_phrase": "请用组织机构。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

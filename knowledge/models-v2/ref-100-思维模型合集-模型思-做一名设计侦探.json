@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-做一名设计侦探",
+  "meta": {
+    "name": "做一名设计侦探",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):做一名设计侦探",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "身边不缺少美,缺少的是发现美的眼睛。不管去餐厅吃饭,还是出差住酒 店,多观察一下他们的设计,有些餐厅和酒店的设计都是花了很多费用, 请顶级的设计师精心设计而成,所以我们可以做个有心人,多去发现和 记录身边的美。 二、故事力:做生活的策划者",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以做一名设计侦探的方式思考这个问题。",
+    "activation_phrase": "请用做一名设计侦探分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

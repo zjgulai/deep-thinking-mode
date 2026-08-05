@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-企业的目标应当与企业的生存与发展紧密相连",
+  "meta": {
+    "name": "企业的目标应当与企业的生存与发展紧密相连",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):企业的目标应当与企业的生存与发展紧密相连",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业在一定周期内所要达到的销售目标，是营销计划的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业的目标应当与企业的生存与发展紧密相连的方式思考这个问题。",
+    "activation_phrase": "请用企业的目标应当与企业的生存与发分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

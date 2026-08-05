@@ -5,7 +5,8 @@
     "name": "拆解工具箱",
     "category": "00",
     "tags": [],
-    "skill_name": "拆解工具箱"
+    "skill_name": "拆解工具箱",
+    "sourceTitle": "拆解工具箱：按流程拆、按要素拆、按层级拆，一套完整的任务降维指南"
   },
   "core_definition": "讲透：把一座无从下手的大山，拆成一堆能随手搬运的石块",
   "when_to_use": {
@@ -59,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

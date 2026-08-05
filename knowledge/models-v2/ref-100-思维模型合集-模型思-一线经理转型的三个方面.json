@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-一线经理转型的三个方面",
+  "meta": {
+    "name": "一线经理转型的三个方面",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):一线经理转型的三个方面",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）界定和布置工作：包括与上司、员工沟通，需要他们做什么，以 及工作计划、组织架构、人员选拔和工作授权。  1153 / 1937 \f（2）提高下属的胜任能力：通过监督、指导、反馈、获取资源、解决 问题和交流沟通，提高下属的胜任能力，从而",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以一线经理转型的三个方面的方式思考这个问题。",
+    "activation_phrase": "请用一线经理转型的三个方面分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

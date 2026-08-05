@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-立场",
+  "meta": {
+    "name": "立场",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):立场",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "立场受到位置和利益所左右。生活中经常有人讲：“吃谁的饭保谁的锅， 屁股决定脑袋”， 都是在表达立场的重要性，因为你所在的位置就决定了你必须要说哪 些话。 例如：卖豪车的销售员能对客户说价格很贵吗？车的利润很高吗？肯 定不能，但是在生活中，可",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "卖豪车的销售员能对客户说价格很贵吗？车的利润很高吗？肯"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以立场的方式思考这个问题。",
+    "activation_phrase": "请用立场分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

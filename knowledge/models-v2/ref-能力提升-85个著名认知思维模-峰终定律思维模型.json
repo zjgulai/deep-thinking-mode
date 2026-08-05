@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-峰终定律思维模型",
+  "meta": {
+    "name": "峰终定律思维模型",
+    "category": "02",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:峰终定律思维模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 心理学家丹尼尔 · 卡纳曼（Daniel Kahneman）发现我们对体验的记忆由两个因素决",
+    "trigger_signals": [
+      "当我们在体验一个事 面对学习这件事,大部分人均难于反自己的人性中的懒惰,因此往 在讲首因效应、近因效应的时",
+      "当你反思无助时,不妨反向问 习计划的时候,完全可以运用峰终定律,即只需要在两个关键记忆 刻,正向借力这两个时刻,即为合适的时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "只买一件家具也需要走完整个 第一印象,与高峰似乎差一段距离,或者说正向的首因的累积会"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以峰终定律思维模型的方式思考这个问题。",
+    "activation_phrase": "请用峰终定律思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

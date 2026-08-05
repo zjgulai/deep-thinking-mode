@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-类比法",
+  "meta": {
+    "name": "类比法",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):类比法",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "类比法就是以一个类似项目的 WBS 为基础，制定本项目的工作分解结构。 例如，ABC 飞机制造公司，曾设计制造多种类型的大型客机，当他们计划投入 设计生产某种新型战斗机时，就可以使用以往制造大型客机而设计的子系统。以 从前的子系统为基础，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，ABC 飞机制造公司，曾设计制造多种类型的大型客机，当他们计划投入"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以类比法的方式思考这个问题。",
+    "activation_phrase": "请用类比法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

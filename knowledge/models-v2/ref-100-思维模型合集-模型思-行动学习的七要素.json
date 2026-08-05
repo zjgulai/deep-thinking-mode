@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-行动学习的七要素",
+  "meta": {
+    "name": "行动学习的七要素",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):行动学习的七要素",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "焦点。 这些难题应当是真实存在的，尚没有确定的答案。 要素 2：多样性小组。在行动学习小组（4～8 人）中，强调“没大没小， 没上没下”，放下层级关系，放下职位高低，每个人都是平等且相互尊 重的。 要",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以行动学习的七要素的方式思考这个问题。",
+    "activation_phrase": "请用行动学习的七要素分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

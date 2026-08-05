@@ -5,7 +5,8 @@
     "name": "如何在汇报、演讲、填表、写方案",
     "category": "02",
     "tags": [],
-    "skill_name": "如何在汇报、演讲、填表、写方案"
+    "skill_name": "如何在汇报、演讲、填表、写方案",
+    "sourceTitle": "如何在汇报、演讲、填表、写方案中运用“是什么→为什么→怎么做→作用价值”的逻辑框架？"
   },
   "core_definition": "这件事的本质是什么？如何在汇报、演讲、填表、写方案如何定义它？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

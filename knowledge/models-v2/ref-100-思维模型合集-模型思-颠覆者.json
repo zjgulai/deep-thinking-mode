@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-颠覆者",
+  "meta": {
+    "name": "颠覆者",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):颠覆者",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "角色就是保持组织战略的流动性，领导者必须同时 扮演两个角色：对抗墨守成规的惰性；以及企业阶段性自我颠覆的催 化剂。  1107 / 1937 \f4、指导者 成功的领导者能够把正确的人才安排到公司正确的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以颠覆者的方式思考这个问题。",
+    "activation_phrase": "请用颠覆者分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

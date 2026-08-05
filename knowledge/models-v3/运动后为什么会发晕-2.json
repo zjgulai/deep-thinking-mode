@@ -5,7 +5,8 @@
     "name": "运动后为什么会发晕",
     "category": "05",
     "tags": [],
-    "skill_name": "运动后为什么会发晕"
+    "skill_name": "运动后为什么会发晕",
+    "sourceTitle": "运动后为什么会发晕"
   },
   "core_definition": "这个问题的根本原因是什么？运动后为什么会发晕如何找到它？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

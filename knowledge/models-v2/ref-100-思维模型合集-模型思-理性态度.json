@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-理性态度",
+  "meta": {
+    "name": "理性态度",
+    "category": "01",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):理性态度",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "特征，可以从两个 层面来看： 对世界的态度 现有模式并不代表现实，它仅仅是我们思维的反应。 鼓励思辨模式，接受矛盾和冲突，不惧怕观点对立。 现有的模式并不完美，一定存在更好的模式未出现。  352 /",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以理性态度的方式思考这个问题。",
+    "activation_phrase": "请用理性态度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

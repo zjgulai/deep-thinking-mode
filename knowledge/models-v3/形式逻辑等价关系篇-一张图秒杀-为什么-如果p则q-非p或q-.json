@@ -5,7 +5,8 @@
     "name": "形式逻辑等价关系篇",
     "category": "02",
     "tags": [],
-    "skill_name": "形式逻辑等价关系篇"
+    "skill_name": "形式逻辑等价关系篇",
+    "sourceTitle": "形式逻辑等价关系篇：一张图秒杀。为什么「如果P则Q」=「非P或Q」？"
   },
   "core_definition": "本质是「禁区一致」  \n  \n逻辑等价的唯一标准：  \n两个句子，允许的",
   "when_to_use": {
@@ -59,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

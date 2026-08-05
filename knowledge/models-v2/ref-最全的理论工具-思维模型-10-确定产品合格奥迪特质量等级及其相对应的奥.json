@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-确定产品合格奥迪特质量等级及其相对应的奥",
+  "meta": {
+    "name": "确定产品合格奥迪特质量等级及其相对应的奥",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定产品合格奥迪特质量等级及其相对应的奥",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "产品合格奥迪特质量等级的确定，就是把奥迪特质量等级分为6个等级．即0 级、1级、2级、3级、4级、5级，其中以0级为最好，5级为最差，然后依据企业 当时的质量目标和用户能够接受的质量水平，确定产品合格的奥迪特质量等级。  产品的奥迪特质量",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以确定产品合格奥迪特质量等级及其相对应的奥的方式思考这个问题。",
+    "activation_phrase": "请用确定产品合格奥迪特质量等级及其分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

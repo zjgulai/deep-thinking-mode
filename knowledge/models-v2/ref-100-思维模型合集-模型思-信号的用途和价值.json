@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-信号的用途和价值",
+  "meta": {
+    "name": "信号的用途和价值",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):信号的用途和价值",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "信号，高学历并不能代表你拥有高能力，很",
+    "trigger_signals": [
+      "如果我们不能准确的识别出信号的真伪，就会上当",
+      "如果我们在上一轮中都采取合作行为，那么我会再次选择",
+      "如果我们在上一轮中都采取背叛行为，那么我会以某一概率与"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，最好通过参加团体性的运动来 证明自己身体健康和勇敢，而不是冒着生命危险在 50 层的楼顶上玩自"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以信号的用途和价值的方式思考这个问题。",
+    "activation_phrase": "请用信号的用途和价值分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

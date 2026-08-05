@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-归因理论思维模型",
+  "meta": {
+    "name": "归因理论思维模型",
+    "category": "11",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:归因理论思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "观察者从他人的行为推论出行为原因、因果关系",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "你看到一间餐厅的老板（行为人、观查对象）在骂员工（刺激）,你会 家里有孩子的伙伴们,你是否会以考试成绩来归因孩子的学习呢？考试"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以归因理论思维模型的方式思考这个问题。",
+    "activation_phrase": "请用归因理论思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

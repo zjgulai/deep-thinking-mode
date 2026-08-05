@@ -5,7 +5,8 @@
     "name": "精力管理金字塔",
     "category": "09",
     "tags": [],
-    "skill_name": "精力管理金字塔"
+    "skill_name": "精力管理金字塔",
+    "sourceTitle": "精力管理金字塔：固本培元、长效赋能的精力管控框架"
   },
   "core_definition": "不是固定的时间，而是可管理、可提升的精力",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

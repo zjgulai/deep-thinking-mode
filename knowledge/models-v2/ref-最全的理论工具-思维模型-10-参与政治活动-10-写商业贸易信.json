@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-参与政治活动-10-写商业贸易信",
+  "meta": {
+    "name": "参与政治活动 10、 写商业贸易信",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):参与政治活动 10、 写商业贸易信",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "第三部份 您所擅长获胜的活动  下面列举若干种活动，请选择你能做或大概能做的事。请将答案直接写在第 5 页答题纸 \f http://wiki.mbalib.com/  上。 R：实际型能力 A：艺术型能力",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以参与政治活动 10、 写商业贸易信的方式思考这个问题。",
+    "activation_phrase": "请用参与政治活动 10、 写商业贸分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

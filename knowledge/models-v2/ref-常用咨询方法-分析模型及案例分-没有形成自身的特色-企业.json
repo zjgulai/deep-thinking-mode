@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-没有形成自身的特色-企业",
+  "meta": {
+    "name": "没有形成自身的特色,企业",
+    "category": "00",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:没有形成自身的特色,企业",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "市场占有率很高的老企业，而 P",
+    "trigger_signals": [
+      "如果我们能够把多点竞争的理论和方法在各个具体的战场中进行使用，我们就能从",
+      "如果我们将供应商、企业、顾客视为一个整体来看，他们之间的联系将"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "表明趋势变化速度",
+        "action": ""
+      },
+      {
+        "condition": "随机和周期性波动",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": "湖南市场或者日本市场；  • 细分市场，例如高档市场、中档市场和低档市场；"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以没有形成自身的特色,企业的方式思考这个问题。",
+    "activation_phrase": "请用没有形成自身的特色,企业分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

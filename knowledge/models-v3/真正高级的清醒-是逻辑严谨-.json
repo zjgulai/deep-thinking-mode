@@ -5,7 +5,8 @@
     "name": "真正高级的清醒，是逻辑严谨。",
     "category": "02",
     "tags": [],
-    "skill_name": "真正高级的清醒，是逻辑严谨。"
+    "skill_name": "真正高级的清醒，是逻辑严谨。",
+    "sourceTitle": "真正高级的清醒，是逻辑严谨。"
   },
   "core_definition": "不是枯燥的哲学符号，而是一套可落地的「思维标尺」",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -5,7 +5,8 @@
     "name": "摒弃忙乱、掌控时间",
     "category": "09",
     "tags": [],
-    "skill_name": "摒弃忙乱、掌控时间"
+    "skill_name": "摒弃忙乱、掌控时间",
+    "sourceTitle": "摒弃忙乱、掌控时间：时间块法高效管理指南"
   },
   "core_definition": "直击管理痛点：未绑定具体执行时间的任务，永远容易拖延",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

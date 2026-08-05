@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-总资产收益率为正数",
+  "meta": {
+    "name": "总资产收益率为正数",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):总资产收益率为正数",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ 评分 +5 3. 1988 年年底大约有 17 亿美元的长期负债，股东权益为负数。预估 1990 年时 需要 3 亿以上的现金支付利息。两次巨额回购股票使得吉列报表所体现的杠杆比 率中的负",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以总资产收益率为正数的方式思考这个问题。",
+    "activation_phrase": "请用总资产收益率为正数分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

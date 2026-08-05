@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-使每一位员工事先明白关键绩效的标准",
+  "meta": {
+    "name": "使每一位员工事先明白关键绩效的标准",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):使每一位员工事先明白关键绩效的标准",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "绩效的标准为每一位员工所认识、熟知和理解，从而更好 地达到评估的目的。因此，让员工事先都清楚地了解关键绩效的标准十分重要。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以使每一位员工事先明白关键绩效的标准的方式思考这个问题。",
+    "activation_phrase": "请用使每一位员工事先明白关键绩效的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

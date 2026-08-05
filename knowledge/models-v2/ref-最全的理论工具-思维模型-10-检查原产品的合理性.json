@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-检查原产品的合理性",
+  "meta": {
+    "name": "检查原产品的合理性",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):检查原产品的合理性",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）为什么（Why）？  为什么采用这个技术参数？为什么不能有响声？为什么停用？为什么变成 红色：为什么要做成这个形状？为什么采用机器代替人力？为什么产品的制造要 经过这么多环节？为什么非做不可？  （2）做什么（What）？ \f ht",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以检查原产品的合理性的方式思考这个问题。",
+    "activation_phrase": "请用检查原产品的合理性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

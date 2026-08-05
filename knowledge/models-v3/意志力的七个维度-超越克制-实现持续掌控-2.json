@@ -5,7 +5,8 @@
     "name": "意志力的七个维度",
     "category": "09",
     "tags": [],
-    "skill_name": "意志力的七个维度"
+    "skill_name": "意志力的七个维度",
+    "sourceTitle": "意志力的七个维度：超越克制，实现持续掌控"
   },
   "core_definition": "意志力的七个维度：超越克制，实现持续掌控  意志力并非单一的“硬撑”能力，而是能够在以下多个维度上发挥作用：  **1\\. 控制思维**  *   **核心**：在注意力受到干扰时，把心智拉回并维持专注。      *   **典型任务**：工作中排除杂念、学生考试时驱散走神、销售员在交谈中保持说服",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

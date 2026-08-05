@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-测评小组成员对标杆岗位不熟悉和测评方法掌",
+  "meta": {
+    "name": "测评小组成员对标杆岗位不熟悉和测评方法掌",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):测评小组成员对标杆岗位不熟悉和测评方法掌",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/  海氏职位评估系统也被称为专家测评法，对岗位测评小组成员的要求较高。 测评小组人员不但要非常熟悉所有标杆岗位，还要能很好地掌握该种方法。但在 实际应用中，有些测评小组成员对一些标杆岗位并不",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以测评小组成员对标杆岗位不熟悉和测评方法掌的方式思考这个问题。",
+    "activation_phrase": "请用测评小组成员对标杆岗位不熟悉和分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

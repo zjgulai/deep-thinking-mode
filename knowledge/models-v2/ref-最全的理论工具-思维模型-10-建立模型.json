@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立模型",
+  "meta": {
+    "name": "建立模型",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立模型",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "表 1 中的最可能时间就是 CPM 网络所用的工作时间，期望时间是指某一工 作经常重复时得到的该工作的平均时间。已知 PERT 的工作时间估计服从 β 分布 后，便可导出期望时间的计算公式：  t=(a+4m+b)／6  式中，a 为乐观",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立模型的方式思考这个问题。",
+    "activation_phrase": "请用建立模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

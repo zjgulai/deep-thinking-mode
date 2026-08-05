@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-评估该企业在目标市场选择中的市场吸引力和",
+  "meta": {
+    "name": "评估该企业在目标市场选择中的市场吸引力和",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):评估该企业在目标市场选择中的市场吸引力和",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "。确定这些因 素的方法可以采取头脑风暴法或名义小组法等，关键是不能遗漏重要因素，也不 能将微不足道的因素纳入分析中，同时指标之间不能重复，影响因素如表 1 所示。 表2：影响因素集 市场吸引力S 企业",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以评估该企业在目标市场选择中的市场吸引力和的方式思考这个问题。",
+    "activation_phrase": "请用评估该企业在目标市场选择中的市分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

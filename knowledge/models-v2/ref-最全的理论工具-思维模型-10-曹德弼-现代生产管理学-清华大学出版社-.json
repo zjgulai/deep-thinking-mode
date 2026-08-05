@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-曹德弼-现代生产管理学-清华大学出版社-",
+  "meta": {
+    "name": "曹德弼．现代生产管理学．清华大学出版社．",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):曹德弼．现代生产管理学．清华大学出版社．",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ 品管圈  —广为认可的品质管理的运作机制 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以曹德弼．现代生产管理学．清华大学出版社．的方式思考这个问题。",
+    "activation_phrase": "请用曹德弼．现代生产管理学．清华大分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-保持熵增和熵减的平衡",
+  "meta": {
+    "name": "保持熵增和熵减的平衡",
+    "category": "12",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):保持熵增和熵减的平衡",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "封闭系统，由于人类的存在，地球将向开放的系统演",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "人 类如果过度摄入负熵流，就会导致肥胖，肥胖是人体为了对抗饥饿而"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以保持熵增和熵减的平衡的方式思考这个问题。",
+    "activation_phrase": "请用保持熵增和熵减的平衡分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-教育训练",
+  "meta": {
+    "name": "教育训练",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):教育训练",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）必要时可利用圈会时间安排一些教育训练，以启发或提高圈员水准 （2）可由圈员轮流作轮读 （3）可请上司、辅导员作教导，但必须事先征得同意 （4）内容可含 QC 手法、QCC 精神及意义、作法、对策提出的创造性思考法， 数据的收集，新标准",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以教育训练的方式思考这个问题。",
+    "activation_phrase": "请用教育训练分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

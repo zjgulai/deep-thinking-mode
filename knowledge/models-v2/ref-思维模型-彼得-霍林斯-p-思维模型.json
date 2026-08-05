@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-思维模型-彼得-霍林斯-p-思维模型",
+  "meta": {
+    "name": "思维模型",
+    "category": "00",
+    "tags": [],
+    "source": "ref:思维模型 (彼得·霍林斯 (Peter Hollins)):思维模型",
+    "sourceTitle": "思维模型 (彼得·霍林斯 (Peter Hollins))",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "灾难性的思考方式，也绝对是一种灾难性的处世方式",
+    "trigger_signals": [
+      "如果你只是记得一些孤立的事实，试图把它们硬凑起来，那你就无法真正理解任何东西。如果这些事实不在一个理论框架中相互联系，你也就无",
+      "如果你只能使用一两个，人类心理的本性就会让你扭曲现实，硬塞进你自己的思维模型，至少你自己觉得是塞进去了。你会变得跟脊椎按摩师一",
+      "如果你在建筑工地工作，就应该学会使用锤子、锯子、钉子、钻机、磨砂机，等等。你能熟练掌握的工具越多，就越能处理建筑工地上不同的新"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "经济学，就想套用到所有问题上。俗话说：“在拿锤子的人看来，整个世界都是一颗钉子"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以思维模型的方式思考这个问题。",
+    "activation_phrase": "请用思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

@@ -5,7 +5,8 @@
     "name": "网络思维成长法",
     "category": "05",
     "tags": [],
-    "skill_name": "网络思维成长法"
+    "skill_name": "网络思维成长法",
+    "sourceTitle": "网络思维成长法：四步把你的努力，变成一张复利网络"
   },
   "core_definition": "没有个人标志性成果，只是网络中不起眼的普通节点，无法吸引资源靠拢",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

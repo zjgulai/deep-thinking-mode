@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-加强管理沟通",
+  "meta": {
+    "name": "加强管理沟通",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):加强管理沟通",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "让每个员工去做最擅长的事情，是管理的高境界，但我们在很多时候并不能 作到这些。了解员工，不但要观察员工的工作行为，还要注意多与员工进行沟通， 特别是管理沟通，认真听取员工对公司管理和部门管理建议，了解员工的思想动 态，并让员工自己对自己进",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以加强管理沟通的方式思考这个问题。",
+    "activation_phrase": "请用加强管理沟通分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

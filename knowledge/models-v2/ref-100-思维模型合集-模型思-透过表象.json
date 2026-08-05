@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-透过表象",
+  "meta": {
+    "name": "透过表象",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):透过表象",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1651 / 1937 \f我曾与朋友们讨论过关于孩子“粗心”的问题，很多的家长常常抱怨孩子 的粗心，认为孩子的成绩不稳定只是粗心的问题。但是我们是否仔细 思考和分析过“粗心”背后的问题？ 粗心其实往往折射的有三种可能原因：一是“真的粗心”",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以透过表象的方式思考这个问题。",
+    "activation_phrase": "请用透过表象分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

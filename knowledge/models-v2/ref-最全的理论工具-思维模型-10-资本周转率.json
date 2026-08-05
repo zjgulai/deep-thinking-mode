@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-资本周转率",
+  "meta": {
+    "name": "资本周转率",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):资本周转率",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "资本周转率又称净值周转率。其计算公式为：资本周转率＝销售收入/股东 权益平均金额，运用这一比率，可以分析相对于销售营业额而言，股东所投入的 资金是否得到充分利用。比率越高，表明资本周转速度越快，运用效率越高。但 如果比率过高则表示公司过份",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以资本周转率的方式思考这个问题。",
+    "activation_phrase": "请用资本周转率分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

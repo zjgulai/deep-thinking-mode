@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-实施难度大",
+  "meta": {
+    "name": "实施难度大",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施难度大",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "平衡计分卡的实施要求企业有明确的组织战略;高层管理者具备分解和沟通 战略的能力和意愿;中高层管理者具有指标创新的能力和意愿。因此管理基础差 的企业不可以直接引入平衡计分卡，必须先提高自己的管理水平，才能循序渐进 地引进平衡计分卡。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实施难度大的方式思考这个问题。",
+    "activation_phrase": "请用实施难度大分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

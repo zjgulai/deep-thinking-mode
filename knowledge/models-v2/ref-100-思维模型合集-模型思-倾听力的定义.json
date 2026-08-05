@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-倾听力的定义",
+  "meta": {
+    "name": "倾听力的定义",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):倾听力的定义",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "汉语词语，出自《礼记·曲礼上》：“立不正方，不倾听",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以倾听力的定义的方式思考这个问题。",
+    "activation_phrase": "请用倾听力的定义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

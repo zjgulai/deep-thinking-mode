@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-环境因素包括活动类型-活动的重要性-活动",
+  "meta": {
+    "name": "环境因素包括活动类型、活动的重要性，活动",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):环境因素包括活动类型、活动的重要性，活动",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "例如围棋、登山、攀岩和阅读，这种类型的活动能够激发个体的内在 动机，同时具备一定的挑战性，并且参与者也认为这项活动对自己很 重要，往往很容易在活动中体验到沉浸感。  904 / 1937 \f四、心流的应用",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "围棋、登山、攀岩和阅读，这种类型的活动能够激发个体的内在"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以环境因素包括活动类型、活动的重要性，活动的方式思考这个问题。",
+    "activation_phrase": "请用环境因素包括活动类型、活动的重分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

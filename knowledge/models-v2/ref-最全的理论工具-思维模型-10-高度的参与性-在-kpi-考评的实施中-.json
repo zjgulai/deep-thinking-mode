@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-高度的参与性-在-kpi-考评的实施中-",
+  "meta": {
+    "name": "高度的参与性。在 KPI 考评的实施中，",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):高度的参与性。在 KPI 考评的实施中，",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "动的参与者，满足了员工自尊的需要，有利于激发员工的创新精神和积极性。 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以高度的参与性。在 KPI 考评的实施中，的方式思考这个问题。",
+    "activation_phrase": "请用高度的参与性。在 KPI 考评分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

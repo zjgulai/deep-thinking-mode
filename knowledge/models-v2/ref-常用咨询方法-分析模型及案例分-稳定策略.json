@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-稳定策略",
+  "meta": {
+    "name": "稳定策略",
+    "category": "00",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:稳定策略",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "采用这种策略的目的是为了保持品牌的市场份额，增加短期现金收入，这一策 略适用于金牛品牌，因为这类品牌能够为企业挣得大量的现金。稳定策略也适用于 部分问题品牌和瘦狗品牌。  3.撤退策略  90 \f 采用这种策略的目的在于清理某些不景气的品",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以稳定策略的方式思考这个问题。",
+    "activation_phrase": "请用稳定策略分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

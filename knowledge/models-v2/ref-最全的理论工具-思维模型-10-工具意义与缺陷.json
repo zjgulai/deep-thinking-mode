@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-工具意义与缺陷",
+  "meta": {
+    "name": "工具意义与缺陷",
+    "category": "04",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具意义与缺陷",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "利用内部可控因素适应外部环境的过",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "工业品营销,国际营销和服务营销等就与我们通常所说的消"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以工具意义与缺陷的方式思考这个问题。",
+    "activation_phrase": "请用工具意义与缺陷分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

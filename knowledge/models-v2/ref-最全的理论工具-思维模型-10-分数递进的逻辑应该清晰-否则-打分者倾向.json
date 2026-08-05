@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-分数递进的逻辑应该清晰-否则-打分者倾向",
+  "meta": {
+    "name": "分数递进的逻辑应该清晰，否则，打分者倾向",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):分数递进的逻辑应该清晰，否则，打分者倾向",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "使打分结果出现“趋中效应”。  (四)沟通及评估者的选择。考核名单确定后，对列入考核对象的主管人员可 进行一对一的访谈，主要了解他们的工作情况、能力及对企业业务发展的看法。 此外，还可选择一些被考核人员的下属进行一对一座谈，了解他们对企业业",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分数递进的逻辑应该清晰，否则，打分者倾向的方式思考这个问题。",
+    "activation_phrase": "请用分数递进的逻辑应该清晰，否则，分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

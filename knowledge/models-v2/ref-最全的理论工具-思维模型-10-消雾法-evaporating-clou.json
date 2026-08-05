@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-消雾法-evaporating-clou",
+  "meta": {
+    "name": "消雾法（Evaporating Clou",
+    "category": "03",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):消雾法（Evaporating Clou",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "消雾法用来以双赢（Win-Win）的方式解决企业中的冲突。此法的得名是由 于企业中的冲突像一团团的云雾一样，人们往往不能很清楚地说出究竟是哪些原 因造成了这些冲突。消雾法就是要驱散那些弥漫在冲突周围的混淆和含糊，找到 解决问题的突破点，也",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以消雾法（Evaporating Clou的方式思考这个问题。",
+    "activation_phrase": "请用消雾法（Evaporating分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

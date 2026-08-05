@@ -7,7 +7,8 @@
     "tags": [
       "wechat_redirec"
     ],
-    "skill_name": "解释模块-·-意志力不是美德，"
+    "skill_name": "解释模块-·-意志力不是美德，",
+    "sourceTitle": "内耗管理系统 · 解释模块 · 意志力不是美德，是脑内的“稀缺资源”"
   },
   "core_definition": "】为什么越是想自律，反而越容易失控？为什么在消耗一天后，那个很小的诱惑变得无法抵抗？",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

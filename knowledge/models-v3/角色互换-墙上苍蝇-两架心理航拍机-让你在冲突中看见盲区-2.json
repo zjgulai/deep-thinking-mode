@@ -5,7 +5,8 @@
     "name": "角色互换+墙上苍蝇",
     "category": "06",
     "tags": [],
-    "skill_name": "角色互换+墙上苍蝇"
+    "skill_name": "角色互换+墙上苍蝇",
+    "sourceTitle": "角色互换+墙上苍蝇：两架心理航拍机，让你在冲突中看见盲区"
   },
   "core_definition": "不是也有点过分？”\n\n大多数人困在冲突里，不是因为缺道理，而是因为缺一个不同的视角",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

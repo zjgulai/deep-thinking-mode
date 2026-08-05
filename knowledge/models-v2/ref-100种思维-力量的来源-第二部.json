@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100种思维-力量的来源-第二部",
+  "meta": {
+    "name": "第二部",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100种思维  力量的来源 (帕斯卡):第二部",
+    "sourceTitle": "100种思维  力量的来源 (帕斯卡)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "常见的不幸；但若有意地说愚蠢的话就是",
+    "trigger_signals": [
+      "如果我们被明白地告知，我们就会了解，自然把她自己的",
+      "如果我们只是单纯的肉体，那我们根本什么东西也",
+      "如果我们是由精神和肉体构成的，那我们就无法全"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，要说几何学里有一个无限的问题 （关于问题的无限性）需要解决，我想这是没有人会怀疑的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第二部的方式思考这个问题。",
+    "activation_phrase": "请用第二部分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

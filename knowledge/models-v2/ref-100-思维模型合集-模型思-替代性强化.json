@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-替代性强化",
+  "meta": {
+    "name": "替代性强化",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):替代性强化",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "小李工作不努力，业绩没有达标，小张因为工作认真，超额完成业绩。 领导没有批判小李，而是表扬了小张，这种做法就是替代性强化，被 表扬的小张就是作为榜样存在的。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以替代性强化的方式思考这个问题。",
+    "activation_phrase": "请用替代性强化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

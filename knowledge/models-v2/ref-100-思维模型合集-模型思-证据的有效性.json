@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-证据的有效性",
+  "meta": {
+    "name": "证据的有效性",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):证据的有效性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "确实性推理。演绎性推理是通过别人证明已经相对正",
+    "trigger_signals": [
+      "如果我要有钱了，我带你去度假。我现在有钱了，我带你去度假。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "①太平洋已经被污染；大西洋已经被污染；印度洋已经被污染；"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以证据的有效性的方式思考这个问题。",
+    "activation_phrase": "请用证据的有效性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

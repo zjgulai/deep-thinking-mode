@@ -5,7 +5,8 @@
     "name": "你所有的“努力白费”，都是在用",
     "category": "08",
     "tags": [],
-    "skill_name": "你所有的“努力白费”，都是在用"
+    "skill_name": "你所有的“努力白费”，都是在用",
+    "sourceTitle": "你所有的“努力白费”，都是在用记忆代替逻辑学习。"
   },
   "core_definition": "工具，就足以碾压90%的学习者，无需钻研复杂理论",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-序和熵",
+  "meta": {
+    "name": "序和熵",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):序和熵",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "序是系统科学中的一个概念,如果组成系统的每个个体能够互相协调, 方向一个,那么这个系统就是有序的,如果系统内的个体互相独立,方向 各异,那么,这个系统就是无序的。 序”反应了系统之间或系统内部各要素之间的关系所具备的一定次序。 熵是热力学中",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一个人在屋子里抽烟,一会烟味就均匀的散布到整个屋子,烟粒子"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以序和熵的方式思考这个问题。",
+    "activation_phrase": "请用序和熵分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

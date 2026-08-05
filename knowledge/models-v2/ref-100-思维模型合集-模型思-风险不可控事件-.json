@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-风险不可控事件-",
+  "meta": {
+    "name": "风险不可控事件：",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):风险不可控事件：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "未来不确定性的时代，竞争异常激烈，我们每个",
+    "trigger_signals": [
+      "如果你看音乐会，已经付了５００元票款而且不能退票。但是",
+      "如果你是理性的，那就不该在作决策时考虑",
+      "如果你花了一周的时间去看家具，一周的时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "经济危机、股市暴跌、地震、海啸、火山爆发、包括发生在中"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以风险不可控事件：的方式思考这个问题。",
+    "activation_phrase": "请用风险不可控事件：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

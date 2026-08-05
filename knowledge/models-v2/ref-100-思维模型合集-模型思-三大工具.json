@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-三大工具",
+  "meta": {
+    "name": "三大工具",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):三大工具",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "产生思想飞跃的推理，是创新创意发",
+    "trigger_signals": [
+      "如果我们不努力学习和工作，结果就会被社会淘汰。目的论就是"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "因为我想赚更多的钱，  ，所以 我要努力工作和学习"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以三大工具的方式思考这个问题。",
+    "activation_phrase": "请用三大工具分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

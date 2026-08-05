@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业必须正确分析竞争对手-如果企业在广阔",
+  "meta": {
+    "name": "企业必须正确分析竞争对手，如果企业在广阔",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业必须正确分析竞争对手，如果企业在广阔",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "争对手竞争，就必须关注行业内或市场上普遍接受的一些差异化基础,如果企  业是在某一特定细分市场上与相对较少的竞争对手竞争，那么最好采取集中  差异化战略，同时，由于市场全球化,企业不断扩大经营的地理领域,会导致  企业的差异化基础被以前不",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业必须正确分析竞争对手，如果企业在广阔的方式思考这个问题。",
+    "activation_phrase": "请用企业必须正确分析竞争对手，如果分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

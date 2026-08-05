@@ -5,7 +5,8 @@
     "name": "别再原地踏步",
     "category": "08",
     "tags": [],
-    "skill_name": "别再原地踏步"
+    "skill_name": "别再原地踏步",
+    "sourceTitle": "别再原地踏步：突破两大成长陷阱，把努力变成持续进阶"
   },
   "core_definition": "不是初始短板，而是高速成长衍生的新问题",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

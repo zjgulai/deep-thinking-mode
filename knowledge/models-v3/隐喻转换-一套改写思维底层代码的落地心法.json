@@ -5,7 +5,8 @@
     "name": "隐喻转换",
     "category": "10",
     "tags": [],
-    "skill_name": "隐喻转换"
+    "skill_name": "隐喻转换",
+    "sourceTitle": "隐喻转换：一套改写思维底层代码的落地心法"
   },
   "core_definition": "这件事的本质是什么？隐喻转换如何定义它？",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-操作检查表-",
+  "meta": {
+    "name": "操作检查表。",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):操作检查表。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "3.5.3. 使用步骤 该工具的设计、使用程序包括六个步骤： 第一步，决定观察什么，建立作业定义。 \f http://wiki.mbalib.com/ 第二步，决定什么时候收集数据，以及收集多长时间。 第三步，设计表格。设计表格时，要使数据",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "，决定观察什么，建立作业定义。",
+        "action": "，决定观察什么，建立作业定义。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "，决定什么时候收集数据，以及收集多长时间",
+        "action": "，决定什么时候收集数据，以及收集多长时间。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "，设计表格。设计表格时，要使数据能够使用",
+        "action": "，设计表格。设计表格时，要使数据能够使用 v／或 X 或相似的符号简单",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "，在表格上留出空间。",
+        "action": "，在表格上留出空间。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "，经过短时问的试验来测试检查表，确保它能",
+        "action": "，经过短时问的试验来测试检查表，确保它能够收集合适的数据并容易使",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「操作检查表。」思维模式运行。\n\nStep 1 - ，决定观察什么，建立作业定义。：，决定观察什么，建立作业定义。\n\nStep 2 - ，决定什么时候收集数据，以及收集多长时间：，决定什么时候收集数据，以及收集多长时间。\n\nStep 3 - ，设计表格。设计表格时，要使数据能够使用：，设计表格。设计表格时，要使数据能够使用 v／或 X 或相似的符号简单\n\nStep 4 - ，在表格上留出空间。：，在表格上留出空间。\n\nStep 5 - ，经过短时问的试验来测试检查表，确保它能：，经过短时问的试验来测试检查表，确保它能够收集合适的数据并容易使\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用操作检查表。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

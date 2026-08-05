@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-结构性思维-让思考和表达像搭积-火星崛起2",
+  "meta": {
+    "name": "火星崛起2",
+    "category": "00",
+    "tags": [],
+    "source": "ref:结构性思维：让思考和表达像搭积木一样有序省力 (王琳、朱文浩 编):火星崛起2",
+    "sourceTitle": "结构性思维：让思考和表达像搭积木一样有序省力 (王琳、朱文浩 编)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "延伸，可以帮助他们在课后进一步训练思维，更好地进行自我学习和认知；对于走上工作岗位的人来说，本书是一盏明灯，可以帮助他们照亮前路，让思考更系统，表达更准确；对于一名基层工作者来说，本书是一种工具，可以帮助他们在最短时间学会整理、总结、汇报等，让工作和沟通更轻松；对于一名管理人员来说，本书是一个方向标",
+    "trigger_signals": [
+      "如果你不知道读什么书， 就关注这个微信号。 微信公众号名称：幸福的味道 加小编微信一起读书 小编微信号：2338856113",
+      "如果你不知道读什么书或者想获得更多免费电子书请加小编微信或QQ：2338856113 小编也和结交一些喜欢读书的朋友 或者关注",
+      "当我们想要改变一个结果的时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "、更丰富的场景应用，这本书本身就是对结构性思维最好的诠释"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以火星崛起2的方式思考这个问题。",
+    "activation_phrase": "请用火星崛起2分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

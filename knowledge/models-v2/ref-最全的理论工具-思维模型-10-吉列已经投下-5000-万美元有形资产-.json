@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-吉列已经投下-5000-万美元有形资产-",
+  "meta": {
+    "name": "吉列已经投下 5000 万美元有形资产，",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):吉列已经投下 5000 万美元有形资产，",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "于厂房、设备及存货。风险性高。 评分 +1 总计：+6+5+1+3+1=16  竞争优势 （CA）  1、吉列品牌在该行业一直在市场上处于领先地位。 评分 -2",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以吉列已经投下 5000 万美元有形资产，的方式思考这个问题。",
+    "activation_phrase": "请用吉列已经投下 5000 万美元分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

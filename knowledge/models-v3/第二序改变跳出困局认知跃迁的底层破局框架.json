@@ -5,7 +5,8 @@
     "name": "第二序改变跳出困局认知跃迁的底",
     "category": "02",
     "tags": [],
-    "skill_name": "第二序改变跳出困局认知跃迁的底"
+    "skill_name": "第二序改变跳出困局认知跃迁的底",
+    "sourceTitle": "第二序改变跳出困局认知跃迁的底层破局框架"
   },
   "core_definition": "划分改变层级，拒绝框架内无效努力，通过重构系统实现根本性破局",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

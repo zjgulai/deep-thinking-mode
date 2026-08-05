@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-差异化战略的适用条件与组织要求",
+  "meta": {
+    "name": "差异化战略的适用条件与组织要求",
+    "category": "06",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:差异化战略的适用条件与组织要求",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）可以有很多途径创造企业与竞争对手产品之间的差异，并且这种差异被顾客认为是有价值 的； （2）顾客对产品的需求和使用要求是多种多样的，即顾客需求是有差异的； （3）采用类似差异化途径的竞争对手很少，即真正能够保证企业是“差异化”的； （",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以差异化战略的适用条件与组织要求的方式思考这个问题。",
+    "activation_phrase": "请用差异化战略的适用条件与组织要求分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

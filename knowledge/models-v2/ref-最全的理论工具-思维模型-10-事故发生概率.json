@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-事故发生概率",
+  "meta": {
+    "name": "事故发生概率",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):事故发生概率",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "事件树定量分析中，事故发生概率等于导致事故的各发展途径的概率和。  定量分析要有事件概率数据作为计算的依据，而且事件过程的状态又是多种 多样的，一般都因缺少概率数据而不能实现定量分析。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以事故发生概率的方式思考这个问题。",
+    "activation_phrase": "请用事故发生概率分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

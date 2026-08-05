@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-决定问题点的重要度",
+  "meta": {
+    "name": "决定问题点的重要度",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):决定问题点的重要度",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "依照下列原则，检讨各项问题点的重要度。 (1)上级指示：符合所属部门的方针、计划及指示； \f http://wiki.mbalib.com/ (2)本圈的问题：部门的重要问题，并且大部分是本圈所发生的问题； (3)圈员参与度：大部份圈员都能",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以决定问题点的重要度的方式思考这个问题。",
+    "activation_phrase": "请用决定问题点的重要度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

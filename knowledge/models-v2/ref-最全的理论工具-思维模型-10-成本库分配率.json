@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-成本库分配率",
+  "meta": {
+    "name": "成本库分配率",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):成本库分配率",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "作业成本法为每一个间接成本项目确定合理的成本动因后，将具有相同性质 的成本动因组成若干个成本库。而一个成本库所汇集的可追溯成本则可按成本库 分配率在各产品之间进行分配。计算公式如下：  某成本库分配率=该成本库归集的可追溯成本／该成本动",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以成本库分配率的方式思考这个问题。",
+    "activation_phrase": "请用成本库分配率分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-社会资本即与其它玩家的关系-通俗的讲就是",
+  "meta": {
+    "name": "社会资本即与其它玩家的关系，通俗的讲就是",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):社会资本即与其它玩家的关系，通俗的讲就是",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "自然人或者一个公司。而社会资本是虚拟的，它由关",
+    "trigger_signals": [
+      "如果你或者你伙伴退出，你们之间的联结，包含的社会资",
+      "当你身边的闹钟＂滴答滴答＂地提醒着你，时",
+      "如果你符合以上特征，那么番茄工作法对您就是有效时间管理工具，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "你准备创办一家咨询公司，马上获得了朋友的投资１００万的金"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以社会资本即与其它玩家的关系，通俗的讲就是的方式思考这个问题。",
+    "activation_phrase": "请用社会资本即与其它玩家的关系，通分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

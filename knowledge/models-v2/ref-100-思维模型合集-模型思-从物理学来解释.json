@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-从物理学来解释",
+  "meta": {
+    "name": "从物理学来解释",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):从物理学来解释",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "墨菲定律背后的科学解释就是宇宙的熵增现象。通常认为，我们的宇 宙目前处于膨胀状态，在这种状态下，事物倾向于转化成杂乱无序且 平均分散在空间的微观粒子及热辐射，这种无序性增强加大就称为熵 增。 而通常人类活动的目的是建立集中的、有秩序的事物，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "将铁矿石 熔炼成钢铁，将沙子制作成芯片，将石头盖成房子，这与整个宇宙的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以从物理学来解释的方式思考这个问题。",
+    "activation_phrase": "请用从物理学来解释分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

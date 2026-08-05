@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-项目纲要性工作分解结构-pswbs-pr",
+  "meta": {
+    "name": "项目纲要性工作分解结构（PSWBS，Pr",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):项目纲要性工作分解结构（PSWBS，Pr",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "项目纲要性工作分解结构是针对某一特定项目，对纲要性工作分解结构进行 裁剪得到的工作分解结构。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以项目纲要性工作分解结构（PSWBS，Pr的方式思考这个问题。",
+    "activation_phrase": "请用项目纲要性工作分解结构（PSW分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

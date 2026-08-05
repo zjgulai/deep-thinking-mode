@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-学会重视所有部门",
+  "meta": {
+    "name": "学会重视所有部门",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):学会重视所有部门",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "事业部总经理要重视所有部门，消除部门偏见，不要过度宠信自己工 作过的部门，要深刻的认识到每一个部门的贡献，特别是支持部门是 最容易被事业部总经理忽视的。优秀的支持性部门是公司承担业务的 早期预警系统，例如人类资源部、法务部、财务部、信息部等",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "人类资源部、法务部、财务部、信息部等，他们"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以学会重视所有部门的方式思考这个问题。",
+    "activation_phrase": "请用学会重视所有部门分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

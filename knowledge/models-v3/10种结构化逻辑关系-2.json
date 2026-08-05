@@ -5,7 +5,8 @@
     "name": "10种结构化逻辑关系",
     "category": "11",
     "tags": [],
-    "skill_name": "10种结构化逻辑关系"
+    "skill_name": "10种结构化逻辑关系",
+    "sourceTitle": "10种结构化逻辑关系"
   },
   "core_definition": "这个问题的根本原因是什么？10种结构化逻辑关系如何找到它？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

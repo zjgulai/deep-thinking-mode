@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-主要内容及推行重点",
+  "meta": {
+    "name": "主要内容及推行重点",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):主要内容及推行重点",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "(1)、如何组圈 (2)、活动主题选定、定制活动计划 (3)、现状掌握 (4) 、目标设定 (5) 、调查现状 (6) 、原因分析 (7)、掌握改善主题重点 (8)、数据收集整理 (9)、对策评估以及施行 (10)、效果确认 (11)、标准",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以主要内容及推行重点的方式思考这个问题。",
+    "activation_phrase": "请用主要内容及推行重点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

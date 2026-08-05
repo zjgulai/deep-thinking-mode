@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-饱和攻击",
+  "meta": {
+    "name": "饱和攻击",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):饱和攻击",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "生态系统，充满了竞争和合作，商业的演进是通过进化和分化两种方",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "小罐茶连续３个月买断了很多电视台广告，多密度的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以饱和攻击的方式思考这个问题。",
+    "activation_phrase": "请用饱和攻击分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

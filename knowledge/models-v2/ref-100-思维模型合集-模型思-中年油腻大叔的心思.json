@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-中年油腻大叔的心思",
+  "meta": {
+    "name": "中年油腻大叔的心思",
+    "category": "12",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):中年油腻大叔的心思",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "中年油腻大叔，骗小姑娘。初次见面，拍拍肩膀，说后生可畏；再次 见面，摸摸小手，说皮肤不错；第三次见面，碰碰额头，简直太美了。 如果这系列登门槛动作，都没有被拒绝的话，要么小姑娘诚心钓鱼； 要么小姑娘就太年轻单纯。异性之间的登门槛效应极其明显",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以中年油腻大叔的心思的方式思考这个问题。",
+    "activation_phrase": "请用中年油腻大叔的心思分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

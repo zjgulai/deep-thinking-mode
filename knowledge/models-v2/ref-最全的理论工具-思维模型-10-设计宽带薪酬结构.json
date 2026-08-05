@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-设计宽带薪酬结构",
+  "meta": {
+    "name": "设计宽带薪酬结构",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):设计宽带薪酬结构",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "为了解决以上问题，A 公司决定设计更具弹性的宽带薪酬制度。  宽带薪酬设计的步骤 对于薪酬方案的设计，首先应该进行总体步骤和宏观的计划，A 公司的设计步骤 如图：  图：A 公司薪酬设计程序图 \f http://wiki.mbalib.c",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以设计宽带薪酬结构的方式思考这个问题。",
+    "activation_phrase": "请用设计宽带薪酬结构分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

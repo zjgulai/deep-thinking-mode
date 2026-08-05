@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立健全绩效考核体系和薪资管理体系",
+  "meta": {
+    "name": "建立健全绩效考核体系和薪资管理体系",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立健全绩效考核体系和薪资管理体系",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "薪资管理是一项复杂而系统的工作，涉及的方面很广，强化薪资管理，能够 保证薪资方案的有效实施。  首先，要做好薪资预算。在确定薪酬是否需要调整，若需要调整比例，则要 对总体薪酬水平做出准确的预算，以便于确保在未来一段时间内的支出得到一定 程",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，用平均每人每年的薪资总额可以反映出企业总体的薪资成"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立健全绩效考核体系和薪资管理体系的方式思考这个问题。",
+    "activation_phrase": "请用建立健全绩效考核体系和薪资管理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

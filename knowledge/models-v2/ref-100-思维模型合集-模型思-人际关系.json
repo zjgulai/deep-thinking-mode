@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-人际关系",
+  "meta": {
+    "name": "人际关系",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):人际关系",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "积极的人际关系是实现蓬勃人生的必要条件，社会神经科学家约翰·卡 乔波认为，孤独对生活产生的消极作用极大，良好的人际关系是人类 幸福的基石。而建立良好的人际关系就是要学会去帮助别人，例如史 蒂芬·普斯特讲过一个有关他母亲的故事。他小时候，当他",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "史 蒂芬·普斯特讲过一个有关他母亲的故事"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以人际关系的方式思考这个问题。",
+    "activation_phrase": "请用人际关系分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

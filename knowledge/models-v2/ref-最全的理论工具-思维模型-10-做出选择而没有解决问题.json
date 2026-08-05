@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-做出选择而没有解决问题",
+  "meta": {
+    "name": "做出选择而没有解决问题",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):做出选择而没有解决问题",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "比如做出如创立一个新部门，在高度的不确定性情况下，选择方案可能是不 正确的，还有的情况下，许多选择方案只是看起来要发生，但总是没有得到实施。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "做出如创立一个新部门，在高度的不确定性情况下，选择方案可能是不"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以做出选择而没有解决问题的方式思考这个问题。",
+    "activation_phrase": "请用做出选择而没有解决问题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

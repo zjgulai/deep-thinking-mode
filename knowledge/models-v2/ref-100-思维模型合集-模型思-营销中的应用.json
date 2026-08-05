@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-营销中的应用",
+  "meta": {
+    "name": "营销中的应用",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):营销中的应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "顾客对自己拥有的东西会高估，所以很多商家就可以利用这一心理进 行营销。 例如：净水器企业在电视、报纸、广播中大量的投放广告，广告中显 示，免费试用一个月，不满意退货，满意了再付钱。是利用顾客的禀 赋效应，推动公司产品的销售。刚开始顾客的心理",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "净水器企业在电视、报纸、广播中大量的投放广告，广告中显"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以营销中的应用的方式思考这个问题。",
+    "activation_phrase": "请用营销中的应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-信息不对称",
+  "meta": {
+    "name": "信息不对称",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):信息不对称",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "信息不对称是经济学中的一个概念，是指交易中的每个人拥有的信息 不同，在社会、政治、经济活动中，一些成员拥有其他成员无法获得 的信息，由此造成信息的不对称，利用信息不对称，商家能获得更多 的利益。隐瞒信息是信息不对称的主要原因。例如：保健品公",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "保健品公司，某 某大师，某某理财公司等，利用信息不对称，故意隐瞒对自己不利的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以信息不对称的方式思考这个问题。",
+    "activation_phrase": "请用信息不对称分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

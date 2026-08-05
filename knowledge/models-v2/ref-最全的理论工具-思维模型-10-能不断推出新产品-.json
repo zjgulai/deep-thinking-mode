@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-能不断推出新产品-",
+  "meta": {
+    "name": "能不断推出新产品。",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):能不断推出新产品。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "柔性的设计和制造使企业可以有效地连续推出一系列在客户看来都是“新 的”改进产品。这是因为新产品是建立在模块化和原有基础之上的，企业只要对 不同的模块进行组合，就会很快推出一系列新的“标准”产品；如果只有几个模 块需要修改，而且能够将扩充的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以能不断推出新产品。的方式思考这个问题。",
+    "activation_phrase": "请用能不断推出新产品。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

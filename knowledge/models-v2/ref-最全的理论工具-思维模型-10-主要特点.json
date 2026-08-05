@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-主要特点",
+  "meta": {
+    "name": "主要特点",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):主要特点",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "绩效指标所体现的 衡量内容最终取决于公司的战略目标。当关键绩效指标构成公司战略目标的有效 组成部分或 支持体系时，它所衡量的职位便以实现公司战略目标的相关部分作 为自身的主要职责；如果 KPI 与公司",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，销 售量与市场份额都是衡量销售部门市场开发能力的标准，而销售量是市场总规模"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以主要特点的方式思考这个问题。",
+    "activation_phrase": "请用主要特点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

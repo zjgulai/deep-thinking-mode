@@ -5,7 +5,8 @@
     "name": "经验学习四步法",
     "category": "08",
     "tags": [],
-    "skill_name": "经验学习四步法"
+    "skill_name": "经验学习四步法",
+    "sourceTitle": "经验学习四步法：从经历中提炼能力（附复盘问题清单）"
   },
   "core_definition": "或哪个表情，让我产生了强烈的反应？",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

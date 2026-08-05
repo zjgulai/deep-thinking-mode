@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-成就",
+  "meta": {
+    "name": "成就",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):成就",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "塞尼亚认为，成就（或成绩）往往是一项终极追求，哪怕它不能带来 任何积极情绪、意义、关系。有些人打牌是为了娱乐、为了开心、为 了享受心流。有些人打牌就是为了赢。对于他们来说，如果输了他们 就很不开心，相反，如果赢了，哪怕是“卑劣的胜利”，也是",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "洛克菲勒、安德鲁·卡内基、 比尔·盖茨和沃伦·巴菲特"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以成就的方式思考这个问题。",
+    "activation_phrase": "请用成就分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

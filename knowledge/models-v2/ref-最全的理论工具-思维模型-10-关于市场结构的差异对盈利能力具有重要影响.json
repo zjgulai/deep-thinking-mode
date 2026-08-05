@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-关于市场结构的差异对盈利能力具有重要影响",
+  "meta": {
+    "name": "关于市场结构的差异对盈利能力具有重要影响",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):关于市场结构的差异对盈利能力具有重要影响",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "的学者们对此已有深入的研究。一些经济学们传统上比较注重对行业平均盈  利能力差异的解释，而忽略了对业务单位的解释，但是他们的研究还是证明  了像市场增长率和进入壁垒等这样一些因素的重要性。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以关于市场结构的差异对盈利能力具有重要影响的方式思考这个问题。",
+    "activation_phrase": "请用关于市场结构的差异对盈利能力具分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

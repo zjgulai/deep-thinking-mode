@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-雷达图的演变-戴布拉图",
+  "meta": {
+    "name": "雷达图的演变—戴布拉图",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):雷达图的演变—戴布拉图",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "如果把雷达图应用于创新战略的评估，就演变成为戴布拉图。  实际上戴布拉图与雷达图的绘制与分析方法完全相同，但是，戴布拉图是用 企业内部管理责任：协作过程、业绩度量、教育 与开发、分布式学习网络和智 能市场定位，以及外部关系：知识产品/服务",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以雷达图的演变—戴布拉图的方式思考这个问题。",
+    "activation_phrase": "请用雷达图的演变—戴布拉图分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

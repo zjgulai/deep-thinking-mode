@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-梁天才-中小企业初级-swot-和高级",
+  "meta": {
+    "name": "梁天才.中小企业初级 SWOT 和高级",
+    "category": "06",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:梁天才.中小企业初级 SWOT 和高级",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "强有力的武器，并可以起到以下作用：",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，已知竞争市场中的均衡价格 P，要求从长"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以梁天才.中小企业初级 SWOT 和高级的方式思考这个问题。",
+    "activation_phrase": "请用梁天才.中小企业初级 SWOT分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

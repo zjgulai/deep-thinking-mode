@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-硬核",
+  "meta": {
+    "name": "硬核",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):硬核",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "要素是什么呢？支点。 没错，如果你没有支点的话，多长的杠杆都是白做工，如果支点不是 实实在在，而是虚的，那就更麻烦，因为它会导致短期内一个虚幻的 放大效应。换句话说，杠杆效应要在正确的方向上起作用，硬",
+    "trigger_signals": [
+      "如果你没有支点的话，多长的杠杆都是白做工，如果支点不是"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以硬核的方式思考这个问题。",
+    "activation_phrase": "请用硬核分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

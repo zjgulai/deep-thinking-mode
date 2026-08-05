@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-波动是质量的真正焦点",
+  "meta": {
+    "name": "波动是质量的真正焦点",
+    "category": "07",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):波动是质量的真正焦点",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "每一个过程合格率的乘积，用 RTY 表示(R 为采购，T",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "产品有 3 个关键环节，其中第一环节是原材料的采购，原材料合格率"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以波动是质量的真正焦点的方式思考这个问题。",
+    "activation_phrase": "请用波动是质量的真正焦点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

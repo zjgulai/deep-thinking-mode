@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-作为全面品管的一环",
+  "meta": {
+    "name": "作为全面品管的一环",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作为全面品管的一环",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "的品管圈活动外，尚有中层干部的日常管理，高阶经营者的方针管理等。品管圈 活动只能说是全面品管的一环，然而，要做好全面品管，那么品管圈活动却是很 重要的关键。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以作为全面品管的一环的方式思考这个问题。",
+    "activation_phrase": "请用作为全面品管的一环分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

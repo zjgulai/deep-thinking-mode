@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-工作理念的改变",
+  "meta": {
+    "name": "工作理念的改变",
+    "category": "03",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):工作理念的改变",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）保持耐心：在完全充分实施和产生量化结果之前就放弃一个周期 长的项目是ＣＥ０们经常犯的错误，有些项目周期比较长，有些项目  1166 / 1937 \f周期比较短，长周期可能带来高回报，如果没有足够的耐心，只追求 短期利益，就会失去未来。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "餐饮业、房地产、航空业，日用消费品行业等必需品行业，常用"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以工作理念的改变的方式思考这个问题。",
+    "activation_phrase": "请用工作理念的改变分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

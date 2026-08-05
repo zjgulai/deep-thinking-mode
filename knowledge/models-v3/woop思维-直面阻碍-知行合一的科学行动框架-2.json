@@ -5,7 +5,8 @@
     "name": "WOOP思维",
     "category": "07",
     "tags": [],
-    "skill_name": "woop思维"
+    "skill_name": "woop思维",
+    "sourceTitle": "WOOP思维：直面阻碍、知行合一的科学行动框架"
   },
   "core_definition": "是将心理比对（怀揣愿景同时正视现实阻碍）与执行意图（制定具象“If-Then”行动预案）深度结合，既保留正向期待，又提前预判困难、制定应对对策，将障碍应对方案转化为大脑自动化行动脚本，从根源破解“想做却不做”的执行难题",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

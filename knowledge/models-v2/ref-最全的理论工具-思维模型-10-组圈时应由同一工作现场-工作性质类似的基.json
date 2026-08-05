@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-组圈时应由同一工作现场-工作性质类似的基",
+  "meta": {
+    "name": "组圈时应由同一工作现场、工作性质类似的基",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):组圈时应由同一工作现场、工作性质类似的基",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "作性质截然不同的员工最好不要组成一个圈，因为在讨论问题时将会造成困难。 但经过数期活动后，有时单独一个圈没有办法解决问题，而且所谈问题容易牵涉 其他部门时，如制造线上之圈与设备保全之圈互有关连，此时可合并两个圈一起 讨论，称之为联合圈。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以组圈时应由同一工作现场、工作性质类似的基的方式思考这个问题。",
+    "activation_phrase": "请用组圈时应由同一工作现场、工作性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

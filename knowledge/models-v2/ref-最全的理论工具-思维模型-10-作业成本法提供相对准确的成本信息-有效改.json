@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-作业成本法提供相对准确的成本信息-有效改",
+  "meta": {
+    "name": "作业成本法提供相对准确的成本信息，有效改",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作业成本法提供相对准确的成本信息，有效改",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "作业成本法主要是克服传统的成本计算法的弊端，它缩小了间接费用的分配 范围，由全车间统一分配改为由若干个成本库进行分配；它增加了分配标准，由 传统的按单一标准分配改为按多种标准分配，(财务变量与非财务变量相结合的 分配方式)对每种作业选取属",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以作业成本法提供相对准确的成本信息，有效改的方式思考这个问题。",
+    "activation_phrase": "请用作业成本法提供相对准确的成本信分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

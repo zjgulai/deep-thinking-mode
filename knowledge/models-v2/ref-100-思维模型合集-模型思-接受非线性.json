@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-接受非线性",
+  "meta": {
+    "name": "接受非线性",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):接受非线性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "复杂系统，经济、国际环境、宏观政策、行业动态、企业发展等等都",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以接受非线性的方式思考这个问题。",
+    "activation_phrase": "请用接受非线性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

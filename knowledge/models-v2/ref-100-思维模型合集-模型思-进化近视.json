@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-进化近视",
+  "meta": {
+    "name": "进化近视",
+    "category": "03",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):进化近视",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "，在人类进化的过程中，为了眼前利益放弃长远利益，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说非洲某些部落为了发展经济，大量捕杀野 生动物，破坏环境，为了增加收入砍伐森林等等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以进化近视的方式思考这个问题。",
+    "activation_phrase": "请用进化近视分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-零件搜索技术",
+  "meta": {
+    "name": "零件搜索技术",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):零件搜索技术",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "根据以往经验确定影响产品质量的可疑零件，随机选取几个好的产品和坏的 产品，将坏产品上的可疑零件与好产品上的对应零件进行交换，重新装配后进行 质量特性参数的测量、比较、分析，以找到影响产品质量的主要零件。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以零件搜索技术的方式思考这个问题。",
+    "activation_phrase": "请用零件搜索技术分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

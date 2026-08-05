@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-搜索集的有限性",
+  "meta": {
+    "name": "搜索集的有限性",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):搜索集的有限性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "当我们做出决策时,通常会搜索记忆中的搜索集进行判断,有的信息能 够有效反应在大脑中,有的信息不能,此时决策主体会产生判断偏差。 心理学家就此项偏差做了研究:在书面英文词汇中,抽象词(爱情)和具体 词(门)哪个更多?大部分人认为抽象词比具体词",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "你如果感冒了,普通人只能根据自己有限的经验判断吃什么药,就"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以搜索集的有限性的方式思考这个问题。",
+    "activation_phrase": "请用搜索集的有限性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -5,7 +5,8 @@
     "name": "5W2H分析法",
     "category": "07",
     "tags": [],
-    "skill_name": "5w2h分析法"
+    "skill_name": "5w2h分析法",
+    "sourceTitle": "5W2H分析法：结构化反省，高效突破自我的工具"
   },
   "core_definition": "核心是用“七个问题”覆盖事项关键环节",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

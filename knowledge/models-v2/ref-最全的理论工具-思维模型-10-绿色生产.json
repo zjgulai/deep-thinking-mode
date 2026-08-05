@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-绿色生产",
+  "meta": {
+    "name": "绿色生产",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绿色生产",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "绿色生产就是要根据制造系统的实际，尽量规划和采用物料和能源消耗少、 废弃物少、对环境污染小的工艺方案和工艺路线，要求生产过程所有活动均按 IS014000 标准生产，它意味着对生产过程、产品及服务持续运用整体预防的环 境战略，以期增加生产",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以绿色生产的方式思考这个问题。",
+    "activation_phrase": "请用绿色生产分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

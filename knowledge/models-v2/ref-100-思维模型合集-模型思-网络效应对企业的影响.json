@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-网络效应对企业的影响",
+  "meta": {
+    "name": "网络效应对企业的影响",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):网络效应对企业的影响",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1249 / 1937 \f网络效应可以让头部企业“赢家通吃”。网络效应可以产生“正反馈”，正 反馈产生了一种“强者恒强，弱者恒弱”的“马太效应”，在一定条件下， 优势或弱势一旦出现，就会不断加剧而自我强化，出现滚动的累计效 果，在极端的情",
+    "trigger_signals": [
+      "当我们从 qwerty 键盘转换到 DSK 键盘时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "微软、苹果和安卓系统，已经成为了行业标准，所有的软件开发"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以网络效应对企业的影响的方式思考这个问题。",
+    "activation_phrase": "请用网络效应对企业的影响分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

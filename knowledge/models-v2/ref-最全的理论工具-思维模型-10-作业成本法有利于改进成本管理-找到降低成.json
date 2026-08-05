@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-作业成本法有利于改进成本管理-找到降低成",
+  "meta": {
+    "name": "作业成本法有利于改进成本管理，找到降低成",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作业成本法有利于改进成本管理，找到降低成",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "作业成本法通过对作业成本的确认、计量，动态地反映所有作业活动，及时 消除“不增值作业”、改善“增值作业”  ，优化“作业链和价值链”  。把着眼点与 重点放在成本发生的前因后果上，不再是就成本而论成本。这样有利于成本可控 因素的确认和控制",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以作业成本法有利于改进成本管理，找到降低成的方式思考这个问题。",
+    "activation_phrase": "请用作业成本法有利于改进成本管理，分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

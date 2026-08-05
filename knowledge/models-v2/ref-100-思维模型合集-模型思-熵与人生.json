@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-熵与人生",
+  "meta": {
+    "name": "熵与人生",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):熵与人生",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "“信息是用来消除随机不确定性的东",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "我们在阅读、 打坐和冥想时，此时心里的熵值降到最低，一切纷扰念头都销声匿迹，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以熵与人生的方式思考这个问题。",
+    "activation_phrase": "请用熵与人生分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

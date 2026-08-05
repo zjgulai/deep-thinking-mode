@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100种思维-力量的来源-第二百一十六节-当我在历史的长河中读到这",
+  "meta": {
+    "name": "第二百一十六节。当我在历史的长河中读到这",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100种思维  力量的来源 (帕斯卡):第二百一十六节。当我在历史的长河中读到这",
+    "sourceTitle": "100种思维  力量的来源 (帕斯卡)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "处在轮子的边缘，一个接近轮子的中心",
+    "trigger_signals": [
+      "当我们因将某些事物放在面前从而看不到悬崖时",
+      "如果我们拒绝它，就说明相对于对真理的追",
+      "如果你在山的这一边生活，我的朋友，我应该就是凶手，而且"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "1.宁愿选择消遣、狩猎，也不选择诗。那一知半解的学者"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第二百一十六节。当我在历史的长河中读到这的方式思考这个问题。",
+    "activation_phrase": "请用第二百一十六节。当我在历史的长分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

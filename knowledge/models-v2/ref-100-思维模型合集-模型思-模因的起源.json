@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-模因的起源",
+  "meta": {
+    "name": "模因的起源",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):模因的起源",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "的 区别，但是要在其中找到一种不关注自身的危机、使命、难题、危险 或机遇的文化或亚文化却是一件极具挑战的事情。 模因能够持续不断的进化，背后有两个驱动因子（生成发动机）。 一级驱动因子:4 个驱动力:",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以模因的起源的方式思考这个问题。",
+    "activation_phrase": "请用模因的起源分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

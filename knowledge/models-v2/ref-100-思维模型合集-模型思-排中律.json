@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-排中律",
+  "meta": {
+    "name": "排中律",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):排中律",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对于任何事物在一定条件下的判断都要有明确的“是”或“非”，不存在中 间状态。一个事物，它要么存在，要么不存在，没有中间状态。桌上 有一盏灯，这句话要么是真要么是假，没有别的可能。  970 / 1937 \f（1）排中律的内容：在同一思维过程",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在讨论是否应该禁烟时，某人说：“我不赞成禁烟，烟草可是国"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以排中律的方式思考这个问题。",
+    "activation_phrase": "请用排中律分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

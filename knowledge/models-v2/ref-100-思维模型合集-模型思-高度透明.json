@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-高度透明",
+  "meta": {
+    "name": "高度透明",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):高度透明",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "事业部总经理对项目、计划和人员管理方面有很大的权限，所以他的 一言一行都会受到关注 事业部总经理必须保持自己工作和决策的透明度，因为一个小小的错 误就有可能被放大。  1161 / 1937 \f4、重视新技术对业务带来的颠覆 互联网电子商务",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以高度透明的方式思考这个问题。",
+    "activation_phrase": "请用高度透明分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

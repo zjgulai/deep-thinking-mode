@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-生成与测验",
+  "meta": {
+    "name": "生成与测验",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):生成与测验",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "促进编码与提取的更有效的方式。",
+    "trigger_signals": [
+      "如果我不能把一个科学概念讲得让一个大学新",
+      "如果你找不到一个小白来听你解释，你也可以大声地解释你学习的内"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在学 习思维模型的过程中，我们要求你要写总结并且要参与小组讨论，就"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以生成与测验的方式思考这个问题。",
+    "activation_phrase": "请用生成与测验分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

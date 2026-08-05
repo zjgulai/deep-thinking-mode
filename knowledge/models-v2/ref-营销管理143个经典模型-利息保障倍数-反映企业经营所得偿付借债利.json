@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-利息保障倍数-反映企业经营所得偿付借债利",
+  "meta": {
+    "name": "利息保障倍数 反映企业经营所得偿付借债利",
+    "category": "06",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:利息保障倍数 反映企业经营所得偿付借债利",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "其中流动负债说明每 1 元负债有多少流动资金作为保证，比率越高，流动负债得到偿还的 保障就越大。但比率过高，则反映客户滞留在流动资产上的资金过多，未能有效利用，可能会影 响客户的获利能力。经验认为，流动比率在 2：1 左右比较合适。所谓’",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以利息保障倍数 反映企业经营所得偿付借债利的方式思考这个问题。",
+    "activation_phrase": "请用利息保障倍数 反映企业经营所得分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

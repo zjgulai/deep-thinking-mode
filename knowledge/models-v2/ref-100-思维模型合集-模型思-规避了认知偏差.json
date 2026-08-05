@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-规避了认知偏差",
+  "meta": {
+    "name": "规避了认知偏差",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):规避了认知偏差",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "虽然自己以前对认知偏差有的一点了解，但是从来没有系统的思考过 人类到底有多少认知偏差，通过对认知心理学、认知神经科学、行为 经济学、神经金融学、生物学、决策学等多方面的研究，再次发现自 己的无知和愚蠢。这些交叉学科让我懂了很多道理，就像查理",
+    "trigger_signals": [
+      "如果我知道自己未来会死在那里，我就不去那个地方”。只要知道"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以规避了认知偏差的方式思考这个问题。",
+    "activation_phrase": "请用规避了认知偏差分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

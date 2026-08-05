@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-实施意义",
+  "meta": {
+    "name": "实施意义",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施意义",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1．绿色供应链管理把关注环境和生态问题纳入其供应链管理的整个过程中， 它强调：原材料和能源的来源应是绿色的，即不造成生态破坏和环境污染；减少 运输、仓储环节中的浪费；加强生产商、供应商、分销商的合作，增强绿色销售 服务；提供绿色产品、绿色",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实施意义的方式思考这个问题。",
+    "activation_phrase": "请用实施意义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

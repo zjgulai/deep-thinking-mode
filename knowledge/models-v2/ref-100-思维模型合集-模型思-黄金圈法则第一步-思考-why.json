@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-黄金圈法则第一步-思考-why",
+  "meta": {
+    "name": "黄金圈法则第一步，思考 Why",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):黄金圈法则第一步，思考 Why",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "理念，乔布斯 说：“活着就是为了改变世界”，创办苹果公司是乔布斯改变世界的方式， 苹果手机就是改变世界的具体产品。苹果产品的灵魂是“Think different”， 只要灵魂永在，企业就可以持续不断",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "苹果公司为什么伟大，是因为苹果创始人的核心理念，乔布斯"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以黄金圈法则第一步，思考 Why的方式思考这个问题。",
+    "activation_phrase": "请用黄金圈法则第一步，思考 Why分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

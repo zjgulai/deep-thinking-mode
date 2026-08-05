@@ -5,7 +5,8 @@
     "name": "反向提问",
     "category": "02",
     "tags": [],
-    "skill_name": "反向提问"
+    "skill_name": "反向提问",
+    "sourceTitle": "反向提问：用问题回答问题，轻松掌握对话主动权"
   },
   "core_definition": "完成一次身份转换：从被动答题人，变成整场对话的设计者",
   "when_to_use": {
@@ -59,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-战略模型与工具-单击此处编辑母版标题样式-单击此处编辑母",
+  "meta": {
+    "name": "单击此处编辑母版标题样式 单击此处编辑母",
+    "category": "00",
+    "tags": [],
+    "source": "ref:战略模型与工具:单击此处编辑母版标题样式 单击此处编辑母",
+    "sourceTitle": "战略模型与工具",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "行业从出现直至完全退出社会经济领域所经历的时间",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以单击此处编辑母版标题样式 单击此处编辑母的方式思考这个问题。",
+    "activation_phrase": "请用单击此处编辑母版标题样式 单击分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

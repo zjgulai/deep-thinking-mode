@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-周哈里窗思维模型",
+  "meta": {
+    "name": "周哈里窗思维模型",
+    "category": "11",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:周哈里窗思维模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "心理操纵的形式,其方法是一个人或一个团体隐秘地让受害人逐渐开始怀疑自己,使其质",
+    "trigger_signals": [
+      "当你与外界的接触总是需要通过一个人的时候,你也 其实被操控的过程,你是可以意识到的,只是有时",
+      "如果你被困住了,试着用你的方式问这些问题 :1. 你的实际情况是? 2. 你",
+      "当我们经验足够多或观察足够全面时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "丧失自尊,产生自我怀疑,无法逃脱。  因为其使用否定,误导,矛盾和错误资讯,煤气灯效应使受害者心理上去穩定化以及使受害者不再相信她 / 他原来的的信"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以周哈里窗思维模型的方式思考这个问题。",
+    "activation_phrase": "请用周哈里窗思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

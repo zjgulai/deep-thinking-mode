@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-高效学习工具",
+  "meta": {
+    "name": "高效学习工具",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):高效学习工具",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "看是否注重提高并控制自己的思维方式。批判性思维是 一种学习工具，并且它适合所有水平的学生。优秀的思考者对自己的 思维",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "爱因斯坦、达尔文和牛顿等。 对于学龄儿童，我们经常会认为那些问题回答得最快、考试卷子交得"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以高效学习工具的方式思考这个问题。",
+    "activation_phrase": "请用高效学习工具分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

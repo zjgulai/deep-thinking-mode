@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-感召的是灵魂",
+  "meta": {
+    "name": "感召的是灵魂",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):感召的是灵魂",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "精神的召唤，是思想和理念的认同，是一种模因，是一种",
+    "trigger_signals": [
+      "如果你的言行一致，人们就能相"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "美国哈雷摩托车发烧友会把哈雷的标志纹身在自己的身"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以感召的是灵魂的方式思考这个问题。",
+    "activation_phrase": "请用感召的是灵魂分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

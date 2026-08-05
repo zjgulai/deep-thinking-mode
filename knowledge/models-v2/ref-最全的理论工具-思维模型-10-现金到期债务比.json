@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-现金到期债务比",
+  "meta": {
+    "name": "现金到期债务比",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):现金到期债务比",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "流动比率和速动比率都是从静态上分析企业的偿债能力，虽然能够在一定程 度上揭示公司的偿债能力，但有很大的局限性，这主要是因为流动资产中绝大部 分并不能很快转变为可偿债的现金，真正能用于偿还债务的是现金流量。现金流 量和债务的比较可以更好地反",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以现金到期债务比的方式思考这个问题。",
+    "activation_phrase": "请用现金到期债务比分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

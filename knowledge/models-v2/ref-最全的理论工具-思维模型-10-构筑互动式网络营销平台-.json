@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-构筑互动式网络营销平台-",
+  "meta": {
+    "name": "构筑互动式网络营销平台。",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):构筑互动式网络营销平台。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "实现大规模定制的首要因素是进行有效的信息沟通，为此企业必须规划一对 一的网络营销架构。该架构可以分为两个平台：一是维护客户关系的平台，其功 能是让企业和客户能持续接触与沟通。此沟通是双向的，一方面通过各种接口使 企业执行销售活动计划；另方",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以构筑互动式网络营销平台。的方式思考这个问题。",
+    "activation_phrase": "请用构筑互动式网络营销平台。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

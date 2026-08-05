@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-以下两种状况可以判断工序发生某种异常-",
+  "meta": {
+    "name": "以下两种状况可以判断工序发生某种异常：",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):以下两种状况可以判断工序发生某种异常：",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "A、连续若干点子超出控制界限； B、界限内点子呈缺陷性排列。 3.7.5. 使用控制图注意事项  1、不能用规格线或规格范围的 3/4 线来代替控制线。控制线只能根据生产 实际的数据计算出来。  2、对于所确定的控制对象应有定量的指标，且过",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以以下两种状况可以判断工序发生某种异常：的方式思考这个问题。",
+    "activation_phrase": "请用以下两种状况可以判断工序发生某分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

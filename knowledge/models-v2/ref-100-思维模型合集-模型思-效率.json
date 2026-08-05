@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-效率",
+  "meta": {
+    "name": "效率",
+    "category": "03",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):效率",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "要素。手持棍棒在飞机大炮面前 将不堪一击。不管是企业还是个人，如果没有先进的工具和方法。将 很难提高工作效率。例如华为于 1987 年成立，到 1997 年已经度过了 十个年头，员工人数在这一年突破了",
+    "trigger_signals": [
+      "如果你不能够把握生态系统的律动，趋势的风声，时间的敏感，竞争"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "华为于 1987 年成立，到 1997 年已经度过了"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以效率的方式思考这个问题。",
+    "activation_phrase": "请用效率分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

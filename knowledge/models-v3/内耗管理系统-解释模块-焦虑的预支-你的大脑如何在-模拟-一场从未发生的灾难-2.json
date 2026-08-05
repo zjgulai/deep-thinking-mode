@@ -5,7 +5,8 @@
     "name": "解释模块 · 焦虑的预支",
     "category": "10",
     "tags": [],
-    "skill_name": "解释模块-·-焦虑的预支"
+    "skill_name": "解释模块-·-焦虑的预支",
+    "sourceTitle": "内耗管理系统 · 解释模块 · 焦虑的预支：你的大脑如何在“模拟”一场从未发生的灾难"
   },
   "core_definition": "】** 为什么你总在为“可能发生”的事提前痛苦？为什么最折磨你的往往是尚未到来的威胁？",
   "when_to_use": {
@@ -59,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

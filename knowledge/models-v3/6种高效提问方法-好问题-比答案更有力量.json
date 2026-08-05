@@ -5,7 +5,8 @@
     "name": "6种高效提问方法",
     "category": "08",
     "tags": [],
-    "skill_name": "6种高效提问方法"
+    "skill_name": "6种高效提问方法",
+    "sourceTitle": "6种高效提问方法：好问题，比答案更有力量"
   },
   "core_definition": "与根本原因，适用于问题诊断、深度沟通及逻辑梳理",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

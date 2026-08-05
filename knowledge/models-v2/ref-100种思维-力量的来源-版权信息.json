@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100种思维-力量的来源-版权信息",
+  "meta": {
+    "name": "版权信息",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100种思维  力量的来源 (帕斯卡):版权信息",
+    "sourceTitle": "100种思维  力量的来源 (帕斯卡)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "真实做自己的人，他的理论无论是“我是太",
+    "trigger_signals": [
+      "当我们想要指出别人的错误并有效地纠正他的错误时",
+      "当我们并不了解事情的真实情况时",
+      "当我们并不了解事情的真实情况时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，有一些人很容易掌握流体静力学，虽然前提很少，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以版权信息的方式思考这个问题。",
+    "activation_phrase": "请用版权信息分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

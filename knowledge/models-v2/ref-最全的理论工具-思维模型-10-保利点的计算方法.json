@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-保利点的计算方法",
+  "meta": {
+    "name": "保利点的计算方法",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):保利点的计算方法",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一种是用数量表示的业务量，一种是以货币金额表示的业务收入额。 根据基本关系式：营业 利润＝单位贡献边际  销售量－固定成本 且营业利润为目标利润 ，相应的销售量为保利 量，因而有：  固定成本＋目标利润 固定成本＋目标利润 保利量＝ ＝",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以保利点的计算方法的方式思考这个问题。",
+    "activation_phrase": "请用保利点的计算方法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

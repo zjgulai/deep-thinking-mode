@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-首件签样记录现场保存-提前领取原稿-样品",
+  "meta": {
+    "name": "首件签样记录现场保存，提前领取原稿、样品",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):首件签样记录现场保存，提前领取原稿、样品",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "格后立即批量生产。 针对要因制定计划措施： 要因 措施 用时 准备不充 制定分工明细表，机长负责将原稿、样品领至现场；一 10 分钟 分 辅负责提前备版；二辅甲负责油墨及其他辅助材料；二  辅乙负责纸板原料。 上版调试 集中培训，并进行理论",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以首件签样记录现场保存，提前领取原稿、样品的方式思考这个问题。",
+    "activation_phrase": "请用首件签样记录现场保存，提前领取分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

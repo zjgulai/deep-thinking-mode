@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-替代品的威胁",
+  "meta": {
+    "name": "替代品的威胁",
+    "category": "10",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:替代品的威胁",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "两个处于同行业或不同行业中的企业，可能会由于所生产的产品是互为替代品，从而在它 们之间产生相互竞争行为，这种源自于替代品的竞争会以各种形式影响行业中现有企业的竞争战 略。首先，现有企业产品售价以及获利潜力的提高，将由于存在着能被用户方便接",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以替代品的威胁的方式思考这个问题。",
+    "activation_phrase": "请用替代品的威胁分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

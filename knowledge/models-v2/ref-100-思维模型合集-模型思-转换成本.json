@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-转换成本",
+  "meta": {
+    "name": "转换成本",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):转换成本",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "转换成本实际上是获取、学习和使用一种新技术的机会成本。 个人发展：如果你想转行，之前的经验全部归零，重新学习新知识， 工资下调，转换成本极高。 技术演变：技术具有专用性，一旦用户转向了另外一种技术，那么在 原有技术上的投资就几乎没有任何价值",
+    "trigger_signals": [
+      "如果你想转行，之前的经验全部归零，重新学习新知识，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说柯达。 制度变迁：一旦选择一个制度，要想改变特别困难"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以转换成本的方式思考这个问题。",
+    "activation_phrase": "请用转换成本分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

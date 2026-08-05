@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-想象性和象征性的模拟方式-",
+  "meta": {
+    "name": "想象性和象征性的模拟方式。",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):想象性和象征性的模拟方式。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "这两种模拟的思考方针要从“问题在童话、科幻小说中，会变成什么样呢？” 的疑问开始寻求答案，这样才能符合两大原则。 4.3. 应注意的问题  1．模拟时要集中注意力。  2．综摄法的精髓是通过识别事物之间的异同，从而捕捉富有启发性的新思 路",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以想象性和象征性的模拟方式。的方式思考这个问题。",
+    "activation_phrase": "请用想象性和象征性的模拟方式。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

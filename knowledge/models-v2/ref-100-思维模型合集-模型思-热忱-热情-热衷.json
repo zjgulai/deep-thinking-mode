@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-热忱-热情-热衷",
+  "meta": {
+    "name": "热忱、热情、热衷",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):热忱、热情、热衷",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "充满热情，会全心全意投入工作。他们每天早上睁开眼睛",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "吃一块巧克力、做一个按摩或者买  888 / 1937"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以热忱、热情、热衷的方式思考这个问题。",
+    "activation_phrase": "请用热忱、热情、热衷分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

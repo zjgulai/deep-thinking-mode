@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-投资强度",
+  "meta": {
+    "name": "投资强度",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):投资强度",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "投资强度以投资额对销售额的比值来度量，或更准确地说，以投资额对附加 价值的比率来表示。总起来说，较高的投资强度会带来较低的投资收益率 ROI 和现金流量。如图 1 所示这样，机械化、自动化和库存成本强度较高的经营单位 通常显示出较低的投资",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以投资强度的方式思考这个问题。",
+    "activation_phrase": "请用投资强度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

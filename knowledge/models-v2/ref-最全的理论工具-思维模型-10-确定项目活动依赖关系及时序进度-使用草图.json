@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-确定项目活动依赖关系及时序进度-使用草图",
+  "meta": {
+    "name": "确定项目活动依赖关系及时序进度。使用草图",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定项目活动依赖关系及时序进度。使用草图",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "性路径过长。关键性路径是由贯穿项目始终的关键性任务所决  定的，它既表示了项目的最长耗时， 也表示了完成项目的最短可能时间。  请注意，关键性路径会由于单项活动进度的提前或延期而发生变化。   不要",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以确定项目活动依赖关系及时序进度。使用草图的方式思考这个问题。",
+    "activation_phrase": "请用确定项目活动依赖关系及时序进度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

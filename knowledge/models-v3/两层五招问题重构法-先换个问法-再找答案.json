@@ -5,7 +5,8 @@
     "name": "两层五招问题重构法",
     "category": "02",
     "tags": [],
-    "skill_name": "两层五招问题重构法"
+    "skill_name": "两层五招问题重构法",
+    "sourceTitle": "两层五招问题重构法：先换个问法，再找答案"
   },
   "core_definition": "同步信息、达成共识，可用异步文档、协作白板、录屏替代",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

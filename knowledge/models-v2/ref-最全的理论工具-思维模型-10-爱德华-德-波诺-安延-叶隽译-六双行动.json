@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-爱德华-德-波诺-安延-叶隽译-六双行动",
+  "meta": {
+    "name": "爱德华•德•波诺．安延、叶隽译．六双行动",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):爱德华•德•波诺．安延、叶隽译．六双行动",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ KT 决策法  —最负盛名的决策模型 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以爱德华•德•波诺．安延、叶隽译．六双行动的方式思考这个问题。",
+    "activation_phrase": "请用爱德华•德•波诺．安延、叶隽译分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

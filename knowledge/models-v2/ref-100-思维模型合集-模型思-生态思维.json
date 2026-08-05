@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-生态思维",
+  "meta": {
+    "name": "生态思维",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):生态思维",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "生态思维模式是关注商业生态系统中不同利益相关方的利益，不能只 顾自己不顾别人，要平衡共生体中各种利益相关方的利益，协同把市 场做大，清楚的知道自己应该控制什么？不应该控制什么？例如阿里 巴巴、腾讯、苹果都是生态思维的典范。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "阿里 巴巴、腾讯、苹果都是生态思维的典范"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以生态思维的方式思考这个问题。",
+    "activation_phrase": "请用生态思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

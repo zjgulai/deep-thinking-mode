@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-思维导图",
+  "meta": {
+    "name": "思维导图",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):思维导图",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "矛盾体，需要平衡好工作与学习的矛盾、感性与理性",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "亚里士多德、爱因斯坦、达尔文、富兰克林、毛泽东、查理芒"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以思维导图的方式思考这个问题。",
+    "activation_phrase": "请用思维导图分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

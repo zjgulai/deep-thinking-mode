@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-制订方针目标-",
+  "meta": {
+    "name": "制订方针目标。",
+    "category": "10",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):制订方针目标。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "方针目标是 TPM 管理体系的导向，能够引导和激励全体员工不断追求，并有 利于 TPM 管理职能的落实。制订 TPM 方针要注意以下几点： ① 与企业的发展战略和宗旨相适应； ②抓住要点，向全体员工表达出推进 TPM 管理的方向、期望、信",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以制订方针目标。的方式思考这个问题。",
+    "activation_phrase": "请用制订方针目标。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

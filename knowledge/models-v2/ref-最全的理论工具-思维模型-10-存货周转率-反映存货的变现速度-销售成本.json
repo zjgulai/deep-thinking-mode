@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-存货周转率-反映存货的变现速度-销售成本",
+  "meta": {
+    "name": "存货周转率 反映存货的变现速度 销售成本",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):存货周转率 反映存货的变现速度 销售成本",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "总资产周转率、固定资产周转率、流动资产周转率分别反映全部资产、固定 资产和流动资产的使用效率，比率越高，说明资产利用率越高，获利能力强；应 收账款周转率反映年度内应收帐款转为现金的平均次数，比率越高，说明企业催 收账款的速度越快，坏账损失",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以存货周转率 反映存货的变现速度 销售成本的方式思考这个问题。",
+    "activation_phrase": "请用存货周转率 反映存货的变现速度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

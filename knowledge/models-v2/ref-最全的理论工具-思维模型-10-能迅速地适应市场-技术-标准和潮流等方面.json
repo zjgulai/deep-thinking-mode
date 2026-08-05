@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-能迅速地适应市场-技术-标准和潮流等方面",
+  "meta": {
+    "name": "能迅速地适应市场、技术、标准和潮流等方面",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):能迅速地适应市场、技术、标准和潮流等方面",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "大规模定制企业能够利用各种标准模块，利用柔性的操纵和敏捷的制造迅速 地生产出满足环境变化的新产品。这是因为大规模定制始终能够在总能力的范围 内根据需求制造产品，它几乎不会错过任何订单。柔性的加工厂可以迅速地在企 业内部进行调节，并与其他工",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以能迅速地适应市场、技术、标准和潮流等方面的方式思考这个问题。",
+    "activation_phrase": "请用能迅速地适应市场、技术、标准和分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

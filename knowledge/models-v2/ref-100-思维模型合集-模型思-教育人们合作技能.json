@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-教育人们合作技能",
+  "meta": {
+    "name": "教育人们合作技能",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):教育人们合作技能",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "经典的案例。复活节岛位于智利以西",
+    "trigger_signals": [
+      "如果你没有办法惩罚背叛者，那就远离他，让",
+      "如果我们每个人都追求个人利益最大化，个人乱丢垃圾，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "只是群体行为的一角，本质上是群体行动和个体行动之间"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以教育人们合作技能的方式思考这个问题。",
+    "activation_phrase": "请用教育人们合作技能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

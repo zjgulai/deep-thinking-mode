@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-将业务部门与整个公司联系起来",
+  "meta": {
+    "name": "将业务部门与整个公司联系起来",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):将业务部门与整个公司联系起来",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1164 / 1937 \f（1）合纵连横：集团高管必须把业务部门与公司的整体战略链接起来， 事业部总经理都是一方诸侯，考虑问题从事业部出发，所以不能全局 的思考问题。集团高管要对事业部总经理做好监督和管控，防止为了 一个部门的利益，损失了",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以将业务部门与整个公司联系起来的方式思考这个问题。",
+    "activation_phrase": "请用将业务部门与整个公司联系起来分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

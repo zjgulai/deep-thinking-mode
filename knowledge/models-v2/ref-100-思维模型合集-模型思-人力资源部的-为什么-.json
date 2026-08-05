@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-人力资源部的-为什么-",
+  "meta": {
+    "name": "人力资源部的“为什么”",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):人力资源部的“为什么”",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "宜家招聘设计师在面谈时，桌上会放有宜家的咖啡杯和茶匙。宜家会 要求设计师看着这两样东西，并讨论他们所注意到的事。 例如，他们是否发现杯子下方有四道沟纹，而这些沟纹能方便叠起杯 子，也使得在包装时能节省空间？他们是否对茶匙的设计感兴趣？匙 柄",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，他们是否发现杯子下方有四道沟纹，而这些沟纹能方便叠起杯"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以人力资源部的“为什么”的方式思考这个问题。",
+    "activation_phrase": "请用人力资源部的“为什么”分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

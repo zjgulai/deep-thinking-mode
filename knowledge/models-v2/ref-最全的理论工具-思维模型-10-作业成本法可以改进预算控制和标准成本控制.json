@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-作业成本法可以改进预算控制和标准成本控制",
+  "meta": {
+    "name": "作业成本法可以改进预算控制和标准成本控制",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作业成本法可以改进预算控制和标准成本控制",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "作业成本法最根本的优点在于它能使管理人员想方设法进行成本控制。一旦 确认了某种产品消耗间接成本的原因，管理人员就会从降低成本的角度对各种间 接成本进行重新评估，以促使间接成本费用降低，促使企业有效地控制间接成本。 达到预算和标准成本控制的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以作业成本法可以改进预算控制和标准成本控制的方式思考这个问题。",
+    "activation_phrase": "请用作业成本法可以改进预算控制和标分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

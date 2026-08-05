@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-功能单一的产品-要把单一维度做到极致-",
+  "meta": {
+    "name": "功能单一的产品，要把单一维度做到极致。",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):功能单一的产品，要把单一维度做到极致。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "有知识有文化的人，传递着高智力的信号",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "专业相机最普 通的型号，都比最顶级的手机相机像素要高"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以功能单一的产品，要把单一维度做到极致。的方式思考这个问题。",
+    "activation_phrase": "请用功能单一的产品，要把单一维度做分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

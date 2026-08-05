@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-替代品的威胁-果汁饮料行业的替代品不仅仅",
+  "meta": {
+    "name": "替代品的威胁。果汁饮料行业的替代品不仅仅",
+    "category": "10",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):替代品的威胁。果汁饮料行业的替代品不仅仅",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "外九大类别饮品的冲击。若替代品的价格较低，就会使果汁饮品的价格上限只能 处在较低的水平，这就限制了果汁饮料的收益。替代产品价格越有吸引力，限制 作用就越大，对果汁饮料市场构成的压力也就越大。这将加剧行业竞争，企业必 须注意应对替代品的威胁。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以替代品的威胁。果汁饮料行业的替代品不仅仅的方式思考这个问题。",
+    "activation_phrase": "请用替代品的威胁。果汁饮料行业的替分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

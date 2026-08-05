@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-使用指导方针",
+  "meta": {
+    "name": "使用指导方针",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):使用指导方针",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "互相影响的过程，在主要项日管理人员稀缺的情",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，把一个项目  分段管理，每段需要类似的人力资源配置，如果关键性岗位没有人选，就需"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以使用指导方针的方式思考这个问题。",
+    "activation_phrase": "请用使用指导方针分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-度是其中最基本的一个概念-",
+  "meta": {
+    "name": "度是其中最基本的一个概念。",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):度是其中最基本的一个概念。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "网络中存在节点，节点之间的连线表示连边。对于表示人和人之间朋 友关系的社交网络，每个点代表一个人，节点之间的连边表示朋友关 系。一个节点的度，就表示这个节点的连边数。在社交网络中，节点 的度表示一个人的朋友数目。 网络中不同节点的度可以完全",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以度是其中最基本的一个概念。的方式思考这个问题。",
+    "activation_phrase": "请用度是其中最基本的一个概念。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

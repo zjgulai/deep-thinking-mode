@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-刻板印象",
+  "meta": {
+    "name": "刻板印象",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):刻板印象",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在我们接受任何新事物前，很容易带有固化的思维和观点，有了刻板 印象后，就会引发后续一系列的判断。 下面，我们举几个小例子： a 销售员看到进店的顾客形象不佳时，容易低估对方的消费能力。 b 胖子心宽体胖。 c 爱喝酒的人酒品不好。 上述 3",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以刻板印象的方式思考这个问题。",
+    "activation_phrase": "请用刻板印象分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

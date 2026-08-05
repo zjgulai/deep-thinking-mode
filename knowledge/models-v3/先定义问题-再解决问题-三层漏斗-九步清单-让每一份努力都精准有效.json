@@ -5,7 +5,8 @@
     "name": "先定义问题，再解决问题",
     "category": "03",
     "tags": [],
-    "skill_name": "先定义问题，再解决问题"
+    "skill_name": "先定义问题，再解决问题",
+    "sourceTitle": "先定义问题，再解决问题：三层漏斗+九步清单，让每一份努力都精准有效"
   },
   "core_definition": "客观现状与预期的落差，且持续产生损失与风险",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

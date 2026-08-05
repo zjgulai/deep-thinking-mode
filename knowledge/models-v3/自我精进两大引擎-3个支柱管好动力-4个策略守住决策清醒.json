@@ -5,7 +5,8 @@
     "name": "自我精进两大引擎",
     "category": "07",
     "tags": [],
-    "skill_name": "自我精进两大引擎"
+    "skill_name": "自我精进两大引擎",
+    "sourceTitle": "自我精进两大引擎：3个支柱管好动力，4个策略守住决策清醒"
   },
   "core_definition": "没有动力，迟迟无法行动；决策混乱，努力全部白费",
   "when_to_use": {
@@ -63,7 +64,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

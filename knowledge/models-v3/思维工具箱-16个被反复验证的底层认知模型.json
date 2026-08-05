@@ -7,7 +7,8 @@
     "tags": [
       "wechat_redirec"
     ],
-    "skill_name": "思维工具箱"
+    "skill_name": "思维工具箱",
+    "sourceTitle": "思维工具箱：16个被反复验证的底层认知模型"
   },
   "core_definition": "记住：框架是认知的脚手架，让你不再面对混乱束手无策",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

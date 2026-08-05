@@ -5,7 +5,8 @@
     "name": "应对不确定性的4个层级",
     "category": "06",
     "tags": [],
-    "skill_name": "应对不确定性的4个层级"
+    "skill_name": "应对不确定性的4个层级",
+    "sourceTitle": "应对不确定性的4个层级：不同未知场景，用不同策略"
   },
   "core_definition": "不是寻找一套万能公式，而是先分清不确定性的层级，再匹配对应的应对策略",
   "when_to_use": {
@@ -59,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

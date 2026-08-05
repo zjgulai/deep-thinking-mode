@@ -9,7 +9,8 @@
       "思维框架",
       "思维模型"
     ],
-    "skill_name": "ooda循环不确定环境下的快速"
+    "skill_name": "ooda循环不确定环境下的快速",
+    "sourceTitle": "OODA循环不确定环境下的快速决策与行动法则"
   },
   "core_definition": "比对手更快完成“观察→定位→决策→行动”闭环，即可掌握主动权，打破对手节奏",
   "when_to_use": {
@@ -66,7 +67,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

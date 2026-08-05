@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-记忆学习的原理",
+  "meta": {
+    "name": "记忆学习的原理",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):记忆学习的原理",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "高效的学习方法，其通过知识切块、写下来、理解到讲给别人",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以记忆学习的原理的方式思考这个问题。",
+    "activation_phrase": "请用记忆学习的原理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

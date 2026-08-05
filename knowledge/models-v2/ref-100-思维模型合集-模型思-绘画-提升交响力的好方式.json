@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-绘画-提升交响力的好方式",
+  "meta": {
+    "name": "绘画,提升交响力的好方式",
+    "category": "01",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):绘画,提升交响力的好方式",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "和绘画一样,交响力从很大程度上来说也是一种联系。绘画可以提升我 们的空间智能,提升我们的想象力、创造力和整合思维能力。 四、共情力:与他人产生共鸣 共情不是同情,而是产生共鸣。共情,是深入他人的思想从他人的角度体 验世界。不是惋惜别人的不幸",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以绘画,提升交响力的好方式的方式思考这个问题。",
+    "activation_phrase": "请用绘画,提升交响力的好方式分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

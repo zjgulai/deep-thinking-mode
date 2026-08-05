@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-被现实-绊倒-",
+  "meta": {
+    "name": "被现实“绊倒”",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):被现实“绊倒”",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "案例:社区领导整体卫生 CLTS。截止 2016 年,世界上大约有 10 亿人无法 饮用干净水,另有(可能是同一批人)因没有厕所而在户外大小便,而这种 随地大小便的做法又严重影响影响了饮用水的安全,形成了恶性循环。 如何才能中止随地大小便的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "社区领导整体卫生 CLTS。截止 2016 年,世界上大约有 10 亿人无法"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以被现实“绊倒”的方式思考这个问题。",
+    "activation_phrase": "请用被现实“绊倒”分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

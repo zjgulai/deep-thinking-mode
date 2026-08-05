@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-资源",
+  "meta": {
+    "name": "资源",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):资源",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "看他的资源整合能力。人才资本和技 术就是企业成功的杠杆。但凡成就伟业者，都不是靠一己之力，而是 善于借智借力和借钱。 （1）人才：人脉和团队管理。  1882 / 1937 \f对外建立人脉网络，对内做",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "华为在研发上取得巨大成就，是因为华为研发部至少有 700 多个数学"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以资源的方式思考这个问题。",
+    "activation_phrase": "请用资源分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

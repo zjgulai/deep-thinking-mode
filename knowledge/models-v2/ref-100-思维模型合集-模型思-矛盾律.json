@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-矛盾律",
+  "meta": {
+    "name": "矛盾律",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):矛盾律",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）矛盾律的内容：在同一思维过程中，两个互相否定的思维不能同 真，必有一假； （2）矛盾律的要求：对互相矛盾或互相反对的思想不能同时肯定，必 有一假； （3）违反矛盾律的逻辑错误：“自相矛盾”° 例如：这个山洞从来没有人进去过，进去的人也",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "这个山洞从来没有人进去过，进去的人也从来没有出来过"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以矛盾律的方式思考这个问题。",
+    "activation_phrase": "请用矛盾律分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

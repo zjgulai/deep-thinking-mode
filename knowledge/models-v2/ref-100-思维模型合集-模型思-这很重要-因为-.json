@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-这很重要-因为-",
+  "meta": {
+    "name": "这很重要，因为…………",
+    "category": "01",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):这很重要，因为…………",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "友善的工具，它能让你成为一个高质量的思考者，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以这很重要，因为…………的方式思考这个问题。",
+    "activation_phrase": "请用这很重要，因为…………分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

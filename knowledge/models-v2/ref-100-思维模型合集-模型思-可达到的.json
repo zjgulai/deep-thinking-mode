@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-可达到的",
+  "meta": {
+    "name": "可达到的",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):可达到的",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "战略，或者愿景。所以目标的周期要以",
+    "trigger_signals": [
+      "如果你的目标大家普遍认为需要一年时间才能完成，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以可达到的的方式思考这个问题。",
+    "activation_phrase": "请用可达到的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

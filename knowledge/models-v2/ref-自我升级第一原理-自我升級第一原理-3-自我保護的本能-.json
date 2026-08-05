@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-自我升级第一原理-自我升級第一原理-3-自我保護的本能-",
+  "meta": {
+    "name": "自我升級第一原理 3 自我保護的本能 「",
+    "category": "00",
+    "tags": [],
+    "source": "ref:自我升级第一原理:自我升級第一原理 3 自我保護的本能 「",
+    "sourceTitle": "自我升级第一原理",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "，人們如何回答「我是誰？」這個問題",
+    "trigger_signals": [
+      "如果你住在一個少有異動的小村莊，你會知道每個人的過去。他們的身分認同有一部分會反映在他們的名字上。 自從諾曼人（the Nor",
+      "如果你很清楚自己的核心價值，每當你遇到他人意見的威脅時，你就會有一套現成的機制可供應對。這種方法能讓你擺脫反覆思考「別人會怎麼",
+      "如果你想探索一些引導式冥想，請至以下網址下載： www.findingmastery.com/thefirstrule"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，大衛遜（Davidson）是大衛的兒子（son of David）"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自我升級第一原理 3 自我保護的本能 「的方式思考这个问题。",
+    "activation_phrase": "请用自我升級第一原理 3 自我保護分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

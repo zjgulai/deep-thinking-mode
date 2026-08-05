@@ -5,7 +5,8 @@
     "name": "30分钟落地第一性原理",
     "category": "04",
     "tags": [],
-    "skill_name": "30分钟落地第一性原理"
+    "skill_name": "30分钟落地第一性原理",
+    "sourceTitle": "30分钟落地第一性原理：五层追问+验证清单+行动指南"
   },
   "core_definition": "通过层层“为什么”追问，剥离表象，触及不可反驳的底层规律，即第一性原理核心",
   "when_to_use": {
@@ -66,7 +67,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

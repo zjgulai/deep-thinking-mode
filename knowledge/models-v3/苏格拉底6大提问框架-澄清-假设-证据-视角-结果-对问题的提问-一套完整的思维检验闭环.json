@@ -5,7 +5,8 @@
     "name": "苏格拉底6大提问框架",
     "category": "02",
     "tags": [],
-    "skill_name": "苏格拉底6大提问框架"
+    "skill_name": "苏格拉底6大提问框架",
+    "sourceTitle": "苏格拉底6大提问框架：澄清+假设+证据+视角+结果+对问题的提问，一套完整的思维检验闭环"
   },
   "core_definition": "这件事的本质是什么？苏格拉底6大提问框架如何定义它？",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

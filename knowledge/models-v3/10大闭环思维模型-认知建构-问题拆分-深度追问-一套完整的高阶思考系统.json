@@ -5,7 +5,8 @@
     "name": "10大闭环思维模型",
     "category": "11",
     "tags": [],
-    "skill_name": "10大闭环思维模型"
+    "skill_name": "10大闭环思维模型",
+    "sourceTitle": "10大闭环思维模型：认知建构+问题拆分+深度追问，一套完整的高阶思考系统"
   },
   "core_definition": "非线性的。系统思维能看清因果的时间差与双向影响，规避浅层补救，实现根源性解决",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -5,7 +5,8 @@
     "name": "解释模块 · 反刍思维的“莫比乌斯环”",
     "category": "10",
     "tags": [],
-    "skill_name": "解释模块-·-反刍思维的“莫比乌斯环”"
+    "skill_name": "解释模块-·-反刍思维的“莫比乌斯环”",
+    "sourceTitle": "内耗管理系统 · 解释模块 · 反刍思维的“莫比乌斯环”：记忆与情绪如何制造了停不下来的脑内循环"
   },
   "core_definition": "】为什么那些负面的想法和记忆，一旦开始便如鬼打墙般循环往复，无法挣脱？这背后是大脑内一场精密却痛苦的合谋",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-麦肯锡工作法-套装四册-轻松-套装名",
+  "meta": {
+    "name": "套装名",
+    "category": "02",
+    "tags": [],
+    "source": "ref:麦肯锡工作法（套装四册）（轻松职场系列） (高杉尚伊  齐藤显一  竹内里子  :套装名",
+    "sourceTitle": "麦肯锡工作法（套装四册）（轻松职场系列） (高杉尚伊  齐藤显一  竹内里子  ",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "最基本的分析方法，原本毫无意义、独立的一个个数字，按时间顺序排列以后，可以使人理解其中呈现出的变化趋势",
+    "trigger_signals": [
+      "当我开始总结所谓“问题解决法”时",
+      "当你困惑于事业没有起色、不知道该怎么做才好时",
+      "当你意识到“最近变胖了（裤子变紧，懒得走路）”这样的问题时，为了验证这个判断，需要有哪些“材料（事实）”来支撑呢？此时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "自己公司的销售状况迟迟没有起色，原因是什么呢？把这个问题抛给十个员工，恐怕你会得到十种不同的答案"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以套装名的方式思考这个问题。",
+    "activation_phrase": "请用套装名分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

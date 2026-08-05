@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-11个分析模型-路径分析",
+  "meta": {
+    "name": "路径分析",
+    "category": "02",
+    "tags": [],
+    "source": "ref:11个分析模型:路径分析",
+    "sourceTitle": "11个分析模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "用户在应用中使用的行为轨迹。在产品运营过程中，无论是产品、",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "11.2 应用场景示例：明晰注册-购买用户行为路径"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以路径分析的方式思考这个问题。",
+    "activation_phrase": "请用路径分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

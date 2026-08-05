@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-运动智能的培养",
+  "meta": {
+    "name": "运动智能的培养",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):运动智能的培养",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "①多参与各种体育活动，例如篮球、足球、舞蹈、武术等 ②培养自己的一个兴趣和特长，养成运动的习惯。  782 / 1937 \f3、运动智能的测评 六、人际智能",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "篮球、足球、舞蹈、武术等 ②培养自己的一个兴趣和特长，养成运动的习惯"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以运动智能的培养的方式思考这个问题。",
+    "activation_phrase": "请用运动智能的培养分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-代表性启发的概念",
+  "meta": {
+    "name": "代表性启发的概念",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):代表性启发的概念",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "857 / 1937 \f代表性法则指人们在不确定性的情形下，会抓住问题的某个特征直接 推断结果，会关注一个事物与另一个事物的相似性，以推断第一个事 物与第二个事物的类似之处，人们假定将来的模式会与过去相似（历 史会重演）并寻求熟悉的模式来",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "听说自己的好朋友上个月买科技股赚了很多钱，于是推断出自"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以代表性启发的概念的方式思考这个问题。",
+    "activation_phrase": "请用代表性启发的概念分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

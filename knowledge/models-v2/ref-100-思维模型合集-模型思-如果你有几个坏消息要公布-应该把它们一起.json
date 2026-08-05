@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-如果你有几个坏消息要公布-应该把它们一起",
+  "meta": {
+    "name": "如果你有几个坏消息要公布，应该把它们一起",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):如果你有几个坏消息要公布，应该把它们一起",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "今天钱包里的１０００ 块钱丢了，还不小心把你妻子的自行车弄丢  166 / 1937 \f了，那么你应该把这两个坏消息一起告诉她。因为根据前景理论，两 个损失结合起来所带来的痛苦要小于分别经历这两次损失所带来的痛 苦之和。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以如果你有几个坏消息要公布，应该把它们一起的方式思考这个问题。",
+    "activation_phrase": "请用如果你有几个坏消息要公布，应该分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

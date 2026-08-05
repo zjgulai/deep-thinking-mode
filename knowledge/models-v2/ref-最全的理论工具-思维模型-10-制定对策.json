@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-制定对策",
+  "meta": {
+    "name": "制定对策",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):制定对策",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "玻壳生产线是从日本旭硝子公司引进有关设备，其中就包括退火炉炉头设 备，QC 小组认为，要用“消化、吸收、提高和创新”的态度对待外国的技术。 于是大胆制定了改造退火炉炉头设备的措施，如下表所示。 表：改进退火炉炉头设备措施 \f http:/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以制定对策的方式思考这个问题。",
+    "activation_phrase": "请用制定对策分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

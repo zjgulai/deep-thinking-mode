@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-记住偶然性并不具备自我修正的功能-",
+  "meta": {
+    "name": "记住偶然性并不具备自我修正的功能。",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):记住偶然性并不具备自我修正的功能。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "亿，远远超过了政府的预算，导致拆迁工",
+    "trigger_signals": [
+      "如果你一个账号亏了 1 万元，另一个账号赚了 1 万元，你"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "现在有两件东西供你选择，一块 400 克的瑞士巧克力，以及一"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以记住偶然性并不具备自我修正的功能。的方式思考这个问题。",
+    "activation_phrase": "请用记住偶然性并不具备自我修正的功分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

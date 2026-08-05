@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-离散信号模型",
+  "meta": {
+    "name": "离散信号模型",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):离散信号模型",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一个规模为 N 的种群由 S 个强者类型的个体和 W 个弱者类型的个体组 成；这两种类型的个体发送信号的成本分别为 c 和 C，且 c 0）。这个模型有三种可能  1817 / 1937 \f的结果： 这个模型的假设是存在两种类型的人，强者和",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一位捐助者捐赠了 100 万元设立了一个奖学金，用于奖励某所"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以离散信号模型的方式思考这个问题。",
+    "activation_phrase": "请用离散信号模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

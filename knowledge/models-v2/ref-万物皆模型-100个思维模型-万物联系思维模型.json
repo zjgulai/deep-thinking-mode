@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-万物联系思维模型",
+  "meta": {
+    "name": "万物联系思维模型",
+    "category": "02",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:万物联系思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "事的描述促进了人们对时间概念的感知,物的变化促进了人们对空间概念的感知。这种以人  为点的连接关系即是万物联系思维,即世间万事万物之间都是相互作用、相互联系的。有些联  系是自然存在的,在此基础上人类通过模仿自然从而实现了人为的相互联系,",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "01  02 线  系  变 跳出局限 传统的汉字基本笔画点、横、竖、撇、捺、提、折、钩八种结构却组合成了"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以万物联系思维模型的方式思考这个问题。",
+    "activation_phrase": "请用万物联系思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

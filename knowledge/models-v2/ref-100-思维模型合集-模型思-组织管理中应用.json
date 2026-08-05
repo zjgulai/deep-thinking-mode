@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-组织管理中应用",
+  "meta": {
+    "name": "组织管理中应用",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):组织管理中应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "资 源，构建赋能型治理结构，实施管理模式变革与产业技术创新，使组 织具有更强的应对不确定性与共创商业生态系统价值的能力。 量子思维下，整个组织的驱动机制、能量来源来自于信念和使命，而 不是来自权威和控",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "海尔集团领导人张瑞敏就采用了量子思维对海尔进行组织管理"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以组织管理中应用的方式思考这个问题。",
+    "activation_phrase": "请用组织管理中应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

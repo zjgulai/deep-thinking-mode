@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-有效性错觉",
+  "meta": {
+    "name": "有效性错觉",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):有效性错觉",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "因预测结果与输入信息之间较好的符合所产生的无根据的自信，称为 有效性错觉。 人们对他们预侧的信心主要依赖于代表性的程度。对影响预测准确性 的因素考虑很少或甚至不考虑，是导致有效性错觉的主要原因。 例如:小明发明了股票选择模型，用了 5 次之",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "小明发明了股票选择模型，用了 5 次之后感觉很管用，于是产生"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以有效性错觉的方式思考这个问题。",
+    "activation_phrase": "请用有效性错觉分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

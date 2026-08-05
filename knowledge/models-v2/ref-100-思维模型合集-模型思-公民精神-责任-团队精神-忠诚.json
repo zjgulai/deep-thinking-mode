@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-公民精神-责任-团队精神-忠诚",
+  "meta": {
+    "name": "公民精神、责任、团队精神、忠诚",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):公民精神、责任、团队精神、忠诚",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "具有公民精神的人通常是集体中的优秀分子，他们很忠心，有团队精 神，富有责任感，他们努力做好本职工作，努力使团队成功。当集体 目标与个人非目标冲突时，他们会遵从集体目标。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以公民精神、责任、团队精神、忠诚的方式思考这个问题。",
+    "activation_phrase": "请用公民精神、责任、团队精神、忠诚分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

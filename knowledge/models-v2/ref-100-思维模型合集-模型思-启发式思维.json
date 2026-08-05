@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-启发式思维",
+  "meta": {
+    "name": "启发式思维",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):启发式思维",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人类为了适应环境的需要，我们的大脑进化出了认知（判断和推理） 的两种基本方法——算法与启发法。 第一种方法 理性算法：解决问题的公式、规则、步骤。对大脑能量消耗大，思考 问题比较周全，符合逻辑推理。 第二种方法 启发法：是凭借经验的解题方法",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，相比汽车来讲，飞机绝对是最安全的。但是人们往往会通过一"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以启发式思维的方式思考这个问题。",
+    "activation_phrase": "请用启发式思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

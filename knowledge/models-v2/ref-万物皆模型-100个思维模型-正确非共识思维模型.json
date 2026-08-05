@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-正确非共识思维模型",
+  "meta": {
+    "name": "正确非共识思维模型",
+    "category": "06",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:正确非共识思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 共识指一个社会不同阶层、不同利益的人所寻求的共同认识、价值、理想。共识决策是指一种决策过程",
+    "trigger_signals": [
+      "如果你做的每一件事把眼光放到未来三年,和你同 逻辑他洽:理论和其他被公认正确的理论是一致的",
+      "如果你的目光能放到未来七年,那么可以和你竞 逻辑续洽:这个原有的理论与新出现的信息和经验是一致的"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以正确非共识思维模型的方式思考这个问题。",
+    "activation_phrase": "请用正确非共识思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-认知",
+  "meta": {
+    "name": "认知",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):认知",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人对世界的认识，通过个体经验和学习获得",
+    "trigger_signals": [
+      "如果你信仰了好的宗教，你将获得人生指引，收",
+      "如果你信了邪教，你将会被人利用和控制，走向深渊。",
+      "如果你相信的是真理，你将收获希望和成功。如"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，道教仰望老子、关羽、称他们为神仙，因为尊崇他们的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以认知的方式思考这个问题。",
+    "activation_phrase": "请用认知分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-普通工作小组-这些小组由一些承担工作任务",
+  "meta": {
+    "name": "普通工作小组。这些小组由一些承担工作任务",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):普通工作小组。这些小组由一些承担工作任务",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "管理哲学。TQM 的实施方法需要在实践中不断摸索，而且 TQM 的实施是一种",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "http://wiki.mbalib.com/"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以普通工作小组。这些小组由一些承担工作任务的方式思考这个问题。",
+    "activation_phrase": "请用普通工作小组。这些小组由一些承分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

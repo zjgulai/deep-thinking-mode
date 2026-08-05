@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-按项目的合同进行分解",
+  "meta": {
+    "name": "按项目的合同进行分解",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按项目的合同进行分解",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "合同用的完整的工作分解结构。此方法是将项目的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一个车间的 结构可分为厂房结构、吊车设施、设备基础和框架等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以按项目的合同进行分解的方式思考这个问题。",
+    "activation_phrase": "请用按项目的合同进行分解分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

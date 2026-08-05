@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-哈默尔-g-hamel-和普拉哈拉德-c",
+  "meta": {
+    "name": "哈默尔(G.Hamel)和普拉哈拉德(C",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):哈默尔(G.Hamel)和普拉哈拉德(C",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ 2. C.K. Prahalad，Gary Hamel - Competing for the Future [中译本《竞争大未来》，  台湾智库股份有限公司，1995．",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以哈默尔(G.Hamel)和普拉哈拉德(C的方式思考这个问题。",
+    "activation_phrase": "请用哈默尔(G.Hamel)和普拉分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

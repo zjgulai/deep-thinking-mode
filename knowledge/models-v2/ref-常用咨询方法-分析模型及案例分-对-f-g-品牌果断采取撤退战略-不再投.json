@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-对-f-g-品牌果断采取撤退战略-不再投",
+  "meta": {
+    "name": "对 F、G 品牌果断采取撤退战略，不再投",
+    "category": "08",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:对 F、G 品牌果断采取撤退战略，不再投",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "表示生产单位时间与连续生产单位之间的关系曲线",
+    "trigger_signals": [
+      "化工行业中的两类经验曲线(固定成本的经验曲线及装置单位投资的经验曲"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "流水线 作业就是一个明显的例证，从而促使生产效率大幅度提高"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以对 F、G 品牌果断采取撤退战略，不再投的方式思考这个问题。",
+    "activation_phrase": "请用对 F、G 品牌果断采取撤退战分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

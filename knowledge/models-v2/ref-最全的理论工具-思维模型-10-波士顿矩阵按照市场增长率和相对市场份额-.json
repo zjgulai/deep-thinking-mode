@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-波士顿矩阵按照市场增长率和相对市场份额-",
+  "meta": {
+    "name": "波士顿矩阵按照市场增长率和相对市场份额，",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):波士顿矩阵按照市场增长率和相对市场份额，",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "型，相对来说，有些过于简单。实际上，市场中还存在着很难确切归入某各  象限中的业务。比如，如果金牛类业务和瘦狗类业务是互补的业务组合，如  果放弃瘦狗类业务，那么金牛类业务也会受到影响。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，如果金牛类业务和瘦狗类业务是互补的业务组合，如"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以波士顿矩阵按照市场增长率和相对市场份额，的方式思考这个问题。",
+    "activation_phrase": "请用波士顿矩阵按照市场增长率和相对分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

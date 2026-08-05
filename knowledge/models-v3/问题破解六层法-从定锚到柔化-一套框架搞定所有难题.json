@@ -5,7 +5,8 @@
     "name": "问题破解六层法",
     "category": "04",
     "tags": [],
-    "skill_name": "问题破解六层法"
+    "skill_name": "问题破解六层法",
+    "sourceTitle": "问题破解六层法：从定锚到柔化，一套框架搞定所有难题"
   },
   "core_definition": "在投入时间、精力、资源前，先锁定正确问题，明确问题边界，避免盲目发力、无效内耗",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

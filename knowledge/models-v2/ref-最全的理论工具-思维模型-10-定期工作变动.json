@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-定期工作变动",
+  "meta": {
+    "name": "定期工作变动",
+    "category": "10",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):定期工作变动",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "长期从事重复的工作容易产生厌烦情绪，服务质量也会降低。通过工作轮换， 安排临时任务等途径变动员工的工作，给员工提供各种各样的经验，使他们熟悉 多样化的工作。通过员工交叉培训、工作轮换，既可以在一定程度上避免员工对 单调岗位工作的厌烦，提高",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以定期工作变动的方式思考这个问题。",
+    "activation_phrase": "请用定期工作变动分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

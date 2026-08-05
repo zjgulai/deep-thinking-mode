@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-动机角度",
+  "meta": {
+    "name": "动机角度",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):动机角度",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "844 / 1937 \f企业要建立容忍失败和鼓励创新的企业文化，开展批评和自我评判， 让所有员工相信谁都会犯错误，敢于承认错误是一种勇敢的表现，是 一种成长的过程，不是丢面子，隐瞒错误要重重的惩罚。例如：中国 的华为和美国的桥水基金，在这",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "中国 的华为和美国的桥水基金，在这方面做的非常好"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以动机角度的方式思考这个问题。",
+    "activation_phrase": "请用动机角度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

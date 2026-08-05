@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-人类误判心理思维模型",
+  "meta": {
+    "name": "人类误判心理思维模型",
+    "category": "05",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:人类误判心理思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人的一种思考方式,与“客观”相反",
+    "trigger_signals": [
+      "如果我能掌握它,就能够更快地获得财富和独立。 因此不能只考慮单个方面,而是要有全局观。 几率,这或许很累,那是因为你还没有乐在"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "庞氏骗局（包含奖励惩罚、过度乐观、自视过高、被剥夺超级反应、社会认同倾向）"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以人类误判心理思维模型的方式思考这个问题。",
+    "activation_phrase": "请用人类误判心理思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

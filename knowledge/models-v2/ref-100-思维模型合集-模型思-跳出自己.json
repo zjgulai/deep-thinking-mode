@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-跳出自己",
+  "meta": {
+    "name": "跳出自己",
+    "category": "04",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):跳出自己",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "自己的认知和眼界决定了自己能看到的，自己没有看到可能对你来说 很重要，所以跳出自己的思维框架去找寻更优秀的方案非常重要，例 如王刚夫妇为什么只看到一所好的公立学校，就决定要买旁边的学区 房呢？有没有更好的公立学校呢？为什么非要选择公立学校呢",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以跳出自己的方式思考这个问题。",
+    "activation_phrase": "请用跳出自己分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

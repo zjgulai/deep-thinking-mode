@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自我为中心是批判性思维最大的阻碍",
+  "meta": {
+    "name": "自我为中心是批判性思维最大的阻碍",
+    "category": "01",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自我为中心是批判性思维最大的阻碍",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一个批判性的思考者也会面临知识的诅咒。所谓知识的诅咒，是指如 果我们不具备现在所知道的知识，那我们根本就说不清这知识到底是 什么。 知识的诅咒会给我们带来怎么样的烦恼呢？一起来看看《生活大爆炸》 里谢尔顿和佩妮之间的对话： 谢尔顿：我需要你",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自我为中心是批判性思维最大的阻碍的方式思考这个问题。",
+    "activation_phrase": "请用自我为中心是批判性思维最大的阻分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

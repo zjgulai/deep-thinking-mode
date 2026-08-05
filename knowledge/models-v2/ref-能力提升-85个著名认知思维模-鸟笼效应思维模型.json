@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-鸟笼效应思维模型",
+  "meta": {
+    "name": "鸟笼效应思维模型",
+    "category": "10",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:鸟笼效应思维模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "很有意思的规律,人们会在偶然获得一件物品后,会继续添加更多与之相关而自己不需要的东西",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "因为不想总被人说买不起房子,在买了一房子后因还带有 鸟笼效应无处不在,比如小时候买方便面集水浒卡,比如现如今"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以鸟笼效应思维模型的方式思考这个问题。",
+    "activation_phrase": "请用鸟笼效应思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

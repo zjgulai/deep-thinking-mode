@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-模型阅读法",
+  "meta": {
+    "name": "模型阅读法",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):模型阅读法",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "模型阅读法是我们通过思辩总结的一种高效阅读习得工具，可以帮助 我们从阅读到习得。 大量泛读：在明确我们的阅读目标后，我们就对这一主题的书籍，进 行大量的泛读，阅读不同作者的不同书籍，一般至少在十本以上，记 录主要的理论和观点； 构建模型：通",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以模型阅读法的方式思考这个问题。",
+    "activation_phrase": "请用模型阅读法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

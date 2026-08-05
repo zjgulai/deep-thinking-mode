@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-安全性",
+  "meta": {
+    "name": "安全性",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):安全性",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "首先,并购方需要通过检查它对目标公司生产经营活动的情况来了解和衡量 投资的安全性；其次,并购方应该清楚可能对它的经营活动构成物质的,法律的或 社会的约束等环境风险因素。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以安全性的方式思考这个问题。",
+    "activation_phrase": "请用安全性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

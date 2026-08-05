@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-绿色供应链管理充分应用现代网络技术",
+  "meta": {
+    "name": "绿色供应链管理充分应用现代网络技术",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绿色供应链管理充分应用现代网络技术",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "网络技术的发展和应用, 加速了全球经济一体化的进程, 也为绿色供应链的 发展提供了机遇。企业利用网络完成产品设计、制造, 寻找合适的产品生产合作 伙伴,以实现企业间的资源共享和优化组合利用, 减少加工任务、节约资源和全社 会的产品库存;",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以绿色供应链管理充分应用现代网络技术的方式思考这个问题。",
+    "activation_phrase": "请用绿色供应链管理充分应用现代网络分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-目标实现所要求的资源投入-",
+  "meta": {
+    "name": "目标实现所要求的资源投入。",
+    "category": "04",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):目标实现所要求的资源投入。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对目标树分支的选择，用于从多个项目目的中选择一种具有可",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "确定项目的具体目标；",
+        "action": "确定项目的具体目标；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "确定为实现项目具体目标所要实现的产出成果",
+        "action": "确定为实现项目具体目标所要实现的产出成果；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "确定为达到每项产出成果所需要投入的活动；",
+        "action": "确定为达到每项产出成果所需要投入的活动；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "确定项目的宏观目标；",
+        "action": "确定项目的宏观目标；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "用“如果，那么”的逻辑关系自下而上检验纵",
+        "action": "用“如果，那么”的逻辑关系自下而上检验纵向逻辑关系；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "农业项目，管理者无法控制的一个主要外部因素是气候，变"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「目标实现所要求的资源投入」思维模式运行。\n\nStep 1 - 确定项目的具体目标；：确定项目的具体目标；\n\nStep 2 - 确定为实现项目具体目标所要实现的产出成果：确定为实现项目具体目标所要实现的产出成果；\n\nStep 3 - 确定为达到每项产出成果所需要投入的活动；：确定为达到每项产出成果所需要投入的活动；\n\nStep 4 - 确定项目的宏观目标；：确定项目的宏观目标；\n\nStep 5 - 用“如果，那么”的逻辑关系自下而上检验纵：用“如果，那么”的逻辑关系自下而上检验纵向逻辑关系；\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用目标实现所要求的资源投入。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

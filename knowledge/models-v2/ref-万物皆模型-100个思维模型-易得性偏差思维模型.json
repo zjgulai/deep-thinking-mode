@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-易得性偏差思维模型",
+  "meta": {
+    "name": "易得性偏差思维模型",
+    "category": "02",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:易得性偏差思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "非常有效的方法,能帮助人们迅速地抓住问题的本质推断出结果,但有时也会造成严",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以易得性偏差思维模型的方式思考这个问题。",
+    "activation_phrase": "请用易得性偏差思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-利润改善型",
+  "meta": {
+    "name": "利润改善型",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:利润改善型",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1）我的公司在赔钱，怎么办？ 2）一家德国汽车制造商近年来的利润一直在下降，应该怎么办？ 10 \f3）公司的销售额近年来一直在下降，公司总裁想知道什么原因造成的？ • Revenue, Cost 分析，到底是销售额下降造成，还是成本上升造成",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以利润改善型的方式思考这个问题。",
+    "activation_phrase": "请用利润改善型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

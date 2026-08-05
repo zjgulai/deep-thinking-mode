@@ -5,7 +5,8 @@
     "name": "第二序改变",
     "category": "07",
     "tags": [],
-    "skill_name": "第二序改变"
+    "skill_name": "第二序改变",
+    "sourceTitle": "第二序改变：6步跳出框架，终结越努力越失败的循环"
   },
   "core_definition": "：在梦里拼命跑，不如直接醒来。",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

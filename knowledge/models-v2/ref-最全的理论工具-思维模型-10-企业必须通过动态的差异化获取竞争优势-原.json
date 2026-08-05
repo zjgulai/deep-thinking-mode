@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业必须通过动态的差异化获取竞争优势-原",
+  "meta": {
+    "name": "企业必须通过动态的差异化获取竞争优势,原",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业必须通过动态的差异化获取竞争优势,原",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "发生变化，需要企业不断改变差异化基础；二是顾客需求不改变,竞争对手也  会具备模仿差异化基础的能力，从而导致企业的差异化基础被削弱，因此，  企业只有不断强化自身的差异化基础，并适时作出改变,才能获得持久竞争优  势。  1、 集中差异化",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业必须通过动态的差异化获取竞争优势,原的方式思考这个问题。",
+    "activation_phrase": "请用企业必须通过动态的差异化获取竞分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

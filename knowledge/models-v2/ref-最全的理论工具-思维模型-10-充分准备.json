@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-充分准备",
+  "meta": {
+    "name": "充分准备",
+    "category": "03",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):充分准备",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "SPIN 这种提问方式，是为了把客户的隐藏需求转变为明显需求，而要达到 这个目的并不容易，所以要求销售员在拜访客户之前一定要进行非常充分的准 备。只有进行大量的案头工作，把所有的问题提前准备好，才有可能成功地进行 提问。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以充分准备的方式思考这个问题。",
+    "activation_phrase": "请用充分准备分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

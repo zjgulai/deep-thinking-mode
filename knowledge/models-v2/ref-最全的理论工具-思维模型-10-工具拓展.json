@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-工具拓展",
+  "meta": {
+    "name": "工具拓展",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具拓展",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "安索夫后来对矩阵做了一个修改，增加了地理区域上的复杂性(如图 2 所示)。 这种三维模式的矩阵可以被用来定义战略选择和业务的最终范围。图示表明，客 户可以选择市场需求、产品/技术、地理范围等变量中的一种来界定服务市场。 安索夫定义的投资组",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以工具拓展的方式思考这个问题。",
+    "activation_phrase": "请用工具拓展分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

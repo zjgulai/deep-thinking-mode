@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-操纵的是交易",
+  "meta": {
+    "name": "操纵的是交易",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):操纵的是交易",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "贬义词，一个产品如果要想得到顾客的青睐，我们一般",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "某汽车品牌，发现价格战是快速提升销售的好方法，4s 店为了"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以操纵的是交易的方式思考这个问题。",
+    "activation_phrase": "请用操纵的是交易分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

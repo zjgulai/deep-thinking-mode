@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业领导人心态方面的问题",
+  "meta": {
+    "name": "企业领导人心态方面的问题",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业领导人心态方面的问题",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对于物流、供应链、绿色供应链等概念的研究是近几年才在我国兴起，目前 我国很多企业领导人对绿色供应链的理解理解也就仅限于概念上，至于本企业是 否要实行绿色供应链管理以及如何实行绿色供应链管理还是没底。甚至还有的企 业领导人觉得绿色供应链管理",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业领导人心态方面的问题的方式思考这个问题。",
+    "activation_phrase": "请用企业领导人心态方面的问题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-赵曙明-国际企业经营管理总论-南京",
+  "meta": {
+    "name": "赵曙明．国际企业经营管理总论．南京",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):赵曙明．国际企业经营管理总论．南京",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "15 \f http://wiki.mbalib.com/ SPACE 矩阵 —分析企业外部环境及企业应该采用的战  略组合 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以赵曙明．国际企业经营管理总论．南京的方式思考这个问题。",
+    "activation_phrase": "请用赵曙明．国际企业经营管理总论．分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

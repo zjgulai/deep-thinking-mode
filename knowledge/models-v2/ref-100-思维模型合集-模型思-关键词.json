@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-关键词",
+  "meta": {
+    "name": "关键词",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):关键词",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "词会使你的思维导图更加醒目，更为清晰，每 一个关键词都是简洁和独立，通过线条又是一个整体，这样新创意的 产生。而句子却容易扼杀这种火花效应。当然关键词一定要精准，要 高度概括句子所表达的含义。  39",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以关键词的方式思考这个问题。",
+    "activation_phrase": "请用关键词分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

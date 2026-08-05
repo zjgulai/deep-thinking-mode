@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-五个阶段",
+  "meta": {
+    "name": "五个阶段",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):五个阶段",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "自我约束。这种自我约束能迫使我们去做事情、去",
+    "trigger_signals": [
+      "当你意识到潜在的打断将要来临时",
+      "如果你认为这项打断是重要的，那么就在工作计划表中的＂计划外的",
+      "如果你用仅有的一些非客观信"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "坐久了想站起来活动下，想倒杯水喝，想玩会儿微信，突然想"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以五个阶段的方式思考这个问题。",
+    "activation_phrase": "请用五个阶段分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

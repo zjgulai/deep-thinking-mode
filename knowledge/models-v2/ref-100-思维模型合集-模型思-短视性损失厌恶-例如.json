@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-短视性损失厌恶-例如",
+  "meta": {
+    "name": "短视性损失厌恶。例如",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):短视性损失厌恶。例如",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "了一个投资组合，其中有股票、债券和基金等，但是你每天都去看收 益的涨跌，为了规避短期的损失，你频繁的对股票进行卖出和买入， 导致长期收益受到影响，这种只顾眼前的损失，不顾长远收益的行为， 经济学家称之为短期损失规避。 短视性损失厌恶的投资者",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "柯达公司是最早发明数码相机的企业，但是为了不影响胶片业务，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以短视性损失厌恶。例如的方式思考这个问题。",
+    "activation_phrase": "请用短视性损失厌恶。例如分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

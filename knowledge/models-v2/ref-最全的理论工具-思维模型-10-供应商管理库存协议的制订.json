@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-供应商管理库存协议的制订",
+  "meta": {
+    "name": "供应商管理库存协议的制订",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):供应商管理库存协议的制订",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）整个供应商管理库存所做出额外投资的成本由买方企业和供应商按比例 共同承担；  （2）实施供应商管理库存所带来的供应链利益的上升，应由双方共享:特别 是在双方企业的实施供应商管理库存的前期阶段，可能会使得供应链上升的利润 大部分被买方",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以供应商管理库存协议的制订的方式思考这个问题。",
+    "activation_phrase": "请用供应商管理库存协议的制订分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-领导要重视-qcc-活动-并动员-引导全",
+  "meta": {
+    "name": "领导要重视 QCC 活动，并动员、引导全",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):领导要重视 QCC 活动，并动员、引导全",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "QCC 源于基层，产生于班组，它是“在生产或工作岗位上从事各种劳动的员 工，围绕企业的方针目标或现场存在的问题而组织起来开展活动”的小组，所以 必须要动员所有员工积极、热情的投入到搞 QCC 活动中去，而这一基本要素又 必须是企业领导或主",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以领导要重视 QCC 活动，并动员、引导全的方式思考这个问题。",
+    "activation_phrase": "请用领导要重视 QCC 活动，并动分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

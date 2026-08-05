@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-铂金层级顾客-",
+  "meta": {
+    "name": "铂金层级顾客：",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):铂金层级顾客：",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "指最能使企业赢利的顾客，通常是那些使用量大、价格敏感度低、愿意试用 新产品和新服务、对企业忠诚感强的顾客。  这一层次的顾客是对企业的利润贡献率最高的一类顾客。他们是本企业产品 或服务的最忠实的拥护者，最大量的购买者和使用者。这类顾客对价",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以铂金层级顾客：的方式思考这个问题。",
+    "activation_phrase": "请用铂金层级顾客：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

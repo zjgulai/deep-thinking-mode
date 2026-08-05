@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-在意紧贴的美国顾客偏爱卡式",
+  "meta": {
+    "name": "在意紧贴的美国顾客偏爱卡式",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):在意紧贴的美国顾客偏爱卡式",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "刀入口的 30%），对价格比较敏感，偏好可丢弃式。1988 年在美国的销售量 方 面，可丢弃式刮胡刀占湿刮胡刀的比率已成长为 57%，销售额则增加为 41%。可 丢弃式的营业利润只有卡式的三分之一，并且导致整个刀片业倾向价格促销， 由 于强",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在意紧贴的美国顾客偏爱卡式的方式思考这个问题。",
+    "activation_phrase": "请用在意紧贴的美国顾客偏爱卡式分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

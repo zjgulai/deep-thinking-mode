@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-说明真实意图",
+  "meta": {
+    "name": "说明真实意图",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):说明真实意图",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "当解决的办法已经在量和质上有一定的保证后，最佳设想好象已经出现，时 \f http://wiki.mbalib.com/ 间又将接近终点时，要使实质问题逐渐明朗化，请与会者进一步寻找具体的解决 方法，然后使会议结束。  若一次会不能解决问题",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以说明真实意图的方式思考这个问题。",
+    "activation_phrase": "请用说明真实意图分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

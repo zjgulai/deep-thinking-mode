@@ -10,7 +10,8 @@
       "职场急救",
       "认知科学"
     ],
-    "skill_name": "快速识别4种着急类型，并提供应"
+    "skill_name": "快速识别4种着急类型，并提供应",
+    "sourceTitle": "快速识别4种着急类型，并提供应急方法"
   },
   "core_definition": "如何有效完成这件事？快速识别4种着急类型，并提供应的操作路径是什么？",
   "when_to_use": {
@@ -63,7 +64,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

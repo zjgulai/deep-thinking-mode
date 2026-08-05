@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-整顿-seiton-",
+  "meta": {
+    "name": "整顿(SEITON)",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):整顿(SEITON)",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "整顿是对整理后的必需品进行合理安放。整顿是一门研究如何提高效率的科 学，其目标是让物品取还方便，寻找时间为零。随手乱扔物件或工具并不能真正 使工作加快，它会使再使用时寻找时间加倍。在整顿时，如从新人或其他职场的 人的角度看，更能明确物品该",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以整顿(SEITON)的方式思考这个问题。",
+    "activation_phrase": "请用整顿(SEITON)分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

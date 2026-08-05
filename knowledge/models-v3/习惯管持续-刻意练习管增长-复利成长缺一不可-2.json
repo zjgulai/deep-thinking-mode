@@ -5,7 +5,8 @@
     "name": "习惯管持续，刻意练习管增长",
     "category": "08",
     "tags": [],
-    "skill_name": "习惯管持续，刻意练习管增长"
+    "skill_name": "习惯管持续，刻意练习管增长",
+    "sourceTitle": "习惯管持续，刻意练习管增长：复利成长缺一不可"
   },
   "core_definition": "区分：习惯保证你不中断，刻意练习保证你在变好",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

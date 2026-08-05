@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-集体行动问题三",
+  "meta": {
+    "name": "集体行动问题三",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):集体行动问题三",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "占优策略，所以有效结果也是占优",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "长江在 2020 年之前，过度捕捞导致长江江豚、中华鲟、刀鱼数量"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以集体行动问题三的方式思考这个问题。",
+    "activation_phrase": "请用集体行动问题三分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

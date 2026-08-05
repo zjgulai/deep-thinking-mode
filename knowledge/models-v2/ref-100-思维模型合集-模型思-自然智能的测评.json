@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自然智能的测评",
+  "meta": {
+    "name": "自然智能的测评",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自然智能的测评",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "你潜意识里的防卫机制，它使你难以接受自己的错",
+    "trigger_signals": [
+      "当你指出某个人的思维盲点时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "莫扎特专注于音乐智能，爱因斯坦聚焦于数理智能和空间智能，他们"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自然智能的测评的方式思考这个问题。",
+    "activation_phrase": "请用自然智能的测评分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

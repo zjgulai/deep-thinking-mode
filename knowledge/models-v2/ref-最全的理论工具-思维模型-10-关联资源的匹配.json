@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-关联资源的匹配",
+  "meta": {
+    "name": "关联资源的匹配",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):关联资源的匹配",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "整个策划的前期、中期和后期，以事件行销、软文操作、公关为主线，广告、 促销为辅；贯穿在整个推广活动中，最快速、最经济地提高产品的知名度，但是 企业绝对要在渠道建设、销售团队打造、销售政策制定、产品制造、产品定价、 促销手段设定等方面做好匹",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以关联资源的匹配的方式思考这个问题。",
+    "activation_phrase": "请用关联资源的匹配分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

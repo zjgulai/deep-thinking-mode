@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立一支高素质的薪酬管理人员队伍",
+  "meta": {
+    "name": "建立一支高素质的薪酬管理人员队伍",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立一支高素质的薪酬管理人员队伍",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "推行宽带薪酬制度需要人力资源部薪酬管理人员与各部门进行更加密切的合 作，他们在与部门经理一起给新职位定级、了解市场信息及协助制定薪酬汁划方 面，必须以提供优质服务的态度和以专业顾问的角色去为部门服务。因此，引入 宽带薪酬制度需要企业从整体",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立一支高素质的薪酬管理人员队伍的方式思考这个问题。",
+    "activation_phrase": "请用建立一支高素质的薪酬管理人员队分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

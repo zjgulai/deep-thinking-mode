@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-可行度加权的工具",
+  "meta": {
+    "name": "可行度加权的工具",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):可行度加权的工具",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人的靠谱度，反应了一个人的优点和缺点，方便未来决策中",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "体力、精力、经验值、敏捷度、攻击力 等等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以可行度加权的工具的方式思考这个问题。",
+    "activation_phrase": "请用可行度加权的工具分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

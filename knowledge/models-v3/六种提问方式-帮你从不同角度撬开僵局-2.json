@@ -5,7 +5,8 @@
     "name": "六种提问方式，帮你从不同角度撬",
     "category": "04",
     "tags": [],
-    "skill_name": "六种提问方式，帮你从不同角度撬"
+    "skill_name": "六种提问方式，帮你从不同角度撬",
+    "sourceTitle": "六种提问方式，帮你从不同角度撬开僵局"
   },
   "core_definition": "什么？我当下解决的是表象还是根源？",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

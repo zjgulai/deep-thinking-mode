@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-不对称",
+  "meta": {
+    "name": "不对称",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):不对称",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "均值回归具有不对称性。例如：股票的正收益与负收益回归的幅度与 速度不可能一样。也就是如果股票在 30 天之内涨了 1000 点，不可能 在后面的 30 天之内跌去 1000 点。股票涨 1000 点的时间和速度是随机 的，没有规律可循。股票",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "股票的正收益与负收益回归的幅度与 速度不可能一样"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以不对称的方式思考这个问题。",
+    "activation_phrase": "请用不对称分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

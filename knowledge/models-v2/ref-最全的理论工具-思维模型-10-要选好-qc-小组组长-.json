@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-要选好-qc-小组组长-",
+  "meta": {
+    "name": "要选好 QC 小组组长。",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):要选好 QC 小组组长。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人物，是 QC 小组的领导，是 QC 小组发挥作 用的重要保证。必须热心于全面质量管理工作，能够发挥抬头作用。要有丰富的 业务知识，发挥骨干作用。要具有一定的组织能力，把 QC 小组的活动开展起来。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以要选好 QC 小组组长。的方式思考这个问题。",
+    "activation_phrase": "请用要选好 QC 小组组长。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

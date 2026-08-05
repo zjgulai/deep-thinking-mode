@@ -1,0 +1,39 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-11个分析模型-渠道分析概述",
+  "meta": {
+    "name": "渠道分析概述",
+    "category": "02",
+    "tags": [],
+    "source": "ref:11个分析模型:渠道分析概述",
+    "sourceTitle": "11个分析模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "用户在渠道完成的某个为企业带来收益的活动，例如，注册、购买、",
+    "trigger_signals": [
+      "浏览页面数：以步长 5 为间隔，统计每次浏览页面数的分布情况；",
+      "着陆页：用以区分每次访问的着陆页，可以评价不同着陆页的访问质量；",
+      "退出页：用以区分每次访问的退出页，可以评价不同页面的退出情况，找",
+      "访问时长：按照 0-3secs，3-10secs，10-30secs，30-60secs，1-3mins，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，搜索引擎、社交媒 体、广告平台、线下站会等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以渠道分析概述的方式思考这个问题。",
+    "activation_phrase": "请用渠道分析概述分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

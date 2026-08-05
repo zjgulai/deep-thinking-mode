@@ -5,7 +5,8 @@
     "name": "方法模块 · 反刍思维",
     "category": "10",
     "tags": [],
-    "skill_name": "方法模块-·-反刍思维"
+    "skill_name": "方法模块-·-反刍思维",
+    "sourceTitle": "内耗管理系统 · 方法模块 · 反刍思维：如何用“5-4-3-2-1”强制切断思维循环？"
   },
   "core_definition": "如何有效完成这件事？方法模块 · 反刍思维的操作路径是什么？",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-思维力高效的系统思维-王世民-火星崛起2",
+  "meta": {
+    "name": "火星崛起2",
+    "category": "00",
+    "tags": [],
+    "source": "ref:思维力高效的系统思维 (王世民 [王世民]):火星崛起2",
+    "sourceTitle": "思维力高效的系统思维 (王世民 [王世民])",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "千载难逢的展现自己的机会，自己竟然什么都说不出来",
+    "trigger_signals": [
+      "如果你不知道读什么书， 就关注这个微信号。 微信公众号名称：幸福的味道 加小编微信一起读书 小编微信号：2338856113",
+      "如果你不知道读什么书或者想获得更多免费电子书请加小编微信或QQ：2338856113 小编也和结交一些喜欢读书的朋友 或者关注",
+      "如果你可以说服王世民加入，那我们就成立公司。”很快，在2015年年初，我们达成共识并成立了尔雅。 有了世民兄的加入，我们树立了"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "很浅、威力巨大但上手简单，无论对在校学生或初入职场的新人，还是创业者或企业高管，在高效学习、有力表达、解决问题方面都有着很强的指导作用和应用价值"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以火星崛起2的方式思考这个问题。",
+    "activation_phrase": "请用火星崛起2分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

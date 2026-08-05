@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-海外上市导致的管理成本上升",
+  "meta": {
+    "name": "海外上市导致的管理成本上升",
+    "category": "05",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:海外上市导致的管理成本上升",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "外部因素 权重  机会  1、移动增值服务市场增长迅速 0.10  2、年轻人不断增加的消费能力 0.05  3、人们花在交通、参加会议等上的时间增加 0.10  4、3G 网络将提供更多市场空间 0",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以海外上市导致的管理成本上升的方式思考这个问题。",
+    "activation_phrase": "请用海外上市导致的管理成本上升分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -5,7 +5,8 @@
     "name": "绝大多数人说话写作平庸，根源",
     "category": "02",
     "tags": [],
-    "skill_name": "绝大多数人说话写作平庸，根源"
+    "skill_name": "绝大多数人说话写作平庸，根源",
+    "sourceTitle": "绝大多数人说话写作平庸，根源：看不懂语言里的「判断」"
   },
   "core_definition": "，对一件事物做出肯定 / 否定断定，有真假对错之分，就是判断",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

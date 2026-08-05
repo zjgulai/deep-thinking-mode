@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-支援",
+  "meta": {
+    "name": "支援",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):支援",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "“支援”是对正当理由的进一步支持，指一定的事件状态和法律规定。它 具有可变性和领域依赖性。例如对方进一步再提出质疑，问：“为何在 百慕大群岛出生的人，就是英国人呢？”“因为在英国的制定法中，就殖 民地出生者的国籍有明文规定。”这种命题称为“",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "对方进一步再提出质疑，问：“为何在 百慕大群岛出生的人，就是英国人呢？”“因为在英国的制定法中，就殖"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以支援的方式思考这个问题。",
+    "activation_phrase": "请用支援分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

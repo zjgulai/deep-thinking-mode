@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-游戏",
+  "meta": {
+    "name": "游戏",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):游戏",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "比如某某荣耀，首充 6 元，即可送皮肤和英雄。等充值后，发现很多 需要用钱的地方。首先是铭文，没有铭文，起步就少了一套装备，铭 文是刚需，买铭文要钱；其次是英雄，自己喜欢的英雄玩起来才爽， 买英雄要钱；有了英雄，还想英雄变帅一些，就迫切想买",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "某某荣耀，首充 6 元，即可送皮肤和英雄"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以游戏的方式思考这个问题。",
+    "activation_phrase": "请用游戏分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

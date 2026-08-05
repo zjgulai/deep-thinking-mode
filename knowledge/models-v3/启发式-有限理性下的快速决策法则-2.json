@@ -9,7 +9,8 @@
       "启发式决策法则",
       "决策心理学"
     ],
-    "skill_name": "启发式——有限理性下的快速决策"
+    "skill_name": "启发式——有限理性下的快速决策",
+    "sourceTitle": "启发式——有限理性下的快速决策法则"
   },
   "core_definition": "这件事的本质是什么？启发式——有限理性下的快速决策如何定义它？",
   "when_to_use": {
@@ -62,7 +63,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 3
   }
 }

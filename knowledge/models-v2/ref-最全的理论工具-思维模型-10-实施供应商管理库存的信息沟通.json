@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-实施供应商管理库存的信息沟通",
+  "meta": {
+    "name": "实施供应商管理库存的信息沟通",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施供应商管理库存的信息沟通",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "实施供应商管理库存首先必须拥有一个良好的信息沟通平台，我们需要在原 有企业拥有的 EDI 的基础上，重新整合原有的 EDI 资源来够建一个适合于供应 商管理库存的信息沟通系统。 2 、供应商管理库存的工作流程设计  买方企业和供应商实施",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实施供应商管理库存的信息沟通的方式思考这个问题。",
+    "activation_phrase": "请用实施供应商管理库存的信息沟通分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

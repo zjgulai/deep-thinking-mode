@@ -9,7 +9,8 @@
       "缩放力",
       "认知升级"
     ],
-    "skill_name": "框架缩放三层对照表"
+    "skill_name": "框架缩放三层对照表",
+    "sourceTitle": "框架缩放三层对照表"
   },
   "core_definition": "、作用、抽象程度、适用范围、风险、典型工具",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

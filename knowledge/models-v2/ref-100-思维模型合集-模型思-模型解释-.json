@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-模型解释-",
+  "meta": {
+    "name": "模型解释：",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):模型解释：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "整棵树源于树根，发展于树干，这就是组织或企业的 WHY。树枝是部 门，每个部门也可以有自己的子文化（鸟巢），这个子文化是这个部门 在组织中独立存在的价值与意义。鸟儿是个人，个人也有自己的 WHY。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以模型解释：的方式思考这个问题。",
+    "activation_phrase": "请用模型解释：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

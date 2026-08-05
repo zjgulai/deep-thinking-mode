@@ -5,7 +5,8 @@
     "name": "解释模块 · 反刍思维",
     "category": "10",
     "tags": [],
-    "skill_name": "解释模块-·-反刍思维"
+    "skill_name": "解释模块-·-反刍思维",
+    "sourceTitle": "内耗管理系统 · 解释模块 · 反刍思维：什么是大脑的“心理咀嚼”现象？"
   },
   "core_definition": "判别**：反思让你走出来，反刍让你陷进去",
   "when_to_use": {
@@ -63,7 +64,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-压制-",
+  "meta": {
+    "name": "压制。",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):压制。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "所谓压制，举个例子，当你开车在高速路上，被一辆快速行驶的汽车 插队，你来了一个急刹车，把你吓得想骂人，自主心智的本能反应就 是超过他，骂他。可是你的算法心智对你进行了压制，第一时间告诉 你危险，你的驾驶技术一般，于是你放弃了超车，继续匀速安",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以压制。的方式思考这个问题。",
+    "activation_phrase": "请用压制。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-冯之浚-王春法-许定-战略研究与中国发展",
+  "meta": {
+    "name": "冯之浚、王春法、许定．战略研究与中国发展",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):冯之浚、王春法、许定．战略研究与中国发展",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ 奥斯本检核表法 —创造技法之母，最著名、最典型的检核提  问型创新法 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以冯之浚、王春法、许定．战略研究与中国发展的方式思考这个问题。",
+    "activation_phrase": "请用冯之浚、王春法、许定．战略研究分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

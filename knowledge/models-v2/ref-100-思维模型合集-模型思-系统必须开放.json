@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-系统必须开放",
+  "meta": {
+    "name": "系统必须开放",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):系统必须开放",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "只有开放系统才能够和外界进行物质和能量的交换。例如细胞、动物、 植物还有城市，都是开放系统。植物通过吸收土壤中的养分和来自太 阳的能量，进行光合作用获得成长，来对抗熵增。动物通过吃喝以及 呼吸来获得能量，维持身体的成长。城市通过开放，汲取外",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "细胞、动物、 植物还有城市，都是开放系统"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以系统必须开放的方式思考这个问题。",
+    "activation_phrase": "请用系统必须开放分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

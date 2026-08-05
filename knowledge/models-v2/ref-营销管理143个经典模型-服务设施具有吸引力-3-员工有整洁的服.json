@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-服务设施具有吸引力-3-员工有整洁的服",
+  "meta": {
+    "name": "服务设施具有吸引力；3. 员工有整洁的服",
+    "category": "08",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:服务设施具有吸引力；3. 员工有整洁的服",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "可靠的，准确地履行服务承诺的能力",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "输入的某种材料必须满足的标准，输入的某种信息必须满足的要素等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以服务设施具有吸引力；3. 员工有整洁的服的方式思考这个问题。",
+    "activation_phrase": "请用服务设施具有吸引力；3. 员工分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-前-言",
+  "meta": {
+    "name": "前 言",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):前 言",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "您是否急于掌握并随时运用所有重要的管理方法，却苦于时间的局限无法饱 览浩瀚的理论书籍？管理者如何在百忙之中快速地掌握当前最重要、最前沿的管 理理论和管理方法呢？藉于此，MBA 智库全体编辑收集了在世界知识企业中比 较流行或成功的 100",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，并对于相关的工具进行延伸 比较，便于读者的学习和运用"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以前 言的方式思考这个问题。",
+    "activation_phrase": "请用前 言分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

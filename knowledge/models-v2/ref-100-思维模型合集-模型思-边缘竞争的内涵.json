@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-边缘竞争的内涵",
+  "meta": {
+    "name": "边缘竞争的内涵",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):边缘竞争的内涵",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "边缘竞争是美国麦肯锡咨询公司的咨询顾问， 肖纳 L·布朗和斯坦福大学 凯瑟琳 M·艾森哈特教授最早提出，她们一起合作研究一个项目，主题 为“应对计算机行业的发展给企业和管理界带来的新的问题”，之后综合 理论研究成果和实际经验，于 1998",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，采用事实归纳法， 从得到的真实数据中归纳出基本概述和理论框架，经过反复的论证和"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以边缘竞争的内涵的方式思考这个问题。",
+    "activation_phrase": "请用边缘竞争的内涵分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

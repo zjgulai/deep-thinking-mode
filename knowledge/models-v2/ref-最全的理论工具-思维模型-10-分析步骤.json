@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-分析步骤",
+  "meta": {
+    "name": "分析步骤",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):分析步骤",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "销售额至少达到 10%的年增长率（扣除通",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "有三项 的问题业务，不可能全部投资发展，只能选择其中的一项或两项，集中投资发展；"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分析步骤的方式思考这个问题。",
+    "activation_phrase": "请用分析步骤分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

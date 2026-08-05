@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-马斯洛需求层次理论",
+  "meta": {
+    "name": "马斯洛需求层次理论",
+    "category": "07",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:马斯洛需求层次理论",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "马斯洛的需求层次结构是心理学中的激励理论,包括人类需求的五级模型,通常被描绘成金  字塔内的等级。从层次结构的底部向上, 需求分别为:①生理 （食物和衣服）,②  安全（工作保障）,  ③  社交需要（友谊）,  ④  尊重和⑤自我实现。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "饿着肚子的画家,即是在生理与自我实现之间穿梭"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以马斯洛需求层次理论的方式思考这个问题。",
+    "activation_phrase": "请用马斯洛需求层次理论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-熵与社会",
+  "meta": {
+    "name": "熵与社会",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):熵与社会",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）社会开放与人才流动 任何一个社会如果处于封闭状态，就很容易落后。历史的发展充分证 明了这一点，在农耕文明时代，基本上是 300 年为一个周期进行王朝 的迭代，所有的新兴王朝刚刚执政的时候，都是开放的，官用贤，将 用能，人才上下流动频繁",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "洛杉矶、旧金 山等。 所以社会的发展和进步必须要依赖负熵流入，才能对抗社会的熵增，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以熵与社会的方式思考这个问题。",
+    "activation_phrase": "请用熵与社会分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

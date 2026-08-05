@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-正确的信念-例如",
+  "meta": {
+    "name": "正确的信念，例如",
+    "category": "04",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):正确的信念，例如",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "。 当我们遇到一个问题时，先不要着急去解决，而应该首先思考问题出 现的系统是什么？系统的功能和目标是什么？系统的第一性原理是什 么？系统的运行原理和逻辑模型是什么？ 如果你能够清晰的画出系统图，然后再",
+    "trigger_signals": [
+      "如果你能够清晰的画出系统图，然后再考虑问题是什么？为什么会出",
+      "如果你能够深刻的思考以上问题，并找到正确的第一性原理，把第一"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "链家地产是一家拥有 8000 家门店、13 万经纪人、估值 416 亿，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以正确的信念，例如的方式思考这个问题。",
+    "activation_phrase": "请用正确的信念，例如分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

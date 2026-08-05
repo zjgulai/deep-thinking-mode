@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-为每项经营业务制定战略-",
+  "meta": {
+    "name": "为每项经营业务制定战略。",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):为每项经营业务制定战略。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "用于辅助战略分析的描述性模型,而通用的战",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，关联成本，可支持的战略选 择等),那么分析的结果也可能有误差"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以为每项经营业务制定战略。的方式思考这个问题。",
+    "activation_phrase": "请用为每项经营业务制定战略。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

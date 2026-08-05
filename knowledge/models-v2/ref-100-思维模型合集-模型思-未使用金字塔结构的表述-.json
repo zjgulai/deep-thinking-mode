@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-未使用金字塔结构的表述-",
+  "meta": {
+    "name": "未使用金字塔结构的表述：",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):未使用金字塔结构的表述：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "领导，张经理来电话说他有点儿急事儿需要处理，下午 3 点没办法赶 回来参加会议了，小李说他今天晚一点儿开会没关系，明天开也可以， 但最好别 10：30 之前开。另外可能会议室明天已经有人预定了，星期 四可以预定。王总还在成都出差，明天需要很",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以未使用金字塔结构的表述：的方式思考这个问题。",
+    "activation_phrase": "请用未使用金字塔结构的表述：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

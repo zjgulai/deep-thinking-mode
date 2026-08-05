@@ -5,7 +5,8 @@
     "name": "思维过拟合",
     "category": "02",
     "tags": [],
-    "skill_name": "思维过拟合"
+    "skill_name": "思维过拟合",
+    "sourceTitle": "思维过拟合：你的成功经验，正在变成你最大的枷锁"
   },
   "core_definition": "这件事的本质是什么？思维过拟合如何定义它？",
   "when_to_use": {
@@ -60,7 +61,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

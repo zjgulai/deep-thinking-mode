@@ -5,7 +5,8 @@
     "name": "10-10-10决策法",
     "category": "10",
     "tags": [],
-    "skill_name": "10-10-10决策法"
+    "skill_name": "10-10-10决策法",
+    "sourceTitle": "10-10-10决策法：情绪上头时，用三个问题叫停冲动"
   },
   "core_definition": "用时间距离，拉开被情绪压缩的认知距离",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -5,7 +5,8 @@
     "name": "网络思维",
     "category": "05",
     "tags": [],
-    "skill_name": "网络思维"
+    "skill_name": "网络思维",
+    "sourceTitle": "网络思维：洞察连接本质，解锁系统力量"
   },
   "core_definition": "核心是通过分析网络结构模式，理解系统的行为规律、演化逻辑与涌现特性，而非孤立看待个体",
   "when_to_use": {
@@ -64,7 +65,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-认知因素",
+  "meta": {
+    "name": "认知因素",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):认知因素",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对于交易的认知角度来说，卖者与买者将他们的焦点注意在交易中将 要放弃的，卖者关注交易发生时可能失去的物品，而买者关注交易发 生时可能失去的金钱。因此，卖者给出更高的卖出价格，而买者给出 更低的购买价格。就交易物品的认知角度来说，卖者与买者以",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以认知因素的方式思考这个问题。",
+    "activation_phrase": "请用认知因素分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

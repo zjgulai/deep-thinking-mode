@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-夏普利值的应用",
+  "meta": {
+    "name": "夏普利值的应用",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):夏普利值的应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "权力。权衡权力的大小，取决于一个人的权",
+    "trigger_signals": [
+      "如果你掌握了 100 个思维模型，你就会比别人更聪",
+      "如果你关注一下近三十年全球市值排名前十的公司的变化，很容易就"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在一个 3 人组成的决策委员会(A、B、C)中，其票数按出资比例分配为"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以夏普利值的应用的方式思考这个问题。",
+    "activation_phrase": "请用夏普利值的应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

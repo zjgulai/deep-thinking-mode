@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-做社区志愿者",
+  "meta": {
+    "name": "做社区志愿者",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):做社区志愿者",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "全新的有益活动。其中很多在印度,孟买就有近 100 家",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "菲律宾是一个很贫 穷的国家,但是全民的幸福快乐指数是非常高,远远高于中国,菲律宾老"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以做社区志愿者的方式思考这个问题。",
+    "activation_phrase": "请用做社区志愿者分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-科学界的应用",
+  "meta": {
+    "name": "科学界的应用",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):科学界的应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "奥卡姆剃刀出现过不少泰斗级的“刀手”。物理学史上几次理论大变革都 与奥卡姆剃刀有关。凡善于使用这把刀的科学家，如哥白尼、牛顿、 爱因斯坦等，都是在“削”去理论或客观事实上的累赘之后，“剃”出了精 炼得无法再精炼的科学结论。 例如哥白尼起初并",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "哥白尼起初并不反对地心说，他只是认为它太复杂"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以科学界的应用的方式思考这个问题。",
+    "activation_phrase": "请用科学界的应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

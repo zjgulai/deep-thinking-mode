@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-监督检查-通过不断监督-使-5s-在每位",
+  "meta": {
+    "name": "监督检查。通过不断监督，使“5S”在每位",
+    "category": "07",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):监督检查。通过不断监督，使“5S”在每位",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "最终形成个人做事的习惯。领导的言传身教、制度监督非常重要：一时养成的坏 习惯，要花十倍的时间去改正。这一点可以和内部质量审核活动结合起来进行。 4.4. 实施技巧 (1)导人阶段 ① 高层管理者对 5S 的关心程度，包括有没有利用 5S 进",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "重视培训，充分沟通。",
+        "action": "重视培训，充分沟通。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "让所有员工都成为实施 5S 的主角，不能",
+        "action": "让所有员工都成为实施 5S 的主角，不能少数人唱独角戏。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "主管人员要有实施 5S 的整体构想和魄力",
+        "action": "主管人员要有实施 5S 的整体构想和魄力。执行 5S 要有决心。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "每日评定成绩并隔日定时、定点公布成绩。",
+        "action": "每日评定成绩并隔日定时、定点公布成绩。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "周竞赛或月竞赛成绩公布后，立即公开奖惩。",
+        "action": "周竞赛或月竞赛成绩公布后，立即公开奖惩。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「监督检查。通过不断监督，」思维模式运行。\n\nStep 1 - 重视培训，充分沟通。：重视培训，充分沟通。\n\nStep 2 - 让所有员工都成为实施 5S 的主角，不能：让所有员工都成为实施 5S 的主角，不能少数人唱独角戏。\n\nStep 3 - 主管人员要有实施 5S 的整体构想和魄力：主管人员要有实施 5S 的整体构想和魄力。执行 5S 要有决心。\n\nStep 4 - 每日评定成绩并隔日定时、定点公布成绩。：每日评定成绩并隔日定时、定点公布成绩。\n\nStep 5 - 周竞赛或月竞赛成绩公布后，立即公开奖惩。：周竞赛或月竞赛成绩公布后，立即公开奖惩。\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用监督检查。通过不断监督，使“5分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

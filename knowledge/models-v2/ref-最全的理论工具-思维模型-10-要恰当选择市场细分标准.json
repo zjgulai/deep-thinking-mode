@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-要恰当选择市场细分标准",
+  "meta": {
+    "name": "要恰当选择市场细分标准",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):要恰当选择市场细分标准",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "细分市场的变量的个数取决于消费者需求差异的大小。对于消费者=需求特 征差异较小的产品或服务可采用单一变数进行细分，如果消费者中秋特征差异较 大，则应采取双重或多重变数细分，以保证细分的有效性。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以要恰当选择市场细分标准的方式思考这个问题。",
+    "activation_phrase": "请用要恰当选择市场细分标准分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

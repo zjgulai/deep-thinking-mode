@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立合理的薪酬体系",
+  "meta": {
+    "name": "建立合理的薪酬体系",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立合理的薪酬体系",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "切实提高员工的薪酬福利水平包括直接报酬、间接报酬、非物质报酬三方面 内容。其中，最突出的问题应该是非物质报酬。管理人员应注意到：不同的员工 的精神满足是不同的。根据员工个人的差别有针对性的采用各种非物质激励手 段。 （三）职业生涯管理与职",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立合理的薪酬体系的方式思考这个问题。",
+    "activation_phrase": "请用建立合理的薪酬体系分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

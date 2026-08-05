@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-定价",
+  "meta": {
+    "name": "定价",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:定价",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "外国的牙膏牙刷生产厂商，近几年销售下降，让你分析原因，有什么改进",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "面试  12 \fADL 矩阵 ADL 矩阵概述(ADL Matrix)"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以定价的方式思考这个问题。",
+    "activation_phrase": "请用定价分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

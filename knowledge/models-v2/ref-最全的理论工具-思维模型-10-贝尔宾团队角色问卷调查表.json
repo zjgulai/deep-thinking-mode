@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-贝尔宾团队角色问卷调查表",
+  "meta": {
+    "name": "贝尔宾团队角色问卷调查表",
+    "category": "07",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):贝尔宾团队角色问卷调查表",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "说明： 对下列问题的回答，可能在不同程度上描绘了您的行为。每题有八句话，请将十 分分配给这八个句子。分配的原则是：最体现您行为的句子分最高，以此类推。 最极端的情况也可能是十分全部分配给其中的某一句话。请根据您的实际情况把 分数填入后面的表",
+    "trigger_signals": [
+      "当我与其他人共同进行一项工作时",
+      "当我与真正的对立面发生冲突时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以贝尔宾团队角色问卷调查表的方式思考这个问题。",
+    "activation_phrase": "请用贝尔宾团队角色问卷调查表分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

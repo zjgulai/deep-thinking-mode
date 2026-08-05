@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-投入和活动指目标成本管理的实施过程和内容",
+  "meta": {
+    "name": "投入和活动指目标成本管理的实施过程和内容",
+    "category": "04",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):投入和活动指目标成本管理的实施过程和内容",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "市场营销方略)需要结束，企业也可以迅速转",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以投入和活动指目标成本管理的实施过程和内容的方式思考这个问题。",
+    "activation_phrase": "请用投入和活动指目标成本管理的实施分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

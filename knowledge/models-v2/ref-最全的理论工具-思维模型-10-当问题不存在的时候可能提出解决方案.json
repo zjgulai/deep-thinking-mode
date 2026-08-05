@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-当问题不存在的时候可能提出解决方案",
+  "meta": {
+    "name": "当问题不存在的时候可能提出解决方案",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):当问题不存在的时候可能提出解决方案",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一个例子是许多组织在 20 世纪 70 年代对计算机的采用，计算机是一个令人 兴奋的解决方案，被计算机制造商和组织内系统分析人员极力推崇，但计算机在 开始时并没有解决任何问题，实际上，当时，许多计算机造成的问题比它们解决 的问题还多。而后",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以当问题不存在的时候可能提出解决方案的方式思考这个问题。",
+    "activation_phrase": "请用当问题不存在的时候可能提出解决分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

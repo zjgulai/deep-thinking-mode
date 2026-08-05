@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-其他",
+  "meta": {
+    "name": "其他",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):其他",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一）、如何选定题目  题目的选定最好是经过全体圈员讨论决定，自己圈讨论出来的题目，活动起 来比较有乐趣、有干劲，若由上级主管指定，则圈员们会有被逼之感而产生排斥， \f http://wiki.mbalib.com/ 虽是圈自行讨论决定，但也",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以其他的方式思考这个问题。",
+    "activation_phrase": "请用其他分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

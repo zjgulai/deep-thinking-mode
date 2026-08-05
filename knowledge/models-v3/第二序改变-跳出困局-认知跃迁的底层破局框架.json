@@ -5,7 +5,8 @@
     "name": "第二序改变",
     "category": "07",
     "tags": [],
-    "skill_name": "第二序改变"
+    "skill_name": "第二序改变",
+    "sourceTitle": "第二序改变：跳出困局、认知跃迁的底层破局框架"
   },
   "core_definition": "、落地路径与实操技巧，助力从根源化解顽固性难题",
   "when_to_use": {
@@ -66,7 +67,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

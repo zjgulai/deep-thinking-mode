@@ -5,7 +5,8 @@
     "name": "弱连接定律",
     "category": "03",
     "tags": [],
-    "skill_name": "弱连接定律"
+    "skill_name": "弱连接定律",
+    "sourceTitle": "弱连接定律：强连接守住当下，弱连接带你看见未来"
   },
   "core_definition": "总结：强连接帮你稳住当下，弱连接带你走向未来",
   "when_to_use": {
@@ -65,7 +66,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

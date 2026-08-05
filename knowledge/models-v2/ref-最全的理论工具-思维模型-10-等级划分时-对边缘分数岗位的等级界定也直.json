@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-等级划分时-对边缘分数岗位的等级界定也直",
+  "meta": {
+    "name": "等级划分时。对边缘分数岗位的等级界定也直",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):等级划分时。对边缘分数岗位的等级界定也直",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "平。  岗位测评小组对所有标杆岗位进行打分，然后对所有数据进行统计和分析， 剔除一些异常数据，然后统计计算出各个标杆岗位的最后得分，该结果就是各个 岗位相对价值的体现。之后，根据企业的薪酬政策，对标杆岗位的得分按一定的 标准进行划分等级。在",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以等级划分时。对边缘分数岗位的等级界定也直的方式思考这个问题。",
+    "activation_phrase": "请用等级划分时。对边缘分数岗位的等分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-经营单位的竞争地位",
+  "meta": {
+    "name": "经营单位的竞争地位",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):经营单位的竞争地位",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "手的产品质量；④相对于竞争对手的产品价格；⑤相对于竞争对手来说提供  给职工的报酬水平；⑥相对于竞争对手的市场营销努力程度；⑦市场细分的  模式；⑧开发新产品的频繁程度。 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以经营单位的竞争地位的方式思考这个问题。",
+    "activation_phrase": "请用经营单位的竞争地位分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

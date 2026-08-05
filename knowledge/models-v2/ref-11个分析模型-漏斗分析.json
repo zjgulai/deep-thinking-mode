@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-11个分析模型-漏斗分析",
+  "meta": {
+    "name": "漏斗分析",
+    "category": "02",
+    "tags": [],
+    "source": "ref:11个分析模型:漏斗分析",
+    "sourceTitle": "11个分析模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "流失环节及影响因素，进而分析用户行为进行针对性优化动作。  具体而言，漏斗分析能够解决什么问题呢？例如：  • 官网流量很大，但注册用户很少，是过程中哪个环节出了问题？  • 用户从“注册 – 绑卡",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "• 官网流量很大，但注册用户很少，是过程中哪个环节出了问题？"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以漏斗分析的方式思考这个问题。",
+    "activation_phrase": "请用漏斗分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

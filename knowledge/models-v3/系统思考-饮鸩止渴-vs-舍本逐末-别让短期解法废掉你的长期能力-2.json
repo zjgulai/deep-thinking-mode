@@ -5,7 +5,8 @@
     "name": "系统思考",
     "category": "05",
     "tags": [],
-    "skill_name": "系统思考"
+    "skill_name": "系统思考",
+    "sourceTitle": "系统思考：饮鸩止渴 vs 舍本逐末——别让短期解法废掉你的长期能力"
   },
   "core_definition": "这个问题的根本原因是什么？系统思考如何找到它？",
   "when_to_use": {
@@ -61,7 +62,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

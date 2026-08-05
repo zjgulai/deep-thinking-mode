@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-目标性",
+  "meta": {
+    "name": "目标性",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):目标性",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "管理也不例外，它的目标就是要不断追求企业生产效率的最大化，全面提升企业 的综合素质。具体来讲，TPM 管理是通过对设备的六大损失（故障损失、工艺 调整损失、突停和空转损失、速度损失、废次品损失、开工损失）和生产现场的 一切 不良因素实施持续",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以目标性的方式思考这个问题。",
+    "activation_phrase": "请用目标性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

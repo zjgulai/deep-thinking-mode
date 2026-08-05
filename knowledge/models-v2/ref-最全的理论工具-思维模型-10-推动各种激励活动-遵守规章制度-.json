@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-推动各种激励活动-遵守规章制度-",
+  "meta": {
+    "name": "推动各种激励活动 遵守规章制度。",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):推动各种激励活动 遵守规章制度。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "推行素养的具体要求、规定 1)工作时间 (1)在使用工具、夹具等公用工具操作过程中 一旦使用完毕应立即放回原处： (2)使用工具、夹具时要注意人身和财物安全。不要丢失、损坏。如损坏时，要 向总务部提交损坏说明报告书： (3)在工作中不要随意",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以推动各种激励活动 遵守规章制度。的方式思考这个问题。",
+    "activation_phrase": "请用推动各种激励活动 遵守规章制度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

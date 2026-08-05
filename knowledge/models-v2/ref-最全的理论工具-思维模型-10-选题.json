@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-选题",
+  "meta": {
+    "name": "选题",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):选题",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "公司 1995 年方针目标是“三三二一 7”，即完成玻壳 310 万只，创 3000 万 元利润，2 个优质产品，l 亿元以上的产值，事故为零。可是在实际生产中，玻 壳炸裂废品多，造成了较大的经济损失（1 只玻壳厂内价为 47 元）。为此",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以选题的方式思考这个问题。",
+    "activation_phrase": "请用选题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-体制创新",
+  "meta": {
+    "name": "体制创新",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):体制创新",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "竞争力的源泉。华为的创始人在创业之初就设计了一套 创新的体制，在国内率先实行员工内部持股制。任正非将企业的大部分利润作为 内部股份奖励给员工，股份多少根据员工的贡献大小来分配，从而将员工的利益 与企业",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以体制创新的方式思考这个问题。",
+    "activation_phrase": "请用体制创新分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

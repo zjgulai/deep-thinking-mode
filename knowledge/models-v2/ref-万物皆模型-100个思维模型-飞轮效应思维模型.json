@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-飞轮效应思维模型",
+  "meta": {
+    "name": "飞轮效应思维模型",
+    "category": "09",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:飞轮效应思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 人在进入某一新的或陌生的领域的时候,都会经历这一过程。如果要让飞轮转起来不花太大力气,条件",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以飞轮效应思维模型的方式思考这个问题。",
+    "activation_phrase": "请用飞轮效应思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

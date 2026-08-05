@@ -5,7 +5,8 @@
     "name": "系统思维实用指南",
     "category": "10",
     "tags": [],
-    "skill_name": "系统思维实用指南"
+    "skill_name": "系统思维实用指南",
+    "sourceTitle": "系统思维实用指南：拆解报复性熬夜，轻松打破内耗循环"
   },
   "core_definition": "用有限的意志力对抗持续的系统压力，而非意志力不足",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

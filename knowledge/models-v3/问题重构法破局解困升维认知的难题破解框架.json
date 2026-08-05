@@ -5,7 +5,8 @@
     "name": "问题重构法破局解困升维认知的难",
     "category": "03",
     "tags": [],
-    "skill_name": "问题重构法破局解困升维认知的难"
+    "skill_name": "问题重构法破局解困升维认知的难",
+    "sourceTitle": "问题重构法破局解困升维认知的难题破解框架"
   },
   "core_definition": "看待问题的方式，比问题本身更重要",
   "when_to_use": {
@@ -58,7 +59,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

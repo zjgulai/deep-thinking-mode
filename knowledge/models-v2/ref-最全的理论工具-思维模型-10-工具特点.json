@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-工具特点",
+  "meta": {
+    "name": "工具特点",
+    "category": "04",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具特点",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "相对静态而以定性分析为主的方法，且难有判别优势、劣势、威胁和机会",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "就结构化而言，SWOT分析法不仅在表现形",
+        "action": "就结构化而言，SWOT分析法不仅在表现形式上构造了结构矩阵，对矩阵的不同区域赋予了",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "在系统性方面，SWOT分析法利用系统的思",
+        "action": "在系统性方面，SWOT分析法利用系统的思想将涉及企业内部的优势、劣势，外部机会、威",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，某项目的优势是否强到足以把握机会、对 抗威胁，某项目的劣势是否弱到错失良机、不堪威胁"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「工具特点」思维模式运行。\n\nStep 1 - 就结构化而言，SWOT分析法不仅在表现形：就结构化而言，SWOT分析法不仅在表现形式上构造了结构矩阵，对矩阵的不同区域赋予了\n\nStep 2 - 在系统性方面，SWOT分析法利用系统的思：在系统性方面，SWOT分析法利用系统的思想将涉及企业内部的优势、劣势，外部机会、威\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用工具特点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 1,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

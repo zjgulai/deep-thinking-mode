@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-耗散结构理论",
+  "meta": {
+    "name": "耗散结构理论",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):耗散结构理论",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "耗散结构,需要开放和远离平衡态、不断的输入能量",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "人体就是一个耗散结构,需要开放和远离平衡态、不断的输入能量"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以耗散结构理论的方式思考这个问题。",
+    "activation_phrase": "请用耗散结构理论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}
