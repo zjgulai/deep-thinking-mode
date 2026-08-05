@@ -21,3 +21,6 @@ node_modules/
 !/README.md
 /.codex/
 /graphify-out/
+/ref-extracted/
+/ref-models/
+/model-inventory*.json
