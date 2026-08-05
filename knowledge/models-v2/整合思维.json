@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "整合思维",
+  "meta": {
+    "name": "整合思维",
+    "category": "06",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 40个（学习、提升、工作）思维模型"
+  },
+  "engine": {
+    "core_question": "31 思维模型：刻板印象一强化认知还是推翻认知.............................. 324",
+    "trigger_signals": [
+      "当你面对团队管理难题时 ，  可以用 T O P I C 模 型排 查 ，   是  哪个要素出了问 题。",
+      "当你手头资源 有 限 ， 思考应该 投 入在何处 可 撬动更多资源时，可参 考 。",
+      "当你想要提 升团 队行动 力 ， 但不 知从何下手 时 ， 可参考 POA行动。",
+      "当 你遇到 问 题 ， 考 虑解决 时 ，可 采 用此 种 思 维 ， 全 面 思 考问题。",
+      "当 做 一  个 孤 立 、 分 割的 问 题来处理，而 是 当做 一 个有关 联 的 系 统来处理。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "布置任务要清晰 (Cla",
+        "action": "布置任务要清晰 (Clarity)： 确 保 员工 100% 理 解工作 ②\t承诺工作要真心 (Commitment)： 发 自内 心 的承诺 ③\t 胜任 工 作 要 到 位 (competence)",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "控制 工 作 要 全 面",
+        "action": "控制 工 作 要 全 面 (Control)： 事 前 、事 中 、事 后的 控 制",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「整合思维」思维模式运行。\n\nStep 1 - 布置任务要清晰 (Cla：布置任务要清晰 (Clarity)： 确 保 员工 100% 理 解工作 ②\t承诺工作要真心 (Commitment)： 发 自内 心 的承诺 ③\t 胜任 工 作 要 到 位 (competence)\n\nStep 2 - 控制 工 作 要 全 面：控制 工 作 要 全 面 (Control)： 事 前 、事 中 、事 后的 控 制\n\n约束：按步骤推理，不跳过任何一步。",
+    "activation_phrase": "请用整合思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 3
+  }
+}

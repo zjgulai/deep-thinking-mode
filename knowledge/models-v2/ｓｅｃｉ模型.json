@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ｓｅｃｉ模型",
+  "meta": {
+    "name": "ＳＥＣＩ模型",
+    "category": "08",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk"
+  },
+  "engine": {
+    "core_question": "２、突破思维定势：所谓思维定势，就是按照积累的思维活动经验教",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "明确问题：根据创新对象明",
+        "action": "明确问题：根据创新对象明确需要解决的问题；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "检核讨论：根据需要解决的",
+        "action": "检核讨论：根据需要解决的问题，参照表中列出的问题，运",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "筛选评估：对新设想进行筛",
+        "action": "筛选评估：对新设想进行筛选，将最有价值和创新性的设想",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「ＳＥＣＩ模型」思维模式运行。\n\nStep 1 - 明确问题：根据创新对象明：明确问题：根据创新对象明确需要解决的问题；\n\nStep 2 - 检核讨论：根据需要解决的：检核讨论：根据需要解决的问题，参照表中列出的问题，运\n\nStep 3 - 筛选评估：对新设想进行筛：筛选评估：对新设想进行筛选，将最有价值和创新性的设想\n\n约束：按步骤推理，不跳过任何一步。",
+    "activation_phrase": "请用ＳＥＣＩ模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

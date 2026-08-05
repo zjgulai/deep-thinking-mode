@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "近因效应",
+  "meta": {
+    "name": "近因效应",
+    "category": "11",
+    "tags": [],
+    "source": "万物皆模型-100个思维模型; 能力提升-85个著名认知思维模型"
+  },
+  "engine": {
+    "core_question": "辩解,但这恰恰掉进了对方的圈                                   领导指责你方案做的不行,怎么就         被客户骂——扭曲事实",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以近因效应的方式分析这个问题。",
+    "activation_phrase": "请用近因效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

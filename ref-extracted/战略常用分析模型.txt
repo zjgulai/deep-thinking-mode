@@ -1,0 +1,434 @@
+营业战略常用分析模型
+
+
+
+
+             0
+PORTER 模型
+
+
+    宏观经济                  技术
+             新入竞争者
+
+
+
+
+             行业竞争
+       供应商           客户
+
+
+
+
+             替代产品
+
+     需求                   政府法规
+
+
+
+
+                                 1
+PORTER 外在因素的影响
+
+
+          • 重大技术突破
+
+
+                     技术
+
+
+
+• 变化因素:
+  – GDP                        • 限制进入
+  – 就业率                        • 价格控制
+  – 汇率
+           宏观经济      行业   法规
+  –…
+• 国际关系
+
+
+
+
+                     需求
+
+
+
+          • 现有需求
+          • 潜在需求
+          • 未来需求
+                                        2
+PORTER行业分析五要素
+ 1 决定供应商影响力的应素                     2 市场进入屏障
+   • 产品可细分性                         • 规模
+   • 替换供应商的代价                       • 品牌
+   • 是否有可替代产品                       • 转换供应商成本
+   • 供应商多少                          • 资金需求
+   •等                               • 渠道
+                                    • 政府法规
+                                    • 竞争报复
+                     2   新入竞争者
+
+
+
+                     5   行业竞争者
+
+         1   供应商                   3       客户
+
+ 5 决定竞争者行为的因素                      3   决定客户影响力的因素
+   • 对手多寡                              •  决定讨价还价实力的因素:
+   • 行业成长速度                             – 供应商多寡
+   • 成本结构                               – 采购量
+   • 剩余产能            4   替代品            – 替换成本
+   • 产品差异                               – 信息
+   • 品牌效益          4 决定替代产品威胁的因素
+                                        – 价格
+   • 退出障碍            • 价格               – 品牌
+                     • 转换成本
+
+
+
+
+                                                         3
+S-C-P 模型
+
+                行业                  厂家
+
+   外在冲击     S   结构        C   行为          P   表现
+
+
+
+                               反馈
+
+• 技术突破     需求特点          营销行为            效益
+• 法规变化     • 产品可替代性      • 定价            技术进步
+• 用户行为改变   • 产品可区分性      • 数量
+           • 增长速度        • 促销
+           • 周期性         • 新产品开发
+           供应特点          产能变化
+           • 供应商多寡       • 扩大/收缩
+           • 成本结构        • 进入/退出
+           • 产能利用率       • 兼并
+           • 进入/退出障碍     上下游扩张
+           产业链特点         • 合资
+           • 供应商讨价还价能力   • 长期合同
+           • 客户抬价还价能力    内部改进
+                         • 成本控制
+                         • 改进流程
+                         • 提高组织效率
+
+
+
+
+                                                   4
+S-C-P 模型示意
+
+
+          结构
+
+                 竞争者多寡
+          多               寡
+
+                竞争者成本结构
+          不同              相同
+
+                 需求增长
+          稳定              高速
+  行业业绩差                        行业业绩好
+
+
+          行为
+
+
+
+               忠诚度/替换成本
+          低               高
+
+                产品差异性
+          低               高
+
+
+
+
+                                       5
+战略方阵分析模型 – 新的模型
+传统模型              新模型
+
+
+
+
+                            产业
+
+
+
+
+                  产业结构/行为        竞争实力来源
+
+
+
+
+                                          6
+新的竞争实力来源分析方法
+
+                                     独到见解
+                                     • 运用独到的见解、知识、洞察力、
+                                       远见、创造力来创造价值
+
+
+
+
+                                  一线执行能力
+                                  • 运用在简单的日常运营活动中稳
+                                    定的优异表现，获得在质量、速
+                            独到知识见解 度、价格方面的有时，从而创造
+                                    价值
+                        一线执行能力
+          传统竞争      结构优势             结构优势
+产业结构/行为                              • 包括规模、技术、专有知识、专
+                            竞争实力来源
+                                       利、渠道、等
+
+                                     • 根据传统微观经济学理论，只有
+                                     在结构上拥有优势，才能具有竞
+            Porter模型的适用范围
+                                     争优势
+
+
+
+
+                                                        7
+举例
+
+     特点               举例
+     结构优势
+     • 进入屏障高
+     • 多种竞争优势来源
+
+
+
+
+     一线执行能力
+     • 竞争基础差异小
+     • 进入屏障低
+
+
+
+
+     独到知识/见解
+     • 由于技术、法规、需求等原
+       因、市场出现重大变化，前
+       景难测
+     • 某个人或公司具有独到的胆
+       识、见解、和眼光
+                           8
+行业结构/行为分析的新方法
+
+
+
+
+                                        独到知识/
+   相互依存系统                               见解
+       特殊关系                        一线执行能力
+            传统竞争
+                             结构优势
+    产业结构/
+    行为                                竞争优势来源
+
+
+                   Porter 模型使用范围
+
+
+
+
+                                                9
+相互依存系统 – NOKIA
+
+
+          技术伙伴
+                                            合同商                                       大学
+                                                                                • Dortmund:
+   • Motorola (Ixtreme technology)   • Texas instruments                          development of
+   • CISCO (ATM-development)         • SCI                                        qualification
+                                                                                  training
+                                                                                • Peking: Internet
+                                                                                  technology R&D
+  当地政府                                                                        技术团体
+                                      Nokia 手机                        • Founder of
+                                                                        – WAP forum
+                                                                        – Bluetooth
+                  Nokia                                                   special interest
+                投资公司                                                      group
+           • > USD 650 million                                                   芬兰政府
+             under management
+                                           用户群
+                                                                          • Early
+                                     • Club Nokia with                         deregulation of
+                                       – Careline                              telecom industry
+                                                                 分销商
+                                       – Events
+           营销伙伴
+                                       – News
+                                                           • AT&T (USA)
+                                       – Credits
+                                                           • Mannesmann
+                                                             (Germany)
+                                       – Service
+                                                           • Mitsui (Japan)
+                                                                                                  10
+SWOT 分析
+                                       机会/风险
+
+                                       • 供需将会如何变化？
+                      如何降低风            • 产业链将会如何变化?
+                      险                • 行业将可能出现什么重
+                                         大变化?
+                                       • 竞争对手?
+
+
+
+            如何进一步发挥
+            优势         贵企业    如何抓住机会
+
+
+优势/劣势
+
+• 有形资产方面？
+• 无形资产方面？
+                      如何减少
+                      劣势
+
+
+
+
+                                                  11
+能力平台分析
+
+                            举例
+
+                    实物资产    • BHP’s low-cost mines
+
+                    位置/区域   • Telecomm/media company with rights
+                              radio spectrum
+         有利的资产（有形
+         和无形）       营销网络    • Avon’s representatives
+
+                    品牌      • Coca-Cola
+
+                    专利      • Pharmaceutical company with a "wonder
+在行业中胜                         drug”
+出所必备 的
+能力                  关系      • "Favored nation" status with a key minister in
+                              liberalizing economy
+
+
+
+                    创新      • 3M with new products
+
+                    内部协调    • McDonald’s with QSC&V
+         卓越的能力
+                    市场定位    • J&J with branded consumer health products
+
+                    成本/效率   • Emerson Electric’s Best Cost Producer program
+
+                    人才管理    • P&G brand management program
+
+
+                                                                           12
+四中程度的不确定
+
+
+
+
+                 1
+                 2         2
+                 3
+
+ 直线型       分叉型       范围型   混乱型
+
+
+
+
+                                 13
+四个不同的战略态势
+塑造未来                        紧跟行业老大                         见机行事
+
+
+
+
+Play a leadership role in   Win through speed, agility,    Invest sufficiently to stay
+establishing how the        and flexibility in             in the game, but avoid
+industry operates           recognizing and capturing      premature commitments
+• Structure/conduct         opportunities
+• Processes/systems         急流勇退
+• Products/services
+
+
+
+
+                            Decide not to participate in the
+                            business going forward
+                                                                                  14
+战略举措种类
+
+ 种类                               举例
+ “豪赌一吧"                   Purchase of PCS license in recent auction
+                          Staples/Office Depot recent merger activities
+
+
+
+ “绝对错不了"                  Generation cost reduction programs at U.S. electric
+                           utilities
+           
+               
+                         Sales and marketing improvement programs for
+                           industrial customers at U.S. electric utilities
+
+ “期权"                     B&Q’s warehouse store pilot program
+                          Pharmaceutical staged R&D programs
+TURNING STRATEGIC POSTURE INTO A SET OF ACTIONS
+                       Building blocks
+                       "Big bets"        "No regrets"   "Options"
+                                                  
+   Shape the future                            
+
+
+
+
+   Reserve the right to
+   play
+
+    ?
+
+
+
+
+   Adapt the fastest
+STRATEGIC POSTURES UNDER UNCERTAINTY
+Levels of
+uncertainty   Shape                          Adapt
+
+              • Raise level of uncertainty   • Compete on structural advantage
+               and change the game (e.g,      or frontline execution (concept
+               FedEx)                         of best fit)
+
+
+              • Scenario-making strategy     • Retain flexibility to stay in the
+        1      to make one discrete            game regardless of outcome, watching
+        2      outcome more likely (e.g,       out for signposts and updating
+        3
+               JVC's VCR licensing             strategy as one course unfolds (e.g.,
+               strategy)                       Microsoft's application software
+                                               strategy)
+              • Active direction-setting     • Emergent strategy development by
+               strategy (e.g., Iridium)        continuous experimentation or by
+                                               building organizational
+                                               capabilities (strategy as
+                                               organization)
+
+              • Commitment to establish      • Emergent strategy development
+               industry                       especially strategy as
+    ?
+               standard/touchstone that       organization
+               creates order by               (e.g., Goldman Sachs, McKinsey)
+               superiority and/or self-
+               fulfilling prophecy (e.g.,
+               Netscape)                                                           17
+

@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0.0",
+  "id": "利用从众效应",
+  "meta": {
+    "name": "利用从众效应",
+    "category": "07",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk"
+  },
+  "engine": {
+    "core_question": "在交管中心，对那些违法驾驶的培训中，就是采用的播放“无码电影”",
+    "trigger_signals": [
+      "当测量单位变小时，所得的长度是无限增大的。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "请来某位伪大师开始讲高大",
+        "action": "请来某位伪大师开始讲高大上的理论，比如美国的“酸碱平衡",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "见证生动鲜活案例，比如请",
+        "action": "见证生动鲜活案例，比如请过来几个见证者，讲讲自己亲身",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "产品体验，让你亲自体验产",
+        "action": "产品体验，让你亲自体验产品的魅力，有的产品有点效果，",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "推销产品，利用锚定效应（",
+        "action": "推销产品，利用锚定效应（高价格），拿货多可以很低的折扣，",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "趁热打铁，趁你还活在美梦",
+        "action": "趁热打铁，趁你还活在美梦里没醒，当场让你交钱，没钱刷",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，适当使用鲜活性效应来说服对方。当然教育培"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「利用从众效应」思维模式运行。\n\nStep 1 - 请来某位伪大师开始讲高大：请来某位伪大师开始讲高大上的理论，比如美国的“酸碱平衡\n\nStep 2 - 见证生动鲜活案例，比如请：见证生动鲜活案例，比如请过来几个见证者，讲讲自己亲身\n\nStep 3 - 产品体验，让你亲自体验产：产品体验，让你亲自体验产品的魅力，有的产品有点效果，\n\nStep 4 - 推销产品，利用锚定效应（：推销产品，利用锚定效应（高价格），拿货多可以很低的折扣，\n\nStep 5 - 趁热打铁，趁你还活在美梦：趁热打铁，趁你还活在美梦里没醒，当场让你交钱，没钱刷\n\n约束：按步骤推理，不跳过任何一步。",
+    "activation_phrase": "请用利用从众效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 3,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

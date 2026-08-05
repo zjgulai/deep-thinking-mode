@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "id": "安慰剂效应",
+  "meta": {
+    "name": "安慰剂效应",
+    "category": "11",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 思维模型 ( etc.) (z-library.sk, 1lib.sk, z-lib.sk); 思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳伦·麦肯，系统分类、"
+  },
+  "engine": {
+    "core_question": "金字塔传销骗局中常常有一种名义的产品在出售,然而焦点总是在新招",
+    "trigger_signals": [
+      "当初的一个选择，造就了现在不同的结果。",
+      "如果没有进行“治疗”，可能会发生什么事。",
+      "如果你打算靠实验收集或评估科学证据，第一步就是界定或理解 假设（hypothesis） ，也就是对所研究的效应提出的解释（例如，喝斯纳普牌果汁能减少感冒时间）。",
+      "如果你想设计出可靠的实验，难点就在于确定 终点 （endpoint），也就是用于评估假设的指标。",
+      "如果研究人员想研究的概念无法清楚观测或清晰测量，他们就必须使用 代理（proxy） 终点，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "就是界定或理解 假设（h",
+        "action": "就是界定或理解 假设（hypothesis） ，也就是对所研究的效应提出的解释（例如，喝斯纳普牌果汁能减少感冒时间）。提前弄清假设有助于避免 “得州神枪手谬误”（Texas sharpshooter ",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说天下乌鸦全是黑的,具备可证伪性,因为你去找到白乌"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「安慰剂效应」思维模式运行。\n\nStep 1 - 就是界定或理解 假设（h：就是界定或理解 假设（hypothesis） ，也就是对所研究的效应提出的解释（例如，喝斯纳普牌果汁能减少感冒时间）。提前弄清假设有助于避免 “得州神枪手谬误”（Texas sharpshooter \n\n约束：按步骤推理，不跳过任何一步。常见误区: 陷阱,陷入其中之后人会失去所有的客观和理智而; 避免 “得州神枪手谬误”（Texas sharpshooter fallacy）; 避免上述情况，你可以采用 随机对照实验（randomized controlled experiment）",
+    "activation_phrase": "请用安慰剂效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

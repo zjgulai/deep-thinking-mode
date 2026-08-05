@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "垂直思维",
+  "meta": {
+    "name": "垂直思维",
+    "category": "11",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 结构化思维 (黎甜) (z-library.sk, 1lib.sk, z-lib.sk)"
+  },
+  "engine": {
+    "core_question": "穆特诠释的是悲凉、悲伤、悲戚，弗雷德里曼诠释的是悲愤、悲壮、",
+    "trigger_signals": [
+      "如果说垂直思维是为了获取最终唯一的解决方案，",
+      "如果让顾客自己去挑选他们想要的商品，然后再付钱，",
+      "当我们戴上白帽时，我们拒绝任何争论和提议，我们检测事实，",
+      "如果了解真实的情况不可能，或者成本很高，",
+      "适用的环境因素有没有发生变化，如果发生了变化，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "不应是如何做（How），",
+        "action": "不应是如何做（How），而是谁来做",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "水平思维与垂直思维；",
+        "action": "水平思维与垂直思维；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在第五章中将介绍的“T字思维”就是笔者改良他人模型并进行"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「垂直思维」思维模式运行。\n\nStep 1 - 不应是如何做（How），：不应是如何做（How），而是谁来做\n\nStep 2 - 水平思维与垂直思维；：水平思维与垂直思维；\n\n约束：按步骤推理，不跳过任何一步。常见误区: 注意的是，这个“一般来说”或“绝对真理”是有一定条; 注意其适用的环境因素有没有发生变化，如果发生了变化，",
+    "activation_phrase": "请用垂直思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 3,
+    "prompt_effectiveness": 3,
+    "overall": 3
+  }
+}

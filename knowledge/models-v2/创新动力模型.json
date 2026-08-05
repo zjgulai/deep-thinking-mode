@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "创新动力模型",
+  "meta": {
+    "name": "创新动力模型",
+    "category": "07",
+    "tags": [],
+    "source": "营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "如何运用创新动力模型来解决问题？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以创新动力模型的方式分析这个问题。",
+    "activation_phrase": "请用创新动力模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "(1)-五种力量模型",
+  "meta": {
+    "name": "(1) 五种力量模型",
+    "category": "00",
+    "tags": [],
+    "source": "万物皆模型-100个思维模型; 常用咨询方法、分析模型及案例分析; 营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "取竞争优势的因素有两个：一是企业所处行业的盈利能力，即行业的吸引力；二是",
+    "trigger_signals": [
+      "如果把企业所处的市场环境看作是空间因素，",
+      "假如你的竞争对手属于跨国经营的公司，",
+      "当然对企业竞争态势最直接、最具体的影响当推企业所处的微观环境。",
+      "假如你的竞争对手属于跨国经营的公司，并且所属行业受所在国的政治、经济影响很大，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "石油开采业，就可以考虑对其进行政治及国家风险"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以(1) 五种力量模型的方式分析这个问题。",
+    "activation_phrase": "请用(1) 五种力量模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 2,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

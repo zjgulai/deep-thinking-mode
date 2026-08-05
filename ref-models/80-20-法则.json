@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "80-20-法则",
+  "meta": {
+    "name": "80/20 法则",
+    "category": "11",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 万物皆模型-100个思维模型; 像高手一样思维与行动（8册）（让你终生收益的思维模型，像高手一样思考，5个思维习惯，让你成为高价值创; 思维力高效的系统思维 (王世民 [王世民]) (z-library.sk, 1lib.sk, z-l; 思维模型 ( etc.) (z-library.sk, 1lib.sk, z-lib.sk); 思维模型 (彼得·霍林斯 (Peter Hollins)) (z-library.sk, 1lib.; 思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳伦·麦肯，系统分类、; 能力提升-85个著名认知思维模型; 麦肯锡10个商业分析思维模型; 麦肯锡思考工具（独家首发） () (z-library.sk, 1lib.sk, z-lib.sk)"
+  },
+  "engine": {
+    "core_question": "\f可见幂律对社会和经济的影响极大，那什么是幂律分布",
+    "trigger_signals": [
+      "如果长度扩大到两倍，那么面积扩大到四倍。",
+      "如果把单词出现的频率按由大到小的顺序排列，",
+      "如果不创建新的社团，她就加入现有的社团。",
+      "如果服务本身不符合顾客的预期，那么无论它的设计多么完美，",
+      "如果服务提供者在市场上做出过度的承诺，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "地震大小的分布接近于指数大约为 2 的幂律。如果发生了震级"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以80/20 法则的方式分析这个问题。",
+    "activation_phrase": "请用80/20 法则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

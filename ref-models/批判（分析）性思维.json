@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "批判（分析）性思维",
+  "meta": {
+    "name": "批判（分析）性思维",
+    "category": "07",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 40个（学习、提升、工作）思维模型; 《麦肯锡结构化战略思维》; 万物皆模型-100个思维模型; 像高手一样思维与行动（8册）（让你终生收益的思维模型，像高手一样思考，5个思维习惯，让你成为高价值创; 思维模型 ( etc.) (z-library.sk, 1lib.sk, z-lib.sk); 思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳伦·麦肯，系统分类、; 能力提升-85个著名认知思维模型; 麦肯锡工作法（套装四册）（轻松职场系列） (高杉尚伊  齐藤显一  竹内里子  中村诚一  洛威茨); 麦肯锡结构化战略思维模型：如何想清楚-说明白-做到位（65页 PPT）"
+  },
+  "engine": {
+    "core_question": "而缄默知识是实践性智力的核心，缄默知识是通过大量的经验学到的，",
+    "trigger_signals": [
+      "如果你智商测试分数很高，请不要骄傲，因为你智力不一定高，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "问题识别、问题定义、问题表征、策略形成、资源配置、问题解决的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以批判（分析）性思维的方式分析这个问题。",
+    "activation_phrase": "请用批判（分析）性思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

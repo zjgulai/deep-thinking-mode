@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "垃圾桶模型",
+  "meta": {
+    "name": "垃圾桶模型",
+    "category": "05",
+    "tags": [],
+    "source": "最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, "
+  },
+  "engine": {
+    "core_question": "如何运用垃圾桶模型来解决问题？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以垃圾桶模型的方式分析这个问题。",
+    "activation_phrase": "请用垃圾桶模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "以结构性思维",
+  "meta": {
+    "name": "以结构性思维",
+    "category": "11",
+    "tags": [],
+    "source": "结构性思维：让思考和表达像搭积木一样有序省力 (王琳、朱文浩 编) (z-library.sk, 1"
+  },
+  "engine": {
+    "core_question": " 递进式是指论点之间有先后主次之分，而且这种划分也是按照步步深入即递进的关系来安排的",
+    "trigger_signals": [
+      "当地人民的收入和消费两方面都有了提升，小论点可以按照递进顺序，从某个个体的变化写到当地群体的变化，这样一来，全文的布局就形成了结合式。",
+      "如果把一页PPT看作一页纸，它一定包含页眉、页脚和主页面三个部分。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，《墨子·非攻》就是从“窃其桃李”—“攘人犬豕鸡豚”—“取人马牛”—“杀一人”—“杀百人”—“攻国”，由小到大，逐层发展和深入。 （三）结合式 这是并列式和递进式的结合。结合方式又分为两种，一种是大部分分论点之间呈递进（或并列）关系，其中少部分呈并列（或递进）关系；另一种是由于论述的问题较为复杂，分"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以以结构性思维的方式分析这个问题。",
+    "activation_phrase": "请用以结构性思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

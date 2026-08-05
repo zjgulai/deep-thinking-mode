@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "在网络效应",
+  "meta": {
+    "name": "在网络效应",
+    "category": "05",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk"
+  },
+  "engine": {
+    "core_question": "1970 年委内瑞拉是拉丁美洲首富，全球最富的 20 个国家之一",
+    "trigger_signals": [
+      "如果你想转行，之前的经验全部归零，重新学习新知识，",
+      "当时滴滴打车疯狂的进行补贴和扩张，",
+      "当认知凝滞达到一定的阈值, 就可能用旧地图去在新的领域航海，",
+      "当阀门发生泄漏时，它们会提高泄漏量标准值 —— 最高可达原始限额的20倍。",
+      "当蒸汽发电机管道大量开裂，导致出现放射性泄漏时，它们则会简化管道测试，使工厂能达到安全标准。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "委内瑞拉的经济危机——被资源诅咒的国家"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在网络效应的方式分析这个问题。",
+    "activation_phrase": "请用在网络效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

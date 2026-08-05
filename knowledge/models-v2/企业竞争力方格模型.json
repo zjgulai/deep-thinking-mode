@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "企业竞争力方格模型",
+  "meta": {
+    "name": "企业竞争力方格模型",
+    "category": "00",
+    "tags": [],
+    "source": "常用咨询方法、分析模型及案例分析"
+  },
+  "engine": {
+    "core_question": "       11.1          什么是 CSP............................................................................................. 115",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "分析..........................................................................136"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业竞争力方格模型的方式分析这个问题。",
+    "activation_phrase": "请用企业竞争力方格模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

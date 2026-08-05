@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "通常人们不会将-swot-分析法",
+  "meta": {
+    "name": "通常人们不会将 SWOT 分析法",
+    "category": "00",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 常用咨询方法、分析模型及案例分析; 最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "制定战略计划的基本思路是:",
+    "trigger_signals": [
+      "当你逐步领会 SWOT 分析法的时候，你会发现它有许多的局限性。",
+      "如果公司能够适当地生产产品和管理生产过程，则产品生产累积的每一个显着的增加，",
+      "当从现金牛身上挤出尽可能多的“奶”来，把现金牛业务的新投资限制在最必要的水平上，",
+      "当出售，另一些有可能转成明星业务。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "构造 SWOT 矩阵",
+        "action": "构造 SWOT 矩阵",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": ",企业需要进一步找到内部",
+        "action": ",企业需要进一步找到内部要素与外部",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "某汽车厂商想进入电动车领域,就可以收购一家行业内的电动车"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「通常人们不会将 SWOT 分析法」思维模式运行。\n\nStep 1 - 构造 SWOT 矩阵：构造 SWOT 矩阵\n\nStep 2 - ,企业需要进一步找到内部：,企业需要进一步找到内部要素与外部\n\n约束：按步骤推理，不跳过任何一步。常见误区: 避免市场上存在的威胁，往往更具有实用性; 陷阱，这里属于低度成长、低占有率的产品，它",
+    "activation_phrase": "请用通常人们不会将 SWOT 分析法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 2,
+    "prompt_effectiveness": 3,
+    "overall": 3
+  }
+}

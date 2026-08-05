@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "飞轮效应",
+  "meta": {
+    "name": "飞轮效应",
+    "category": "08",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 万物皆模型-100个思维模型; 思维模型 ( etc.) (z-library.sk, 1lib.sk, z-lib.sk); 思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳伦·麦肯，系统分类、; 能力提升-85个著名认知思维模型"
+  },
+  "engine": {
+    "core_question": "就是越不让他看，他就越想去看",
+    "trigger_signals": [
+      "如果你觉得禁果效应不错，愿意把它用好，",
+      "如果退出，前期巨大的投入会变得一文不值。",
+      "如果你所在的群体获利，那么另一群体必有损失，双方的损益之和为 零 。",
+      "如果没有误导、误解或胁迫，大多数交易根本不可能进行。",
+      "如果安排得当，就能提高双方顺利达成交易、找到双赢状态的可能性。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "人在江湖，身不由己。电影中很多黑道大哥，当初都是一个偶"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以飞轮效应的方式分析这个问题。",
+    "activation_phrase": "请用飞轮效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 2,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

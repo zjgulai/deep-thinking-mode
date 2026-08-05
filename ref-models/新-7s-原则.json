@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "新-7s-原则",
+  "meta": {
+    "name": "新 7S 原则",
+    "category": "07",
+    "tags": [],
+    "source": "营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "   新7S模型强调的是企业能否打破现状，抓住主动权和建立一系列暂时的优",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以新 7S 原则的方式分析这个问题。",
+    "activation_phrase": "请用新 7S 原则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

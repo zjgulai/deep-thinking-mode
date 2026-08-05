@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "优点与局限性",
+  "meta": {
+    "name": "优点与局限性",
+    "category": "00",
+    "tags": [],
+    "source": "最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, "
+  },
+  "engine": {
+    "core_question": "       11.1          什么是 CSP............................................................................................. 115",
+    "trigger_signals": [
+      "当修改便可用于大型和小型的、营利和非营利性的组织，",
+      "当第一象限公司过分偏重于某单一产品时，",
+      "如果企业缺乏独特的生产能力或竞争优势，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "分析..........................................................................136"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以优点与局限性的方式分析这个问题。",
+    "activation_phrase": "请用优点与局限性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

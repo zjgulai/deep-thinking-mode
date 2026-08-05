@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "网络效应",
+  "meta": {
+    "name": "网络效应",
+    "category": "05",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 万物皆模型-100个思维模型; 商业十二模型; 常用咨询方法、分析模型及案例分析; 思维模型 ( etc.) (z-library.sk, 1lib.sk, z-lib.sk); 思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳伦·麦肯，系统分类、; 能力提升-85个著名认知思维模型"
+  },
+  "engine": {
+    "core_question": "68 思维模型：承诺升级一坚持可能是错上加错.................................. 833",
+    "trigger_signals": [
+      "如果你还想了解更多，可以扫描二维码回复关键词“企业价值模型”了解更多。",
+      "如果你还想了解更多，可以扫描二维码回复关键词“企业生命周期”了解更多。",
+      "如果你还想了解更多，可以扫描二维码回复关键词“企业能量模型”了解更多。",
+      "如果你还想了解更多，可以扫描二维码回复关键词“创新利润模型”了解更多。",
+      "如果你还想了解更多，可以扫描二维码回复关键词“新零售模型”了解更多。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说专利、品牌和人力资本。耐克可以通过提供丰厚的薪酬"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以网络效应的方式分析这个问题。",
+    "activation_phrase": "请用网络效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

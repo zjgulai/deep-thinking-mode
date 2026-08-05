@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "id": "管理方法：",
+  "meta": {
+    "name": "管理方法：",
+    "category": "00",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk"
+  },
+  "engine": {
+    "core_question": "面对日益复杂的商业环境，战略制定的第一步，就是评估商业环境：",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "，就是评估商业环境：",
+        "action": "，就是评估商业环境：",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "富士康就是经典型战略，只要做好定位、扩大规模，做好管理，"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「管理方法：」思维模式运行。\n\nStep 1 - ，就是评估商业环境：：，就是评估商业环境：\n\n约束：按步骤推理，不跳过任何一步。",
+    "activation_phrase": "请用管理方法：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

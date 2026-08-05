@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "id": "奥卡姆剃刀定律",
+  "meta": {
+    "name": "奥卡姆剃刀定律",
+    "category": "05",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 思维模型 (彼得·霍林斯 (Peter Hollins)) (z-library.sk, 1lib."
+  },
+  "engine": {
+    "core_question": "策略＋人才是速度的驱动引擎，机会稍纵即逝，活下来的都是幸运儿，",
+    "trigger_signals": [
+      "如果你发现一个现象，需要去解释，解释需要不同的假设，",
+      "如果有某个条件是不能被我们检测和感知到的，",
+      "当中世纪神学盛行的时代，经院派哲学家，",
+      "当时很多人的威胁，被认为是异端邪说，",
+      "如果你只是记得一些孤立的事实，试图把它们硬凑起来，那你就无法真正理解任何东西。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "思… Ⅱ. ①彼… ②池",
+        "action": "思… Ⅱ. ①彼… ②池… Ⅲ. ①思维方法 Ⅳ. ①B804 中国版本图书馆 CIP 数据核字（2020）第104543号 Mental Models: 30 Thinking Tools that",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "打车软件兴起的时候，用户体验都差不多，谁能够最先达到“临界容量”，"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「奥卡姆剃刀定律」思维模式运行。\n\nStep 1 - 思… Ⅱ. ①彼… ②池：思… Ⅱ. ①彼… ②池… Ⅲ. ①思维方法 Ⅳ. ①B804 中国版本图书馆 CIP 数据核字（2020）第104543号 Mental Models: 30 Thinking Tools that\n\n约束：按步骤推理，不跳过任何一步。常见误区: 避免直接目标 思维模型20：避免专家思维模式 思维模型21：避免非天才区 思维模型22：避免待办事项清单 思维模型23：避免阻力最小的道路 本章要点 第五章 经典思维模型 思维模型24：墨菲定律 思维; 注意到，有些学生一味地死记硬背，以此来应付考试",
+    "activation_phrase": "请用奥卡姆剃刀定律分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

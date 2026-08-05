@@ -1,0 +1,79 @@
+{
+  "schema_version": "2.0.0",
+  "id": "波士顿矩阵",
+  "meta": {
+    "name": "波士顿矩阵",
+    "category": "00",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 像高手一样思维与行动（8册）（让你终生收益的思维模型，像高手一样思考，5个思维习惯，让你成为高价值创; 常用咨询方法、分析模型及案例分析; 思维力高效的系统思维 (王世民 [王世民]) (z-library.sk, 1lib.sk, z-l; 战略模型与工具; 最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 营销管理143个经典模型; 麦肯锡10个商业分析思维模型; 麦肯锡工作法（套装四册）（轻松职场系列） (高杉尚伊  齐藤显一  竹内里子  中村诚一  洛威茨); 麦肯锡思考工具（独家首发） () (z-library.sk, 1lib.sk, z-lib.sk)"
+  },
+  "engine": {
+    "core_question": "BCG 矩阵是根据有关产品或经营业务的市场增长率和相对市场占有率",
+    "trigger_signals": [
+      "当向量出现在进取象限时，说明该企业正处于一种绝佳的地位，",
+      "当向量出现在竞争象限时，表明企业应该采取竞争性战略，",
+      "当然在做决策的时候，不能光相信数据，",
+      "如果管理不当，企业内部的利益团体就会产生政治斗争，",
+      "当你在网上搜索“马斯洛金字塔”这一词语时，在0.7秒内能得到100万个不同的版本。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "将各数轴所有变量的评分相",
+        "action": "将各数轴所有变量的评分相加，再分别除以各数轴变量总数，",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "将 FS、CA、IS 和",
+        "action": "将 FS、CA、IS 和 ES 各自的平均值标在各自数轴上；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "将 X 轴上的两个分数相",
+        "action": "将 X 轴上的两个分数相加，将结果标在 X 轴上；将 Y 轴上的",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "在 QSPM 的左栏列出",
+        "action": "在 QSPM 的左栏列出公司的关键外部机会与威胁、内部优势",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "给每个外部及内部关键因素",
+        "action": "给每个外部及内部关键因素赋予权重。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "“读某本书”，而是正在进行的活动，比如“通过读X、Y和Z这些书来增加对科目‘A’的了解”。 平衡的生活是由大事、小事、我们需要做的事、我们想要做的事和我们不想做的事组成的。这些事物各自分开时不能成为全部现实生活的关键点，它们作为一个整体却必然是。"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「波士顿矩阵」思维模式运行。\n\nStep 1 - 将各数轴所有变量的评分相：将各数轴所有变量的评分相加，再分别除以各数轴变量总数，\n\nStep 2 - 将 FS、CA、IS 和：将 FS、CA、IS 和 ES 各自的平均值标在各自数轴上；\n\nStep 3 - 将 X 轴上的两个分数相：将 X 轴上的两个分数相加，将结果标在 X 轴上；将 Y 轴上的\n\nStep 4 - 在 QSPM 的左栏列出：在 QSPM 的左栏列出公司的关键外部机会与威胁、内部优势\n\nStep 5 - 给每个外部及内部关键因素：给每个外部及内部关键因素赋予权重。\n\n约束：按步骤推理，不跳过任何一步。常见误区: 避免外部威胁和减少内部弱点四个方面，通过专家; 注意力集中在一件特别的事情上，“平衡”是指将精力和注意力分配到几件事情上，两者都被视为“美德”; 注意，在这三个层面，不平衡的精力分配会产生“不稳定”的金字塔，一种优雅的说法是“不完整的生命”，糟糕的说法是“过早死亡”",
+    "activation_phrase": "请用波士顿矩阵分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 2,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

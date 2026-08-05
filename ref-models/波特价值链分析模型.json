@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "波特价值链分析模型",
+  "meta": {
+    "name": "波特价值链分析模型",
+    "category": "00",
+    "tags": [],
+    "source": "最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "    7.1          什么是波特行业竞争结构分析模",
+    "trigger_signals": [
+      "当企业作为一个整体的力量超过企业构成 要素 的简单相加时 ,  当企业系统与企业憧憬、追求 相一致 并被企业的适当目标所激励时 ,  就会产生 相对稳定 的企业竞争优势。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "面试分析工具/框架.......................................................................................... 9"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以波特价值链分析模型的方式分析这个问题。",
+    "activation_phrase": "请用波特价值链分析模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

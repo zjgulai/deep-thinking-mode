@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "id": "在运用-swot-分析法",
+  "meta": {
+    "name": "在运用 SWOT 分析法",
+    "category": "00",
+    "tags": [],
+    "source": "常用咨询方法、分析模型及案例分析; 最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "1、 确认当前的战略是什么",
+    "trigger_signals": [
+      "当企业内部劣势与企业外部威胁相遇时，",
+      "如果处理不当，可能直接威胁到企业的生死存亡。",
+      "当前企业发展的核心能力，同时具备了向相关专业延伸的基础和实力。",
+      "如果公司能够适当地生产产品和管理生产过程，则产品生产累积的每一个显着的增加，",
+      "当从现金牛身上挤出尽可能多的“奶”来，把现金牛业务的新投资限制在最必要的水平上，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "、 确认当前的战略是什么",
+        "action": "、 确认当前的战略是什么？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": " 优势－耐克是一家极具竞争力的公司，公司创立者与 CEO 菲尔•奈特（Phil Knight）最常提"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「在运用 SWOT 分析法」思维模式运行。\n\nStep 1 - 、 确认当前的战略是什么：、 确认当前的战略是什么？\n\n约束：按步骤推理，不跳过任何一步。常见误区: 避免市场上存在的威胁，往往更具有实用性; 陷阱，这里属于低度成长、低占有率的产品，它",
+    "activation_phrase": "请用在运用 SWOT 分析法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

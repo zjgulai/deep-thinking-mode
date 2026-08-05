@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "id": "高级-swot-分析法",
+  "meta": {
+    "name": "高级 SWOT 分析法",
+    "category": "00",
+    "tags": [],
+    "source": "最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "市场是瞬息万变的,企业都处在这一变化当中,所以任何静态的分析都",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "构造 SWOT 矩阵",
+        "action": "构造 SWOT 矩阵",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": ",企业需要进一步找到内部",
+        "action": ",企业需要进一步找到内部要素与外部",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一些美国高科技的公司,掌握着核心技术,一旦切断对中国企业供"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「高级 SWOT 分析法」思维模式运行。\n\nStep 1 - 构造 SWOT 矩阵：构造 SWOT 矩阵\n\nStep 2 - ,企业需要进一步找到内部：,企业需要进一步找到内部要素与外部\n\n约束：按步骤推理，不跳过任何一步。常见误区: 避免市场上存在的威胁，往往更具有实用性",
+    "activation_phrase": "请用高级 SWOT 分析法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 3,
+    "prompt_effectiveness": 3,
+    "overall": 3
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "5why-分析法",
+  "meta": {
+    "name": "5why 分析法",
+    "category": "07",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 思维力高效的系统思维 (王世民 [王世民]) (z-library.sk, 1lib.sk, z-l"
+  },
+  "engine": {
+    "core_question": "62 思维模型：群体领袖说服模型一领袖是如何说服别人的?............ 738",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以5why 分析法的方式分析这个问题。",
+    "activation_phrase": "请用5why 分析法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

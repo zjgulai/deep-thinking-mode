@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "frict-筹资分析法",
+  "meta": {
+    "name": "FRICT 筹资分析法",
+    "category": "07",
+    "tags": [],
+    "source": "营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "华信惠悦人力资本指数........................................................................................ 176",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以FRICT 筹资分析法的方式分析这个问题。",
+    "activation_phrase": "请用FRICT 筹资分析法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

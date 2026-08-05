@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "pest-模型",
+  "meta": {
+    "name": "PEST 模型",
+    "category": "00",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 《麦肯锡结构化战略思维》; 常用咨询方法、分析模型及案例分析; 思维力高效的系统思维 (王世民 [王世民]) (z-library.sk, 1lib.sk, z-l; 战略模型与工具; 最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 结构性思维：让思考和表达像搭积木一样有序省力 (王琳、朱文浩 编) (z-library.sk, 1; 营销管理143个经典模型; 麦肯锡10个商业分析思维模型; 麦肯锡思考工具（独家首发） () (z-library.sk, 1lib.sk, z-lib.sk); 麦肯锡结构化战略思维模型：如何想清楚-说明白-做到位（65页 PPT）"
+  },
+  "engine": {
+    "core_question": "      是指与产品生产有关的接收、存储和分配等各种价值活动",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以PEST 模型的方式分析这个问题。",
+    "activation_phrase": "请用PEST 模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

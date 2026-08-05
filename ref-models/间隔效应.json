@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "间隔效应",
+  "meta": {
+    "name": "间隔效应",
+    "category": "08",
+    "tags": [],
+    "source": "像高手一样思维与行动（8册）（让你终生收益的思维模型，像高手一样思考，5个思维习惯，让你成为高价值创; 思维模型 ( etc.) (z-library.sk, 1lib.sk, z-lib.sk); 思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳伦·麦肯，系统分类、"
+  },
+  "engine": {
+    "core_question": "讲给别人，生成你自己的理解和认知，非常重要，它是建立有力的编",
+    "trigger_signals": [
+      "如果没有经过整理，就会在脑海里飘荡，",
+      "如果你在学习的时候觉得累了就小睡一会儿，",
+      "如果正式竞聘开始的时候，你就可以匹配情景，",
+      "当我们谈论微学习的应用和实用性时，有大量的研究需要佐证。",
+      "当他在一定的时间间隔后重新复习曾经学过的内容时，遗忘的过程会减缓。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "模型思维学院的 100 个思维模型，你"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以间隔效应的方式分析这个问题。",
+    "activation_phrase": "请用间隔效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 2,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

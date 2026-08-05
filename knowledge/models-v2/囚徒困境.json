@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "囚徒困境",
+  "meta": {
+    "name": "囚徒困境",
+    "category": "01",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 万物皆模型-100个思维模型; 思维模型 ( etc.) (z-library.sk, 1lib.sk, z-lib.sk); 思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳伦·麦肯，系统分类、; 自我升级第一原理"
+  },
+  "engine": {
+    "core_question": "这种结果，难道是兄弟哥俩好，绝对不是，是残酷的市场竞争博弈所",
+    "trigger_signals": [
+      "当劳的地方就有肯德基，可见其竞争的激烈程度，",
+      "当                   子说然哉然哉。",
+      "如果将花在升级校园环境上的经费用于提升教学水平，或是其他直接影响教育质量和教育资源的领域，那该有多好。",
+      "如果你知道我们会送儿子参加工程学院夏令营，可能不会特别惊讶。",
+      "如果检察官能让一名囚徒揭发自己的同伙，另一名囚徒就能被判重罪。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "朝鲜的策略就是核武器，美国的策略就是经"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以囚徒困境的方式分析这个问题。",
+    "activation_phrase": "请用囚徒困境分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 2,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

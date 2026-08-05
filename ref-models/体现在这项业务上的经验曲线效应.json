@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "体现在这项业务上的经验曲线效应",
+  "meta": {
+    "name": "体现在这项业务上的经验曲线效应",
+    "category": "11",
+    "tags": [],
+    "source": "常用咨询方法、分析模型及案例分析; 最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "  如何选择问题型业务是用 BCG 矩阵制定战略的重中之重，也是难点，这关乎企",
+    "trigger_signals": [
+      "当取为 2，他认为“任何两个竞争者之间，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以体现在这项业务上的经验曲线效应的方式分析这个问题。",
+    "activation_phrase": "请用体现在这项业务上的经验曲线效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

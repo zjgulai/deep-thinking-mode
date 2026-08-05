@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0.0",
+  "id": "mece-原则",
+  "meta": {
+    "name": "MECE 原则",
+    "category": "08",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 《麦肯锡结构化战略思维》; 万物皆模型-100个思维模型; 思维力高效的系统思维 (王世民 [王世民]) (z-library.sk, 1lib.sk, z-l; 本书高清知识地图; 结构化思维 (黎甜) (z-library.sk, 1lib.sk, z-lib.sk); 能力提升-85个著名认知思维模型; 麦肯锡12个逻辑思考力方法模型; 麦肯锡工作法（套装四册）（轻松职场系列） (高杉尚伊  齐藤显一  竹内里子  中村诚一  洛威茨); 麦肯锡思考工具（独家首发） () (z-library.sk, 1lib.sk, z-lib.sk); 麦肯锡结构化战略思维模型：如何想清楚-说明白-做到位（65页 PPT）"
+  },
+  "engine": {
+    "core_question": "其实，食材之间的一些差距，通过加工方式是可以弥补的；而很多时",
+    "trigger_signals": [
+      "如果将条目分组，建立一定的逻辑关系，",
+      "当信息都罗列出来之后需要对这些信息进行归类分组，",
+      "当的想法,让我们更加接近真理与真某相。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "明确问题或主题，掌握 S",
+        "action": "明确问题或主题，掌握 SCQA。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，古希腊人向星空眺望时，看到的不是散乱的星辰，而是"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「MECE 原则」思维模式运行。\n\nStep 1 - 明确问题或主题，掌握 S：明确问题或主题，掌握 SCQA。\n\n约束：按步骤推理，不跳过任何一步。常见误区: 注意三个方面:首先要结论先行;其      要传达的东西,在进行思考和表达的时候,一定要遵循大脑             每一个支持论据都要严格按照 MECE 的法则,也就是相           是",
+    "activation_phrase": "请用MECE 原则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

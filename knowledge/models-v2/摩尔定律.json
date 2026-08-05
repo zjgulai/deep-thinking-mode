@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "id": "摩尔定律",
+  "meta": {
+    "name": "摩尔定律",
+    "category": "03",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 常用咨询方法、分析模型及案例分析"
+  },
+  "engine": {
+    "core_question": "要从四个方面考虑，一是价值空间大，二是转换成本低，三是能快速",
+    "trigger_signals": [
+      "如果不能洞察趋势，顺势而为，就很难成功。",
+      "如果你不能够把握生态系统的律动，趋势的风声，时间的敏感，",
+      "当陡峭的，双倍斜率数据是在 25%-63%之间(见表)，",
+      "当全球乙烯产量再次翻倍时，乙烯的固定成本将下降 23%。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "基于标准进行路径选择",
+        "action": "基于标准进行路径选择",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "汽车销售商引入银行，为客户提供贷款服务，大大促进了汽车销售。"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「摩尔定律」思维模式运行。\n\nStep 1 - 基于标准进行路径选择：基于标准进行路径选择\n\n约束：按步骤推理，不跳过任何一步。",
+    "activation_phrase": "请用摩尔定律分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

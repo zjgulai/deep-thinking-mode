@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0.0",
+  "id": "矩阵数据分析法",
+  "meta": {
+    "name": "矩阵数据分析法",
+    "category": "02",
+    "tags": [],
+    "source": "最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, "
+  },
+  "engine": {
+    "core_question": "而物业管理服务过程中，人为疏忽、沟通问题往往是引起客户投诉的要因",
+    "trigger_signals": [
+      "当矩阵途中各对应因素之间的关系能够定量表示时，",
+      "如果自己有新构想，应立即写在备用的卡片上，并把它放在桌子上。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "，他注意听科员间的谈话，",
+        "action": "，他注意听科员间的谈话，并把有关工作中问题的片言只语分别记到卡片上，每个卡片",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "，将这些卡片中同类内容的",
+        "action": "，将这些卡片中同类内容的卡片编成组。例如：",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "，将各组卡片暗示出来的对",
+        "action": "，将各组卡片暗示出来的对策加以归纳集中，就能进一步抓住更潜在的关键性问题。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，因为每个季节业务高峰的时间区域都不一样，所以弄明白了需要修改倒班制度，或者是根"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「矩阵数据分析法」思维模式运行。\n\nStep 1 - ，他注意听科员间的谈话，：，他注意听科员间的谈话，并把有关工作中问题的片言只语分别记到卡片上，每个卡片\n\nStep 2 - ，将这些卡片中同类内容的：，将这些卡片中同类内容的卡片编成组。例如：\n\nStep 3 - ，将各组卡片暗示出来的对：，将各组卡片暗示出来的对策加以归纳集中，就能进一步抓住更潜在的关键性问题。\n\n约束：按步骤推理，不跳过任何一步。常见误区: 不要轻易放弃已有的想法，而应加以分解，使之资料化; 注意听科员间的谈话，并把有关工作中问题的片言只语分别记到卡片上，每个卡片",
+    "activation_phrase": "请用矩阵数据分析法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 1,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

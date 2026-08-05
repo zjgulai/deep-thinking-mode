@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "经验曲线是由学习、分工、投资和规模的综合效应",
+  "meta": {
+    "name": "经验曲线是由学习、分工、投资和规模的综合效应",
+    "category": "11",
+    "tags": [],
+    "source": "常用咨询方法、分析模型及案例分析; 最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "度，因为这时公司必须慎重回答“是否继续投资，发展该业务",
+    "trigger_signals": [
+      "当取为 2，他认为“任何两个竞争者之间，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以经验曲线是由学习、分工、投资和规模的综合效应的方式分析这个问题。",
+    "activation_phrase": "请用经验曲线是由学习、分工、投资和规模的综合效应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

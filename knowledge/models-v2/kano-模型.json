@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "kano-模型",
+  "meta": {
+    "name": "KANO 模型",
+    "category": "06",
+    "tags": [],
+    "source": "最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, "
+  },
+  "engine": {
+    "core_question": "  3) 胜任性(competence)：服务人员是否拥有执行服务专业知识和技巧",
+    "trigger_signals": [
+      "当其特性不充足时，并且是无关紧要的特性，则顾客无所谓，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以KANO 模型的方式分析这个问题。",
+    "activation_phrase": "请用KANO 模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

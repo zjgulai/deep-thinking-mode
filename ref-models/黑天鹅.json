@@ -1,0 +1,79 @@
+{
+  "schema_version": "2.0.0",
+  "id": "黑天鹅",
+  "meta": {
+    "name": "黑天鹅",
+    "category": "08",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk; 《麦肯锡结构化战略思维》; 万物皆模型-100个思维模型; 思维模型 ( etc.) (z-library.sk, 1lib.sk, z-lib.sk); 思维模型 (彼得·霍林斯 (Peter Hollins)) (z-library.sk, 1lib.; 思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳伦·麦肯，系统分类、; 结构化思维 (黎甜) (z-library.sk, 1lib.sk, z-lib.sk); 结构性思维：让思考和表达像搭积木一样有序省力 (王琳、朱文浩 编) (z-library.sk, 1; 能力提升-85个著名认知思维模型"
+  },
+  "engine": {
+    "core_question": "适合职业是：天文学家、生物学家、地质学家、",
+    "trigger_signals": [
+      "当地的医生，家里希望他将来继承祖业。",
+      "当然地接受，而是通过执着研究做出了伟大贡献。",
+      "如果新承包商最后搞砸了，你不得不雇旧承包商在短时间内重做大部分工程，这将让你多付出价值1000美元的担忧和麻烦，以及付给旧承包商的额外费用。",
+      "当于2000美元的额外费用，从而使总金额增加到5000美元。",
+      "如果你这么做了，结论就会是做出相反的决策——选择常用的旧承包商（下图决策树中的承包商2）。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "多去博物馆认识更多的自然",
+        "action": "多去博物馆认识更多的自然界生物。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "多去动物园和植物园，了解",
+        "action": "多去动物园和植物园，了解它们的习性和历史。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "多接触大自然、多观察和思",
+        "action": "多接触大自然、多观察和思考。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "多去探险，探索未知的世界",
+        "action": "多去探险，探索未知的世界。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "思… Ⅱ. ①彼… ②池",
+        "action": "思… Ⅱ. ①彼… ②池… Ⅲ. ①思维方法 Ⅳ. ①B804 中国版本图书馆 CIP 数据核字（2020）第104543号 Mental Models: 30 Thinking Tools that",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "莫扎特专注于音乐智能，爱因斯坦聚焦于数理智能和空间智能，他们"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「黑天鹅」思维模式运行。\n\nStep 1 - 多去博物馆认识更多的自然：多去博物馆认识更多的自然界生物。\n\nStep 2 - 多去动物园和植物园，了解：多去动物园和植物园，了解它们的习性和历史。\n\nStep 3 - 多接触大自然、多观察和思：多接触大自然、多观察和思考。\n\nStep 4 - 多去探险，探索未知的世界：多去探险，探索未知的世界。\n\nStep 5 - 思… Ⅱ. ①彼… ②池：思… Ⅱ. ①彼… ②池… Ⅲ. ①思维方法 Ⅳ. ①B804 中国版本图书馆 CIP 数据核字（2020）第104543号 Mental Models: 30 Thinking Tools that\n\n约束：按步骤推理，不跳过任何一步。常见误区: 注意，你还是很难做出二选一的决策，因为现在两个承包商的预期值几乎相等！这就体现了概率结果的重要性; 注意，答案并不是显而易见的，因为购买自付额低的保险，你每月支付的保费会更高; 避免选择这个方案，即使平均来看这个方案更省钱",
+    "activation_phrase": "请用黑天鹅分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 3,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

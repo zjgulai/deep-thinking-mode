@@ -8,6 +8,8 @@
     "build": "node tools/build-site.mjs"
   },
   "dependencies": {
-    "markdown-it": "14.3.0"
+    "epub2": "^3.0.2",
+    "markdown-it": "14.3.0",
+    "pdf-parse": "^2.4.5"
   }
 }

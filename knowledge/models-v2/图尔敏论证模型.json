@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "图尔敏论证模型",
+  "meta": {
+    "name": "图尔敏论证模型",
+    "category": "02",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk"
+  },
+  "engine": {
+    "core_question": "68 思维模型：承诺升级一坚持可能是错上加错.................................. 833",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以图尔敏论证模型的方式分析这个问题。",
+    "activation_phrase": "请用图尔敏论证模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

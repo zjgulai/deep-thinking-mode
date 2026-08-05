@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "《模型思维",
+  "meta": {
+    "name": "《模型思维",
+    "category": "07",
+    "tags": [],
+    "source": "100+思维模型合集 (模型思维) (z-library.sk, 1lib.sk, z-lib.sk"
+  },
+  "engine": {
+    "core_question": "是来享乐的,除非玩乐深植于意义之中”",
+    "trigger_signals": [
+      "当她这样说时，只有 60％的人答应了她的请求。",
+      "如果我们了解人类自动化行为的触发开关，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以《模型思维的方式分析这个问题。",
+    "activation_phrase": "请用《模型思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

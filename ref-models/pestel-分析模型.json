@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "pestel-分析模型",
+  "meta": {
+    "name": "PESTEL 分析模型",
+    "category": "00",
+    "tags": [],
+    "source": "常用咨询方法、分析模型及案例分析; 最全的理论工具，思维模型：100个工具 (mba) (z-library.sk, 1lib.sk, ; 营销管理143个经典模型"
+  },
+  "engine": {
+    "core_question": "    3.1     什么是 PESTEL 分析模型?......................................................................19",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "分析 .............................................................................7"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以PESTEL 分析模型的方式分析这个问题。",
+    "activation_phrase": "请用PESTEL 分析模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 3,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}
