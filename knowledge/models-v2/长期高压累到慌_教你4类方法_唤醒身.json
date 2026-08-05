@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "长期高压累到慌_教你4类方法_唤醒身",
+  "meta": {
+    "name": "长期高压累到慌_教你4类方法_唤醒身",
+    "category": "10",
+    "tags": [],
+    "source": "长期高压累到慌_教你4类方法_唤醒身体的_放松开关_.md"
+  },
+  "engine": {
+    "core_question": "核心是通过简单练习，唤醒身体的放松反应，让交感神经和副交感神经恢复平衡，学会主动从高压状态中抽离，找回身心松弛感",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以长期高压累到慌_教你4类方法_唤醒身的方式思考。",
+    "activation_phrase": "请用长期高压累到慌_教你4类方法_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

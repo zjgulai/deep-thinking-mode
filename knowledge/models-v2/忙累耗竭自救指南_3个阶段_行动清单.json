@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "忙累耗竭自救指南_3个阶段_行动清单",
+  "meta": {
+    "name": "忙累耗竭自救指南_3个阶段_行动清单",
+    "category": "07",
+    "tags": [],
+    "source": "忙累耗竭自救指南_3个阶段_行动清单_科学修复身心透支.md"
+  },
+  "engine": {
+    "core_question": "能量透支，并非自我缺陷。它的恢复逻辑与抑郁症完全不同：无需对抗情绪、强行振作，核心是停止消耗、补充能量",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以忙累耗竭自救指南_3个阶段_行动清单的方式思考。",
+    "activation_phrase": "请用忙累耗竭自救指南_3个阶段_行分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

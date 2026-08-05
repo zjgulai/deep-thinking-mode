@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1-.-认知解离技巧",
+  "meta": {
+    "name": "1\\. 认知解离技巧",
+    "category": "07",
+    "tags": [],
+    "source": "穷思竭虑的心理学解读.md"
+  },
+  "engine": {
+    "core_question": "穷思竭虑的心理学解读  🔍 穷思竭虑的心理学解读 -------------  “穷思竭虑”在心理学上接近“反刍思维”——一种持续、重复地思考同一问题的心理模式。这种状态有几个鲜明特征：  *   **思维闭环**：想法在同一主题上不断循环，像唱片跳针一样重复      *   **认知粘连**：",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1\\. 认知解离技巧的方式思考。",
+    "activation_phrase": "请用1\\. 认知解离技巧分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

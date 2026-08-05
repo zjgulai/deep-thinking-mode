@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0.0",
+  "id": "第一性原理_看透本质_高效破局的底层",
+  "meta": {
+    "name": "第一性原理_看透本质_高效破局的底层",
+    "category": "04",
+    "tags": [],
+    "source": "第一性原理_看透本质_高效破局的底层思维框架.md"
+  },
+  "engine": {
+    "core_question": "核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "质疑拆解",
+        "action": "打破固有假设",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "拆至本质",
+        "action": "提炼核心元素",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "重构方案",
+        "action": "搭建全新路径",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "日常训练（每天5分钟",
+        "action": "日常训练（每天5分钟）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "工作应用（四步框架）",
+        "action": "工作应用（四步框架）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「第一性原理_看透本质_高」思维模式运行。\n\nStep 1 - 质疑拆解：打破固有假设\n\nStep 2 - 拆至本质：提炼核心元素\n\nStep 3 - 重构方案：搭建全新路径\n\nStep 4 - 日常训练（每天5分钟：日常训练（每天5分钟）\n\nStep 5 - 工作应用（四步框架）：工作应用（四步框架）\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用第一性原理_看透本质_高效破局分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

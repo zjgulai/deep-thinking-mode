@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "苏格拉底式提问实操指南_层层追问_直",
+  "meta": {
+    "name": "苏格拉底式提问实操指南_层层追问_直",
+    "category": "04",
+    "tags": [],
+    "source": "苏格拉底式提问实操指南_层层追问_直达第一性原理.md"
+  },
+  "engine": {
+    "core_question": "此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以苏格拉底式提问实操指南_层层追问_直的方式思考。",
+    "activation_phrase": "请用苏格拉底式提问实操指南_层层追分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

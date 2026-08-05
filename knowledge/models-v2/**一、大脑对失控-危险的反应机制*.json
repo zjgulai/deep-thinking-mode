@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**一、大脑对失控-危险的反应机制*",
+  "meta": {
+    "name": "**一、大脑对失控/危险的反应机制*",
+    "category": "07",
+    "tags": [],
+    "source": "_无能感_产生的心理防御机制.md"
+  },
+  "engine": {
+    "core_question": "“无能感”产生的心理防御机制  ### **一、大脑对失控/危险的反应机制**  大脑将“失控”（如失败、被拒）直接解读为 **“生存危险”** ，并启动一套精密的应急程序：  1.  **触发：预测失灵**       *   当现实（失败、失业）与核心预期（成功、稳定）严重背离，大脑的“预测模型",
+    "trigger_signals": [
+      "*   当现实（失败、失业）与核心预期（成功、稳定）严重背离，大脑的“预测模型”失效，这触发了最底层的生存警报。",
+      "*警报：杏仁核劫持**",
+      "大脑的警报中心**杏仁核**被强烈激活，它向身体发出“红色警报”。",
+      "压力激素（皮质醇、肾上腺素）大量分泌，身体进入“战斗-逃跑-僵住”的应激状态。",
+      "*模式切换：理性离线**"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**代价",
+        "action": "饮鸩止渴**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「**一、大脑对失控/危险」思维模式运行。\n\nStep 1 - **代价：饮鸩止渴**\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用**一、大脑对失控/危险的反应分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

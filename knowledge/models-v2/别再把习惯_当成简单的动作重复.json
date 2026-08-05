@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "别再把习惯_当成简单的动作重复",
+  "meta": {
+    "name": "别再把习惯_当成简单的动作重复",
+    "category": "07",
+    "tags": [],
+    "source": "别再把习惯_当成简单的动作重复.md"
+  },
+  "engine": {
+    "core_question": "在无意识地追逐它带来的情绪慰藉、心理满足与状态平衡",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以别再把习惯_当成简单的动作重复的方式思考。",
+    "activation_phrase": "请用别再把习惯_当成简单的动作重复分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

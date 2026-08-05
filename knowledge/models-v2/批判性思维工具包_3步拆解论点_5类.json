@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "批判性思维工具包_3步拆解论点_5类",
+  "meta": {
+    "name": "批判性思维工具包_3步拆解论点_5类",
+    "category": "02",
+    "tags": [],
+    "source": "批判性思维工具包_3步拆解论点_5类逻辑谬误_4项日常练习.md"
+  },
+  "engine": {
+    "core_question": "求真校验，不是抬杠挑剔。无差别质疑一切，会陷入“分析瘫痪”、丧失行动力；习惯性纠错，会消耗人际关系",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以批判性思维工具包_3步拆解论点_5类的方式思考。",
+    "activation_phrase": "请用批判性思维工具包_3步拆解论点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

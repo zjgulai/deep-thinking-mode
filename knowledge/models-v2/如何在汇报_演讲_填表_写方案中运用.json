@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "如何在汇报_演讲_填表_写方案中运用",
+  "meta": {
+    "name": "如何在汇报_演讲_填表_写方案中运用",
+    "category": "02",
+    "tags": [],
+    "source": "如何在汇报_演讲_填表_写方案中运用_是什么_为什么_怎么做_作用价值_的逻辑框架_.md"
+  },
+  "engine": {
+    "core_question": "如何在汇报、演讲、填表、写方案中运用“是什么→为什么→怎么做→作用价值”的逻辑框架？  超清晰学习文章：   是什么→为什么→怎么做→作用价值   —— 在汇报、演讲、填表、写方案中的通用运用方法   一、框架定义（最精简、最好记）   是什么： 我要表达的核心观点 / 结论 / 判断（一句话讲清）",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以如何在汇报_演讲_填表_写方案中运用的方式思考。",
+    "activation_phrase": "请用如何在汇报_演讲_填表_写方案分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

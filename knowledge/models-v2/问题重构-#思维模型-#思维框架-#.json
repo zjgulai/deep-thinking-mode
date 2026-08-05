@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构-#思维模型-#思维框架-#",
+  "meta": {
+    "name": "问题重构 #思维模型 #思维框架 #",
+    "category": "02",
+    "tags": [],
+    "source": "问题重构的10种实战方法.md"
+  },
+  "engine": {
+    "core_question": "核心是解决问题前，先明确“该解决的真正问题”，避免方向偏差，是一套可直接套用的实用思维方法",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "秒”可重构为“让用户",
+        "action": "秒”可重构为“让用户不觉得加载慢”，通过加载动画、文字骨架实现。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「问题重构 #思维模型 #」思维模式运行。\n\nStep 1 - 秒”可重构为“让用户：秒”可重构为“让用户不觉得加载慢”，通过加载动画、文字骨架实现。\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用问题重构 #思维模型 #思维框分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

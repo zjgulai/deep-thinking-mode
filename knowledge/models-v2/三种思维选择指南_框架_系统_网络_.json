@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "三种思维选择指南_框架_系统_网络_",
+  "meta": {
+    "name": "三种思维选择指南_框架_系统_网络_",
+    "category": "07",
+    "tags": [],
+    "source": "三种思维选择指南_框架_系统_网络_什么时候用哪个_.md"
+  },
+  "engine": {
+    "core_question": "三种思维选择指南：框架、系统、网络，什么时候用哪个？  框架、系统、网络三种思维无高低优劣，仅存在场景适配与错配。高手从不固化单一思维，而是按需灵活选用。很多高阶思维看似高级却毫无效果、拖累效率，核心原因只有一个：用错了场景。  本文是一套极简可落地的思维选型手册，依托场景、职场层级、问题类型精准匹",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以三种思维选择指南_框架_系统_网络_的方式思考。",
+    "activation_phrase": "请用三种思维选择指南_框架_系统_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

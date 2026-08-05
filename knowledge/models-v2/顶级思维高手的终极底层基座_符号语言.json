@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "顶级思维高手的终极底层基座_符号语言",
+  "meta": {
+    "name": "顶级思维高手的终极底层基座_符号语言",
+    "category": "02",
+    "tags": [],
+    "source": "顶级思维高手的终极底层基座_符号语言_认知心理_神经生理三大学科本体全体系精讲_.md"
+  },
+  "engine": {
+    "core_question": "• 任意性：符号形式与意义无天然必然联系，完全依靠人类社会约定俗成",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以顶级思维高手的终极底层基座_符号语言的方式思考。",
+    "activation_phrase": "请用顶级思维高手的终极底层基座_符分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

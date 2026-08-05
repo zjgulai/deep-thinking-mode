@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1.-**心理过程",
+  "meta": {
+    "name": "1. **心理过程",
+    "category": "06",
+    "tags": [],
+    "source": "冲动的本质.md"
+  },
+  "engine": {
+    "core_question": "### 1. **心理过程：认知捷径与情绪驱动**  冲动的决策绕过了大脑中负责深度分析和长远规划的“高速公路”，转而走上了一条“情绪捷径”。  *   **快思系统主导**：心理学家丹尼尔·卡尼曼提出的“双系统理论”中，系统一（快思、直觉、情绪化）完全压制了系统二（慢想、理性、分析）。在冲动状态下",
+    "trigger_signals": [
+      "**“刹车”：前额叶皮层（特别是背外侧前额叶和腹内侧前额叶）**：",
+      "这是大脑的“指挥中心”，负责执行功能，包括：**预见后果、权衡利弊、制定计划、抑制不当反应**。",
+      "**冲动的发生**：当情绪刺激足够强烈，或前额叶皮层功能因压力、疲劳、成瘾物质、年龄（如青少年发育未完全）而暂时或长期减弱时，“油门”的力量就会压倒“刹车”。个体就无法有效地克制当下的渴望，即使知道长"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**神经生物学基础",
+        "action": "大脑的“油门”与“刹车”失衡**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「1. **心理过程」思维模式运行。\n\nStep 1 - **神经生物学基础：大脑的“油门”与“刹车”失衡**\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用1. **心理过程分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

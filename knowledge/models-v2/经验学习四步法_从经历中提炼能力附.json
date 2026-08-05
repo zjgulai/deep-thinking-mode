@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "经验学习四步法_从经历中提炼能力附",
+  "meta": {
+    "name": "经验学习四步法_从经历中提炼能力（附",
+    "category": "08",
+    "tags": [],
+    "source": "经验学习四步法_从经历中提炼能力（附复盘问题清单）.md"
+  },
+  "engine": {
+    "core_question": "或哪个表情，让我产生了强烈的反应？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以经验学习四步法_从经历中提炼能力（附的方式思考。",
+    "activation_phrase": "请用经验学习四步法_从经历中提炼能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

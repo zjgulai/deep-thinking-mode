@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "形式逻辑等价关系篇_一张图秒杀_为什",
+  "meta": {
+    "name": "形式逻辑等价关系篇_一张图秒杀_为什",
+    "category": "02",
+    "tags": [],
+    "source": "形式逻辑等价关系篇_一张图秒杀_为什么_如果P则Q___非P或Q__.md"
+  },
+  "engine": {
+    "core_question": "本质是「禁区一致」  \n  \n逻辑等价的唯一标准：  \n两个句子，允许的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以形式逻辑等价关系篇_一张图秒杀_为什的方式思考。",
+    "activation_phrase": "请用形式逻辑等价关系篇_一张图秒杀分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

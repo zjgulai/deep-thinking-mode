@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "10大闭环思维模型_认知建构_问题拆",
+  "meta": {
+    "name": "10大闭环思维模型_认知建构_问题拆",
+    "category": "11",
+    "tags": [],
+    "source": "10大闭环思维模型_认知建构_问题拆分_深度追问_一套完整的高阶思考系统.md"
+  },
+  "engine": {
+    "core_question": "非线性的。系统思维能看清因果的时间差与双向影响，规避浅层补救，实现根源性解决",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以10大闭环思维模型_认知建构_问题拆的方式思考。",
+    "activation_phrase": "请用10大闭环思维模型_认知建构_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

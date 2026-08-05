@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "重大决策七步自检清单_避开7个认知陷",
+  "meta": {
+    "name": "重大决策七步自检清单_避开7个认知陷",
+    "category": "06",
+    "tags": [],
+    "source": "重大决策七步自检清单_避开7个认知陷阱_不踩坑.md"
+  },
+  "engine": {
+    "core_question": "重大决策七步自检清单：避开7个认知陷阱，不踩坑  这套基于认知心理学设计的「重大决策七步自检清单」，可不是帮你“速战速决”的，而是在你要签字、投资、跳槽，甚至忍不住要吵架的关键时刻，拉你一把、泼盆冷水——帮你跳出认知误区，别被冲动带偏，少走点弯路，让每一个选择都不后悔～  第一步：机会成本检查清单（",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以重大决策七步自检清单_避开7个认知陷的方式思考。",
+    "activation_phrase": "请用重大决策七步自检清单_避开7个分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

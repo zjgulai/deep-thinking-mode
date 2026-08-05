@@ -5,17 +5,17 @@
     "name": "运动后为什么会发晕",
     "category": "05",
     "tags": [],
-    "source": "运动后为什么会发晕"
+    "source": "运动后为什么会发晕.md"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？运动后为什么会发晕如何找到它？",
+    "core_question": "运动后为什么会发晕  当您进行跑步、跳绳、长时间有氧运动后，或者在运动后突然停止时，更容易出现头晕加重。  核心原因：心血管系统调节失衡  体位性低血压（最主要原因）： --------------  *   过程：运动中，您的心率很快，腿部肌肉通过收缩挤压血管，像一个“泵”一样帮助血液回流到心脏。",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {
       "structure": "",
-      "example": "，快跑后变为慢跑再变为快走；力量训练后慢走和拉伸。这能给心血管系统"
+      "example": ""
     }
   },
   "codex": {
@@ -24,9 +24,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
-    "prompt_effectiveness": 1,
+    "prompt_effectiveness": 2,
     "overall": 2
   }
 }

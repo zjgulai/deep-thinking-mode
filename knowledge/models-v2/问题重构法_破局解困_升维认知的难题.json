@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构法_破局解困_升维认知的难题",
+  "meta": {
+    "name": "问题重构法_破局解困_升维认知的难题",
+    "category": "03",
+    "tags": [],
+    "source": "问题重构法_破局解困_升维认知的难题破解框架.md"
+  },
+  "engine": {
+    "core_question": "问题重构法：破局解困、升维认知的难题破解框架  工作与生活中，我们常常陷入解题困境：对着棘手难题反复尝试却收效甚微，团队争论不休却始终方向跑偏，好不容易解决表面症状，核心病根却依旧反复。究其根本，并非能力不足，而是被困在固有问题认知框架中，用错误视角定义问题，自然找不到真正的破局之路。  问题重构，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题重构法_破局解困_升维认知的难题的方式思考。",
+    "activation_phrase": "请用问题重构法_破局解困_升维认知分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

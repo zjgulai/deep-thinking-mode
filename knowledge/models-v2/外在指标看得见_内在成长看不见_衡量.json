@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "外在指标看得见_内在成长看不见_衡量",
+  "meta": {
+    "name": "外在指标看得见_内在成长看不见_衡量",
+    "category": "10",
+    "tags": [],
+    "source": "外在指标看得见_内在成长看不见_衡量自我进化的核心内在标尺.md"
+  },
+  "engine": {
+    "core_question": "外在指标看得见，内在成长看不见：衡量自我进化的核心内在标尺  我们从小被训练用明确的、可量化的外在指标来衡量进步：分数高低、职位层级、收入多少。而内心的成长，如情绪稳定性、处理复杂问题的耐心、打破固有模式的勇气等，全是模糊的内在指标。  内在成长因其“不可见”而常被忽略，但它才是决定我们生命质量的核",
+    "trigger_signals": [
+      "---------",
+      "--------",
+      "------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以外在指标看得见_内在成长看不见_衡量的方式思考。",
+    "activation_phrase": "请用外在指标看得见_内在成长看不见分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

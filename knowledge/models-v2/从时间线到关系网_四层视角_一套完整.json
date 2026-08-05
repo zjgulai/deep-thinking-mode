@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "从时间线到关系网_四层视角_一套完整",
+  "meta": {
+    "name": "从时间线到关系网_四层视角_一套完整",
+    "category": "10",
+    "tags": [],
+    "source": "从时间线到关系网_四层视角_一套完整的多维度思考框架.md"
+  },
+  "engine": {
+    "core_question": "资源、成长、人际关系，还是利益博弈问题？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以从时间线到关系网_四层视角_一套完整的方式思考。",
+    "activation_phrase": "请用从时间线到关系网_四层视角_一分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

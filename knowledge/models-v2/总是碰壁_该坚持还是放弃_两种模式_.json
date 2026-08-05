@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "总是碰壁_该坚持还是放弃_两种模式_",
+  "meta": {
+    "name": "总是碰壁_该坚持还是放弃_两种模式_",
+    "category": "07",
+    "tags": [],
+    "source": "总是碰壁_该坚持还是放弃_两种模式_决定你的人生走向.md"
+  },
+  "engine": {
+    "core_question": "模式A：负反馈 → 难受 → 行动停滞",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以总是碰壁_该坚持还是放弃_两种模式_的方式思考。",
+    "activation_phrase": "请用总是碰壁_该坚持还是放弃_两种分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

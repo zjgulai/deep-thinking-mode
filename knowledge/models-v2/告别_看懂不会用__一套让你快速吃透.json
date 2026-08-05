@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "告别_看懂不会用__一套让你快速吃透",
+  "meta": {
+    "name": "告别_看懂不会用__一套让你快速吃透",
+    "category": "08",
+    "tags": [],
+    "source": "告别_看懂不会用__一套让你快速吃透陌生知识_做好刚质量输出的认知闭环方法论_.md"
+  },
+  "engine": {
+    "core_question": "5步构建认知与能力的正向循环",
+    "trigger_signals": [
+      "转化-输出-优化”的闭环能力，导致知识无法转化为业绩，努力难以被看见。",
+      "应用-优化”的正向循环。",
+      "输出-迭代完整闭环方法论。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以告别_看懂不会用__一套让你快速吃透的方式思考。",
+    "activation_phrase": "请用告别_看懂不会用__一套让你快分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

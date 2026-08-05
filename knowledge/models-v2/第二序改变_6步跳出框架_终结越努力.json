@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "第二序改变_6步跳出框架_终结越努力",
+  "meta": {
+    "name": "第二序改变_6步跳出框架_终结越努力",
+    "category": "07",
+    "tags": [],
+    "source": "第二序改变_6步跳出框架_终结越努力越失败的循环.md"
+  },
+  "engine": {
+    "core_question": "：在梦里拼命跑，不如直接醒来。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第二序改变_6步跳出框架_终结越努力的方式思考。",
+    "activation_phrase": "请用第二序改变_6步跳出框架_终结分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

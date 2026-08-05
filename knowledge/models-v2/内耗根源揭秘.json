@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "内耗根源揭秘",
+  "meta": {
+    "name": "内耗根源揭秘",
+    "category": "10",
+    "tags": [],
+    "source": "内耗根源_DMN四大功能卡在循环模式.md"
+  },
+  "engine": {
+    "core_question": "内耗根源：DMN四大功能卡在循环模式  #内耗根源揭秘      [内耗管理系统 · 解释模块 · 为什么你“想休息”却停不下来？](https://mp.weixin.qq.com/s?__biz=MzUzNjEzOTgwOQ==&mid=2247484132&idx=1&sn=475939e82",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以内耗根源揭秘的方式思考。",
+    "activation_phrase": "请用内耗根源揭秘分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

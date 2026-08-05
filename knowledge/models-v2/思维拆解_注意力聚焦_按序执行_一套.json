@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "思维拆解_注意力聚焦_按序执行_一套",
+  "meta": {
+    "name": "思维拆解_注意力聚焦_按序执行_一套",
+    "category": "09",
+    "tags": [],
+    "source": "思维拆解_注意力聚焦_按序执行_一套完整的问题解决认知体系.md"
+  },
+  "engine": {
+    "core_question": "思维拆解、注意力聚焦、按序执行：一套完整的问题解决认知体系  高效破解各类复杂问题，依靠三套核心认知能力：分析性思维（思维拆解）、聚焦式注意（注意力聚焦）、序列处理（按序执行）。三者分工明确、闭环联动，共同构成一套完整、可落地的问题解决认知体系。本文将逐一讲解各项能力的核心定义、关键特征、适用场景，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以思维拆解_注意力聚焦_按序执行_一套的方式思考。",
+    "activation_phrase": "请用思维拆解_注意力聚焦_按序执行分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

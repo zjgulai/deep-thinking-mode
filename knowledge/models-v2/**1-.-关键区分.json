@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**1-.-关键区分",
+  "meta": {
+    "name": "**1\\. 关键区分",
+    "category": "10",
+    "tags": [],
+    "source": "是你如何抉择造成了拖延_而非推迟行为本身造成了拖延.md"
+  },
+  "engine": {
+    "core_question": "是你如何抉择造成了拖延，而非推迟行为本身造成了拖延  **拖延是你每个当下“选择”逃避不适的累积结果，而不是日历上那些被推迟的日期本身**。  我们可以从以下几个层面来理解：  * * *  ### **1\\. 关键区分：“战略性推迟” vs. “拖延性推迟”**  并非所有推迟都是拖延。二者的根本",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以**1\\. 关键区分的方式思考。",
+    "activation_phrase": "请用**1\\. 关键区分分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

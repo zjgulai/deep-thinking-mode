@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "情绪内耗的3个机制_为什么接纳比对抗",
+  "meta": {
+    "name": "情绪内耗的3个机制_为什么接纳比对抗",
+    "category": "09",
+    "tags": [],
+    "source": "情绪内耗的3个机制_为什么接纳比对抗更高效_.md"
+  },
+  "engine": {
+    "core_question": "很简单：对抗是在原有问题上，新增一层自我内耗；接纳是停止自我拉扯，把全部精力用来解决真正的问题",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以情绪内耗的3个机制_为什么接纳比对抗的方式思考。",
+    "activation_phrase": "请用情绪内耗的3个机制_为什么接纳分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "系统思考_从线性应对到全局洞察__4",
+  "meta": {
+    "name": "系统思考_从线性应对到全局洞察__4",
+    "category": "05",
+    "tags": [],
+    "source": "系统思考_从线性应对到全局洞察__4个维度_5个方法.md"
+  },
+  "engine": {
+    "core_question": "构建框架，而智慧的本质是看见系统",
+    "trigger_signals": [
+      "）描绘增强与平衡的相互作用，是呈现系统动态的语法结构。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以系统思考_从线性应对到全局洞察__4的方式思考。",
+    "activation_phrase": "请用系统思考_从线性应对到全局洞察分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

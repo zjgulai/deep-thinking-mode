@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "四大核心类型",
+  "meta": {
+    "name": "四大核心类型",
+    "category": "09",
+    "tags": [],
+    "source": "何为着急.md"
+  },
+  "engine": {
+    "core_question": "### 四大核心类型  #### 1. **失控型着急**  *   **核心触发**：对局面失去掌控的恐惧。事情没有按照预期或计划发展。      *   **内心独白**：“这样下去不行！”“乱了，全乱了！”“我得马上做点什么把它拉回正轨！”      *   **典型情境**：项目出现意外漏洞",
+    "trigger_signals": [
+      "*：对局面失去掌控的恐惧。事情没有按照预期或计划发展。",
+      "**内心独白**：“这样下去不行！”“乱了，全乱了！”“我得马上做点什么把它拉回正轨！”",
+      "**典型情境**：项目出现意外漏洞、孩子生病打乱全天安排、交通堵塞可能错过重要会议。",
+      "**行为指向**：急切地想要采取**纠正或干预行动**，以重新获得控制感。这种着急常常伴随着慌乱。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以四大核心类型的方式思考。",
+    "activation_phrase": "请用四大核心类型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

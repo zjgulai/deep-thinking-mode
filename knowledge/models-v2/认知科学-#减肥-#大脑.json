@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "认知科学-#减肥-#大脑",
+  "meta": {
+    "name": "认知科学 #减肥 #大脑",
+    "category": "09",
+    "tags": [],
+    "source": "大脑能耗机制与减肥真相.md"
+  },
+  "engine": {
+    "core_question": "大脑能耗机制与减肥真相  《脑力劳动减不了肥？揭秘大脑能耗机制与减肥真相》      1\\. 大脑核心能耗数据      体重占比：约2%，耗能却达全身20%      增量消耗：高强度思考/情绪波动，能耗仅增5%-10%      日常能耗：每日固定约500千卡，高强度动脑额外仅几十到一百大卡（约",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以认知科学 #减肥 #大脑的方式思考。",
+    "activation_phrase": "请用认知科学 #减肥 #大脑分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

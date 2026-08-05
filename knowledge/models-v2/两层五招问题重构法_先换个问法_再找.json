@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "两层五招问题重构法_先换个问法_再找",
+  "meta": {
+    "name": "两层五招问题重构法_先换个问法_再找",
+    "category": "02",
+    "tags": [],
+    "source": "两层五招问题重构法_先换个问法_再找答案.md"
+  },
+  "engine": {
+    "core_question": "同步信息、达成共识，可用异步文档、协作白板、录屏替代",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以两层五招问题重构法_先换个问法_再找的方式思考。",
+    "activation_phrase": "请用两层五招问题重构法_先换个问法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

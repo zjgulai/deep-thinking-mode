@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "别再单点归因_鱼骨图思维_把复杂问题",
+  "meta": {
+    "name": "别再单点归因_鱼骨图思维_把复杂问题",
+    "category": "07",
+    "tags": [],
+    "source": "别再单点归因_鱼骨图思维_把复杂问题拆解得清晰可解.md"
+  },
+  "engine": {
+    "core_question": "根本原因 = 多维穷举 + 逐层拆解 + 验证排除，全面覆盖问题维度，穿透表象直击本质",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以别再单点归因_鱼骨图思维_把复杂问题的方式思考。",
+    "activation_phrase": "请用别再单点归因_鱼骨图思维_把复分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

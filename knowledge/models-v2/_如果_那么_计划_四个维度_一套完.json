@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "_如果_那么_计划_四个维度_一套完",
+  "meta": {
+    "name": "_如果_那么_计划_四个维度_一套完",
+    "category": "07",
+    "tags": [],
+    "source": "_如果_那么_计划_四个维度_一套完整的执行意图落地系统.md"
+  },
+  "engine": {
+    "core_question": "“如果-那么”计划：四个维度，一套完整的执行意图落地系统  多数计划落空，并非不够自律，而是缺少一套可触发、可落地、可容错的执行体系。普通的“目标意图”（我要做好、我要改变）只是抽象愿望，极度依赖意志力，极易受情绪和环境干扰而中断。  而“如果-那么”计划（执行意图），是一套成熟的落地方法论。它重构",
+    "trigger_signals": [
+      "那么”计划（执行意图），是一套成熟的落地方法论。它重构人与目标、环境、自我的关系，以极低的心理消耗，实现稳定、长期的成长。本文从行动、心理、习惯、应对意外四个维度，完整拆解这套系统的核心价值。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以_如果_那么_计划_四个维度_一套完的方式思考。",
+    "activation_phrase": "请用_如果_那么_计划_四个维度_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

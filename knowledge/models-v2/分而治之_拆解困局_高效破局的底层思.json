@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "分而治之_拆解困局_高效破局的底层思",
+  "meta": {
+    "name": "分而治之_拆解困局_高效破局的底层思",
+    "category": "02",
+    "tags": [],
+    "source": "分而治之_拆解困局_高效破局的底层思维框架.md"
+  },
+  "engine": {
+    "core_question": "为分兵合击、各个击破，避开正面强攻，通过拆分削弱问题阻力",
+    "trigger_signals": [
+      "----------------",
+      "-----------",
+      "-----------",
+      "------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分而治之_拆解困局_高效破局的底层思的方式思考。",
+    "activation_phrase": "请用分而治之_拆解困局_高效破局的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

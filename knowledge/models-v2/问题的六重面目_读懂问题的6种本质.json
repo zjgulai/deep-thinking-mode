@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题的六重面目_读懂问题的6种本质",
+  "meta": {
+    "name": "问题的六重面目_读懂问题的6种本质",
+    "category": "08",
+    "tags": [],
+    "source": "问题的六重面目_读懂问题的6种本质.md"
+  },
+  "engine": {
+    "core_question": "问题的六重面目：读懂问题的6种本质  加班到深夜方案还是被驳回，你第一反应是烦躁、想逃避——这是“问题即麻烦”的视角。但换个视角，它也可能是驱动成长的契机。  绝大多数人碰到难题，下意识烦躁、逃避，只把问题当成阻碍自己的麻烦。但跳出固有思维就能发现，问题不止负面一种形态，一共拥有六种不同面目，覆盖情",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题的六重面目_读懂问题的6种本质的方式思考。",
+    "activation_phrase": "请用问题的六重面目_读懂问题的6种分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1-.-情绪调节-并非单纯的“快乐”",
+  "meta": {
+    "name": "1\\. 情绪调节：并非单纯的“快乐”",
+    "category": "10",
+    "tags": [],
+    "source": "血清素是一个负责_稳定与满足_的超级管家.md"
+  },
+  "engine": {
+    "core_question": "血清素是一个负责“稳定与满足”的超级管家  一、血清素是什么？ ---------  血清素，学名5-羟色胺，是一种兼具神经递质（在大脑中传递信号）和激素（在全身发挥作用）功能的化学物质。  一个关键事实：大脑中只有约5%的血清素用于调节情绪和认知，其余95%存在于肠道和血液血小板中，负责调节消化、",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1\\. 情绪调节：并非单纯的“快乐”的方式思考。",
+    "activation_phrase": "请用1\\. 情绪调节：并非单纯的“分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

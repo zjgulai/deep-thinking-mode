@@ -5,10 +5,10 @@
     "name": "决策心理学20个核心概念",
     "category": "06",
     "tags": [],
-    "source": "决策心理学20个核心概念"
+    "source": "决策心理学20个核心概念.md"
   },
   "engine": {
-    "core_question": "这件事的本质是什么？决策心理学20个核心概念如何定义它？",
+    "core_question": "决策心理学20个核心概念  第一模块 基础机制（4个）      有限理性：人受认知、信息、时间约束，不追最优解，只找满意解，决策心理学底层逻辑。      双系统理论：系统1=快直觉（无意识、情绪化），系统2=慢理性（费脑力、可控），多数决策靠系统1。      启发式：快速思维捷径，高效但易出错",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -26,7 +26,7 @@
   "quality": {
     "reasoning_completeness": 1,
     "example_coverage": 0,
-    "prompt_effectiveness": 1,
-    "overall": 1
+    "prompt_effectiveness": 2,
+    "overall": 2
   }
 }

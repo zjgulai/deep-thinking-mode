@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1-.-视角的多元性-对谁有用？",
+  "meta": {
+    "name": "1\\. 视角的多元性：对谁有用？",
+    "category": "12",
+    "tags": [],
+    "source": "有用指的是什么.md"
+  },
+  "engine": {
+    "core_question": "### 1\\. 视角的多元性：对谁有用？  *   **对个人有用：** 能带来快乐、成长、内心平静的事物。比如，读一本“无用”的小说，可能滋养了你的灵魂；看一场日落，可能让你感到生命的壮美。这对你个人而言是极其有用的。      *   **对集体/社会有用：** 能促进经济发展、社会和谐、科技进",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1\\. 视角的多元性：对谁有用？的方式思考。",
+    "activation_phrase": "请用1\\. 视角的多元性：对谁有用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

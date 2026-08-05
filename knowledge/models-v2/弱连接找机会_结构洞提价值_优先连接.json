@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "弱连接找机会_结构洞提价值_优先连接",
+  "meta": {
+    "name": "弱连接找机会_结构洞提价值_优先连接",
+    "category": "05",
+    "tags": [],
+    "source": "弱连接找机会_结构洞提价值_优先连接建品牌_涌现思维开新路.md"
+  },
+  "engine": {
+    "core_question": "没有个人标志性成果，只是网络中不起眼的普通节点，无法吸引资源靠拢",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以弱连接找机会_结构洞提价值_优先连接的方式思考。",
+    "activation_phrase": "请用弱连接找机会_结构洞提价值_优分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "8种知识整合方式_结构化_流程化_因",
+  "meta": {
+    "name": "8种知识整合方式_结构化_流程化_因",
+    "category": "08",
+    "tags": [],
+    "source": "8种知识整合方式_结构化_流程化_因果_系统_类比_辩证_空间_演化_一套完整的认知工具包.md"
+  },
+  "engine": {
+    "core_question": "8种知识整合方式：结构化+流程化+因果+系统+类比+辩证+空间+演化，一套完整的认知工具包  碎片化时代，我们从不缺知识，缺的是整合知识的能力。零散的知识点毫无力量，只有经过系统整合、相互关联，才能沉淀为可复用、能落地、助决策的核心认知。  以下8种知识整合方式，覆盖结构、过程、因果、系统、关系、矛",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以8种知识整合方式_结构化_流程化_因的方式思考。",
+    "activation_phrase": "请用8种知识整合方式_结构化_流程分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

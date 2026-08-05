@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "决策心理学-#思维误区-#深度思考-",
+  "meta": {
+    "name": "决策心理学 #思维误区 #深度思考 ",
+    "category": "02",
+    "tags": [],
+    "source": "_越想越错_的4个认知陷阱_3个科学破解法.md"
+  },
+  "engine": {
+    "core_question": "“越想越错”的4个认知陷阱，3个科学破解法  这张速查卡帮你快速识别“越想越错”的4个认知陷阱，并给出3个科学破解法。下次做重大决定前，先对照一遍。      🔴 4个陷阱（为什么越想越错）      1\\. 方向性偏见      理性给直觉当律师，只找支持自己的证据。      👉 你以为是客",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以决策心理学 #思维误区 #深度思考 的方式思考。",
+    "activation_phrase": "请用决策心理学 #思维误区 #深度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

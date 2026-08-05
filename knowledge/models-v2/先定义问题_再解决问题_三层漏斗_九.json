@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "先定义问题_再解决问题_三层漏斗_九",
+  "meta": {
+    "name": "先定义问题_再解决问题_三层漏斗_九",
+    "category": "03",
+    "tags": [],
+    "source": "先定义问题_再解决问题_三层漏斗_九步清单_让每一份努力都精准有效.md"
+  },
+  "engine": {
+    "core_question": "客观现状与预期的落差，且持续产生损失与风险",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以先定义问题_再解决问题_三层漏斗_九的方式思考。",
+    "activation_phrase": "请用先定义问题_再解决问题_三层漏分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

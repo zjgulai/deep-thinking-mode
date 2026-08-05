@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架思维_十种知识整合方式详解",
+  "meta": {
+    "name": "框架思维_十种知识整合方式详解",
+    "category": "04",
+    "tags": [],
+    "source": "框架思维_十种知识整合方式详解.md"
+  },
+  "engine": {
+    "core_question": "按照既定类别、层级与维度，对零散信息进行分类归纳，让信息逻辑更清晰、内容更规整，进而形成系统的信息体系",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以框架思维_十种知识整合方式详解的方式思考。",
+    "activation_phrase": "请用框架思维_十种知识整合方式详解分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

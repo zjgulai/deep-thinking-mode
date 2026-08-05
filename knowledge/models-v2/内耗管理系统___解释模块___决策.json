@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "内耗管理系统___解释模块___决策",
+  "meta": {
+    "name": "内耗管理系统___解释模块___决策",
+    "category": "07",
+    "tags": [],
+    "source": "内耗管理系统___解释模块___决策瘫痪_你的前额叶_带宽_是如何被耗尽的_.md"
+  },
+  "engine": {
+    "core_question": "】面对众多选择，为何不是感到自由，而是疲惫与停滞？决策瘫痪的底层，是一场前额叶的“资源挤兑”",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以内耗管理系统___解释模块___决策的方式思考。",
+    "activation_phrase": "请用内耗管理系统___解释模块__分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

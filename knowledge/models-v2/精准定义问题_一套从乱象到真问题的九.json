@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "精准定义问题_一套从乱象到真问题的九",
+  "meta": {
+    "name": "精准定义问题_一套从乱象到真问题的九",
+    "category": "03",
+    "tags": [],
+    "source": "精准定义问题_一套从乱象到真问题的九步落地清单.md"
+  },
+  "engine": {
+    "core_question": "第一层：界定问题域：剥离干扰、锁定核心矛盾，明确问题真伪与边界；",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以精准定义问题_一套从乱象到真问题的九的方式思考。",
+    "activation_phrase": "请用精准定义问题_一套从乱象到真问分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

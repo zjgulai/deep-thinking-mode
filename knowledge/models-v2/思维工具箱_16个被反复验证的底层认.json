@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "思维工具箱_16个被反复验证的底层认",
+  "meta": {
+    "name": "思维工具箱_16个被反复验证的底层认",
+    "category": "04",
+    "tags": [],
+    "source": "思维工具箱_16个被反复验证的底层认知模型.md"
+  },
+  "engine": {
+    "core_question": "记住：框架是认知的脚手架，让你不再面对混乱束手无策",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以思维工具箱_16个被反复验证的底层认的方式思考。",
+    "activation_phrase": "请用思维工具箱_16个被反复验证的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

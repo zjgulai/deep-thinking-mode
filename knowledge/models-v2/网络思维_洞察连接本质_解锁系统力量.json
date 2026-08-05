@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "网络思维_洞察连接本质_解锁系统力量",
+  "meta": {
+    "name": "网络思维_洞察连接本质_解锁系统力量",
+    "category": "05",
+    "tags": [],
+    "source": "网络思维_洞察连接本质_解锁系统力量.md"
+  },
+  "engine": {
+    "core_question": "核心是通过分析网络结构模式，理解系统的行为规律、演化逻辑与涌现特性，而非孤立看待个体",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以网络思维_洞察连接本质_解锁系统力量的方式思考。",
+    "activation_phrase": "请用网络思维_洞察连接本质_解锁系分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "五维问题拆解法_第一性原理打地基_分",
+  "meta": {
+    "name": "五维问题拆解法_第一性原理打地基_分",
+    "category": "04",
+    "tags": [],
+    "source": "五维问题拆解法_第一性原理打地基_分而治之拆模块_MECE切干净_逻辑层次定高度_系统思维看联动.md"
+  },
+  "engine": {
+    "core_question": "，是将复杂问题按照统一清晰的维度，递归拆解为多个更小、更清晰、可独立解决、可并行推进的子问题",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以五维问题拆解法_第一性原理打地基_分的方式思考。",
+    "activation_phrase": "请用五维问题拆解法_第一性原理打地分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

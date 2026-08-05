@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "行动力提升秘籍-#思维框架-#框架思",
+  "meta": {
+    "name": "行动力提升秘籍 #思维框架 #框架思",
+    "category": "07",
+    "tags": [],
+    "source": "WOOP思维_直面阻碍_知行合一的行动框架.md"
+  },
+  "engine": {
+    "core_question": "核心是融合理想愿景+现实阻碍，打破盲目乐观陷阱，把想法转化为自动化行动，告别“想做却不做”的困境",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以行动力提升秘籍 #思维框架 #框架思的方式思考。",
+    "activation_phrase": "请用行动力提升秘籍 #思维框架 #分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

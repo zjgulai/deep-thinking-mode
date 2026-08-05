@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**意志力的“恢复”与“投资”**",
+  "meta": {
+    "name": "**意志力的“恢复”与“投资”**",
+    "category": "09",
+    "tags": [],
+    "source": "意志力的七个维度_超越克制_实现持续掌控.md"
+  },
+  "engine": {
+    "core_question": "意志力的七个维度：超越克制，实现持续掌控  意志力并非单一的“硬撑”能力，而是能够在以下多个维度上发挥作用：  **1\\. 控制思维**  *   **核心**：在注意力受到干扰时，把心智拉回并维持专注。      *   **典型任务**：工作中排除杂念、学生考试时驱散走神、销售员在交谈中保持说服",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以**意志力的“恢复”与“投资”**的方式思考。",
+    "activation_phrase": "请用**意志力的“恢复”与“投资”分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架思维-#缩放力-#认知升级",
+  "meta": {
+    "name": "框架思维 #缩放力 #认知升级",
+    "category": "08",
+    "tags": [],
+    "source": "框架缩放三层对照表.md"
+  },
+  "engine": {
+    "core_question": "、作用、抽象程度、适用范围、风险、典型工具",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "一步”）分析一遍。你",
+        "action": "一步”）分析一遍。你会看到完全不同的答案。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「框架思维 #缩放力 #认」思维模式运行。\n\nStep 1 - 一步”）分析一遍。你：一步”）分析一遍。你会看到完全不同的答案。\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用框架思维 #缩放力 #认知升级分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

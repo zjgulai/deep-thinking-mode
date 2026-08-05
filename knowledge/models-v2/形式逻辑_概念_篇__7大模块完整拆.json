@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "形式逻辑_概念_篇__7大模块完整拆",
+  "meta": {
+    "name": "形式逻辑_概念_篇__7大模块完整拆",
+    "category": "02",
+    "tags": [],
+    "source": "形式逻辑_概念_篇__7大模块完整拆解逻辑基础核心概念_零基础吃透形式逻辑底层框架_建议永久收藏_.md"
+  },
+  "engine": {
+    "core_question": "关系、不会规范定义专业概念、不懂两种推理的适用边界，思考自然依靠直觉，分析必然片面松散",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以形式逻辑_概念_篇__7大模块完整拆的方式思考。",
+    "activation_phrase": "请用形式逻辑_概念_篇__7大模块分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

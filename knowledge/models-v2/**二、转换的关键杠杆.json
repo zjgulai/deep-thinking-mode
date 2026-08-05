@@ -1,0 +1,79 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**二、转换的关键杠杆",
+  "meta": {
+    "name": "**二、转换的关键杠杆",
+    "category": "09",
+    "tags": [],
+    "source": "从_被动痛苦_到_主动建构_的心智转换模型.md"
+  },
+  "engine": {
+    "core_question": "当面对复杂情况时，人会陷入 **“被动反应状态”**：",
+    "trigger_signals": [
+      "*   **身体信号**：呼吸急促、肌肉紧张。",
+      "**思维信号**：想法在打转、无法聚焦。",
+      "**语言信号**：内心使用“没办法”、“他总是…”等绝对化词汇。",
+      "*主动介入：设置“检查点与触发器”**",
+      "**固定检查点**：在一天中的特定时刻（如整点、会议前）主动自问：“我当前是主动还是被动？”"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**精准识别",
+        "action": "建立“个人信号清单”**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**主动介入",
+        "action": "设置“检查点与触发器”**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**强制启动",
+        "action": "使用“元认知提问”与“思维脚手架”**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**视角重构",
+        "action": "切换心理位置**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**行动验证",
+        "action": "小步实验，快速反馈**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「**二、转换的关键杠杆」思维模式运行。\n\nStep 1 - **精准识别：建立“个人信号清单”**\n\nStep 2 - **主动介入：设置“检查点与触发器”**\n\nStep 3 - **强制启动：使用“元认知提问”与“思维脚手架”**\n\nStep 4 - **视角重构：切换心理位置**\n\nStep 5 - **行动验证：小步实验，快速反馈**\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用**二、转换的关键杠杆分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

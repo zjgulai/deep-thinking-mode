@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "_10_10_10法则____这个看",
+  "meta": {
+    "name": "_10_10_10法则____这个看",
+    "category": "06",
+    "tags": [],
+    "source": "_10_10_10法则____这个看似简单却极具穿透力的决策框架.md"
+  },
+  "engine": {
+    "core_question": "「10/10/10法则」 ——这个看似简单却极具穿透力的决策框架  「10/10/10法则」 ——这个看似简单却极具穿透力的决策框架。其精髓在于用时间维度来对抗决策中的短期情绪干扰，唤醒被忽略的长期理性与价值观。      它不仅是工具，更是一种心智锻炼。      一、 核心要义：三个时间镜头的切",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以_10_10_10法则____这个看的方式思考。",
+    "activation_phrase": "请用_10_10_10法则____分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

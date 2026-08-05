@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题破解六层法_从定锚到柔化_一套框",
+  "meta": {
+    "name": "问题破解六层法_从定锚到柔化_一套框",
+    "category": "04",
+    "tags": [],
+    "source": "问题破解六层法_从定锚到柔化_一套框架搞定所有难题.md"
+  },
+  "engine": {
+    "core_question": "在投入时间、精力、资源前，先锁定正确问题，明确问题边界，避免盲目发力、无效内耗",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题破解六层法_从定锚到柔化_一套框的方式思考。",
+    "activation_phrase": "请用问题破解六层法_从定锚到柔化_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

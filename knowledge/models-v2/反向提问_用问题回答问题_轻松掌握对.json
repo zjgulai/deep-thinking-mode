@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "反向提问_用问题回答问题_轻松掌握对",
+  "meta": {
+    "name": "反向提问_用问题回答问题_轻松掌握对",
+    "category": "02",
+    "tags": [],
+    "source": "反向提问_用问题回答问题_轻松掌握对话主动权.md"
+  },
+  "engine": {
+    "core_question": "完成一次身份转换：从被动答题人，变成整场对话的设计者",
+    "trigger_signals": [
+      "-------------------",
+      "----------------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以反向提问_用问题回答问题_轻松掌握对的方式思考。",
+    "activation_phrase": "请用反向提问_用问题回答问题_轻松分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

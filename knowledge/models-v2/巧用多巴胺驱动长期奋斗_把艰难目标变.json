@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "巧用多巴胺驱动长期奋斗_把艰难目标变",
+  "meta": {
+    "name": "巧用多巴胺驱动长期奋斗_把艰难目标变",
+    "category": "07",
+    "tags": [],
+    "source": "巧用多巴胺驱动长期奋斗_把艰难目标变成让人上瘾的事.md"
+  },
+  "engine": {
+    "core_question": "大脑的欲望驱动机制，它主要被两大要素激活：对奖励的期待、结果的不确定性",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以巧用多巴胺驱动长期奋斗_把艰难目标变的方式思考。",
+    "activation_phrase": "请用巧用多巴胺驱动长期奋斗_把艰难分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

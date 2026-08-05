@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "减法思维_少_才是解决复杂问题的最优",
+  "meta": {
+    "name": "减法思维_少_才是解决复杂问题的最优",
+    "category": "02",
+    "tags": [],
+    "source": "减法思维_少_才是解决复杂问题的最优解.md"
+  },
+  "engine": {
+    "core_question": "比起不断叠加，删减剥离更能触达问题本质",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以减法思维_少_才是解决复杂问题的最优的方式思考。",
+    "activation_phrase": "请用减法思维_少_才是解决复杂问题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "真正的逆向思维_不是反向抬杠_是一套",
+  "meta": {
+    "name": "真正的逆向思维_不是反向抬杠_是一套",
+    "category": "06",
+    "tags": [],
+    "source": "真正的逆向思维_不是反向抬杠_是一套可落地的创新工具箱.md"
+  },
+  "engine": {
+    "core_question": "问题定义错误。重构问题、替换解题路径，即可化难为易",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以真正的逆向思维_不是反向抬杠_是一套的方式思考。",
+    "activation_phrase": "请用真正的逆向思维_不是反向抬杠_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

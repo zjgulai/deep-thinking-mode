@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "总被人说_你说话好伤人__一个公式_",
+  "meta": {
+    "name": "总被人说_你说话好伤人__一个公式_",
+    "category": "11",
+    "tags": [],
+    "source": "总被人说_你说话好伤人__一个公式_让你的反馈不再得罪人.md"
+  },
+  "engine": {
+    "core_question": "总被人说“你说话好伤人”？一个公式，让你的反馈不再得罪人  你有没有搞砸过这种时刻——  明明想好好提个建议，话一出口，对方脸就沉了。你赶紧往回找补：“我不是那个意思……”但为时已晚。  这不是情商低，也不是“说话太直”。  大多数反馈翻车，不是因为内容不对，而是踩了同一条红线：对方听到的不是“你做",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以总被人说_你说话好伤人__一个公式_的方式思考。",
+    "activation_phrase": "请用总被人说_你说话好伤人__一个分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "真正顶级的思维体系_是一套完整的闭环",
+  "meta": {
+    "name": "真正顶级的思维体系_是一套完整的闭环",
+    "category": "02",
+    "tags": [],
+    "source": "真正顶级的思维体系_是一套完整的闭环_从严谨推理到落地决策（全网最全深度拆解）.md"
+  },
+  "engine": {
+    "core_question": "真正顶级的思维体系，是一套完整的闭环：从严谨推理到落地决策（全网最全深度拆解）  为什么同样看资料、学知识、做分析、写方案，人与人的差距会天差地别？      有人思考靠感觉、判断凭经验、做事靠运气，学一点、用一点、碎一点，遇到复杂问题立刻混乱、片面、漏洞百出；   有人却能看透本质、理清因果、辨别",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以真正顶级的思维体系_是一套完整的闭环的方式思考。",
+    "activation_phrase": "请用真正顶级的思维体系_是一套完整分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

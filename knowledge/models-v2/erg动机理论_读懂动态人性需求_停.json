@@ -1,0 +1,76 @@
+{
+  "schema_version": "2.0.0",
+  "id": "erg动机理论_读懂动态人性需求_停",
+  "meta": {
+    "name": "ERG动机理论_读懂动态人性需求_停",
+    "category": "07",
+    "tags": [],
+    "source": "ERG动机理论_读懂动态人性需求_停止无谓自我内耗.md"
+  },
+  "engine": {
+    "core_question": "ERG动机理论：读懂动态人性需求，停止无谓自我内耗  我们时常会陷入心理矛盾：生活安稳无忧，却依旧空虚内耗；一心追求自我成长，遭遇挫折后，反而执着于物质满足、过度渴望他人认可。马斯洛静态需求理论只能解释人向上进取的心理，而ERG理论，能精准解释人需求倒退、心态下沉的真实人性。  一、理论核心：ERG",
+    "trigger_signals": [
+      "-----------",
+      "------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "生存层",
+        "action": "近期是否因钱财、健康缺乏安全感？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "关系层",
+        "action": "近期是否孤独缺爱，过度渴求他人认可？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "成长层",
+        "action": "近期是否生活重复，缺少成长与新鲜感？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "：复盘退行行为，锁定",
+        "action": "：复盘退行行为，锁定挫折源头",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "：疏通根源而非克制表",
+        "action": "：疏通根源而非克制表象",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「ERG动机理论_读懂动态」思维模式运行。\n\nStep 1 - 生存层：近期是否因钱财、健康缺乏安全感？\n\nStep 2 - 关系层：近期是否孤独缺爱，过度渴求他人认可？\n\nStep 3 - 成长层：近期是否生活重复，缺少成长与新鲜感？\n\nStep 4 - ：复盘退行行为，锁定：：复盘退行行为，锁定挫折源头\n\nStep 5 - ：疏通根源而非克制表：：疏通根源而非克制表象\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用ERG动机理论_读懂动态人性需分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

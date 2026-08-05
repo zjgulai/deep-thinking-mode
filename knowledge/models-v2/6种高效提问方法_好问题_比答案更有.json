@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "6种高效提问方法_好问题_比答案更有",
+  "meta": {
+    "name": "6种高效提问方法_好问题_比答案更有",
+    "category": "08",
+    "tags": [],
+    "source": "6种高效提问方法_好问题_比答案更有力量.md"
+  },
+  "engine": {
+    "core_question": "与根本原因，适用于问题诊断、深度沟通及逻辑梳理",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以6种高效提问方法_好问题_比答案更有的方式思考。",
+    "activation_phrase": "请用6种高效提问方法_好问题_比答分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

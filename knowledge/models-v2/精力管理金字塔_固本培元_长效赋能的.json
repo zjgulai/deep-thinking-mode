@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "精力管理金字塔_固本培元_长效赋能的",
+  "meta": {
+    "name": "精力管理金字塔_固本培元_长效赋能的",
+    "category": "09",
+    "tags": [],
+    "source": "精力管理金字塔_固本培元_长效赋能的精力管控框架.md"
+  },
+  "engine": {
+    "core_question": "精力管理金字塔：固本培元、长效赋能的精力管控框架  现代职场与生活中，多数人困在“挤时间、拼时长”的误区里，反而越忙越累、效率下滑。究其根本，高效的核心不是固定的时间，而是可管理、可提升的精力。心理学家吉姆·洛尔与托尼·施瓦茨在《精力管理》中提出的精力管理金字塔，正是一套跳出时间陷阱、实现固本培元、",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以精力管理金字塔_固本培元_长效赋能的的方式思考。",
+    "activation_phrase": "请用精力管理金字塔_固本培元_长效分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

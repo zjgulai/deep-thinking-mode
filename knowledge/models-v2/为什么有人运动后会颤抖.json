@@ -5,10 +5,10 @@
     "name": "为什么有人运动后会颤抖",
     "category": "09",
     "tags": [],
-    "source": "为什么有人运动后会颤抖"
+    "source": "为什么有人运动后会颤抖.md"
   },
   "engine": {
-    "core_question": "这个问题的根本原因是什么？为什么有人运动后会颤抖如何找到它？",
+    "core_question": "为什么有人运动后会颤抖  当您进行力量训练、高强度间歇训练（HIIT）、或者力竭性运动后，更容易出现颤抖。  核心原因：神经肌肉系统疲劳  1.  肌肉纤维疲劳：当您进行举铁、冲刺、或者做到最后一组力竭时，您招募了大量的肌肉纤维来发力。运动结束后，神经系统仍然在高度兴奋地发送信号，但肌肉里的能量（A",
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
@@ -26,7 +26,7 @@
   "quality": {
     "reasoning_completeness": 1,
     "example_coverage": 0,
-    "prompt_effectiveness": 1,
-    "overall": 1
+    "prompt_effectiveness": 2,
+    "overall": 2
   }
 }

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "生病时情绪不稳_是你的大脑被_炎症风",
+  "meta": {
+    "name": "生病时情绪不稳_是你的大脑被_炎症风",
+    "category": "10",
+    "tags": [],
+    "source": "生病时情绪不稳_是你的大脑被_炎症风暴_劫持了.md"
+  },
+  "engine": {
+    "core_question": "生病时情绪不稳，是你的大脑被“炎症风暴”劫持了  很多人都有过这样的体验：感冒发烧时，会比平时更烦躁、易怒，或是莫名地想哭、感到脆弱。这并非你“不够坚强”，而是一场真实的**生理风暴**正在你的大脑中上演。其核心原因在于**炎症信号**对大脑功能的深刻改变。  **核心驱动：“化学信使”入侵大脑**",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以生病时情绪不稳_是你的大脑被_炎症风的方式思考。",
+    "activation_phrase": "请用生病时情绪不稳_是你的大脑被_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

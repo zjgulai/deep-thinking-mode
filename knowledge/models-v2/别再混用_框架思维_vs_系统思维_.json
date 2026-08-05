@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "别再混用_框架思维_vs_系统思维_",
+  "meta": {
+    "name": "别再混用_框架思维_vs_系统思维_",
+    "category": "07",
+    "tags": [],
+    "source": "别再混用_框架思维_vs_系统思维_3大区别_5个场景对照.md"
+  },
+  "engine": {
+    "core_question": "概括：框架看清结构，系统看透循环",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以别再混用_框架思维_vs_系统思维_的方式思考。",
+    "activation_phrase": "请用别再混用_框架思维_vs_系统分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

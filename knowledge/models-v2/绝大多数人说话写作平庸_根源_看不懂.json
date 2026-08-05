@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "绝大多数人说话写作平庸_根源_看不懂",
+  "meta": {
+    "name": "绝大多数人说话写作平庸_根源_看不懂",
+    "category": "02",
+    "tags": [],
+    "source": "绝大多数人说话写作平庸_根源_看不懂语言里的_判断_.md"
+  },
+  "engine": {
+    "core_question": "，对一件事物做出肯定 / 否定断定，有真假对错之分，就是判断",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以绝大多数人说话写作平庸_根源_看不懂的方式思考。",
+    "activation_phrase": "请用绝大多数人说话写作平庸_根源_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

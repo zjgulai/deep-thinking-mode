@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "结构化思维_从混乱到清晰_解锁高效思",
+  "meta": {
+    "name": "结构化思维_从混乱到清晰_解锁高效思",
+    "category": "07",
+    "tags": [],
+    "source": "结构化思维_从混乱到清晰_解锁高效思考密码.md"
+  },
+  "engine": {
+    "core_question": "为“树干”，分支为子问题或影响因素，分为问题树、原因树、决策树三类，能将大问题拆分为小任务，精准定位关键突破口",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以结构化思维_从混乱到清晰_解锁高效思的方式思考。",
+    "activation_phrase": "请用结构化思维_从混乱到清晰_解锁分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

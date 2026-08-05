@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "事物通用解读框架_融合维度与逻辑方法",
+  "meta": {
+    "name": "事物通用解读框架_融合维度与逻辑方法",
+    "category": "02",
+    "tags": [],
+    "source": "事物通用解读框架_融合维度与逻辑方法的系统化认知工具.md"
+  },
+  "engine": {
+    "core_question": "事物通用解读框架：融合维度与逻辑方法的系统化认知工具  在认知一个概念、产品、政策或现象时，零散的解读往往难以形成完整认知。构建一套从基础到深入、从理论到实践的系统化解读框架，能帮助我们实现全面、有条理的分析。本框架整合了核心解读维度与支撑逻辑方法，适用于各类事物的认知与阐释，以下将分层展开说明。 ",
+    "trigger_signals": [
+      "数据分析-决策输出”的递进关系，是机制的核心逻辑。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以事物通用解读框架_融合维度与逻辑方法的方式思考。",
+    "activation_phrase": "请用事物通用解读框架_融合维度与逻分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

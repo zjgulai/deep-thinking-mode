@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架思维不是万能药_正视局限方显认知",
+  "meta": {
+    "name": "框架思维不是万能药_正视局限方显认知",
+    "category": "08",
+    "tags": [],
+    "source": "框架思维不是万能药_正视局限方显认知高度.md"
+  },
+  "engine": {
+    "core_question": "框架思维不是万能药：正视局限方显认知高度  框架思维局限性      核心定位：框架思维是整合知识、提升效率、辅助决策的重要工具，但非万能，认知其局限性是高阶框架思维的核心。      一、七大核心局限性（含启示）      1\\. 简化之痛：框架是对复杂现实的提炼，必然丢失信息、忽略边缘情况；启示",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以框架思维不是万能药_正视局限方显认知的方式思考。",
+    "activation_phrase": "请用框架思维不是万能药_正视局限方分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

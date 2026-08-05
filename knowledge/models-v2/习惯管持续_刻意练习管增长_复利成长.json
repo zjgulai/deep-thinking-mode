@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "习惯管持续_刻意练习管增长_复利成长",
+  "meta": {
+    "name": "习惯管持续_刻意练习管增长_复利成长",
+    "category": "08",
+    "tags": [],
+    "source": "习惯管持续_刻意练习管增长_复利成长缺一不可.md"
+  },
+  "engine": {
+    "core_question": "区分：习惯保证你不中断，刻意练习保证你在变好",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以习惯管持续_刻意练习管增长_复利成长的方式思考。",
+    "activation_phrase": "请用习惯管持续_刻意练习管增长_复分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

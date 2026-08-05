@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "你的预测为什么总出错_不是数据不够_",
+  "meta": {
+    "name": "你的预测为什么总出错_不是数据不够_",
+    "category": "07",
+    "tags": [],
+    "source": "你的预测为什么总出错_不是数据不够_是思维太线性.md"
+  },
+  "engine": {
+    "core_question": "本质是读懂人类的动态适应性",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以你的预测为什么总出错_不是数据不够_的方式思考。",
+    "activation_phrase": "请用你的预测为什么总出错_不是数据分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

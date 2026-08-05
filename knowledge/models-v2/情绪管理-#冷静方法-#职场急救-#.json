@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "id": "情绪管理-#冷静方法-#职场急救-#",
+  "meta": {
+    "name": "情绪管理 #冷静方法 #职场急救 #",
+    "category": "09",
+    "tags": [],
+    "source": "快速识别4种着急类型_并提供应急方法.md"
+  },
+  "engine": {
+    "core_question": "快速识别4种着急类型，并提供应急方法  这张速查卡帮你快速识别4种着急类型，并提供对应的1分钟应急方法：      1\\. 失控型着急：事情脱离预期，感觉“全乱了”。      → 用“3-3-3接地法”：立刻说出你看到的3样东西、听到的3种声音、活动身体的3个部位。这个动作能强行把注意力从失控的想",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "一步（如打开文档写标",
+        "action": "一步（如打开文档写标题）。极小行动能骗过大脑，打破“越急越乱”的死循环。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「情绪管理 #冷静方法 #」思维模式运行。\n\nStep 1 - 一步（如打开文档写标：一步（如打开文档写标题）。极小行动能骗过大脑，打破“越急越乱”的死循环。\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用情绪管理 #冷静方法 #职场急分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

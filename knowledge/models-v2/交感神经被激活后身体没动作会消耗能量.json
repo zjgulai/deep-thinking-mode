@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "交感神经被激活后身体没动作会消耗能量",
+  "meta": {
+    "name": "交感神经被激活后身体没动作会消耗能量",
+    "category": "10",
+    "tags": [],
+    "source": "交感神经被激活后身体没动作会消耗能量吗.md"
+  },
+  "engine": {
+    "core_question": "交感神经被激活后身体没动作会消耗能量吗  是的，能量依然会被大量消耗，而且这种“静止状态下的消耗”正是现代人压力下感到持续疲惫的核心原因。  可以用一个非常形象的比喻来理解：  **比喻：** 猛踩油门，却挂着空挡  想象一下你的身体是一辆汽车。  *   交感神经激活 = 你用尽全力猛踩油门   ",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以交感神经被激活后身体没动作会消耗能量的方式思考。",
+    "activation_phrase": "请用交感神经被激活后身体没动作会消分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

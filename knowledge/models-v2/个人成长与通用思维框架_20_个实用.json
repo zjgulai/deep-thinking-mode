@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "个人成长与通用思维框架_20_个实用",
+  "meta": {
+    "name": "个人成长与通用思维框架_20_个实用",
+    "category": "08",
+    "tags": [],
+    "source": "个人成长与通用思维框架_20_个实用工具与生活指南.md"
+  },
+  "engine": {
+    "core_question": "如果没有任何限制，我真正追求的是什么？",
+    "trigger_signals": [
+      "本质：借鉴跨领域成熟方案，实现创新迁移。",
+      "--------",
+      "--------",
+      "本质：从对立面或常规思路的反向角度思考问题，寻找突破口。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以个人成长与通用思维框架_20_个实用的方式思考。",
+    "activation_phrase": "请用个人成长与通用思维框架_20_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

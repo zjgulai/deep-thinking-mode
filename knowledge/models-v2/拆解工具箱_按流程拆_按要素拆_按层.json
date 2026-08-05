@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "拆解工具箱_按流程拆_按要素拆_按层",
+  "meta": {
+    "name": "拆解工具箱_按流程拆_按要素拆_按层",
+    "category": "00",
+    "tags": [],
+    "source": "拆解工具箱_按流程拆_按要素拆_按层级拆_一套完整的任务降维指南.md"
+  },
+  "engine": {
+    "core_question": "讲透：把一座无从下手的大山，拆成一堆能随手搬运的石块",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以拆解工具箱_按流程拆_按要素拆_按层的方式思考。",
+    "activation_phrase": "请用拆解工具箱_按流程拆_按要素拆分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

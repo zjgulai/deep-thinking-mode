@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1.-**生存的警报与指南针进化功",
+  "meta": {
+    "name": "1. **生存的警报与指南针（进化功",
+    "category": "07",
+    "tags": [],
+    "source": "情绪的作用.md"
+  },
+  "engine": {
+    "core_question": "### 1. **生存的警报与指南针（进化功能）**  情绪是人类在漫长进化中形成的快速反应系统。  *   **恐惧**：提醒我们危险，准备战斗或逃跑，保障基本安全。      *   **厌恶**：让我们远离可能有害的事物（如腐烂的食物）。      *   **喜悦**：鼓励我们重复那些有利于",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1. **生存的警报与指南针（进化功的方式思考。",
+    "activation_phrase": "请用1. **生存的警报与指南针（分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

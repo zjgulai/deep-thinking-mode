@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**1-.-内在状态",
+  "meta": {
+    "name": "**1\\. 内在状态",
+    "category": "07",
+    "tags": [],
+    "source": "拖延与懒惰的核心区别.md"
+  },
+  "engine": {
+    "core_question": "拖延与懒惰的核心区别  让我们用一个核心比喻来开始：  > **懒惰是引擎熄火，而拖延是引擎空转甚至倒转。**   > 前者是**没有动力启动**，后者是**动力被刹车死死踩住**。  下面我们从多个维度进行详细对比和阐释：  * * *  ### **1\\. 内在状态：意愿与情绪的战场**  维度",
+    "trigger_signals": [
+      "*无关紧要或漠不关心。**",
+      "*Deadline效应**",
+      "*高度敏感。**",
+      "*反应迟钝。**",
+      "*关键洞察**：拖延者的行为充满了 **“围绕任务跳舞却不进入中心”** 的迂回特征；懒惰者的行为则是 **“从任务旁径直走过”** 的忽视特征。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以**1\\. 内在状态的方式思考。",
+    "activation_phrase": "请用**1\\. 内在状态分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

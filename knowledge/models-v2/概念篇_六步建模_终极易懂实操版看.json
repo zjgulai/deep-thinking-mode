@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "概念篇_六步建模_终极易懂实操版看",
+  "meta": {
+    "name": "概念篇_六步建模_终极易懂实操版（看",
+    "category": "02",
+    "tags": [],
+    "source": "概念篇_六步建模_终极易懂实操版（看表象___看性质___看关系___看完整属性___看本质内涵___看边界外延___自成权威体系）.md"
+  },
+  "engine": {
+    "core_question": "口诀：自己本来就有的，叫性质；别人临时叫你干的，不叫性质",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以概念篇_六步建模_终极易懂实操版（看的方式思考。",
+    "activation_phrase": "请用概念篇_六步建模_终极易懂实操分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

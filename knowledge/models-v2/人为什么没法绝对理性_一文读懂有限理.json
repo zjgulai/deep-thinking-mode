@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "人为什么没法绝对理性_一文读懂有限理",
+  "meta": {
+    "name": "人为什么没法绝对理性_一文读懂有限理",
+    "category": "09",
+    "tags": [],
+    "source": "人为什么没法绝对理性_一文读懂有限理性.md"
+  },
+  "engine": {
+    "core_question": "很简单：现实规律稳定，知名度高的城市往往人口更多，靠“认不认识”这一个简单线索，比复杂数据分析更高效、更省脑力",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以人为什么没法绝对理性_一文读懂有限理的方式思考。",
+    "activation_phrase": "请用人为什么没法绝对理性_一文读懂分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

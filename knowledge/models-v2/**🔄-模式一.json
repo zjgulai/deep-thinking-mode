@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**🔄-模式一",
+  "meta": {
+    "name": "**🔄 模式一",
+    "category": "10",
+    "tags": [],
+    "source": "内耗管理系统___诊断与工具模块.md"
+  },
+  "engine": {
+    "core_question": "内耗管理系统 · 诊断与工具模块  你是否有过这样的体验：   同样的截止日期，同事在高效推进，你却陷入“我能不能行”的自我怀疑；   同样的错误，别人快速调整，你的大脑却反复重播“我真糟糕”的片段。  **这不是意志力或性格问题，而是你的“认知-行为操作系统”在关键时刻切换到了错误的默认模式——我",
+    "trigger_signals": [
+      "*这不是意志力或性格问题，而是你的“认知-行为操作系统”在关键时刻切换到了错误的默认模式——我们称之为“内耗模式”。**",
+      "*诊断：你的“大脑导航”卡在了哪个模式？**",
+      "----------------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以**🔄 模式一的方式思考。",
+    "activation_phrase": "请用**🔄 模式一分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

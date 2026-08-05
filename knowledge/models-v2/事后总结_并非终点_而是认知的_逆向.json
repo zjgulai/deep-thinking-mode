@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "事后总结_并非终点_而是认知的_逆向",
+  "meta": {
+    "name": "事后总结_并非终点_而是认知的_逆向",
+    "category": "06",
+    "tags": [],
+    "source": "事后总结_并非终点_而是认知的_逆向工程_.md"
+  },
+  "engine": {
+    "core_question": "事后总结：并非终点，而是认知的“逆向工程”  我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾过去，而是对经验进行一次系统性的“神经重建”。它通过主动拆解已发生的事件，将模糊的感受转化为清晰的心理模型，从而将偶然的经历，沉淀为可",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以事后总结_并非终点_而是认知的_逆向的方式思考。",
+    "activation_phrase": "请用事后总结_并非终点_而是认知的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

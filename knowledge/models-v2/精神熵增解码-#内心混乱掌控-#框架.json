@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "精神熵增解码-#内心混乱掌控-#框架",
+  "meta": {
+    "name": "精神熵增解码 #内心混乱掌控 #框架",
+    "category": "09",
+    "tags": [],
+    "source": "解码精神熵增_从内心混乱到掌控自我.md"
+  },
+  "engine": {
+    "core_question": "解码精神熵增：从内心混乱到掌控自我  解码精神熵增：从内心混乱到自我掌控，读懂“认知”的核心价值      核心概念——熵与精神熵增      熵（热力学概念）：衡量系统混乱程度的指标，热力学第二定律核心：孤立系统中，熵值自发增加（混乱是自然趋势，有序需主动维持）。      低熵：系统有序、能量集",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以精神熵增解码 #内心混乱掌控 #框架的方式思考。",
+    "activation_phrase": "请用精神熵增解码 #内心混乱掌控 分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

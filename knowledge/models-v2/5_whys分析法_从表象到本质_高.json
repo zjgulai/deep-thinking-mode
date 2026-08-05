@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "5_whys分析法_从表象到本质_高",
+  "meta": {
+    "name": "5_Whys分析法_从表象到本质_高",
+    "category": "04",
+    "tags": [],
+    "source": "5_Whys分析法_从表象到本质_高效解决问题的核心工具.md"
+  },
+  "engine": {
+    "core_question": "核心是：通过反复追问（通常5次左右），跳出表象定位根本原因，进而制定有效解决方案",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以5_Whys分析法_从表象到本质_高的方式思考。",
+    "activation_phrase": "请用5_Whys分析法_从表象到本分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

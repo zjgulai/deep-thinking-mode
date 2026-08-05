@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "看懂概念_所有沟通吵架_写作跑题_做",
+  "meta": {
+    "name": "看懂概念_所有沟通吵架_写作跑题_做",
+    "category": "02",
+    "tags": [],
+    "source": "看懂概念_所有沟通吵架_写作跑题_做题做错_根源都是概念不清.md"
+  },
+  "engine": {
+    "core_question": "看懂概念：所有沟通吵架、写作跑题、做题做错，根源都是概念不清  本系列逻辑连载：   第一篇：判断｜看懂语言里的真假观点   第二篇：推理｜遵循规则推导靠谱结论   第三篇：概念｜筑牢一切思考的底层根基      很多人学习逻辑，先学判断、再学推理，本末倒置。      逻辑完整递进链条：概念→判断",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以看懂概念_所有沟通吵架_写作跑题_做的方式思考。",
+    "activation_phrase": "请用看懂概念_所有沟通吵架_写作跑分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

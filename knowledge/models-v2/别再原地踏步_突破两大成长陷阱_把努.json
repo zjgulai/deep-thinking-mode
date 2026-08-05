@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "别再原地踏步_突破两大成长陷阱_把努",
+  "meta": {
+    "name": "别再原地踏步_突破两大成长陷阱_把努",
+    "category": "08",
+    "tags": [],
+    "source": "别再原地踏步_突破两大成长陷阱_把努力变成持续进阶.md"
+  },
+  "engine": {
+    "core_question": "别再原地踏步：突破两大成长陷阱，把努力变成持续进阶  很多人长期努力却始终原地踏步，并非不够勤奋，而是无意间陷入了两大隐形成长陷阱。从系统思维来看，个人进阶、职场突破、企业发展的停滞，本质都逃不开两个核心基模：成长上限与目标侵蚀。  成长上限，让努力失效、积累白费；目标侵蚀，让人悄悄妥协、主动降级。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以别再原地踏步_突破两大成长陷阱_把努的方式思考。",
+    "activation_phrase": "请用别再原地踏步_突破两大成长陷阱分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

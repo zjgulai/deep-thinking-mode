@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "角色互换_墙上苍蝇_两架心理航拍机_",
+  "meta": {
+    "name": "角色互换_墙上苍蝇_两架心理航拍机_",
+    "category": "06",
+    "tags": [],
+    "source": "角色互换_墙上苍蝇_两架心理航拍机_让你在冲突中看见盲区.md"
+  },
+  "engine": {
+    "core_question": "角色互换+墙上苍蝇：两架心理航拍机，让你在冲突中看见盲区  吵到一半，你无比确定自己是对的，对方简直不可理喻。但冷静下来后，偶尔会闪过一丝念头——“刚才我是不是也有点过分？”  大多数人困在冲突里，不是因为缺道理，而是因为缺一个不同的视角。今天讲两种可以随身携带的视角切换技术：角色互换和墙上苍蝇视角",
+    "trigger_signals": [
+      "----------------------",
+      "-------------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以角色互换_墙上苍蝇_两架心理航拍机_的方式思考。",
+    "activation_phrase": "请用角色互换_墙上苍蝇_两架心理航分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

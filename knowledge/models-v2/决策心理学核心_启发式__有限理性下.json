@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "决策心理学核心_启发式__有限理性下",
+  "meta": {
+    "name": "决策心理学核心_启发式__有限理性下",
+    "category": "06",
+    "tags": [],
+    "source": "决策心理学核心_启发式__有限理性下的快速决策法则.md"
+  },
+  "engine": {
+    "core_question": "决策心理学核心：启发式——有限理性下的快速决策法则  现实生活中，信息繁杂、时间紧迫、认知资源有限，人类难以通过严密的逻辑推理获得最优决策，往往会依赖一套高效的心理捷径，这便是启发式。它是破解人类真实决策逻辑的关键，也彻底推翻了传统经济学中“完全理性人”的核心假设。  一、启发式的定义与起源  1.",
+    "trigger_signals": [
+      "--------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以决策心理学核心_启发式__有限理性下的方式思考。",
+    "activation_phrase": "请用决策心理学核心_启发式__有限分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

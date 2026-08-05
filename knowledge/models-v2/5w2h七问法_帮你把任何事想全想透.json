@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "5w2h七问法_帮你把任何事想全想透",
+  "meta": {
+    "name": "5W2H七问法_帮你把任何事想全想透",
+    "category": "07",
+    "tags": [],
+    "source": "5W2H七问法_帮你把任何事想全想透.md"
+  },
+  "engine": {
+    "core_question": "5W2H七问法，帮你把任何事想全想透  5W2H分析法是一套经典、通用、可落地的结构化思考框架。日常工作中，我们常常凭直觉决策、想法零散片面、方案考虑不全。这套方法能帮我们跳出碎片化思维，从七个核心维度全面、系统、有条理地拆解问题，让思考有逻辑、落地有依据、决策无漏洞。  一、What（是什么）：界",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以5W2H七问法_帮你把任何事想全想透的方式思考。",
+    "activation_phrase": "请用5W2H七问法_帮你把任何事想分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

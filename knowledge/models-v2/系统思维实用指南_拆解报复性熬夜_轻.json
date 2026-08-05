@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "系统思维实用指南_拆解报复性熬夜_轻",
+  "meta": {
+    "name": "系统思维实用指南_拆解报复性熬夜_轻",
+    "category": "10",
+    "tags": [],
+    "source": "系统思维实用指南_拆解报复性熬夜_轻松打破内耗循环.md"
+  },
+  "engine": {
+    "core_question": "用有限的意志力对抗持续的系统压力，而非意志力不足",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以系统思维实用指南_拆解报复性熬夜_轻的方式思考。",
+    "activation_phrase": "请用系统思维实用指南_拆解报复性熬分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

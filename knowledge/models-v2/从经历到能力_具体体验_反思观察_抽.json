@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "从经历到能力_具体体验_反思观察_抽",
+  "meta": {
+    "name": "从经历到能力_具体体验_反思观察_抽",
+    "category": "08",
+    "tags": [],
+    "source": "从经历到能力_具体体验_反思观察_抽象概括_主动实验_四步把经历变成可复用的能力.md"
+  },
+  "engine": {
+    "core_question": "从经历到能力：具体体验+反思观察+抽象概括+主动实验，四步把经历变成可复用的能力  “从经验中学习”并非一句笼统的鸡汤，背后有一套经典、可落地的学习理论，其中影响力最高的就是大卫·库伯提出的经验学习圈。这套模型把完整学习拆成四个循环阶段，只要缺失任意一环，再多经历也很难沉淀成真正能力。  核心闭环：",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以从经历到能力_具体体验_反思观察_抽的方式思考。",
+    "activation_phrase": "请用从经历到能力_具体体验_反思观分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

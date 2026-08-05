@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "10个时间黑洞_多巴胺陷阱_决策瘫痪",
+  "meta": {
+    "name": "10个时间黑洞_多巴胺陷阱_决策瘫痪",
+    "category": "09",
+    "tags": [],
+    "source": "10个时间黑洞_多巴胺陷阱_决策瘫痪_用认知科学逐个击破.md"
+  },
+  "engine": {
+    "core_question": "10个时间黑洞：多巴胺陷阱+决策瘫痪，用认知科学逐个击破  刷短视频、反复刷新消息利用了“可变比率强化”（像老虎机一样随机奖励，让你停不下来）  纠结选择源于“损失厌恶”（害怕选错）和决策疲劳（做太多小决定后大脑罢工）  完美主义则是“自我价值绑定”（把“事做得好不好”等同于“我好不好”）  理解这",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以10个时间黑洞_多巴胺陷阱_决策瘫痪的方式思考。",
+    "activation_phrase": "请用10个时间黑洞_多巴胺陷阱_决分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0.0",
+  "id": "🛠️-急救工具-感官接地强制关机",
+  "meta": {
+    "name": "🛠️ 急救工具：感官接地强制关机",
+    "category": "07",
+    "tags": [],
+    "source": "内耗管理系统___工具模块___内耗急救箱_针对五种高频内耗场景的即时干预工具包.md"
+  },
+  "engine": {
+    "core_question": "】** 当内耗突然来袭，你需要的不是长篇大论，而是一个像灭火器一样——**随手可及、一拉即用**的即时干预工具",
+    "trigger_signals": [
+      "*瞬间**，你会清晰地知道自己**期待**的是哪一面——选那一面。",
+      "*神经原理**",
+      "*前额叶的“比较器”过热**，在高负载下失去终止能力。3-2-1法通过**外部时间边界**和**明确终止指令**，代替前额叶执行“停止”功能。硬币法则绕过过度分析，直接**读取潜意识偏好**，将决策模",
+      "*一句话激活**",
+      "场景三：未来灾难化——大脑在预支从未发生的恐惧"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**坐起来，开灯**",
+        "action": "**坐起来，开灯**（不要躺着对抗）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**5-4-3-2-",
+        "action": "**5-4-3-2-1 感官扫描**——缓慢说出：",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**站到地板上，用力",
+        "action": "**站到地板上，用力踩5下**，感受脚掌与地面的接触",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「🛠️ 急救工具：感官接」思维模式运行。\n\nStep 1 - **坐起来，开灯**：**坐起来，开灯**（不要躺着对抗）\n\nStep 2 - **5-4-3-2-：**5-4-3-2-1 感官扫描**——缓慢说出：\n\nStep 3 - **站到地板上，用力：**站到地板上，用力踩5下**，感受脚掌与地面的接触\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用🛠️ 急救工具：感官接地强制分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

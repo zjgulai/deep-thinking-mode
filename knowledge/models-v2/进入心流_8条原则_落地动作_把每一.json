@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "进入心流_8条原则_落地动作_把每一",
+  "meta": {
+    "name": "进入心流_8条原则_落地动作_把每一",
+    "category": "09",
+    "tags": [],
+    "source": "进入心流_8条原则_落地动作_把每一次专注都变成高效产出.md"
+  },
+  "engine": {
+    "core_question": "是：专注是做事的手段，愉悦是过程的副产品，心流的本质是重建意识秩序，杜绝精神能量的无效耗散",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以进入心流_8条原则_落地动作_把每一的方式思考。",
+    "activation_phrase": "请用进入心流_8条原则_落地动作_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

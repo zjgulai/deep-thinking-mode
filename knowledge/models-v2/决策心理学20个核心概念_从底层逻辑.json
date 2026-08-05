@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "决策心理学20个核心概念_从底层逻辑",
+  "meta": {
+    "name": "决策心理学20个核心概念_从底层逻辑",
+    "category": "06",
+    "tags": [],
+    "source": "决策心理学20个核心概念_从底层逻辑到决策优化.md"
+  },
+  "engine": {
+    "core_question": "决策心理学20个核心概念：从底层逻辑到决策优化  本文严格遵循基础机制→核心偏差→情境应用→高阶反思的递进逻辑，梳理决策心理学20个核心概念，搭建从理论根基到实战工具的闭环框架，精简保留核心原理、经典实验与现实案例，兼顾学术严谨性与实用度，快速吃透决策心理的核心规律。  第一部分 基础机制：决策行为",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以决策心理学20个核心概念_从底层逻辑的方式思考。",
+    "activation_phrase": "请用决策心理学20个核心概念_从底分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

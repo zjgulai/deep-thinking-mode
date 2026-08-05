@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "系统思维-#延迟反馈-#决策-#长期",
+  "meta": {
+    "name": "系统思维 #延迟反馈 #决策 #长期",
+    "category": "05",
+    "tags": [],
+    "source": "掌握系统思考中_延迟反馈_这个隐蔽陷阱.md"
+  },
+  "engine": {
+    "core_question": "掌握系统思考中“延迟反馈”这个隐蔽陷阱  这张识别卡帮你快速掌握系统思考中“延迟反馈”这个隐蔽陷阱，包含两种延迟类型、四步识别法和核心口诀。      🔵 两种延迟类型      淋浴效应（短延迟，渐强反馈）：前期没反应容易让你加码，结果突然过猛。记住：连续三次没反应，别加码，水在路上。     ",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以系统思维 #延迟反馈 #决策 #长期的方式思考。",
+    "activation_phrase": "请用系统思维 #延迟反馈 #决策 分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

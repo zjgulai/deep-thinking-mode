@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**一、核心定义-解离是什么？**",
+  "meta": {
+    "name": "**一、核心定义：解离是什么？**",
+    "category": "02",
+    "tags": [],
+    "source": "认知解离.md"
+  },
+  "engine": {
+    "core_question": "### **一、核心定义：解离是什么？**  **认知解离**是指：**有意识地与自己的思维、感受和记忆保持一种“观察距离”，将它们看作是流动的、短暂的心理事件，而不是对自我或现实的绝对真理或命令。**  其精髓在于一个关键的视角转换：  *   **从 `“我是……”` 变为 `“我注意到我有一个",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以**一、核心定义：解离是什么？**的方式思考。",
+    "activation_phrase": "请用**一、核心定义：解离是什么？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

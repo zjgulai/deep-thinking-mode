@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架思维_核心功能解析与高效落地路径",
+  "meta": {
+    "name": "框架思维_核心功能解析与高效落地路径",
+    "category": "04",
+    "tags": [],
+    "source": "框架思维_核心功能解析与高效落地路径.md"
+  },
+  "engine": {
+    "core_question": "核心是提供“结构化支撑”，其五大功能可精准破解日常认知与行动中的各类痛点：\n\n1.1 定位功能：锚定认知坐标，告别迷茫\n--------------------\n\n困惑：面对陌生信息、新问题时无从下手",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以框架思维_核心功能解析与高效落地路径的方式思考。",
+    "activation_phrase": "请用框架思维_核心功能解析与高效落分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

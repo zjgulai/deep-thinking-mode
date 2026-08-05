@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "从_如果当时_遗憾到_既然_提取_智",
+  "meta": {
+    "name": "从_如果当时_遗憾到_既然_提取_智",
+    "category": "08",
+    "tags": [],
+    "source": "从_如果当时_遗憾到_既然_提取_智慧_重构你的总结系统.md"
+  },
+  "engine": {
+    "core_question": "一种经验回响，但若停留于此，它便从反思变成了枷锁",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以从_如果当时_遗憾到_既然_提取_智的方式思考。",
+    "activation_phrase": "请用从_如果当时_遗憾到_既然_提分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

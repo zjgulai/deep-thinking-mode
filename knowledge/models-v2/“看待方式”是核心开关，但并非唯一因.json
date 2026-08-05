@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "“看待方式”是核心开关，但并非唯一因",
+  "meta": {
+    "name": "“看待方式”是核心开关，但并非唯一因",
+    "category": "09",
+    "tags": [],
+    "source": "压力是否产生及强度如何_主要取决于个体对压力源的解读.md"
+  },
+  "engine": {
+    "core_question": "压力是否产生及强度如何，主要取决于个体对压力源的解读  **压力本质上是一种主观体验，对同一压力源的“看法”（认知评估）是决定它是否会成为压力、以及成为多大压力的关键因素。**  ### “看待方式”是核心开关，但并非唯一因素  1.  **核心开关：认知评估**       *   **A视其为“",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以“看待方式”是核心开关，但并非唯一因的方式思考。",
+    "activation_phrase": "请用“看待方式”是核心开关，但并非分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

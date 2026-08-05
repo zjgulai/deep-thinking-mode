@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "10_10_10决策法_情绪上头时_",
+  "meta": {
+    "name": "10_10_10决策法_情绪上头时_",
+    "category": "10",
+    "tags": [],
+    "source": "10_10_10决策法_情绪上头时_用三个问题叫停冲动.md"
+  },
+  "engine": {
+    "core_question": "用时间距离，拉开被情绪压缩的认知距离",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以10_10_10决策法_情绪上头时_的方式思考。",
+    "activation_phrase": "请用10_10_10决策法_情绪上分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

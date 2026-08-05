@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "新增7种高效提问方法_帮你跳出思维_",
+  "meta": {
+    "name": "新增7种高效提问方法_帮你跳出思维_",
+    "category": "06",
+    "tags": [],
+    "source": "新增7种高效提问方法_帮你跳出思维_高效破局.md"
+  },
+  "engine": {
+    "core_question": "新增7种高效提问方法，帮你跳出思维、高效破局  承接前文，本次新增7种高效提问技巧，助力使用者跳出思维局限、高效解决问题。该7种方法涵盖澄清、分析、创新、决策等全场景，附适用场景、典型模板及易混淆区别，便于快速掌握运用。  一、7种核心提问方法详解  1\\. 澄清式提问（消除歧义，精准对齐）  核心",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以新增7种高效提问方法_帮你跳出思维_的方式思考。",
+    "activation_phrase": "请用新增7种高效提问方法_帮你跳出分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

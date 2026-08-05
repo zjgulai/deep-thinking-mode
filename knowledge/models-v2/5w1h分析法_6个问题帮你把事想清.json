@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "5w1h分析法_6个问题帮你把事想清",
+  "meta": {
+    "name": "5W1H分析法_6个问题帮你把事想清",
+    "category": "07",
+    "tags": [],
+    "source": "5W1H分析法_6个问题帮你把事想清楚_说明白.md"
+  },
+  "engine": {
+    "core_question": "或结论为中心论点，六个维度作为支撑论据，每个维度再展开具体细节，让表达更具逻辑性",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以5W1H分析法_6个问题帮你把事想清的方式思考。",
+    "activation_phrase": "请用5W1H分析法_6个问题帮你把分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

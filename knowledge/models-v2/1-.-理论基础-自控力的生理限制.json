@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1-.-理论基础-自控力的生理限制",
+  "meta": {
+    "name": "1\\. 理论基础：自控力的生理限制",
+    "category": "07",
+    "tags": [],
+    "source": "情绪状态与自控力之间的神经心理学关系.md"
+  },
+  "engine": {
+    "core_question": "情绪状态与自控力之间的神经心理学关系  可以从以下几个层面来理解它的科学性：  ### 1\\. 理论基础：自控力的生理限制  现代心理学和神经科学认为，自控力并不仅仅是“决心”或“品格”问题，它更像一种**有限的生理心理资源**。大脑的前额叶皮层是负责执行功能（包括计划、决策、专注、抑制冲动）的核心",
+    "trigger_signals": [
+      "*：情绪本身不是敌人。短暂的负面情绪（如deadline前的适度焦虑）可以激发行动力。问题在于**情绪的强度、持续时间和我们对其的反应方式**。",
+      "*因果关系的复杂性**：情绪与自控是双向影响的关系。自控力失败（如拖延后）也会引发焦虑和自责，形成恶性循环。反之，成功自控带来的成就感会产生积极情绪，形成良性循环。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1\\. 理论基础：自控力的生理限制的方式思考。",
+    "activation_phrase": "请用1\\. 理论基础：自控力的生理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

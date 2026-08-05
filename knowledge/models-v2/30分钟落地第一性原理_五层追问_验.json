@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "30分钟落地第一性原理_五层追问_验",
+  "meta": {
+    "name": "30分钟落地第一性原理_五层追问_验",
+    "category": "04",
+    "tags": [],
+    "source": "30分钟落地第一性原理_五层追问_验证清单_行动指南.md"
+  },
+  "engine": {
+    "core_question": "通过层层“为什么”追问，剥离表象，触及不可反驳的底层规律，即第一性原理核心",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以30分钟落地第一性原理_五层追问_验的方式思考。",
+    "activation_phrase": "请用30分钟落地第一性原理_五层追分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

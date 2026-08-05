@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "star法则_从认知到落地_让你的表",
+  "meta": {
+    "name": "STAR法则_从认知到落地_让你的表",
+    "category": "11",
+    "tags": [],
+    "source": "STAR法则_从认知到落地_让你的表达更具说服力.md"
+  },
+  "engine": {
+    "core_question": "，其价值贯穿职场表达与个人成长，兼具实用表达价值与思维培养价值，结合其高频应用场景，核心作用可拆解为6点，每一点都贴合实际工作需求：",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以STAR法则_从认知到落地_让你的表的方式思考。",
+    "activation_phrase": "请用STAR法则_从认知到落地_让分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

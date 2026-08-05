@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "从被动接受到清醒思考_批判性思维_多",
+  "meta": {
+    "name": "从被动接受到清醒思考_批判性思维_多",
+    "category": "07",
+    "tags": [],
+    "source": "从被动接受到清醒思考_批判性思维_多元视角_整合思维_搭建你的认知护城河.md"
+  },
+  "engine": {
+    "core_question": "对所有进入大脑的信息，像机场安检一样逐一核验：不盲目跟风，不情绪化排斥，审慎过后再接纳",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以从被动接受到清醒思考_批判性思维_多的方式思考。",
+    "activation_phrase": "请用从被动接受到清醒思考_批判性思分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

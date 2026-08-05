@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "爱因斯坦式提问_5步重新定义问题_告",
+  "meta": {
+    "name": "爱因斯坦式提问_5步重新定义问题_告",
+    "category": "03",
+    "tags": [],
+    "source": "爱因斯坦式提问_5步重新定义问题_告别无效解决.md"
+  },
+  "engine": {
+    "core_question": "爱因斯坦式提问：5步重新定义问题，告别无效解决  “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。”  爱因斯坦的这句话，道出了爱因斯坦式提问的核心——不急于求解，先重新定义问题，而这一思维可通过5步落地，帮我们告别无效解决。  一、核心理念：别急于“赶路”，先确认“方向”  爱因",
+    "trigger_signals": [
+      "问题反复发生，常规方法无效",
+      "团队对“问题本质”有分歧",
+      "陷入僵局，所有明显路径都已尝试",
+      "需要突破性创新或高成本投入前",
+      "简单一次性事务（如“邮件发给谁”）"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以爱因斯坦式提问_5步重新定义问题_告的方式思考。",
+    "activation_phrase": "请用爱因斯坦式提问_5步重新定义问分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

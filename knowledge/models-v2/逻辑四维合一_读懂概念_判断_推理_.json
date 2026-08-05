@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "逻辑四维合一_读懂概念_判断_推理_",
+  "meta": {
+    "name": "逻辑四维合一_读懂概念_判断_推理_",
+    "category": "02",
+    "tags": [],
+    "source": "逻辑四维合一_读懂概念_判断_推理_论证_重塑你的底层思维.md"
+  },
+  "engine": {
+    "core_question": "逻辑四维合一：读懂概念、判断、推理、论证，重塑你的底层思维  本系列全套逻辑连载：      1\\. 概念｜一切思考的底层地基      2\\. 判断｜识别语言所有真假观点      3\\. 推理｜依托规则推导可靠结论      4\\. 论证｜面向他人，完成有效说服      5\\. 【压轴总结】四",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以逻辑四维合一_读懂概念_判断_推理_的方式思考。",
+    "activation_phrase": "请用逻辑四维合一_读懂概念_判断_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

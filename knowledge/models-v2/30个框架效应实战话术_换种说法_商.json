@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "30个框架效应实战话术_换种说法_商",
+  "meta": {
+    "name": "30个框架效应实战话术_换种说法_商",
+    "category": "06",
+    "tags": [],
+    "source": "30个框架效应实战话术_换种说法_商业_职场沟通效率翻倍.md"
+  },
+  "engine": {
+    "core_question": "用获益框架激发期待，用损失框架制造紧迫感，撬动用户下单决策",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以30个框架效应实战话术_换种说法_商的方式思考。",
+    "activation_phrase": "请用30个框架效应实战话术_换种说分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

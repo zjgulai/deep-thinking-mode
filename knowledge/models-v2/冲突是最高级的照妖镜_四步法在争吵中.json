@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "冲突是最高级的照妖镜_四步法在争吵中",
+  "meta": {
+    "name": "冲突是最高级的照妖镜_四步法在争吵中",
+    "category": "07",
+    "tags": [],
+    "source": "冲突是最高级的照妖镜_四步法在争吵中看见自己的认知盲区.md"
+  },
+  "engine": {
+    "core_question": "一场视角的温柔转向：从\"你为什么这样对我\"的向外指责，转向\"我怎么了、我该如何成长\"的向内深耕",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以冲突是最高级的照妖镜_四步法在争吵中的方式思考。",
+    "activation_phrase": "请用冲突是最高级的照妖镜_四步法在分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

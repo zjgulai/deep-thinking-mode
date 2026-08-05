@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "sop思维_把偶然的高水平发挥_变成",
+  "meta": {
+    "name": "SOP思维_把偶然的高水平发挥_变成",
+    "category": "07",
+    "tags": [],
+    "source": "SOP思维_把偶然的高水平发挥_变成每一次的稳定输出.md"
+  },
+  "engine": {
+    "core_question": "SOP思维：把偶然的高水平发挥，变成每一次的稳定输出  很多人优秀的工作表现，往往是偶然的高光发挥，极易受状态、情绪、记忆影响。而SOP思维的核心，就是把复杂重复的工作流程化、标准化、精细化。它不是一纸简单的文档，而是一套可落地、可复用、可迭代的底层工作思维，专门打破状态波动的局限，将偶然的高水平发",
+    "trigger_signals": [
+      "------------",
+      "------------",
+      "------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以SOP思维_把偶然的高水平发挥_变成的方式思考。",
+    "activation_phrase": "请用SOP思维_把偶然的高水平发挥分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

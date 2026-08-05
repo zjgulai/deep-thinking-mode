@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "熵增定律_看透衰败本质_落地对抗行动",
+  "meta": {
+    "name": "熵增定律_看透衰败本质_落地对抗行动",
+    "category": "02",
+    "tags": [],
+    "source": "熵增定律_看透衰败本质_落地对抗行动.md"
+  },
+  "engine": {
+    "core_question": "熵增定律：看透衰败本质、落地对抗行动  一、什么是熵增定律？  熵增定律是热力学第二定律的核心，核心表述为：在孤立系统中，熵（衡量系统混乱度的物理量）总会自发增加，直至达到最稳定的平衡状态。简言之，无外部能量输入，任何系统都会自发走向混乱、无序与衰败，这是不可违背的宇宙底层规律。  理解熵增定律，需",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以熵增定律_看透衰败本质_落地对抗行动的方式思考。",
+    "activation_phrase": "请用熵增定律_看透衰败本质_落地对分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

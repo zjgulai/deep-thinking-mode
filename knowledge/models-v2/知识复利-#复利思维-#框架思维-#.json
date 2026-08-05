@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "知识复利-#复利思维-#框架思维-#",
+  "meta": {
+    "name": "知识复利 #复利思维 #框架思维 #",
+    "category": "08",
+    "tags": [],
+    "source": "知识复利思维框架_从存量积累到网络跃迁.md"
+  },
+  "engine": {
+    "core_question": "用框架思维为知识“建连接”，关联新旧知识、构建有序体系，推动学习从量变到质变",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以知识复利 #复利思维 #框架思维 #的方式思考。",
+    "activation_phrase": "请用知识复利 #复利思维 #框架思分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

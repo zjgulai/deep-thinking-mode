@@ -5,20 +5,17 @@
     "name": "20个经典思维框架",
     "category": "04",
     "tags": [],
-    "source": "20个经典思维框架"
+    "source": "20个经典思维框架.md"
   },
   "engine": {
     "core_question": "抛开固有做法，此事本质是什么？有无更底层高效的实现路径？",
-    "trigger_signals": [
-      "---------",
-      "-------------"
-    ],
+    "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {
       "structure": "",
-      "example": "多维度分析企业增长乏力的核心瓶颈并破解。  3\\. PEST分析 ----------"
+      "example": ""
     }
   },
   "codex": {
@@ -27,9 +24,9 @@
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 2,
+    "reasoning_completeness": 1,
     "example_coverage": 0,
-    "prompt_effectiveness": 1,
+    "prompt_effectiveness": 2,
     "overall": 2
   }
 }

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "真正高级的清醒_是逻辑严谨_",
+  "meta": {
+    "name": "真正高级的清醒_是逻辑严谨_",
+    "category": "02",
+    "tags": [],
+    "source": "真正高级的清醒_是逻辑严谨_.md"
+  },
+  "engine": {
+    "core_question": "真正高级的清醒，是逻辑严谨。  形式逻辑之直言命题篇：看懂AEIO四种命题，告别偏激、偏见、被带节奏。        说话总被人挑漏洞？这套底层逻辑，帮你把说理变严谨      不知道你有没有过这种憋屈时刻：      和人争论，明明道理在你这边，三两句就被对方抓住话里的漏洞反驳；      网上刷",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以真正高级的清醒_是逻辑严谨_的方式思考。",
+    "activation_phrase": "请用真正高级的清醒_是逻辑严谨_分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}
