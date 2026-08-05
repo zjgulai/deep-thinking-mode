@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "id": "说话方式-真的能改变我们的选择-这就是框架效应",
+  "meta": {
+    "name": "说话方式，真的能改变我们的选择",
+    "category": "06",
+    "tags": [],
+    "source": "说话方式_真的能改变我们的选择_这就是框架效应.md",
+    "sourceTitle": "说话方式，真的能改变我们的选择，这就是框架效应"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？说话方式，真的能改变我们的选择如何定义它？",
+    "trigger_signals": [
+      "--------------------",
+      "-------------------",
+      "框架效应与杏仁核（情绪处理）激活相关，激活越强效应越显著。",
+      "抵抗框架效应时，前额叶皮层（理性思考）激活增强。",
+      "认知需求高、前额叶功能强的个体，更不易受框架影响。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "起源与经典实验：亚洲疾病问题的启示",
+        "action": "起源与经典实验：亚洲疾病问题的启示",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "参照点与得失框架：决定个体对结果的认知",
+        "action": "参照点与得失框架：决定个体对结果的认知",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "损失厌恶与风险态度：选择逆转的核心原因",
+        "action": "损失厌恶与风险态度：选择逆转的核心原因",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "风险选择框架：风险决策中的表述影响",
+        "action": "风险选择框架：风险决策中的表述影响",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "属性框架：属性描述对评价的影响",
+        "action": "属性框架：属性描述对评价的影响",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "目标框架：得失表述对行为意愿的引导",
+        "action": "目标框架：得失表述对行为意愿的引导",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "双系统理论视角：系统1与系统2的决策分工",
+        "action": "双系统理论视角：系统1与系统2的决策分工",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "中。  一、定义与起源：藏在表述中的决策偏差  1.1 什么是框架效应 -----------"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「说话方式，真的能改变我们」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - 起源与经典实验：亚洲疾病问题的启示：起源与经典实验：亚洲疾病问题的启示\n\nStep 2 - 参照点与得失框架：决定个体对结果的认知：参照点与得失框架：决定个体对结果的认知\n\nStep 3 - 损失厌恶与风险态度：选择逆转的核心原因：损失厌恶与风险态度：选择逆转的核心原因\n\nStep 4 - 风险选择框架：风险决策中的表述影响：风险选择框架：风险决策中的表述影响\n\nStep 5 - 属性框架：属性描述对评价的影响：属性框架：属性描述对评价的影响\n\nStep 6 - 目标框架：得失表述对行为意愿的引导：目标框架：得失表述对行为意愿的引导\n\nStep 7 - 双系统理论视角：系统1与系统2的决策分工：双系统理论视角：系统1与系统2的决策分工\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用说话方式，真的能改变我们的选择分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

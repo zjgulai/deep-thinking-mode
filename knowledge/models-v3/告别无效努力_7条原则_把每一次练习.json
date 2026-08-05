@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用告别无效努力_7条原则_把每一次练习思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "不需要思考步骤，手脚自动配合，无需刻意回想就能稳定发挥"
+    ]
   },
   "before_after": {
     "without_model": "在掌握告别无效努力_7条原则_把每一次练习之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

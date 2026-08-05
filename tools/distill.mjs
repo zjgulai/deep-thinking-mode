@@ -59,7 +59,7 @@ function classify(text, fname) {
 // ─── V2蒸馏 ──────────────────────────────────────────────
 function distillV2(text) {
   const lines = text.split("\n");
-  const m = { name: "", core_question: "", trigger_signals: [], stop_conditions: [], reasoning_protocol: [], example_trace: "", tags: [] };
+  const m = { name: "", core_question: "", trigger_signals: [], stop_conditions: [], reasoning_protocol: [], decision_points: [], example_trace: "", tags: [] };
 
   // 模型名 — 激进精简到15字以内
   for (let i = 0; i < 8; i++) {
@@ -121,6 +121,47 @@ function distillV2(text) {
     if (valueSec) {
       const items = valueSec[1].match(/[-•*]\s*([^\n]{10,100})/g);
       if (items) m.trigger_signals = items.map(i => i.replace(/^[-•*]\s*/, "").trim().slice(0, 90)).filter(s => s.length > 12).slice(0, 5);
+    }
+  }
+
+  // ── stop_conditions (anti_triggers) ── 新增提取逻辑
+  const stopSec = body.match(/(?:不适用|不应该用|局限|局限性|不推荐|什么情况.*不|避免|慎用|不要用|反面|缺陷|陷阱|误区|常见错误)[：:]*\n?([\s\S]{40,500}?)(?=\n(?:#{1,3}|[一二三四五六七八九十]、|总结|结语|$))/i);
+  if (stopSec) {
+    const stopItems = stopSec[1].match(/[-•*✗×]\s*([^\n]{8,100})/g);
+    if (stopItems) {
+      m.stop_conditions = stopItems
+        .map(i => i.replace(/^[-•*✗×]\s*/, "").trim().slice(0, 90))
+        .filter(s => s.length > 10)
+        .slice(0, 3);
+    }
+  }
+  // 备选：找"不是...而是"结构
+  if (!m.stop_conditions.length) {
+    const notButs = body.match(/(?:这不是|不适合|不应该|不需要)[^。\n]{10,80}/g);
+    if (notButs) {
+      m.stop_conditions = notButs.map(s => s.trim().slice(0, 90)).slice(0, 3);
+    }
+  }
+
+  // ── decision_points (pitfalls) ── 新增提取逻辑
+  const pitfallSec = body.match(/(?:常见误区|注意事项|避坑|常见错误|警惕|容易犯的|典型错误|误区|坑|陷阱)[：:]*\n?([\s\S]{40,600}?)(?=\n(?:#{1,3}|[一二三四五六七八九十]、|总结|结语|$))/i);
+  if (pitfallSec) {
+    const pitItems = pitfallSec[1].match(/[-•*✗×❌]\s*([^\n]{8,120})/g);
+    if (pitItems) {
+      m.decision_points = pitItems
+        .map(i => i.replace(/^[-•*✗×❌]\s*/, "").trim())
+        .filter(s => s.length > 10)
+        .slice(0, 3)
+        .map(s => ({ condition: s.slice(0, 100), action: "" }));
+    }
+  }
+  // 备选：找"误区N：..."结构
+  if (!m.decision_points.length) {
+    const pitPats = body.match(/(?:误区|错误|陷阱)[一二三四五六七八九十\d][：:]\s*([^\n]{8,100})/g);
+    if (pitPats) {
+      m.decision_points = pitPats
+        .map(s => ({ condition: s.replace(/^(?:误区|错误|陷阱)[一二三四五六七八九十\d][：:]\s*/, "").trim().slice(0, 100), action: "" }))
+        .slice(0, 3);
     }
   }
 
@@ -237,13 +278,13 @@ for (const f of files) {
   const out = {
     schema_version: "2.0.0",
     id,
-    meta: { name: mdl.name, category: ch, tags: mdl.tags, source: meta.title },
+    meta: { name: mdl.name, category: ch, tags: mdl.tags, source: f, sourceTitle: meta.title },
     engine: {
       core_question: mdl.core_question,
       trigger_signals: mdl.trigger_signals,
-      stop_conditions: [],
+      stop_conditions: mdl.stop_conditions || [],
       reasoning_protocol: mdl.reasoning_protocol,
-      decision_points: [],
+      decision_points: mdl.decision_points || [],
       output_format: { structure: "", example: mdl.example_trace }
     },
     codex: {

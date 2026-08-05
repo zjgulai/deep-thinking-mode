@@ -12,7 +12,10 @@
     "triggers": [
       "当你需要运用弱连接定律_强连接守住当下_弱连接带思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "不需要费力维系，却能让你感觉自己“在人群里”",
+      "不需要讨好所有人，也不需要深耕所有关系"
+    ]
   },
   "before_after": {
     "without_model": "在掌握弱连接定律_强连接守住当下_弱连接带之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

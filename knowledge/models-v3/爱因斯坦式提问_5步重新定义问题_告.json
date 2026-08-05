@@ -16,7 +16,11 @@
       "需要突破性创新或高成本投入前",
       "简单一次性事务（如“邮件发给谁”）"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "问题反复发生，常规方法无效",
+      "团队对“问题本质”有分歧",
+      "陷入僵局，所有明显路径都已尝试"
+    ]
   },
   "before_after": {
     "without_model": "没有爱因斯坦式提问_5步重新定义问题_告时，面对「问题反复发生，常规方法无效」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。",
@@ -62,7 +66,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

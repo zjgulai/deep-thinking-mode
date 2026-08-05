@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用别再把习惯_当成简单的动作重复思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "这不是习惯的成功，而是大脑运作的内耗与失败"
+    ]
   },
   "before_after": {
     "without_model": "在掌握别再把习惯_当成简单的动作重复之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -16,7 +16,9 @@
       "*   核心触发：deadline逼近",
       "典型内心独白：“来不及了！”"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "不需要成为情绪的主人，只需要成为工具箱的使用者"
+    ]
   },
   "before_after": {
     "without_model": "没有着急时如何快速冷静_4种_着急时，面对「*   核心触发：事情脱离预期」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。",
@@ -62,7 +64,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

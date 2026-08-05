@@ -13,7 +13,10 @@
       "-----------------------",
       "----------------"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "-----------------------",
+      "----------------"
+    ]
   },
   "before_after": {
     "without_model": "没有效率洁癖_被绩效驯化的自我审判者时，面对「-----------------------」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。",
@@ -59,7 +62,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

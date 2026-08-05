@@ -8,11 +8,63 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
-const SRC = join(ROOT, "knowledge", "models-v2");
-const OUT = join(ROOT, "knowledge", "models-v3");
-const SCHEMA_V3 = join(ROOT, "knowledge", "model-schema-v3.json");
+const SRC  = join(ROOT, "knowledge", "models-v2");
+const OUT  = join(ROOT, "knowledge", "models-v3");
+const DATA = join(ROOT, "data");
 
 if (!existsSync(OUT)) mkdirSync(OUT, { recursive: true });
+
+// ─── 从 data/ 原文补充字段（当V2字段为空时） ──────────────
+function loadSourceText(sourceFile) {
+  if (!sourceFile) return null;
+  // sourceFile 可能是文件名（含.md）或不含.md
+  const candidates = [
+    join(DATA, sourceFile),
+    join(DATA, sourceFile.endsWith('.md') ? sourceFile : sourceFile + '.md'),
+  ];
+  for (const p of candidates) {
+    if (existsSync(p)) {
+      try { return readFileSync(p, "utf8"); } catch { return null; }
+    }
+  }
+  return null;
+}
+
+function extractAntiTriggers(text) {
+  if (!text) return [];
+  const stopSec = text.match(/(?:不适用|不应该用|局限|局限性|不推荐|什么情况.*不|避免|慎用|不要用|反面|缺陷|陷阱|误区|常见错误)[：:]*\n?([\s\S]{40,500}?)(?=\n(?:#{1,3}|[一二三四五六七八九十]、|总结|结语|$))/i);
+  if (stopSec) {
+    const items = stopSec[1].match(/[-•*✗×]\s*([^\n]{8,100})/g);
+    if (items) return items.map(i => i.replace(/^[-•*✗×]\s*/, "").trim().slice(0, 90)).filter(s => s.length > 10).slice(0, 3);
+  }
+  const notButs = text.match(/(?:这不是|不适合|不应该用|不需要|不适合用)[^。\n]{10,80}/g);
+  if (notButs) return notButs.map(s => s.trim().slice(0, 90)).filter(s => s.length > 10).slice(0, 3);
+  return [];
+}
+
+function extractPitfalls(text) {
+  if (!text) return [];
+  const pitfallSec = text.match(/(?:常见误区|注意事项|避坑|常见错误|警惕|容易犯的|典型错误|误区|坑)[：:]*\n?([\s\S]{40,600}?)(?=\n(?:#{1,3}|[一二三四五六七八九十]、|总结|结语|$))/i);
+  if (pitfallSec) {
+    const items = pitfallSec[1].match(/[-•*✗×❌]\s*([^\n]{8,120})/g);
+    if (items) return items.map(i => i.replace(/^[-•*✗×❌]\s*/, "").trim()).filter(s => s.length > 10).slice(0, 3);
+  }
+  const pitPats = text.match(/(?:误区|错误|陷阱)[一二三四五六七八九十\d][：:]\s*([^\n]{8,100})/g);
+  if (pitPats) return pitPats.map(s => s.replace(/^(?:误区|错误|陷阱)[一二三四五六七八九十\d][：:]\s*/, "").trim().slice(0, 100)).slice(0, 3);
+  return [];
+}
+
+function extractRealTriggers(text) {
+  if (!text) return [];
+  const sigSec = text.match(/(?:适用|信号|识别|什么情况|什么时候|何时|触发|你是否有|你是否经历)[：:]*\n?([\s\S]{60,600}?)(?=\n(?:#{1,3}|[一二三四五六七八九十]、|总结|结语|示例|应用|操作|步骤|方法|如何|怎么|附|$))/i);
+  if (sigSec) {
+    const items = sigSec[1].match(/[-•*]\s*([^\n]{8,100})/g);
+    if (items) return items.map(i => i.replace(/^[-•*]\s*/, "").trim().slice(0, 90)).filter(s => s.length > 12 && !/分钟|阶段|步骤|流程|准备|执行|后续/i.test(s)).slice(0, 5);
+  }
+  const youPat = text.slice(0, 2000).match(/你[^\n]{10,80}(?:吗|？|[。，,])/g);
+  if (youPat) return youPat.map(s => s.trim().slice(0, 90)).filter(s => s.length > 15 && !/分钟|阶段|流程/i.test(s)).slice(0, 5);
+  return [];
+}
 
 // 场景领域模板（自动填充占位）
 const DOMAINS = ["企业管理", "产品设计", "分析洞察", "决策思维", "任务管理"];
@@ -117,8 +169,13 @@ function upgradeV2toV3(v2) {
   // 核心定义：从 core_question 或 meta.source 提取
   const definition = eng.core_question || `如何运用${name}来解决问题`;
   
-  // 触发信号
-  const triggers = (eng.trigger_signals || []).filter(s => s && s.length > 8).slice(0, 5);
+  // 触发信号：V2有则用，否则从源文提取
+  let triggers = (eng.trigger_signals || []).filter(s => s && s.length > 8 && !/^当你需要运用/.test(s)).slice(0, 5);
+  if (triggers.length < 2) {
+    const srcText = loadSourceText(v2.meta?.source);
+    const fromSrc = extractRealTriggers(srcText);
+    triggers = fromSrc.length >= 2 ? fromSrc : triggers;
+  }
   if (triggers.length === 0) triggers.push(`当你需要运用${name}思维时`);
   
   // 推理步骤：V2 proto → V3 steps
@@ -168,7 +225,13 @@ function upgradeV2toV3(v2) {
     core_definition: smartSlice(definition, 150),
     when_to_use: {
       triggers,
-      anti_triggers: eng.stop_conditions || []
+      anti_triggers: (() => {
+        // V2 stop_conditions 优先，否则从源文提取
+        const fromV2 = (eng.stop_conditions || []).filter(s => s && s.length > 8);
+        if (fromV2.length > 0) return fromV2.slice(0, 3);
+        const srcText = loadSourceText(v2.meta?.source);
+        return extractAntiTriggers(srcText);
+      })()
     },
     before_after: {
       without_model: withoutModel,
@@ -181,7 +244,13 @@ function upgradeV2toV3(v2) {
       system_prompt: prompt,
       skill_hint: `可转为Skill: ${name.toLowerCase().replace(/[\s\/\\:：]/g, "-").slice(0, 30)}`
     },
-    pitfalls: (eng.decision_points || []).slice(0, 3).map(d => d.condition || "").filter(Boolean),
+    pitfalls: (() => {
+      // V2 decision_points 优先，否则从源文提取
+      const fromV2 = (eng.decision_points || []).slice(0, 3).map(d => d.condition || "").filter(Boolean);
+      if (fromV2.length > 0) return fromV2;
+      const srcText = loadSourceText(v2.meta?.source);
+      return extractPitfalls(srcText);
+    })(),
     quality: {
       definition_clarity: Math.min(v2.quality?.overall || 3, 5),
       trigger_precision: triggers.length >= 3 ? 4 : 2,

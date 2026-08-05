@@ -5,7 +5,8 @@
     "name": "第一性原理践行指南",
     "category": "04",
     "tags": [],
-    "source": "第一性原理践行指南.md"
+    "source": "第一性原理践行指南.md",
+    "sourceTitle": "第一性原理践行指南"
   },
   "engine": {
     "core_question": "层层追问“为什么”，剥离表象至不可反驳的底层规律",
@@ -15,7 +16,7 @@
     "decision_points": [],
     "output_format": {
       "structure": "",
-      "example": ""
+      "example": "、时代、对象均成立      2\\. 不可再分性：无法拆分为更基础的规律      3\\. 无类比痕迹：不涉及特定行业、产品或做法      4\\. 数学/物理表达：可通过公式或精确逻辑表述      5\\. 可检验性：推论明确且可通过实验验证      落地行动指南      今日必做：30分钟完成“定义问题→五层追问→清单验证”，记录结果并次日复盘      核心原则：重复5次形成思维肌肉记忆，将思维模型转化为解决能力      关键提醒：推导行动方案需贴合提炼的第一性原理，规避无效努力"
     }
   },
   "codex": {
@@ -26,7 +27,7 @@
   "quality": {
     "reasoning_completeness": 1,
     "example_coverage": 0,
-    "prompt_effectiveness": 2,
-    "overall": 2
+    "prompt_effectiveness": 1,
+    "overall": 1
   }
 }

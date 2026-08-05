@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用5W2H七问法_帮你把任何事想全想透思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "不需要做什么”，从源头规避工作范围蔓延和资源浪费"
+    ]
   },
   "before_after": {
     "without_model": "在掌握5W2H七问法_帮你把任何事想全想透之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

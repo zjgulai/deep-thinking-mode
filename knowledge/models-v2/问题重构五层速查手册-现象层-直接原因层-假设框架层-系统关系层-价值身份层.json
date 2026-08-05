@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构五层速查手册-现象层-直接原因层-假设框架层-系统关系层-价值身份层",
+  "meta": {
+    "name": "问题重构五层速查手册",
+    "category": "03",
+    "tags": [],
+    "source": "问题重构五层速查手册_现象层_直接原因层_假设框架层_系统关系层_价值身份层.md",
+    "sourceTitle": "问题重构五层速查手册：现象层→直接原因层→假设框架层→系统关系层→价值身份层"
+  },
+  "engine": {
+    "core_question": "很简单：不局限于当下的操作细节和表层矛盾，主动将问题拉升到更高的抽象层级、更大的系统边界、更深的价值观维度重新定义",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "边界： 明确问题的覆盖范围，分清哪些因素相关、哪些",
+        "action": "边界： 明确问题的覆盖范围，分清哪些因素相关、哪些无关，杜绝无效内耗。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "因果假设： 我们默认的问题成因是什么？线性表象背后",
+        "action": "因果假设： 我们默认的问题成因是什么？线性表象背后，是否有隐藏的深层逻辑？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "评价标准： 怎样才算解决问题？评判主体是谁、评判维",
+        "action": "评价标准： 怎样才算解决问题？评判主体是谁、评判维度是什么？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "将“用户投诉物流慢”，重构为“平台平均配送时长从24小时延长至48小时”。"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「问题重构五层速查手册」思维模式运行。\n\nStep 1 - 边界： 明确问题的覆盖范围，分清哪些因素相关、哪些：边界： 明确问题的覆盖范围，分清哪些因素相关、哪些无关，杜绝无效内耗。\n\nStep 2 - 因果假设： 我们默认的问题成因是什么？线性表象背后：因果假设： 我们默认的问题成因是什么？线性表象背后，是否有隐藏的深层逻辑？\n\nStep 3 - 评价标准： 怎样才算解决问题？评判主体是谁、评判维：评价标准： 怎样才算解决问题？评判主体是谁、评判维度是什么？\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用问题重构五层速查手册分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 3
+  }
+}

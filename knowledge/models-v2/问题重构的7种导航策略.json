@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构的7种导航策略",
+  "meta": {
+    "name": "问题重构 #框架思维 #思维框",
+    "category": "03",
+    "tags": [
+      "问题重构",
+      "框架思维",
+      "思维框架",
+      "问题分析"
+    ],
+    "source": "问题重构的7种导航策略.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "问题重构的7种导航策略 ===========  原创 正方形SQUARE 2026-04-14 16:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/y\\_GIrTlQyI0LUzhLvsrL5A](https://mp.weixin.qq.com/s/y_G",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题重构 #框架思维 #思维框的方式思考。",
+    "activation_phrase": "请用问题重构 #框架思维 #思维框分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

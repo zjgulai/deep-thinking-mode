@@ -10,12 +10,14 @@
   "core_definition": "，设计最快、最低成本的微型验证实验，拒绝空想、快速试错",
   "when_to_use": {
     "triggers": [
-      "当你需要运用问题重构五步法_一套完整的根源解题系思维时"
+      "---------------",
+      "-------------------",
+      "------------------"
     ],
     "anti_triggers": []
   },
   "before_after": {
-    "without_model": "在掌握问题重构五步法_一套完整的根源解题系之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
+    "without_model": "没有问题重构五步法_一套完整的根源解题系时，面对「---------------」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。",
     "with_model": "运用问题重构五步法_一套完整的根源解题系后，能够按照结构化的推理协议逐步分析问题：，设计最快、最低成本的微型验证实验，拒绝空想、快速试错，从而得出有依据的结论，而不是可替换的猜测。"
   },
   "reasoning_steps": [
@@ -55,10 +57,10 @@
   "pitfalls": [],
   "quality": {
     "definition_clarity": 2,
-    "trigger_precision": 2,
+    "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

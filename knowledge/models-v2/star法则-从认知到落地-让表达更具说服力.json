@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "star法则-从认知到落地-让表达更具说服力",
+  "meta": {
+    "name": "STAR法则详解 #框架思维 ",
+    "category": "11",
+    "tags": [
+      "STAR法则详解",
+      "框架思维",
+      "思维框架",
+      "思维模型"
+    ],
+    "source": "STAR法则_从认知到落地_让表达更具说服力.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "STAR法则：从认知到落地，让表达更具说服力 ======================  原创 正方形SQUARE 2026-03-15 15:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/b2yZLjpBVhpVp4qmPtftNA](https://m",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以STAR法则详解 #框架思维 的方式思考。",
+    "activation_phrase": "请用STAR法则详解 #框架思维 分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

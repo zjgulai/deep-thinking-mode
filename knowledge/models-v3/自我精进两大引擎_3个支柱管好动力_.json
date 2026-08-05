@@ -12,7 +12,11 @@
     "triggers": [
       "当你需要运用自我精进两大引擎_3个支柱管好动力思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "\\*如果我的判断是错的，最可能的原因是什么？还有哪些被我忽略的信息和视角？\\*\\*通过反向自查打破主观偏见，客观审视问题，大幅提升决策精准度。",
+      "-------------",
+      "-----------"
+    ]
   },
   "before_after": {
     "without_model": "在掌握自我精进两大引擎_3个支柱管好动力之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +62,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

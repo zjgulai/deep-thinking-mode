@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "系统思维-看清关联-高效破局的认知框架",
+  "meta": {
+    "name": "框架思维 #思维框架 #思维模",
+    "category": "04",
+    "tags": [
+      "框架思维",
+      "思维框架",
+      "思维模型"
+    ],
+    "source": "系统思维_看清关联_高效破局的认知框架.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "系统思维：看清关联、高效破局的认知框架 ===================  原创 正方形SQUARE 2026-03-05 15:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/AqprUsX6kCdk1b8qqwL2VA](https://mp.weix",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以框架思维 #思维框架 #思维模的方式思考。",
+    "activation_phrase": "请用框架思维 #思维框架 #思维模分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

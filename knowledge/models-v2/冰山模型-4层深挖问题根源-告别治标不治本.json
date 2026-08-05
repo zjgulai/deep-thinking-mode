@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "冰山模型-4层深挖问题根源-告别治标不治本",
+  "meta": {
+    "name": "冰山模型",
+    "category": "04",
+    "tags": [],
+    "source": "冰山模型_4层深挖问题根源_告别治标不治本.md",
+    "sourceTitle": "冰山模型：4层深挖问题根源，告别治标不治本"
+  },
+  "engine": {
+    "core_question": "很简单：所有看得见的表面问题，都是由水面下看不见的底层结构造成的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "事件层｜关键提问：发生了什么？ 只看客观事实，不掺",
+        "action": "事件层｜关键提问：发生了什么？ 只看客观事实，不掺杂情绪，如实记录问题。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "模式层｜关键提问：这是偶然还是常态？ 拉长时间线，",
+        "action": "模式层｜关键提问：这是偶然还是常态？ 拉长时间线，找出问题反复出现的规律。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "结构层｜关键提问：什么机制在制造问题？ 拆解系统逻",
+        "action": "结构层｜关键提问：什么机制在制造问题？ 拆解系统逻辑，找到问题持续存在的底层机制。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "心智层｜关键提问：什么认知纵容了问题？ 向内复盘自",
+        "action": "心智层｜关键提问：什么认知纵容了问题？ 向内复盘自我执念，从根源打破问题闭环。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "推演：拆解团队反复加班问题  1\\. 事件层（表层）  项目再次延期上线，团队全员连续三周熬夜加班，超负荷工作。"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「冰山模型」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - 事件层｜关键提问：发生了什么？ 只看客观事实，不掺：事件层｜关键提问：发生了什么？ 只看客观事实，不掺杂情绪，如实记录问题。\n\nStep 2 - 模式层｜关键提问：这是偶然还是常态？ 拉长时间线，：模式层｜关键提问：这是偶然还是常态？ 拉长时间线，找出问题反复出现的规律。\n\nStep 3 - 结构层｜关键提问：什么机制在制造问题？ 拆解系统逻：结构层｜关键提问：什么机制在制造问题？ 拆解系统逻辑，找到问题持续存在的底层机制。\n\nStep 4 - 心智层｜关键提问：什么认知纵容了问题？ 向内复盘自：心智层｜关键提问：什么认知纵容了问题？ 向内复盘自我执念，从根源打破问题闭环。\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用冰山模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 3
+  }
+}

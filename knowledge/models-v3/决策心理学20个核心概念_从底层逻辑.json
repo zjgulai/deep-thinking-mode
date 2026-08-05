@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用决策心理学20个核心概念_从底层逻辑思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "不需要海量信息和复杂计算，就能快速得出结论，在进化环境中具备高效适配性；但放到现代复杂场景，或是问题呈现方式特殊时，就容易触发可预测的决策偏差"
+    ]
   },
   "before_after": {
     "without_model": "在掌握决策心理学20个核心概念_从底层逻辑之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

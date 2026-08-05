@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "涌现思维-从蚂蚁的智慧-看懂你该怎么成长-2",
+  "meta": {
+    "name": "涌现思维",
+    "category": "05",
+    "tags": [],
+    "source": "涌现思维_从蚂蚁的智慧_看懂你该怎么成长 2.md",
+    "sourceTitle": "涌现思维：从蚂蚁的智慧，看懂你该怎么成长"
+  },
+  "engine": {
+    "core_question": "，帮你搭建一套“成长涌现系统”——不再靠意志力死撑，而是让突破自然发生",
+    "trigger_signals": [
+      "--------"
+    ],
+    "stop_conditions": [
+      "------------"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "“每天深度工作90分钟”“每周和一位跨领域的人聊一次”。这三条规则，就是你个人涌现系统的底层代码。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以涌现思维的方式思考。",
+    "activation_phrase": "请用涌现思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

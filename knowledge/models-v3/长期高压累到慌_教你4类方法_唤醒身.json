@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用长期高压累到慌_教你4类方法_唤醒身思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "这不是你不够坚强，是身体的“放松开关”失灵了"
+    ]
   },
   "before_after": {
     "without_model": "在掌握长期高压累到慌_教你4类方法_唤醒身之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

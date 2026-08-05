@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "如何从-我是这个想法-到-我有一个想法-",
+  "meta": {
+    "name": "如何从“我是这个想法”到“我有",
+    "category": "10",
+    "tags": [
+      "反刍思维",
+      "内耗"
+    ],
+    "source": "如何从_我是这个想法_到_我有一个想法_.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "如何从“我是这个想法”到“我有一个想法” ====================  原创 正方形SQUARE 2026-02-13 10:46 上海  > 原文地址: [https://mp.weixin.qq.com/s/BkHP6IYKH3SUeM26bM7leA](https://mp.we",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以如何从“我是这个想法”到“我有的方式思考。",
+    "activation_phrase": "请用如何从“我是这个想法”到“我有分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

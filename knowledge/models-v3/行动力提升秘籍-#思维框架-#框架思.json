@@ -12,7 +12,11 @@
     "triggers": [
       "当你需要运用行动力提升秘籍 #思维框架 #框架思思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "Wish 愿望：锁定真实、可落地、难度适中的目标，3-6字提炼，拒绝空泛宏大",
+      "Outcome 结果：沉浸式想象目标达成的成果与内心感受，激活情感动力，强化执行欲",
+      "Obstacle 障碍：只找内部可控阻碍（拖延、惰性、分心等），杜绝外部归因，直击核心痛点"
+    ]
   },
   "before_after": {
     "without_model": "在掌握行动力提升秘籍 #思维框架 #框架思之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +62,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -54,11 +54,11 @@
   },
   "pitfalls": [],
   "quality": {
-    "definition_clarity": 2,
+    "definition_clarity": 1,
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
     "prompt_effectiveness": 3,
-    "overall": 4
+    "overall": 3
   }
 }

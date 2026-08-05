@@ -12,7 +12,10 @@
     "triggers": [
       "当你需要运用决策心理学核心_启发式_有限理性下思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "--------------",
+      "------------"
+    ]
   },
   "before_after": {
     "without_model": "在掌握决策心理学核心_启发式_有限理性下之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

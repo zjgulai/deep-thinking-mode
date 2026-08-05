@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用忙累耗竭自救指南_3个阶段_行动清单思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "这不是心态问题，而是身心超负荷后启动的保护性抑制——身体主动开启低功耗休眠模式，是明确的透支求救信号"
+    ]
   },
   "before_after": {
     "without_model": "在掌握忙累耗竭自救指南_3个阶段_行动清单之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

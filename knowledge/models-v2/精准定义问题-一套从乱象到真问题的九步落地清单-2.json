@@ -1,0 +1,106 @@
+{
+  "schema_version": "2.0.0",
+  "id": "精准定义问题-一套从乱象到真问题的九步落地清单-2",
+  "meta": {
+    "name": "精准定义问题",
+    "category": "03",
+    "tags": [],
+    "source": "精准定义问题_一套从乱象到真问题的九步落地清单 2.md",
+    "sourceTitle": "精准定义问题：一套从乱象到真问题的九步落地清单"
+  },
+  "engine": {
+    "core_question": "第一层：界定问题域：剥离干扰、锁定核心矛盾，明确问题真伪与边界；",
+    "trigger_signals": [
+      "---------------",
+      "----------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "三层漏斗过滤法：筛选真问题",
+        "action": "三层漏斗过滤法：筛选真问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "拆解现状：写下初始问题，深挖隐藏假设与思维卡点；",
+        "action": "拆解现状：写下初始问题，深挖隐藏假设与思维卡点；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "多维重构：套用六大重构方法，重新定义问题；",
+        "action": "多维重构：套用六大重构方法，重新定义问题；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "筛选最优：优先选择贴近本质、可落地行动的问题定义；",
+        "action": "筛选最优：优先选择贴近本质、可落地行动的问题定义；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "小步验证：快速测试新定义有效性，规避决策偏差；",
+        "action": "小步验证：快速测试新定义有效性，规避决策偏差；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "闭环迭代：基于新问题落地方案，持续复盘优化。",
+        "action": "闭环迭代：基于新问题落地方案，持续复盘优化。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "六种核心重构方法（精炼可直接套用）",
+        "action": "六种核心重构方法（精炼可直接套用）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "-----------",
+        "action": ""
+      },
+      {
+        "condition": "---------------",
+        "action": ""
+      },
+      {
+        "condition": "----------------",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": "，全部可直接套用、落地即用。  📌 工具调用导航（按需跳读，无需全读）"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「精准定义问题」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - 三层漏斗过滤法：筛选真问题：三层漏斗过滤法：筛选真问题\n\nStep 2 - 拆解现状：写下初始问题，深挖隐藏假设与思维卡点；：拆解现状：写下初始问题，深挖隐藏假设与思维卡点；\n\nStep 3 - 多维重构：套用六大重构方法，重新定义问题；：多维重构：套用六大重构方法，重新定义问题；\n\nStep 4 - 筛选最优：优先选择贴近本质、可落地行动的问题定义；：筛选最优：优先选择贴近本质、可落地行动的问题定义；\n\nStep 5 - 小步验证：快速测试新定义有效性，规避决策偏差；：小步验证：快速测试新定义有效性，规避决策偏差；\n\nStep 6 - 闭环迭代：基于新问题落地方案，持续复盘优化。：闭环迭代：基于新问题落地方案，持续复盘优化。\n\nStep 7 - 六种核心重构方法（精炼可直接套用）：六种核心重构方法（精炼可直接套用）\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用精准定义问题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

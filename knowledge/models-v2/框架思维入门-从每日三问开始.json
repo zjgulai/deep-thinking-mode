@@ -1,0 +1,33 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架思维入门-从每日三问开始",
+  "meta": {
+    "name": "框架思维入门：从每日三问开始",
+    "category": "04",
+    "tags": [],
+    "source": "框架思维入门_从每日三问开始.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "框架思维入门：从每日三问开始 ==============  原创 正方形SQUARE 2026-02-28 11:16 上海  > 原文地址: [https://mp.weixin.qq.com/s/WY4kMoJMW4wGqOAtZi\\_gig](https://mp.weixin.qq.com",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以框架思维入门：从每日三问开始的方式思考。",
+    "activation_phrase": "请用框架思维入门：从每日三问开始分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

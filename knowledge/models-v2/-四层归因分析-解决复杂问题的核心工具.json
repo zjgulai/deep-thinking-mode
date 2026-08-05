@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0.0",
+  "id": "-四层归因分析-解决复杂问题的核心工具",
+  "meta": {
+    "name": "“四层归因分析”解决复杂问题的",
+    "category": "04",
+    "tags": [],
+    "source": "_四层归因分析_解决复杂问题的核心工具.md",
+    "sourceTitle": "“四层归因分析”解决复杂问题的核心工具"
+  },
+  "engine": {
+    "core_question": "；通过正向解决，可以从根本上消除问题的产生机制",
+    "trigger_signals": [
+      "\\*\"因果链条\"\\*\\* 表示：结果 ← 直接原因 ← 根本原因 ← 深层原因。通过反向追溯，可以从表面问题逐步深入到组织的核心问题；通过正向解决，可以从根本上消除问题的产生机制。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "分层改进策略",
+        "action": "分层改进策略",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "实施路径设计",
+        "action": "实施路径设计",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "混淆原因层次",
+        "action": ""
+      },
+      {
+        "condition": "归因过于表面",
+        "action": ""
+      },
+      {
+        "condition": "归因过于复杂",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": "和实践案例，全面解析这一重要的管理分析工具。   一、四层归因逻辑的理论基础与核心概念"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「“四层归因分析”解决复杂」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - 分层改进策略：分层改进策略\n\nStep 2 - 实施路径设计：实施路径设计\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用“四层归因分析”解决复杂问题的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

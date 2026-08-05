@@ -14,7 +14,9 @@
       "-----------------",
       "------------------"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "不需要有动力才开始做事，恰恰是开始做事之后，大脑才会为你生成动力"
+    ]
   },
   "before_after": {
     "without_model": "没有别等有动力再行动_颠覆常识_动力从来时，面对「---------------」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。",
@@ -60,7 +62,7 @@
     "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

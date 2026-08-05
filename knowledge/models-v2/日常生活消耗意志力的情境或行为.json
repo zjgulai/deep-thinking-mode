@@ -5,28 +5,86 @@
     "name": "日常生活消耗意志力的情境或行为",
     "category": "09",
     "tags": [],
-    "source": "日常生活消耗意志力的情境或行为.md"
+    "source": "日常生活消耗意志力的情境或行为.md",
+    "sourceTitle": "日常生活消耗意志力的情境或行为"
   },
   "engine": {
     "core_question": "日常生活消耗意志力的情境或行为  下列情境或行为被心理学研究证实会消耗意志力，可作为日常自我管理的“警示清单”。  1.  **抵制眼前诱惑**        • 刻意不吃的美食、甜品、零食，或面对购物、游戏等冲动时的“说不”        • 与欲望进行内心拉锯，哪怕最终屈服，也已在抵抗过程中耗尽",
     "trigger_signals": [],
     "stop_conditions": [],
-    "reasoning_protocol": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**重大或繁琐的决策**",
+        "action": "**重大或繁琐的决策**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**情绪与冲动的调节**",
+        "action": "**情绪与冲动的调节**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**长时间专注或屏蔽干扰**",
+        "action": "**长时间专注或屏蔽干扰**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**身体疲劳与生理匮乏**",
+        "action": "**身体疲劳与生理匮乏**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**自我控制的连锁效应**",
+        "action": "**自我控制的连锁效应**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "**拖延与任务切换**",
+        "action": "**拖延与任务切换**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "**奖励或动机变化**",
+        "action": "**奖励或动机变化**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
     "decision_points": [],
     "output_format": {
       "structure": "",
-      "example": ""
+      "example": "后，可采取“先大事后小事”“减少选择”“及时补充糖分与休息”“把同类任务集中”等策略，让有限的意志力用在最重要的目标上。"
     }
   },
   "codex": {
-    "system_prompt": "请以日常生活消耗意志力的情境或行为的方式思考。",
+    "system_prompt": "你现在以「日常生活消耗意志力的情境」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - **重大或繁琐的决策**：**重大或繁琐的决策**\n\nStep 2 - **情绪与冲动的调节**：**情绪与冲动的调节**\n\nStep 3 - **长时间专注或屏蔽干扰**：**长时间专注或屏蔽干扰**\n\nStep 4 - **身体疲劳与生理匮乏**：**身体疲劳与生理匮乏**\n\nStep 5 - **自我控制的连锁效应**：**自我控制的连锁效应**\n\nStep 6 - **拖延与任务切换**：**拖延与任务切换**\n\nStep 7 - **奖励或动机变化**：**奖励或动机变化**\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
     "activation_phrase": "请用日常生活消耗意志力的情境或行为分析...",
     "fallback": ""
   },
   "quality": {
-    "reasoning_completeness": 1,
+    "reasoning_completeness": 5,
     "example_coverage": 0,
-    "prompt_effectiveness": 2,
-    "overall": 2
+    "prompt_effectiveness": 3,
+    "overall": 5
   }
 }

@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用1\\. 情绪调节：并非单纯的“快乐”思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "练习感恩、冥想和正念，能帮助你专注于当下，培养满足感，这被证明可以影响血清素系统。"
+    ]
   },
   "before_after": {
     "without_model": "在掌握1\\. 情绪调节：并非单纯的“快乐”之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

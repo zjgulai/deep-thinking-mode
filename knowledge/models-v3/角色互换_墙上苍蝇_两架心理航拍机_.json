@@ -13,7 +13,9 @@
       "----------------------",
       "-------------------"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "-------------"
+    ]
   },
   "before_after": {
     "without_model": "没有角色互换_墙上苍蝇_两架心理航拍机时，面对「----------------------」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。",
@@ -59,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

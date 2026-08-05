@@ -12,7 +12,11 @@
     "triggers": [
       "）描绘增强与平衡的相互作用，是呈现系统动态的语法结构。"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "------------",
+      "------------",
+      "-------------"
+    ]
   },
   "before_after": {
     "without_model": "在掌握系统思考_从线性应对到全局洞察_4之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +62,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

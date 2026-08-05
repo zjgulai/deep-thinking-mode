@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "概念篇-六步建模-终极易懂实操版-看表象-看性质-看关系-看完整属性-看本质内涵-看边界外延-自成权",
+  "meta": {
+    "name": "概念篇",
+    "category": "02",
+    "tags": [],
+    "source": "概念篇_六步建模_终极易懂实操版（看表象___看性质___看关系___看完整属性___看本质内涵___看边界外延___自成权威体系）.md",
+    "sourceTitle": "概念篇：六步建模・终极易懂实操版（看表象 → 看性质 → 看关系 → 看完整属性 → 看本质内涵 → 看边界外延 → 自成权威体系）"
+  },
+  "engine": {
+    "core_question": "口诀：自己本来就有的，叫性质；别人临时叫你干的，不叫性质",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "目标性质（它为什么存在）",
+        "action": "目标性质（它为什么存在）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "结构性质（它内部是什么架构）",
+        "action": "结构性质（它内部是什么架构）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "管控性质（它自带什么约束）",
+        "action": "管控性质（它自带什么约束）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "价值性质（它自带行业底色）",
+        "action": "价值性质（它自带行业底色）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "纵向层级关系（上下级传导链）",
+        "action": "纵向层级关系（上下级传导链）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "横向协同关系（平行业务链）",
+        "action": "横向协同关系（平行业务链）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "体系支撑关系（底层依托链）",
+        "action": "体系支撑关系（底层依托链）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「概念篇」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - 目标性质（它为什么存在）：目标性质（它为什么存在）\n\nStep 2 - 结构性质（它内部是什么架构）：结构性质（它内部是什么架构）\n\nStep 3 - 管控性质（它自带什么约束）：管控性质（它自带什么约束）\n\nStep 4 - 价值性质（它自带行业底色）：价值性质（它自带行业底色）\n\nStep 5 - 纵向层级关系（上下级传导链）：纵向层级关系（上下级传导链）\n\nStep 6 - 横向协同关系（平行业务链）：横向协同关系（平行业务链）\n\nStep 7 - 体系支撑关系（底层依托链）：体系支撑关系（底层依托链）\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用概念篇分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

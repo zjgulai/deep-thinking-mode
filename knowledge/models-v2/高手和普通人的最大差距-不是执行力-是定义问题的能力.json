@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0.0",
+  "id": "高手和普通人的最大差距-不是执行力-是定义问题的能力",
+  "meta": {
+    "name": "高手和普通人的最大差距",
+    "category": "07",
+    "tags": [],
+    "source": "高手和普通人的最大差距_不是执行力_是定义问题的能力.md",
+    "sourceTitle": "高手和普通人的最大差距：不是执行力，是定义问题的能力"
+  },
+  "engine": {
+    "core_question": "，大意是：如果我有1小时拯救世界，我会花55分钟定义问题，5分钟解决它",
+    "trigger_signals": [
+      "你以为是自己执行力不够、能力不足、运气不好。",
+      "你一套从乱象到真问题的标准化SOP——读完就能用，用完就能见效。",
+      "你感觉自己卡住了，先问一句：我是不是犯了上面某个错误？",
+      "你在一个问题上反复打转、毫无进展时，别硬扛。试试下面三个工具，选一个用就行。"
+    ],
+    "stop_conditions": [
+      "这不是我想要的”——你努力的方向从一开始就错了"
+    ],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "三个最常见的“问题定义”错误",
+        "action": "三个最常见的“问题定义”错误",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "三层漏斗：从乱象中筛出真问题",
+        "action": "三层漏斗：从乱象中筛出真问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "追问：这个表述里有没有“默认前提”？",
+        "action": "追问：这个表述里有没有“默认前提”？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "换一个角度/边界/角色重写问题",
+        "action": "换一个角度/边界/角色重写问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "挑一个最贴近本质、能行动的新问题",
+        "action": "挑一个最贴近本质、能行动的新问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "质疑：这个问题消失后，更好的状态是什么？",
+        "action": "质疑：这个问题消失后，更好的状态是什么？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "选一个你最近反复头疼的小问题（比如“周报总是拖到最",
+        "action": "选一个你最近反复头疼的小问题（比如“周报总是拖到最后一刻”）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "和数据，没有“我觉得”“他好像”  主体明确：谁受损？谁有能力改变？"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「高手和普通人的最大差距」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - 三个最常见的“问题定义”错误：三个最常见的“问题定义”错误\n\nStep 2 - 三层漏斗：从乱象中筛出真问题：三层漏斗：从乱象中筛出真问题\n\nStep 3 - 追问：这个表述里有没有“默认前提”？：追问：这个表述里有没有“默认前提”？\n\nStep 4 - 换一个角度/边界/角色重写问题：换一个角度/边界/角色重写问题\n\nStep 5 - 挑一个最贴近本质、能行动的新问题：挑一个最贴近本质、能行动的新问题\n\nStep 6 - 质疑：这个问题消失后，更好的状态是什么？：质疑：这个问题消失后，更好的状态是什么？\n\nStep 7 - 选一个你最近反复头疼的小问题（比如“周报总是拖到最：选一个你最近反复头疼的小问题（比如“周报总是拖到最后一刻”）\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用高手和普通人的最大差距分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

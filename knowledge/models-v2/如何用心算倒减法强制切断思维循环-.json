@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "如何用心算倒减法强制切断思维循环-",
+  "meta": {
+    "name": "如何用心算倒减法强制切断思维循",
+    "category": "10",
+    "tags": [
+      "内耗",
+      "反刍思维"
+    ],
+    "source": "如何用心算倒减法强制切断思维循环_.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "如何用心算倒减法强制切断思维循环？ =================  原创 正方形SQUARE 2026-02-18 08:09 上海  > 原文地址: [https://mp.weixin.qq.com/s/8ipFe1AViHml8vSGoHEz8g](https://mp.weixin.q",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以如何用心算倒减法强制切断思维循的方式思考。",
+    "activation_phrase": "请用如何用心算倒减法强制切断思维循分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

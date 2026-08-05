@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "用第一性原理穿透表象-找到问题的根本解法",
+  "meta": {
+    "name": "第一性原理思维 #框架思维",
+    "category": "04",
+    "tags": [
+      "第一性原理思维",
+      "框架思维"
+    ],
+    "source": "用第一性原理穿透表象_找到问题的根本解法.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "用第一性原理穿透表象，找到问题的根本解法 ====================  原创 正方形SQUARE 2026-03-04 15:00 上海  > 原文地址: [https://mp.weixin.qq.com/s/grPMPmxCcDlmkY0v4AhnLg](https://mp.we",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第一性原理思维 #框架思维的方式思考。",
+    "activation_phrase": "请用第一性原理思维 #框架思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

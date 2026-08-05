@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "id": "专注的愉悦从哪来-2",
+  "meta": {
+    "name": "专注的愉悦从哪来？",
+    "category": "07",
+    "tags": [
+      "专注的愉悦",
+      "多巴胺",
+      "内啡肽",
+      "大脑网络",
+      "DMN",
+      "专注力",
+      "心流"
+    ],
+    "source": "专注的愉悦从哪来_ 2.md",
+    "sourceTitle": "专注的愉悦从哪来？"
+  },
+  "engine": {
+    "core_question": "不是靠意志力硬撑，而是大脑网络“换班”了——干活模式TPN上岗，摸鱼模式DMN下岗",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以专注的愉悦从哪来？的方式思考。",
+    "activation_phrase": "请用专注的愉悦从哪来？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

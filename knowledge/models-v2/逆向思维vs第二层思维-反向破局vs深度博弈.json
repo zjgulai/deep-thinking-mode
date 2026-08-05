@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "逆向思维vs第二层思维-反向破局vs深度博弈",
+  "meta": {
+    "name": "逆向思维VS第二层思维 #思维",
+    "category": "06",
+    "tags": [
+      "逆向思维VS第二层思维",
+      "思维框架",
+      "框架思维",
+      "思维模型"
+    ],
+    "source": "逆向思维VS第二层思维_反向破局VS深度博弈.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "逆向思维VS第二层思维：反向破局VS深度博弈 ======================  原创 正方形SQUARE 2026-03-12 15:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/p--lSXco9tHVAFA4yRJaOQ](https://m",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以逆向思维VS第二层思维 #思维的方式思考。",
+    "activation_phrase": "请用逆向思维VS第二层思维 #思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

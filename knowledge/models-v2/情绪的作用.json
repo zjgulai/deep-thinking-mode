@@ -1,0 +1,79 @@
+{
+  "schema_version": "2.0.0",
+  "id": "情绪的作用",
+  "meta": {
+    "name": "1. **生存的警报与指南针（",
+    "category": "07",
+    "tags": [
+      "wechat_redirec"
+    ],
+    "source": "情绪的作用.md",
+    "sourceTitle": "1. **生存的警报与指南针（进化功能）**"
+  },
+  "engine": {
+    "core_question": "情绪是人类在漫长进化中形成的快速反应系统。  *   **恐惧**：提醒我们危险，准备战斗或逃跑，保障基本安全。      *   **厌恶**：让我们远离可能有害的事物（如腐烂的食物）。      *   **喜悦**：鼓励我们重复那些有利于生存和繁衍的行为（如进食、社交）。      *   *",
+    "trigger_signals": [
+      "**面部表情、语气、姿态**能瞬间传递丰富信息，比语言更快速、更真实。一个微笑能化解矛盾，一个悲伤的表情能获得安慰。",
+      "**共情**（感受他人情绪的能力）是道德、合作与亲密关系的基础。它让我们理解、帮助彼此，构建社会信任。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**决策的幕后指挥（认知功能）**",
+        "action": "**决策的幕后指挥（认知功能）**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**行动的核心驱动力（动机功能）**",
+        "action": "**行动的核心驱动力（动机功能）**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**人际沟通的无声语言（社交功能）**",
+        "action": "**人际沟通的无声语言（社交功能）**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**自我认知的窗口（指向功能）**",
+        "action": "**自我认知的窗口（指向功能）**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**赋予生命意义与深度（体验功能）**",
+        "action": "**赋予生命意义与深度（体验功能）**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，“感觉不对”会阻止一个风险选择，“充满热情”会推动我们坚持一个目标。"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「1. **生存的警报与指」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - **决策的幕后指挥（认知功能）**：**决策的幕后指挥（认知功能）**\n\nStep 2 - **行动的核心驱动力（动机功能）**：**行动的核心驱动力（动机功能）**\n\nStep 3 - **人际沟通的无声语言（社交功能）**：**人际沟通的无声语言（社交功能）**\n\nStep 4 - **自我认知的窗口（指向功能）**：**自我认知的窗口（指向功能）**\n\nStep 5 - **赋予生命意义与深度（体验功能）**：**赋予生命意义与深度（体验功能）**\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用1. **生存的警报与指南针（分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

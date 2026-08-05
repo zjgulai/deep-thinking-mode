@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0.0",
+  "id": "从-被动痛苦-到-主动建构-的心智转换模型-2",
+  "meta": {
+    "name": "从“被动痛苦”到“主动建构”的",
+    "category": "09",
+    "tags": [],
+    "source": "从_被动痛苦_到_主动建构_的心智转换模型 2.md",
+    "sourceTitle": "从“被动痛苦”到“主动建构”的心智转换模型"
+  },
+  "engine": {
+    "core_question": "当面对复杂情况时，人会陷入 **“被动反应状态”**：",
+    "trigger_signals": [
+      "整个转换过程最关键、最基础的一步是：**识别出自己正处于“被动状态”**。",
+      "识别依赖于内化的 **“观察性自我”**，能够跳出来察觉自身的情绪、思维和身体信号。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**精准识别",
+        "action": "建立“个人信号清单”**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**主动介入",
+        "action": "设置“检查点与触发器”**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**强制启动",
+        "action": "使用“元认知提问”与“思维脚手架”**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**视角重构",
+        "action": "切换心理位置**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**行动验证",
+        "action": "小步实验，快速反馈**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「从“被动痛苦”到“主动建」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - **精准识别：建立“个人信号清单”**\n\nStep 2 - **主动介入：设置“检查点与触发器”**\n\nStep 3 - **强制启动：使用“元认知提问”与“思维脚手架”**\n\nStep 4 - **视角重构：切换心理位置**\n\nStep 5 - **行动验证：小步实验，快速反馈**\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用从“被动痛苦”到“主动建构”的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

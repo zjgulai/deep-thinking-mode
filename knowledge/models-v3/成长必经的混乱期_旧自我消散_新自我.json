@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用成长必经的混乱期_旧自我消散_新自我思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "不需要一夜之间修好一切，几个微小动作就够了"
+    ]
   },
   "before_after": {
     "without_model": "在掌握成长必经的混乱期_旧自我消散_新自我之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

@@ -12,7 +12,9 @@
     "triggers": [
       "当你需要运用减法思维_少_才是解决复杂问题的最优思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "这不是思维狭隘，是进化带来的本能：多做补充、多加保障，会让人潜意识觉得更安全，害怕因删减遗漏风险"
+    ]
   },
   "before_after": {
     "without_model": "在掌握减法思维_少_才是解决复杂问题的最优之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +60,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

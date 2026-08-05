@@ -1,0 +1,81 @@
+{
+  "schema_version": "2.0.0",
+  "id": "erg动机理论-读懂动态人性需求-停止无谓自我内耗",
+  "meta": {
+    "name": "ERG动机理论",
+    "category": "07",
+    "tags": [],
+    "source": "ERG动机理论_读懂动态人性需求_停止无谓自我内耗.md",
+    "sourceTitle": "ERG动机理论：读懂动态人性需求，停止无谓自我内耗"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？ERG动机理论如何定义它？",
+    "trigger_signals": [
+      "-----------",
+      "------------"
+    ],
+    "stop_conditions": [
+      "生存层：一项基础健康或理财小习惯",
+      "关系层：一段无压力、无需刻意寒暄的放松陪伴",
+      "成长层：一件取悦自我、无关外界评价的小事"
+    ],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "生存层",
+        "action": "近期是否因钱财、健康缺乏安全感？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "关系层",
+        "action": "近期是否孤独缺爱，过度渴求他人认可？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "成长层",
+        "action": "近期是否生活重复，缺少成长与新鲜感？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "：复盘退行行为，锁定",
+        "action": "挫折源头",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "：疏通根源而非克制表",
+        "action": "象",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「ERG动机理论」思维模式运行。严格遵循以下推理协议：\n\nStep 1 - 生存层：近期是否因钱财、健康缺乏安全感？\n\nStep 2 - 关系层：近期是否孤独缺爱，过度渴求他人认可？\n\nStep 3 - 成长层：近期是否生活重复，缺少成长与新鲜感？\n\nStep 4 - ：复盘退行行为，锁定：挫折源头\n\nStep 5 - ：疏通根源而非克制表：象\n\n约束：按步骤顺序推理，不跳过任何一步。每步先给出分析再进入下一步。不适用时说明原因后继续。",
+    "activation_phrase": "请用ERG动机理论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

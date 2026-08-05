@@ -12,7 +12,10 @@
     "triggers": [
       "当你需要运用思维拆解_注意力聚焦_按序执行_一套思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "分析性思维，如同钟表匠检修精密手表。遇到故障腕表，不会盲目揣测问题，而是拆解机身，逐一检查齿轮、弹簧、指针等零部件。梳理各零件的啮合运作关系，精准定位故障根源，修复后按逻辑顺序组装",
+      "常用于理科难题解答、商业数据分析与战略规划、程序代码漏洞调试、学术论文撰写、政策方案利弊评估等场景。"
+    ]
   },
   "before_after": {
     "without_model": "在掌握思维拆解_注意力聚焦_按序执行_一套之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }

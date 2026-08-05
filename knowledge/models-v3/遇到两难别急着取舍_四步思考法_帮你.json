@@ -12,7 +12,10 @@
     "triggers": [
       "当你需要运用遇到两难别急着取舍_四步思考法_帮你思维时"
     ],
-    "anti_triggers": []
+    "anti_triggers": [
+      "这不是唯一答案，把每一次两难都当作思维升级的练习机会",
+      "不适合日常琐事决策，仅用于破解高阶复杂困境，以下场景使用效果最佳"
+    ]
   },
   "before_after": {
     "without_model": "在掌握遇到两难别急着取舍_四步思考法_帮你之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
@@ -58,7 +61,7 @@
     "trigger_precision": 2,
     "step_completeness": 3,
     "scenario_coverage": 2,
-    "prompt_effectiveness": 3,
+    "prompt_effectiveness": 4,
     "overall": 4
   }
 }
