@@ -232,11 +232,12 @@ function upgradeV2toV3(v2) {
   return {
     schema_version: "3.0.0",
     id: (v2.id || name).toLowerCase().replace(/[\s\/\\:：]/g, "-").slice(0, 50),
-    meta: {
+     meta: {
       name,
       category: v2.meta?.category || "00",
       tags: v2.meta?.tags || [],
       skill_name: name.toLowerCase().replace(/[\s\/\\:：]/g, "-").slice(0, 40),
+      ...(v2.meta?.source ? { source: v2.meta.source } : {}),
       ...(v2.meta?.sourceType ? { sourceType: v2.meta.sourceType } : {}),
       ...(v2.meta?.sourceTitle ? { sourceTitle: v2.meta.sourceTitle } : {})
     },

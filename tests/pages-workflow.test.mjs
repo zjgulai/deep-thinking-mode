@@ -90,11 +90,10 @@ await test("renderPagesWorkflow — output contains all pinned SHAs", async () =
   }
 });
 
-await test("renderPagesWorkflow — push restricted to main only", async () => {
+await test("renderPagesWorkflow — push includes main and public branches", async () => {
   const pins = await loadPins(".");
   const yaml = renderPagesWorkflow(pins);
-  assert.ok(yaml.includes("branches: [main]"), "Missing branches: [main]");
-  assert.ok(!yaml.includes("branches: [main, public]"), "Should not include public branch");
+  assert.ok(yaml.includes("branches: [main, public]"), "Missing branches: [main, public]");
 });
 
 await test("renderPagesWorkflow — has workflow_dispatch", async () => {

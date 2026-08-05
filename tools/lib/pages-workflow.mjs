@@ -67,7 +67,7 @@ export function renderPagesWorkflow(pins) {
 
 on:
   push:
-    branches: [main]
+    branches: [main, public]
   workflow_dispatch:
 
 permissions:
@@ -124,7 +124,7 @@ jobs:
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/public'
     environment:
       name: github-pages
       url: \${{ steps.deployment.outputs.page_url }}

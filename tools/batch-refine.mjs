@@ -167,8 +167,21 @@ for (const f of v3Files) {
     const name = v3.meta?.name || "";
     const id   = v3.id || "";
 
-    // 找 data/ 源文
-    const dataFile = findDataFile(name, id);
+    // 找 data/ 源文：优先用 meta.source 精确匹配，再用模糊匹配
+    const sourceFile = v3.meta?.source || "";
+    let dataFile = null;
+    if (sourceFile && !sourceFile.startsWith("ref:")) {
+      // 精确匹配：source 字段是文件名
+      const exactPath = join(DATA_DIR, sourceFile.endsWith(".md") ? sourceFile : sourceFile + ".md");
+      if (existsSync(exactPath)) {
+        dataFile = sourceFile.endsWith(".md") ? sourceFile : sourceFile + ".md";
+      } else if (existsSync(join(DATA_DIR, sourceFile))) {
+        dataFile = sourceFile;
+      }
+    }
+    if (!dataFile) {
+      dataFile = findDataFile(name, id);
+    }
     if (!dataFile) {
       noData++;
       continue;
