@@ -24,3 +24,4 @@ node_modules/
 /ref-extracted/
 /ref-models/
 /model-inventory*.json
+chain-protocols/
