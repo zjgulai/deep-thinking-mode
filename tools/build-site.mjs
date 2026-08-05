@@ -1,10 +1,3 @@
-
-.sidebar{position:fixed;left:0;top:56px;width:260px;height:calc(100vh - 56px);overflow-y:auto;background:var(--s);border-right:1px solid var(--h);padding:16px;z-index:40;font-size:.82rem;line-height:1.8}
-.sidebar h3{font-size:.75rem;color:var(--a);margin-bottom:8px;letter-spacing:.05em;font-weight:700}
-.sidebar a{display:block;color:var(--b);padding:3px 8px;border-radius:4px;text-decoration:none;transition:background .1s}
-.sidebar a:hover{background:var(--h);text-decoration:none}
-@media(max-width:1100px){.sidebar{display:none}}
-main.with-sidebar{margin-left:280px;max-width:860px}
 #!/usr/bin/env node
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { join } from "node:path";
@@ -48,7 +41,7 @@ main{max-width:900px;margin:0 auto;padding:24px 24px 64px}h1{font-size:2rem;colo
 .ch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;padding:0 24px;max-width:1100px;margin:0 auto 48px}.ch-card{background:var(--s);border:1px solid var(--h);border-radius:var(--r);padding:22px;transition:border-color .15s,transform .15s;display:block;text-decoration:none}.ch-card:hover{border-color:var(--a);transform:translateY(-2px);text-decoration:none}.ch-num{font-size:.7rem;font-weight:700;color:var(--a);margin-bottom:8px}.ch-card h3{font-size:1rem;color:var(--t);margin:0 0 6px}.ch-card .desc{font-size:.8rem;color:var(--m);line-height:1.5;margin-bottom:8px}.ch-card .cnt{font-size:.7rem;color:var(--g);font-weight:600;padding:2px 8px;background:rgba(45,125,70,.08);border-radius:999px;display:inline-block}
 .nav-row{display:flex;justify-content:space-between;margin-top:48px;padding-top:24px;border-top:1px solid var(--h)}.nav-row a{font-weight:600}
 footer{border-top:1px solid var(--h);padding:32px 24px;text-align:center;color:var(--m);font-size:.8rem}footer a{font-weight:500}
-@media(max-width:768px){header nav{display:none}main{padding:16px}.ch-grid{grid-template-columns:1fr}.model-card{padding:20px}}
+.sidebar{position:fixed;left:0;top:56px;width:260px;height:calc(100vh - 56px);overflow-y:auto;background:var(--s);border-right:1px solid var(--h);padding:16px;z-index:40;font-size:.82rem;line-height:1.8}.sidebar h3{font-size:.75rem;color:var(--a);margin-bottom:8px;letter-spacing:.05em;font-weight:700}.sidebar a{display:block;color:var(--b);padding:3px 8px;border-radius:4px;text-decoration:none;transition:background .1s}.sidebar a:hover{background:var(--h);text-decoration:none}@media(max-width:1100px){.sidebar{display:none}}main.with-sidebar{margin-left:280px;max-width:860px}@media(max-width:768px){header nav{display:none}main{padding:16px}.ch-grid{grid-template-columns:1fr}.model-card{padding:20px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}@media print{header,.nav-row,footer{display:none}}`;
 
 if (!existsSync(OUT)) mkdirSync(OUT,{recursive:true});
@@ -62,7 +55,7 @@ writeFileSync(join(OUT,"index.html"),`<!DOCTYPE html><html lang="zh-CN"><head><m
 console.log(`✓ index.html`);
 
 // Chapters
-for(const ch of chapters){const arts=byCh[ch.id]||[];const subs=(ch.subchapters||[]).map(s=>`<span class="sub-tag">${s.title}</span>`).join("");let sb="<div class=\"sidebar\"><h3>本章模型</h3>";for(const a of arts){const aid="m-"+(a.id||(a.meta?.name||"").replace(/[\s/\\:：]/g,"-").slice(0,30));sb+="<a href=\"#"+aid+"\">"+esc((a.meta?.name||"").slice(0,22))+"</a>";}sb+="</div>";html+=sb;let html="";
+for(const ch of chapters){const arts=byCh[ch.id]||[];const subs=(ch.subchapters||[]).map(s=>`<span class="sub-tag">${s.title}</span>`).join("");let html="";let sb="<div class=sidebar><h3>本章模型</h3>";for(const a of arts){const aid="m-"+(a.id||(a.meta?.name||"").replace(/[\s/\\:：]/g,"-").slice(0,30));sb+="<a href=#"+aid+">"+esc((a.meta?.name||"").slice(0,22))+"</a>";}sb+="</div>";html+=sb;
 for(const a of arts){
 let h='';
 const q=a.quality||{};
@@ -88,5 +81,5 @@ if(a.pitfalls?.length)h+=`<div class="model-label">常见误区</div><div class=
 if(a.meta?.tags?.length)h+=`<div class="tags-row">${a.meta.tags.map(t=>`<span class="tag-chip">${esc(t)}</span>`).join("")}</div>`;
 h+=`</article>`;
 html+=h;}const idx=chapters.findIndex(c=>c.id===ch.id);const prev=idx>0?chapters[idx-1]:null,next=idx<chapters.length-1?chapters[idx+1]:null;let nav='<div class="nav-row">';nav+=prev?`<a href="ch${prev.id}-${prev.slug}.html">← Ch.${prev.id} ${prev.title}</a>`:"<span></span>";nav+=next?`<a href="ch${next.id}-${next.slug}.html">Ch.${next.id} ${next.title} →</a>`:"<span></span>";nav+='</div>';
-writeFileSync(join(CH,`ch${ch.id}-${ch.slug}.html`),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ch.${ch.id} ${ch.title}</title><link rel="stylesheet" href="../style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="../index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="../index.html">章节</a><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><div class="breadcrumb"><a href="../index.html">首页</a> / <span>Ch.${ch.id} ${ch.title}</span></div><main id="main" class="with-sidebar"><h1>Ch.${ch.id} ${ch.title}</h1><p class="chapter-desc">${ch.description} · ${arts.length}个模型</p><div class="sub-tags">${subs}</div>${html}${nav}</main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");console.log(`✓ ch${ch.id} (${arts.length})`);}
+writeFileSync(join(CH,`ch${ch.id}-${ch.slug}.html`),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ch.${ch.id} ${ch.title}</title><link rel="stylesheet" href="../style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="../index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="../index.html">章节</a><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><div class="breadcrumb"><a href="../index.html">首页</a> / <span>Ch.${ch.id} ${ch.title}</span></div><main id="main"><h1>Ch.${ch.id} ${ch.title}</h1><p class="chapter-desc">${ch.description} · ${arts.length}个模型</p><div class="sub-tags">${subs}</div>${html}${nav}</main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");console.log(`✓ ch${ch.id} (${arts.length})`);}
 console.log("\n✅ 完成 → docs/");
