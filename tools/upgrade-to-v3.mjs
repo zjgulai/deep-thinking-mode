@@ -45,8 +45,72 @@ function generateScenario(name, definition, domain) {
   return { situation: t.situation, application: t.application };
 }
 
+/**
+ * 判断 system_prompt 是否为空壳（同义反复型/功能描述型/不足100字）
+ * 合格标准: 来自 specs/system-prompt-quality-standard.md
+ */
+function isShellPrompt(prompt, name) {
+  if (!prompt || prompt.length < 100) return true;
+  // 同义反复：提示词主体内容就是模型名字
+  const stripped = prompt.replace(new RegExp(name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), '').trim();
+  if (stripped.length < 40) return true;
+  // 缺乏推理协议特征词
+  const hasProtocol = /步骤|step|协议|追问|拆解|列出|标注|自问|验证/i.test(prompt);
+  if (!hasProtocol) return true;
+  return false;
+}
+
+/**
+ * 从 V2 模型数据中生成符合四层标准的 system_prompt
+ * 层1: 认知模式声明  层2: 推理协议  层3: 质量门禁  层4: 输出格式
+ */
+function buildSystemPrompt(name, definition, steps, triggers, outputFormat) {
+  const shortDef = smartSlice(definition, 100);
+
+  // ── 层1: 认知模式声明 ──────────────────────────────
+  const mode = `【认知模式】你现在以「${name}」思维框架运行。核心立场：${shortDef}`;
+
+  // ── 层2: 推理协议（从 reasoning_steps 生成） ──────
+  let protocol = "【推理协议】";
+  if (steps.length >= 2) {
+    protocol += "\n" + steps
+      .slice(0, 5)
+      .map((s, i) => `${i + 1}. ${s.action}`)
+      .join("\n");
+  } else {
+    // 兜底：基于触发场景生成最小协议
+    protocol += `\n1. 识别当前问题是否匹配「${name}」的适用场景\n2. 按照${name}的核心逻辑逐步拆解问题\n3. 输出可执行结论，并标注关键假设`;
+  }
+
+  // ── 层3: 质量门禁（从 checkpoints 或触发场景反推） ──
+  const checkpoints = steps
+    .map(s => s.checkpoint)
+    .filter(c => c && c.length > 10 && !c.includes("确认此步骤") && !c.includes("确认理解了模型"));
+  
+  let gate;
+  if (checkpoints.length > 0) {
+    gate = `【质量门禁】每完成一步，自问：${checkpoints[0]}`;
+  } else {
+    gate = `【质量门禁】每完成一步推理后，自问：这个结论是基于「${name}」的核心逻辑得出的，还是在用普通直觉回答？如果是后者，回到推理协议重新推导。`;
+  }
+
+  // ── 层4: 输出格式 ──────────────────────────────────
+  const fmt = (outputFormat && typeof outputFormat === 'string' && outputFormat.length > 5)
+    ? `【输出格式】${outputFormat}`
+    : `【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。`;
+
+  return [mode, protocol, gate, fmt].join("\n\n");
+}
+
 function upgradeV2toV3(v2) {
-  const name = v2.meta?.name || "";
+  // 清洁模型名：去掉文件名截断的尾巴和特殊字符
+  const rawName = v2.meta?.name || "";
+  const name = rawName
+    .replace(/_+$/, "")           // 去末尾下划线
+    .replace(/_{2,}/g, "_")       // 多个下划线合并
+    .replace(/（[^）]*$/, "")     // 去不完整括号
+    .replace(/\([^)]*$/, "")      // 去不完整英文括号
+    .trim() || rawName;
   const eng = v2.engine || {};
   const codex = v2.codex || {};
   
@@ -78,9 +142,19 @@ function upgradeV2toV3(v2) {
     scenarios[domain] = generateScenario(name, definition, domain);
   }
   
-  // Codex 集成
-  const prompt = codex.system_prompt || `请以${name}的方式思考这个问题。`;
-  const activation = codex.activation_phrase || `请用${name}分析...`;
+  // Codex 集成：空壳 prompt 替换为四层结构，合格 prompt 保留
+  const existingPrompt = codex.system_prompt || "";
+  const prompt = isShellPrompt(existingPrompt, name)
+    ? buildSystemPrompt(name, definition, steps, triggers, eng.output_format || "")
+    : existingPrompt;
+
+  // before_after：从触发信号和定义推导，避免纯模板
+  const withoutModel = triggers.length >= 2
+    ? `没有${name}时，面对「${triggers[0].replace(/^当你|^遇到|^在/, '')}」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。`
+    : `在掌握${name}之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。`;
+  const withModel = `运用${name}后，能够按照结构化的推理协议逐步分析问题：${smartSlice(definition, 60)}，从而得出有依据的结论，而不是可替换的猜测。`;
+
+  const activation = codex.activation_phrase || `请用${name}帮我分析：`;
   
   return {
     schema_version: "3.0.0",
@@ -97,8 +171,8 @@ function upgradeV2toV3(v2) {
       anti_triggers: eng.stop_conditions || []
     },
     before_after: {
-      without_model: `在掌握${name}之前，面对这类问题你可能依赖直觉、经验或他人建议，缺乏系统化的思考框架`,
-      with_model: `运用${name}之后，你能够按照结构化的推理协议逐步分析问题，避免常见误区，得出更可靠的结论`
+      without_model: withoutModel,
+      with_model: withModel
     },
     reasoning_steps: steps,
     scenarios,
@@ -113,7 +187,7 @@ function upgradeV2toV3(v2) {
       trigger_precision: triggers.length >= 3 ? 4 : 2,
       step_completeness: steps.length >= 3 ? 4 : steps.length >= 1 ? 3 : 2,
       scenario_coverage: 2,
-      prompt_effectiveness: codex.system_prompt ? 4 : 2,
+      prompt_effectiveness: isShellPrompt(codex.system_prompt || "", name) ? 3 : 4,
       overall: Math.ceil((v2.quality?.overall || 3) / 5 * 3 + 2)
     }
   };

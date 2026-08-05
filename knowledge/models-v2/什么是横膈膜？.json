@@ -47,7 +47,7 @@
     }
   },
   "codex": {
-    "system_prompt": "你现在以「什么是横膈膜？」思维模式运行。\n\nStep 1 - 一步：完全呼气（清空肺部）**\n\nStep 2 - 二步：缓慢地鼻子吸气（4秒）**\n\nStep 3 - 三步：有控制地嘴巴呼气（6秒）**\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "system_prompt": "",
     "activation_phrase": "请用什么是横膈膜？分析...",
     "fallback": ""
   },
