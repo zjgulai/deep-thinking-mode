@@ -67,6 +67,16 @@ function extractContexts(modelName) {
 }
 
 // ─── 从上下文中解析结构 ────────────────────────────
+
+// ─── 语义边界截断（不在中文中间切断） ──────────────────
+function smartSlice(text, maxLen) {
+  if (text.length <= maxLen) return text;
+  const endings = ["。","！","？","\n","；","，","、","」"];
+  for (let i = maxLen - 1; i > Math.floor(maxLen * 0.5); i--) {
+    if (endings.includes(text[i])) return text.slice(0, i + 1);
+  }
+  return text.slice(0, maxLen);
+}
 function parseSteps(contexts) {
   const allText = contexts.map(c => c.context).join("\n");
   const steps = [];
@@ -83,7 +93,7 @@ function parseSteps(contexts) {
     while ((m = pat.exec(allText)) !== null) {
       const text = m[1].trim().slice(0, 100);
       if (!steps.find(s => s.action === text)) {
-        steps.push({ step: steps.length + 1, name: text.slice(0, 12), action: text, thinking_question: "", expected_output: "", pitfall: "" });
+        steps.push({ step: steps.length + 1, name: text.length > 15 ? smartSlice(text, 15) : text, action: text, thinking_question: "", expected_output: "", pitfall: "" });
       }
       if (steps.length >= 5) break;
     }

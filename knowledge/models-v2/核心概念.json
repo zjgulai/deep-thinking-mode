@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "核心概念",
+  "meta": {
+    "name": "核心概念",
+    "category": "10",
+    "tags": [],
+    "source": "情绪劫持.md"
+  },
+  "engine": {
+    "core_question": "### 核心概念：大脑的“紧急按钮”——杏仁核  1.  **什么是杏仁核**：位于大脑深部，是边缘系统的一部分，主要功能是**情绪处理和快速威胁侦测**。它像一个24小时值守的、极其敏感的“警报器”。      2.  **“劫持”如何发生**：当外界刺激（如一句批评、一个挑衅的眼神）被感官接收后",
+    "trigger_signals": [
+      "**与过往创伤或核心恐惧相关**：例如，曾被公开羞辱的人，对任何轻微的批评都可能反应过度。",
+      "**压力累积与身心疲惫**：当长期处于高压、睡眠不足时，大脑的“理性制动系统”功能减弱，更容易被劫持。",
+      "**特定的环境或人物**：某些场景（如拥堵的交通）或特定的人（如总是贬低你的上司）容易成为触发点。",
+      "**未被满足的核心需求**：如感到被忽视、不被尊重、失去控制感时。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以核心概念的方式思考。",
+    "activation_phrase": "请用核心概念分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**一、内耗的精确定义**",
+  "meta": {
+    "name": "**一、内耗的精确定义**",
+    "category": "10",
+    "tags": [],
+    "source": "内耗管理系统___内耗的全景诊断书.md"
+  },
+  "engine": {
+    "core_question": "内耗管理系统 · 内耗的全景诊断书  ### **一、内耗的精确定义**  内耗，在心理学范畴中，通常被称为 **“自我消耗”** 或 **“心理内耗”**。其核心定义是：  **个体因内在的冲突、矛盾、自我对抗和过度思考，而在未进行任何实际性外部劳动的情况下，持续消耗自身心理资源（如注意力、意志力",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以**一、内耗的精确定义**的方式思考。",
+    "activation_phrase": "请用**一、内耗的精确定义**分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

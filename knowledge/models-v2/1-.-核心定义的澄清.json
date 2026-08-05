@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1-.-核心定义的澄清",
+  "meta": {
+    "name": "1\\. 核心定义的澄清",
+    "category": "07",
+    "tags": [],
+    "source": "自控与冲动的核心关系.md"
+  },
+  "engine": {
+    "core_question": "核心是 **“对即时刺激或欲望的快速、不假思索的屈服”**，忽略了长远后果",
+    "trigger_signals": [
+      "*快速、自动化、追求即时满足**。",
+      "**“冷系统” / 控制系统**：以**前额叶皮层**为核心。它是**自控的刹车**，尤其是背外侧前额叶皮层。它负责高级认知功能：理性思考、计划、决策、抑制不当行为、评估长期目标。当冲动来袭时，前额叶",
+      "*所谓的“自控失败”，本质上是这场竞争的失衡：**",
+      "*前额叶“刹车”失灵**，行为就被冲动所劫持。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**竞争结果**",
+        "action": "",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「1\\. 核心定义的澄清」思维模式运行。\n\nStep 1 - **竞争结果**：\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用1\\. 核心定义的澄清分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "id": "🎯-行动策略一",
+  "meta": {
+    "name": "🎯 行动策略一",
+    "category": "07",
+    "tags": [],
+    "source": "多巴胺情境管理法_四步设计_让好习惯自动发生.md"
+  },
+  "engine": {
+    "core_question": "多巴胺情境管理法：四步设计，让好习惯自动发生  ### 🎯 行动策略一：主动设计你的“舞台”（情境）  既然多巴胺对情境极度敏感，那么最高明的策略就是有意识地创造能触发积极行为的情境。  **策略一：创造物理提示**  *   **具体做法：** 想健身？睡前把运动服放在床头。想读书？把书摊开在沙",
+    "trigger_signals": [
+      "*策略一：创造物理提示**",
+      "**具体做法：** 想健身？睡前把运动服放在床头。想读书？把书摊开在沙发上，而不是收在书架。",
+      "**背后的多巴胺原理：** 植入强烈的**情境线索**，减少启动阻力。多巴胺系统一看到这些线索，就会提前启动相关行为的动机回路。",
+      "*策略二：建立情境仪式**",
+      "**具体做法：** 学习前先冲一杯咖啡；工作前戴上降噪耳机。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**引入不可预测的积极反馈**",
+        "action": "**引入不可预测的积极反馈**：",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「🎯 行动策略一」思维模式运行。\n\nStep 1 - **引入不可预测的积极反馈**：**引入不可预测的积极反馈**：\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用🎯 行动策略一分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

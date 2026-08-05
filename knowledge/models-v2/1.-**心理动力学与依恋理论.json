@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1.-**心理动力学与依恋理论",
+  "meta": {
+    "name": "1. **心理动力学与依恋理论",
+    "category": "10",
+    "tags": [],
+    "source": "情绪需要的是空间而非压制_其机制是什么.md"
+  },
+  "engine": {
+    "core_question": "情绪需要的是空间而非压制，其机制是什么  给情绪“空间”而非“压制”，其有效性背后有坚实的心理学、神经科学和临床治疗理论作为支撑。这不是一个比喻，而是一个有科学依据的心理过程。  以下是几个核心的理论机制：  ### 1. **心理动力学与依恋理论：未完成的体验与内在安全基地**  *   **机制",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1. **心理动力学与依恋理论的方式思考。",
+    "activation_phrase": "请用1. **心理动力学与依恋理论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

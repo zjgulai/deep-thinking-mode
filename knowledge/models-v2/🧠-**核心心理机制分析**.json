@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "🧠-**核心心理机制分析**",
+  "meta": {
+    "name": "🧠 **核心心理机制分析**",
+    "category": "05",
+    "tags": [],
+    "source": "_如果事情没发生就好了_念头的发生心理机制.md"
+  },
+  "engine": {
+    "core_question": "“如果事情没发生就好了”念头的发生心理机制  当错误发生时，我们产生“如果事情没发生就好了”这种强烈念头的心理机制，是多种认知、情绪和神经过程的复杂交织。让我为你系统地解析它背后的运作原理。  ### 🧠 **核心心理机制分析**  #### **1\\. 反事实思维（Counterfactual ",
+    "trigger_signals": [
+      "**扣带前回**：监测冲突和错误。当它亮起时，就像一个内部警报器，让你高度关注这个“偏离预期”的事件。",
+      "**多巴胺系统**：预期奖励与实际结果之间的落差（“我本该成功” vs “我失败了”）会抑制多巴胺分泌，产生类似“奖赏被剥夺”的感觉，从而驱使你强烈地想要修正这个落差。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以🧠 **核心心理机制分析**的方式思考。",
+    "activation_phrase": "请用🧠 **核心心理机制分析**分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

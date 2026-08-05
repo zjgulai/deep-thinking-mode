@@ -178,6 +178,16 @@ function distillV2(text) {
 }
 
 // ─── 生成 system_prompt ──────────────────────────────────
+
+// ─── 语义边界截断（不在中文中间切断） ──────────────────
+function smartSlice(text, maxLen) {
+  if (text.length <= maxLen) return text;
+  const endings = ["。","！","？","\n","；","，","、","」"];
+  for (let i = maxLen - 1; i > Math.floor(maxLen * 0.5); i--) {
+    if (endings.includes(text[i])) return text.slice(0, i + 1);
+  }
+  return text.slice(0, maxLen);
+}
 function buildPrompt(model) {
   if (model.reasoning_protocol.length === 0) return null;
   const steps = model.reasoning_protocol.map(s =>

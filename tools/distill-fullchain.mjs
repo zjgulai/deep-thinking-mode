@@ -74,6 +74,16 @@ function classify(text, fname) {
   s.sort((a, b) => b.score - a.score);
   return s[0]?.id || "00";
 }
+// ─── 语义边界截断（不在中文中间切断） ──────────────────
+function smartSlice(text, maxLen) {
+  if (text.length <= maxLen) return text;
+  const endings = ["。","！","？","\n","；","，","、","」"];
+  for (let i = maxLen - 1; i > Math.floor(maxLen * 0.5); i--) {
+    if (endings.includes(text[i])) return text.slice(0, i + 1);
+  }
+  return text.slice(0, maxLen);
+}
+
 
 // ─── 单模型蒸馏 ─────────────────────────────────────
 function distillModel(text, name) {
@@ -107,8 +117,8 @@ function distillModel(text, name) {
       steps.slice(0, 5).forEach((s, idx) => {
         const label = s.replace(/^[\s\d\.、①②③④⑤步骤Step第步\)]+/g, "").trim();
         const ci = label.indexOf("：");
-        const name = ci > 1 && ci <= 10 ? label.slice(0, ci).slice(0, 10) : label.slice(0, 10);
-        const action = ci > 1 && ci <= 10 ? label.slice(ci + 1).trim().slice(0, 100) : label.slice(0, 100);
+        const name = ci > 1 && ci <= 12 ? label.slice(0, ci) : smartSlice(label, 15);
+        const action = ci > 1 && ci <= 12 ? smartSlice(label.slice(ci + 1).trim(), 120) : smartSlice(label, 120);
         proto.push({ step: idx + 1, name, action, thinking_question: "", expected_output: "", pitfall: "" });
       });
     }

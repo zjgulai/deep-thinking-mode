@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "鸣天鼓针对耳朵与大脑",
+  "meta": {
+    "name": "鸣天鼓（针对耳朵与大脑）",
+    "category": "09",
+    "tags": [],
+    "source": "鸣天鼓（针对耳朵与大脑）.md"
+  },
+  "engine": {
+    "core_question": "鸣天鼓（针对耳朵与大脑）  这是一个非常著名的聪耳健脑方法。  *   **方法：**       1.  用双手手掌心紧紧盖住双耳，手指放在脑后。      2.  将食指压在中指上，然后让食指从中指上迅速滑下，弹击后脑勺（风池穴附近），此时会听到如击鼓般的“咚咚”声。      3.  左右手各",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以鸣天鼓（针对耳朵与大脑）的方式思考。",
+    "activation_phrase": "请用鸣天鼓（针对耳朵与大脑）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1-.-科学定义",
+  "meta": {
+    "name": "1\\. 科学定义",
+    "category": "07",
+    "tags": [],
+    "source": "压力是什么.md"
+  },
+  "engine": {
+    "core_question": "### 1\\. 科学定义：一种“需求与资源失衡”的反应  *   **经典理论**：压力研究的先驱汉斯·塞利将压力定义为 **“机体对任何需求的非特异性反应”**。      *   **核心机制**：当我们遇到一个挑战（压力源）时，大脑会判断它是否是威胁。如果是，身体会立刻启动“战斗或逃跑”反应，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1\\. 科学定义的方式思考。",
+    "activation_phrase": "请用1\\. 科学定义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

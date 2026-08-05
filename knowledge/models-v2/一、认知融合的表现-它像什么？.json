@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "一、认知融合的表现-它像什么？",
+  "meta": {
+    "name": "一、认知融合的表现：它像什么？",
+    "category": "07",
+    "tags": [],
+    "source": "认知融合.md"
+  },
+  "engine": {
+    "core_question": "### 一、认知融合的表现：它像什么？  当处于认知融合状态时，我们通常会：  1.  **被想法“劫持”**：一个想法（如“我一无是处”）出现，我们立刻深信不疑，情绪和行为随之完全被这个想法控制，仿佛它就是现实本身。      2.  **陷入思维漩涡**：大脑进入“自动驾驶”模式，反复思考、分析",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以一、认知融合的表现：它像什么？的方式思考。",
+    "activation_phrase": "请用一、认知融合的表现：它像什么？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

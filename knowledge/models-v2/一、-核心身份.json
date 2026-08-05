@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "一、-核心身份",
+  "meta": {
+    "name": "一、 核心身份",
+    "category": "12",
+    "tags": [],
+    "source": "大脑默认模式网络_DMN.md"
+  },
+  "engine": {
+    "core_question": "大脑默认模式网络 DMN  将DMN想象成大脑内部一个极其重要的 **“后台运营与战略规划中心”** 。当你不专注于外部具体任务时（比如发呆、走神、休息），这个中心就进入高活跃状态，处理一系列对高级认知和生存至关重要的事务。  * * *  ### 一、 核心身份：它不是“闲置网络”，而是“内部工作",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以一、 核心身份的方式思考。",
+    "activation_phrase": "请用一、 核心身份分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

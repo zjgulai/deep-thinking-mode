@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "**一、核心哲学",
+  "meta": {
+    "name": "**一、核心哲学",
+    "category": "09",
+    "tags": [],
+    "source": "如何管理你的睡眠.md"
+  },
+  "engine": {
+    "core_question": "如何管理你的睡眠  ### **一、核心哲学：从“被动休息”到“主动管理”**  现代生活的节奏和压力已与我们的进化环境截然不同。因此，我们不能等到累了才去睡，而必须将睡眠和精力视为一项最重要的健康资产进行**主动、系统性的管理**。  **核心目标：** 不是在疲惫中挣扎，而是建立一个坚韧、稳定、",
+    "trigger_signals": [
+      "**操作指南：**",
+      "设定一个理想起床时间（如7:00），并**不惜一切代价坚守**。",
+      "**周末也不例外**：这是打破“社交时差”恶性循环的关键。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以**一、核心哲学的方式思考。",
+    "activation_phrase": "请用**一、核心哲学分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

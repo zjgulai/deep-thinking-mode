@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1.-**觉察与承认的空间**",
+  "meta": {
+    "name": "1. **觉察与承认的空间**",
+    "category": "10",
+    "tags": [],
+    "source": "情绪需要的是空间而非压制_这里的空间指的是什么.md"
+  },
+  "engine": {
+    "core_question": "情绪需要的是空间而非压制，这里的空间指的是什么  “情绪需要的是空间，而非压制。” 这里的 **“空间”** 不是一个物理概念，而是一个**心理、觉知和接纳的容器**。  它包含以下几个相互关联的维度，就像为情绪提供一个安全、可呼吸的“房间”：  ### 1. **觉察与承认的空间**  这是第一步",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以1. **觉察与承认的空间**的方式思考。",
+    "activation_phrase": "请用1. **觉察与承认的空间**分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}
