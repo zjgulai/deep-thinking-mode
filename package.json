@@ -5,7 +5,10 @@
   },
   "scripts": {
     "distill": "node tools/distill.mjs",
-    "build": "node tools/build-site.mjs"
+    "build": "node tools/build-site.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check tools/lib/public-history.mjs tools/lib/pages-workflow.mjs tools/release-public-root.mjs tools/check-public-tree.mjs tools/check-public-artifact.mjs tools/verify-production.mjs",
+    "check:public": "node tools/check-public-artifact.mjs"
   },
   "dependencies": {
     "epub2": "^3.0.2",
