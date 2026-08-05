@@ -25,3 +25,4 @@ node_modules/
 /ref-models/
 /model-inventory*.json
 chain-protocols/
+{{pkgetc}}/
