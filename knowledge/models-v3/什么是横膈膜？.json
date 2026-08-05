@@ -1,0 +1,75 @@
+{
+  "schema_version": "3.0.0",
+  "id": "什么是横膈膜？",
+  "meta": {
+    "name": "什么是横膈膜？",
+    "category": "00",
+    "tags": [],
+    "skill_name": "什么是横膈膜？"
+  },
+  "core_definition": "核心是：**吸气时让腹部温和隆起，呼气时腹部自然内收**",
+  "when_to_use": {
+    "triggers": [
+      "保持下巴微收，颈部伸长，避免头部前倾。",
+      "如果觉得背部紧张，可以靠墙练习，确保后脑勺、肩胛骨和骶骨（臀部上方）轻轻接触墙面。"
+    ],
+    "anti_triggers": []
+  },
+  "before_after": {
+    "without_model": "在掌握什么是横膈膜？之前，面对这类问题你可能依赖直觉、经验或他人建议，缺乏系统化的思考框架",
+    "with_model": "运用什么是横膈膜？之后，你能够按照结构化的推理协议逐步分析问题，避免常见误区，得出更可靠的结论"
+  },
+  "reasoning_steps": [
+    {
+      "step": 1,
+      "action": "完全呼气（清空肺部）**",
+      "checkpoint": "确认此步骤是否得出明确结论"
+    },
+    {
+      "step": 2,
+      "action": "缓慢地鼻子吸气（4秒）**",
+      "checkpoint": "确认此步骤是否得出明确结论"
+    },
+    {
+      "step": 3,
+      "action": "有控制地嘴巴呼气（6秒）**",
+      "checkpoint": "确认此步骤是否得出明确结论"
+    }
+  ],
+  "scenarios": {
+    "企业管理": {
+      "situation": "在企业管理场景中遇到需要运用什么是横膈膜？的问题",
+      "application": "将什么是横膈膜？应用于企业管理场景中的组织决策或流程优化问题"
+    },
+    "产品设计": {
+      "situation": "在产品设计场景中遇到需要运用什么是横膈膜？的问题",
+      "application": "将什么是横膈膜？应用于产品设计中的功能规划或用户体验问题"
+    },
+    "分析洞察": {
+      "situation": "在分析洞察场景中遇到需要运用什么是横膈膜？的问题",
+      "application": "将什么是横膈膜？应用于数据分析中的根因诊断或趋势判断问题"
+    },
+    "决策思维": {
+      "situation": "在决策思维场景中遇到需要运用什么是横膈膜？的问题",
+      "application": "将什么是横膈膜？应用于复杂决策中的选项评估或风险预判问题"
+    },
+    "任务管理": {
+      "situation": "在任务管理场景中遇到需要运用什么是横膈膜？的问题",
+      "application": "将什么是横膈膜？应用于任务管理中的优先级排序或执行效率问题"
+    }
+  },
+  "codex_integration": {
+    "activation": "请用什么是横膈膜？分析...",
+    "system_prompt": "你现在以「什么是横膈膜？」思维模式运行。\n\nStep 1 - 一步：完全呼气（清空肺部）**\n\nStep 2 - 二步：缓慢地鼻子吸气（4秒）**\n\nStep 3 - 三步：有控制地嘴巴呼气（6秒）**\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "skill_hint": "可转为Skill: 什么是横膈膜？"
+  },
+  "pitfalls": [],
+  "quality": {
+    "definition_clarity": 4,
+    "trigger_precision": 2,
+    "step_completeness": 4,
+    "scenario_coverage": 2,
+    "prompt_effectiveness": 4,
+    "overall": 5
+  }
+}

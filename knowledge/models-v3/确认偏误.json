@@ -1,0 +1,68 @@
+{
+  "schema_version": "3.0.0",
+  "id": "确认偏误",
+  "meta": {
+    "name": "确认偏误",
+    "category": "07",
+    "tags": [],
+    "skill_name": "确认偏误"
+  },
+  "core_definition": "  在现实生活中，人们面对的往往是更复杂、更难隔离原因因素的场",
+  "when_to_use": {
+    "triggers": [
+      "场景，思辨者都要意识到因果关系的严格要求，",
+      "当作因果关系是一种常见的逻辑谬误。",
+      "当常见的（10%）， 90%的龙卷风会导致大风。",
+      "如果达尔文在1986年上哈佛大学（Harvard），他毕业时大概会是中等生。",
+      "当我看到已成的事实、新的观察结果或想法，如果跟我自己的一般结果相反，我绝对会立即在备忘录中记下来。"
+    ],
+    "anti_triggers": []
+  },
+  "before_after": {
+    "without_model": "在掌握确认偏误之前，面对这类问题你可能依赖直觉、经验或他人建议，缺乏系统化的思考框架",
+    "with_model": "运用确认偏误之后，你能够按照结构化的推理协议逐步分析问题，避免常见误区，得出更可靠的结论"
+  },
+  "reasoning_steps": [
+    {
+      "step": 1,
+      "action": "运用确认偏误的核心方法进行思考",
+      "checkpoint": "确认理解了模型的核心逻辑"
+    }
+  ],
+  "scenarios": {
+    "企业管理": {
+      "situation": "在企业管理场景中遇到需要运用确认偏误的问题",
+      "application": "将确认偏误应用于企业管理场景中的组织决策或流程优化问题"
+    },
+    "产品设计": {
+      "situation": "在产品设计场景中遇到需要运用确认偏误的问题",
+      "application": "将确认偏误应用于产品设计中的功能规划或用户体验问题"
+    },
+    "分析洞察": {
+      "situation": "在分析洞察场景中遇到需要运用确认偏误的问题",
+      "application": "将确认偏误应用于数据分析中的根因诊断或趋势判断问题"
+    },
+    "决策思维": {
+      "situation": "在决策思维场景中遇到需要运用确认偏误的问题",
+      "application": "将确认偏误应用于复杂决策中的选项评估或风险预判问题"
+    },
+    "任务管理": {
+      "situation": "在任务管理场景中遇到需要运用确认偏误的问题",
+      "application": "将确认偏误应用于任务管理中的优先级排序或执行效率问题"
+    }
+  },
+  "codex_integration": {
+    "activation": "请用确认偏误分析...",
+    "system_prompt": "请以确认偏误的方式分析这个问题。",
+    "skill_hint": "可转为Skill: 确认偏误"
+  },
+  "pitfalls": [],
+  "quality": {
+    "definition_clarity": 2,
+    "trigger_precision": 4,
+    "step_completeness": 3,
+    "scenario_coverage": 2,
+    "prompt_effectiveness": 4,
+    "overall": 4
+  }
+}

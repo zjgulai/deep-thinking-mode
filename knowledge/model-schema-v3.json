@@ -1,0 +1,64 @@
+{
+  "schema_version": "3.0.0",
+  "description": "V3模型结构 — 方案B融合方案A，面向Skill转换",
+
+  "structure": {
+    "core_definition": {
+      "label": "核心定义",
+      "max_chars": 120,
+      "description": "一句话说清这个模型是什么，解决什么本质问题"
+    },
+    "when_to_use": {
+      "label": "什么时候用",
+      "triggers": {
+        "description": "触发信号 — 遇到这些情况时激活此模型",
+        "max_items": 5
+      },
+      "anti_triggers": {
+        "description": "反面信号 — 这些情况下不应使用，用了反而有害",
+        "max_items": 3
+      }
+    },
+    "before_after": {
+      "label": "用前用后",
+      "without_model": {
+        "label": "没这个模型之前",
+        "description": "通常你会怎么错误地处理这类问题",
+        "max_chars": 200
+      },
+      "with_model": {
+        "label": "用了这个模型之后",
+        "description": "正确的处理流程或思维方式",
+        "max_chars": 200
+      }
+    },
+    "reasoning_steps": {
+      "label": "推理步骤",
+      "max_steps": 6,
+      "per_step": {
+        "step_number": "步骤编号",
+        "action": "具体动作（可执行指令）",
+        "checkpoint": "检查点 — 这一步完成后应该确认什么"
+      }
+    },
+    "scenarios": {
+      "label": "场景示例",
+      "domains": ["企业管理", "产品设计", "分析洞察", "决策思维", "任务管理"],
+      "per_domain": {
+        "situation": "具体情境",
+        "application": "如何运用该模型解决"
+      }
+    },
+    "codex_integration": {
+      "label": "Codex 对话",
+      "activation": "激活词 — 对Codex说的第一句话",
+      "system_prompt": "完整系统提示词 — 可直接粘贴到Codex对话中",
+      "skill_hint": "未来转为Skill时的命名建议"
+    },
+    "pitfalls": {
+      "label": "常见误区",
+      "max_items": 3,
+      "description": "使用时应避免的错误"
+    }
+  }
+}

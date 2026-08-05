@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
-const MODELS = join(ROOT, "knowledge", "models-v2");
+const MODELS = join(ROOT, "knowledge", "models-v3");
 const TAX = join(ROOT, "knowledge", "taxonomy.json");
 const OUT = join(ROOT, "docs");
 const CH = join(OUT, "chapters");
@@ -56,14 +56,30 @@ console.log(`✓ index.html`);
 
 // Chapters
 for(const ch of chapters){const arts=byCh[ch.id]||[];const subs=(ch.subchapters||[]).map(s=>`<span class="sub-tag">${s.title}</span>`).join("");let html="";
-for(const a of arts){const eng=a.engine||{};const proto=eng.reasoning_protocol||[];
-html+=`<article class="model-card"><h2>${esc(a.meta?.name||"")}<span class="stars">${stars(Math.min(a.quality?.overall||0,5))}</span></h2><div class="model-meta">${esc(eng.core_question||"")}</div>`;
-if(eng.trigger_signals?.length){html+=`<div class="model-label">🔔 触发信号</div><div class="model-value"><ul>${eng.trigger_signals.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;}
-if(proto.length){html+=`<div class="model-label">🧩 推理协议</div>`;for(const s of proto){html+=`<div class="protocol-step"><div class="step-num">Step ${s.step}: ${esc(s.name||"")}</div><div class="step-act">${esc(s.action||"")}</div></div>`;}}
-if(eng.output_format?.example){html+=`<div class="model-label">💡 示例输出</div><div class="model-value">${esc(eng.output_format.example)}</div>`;}
-if(a.codex?.system_prompt){html+=`<div class="model-label">🤖 Codex 提示词</div><div class="codex-block">${esc(a.codex.system_prompt.slice(0,600))}${a.codex.system_prompt.length>600?'...':''}</div>`;}
-if(a.meta?.tags?.length){html+=`<div class="tags-row">${a.meta.tags.map(t=>`<span class="tag-chip">${esc(t)}</span>`).join("")}</div>`;}
-html+=`</article>`;}
-const idx=chapters.findIndex(c=>c.id===ch.id);const prev=idx>0?chapters[idx-1]:null,next=idx<chapters.length-1?chapters[idx+1]:null;let nav='<div class="nav-row">';nav+=prev?`<a href="ch${prev.id}-${prev.slug}.html">← Ch.${prev.id} ${prev.title}</a>`:"<span></span>";nav+=next?`<a href="ch${next.id}-${next.slug}.html">Ch.${next.id} ${next.title} →</a>`:"<span></span>";nav+='</div>';
+for(const a of arts){
+let h='';
+const q=a.quality||{};
+h+=`<article class="model-card"><h2>${esc(a.meta?.name||"")}<span class="stars">${stars(Math.min(q.overall||0,5))}</span></h2>`;
+if(a.core_definition)h+=`<div class="v3-def">${esc(a.core_definition)}</div>`;
+const wtu=a.when_to_use||{};
+if(wtu.triggers?.length)h+=`<div class="model-label">触发信号</div><div class="model-value"><ul>${wtu.triggers.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
+if(wtu.anti_triggers?.length)h+=`<div class="model-label">不应使用</div><div class="model-value"><ul>${wtu.anti_triggers.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
+const ba=a.before_after||{};
+if(ba.without_model)h+=`<div class="model-label">没这个模型之前</div><div class="model-value"><p>${esc(ba.without_model)}</p></div>`;
+if(ba.with_model)h+=`<div class="model-label">用了这个模型之后</div><div class="model-value"><p>${esc(ba.with_model)}</p></div>`;
+const steps=a.reasoning_steps||[];
+if(steps.length){h+=`<div class="model-label">推理步骤</div>`;
+for(const s of steps){h+=`<div class="protocol-step"><div class="step-num">Step ${s.step}</div><div class="step-act">${esc(s.action||"")}</div>${s.checkpoint?`<div class="step-ck">检查点: ${esc(s.checkpoint)}</div>`:''}</div>`;}}
+const sc=a.scenarios||{};
+const domains=Object.keys(sc);
+if(domains.length){h+=`<div class="model-label">场景示例</div>`;
+for(const d of domains){const s=sc[d];h+=`<div class="scenario-item"><strong>${esc(d)}</strong>: ${esc(s.situation||"")}<br><span class="sc-app">${esc(s.application||"")}</span></div>`;}}
+const ci=a.codex_integration||{};
+if(ci.activation)h+=`<div class="model-label">Codex 激活词</div><div class="codex-block">${esc(ci.activation)}</div>`;
+if(ci.system_prompt)h+=`<div class="model-label">Codex 系统提示词</div><div class="codex-block">${esc(ci.system_prompt.slice(0,700))}${ci.system_prompt.length>700?'...':''}</div>`;
+if(a.pitfalls?.length)h+=`<div class="model-label">常见误区</div><div class="model-value"><ul>${a.pitfalls.map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>`;
+if(a.meta?.tags?.length)h+=`<div class="tags-row">${a.meta.tags.map(t=>`<span class="tag-chip">${esc(t)}</span>`).join("")}</div>`;
+h+=`</article>`;
+html+=h;}const idx=chapters.findIndex(c=>c.id===ch.id);const prev=idx>0?chapters[idx-1]:null,next=idx<chapters.length-1?chapters[idx+1]:null;let nav='<div class="nav-row">';nav+=prev?`<a href="ch${prev.id}-${prev.slug}.html">← Ch.${prev.id} ${prev.title}</a>`:"<span></span>";nav+=next?`<a href="ch${next.id}-${next.slug}.html">Ch.${next.id} ${next.title} →</a>`:"<span></span>";nav+='</div>';
 writeFileSync(join(CH,`ch${ch.id}-${ch.slug}.html`),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ch.${ch.id} ${ch.title}</title><link rel="stylesheet" href="../style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="../index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="../index.html">章节</a><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><div class="breadcrumb"><a href="../index.html">首页</a> / <span>Ch.${ch.id} ${ch.title}</span></div><main id="main"><h1>Ch.${ch.id} ${ch.title}</h1><p class="chapter-desc">${ch.description} · ${arts.length}个模型</p><div class="sub-tags">${subs}</div>${html}${nav}</main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");console.log(`✓ ch${ch.id} (${arts.length})`);}
 console.log("\n✅ 完成 → docs/");

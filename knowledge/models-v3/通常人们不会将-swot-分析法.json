@@ -1,0 +1,72 @@
+{
+  "schema_version": "3.0.0",
+  "id": "通常人们不会将-swot-分析法",
+  "meta": {
+    "name": "通常人们不会将 SWOT 分析法",
+    "category": "00",
+    "tags": [],
+    "skill_name": "通常人们不会将-swot-分析法"
+  },
+  "core_definition": "制定战略计划的基本思路是:",
+  "when_to_use": {
+    "triggers": [
+      "当你逐步领会 SWOT 分析法的时候，你会发现它有许多的局限性。",
+      "如果公司能够适当地生产产品和管理生产过程，则产品生产累积的每一个显着的增加，",
+      "当从现金牛身上挤出尽可能多的“奶”来，把现金牛业务的新投资限制在最必要的水平上，",
+      "当出售，另一些有可能转成明星业务。"
+    ],
+    "anti_triggers": []
+  },
+  "before_after": {
+    "without_model": "在掌握通常人们不会将 SWOT 分析法之前，面对这类问题你可能依赖直觉、经验或他人建议，缺乏系统化的思考框架",
+    "with_model": "运用通常人们不会将 SWOT 分析法之后，你能够按照结构化的推理协议逐步分析问题，避免常见误区，得出更可靠的结论"
+  },
+  "reasoning_steps": [
+    {
+      "step": 1,
+      "action": "构造 SWOT 矩阵",
+      "checkpoint": "确认此步骤是否得出明确结论"
+    },
+    {
+      "step": 2,
+      "action": ",企业需要进一步找到内部要素与外部",
+      "checkpoint": "确认此步骤是否得出明确结论"
+    }
+  ],
+  "scenarios": {
+    "企业管理": {
+      "situation": "在企业管理场景中遇到需要运用通常人们不会将 SWOT 分析法的问题",
+      "application": "将通常人们不会将 SWOT 分析法应用于企业管理场景中的组织决策或流程优化问题"
+    },
+    "产品设计": {
+      "situation": "在产品设计场景中遇到需要运用通常人们不会将 SWOT 分析法的问题",
+      "application": "将通常人们不会将 SWOT 分析法应用于产品设计中的功能规划或用户体验问题"
+    },
+    "分析洞察": {
+      "situation": "在分析洞察场景中遇到需要运用通常人们不会将 SWOT 分析法的问题",
+      "application": "将通常人们不会将 SWOT 分析法应用于数据分析中的根因诊断或趋势判断问题"
+    },
+    "决策思维": {
+      "situation": "在决策思维场景中遇到需要运用通常人们不会将 SWOT 分析法的问题",
+      "application": "将通常人们不会将 SWOT 分析法应用于复杂决策中的选项评估或风险预判问题"
+    },
+    "任务管理": {
+      "situation": "在任务管理场景中遇到需要运用通常人们不会将 SWOT 分析法的问题",
+      "application": "将通常人们不会将 SWOT 分析法应用于任务管理中的优先级排序或执行效率问题"
+    }
+  },
+  "codex_integration": {
+    "activation": "请用通常人们不会将 SWOT 分析法分析...",
+    "system_prompt": "你现在以「通常人们不会将 SWOT 分析法」思维模式运行。\n\nStep 1 - 构造 SWOT 矩阵：构造 SWOT 矩阵\n\nStep 2 - ,企业需要进一步找到内部：,企业需要进一步找到内部要素与外部\n\n约束：按步骤推理，不跳过任何一步。常见误区: 避免市场上存在的威胁，往往更具有实用性; 陷阱，这里属于低度成长、低占有率的产品，它",
+    "skill_hint": "可转为Skill: 通常人们不会将-swot-分析法"
+  },
+  "pitfalls": [],
+  "quality": {
+    "definition_clarity": 3,
+    "trigger_precision": 4,
+    "step_completeness": 3,
+    "scenario_coverage": 2,
+    "prompt_effectiveness": 4,
+    "overall": 4
+  }
+}

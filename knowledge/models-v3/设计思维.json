@@ -1,0 +1,68 @@
+{
+  "schema_version": "3.0.0",
+  "id": "设计思维",
+  "meta": {
+    "name": "设计思维",
+    "category": "04",
+    "tags": [],
+    "skill_name": "设计思维"
+  },
+  "core_definition": " 爱 德 华 · 德 · 博 诺 博 士 开 发的 一 种 思 维 训 练模 式 ， 也是一个全面思考问题的模型",
+  "when_to_use": {
+    "triggers": [
+      "当某 个 问 题 需 要 更多 创 意 和 创 新 解决 方 案 时 ， 可 以组织成员来一场酣畅淋漓的头脑 风 暴。",
+      "当你 发 现 正 向 思 考问 题 难 以 继 续 时 ， 可 不 走 寻 常 路，采用逆向思维。",
+      "当你 在 思 考 新 想 法 时 ， 可 以 尝 试 用其 他 不 相 关 领 域的知识做类比，找到新灵感。",
+      "当 你需要 改 进现 有 产 品 、 服务或 商 业模 式 时 ， 可用 SC A MP E R 思考。",
+      "当你 需 要 解 决 一 个特 定 群  体的 问 题 是 ， 可 以使 用 设  计思 维 ， 寻 找 创 新的 解 决 方案。"
+    ],
+    "anti_triggers": []
+  },
+  "before_after": {
+    "without_model": "在掌握设计思维之前，面对这类问题你可能依赖直觉、经验或他人建议，缺乏系统化的思考框架",
+    "with_model": "运用设计思维之后，你能够按照结构化的推理协议逐步分析问题，避免常见误区，得出更可靠的结论"
+  },
+  "reasoning_steps": [
+    {
+      "step": 1,
+      "action": "运用设计思维的核心方法进行思考",
+      "checkpoint": "确认理解了模型的核心逻辑"
+    }
+  ],
+  "scenarios": {
+    "企业管理": {
+      "situation": "在企业管理场景中遇到需要运用设计思维的问题",
+      "application": "将设计思维应用于企业管理场景中的组织决策或流程优化问题"
+    },
+    "产品设计": {
+      "situation": "在产品设计场景中遇到需要运用设计思维的问题",
+      "application": "将设计思维应用于产品设计中的功能规划或用户体验问题"
+    },
+    "分析洞察": {
+      "situation": "在分析洞察场景中遇到需要运用设计思维的问题",
+      "application": "将设计思维应用于数据分析中的根因诊断或趋势判断问题"
+    },
+    "决策思维": {
+      "situation": "在决策思维场景中遇到需要运用设计思维的问题",
+      "application": "将设计思维应用于复杂决策中的选项评估或风险预判问题"
+    },
+    "任务管理": {
+      "situation": "在任务管理场景中遇到需要运用设计思维的问题",
+      "application": "将设计思维应用于任务管理中的优先级排序或执行效率问题"
+    }
+  },
+  "codex_integration": {
+    "activation": "请用设计思维分析...",
+    "system_prompt": "请以设计思维的方式分析这个问题。",
+    "skill_hint": "可转为Skill: 设计思维"
+  },
+  "pitfalls": [],
+  "quality": {
+    "definition_clarity": 2,
+    "trigger_precision": 4,
+    "step_completeness": 3,
+    "scenario_coverage": 2,
+    "prompt_effectiveness": 4,
+    "overall": 4
+  }
+}

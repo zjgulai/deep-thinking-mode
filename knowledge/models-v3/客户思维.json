@@ -1,0 +1,72 @@
+{
+  "schema_version": "3.0.0",
+  "id": "客户思维",
+  "meta": {
+    "name": "客户思维",
+    "category": "11",
+    "tags": [],
+    "skill_name": "客户思维"
+  },
+  "core_definition": "，因为金字塔结构是一个清晰的二维结",
+  "when_to_use": {
+    "triggers": [
+      "当然可以升级和变形，只要符合系统有序的本质，",
+      "当学员是很好的状态，会认真听课、做笔记。",
+      "如果领导强调：培训回来把学到的知识复制给其他人。",
+      "如果不负责、不完成，我们是需要付出代价的，比如失去面子，"
+    ],
+    "anti_triggers": []
+  },
+  "before_after": {
+    "without_model": "在掌握客户思维之前，面对这类问题你可能依赖直觉、经验或他人建议，缺乏系统化的思考框架",
+    "with_model": "运用客户思维之后，你能够按照结构化的推理协议逐步分析问题，避免常见误区，得出更可靠的结论"
+  },
+  "reasoning_steps": [
+    {
+      "step": 1,
+      "action": "不应是如何做（How），而是谁来做",
+      "checkpoint": "确认此步骤是否得出明确结论"
+    },
+    {
+      "step": 2,
+      "action": "水平思维与垂直思维；",
+      "checkpoint": "确认此步骤是否得出明确结论"
+    }
+  ],
+  "scenarios": {
+    "企业管理": {
+      "situation": "在企业管理场景中遇到需要运用客户思维的问题",
+      "application": "将客户思维应用于企业管理场景中的组织决策或流程优化问题"
+    },
+    "产品设计": {
+      "situation": "在产品设计场景中遇到需要运用客户思维的问题",
+      "application": "将客户思维应用于产品设计中的功能规划或用户体验问题"
+    },
+    "分析洞察": {
+      "situation": "在分析洞察场景中遇到需要运用客户思维的问题",
+      "application": "将客户思维应用于数据分析中的根因诊断或趋势判断问题"
+    },
+    "决策思维": {
+      "situation": "在决策思维场景中遇到需要运用客户思维的问题",
+      "application": "将客户思维应用于复杂决策中的选项评估或风险预判问题"
+    },
+    "任务管理": {
+      "situation": "在任务管理场景中遇到需要运用客户思维的问题",
+      "application": "将客户思维应用于任务管理中的优先级排序或执行效率问题"
+    }
+  },
+  "codex_integration": {
+    "activation": "请用客户思维分析...",
+    "system_prompt": "你现在以「客户思维」思维模式运行。\n\nStep 1 - 不应是如何做（How），：不应是如何做（How），而是谁来做\n\nStep 2 - 水平思维与垂直思维；：水平思维与垂直思维；\n\n约束：按步骤推理，不跳过任何一步。",
+    "skill_hint": "可转为Skill: 客户思维"
+  },
+  "pitfalls": [],
+  "quality": {
+    "definition_clarity": 3,
+    "trigger_precision": 4,
+    "step_completeness": 3,
+    "scenario_coverage": 2,
+    "prompt_effectiveness": 4,
+    "overall": 4
+  }
+}

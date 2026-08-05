@@ -1,0 +1,87 @@
+{
+  "schema_version": "3.0.0",
+  "id": "ooda-loop",
+  "meta": {
+    "name": "OODA循环",
+    "category": "06",
+    "tags": [
+      "决策",
+      "迭代",
+      "快速行动",
+      "不确定性"
+    ],
+    "skill_name": "ooda循环"
+  },
+  "core_definition": "在不确定快速变化的环境中，如何比对手更快完成观察-理解-决策-行动循环从而掌握主动权？",
+  "when_to_use": {
+    "triggers": [
+      "环境快速变化静态计划过时",
+      "竞争激烈需更快反应",
+      "信息不完备但必须马上行动",
+      "陷入分析瘫痪一直在想不动"
+    ],
+    "anti_triggers": []
+  },
+  "before_after": {
+    "without_model": "在掌握OODA循环之前，面对这类问题你可能依赖直觉、经验或他人建议，缺乏系统化的思考框架",
+    "with_model": "运用OODA循环之后，你能够按照结构化的推理协议逐步分析问题，避免常见误区，得出更可靠的结论"
+  },
+  "reasoning_steps": [
+    {
+      "step": 1,
+      "action": "主动扫描内外环境收集原始信号。区分有效信号和无效噪音。",
+      "checkpoint": "未经过滤的原始信息清单"
+    },
+    {
+      "step": 2,
+      "action": "结合心智模型和经验形成态势判断。这是OODA的心脏。",
+      "checkpoint": "态势感知陈述：当前局面/关键变化/认知假设/可能偏差"
+    },
+    {
+      "step": 3,
+      "action": "选择足够可行的方案。优先速度而非完美。",
+      "checkpoint": "一个明确的行动方案不是备选清单"
+    },
+    {
+      "step": 4,
+      "action": "执行决策产生可观测结果。行动不仅是解决问题更是为下一轮循环提供观察数据。",
+      "checkpoint": "行动执行+下一轮观察点清单"
+    }
+  ],
+  "scenarios": {
+    "企业管理": {
+      "situation": "在企业管理场景中遇到需要运用OODA循环的问题",
+      "application": "将OODA循环应用于企业管理场景中的组织决策或流程优化问题"
+    },
+    "产品设计": {
+      "situation": "在产品设计场景中遇到需要运用OODA循环的问题",
+      "application": "将OODA循环应用于产品设计中的功能规划或用户体验问题"
+    },
+    "分析洞察": {
+      "situation": "在分析洞察场景中遇到需要运用OODA循环的问题",
+      "application": "将OODA循环应用于数据分析中的根因诊断或趋势判断问题"
+    },
+    "决策思维": {
+      "situation": "在决策思维场景中遇到需要运用OODA循环的问题",
+      "application": "将OODA循环应用于复杂决策中的选项评估或风险预判问题"
+    },
+    "任务管理": {
+      "situation": "在任务管理场景中遇到需要运用OODA循环的问题",
+      "application": "将OODA循环应用于任务管理中的优先级排序或执行效率问题"
+    }
+  },
+  "codex_integration": {
+    "activation": "请用OODA循环...",
+    "system_prompt": "现在就以OODA循环模式运行。面对不确定环境按协议快速迭代。每次只给一个行动方案。如果信息不够告诉我最需要补充什么。",
+    "skill_hint": "可转为Skill: ooda循环"
+  },
+  "pitfalls": [],
+  "quality": {
+    "definition_clarity": 5,
+    "trigger_precision": 4,
+    "step_completeness": 4,
+    "scenario_coverage": 2,
+    "prompt_effectiveness": 4,
+    "overall": 5
+  }
+}

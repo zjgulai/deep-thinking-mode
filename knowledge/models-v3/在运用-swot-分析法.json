@@ -1,0 +1,68 @@
+{
+  "schema_version": "3.0.0",
+  "id": "在运用-swot-分析法",
+  "meta": {
+    "name": "在运用 SWOT 分析法",
+    "category": "00",
+    "tags": [],
+    "skill_name": "在运用-swot-分析法"
+  },
+  "core_definition": "1、 确认当前的战略是什么",
+  "when_to_use": {
+    "triggers": [
+      "当企业内部劣势与企业外部威胁相遇时，",
+      "如果处理不当，可能直接威胁到企业的生死存亡。",
+      "当前企业发展的核心能力，同时具备了向相关专业延伸的基础和实力。",
+      "如果公司能够适当地生产产品和管理生产过程，则产品生产累积的每一个显着的增加，",
+      "当从现金牛身上挤出尽可能多的“奶”来，把现金牛业务的新投资限制在最必要的水平上，"
+    ],
+    "anti_triggers": []
+  },
+  "before_after": {
+    "without_model": "在掌握在运用 SWOT 分析法之前，面对这类问题你可能依赖直觉、经验或他人建议，缺乏系统化的思考框架",
+    "with_model": "运用在运用 SWOT 分析法之后，你能够按照结构化的推理协议逐步分析问题，避免常见误区，得出更可靠的结论"
+  },
+  "reasoning_steps": [
+    {
+      "step": 1,
+      "action": "、 确认当前的战略是什么？",
+      "checkpoint": "确认此步骤是否得出明确结论"
+    }
+  ],
+  "scenarios": {
+    "企业管理": {
+      "situation": "在企业管理场景中遇到需要运用在运用 SWOT 分析法的问题",
+      "application": "将在运用 SWOT 分析法应用于企业管理场景中的组织决策或流程优化问题"
+    },
+    "产品设计": {
+      "situation": "在产品设计场景中遇到需要运用在运用 SWOT 分析法的问题",
+      "application": "将在运用 SWOT 分析法应用于产品设计中的功能规划或用户体验问题"
+    },
+    "分析洞察": {
+      "situation": "在分析洞察场景中遇到需要运用在运用 SWOT 分析法的问题",
+      "application": "将在运用 SWOT 分析法应用于数据分析中的根因诊断或趋势判断问题"
+    },
+    "决策思维": {
+      "situation": "在决策思维场景中遇到需要运用在运用 SWOT 分析法的问题",
+      "application": "将在运用 SWOT 分析法应用于复杂决策中的选项评估或风险预判问题"
+    },
+    "任务管理": {
+      "situation": "在任务管理场景中遇到需要运用在运用 SWOT 分析法的问题",
+      "application": "将在运用 SWOT 分析法应用于任务管理中的优先级排序或执行效率问题"
+    }
+  },
+  "codex_integration": {
+    "activation": "请用在运用 SWOT 分析法分析...",
+    "system_prompt": "你现在以「在运用 SWOT 分析法」思维模式运行。\n\nStep 1 - 、 确认当前的战略是什么：、 确认当前的战略是什么？\n\n约束：按步骤推理，不跳过任何一步。常见误区: 避免市场上存在的威胁，往往更具有实用性; 陷阱，这里属于低度成长、低占有率的产品，它",
+    "skill_hint": "可转为Skill: 在运用-swot-分析法"
+  },
+  "pitfalls": [],
+  "quality": {
+    "definition_clarity": 3,
+    "trigger_precision": 4,
+    "step_completeness": 3,
+    "scenario_coverage": 2,
+    "prompt_effectiveness": 4,
+    "overall": 4
+  }
+}
