@@ -1,3 +1,10 @@
+
+.sidebar{position:fixed;left:0;top:56px;width:260px;height:calc(100vh - 56px);overflow-y:auto;background:var(--s);border-right:1px solid var(--h);padding:16px;z-index:40;font-size:.82rem;line-height:1.8}
+.sidebar h3{font-size:.75rem;color:var(--a);margin-bottom:8px;letter-spacing:.05em;font-weight:700}
+.sidebar a{display:block;color:var(--b);padding:3px 8px;border-radius:4px;text-decoration:none;transition:background .1s}
+.sidebar a:hover{background:var(--h);text-decoration:none}
+@media(max-width:1100px){.sidebar{display:none}}
+main.with-sidebar{margin-left:280px;max-width:860px}
 #!/usr/bin/env node
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { join } from "node:path";
@@ -51,15 +58,15 @@ writeFileSync(join(OUT,"style.css"),CSS,"utf8");
 // Index
 let cards="";for(const ch of chapters){const n=(byCh[ch.id]||[]).length;cards+=`<a href="chapters/ch${ch.id}-${ch.slug}.html" class="ch-card"><div class="ch-num">Ch.${ch.id}</div><h3>${ch.title}</h3><div class="desc">${ch.description}</div><span class="cnt">${n}个</span></a>`;}
 const total=chapters.reduce((s,ch)=>s+(byCh[ch.id]||[]).length,0);
-writeFileSync(join(OUT,"index.html"),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>系统化思维 — ${total}个模型</title><link rel="stylesheet" href="style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><main id="main"><div class="hero"><h1>把复杂问题，看成可以理解、选择与行动的系统</h1><p style="color:var(--m);max-width:560px;margin:8px auto 0">${chapters.length}章 · ${total}个推理引擎 · 每个含Codex可执行协议</p></div><div class="ch-grid">${cards}</div></main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");
+writeFileSync(join(OUT,"index.html"),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>系统化思维 — ${total}个模型</title><link rel="stylesheet" href="style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><main id="main" class="with-sidebar"><div class="hero"><h1>把复杂问题，看成可以理解、选择与行动的系统</h1><p style="color:var(--m);max-width:560px;margin:8px auto 0">${chapters.length}章 · ${total}个推理引擎 · 每个含Codex可执行协议</p></div><div class="ch-grid">${cards}</div></main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");
 console.log(`✓ index.html`);
 
 // Chapters
-for(const ch of chapters){const arts=byCh[ch.id]||[];const subs=(ch.subchapters||[]).map(s=>`<span class="sub-tag">${s.title}</span>`).join("");let html="";
+for(const ch of chapters){const arts=byCh[ch.id]||[];const subs=(ch.subchapters||[]).map(s=>`<span class="sub-tag">${s.title}</span>`).join("");let sb="<div class=\"sidebar\"><h3>本章模型</h3>";for(const a of arts){const aid="m-"+(a.id||(a.meta?.name||"").replace(/[\s/\\:：]/g,"-").slice(0,30));sb+="<a href=\"#"+aid+"\">"+esc((a.meta?.name||"").slice(0,22))+"</a>";}sb+="</div>";html+=sb;let html="";
 for(const a of arts){
 let h='';
 const q=a.quality||{};
-h+=`<article class="model-card"><h2>${esc(a.meta?.name||"")}<span class="stars">${stars(Math.min(q.overall||0,5))}</span></h2>`;
+h+=`<article class="model-card" id="${"m-"+a.id||""}"><h2>${esc(a.meta?.name||"")}<span class="stars">${stars(Math.min(q.overall||0,5))}</span></h2>`;
 if(a.core_definition)h+=`<div class="v3-def">${esc(a.core_definition)}</div>`;
 const wtu=a.when_to_use||{};
 if(wtu.triggers?.length)h+=`<div class="model-label">触发信号</div><div class="model-value"><ul>${wtu.triggers.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
@@ -81,5 +88,5 @@ if(a.pitfalls?.length)h+=`<div class="model-label">常见误区</div><div class=
 if(a.meta?.tags?.length)h+=`<div class="tags-row">${a.meta.tags.map(t=>`<span class="tag-chip">${esc(t)}</span>`).join("")}</div>`;
 h+=`</article>`;
 html+=h;}const idx=chapters.findIndex(c=>c.id===ch.id);const prev=idx>0?chapters[idx-1]:null,next=idx<chapters.length-1?chapters[idx+1]:null;let nav='<div class="nav-row">';nav+=prev?`<a href="ch${prev.id}-${prev.slug}.html">← Ch.${prev.id} ${prev.title}</a>`:"<span></span>";nav+=next?`<a href="ch${next.id}-${next.slug}.html">Ch.${next.id} ${next.title} →</a>`:"<span></span>";nav+='</div>';
-writeFileSync(join(CH,`ch${ch.id}-${ch.slug}.html`),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ch.${ch.id} ${ch.title}</title><link rel="stylesheet" href="../style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="../index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="../index.html">章节</a><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><div class="breadcrumb"><a href="../index.html">首页</a> / <span>Ch.${ch.id} ${ch.title}</span></div><main id="main"><h1>Ch.${ch.id} ${ch.title}</h1><p class="chapter-desc">${ch.description} · ${arts.length}个模型</p><div class="sub-tags">${subs}</div>${html}${nav}</main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");console.log(`✓ ch${ch.id} (${arts.length})`);}
+writeFileSync(join(CH,`ch${ch.id}-${ch.slug}.html`),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ch.${ch.id} ${ch.title}</title><link rel="stylesheet" href="../style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="../index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="../index.html">章节</a><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><div class="breadcrumb"><a href="../index.html">首页</a> / <span>Ch.${ch.id} ${ch.title}</span></div><main id="main" class="with-sidebar"><h1>Ch.${ch.id} ${ch.title}</h1><p class="chapter-desc">${ch.description} · ${arts.length}个模型</p><div class="sub-tags">${subs}</div>${html}${nav}</main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");console.log(`✓ ch${ch.id} (${arts.length})`);}
 console.log("\n✅ 完成 → docs/");
