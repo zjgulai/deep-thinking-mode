@@ -54,9 +54,12 @@ function printState(state) {
 }
 
 async function cmdPrepare() {
+  const fromArg = args.find(a => a.startsWith("--from="));
+  const contentRef = fromArg ? fromArg.split("=")[1] : "public";
   console.log("Preparing candidate public tree...");
   console.log(`  baseline: ${RAW_BASELINE_OID}`);
-  const result = await preparePublicTree({ rootDir: ROOT_DIR });
+  console.log(`  content from: ${contentRef}`);
+  const result = await preparePublicTree({ rootDir: ROOT_DIR, contentRef });
   console.log("Candidate tree prepared:");
   console.log(`  treeOid:        ${result.treeOid}`);
   console.log(`  manifestDigest: ${result.manifestDigest}`);
@@ -167,6 +170,7 @@ const COMMANDS = {
 };
 
 const cmd = process.argv[2];
+const args = process.argv.slice(3);
 if (!cmd || !COMMANDS[cmd]) {
   console.error(`Usage: node tools/release-public-root.mjs <command>`);
   console.error(`Commands: ${Object.keys(COMMANDS).join(", ")}`);

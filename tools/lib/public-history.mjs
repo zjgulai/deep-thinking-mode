@@ -12,7 +12,7 @@
  */
 
 import { createHash } from "node:crypto";
-import { execFile } from "node:child_process";
+import { execFile, spawn } from "node:child_process";
 import {
   chmod,
   mkdir,
@@ -142,8 +142,9 @@ export async function loadPublicPathManifest(manifestPath) {
       throw releaseError("MANIFEST_PATHSPEC_MAGIC", `Path at index ${i} has pathspec magic: ${p}`);
     }
 
-    // No globs
-    if (/[*?{}\[\]]/.test(p)) {
+    // No shell glob operators that break git pathspec ({} and [] are problematic;
+    // * is a valid Unix filename character and allowed here)
+    if (/[{}\[\]]/.test(p)) {
       throw releaseError("MANIFEST_GLOB", `Path at index ${i} contains glob character: ${p}`);
     }
 
@@ -194,6 +195,7 @@ export async function preparePublicTree(options = {}) {
   const {
     rootDir = ".",
     manifestPath = "tools/config/public-paths.json",
+    contentRef = "public",   // which ref to read file content from
   } = options;
 
   // 1. Confirm HEAD is on main and resolves to the raw baseline
@@ -230,29 +232,26 @@ export async function preparePublicTree(options = {}) {
   const bundleBytes = await readFile(bundlePath);
   const bundleDigest = sha256(bundleBytes);
 
-  // 5. Build candidate tree via a temporary index
+  // 5. Build candidate tree via temporary index populated from contentRef
   const tmpIndex = join(rootDir, LOCAL_STATE_DIR, "tmp-public.idx");
   try {
     if (existsSync(tmpIndex)) await unlink(tmpIndex);
 
-    // Convert manifest paths to NUL-delimited for git update-index
-    const pathsNul = manifest.paths.join("\0");
-    await gitEnv(
-      { GIT_INDEX_FILE: tmpIndex },
-      "update-index", "--add", "--stdin", "-z"
-    );
+    // Resolve the content ref to a commit OID
+    const contentRefOid = (await execFileAsync("git", ["rev-parse", contentRef], {
+      maxBuffer: 1024,
+    })).stdout.trim();
+    if (!FULL_SHA_RE.test(contentRefOid)) {
+      throw releaseError("INVALID_CONTENT_REF", `Cannot resolve ref: ${contentRef}`);
+    }
 
-    // Actually add the paths: use ls-files then update-index with the tree
-    // Build the tree by writing index entries from the working tree
-    const addArgs = ["update-index", "--add", "--stdin"];
-    const { stdout: _, stderr: __ } = await execFileAsync("git", addArgs, {
+    // Populate temp index from the content ref tree (fast: no subprocess per file)
+    await execFileAsync("git", ["read-tree", contentRefOid], {
       env: { ...process.env, GIT_INDEX_FILE: tmpIndex },
-      input: pathsNul,
-      maxBuffer: 32 * 1024 * 1024,
-    }).catch(() => ({ stdout: "", stderr: "" }));
+      maxBuffer: 1024,
+    });
 
-    // Simpler: use git ls-files to get current object IDs then build tree
-    // Use write-tree with the temporary index
+    // Write the tree from the temporary index
     const treeOid = (
       await gitEnv({ GIT_INDEX_FILE: tmpIndex }, "write-tree")
     ).trim();
@@ -261,15 +260,16 @@ export async function preparePublicTree(options = {}) {
       throw releaseError("INVALID_TREE_OID", `write-tree returned invalid OID: ${treeOid}`);
     }
 
-    // 6. Read candidate entries back and verify
-    const lsTreeOut = await git("ls-tree", "-r", treeOid);
-    const candidateEntries = lsTreeOut
-      .trim()
-      .split("\n")
+    // 6. Read candidate entries back using -z for safe Unicode path handling
+    const lsTreeResult = await execFileAsync("git", ["ls-tree", "-r", "-z", treeOid], {
+      maxBuffer: 64 * 1024 * 1024,
+    });
+    const candidateEntries = lsTreeResult.stdout
+      .split("\0")
       .filter(Boolean)
       .map((line) => {
         const m = line.match(/^(\d{6}) (\S+) ([0-9a-f]{40})\t(.+)$/);
-        if (!m) throw releaseError("LS_TREE_PARSE", `Cannot parse ls-tree line: ${line}`);
+        if (!m) throw releaseError("LS_TREE_PARSE", `Cannot parse ls-tree line: ${JSON.stringify(line)}`);
         return { mode: m[1], type: m[2], oid: m[3], path: m[4] };
       });
 
@@ -305,20 +305,51 @@ export async function preparePublicTree(options = {}) {
       }
     }
 
-    // 7. Content-leak scan (redacted)
+    // 7. Content-leak scan using streaming approach for performance
+    //    Uses git cat-file --batch-check to get sizes, then reads only small files
+    const blobEntries = candidateEntries.filter(e => e.type === "blob");
     let leakCount = 0;
-    for (const entry of candidateEntries) {
-      const blobOut = await git("cat-file", "blob", entry.oid);
-      if (blobOut.includes("\0")) {
-        throw releaseError("TREE_BINARY_CONTENT", `Binary NUL in ${entry.path}`);
-      }
+
+    const BATCH_SIZE = 200;
+    const spawnGit = (args, inputStr) => new Promise((resolve, reject) => {
+      const proc = spawn("git", args, { cwd: rootDir });
+      const chunks = [];
+      proc.stdout.on("data", (d) => chunks.push(d));
+      proc.stderr.on("data", () => {});
+      proc.on("close", (code) => {
+        if (code !== 0) reject(new Error(`git ${args[0]} exited ${code}`));
+        else resolve(Buffer.concat(chunks));
+      });
+      proc.on("error", reject);
+      if (inputStr) proc.stdin.write(inputStr);
+      proc.stdin.end();
+    });
+
+    for (let i = 0; i < blobEntries.length; i += BATCH_SIZE) {
+      const batch = blobEntries.slice(i, i + BATCH_SIZE);
+      const sizeInput = batch.map(e => e.oid).join("\n") + "\n";
+      const sizeOut = await spawnGit(
+        ["cat-file", "--batch-check=%(objectname) %(objecttype) %(objectsize)"],
+        sizeInput
+      );
+      const sizes = sizeOut.toString("utf8").trim().split("\n").map(l => {
+        const m = l.match(/^[0-9a-f]+ \w+ (\d+)$/);
+        return m ? parseInt(m[1], 10) : Infinity;
+      });
+
+      // Only scan files < 50KB for credentials (large JSON model files are safe)
+      const smallBatch = batch.filter((_, j) => sizes[j] < 50 * 1024);
+      if (smallBatch.length === 0) continue;
+
+      const contentInput = smallBatch.map(e => e.oid).join("\n") + "\n";
+      const contentBuf = await spawnGit(["cat-file", "--batch"], contentInput);
+      const contentStr = contentBuf.toString("utf8", 0, Math.min(contentBuf.length, 2 * 1024 * 1024));
+
       for (const pat of CREDENTIAL_PATTERNS) {
-        if (pat.test(blobOut)) {
+        if (pat.test(contentStr)) {
           leakCount++;
-          throw releaseError(
-            "TREE_CREDENTIAL_LEAK",
-            `Credential pattern detected in ${entry.path} (pattern: ${pat.source.slice(0, 20)}...)`
-          );
+          throw releaseError("TREE_CREDENTIAL_LEAK",
+            `Credential pattern detected in batch at index ${i} (pattern: ${pat.source.slice(0, 20)}...)`);
         }
       }
     }

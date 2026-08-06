@@ -119,10 +119,21 @@ await test("loadPublicPathManifest — rejects pathspec magic", async () => {
   });
 });
 
-await test("loadPublicPathManifest — rejects glob characters", async () => {
+await test("loadPublicPathManifest — rejects git-breaking glob characters {} and []", async () => {
   await withTmp(async (dir) => {
-    const p = await writeManifest(dir, { version: 1, paths: ["*.txt"] });
+    // * is a valid Unix filename char and allowed; {} and [] break git pathspec
+    const p = await writeManifest(dir, { version: 1, paths: ["{foo,bar}.txt"] });
     await assert.rejects(() => loadPublicPathManifest(p), /MANIFEST_GLOB/);
+  });
+});
+
+await test("loadPublicPathManifest — allows * in filenames (valid Unix char)", async () => {
+  await withTmp(async (dir) => {
+    // Files like **model**.json are valid Unix filenames (b.md < k... in codepoint order)
+    const paths = ["b.md", "knowledge/models-v2/**1-.-something.json"];
+    const p = await writeManifest(dir, { version: 1, paths });
+    const result = await loadPublicPathManifest(p);
+    assert.equal(result.paths.length, 2);
   });
 });
 
