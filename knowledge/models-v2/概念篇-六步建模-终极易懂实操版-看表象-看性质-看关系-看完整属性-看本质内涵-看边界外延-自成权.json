@@ -11,7 +11,10 @@
   "engine": {
     "core_question": "口诀：自己本来就有的，叫性质；别人临时叫你干的，不叫性质",
     "trigger_signals": [],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "不是性质：临时工作、临时任务、被动联动、外部要求",
+      "不是关系：事物自身的能力、自身特点"
+    ],
     "reasoning_protocol": [
       {
         "step": 1,
@@ -70,7 +73,16 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "不是性质：临时工作、临时任务、被动联动、外部要求",
+        "action": ""
+      },
+      {
+        "condition": "不是关系：事物自身的能力、自身特点",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

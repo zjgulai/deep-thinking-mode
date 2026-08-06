@@ -12,7 +12,20 @@
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "清单清空法**：将一切任务（无论大小）写下来，本身就是给大脑一个“外部硬盘”，部分释放其维持循环的压力。“完成-划掉”的动作，是强有力的闭环仪式。",
+        "action": ""
+      },
+      {
+        "condition": "刻意闭环**：对于无法完成或不再重要的任务（如无意义的争论、过去的遗憾），通过仪式（写下来然后撕掉、在心里做个了结声明）主动为其创造“心理完结”，解放心智。",
+        "action": ""
+      },
+      {
+        "condition": "专注的单循环**：重要工作时，全力关闭其他所有循环（关闭通知、处理完琐碎邮件），只保留一个主循环，以避免注意力被无数“幽灵”撕裂。",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

@@ -12,7 +12,12 @@
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "uzU\\_SN98A](https://mp.weixin.qq.com/s/su07vWaTKCBC-uzU_SN98A)",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

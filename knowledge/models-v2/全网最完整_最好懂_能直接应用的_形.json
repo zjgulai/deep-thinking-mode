@@ -10,7 +10,9 @@
   "engine": {
     "core_question": "全网最完整、最好懂、能直接应用的《形式逻辑等价关系终极通关文》，结构由「原理→图形→体系→方法→速成→避坑→口诀」一气贯通。  提示🔔：接下来我们将正式踏入形式逻辑深水区，内容偏向底层思维拆解，需要沉下心反复打磨思辨能力。    形式逻辑等价关系终极通关：一张图吃透所有公式（全覆盖、零死记）   ",
     "trigger_signals": [],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "高频误区（不等价）"
+    ],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {

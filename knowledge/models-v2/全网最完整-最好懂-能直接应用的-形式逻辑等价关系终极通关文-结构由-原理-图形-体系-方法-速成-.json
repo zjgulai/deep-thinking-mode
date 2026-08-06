@@ -11,7 +11,9 @@
   "engine": {
     "core_question": "如何有效完成这件事？全网最完整、最好懂、能直接应用的操作路径是什么？",
     "trigger_signals": [],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "高频误区（不等价）"
+    ],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {

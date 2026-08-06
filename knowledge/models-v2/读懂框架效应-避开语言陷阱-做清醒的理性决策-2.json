@@ -72,7 +72,12 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "uzU\\_SN98A](https://mp.weixin.qq.com/s/su07vWaTKCBC-uzU_SN98A)",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "中，摆脱被动操控，做出更理性的决策。  一、框架效应的四大核心类型"

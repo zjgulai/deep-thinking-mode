@@ -16,7 +16,16 @@
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "大众错误直觉：想法 → 情绪动机 → 行动",
+        "action": ""
+      },
+      {
+        "condition": "想法优先：脆弱的火柴模式",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

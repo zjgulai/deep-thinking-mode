@@ -14,9 +14,21 @@
       "------------",
       "------------"
     ],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "无效：有空再做、需要时再执行",
+      "无效：梳理并确认客户需求"
+    ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "无效：有空再做、需要时再执行",
+        "action": ""
+      },
+      {
+        "condition": "无效：梳理并确认客户需求",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

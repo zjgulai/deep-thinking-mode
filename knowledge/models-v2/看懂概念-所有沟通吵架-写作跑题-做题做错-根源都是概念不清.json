@@ -11,7 +11,9 @@
   "engine": {
     "core_question": "这件事的本质是什么？看懂概念如何定义它？",
     "trigger_signals": [],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "模糊表达：读书让人变好。"
+    ],
     "reasoning_protocol": [
       {
         "step": 1,

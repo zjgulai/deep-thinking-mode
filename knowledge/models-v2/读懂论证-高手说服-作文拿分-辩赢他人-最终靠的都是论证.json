@@ -11,9 +11,16 @@
   "engine": {
     "core_question": "这个问题的根本原因是什么？读懂论证如何找到它？",
     "trigger_signals": [],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "低分写法（只有判断+论据，无论证衔接）："
+    ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "低分写法（只有判断+论据，无论证衔接）：",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "汇总，提炼观点      3\\. 类比论证：同类事物类比推导（仅辅助，力度最弱）   依托类比推理，通俗易懂，不可单独立论      4\\. 因果论证：分析原因、推导结果   厘清根源，证明观点成立      5\\. 正反论证：正向佐证、反向反证   双向对照，强化观点可信度"
