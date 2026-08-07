@@ -16,7 +16,7 @@
       "**周末也不例外**：这是打破“社交时差”恶性循环的关键。"
     ],
     "stop_conditions": [
-      "**周末也不例外**：这是打破“社交时差”恶性循环的关键。"
+      "不是解决方案，而是资源、渠道与有效人际连接"
     ],
     "reasoning_protocol": [
       {
@@ -76,7 +76,16 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免蓝光**（手机、电脑）",
+        "action": ""
+      },
+      {
+        "condition": "避免长期节律混乱的“痛苦”",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

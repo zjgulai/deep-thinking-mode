@@ -21,7 +21,12 @@
       "不需要9点到岗，只要求核心时段在岗，行不行？”"
     ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "不要总想着“消除坏东西”",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "试新规则，有效再推广。   > 例子：先在一个小团队试行业绩新规则，跑通一个月后再全公司推行。"

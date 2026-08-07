@@ -17,7 +17,9 @@
       "你是被人性规律裹挟的普通人；吃透这一层后，你能主动驾驭规律、预判他人选择。",
       "你能完整回答这个问题时，才算完成知识从“被动学到”到“主动用好”的跨越。"
     ],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "不是性格缺陷，而是人类与生俱来的心理出厂设置"
+    ],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {

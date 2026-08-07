@@ -38,7 +38,12 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免“按下葫芦浮起瓢”的局部修复",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "将“用户投诉物流慢”，重构为“平台平均配送时长从24小时延长至48小时”。"

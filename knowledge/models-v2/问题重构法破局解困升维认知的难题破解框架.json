@@ -13,7 +13,12 @@
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免重构过度、只空想不行动",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "。      五、经典实战案例      电梯投诉难题：初始问题为电梯慢、投诉多，常规方案成本高；重构核心为无意义等待引发负面情绪，落地装镜子转移注意力，低成本解决问题。"

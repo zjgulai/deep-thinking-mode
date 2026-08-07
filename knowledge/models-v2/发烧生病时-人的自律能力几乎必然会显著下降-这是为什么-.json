@@ -62,7 +62,12 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "不要为此感到愧疚或批评自己“意志力薄弱”",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "吃不健康的食物（身体可能渴望快速能量）、无节制地刷手机（因无法集中精力做正事）。"

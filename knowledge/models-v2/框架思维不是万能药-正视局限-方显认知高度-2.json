@@ -15,7 +15,12 @@
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免形式化应用与资源浪费",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "运用SWOT框架分析初创企业时，易忽略“创始人信任裂痕”这类无法归类的隐性因素，而此类因素往往直接决定企业的生存发展。"

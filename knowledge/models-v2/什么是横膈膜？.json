@@ -40,7 +40,20 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "肩膀**向后、向下放松，不要耸肩。",
+        "action": ""
+      },
+      {
+        "condition": "可以将一只手或双手放在腹部（同上），或者将双手自然放在大腿上。",
+        "action": ""
+      },
+      {
+        "condition": "\\. 练习步骤：**",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

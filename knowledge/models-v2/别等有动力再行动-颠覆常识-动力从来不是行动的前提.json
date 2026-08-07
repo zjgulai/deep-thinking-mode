@@ -19,7 +19,20 @@
       "不需要有动力才开始做事，恰恰是开始做事之后，大脑才会为你生成动力"
     ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "这件事好像并没有那么难",
+        "action": ""
+      },
+      {
+        "condition": "动起来之后反而很轻松",
+        "action": ""
+      },
+      {
+        "condition": "我比自己想象中更自律",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "绑定触发，摆脱意志力依赖 ------------------"

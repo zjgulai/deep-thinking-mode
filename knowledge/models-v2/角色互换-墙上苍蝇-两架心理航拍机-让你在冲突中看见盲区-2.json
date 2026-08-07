@@ -17,7 +17,12 @@
       "-------------"
     ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "不要在激烈冲突中第一次尝试",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "最容易让你从“对话”滑入“对抗”？被对方打断？解释时感到不被相信？某种特定的批评语气？找出典型触发场景，这是你最需要启用视角切换的节点。"

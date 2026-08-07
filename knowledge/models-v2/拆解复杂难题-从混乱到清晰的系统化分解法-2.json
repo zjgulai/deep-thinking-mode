@@ -17,7 +17,12 @@
       "分解可逐层递归开展，将大问题拆分为中级子问题，再对各子问题持续细化，直至达到可直接执行的粒度。"
     ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免盲目拆解、遗漏关键环节",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "。  分解维度  核心说明  适用场景  实操示例  按阶段/时间"

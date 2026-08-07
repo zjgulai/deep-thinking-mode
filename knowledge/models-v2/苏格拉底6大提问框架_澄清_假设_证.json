@@ -17,7 +17,12 @@
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免误判偶然关联为必然结果；反向验证——主动寻找反例",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

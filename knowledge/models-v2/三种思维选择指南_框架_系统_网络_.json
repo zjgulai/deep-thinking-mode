@@ -14,7 +14,9 @@
       "适用特征：问题反复复发、治标不治本、多方关联牵一发动全身、解决表层问题后易产生次生隐患",
       "适用特征：个人资源匮乏、需要外部破圈、需撬动他人协作、需要拓宽信息面与个人影响力"
     ],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "不是解决方案，而是资源、渠道与有效人际连接"
+    ],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {

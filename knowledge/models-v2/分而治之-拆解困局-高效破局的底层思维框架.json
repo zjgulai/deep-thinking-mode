@@ -16,7 +16,12 @@
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免子问题成果无法拼接兼容；同时提前预判合并冲突",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "适用：小到日常任务规划、错题整理，大到项目攻坚、软件开发，均可灵活应用。"

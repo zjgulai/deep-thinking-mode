@@ -70,7 +70,12 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "万一模式：“万一失败了怎么办？” → 杏仁核警报，焦虑、无助、思维卡死。",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

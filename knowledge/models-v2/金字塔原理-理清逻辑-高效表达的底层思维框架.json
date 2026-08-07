@@ -76,7 +76,12 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免“听半天抓不住重点”",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "等细节论据补充。   二、核心价值  金字塔原理的实用价值贯穿职场与日常，无论是工作汇报、方案写作、公开演讲，还是日常沟通协作，都能带来显著提升，具体体现在四个方面："

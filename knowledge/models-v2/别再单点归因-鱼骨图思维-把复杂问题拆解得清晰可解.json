@@ -56,7 +56,16 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "错误：写作效率低、客户满意度差、经常拖延",
+        "action": ""
+      },
+      {
+        "condition": "无效：更换写作工具｜✅ 有效：本周五前测试2款轻量编辑器，替换原有卡顿软件",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "----------------  零门槛无成本，无需专业工具与培训，纸笔即可操作，适配个人成长、团队复盘、问题整改等全场景，实用性极强。"

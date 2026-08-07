@@ -13,7 +13,12 @@
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免成为“框架收集者”：重框架拥有、轻实践应用是误区；一个深度应用的简单框架",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "）；②切换能力（灵活切换不被束缚）；③质疑能力（定期审视适用性）；④修补能力（调整漏洞适配需求）；⑤放弃能力（弊大于利时果断舍弃）。"

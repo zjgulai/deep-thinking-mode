@@ -14,7 +14,9 @@
       "你的预测为什么总出错？不是数据不够，",
       "你的预判思维已完成了从线性外推到动态演化的核心跃迁。"
     ],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "不是既定轨道，而是人类在一次次挑战与应战中，持续迭代、共同书写的动态史诗"
+    ],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {

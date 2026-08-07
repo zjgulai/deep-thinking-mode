@@ -13,7 +13,12 @@
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免突然静止：绝对不要在剧烈运动后立刻坐下或躺下",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "，快跑后变为慢跑再变为快走；力量训练后慢走和拉伸。这能给心血管系统"

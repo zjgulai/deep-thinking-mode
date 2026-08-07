@@ -13,7 +13,9 @@
       "你是否也有过这样的职场困扰？—— 卫健委的政策文件读了半天",
       "面对政策解读、项目推进、汇报总结时"
     ],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "不是你能力不够，而是缺少一套“从理解到落地”的完整认知逻辑"
+    ],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {

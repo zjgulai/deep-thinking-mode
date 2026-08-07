@@ -12,7 +12,20 @@
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免盲目发力、做无用功；",
+        "action": ""
+      },
+      {
+        "condition": "避免目标模糊导致行动偏差",
+        "action": ""
+      },
+      {
+        "condition": "避免用“我们做了”模糊个人作用",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

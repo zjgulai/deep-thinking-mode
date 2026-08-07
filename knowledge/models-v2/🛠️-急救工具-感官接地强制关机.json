@@ -43,7 +43,20 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "感官扫描**——缓慢说出：",
+        "action": ""
+      },
+      {
+        "condition": "你**看**到的5样东西（窗帘、台灯、水杯……）",
+        "action": ""
+      },
+      {
+        "condition": "你**摸**到的4样东西（被子、枕头、手腕、睡衣）",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

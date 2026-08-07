@@ -15,7 +15,12 @@
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "判断（无逻辑、不可论证）：",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

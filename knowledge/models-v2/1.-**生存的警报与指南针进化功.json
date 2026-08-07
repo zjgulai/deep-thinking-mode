@@ -10,7 +10,9 @@
   "engine": {
     "core_question": "### 1. **生存的警报与指南针（进化功能）**  情绪是人类在漫长进化中形成的快速反应系统。  *   **恐惧**：提醒我们危险，准备战斗或逃跑，保障基本安全。      *   **厌恶**：让我们远离可能有害的事物（如腐烂的食物）。      *   **喜悦**：鼓励我们重复那些有利于",
     "trigger_signals": [],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "不是生活的背景噪音，而是构成生活意义的交响乐本身"
+    ],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {

@@ -18,7 +18,12 @@
       "这不是思维狭隘，是进化带来的本能：多做补充、多加保障，会让人潜意识觉得更安全，害怕因删减遗漏风险"
     ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "不要一次性大刀阔斧全面改革",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "策略一：流程无痛删减——剔除无价值中间节点 ---------------------"

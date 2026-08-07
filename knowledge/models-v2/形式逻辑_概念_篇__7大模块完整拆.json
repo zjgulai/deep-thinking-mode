@@ -15,7 +15,16 @@
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "因果 = 真实发生、先后顺序、谁造成谁",
+        "action": ""
+      },
+      {
+        "condition": "条件 = 规则设定、标准门槛、满足才成立",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

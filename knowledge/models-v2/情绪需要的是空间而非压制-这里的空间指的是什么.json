@@ -18,7 +18,9 @@
       "你不会因为下雨而责备天空一样，你也不因为有了某种情绪而责备自己。这种无条件的接纳，是情绪能自由流动和消散的前提。",
       "你，你可以有任何感受，想和我说说吗？"
     ],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "不是一个物理概念，而是一个**心理、觉知和接纳的容器**"
+    ],
     "reasoning_protocol": [],
     "decision_points": [],
     "output_format": {

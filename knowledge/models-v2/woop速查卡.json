@@ -46,7 +46,12 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "就）：提前在大脑中铺设神经轨道，当障碍出现时，你不需要再纠结“怎么办”，直接执行预设动作。",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

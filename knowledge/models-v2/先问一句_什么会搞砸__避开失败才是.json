@@ -53,7 +53,16 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "模糊：提升客户满意度",
+        "action": ""
+      },
+      {
+        "condition": "被动：防止产品出现故障",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

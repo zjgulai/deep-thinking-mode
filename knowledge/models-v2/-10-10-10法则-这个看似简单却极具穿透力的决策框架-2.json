@@ -21,7 +21,20 @@
       "这不是要你忽略情绪，而是正视它、标记它"
     ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "不要用“10年后我应该会高兴”来欺骗自己",
+        "action": ""
+      },
+      {
+        "condition": "不要用它来为一切拖延或逃避（“10年后这都不重要",
+        "action": ""
+      },
+      {
+        "condition": "避免因小失大、因近失远的深层定力",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "“10分钟后，如果我拒绝了这笔有风险但高回报的生意，我可能会感到如释重负（恐惧主导）。” 这让你意识到，当下的选择可能在很大程度上是为了“回避短期不适”。"

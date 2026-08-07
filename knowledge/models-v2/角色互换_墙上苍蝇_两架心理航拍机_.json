@@ -15,7 +15,12 @@
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "不要在激烈冲突中第一次尝试",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

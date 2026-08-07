@@ -15,7 +15,12 @@
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "不要带着质疑、嘲讽的口吻",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": ""

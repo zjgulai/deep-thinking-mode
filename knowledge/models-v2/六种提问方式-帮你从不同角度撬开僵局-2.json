@@ -18,7 +18,12 @@
       "围绕任意观点，循环使用六类追问："
     ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免后续行动因理解偏差出错",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "。  为什么有用 -----  强制大脑脱离下意识的浅层快思考，转入精细化深度慢思考。当你需要为自身观点举证时，思维盲区会自动暴露，让人看清自身认知局限，达成自知自省。"

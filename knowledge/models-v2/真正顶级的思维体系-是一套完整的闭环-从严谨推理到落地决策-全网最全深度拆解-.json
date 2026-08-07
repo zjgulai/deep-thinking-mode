@@ -16,7 +16,11 @@
       "因果谬误：滑坡谬误、强加因果、事后归因；",
       "逻辑谬误：循环论证、二分法、稻草人谬误；"
     ],
-    "stop_conditions": [],
+    "stop_conditions": [
+      "战略类：SWOT、PEST、OKR",
+      "流程类：PDCA、DMAIC",
+      "逻辑类：韦恩图、金字塔原理"
+    ],
     "reasoning_protocol": [
       {
         "step": 1,

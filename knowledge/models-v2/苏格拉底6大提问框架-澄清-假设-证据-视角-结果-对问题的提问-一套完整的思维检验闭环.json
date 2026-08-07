@@ -21,7 +21,12 @@
       "“议题是‘如何提高员工加班效率’，但它是否掩盖了‘工作量分配不均’的核心真问题？”"
     ],
     "reasoning_protocol": [],
-    "decision_points": [],
+    "decision_points": [
+      {
+        "condition": "避免误判偶然关联为必然结果；反向验证——主动寻找反例",
+        "action": ""
+      }
+    ],
     "output_format": {
       "structure": "",
       "example": "，从具体案例归纳本质。  实战示例：  *   “你说这个方案‘有风险’，具体是资金损失、声誉受损，还是项目延期？”"
