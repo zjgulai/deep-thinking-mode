@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "思维卡壳时怎么破局_六种提问方式速查卡",
+  "meta": {
+    "name": "思维卡壳时怎么破局_六种提问方式",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "提问技巧",
+      "深度思考",
+      "思维模型"
+    ],
+    "source": "思维卡壳时怎么破局_六种提问方式速查卡.md",
+    "sourceTitle": "思维卡壳时怎么破局_六种提问方式速查卡"
+  },
+  "engine": {
+    "core_question": "苏格拉底式提问是暴露逻辑断层的利器",
+    "trigger_signals": [
+      "当你必须为自己的主张找理由时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "Whys是最简单也最容易被滥用的根因分析",
+        "action": "Whys是最简单也最容易被滥用的根因分析工具。它的精髓不在“问五次”，而在于沿因果链层层向下，直到找到系统性缺陷而非归咎于个人。机器停机了，别停在“保险丝烧断了",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "苏格拉底式提问是暴露逻辑断层的利器",
+        "action": "苏格拉底式提问是暴露逻辑断层的利器",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "一步步逼出思维中的矛盾、模糊和未经检验的",
+        "action": "一步步逼出思维中的矛盾、模糊和未经检验的预设",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "每一层追问都指向一个可控制的过程或系统",
+        "action": "每一层追问都指向一个可控制的过程或系统",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "爱因斯坦式提问的精神内核是“提出一个问题",
+        "action": "爱因斯坦式提问的精神内核是“提出一个问题往往比解决一个问题更重要”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "如果这个行业的既定规则完全消失",
+        "action": "如果这个行业的既定规则完全消失",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「思维卡壳时怎么破局_六种」速查模式运行。\n\n【认知模式】快速调用思维卡壳时怎么破局_六种提问方的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - Whys是最简单也最容易被滥用的根因分析：Whys是最简单也最容易被滥用的根因分析工具。它的精髓不在“问五次”，而在于沿因果链层层向下，直到找到系统性缺陷而非归咎于个人。机器停机了，别停在“保险丝烧断了\n\nStep 2 - 苏格拉底式提问是暴露逻辑断层的利器：苏格拉底式提问是暴露逻辑断层的利器\n\nStep 3 - 一步步逼出思维中的矛盾、模糊和未经检验的：一步步逼出思维中的矛盾、模糊和未经检验的预设\n\nStep 4 - 每一层追问都指向一个可控制的过程或系统：每一层追问都指向一个可控制的过程或系统\n\nStep 5 - 爱因斯坦式提问的精神内核是“提出一个问题：爱因斯坦式提问的精神内核是“提出一个问题往往比解决一个问题更重要”\n\nStep 6 - 如果这个行业的既定规则完全消失：如果这个行业的既定规则完全消失\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用思维卡壳时怎么破局_六种提问方速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

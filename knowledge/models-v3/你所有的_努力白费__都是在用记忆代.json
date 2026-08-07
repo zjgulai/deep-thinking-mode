@@ -11,12 +11,14 @@
   "core_definition": "工具，就足以碾压90%的学习者，无需钻研复杂理论",
   "when_to_use": {
     "triggers": [
-      "当你需要运用你所有的_努力白费_都是在用记忆代思维时"
+      "遇到新题型、新工作场景、新问题时",
+      "适用于哪些场景？不适用于哪些场景？",
+      "适用边界、失效场景分别是什么？"
     ],
     "anti_triggers": []
   },
   "before_after": {
-    "without_model": "在掌握你所有的_努力白费_都是在用记忆代之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
+    "without_model": "没有你所有的_努力白费_都是在用记忆代时，面对「新题型、新工作场景、新问题时」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。",
     "with_model": "运用你所有的_努力白费_都是在用记忆代后，能够按照结构化的推理协议逐步分析问题：工具，就足以碾压90%的学习者，无需钻研复杂理论，从而得出有依据的结论，而不是可替换的猜测。"
   },
   "reasoning_steps": [
@@ -56,7 +58,7 @@
   "pitfalls": [],
   "quality": {
     "definition_clarity": 2,
-    "trigger_precision": 2,
+    "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
     "prompt_effectiveness": 4,

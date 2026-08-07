@@ -11,12 +11,14 @@
   "core_definition": "与根本原因，适用于问题诊断、深度沟通及逻辑梳理",
   "when_to_use": {
     "triggers": [
-      "当你需要运用6种高效提问方法_好问题_比答案更有思维时"
+      "在挫败感；项目达成核心成果时",
+      "适用于问题诊断、深度沟通及逻辑梳理",
+      "适用于故障排查、质量管理及工作复盘"
     ],
     "anti_triggers": []
   },
   "before_after": {
-    "without_model": "在掌握6种高效提问方法_好问题_比答案更有之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",
+    "without_model": "没有6种高效提问方法_好问题_比答案更有时，面对「挫败感；项目达成核心成果时」这类问题，通常依赖直觉或经验处理，容易在表面症状上循环，无法触及根因或全局结构。",
     "with_model": "运用6种高效提问方法_好问题_比答案更有后，能够按照结构化的推理协议逐步分析问题：与根本原因，适用于问题诊断、深度沟通及逻辑梳理，从而得出有依据的结论，而不是可替换的猜测。"
   },
   "reasoning_steps": [
@@ -56,7 +58,7 @@
   "pitfalls": [],
   "quality": {
     "definition_clarity": 2,
-    "trigger_precision": 2,
+    "trigger_precision": 4,
     "step_completeness": 3,
     "scenario_coverage": 2,
     "prompt_effectiveness": 4,

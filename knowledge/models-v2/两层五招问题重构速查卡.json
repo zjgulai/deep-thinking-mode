@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "两层五招问题重构速查卡",
+  "meta": {
+    "name": "两层五招问题重构",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型",
+      "职场进阶"
+    ],
+    "source": "两层五招问题重构速查卡.md",
+    "sourceTitle": "两层五招问题重构速查卡"
+  },
+  "engine": {
+    "core_question": "两层五招问题重构法，把“换个角度思考”变成按步骤可套用的思维工具箱",
+    "trigger_signals": [
+      "需要快速查阅「两层五招问题重构」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "5秒是物理极限，翻转成“如何让用户感觉不",
+        "action": "5秒是物理极限，翻转成“如何让用户感觉不到等待”，解法就从优化代码变成骨架屏、趣味动画、预加载。 下次卡住时先别内耗，拿出问题，按顺序问自己：换个动词会怎样？追",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "变成按步骤可套用的思维工具箱",
+        "action": "变成按步骤可套用的思维工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "动词转化法让你把问题里的核心动词圈出来",
+        "action": "动词转化法让你把问题里的核心动词圈出来",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "目的链追问法让你持续追问“以便……”——",
+        "action": "目的链追问法让你持续追问“以便……”——别人要一把梯子",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "不再被困在梯子这个单一方案里",
+        "action": "不再被困在梯子这个单一方案里",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "调整抽象层级让你在“太具体卡住”和“太抽",
+        "action": "调整抽象层级让你在“太具体卡住”和“太抽象落不了地”之间灵活切换——“怎么磨快铅笔”上移到“如何写出清晰笔迹”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「两层五招问题重构」速查模式运行。\n\n【认知模式】快速调用两层五招问题重构的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 5秒是物理极限，翻转成“如何让用户感觉不：5秒是物理极限，翻转成“如何让用户感觉不到等待”，解法就从优化代码变成骨架屏、趣味动画、预加载。 下次卡住时先别内耗，拿出问题，按顺序问自己：换个动词会怎样？追\n\nStep 2 - 变成按步骤可套用的思维工具箱：变成按步骤可套用的思维工具箱\n\nStep 3 - 动词转化法让你把问题里的核心动词圈出来：动词转化法让你把问题里的核心动词圈出来\n\nStep 4 - 目的链追问法让你持续追问“以便……”——：目的链追问法让你持续追问“以便……”——别人要一把梯子\n\nStep 5 - 不再被困在梯子这个单一方案里：不再被困在梯子这个单一方案里\n\nStep 6 - 调整抽象层级让你在“太具体卡住”和“太抽：调整抽象层级让你在“太具体卡住”和“太抽象落不了地”之间灵活切换——“怎么磨快铅笔”上移到“如何写出清晰笔迹”\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用两层五招问题重构速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "20小时入门速查卡",
+  "meta": {
+    "name": "20小时入门",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "从零到一",
+      "快速学习",
+      "faad14;"
+    ],
+    "source": "20小时入门速查卡.md",
+    "sourceTitle": "20小时入门速查卡"
+  },
+  "engine": {
+    "core_question": "想学新技能却总被一万小时定律吓退",
+    "trigger_signals": [
+      "需要快速查阅「20小时入门」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "。 图一：核心公式+五大要素 核心公式：",
+        "action": "。 图一：核心公式+五大要素 核心公式：快速入门 = 精准目标 + 技能拆解 + 最小可用知识 + 排除障碍 + 聚焦前20小时 五大要素： 精准目标要具体可展",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "核心公式+五大要素 核心公式：快速入门 ",
+        "action": "核心公式+五大要素 核心公式：快速入门 = 精准目标 + 技能拆解 + 最小可用知识 + 排除障碍 + 聚焦前20小时 五大要素",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "锁定项目明确具象成果",
+        "action": "锁定项目明确具象成果",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "套用句式：学会某技能的某模块",
+        "action": "套用句式：学会某技能的某模块",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "只靠科学方法加聚焦坚持",
+        "action": "只靠科学方法加聚焦坚持",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "小时入门法则 #快速学习 #技能习得 #",
+        "action": "小时入门法则 #快速学习 #技能习得 #从零到一",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「20小时入门」速查模式运行。\n\n【认知模式】快速调用20小时入门的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 。 图一：核心公式+五大要素 核心公式：：。 图一：核心公式+五大要素 核心公式：快速入门 = 精准目标 + 技能拆解 + 最小可用知识 + 排除障碍 + 聚焦前20小时 五大要素： 精准目标要具体可展\n\nStep 2 - 核心公式+五大要素 核心公式：快速入门 ：核心公式+五大要素 核心公式：快速入门 = 精准目标 + 技能拆解 + 最小可用知识 + 排除障碍 + 聚焦前20小时 五大要素\n\nStep 3 - 锁定项目明确具象成果：锁定项目明确具象成果\n\nStep 4 - 套用句式：学会某技能的某模块：套用句式：学会某技能的某模块\n\nStep 5 - 只靠科学方法加聚焦坚持：只靠科学方法加聚焦坚持\n\nStep 6 - 小时入门法则 #快速学习 #技能习得 #：小时入门法则 #快速学习 #技能习得 #从零到一\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用20小时入门速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

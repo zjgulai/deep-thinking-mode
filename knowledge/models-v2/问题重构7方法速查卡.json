@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构7方法速查卡",
+  "meta": {
+    "name": "问题重构7方法",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "破局",
+      "问题重构",
+      "faad14;"
+    ],
+    "source": "问题重构7方法速查卡.md",
+    "sourceTitle": "问题重构7方法速查卡"
+  },
+  "engine": {
+    "core_question": "你有没有这样的经历：一个难题反复解决却反复回来，团队吵了半天还在原地打转，明明很努力却总觉得治标不治本",
+    "trigger_signals": [
+      "遇到的难题（工作、生活都行）"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "种方法速查 1\\. 反向重构 核心：把问",
+        "action": "种方法速查 1\\. 反向重构 核心：把问题反过来问",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "可能是激励方式、通勤压力或流程僵化",
+        "action": "可能是激励方式、通勤压力或流程僵化",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "选一个你最近反复遇到的难题（工作、生活都",
+        "action": "选一个你最近反复遇到的难题（工作、生活都行）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "框架思维 #破局 #问题分析",
+        "action": "框架思维 #破局 #问题分析",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「问题重构7方法」速查模式运行。\n\n【认知模式】快速调用问题重构7方法的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 种方法速查 1\\. 反向重构 核心：把问：种方法速查 1\\. 反向重构 核心：把问题反过来问\n\nStep 2 - 可能是激励方式、通勤压力或流程僵化：可能是激励方式、通勤压力或流程僵化\n\nStep 3 - 选一个你最近反复遇到的难题（工作、生活都：选一个你最近反复遇到的难题（工作、生活都行）\n\nStep 4 - 框架思维 #破局 #问题分析：框架思维 #破局 #问题分析\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用问题重构7方法速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么不等动力直接行动_动力飞轮四步速查卡",
+  "meta": {
+    "name": "怎么不等动力直接行动_动力飞轮四步",
+    "category": "07",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "拖延破解",
+      "认知科学"
+    ],
+    "source": "怎么不等动力直接行动_动力飞轮四步速查卡.md",
+    "sourceTitle": "怎么不等动力直接行动_动力飞轮四步速查卡"
+  },
+  "engine": {
+    "core_question": "没动力所以不想做事，不做事更加没有动力——打破这个死循环的关键不是等状态，是用行动倒逼动力",
+    "trigger_signals": [
+      "需要快速查阅「怎么不等动力直接行动_动」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "打破这个死循环的关键不是等状态",
+        "action": "打破这个死循环的关键不是等状态",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "查卡把行动动力飞轮拆成四步： 行动极致微",
+        "action": "查卡把行动动力飞轮拆成四步： 行动极致微小到大脑不屑于抗拒",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "每步配一个具体操作示例",
+        "action": "每步配一个具体操作示例",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么不等动力直接行动_动」速查模式运行。\n\n【认知模式】快速调用怎么不等动力直接行动_动力飞轮的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 打破这个死循环的关键不是等状态：打破这个死循环的关键不是等状态\n\nStep 2 - 查卡把行动动力飞轮拆成四步： 行动极致微：查卡把行动动力飞轮拆成四步： 行动极致微小到大脑不屑于抗拒\n\nStep 3 - 每步配一个具体操作示例：每步配一个具体操作示例\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么不等动力直接行动_动力飞轮速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

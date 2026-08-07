@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "id": "极致高效_vs_稳健生存_两种思维对比速查卡",
+  "meta": {
+    "name": "极致高效_vs_稳健生存_两种思维",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "长期主义",
+      "ccc;",
+      "系统思考",
+      "faad14;"
+    ],
+    "source": "极致高效_vs_稳健生存_两种思维对比速查卡.md",
+    "sourceTitle": "极致高效_vs_稳健生存_两种思维对比速查卡"
+  },
+  "engine": {
+    "core_question": "拼命追求极致效率，把所有备用金、空白时间、泛泛之交都砍光了——短期风光，一旦黑天鹅降临，系统瞬间脆断",
+    "trigger_signals": [
+      "需要快速区分两个相近概念时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "这张对比速查卡把两种底层思维讲清楚： 极",
+        "action": "这张对比速查卡把两种底层思维讲清楚： 极致效率追求单点最优",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "效率思维 #系统思维 #冗余 #反脆弱 ",
+        "action": "效率思维 #系统思维 #冗余 #反脆弱 #长期主义 #网络思维 #系统思考",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「极致高效_vs_稳健生存」速查模式运行。\n\n【认知模式】快速调用极致高效_vs_稳健生存_两种的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 这张对比速查卡把两种底层思维讲清楚： 极：这张对比速查卡把两种底层思维讲清楚： 极致效率追求单点最优\n\nStep 2 - 效率思维 #系统思维 #冗余 #反脆弱 ：效率思维 #系统思维 #冗余 #反脆弱 #长期主义 #网络思维 #系统思考\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用极致高效_vs_稳健生存_两种速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

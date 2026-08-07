@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "苏格拉底六大提问速查卡",
+  "meta": {
+    "name": "苏格拉底六大提问",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "苏格拉底式提问",
+      "深度思考"
+    ],
+    "source": "苏格拉底六大提问速查卡.md",
+    "sourceTitle": "苏格拉底六大提问速查卡"
+  },
+  "engine": {
+    "core_question": "六大苏格拉底提问类型，配核心追问句式，把深度思考检验变成一套可随身调用的工具箱",
+    "trigger_signals": [
+      "需要快速查阅「苏格拉底六大提问」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "澄清式提问消除模糊统一认知",
+        "action": "澄清式提问消除模糊统一认知",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "探究假设式提问挖出隐藏前提检验地基",
+        "action": "探究假设式提问挖出隐藏前提检验地基",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "探究证据式提问区分感受与事实",
+        "action": "探究证据式提问区分感受与事实",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "探究视角式提问打破自我中心补齐盲区",
+        "action": "探究视角式提问打破自我中心补齐盲区",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "探究结果式提问推演连锁后果做压力测试",
+        "action": "探究结果式提问推演连锁后果做压力测试",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "对问题的提问从元认知层面升维审视——这个",
+        "action": "对问题的提问从元认知层面升维审视——这个问题本身值得解决吗",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「苏格拉底六大提问」速查模式运行。\n\n【认知模式】快速调用苏格拉底六大提问的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 澄清式提问消除模糊统一认知：澄清式提问消除模糊统一认知\n\nStep 2 - 探究假设式提问挖出隐藏前提检验地基：探究假设式提问挖出隐藏前提检验地基\n\nStep 3 - 探究证据式提问区分感受与事实：探究证据式提问区分感受与事实\n\nStep 4 - 探究视角式提问打破自我中心补齐盲区：探究视角式提问打破自我中心补齐盲区\n\nStep 5 - 探究结果式提问推演连锁后果做压力测试：探究结果式提问推演连锁后果做压力测试\n\nStep 6 - 对问题的提问从元认知层面升维审视——这个：对问题的提问从元认知层面升维审视——这个问题本身值得解决吗\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用苏格拉底六大提问速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

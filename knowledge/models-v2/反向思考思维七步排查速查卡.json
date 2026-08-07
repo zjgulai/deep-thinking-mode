@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "反向思考思维七步排查速查卡",
+  "meta": {
+    "name": "反向思考思维七步排查",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "决策工具",
+      "风险管理",
+      "思维模型"
+    ],
+    "source": "反向思考思维七步排查速查卡.md",
+    "sourceTitle": "反向思考思维七步排查速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡把反向问题排查拆成七步： 从明确SMART目标、反向扫描五个维度，到无禁忌罗列诱因、按概率和影响双重打分锁定3-5个致命风险，再到制定预案、转为日常行动、周期性复盘更新",
+    "trigger_signals": [
+      "需要快速查阅「反向思考思维七步排查」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "查卡把反向问题排查拆成七步： 从明确SM",
+        "action": "查卡把反向问题排查拆成七步： 从明确SMART目标、反向扫描五个维度",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "每步配一个具体操作示例",
+        "action": "每步配一个具体操作示例",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "避坑思维 #决策工具 #风险管理 #思维",
+        "action": "避坑思维 #决策工具 #风险管理 #思维模型 #问题分析 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「反向思考思维七步排查」速查模式运行。\n\n【认知模式】快速调用反向思考思维七步排查的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 查卡把反向问题排查拆成七步： 从明确SM：查卡把反向问题排查拆成七步： 从明确SMART目标、反向扫描五个维度\n\nStep 2 - 每步配一个具体操作示例：每步配一个具体操作示例\n\nStep 3 - 避坑思维 #决策工具 #风险管理 #思维：避坑思维 #决策工具 #风险管理 #思维模型 #问题分析 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用反向思考思维七步排查速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

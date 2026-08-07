@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么识破话术陷阱_框架效应四型速查卡",
+  "meta": {
+    "name": "怎么识破话术陷阱_框架效应四型",
+    "category": "06",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "认知偏差",
+      "框架效应"
+    ],
+    "source": "怎么识破话术陷阱_框架效应四型速查卡.md",
+    "sourceTitle": "怎么识破话术陷阱_框架效应四型速查卡"
+  },
+  "engine": {
+    "core_question": "四种框架效应，配核心机制和翻转自检方法，把“我被话术套路了”变成“我能一眼看穿”",
+    "trigger_signals": [
+      "需要快速查阅「怎么识破话术陷阱_框架效」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "换一套描述方式就能彻底翻转你的判断——看",
+        "action": "换一套描述方式就能彻底翻转你的判断——看懂这四类框架",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "主动检查每一个默认选项是否在不经意间替你",
+        "action": "主动检查每一个默认选项是否在不经意间替你做了决定",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "思维模型 #正方形的认知工具箱",
+        "action": "思维模型 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么识破话术陷阱_框架效」速查模式运行。\n\n【认知模式】快速调用怎么识破话术陷阱_框架效应四型的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 换一套描述方式就能彻底翻转你的判断——看：换一套描述方式就能彻底翻转你的判断——看懂这四类框架\n\nStep 2 - 主动检查每一个默认选项是否在不经意间替你：主动检查每一个默认选项是否在不经意间替你做了决定\n\nStep 3 - 思维模型 #正方形的认知工具箱：思维模型 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么识破话术陷阱_框架效应四型速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

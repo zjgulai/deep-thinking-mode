@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "六种重构方法速查卡",
+  "meta": {
+    "name": "六种重构方法",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "思维破局",
+      "ccc;",
+      "思维模型",
+      "职场效能"
+    ],
+    "source": "六种重构方法速查卡.md",
+    "sourceTitle": "六种重构方法速查卡"
+  },
+  "engine": {
+    "core_question": "一个问题想半天想不通，不是问题太难，是你看它的角度没换过",
+    "trigger_signals": [
+      "需要快速查阅「六种重构方法」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "查卡整理了六种核心重构方法：反过来想、换",
+        "action": "查卡整理了六种核心重构方法：反过来想、换人视角、调边界层级、跨领域类比、爆破默认前提、升级价值目标",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "每种方法配一句核心追问",
+        "action": "每种方法配一句核心追问",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "总有一个角度能帮你打开思路",
+        "action": "总有一个角度能帮你打开思路",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "认知升级 #思维模型 #职场效能 #问题",
+        "action": "认知升级 #思维模型 #职场效能 #问题分析",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「六种重构方法」速查模式运行。\n\n【认知模式】快速调用六种重构方法的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 查卡整理了六种核心重构方法：反过来想、换：查卡整理了六种核心重构方法：反过来想、换人视角、调边界层级、跨领域类比、爆破默认前提、升级价值目标\n\nStep 2 - 每种方法配一句核心追问：每种方法配一句核心追问\n\nStep 3 - 总有一个角度能帮你打开思路：总有一个角度能帮你打开思路\n\nStep 4 - 认知升级 #思维模型 #职场效能 #问题：认知升级 #思维模型 #职场效能 #问题分析\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用六种重构方法速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

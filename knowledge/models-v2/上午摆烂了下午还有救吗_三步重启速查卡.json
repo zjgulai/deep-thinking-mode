@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "上午摆烂了下午还有救吗_三步重启速查卡",
+  "meta": {
+    "name": "上午摆烂了下午还有救吗_三步重启",
+    "category": "00",
+    "tags": [
+      "时间管理",
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "自我管理"
+    ],
+    "source": "上午摆烂了下午还有救吗_三步重启速查卡.md",
+    "sourceTitle": "上午摆烂了下午还有救吗_三步重启速查卡"
+  },
+  "engine": {
+    "core_question": "早上没做好就觉得一整天废了——这是完美主义在骗你",
+    "trigger_signals": [
+      "需要快速查阅「上午摆烂了下午还有救吗_」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "时间块思维的核心解法很简单：把计时单位从",
+        "action": "时间块思维的核心解法很简单：把计时单位从“天”换成“块”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "张速查卡把块状重启拆成三步： 切块把一天",
+        "action": "张速查卡把块状重启拆成三步： 切块把一天划成3-5个独立时段",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "每块只盯一个核心任务； 独立让你在单块结",
+        "action": "每块只盯一个核心任务； 独立让你在单块结束时做心理锚定",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「上午摆烂了下午还有救吗_」速查模式运行。\n\n【认知模式】快速调用上午摆烂了下午还有救吗_三步重的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 时间块思维的核心解法很简单：把计时单位从：时间块思维的核心解法很简单：把计时单位从“天”换成“块”\n\nStep 2 - 张速查卡把块状重启拆成三步： 切块把一天：张速查卡把块状重启拆成三步： 切块把一天划成3-5个独立时段\n\nStep 3 - 每块只盯一个核心任务； 独立让你在单块结：每块只盯一个核心任务； 独立让你在单块结束时做心理锚定\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用上午摆烂了下午还有救吗_三步重速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

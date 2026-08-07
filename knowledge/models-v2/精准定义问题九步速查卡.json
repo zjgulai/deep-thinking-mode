@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "精准定义问题九步速查卡",
+  "meta": {
+    "name": "精准定义问题九步",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "思维模型",
+      "元认知",
+      "职场效能"
+    ],
+    "source": "精准定义问题九步速查卡.md",
+    "sourceTitle": "精准定义问题九步速查卡"
+  },
+  "engine": {
+    "core_question": "同一个问题反复解决、方案落地就失灵——不是执行力差，是一开始就没找对真问题",
+    "trigger_signals": [
+      "需要快速查阅「精准定义问题九步」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "同一个问题反复解决、方案落地就失灵——不",
+        "action": "同一个问题反复解决、方案落地就失灵——不是执行力差",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "张速查卡把问题定义拆成九步闭环：从记录表",
+        "action": "张速查卡把问题定义拆成九步闭环：从记录表象、切换视角",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "思维模型 #职场效能 #问题分析",
+        "action": "思维模型 #职场效能 #问题分析",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「精准定义问题九步」速查模式运行。\n\n【认知模式】快速调用精准定义问题九步的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 同一个问题反复解决、方案落地就失灵——不：同一个问题反复解决、方案落地就失灵——不是执行力差\n\nStep 2 - 张速查卡把问题定义拆成九步闭环：从记录表：张速查卡把问题定义拆成九步闭环：从记录表象、切换视角\n\nStep 3 - 思维模型 #职场效能 #问题分析：思维模型 #职场效能 #问题分析\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用精准定义问题九步速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

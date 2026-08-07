@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么把努力变成复利网络_四大策略速查卡",
+  "meta": {
+    "name": "怎么把努力变成复利网络_四大策略",
+    "category": "05",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型",
+      "弱连接"
+    ],
+    "source": "怎么把努力变成复利网络_四大策略速查卡.md",
+    "sourceTitle": "怎么把努力变成复利网络_四大策略速查卡"
+  },
+  "engine": {
+    "core_question": "四大网络思维成长策略，把“连接比单点努力更重要”变成可落地的操作清单",
+    "trigger_signals": [
+      "需要快速查阅「怎么把努力变成复利网络_」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "结构洞让你成为两个独立圈层之间的唯一桥梁",
+        "action": "结构洞让你成为两个独立圈层之间的唯一桥梁",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "涌现思维让你告别固化计划",
+        "action": "涌现思维让你告别固化计划",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "找出三个不在你主业圈但能带来新信息的人",
+        "action": "找出三个不在你主业圈但能带来新信息的人",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "从第一个弱连接开始",
+        "action": "从第一个弱连接开始",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "网络思维 #个人成长 #弱连接 #结构洞",
+        "action": "网络思维 #个人成长 #弱连接 #结构洞 #思维模型 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么把努力变成复利网络_」速查模式运行。\n\n【认知模式】快速调用怎么把努力变成复利网络_四大策的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 结构洞让你成为两个独立圈层之间的唯一桥梁：结构洞让你成为两个独立圈层之间的唯一桥梁\n\nStep 2 - 涌现思维让你告别固化计划：涌现思维让你告别固化计划\n\nStep 3 - 找出三个不在你主业圈但能带来新信息的人：找出三个不在你主业圈但能带来新信息的人\n\nStep 4 - 从第一个弱连接开始：从第一个弱连接开始\n\nStep 5 - 网络思维 #个人成长 #弱连接 #结构洞：网络思维 #个人成长 #弱连接 #结构洞 #思维模型 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么把努力变成复利网络_四大策速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

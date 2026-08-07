@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题破解六层速查卡",
+  "meta": {
+    "name": "问题破解六层",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "第二序改变",
+      "思维模型",
+      "faad14;"
+    ],
+    "source": "问题破解六层速查卡.md",
+    "sourceTitle": "问题破解六层速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡帮你快速定位问题破解的六个层次，包含每层的核心动作和判断标准",
+    "trigger_signals": [
+      "需要快速查阅「问题破解六层」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "包含每层的核心动作和判断标准",
+        "action": "包含每层的核心动作和判断标准",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "第一层：定锚 核心动作：换框、倒推、画界",
+        "action": "第一层：定锚 核心动作：换框、倒推、画界 判断标准：我们是否在解决真正值得解决的问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "第二层：深潜 核心动作：追问、质疑、归零",
+        "action": "第二层：深潜 核心动作：追问、质疑、归零 判断标准：这个问题不可动摇的核心本源是什么",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "第三层：解构 核心动作：切分、罗列、全覆",
+        "action": "第三层：解构 核心动作：切分、罗列、全覆盖 判断标准：如何把复杂难题拆解为可落地的小事",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "第四层：跃迁 核心动作：改规则、悖论管理",
+        "action": "第四层：跃迁 核心动作：改规则、悖论管理 判断标准：是否不用硬拼当下",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "第五层：减法 核心动作：停止、舍弃、归零",
+        "action": "第五层：减法 核心动作：停止、舍弃、归零 判断标准：为了突破",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「问题破解六层」速查模式运行。\n\n【认知模式】快速调用问题破解六层的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 包含每层的核心动作和判断标准：包含每层的核心动作和判断标准\n\nStep 2 - 第一层：定锚 核心动作：换框、倒推、画界：第一层：定锚 核心动作：换框、倒推、画界 判断标准：我们是否在解决真正值得解决的问题\n\nStep 3 - 第二层：深潜 核心动作：追问、质疑、归零：第二层：深潜 核心动作：追问、质疑、归零 判断标准：这个问题不可动摇的核心本源是什么\n\nStep 4 - 第三层：解构 核心动作：切分、罗列、全覆：第三层：解构 核心动作：切分、罗列、全覆盖 判断标准：如何把复杂难题拆解为可落地的小事\n\nStep 5 - 第四层：跃迁 核心动作：改规则、悖论管理：第四层：跃迁 核心动作：改规则、悖论管理 判断标准：是否不用硬拼当下\n\nStep 6 - 第五层：减法 核心动作：停止、舍弃、归零：第五层：减法 核心动作：停止、舍弃、归零 判断标准：为了突破\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用问题破解六层速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

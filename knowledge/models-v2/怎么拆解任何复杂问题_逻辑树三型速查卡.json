@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么拆解任何复杂问题_逻辑树三型速查卡",
+  "meta": {
+    "name": "怎么拆解任何复杂问题_逻辑树三型",
+    "category": "00",
+    "tags": [
+      "结构化思维",
+      "ffe58f;",
+      "ccc;",
+      "决策工具",
+      "正方形的认知工具箱"
+    ],
+    "source": "怎么拆解任何复杂问题_逻辑树三型速查卡.md",
+    "sourceTitle": "怎么拆解任何复杂问题_逻辑树三型速查卡"
+  },
+  "engine": {
+    "core_question": "三种逻辑树，覆盖“是什么、为什么、选什么”三大核心场景，把混沌、零散、模糊的主观思考，转化为有条理、可讨论、可质疑、可落地的清晰执行脉络",
+    "trigger_signals": [
+      "面对一团乱麻无从下手”的问题"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "转化为有条理、可讨论、可质疑、可落地的清",
+        "action": "转化为有条理、可讨论、可质疑、可落地的清晰执行脉络",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "把模糊的大问题层层拆成具体可落地的组成部",
+        "action": "把模糊的大问题层层拆成具体可落地的组成部分",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "销售额下滑这个笼统的困境",
+        "action": "销售额下滑这个笼统的困境",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "用问题树拆三层就变成了新客获取渠道不足、",
+        "action": "用问题树拆三层就变成了新客获取渠道不足、老客流失加剧、客单价下降等可以逐个击破的具体议题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "第一层看到的是设备故障",
+        "action": "第一层看到的是设备故障",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "统没有按标准流程定期清理维护——这不是单",
+        "action": "统没有按标准流程定期清理维护——这不是单次偶然故障",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么拆解任何复杂问题_逻」速查模式运行。\n\n【认知模式】快速调用怎么拆解任何复杂问题_逻辑树三的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 转化为有条理、可讨论、可质疑、可落地的清：转化为有条理、可讨论、可质疑、可落地的清晰执行脉络\n\nStep 2 - 把模糊的大问题层层拆成具体可落地的组成部：把模糊的大问题层层拆成具体可落地的组成部分\n\nStep 3 - 销售额下滑这个笼统的困境：销售额下滑这个笼统的困境\n\nStep 4 - 用问题树拆三层就变成了新客获取渠道不足、：用问题树拆三层就变成了新客获取渠道不足、老客流失加剧、客单价下降等可以逐个击破的具体议题\n\nStep 5 - 第一层看到的是设备故障：第一层看到的是设备故障\n\nStep 6 - 统没有按标准流程定期清理维护——这不是单：统没有按标准流程定期清理维护——这不是单次偶然故障\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么拆解任何复杂问题_逻辑树三速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

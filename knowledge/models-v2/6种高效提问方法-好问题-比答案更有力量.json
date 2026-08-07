@@ -10,7 +10,11 @@
   },
   "engine": {
     "core_question": "与根本原因，适用于问题诊断、深度沟通及逻辑梳理",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "在挫败感；项目达成核心成果时",
+      "适用于问题诊断、深度沟通及逻辑梳理",
+      "适用于故障排查、质量管理及工作复盘"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

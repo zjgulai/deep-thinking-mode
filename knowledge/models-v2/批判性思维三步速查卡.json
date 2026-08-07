@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "批判性思维三步速查卡",
+  "meta": {
+    "name": "批判性思维三步",
+    "category": "01",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "思维模型",
+      "职场效能",
+      "逻辑思维"
+    ],
+    "source": "批判性思维三步速查卡.md",
+    "sourceTitle": "批判性思维三步速查卡"
+  },
+  "engine": {
+    "core_question": "刷到观点就转发，事后发现是谣言——不是你的错，是缺一套信息质检流程",
+    "trigger_signals": [
+      "需要快速查阅「批判性思维三步」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "抓核心观点，第二步看论据是数据还是体感，",
+        "action": "抓核心观点，第二步看论据是数据还是体感，第三步追问隐藏前提是否成立。 存手机里，下次转发前翻出来，先质检，再传播。 #批判性思维 #逻辑思维 #信息素养 #思维",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡只有三步：拆论题、验论据、破假",
+        "action": "这张速查卡只有三步：拆论题、验论据、破假设",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "第二步看论据是数据还是体感",
+        "action": "第二步看论据是数据还是体感",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "第三步追问隐藏前提是否成立",
+        "action": "第三步追问隐藏前提是否成立",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "批判性思维 #逻辑思维 #信息素养 #思",
+        "action": "批判性思维 #逻辑思维 #信息素养 #思维模型 #职场效能",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「批判性思维三步」速查模式运行。\n\n【认知模式】快速调用批判性思维三步的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 抓核心观点，第二步看论据是数据还是体感，：抓核心观点，第二步看论据是数据还是体感，第三步追问隐藏前提是否成立。 存手机里，下次转发前翻出来，先质检，再传播。 #批判性思维 #逻辑思维 #信息素养 #思维\n\nStep 2 - 这张速查卡只有三步：拆论题、验论据、破假：这张速查卡只有三步：拆论题、验论据、破假设\n\nStep 3 - 第二步看论据是数据还是体感：第二步看论据是数据还是体感\n\nStep 4 - 第三步追问隐藏前提是否成立：第三步追问隐藏前提是否成立\n\nStep 5 - 批判性思维 #逻辑思维 #信息素养 #思：批判性思维 #逻辑思维 #信息素养 #思维模型 #职场效能\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用批判性思维三步速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

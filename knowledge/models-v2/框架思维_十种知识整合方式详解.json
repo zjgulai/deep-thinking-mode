@@ -9,7 +9,11 @@
   },
   "engine": {
     "core_question": "按照既定类别、层级与维度，对零散信息进行分类归纳，让信息逻辑更清晰、内容更规整，进而形成系统的信息体系",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "适用于梳理杂乱信息、搭建基础信息框架",
+      "适用于将抽象目标转化为具体可落地的行动方案",
+      "适用于追溯问题根源、预测行动结果"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

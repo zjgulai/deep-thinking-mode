@@ -9,7 +9,11 @@
   },
   "engine": {
     "core_question": "、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "适合需要严谨论证的场景；二是归纳推理",
+      "适用场景：思路清晰、目标明确",
+      "适用场景：面对杂乱信息、自身思路不清晰"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

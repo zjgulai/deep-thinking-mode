@@ -9,7 +9,11 @@
   },
   "engine": {
     "core_question": "，大意是：如果我有1小时拯救世界，我会花55分钟定义问题，5分钟解决它",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "当你在一个问题上反复打转、毫无进展时",
+      "当你觉得“问题很模糊”“计划漏了东西”时",
+      "当你面对一个真正的复杂问题（项目卡点、业绩下滑、团队冲突）"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

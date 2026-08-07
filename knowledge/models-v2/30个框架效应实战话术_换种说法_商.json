@@ -9,7 +9,11 @@
   },
   "engine": {
     "core_question": "用获益框架激发期待，用损失框架制造紧迫感，撬动用户下单决策",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "适合理性提醒、抑制过度消费",
+      "适合提振团队信心；B聚焦剩余缺口",
+      "适合述职展示成果、凸显能力；B适合深度复盘、展现谦逊与成长思维"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

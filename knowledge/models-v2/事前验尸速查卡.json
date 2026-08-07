@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "事前验尸速查卡",
+  "meta": {
+    "name": "事前验尸",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "事前验尸",
+      "风险管理",
+      "faad14;"
+    ],
+    "source": "事前验尸速查卡.md",
+    "sourceTitle": "事前验尸速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡帮你快速掌握“事前验尸”这一风险管理工具，包含6步操作流程、适用场景和快速自查3问",
+    "trigger_signals": [
+      "需要快速查阅「事前验尸」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "传统复盘是项目失败后再分析原因；而事前验",
+        "action": "传统复盘是项目失败后再分析原因；而事前验尸",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "是在项目尚未启动、一切尚可调整时",
+        "action": "是在项目尚未启动、一切尚可调整时",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "沉浸式假设失败 主持人引导全员代入：“此",
+        "action": "沉浸式假设失败 主持人引导全员代入：“此刻项目已彻底失败",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "风险优先级评估 从两个维度评估：发生概率",
+        "action": "风险优先级评估 从两个维度评估：发生概率（高/中/低）、影响程度（严重/中等/轻微）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "落地专项防控方案 对每项核心风险",
+        "action": "落地专项防控方案 对每项核心风险",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "纳入正式项目计划 将风险清单、防控方案、",
+        "action": "纳入正式项目计划 将风险清单、防控方案、责任台账加入项目风险管理体系",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「事前验尸」速查模式运行。\n\n【认知模式】快速调用事前验尸的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 传统复盘是项目失败后再分析原因；而事前验：传统复盘是项目失败后再分析原因；而事前验尸\n\nStep 2 - 是在项目尚未启动、一切尚可调整时：是在项目尚未启动、一切尚可调整时\n\nStep 3 - 沉浸式假设失败 主持人引导全员代入：“此：沉浸式假设失败 主持人引导全员代入：“此刻项目已彻底失败\n\nStep 4 - 风险优先级评估 从两个维度评估：发生概率：风险优先级评估 从两个维度评估：发生概率（高/中/低）、影响程度（严重/中等/轻微）\n\nStep 5 - 落地专项防控方案 对每项核心风险：落地专项防控方案 对每项核心风险\n\nStep 6 - 纳入正式项目计划 将风险清单、防控方案、：纳入正式项目计划 将风险清单、防控方案、责任台账加入项目风险管理体系\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用事前验尸速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

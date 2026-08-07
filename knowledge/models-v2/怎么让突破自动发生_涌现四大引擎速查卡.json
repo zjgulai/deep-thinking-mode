@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么让突破自动发生_涌现四大引擎速查卡",
+  "meta": {
+    "name": "怎么让突破自动发生_涌现四大引擎",
+    "category": "03",
+    "tags": [
+      "自组织",
+      "ffe58f;",
+      "ccc;",
+      "思维模型",
+      "faad14;"
+    ],
+    "source": "怎么让突破自动发生_涌现四大引擎速查卡.md",
+    "sourceTitle": "怎么让突破自动发生_涌现四大引擎速查卡"
+  },
+  "engine": {
+    "core_question": "努力了几个月看不到进展——不是你不努力，是还没凑齐涌现的四大引擎",
+    "trigger_signals": [
+      "需要快速查阅「怎么让突破自动发生_涌现」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "努力了几个月看不到进展——不是你不努力",
+        "action": "努力了几个月看不到进展——不是你不努力",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡把涌现拆成四个条件： 足量个体",
+        "action": "这张速查卡把涌现拆成四个条件： 足量个体堆出复杂性、 极简规则保证不乱、 密集互动驱动循环、 非线性质变在临界点爆发",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "涌现思维 #系统思维 #个人成长 #自组",
+        "action": "涌现思维 #系统思维 #个人成长 #自组织 #思维模型 #网络思维",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么让突破自动发生_涌现」速查模式运行。\n\n【认知模式】快速调用怎么让突破自动发生_涌现四大引的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 努力了几个月看不到进展——不是你不努力：努力了几个月看不到进展——不是你不努力\n\nStep 2 - 这张速查卡把涌现拆成四个条件： 足量个体：这张速查卡把涌现拆成四个条件： 足量个体堆出复杂性、 极简规则保证不乱、 密集互动驱动循环、 非线性质变在临界点爆发\n\nStep 3 - 涌现思维 #系统思维 #个人成长 #自组：涌现思维 #系统思维 #个人成长 #自组织 #思维模型 #网络思维\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么让突破自动发生_涌现四大引速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

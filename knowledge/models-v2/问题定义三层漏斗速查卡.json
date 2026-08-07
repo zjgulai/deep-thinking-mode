@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题定义三层漏斗速查卡",
+  "meta": {
+    "name": "问题定义三层漏斗",
+    "category": "02",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "高效解题",
+      "三层漏斗",
+      "faad14;"
+    ],
+    "source": "问题定义三层漏斗速查卡.md",
+    "sourceTitle": "问题定义三层漏斗速查卡"
+  },
+  "engine": {
+    "core_question": "高手解题，永远先定义问题，再解决问题",
+    "trigger_signals": [
+      "需要快速查阅「问题定义三层漏斗」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "罗列相关方。承担者、决策者、间接受众、资",
+        "action": "罗列相关方。承担者、决策者、间接受众、资源方。 第二步标注现状与期望。如实记录各方处境与诉求。 第三步梳理冲突与共识。找出对立点与共识点。 第四步定位杠杆点。哪",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "用追问法层层穿透表层",
+        "action": "用追问法层层穿透表层",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "用利益地图四步法全局查看",
+        "action": "用利益地图四步法全局查看",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "对比维持现状与解决问题的长期成本",
+        "action": "对比维持现状与解决问题的长期成本",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "利益地图四步法 第一步罗列相关方",
+        "action": "利益地图四步法 第一步罗列相关方",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "第二步标注现状与期望",
+        "action": "第二步标注现状与期望",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「问题定义三层漏斗」速查模式运行。\n\n【认知模式】快速调用问题定义三层漏斗的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 罗列相关方。承担者、决策者、间接受众、资：罗列相关方。承担者、决策者、间接受众、资源方。 第二步标注现状与期望。如实记录各方处境与诉求。 第三步梳理冲突与共识。找出对立点与共识点。 第四步定位杠杆点。哪\n\nStep 2 - 用追问法层层穿透表层：用追问法层层穿透表层\n\nStep 3 - 用利益地图四步法全局查看：用利益地图四步法全局查看\n\nStep 4 - 对比维持现状与解决问题的长期成本：对比维持现状与解决问题的长期成本\n\nStep 5 - 利益地图四步法 第一步罗列相关方：利益地图四步法 第一步罗列相关方\n\nStep 6 - 第二步标注现状与期望：第二步标注现状与期望\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用问题定义三层漏斗速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

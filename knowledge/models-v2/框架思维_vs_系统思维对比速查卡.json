@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架思维_vs_系统思维对比速查卡",
+  "meta": {
+    "name": "框架思维_vs_系统思维",
+    "category": "04",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "对比",
+      "思维模型",
+      "faad14;"
+    ],
+    "source": "框架思维_vs_系统思维对比速查卡.md",
+    "sourceTitle": "框架思维_vs_系统思维对比速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡帮你快速区分框架思维和系统思维，包含核心定义、三大差异、场景速查和使用提示",
+    "trigger_signals": [
+      "需要快速区分两个相近概念时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "速查卡帮你快速区分框架思维和系统思维",
+        "action": "速查卡帮你快速区分框架思维和系统思维",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "框架思维 → 静态结构图纸 → 拆解梳理",
+        "action": "框架思维 → 静态结构图纸 → 拆解梳理、理清结构 系统思维 → 动态生态循环图 → 看透关联、预判变化 一句话：框架看结构",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "框架思维：依托固定结构拆解",
+        "action": "框架思维：依托固定结构拆解",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "系统思维：聚焦要素动态关联",
+        "action": "系统思维：聚焦要素动态关联",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "框架思维：“这件事由几部分组成",
+        "action": "框架思维：“这件事由几部分组成",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "系统思维：“各部分如何相互作用",
+        "action": "系统思维：“各部分如何相互作用",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「框架思维_vs_系统思维」速查模式运行。\n\n【认知模式】快速调用框架思维_vs_系统思维的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 速查卡帮你快速区分框架思维和系统思维：速查卡帮你快速区分框架思维和系统思维\n\nStep 2 - 框架思维 → 静态结构图纸 → 拆解梳理：框架思维 → 静态结构图纸 → 拆解梳理、理清结构 系统思维 → 动态生态循环图 → 看透关联、预判变化 一句话：框架看结构\n\nStep 3 - 框架思维：依托固定结构拆解：框架思维：依托固定结构拆解\n\nStep 4 - 系统思维：聚焦要素动态关联：系统思维：聚焦要素动态关联\n\nStep 5 - 框架思维：“这件事由几部分组成：框架思维：“这件事由几部分组成\n\nStep 6 - 系统思维：“各部分如何相互作用：系统思维：“各部分如何相互作用\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用框架思维_vs_系统思维速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

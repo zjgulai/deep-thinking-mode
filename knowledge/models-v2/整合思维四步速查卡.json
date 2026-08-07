@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "整合思维四步速查卡",
+  "meta": {
+    "name": "整合思维四步",
+    "category": "01",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "思维模型",
+      "职场进阶",
+      "认知破局"
+    ],
+    "source": "整合思维四步速查卡.md",
+    "sourceTitle": "整合思维四步速查卡"
+  },
+  "engine": {
+    "core_question": "被迫二选一的感觉很憋屈——好像怎么选都是错的",
+    "trigger_signals": [
+      "需要快速查阅「整合思维四步」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "是你的思维被隐含假设框住了",
+        "action": "是你的思维被隐含假设框住了",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡四步破局：明确对立、深挖优势、",
+        "action": "这张速查卡四步破局：明确对立、深挖优势、击穿假设、重构方案",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "整合思维不是妥协折中",
+        "action": "整合思维不是妥协折中",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "整合思维 #决策心理 #认知破局 #思维",
+        "action": "整合思维 #决策心理 #认知破局 #思维模型 #职场进阶",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「整合思维四步」速查模式运行。\n\n【认知模式】快速调用整合思维四步的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 是你的思维被隐含假设框住了：是你的思维被隐含假设框住了\n\nStep 2 - 这张速查卡四步破局：明确对立、深挖优势、：这张速查卡四步破局：明确对立、深挖优势、击穿假设、重构方案\n\nStep 3 - 整合思维不是妥协折中：整合思维不是妥协折中\n\nStep 4 - 整合思维 #决策心理 #认知破局 #思维：整合思维 #决策心理 #认知破局 #思维模型 #职场进阶\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用整合思维四步速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

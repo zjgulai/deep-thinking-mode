@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "id": "集合概率vs时间概率对比速查卡",
+  "meta": {
+    "name": "集合概率vs时间概率",
+    "category": "09",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "风险管理",
+      "认知偏差",
+      "思维模型"
+    ],
+    "source": "集合概率vs时间概率对比速查卡.md",
+    "sourceTitle": "集合概率vs时间概率对比速查卡"
+  },
+  "engine": {
+    "core_question": "集合概率 vs 时间概率：你一生的决策，被哪种思维主宰",
+    "trigger_signals": [
+      "需要快速区分两个相近概念时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "核心法则：集合看世界",
+        "action": "核心法则：集合看世界",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "概率思维 #决策心理 #认知偏差 #风险",
+        "action": "概率思维 #决策心理 #认知偏差 #风险管理 #思维模型",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「集合概率vs时间概率」速查模式运行。\n\n【认知模式】快速调用集合概率vs时间概率的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 核心法则：集合看世界：核心法则：集合看世界\n\nStep 2 - 概率思维 #决策心理 #认知偏差 #风险：概率思维 #决策心理 #认知偏差 #风险管理 #思维模型\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用集合概率vs时间概率速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

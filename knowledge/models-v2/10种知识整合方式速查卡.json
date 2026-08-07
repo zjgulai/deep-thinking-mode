@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0.0",
+  "id": "10种知识整合方式速查卡",
+  "meta": {
+    "name": "10种知识整合方式",
+    "category": "08",
+    "tags": [
+      "ffe58f;",
+      "MECE",
+      "ccc;",
+      "思维模型",
+      "知识管理"
+    ],
+    "source": "10种知识整合方式速查卡.md",
+    "sourceTitle": "10种知识整合方式速查卡"
+  },
+  "engine": {
+    "core_question": "信息爆炸的时代，我们每天接触大量碎片化知识——读过的文章、听过的课程、刷到的观点，散落各处",
+    "trigger_signals": [
+      "遇到信息混乱时：先选一种整合方式（比如结构化）",
+      "面对复杂系统时：用系统整合看全局"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "从系统思维到类比迁移",
+        "action": "从系统思维到类比迁移",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "按时间顺序拆解为可执行步骤 经典工具：流",
+        "action": "按时间顺序拆解为可执行步骤 经典工具：流程图、PDCA、甘特图、SOP 3\\. 因果整合 核心逻辑：梳理原因-结果关联",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "冰山模型 6\\. 类比整合 核心逻辑：借",
+        "action": "冰山模型 6\\. 类比整合 核心逻辑：借熟悉事物映射陌生概念",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "隐喻思维、跨界迁移 7\\. 辩证整合 核",
+        "action": "隐喻思维、跨界迁移 7\\. 辩证整合 核心逻辑：平衡对立观点",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "KANO模型、价值排序 9\\. 空间整合",
+        "action": "KANO模型、价值排序 9\\. 空间整合 核心逻辑：绑定空间位置",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "视觉思维、记忆宫殿 10\\. 演化整合 ",
+        "action": "视觉思维、记忆宫殿 10\\. 演化整合 核心逻辑：梳理发展阶段",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「10种知识整合方式」速查模式运行。\n\n【认知模式】快速调用10种知识整合方式的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 从系统思维到类比迁移：从系统思维到类比迁移\n\nStep 2 - 按时间顺序拆解为可执行步骤 经典工具：流：按时间顺序拆解为可执行步骤 经典工具：流程图、PDCA、甘特图、SOP 3\\. 因果整合 核心逻辑：梳理原因-结果关联\n\nStep 3 - 冰山模型 6\\. 类比整合 核心逻辑：借：冰山模型 6\\. 类比整合 核心逻辑：借熟悉事物映射陌生概念\n\nStep 4 - 隐喻思维、跨界迁移 7\\. 辩证整合 核：隐喻思维、跨界迁移 7\\. 辩证整合 核心逻辑：平衡对立观点\n\nStep 5 - KANO模型、价值排序 9\\. 空间整合：KANO模型、价值排序 9\\. 空间整合 核心逻辑：绑定空间位置\n\nStep 6 - 视觉思维、记忆宫殿 10\\. 演化整合 ：视觉思维、记忆宫殿 10\\. 演化整合 核心逻辑：梳理发展阶段\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用10种知识整合方式速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -9,7 +9,10 @@
   },
   "engine": {
     "core_question": "就能分清两种思维：框架思维是“定思路、定方向”，结构化思维是“理细节、做落地”",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "当你面对一堆杂乱的信息、一堆要做的琐事时",
+      "面对一堆杂乱的信息、一堆要做的琐事时"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

@@ -11,7 +11,8 @@
   "engine": {
     "core_question": "一套可以刻意练习、持续习得的思维与行动习惯",
     "trigger_signals": [
-      "你的能力，只提醒你还有提升空间。"
+      "当你在现有层面反复尝试依然走不通时",
+      "在现有层面反复尝试依然走不通时"
     ],
     "stop_conditions": [],
     "reasoning_protocol": [],

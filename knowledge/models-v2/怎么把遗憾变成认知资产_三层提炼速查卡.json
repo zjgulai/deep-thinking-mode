@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么把遗憾变成认知资产_三层提炼速查卡",
+  "meta": {
+    "name": "怎么把遗憾变成认知资产_三层提炼",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "思维模型",
+      "faad14;",
+      "个人成长"
+    ],
+    "source": "怎么把遗憾变成认知资产_三层提炼速查卡.md",
+    "sourceTitle": "怎么把遗憾变成认知资产_三层提炼速查卡"
+  },
+  "engine": {
+    "core_question": "反复回想“如果当时”越想越累——不是你放不下，是缺一套把遗憾变成认知资产的提炼工具",
+    "trigger_signals": [
+      "需要快速查阅「怎么把遗憾变成认知资产_」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "张速查卡把事后总结拆成三层： 操作层回答",
+        "action": "张速查卡把事后总结拆成三层： 操作层回答“下次怎么做”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "提炼一个可落地的行动清单； 原则层回答“",
+        "action": "提炼一个可落地的行动清单； 原则层回答“反映了什么规律”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "提炼一条可迁移的通用原则； 身份层回答“",
+        "action": "提炼一条可迁移的通用原则； 身份层回答“我想成为什么样的人”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "提炼一个关于自我定位的认知更新",
+        "action": "提炼一个关于自我定位的认知更新",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "思维模型 #个人成长",
+        "action": "思维模型 #个人成长",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么把遗憾变成认知资产_」速查模式运行。\n\n【认知模式】快速调用怎么把遗憾变成认知资产_三层提的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 张速查卡把事后总结拆成三层： 操作层回答：张速查卡把事后总结拆成三层： 操作层回答“下次怎么做”\n\nStep 2 - 提炼一个可落地的行动清单； 原则层回答“：提炼一个可落地的行动清单； 原则层回答“反映了什么规律”\n\nStep 3 - 提炼一条可迁移的通用原则； 身份层回答“：提炼一条可迁移的通用原则； 身份层回答“我想成为什么样的人”\n\nStep 4 - 提炼一个关于自我定位的认知更新：提炼一个关于自我定位的认知更新\n\nStep 5 - 思维模型 #个人成长：思维模型 #个人成长\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么把遗憾变成认知资产_三层提速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么打破经验枷锁_思维正则化六法速查卡",
+  "meta": {
+    "name": "怎么打破经验枷锁_思维正则化六法",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型",
+      "认知僵化"
+    ],
+    "source": "怎么打破经验枷锁_思维正则化六法速查卡.md",
+    "sourceTitle": "怎么打破经验枷锁_思维正则化六法速查卡"
+  },
+  "engine": {
+    "core_question": "思维过拟合：越依赖过去成功，越难适应未来变化",
+    "trigger_signals": [
+      "遇到搞不定的新场景时翻出来"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "速查卡把打破经验枷锁的六个方法浓缩在一起",
+        "action": "速查卡把打破经验枷锁的六个方法浓缩在一起： 扩充认知数据打破圈层局限、 简化认知模型用奥卡姆剃刀剔除冗余假设、 对抗自我闭环主动扮演魔鬼代言人质疑",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "交叉验证跨场景检验旧方法是否失效、 接纳",
+        "action": "交叉验证跨场景检验旧方法是否失效、 接纳适度欠拟合用80分粗糙但适配全局的思维替代精致脆弱的闭环认知",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "从第一个方法开始对照自检",
+        "action": "从第一个方法开始对照自检",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "思维模型 #认知升级 #正方形的认知工具",
+        "action": "思维模型 #认知升级 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么打破经验枷锁_思维正」速查模式运行。\n\n【认知模式】快速调用怎么打破经验枷锁_思维正则化六的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 速查卡把打破经验枷锁的六个方法浓缩在一起：速查卡把打破经验枷锁的六个方法浓缩在一起： 扩充认知数据打破圈层局限、 简化认知模型用奥卡姆剃刀剔除冗余假设、 对抗自我闭环主动扮演魔鬼代言人质疑\n\nStep 2 - 交叉验证跨场景检验旧方法是否失效、 接纳：交叉验证跨场景检验旧方法是否失效、 接纳适度欠拟合用80分粗糙但适配全局的思维替代精致脆弱的闭环认知\n\nStep 3 - 从第一个方法开始对照自检：从第一个方法开始对照自检\n\nStep 4 - 思维模型 #认知升级 #正方形的认知工具：思维模型 #认知升级 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么打破经验枷锁_思维正则化六速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

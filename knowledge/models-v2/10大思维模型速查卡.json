@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0.0",
+  "id": "10大思维模型速查卡",
+  "meta": {
+    "name": "10大思维模型",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型",
+      "决策系统"
+    ],
+    "source": "10大思维模型速查卡.md",
+    "sourceTitle": "10大思维模型速查卡"
+  },
+  "engine": {
+    "core_question": "10个核心思维模型，按三大支柱分成两篇",
+    "trigger_signals": [
+      "面对长期复杂问题升级系统思维看懂反馈回路",
+      "面对复杂问题时别凭直觉乱撞"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "结构化思维把杂乱信息分层分类",
+        "action": "结构化思维把杂乱信息分层分类",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "框架思维复用前人验证过的成熟模板",
+        "action": "框架思维复用前人验证过的成熟模板",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "系统思维跳出单点视角",
+        "action": "系统思维跳出单点视角",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "网络思维进一步把一切抽象为节点与连接",
+        "action": "网络思维进一步把一切抽象为节点与连接",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "五问法沿单条因果链逆向溯源",
+        "action": "五问法沿单条因果链逆向溯源",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "成本七个维度做无死角扫描",
+        "action": "成本七个维度做无死角扫描",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「10大思维模型」速查模式运行。\n\n【认知模式】快速调用10大思维模型的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 结构化思维把杂乱信息分层分类：结构化思维把杂乱信息分层分类\n\nStep 2 - 框架思维复用前人验证过的成熟模板：框架思维复用前人验证过的成熟模板\n\nStep 3 - 系统思维跳出单点视角：系统思维跳出单点视角\n\nStep 4 - 网络思维进一步把一切抽象为节点与连接：网络思维进一步把一切抽象为节点与连接\n\nStep 5 - 五问法沿单条因果链逆向溯源：五问法沿单条因果链逆向溯源\n\nStep 6 - 成本七个维度做无死角扫描：成本七个维度做无死角扫描\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用10大思维模型速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

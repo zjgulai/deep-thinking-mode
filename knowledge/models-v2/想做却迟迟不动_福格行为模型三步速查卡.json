@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "想做却迟迟不动_福格行为模型三步速查卡",
+  "meta": {
+    "name": "想做却迟迟不动_福格行为模型三步",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "福格行为模型",
+      "行为设计",
+      "自我管理"
+    ],
+    "source": "想做却迟迟不动_福格行为模型三步速查卡.md",
+    "sourceTitle": "想做却迟迟不动_福格行为模型三步速查卡"
+  },
+  "engine": {
+    "core_question": "想做一件事却迟迟不动——不是懒，是你的行为模型缺了一个关键要素",
+    "trigger_signals": [
+      "需要快速查阅「想做却迟迟不动_福格行为」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "是你的行为模型缺了一个关键要素",
+        "action": "是你的行为模型缺了一个关键要素",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡把福格行为模型拆成三步自检： ",
+        "action": "这张速查卡把福格行为模型拆成三步自检： 动机检查让你看清意愿波动是常态",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "问自己三个问题：动机够不够",
+        "action": "问自己三个问题：动机够不够",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "福格行为模型 #习惯养成 #行为设计 #",
+        "action": "福格行为模型 #习惯养成 #行为设计 #自我管理 #认知科学 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「想做却迟迟不动_福格行为」速查模式运行。\n\n【认知模式】快速调用想做却迟迟不动_福格行为模型三的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 是你的行为模型缺了一个关键要素：是你的行为模型缺了一个关键要素\n\nStep 2 - 这张速查卡把福格行为模型拆成三步自检： ：这张速查卡把福格行为模型拆成三步自检： 动机检查让你看清意愿波动是常态\n\nStep 3 - 问自己三个问题：动机够不够：问自己三个问题：动机够不够\n\nStep 4 - 福格行为模型 #习惯养成 #行为设计 #：福格行为模型 #习惯养成 #行为设计 #自我管理 #认知科学 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用想做却迟迟不动_福格行为模型三速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

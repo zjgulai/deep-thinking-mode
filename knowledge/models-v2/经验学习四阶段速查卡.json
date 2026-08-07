@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "经验学习四阶段速查卡",
+  "meta": {
+    "name": "经验学习四阶段",
+    "category": "08",
+    "tags": [
+      "ffe58f;",
+      "学习科学",
+      "ccc;",
+      "库伯学习圈",
+      "faad14;"
+    ],
+    "source": "经验学习四阶段速查卡.md",
+    "sourceTitle": "经验学习四阶段速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡帮你把“经历”转化为“能力”",
+    "trigger_signals": [
+      "需要快速查阅「经验学习四阶段」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "第一阶段：具体体验 —— 亲身去做",
+        "action": "第一阶段：具体体验 —— 亲身去做",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "第二阶段：反思观察 —— 回顾对比",
+        "action": "第二阶段：反思观察 —— 回顾对比",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "第三阶段：抽象概括 —— 提炼规律",
+        "action": "第三阶段：抽象概括 —— 提炼规律",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "与哪个已知概念相通",
+        "action": "与哪个已知概念相通",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "第四阶段：主动实验 —— 验证迭代",
+        "action": "第四阶段：主动实验 —— 验证迭代",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "闭环升级 关键问题：下一个具体动作",
+        "action": "闭环升级 关键问题：下一个具体动作",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「经验学习四阶段」速查模式运行。\n\n【认知模式】快速调用经验学习四阶段的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 第一阶段：具体体验 —— 亲身去做：第一阶段：具体体验 —— 亲身去做\n\nStep 2 - 第二阶段：反思观察 —— 回顾对比：第二阶段：反思观察 —— 回顾对比\n\nStep 3 - 第三阶段：抽象概括 —— 提炼规律：第三阶段：抽象概括 —— 提炼规律\n\nStep 4 - 与哪个已知概念相通：与哪个已知概念相通\n\nStep 5 - 第四阶段：主动实验 —— 验证迭代：第四阶段：主动实验 —— 验证迭代\n\nStep 6 - 闭环升级 关键问题：下一个具体动作：闭环升级 关键问题：下一个具体动作\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用经验学习四阶段速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

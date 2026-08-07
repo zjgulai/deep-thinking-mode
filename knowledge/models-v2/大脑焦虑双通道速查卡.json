@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "id": "大脑焦虑双通道速查卡",
+  "meta": {
+    "name": "大脑焦虑双通道",
+    "category": "10",
+    "tags": [
+      "焦虑",
+      "ffe58f;",
+      "ccc;",
+      "faad14;",
+      "杏仁核"
+    ],
+    "source": "大脑焦虑双通道速查卡.md",
+    "sourceTitle": "大脑焦虑双通道速查卡"
+  },
+  "engine": {
+    "core_question": "明明知道没事，为什么还是心慌",
+    "trigger_signals": [
+      "需要快速查阅「大脑焦虑双通道」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "是你大脑的两条通道在打架",
+        "action": "是你大脑的两条通道在打架",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡讲清两条通道的分工、失衡表现和",
+        "action": "这张速查卡讲清两条通道的分工、失衡表现和调控方法",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「大脑焦虑双通道」速查模式运行。\n\n【认知模式】快速调用大脑焦虑双通道的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 是你大脑的两条通道在打架：是你大脑的两条通道在打架\n\nStep 2 - 这张速查卡讲清两条通道的分工、失衡表现和：这张速查卡讲清两条通道的分工、失衡表现和调控方法\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用大脑焦虑双通道速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

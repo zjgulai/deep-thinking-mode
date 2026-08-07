@@ -9,7 +9,11 @@
   },
   "engine": {
     "core_question": "工具，就足以碾压90%的学习者，无需钻研复杂理论",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "遇到新题型、新工作场景、新问题时",
+      "适用于哪些场景？不适用于哪些场景？",
+      "适用边界、失效场景分别是什么？"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

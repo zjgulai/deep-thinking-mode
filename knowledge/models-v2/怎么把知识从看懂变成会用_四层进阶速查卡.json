@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么把知识从看懂变成会用_四层进阶速查卡",
+  "meta": {
+    "name": "怎么把知识从看懂变成会用_四层进阶",
+    "category": "08",
+    "tags": [
+      "ffe58f;",
+      "前景理论",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型"
+    ],
+    "source": "怎么把知识从看懂变成会用_四层进阶速查卡.md",
+    "sourceTitle": "怎么把知识从看懂变成会用_四层进阶速查卡"
+  },
+  "engine": {
+    "core_question": "四层进阶，每层配一个核心自问和前景理论示例",
+    "trigger_signals": [
+      "需要快速查阅「怎么把知识从看懂变成会用」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "每层配一个核心自问和前景理论示例",
+        "action": "每层配一个核心自问和前景理论示例",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "选一个最近学到的理论",
+        "action": "选一个最近学到的理论",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "思维模型 #职场效能 #正方形的认知工具",
+        "action": "思维模型 #职场效能 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么把知识从看懂变成会用」速查模式运行。\n\n【认知模式】快速调用怎么把知识从看懂变成会用_四层的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 每层配一个核心自问和前景理论示例：每层配一个核心自问和前景理论示例\n\nStep 2 - 选一个最近学到的理论：选一个最近学到的理论\n\nStep 3 - 思维模型 #职场效能 #正方形的认知工具：思维模型 #职场效能 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么把知识从看懂变成会用_四层速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

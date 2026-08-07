@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "五大高杠杆思维模型速查卡",
+  "meta": {
+    "name": "五大高杠杆思维模型",
+    "category": "00",
+    "tags": [
+      "第一性原理",
+      "ffe58f;",
+      "ccc;",
+      "决策工具",
+      "逆向思维"
+    ],
+    "source": "五大高杠杆思维模型速查卡.md",
+    "sourceTitle": "五大高杠杆思维模型速查卡"
+  },
+  "engine": {
+    "core_question": "第一性原理、二阶思维、机会成本、逆向思维、金字塔原理，五个高杠杆模型浓缩为一张速查卡",
+    "trigger_signals": [
+      "需要快速查阅「五大高杠杆思维模型」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "二阶思维、机会成本、逆向思维、金字塔原理",
+        "action": "二阶思维、机会成本、逆向思维、金字塔原理",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "五个高杠杆模型浓缩为一张速查卡",
+        "action": "五个高杠杆模型浓缩为一张速查卡",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "我现在正用哪个模型看问题",
+        "action": "我现在正用哪个模型看问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "思维模型 #认知升级 #决策工具 #第一",
+        "action": "思维模型 #认知升级 #决策工具 #第一性原理 #逆向思维 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「五大高杠杆思维模型」速查模式运行。\n\n【认知模式】快速调用五大高杠杆思维模型的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 二阶思维、机会成本、逆向思维、金字塔原理：二阶思维、机会成本、逆向思维、金字塔原理\n\nStep 2 - 五个高杠杆模型浓缩为一张速查卡：五个高杠杆模型浓缩为一张速查卡\n\nStep 3 - 我现在正用哪个模型看问题：我现在正用哪个模型看问题\n\nStep 4 - 思维模型 #认知升级 #决策工具 #第一：思维模型 #认知升级 #决策工具 #第一性原理 #逆向思维 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用五大高杠杆思维模型速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

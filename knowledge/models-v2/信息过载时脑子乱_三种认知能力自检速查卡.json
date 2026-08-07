@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "信息过载时脑子乱_三种认知能力自检速查卡",
+  "meta": {
+    "name": "信息过载时脑子乱_三种认知能力",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "认知能力",
+      "ccc;",
+      "正方形的认知工具箱",
+      "注意力"
+    ],
+    "source": "信息过载时脑子乱_三种认知能力自检速查卡.md",
+    "sourceTitle": "信息过载时脑子乱_三种认知能力自检速查卡"
+  },
+  "engine": {
+    "core_question": "花一上午刷资讯看报告，下午开会却说不清重点——不是你不够努力，是三种认知能力没有各司其职",
+    "trigger_signals": [
+      "需要系统检验自己的思维或行为时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "整体性思维看你是不是先看全局蓝图而非陷进",
+        "action": "整体性思维看你是不是先看全局蓝图而非陷进细节",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "扫描式注意看你是带着目标扫读还是被算法推",
+        "action": "扫描式注意看你是带着目标扫读还是被算法推着走",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "每项配一个核心自检问题和一个日常小练习",
+        "action": "每项配一个核心自检问题和一个日常小练习",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "整体性思维 #注意力 #信息处理 #认知",
+        "action": "整体性思维 #注意力 #信息处理 #认知科学 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「信息过载时脑子乱_三种认」速查模式运行。\n\n【认知模式】快速调用信息过载时脑子乱_三种认知能力的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 整体性思维看你是不是先看全局蓝图而非陷进：整体性思维看你是不是先看全局蓝图而非陷进细节\n\nStep 2 - 扫描式注意看你是带着目标扫读还是被算法推：扫描式注意看你是带着目标扫读还是被算法推着走\n\nStep 3 - 每项配一个核心自检问题和一个日常小练习：每项配一个核心自检问题和一个日常小练习\n\nStep 4 - 整体性思维 #注意力 #信息处理 #认知：整体性思维 #注意力 #信息处理 #认知科学 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用信息过载时脑子乱_三种认知能力速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

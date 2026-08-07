@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "八种知识整合方式速查卡",
+  "meta": {
+    "name": "八种知识整合方式",
+    "category": "08",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型",
+      "faad14;"
+    ],
+    "source": "八种知识整合方式速查卡.md",
+    "sourceTitle": "八种知识整合方式速查卡"
+  },
+  "engine": {
+    "core_question": "八种知识整合方式，覆盖结构、过程、因果、系统、关系、矛盾、空间、时间八大认知维度，是一套完整、通用、高效的认知工具包",
+    "trigger_signals": [
+      "需要快速查阅「八种知识整合方式」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "穿透表层现象搭建完整因果链",
+        "action": "穿透表层现象搭建完整因果链",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "而是通过层层追问找到团队、渠道、产品、市",
+        "action": "而是通过层层追问找到团队、渠道、产品、市场等多层根本原因——培养深度分析能力",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "销量进一步下跌——看清这个系统性恶性循环",
+        "action": "销量进一步下跌——看清这个系统性恶性循环",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "是战略思维的核心支撑",
+        "action": "是战略思维的核心支撑",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "在更高维度实现矛盾统一",
+        "action": "在更高维度实现矛盾统一",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "学习方法 #思维模型 #认知升级 #知识",
+        "action": "学习方法 #思维模型 #认知升级 #知识体系 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「八种知识整合方式」速查模式运行。\n\n【认知模式】快速调用八种知识整合方式的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 穿透表层现象搭建完整因果链：穿透表层现象搭建完整因果链\n\nStep 2 - 而是通过层层追问找到团队、渠道、产品、市：而是通过层层追问找到团队、渠道、产品、市场等多层根本原因——培养深度分析能力\n\nStep 3 - 销量进一步下跌——看清这个系统性恶性循环：销量进一步下跌——看清这个系统性恶性循环\n\nStep 4 - 是战略思维的核心支撑：是战略思维的核心支撑\n\nStep 5 - 在更高维度实现矛盾统一：在更高维度实现矛盾统一\n\nStep 6 - 学习方法 #思维模型 #认知升级 #知识：学习方法 #思维模型 #认知升级 #知识体系 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用八种知识整合方式速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

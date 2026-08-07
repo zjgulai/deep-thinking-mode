@@ -9,7 +9,11 @@
   },
   "engine": {
     "core_question": "→匹配熟悉旧知识→建立对应关系→跨领域复用逻辑，大幅降低专业内容理解门槛",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "适用边界；依靠种属、矛盾、交叉关系区分概念",
+      "适用场景：短视频辨伪、新闻阅读、辩论、职场沟通；局限：无标准化公式",
+      "常用于刷题总结、行业案例复盘"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],

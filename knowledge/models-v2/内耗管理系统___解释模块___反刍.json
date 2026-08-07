@@ -9,7 +9,11 @@
   },
   "engine": {
     "core_question": "】为什么那些负面的想法和记忆，一旦开始便如鬼打墙般循环往复，无法挣脱？这背后是大脑内一场精密却痛苦的合谋",
-    "trigger_signals": [],
+    "trigger_signals": [
+      "你是否经历过：白天一句批评在脑中反复回放",
+      "当你以强烈的情绪再次体验这段记忆时",
+      "当你感到反刍即将开始（情绪刚刚被触发）"
+    ],
     "stop_conditions": [],
     "reasoning_protocol": [],
     "decision_points": [],
