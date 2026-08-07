@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-服务质量的六西格玛水平普遍不高-有较大的",
+  "meta": {
+    "name": "服务质量的六西格玛水平普遍不高，有较大的",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):服务质量的六西格玛水平普遍不高，有较大的",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "普通用户试用移动电话进行语音呼叫的示意流程图，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "来说，图 1 是一个普通用户试用移动电话进行语音呼叫的示意流程图，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以服务质量的六西格玛水平普遍不高，有较大的的方式思考这个问题。",
+    "activation_phrase": "请用服务质量的六西格玛水平普遍不高分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

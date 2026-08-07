@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-在整个产业中对现有机会与威胁做出了反应-",
+  "meta": {
+    "name": "在整个产业中对现有机会与威胁做出了反应",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:在整个产业中对现有机会与威胁做出了反应，",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "误解。于是召开记者招待会，公布调查的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "与启示  感恩节是美国的一个传统节日，这一天美国人要吃一种叫克兰梅的酸果食品"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在整个产业中对现有机会与威胁做出了反应，的方式思考这个问题。",
+    "activation_phrase": "请用在整个产业中对现有机会与威胁做分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "内耗根源-dmn四大功能卡在循环模式-2",
+  "meta": {
+    "name": "内耗根源揭秘",
+    "category": "10",
+    "tags": [
+      "内耗根源揭秘",
+      "wechat_redirec"
+    ],
+    "source": "内耗根源_DMN四大功能卡在循环模式 2.md",
+    "sourceTitle": "内耗根源：DMN四大功能卡在循环模式"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？内耗根源揭秘如何找到它？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以内耗根源揭秘的方式思考。",
+    "activation_phrase": "请用内耗根源揭秘分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

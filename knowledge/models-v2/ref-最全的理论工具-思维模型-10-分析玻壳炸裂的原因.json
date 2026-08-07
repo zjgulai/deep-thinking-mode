@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-分析玻壳炸裂的原因",
+  "meta": {
+    "name": "分析玻壳炸裂的原因",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):分析玻壳炸裂的原因",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "QC 小组全体成员深入现场，用因果图法对玻壳炸裂的原因进行了分析。  经过分析，可知造成玻壳炸裂的原因很多，人的因素有操作技能。工作责任 心问题；设备因素有退火架速度慢、退火炉炉头结构设计不合理的问题；工艺因 素有退火温度曲线不适当等问题",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分析玻壳炸裂的原因的方式思考这个问题。",
+    "activation_phrase": "请用分析玻壳炸裂的原因分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

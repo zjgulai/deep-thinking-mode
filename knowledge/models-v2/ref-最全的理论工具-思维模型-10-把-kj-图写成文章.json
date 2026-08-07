@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-把-kj-图写成文章",
+  "meta": {
+    "name": "把 KJ 图写成文章",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):把 KJ 图写成文章",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "问题对一个答案的模式，而是多个因素对多",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "确定需要分析的各个方面。",
+        "action": "确定需要分析的各个方面。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "组成数据矩阵。用 Excel 或者手工做",
+        "action": "组成数据矩阵。用 Excel 或者手工做。把这些因素分别输入表格的行和",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "∶公司已经投入 3 亿 开发高新科技项目，至今尚无成果，我们的目标是找出问题的关键，并决定是否"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「把 KJ 图写成文章」思维模式运行。\n\nStep 1 - 确定需要分析的各个方面。：确定需要分析的各个方面。\n\nStep 2 - 组成数据矩阵。用 Excel 或者手工做：组成数据矩阵。用 Excel 或者手工做。把这些因素分别输入表格的行和\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用把 KJ 图写成文章分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 1,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

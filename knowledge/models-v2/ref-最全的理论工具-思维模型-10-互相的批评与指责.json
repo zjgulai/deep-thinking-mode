@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-互相的批评与指责",
+  "meta": {
+    "name": "互相的批评与指责",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):互相的批评与指责",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "有良好的心态，这也不是头脑风暴 所能解决的问题了。 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "讨论顾客服务的问题，就会影响到服务部门、销售部门、财"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以互相的批评与指责的方式思考这个问题。",
+    "activation_phrase": "请用互相的批评与指责分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

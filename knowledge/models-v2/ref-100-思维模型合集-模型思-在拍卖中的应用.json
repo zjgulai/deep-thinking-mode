@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-在拍卖中的应用",
+  "meta": {
+    "name": "在拍卖中的应用",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):在拍卖中的应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对宇宙的理解，即有客观的又有主观的",
+    "trigger_signals": [
+      "如果你说：在上海外滩我看到天上有一条真正的龙，嘴里还在喷火。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "工作中与同事之间的协作，生活中与朋友之间的聊天，家庭中与"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在拍卖中的应用的方式思考这个问题。",
+    "activation_phrase": "请用在拍卖中的应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

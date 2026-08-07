@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "系统思考速查卡",
+  "meta": {
+    "name": "系统思考",
+    "category": "05",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "冰山模型",
+      "思维模型",
+      "杠杆点"
+    ],
+    "source": "系统思考速查卡.md",
+    "sourceTitle": "系统思考速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡帮你从“头痛医头”的线性思维，升级到“看见全局”的系统思考",
+    "trigger_signals": [
+      "遇到的问题（比如团队效率低、项目总是延期）"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "它包含四种思维形态和五个修炼方法",
+        "action": "它包含四种思维形态和五个修炼方法",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "而是找到那个“轻轻一推就能改变全局”的杠",
+        "action": "而是找到那个“轻轻一推就能改变全局”的杠杆点",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "四种思维形态（用什么工具看问题） 1\\.",
+        "action": "四种思维形态（用什么工具看问题） 1\\. 因果回路图 用箭头画出“增强回路”（越滚越大的雪球）和“平衡回路”（自我调节的恒温器）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "冰山模型 从水面上的“事件”往下挖：行为",
+        "action": "冰山模型 从水面上的“事件”往下挖：行为模式 → 系统结构 → 心智模式",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "心智模式”层（我们默认的假设是什么）",
+        "action": "心智模式”层（我们默认的假设是什么）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "五个修炼方法（怎么练出系统思考） 1\\.",
+        "action": "五个修炼方法（怎么练出系统思考） 1\\. 转换提问方式 不问“谁错了”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「系统思考」速查模式运行。\n\n【认知模式】快速调用系统思考的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 它包含四种思维形态和五个修炼方法：它包含四种思维形态和五个修炼方法\n\nStep 2 - 而是找到那个“轻轻一推就能改变全局”的杠：而是找到那个“轻轻一推就能改变全局”的杠杆点\n\nStep 3 - 四种思维形态（用什么工具看问题） 1\\.：四种思维形态（用什么工具看问题） 1\\. 因果回路图 用箭头画出“增强回路”（越滚越大的雪球）和“平衡回路”（自我调节的恒温器）\n\nStep 4 - 冰山模型 从水面上的“事件”往下挖：行为：冰山模型 从水面上的“事件”往下挖：行为模式 → 系统结构 → 心智模式\n\nStep 5 - 心智模式”层（我们默认的假设是什么）：心智模式”层（我们默认的假设是什么）\n\nStep 6 - 五个修炼方法（怎么练出系统思考） 1\\.：五个修炼方法（怎么练出系统思考） 1\\. 转换提问方式 不问“谁错了”\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用系统思考速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

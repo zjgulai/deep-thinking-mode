@@ -1,0 +1,92 @@
+{
+  "schema_version": "2.0.0",
+  "id": "三种思维速查卡",
+  "meta": {
+    "name": "三种思维",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "思维模型",
+      "faad14;",
+      "系统思维"
+    ],
+    "source": "三种思维速查卡.md",
+    "sourceTitle": "三种思维速查卡"
+  },
+  "engine": {
+    "core_question": "你是不是也遇到过这种困境：明明很努力，问题却反复出现；想破局却不知从哪下手；手里有方案，却没人配合、没资源落地…… 别急着否定自己，很可能是你用错了思维工具",
+    "trigger_signals": [
+      "适用：信息杂乱、需要标准化、快速交付",
+      "适用：问题反复发作、治标不治本、多方牵制",
+      "适用：缺资源、要破圈、求机会、需协作"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "框架思维、系统思维、网络思维",
+        "action": "框架思维、系统思维、网络思维",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "框架思维 → 适用：信息杂乱、需要标准化",
+        "action": "框架思维 → 适用：信息杂乱、需要标准化、快速交付 → 典型场景：写周报、拆任务、做PPT、建SOP → 口诀：遇事先搭架子 ♻",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "系统思维 → 适用：问题反复发作、治标不",
+        "action": "系统思维 → 适用：问题反复发作、治标不治本、多方牵制 → 典型场景：反复内耗、团队士气低、减肥反弹、制度推不动 → 口诀：做不",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "网络思维 → 适用：缺资源、要破圈、求机",
+        "action": "网络思维 → 适用：缺资源、要破圈、求机会、需协作 → 典型场景：求职跳槽、跨部门协作、找合伙人、破圈社交 → 口诀：缺资源就找",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "秒锁定思维 第一次做",
+        "action": "秒锁定思维 第一次做",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "用框架思维 反复出现",
+        "action": "用框架思维 反复出现",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「三种思维」速查模式运行。\n\n【认知模式】快速调用三种思维的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 框架思维、系统思维、网络思维：框架思维、系统思维、网络思维\n\nStep 2 - 框架思维 → 适用：信息杂乱、需要标准化：框架思维 → 适用：信息杂乱、需要标准化、快速交付 → 典型场景：写周报、拆任务、做PPT、建SOP → 口诀：遇事先搭架子 ♻\n\nStep 3 - 系统思维 → 适用：问题反复发作、治标不：系统思维 → 适用：问题反复发作、治标不治本、多方牵制 → 典型场景：反复内耗、团队士气低、减肥反弹、制度推不动 → 口诀：做不\n\nStep 4 - 网络思维 → 适用：缺资源、要破圈、求机：网络思维 → 适用：缺资源、要破圈、求机会、需协作 → 典型场景：求职跳槽、跨部门协作、找合伙人、破圈社交 → 口诀：缺资源就找\n\nStep 5 - 秒锁定思维 第一次做：秒锁定思维 第一次做\n\nStep 6 - 用框架思维 反复出现：用框架思维 反复出现\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用三种思维速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

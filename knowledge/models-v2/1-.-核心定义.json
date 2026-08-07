@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1-.-核心定义",
+  "meta": {
+    "name": "1\\. 核心定义",
+    "category": "07",
+    "tags": [],
+    "source": "认知失调.md"
+  },
+  "engine": {
+    "core_question": "### 1\\. 核心定义  **认知失调** 是指当一个人同时拥有两种或多种在心理上不一致的认知（包括想法、信念、价值观、态度或行为）时，所产生的一种**精神上的紧张、不适或痛苦**的状态。  简单说就是：**“我心里有两个互相打架的声音，让我很不舒服。”**  ### 2\\. 关键要素：“认知”与",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**改变认知**",
+        "action": "改变其中一个矛盾的认知。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**增加新的合理化认知**：增",
+        "action": "**增加新的合理化认知**：增加一个能调和矛盾的新理由。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**改变行为**",
+        "action": "让行为与认知一致。（通常最难）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**忽视或贬反面信息**",
+        "action": "拒绝接受那些加剧失调的信息。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**推卸责任或最小化选择**：",
+        "action": "**推卸责任或最小化选择**：“我是不得已才这么做的。”“这没那么重要。”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "",
+    "activation_phrase": "请用1\\. 核心定义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-特殊元素",
+  "meta": {
+    "name": "特殊元素",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):特殊元素",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "EP．9 主要根据企业战略和规划修正企业的长期供应链能力和资源计划．包 括与资源、制造、配送计划相关的预测等。ES．9 主要对现有订单或者合同进管 理行，包括价格、调解方式、期限等。  支持系统是 SCOR 模型中重要的有机组成部分，它为",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以特殊元素的方式思考这个问题。",
+    "activation_phrase": "请用特殊元素分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

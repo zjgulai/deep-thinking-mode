@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-目标",
+  "meta": {
+    "name": "目标",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):目标",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业的愿景必须转化为短期可实现的目标。企业没有目标就无法管理， 这就如同一个人如果不知道目的地，就无法去旅行。管理就是管理一 系列精心制定的目标。 德鲁克认为企业需要设定八大领域的目标，分别是市场营销、创新、 人力资源、财务资源、实物资源、",
+    "trigger_signals": [
+      "当我们吃喜欢的食物，看喜欢的电影，和喜欢的人在一起时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说开心的微笑等。神经科学认为大脑  1887 / 1937"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以目标的方式思考这个问题。",
+    "activation_phrase": "请用目标分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

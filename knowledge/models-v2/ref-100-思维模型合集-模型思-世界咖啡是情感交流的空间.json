@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-世界咖啡是情感交流的空间",
+  "meta": {
+    "name": "世界咖啡是情感交流的空间",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):世界咖啡是情感交流的空间",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "海信集团董事长周厚健说“下属是帮助你工作的人，他们更值得你去尊 重、去感谢。有些企业把上下级关系体现得淋漓尽致，这是典型的封 建残余。世界咖啡可促进人的平等对话，体现现代文明。” 世界咖啡的参与者在轻松愉悦的氛围里，在主持人的引导下，逐步打",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以世界咖啡是情感交流的空间的方式思考这个问题。",
+    "activation_phrase": "请用世界咖啡是情感交流的空间分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

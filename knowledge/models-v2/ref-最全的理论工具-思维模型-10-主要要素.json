@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-主要要素",
+  "meta": {
+    "name": "主要要素",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):主要要素",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "组织当前活动和绩效中令人不满意的方面",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，一个碰巧想到了某 个好主意的管理者，可能会突然发现有个问题正好适用采用这个构想"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以主要要素的方式思考这个问题。",
+    "activation_phrase": "请用主要要素分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

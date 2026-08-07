@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-红色思考帽-",
+  "meta": {
+    "name": "红色思考帽",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):红色思考帽：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "红色的火焰，使人想到热烈与情绪。同时红色也暗示愤怒、狂暴等情 感特征，红帽思维代表情绪上的感觉、直觉和预感。是对某种事或某 种观点的预感、直觉和印象；不是事实也不是逻辑思考，是一种无理 由的主观感受。  199 / 1937 \fA 使用时间",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以红色思考帽：的方式思考这个问题。",
+    "activation_phrase": "请用红色思考帽：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

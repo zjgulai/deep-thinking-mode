@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-对标杆岗位进行正式测评打分并建立岗位等级",
+  "meta": {
+    "name": "对标杆岗位进行正式测评打分并建立岗位等级",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):对标杆岗位进行正式测评打分并建立岗位等级",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "正式测评结束后。统计计算岗位的得分也很有技巧性。统计计算出各标杆岗 位的平均分后，可算出每位评分者的评分与平均分的离差。剔除离差较大的分数。 因为有些测评者为 r 本部门的利益或对有些岗位不熟悉而导致评分有较大偏差。 在统计计算最后得分时",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以对标杆岗位进行正式测评打分并建立岗位等级的方式思考这个问题。",
+    "activation_phrase": "请用对标杆岗位进行正式测评打分并建分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

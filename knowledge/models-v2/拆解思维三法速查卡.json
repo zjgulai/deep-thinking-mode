@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "拆解思维三法速查卡",
+  "meta": {
+    "name": "拆解思维三法",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "拖延破解",
+      "个人效能"
+    ],
+    "source": "拆解思维三法速查卡.md",
+    "sourceTitle": "拆解思维三法速查卡"
+  },
+  "engine": {
+    "core_question": "盯着堆满水槽的碗碟、三个月没整理的衣柜，脑子里一团乱麻，手脚就是动不了——不是懒，是被“整体”这个词吓住了",
+    "trigger_signals": [
+      "需要快速查阅「拆解思维三法」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "这张速查卡把拆解思维拆成三套工具： 用户",
+        "action": "这张速查卡把拆解思维拆成三套工具： 用户旅程法按流程拆",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "画出步骤线找到最卡的那一步； 公式拆解法",
+        "action": "画出步骤线找到最卡的那一步； 公式拆解法按要素拆",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "把结果写成算式逐个变量突破； 根因问题树",
+        "action": "把结果写成算式逐个变量突破； 根因问题树按层级拆",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "找到第一个可以动手的切口",
+        "action": "找到第一个可以动手的切口",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "拆解思维 #拖延破解 #问题解决 #认知",
+        "action": "拆解思维 #拖延破解 #问题解决 #认知心理学 #个人效能 #问题分析 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「拆解思维三法」速查模式运行。\n\n【认知模式】快速调用拆解思维三法的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 这张速查卡把拆解思维拆成三套工具： 用户：这张速查卡把拆解思维拆成三套工具： 用户旅程法按流程拆\n\nStep 2 - 画出步骤线找到最卡的那一步； 公式拆解法：画出步骤线找到最卡的那一步； 公式拆解法按要素拆\n\nStep 3 - 把结果写成算式逐个变量突破； 根因问题树：把结果写成算式逐个变量突破； 根因问题树按层级拆\n\nStep 4 - 找到第一个可以动手的切口：找到第一个可以动手的切口\n\nStep 5 - 拆解思维 #拖延破解 #问题解决 #认知：拆解思维 #拖延破解 #问题解决 #认知心理学 #个人效能 #问题分析 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用拆解思维三法速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

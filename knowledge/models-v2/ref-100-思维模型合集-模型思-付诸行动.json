@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-付诸行动",
+  "meta": {
+    "name": "付诸行动",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):付诸行动",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "进化的过程，在生物界和人类社会这种进化尤为明显，于是产生了克",
+    "trigger_signals": [
+      "如果你开车 20 公里送你的朋友去机场，你的朋友将乘飞机到 750 公里",
+      "如果你一个非常亲密的朋友中了彩票一个亿，这件事对你的触动力将",
+      "如果我们采用短些的标尺,例如 1 厘米长的标尺,则测得海岸线长度为"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "斯坦诺维奇人民邮电出版社",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": "企业内部人员的多样性（来自不同的国家和地区，拥有不同的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以付诸行动的方式思考这个问题。",
+    "activation_phrase": "请用付诸行动分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

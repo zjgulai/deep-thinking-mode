@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-投资中应用",
+  "meta": {
+    "name": "投资中应用",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):投资中应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "损失，有些人认为花钱是一种投资，有些人对",
+    "trigger_signals": [
+      "如果你是一个创业者，在面临",
+      "如果你是一名投资者，在股票交易中，要理性对待你持有的股票，不",
+      "如果你是一个普通的上班族，在面临职业选择的时候，不要因为在原"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "有些人认为花钱是一种损失，有些人认为花钱是一种投资，有些人对"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以投资中应用的方式思考这个问题。",
+    "activation_phrase": "请用投资中应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

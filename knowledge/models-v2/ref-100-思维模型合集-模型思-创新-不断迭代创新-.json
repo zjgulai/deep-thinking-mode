@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-创新-不断迭代创新-",
+  "meta": {
+    "name": "创新——不断迭代创新",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):创新——不断迭代创新。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "伊查克．爱迪思企业生命周期理论认为，平台企业大都会经历诞生、 成长、成熟和衰退（蜕变）这样一个生命周期。  1255 / 1937 \f在平台初创时期，人们大多抱着观望的态度，只有一小部分人愿意在 第一时间尝试接入平台，此时的网络外部性较弱，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "当移动互联网来临的时候，谷歌的安卓系统横空出世，快速的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以创新——不断迭代创新。的方式思考这个问题。",
+    "activation_phrase": "请用创新——不断迭代创新。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

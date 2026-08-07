@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-多样性",
+  "meta": {
+    "name": "多样性",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):多样性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "德尔菲法在预测的过程中，有多位专家进行预测，有的预测可能需要 几十位专家参与，专家的知识背景不一样，来自的领域也不一样，每 一位专家都有自己独特的观点，这样就保证了意见的多样性。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以多样性的方式思考这个问题。",
+    "activation_phrase": "请用多样性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

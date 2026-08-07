@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-奥卡姆剃刀在实际应用中-除了补充-1-外",
+  "meta": {
+    "name": "奥卡姆剃刀在实际应用中,除了补充 1 外",
+    "category": "07",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:奥卡姆剃刀在实际应用中,除了补充 1 外",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一些人和事物在面对冲击时,不但能够不受损",
+    "trigger_signals": [
+      "如果你分析不知就会发 无法填补你的需求,那也动不了,此时可以去把问题拆解,无论你用 想实现用户行为的转化,需要同时满足三个条件",
+      "如果你想做就需要去提升自己的“能”或提升动机。 机低,你依然可以去做。 一次成功的行为,"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "饿着肚子的画家,即是在生理与自我实现之间穿梭"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以奥卡姆剃刀在实际应用中,除了补充 1 外的方式思考这个问题。",
+    "activation_phrase": "请用奥卡姆剃刀在实际应用中,除了补分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

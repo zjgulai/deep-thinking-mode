@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-影响网络效应的因素",
+  "meta": {
+    "name": "影响网络效应的因素",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):影响网络效应的因素",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "影响网络效应强弱的有三个要素，第一是网络规模、也就是网络成员 的多少。第二是网络结构，也就是网络成员之间相互联络的密切程度。 第三个是网络标准，也就是标准的排他性，互不兼容性。 二、网络效应的影响",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以影响网络效应的因素的方式思考这个问题。",
+    "activation_phrase": "请用影响网络效应的因素分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

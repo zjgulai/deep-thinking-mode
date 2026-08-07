@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-非线性",
+  "meta": {
+    "name": "非线性",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):非线性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "性关系。特别是在与系统的反复交互作用中，这一点更为明显。近代 科学之所以在许多方面遇到困难，重要原因之一是它把自己的眼界局 限于线性关系的狭窄范围内，从而无法描述和理解丰富多采的变化和 发展。 复杂适应系统理论认为个体之间相互影响不是简单的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "股市是非线性发展，充满了不确定性、混沌性、突变性和随机"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以非线性的方式思考这个问题。",
+    "activation_phrase": "请用非线性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

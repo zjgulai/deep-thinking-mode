@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-占领顾客心智",
+  "meta": {
+    "name": "占领顾客心智",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):占领顾客心智",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "特劳特认为在产品稀缺时代，企业的经营中心在工厂，只要提高工作 效率就可赚取利润。 在产品丰富时代，企业的经营中心在市场，只要广告和渠道做到好， 就可以赚取利润。在产品过剩时代，竞争白热化，产品同质化严重， 从功能到外观，都不相上下，顾客选择",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "王 老吉的广告反复强调的信息。 品类：植物凉茶（我是什么？）"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以占领顾客心智的方式思考这个问题。",
+    "activation_phrase": "请用占领顾客心智分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

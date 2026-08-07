@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-麦肯锡精英系列-共五册-高-contents-目录-序言1-世界上的",
+  "meta": {
+    "name": "Contents 目录 序言1 世界上的",
+    "category": "07",
+    "tags": [],
+    "source": "ref:麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝]):Contents 目录 序言1 世界上的",
+    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "大家庭，每学年招收900名学生",
+    "trigger_signals": [
+      "当你展望未来时，你不可能将这些片段串联起来；当你蓦然回首时",
+      "当你将来回顾这一切时，这些点点滴滴就会串联起来。因此，随时",
+      "如果你认为与对方交往能对自己有所帮助的话，那么双方的距离自然就会拉近。 要清晰地记住与对方相处的时间 我们为什么与学生时代的朋"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，尊老爱幼、珍惜朋友、勤勉、希望不断地提高自己等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以Contents 目录 序言1 世界上的的方式思考这个问题。",
+    "activation_phrase": "请用Contents 目录 序言1分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

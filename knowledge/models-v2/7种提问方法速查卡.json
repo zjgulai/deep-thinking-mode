@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "7种提问方法速查卡",
+  "meta": {
+    "name": "7种提问方法",
+    "category": "03",
+    "tags": [
+      "结构化思维",
+      "ffe58f;",
+      "ccc;",
+      "提问技巧",
+      "faad14;"
+    ],
+    "source": "7种提问方法速查卡.md",
+    "sourceTitle": "7种提问方法速查卡"
+  },
+  "engine": {
+    "core_question": "遇到问题卡壳时，你第一反应是直接找答案，还是先问自己几个好问题",
+    "trigger_signals": [
+      "遇到沟通模糊、决策困难、创意枯竭时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "系统式：看整体关联",
+        "action": "系统式：看整体关联",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "未来回溯式：以终为始",
+        "action": "未来回溯式：以终为始",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "种方法速查（含场景示例） 1\\. 澄清式",
+        "action": "种方法速查（含场景示例） 1\\. 澄清式 追问：“你说的具体指什么",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "系统式 追问：“这个变化会引发什么连锁反",
+        "action": "系统式 追问：“这个变化会引发什么连锁反应",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "换位式 追问：“如果是他/她",
+        "action": "换位式 追问：“如果是他/她",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "未来回溯式 追问：“假设已经成功",
+        "action": "未来回溯式 追问：“假设已经成功",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「7种提问方法」速查模式运行。\n\n【认知模式】快速调用7种提问方法的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 系统式：看整体关联：系统式：看整体关联\n\nStep 2 - 未来回溯式：以终为始：未来回溯式：以终为始\n\nStep 3 - 种方法速查（含场景示例） 1\\. 澄清式：种方法速查（含场景示例） 1\\. 澄清式 追问：“你说的具体指什么\n\nStep 4 - 系统式 追问：“这个变化会引发什么连锁反：系统式 追问：“这个变化会引发什么连锁反应\n\nStep 5 - 换位式 追问：“如果是他/她：换位式 追问：“如果是他/她\n\nStep 6 - 未来回溯式 追问：“假设已经成功：未来回溯式 追问：“假设已经成功\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用7种提问方法速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

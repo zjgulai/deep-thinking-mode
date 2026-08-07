@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-服务市场和竞争信息-",
+  "meta": {
+    "name": "服务市场和竞争信息",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):服务市场和竞争信息。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对于各业务单位服务市场和竞争信息的收集，除了有竞争者是否从服务市场 退出及相关的市场份额情况之外，还有表 2 所示信息内容。 类 型 具体数据和信息描述 产品和 ·产品或服务的寿命： 首次开发和引入的时段(5年为一个时段)， 如1980-",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，一项销售额为 1000 万美 \f http://wiki.mbalib.com/"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以服务市场和竞争信息。的方式思考这个问题。",
+    "activation_phrase": "请用服务市场和竞争信息。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

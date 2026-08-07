@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-优势与劣势分析-strengths-an",
+  "meta": {
+    "name": "优势与劣势分析（Strengths an",
+    "category": "00",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:优势与劣势分析（Strengths an",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "整体，而且竞争性优势来源十分广泛，所以，在做优劣势分析",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "有一家大电子公司，工程师们轻视销售员，视其为“不"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以优势与劣势分析（Strengths an的方式思考这个问题。",
+    "activation_phrase": "请用优势与劣势分析（Strengt分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

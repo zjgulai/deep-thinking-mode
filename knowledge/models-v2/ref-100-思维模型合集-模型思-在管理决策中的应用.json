@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-在管理决策中的应用",
+  "meta": {
+    "name": "在管理决策中的应用",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):在管理决策中的应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "\"说到做到\"的封闭系统。外界对企业决定采取的行动",
+    "trigger_signals": [
+      "当我们进行假设性推理时，我们创建一个临时",
+      "如果你安装在自己的头脑里，",
+      "如果你想成为一个理性的思想"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "洗衣、做饭、保洁、收银 等工作。 复杂问题：例如制造汽车、飞机和火箭，就是复杂问题，这些问题需"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在管理决策中的应用的方式思考这个问题。",
+    "activation_phrase": "请用在管理决策中的应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

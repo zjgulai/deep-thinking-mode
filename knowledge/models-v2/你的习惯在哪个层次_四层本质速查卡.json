@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "你的习惯在哪个层次_四层本质速查卡",
+  "meta": {
+    "name": "你的习惯在哪个层次_四层本质",
+    "category": "07",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "行为设计",
+      "深度思考",
+      "正方形的认知工具箱"
+    ],
+    "source": "你的习惯在哪个层次_四层本质速查卡.md",
+    "sourceTitle": "你的习惯在哪个层次_四层本质速查卡"
+  },
+  "engine": {
+    "core_question": "打卡三百天还是原地踏步——不是习惯没用，是你只在最表层重复动作",
+    "trigger_signals": [
+      "需要快速查阅「你的习惯在哪个层次_四层」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "打卡三百天还是原地踏步——不是习惯没用",
+        "action": "打卡三百天还是原地踏步——不是习惯没用",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡把习惯拆成四层本质： 神经生理",
+        "action": "这张速查卡把习惯拆成四层本质： 神经生理层让你看清习惯是为了节能而非重复",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "心理功能层揭示习惯是被压缩的情绪渴望",
+        "action": "心理功能层揭示习惯是被压缩的情绪渴望",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "哲学身份层区分“拥有一个行为”和“成为一",
+        "action": "哲学身份层区分“拥有一个行为”和“成为一个人”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "生活生态层让你看见一个好习惯如何像涟漪一",
+        "action": "生活生态层让你看见一个好习惯如何像涟漪一样倒逼整个生活系统升级",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "选一个你正在坚持的习惯",
+        "action": "选一个你正在坚持的习惯",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「你的习惯在哪个层次_四层」速查模式运行。\n\n【认知模式】快速调用你的习惯在哪个层次_四层本质的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 打卡三百天还是原地踏步——不是习惯没用：打卡三百天还是原地踏步——不是习惯没用\n\nStep 2 - 这张速查卡把习惯拆成四层本质： 神经生理：这张速查卡把习惯拆成四层本质： 神经生理层让你看清习惯是为了节能而非重复\n\nStep 3 - 心理功能层揭示习惯是被压缩的情绪渴望：心理功能层揭示习惯是被压缩的情绪渴望\n\nStep 4 - 哲学身份层区分“拥有一个行为”和“成为一：哲学身份层区分“拥有一个行为”和“成为一个人”\n\nStep 5 - 生活生态层让你看见一个好习惯如何像涟漪一：生活生态层让你看见一个好习惯如何像涟漪一样倒逼整个生活系统升级\n\nStep 6 - 选一个你正在坚持的习惯：选一个你正在坚持的习惯\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用你的习惯在哪个层次_四层本质速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

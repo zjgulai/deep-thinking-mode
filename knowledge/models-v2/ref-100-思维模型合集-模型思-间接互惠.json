@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-间接互惠",
+  "meta": {
+    "name": "间接互惠",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):间接互惠",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "上讲，我们就是在购买一 个名声。 社会能够发展出更大规模、更为复杂的结构，以及彼此间更紧密的相 互连结。正是因",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以间接互惠的方式思考这个问题。",
+    "activation_phrase": "请用间接互惠分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

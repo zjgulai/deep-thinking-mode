@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-集合性",
+  "meta": {
+    "name": "集合性",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):集合性",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "们所说的 TPM 八大支柱，即：个别改善、自主维修、专业维修、初期管理、质 量 管理、安全与环境管理、事务改善、教育培训。这些活动既有区别，又有联 系，相互制约，相互促进，例如维修管理影响着环境管理，环境管理又影响着质 量管理， 各项活动相",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "维修管理影响着环境管理，环境管理又影响着质"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以集合性的方式思考这个问题。",
+    "activation_phrase": "请用集合性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

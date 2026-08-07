@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-形式多样的培训阶段",
+  "meta": {
+    "name": "形式多样的培训阶段",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):形式多样的培训阶段",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在公司高层的支持下，上海移动实施六西格玛的氛围已经形成，从 2004 年 初开始，上海移动开始进行有针对性的人员培训。通过编制培训教材、邀请专家 来公司组织专场的六西格玛理论介绍和绿带培训班。选派人员参加上海朱兰质量 研究院的“服务黑带培",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以形式多样的培训阶段的方式思考这个问题。",
+    "activation_phrase": "请用形式多样的培训阶段分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

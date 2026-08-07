@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-严格挑选供应商-与供应商虚拟组合-建立合",
+  "meta": {
+    "name": "严格挑选供应商，与供应商虚拟组合，建立合",
+    "category": "03",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):严格挑选供应商，与供应商虚拟组合，建立合",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "戴尔拥有一整套的供应商遴选与认证制度，对供应商的考核标准主要是看其 能否源源不断地提供没有瑕疵的产品。考核的对象不仅包括产品，还涵盖了整个 产品生产过程，即要求供应商具有符合标准的质量控制体系。要想成为戴尔的供 应商，企业必须证明其在 成",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以严格挑选供应商，与供应商虚拟组合，建立合的方式思考这个问题。",
+    "activation_phrase": "请用严格挑选供应商，与供应商虚拟组分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-相-相变和序参量",
+  "meta": {
+    "name": "相、相变和序参量",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):相、相变和序参量",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "系统在某一条件下所处的状态,系统由一种状态向另一种",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以相、相变和序参量的方式思考这个问题。",
+    "activation_phrase": "请用相、相变和序参量分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

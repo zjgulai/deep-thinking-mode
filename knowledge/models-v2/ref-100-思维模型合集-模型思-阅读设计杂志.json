@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-阅读设计杂志",
+  "meta": {
+    "name": "阅读设计杂志",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):阅读设计杂志",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "职业设计师会经常阅读各种设计杂志,你也要像他们那样。设计杂志看 多了,会让你目光敏锐,也会激发你的创新思维。史蒂芬.平克在《全新思 维》一书中推荐以下 8 大杂志。 Ambidextrous——斯坦福大学设计学院发行。 网址:www.Amb",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以阅读设计杂志的方式思考这个问题。",
+    "activation_phrase": "请用阅读设计杂志分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

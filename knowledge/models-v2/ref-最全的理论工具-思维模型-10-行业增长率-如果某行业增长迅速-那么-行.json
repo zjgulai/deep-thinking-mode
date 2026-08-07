@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-行业增长率-如果某行业增长迅速-那么-行",
+  "meta": {
+    "name": "行业增长率 如果某行业增长迅速,那么 行",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):行业增长率 如果某行业增长迅速,那么 行",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/  现有企业不必为自身发展 上，属正常．但生产能力的  而相互争夺市场份额。 增长已提前 5 年到“十五”  规划。  指标：“正常”",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以行业增长率 如果某行业增长迅速,那么 行的方式思考这个问题。",
+    "activation_phrase": "请用行业增长率 如果某行业增长迅速分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

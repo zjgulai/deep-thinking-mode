@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-供应商的议价能力",
+  "meta": {
+    "name": "供应商的议价能力",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:供应商的议价能力",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "供方主要通过其提高投入要素价格与降低单位价值质量的能力，来影响行业中现有企业的 盈利能力与产品竞争力。供方力量的强弱主要取决于他们所提供给买主的是什么投入要素，当供 方所提供的投入要素其价值构成了买主产品总成本的较大比例、对买主产品生产过",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以供应商的议价能力的方式思考这个问题。",
+    "activation_phrase": "请用供应商的议价能力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

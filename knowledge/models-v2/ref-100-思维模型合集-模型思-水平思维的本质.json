@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-水平思维的本质",
+  "meta": {
+    "name": "水平思维的本质",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):水平思维的本质",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "自组织系统，只提供信息自我组织",
+    "trigger_signals": [
+      "如果我嫁给了你，我会在你的咖啡里下毒。”",
+      "如果我娶了你，我会喝下这杯毒咖啡。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以水平思维的本质的方式思考这个问题。",
+    "activation_phrase": "请用水平思维的本质分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

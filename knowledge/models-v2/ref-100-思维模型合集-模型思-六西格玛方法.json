@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-六西格玛方法",
+  "meta": {
+    "name": "六西格玛方法",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):六西格玛方法",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "六西格玛方法是摩托罗拉公司于 20 世纪 80 年代中期提出的，目的是 减少误差，该方法根据正态分布对产品属性进行建模。试想这个例子： 一家企业专业生产制造门把手所用的螺栓。它生产的螺栓必须天衣无 缝地与其他制造商生产的旋钮组装在一起。规格",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以六西格玛方法的方式思考这个问题。",
+    "activation_phrase": "请用六西格玛方法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-排列组合思维模型",
+  "meta": {
+    "name": "排列组合思维模型",
+    "category": "02",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:排列组合思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "从给定个数的元素中取出指定个数",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "从一到六的数字有 720 种排列,对应于由这些数字组成的所有不重复亦不阙漏的序列,"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以排列组合思维模型的方式思考这个问题。",
+    "activation_phrase": "请用排列组合思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

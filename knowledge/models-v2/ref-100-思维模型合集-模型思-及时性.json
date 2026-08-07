@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-及时性",
+  "meta": {
+    "name": "及时性",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):及时性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "件的第一时间介入到问题的解决当中。实践操作中往往很多问题都是 间隔的时间太久找不到真正的原因。如果我们不及时去分析问题，可 能很多证据已经全部消失了，在没有证据的状态下，是很难找到真因 呢。",
+    "trigger_signals": [
+      "如果我们不及时去分析问题，可"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以及时性的方式思考这个问题。",
+    "activation_phrase": "请用及时性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

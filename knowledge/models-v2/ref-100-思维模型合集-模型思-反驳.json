@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-反驳",
+  "meta": {
+    "name": "反驳",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):反驳",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "从依据、正当理由和支持进行反驳，怀疑其正确合法性",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "当哈里出生在百慕大群岛，如果双亲是中国人，哈里可能入了"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以反驳的方式思考这个问题。",
+    "activation_phrase": "请用反驳分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

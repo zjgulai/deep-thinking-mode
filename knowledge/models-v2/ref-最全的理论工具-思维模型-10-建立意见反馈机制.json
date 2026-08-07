@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立意见反馈机制",
+  "meta": {
+    "name": "建立意见反馈机制",
+    "category": "10",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立意见反馈机制",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在具体工作中，员工难免会对公司或部门的一些管理行为产生意见，从而影 响工作情绪。而这些意见并非都适合直接告诉直接上级。从公司的管理流程上讲， 应该有这样一个“第三方”来收集员工的意见，并将这些意见整理、归类，然后 \f http://wik",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立意见反馈机制的方式思考这个问题。",
+    "activation_phrase": "请用建立意见反馈机制分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

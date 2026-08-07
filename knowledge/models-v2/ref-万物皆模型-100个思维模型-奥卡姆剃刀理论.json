@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-奥卡姆剃刀理论",
+  "meta": {
+    "name": "奥卡姆剃刀理论",
+    "category": "00",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:奥卡姆剃刀理论",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "非常主观的领域。建立确定实际的简单性的基本规",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "前面说到:“当听到蹄声时,思考马而不是斑马,”就字面意思理解没有什么问题,某种程度上这是提高医治效率"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以奥卡姆剃刀理论的方式思考这个问题。",
+    "activation_phrase": "请用奥卡姆剃刀理论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

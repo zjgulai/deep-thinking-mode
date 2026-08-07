@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自主制定",
+  "meta": {
+    "name": "自主制定",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自主制定",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "自上而下和自下而上两者的融合。  1011 / 1937 \f5、基于进度的：KR 必须要能支持你频繁看到进步，至少两个星期要能 体现出进度变化。研究表明，取得可量化的进步相比公众的认可、金 钱刺激或实现目标本身更有驱动力。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自主制定的方式思考这个问题。",
+    "activation_phrase": "请用自主制定分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

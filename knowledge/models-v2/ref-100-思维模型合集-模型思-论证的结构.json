@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-论证的结构",
+  "meta": {
+    "name": "论证的结构",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):论证的结构",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "明确的判断，是作者观点的完整陈述，表示肯定或否定的",
+    "trigger_signals": [
+      "如果你工作比较简单，做的是一份简单重复的工作，我想你可能用不",
+      "如果你每天在处理很多任务，每天充斥着多份邮件，多"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "“论读书”是个论题。“读书使人进步”就是论点"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以论证的结构的方式思考这个问题。",
+    "activation_phrase": "请用论证的结构分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

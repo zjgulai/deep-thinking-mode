@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-宜家的-为什么-",
+  "meta": {
+    "name": "宜家的“为什么”",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):宜家的“为什么”",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1749 / 1937 \f宽松的购物环境折射出宜家的企业文化——人性化、简单、方便、自给 自足。 宜家创始人英格瓦•坎普拉德（Ingvar Kamprad）有一句名言：“真正的 宜家精神，是依据我们的热忱，我们持之以恒的创新精神，我们的成",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以宜家的“为什么”的方式思考这个问题。",
+    "activation_phrase": "请用宜家的“为什么”分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

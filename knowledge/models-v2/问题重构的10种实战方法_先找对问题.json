@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题重构的10种实战方法_先找对问题",
+  "meta": {
+    "name": "问题重构的10种实战方法_先找对问题",
+    "category": "03",
+    "tags": [],
+    "source": "问题重构的10种实战方法_先找对问题_再动手解决.md"
+  },
+  "engine": {
+    "core_question": "问题重构的10种实战方法：先找对问题，再动手解决  很多人都有过这样的困扰：方案执行得明明白白，可问题还是没解决。其实不是你不够努力，而是一开始就把问题定义错了——方向偏了，再费劲儿也白搭。  问题重构（Problem Reframing）就是来帮你“纠偏”的：它不是什么高深理论，就是一套能直接用、",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "如果这个问题根本不存在，",
+        "action": "如果这个问题根本不存在，我现在该忙什么？（回归核心目标）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "如果预算多100倍，",
+        "action": "如果预算多100倍，这个问题还会有吗？（分清是钱的问题还是方法的问题）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "我是在解决表面问题，",
+        "action": "我是在解决表面问题，还是在解决根本原因？（用“五个为什么”多问几句）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "这个问题的反面是什么？",
+        "action": "这个问题的反面是什么？我能不能接受那个反面？（反向找思路）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "谁最不希望我解决这个问题？",
+        "action": "谁最不希望我解决这个问题？为什么？（找到关键制约点）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "",
+    "activation_phrase": "请用问题重构的10种实战方法_先找分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

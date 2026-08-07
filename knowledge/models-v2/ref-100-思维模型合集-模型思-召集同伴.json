@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-召集同伴",
+  "meta": {
+    "name": "召集同伴",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):召集同伴",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "持续过程。从现在开始,让改变发生",
+    "trigger_signals": [
+      "如果你想要改变自己或者他人,要学会制造从众效应,召集你的同伴",
+      "如果你能够凭感官（视觉、听觉、嗅觉、味觉和触觉）去认识某样东",
+      "如果我看到的是人群，我绝对不会有行动，如"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "学校等集体生活的人们,人际关系和亲密程度很高,拥有共同的目"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以召集同伴的方式思考这个问题。",
+    "activation_phrase": "请用召集同伴分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-评比审核-为评价-6s-管理和有关结果是",
+  "meta": {
+    "name": "评比审核。为评价 6S 管理和有关结果是",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):评比审核。为评价 6S 管理和有关结果是",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "部自我检查即为公司的评比考核。要想使评比考核具有可行性与可靠性，就要制 定科学的考核与评分标准，详见下表。  项目 要求内容 扣分  地面应无积水 2分  地面应无杂物 2分  地面上 地面区域划分合理，区域线、标识清晰无剥落 2分  安全",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以评比审核。为评价 6S 管理和有关结果是的方式思考这个问题。",
+    "activation_phrase": "请用评比审核。为评价 6S 管理和分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

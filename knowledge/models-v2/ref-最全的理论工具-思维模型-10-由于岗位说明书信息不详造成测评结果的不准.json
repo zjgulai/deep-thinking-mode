@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-由于岗位说明书信息不详造成测评结果的不准",
+  "meta": {
+    "name": "由于岗位说明书信息不详造成测评结果的不准",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):由于岗位说明书信息不详造成测评结果的不准",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "岗位说明书是运用海氏职位评估系统进行岗位测评的基础。岗位测评小组成 员的测评主要依据是各个标杆岗位的岗位说明书中所描述的岗位工作职责、工作 权限、工作联系、工作强度、工作环境、任职资格要求等各项内容。但是，在企 业的实际应用过程中，标杆岗",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以由于岗位说明书信息不详造成测评结果的不准的方式思考这个问题。",
+    "activation_phrase": "请用由于岗位说明书信息不详造成测评分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

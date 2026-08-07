@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-产品设计应以个性化需求为导向-",
+  "meta": {
+    "name": "产品设计应以个性化需求为导向",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):产品设计应以个性化需求为导向。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "定制生产以客户提出的个性化需求为起点，是一种需求拉动型的产品制造模 式。随着社会发展和收入水平的提高，客户之间需求的同质性将趋于减少、弱化， 而异质性会不断增强、扩大。由此，企业管理人员必须打破按需求类别对客源市 场进行群体分割、积聚的传",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以产品设计应以个性化需求为导向。的方式思考这个问题。",
+    "activation_phrase": "请用产品设计应以个性化需求为导向。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

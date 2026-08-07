@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-命题",
+  "meta": {
+    "name": "命题",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):命题",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "文明古国”就是真命题。“中国不是文明古国”就是假",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "中国是一个发展中国家。 一般把判断某一件事情的陈述句叫做命题"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以命题的方式思考这个问题。",
+    "activation_phrase": "请用命题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

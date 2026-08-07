@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-黄金层级顾客",
+  "meta": {
+    "name": "黄金层级顾客",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):黄金层级顾客",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "如果顾客当前行为模式不发生改变的话，在将来会",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "他们会要求价格折扣，因此降低了企业的边际利润率"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以黄金层级顾客的方式思考这个问题。",
+    "activation_phrase": "请用黄金层级顾客分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

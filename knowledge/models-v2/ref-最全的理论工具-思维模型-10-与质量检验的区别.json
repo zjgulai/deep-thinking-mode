@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-与质量检验的区别",
+  "meta": {
+    "name": "与质量检验的区别",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):与质量检验的区别",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "(1)时间不同：“AUDIT”评审的产品是经过检验验收合格的产品；  (2)立场不同：质量检验员应该是代表国家、代表用户和企业检验产品质量， 但实际工作中由于种种原因，很多的质量检验员是站在企业的立场上检验的。而 “AUDIT”评审员是完",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以与质量检验的区别的方式思考这个问题。",
+    "activation_phrase": "请用与质量检验的区别分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

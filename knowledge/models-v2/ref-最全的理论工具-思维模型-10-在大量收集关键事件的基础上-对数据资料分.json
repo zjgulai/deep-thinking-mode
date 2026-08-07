@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-在大量收集关键事件的基础上-对数据资料分",
+  "meta": {
+    "name": "在大量收集关键事件的基础上，对数据资料分",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):在大量收集关键事件的基础上，对数据资料分",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "事件技术主要应用在绩效评估程序上，在这方面积累大量的关于从事特 定工作的人员工作成败的关键性事件资料，可以作为了解与工作成效有关的人员 品质和特性的基础。  关键事件技术实例(关于打字员工作的准确、整",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在大量收集关键事件的基础上，对数据资料分的方式思考这个问题。",
+    "activation_phrase": "请用在大量收集关键事件的基础上，对分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

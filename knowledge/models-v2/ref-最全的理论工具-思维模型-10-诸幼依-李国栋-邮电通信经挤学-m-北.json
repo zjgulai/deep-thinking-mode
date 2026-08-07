@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-诸幼依-李国栋-邮电通信经挤学-m-北",
+  "meta": {
+    "name": "诸幼依．李国栋．邮电通信经挤学[M]．北",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):诸幼依．李国栋．邮电通信经挤学[M]．北",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "14 \f http://wiki.mbalib.com/ IE 矩阵  —标识企业分布地位的分析工具 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以诸幼依．李国栋．邮电通信经挤学[M]．北的方式思考这个问题。",
+    "activation_phrase": "请用诸幼依．李国栋．邮电通信经挤学分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

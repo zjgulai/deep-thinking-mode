@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-查询理论",
+  "meta": {
+    "name": "查询理论",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):查询理论",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "Johnson，Haubl 和 Keinan 从记忆的视角来解释禀赋效应，针对禀赋效  869 / 1937 \f应产生的过程提出查询理论。查询理论基于这样一种观点：估价取决 于记忆的提取过程。概括地说，这一理论对禀赋效应的解释可以表述 为：",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "决策者将“我的卖价（买价）应该是多少？”卖家和买家都会问自"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以查询理论的方式思考这个问题。",
+    "activation_phrase": "请用查询理论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

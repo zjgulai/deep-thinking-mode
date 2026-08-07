@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0.0",
+  "id": "先问一句-什么会搞砸-避开失败才是最高级的成事法",
+  "meta": {
+    "name": "先问一句“什么会搞砸”，避开失",
+    "category": "06",
+    "tags": [],
+    "source": "先问一句_什么会搞砸__避开失败才是最高级的成事法.md",
+    "sourceTitle": "先问一句“什么会搞砸”，避开失败才是最高级的成事法"
+  },
+  "engine": {
+    "core_question": "不是盲目追逐不确定的成功，而是优先规避确定的失败",
+    "trigger_signals": [
+      "----------------",
+      "-----------------",
+      "-----------------"
+    ],
+    "stop_conditions": [
+      "---------------",
+      "---------------",
+      "----------------"
+    ],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "一步",
+        "action": "明确量化目标（SMART原则）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "哪些行为会让目标彻底",
+        "action": "失败？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "哪些突发状况会持续恶",
+        "action": "化局势？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "四步",
+        "action": "风险排序，聚焦核心大坑",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "五步",
+        "action": "针对性制定预防方案",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "模糊：提升客户满意度",
+        "action": ""
+      },
+      {
+        "condition": "被动：防止产品出现故障",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": "通用）  个人规划、职场项目、业务运营均可直接套用，零基础也能快速落地："
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「先问一句“什么会搞砸”，避开失」思维框架运行。核心立场：不是盲目追逐不确定的成功，而是优先规避确定的失败\n\n【推理协议】\n1. 一步：明确量化目标（SMART原则）\n2. 哪些行为会让目标彻底：失败？\n3. 哪些突发状况会持续恶：化局势？\n4. 四步：风险排序，聚焦核心大坑\n5. 五步：针对性制定预防方案\n\n【质量门禁】每完成一步，自问：我的分析是基于「先问一句“什么会搞砸”，」的核心逻辑，还是在用普通直觉？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用先问一句“什么会搞砸”，避开失分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

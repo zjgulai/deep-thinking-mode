@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-推理",
+  "meta": {
+    "name": "推理",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):推理",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "推理是由一个或几个已知的判断（前提）推出新判断（结论）的过程。 例如：所有人都会死——苏格拉底是人——所以苏格拉底会死。 推理在各种思维形态中有着特殊的地位和作用。 从众多的的感性现象中概括出普遍的、一般的新知识，必须要依赖推 理，这样的推",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "所有人都会死——苏格拉底是人——所以苏格拉底会死"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以推理的方式思考这个问题。",
+    "activation_phrase": "请用推理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

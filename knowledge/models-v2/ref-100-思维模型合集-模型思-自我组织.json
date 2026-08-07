@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自我组织",
+  "meta": {
+    "name": "自我组织",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自我组织",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "多变且多样的环境可能无法等待公司进行转换。因为转换和分离都需 要时间，并且都是自上而下的进行。所以无法适应快速多变的环境。 此时可以采用自我组织的模式，各个部门要以市场为基础，独立决定 自己所采取的战略。 例如：海尔的人单合一，韩都衣舍的阿",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "海尔的人单合一，韩都衣舍的阿米巴小组，都是采用了自我组"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自我组织的方式思考这个问题。",
+    "activation_phrase": "请用自我组织分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-顾客忠诚促进企业获利能力增强",
+  "meta": {
+    "name": "顾客忠诚促进企业获利能力增强",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):顾客忠诚促进企业获利能力增强",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "顾客忠诚就是顾客重复购买某一品牌．只考虑这种品牌并且不再进行相关品 牌信息的搜集。企业的一切努力就是要不断提高顾客忠诚度．促使顾客重复购买。 因为顾客忠诚度的提高将会大大促进企业获利能力的增强。美国一些学者调查发 现．忠诚的顾客每增加 5",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以顾客忠诚促进企业获利能力增强的方式思考这个问题。",
+    "activation_phrase": "请用顾客忠诚促进企业获利能力增强分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

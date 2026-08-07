@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-11个分析模型-分布分析",
+  "meta": {
+    "name": "分布分析",
+    "category": "06",
+    "tags": [],
+    "source": "ref:11个分析模型:分布分析",
+    "sourceTitle": "11个分析模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "8.1 分布分析概述  分布分析（见图 8-1）主要能够提供「维度指标化」之后的数据分解能力，将 原有维度按照一定的数值区间进行维度划分，进而分析每个维度区间的分布情况， 在以下分析场景中十分常见：分析订单的金额分布、分析某类特殊事件的发生",
+    "trigger_signals": [
+      "2 所示。用户平台分布以 Web/H5 为主，投资风险等级分",
+      "10 万理财产品的用户为最多，城市主要分布在深圳、",
+      "2 易观方舟分布分析-某证券公司近 7 日基本数据监测"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "由此可见，分布分析主要针对的是数值型和日期型这两类属性，如金额、年"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分布分析的方式思考这个问题。",
+    "activation_phrase": "请用分布分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

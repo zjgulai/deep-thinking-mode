@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-从一个决策钻点或结局结点仿射出的支路必须",
+  "meta": {
+    "name": "从一个决策钻点或结局结点仿射出的支路必须",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):从一个决策钻点或结局结点仿射出的支路必须",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "3.3. 决策步骤  （1）由左向右作图画决策树，把某个决策问题未来发展的可能性和结果用 树状图形反映出来。画决策树的过程，也就是拟定各种方案的过程。在作图过程 中，为了整个决策有顺序，按从左到右，从上到下将每个结点标上序号。  （2）将各",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以从一个决策钻点或结局结点仿射出的支路必须的方式思考这个问题。",
+    "activation_phrase": "请用从一个决策钻点或结局结点仿射出分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

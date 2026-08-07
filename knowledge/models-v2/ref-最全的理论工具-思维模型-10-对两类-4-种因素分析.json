@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-对两类-4-种因素分析",
+  "meta": {
+    "name": "对两类 4 种因素分析",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):对两类 4 种因素分析",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "因素进行评价分析。一是对构成 FS 和 IS 轴的各变量给予从+1(最差)到+6(最好)的评分值；二是对构成 ES 和 CA 轴的变量 给予从-1(最好)到-6 (最差)的评分值。见表 2。 内部战略",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以对两类 4 种因素分析的方式思考这个问题。",
+    "activation_phrase": "请用对两类 4 种因素分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

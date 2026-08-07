@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-看板的机能",
+  "meta": {
+    "name": "看板的机能",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):看板的机能",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1)生产以及运送的工作指令。看板中记载着生产量、时间、方法、顺序以及运送 量、运送时间、运送目的地、放置场所、搬运工具等信息，从装配工序逐次向前 工序追溯，在装配线将所使用的零部件上所带的看板取下，以此再去前工序领取。 “后工序领取”以及“",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以看板的机能的方式思考这个问题。",
+    "activation_phrase": "请用看板的机能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

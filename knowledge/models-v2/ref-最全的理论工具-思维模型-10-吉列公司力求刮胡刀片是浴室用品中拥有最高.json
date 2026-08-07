@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-吉列公司力求刮胡刀片是浴室用品中拥有最高",
+  "meta": {
+    "name": "吉列公司力求刮胡刀片是浴室用品中拥有最高",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):吉列公司力求刮胡刀片是浴室用品中拥有最高",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "列已经申请或获得了 22 种与感应相关的专利。 评分-2 总计：-2-3-2-5-2 =-14  环境稳定性 （ES）",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以吉列公司力求刮胡刀片是浴室用品中拥有最高的方式思考这个问题。",
+    "activation_phrase": "请用吉列公司力求刮胡刀片是浴室用品分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

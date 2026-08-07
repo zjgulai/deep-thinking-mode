@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0.0",
+  "id": "复杂问题怎么分析_四层视角脚手架速查卡",
+  "meta": {
+    "name": "复杂问题怎么分析_四层视角脚手架",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "多视角思维",
+      "ccc;",
+      "决策工具",
+      "正方形的认知工具箱"
+    ],
+    "source": "复杂问题怎么分析_四层视角脚手架速查卡.md",
+    "sourceTitle": "复杂问题怎么分析_四层视角脚手架速查卡"
+  },
+  "engine": {
+    "core_question": "面对复杂问题纠结半天拿不定主意——不是信息不够，是你不知道从哪些角度看",
+    "trigger_signals": [
+      "面对复杂问题纠结半天拿不定主意——不是信息不够",
+      "遇到复杂问题时按顺序问一遍"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "这张速查卡把多视角思维脚手架拆成四层： ",
+        "action": "这张速查卡把多视角思维脚手架拆成四层： 时间线视角拉长看全过程",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "工具思维视角借用批判性思维和整合思维扫盲",
+        "action": "工具思维视角借用批判性思维和整合思维扫盲区",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "多视角思维 #决策工具 #认知框架 #思",
+        "action": "多视角思维 #决策工具 #认知框架 #思维模型 #职场判断 #问题分析 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「复杂问题怎么分析_四层视」速查模式运行。\n\n【认知模式】快速调用复杂问题怎么分析_四层视角脚手的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 这张速查卡把多视角思维脚手架拆成四层： ：这张速查卡把多视角思维脚手架拆成四层： 时间线视角拉长看全过程\n\nStep 2 - 工具思维视角借用批判性思维和整合思维扫盲：工具思维视角借用批判性思维和整合思维扫盲区\n\nStep 3 - 多视角思维 #决策工具 #认知框架 #思：多视角思维 #决策工具 #认知框架 #思维模型 #职场判断 #问题分析 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用复杂问题怎么分析_四层视角脚手速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-本书高清知识地图-结构化分析-内容导读",
+  "meta": {
+    "name": "《结构化分析》内容导读",
+    "category": "03",
+    "tags": [],
+    "source": "ref:本书高清知识地图:《结构化分析》内容导读",
+    "sourceTitle": "本书高清知识地图",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "搭建  客 户 数 据指标  洞察  会分析  体系  在 务 制  所 业 目  和 定  的 剖析 2.  将  标  公 务  司  业 新  2. 将 商业分析方法论与实践指南  解新 业  研究 布局  务  务数  竞争对 1",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以《结构化分析》内容导读的方式思考这个问题。",
+    "activation_phrase": "请用《结构化分析》内容导读分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-对数正态分布",
+  "meta": {
+    "name": "对数正态分布",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):对数正态分布",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "概率分布，假设变量 x 服从参数为α的幂律分布，则",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，独立 随机变量之间的乘积就不是正态分布，而是对数正态分布"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以对数正态分布的方式思考这个问题。",
+    "activation_phrase": "请用对数正态分布分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

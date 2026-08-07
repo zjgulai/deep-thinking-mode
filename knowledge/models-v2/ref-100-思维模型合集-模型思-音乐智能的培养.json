@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-音乐智能的培养",
+  "meta": {
+    "name": "音乐智能的培养",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):音乐智能的培养",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "①营造氛围，音乐世家的孩子音乐智能一般都比较强，因为从小就有 音乐氛围。 ②多听，聆听不同国家和民族的不同音乐，参加各种音乐会。 ③多练习，通过唱歌演奏各种乐器，提升自己的体验感，沉浸感。  777 / 1937 \f④寻找专业教练，如果走专",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以音乐智能的培养的方式思考这个问题。",
+    "activation_phrase": "请用音乐智能的培养分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

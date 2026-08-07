@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "id": "形式逻辑_概念篇_超精细完整版逐级",
+  "meta": {
+    "name": "形式逻辑_概念篇_超精细完整版（逐级",
+    "category": "02",
+    "tags": [],
+    "source": "形式逻辑_概念篇_超精细完整版（逐级细化_零漏洞_通俗落地可直接使用）.md"
+  },
+  "engine": {
+    "core_question": "属性是概念的原材料，概念是属性的精华提纯",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "概念限制（向下具象）",
+        "action": "概念限制（向下具象）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "逐级示范（直观易懂）",
+        "action": "逐级示范（直观易懂）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "",
+    "activation_phrase": "请用形式逻辑_概念篇_超精细完整版分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 3
+  }
+}

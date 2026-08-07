@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-边缘竞争的两大前提",
+  "meta": {
+    "name": "边缘竞争的两大前提",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):边缘竞争的两大前提",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）公司所处的行业是高速变革的，且变革是不可预测的。  1171 / 1937 \f市场上的竞争者在不断地进入或退出市场，市场总在不断地变化和运 动，今天的合作者也许就是明天的竞争对手，或者既是合作者也是竞 争对手。科学技术在不断演变和发展",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以边缘竞争的两大前提的方式思考这个问题。",
+    "activation_phrase": "请用边缘竞争的两大前提分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

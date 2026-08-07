@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-活用-qc-手法",
+  "meta": {
+    "name": "活用 QC 手法",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):活用 QC 手法",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "是无法做好事情的。在品管圈活动之维持及改善，同样必须用到一些工具，此工 具就是 QC 手法。QC 手法有很多，对初学者而言，最常用的是 QC 七大手法， 即查检表、层别法、柏拉图、特性要因图、推移图、散布图及直方图，如有必要， \f http",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以活用 QC 手法的方式思考这个问题。",
+    "activation_phrase": "请用活用 QC 手法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

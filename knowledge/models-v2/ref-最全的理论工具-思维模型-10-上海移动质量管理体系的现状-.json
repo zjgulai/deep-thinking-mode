@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-上海移动质量管理体系的现状-",
+  "meta": {
+    "name": "上海移动质量管理体系的现状",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):上海移动质量管理体系的现状。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "上海移动已通过了“ISO9001”和“TL9000”的贯标，逐步建立和完善质量 管理体系。通过多层次的“用户满意度（CSI）”调查，不断发现上海移动业务发 展和服务中的热点、难点问题；归纳起来，形成了“ISO9001”和“TL9000”为",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以上海移动质量管理体系的现状。的方式思考这个问题。",
+    "activation_phrase": "请用上海移动质量管理体系的现状。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

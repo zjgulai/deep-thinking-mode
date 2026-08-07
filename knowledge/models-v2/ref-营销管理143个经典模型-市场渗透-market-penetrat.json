@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-市场渗透-market-penetrat",
+  "meta": {
+    "name": "市场渗透（Market Penetrat",
+    "category": "07",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:市场渗透（Market Penetrat",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "合为发展焦点，力求增大产品的市场占有率。采取市场渗透的策略，藉由促销或是提升服务品质 等等方式来说服消费者改用不同品牌的产品，或是说服消费者改变使用习惯、增加购买量。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以市场渗透（Market Penetrat的方式思考这个问题。",
+    "activation_phrase": "请用市场渗透（Market Pen分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

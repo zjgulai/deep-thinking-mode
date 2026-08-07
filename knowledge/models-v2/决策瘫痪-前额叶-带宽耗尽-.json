@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0.0",
+  "id": "决策瘫痪-前额叶-带宽耗尽-",
+  "meta": {
+    "name": "决策瘫痪:前额叶“带宽耗尽”",
+    "category": "06",
+    "tags": [
+      "决策瘫痪现象解析"
+    ],
+    "source": "决策瘫痪_前额叶_带宽耗尽_.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "决策瘫痪:前额叶“带宽耗尽” ==============  原创 正方形SQUARE 2026-02-10 08:10 上海  > 原文地址: [https://mp.weixin.qq.com/s/afPlNZxPcB3ME3t1Kf1zHQ](https://mp.weixin.qq.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以决策瘫痪:前额叶“带宽耗尽”的方式思考。",
+    "activation_phrase": "请用决策瘫痪:前额叶“带宽耗尽”分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

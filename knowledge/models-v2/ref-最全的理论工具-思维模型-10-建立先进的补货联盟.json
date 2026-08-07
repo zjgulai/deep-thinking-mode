@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立先进的补货联盟",
+  "meta": {
+    "name": "建立先进的补货联盟",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立先进的补货联盟",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "这是为了保证补货业务的流畅，零售商和消费品制造商联合检查销售数据， 制定关于未来需求的计划和预测，在保证有货和减少缺货的情况下降低库存水 平。还可以进一步有消费品制造商管理零售商的存货和补货，以加快库存周转速 度，提高投资毛利率。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立先进的补货联盟的方式思考这个问题。",
+    "activation_phrase": "请用建立先进的补货联盟分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

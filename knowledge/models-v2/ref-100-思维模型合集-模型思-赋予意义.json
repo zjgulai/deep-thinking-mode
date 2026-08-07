@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-赋予意义",
+  "meta": {
+    "name": "赋予意义",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):赋予意义",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "沃顿商学院的亚当.格兰特教授对救生员进行了一项研究,他把 32 名救 生员分成两组,一组叫”个人受益小组”,一个叫”使命小组”。个人受益小 组阅读四篇故事,故事描述的是其它救生员通过救生员这个工作打磨的 技能让自己的人生多么受益。使命小组也",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以赋予意义的方式思考这个问题。",
+    "activation_phrase": "请用赋予意义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

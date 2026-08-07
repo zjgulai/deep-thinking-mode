@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-时机",
+  "meta": {
+    "name": "时机",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):时机",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "能力。例如： 滴滴、快的、大黄蜂在网约车趋势来临的前夜，就做好了准备，早早 的站在风口上排队，等着一夜东风。当风口吹过，归于宁静，战争已 经结束，剩者为王，最后滴滴进入寡头垄断时代。 时间的驾驭是创造",
+    "trigger_signals": [
+      "如果你不能够把握生态系统的律动，趋势的风声，时间的敏感，",
+      "如果你原地踏步，其实就是在倒退。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "滴滴、快的、大黄蜂在网约车趋势来临的前夜，就做好了准备，早早"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以时机的方式思考这个问题。",
+    "activation_phrase": "请用时机分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

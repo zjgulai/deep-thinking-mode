@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-按项目的纵向-动态-和横向-静态-分解相",
+  "meta": {
+    "name": "按项目的纵向(动态)和横向(静态)分解相",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按项目的纵向(动态)和横向(静态)分解相",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "利用工作结构分解方法分解项目时，单一的采用动态分解方法或者单一地采 用静态的分解方法，不能反映项目管理的客观实际，为了实际工作的需要，有时 需要将两方法结合起来使用，才能满足成本核算或选择合适的负责人。例如办公 楼建设项目分解为初步设计、",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "办公 楼建设项目分解为初步设计、地质勘察、详细设计、办公楼办公区建设、办公楼"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以按项目的纵向(动态)和横向(静态)分解相的方式思考这个问题。",
+    "activation_phrase": "请用按项目的纵向(动态)和横向(静分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

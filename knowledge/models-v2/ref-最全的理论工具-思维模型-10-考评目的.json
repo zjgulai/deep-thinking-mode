@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-考评目的",
+  "meta": {
+    "name": "考评目的",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):考评目的",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "根据 360 度反馈考评的特点可以看出，当考评的目的主要是对被考评者的思 想品德、专业知识、工作技能、管理能力、岗位胜任程度等素质、能力方面进行 评价时，或者说当考评的目的主要是服务于被考评的岗位适应性、职业发展规划 时，采用 360 度",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以考评目的的方式思考这个问题。",
+    "activation_phrase": "请用考评目的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

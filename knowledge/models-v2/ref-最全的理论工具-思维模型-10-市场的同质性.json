@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-市场的同质性",
+  "meta": {
+    "name": "市场的同质性",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):市场的同质性",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "各细分市场顾客需求、购买行为等方面的相似程度",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "竞争者的定位状况。",
+        "action": "竞争者的定位状况。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "目标顾客对产品的评价标准",
+        "action": "目标顾客对产品的评价标准",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "目标市场潜在的竞争优势。",
+        "action": "目标市场潜在的竞争优势。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "某个强有力的竞争者决定进入同一个细分市场"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「市场的同质性」思维模式运行。\n\nStep 1 - 竞争者的定位状况。：竞争者的定位状况。\n\nStep 2 - 目标顾客对产品的评价标准：目标顾客对产品的评价标准\n\nStep 3 - 目标市场潜在的竞争优势。：目标市场潜在的竞争优势。\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用市场的同质性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

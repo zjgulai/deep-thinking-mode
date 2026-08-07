@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自组织理论对管理思想发展的影响",
+  "meta": {
+    "name": "自组织理论对管理思想发展的影响",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自组织理论对管理思想发展的影响",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "基于价值的网状结构形态。在非线性、网状的结构中,任何一个",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "来说,计划经济体现了自上而下的“中心控制思维方式”,而市场经济"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自组织理论对管理思想发展的影响的方式思考这个问题。",
+    "activation_phrase": "请用自组织理论对管理思想发展的影响分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

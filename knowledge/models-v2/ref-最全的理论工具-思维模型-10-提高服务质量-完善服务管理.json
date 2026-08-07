@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-提高服务质量-完善服务管理",
+  "meta": {
+    "name": "提高服务质量，完善服务管理",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):提高服务质量，完善服务管理",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "来抓，通过加强服务管理，创建精品服务，为 顾客提供高质水平。同时应开展全面服务质量管理，从产品或服务的构思设计阶 段开始，充分考虑顾客的需求，并在各职能部门团结协作的基础上，从系统最优 的角度将顾客的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以提高服务质量，完善服务管理的方式思考这个问题。",
+    "activation_phrase": "请用提高服务质量，完善服务管理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

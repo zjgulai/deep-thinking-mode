@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-方法特点",
+  "meta": {
+    "name": "方法特点",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):方法特点",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "6.1. 主要特点 波士顿矩阵的最为主要的特点在于：  第一，它用一个象限图，同时表示了企业各分部所处的产业增长周期、与本 行业领先公司的相对竞争地位，以及占本公司营业收入和利润总额的比重。前两 项反映了分部与外部产品市场和竞争环境的关系，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以方法特点的方式思考这个问题。",
+    "activation_phrase": "请用方法特点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

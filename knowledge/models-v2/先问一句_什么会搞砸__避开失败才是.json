@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "先问一句_什么会搞砸__避开失败才是",
+  "meta": {
+    "name": "先问一句_什么会搞砸__避开失败才是",
+    "category": "06",
+    "tags": [],
+    "source": "先问一句_什么会搞砸__避开失败才是最高级的成事法.md"
+  },
+  "engine": {
+    "core_question": "先问一句“什么会搞砸”，避开失败才是最高级的成事法  大多数人做事，只会正向思考：紧盯目标，琢磨如何快速成功。但现实里，大部分计划崩盘、项目失利，并非能力不足，而是忽视了隐性风险，不慎踩坑落败。  成功充满变数，失败却有迹可循。真正高效的成事逻辑，不是盲目追逐不确定的成功，而是优先规避确定的失败。遇",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "一步",
+        "action": "明确量化目标（SMART原则）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "哪些行为会让目标彻底失败？",
+        "action": "哪些行为会让目标彻底失败？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "哪些突发状况会持续恶化局势？",
+        "action": "哪些突发状况会持续恶化局势？",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "四步",
+        "action": "风险排序，聚焦核心大坑",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "五步",
+        "action": "针对性制定预防方案",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "模糊：提升客户满意度",
+        "action": ""
+      },
+      {
+        "condition": "被动：防止产品出现故障",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "",
+    "activation_phrase": "请用先问一句_什么会搞砸__避开失分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

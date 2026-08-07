@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-绘制系统图",
+  "meta": {
+    "name": "绘制系统图",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绘制系统图",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "绘制系统图是最重要的一环。具体做法是：首先把程序“1” 中确定的目的 和目标置于图纸左端的中间，然后把为了达到的目的和目标与必要的手段和措施 之间的关系联系起来。在联系的过程中要仔细考虑各因素之间的逻辑关系，一般 要提出如下几个问题反问一",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以绘制系统图的方式思考这个问题。",
+    "activation_phrase": "请用绘制系统图分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

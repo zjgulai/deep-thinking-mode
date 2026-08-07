@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自我强化",
+  "meta": {
+    "name": "自我强化",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自我强化",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "此强化或处罚自己。例如，小李给自己制定了一个目标，每周拜访 60 个客户，完成了就奖励自己看一次电影，完不能就惩罚自己跑步 10 公 里。过程中小李对自己的行为进行评价，这就是自我强化。 三、博弈中的学习 下面我们来看一个故事：《居心险恶的",
+    "trigger_signals": [
+      "如果我们在慷慨／妒忌博弈中应用强化学习规则，那么博弈参与者们",
+      "如果我们在慷慨／妒忌博弈中应用社会学习模型，人们就会学"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，小李给自己制定了一个目标，每周拜访 60"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自我强化的方式思考这个问题。",
+    "activation_phrase": "请用自我强化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

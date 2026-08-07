@@ -1,0 +1,87 @@
+{
+  "schema_version": "2.0.0",
+  "id": "不确定性四层速查卡",
+  "meta": {
+    "name": "不确定性四层",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "情景规划",
+      "ccc;",
+      "风险管理",
+      "不确定性"
+    ],
+    "source": "不确定性四层速查卡.md",
+    "sourceTitle": "不确定性四层速查卡"
+  },
+  "engine": {
+    "core_question": "面对未知，你是不是也经常陷入纠结：要不要押注一个方向",
+    "trigger_signals": [
+      "遇到的到底是哪一层？然后翻开这张速查卡"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "四种应对法 1️⃣ 已知的未知（可预见的",
+        "action": "四种应对法 1️⃣ 已知的未知（可预见的风险",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "选萨维奇准则（最小化最大遗憾）",
+        "action": "选萨维奇准则（最小化最大遗憾）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "选赫维茨（乐观系数折中）",
+        "action": "选赫维茨（乐观系数折中）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "核心心法 没有万能公式",
+        "action": "核心心法 没有万能公式",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "选一个你正在纠结的决策（跳槽、投资、项目",
+        "action": "选一个你正在纠结的决策（跳槽、投资、项目启动）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "不要押注一个方向？要不要为小概率事件做准备？是该保守还是冒险？",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「不确定性四层」速查模式运行。\n\n【认知模式】快速调用不确定性四层的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 四种应对法 1️⃣ 已知的未知（可预见的：四种应对法 1️⃣ 已知的未知（可预见的风险\n\nStep 2 - 选萨维奇准则（最小化最大遗憾）：选萨维奇准则（最小化最大遗憾）\n\nStep 3 - 选赫维茨（乐观系数折中）：选赫维茨（乐观系数折中）\n\nStep 4 - 核心心法 没有万能公式：核心心法 没有万能公式\n\nStep 5 - 选一个你正在纠结的决策（跳槽、投资、项目：选一个你正在纠结的决策（跳槽、投资、项目启动）\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用不确定性四层速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

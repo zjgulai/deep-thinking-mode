@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-营造友好空间",
+  "meta": {
+    "name": "营造友好空间",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):营造友好空间",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "环境对人的影响非常大，一个好的空间能够催化合作性汇谈的价值， MIT 媒体实验室研究员迈克．斯科拉齐，在《思维共享》一书中指出， 大多数会议的会场布置实际上破坏了合作性努力，这种布置主要服务 于呆板的单向报告，这种会场布置损失了合作性的团队",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以营造友好空间的方式思考这个问题。",
+    "activation_phrase": "请用营造友好空间分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

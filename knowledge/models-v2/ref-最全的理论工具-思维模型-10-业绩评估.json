@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-业绩评估",
+  "meta": {
+    "name": "业绩评估",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):业绩评估",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "比照已制定的标准，对每个基本流程的现有业绩进行评估，并且建立和实施 一系列措施，获取目标业绩水平，从而能够满足客户和竞争的需要。通过评估可 以帮助经营者清醒地认识到企业目前的经营状况，有利于企业不断改善经营方式 以提高企业的经营水平。包括",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以业绩评估的方式思考这个问题。",
+    "activation_phrase": "请用业绩评估分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

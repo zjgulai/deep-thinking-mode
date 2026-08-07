@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-情绪abc理论思维模型",
+  "meta": {
+    "name": "情绪ABC理论思维模型",
+    "category": "10",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:情绪ABC理论思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "当事件本身超越你的认知局限时,除了发脾气以外,你还会",
+    "trigger_signals": [
+      "当你批评抱怨这么简单的题孩子都做不好时",
+      "当你按照理性去思维、去行动时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "中婆媳问题是历  此而生,如“发脾气是无能的表现”,严格点讲即是由于你的认知 史问题,那么多人都解决不了,我也解决不了）,当你看到自己情"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以情绪ABC理论思维模型的方式思考这个问题。",
+    "activation_phrase": "请用情绪ABC理论思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

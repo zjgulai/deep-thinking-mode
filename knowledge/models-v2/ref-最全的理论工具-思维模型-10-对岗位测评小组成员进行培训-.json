@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-对岗位测评小组成员进行培训-",
+  "meta": {
+    "name": "对岗位测评小组成员进行培训",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):对岗位测评小组成员进行培训。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "海氏职位评估系统是一门比较复杂的测评技术，涉及到很多的测评技巧。在 测评前，测评者一定要经过系统的培训，对海氏职位评估系统的设计原理、逻辑 关系、评分过程、评分方法非常熟悉才能从事测评工作。经过培训之后，选出若 干个标杆岗位进行对比打分，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以对岗位测评小组成员进行培训。的方式思考这个问题。",
+    "activation_phrase": "请用对岗位测评小组成员进行培训。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

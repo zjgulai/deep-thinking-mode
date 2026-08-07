@@ -1,0 +1,124 @@
+{
+  "schema_version": "3.1.0",
+  "description": "V3模型结构 — 方案B融合方案A，面向Skill转换。quality 字段遵循三维评估标准（specs/system-prompt-quality-standard.md）",
+
+  "structure": {
+    "core_definition": {
+      "label": "核心定义",
+      "max_chars": 120,
+      "description": "一句话说清这个模型是什么，解决什么本质问题"
+    },
+    "when_to_use": {
+      "label": "什么时候用",
+      "triggers": {
+        "description": "触发信号 — 遇到这些情况时激活此模型",
+        "max_items": 5
+      },
+      "anti_triggers": {
+        "description": "反面信号 — 这些情况下不应使用，用了反而有害",
+        "max_items": 3
+      }
+    },
+    "before_after": {
+      "label": "用前用后",
+      "without_model": {
+        "label": "没这个模型之前",
+        "description": "通常你会怎么错误地处理这类问题",
+        "max_chars": 200
+      },
+      "with_model": {
+        "label": "用了这个模型之后",
+        "description": "正确的处理流程或思维方式",
+        "max_chars": 200
+      }
+    },
+    "reasoning_steps": {
+      "label": "推理步骤",
+      "max_steps": 6,
+      "per_step": {
+        "step_number": "步骤编号",
+        "action": "具体动作（可执行指令）",
+        "checkpoint": "检查点 — 这一步完成后应该确认什么"
+      }
+    },
+    "scenarios": {
+      "label": "场景示例",
+      "domains": ["企业管理", "产品设计", "分析洞察", "决策思维", "任务管理"],
+      "per_domain": {
+        "situation": "具体情境",
+        "application": "如何运用该模型解决"
+      }
+    },
+    "codex_integration": {
+      "label": "Codex 对话",
+      "activation": "激活词 — 对Codex说的第一句话",
+      "system_prompt": {
+        "description": "完整系统提示词 — 可直接粘贴到Codex对话中",
+        "required_layers": [
+          "【认知模式】— 该模型的核心认知立场，不超过80字",
+          "【推理协议】— 3-6个可执行步骤，每步有明确的输入/输出",
+          "【质量门禁】— 至少1条可判断的自检标准",
+          "【输出格式】— 指定结构（列表/段落/表格）和最终产出形式"
+        ],
+        "min_chars": 100,
+        "target_chars": "150-300",
+        "anti_patterns": [
+          "同义反复型：用模型名字描述模型本身",
+          "功能描述型：只说能做什么，没有怎么做",
+          "空洞励志型：语义正确但无可操作步骤",
+          "伪步骤型：步骤内容对所有模型通用"
+        ]
+      },
+      "skill_hint": "未来转为Skill时的命名建议"
+    },
+    "pitfalls": {
+      "label": "常见误区",
+      "max_items": 3,
+      "description": "使用时应避免的错误"
+    }
+  },
+
+  "quality_schema": {
+    "description": "quality 字段的三维评估标准。算法维度由 tools/eval-prompt-quality.mjs 计算，激活度需人工验证。",
+    "fields": {
+      "fidelity": {
+        "label": "保真度 (Fidelity)",
+        "range": "0-100",
+        "description": "去掉模型名字后，system_prompt 是否仍有具体可执行指令。由 eval-prompt-quality.mjs 自动计算。",
+        "passing": 80
+      },
+      "differentiation": {
+        "label": "区分度 (Differentiation)",
+        "range": "0-100",
+        "description": "该模型与其他模型的推理协议关键词 Jaccard 相似度取反，值越高说明专属词汇越多。由 eval-prompt-quality.mjs 自动计算。",
+        "passing": 80
+      },
+      "activation": {
+        "label": "激活度 (Activation)",
+        "range": "0-5（满足判断标准条数）",
+        "description": "人工投 Codex 对比测试：有/无 system_prompt 时输出结构差异。测试方法见 specs/prompt-eval-results.md。",
+        "passing": "≥2 条标准满足",
+        "values": {
+          "0": "❌ 无激活效果，输出与无 prompt 相同",
+          "1": "△ 轻微结构差异",
+          "2": "✓ 合格（结构或视角有显著差异）",
+          "3": "✓✓ 良好",
+          "4": "✓✓✓ 优秀",
+          "5": "⭐ 完美激活"
+        }
+      },
+      "overall": {
+        "label": "综合得分",
+        "range": "1-5",
+        "description": "综合三维评估的主观综合评分。5=可直接用于生产，3=有效但需改进，1=空壳"
+      }
+    },
+    "legacy_fields_deprecated": {
+      "definition_clarity": "已废弃，由 fidelity 替代",
+      "trigger_precision": "已废弃，由 when_to_use.triggers 字段质量评估替代",
+      "step_completeness": "已废弃，由 reasoning_steps 字段质量评估替代",
+      "scenario_coverage": "已废弃，scenarios 字段为辅助展示，不纳入核心质量评估",
+      "prompt_effectiveness": "已废弃，由 fidelity + differentiation + activation 三维替代"
+    }
+  }
+}

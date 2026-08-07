@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-线条",
+  "meta": {
+    "name": "线条",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):线条",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "的物体都喜欢用曲线去表达存在，直不楞登的东西是没有生命表征的。 所以曲线更符合自然，更有美感，更吸引眼球。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以线条的方式思考这个问题。",
+    "activation_phrase": "请用线条分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

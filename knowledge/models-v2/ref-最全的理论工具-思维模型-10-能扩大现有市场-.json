@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-能扩大现有市场-",
+  "meta": {
+    "name": "能扩大现有市场",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):能扩大现有市场。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "大规模定制模式下通用的设计和柔性的加工，即使不是为单个客户定制产 品，也能为许多小批量市场有效地提供产品，否则这些小批量市场则可能被忽 略。即使企业产品参与的是许多小批量市场的竞争，通用化的模块仍能获得规模 化的效益。因此，在小批量市场中",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以能扩大现有市场。的方式思考这个问题。",
+    "activation_phrase": "请用能扩大现有市场。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

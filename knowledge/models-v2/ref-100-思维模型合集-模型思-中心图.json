@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-中心图",
+  "meta": {
+    "name": "中心图",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):中心图",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "上千个词汇”。它可以让你充分发挥想象力。一幅代表中心思想的图画 越生动有趣，就越能使你集中注意力，集中思想，让你的大脑更加兴 奋！",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以中心图的方式思考这个问题。",
+    "activation_phrase": "请用中心图分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

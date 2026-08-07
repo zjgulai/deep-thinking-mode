@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-运用-toc-思维流程",
+  "meta": {
+    "name": "运用 TOC 思维流程",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):运用 TOC 思维流程",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "TOC 的思路就是：在不明白、不清楚一件事的时候，就会先搞清楚一件事 和一件事之间“if...then...”的因果关系是怎样，然后逐渐去理解要实现某个目标， 进而发现应该做什么  无论什么时候当企业谈到改进的时候，总意味着准备比以前做得",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以运用 TOC 思维流程的方式思考这个问题。",
+    "activation_phrase": "请用运用 TOC 思维流程分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-思维技能",
+  "meta": {
+    "name": "思维技能",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):思维技能",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "需要掌握三种主要的思维技能，特别要注意的是这是一系列而不是单 一的思维技能。批判（分析）性思维技能包括分析、批判、判断、评 价、比较和评估。创造性思维技能包括创造、发现、发明、想象、猜 想和提出假设。实践性思维技能包括应用、使用、利用和实践",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以思维技能的方式思考这个问题。",
+    "activation_phrase": "请用思维技能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

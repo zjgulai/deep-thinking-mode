@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-管理的广度不同-传统的人事管理只注重管好",
+  "meta": {
+    "name": "管理的广度不同。传统的人事管理只注重管好",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):管理的广度不同。传统的人事管理只注重管好",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "理不仅要管好现有人员，而且还必须要对组织现今和未来各种人力资源的要求进 行科学的预测和规划。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以管理的广度不同。传统的人事管理只注重管好的方式思考这个问题。",
+    "activation_phrase": "请用管理的广度不同。传统的人事管理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

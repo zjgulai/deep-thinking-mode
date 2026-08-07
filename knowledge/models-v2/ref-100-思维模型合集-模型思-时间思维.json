@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-时间思维",
+  "meta": {
+    "name": "时间思维",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):时间思维",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一杯水的温度是 30 度，一杯水的温度是 90 度，你现在想拥有一杯 50 度的水。所以，你开始把 30 度的水加入 90 度的水中，期望能中和到 你想拥有的 50 度。从你加 30 度水开始，到最后得到 50 度的水，一定 经过了一些时间",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以时间思维的方式思考这个问题。",
+    "activation_phrase": "请用时间思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

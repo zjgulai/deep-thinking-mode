@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-鼓励积极参与",
+  "meta": {
+    "name": "鼓励积极参与",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):鼓励积极参与",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "每一桌仅仅安排坐四五个人的原因之一就是想让每个人都有发言的机 会。那些在一个大群体里不愿主动发言的人，在世界咖啡这种更加亲 切的环境中常常会提出一些出人意料的观点。在这个开放的空间里， 大家都愿意并勇敢的贡献自己的想法。认真聆听、欣赏及观察",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以鼓励积极参与的方式思考这个问题。",
+    "activation_phrase": "请用鼓励积极参与分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

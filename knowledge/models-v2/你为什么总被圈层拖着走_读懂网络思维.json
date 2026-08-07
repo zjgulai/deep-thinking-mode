@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "你为什么总被圈层拖着走_读懂网络思维",
+  "meta": {
+    "name": "你为什么总被圈层拖着走_读懂网络思维",
+    "category": "10",
+    "tags": [],
+    "source": "你为什么总被圈层拖着走_读懂网络思维_掌握隐形影响力.md"
+  },
+  "engine": {
+    "core_question": "跳出边缘位置，把自己练成高中心度枢纽，筑牢不可替代性",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「你为什么总被圈层拖着走_读懂网络思维」思维框架运行。核心立场：跳出边缘位置，把自己练成高中心度枢纽，筑牢不可替代性\n\n【推理协议】\n1. 场景落地：破解三大人生圈层困境\n2. 终极认知：跳出圈层捆绑，掌握隐形影响力\n\n【质量门禁】每完成一步推理后，自问：这个结论是基于「你为什么总被圈层拖着走_读懂网络思维」的核心逻辑得出的，还是在用普通直觉回答？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用你为什么总被圈层拖着走_读懂网分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

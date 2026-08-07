@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-业务系统-",
+  "meta": {
+    "name": "业务系统",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):业务系统：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业选择哪些行为主体作为其内部或外部的利益相关者 业务系统由构型、角色与关系三部分组成。构型指利益相关者及其联 结方式所形成的网络拓扑结构；角色指拥有资源能力，即拥有具体实 力的利益相关者；关系指利益相关者之间的治理关系，主要描述控制 权和",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以业务系统：的方式思考这个问题。",
+    "activation_phrase": "请用业务系统：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

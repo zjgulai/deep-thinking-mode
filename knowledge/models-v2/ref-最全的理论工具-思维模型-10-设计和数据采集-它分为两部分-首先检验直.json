@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-设计和数据采集-它分为两部分-首先检验直",
+  "meta": {
+    "name": "设计和数据采集。它分为两部分。首先检验直",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):设计和数据采集。它分为两部分。首先检验直",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "分析间接费用，确定产生费用的作业。  间接费用分析按下列步骤进行：  通过面谈确定设备完成的主要作业  确定这些作业的成本  通过面谈确定作业动因  确定和每种产品相关的各成本动因的数量  计算以作业为基础的产品成本  间接费用又",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，工程部门 的工资普遍高于人事部门的工资"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以设计和数据采集。它分为两部分。首先检验直的方式思考这个问题。",
+    "activation_phrase": "请用设计和数据采集。它分为两部分。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

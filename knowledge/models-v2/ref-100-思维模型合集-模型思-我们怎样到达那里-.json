@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-我们怎样到达那里-",
+  "meta": {
+    "name": "我们怎样到达那里",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):我们怎样到达那里？",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "发挥企业内部优势而利用企业外部机会的战略",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "：在 QSPM 的左栏列出公司的关键外部",
+        "action": "：在 QSPM 的左栏列出公司的关键外部机会与威胁、内部优势",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "：给每个外部及内部关键因素赋予权重。",
+        "action": "：给每个外部及内部关键因素赋予权重。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "：考察匹配阶段各矩阵并确认企业可考虑实施",
+        "action": "：考察匹配阶段各矩阵并确认企业可考虑实施的备选战略。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "：确定吸引力分数（AS）",
+        "action": "：确定吸引力分数（AS）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "Gateway 公司的 EFE 矩阵 工具 2：竞争态势矩阵（CPM）"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「我们怎样到达那里？」思维模式运行。\n\nStep 1 - ：在 QSPM 的左栏列出公司的关键外部：：在 QSPM 的左栏列出公司的关键外部机会与威胁、内部优势\n\nStep 2 - ：给每个外部及内部关键因素赋予权重。：：给每个外部及内部关键因素赋予权重。\n\nStep 3 - ：考察匹配阶段各矩阵并确认企业可考虑实施：：考察匹配阶段各矩阵并确认企业可考虑实施的备选战略。\n\nStep 4 - ：确定吸引力分数（AS）：：确定吸引力分数（AS）\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用我们怎样到达那里？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

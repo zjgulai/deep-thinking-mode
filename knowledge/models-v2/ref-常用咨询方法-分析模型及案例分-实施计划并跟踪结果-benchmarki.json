@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-实施计划并跟踪结果-benchmarki",
+  "meta": {
+    "name": "实施计划并跟踪结果。benchmarki",
+    "category": "09",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:实施计划并跟踪结果。benchmarki",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "确定 benchmarking 学习的适当流程范围例子：",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在企业的物流领域，如果将\"采购 -生产-分销配送\"作为分析范围则太大，而将\"物料编码规则\"作为分析范围则太小，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实施计划并跟踪结果。benchmarki的方式思考这个问题。",
+    "activation_phrase": "请用实施计划并跟踪结果。bench分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

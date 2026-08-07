@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-客户的影响力-活力-能力",
+  "meta": {
+    "name": "客户的影响力、活力、能力",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):客户的影响力、活力、能力",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "客户的议价力量除了决定于其购买的数量以外，客户对产品的知悉程度、转 换成本的高低以及自身向后整合的可能性都是主要的影响因素。  客户若有下列特性，则具较强的议价能力：  a) 购买者众，采购量大；  b) 采购标准化的产品；  c) 转换",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以客户的影响力、活力、能力的方式思考这个问题。",
+    "activation_phrase": "请用客户的影响力、活力、能力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

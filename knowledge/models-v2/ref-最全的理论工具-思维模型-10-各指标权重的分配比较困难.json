@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-各指标权重的分配比较困难",
+  "meta": {
+    "name": "各指标权重的分配比较困难",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):各指标权重的分配比较困难",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "要对企业业绩进行评价,就必然要综合考虑上述四个层面的因素,这就涉及到 一个权重分配问题。更使问题复杂的是,不但要在不同层面之间分配权重, 而且要 在同一层面的不同指标之间分配权重。不同的层面及同一层面的不同指标分配的 权重不同,将可能会导",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以各指标权重的分配比较困难的方式思考这个问题。",
+    "activation_phrase": "请用各指标权重的分配比较困难分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

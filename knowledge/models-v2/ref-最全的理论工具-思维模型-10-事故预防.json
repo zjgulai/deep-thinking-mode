@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-事故预防",
+  "meta": {
+    "name": "事故预防",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):事故预防",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "事件树分析把事故的发生发展过程表述得清楚而有条理，对设计事故预防方 案，制定事故预防措施提供了有力的依据。  从事件树上可以看出，最后的事故是一系列危害和危险的发展结果，如果中 断这种发展过程就可以避免事故发生。因此，在事故发展过程的各阶",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以事故预防的方式思考这个问题。",
+    "activation_phrase": "请用事故预防分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

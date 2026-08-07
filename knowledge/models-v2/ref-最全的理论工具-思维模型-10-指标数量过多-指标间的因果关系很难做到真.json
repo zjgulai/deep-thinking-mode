@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-指标数量过多-指标间的因果关系很难做到真",
+  "meta": {
+    "name": "指标数量过多，指标间的因果关系很难做到真",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):指标数量过多，指标间的因果关系很难做到真",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "平衡计分卡涉及财务、顾客、内部业务流程、学习与成长四套业绩评价指标， 按照罗伯特·卡普兰的说法，合适的指标数目是 20-25 个。其中，财务角度 5 个， 客户角度 5 个，内部流程角度 8-10 个，学习与成长角度 5 个。如果指标之间",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以指标数量过多，指标间的因果关系很难做到真的方式思考这个问题。",
+    "activation_phrase": "请用指标数量过多，指标间的因果关系分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

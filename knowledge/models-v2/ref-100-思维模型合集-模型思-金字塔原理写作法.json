@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-金字塔原理写作法",
+  "meta": {
+    "name": "金字塔原理写作法",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):金字塔原理写作法",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "金字塔原理是麦肯锡第一位女咨询顾问芭芭拉.明托发明的一个思维模 型，被称为麦肯锡的三大利器。其实最早的金字塔原理就是来源于芭 芭拉.明托女士在欧洲工作期间中，通过写作发现的。金字塔原理写作 法重点如下：  1616 / 1937 \f序言 S",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以金字塔原理写作法的方式思考这个问题。",
+    "activation_phrase": "请用金字塔原理写作法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

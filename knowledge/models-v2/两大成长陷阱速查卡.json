@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "两大成长陷阱速查卡",
+  "meta": {
+    "name": "两大成长陷阱",
+    "category": "08",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "成长上限",
+      "目标侵蚀",
+      "faad14;"
+    ],
+    "source": "两大成长陷阱速查卡.md",
+    "sourceTitle": "两大成长陷阱速查卡"
+  },
+  "engine": {
+    "core_question": "是掉进了两个隐形成长陷阱",
+    "trigger_signals": [
+      "需要快速查阅「两大成长陷阱」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "是掉进了两个隐形成长陷阱",
+        "action": "是掉进了两个隐形成长陷阱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "选一个当前在意的目标",
+        "action": "选一个当前在意的目标",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "系统思维 #个人成长 #系统思考",
+        "action": "系统思维 #个人成长 #系统思考",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「两大成长陷阱」速查模式运行。\n\n【认知模式】快速调用两大成长陷阱的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 是掉进了两个隐形成长陷阱：是掉进了两个隐形成长陷阱\n\nStep 2 - 选一个当前在意的目标：选一个当前在意的目标\n\nStep 3 - 系统思维 #个人成长 #系统思考：系统思维 #个人成长 #系统思考\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用两大成长陷阱速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-内部环境分析-",
+  "meta": {
+    "name": "内部环境分析",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):内部环境分析。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在于了解公司的能力，藉以具体评估现行企业经营策略及预期引入 TPM 活动后 \f http://wiki.mbalib.com/ 所能达到的目标，有关分项可综列成以下各项。 (1)财务构面：  成本收益比。  利润对销售收入的比率。 ",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以内部环境分析。的方式思考这个问题。",
+    "activation_phrase": "请用内部环境分析。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

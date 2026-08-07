@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-做好市场薪酬调查",
+  "meta": {
+    "name": "做好市场薪酬调查",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):做好市场薪酬调查",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "宽带薪酬要求企业既要关注企业内部的薪酬状况，更要跟踪企业外部的市场 薪酬水平，达到外部公平性的目的。为此，企业应该积极做好薪酬调查工作，调 查内容主要包括：本行业的薪酬水平、本地区的薪酬水平、工资结构、发放时间、 发放形式与范围、其他非货",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以做好市场薪酬调查的方式思考这个问题。",
+    "activation_phrase": "请用做好市场薪酬调查分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

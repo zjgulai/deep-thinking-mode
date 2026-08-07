@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-共生体是价值创造的逻辑-每一种共生体都会",
+  "meta": {
+    "name": "共生体是价值创造的逻辑。每一种共生体都会",
+    "category": "03",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):共生体是价值创造的逻辑。每一种共生体都会",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "问题：价值创造的逻辑是什么？有哪些已经呈现迹象，但我们没  1118 / 1937 \f有感觉到变化？ 衡量指标：共生体的价值空间（天花板）",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "腾讯新闻和网易新闻采用的都是主编筛选文章，每个人看到都"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以共生体是价值创造的逻辑。每一种共生体都会的方式思考这个问题。",
+    "activation_phrase": "请用共生体是价值创造的逻辑。每一种分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

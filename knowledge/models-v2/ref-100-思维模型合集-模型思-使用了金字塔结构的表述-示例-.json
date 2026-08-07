@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-使用了金字塔结构的表述-示例-",
+  "meta": {
+    "name": "使用了金字塔结构的表述（示例）",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):使用了金字塔结构的表述（示例）：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们可以将今天下午 3 点的会议改到周四上午 11 点开吗？因为， 领导， 李总、王经理、小赵等人都能参加，并且周四的会议室还能预定。今 天下午开的话，李总有急事不能参加，王经理出差了明天晚上才能回 来。而明天的会议室也满了。  1555",
+    "trigger_signals": [
+      "ательских задач ，俄语缩"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以使用了金字塔结构的表述（示例）：的方式思考这个问题。",
+    "activation_phrase": "请用使用了金字塔结构的表述（示例）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

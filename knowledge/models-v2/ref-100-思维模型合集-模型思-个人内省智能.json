@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-个人内省智能",
+  "meta": {
+    "name": "个人内省智能",
+    "category": "10",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):个人内省智能",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "个人内省智能就是我们对自己内心世界的认知：了解自己的感情生活 和情绪变化，有效地辨别这些感情，最后加以标识，成为理解自己和 指导自己行为准则的能力。具有较好个人内省智能的人，能自尊、自  1512 / 1937 \f律，深入自我的方式来思考，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以个人内省智能的方式思考这个问题。",
+    "activation_phrase": "请用个人内省智能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-数据最大值-最小值位于两瑞组的什么位置为",
+  "meta": {
+    "name": "数据最大值、最小值位于两瑞组的什么位置为",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):数据最大值、最小值位于两瑞组的什么位置为",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "为使直方图不偏向最小值 s 或最大值 L。分组时应使 S、L 在两端组的位置对 称。也就是应该 S-(最小号组的左端边界值)=(最大号组的右端边界值)-L，而且 S、 L 位于两端组的正中央最为理想。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以数据最大值、最小值位于两瑞组的什么位置为的方式思考这个问题。",
+    "activation_phrase": "请用数据最大值、最小值位于两瑞组的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

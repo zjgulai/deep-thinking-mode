@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-积木块",
+  "meta": {
+    "name": "积木块",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):积木块",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "具有复杂性与多面性的复杂适应系统",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "从散户到大户，再从大户到机构投资者，每一个层级需要的内"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以积木块的方式思考这个问题。",
+    "activation_phrase": "请用积木块分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

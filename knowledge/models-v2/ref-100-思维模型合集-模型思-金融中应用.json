@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-金融中应用",
+  "meta": {
+    "name": "金融中应用",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):金融中应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "新的范式，让我们知道我们的世界是一个沸",
+    "trigger_signals": [
+      "10-17 09:30"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "巴菲特和索罗斯都是 量子思维的践行者，他们相信市场的复杂性，不可预测性，同时相信"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以金融中应用的方式思考这个问题。",
+    "activation_phrase": "请用金融中应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

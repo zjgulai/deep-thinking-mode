@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-生产过程的结构-",
+  "meta": {
+    "name": "生产过程的结构",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:生产过程的结构：",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "（1）投资强度； （2）纵向一体化程度； （3）生产能力利用程度； （4）设备的生产率； （5）劳动生产率； （6）库存水平。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以生产过程的结构：的方式思考这个问题。",
+    "activation_phrase": "请用生产过程的结构：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

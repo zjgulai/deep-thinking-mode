@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-波士顿矩阵将企业不同经营领域内的业务综合",
+  "meta": {
+    "name": "波士顿矩阵将企业不同经营领域内的业务综合",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):波士顿矩阵将企业不同经营领域内的业务综合",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "的效果。在其他在战略没有发生变化的前提下企业可以通过波士顿矩阵判断  自己各经营业务的机会和威胁，优势和劣势，判断当前的主要战略问题和企  业未来的竞争地位。比较理想的投资组合使企业有较多的明星和现金牛业  务，少数的问题业务和极少的瘦狗",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以波士顿矩阵将企业不同经营领域内的业务综合的方式思考这个问题。",
+    "activation_phrase": "请用波士顿矩阵将企业不同经营领域内分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

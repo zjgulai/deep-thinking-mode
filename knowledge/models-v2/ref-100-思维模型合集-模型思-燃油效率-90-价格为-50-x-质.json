@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-燃油效率-90-价格为-50-x-质",
+  "meta": {
+    "name": "燃油效率 90、价格为 50），x=（质",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):燃油效率 90、价格为 50），x=（质",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "20% 、 价 格 权 重 为 40% ）， 那 么 买 车 的 收 益 为 ： π=80×40%+90×20%+50×40%=70。如果是多个产品选择，得分最高者就 是最优选择。享受竞争模型更看重赋予某项维度的权重，在客户最关 心的维度做",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "智能手机对相机、收音机、MP3 就是跨界打击"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以燃油效率 90、价格为 50），x=（质的方式思考这个问题。",
+    "activation_phrase": "请用燃油效率 90、价格为 50）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

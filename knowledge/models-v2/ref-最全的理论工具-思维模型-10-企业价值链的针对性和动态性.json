@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业价值链的针对性和动态性",
+  "meta": {
+    "name": "企业价值链的针对性和动态性",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业价值链的针对性和动态性",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业价值链是针对某一时期、某一企业经营过程进行的分析与综合，故具有 针对性；而企业的经营过程随着战略的实施进展和内外部环境的变化而不断变 动，因此，企业的价值链又具有动态性。企业的价值链不是一成不变的，不同的 企业由于所处的内外部环境、拥",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业价值链的针对性和动态性的方式思考这个问题。",
+    "activation_phrase": "请用企业价值链的针对性和动态性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

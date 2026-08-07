@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-涨落原理",
+  "meta": {
+    "name": "涨落原理",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):涨落原理",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "423 / 1937 \f状态量对其平均值的偏离,称为涨落。涨落的特点是随机生灭,或大或小。 按其来源,有内涨落和外涨落之分,按其规模,有小涨落、大涨落、巨涨落 之分。一切真实系统都存在涨落。涨落在自组织中起极为重要的作用, 系统通过涨落去",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以涨落原理的方式思考这个问题。",
+    "activation_phrase": "请用涨落原理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

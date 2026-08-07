@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-提高对市场的反应速度",
+  "meta": {
+    "name": "提高对市场的反应速度",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):提高对市场的反应速度",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "多数公司倾向于说给顾客听，却往往忽略了倾听的重要性。在相互渗透、相 互影响的市场中，对企业来说最现实的问题不在于如何制定、实施计划和控制， 而在于如何及时地倾听顾客的希望、渴望和需求，并及时做出反应来满足顾客的 需求。这样才利于市场的发展",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以提高对市场的反应速度的方式思考这个问题。",
+    "activation_phrase": "请用提高对市场的反应速度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

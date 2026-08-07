@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-战略分析",
+  "meta": {
+    "name": "战略分析",
+    "category": "00",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:战略分析",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "只涉及为数很少的内外部宏观因素的分析",
+    "trigger_signals": [
+      "企业需要实现目前的经营目标需要拥有哪些技术资源？",
+      "公司的技术对企业竞争地位的影响如何？是否影响企业的经营战略？"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "优于或是劣于你的竞争  对手；  • 保持 SWOT 分析法的简洁化，避免复杂化与过度分析；"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以战略分析的方式思考这个问题。",
+    "activation_phrase": "请用战略分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

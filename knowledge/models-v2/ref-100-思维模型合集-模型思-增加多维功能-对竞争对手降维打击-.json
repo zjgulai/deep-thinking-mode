@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-增加多维功能-对竞争对手降维打击-",
+  "meta": {
+    "name": "增加多维功能，对竞争对手降维打击",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):增加多维功能，对竞争对手降维打击.",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "不断增加多维功能的产品，最开始仅仅是视频展",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "抖音就是一个不断增加多维功能的产品，最开始仅仅是视频展"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以增加多维功能，对竞争对手降维打击.的方式思考这个问题。",
+    "activation_phrase": "请用增加多维功能，对竞争对手降维打分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

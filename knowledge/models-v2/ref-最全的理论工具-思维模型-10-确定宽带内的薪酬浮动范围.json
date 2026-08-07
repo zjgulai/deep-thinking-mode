@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-确定宽带内的薪酬浮动范围",
+  "meta": {
+    "name": "确定宽带内的薪酬浮动范围",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定宽带内的薪酬浮动范围",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "根据薪酬调查得到的客观数据和内部岗位评估结果来确定每一个“带宽”的 浮动范围，设定最低和最高薪酬待遇，在每一个工资带中，应根据市场薪酬水平 和岗位评估来确定不同的工作绩效对应的薪酬。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以确定宽带内的薪酬浮动范围的方式思考这个问题。",
+    "activation_phrase": "请用确定宽带内的薪酬浮动范围分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

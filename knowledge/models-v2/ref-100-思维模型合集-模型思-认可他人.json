@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-认可他人",
+  "meta": {
+    "name": "认可他人",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):认可他人",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "如果我们得到了别人的帮助,一定不要忘记感谢,可以给予别人语言的 赞美,也可以写一份感谢信,或者送一个礼物给到对方,对方在收到你的 赞美或礼物之后,会对自己更加的认同,产生一种荣耀感,得到短暂的峰 值体验。",
+    "trigger_signals": [
+      "如果我们得到了别人的帮助,一定不要忘记感谢,可以给予别人语言的"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以认可他人的方式思考这个问题。",
+    "activation_phrase": "请用认可他人分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

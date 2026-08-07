@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-识别问题-",
+  "meta": {
+    "name": "识别问题",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):识别问题：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "准确地认识问题，是解决问题的前提。我们失败的原因多半是因为尝 试用正确的方法解决错误的问题。要想真正的识别问题，我们要遵循“三 现原则”。 现实：亲自去了解现实情况，分析原因； 现场：亲自到现场； 现物：亲自看实物、接触实物。 必须要身处现",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以识别问题：的方式思考这个问题。",
+    "activation_phrase": "请用识别问题：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

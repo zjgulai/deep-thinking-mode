@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-技术变化",
+  "meta": {
+    "name": "技术变化",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):技术变化",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "调整角度。1975--1983 年间，这把新刮胡刀获得 5 项专利。FLAG 在原型试用成 功后改进生产工艺：以金属丝将 2 片刀片与充当 检测系统的小橡皮管连结。从 测试的 15 种塑料中，选出弹性足以保护皮肤者（在刀片之前拉紧皮肤），把",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以技术变化的方式思考这个问题。",
+    "activation_phrase": "请用技术变化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

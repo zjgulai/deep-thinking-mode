@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-临时工作任务-即领导临时交办的或公司组织",
+  "meta": {
+    "name": "临时工作任务（即领导临时交办的或公司组织",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):临时工作任务（即领导临时交办的或公司组织",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "大型活动时所涉及的工作） 1） 2） 权限:决策权、建议权、裁决权、决定权、人事权、使用权、制止权和处罚权、命令整改权、盘查权、指挥 权、督办权、监督实施权、索取权、提名权等。 目前拥有权限：描述 权限一： 目前完成岗位职责 权限二： 时，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以临时工作任务（即领导临时交办的或公司组织的方式思考这个问题。",
+    "activation_phrase": "请用临时工作任务（即领导临时交办的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

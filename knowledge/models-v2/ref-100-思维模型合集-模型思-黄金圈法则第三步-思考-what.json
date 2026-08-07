@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-黄金圈法则第三步-思考-what",
+  "meta": {
+    "name": "黄金圈法则第三步，思考 What",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):黄金圈法则第三步，思考 What",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在 Why 和 How 考虑清楚之后，最外的圈层就是 What。从企业的角度，  910 / 1937 \f最终连接客户的一定是产品或者服务，这个产品或者服务就是传承企 业理念和思想的载体。产品和服务好不好？取决于 Why 和 How，每一",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以黄金圈法则第三步，思考 What的方式思考这个问题。",
+    "activation_phrase": "请用黄金圈法则第三步，思考 Wha分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

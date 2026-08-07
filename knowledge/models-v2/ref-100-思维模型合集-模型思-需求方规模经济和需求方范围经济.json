@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-需求方规模经济和需求方范围经济",
+  "meta": {
+    "name": "需求方规模经济和需求方范围经济",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):需求方规模经济和需求方范围经济",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "分散的利基市场，如果没有互联网",
+    "trigger_signals": [
+      "如果你想提高下载速度，那么请升级 VIP。游戏公司更是把免费策略运",
+      "如果你要想提升角色的战斗力，不好意"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "小米手机的设计会采用“米粉”的建议，小米"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以需求方规模经济和需求方范围经济的方式思考这个问题。",
+    "activation_phrase": "请用需求方规模经济和需求方范围经济分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

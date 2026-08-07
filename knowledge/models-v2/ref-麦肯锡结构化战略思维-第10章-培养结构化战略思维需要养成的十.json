@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-麦肯锡结构化战略思维-第10章-培养结构化战略思维需要养成的十",
+  "meta": {
+    "name": "第10章 培养结构化战略思维需要养成的十",
+    "category": "07",
+    "tags": [],
+    "source": "ref:《麦肯锡结构化战略思维》:第10章 培养结构化战略思维需要养成的十",
+    "sourceTitle": "《麦肯锡结构化战略思维》",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人们没有时间思考，怕丧失机会而不得不尽快行",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "7 \f卡片8：可复用的多维图谱 卡片9：故事线"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第10章 培养结构化战略思维需要养成的十的方式思考这个问题。",
+    "activation_phrase": "请用第10章 培养结构化战略思维需分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

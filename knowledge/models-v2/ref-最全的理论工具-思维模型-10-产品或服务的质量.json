@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-产品或服务的质量",
+  "meta": {
+    "name": "产品或服务的质量",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):产品或服务的质量",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "产品质量与经营业绩密切相关。出售高质量产品（服务）的单位较出售低质 量产品（服务）的单位具有较好的经营业绩。并且还发现，产品质量与市场占有 率具有强正相关关系，二者起互相加强的作用。当一个经营单位具有较高的市场 占有率并出售较高质量的产品",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以产品或服务的质量的方式思考这个问题。",
+    "activation_phrase": "请用产品或服务的质量分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

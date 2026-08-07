@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "红皇后效应_竞争中的生存法则与破局路",
+  "meta": {
+    "name": "红皇后效应_竞争中的生存法则与破局路",
+    "category": "03",
+    "tags": [],
+    "source": "红皇后效应_竞争中的生存法则与破局路径.md"
+  },
+  "engine": {
+    "core_question": "始终是“持续进化以维持相对地位”",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以红皇后效应_竞争中的生存法则与破局路的方式思考。",
+    "activation_phrase": "请用红皇后效应_竞争中的生存法则与分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "环节一",
+  "meta": {
+    "name": "环节一",
+    "category": "10",
+    "tags": [],
+    "source": "内耗管理系统___解释模块___决策困难_为什么做个决定_比跑五公里还累_.md"
+  },
+  "engine": {
+    "core_question": "】** 为什么点个外卖、挑件衣服、选个方案，能让人精疲力尽？为什么做决定这件事本身，就是一种内耗？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**保持信息**",
+        "action": "在工作记忆中同时维持多个选项的特征、利弊、条件",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**比较评估**",
+        "action": "在不同维度间反复权衡（价格 vs 质量，时间 vs 效果）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**预测结果**",
+        "action": "模拟每个选项可能带来的后果",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**抑制干扰**",
+        "action": "抵抗无关信息的干扰，保持决策焦点",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**做出选择**",
+        "action": "在多个可能中选出“最优”或“足够好”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "这是一个没有终点的游戏，因为“最优”往往不存在，或者无法在有限信息中确认。**",
+        "action": ""
+      },
+      {
+        "condition": "能量流向**：在无限搜索中空转 → 无法确认“足够好” → 内耗发生。",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "",
+    "activation_phrase": "请用环节一分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

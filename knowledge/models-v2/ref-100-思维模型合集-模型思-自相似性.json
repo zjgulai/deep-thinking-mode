@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自相似性",
+  "meta": {
+    "name": "自相似性",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自相似性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "528 / 1937 \f分形具有“粗糙和自相似”的直观特点。一个系统的自相似性是指某种结 构或过程的特征从不同的空间尺度或时间尺度来看都是相似的，或者 某系统或结构的局域性质或局域结构与整体类似。另外，在整体与整 体之间或部分与部分之间，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "菜花、树叶等。 人们在观察和研究自然界的过程中，认识到自相似性可以存在于物理、"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自相似性的方式思考这个问题。",
+    "activation_phrase": "请用自相似性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

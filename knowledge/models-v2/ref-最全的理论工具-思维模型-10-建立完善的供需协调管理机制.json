@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立完善的供需协调管理机制",
+  "meta": {
+    "name": "建立完善的供需协调管理机制",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立完善的供需协调管理机制",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "为了发挥联合库存管理的作用，供需双方应从合作的精神出发，建立供需协 调管理的机制，明确各自的目标和责任，建立合作沟通的渠道，为供应链的联合 库存管理提供有效的机制。没有一个协调的管理机制，就不可能进行有效的联合 库存管理。建立供需协调管理",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立完善的供需协调管理机制的方式思考这个问题。",
+    "activation_phrase": "请用建立完善的供需协调管理机制分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

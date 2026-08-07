@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-判断证伪度",
+  "meta": {
+    "name": "判断证伪度",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):判断证伪度",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "科学知识的可证伪度越高，越有价值。 无数的科学家每天都在研究新的知识，他们在知识市场要接受严格的 考验，就像进化论一样，一个物种只有经过自然选择，优胜劣汰，才 能够最终生存下去。知识理论一样要经受住自然选择的考验，只有最 有生命力的理论才能",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "所有天体运行轨道是环状的。 所有行星运行轨道是环状的"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以判断证伪度的方式思考这个问题。",
+    "activation_phrase": "请用判断证伪度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

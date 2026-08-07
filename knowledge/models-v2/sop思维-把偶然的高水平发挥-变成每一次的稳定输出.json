@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0.0",
+  "id": "sop思维-把偶然的高水平发挥-变成每一次的稳定输出",
+  "meta": {
+    "name": "SOP思维",
+    "category": "07",
+    "tags": [],
+    "source": "SOP思维_把偶然的高水平发挥_变成每一次的稳定输出.md",
+    "sourceTitle": "SOP思维：把偶然的高水平发挥，变成每一次的稳定输出"
+  },
+  "engine": {
+    "core_question": "不是一纸简单的文档，而是一套可落地、可复用、可迭代的底层工作思维，专门打破状态波动的局限，将偶然的高水平发挥，变成次次在线的稳定输出",
+    "trigger_signals": [
+      "------------",
+      "------------",
+      "------------"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "无效：有空再做、需要时再执行",
+        "action": ""
+      },
+      {
+        "condition": "无效：梳理并确认客户需求",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": "，杜绝模糊化描述。无明确触发条件的SOP，只是无效静态文档。"
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「SOP思维」思维框架运行。核心立场：不是一纸简单的文档，而是一套可落地、可复用、可迭代的底层工作思维，专门打破状态波动的局限，将偶然的高水平发挥，变成次次在线的稳定输出\n\n【推理协议】\n1. 掌握SOP思维的核心价值\n2. 成熟SOP的5大核心要素\n3. 从零搭建专属SOP的落地步骤\n4. 锁定核心任务｜落地要素：明确触发条件\n5. 实况录制记录｜落地要素：具体步骤序列\n\n【质量门禁】每完成一步推理后，自问：这个结论是基于「SOP思维」的核心逻辑得出的，还是在用普通直觉回答？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用SOP思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

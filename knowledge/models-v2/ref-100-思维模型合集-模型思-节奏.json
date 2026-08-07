@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-节奏",
+  "meta": {
+    "name": "节奏",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):节奏",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "伟大的竞技运动员都能够把握节奏，带动对方跟随自己的节奏，而不 是应付对方的节奏。例如优秀的拳击手能够在多个回合中分配好自己 的体能，把握好进攻和防守的节奏，从而寻找时机，一招制胜。  1127 / 1937 \f节奏分为自身节奏、系统节奏和竞",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "优秀的拳击手能够在多个回合中分配好自己 的体能，把握好进攻和防守的节奏，从而寻找时机，一招制胜"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以节奏的方式思考这个问题。",
+    "activation_phrase": "请用节奏分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

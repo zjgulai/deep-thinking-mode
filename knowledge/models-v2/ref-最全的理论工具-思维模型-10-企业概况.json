@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业概况",
+  "meta": {
+    "name": "企业概况",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业概况",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "天津爱三汽车附件有限公司是由天津化油器厂、日本爱三工业株式会社、日 本丰田通商株式会社三方共同出资组建的合资企业。日本爱三公司占股比的 68 ％ ，天津化油器厂占 27％ ，日本丰通公司占 5％ ，天津爱三公司于 1995 年底 经市政府",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业概况的方式思考这个问题。",
+    "activation_phrase": "请用企业概况分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

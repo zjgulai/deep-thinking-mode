@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "别急着解题_爱因斯坦式提问五步速查卡",
+  "meta": {
+    "name": "别急着解题_爱因斯坦式提问五步",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型",
+      "决策思维"
+    ],
+    "source": "别急着解题_爱因斯坦式提问五步速查卡.md",
+    "sourceTitle": "别急着解题_爱因斯坦式提问五步速查卡"
+  },
+  "engine": {
+    "core_question": "遇到问题第一反应是找解法——你可能一直在用最努力的方式，解一个错的问题",
+    "trigger_signals": [
+      "遇到问题第一反应是找解法——你可能一直在用最努力的方式"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "遇到问题第一反应是找解法——你可能一直在",
+        "action": "遇到问题第一反应是找解法——你可能一直在用最努力的方式",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡把爱因斯坦式提问拆成三块核心工",
+        "action": "这张速查卡把爱因斯坦式提问拆成三块核心工具： 通用反问模板用五个问题拆穿隐藏假设",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "换位六个角度批量生成新问题",
+        "action": "换位六个角度批量生成新问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "选一个你卡了超过一周的问题",
+        "action": "选一个你卡了超过一周的问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "用通用反问模板逐条拆解它的隐藏假设",
+        "action": "用通用反问模板逐条拆解它的隐藏假设",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "爱因斯坦思维 #问题定义 #认知破局 #",
+        "action": "爱因斯坦思维 #问题定义 #认知破局 #决策思维 #思维模型 #问题分析 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「别急着解题_爱因斯坦式提」速查模式运行。\n\n【认知模式】快速调用别急着解题_爱因斯坦式提问五步的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 遇到问题第一反应是找解法——你可能一直在：遇到问题第一反应是找解法——你可能一直在用最努力的方式\n\nStep 2 - 这张速查卡把爱因斯坦式提问拆成三块核心工：这张速查卡把爱因斯坦式提问拆成三块核心工具： 通用反问模板用五个问题拆穿隐藏假设\n\nStep 3 - 换位六个角度批量生成新问题：换位六个角度批量生成新问题\n\nStep 4 - 选一个你卡了超过一周的问题：选一个你卡了超过一周的问题\n\nStep 5 - 用通用反问模板逐条拆解它的隐藏假设：用通用反问模板逐条拆解它的隐藏假设\n\nStep 6 - 爱因斯坦思维 #问题定义 #认知破局 #：爱因斯坦思维 #问题定义 #认知破局 #决策思维 #思维模型 #问题分析 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用别急着解题_爱因斯坦式提问五步速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

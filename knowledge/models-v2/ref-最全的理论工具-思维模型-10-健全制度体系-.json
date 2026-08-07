@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-健全制度体系-",
+  "meta": {
+    "name": "健全制度体系",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):健全制度体系。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "就是要制订和不断完善推进 TPM 管理的各项规章制度、标准和管理办法， 形成规范化的文件系统，使推进 TPM 管理的各项活动和各个环节有 章可循、有 法可依。如对设备的清洁、点检、润滑、保养等工作，尽管简单，也要研究制订 相应的标准，这样",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以健全制度体系。的方式思考这个问题。",
+    "activation_phrase": "请用健全制度体系。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

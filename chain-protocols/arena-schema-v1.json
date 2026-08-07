@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0-arena",
+  "description": "认知竞技场（Cognitive Arena）结构规范 v1.0",
+
+  "design_rationale": {
+    "problem_with_chain": "顺序链式激活的根本缺陷：模型 A 输出 → 模型 B 接收，看似递进，实为单线程。没有对立视角产生的张力，没有模型之间的相互质疑，链条是虚假的。",
+    "arena_principle": "多个思维模型作为「同时在场的对立透镜」对准同一个问题，各持不同立场发言，让它们的结论冲突——冲突点即盲区所在，综合点才是洞察。",
+    "key_difference": "Chain = 顺序调用；Arena = 同时持有对立视角 + 寻找张力与交集"
+  },
+
+  "structure": {
+    "schema_version": "1.0-arena",
+    "id": "字符串，格式：<场景类型>-arena-<编号>",
+    "meta": {
+      "name": "场景名称：<问题类型> 认知竞技场",
+      "problem_type": "对应 chain-protocols 的 problem_type 分类",
+      "arena_size": "参与者数量（推荐 3-4 个）",
+      "participants": ["模型A", "模型B", "模型C"],
+      "replaced_chain": "被替换的 chain id（如有）",
+      "trigger_signals": ["触发此 arena 的场景描述（3-5条）"]
+    },
+    "participants": [
+      {
+        "role": "角色名称（体现其立场，而非模型名）",
+        "model": "对应的思维模型名称",
+        "stance": "这个模型的核心认知立场（一句话）",
+        "challenge_question": "这个角色对问题抛出的核心质疑或透视角度（直接指向盲区）",
+        "system_prompt_ref": "对应 knowledge/models-v3/ 里的模型 id（可选，用于展开完整推理协议）"
+      }
+    ],
+    "arena_protocol": {
+      "phase_1_individual": "各角色独立发言：用自己的立场和方法分析问题，不参考其他角色的结论",
+      "phase_2_confrontation": "寻找张力：哪两个角色的结论相互矛盾？矛盾在哪个具体假设上？",
+      "phase_3_synthesis": "综合规则：交集 = 多个视角都指向的结论（高可信度）；冲突 = 某个角色独有的结论（需要继续追问）",
+      "stop_condition": "当所有角色的核心结论都被标注为「交集」或「冲突待追问」时，停止"
+    },
+    "codex": {
+      "activation": "激活词 — 对 Codex 说的第一句话",
+      "system_prompt": "完整 system_prompt，包含所有参与者的立场+推理协议+竞技场规则",
+      "usage_note": "使用说明：粘贴 system_prompt 后，描述你的具体问题即可"
+    },
+    "quality": {
+      "participant_diversity": "参与者的认知立场是否真正不同（1-5）",
+      "tension_design": "设计的张力是否会产生真实冲突（1-5）",
+      "synthesis_clarity": "综合规则是否清晰可执行（1-5）",
+      "overall": "综合评分（1-5）"
+    }
+  },
+
+  "participant_selection_guide": {
+    "rule_1": "至少有一个角色聚焦「症状/现象层」，至少有一个聚焦「结构/系统层」——这两者必然产生张力",
+    "rule_2": "至少有一个角色的立场是「反常识的」——它的结论应该让人觉得不舒服但无法反驳",
+    "rule_3": "避免选择立场相近的模型（如同时选「结构化思维」+「框架思维」，它们的分歧太小）",
+    "rule_4": "3 个参与者是最优：2 个容易形成对立而非多角度，4 个以上信息冗余",
+    "good_combinations": [
+      "第一性原理（解构假设）+ 系统思维（看回路）+ 决策瘫痪（看认知状态）",
+      "5 Whys（追根因）+ 框架思维（看结构）+ 逆向思维（想反面）",
+      "冰山模型（看深层）+ 第二层思维（看博弈）+ 第一性原理（删假设）"
+    ]
+  },
+
+  "anti_patterns": [
+    "顺序执行：各角色发言后直接汇总，没有让它们相互质疑",
+    "假对立：选了立场相近的模型，结论高度一致，产生不了张力",
+    "无综合规则：发言之后不知道怎么处理冲突，变成信息堆砌",
+    "角色太多：超过4个角色时，冲突点过多，综合无法收敛"
+  ]
+}

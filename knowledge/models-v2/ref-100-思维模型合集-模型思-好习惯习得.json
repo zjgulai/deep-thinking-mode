@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-好习惯习得",
+  "meta": {
+    "name": "好习惯习得",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):好习惯习得",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "好习惯也是登门槛效应。比如跑步，每天坚持跑步 10 公里，对于没有 养成跑步能力和习惯的同学来说，难度相当大，也不符合福格行为模 型。想实现每天坚持跑步 10 公里，正确的方式和路径是运用等门槛效 应和福格行为模型，先登个门槛，建立微习惯。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "跑步，每天坚持跑步 10 公里，对于没有"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以好习惯习得的方式思考这个问题。",
+    "activation_phrase": "请用好习惯习得分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

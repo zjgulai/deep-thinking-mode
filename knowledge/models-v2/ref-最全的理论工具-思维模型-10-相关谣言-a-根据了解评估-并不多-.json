@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-相关谣言-a-根据了解评估-并不多-",
+  "meta": {
+    "name": "相关谣言 A 根据了解评估，并不多",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):相关谣言 A 根据了解评估，并不多。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "三.决策分析(针对问题如何解决) 四.潜在问题分析(找出后遗症) A.相关谣言 A.相关谣言 (1)立即召开说明会，澄清谣言。 较无后遗症。 (2)在会中描绘公司未来远景。 B.交通不便 B.交通不便 (1)增加公司成本，且有交通事故风险。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以相关谣言 A 根据了解评估，并不多。的方式思考这个问题。",
+    "activation_phrase": "请用相关谣言 A 根据了解评估，并分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

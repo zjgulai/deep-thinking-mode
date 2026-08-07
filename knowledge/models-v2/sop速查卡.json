@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "sop速查卡",
+  "meta": {
+    "name": "SOP",
+    "category": "07",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "流程管理",
+      "生产力",
+      "faad14;"
+    ],
+    "source": "SOP速查卡.md",
+    "sourceTitle": "SOP速查卡"
+  },
+  "engine": {
+    "core_question": "每次做事都要重新琢磨步骤",
+    "trigger_signals": [
+      "需要快速查阅「SOP」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "下一步做什么”交给流程",
+        "action": "下一步做什么”交给流程",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "核心公式+五大要素 飞行员起飞前必须逐项",
+        "action": "核心公式+五大要素 飞行员起飞前必须逐项执行检查单",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "核心公式：稳定输出等于最佳实践固化加无差",
+        "action": "核心公式：稳定输出等于最佳实践固化加无差别执行加持续迭代",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "没有触发条件的SOP是死文档",
+        "action": "没有触发条件的SOP是死文档",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "关键步骤后验证“这一步真的做对了”",
+        "action": "关键步骤后验证“这一步真的做对了”",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "五步落地法 锁定高频或高风险任务",
+        "action": "五步落地法 锁定高频或高风险任务",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「SOP」速查模式运行。\n\n【认知模式】快速调用SOP的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 下一步做什么”交给流程：下一步做什么”交给流程\n\nStep 2 - 核心公式+五大要素 飞行员起飞前必须逐项：核心公式+五大要素 飞行员起飞前必须逐项执行检查单\n\nStep 3 - 核心公式：稳定输出等于最佳实践固化加无差：核心公式：稳定输出等于最佳实践固化加无差别执行加持续迭代\n\nStep 4 - 没有触发条件的SOP是死文档：没有触发条件的SOP是死文档\n\nStep 5 - 关键步骤后验证“这一步真的做对了”：关键步骤后验证“这一步真的做对了”\n\nStep 6 - 五步落地法 锁定高频或高风险任务：五步落地法 锁定高频或高风险任务\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用SOP速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

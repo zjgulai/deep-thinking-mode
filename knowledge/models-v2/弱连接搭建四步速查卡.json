@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "弱连接搭建四步速查卡",
+  "meta": {
+    "name": "弱连接搭建四步",
+    "category": "05",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "弱连接",
+      "职场破圈",
+      "faad14;"
+    ],
+    "source": "弱连接搭建四步速查卡.md",
+    "sourceTitle": "弱连接搭建四步速查卡"
+  },
+  "engine": {
+    "core_question": "好工作往往不是最好的朋友介绍的，新机会常常来自朋友圈点赞之交——弱连接才是成长的隐藏杠杆",
+    "trigger_signals": [
+      "需要快速查阅「弱连接搭建四步」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "开始。 #弱连接 #网络思维 #社交资本",
+        "action": "开始。 #弱连接 #网络思维 #社交资本 #职场破圈 #个人成长",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "速查卡把搭建弱连接拆成四步：主动走出去、",
+        "action": "速查卡把搭建弱连接拆成四步：主动走出去、低维护高留存、主动输出、先给再想回报",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "网络思维 #社交资本 #职场破圈 #个人",
+        "action": "网络思维 #社交资本 #职场破圈 #个人成长",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「弱连接搭建四步」速查模式运行。\n\n【认知模式】快速调用弱连接搭建四步的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 开始。 #弱连接 #网络思维 #社交资本：开始。 #弱连接 #网络思维 #社交资本 #职场破圈 #个人成长\n\nStep 2 - 速查卡把搭建弱连接拆成四步：主动走出去、：速查卡把搭建弱连接拆成四步：主动走出去、低维护高留存、主动输出、先给再想回报\n\nStep 3 - 网络思维 #社交资本 #职场破圈 #个人：网络思维 #社交资本 #职场破圈 #个人成长\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用弱连接搭建四步速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

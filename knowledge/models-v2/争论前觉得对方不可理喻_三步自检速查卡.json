@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "争论前觉得对方不可理喻_三步自检速查卡",
+  "meta": {
+    "name": "争论前觉得对方不可理喻_三步",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "元认知",
+      "认知科学"
+    ],
+    "source": "争论前觉得对方不可理喻_三步自检速查卡.md",
+    "sourceTitle": "争论前觉得对方不可理喻_三步自检速查卡"
+  },
+  "engine": {
+    "core_question": "争到一半觉得全是对方的错，冷静后偶尔想“他说的好像也不是完全没道理”——这时候你需要的不是更用力地反驳，是先完整复述一遍",
+    "trigger_signals": [
+      "需要系统检验自己的思维或行为时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "卡把对立观点理解力拆成三步： 完整复述用",
+        "action": "卡把对立观点理解力拆成三步： 完整复述用对方的语气说一遍",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "我就是这个意思”； 找出合理点在他逻辑框",
+        "action": "我就是这个意思”； 找出合理点在他逻辑框架里发现一个你之前没注意到的合理之处； 修正观点问自己如果他的立场成立",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "批判性思维 #观点对立 #元认知 #认知",
+        "action": "批判性思维 #观点对立 #元认知 #认知科学 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「争论前觉得对方不可理喻_」速查模式运行。\n\n【认知模式】快速调用争论前觉得对方不可理喻_三步的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 卡把对立观点理解力拆成三步： 完整复述用：卡把对立观点理解力拆成三步： 完整复述用对方的语气说一遍\n\nStep 2 - 我就是这个意思”； 找出合理点在他逻辑框：我就是这个意思”； 找出合理点在他逻辑框架里发现一个你之前没注意到的合理之处； 修正观点问自己如果他的立场成立\n\nStep 3 - 批判性思维 #观点对立 #元认知 #认知：批判性思维 #观点对立 #元认知 #认知科学 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用争论前觉得对方不可理喻_三步速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

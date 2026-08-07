@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么跳出人际内耗_三层视角跃迁速查卡",
+  "meta": {
+    "name": "怎么跳出人际内耗_三层视角跃迁",
+    "category": "10",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "情绪内耗",
+      "正方形的认知工具箱",
+      "思维模型"
+    ],
+    "source": "怎么跳出人际内耗_三层视角跃迁速查卡.md",
+    "sourceTitle": "怎么跳出人际内耗_三层视角跃迁速查卡"
+  },
+  "engine": {
+    "core_question": "大多数人际内耗，根源都是我们始终以自我为中心，做人生剧情里唯一的主角",
+    "trigger_signals": [
+      "需要快速查阅「怎么跳出人际内耗_三层视」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "张速查卡把视角切换拆成三层跃迁： 第一层",
+        "action": "张速查卡把视角切换拆成三层跃迁： 第一层自我视角教你擦净内心的投影仪",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "第二层他人视角让你看懂对方攻击背后的压力",
+        "action": "第二层他人视角让你看懂对方攻击背后的压力和恐惧",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "第三层系统视角跳出二人对立",
+        "action": "第三层系统视角跳出二人对立",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "思维模型 #正方形的认知工具箱",
+        "action": "思维模型 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么跳出人际内耗_三层视」速查模式运行。\n\n【认知模式】快速调用怎么跳出人际内耗_三层视角跃迁的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 张速查卡把视角切换拆成三层跃迁： 第一层：张速查卡把视角切换拆成三层跃迁： 第一层自我视角教你擦净内心的投影仪\n\nStep 2 - 第二层他人视角让你看懂对方攻击背后的压力：第二层他人视角让你看懂对方攻击背后的压力和恐惧\n\nStep 3 - 第三层系统视角跳出二人对立：第三层系统视角跳出二人对立\n\nStep 4 - 思维模型 #正方形的认知工具箱：思维模型 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么跳出人际内耗_三层视角跃迁速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

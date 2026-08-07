@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-公司的产品和市场竞争情况",
+  "meta": {
+    "name": "公司的产品和市场竞争情况",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):公司的产品和市场竞争情况",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "公司的产品是专业洗涤蔬菜、水果的洗涤用品。其主要功能在于能够去除蔬 菜水果表面及内部 95％以上的残余农药，是目前市场上惟一具有去除蔬菜水果 内部残余农药功能的产品。产品的主要成分是食品及食品添加剂，呈粉末状，因 此不同于市场上一般的厨房",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以公司的产品和市场竞争情况的方式思考这个问题。",
+    "activation_phrase": "请用公司的产品和市场竞争情况分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

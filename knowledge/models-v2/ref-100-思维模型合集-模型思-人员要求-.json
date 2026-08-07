@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-人员要求-",
+  "meta": {
+    "name": "人员要求",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):人员要求：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一般情况下要超过 12 个人以上参加，人数太少不能够搜集更多不同的 思想，确定参加人员的专业性和多样性。要关注那些会提出独特视角 的参与者。跨专业跨学科人才能够带来多样化的思维，多样化的思维 可以孕育出丰富的见解和发现。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以人员要求：的方式思考这个问题。",
+    "activation_phrase": "请用人员要求：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

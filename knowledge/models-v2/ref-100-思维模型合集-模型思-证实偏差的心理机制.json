@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-证实偏差的心理机制",
+  "meta": {
+    "name": "证实偏差的心理机制",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):证实偏差的心理机制",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "非理性的决策行为,必然会降低判断和决策的效果",
+    "trigger_signals": [
+      "当我们对一个问题有着先入为主的偏见时",
+      "当我们接收到反对这个答案的论据时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "警察审讯嫌疑犯,往往倾向于将嫌疑犯当成真正的犯罪分子,迫于"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以证实偏差的心理机制的方式思考这个问题。",
+    "activation_phrase": "请用证实偏差的心理机制分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

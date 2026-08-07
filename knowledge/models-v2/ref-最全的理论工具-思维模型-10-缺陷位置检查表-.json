@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-缺陷位置检查表-",
+  "meta": {
+    "name": "缺陷位置检查表",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):缺陷位置检查表；",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "若要对产品各个部位的缺陷情况进行调查，可将产品的草图或展开图画在调 查表上，当某种缺陷发生时，可采用不同的符号或颜色在发生缺陷的部位上标出。 若在草图上划分缺陷分布情况区域，可进行分层研究。分区域要尽可能等分。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以缺陷位置检查表；的方式思考这个问题。",
+    "activation_phrase": "请用缺陷位置检查表；分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

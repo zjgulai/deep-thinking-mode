@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-处于产品分化为主的企业",
+  "meta": {
+    "name": "处于产品分化为主的企业",
+    "category": "05",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:处于产品分化为主的企业",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "“企业回应社会压力的能力”，卡罗尔认为，单纯以企业社会回应来代替企业社会责任是",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "人力资源管理 (human resour",
+        "action": "人力资源管理 (human resource management)：泛指各种人才招募、训练、发展及薪",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "公司基础功能 (firm infrast",
+        "action": "公司基础功能 (firm infrastructure) ：泛指支持整个价值链而非个别功能的活动，包括",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "慈善捐赠、为吸毒者提供住房或为工作的母亲提供日托中心等，卡罗尔将此称为企业的"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「处于产品分化为主的企业」思维模式运行。\n\nStep 1 - 人力资源管理 (human resour：人力资源管理 (human resource management)：泛指各种人才招募、训练、发展及薪\n\nStep 2 - 公司基础功能 (firm infrast：公司基础功能 (firm infrastructure) ：泛指支持整个价值链而非个别功能的活动，包括\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用处于产品分化为主的企业分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 1,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

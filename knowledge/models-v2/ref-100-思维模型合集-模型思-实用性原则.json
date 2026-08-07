@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-实用性原则",
+  "meta": {
+    "name": "实用性原则",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):实用性原则",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "图尔敏把论证分为两大类：分析论证和实用论证。其中分析论证与柏 拉图的形式演绎逻辑相一致，它通向普遍真理但不考虑语境。它注重 的逻辑严密、分析纯粹，进行推理时，必须是主谓结构，在形式上较 为固定和死板。而实用论证与亚里士多德在《论题篇》和《修",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实用性原则的方式思考这个问题。",
+    "activation_phrase": "请用实用性原则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

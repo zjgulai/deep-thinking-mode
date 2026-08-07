@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "习惯管持续_刻意练习管增长_复利成长",
+  "meta": {
+    "name": "习惯管持续_刻意练习管增长_复利成长",
+    "category": "08",
+    "tags": [],
+    "source": "习惯管持续_刻意练习管增长_复利成长缺一不可.md"
+  },
+  "engine": {
+    "core_question": "区分：习惯保证你不中断，刻意练习保证你在变好",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「习惯管持续_刻意练习管增长_复利成长」思维框架运行。核心立场：区分：习惯保证你不中断，刻意练习保证你在变好\n\n【推理协议】\n1. 套入复利公式，看懂二者的分工\n2. 习惯与刻意练习，底层逻辑完全相反\n3. 三步改造普通习惯，植入刻意练习\n4. 四层成长逻辑，看清差距根源\n\n【质量门禁】每完成一步推理后，自问：这个结论是基于「习惯管持续_刻意练习管增长_复利成长」的核心逻辑得出的，还是在用普通直觉回答？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用习惯管持续_刻意练习管增长_复分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

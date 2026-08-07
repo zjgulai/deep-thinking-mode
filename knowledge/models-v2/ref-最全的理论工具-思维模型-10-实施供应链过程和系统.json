@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-实施供应链过程和系统",
+  "meta": {
+    "name": "实施供应链过程和系统",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施供应链过程和系统",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "实施供应链过程和系统是 SCOR 模型的第四阶段，是企业内部实施阶段， 落实人员、技术、资金、设备等条件，启动实施再造项目，检验改进的效果。实 施过程中的各阶段有必要的反复调整。这一层的工作主要是开发、测试及实施供 应链系统。  在职能和",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实施供应链过程和系统的方式思考这个问题。",
+    "activation_phrase": "请用实施供应链过程和系统分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

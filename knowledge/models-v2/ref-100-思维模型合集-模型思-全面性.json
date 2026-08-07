@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-全面性",
+  "meta": {
+    "name": "全面性",
+    "category": "04",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):全面性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在分析问题的时候，要考虑周全，不能单维度思考问题，因为我们每 个人都是在“盲人摸象”，都从自己的角度认知这个世界，每个人看到的  958 / 1937 \f都是局部，所以针对重大问题要成立问题解决小组，所有参与者在自 由愉快、畅所欲言的气氛中",
+    "trigger_signals": [
+      "如果你自己不完全熟悉过程，就组建一个相关部门组成的小组来"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "丰田公司在出现质量问题的时候会从三个层面去提问，系统解"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以全面性的方式思考这个问题。",
+    "activation_phrase": "请用全面性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

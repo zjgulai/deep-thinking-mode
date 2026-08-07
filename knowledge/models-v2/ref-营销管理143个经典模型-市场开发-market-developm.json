@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-市场开发-market-developm",
+  "meta": {
+    "name": "市场开发（Market Developm",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:市场开发（Market Developm",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "找到具有相同产品需求的使用者顾客，其中往往产品定位和销售方法会有所调整，但产品本身的 核心技术则不必改变。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以市场开发（Market Developm的方式思考这个问题。",
+    "activation_phrase": "请用市场开发（Market Dev分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

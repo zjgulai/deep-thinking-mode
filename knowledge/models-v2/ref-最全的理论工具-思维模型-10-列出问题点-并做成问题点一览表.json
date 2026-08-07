@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-列出问题点-并做成问题点一览表",
+  "meta": {
+    "name": "列出问题点，并做成问题点一览表",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):列出问题点，并做成问题点一览表",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "(1)列出问题点原则 ◆ 经常发生或困扰的问题； ◆ 顾客(或下一工序)经常投诉的问题； ◆上司经常要求的事项； ◆经常发生的项目。 例如： 品质——不良率高、变异大； 效率——工时、运转率、产量、达成率低等； 成本——废料高、修理工时多；",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "品质——不良率高、变异大； 效率——工时、运转率、产量、达成率低等；"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以列出问题点，并做成问题点一览表的方式思考这个问题。",
+    "activation_phrase": "请用列出问题点，并做成问题点一览表分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

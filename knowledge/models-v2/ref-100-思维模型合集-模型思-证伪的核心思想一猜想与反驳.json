@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-证伪的核心思想一猜想与反驳",
+  "meta": {
+    "name": "证伪的核心思想一猜想与反驳",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):证伪的核心思想一猜想与反驳",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "卡尔·波普尔是批判理性主义的代表人物。他认为科学的发展就是不断 作出猜测（假说），不断遭到反驳（证伪）的过程。现代科学的精神就 是批判精神，不断推翻旧理论，发展新理论的过程，科学和非科学的 划界标准不是可证实性，而是可证伪性。  938 /",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "托勒密认为，地球处于宇宙中心静止不动。从地球向外依次有"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以证伪的核心思想一猜想与反驳的方式思考这个问题。",
+    "activation_phrase": "请用证伪的核心思想一猜想与反驳分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

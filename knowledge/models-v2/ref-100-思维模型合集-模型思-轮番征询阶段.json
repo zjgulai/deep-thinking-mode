@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-轮番征询阶段",
+  "meta": {
+    "name": "轮番征询阶段",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):轮番征询阶段",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "准备阶段的各项工作完成后，就要进入向专家进行正式调查阶段。这 一阶段主要是通过反复的轮番征询专家的预测意见来实现的。经典的 德尔菲法一般包括四轮的征询调查，且在调查过程中包含着每轮间的 反馈，征询程序如下 第一轮，预测组织者讲预测主题和目的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以轮番征询阶段的方式思考这个问题。",
+    "activation_phrase": "请用轮番征询阶段分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-实证结果分析",
+  "meta": {
+    "name": "实证结果分析",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实证结果分析",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "由表 5 所示结果可以发现，预警模型对财务失败组 6 家样本公司 ST 样本公司 2003 年的预测 Z 值分别为 在 0.8212～1.5904 之间，均小于预警临界值 1.8l，处于预测财务失败区域，而非财务失败组 4 家样本公 司 2",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，现在许多学者都比较 重视公司的现金流量，因此，也可以考虑用公司的净现金流量-净利润+折旧来代替息税前利润，用净现"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实证结果分析的方式思考这个问题。",
+    "activation_phrase": "请用实证结果分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

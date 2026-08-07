@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-连接感-和他人一起经历痛苦-实现目标时-",
+  "meta": {
+    "name": "连接感。和他人一起经历痛苦、实现目标时",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):连接感。和他人一起经历痛苦、实现目标时,",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "事件,是搭建信任、 尊重、责任和忠诚度的最佳时机。结合以上 4 种峰值体验,凸显转变时 刻,纪念里程碑事件,填平低谷感受,就抓住了行为设计的核心。 一、欣喜时刻 Elevtion",
+    "trigger_signals": [
+      "当我们面对生命中的转变、里程碑时刻和低谷事件时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以连接感。和他人一起经历痛苦、实现目标时,的方式思考这个问题。",
+    "activation_phrase": "请用连接感。和他人一起经历痛苦、实分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

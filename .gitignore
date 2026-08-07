@@ -1,0 +1,28 @@
+# Local-only source material and processing outputs must never enter public history.
+/.local/
+/inbox/
+.DS_Store
+node_modules/
+*.bundle
+
+# Original Markdown corpus (moved to data/) — raw articles must stay private.
+/data/*
+!/data/AGENTS.md
+
+# Copyrighted reference books and source materials — never public.
+/ref/
+
+# Development records, diffs, and audit logs — local only.
+/.superpowers/
+
+# Root Markdown is treated as a local input unless it is a public instruction file.
+/*.md
+!/AGENTS.md
+!/README.md
+/.codex/
+/graphify-out/
+/ref-extracted/
+/ref-models/
+/model-inventory*.json
+chain-protocols/
+{{pkgetc}}/

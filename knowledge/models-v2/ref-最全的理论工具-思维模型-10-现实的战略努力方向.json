@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-现实的战略努力方向",
+  "meta": {
+    "name": "现实的战略努力方向",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):现实的战略努力方向",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "改变上述任一因素，都会以这一因素对业绩影响因相反方向影响着经营单位 的未来业绩。譬如，较高的市场占有率会产生较多的现金流量，但是，如果经营 单位试图提高市场占有率，这会消耗现金。  除此以外，PIMS 研究还发现，产品的特点与企业业绩没有",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以现实的战略努力方向的方式思考这个问题。",
+    "activation_phrase": "请用现实的战略努力方向分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

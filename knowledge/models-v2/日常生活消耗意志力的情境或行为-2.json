@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "日常生活消耗意志力的情境或行为-2",
+  "meta": {
+    "name": "日常生活消耗意志力的情境或行为",
+    "category": "09",
+    "tags": [],
+    "source": "日常生活消耗意志力的情境或行为 2.md",
+    "sourceTitle": "日常生活消耗意志力的情境或行为"
+  },
+  "engine": {
+    "core_question": "日常生活消耗意志力的情境或行为  下列情境或行为被心理学研究证实会消耗意志力，可作为日常自我管理的“警示清单”。  1.  **抵制眼前诱惑**        • 刻意不吃的美食、甜品、零食，或面对购物、游戏等冲动时的“说不”        • 与欲望进行内心拉锯，哪怕最终屈服，也已在抵抗过程中耗尽",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**重大或繁琐的决策**",
+        "action": "**重大或繁琐的决策**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**情绪与冲动的调节**",
+        "action": "**情绪与冲动的调节**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**长时间专注或屏蔽干扰**",
+        "action": "**长时间专注或屏蔽干扰**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**身体疲劳与生理匮乏**",
+        "action": "**身体疲劳与生理匮乏**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**自我控制的连锁效应**",
+        "action": "**自我控制的连锁效应**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "**拖延与任务切换**",
+        "action": "**拖延与任务切换**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "**奖励或动机变化**",
+        "action": "**奖励或动机变化**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "后，可采取“先大事后小事”“减少选择”“及时补充糖分与休息”“把同类任务集中”等策略，让有限的意志力用在最重要的目标上。"
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「日常生活消耗意志力的情境或行为」思维框架运行。核心立场：日常生活消耗意志力的情境或行为  下列情境或行为被心理学研究证实会消耗意志力，可作为日常自我管理的“警示清单”。  1.  **抵制眼前诱惑**        \n\n【推理协议】\n1. **重大或繁琐的决策**\n2. **情绪与冲动的调节**\n3. **长时间专注或屏蔽干扰**\n4. **身体疲劳与生理匮乏**\n5. **自我控制的连锁效应**\n6. **拖延与任务切换**\n\n【质量门禁】每完成一步推理后，自问：这个结论是从**重大或繁琐的决策**...的逻辑推导出来的吗？如果不是，回到第1步重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用日常生活消耗意志力的情境或行为分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

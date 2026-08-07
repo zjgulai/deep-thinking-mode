@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-结果验证说-",
+  "meta": {
+    "name": "结果验证说",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):结果验证说。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "决策产生的既定结果会使得那些能够支持该结果的论据变得更加显著 和具有说服力。首先, 决策结果引起人们关注那些决定决策优劣的论据, 然后, 那些能够支持既定结果的论据会得到更多关注和加工, 最后, 支 持论据与既定结果形成联系并诱发与结果效价",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一个手术导致病人的死亡，这个时候家人就会关注医生在做手"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以结果验证说。的方式思考这个问题。",
+    "activation_phrase": "请用结果验证说。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

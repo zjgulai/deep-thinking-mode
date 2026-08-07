@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-行业分析类",
+  "meta": {
+    "name": "行业分析类",
+    "category": "06",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:行业分析类",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "• 市场（市场规模，市场细分，产品需求/趋势分析，客户需求） • 竞争（竞争对手的经济情况，产品差异化，市场整合度，产业集中度） • 顾客/供应商关系（谈判能力，替代者，评估垂直整合） • 进入/离开的障碍（评估公司进入/离开。对新加入者的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以行业分析类的方式思考这个问题。",
+    "activation_phrase": "请用行业分析类分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

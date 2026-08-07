@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "5w1h速查卡",
+  "meta": {
+    "name": "5W1H",
+    "category": "00",
+    "tags": [
+      "结构化思维",
+      "ffe58f;",
+      "5W1H",
+      "ccc;",
+      "faad14;"
+    ],
+    "source": "5W1H速查卡.md",
+    "sourceTitle": "5W1H速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡帮你快速掌握5W1H分析法的核心六要素和问题模板，并附案例示范，让你一看就会、一用就灵",
+    "trigger_signals": [
+      "需要快速查阅「5W1H」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "H分析法的核心六要素和问题模板",
+        "action": "H分析法的核心六要素和问题模板",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "测试阶段的环境配置环节 When：上周三",
+        "action": "测试阶段的环境配置环节 When：上周三开始",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "测试团队与运维团队交接不清 How：环境",
+        "action": "测试团队与运维团队交接不清 How：环境配置文档缺失",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "选一个你当前面临的工作问题或任务（比如“",
+        "action": "选一个你当前面临的工作问题或任务（比如“客户投诉处理”“下周汇报准备”）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "结构化思维 #框架思维",
+        "action": "结构化思维 #框架思维",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「5W1H」速查模式运行。\n\n【认知模式】快速调用5W1H的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - H分析法的核心六要素和问题模板：H分析法的核心六要素和问题模板\n\nStep 2 - 测试阶段的环境配置环节 When：上周三：测试阶段的环境配置环节 When：上周三开始\n\nStep 3 - 测试团队与运维团队交接不清 How：环境：测试团队与运维团队交接不清 How：环境配置文档缺失\n\nStep 4 - 选一个你当前面临的工作问题或任务（比如“：选一个你当前面临的工作问题或任务（比如“客户投诉处理”“下周汇报准备”）\n\nStep 5 - 结构化思维 #框架思维：结构化思维 #框架思维\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用5W1H速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

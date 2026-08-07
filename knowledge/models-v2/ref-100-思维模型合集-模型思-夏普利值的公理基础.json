@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-夏普利值的公理基础",
+  "meta": {
+    "name": "夏普利值的公理基础",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):夏普利值的公理基础",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "零性：如果博弈参与者为任何联盟增加的价值都等于零，那么该博弈 参与者的价值等于零。例如：四个人打麻将刚刚好，第五个人对于团 队来说，就没有任何价值。 公平性／对称性：如果两个博弈参与者对任何联盟都具有相同的增加  1718 / 1937",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "四个人打麻将刚刚好，第五个人对于团 队来说，就没有任何价值"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以夏普利值的公理基础的方式思考这个问题。",
+    "activation_phrase": "请用夏普利值的公理基础分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

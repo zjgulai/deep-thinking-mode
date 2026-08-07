@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-信息的可提取性",
+  "meta": {
+    "name": "信息的可提取性",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):信息的可提取性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "调查发现,美国大部分人认为交通事故、谋杀、龙卷风的发生频率更高, 但是统计数据证明,每年死于谋杀和交通事故的人数,只是死于糖尿病 或者胃癌人数的二分之一,每年死于龙卷风的人数也没有死于雷击的人 数多。之所以出现这种相反的状况,是因为凶杀案,",
+    "trigger_signals": [
+      "如果你是法官,依据“无罪推定”,怎样裁决?"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "前几天亲眼目睹路上有一辆小汽车自燃了,一段时间内总会觉得"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以信息的可提取性的方式思考这个问题。",
+    "activation_phrase": "请用信息的可提取性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

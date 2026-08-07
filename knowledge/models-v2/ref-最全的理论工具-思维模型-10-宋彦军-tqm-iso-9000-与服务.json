@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-宋彦军-tqm-iso-9000-与服务",
+  "meta": {
+    "name": "宋彦军．TQM、ISO 9000 与服务",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):宋彦军．TQM、ISO 9000 与服务",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "10. (美)洛丝特、李晓光．全面质量管理．中国人民大学出版社．1999． \f http://wiki.mbalib.com/ 定置管理 —强化现场管理和谋求系统改善的科学管  理方法 \f http://wiki.mbalib.com/",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以宋彦军．TQM、ISO 9000 与服务的方式思考这个问题。",
+    "activation_phrase": "请用宋彦军．TQM、ISO 900分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

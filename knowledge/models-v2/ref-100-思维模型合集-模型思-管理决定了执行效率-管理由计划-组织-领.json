@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-管理决定了执行效率-管理由计划-组织-领",
+  "meta": {
+    "name": "管理决定了执行效率。管理由计划、组织、领",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):管理决定了执行效率。管理由计划、组织、领",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "问题 以共生体、商业模式和战略作为输人，我们在管理上的核心差异或流 程优势是什么？ 关键岗位上是否有合适的人才？ 员工是否知道其工作目标并围绕其展开工作？ 衡量指标 差异化的业务运营关键指标； 关键岗",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "苹 果手机采用“Iphone＋IOS＋App Store”商业模式，使得当时的霸主诺基"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以管理决定了执行效率。管理由计划、组织、领的方式思考这个问题。",
+    "activation_phrase": "请用管理决定了执行效率。管理由计划分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

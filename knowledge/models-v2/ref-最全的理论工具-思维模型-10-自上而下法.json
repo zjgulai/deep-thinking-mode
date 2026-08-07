@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-自上而下法",
+  "meta": {
+    "name": "自上而下法",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):自上而下法",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "自上而下法常常被视为构建 WBS 的常规方法，即从项目最大的单位开始， 逐步将它们分解成下一级的多个子项。这个过程就是要不断增加级数，细化工作 任务。这种方法对项目经理来说，可以说是最佳方法，因为他们具备广泛的技术 知识和对项目的整体视角",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自上而下法的方式思考这个问题。",
+    "activation_phrase": "请用自上而下法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

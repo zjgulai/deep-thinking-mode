@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-经营单位的业绩",
+  "meta": {
+    "name": "经营单位的业绩",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):经营单位的业绩",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "2.7. 主要结论  PIMS 研究人员运用多变量回归的方法对 2000 多个经营单位建立起上述战 略因素与经营绩效的关系。通过分析发现，下面几个战略因素对投资收益率和现 金流量有较大影响。如何运用这些重要的战略因素在 8O%的程度上决定了",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以经营单位的业绩的方式思考这个问题。",
+    "activation_phrase": "请用经营单位的业绩分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

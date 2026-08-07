@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-进一步组织学习厂-文明生产定置管理办法-",
+  "meta": {
+    "name": "进一步组织学习厂“文明生产定置管理办法”",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):进一步组织学习厂“文明生产定置管理办法”",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "通过学习在理解必要性、迫切性的基础上，主要了解定置管理的办法和操作 要求，同时组织 l0 余名车间管理骨干到某船厂参观学习先进的现场管理经验， 为下一步的工作打好思想基础。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以进一步组织学习厂“文明生产定置管理办法”的方式思考这个问题。",
+    "activation_phrase": "请用进一步组织学习厂“文明生产定置分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

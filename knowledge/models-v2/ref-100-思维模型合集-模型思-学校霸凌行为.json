@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-学校霸凌行为",
+  "meta": {
+    "name": "学校霸凌行为",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):学校霸凌行为",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "学校的霸凌行为，也是典型的等门槛效应。孩子在学校读书，遇到小 伙伴的欺负，如果不勇敢的回应，就可能会遭到变本加厉得寸进尺的 欺负和侮辱。别的小朋友如果恶意打你一下，你必须打回去，打的一 定比他重。这里强调的是恶意打你，而不是正常的身体触碰，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "对方不占理，还强词夺理，变为暴力欺负， 约别的小朋友组队欺负"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以学校霸凌行为的方式思考这个问题。",
+    "activation_phrase": "请用学校霸凌行为分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

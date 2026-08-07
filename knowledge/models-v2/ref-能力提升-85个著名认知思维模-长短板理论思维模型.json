@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-长短板理论思维模型",
+  "meta": {
+    "name": "长短板理论思维模型",
+    "category": "05",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:长短板理论思维模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 木桶理论也称木桶原理或短板理论,短板理论即一个水桶无论有多高,它盛水的高度取决于其中最低的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "就不断上升,木桶的装水量也就不断增加,只可惜柯达当时并没 中我们可以体会出“长板理论”的核心效用,那就是短板不短,长"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以长短板理论思维模型的方式思考这个问题。",
+    "activation_phrase": "请用长短板理论思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

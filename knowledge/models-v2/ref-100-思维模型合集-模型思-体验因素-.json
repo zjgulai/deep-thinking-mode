@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-体验因素-",
+  "meta": {
+    "name": "体验因素",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):体验因素：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在目标明确、能够得到即时反馈，并且挑战与能力相当的情况下，人 的注意力会开始凝聚，逐渐进入心无旁骛的状态。此时就进入了心流 的体验阶段，行为和意识融为一体，心灵的所有能量专注在当下的事 情，会产生一种掌控全局的感觉，控制感油然而生。 这就是",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "音乐家、 登山家、科学家在进入心流状态时就会身心合一，融为一体"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以体验因素：的方式思考这个问题。",
+    "activation_phrase": "请用体验因素：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

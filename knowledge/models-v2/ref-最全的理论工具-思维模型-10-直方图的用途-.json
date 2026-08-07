@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-直方图的用途-",
+  "meta": {
+    "name": "直方图的用途",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):直方图的用途。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "(1)分布过程(工序)寻找改进点。  1)通过观察分布的形态(平均值与离散情况)，研讨分布有无偏向一侧或其他 缺陷可以发现问题点；  2)通过观察直方图与标准的关系 研讨分布是否符合标准要求、平均值所在 位置是否适当等可以找到改进点：  3",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以直方图的用途。的方式思考这个问题。",
+    "activation_phrase": "请用直方图的用途。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

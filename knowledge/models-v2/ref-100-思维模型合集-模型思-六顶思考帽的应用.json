@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-六顶思考帽的应用",
+  "meta": {
+    "name": "六顶思考帽的应用",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):六顶思考帽的应用",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "爱德华·德·博诺，英籍马耳他人，哲学、医学、心理学博士，剑桥大学 思维基金会主席。被誉为 20 世纪人类思维方式革命性变革的缔造者， 欧洲创新协会将他列为历史上对人类贡献最大的 250 人之一，是水平 思考（另译横向思维）理论的创立者，在全",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以六顶思考帽的应用的方式思考这个问题。",
+    "activation_phrase": "请用六顶思考帽的应用分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

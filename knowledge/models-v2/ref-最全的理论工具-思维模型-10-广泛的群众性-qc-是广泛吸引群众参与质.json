@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-广泛的群众性-qc-是广泛吸引群众参与质",
+  "meta": {
+    "name": "广泛的群众性。QC 是广泛吸引群众参与质",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):广泛的群众性。QC 是广泛吸引群众参与质",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ 可以学技术、学管理、提高官人素质和能力，发挥个人的积极性和创造性。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以广泛的群众性。QC 是广泛吸引群众参与质的方式思考这个问题。",
+    "activation_phrase": "请用广泛的群众性。QC 是广泛吸引分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

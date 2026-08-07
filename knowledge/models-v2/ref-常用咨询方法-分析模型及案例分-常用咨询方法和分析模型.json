@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-常用咨询方法和分析模型",
+  "meta": {
+    "name": "常用咨询方法和分析模型",
+    "category": "02",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:常用咨询方法和分析模型",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "成功因素分析法、KT 决策法、雷达图分析法、麦肯锡 7S 模型、麦肯锡三层 面理论、麦肯锡七步成诗法、麦肯锡 5CS 模型等。文档中包含了模型起源、模型定义、模型适 用原则、模型的应用方法及具体应用案",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "等内容。本文档适合于从事咨询工作的技术人员、管"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以常用咨询方法和分析模型的方式思考这个问题。",
+    "activation_phrase": "请用常用咨询方法和分析模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

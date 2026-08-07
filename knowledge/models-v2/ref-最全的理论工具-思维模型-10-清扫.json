@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-清扫",
+  "meta": {
+    "name": "清扫",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):清扫",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "大程度上可以保持设备在正常状态下运转， 因此我们常说清扫就是点检。清扫 过程是清除工作场所内的脏污， 防止脏污的发生，保持工作场所干净明亮。 清扫的推进步骤 (1)员工教育。培养员工安全意识、设备保养、技术准备等方面的知识， 让员工 明白清",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以清扫的方式思考这个问题。",
+    "activation_phrase": "请用清扫分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

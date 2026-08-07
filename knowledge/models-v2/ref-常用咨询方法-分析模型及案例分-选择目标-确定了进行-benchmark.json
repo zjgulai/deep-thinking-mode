@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-选择目标-确定了进行-benchmark",
+  "meta": {
+    "name": "选择目标。确定了进行 benchmark",
+    "category": "00",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:选择目标。确定了进行 benchmark",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对象。通常，竞争对手和行业领先企业是 benchmarking 的首选对象；",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以选择目标。确定了进行 benchmark的方式思考这个问题。",
+    "activation_phrase": "请用选择目标。确定了进行 benc分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

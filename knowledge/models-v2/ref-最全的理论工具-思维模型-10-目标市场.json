@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-目标市场",
+  "meta": {
+    "name": "目标市场",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):目标市场",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我国旅游市场分为国内旅游市场、海外旅游市场。目标市场主要以国内市场 及近距离海外市场为主。旅游网络目标市场“锁定”为“自领”阶层的中青年、 企事业单位管理层人士及在校大学生。对前两者推出豪华团或标准团，一系列出 境旅游线路，航空机票及星级",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以目标市场的方式思考这个问题。",
+    "activation_phrase": "请用目标市场分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

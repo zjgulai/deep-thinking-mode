@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-有关因素变动对保本点和利润的影响分",
+  "meta": {
+    "name": "有关因素变动对保本点和利润的影响分",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):有关因素变动对保本点和利润的影响分",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "析一、销售价格变动的影响  产品销售价格的变动是影响盈亏平衡点的一个重要因素。销售价格的变动会 引起单位边际贡献和边际贡献率向同方向变动，从而会改变盈亏平衡点。如果其 他因素不变，则当产品销售价格上升时，会增大单位边际贡献和边际贡献率，在",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以有关因素变动对保本点和利润的影响分的方式思考这个问题。",
+    "activation_phrase": "请用有关因素变动对保本点和利润的影分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

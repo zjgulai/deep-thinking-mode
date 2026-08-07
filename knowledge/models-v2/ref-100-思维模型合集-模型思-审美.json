@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-审美",
+  "meta": {
+    "name": "审美",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):审美",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "说服框架，具体在说服的过程中，要因人而异，灵活变",
+    "trigger_signals": [
+      "如果你能够激发人类恐惧的本能，你就能影响别人。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "宣传抗日，文化水平高的人，采用谈判和理性来说服"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以审美的方式思考这个问题。",
+    "activation_phrase": "请用审美分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

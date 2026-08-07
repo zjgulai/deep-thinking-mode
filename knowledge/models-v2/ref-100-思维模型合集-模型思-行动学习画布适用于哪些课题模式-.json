@@ -1,0 +1,39 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-行动学习画布适用于哪些课题模式-",
+  "meta": {
+    "name": "行动学习画布适用于哪些课题模式",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):行动学习画布适用于哪些课题模式？",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "工具，它同时也承载着一套思想理念，并拥有 8",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "12-12 09:30",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": "后发现，群体在进行封闭式讨 论时，成员倾向于让自己的观点与团体保持一致，有争议的观点、新"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以行动学习画布适用于哪些课题模式？的方式思考这个问题。",
+    "activation_phrase": "请用行动学习画布适用于哪些课题模式分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

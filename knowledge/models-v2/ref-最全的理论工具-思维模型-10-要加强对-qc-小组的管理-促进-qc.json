@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-要加强对-qc-小组的管理-促进-qc",
+  "meta": {
+    "name": "要加强对 QC 小组的管理，促进 QC",
+    "category": "12",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):要加强对 QC 小组的管理，促进 QC",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "4.1.5. 贯彻IS0 9000 标准  国内外不少质量管理专家、学者对 ISO 9000 系列标准和 TQM 都作过对比， 阐述它们的异同点。 根据专家们的阐述和两者的含义和特点，两者最大的共同点是它们的目的、要求 和作用是一致的，都是",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "1.6. 加强班组长的管理",
+        "action": "1.6. 加强班组长的管理",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "对本班组人员进行“质量第一”的思想教育，",
+        "action": "对本班组人员进行“质量第一”的思想教育，认真贯彻质量管理制度和",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "组织好自检，互检和首件检查的活动，开好班",
+        "action": "组织好自检，互检和首件检查的活动，开好班组质量分析会，充分发挥",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "严格执行工艺纪律，重点抓好本班组内管理点",
+        "action": "严格执行工艺纪律，重点抓好本班组内管理点的质量控制。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "组织有秩序的生产，保持文明生产，开展“5",
+        "action": "组织有秩序的生产，保持文明生产，开展“5S”活动。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「要加强对 QC 小组的管」思维模式运行。\n\nStep 1 - 1.6. 加强班组长的管理：1.6. 加强班组长的管理\n\nStep 2 - 对本班组人员进行“质量第一”的思想教育，：对本班组人员进行“质量第一”的思想教育，认真贯彻质量管理制度和\n\nStep 3 - 组织好自检，互检和首件检查的活动，开好班：组织好自检，互检和首件检查的活动，开好班组质量分析会，充分发挥\n\nStep 4 - 严格执行工艺纪律，重点抓好本班组内管理点：严格执行工艺纪律，重点抓好本班组内管理点的质量控制。\n\nStep 5 - 组织有秩序的生产，保持文明生产，开展“5：组织有秩序的生产，保持文明生产，开展“5S”活动。\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用要加强对 QC 小组的管理，促分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-生产实绩管理表",
+  "meta": {
+    "name": "生产实绩管理表",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):生产实绩管理表",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "生产实绩管理表是记录各工序、生产线每个时间段的计划数量与实际制造数 量的差异及异常内容。通过把握每个时间段的计划与实绩的差异，使异常表面化， 使操作人员了解异常内容，问题点共有化．促进问题的改善。管理人员要化精力 进行调查、分析并制定改善",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以生产实绩管理表的方式思考这个问题。",
+    "activation_phrase": "请用生产实绩管理表分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-当前现实树-crt-",
+  "meta": {
+    "name": "当前现实树（CRT）",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):当前现实树（CRT）",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "要认识到 UDE 并不是真正的问题所在，它们只是一 些表面现象。难就难在要绘出将这些不良效果联系在一起的逻辑关系图。完成这 项工作，就可以找到真正的问题，它们就显示在这个逻辑图的最低部。这个逻辑 图就",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以当前现实树（CRT）的方式思考这个问题。",
+    "activation_phrase": "请用当前现实树（CRT）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

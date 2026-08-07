@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-顾客估计这家企业的产品或服务的价值比其它",
+  "meta": {
+    "name": "顾客估计这家企业的产品或服务的价值比其它",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):顾客估计这家企业的产品或服务的价值比其它",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "战略钟模型将基于市场的一般战略的 8 种类型在一个图上标示出来。如下图 所示： \f http://wiki.mbalib.com/  战略钟图是以平分 360 度圆的 8 条射线表示基于市场的一般战略的 8 种战略 类型的一种似钟的图形，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以顾客估计这家企业的产品或服务的价值比其它的方式思考这个问题。",
+    "activation_phrase": "请用顾客估计这家企业的产品或服务的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

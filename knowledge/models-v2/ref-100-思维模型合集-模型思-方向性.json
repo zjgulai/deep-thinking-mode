@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-方向性",
+  "meta": {
+    "name": "方向性",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):方向性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "如，有人摔倒时因为着急赶工，着急赶工是因为公司业务繁忙，公司 业务繁忙是因为公司订单太多，所以公司订单太多是有人摔倒的真因。 这种推理和分析就没有任何意义，最好没有订单，不来上班，就不会 摔倒了。所以问题的分析要朝着正确的客观的方向迈进。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "为什么设备没有维修？因为设备全负荷运作。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以方向性的方式思考这个问题。",
+    "activation_phrase": "请用方向性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

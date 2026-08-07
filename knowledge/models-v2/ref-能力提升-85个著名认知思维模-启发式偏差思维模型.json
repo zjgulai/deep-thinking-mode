@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-启发式偏差思维模型",
+  "meta": {
+    "name": "启发式偏差思维模型",
+    "category": "06",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:启发式偏差思维模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 因走捷径而导致的判断偏差,称为“启发式偏差”。当人们要对一个既复雜模糊又不确定的事件进行判断",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "依赖过去的经验,通过对过去的经验进行分析处理"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以启发式偏差思维模型的方式思考这个问题。",
+    "activation_phrase": "请用启发式偏差思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

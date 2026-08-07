@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-二八定律思维模型",
+  "meta": {
+    "name": "二八定律思维模型",
+    "category": "09",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:二八定律思维模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "少数法则、二八法则、巴莱多定律）指出,约仅有 20% 的因素影响 80% 的 结果。也就是说：所有变因中,最重要的仅有 20%,虽然剩余的 80% 占了多数,影响的幅度却遠低于“关键的 少数”。管理学",
+    "trigger_signals": [
+      "如果你不思进取,那么一年后,你如同原地踏步",
+      "如果你每天进步一点点,一年后你会遠大于“1”",
+      "如果你每天退步一点点,一年后你会遠小于“1”"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "意大利约有 80％的土地由 20％的人口所有、80% 的豌豆产量"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以二八定律思维模型的方式思考这个问题。",
+    "activation_phrase": "请用二八定律思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

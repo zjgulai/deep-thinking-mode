@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-按两种因素交叉分层-",
+  "meta": {
+    "name": "按两种因素交叉分层",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按两种因素交叉分层：",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "气缸垫 合计  操作者 漏油情况  A厂 B厂 操作者 漏油 6 0 6  王师傅  不漏油 2 11 13  漏油 0 3 3  李师傅  不漏油 5 4 9  漏油 3 7 10  张师傅  不漏油 7 2 9  漏油 9 10 19",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以按两种因素交叉分层：的方式思考这个问题。",
+    "activation_phrase": "请用按两种因素交叉分层：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

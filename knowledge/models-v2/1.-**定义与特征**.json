@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0.0",
+  "id": "1.-**定义与特征**",
+  "meta": {
+    "name": "1. **定义与特征**",
+    "category": "02",
+    "tags": [],
+    "source": "分形_具有自相似性无限精细结构的几何形状.md"
+  },
+  "engine": {
+    "core_question": "分形，具有自相似性无限精细结构的几何形状  一、分形的数学本质 ---------  ### 1. **定义与特征**  *   **分形**：具有自相似性、无限精细结构的几何形状      *   **核心特征**：       *   自相似性（整体与部分相似）      *   分数维数（非整",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**有限与无限的统一**",
+        "action": "**有限与无限的统一**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「1. **定义与特征**」思维模式运行。\n\nStep 1 - **有限与无限的统一**：**有限与无限的统一**\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用1. **定义与特征**分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 3
+  }
+}

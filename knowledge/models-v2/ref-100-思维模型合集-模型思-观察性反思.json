@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-观察性反思",
+  "meta": {
+    "name": "观察性反思",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):观察性反思",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "进行“反思”，即人们对经验过程中的“知识碎片”进行回忆、筛选、整合、 分享等等。把“有限的经验”进行归类、条理化和记忆。  1432 / 1937 \f3. 抽象概念化，有一定理论知识背景和一定理论概括能力的人便会对 反思的结果从理论上进行系",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以观察性反思的方式思考这个问题。",
+    "activation_phrase": "请用观察性反思分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

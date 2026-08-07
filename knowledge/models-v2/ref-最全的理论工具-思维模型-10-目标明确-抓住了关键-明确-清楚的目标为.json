@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-目标明确-抓住了关键-明确-清楚的目标为",
+  "meta": {
+    "name": "目标明确，抓住了关键。明确、清楚的目标为",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):目标明确，抓住了关键。明确、清楚的目标为",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "向。在实施 KPI 时，考评者抓住了解决问题的主要矛盾，提高了绩效考评的效 率，员工将精力和时间投入到重要工作上，可以尽快地提高工作绩效和职业能力。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以目标明确，抓住了关键。明确、清楚的目标为的方式思考这个问题。",
+    "activation_phrase": "请用目标明确，抓住了关键。明确、清分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

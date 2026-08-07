@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-40个-学习-提升-工作-思维-12-23-2022-",
+  "meta": {
+    "name": "12/23/2022 ‹#›",
+    "category": "11",
+    "tags": [],
+    "source": "ref:40个（学习、提升、工作）思维模型:12/23/2022 ‹#›",
+    "sourceTitle": "40个（学习、提升、工作）思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "全面思考问题的模型。 它提 供 了 “ 平 行 思 维 ” 的 工 具 ， 避免 将 时 间 浪 费 在互 相 争 执 上",
+    "trigger_signals": [
+      "当你需要考虑 决 策会带来的长 远 影响 时",
+      "当你 发 现 正 向 思 考问 题 难 以 继 续 时",
+      "当你 在 思 考 新 想 法 时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以12/23/2022 ‹#›的方式思考这个问题。",
+    "activation_phrase": "请用12/23/2022 ‹#›分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

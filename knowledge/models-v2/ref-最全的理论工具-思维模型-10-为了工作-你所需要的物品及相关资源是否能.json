@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-为了工作-你所需要的物品及相关资源是否能",
+  "meta": {
+    "name": "为了工作，你所需要的物品及相关资源是否能",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):为了工作，你所需要的物品及相关资源是否能",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "A．几乎总是能够及时供应 B．经常能够及时供应 C．有时能够及时供应 D．经常不能及时供应 E．几乎总是不能及时供应",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以为了工作，你所需要的物品及相关资源是否能的方式思考这个问题。",
+    "activation_phrase": "请用为了工作，你所需要的物品及相关分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

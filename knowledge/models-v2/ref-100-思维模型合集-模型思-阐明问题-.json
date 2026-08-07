@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-阐明问题-",
+  "meta": {
+    "name": "阐明问题",
+    "category": "04",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):阐明问题：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "，阐明问题需要描述为：在哪里？ 发生了什么事情？ 例如：在第一车间西门走廊 30 米处，发生有一名工人摔倒后手部受伤。  953 / 1937 \f3、分解问题： 有些问题可能比较大，需要把问题分解成小",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在第一车间西门走廊 30 米处，发生有一名工人摔倒后手部受伤"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以阐明问题：的方式思考这个问题。",
+    "activation_phrase": "请用阐明问题：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

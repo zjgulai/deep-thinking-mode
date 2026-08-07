@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-采访法-5w1h-工具-",
+  "meta": {
+    "name": "采访法（5w1h 工具）",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):采访法（5w1h 工具）",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "What：是什么？比如目的是什么？做什么工作？  69 / 1937 \fHow：怎么做？如何提高效率？如何实施等？ Why：为什么？为什么这么做？理由和原因是什么？ When：何时？比如什么时间完成？ Where：何处？比如在哪里做？从哪里",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "目的是什么？做什么工作？  69 / 1937"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以采访法（5w1h 工具）的方式思考这个问题。",
+    "activation_phrase": "请用采访法（5w1h 工具）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

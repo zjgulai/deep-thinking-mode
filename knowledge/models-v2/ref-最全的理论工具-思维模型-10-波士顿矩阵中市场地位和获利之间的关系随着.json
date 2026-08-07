@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-波士顿矩阵中市场地位和获利之间的关系随着",
+  "meta": {
+    "name": "波士顿矩阵中市场地位和获利之间的关系随着",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):波士顿矩阵中市场地位和获利之间的关系随着",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "变化。在有些行业里，企业的市场份额大，会在单位成本上形成优势；而有  些行业 则不然，过于庞大的市场份额可能会导致企业成本的增加。实际上，  市场占有率小的企业，如果采用创新和产品差异化的策略，仍然能获得很高  的利润。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以波士顿矩阵中市场地位和获利之间的关系随着的方式思考这个问题。",
+    "activation_phrase": "请用波士顿矩阵中市场地位和获利之间分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

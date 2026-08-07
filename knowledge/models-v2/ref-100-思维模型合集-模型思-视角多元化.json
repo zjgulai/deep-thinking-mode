@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-视角多元化",
+  "meta": {
+    "name": "视角多元化",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):视角多元化",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "问题的答案是未知的，问题陈述本身尚未展开，关键",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "气候变暖问题，人类排放的二氧化碳不能马上让气候"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以视角多元化的方式思考这个问题。",
+    "activation_phrase": "请用视角多元化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

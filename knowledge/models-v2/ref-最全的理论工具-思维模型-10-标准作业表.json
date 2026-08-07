@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-标准作业表",
+  "meta": {
+    "name": "标准作业表",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):标准作业表",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "该表体现现场管理人员的意志。并对操作人员的操作顺序和每道工序的标准 \f http://wiki.mbalib.com/ 作业时间做出明确的规定。标准作业表可以使作业规则明确化。以节拍来分配作 业内容。标准作业以人的有效劳动为中心，在没有浪",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以标准作业表的方式思考这个问题。",
+    "activation_phrase": "请用标准作业表分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

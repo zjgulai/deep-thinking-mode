@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-在设计-kpi-的时候-设计者一定要遵循",
+  "meta": {
+    "name": "在设计 KPI 的时候，设计者一定要遵循",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):在设计 KPI 的时候，设计者一定要遵循",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "目标结果是实实在在的，可观察或证明；",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，审核这样的一些问题：多个评 价者对同一个绩效指标进行评价，结果是否能取得一致？这些指标的总和是否可"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在设计 KPI 的时候，设计者一定要遵循的方式思考这个问题。",
+    "activation_phrase": "请用在设计 KPI 的时候，设计者分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

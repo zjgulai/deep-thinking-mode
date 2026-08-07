@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-数理智能简介",
+  "meta": {
+    "name": "数理智能简介",
+    "category": "03",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):数理智能简介",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "有效地计算、测量、推理、归纳、分类，并进行复杂数",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "公元前 200 年，希腊人对圆锥截面的研究，使开普勒在 1609 年"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以数理智能简介的方式思考这个问题。",
+    "activation_phrase": "请用数理智能简介分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

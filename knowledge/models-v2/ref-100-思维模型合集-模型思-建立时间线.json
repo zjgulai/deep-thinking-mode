@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-建立时间线",
+  "meta": {
+    "name": "建立时间线",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):建立时间线",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "预想的未来，是对未来长远目标的生动化描述",
+    "trigger_signals": [
+      "当我们确定几种合理的情景之后，我们要针对每一个情景建立时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "成为全球最大的新能源车制造商。 常见陷阱："
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立时间线的方式思考这个问题。",
+    "activation_phrase": "请用建立时间线分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

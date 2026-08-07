@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-为什么要简单化-类比化-具象化-",
+  "meta": {
+    "name": "为什么要简单化、类比化、具象化",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):为什么要简单化、类比化、具象化？",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "将非常小额度的资金聚集起来借贷给有",
+    "trigger_signals": [
+      "如果你在某一场合见过一个人，如果下次他再次出现，就更容易识别",
+      "当你根据某个人的外貌来辨认这个人时",
+      "如果我们用结构图梳理知识点，把碎片化的知识结构化，"
+    ],
+    "stop_conditions": [
+      "9 个，很多主流的科学家认为只有"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "9 个，很多主流的科学家认为只有",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": "要想理解大脑 的运行原理，就可以和电脑进行类比，大脑也有有处理器，有内存，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以为什么要简单化、类比化、具象化？的方式思考这个问题。",
+    "activation_phrase": "请用为什么要简单化、类比化、具象化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

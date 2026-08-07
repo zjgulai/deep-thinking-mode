@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "header": {
+    "css_sha256": "be0e2c791033d2b7b55495fbd09b0054e90fdb0f811253d0feaa177cdd6ce608",
+    "title_line": 1,
+    "blank_line": 2,
+    "formal_title_line": 3,
+    "setext_line": 4,
+    "metadata_line": 6,
+    "source_url_line": 8
+  },
+  "footers": {
+    "square": {
+      "last_line_count": 4,
+      "action_icon_count": 5,
+      "sha256": "730b1c4bdd950615aca31fda3bc8462fa5892f2c415d12f631e590e2f5ada4ee"
+    },
+    "cognition": {
+      "last_line_count": 4,
+      "action_icon_count": 5,
+      "sha256": "d97d021099a51ffa977d76a4d0061858bf54a5c787530c96c0c15b4a7185f525"
+    }
+  }
+}

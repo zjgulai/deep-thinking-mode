@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-整理",
+  "meta": {
+    "name": "整理",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):整理",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "出现场． 只留下有用的东西。它是开始改善生产现场的第一步。其要点是对生 产现场的现实摆放和停滞的各种物品进行分类， 区分什么是现场需要的，什么 是现场不需要的 对现场不需要的物品， 诸如用剩的材料、多余的设备、员工的 个人用品等， 要坚决清",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以整理的方式思考这个问题。",
+    "activation_phrase": "请用整理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

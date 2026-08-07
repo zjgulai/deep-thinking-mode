@@ -1,0 +1,99 @@
+{
+  "schema_version": "2.0.0",
+  "id": "概念篇-六步建模-终极易懂实操版-看表象-看性质-看关系-看完整属性-看本质内涵-看边界外延-自成权",
+  "meta": {
+    "name": "概念篇",
+    "category": "02",
+    "tags": [],
+    "source": "概念篇_六步建模_终极易懂实操版（看表象___看性质___看关系___看完整属性___看本质内涵___看边界外延___自成权威体系）.md",
+    "sourceTitle": "概念篇：六步建模・终极易懂实操版（看表象 → 看性质 → 看关系 → 看完整属性 → 看本质内涵 → 看边界外延 → 自成权威体系）"
+  },
+  "engine": {
+    "core_question": "口诀：自己本来就有的，叫性质；别人临时叫你干的，不叫性质",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "目标性质（它为什么存在）",
+        "action": "目标性质（它为什么存在）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "结构性质（它内部是什么架构）",
+        "action": "结构性质（它内部是什么架构）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "管控性质（它自带什么约束）",
+        "action": "管控性质（它自带什么约束）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "价值性质（它自带行业底色）",
+        "action": "价值性质（它自带行业底色）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "纵向层级关系（上下级传导链）",
+        "action": "纵向层级关系（上下级传导链）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "横向协同关系（平行业务链）",
+        "action": "横向协同关系（平行业务链）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "体系支撑关系（底层依托链）",
+        "action": "体系支撑关系（底层依托链）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "性质：临时工作、临时任务、被动联动、外部要求",
+        "action": ""
+      },
+      {
+        "condition": "关系：事物自身的能力、自身特点",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「概念篇」思维框架运行。核心立场：口诀：自己本来就有的，叫性质；别人临时叫你干的，不叫性质\n\n【推理协议】\n1. 目标性质（它为什么存在）\n2. 结构性质（它内部是什么架构）\n3. 管控性质（它自带什么约束）\n4. 价值性质（它自带行业底色）\n5. 纵向层级关系（上下级传导链）\n6. 横向协同关系（平行业务链）\n\n【质量门禁】每完成一步推理后，自问：这个结论是从目标性质（它为什么存在）...的逻辑推导出来的吗？如果不是，回到第1步重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用概念篇分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

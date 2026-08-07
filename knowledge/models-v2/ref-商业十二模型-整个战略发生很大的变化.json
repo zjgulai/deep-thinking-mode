@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-商业十二模型-整个战略发生很大的变化",
+  "meta": {
+    "name": "整个战略发生很大的变化",
+    "category": "09",
+    "tags": [],
+    "source": "ref:商业十二模型:整个战略发生很大的变化",
+    "sourceTitle": "商业十二模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "的就  互联网消除了距离，  $\u0013# 是做连接器。  这是它最大的影响。  ⸆腊 ⡤낉 ⚡䚍  1$  0\u00130  ⥌䜂 餴ꆄ 暟崨  互联网物理化是大趋势。  1\u00131  一淘 vs 线下店  可口可乐",
+    "trigger_signals": [
+      "如果你还想了解更多，可以扫描二维码回复关键词“企业价值模型”了解更多。",
+      "如果你还想了解更多，可以扫描二维码回复关键词“企业生命周期”了解更多。",
+      "如果你还想了解更多，可以扫描二维码回复关键词“企业能量模型”了解更多。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以整个战略发生很大的变化的方式思考这个问题。",
+    "activation_phrase": "请用整个战略发生很大的变化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-纵向比较",
+  "meta": {
+    "name": "纵向比较",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):纵向比较",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "扩张还是萎缩就可以判断企业自身的财务状况是进步还是在退步。 3.4. 注意事项 （1） 指标数不要太少，否则就失去了雷达图的优越性。 （2） 使用雷达图应有相应的数据表，以便作图和核对。 3.5. 雷达图经营分析  在企业经营分析中，雷达图",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以纵向比较的方式思考这个问题。",
+    "activation_phrase": "请用纵向比较分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

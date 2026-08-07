@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业内部服务质量导致员工满意",
+  "meta": {
+    "name": "企业内部服务质量导致员工满意",
+    "category": "07",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业内部服务质量导致员工满意",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "内部服务质量的好坏一般是以员工对他们的工作、同事和公司的感受来衡 量的。影响员工满意的因素一般有两个方面：外在服务质量和内部质量，外在服 务质量如薪水、福利．舒适的工作环境等。内部质量包括员工的培训和开发、奖 励和认可、信息与沟通、技术和",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业内部服务质量导致员工满意的方式思考这个问题。",
+    "activation_phrase": "请用企业内部服务质量导致员工满意分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

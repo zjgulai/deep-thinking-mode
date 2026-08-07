@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-把任何任务和项目具体成行动-",
+  "meta": {
+    "name": "把任何任务和项目具体成行动",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):把任何任务和项目具体成行动：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "不管是什么任务项目，我们要问的问题是下一个动作是什么？只有这 样才能把计划具体化，任务行动化。这样一来，我们就可以把所有的 注意力专注于行动，从而快速完成任务。 三、GTD 的五大阶段  987 / 1937 \f第一步：收集阶段一填充工作篮",
+    "trigger_signals": [
+      "如果你每天的任务很多，每天有忙不完的活，每天感觉非常累，感觉"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以把任何任务和项目具体成行动：的方式思考这个问题。",
+    "activation_phrase": "请用把任何任务和项目具体成行动：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

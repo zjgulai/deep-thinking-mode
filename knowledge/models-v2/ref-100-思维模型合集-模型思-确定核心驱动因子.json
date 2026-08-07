@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-确定核心驱动因子",
+  "meta": {
+    "name": "确定核心驱动因子",
+    "category": "04",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):确定核心驱动因子",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "的驱动因子。 例如：通过大量的调研，发现了驱动趋势的有 100 个驱动因子，通过 情景未来小组的讨论，最终确定 20 个核心驱动因子（能源价格上涨、 气候变化、低碳出行等等）  。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "通过大量的调研，发现了驱动趋势的有 100 个驱动因子，通过"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以确定核心驱动因子的方式思考这个问题。",
+    "activation_phrase": "请用确定核心驱动因子分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

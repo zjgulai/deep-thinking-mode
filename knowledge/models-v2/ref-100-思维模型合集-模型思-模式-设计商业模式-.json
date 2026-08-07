@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-模式-设计商业模式-",
+  "meta": {
+    "name": "模式——设计商业模式",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):模式——设计商业模式。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "数字经济下的平台型企业，最容易产生网络效应。所以企业的战略和 商业模式的选择非常重要。在陈威如老师的《平台战略》一书中提到， 企业通过设计平台商业模式，建立生态圈，利用双边网络效应，获得 商业上的成功。 作者分析研究了中外近 50 个平台企",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "电子商务类：淘宝、天猫、京东、Amazon;"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以模式——设计商业模式。的方式思考这个问题。",
+    "activation_phrase": "请用模式——设计商业模式。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

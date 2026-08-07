@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-反馈性",
+  "meta": {
+    "name": "反馈性",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):反馈性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "由于德尔菲法采用匿名形式，专家之间互不接触，仅靠一轮调查，专 家意见往往比较分散，不易作出结论，为了使受邀的专家们能够了解 每一轮咨询的汇总情况和其他专家的意见，组织者要对每一轮咨询的 结果进行整理、分析、综合，并在下一轮咨询中反馈给每个受",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以反馈性的方式思考这个问题。",
+    "activation_phrase": "请用反馈性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

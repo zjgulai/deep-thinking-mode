@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0.0",
+  "id": "系统化分解法速查卡",
+  "meta": {
+    "name": "系统化分解法",
+    "category": "05",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "分解法",
+      "faad14;",
+      "fffbe6;"
+    ],
+    "source": "系统化分解法速查卡.md",
+    "sourceTitle": "系统化分解法速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡帮你快速掌握“拆解复杂难题”的核心方法，包含MECE原则、七大分解维度和6步流程",
+    "trigger_signals": [
+      "需要快速查阅「系统化分解法」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "七大分解维度和6步流程",
+        "action": "七大分解维度和6步流程",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "如果两个子任务有交集",
+        "action": "如果两个子任务有交集",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "七大分解维度（快速选型指南） 按阶段/时",
+        "action": "七大分解维度（快速选型指南） 按阶段/时间 → 适用于项目流程、活动策划",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "按层级/范围 → 适用于战略规划、目标拆",
+        "action": "按层级/范围 → 适用于战略规划、目标拆解",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "复杂任务可多维度组合使用",
+        "action": "复杂任务可多维度组合使用",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "选定分解维度 根据事务性质选1-2个维度",
+        "action": "选定分解维度 根据事务性质选1-2个维度",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "模糊：“优化用户体验”",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「系统化分解法」速查模式运行。\n\n【认知模式】快速调用系统化分解法的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 七大分解维度和6步流程：七大分解维度和6步流程\n\nStep 2 - 如果两个子任务有交集：如果两个子任务有交集\n\nStep 3 - 七大分解维度（快速选型指南） 按阶段/时：七大分解维度（快速选型指南） 按阶段/时间 → 适用于项目流程、活动策划\n\nStep 4 - 按层级/范围 → 适用于战略规划、目标拆：按层级/范围 → 适用于战略规划、目标拆解\n\nStep 5 - 复杂任务可多维度组合使用：复杂任务可多维度组合使用\n\nStep 6 - 选定分解维度 根据事务性质选1-2个维度：选定分解维度 根据事务性质选1-2个维度\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用系统化分解法速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

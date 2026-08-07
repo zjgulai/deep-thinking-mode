@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "形式逻辑等价关系篇_一张图秒杀_为什",
+  "meta": {
+    "name": "形式逻辑等价关系篇_一张图秒杀_为什",
+    "category": "02",
+    "tags": [],
+    "source": "形式逻辑等价关系篇_一张图秒杀_为什么_如果P则Q___非P或Q__.md"
+  },
+  "engine": {
+    "core_question": "本质是「禁区一致」  \n  \n逻辑等价的唯一标准：  \n两个句子，允许的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「形式逻辑等价关系篇_一张图秒杀_为什」思维框架运行。核心立场：本质是「禁区一致」  \n  \n逻辑等价的唯一标准：  \n两个句子，允许的\n\n【推理协议】\n1. 先设定生活化场景（贯穿全文）\n2. 韦恩图可视化：逻辑的本质是「禁区一致」\n3. 图形核心结论（一眼看懂等价）\n4. 破除最大误区：句式不同 ≠ 逻辑不同\n5. 四区域对照，彻底锁死记忆\n6. 底层定律：鲁滨逊等价公式（图形版释义）\n\n【质量门禁】每完成一步推理后，自问：这个结论是基于「形式逻辑等价关系篇_一张图秒杀_为什」的核心逻辑得出的，还是在用普通直觉回答？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用形式逻辑等价关系篇_一张图秒杀分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

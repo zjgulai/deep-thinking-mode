@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-因为反托拉斯法不鼓励占优势的公司积极行使",
+  "meta": {
+    "name": "因为反托拉斯法不鼓励占优势的公司积极行使",
+    "category": "07",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):因为反托拉斯法不鼓励占优势的公司积极行使",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "抄袭吉列公司的发明。 评分 -4 总计：-2-4-5-4=-15  产业优势 （IS） 1、Symons 为了回应此检视，统一吉列欧洲的行动活动，应用最好的技术于卡式  刮胡刀，并且将大部分的广告费支出在卡式上，以重新强调卡式，提高卡式",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以因为反托拉斯法不鼓励占优势的公司积极行使的方式思考这个问题。",
+    "activation_phrase": "请用因为反托拉斯法不鼓励占优势的公分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

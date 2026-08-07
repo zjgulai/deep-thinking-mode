@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-绘制-kj-图-a-型图解-",
+  "meta": {
+    "name": "绘制 KJ 图(A 型图解)",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绘制 KJ 图(A 型图解)",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "KJ 图亦称为 A 型图解，将已编组完成的卡片，整理成一见即能了解的图型。 完成之后将各组的相互关系以记号表示。然后写下标题与履历，在壁报纸上方 的中间位置写上标题然后在右下角记入此图做成日期、场所、资料来源及参加者 姓名等履历，此时，A",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以绘制 KJ 图(A 型图解)的方式思考这个问题。",
+    "activation_phrase": "请用绘制 KJ 图(A 型图解)分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

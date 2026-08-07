@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-思维模型-深度理解世界本质-重-思维模型-图书在版编目-cip-数据-思",
+  "meta": {
+    "name": "思维模型 图书在版编目（CIP）数据 思",
+    "category": "00",
+    "tags": [],
+    "source": "ref:思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳:思维模型 图书在版编目（CIP）数据 思",
+    "sourceTitle": "思维模型【深度理解世界本质、重新定位人生坐标！麻省理工学院加布里埃尔·温伯格、劳",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "发生核链式反应所需的核物质量。临界量是原子弹研发过程中必不可少的思维模型",
+    "trigger_signals": [
+      "如果你只是记住一些孤立的事实，试图把它们硬生生地拼凑起来，那你就是什么也不知道。如果这些事实不能在一个理论框架中彼此联系起来，",
+      "如果你能找出适用于眼下情况的模型，就能立刻获得许多信息。例如，假设你想创办一家公司，让人们出租通常闲置在车库里的昂贵电钻。如果",
+      "如果你能理解适用于某个情境的模型，就能绕过低层次思维，立刻跃升至高层次思维。反过来说，不了解这些模型的人，可能永远都无法达到高"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "， “临界量”（critical mass） 就是我们从物理学中学到的一个有用的思维模型"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以思维模型 图书在版编目（CIP）数据 思的方式思考这个问题。",
+    "activation_phrase": "请用思维模型 图书在版编目（CIP分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

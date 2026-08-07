@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0.0",
+  "id": "多巴胺的核心功能-远不止-快乐-",
+  "meta": {
+    "name": "一、多巴胺是什么？（一句话概括",
+    "category": "07",
+    "tags": [],
+    "source": "多巴胺的核心功能_远不止_快乐_.md",
+    "sourceTitle": "多巴胺的核心功能：远不止“快乐”"
+  },
+  "engine": {
+    "core_question": "这件事的本质是什么？一、多巴胺是什么？（一句话概括如何定义它？",
+    "trigger_signals": [
+      "*激素**（通过血液传递信息）的功能。它最广为人知的身份是“快乐分子”，但现代科学发现，这个标签过于简化，甚至具有误导性。"
+    ],
+    "stop_conditions": [
+      "*拥抱“不确定性”**",
+      "大脑对不可预测的奖励最为兴奋。可以尝试在生活中加入一些小变化，比如尝试新的上班路线、探索新的爱好，这能带来健康的多巴胺刺激。",
+      "*实践“延迟满足”**"
+    ],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**追求“自然奖励”",
+        "action": "而非“超常刺激”**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**拥抱“不确定性”",
+        "action": "**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**实践“延迟满足”",
+        "action": "**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**保证充足睡眠**",
+        "action": "**保证充足睡眠**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "尝试新的上班路线、探索新的爱好，这能带来健康的多巴胺刺激。"
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「一、多巴胺是什么？」思维框架运行。核心立场：这件事的本质是什么？一、多巴胺是什么？（一句话概括如何定义它？\n\n【推理协议】\n1. **追求“自然奖励”：而非“超常刺激”**\n2. **拥抱“不确定性”：**\n3. **实践“延迟满足”：**\n4. **保证充足睡眠**\n\n【质量门禁】每完成一步，自问：我的分析是基于「一、多巴胺是什么？」的核心逻辑，还是在用普通直觉？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用一、多巴胺是什么？（一句话概括分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

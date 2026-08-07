@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-机会成本思维模型",
+  "meta": {
+    "name": "机会成本思维模型",
+    "category": "06",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:机会成本思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "决策过程中面临多项选择,当中被放弃而价值最高的选择（Highest-valued",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "你放弃追剧选择读书,那么你的机会成本为负,反之为正"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以机会成本思维模型的方式思考这个问题。",
+    "activation_phrase": "请用机会成本思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

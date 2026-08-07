@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-领导一成员交换理论",
+  "meta": {
+    "name": "领导一成员交换理论",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):领导一成员交换理论",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "领导一成员交换理论指出，由于时间压力，领导会与小部分下属建立 特殊关系。这些下属成为圈内人，他们被领导所信任，得到更多的关 照，更可能享有特权，而其他下属则成为圈外人。圈外人不会得到领 导的特殊关照和特权。领导和成员形成了特殊的交换关系，领",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，观察不同领域（包括军队和商业领域）管理者的研究发现，变"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以领导一成员交换理论的方式思考这个问题。",
+    "activation_phrase": "请用领导一成员交换理论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

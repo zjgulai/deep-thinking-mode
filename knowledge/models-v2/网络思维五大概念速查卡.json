@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0.0",
+  "id": "网络思维五大概念速查卡",
+  "meta": {
+    "name": "网络思维五大概念",
+    "category": "02",
+    "tags": [
+      "ffe58f;",
+      "系统性认知",
+      "ccc;",
+      "思维模型",
+      "职场破圈"
+    ],
+    "source": "网络思维五大概念速查卡.md",
+    "sourceTitle": "网络思维五大概念速查卡"
+  },
+  "engine": {
+    "core_question": "减肥破功、职场隐形、家庭内耗——不是意志力差，是你被圈层网络锁死了",
+    "trigger_signals": [
+      "需要快速查阅「网络思维五大概念」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "是你被圈层网络锁死了",
+        "action": "是你被圈层网络锁死了",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡拆解网络思维的五大核心概念：节",
+        "action": "这张速查卡拆解网络思维的五大核心概念：节点是最小单元",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "就是一套完整的人际与圈层分析工具箱",
+        "action": "就是一套完整的人际与圈层分析工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "网络思维 #系统性认知 #职场破圈 #圈",
+        "action": "网络思维 #系统性认知 #职场破圈 #圈层效应 #思维模型",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「网络思维五大概念」速查模式运行。\n\n【认知模式】快速调用网络思维五大概念的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 是你被圈层网络锁死了：是你被圈层网络锁死了\n\nStep 2 - 这张速查卡拆解网络思维的五大核心概念：节：这张速查卡拆解网络思维的五大核心概念：节点是最小单元\n\nStep 3 - 就是一套完整的人际与圈层分析工具箱：就是一套完整的人际与圈层分析工具箱\n\nStep 4 - 网络思维 #系统性认知 #职场破圈 #圈：网络思维 #系统性认知 #职场破圈 #圈层效应 #思维模型\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用网络思维五大概念速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

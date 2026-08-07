@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-获取效标样本有关胜任特征的数据资料",
+  "meta": {
+    "name": "获取效标样本有关胜任特征的数据资料",
+    "category": "03",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):获取效标样本有关胜任特征的数据资料",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "开放式的行为回顾式调查技术，类似于绩效考核中的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "是什么原因使被访者产生类似的想法以及被访"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以获取效标样本有关胜任特征的数据资料的方式思考这个问题。",
+    "activation_phrase": "请用获取效标样本有关胜任特征的数据分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

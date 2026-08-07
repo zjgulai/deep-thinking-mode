@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-聚集",
+  "meta": {
+    "name": "聚集",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):聚集",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "个体具有聚集的特性，它们可以在一定条件下，在双方彼此接受时， 组成一个新的个体——聚集体，在系统中象一个单独的个体那样行动。  404 / 1937 \f例如：股票市场中，有散户聚集形成的散户群，有大户聚集的大户群， 有代表国家意志的主权基金",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "股票市场中，有散户聚集形成的散户群，有大户聚集的大户群，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以聚集的方式思考这个问题。",
+    "activation_phrase": "请用聚集分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

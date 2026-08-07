@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-巫宁-2004中国旅游电子商务观察",
+  "meta": {
+    "name": "巫宁．2004中国旅游电子商务观察",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):巫宁．2004中国旅游电子商务观察",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "21 \f http://wiki.mbalib.com/ 波士顿矩阵法  —制定公司层战略最流行的方法之一 \f http://wiki.mbalib.com/  目 录",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以巫宁．2004中国旅游电子商务观察的方式思考这个问题。",
+    "activation_phrase": "请用巫宁．2004中国旅游电子商务分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

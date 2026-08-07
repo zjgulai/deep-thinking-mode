@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-感恩",
+  "meta": {
+    "name": "感恩",
+    "category": "10",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):感恩",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "感恩行为是对别人优秀的道德情操表示感激，作为一种情绪，它是对 生命的惊讶、感谢和欣赏。我们可以把感恩扩大到整个世界。也可以 对上帝、大自然、动物等表示感恩，但是你不能对自己感恩。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以感恩的方式思考这个问题。",
+    "activation_phrase": "请用感恩分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

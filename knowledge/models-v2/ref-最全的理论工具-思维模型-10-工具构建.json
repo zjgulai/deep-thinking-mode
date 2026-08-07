@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-工具构建",
+  "meta": {
+    "name": "工具构建",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具构建",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "竞争力，要树立全新的企业管理理念。也就是要进行管 理观念更新。知识经济的到来，使得企业管理的对象、范围、环境发生了深刻的 变化。在工业经济时代，企业以资本管理为中心，以扩大企业规模，降低产品成 本等为",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，企业现实的核心竞争力是否存在? 具体表现在哪些方面?在未来若干年内，企业的某项业务要在市场中具有竞争优"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以工具构建的方式思考这个问题。",
+    "activation_phrase": "请用工具构建分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-关键结果-key-results-",
+  "meta": {
+    "name": "关键结果（Key results）",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):关键结果（Key results）",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "定量描述，用于衡量目标的达成情况",
+    "trigger_signals": [],
+    "stop_conditions": [
+      "bound），注重完成目标的特定期"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "提升客户满意度是一个方向性的目标。如何衡量有没有提升客"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以关键结果（Key results）的方式思考这个问题。",
+    "activation_phrase": "请用关键结果（Key result分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

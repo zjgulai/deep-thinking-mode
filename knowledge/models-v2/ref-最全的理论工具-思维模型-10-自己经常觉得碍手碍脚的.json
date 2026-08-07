@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-自己经常觉得碍手碍脚的",
+  "meta": {
+    "name": "自己经常觉得碍手碍脚的",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):自己经常觉得碍手碍脚的",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "圈员们列出了约 4~8 个问题点后，即可透过讨论选出一个最适当的问题，做为本 期活动题目。此时评价的角度有： （1） 是否属于本身的问题？ （2） 下工程（顾客）是否常抱怨？ （3） 上级是否要求改善（上级方针）？ （4） 迫切性高吗？ （",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自己经常觉得碍手碍脚的的方式思考这个问题。",
+    "activation_phrase": "请用自己经常觉得碍手碍脚的分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

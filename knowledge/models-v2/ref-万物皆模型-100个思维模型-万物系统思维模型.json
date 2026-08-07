@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-万物系统思维模型",
+  "meta": {
+    "name": "万物系统思维模型",
+    "category": "02",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:万物系统思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "个相对孤立的个体。系统思维背后的根本逻辑是 “任何两个对象之间都是",
+    "trigger_signals": [
+      "如果你分析不知就会发 无法填补你的需求,那也动不了,此时可以去把问题拆解,无论你用 想实现用户行为的转化,需要同时满足三个条件",
+      "如果你想做就需要去提升自己的“能”或提升动机。 机低,你依然可以去做。 一次成功的行为,"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "被朋友约出去吃饭、喝酒等,在这种情况下你的跑步行为没有施行是因为缺少一个触发点"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以万物系统思维模型的方式思考这个问题。",
+    "activation_phrase": "请用万物系统思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

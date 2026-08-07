@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-结果启发式-",
+  "meta": {
+    "name": "结果启发式",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):结果启发式。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "1421 / 1937 \f结果启发式的思维过程这样的，如果 A,所以 B，因为 B 所以 A，就是如 果是好的决策，就会是好的结果。如果是好的结果，一定是好的决策。 因为我们每个人都是认知吝啬鬼，相对于精细加工, 它只需要较少的努 力和认",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "台风、火灾以及地震。  1422 / 1937"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以结果启发式。的方式思考这个问题。",
+    "activation_phrase": "请用结果启发式。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

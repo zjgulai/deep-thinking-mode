@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-精神-目的与成果",
+  "meta": {
+    "name": "精神、目的与成果",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):精神、目的与成果",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "3.1. 品管圈活动的精神  实施品管圈活动固然效果很大，然而也看到不少的企业厂家实施得很不理想， 其很大一部分原因是对品管圈活动的精神了解不够所致，因此，如果使品管圈活 动实施很有成效，首先必须要彻底了解品管圈活动的精神。 品管圈活动的精",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以精神、目的与成果的方式思考这个问题。",
+    "activation_phrase": "请用精神、目的与成果分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-收购新创企业-反颠覆-并购策略-",
+  "meta": {
+    "name": "收购新创企业（反颠覆、并购策略）",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):收购新创企业（反颠覆、并购策略）",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "就是成熟企业采用“颠覆颠覆者”策略，在位公司不需要花精力对内部改 造或者建立一个独立的组织，而是应该建立和保持与新创企业的联系 网络。在位企业可以通过风险投资或者战略联盟或者持有股份等方式 与其建立联系，等市场快成熟了，大公司可以去收购这个",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "一个高度自治的业务单元。该业务单元应该拥",
+        "action": "一个高度自治的业务单元。该业务单元应该拥有所有成功必需",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "对新业务有丰富经验的领导者。这些领导者必",
+        "action": "对新业务有丰富经验的领导者。这些领导者必须身经百战，能",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "一个独立的资源分配流程。这样新业务才能获",
+        "action": "一个独立的资源分配流程。这样新业务才能获得充足的补给，",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "多个独立的销售渠道。这些渠道不应与现有销",
+        "action": "多个独立的销售渠道。这些渠道不应与现有销售渠道进行协调",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "一个新的盈利计算模式。新业务的盈利衡量往",
+        "action": "一个新的盈利计算模式。新业务的盈利衡量往往需要与核心业",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「收购新创企业（反颠覆、并」思维模式运行。\n\nStep 1 - 一个高度自治的业务单元。该业务单元应该拥：一个高度自治的业务单元。该业务单元应该拥有所有成功必需\n\nStep 2 - 对新业务有丰富经验的领导者。这些领导者必：对新业务有丰富经验的领导者。这些领导者必须身经百战，能\n\nStep 3 - 一个独立的资源分配流程。这样新业务才能获：一个独立的资源分配流程。这样新业务才能获得充足的补给，\n\nStep 4 - 多个独立的销售渠道。这些渠道不应与现有销：多个独立的销售渠道。这些渠道不应与现有销售渠道进行协调\n\nStep 5 - 一个新的盈利计算模式。新业务的盈利衡量往：一个新的盈利计算模式。新业务的盈利衡量往往需要与核心业\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用收购新创企业（反颠覆、并购策略分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

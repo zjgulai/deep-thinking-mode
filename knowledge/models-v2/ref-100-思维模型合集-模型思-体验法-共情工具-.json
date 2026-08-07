@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-体验法-共情工具-",
+  "meta": {
+    "name": "体验法（共情工具）",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):体验法（共情工具）",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "从客户视角出发。和客户一起参与到任务中，体会感知客户的一切， 进而发现客户需求。 案例：海盗船 CT 机  70 / 1937 \f图片来源网络 GE 公司医用成像设备设计师道格迪兹在医院目睹了令他吃惊的一幕： 一个小女孩在接受 CT（核磁共",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "海盗船 CT 机  70 / 1937 \f图片来源网络"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以体验法（共情工具）的方式思考这个问题。",
+    "activation_phrase": "请用体验法（共情工具）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

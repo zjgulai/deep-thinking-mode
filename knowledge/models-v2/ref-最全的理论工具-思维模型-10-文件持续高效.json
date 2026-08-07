@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-文件持续高效",
+  "meta": {
+    "name": "文件持续高效",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):文件持续高效",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业在对文件进行改进时，应广泛纳取各方面的成功做法与先进经验，在此 过程中应用为什么一为什么分析法，本着务实高效的原则来对文件进行修订与改 进，并且通过召开研讨会，上上下下反复探讨，多提为什么，以便保证文件的持 续高效性。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以文件持续高效的方式思考这个问题。",
+    "activation_phrase": "请用文件持续高效分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0.0",
+  "id": "woop速查卡",
+  "meta": {
+    "name": "WOOP",
+    "category": "07",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "WOOP",
+      "告别空想",
+      "行动力"
+    ],
+    "source": "WOOP速查卡.md",
+    "sourceTitle": "WOOP速查卡"
+  },
+  "engine": {
+    "core_question": "你是不是也这样：脑子里幻想了很多目标，却迟迟动不起来；每次想做点事，总被“等状态好了再说”卡住；定计划时热血沸腾，执行时却一拖再拖…… 不是你懒，是大脑被空想的即时快感“骗”了",
+    "trigger_signals": [
+      "需要快速查阅「WOOP」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "WOOP四步速查 W —— 愿望 锁定一",
+        "action": "WOOP四步速查 W —— 愿望 锁定一个具体、可短期实现的真实目标",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "本周完成项目方案初稿” O —— 结果 ",
+        "action": "本周完成项目方案初稿” O —— 结果 关掉批判",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "选一个你一直拖延的目标（哪怕很小）",
+        "action": "选一个你一直拖延的目标（哪怕很小）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [
+      {
+        "condition": "就）：提前在大脑中铺设神经轨道，当障碍出现时，你不需要再纠结“怎么办”，直接执行预设动作。",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「WOOP」速查模式运行。\n\n【认知模式】快速调用WOOP的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - WOOP四步速查 W —— 愿望 锁定一：WOOP四步速查 W —— 愿望 锁定一个具体、可短期实现的真实目标\n\nStep 2 - 本周完成项目方案初稿” O —— 结果 ：本周完成项目方案初稿” O —— 结果 关掉批判\n\nStep 3 - 选一个你一直拖延的目标（哪怕很小）：选一个你一直拖延的目标（哪怕很小）\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用WOOP速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

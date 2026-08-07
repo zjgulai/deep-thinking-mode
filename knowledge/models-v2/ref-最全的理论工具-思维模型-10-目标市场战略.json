@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-目标市场战略",
+  "meta": {
+    "name": "目标市场战略",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):目标市场战略",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "最终公司的目标市场定为大中城市的居民，因为大中城市居民素质普遍较 高，对蔬菜水果中残余农药的危害认识较强。从目前情况看，这是一个尚需进一 步培育的市场，对于蔬菜内外残余农药的认识需要一个理性的接受过程。大中城 市的居民显然能够较快地接受这",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以目标市场战略的方式思考这个问题。",
+    "activation_phrase": "请用目标市场战略分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

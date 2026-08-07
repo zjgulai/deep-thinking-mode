@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-实例分析",
+  "meta": {
+    "name": "实例分析",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实例分析",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "7.1. 案例 1：医疗器械行业的PEST分析  医疗器械是综合应用自然科学与现代工程技术的原理和方法，在分子、细胞、 组织、器官和人体系统上多层次研究人体的结构、功能和其他生命现象，用于防 病、治病、人体功能辅助及卫生保健的人工材料、制品",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "1：医疗器械行业的PEST分析  医疗器械是综合应用自然科学与现代工程技术的原理和方法，在分子、细胞、"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实例分析的方式思考这个问题。",
+    "activation_phrase": "请用实例分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

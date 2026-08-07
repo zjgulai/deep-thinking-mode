@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-动机",
+  "meta": {
+    "name": "动机",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):动机",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "有的人拥有伟大的梦想，有的人只想做重复的工作，梦想愿景和目标 可以激发人的潜能，让人产生源源不断的精神力量，所以要学会激励 自己，努力使自己比别人做的更好，设定更高的目标，从内部和外部 给予自己激励，加快进化速度。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以动机的方式思考这个问题。",
+    "activation_phrase": "请用动机分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

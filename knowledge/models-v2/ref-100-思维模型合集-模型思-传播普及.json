@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-传播普及",
+  "meta": {
+    "name": "传播普及",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):传播普及",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在企业随着产品生产的规模扩大，规模化带来效率的",
+    "trigger_signals": [
+      "如果你在搜索引擎上搜索一款电脑产品，你的搜索信息将会被记录，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一款汽车，量产 1 千辆和量产 10 万"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以传播普及的方式思考这个问题。",
+    "activation_phrase": "请用传播普及分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

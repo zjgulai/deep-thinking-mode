@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "id": "鸣天鼓-针对耳朵与大脑-",
+  "meta": {
+    "name": "鸣天鼓（针对耳朵与大脑）",
+    "category": "09",
+    "tags": [],
+    "source": "鸣天鼓（针对耳朵与大脑）.md",
+    "sourceTitle": "鸣天鼓（针对耳朵与大脑）"
+  },
+  "engine": {
+    "core_question": "如何有效完成这件事？鸣天鼓（针对耳朵与大脑）的操作路径是什么？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "用双手手掌心紧紧盖住双耳，手指放在脑后。",
+        "action": "用双手手掌心紧紧盖住双耳，手指放在脑后。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "将食指压在中指上，然后让食指从中指上迅速滑下，弹击",
+        "action": "将食指压在中指上，然后让食指从中指上迅速滑下，弹击后脑勺（风池穴附近），此时会听到如击鼓般的“咚咚”声。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "左右手各弹击24次或36次。",
+        "action": "左右手各弹击24次或36次。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「鸣天鼓（针对耳朵与大脑）」思维框架运行。核心立场：如何有效完成这件事？鸣天鼓（针对耳朵与大脑）的操作路径是什么？\n\n【推理协议】\n1. 用双手手掌心紧紧盖住双耳，手指放在脑后。\n2. 将食指压在中指上，然后让食指从中指上迅速滑下，弹击：后脑勺（风池穴附近），此时会听到如击鼓般的“咚咚”声。\n3. 左右手各弹击24次或36次。\n\n【质量门禁】每完成一步推理后，自问：这个结论是从用双手手掌心紧紧盖住双耳，手指放在脑后。...的逻辑推导出来的吗？如果不是，回到第1步重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用鸣天鼓（针对耳朵与大脑）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 2
+  }
+}

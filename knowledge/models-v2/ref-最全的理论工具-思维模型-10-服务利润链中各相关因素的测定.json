@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-服务利润链中各相关因素的测定",
+  "meta": {
+    "name": "服务利润链中各相关因素的测定",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):服务利润链中各相关因素的测定",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业进行服务利润链管理，就首先应当测定服务利润链中的相关因素，并 对企业的现状做出分析。测定相关因素的方法有很多。  例如，顾客忠诚度可以通过用通过问卷调查来完成，也可以在一定时间段内 顾客从本企业中购买产品或服务占其总购买量的百分比来确",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，顾客忠诚度可以通过用通过问卷调查来完成，也可以在一定时间段内"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以服务利润链中各相关因素的测定的方式思考这个问题。",
+    "activation_phrase": "请用服务利润链中各相关因素的测定分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

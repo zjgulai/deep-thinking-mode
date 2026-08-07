@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-快乐-点燃创造力的引擎",
+  "meta": {
+    "name": "快乐,点燃创造力的引擎",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):快乐,点燃创造力的引擎",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "快乐和幸福不一样,幸福是有条件的,而快乐不需要条件。喜欢笑的人更 富有创造性。神经系统科学家罗伯特·普罗文,《笑的科学研究》一书作 者,从人类学和生理学的角度对欢笑进行了详细阐释。普罗文指出:欢笑 能起到有氧健身的作用,可以激活心血管系统,",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以快乐,点燃创造力的引擎的方式思考这个问题。",
+    "activation_phrase": "请用快乐,点燃创造力的引擎分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

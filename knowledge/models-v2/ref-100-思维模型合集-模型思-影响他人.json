@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-影响他人",
+  "meta": {
+    "name": "影响他人",
+    "category": "06",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):影响他人",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在对他人行为进行归因的时候,往往会倾向于把别人",
+    "trigger_signals": [
+      "如果你同意第一条和第三条,那么你是“定型心态”的人。如果你同意第",
+      "如果你同意第一条和第二条,"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "巴菲特虽然自己是超级富豪,但是就是 反对为富人减税,这就是认同模式的作用,不考虑成本和收益"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以影响他人的方式思考这个问题。",
+    "activation_phrase": "请用影响他人分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

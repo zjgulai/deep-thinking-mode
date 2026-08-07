@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立素质模型要因企而异-不可照抄照搬",
+  "meta": {
+    "name": "建立素质模型要因企而异，不可照抄照搬",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立素质模型要因企而异，不可照抄照搬",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "公司战略文化导向的分析是影响能力素质要求的重要因素。在实践中，这种 分析往往不够，甚至有些企业的文化导向根本就没有明确，在这种情况下盲目设 计能力指标就会面临很大的风险，这是导致能力模型失效的重要原因之一。盲目 照搬国外的或是国内已经成熟",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立素质模型要因企而异，不可照抄照搬的方式思考这个问题。",
+    "activation_phrase": "请用建立素质模型要因企而异，不可照分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

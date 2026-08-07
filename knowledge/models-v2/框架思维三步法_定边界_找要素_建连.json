@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架思维三步法_定边界_找要素_建连",
+  "meta": {
+    "name": "框架思维三步法_定边界_找要素_建连",
+    "category": "08",
+    "tags": [],
+    "source": "框架思维三步法_定边界_找要素_建连接（附案例_话术）.md"
+  },
+  "engine": {
+    "core_question": "、实操步骤、案例演示和实用价值四个方面，帮大家轻松掌握",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "一步",
+        "action": "定边界 —— 先明确“不聊啥”，避免无效内耗",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "二步",
+        "action": "找要素 —— 捋清“核心组成”，搭好思维骨架",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "三步",
+        "action": "建连接 —— 理清“互动关系”，让框架活起来",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "定边界",
+        "action": "仅解决“起床到打卡”90分钟内的效率问题，不纠结熬夜原因、考勤制度；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "找要素",
+        "action": "关键节点——洗漱换衣、出门等电梯、通勤路况、买早餐排队；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "",
+    "activation_phrase": "请用框架思维三步法_定边界_找要素分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

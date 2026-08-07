@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-罗列信息",
+  "meta": {
+    "name": "罗列信息",
+    "category": "10",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):罗列信息",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "如果是要介绍对象，那就要把被介绍者的年龄、身高、体重、职业、 照片、家庭背景、教育背景、择偶要求等等已知的信息都罗列出来； 如果是写一篇游记，那可能要把这个旅程中到过的地方、吃过的美食、 交通工具、情绪变化等都列出来。先不要管最终是否都能表",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以罗列信息的方式思考这个问题。",
+    "activation_phrase": "请用罗列信息分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

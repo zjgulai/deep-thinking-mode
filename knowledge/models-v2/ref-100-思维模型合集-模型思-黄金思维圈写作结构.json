@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-黄金思维圈写作结构",
+  "meta": {
+    "name": "黄金思维圈写作结构",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):黄金思维圈写作结构",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "强大的写作工具。“5 商派”写",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "或冲突事件进行文章的导入； WHAT：先阐述观点（或概念）是什么，其定义、起源等；"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以黄金思维圈写作结构的方式思考这个问题。",
+    "activation_phrase": "请用黄金思维圈写作结构分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

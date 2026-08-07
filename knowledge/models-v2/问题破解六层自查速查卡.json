@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "问题破解六层自查速查卡",
+  "meta": {
+    "name": "问题破解六层自查",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "解决问题",
+      "思维卡壳",
+      "faad14;"
+    ],
+    "source": "问题破解六层自查速查卡.md",
+    "sourceTitle": "问题破解六层自查速查卡"
+  },
+  "engine": {
+    "core_question": "不是能力不行，是思考层次没对上",
+    "trigger_signals": [
+      "遇到难题反复绕圈？不是能力不行"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "第一层：定锚 卡壳信号：总在兜圈子",
+        "action": "第一层：定锚 卡壳信号：总在兜圈子",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "我需要一个梯子 → 我需要够到高处",
+        "action": "我需要一个梯子 → 我需要够到高处",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "画一条线：我能控制 vs 不能控制的",
+        "action": "画一条线：我能控制 vs 不能控制的",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "第二层：深潜 卡壳信号：能说出表面原因",
+        "action": "第二层：深潜 卡壳信号：能说出表面原因",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "我忽略了什么条件” 假设自己是行业小白",
+        "action": "我忽略了什么条件” 假设自己是行业小白",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "列出会问的三个最基础的问题 第三层：解构",
+        "action": "列出会问的三个最基础的问题 第三层：解构 卡壳信号：太大太乱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「问题破解六层自查」速查模式运行。\n\n【认知模式】快速调用问题破解六层自查的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 第一层：定锚 卡壳信号：总在兜圈子：第一层：定锚 卡壳信号：总在兜圈子\n\nStep 2 - 我需要一个梯子 → 我需要够到高处：我需要一个梯子 → 我需要够到高处\n\nStep 3 - 画一条线：我能控制 vs 不能控制的：画一条线：我能控制 vs 不能控制的\n\nStep 4 - 第二层：深潜 卡壳信号：能说出表面原因：第二层：深潜 卡壳信号：能说出表面原因\n\nStep 5 - 我忽略了什么条件” 假设自己是行业小白：我忽略了什么条件” 假设自己是行业小白\n\nStep 6 - 列出会问的三个最基础的问题 第三层：解构：列出会问的三个最基础的问题 第三层：解构 卡壳信号：太大太乱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用问题破解六层自查速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

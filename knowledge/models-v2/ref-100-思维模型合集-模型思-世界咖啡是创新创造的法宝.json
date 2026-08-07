@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-世界咖啡是创新创造的法宝",
+  "meta": {
+    "name": "世界咖啡是创新创造的法宝",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):世界咖啡是创新创造的法宝",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "《第五项修炼》的作者彼得圣吉认为：“世界咖啡汇谈是我目前为止遇 到的对于我们所有人来说进入集体创造最可靠的方式。” 世界咖啡鼓励奇思妙想，倡导不受任何条件的胡思乱想，充分发挥每 个个体的想象力和创造力，同时用团队集体的智慧不断的优化、完善",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以世界咖啡是创新创造的法宝的方式思考这个问题。",
+    "activation_phrase": "请用世界咖啡是创新创造的法宝分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-梅特卡夫法则思维模型",
+  "meta": {
+    "name": "梅特卡夫法则思维模型",
+    "category": "05",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:梅特卡夫法则思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "关于网络的价值和网络技术的发展的定律,由乔治 · 季尔德于 1993 年提",
+    "trigger_signals": [
+      "如果你有更多的用户,你会让所有这些用户通 互联网接入的智能手机存量设备数大约为 30 亿台,而 5G 成熟之后的",
+      "如果你能掌握其发展规律,之后便是借势。 可以被分析驱动更多的互动,收集更多的用户。 之大势去突破、超越自己临界点。",
+      "当你的用户数量在不断增加时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "一个网络对网络 中每个人价值是 1 元,那么规模为 10 倍的网络的总价值等于 100 元；规模为 100 倍的网络的总价值就等于"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以梅特卡夫法则思维模型的方式思考这个问题。",
+    "activation_phrase": "请用梅特卡夫法则思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

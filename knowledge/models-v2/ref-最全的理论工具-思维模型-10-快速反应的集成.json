@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-快速反应的集成",
+  "meta": {
+    "name": "快速反应的集成",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):快速反应的集成",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "通过重新设计业务流程，将前五步的工作和公司的整体业务集成起来，以 支持公司的整体战略。 快速反应前四步的实施，可以使零售商和消费品制造商 重新设计其整个组织、业绩评估系统、业务流程和信息系统，设计中心围绕着消 费者而不是传统的公司职能，它",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以快速反应的集成的方式思考这个问题。",
+    "activation_phrase": "请用快速反应的集成分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

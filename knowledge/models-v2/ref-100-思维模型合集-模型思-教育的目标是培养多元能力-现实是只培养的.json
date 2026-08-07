@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-教育的目标是培养多元能力-现实是只培养的",
+  "meta": {
+    "name": "教育的目标是培养多元能力。现实是只培养的",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):教育的目标是培养多元能力。现实是只培养的",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一点，我们需要深刻的反思，刷题的能力强，分数高，似乎是择优， 事实是，进入社会后，我们已对被“啪-啪-啪”打脸，“高分低能”的现象 层出不穷，我们需要痛定思痛，回归到培养多元能力的“初心”上。 四、多元智能与成人学习的思考 到了社会上，成年",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，语言智能和逻辑数 学智能突出的学习者是否更喜欢通过“概念化的理论”（理论型学习者）"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以教育的目标是培养多元能力。现实是只培养的的方式思考这个问题。",
+    "activation_phrase": "请用教育的目标是培养多元能力。现实分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

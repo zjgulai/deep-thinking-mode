@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "id": "形式逻辑-概念篇-超精细完整版-逐级细化-零漏洞-通俗落地可直接使用-",
+  "meta": {
+    "name": "概念篇 超精细完整版（逐级细化",
+    "category": "02",
+    "tags": [],
+    "source": "形式逻辑_概念篇_超精细完整版（逐级细化_零漏洞_通俗落地可直接使用）.md",
+    "sourceTitle": "形式逻辑·概念篇 超精细完整版（逐级细化·零漏洞·通俗落地可直接使用）"
+  },
+  "engine": {
+    "core_question": "属性是概念的原材料，概念是属性的精华提纯",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "概念限制（向下具象）",
+        "action": "概念限制（向下具象）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "逐级示范（直观易懂）",
+        "action": "逐级示范（直观易懂）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "+实战）      模块1：概念的本质（概念概述）      【模块通俗总纲】   概念的核心作用：把流动、零散、多变的现象，固定成统一、唯一、稳定的标准定义，让思考、沟通、论证、写作拥有统一基准，终结无效争议。"
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「概念篇 超精细完整版」思维框架运行。核心立场：属性是概念的原材料，概念是属性的精华提纯\n\n【推理协议】\n1. 概念限制（向下具象）\n2. 逐级示范（直观易懂）\n\n【质量门禁】每完成一步推理后，自问：这个结论是从概念限制（向下具象）...的逻辑推导出来的吗？如果不是，回到第1步重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用概念篇 超精细完整版（逐级细化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-11个分析模型-间隔分析",
+  "meta": {
+    "name": "间隔分析",
+    "category": "09",
+    "tags": [],
+    "source": "ref:11个分析模型:间隔分析",
+    "sourceTitle": "11个分析模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "10.1 间隔分析概述  间隔分析，主要用于统计用户从触发指定的起始事件开始，到完成指定目标 事件之间的时间间隔。也就是说主要提供从起始事件到转化目标之间的时间角度 和步长角度的相关指标统计，便于从这些指标中观察转化过程的情况。  图 10",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "间隔分析应用场景比较丰富，既可以用于统计产品的登录时间间隔、复购周"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以间隔分析的方式思考这个问题。",
+    "activation_phrase": "请用间隔分析分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

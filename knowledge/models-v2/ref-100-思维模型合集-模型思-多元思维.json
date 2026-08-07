@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-多元思维",
+  "meta": {
+    "name": "多元思维",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):多元思维",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "思想是:首先,充分考虑各种可能的假设,并在更大范围内列举证 据。然后,列出“假设——证据”矩阵,对每个证据与每个假设是否一致进 行判断。接着,重新组织假设,进行假设与证据一致性的再评估,标注出与 所有",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以多元思维的方式思考这个问题。",
+    "activation_phrase": "请用多元思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

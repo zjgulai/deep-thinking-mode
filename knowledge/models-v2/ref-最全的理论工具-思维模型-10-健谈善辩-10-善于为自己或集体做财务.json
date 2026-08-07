@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-健谈善辩-10-善于为自己或集体做财务",
+  "meta": {
+    "name": "健谈善辩 10、 善于为自己或集体做财务",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):健谈善辩 10、 善于为自己或集体做财务",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "第四部份 你所喜欢的职业  下面列举了多种职业，请认真地看，请选择你有兴趣的工作，有一项计 1 分，不太喜欢 \f http://wiki.mbalib.com/ 或不关心的工作不选，不计分。请将答案直接写在第 5 页答题纸上。 R：实际型职",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以健谈善辩 10、 善于为自己或集体做财务的方式思考这个问题。",
+    "activation_phrase": "请用健谈善辩 10、 善于为自己或分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

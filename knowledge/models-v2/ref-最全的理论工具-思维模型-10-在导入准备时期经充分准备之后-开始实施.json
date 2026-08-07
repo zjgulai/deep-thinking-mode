@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-在导入准备时期经充分准备之后-开始实施",
+  "meta": {
+    "name": "在导入准备时期经充分准备之后， 开始实施",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):在导入准备时期经充分准备之后， 开始实施",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "同有差异，从第(1)阶段的企业现场预备诊断到第(3)阶段的准备时期的完备，一 般需要 1—3 个月。若企业已经开展了 TPM 活动， 则可以随即进入导入实施时 期，此阶段一般需要 2-3 个月。之后，进入巩固期，这里将正式展开 TPM 的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以在导入准备时期经充分准备之后， 开始实施的方式思考这个问题。",
+    "activation_phrase": "请用在导入准备时期经充分准备之后，分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

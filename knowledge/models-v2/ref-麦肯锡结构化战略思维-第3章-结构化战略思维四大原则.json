@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-麦肯锡结构化战略思维-第3章-结构化战略思维四大原则",
+  "meta": {
+    "name": "第3章 结构化战略思维四大原则",
+    "category": "04",
+    "tags": [],
+    "source": "ref:《麦肯锡结构化战略思维》:第3章 结构化战略思维四大原则",
+    "sourceTitle": "《麦肯锡结构化战略思维》",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "3.1 原则1：数字说话 3.2 原则2：洞见优于表象 3.3 原则3：MECE原则 3.4 原则4：假设为前提  5 \f下篇 结构化战略思维的应用",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第3章 结构化战略思维四大原则的方式思考这个问题。",
+    "activation_phrase": "请用第3章 结构化战略思维四大原则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

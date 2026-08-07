@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-设计思维起源",
+  "meta": {
+    "name": "设计思维起源",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):设计思维起源",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "思想，并贯彻落实到了 IDEO 工作当中，成功实现商业化； 2005 年大卫凯利在斯坦福大学工程学院成立了斯坦福大学哈索.普兰特 纳 设 计 研 究 院 （ The hasso plattner in",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以设计思维起源的方式思考这个问题。",
+    "activation_phrase": "请用设计思维起源分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "复杂问题该用什么思维_四大阶段匹配速查卡",
+  "meta": {
+    "name": "复杂问题该用什么思维_四大阶段匹配",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型",
+      "决策系统"
+    ],
+    "source": "复杂问题该用什么思维_四大阶段匹配速查卡.md",
+    "sourceTitle": "复杂问题该用什么思维_四大阶段匹配速查卡"
+  },
+  "engine": {
+    "core_question": "面对复杂问题脑子里冒出各种思路，却不知道从哪个角度切入——不是缺工具，是缺一套“什么时候该用什么”的调用地图",
+    "trigger_signals": [
+      "面对复杂问题脑子里冒出各种思路"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "却不知道从哪个角度切入——不是缺工具",
+        "action": "却不知道从哪个角度切入——不是缺工具",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "这张速查卡把六种核心思维工具按问题解决的",
+        "action": "这张速查卡把六种核心思维工具按问题解决的四个阶段精准匹配： 探索构建用网络思维和第一性原理重新定义问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "诊断分析用系统思维和批判性思维找准杠杆点",
+        "action": "诊断分析用系统思维和批判性思维找准杠杆点",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "决策规划用整合思维和逆向思维创造方案并倒",
+        "action": "决策规划用整合思维和逆向思维创造方案并倒推路径",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "思维模型 #决策系统 #认知升级 #问题",
+        "action": "思维模型 #决策系统 #认知升级 #问题解决 #职场效能 #问题分析 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「复杂问题该用什么思维_四」速查模式运行。\n\n【认知模式】快速调用复杂问题该用什么思维_四大阶段的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 却不知道从哪个角度切入——不是缺工具：却不知道从哪个角度切入——不是缺工具\n\nStep 2 - 这张速查卡把六种核心思维工具按问题解决的：这张速查卡把六种核心思维工具按问题解决的四个阶段精准匹配： 探索构建用网络思维和第一性原理重新定义问题\n\nStep 3 - 诊断分析用系统思维和批判性思维找准杠杆点：诊断分析用系统思维和批判性思维找准杠杆点\n\nStep 4 - 决策规划用整合思维和逆向思维创造方案并倒：决策规划用整合思维和逆向思维创造方案并倒推路径\n\nStep 5 - 思维模型 #决策系统 #认知升级 #问题：思维模型 #决策系统 #认知升级 #问题解决 #职场效能 #问题分析 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用复杂问题该用什么思维_四大阶段速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

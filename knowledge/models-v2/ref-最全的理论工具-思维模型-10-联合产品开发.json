@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-联合产品开发",
+  "meta": {
+    "name": "联合产品开发",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):联合产品开发",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "这一步重点是服装等生命周期很短的商品，不再是一般商品和季节商品。厂 商和零售商联合开发新产品，其关系的密切超过了购买与销售的业务关系，缩短 从新产品概念到新产品上市的时间，而且经常在店内对新产品进行试销。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以联合产品开发的方式思考这个问题。",
+    "activation_phrase": "请用联合产品开发分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

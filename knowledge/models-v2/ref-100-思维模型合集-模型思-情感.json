@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-情感",
+  "meta": {
+    "name": "情感",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):情感",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "什么是情绪？什么是情感？什么是感情？我们下面来区分一下。 根据《牛津英语词典》的解释，情绪是心理、感受、激情的激动或骚 动，是激烈或兴奋的精神状态。 人类有几百种情绪，很多是混合、变种、突变组合而成的情绪。加利 福尼亚大学旧金山分校心理学家",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "吃香的、喝辣的、住大的、娶美的等。跟人的饮食、睡眠和繁衍"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以情感的方式思考这个问题。",
+    "activation_phrase": "请用情感分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

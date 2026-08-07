@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架效应-#决策心理学",
+  "meta": {
+    "name": "框架效应 #决策心理学",
+    "category": "06",
+    "tags": [],
+    "source": "框架效应_表述如何影响我们的决策.md"
+  },
+  "engine": {
+    "core_question": "核心是“怎么说比说什么更重要”，颠覆了“个体偏好稳定”的传统经济学假设",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「框架效应 #决策心理学」思维框架运行。核心立场：核心是“怎么说比说什么更重要”，颠覆了“个体偏好稳定”的传统经济学假设\n\n【推理协议】\n1. 商业营销场景（15组）｜一句话提升转化、促进成交\n2. 职场管理场景（15组）｜高效沟通、落地执行、凝聚团队\n3. 核心总结：框架效应的本质\n\n【质量门禁】每完成一步推理后，自问：这个结论是基于「框架效应 #决策心理学」的核心逻辑得出的，还是在用普通直觉回答？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用框架效应 #决策心理学分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-扩展了生产空间-提高了劳动生产效率",
+  "meta": {
+    "name": "扩展了生产空间，提高了劳动生产效率",
+    "category": "08",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):扩展了生产空间，提高了劳动生产效率",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "推行定置管理，消除了与生产没有直接关系的学习房、垃圾堆场和长期占道 的废旧物资，在原厂房面积没有增加的情况下，用于生产的有效使用面积和空间 比原来都增大了，生产工人操作环境得到改善，存取物品方便，工人操作得心应 手，减少了不必要的动作和无",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以扩展了生产空间，提高了劳动生产效率的方式思考这个问题。",
+    "activation_phrase": "请用扩展了生产空间，提高了劳动生产分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

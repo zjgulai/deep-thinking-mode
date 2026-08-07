@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-全员参与原则",
+  "meta": {
+    "name": "全员参与原则",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):全员参与原则",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "性人员要么对决策持支持态度，要么持反对 态度。另外，他们知道反馈信息既能提高他们的名誉，又能损害他们的名誉。因 此这种体系承担的责任和共享的信息越多，主要人员参与的重要性就越大。并且， 让这些人参与能",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以全员参与原则的方式思考这个问题。",
+    "activation_phrase": "请用全员参与原则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

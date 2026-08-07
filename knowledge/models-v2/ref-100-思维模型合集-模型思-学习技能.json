@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-学习技能",
+  "meta": {
+    "name": "学习技能",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):学习技能",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "，例如有的人一年看 500  725 / 1937 \f本书，有的人一年只能看 5 本书，有的学习能力快，有的人学习能力 差，所以学会高效的学习非常重要，例如费曼学习法、长短时记忆模 型、刻意练习、元认",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "有的人一年看 500  725 / 1937"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以学习技能的方式思考这个问题。",
+    "activation_phrase": "请用学习技能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

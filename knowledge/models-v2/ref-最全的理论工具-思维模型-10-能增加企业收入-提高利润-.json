@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-能增加企业收入-提高利润-",
+  "meta": {
+    "name": "能增加企业收入、提高利润",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):能增加企业收入、提高利润。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "准确地按照客户要求而定制的产品会更好地满足他们的需求，这样就能使企 业销售量增加；而且定制产品对客户来说价值更高，因此定制产品就有可能具有 比较高的溢价，从而给企业带来更多的收人和利润。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以能增加企业收入、提高利润。的方式思考这个问题。",
+    "activation_phrase": "请用能增加企业收入、提高利润。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

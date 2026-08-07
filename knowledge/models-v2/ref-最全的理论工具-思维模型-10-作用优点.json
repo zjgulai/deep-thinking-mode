@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-作用优点",
+  "meta": {
+    "name": "作用优点",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作用优点",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "先从一个角度把事实看得尽可能透彻，然后再换一个角度，这是六顶帽子思考法 的一个特点。而它最重要的一个特性是在现实生活中的同一个问题，可以有多种 可能的答案。这些可能性在现实生活中都有存在的意义，具体选择哪种可能性， 要以充分地思考和讨论为前",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以作用优点的方式思考这个问题。",
+    "activation_phrase": "请用作用优点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

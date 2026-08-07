@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-学习重要学科的基本概念和思维模型-",
+  "meta": {
+    "name": "学习重要学科的基本概念和思维模型",
+    "category": "01",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):学习重要学科的基本概念和思维模型。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "意识，是一种为了适应信息时代的新的学习方式，是对",
+    "trigger_signals": [
+      "如果你掌握一个学科，那你就放弃了多维视角，放弃新的可能。跨学",
+      "当我们有足够的注意力和专注力的时",
+      "如果你比现在更有精力和信心，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，说：“今天你想谈点儿什么 呢？”“我观察到……，我们聊聊好吗？”当管理者发现了员工在某一方面"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以学习重要学科的基本概念和思维模型。的方式思考这个问题。",
+    "activation_phrase": "请用学习重要学科的基本概念和思维模分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

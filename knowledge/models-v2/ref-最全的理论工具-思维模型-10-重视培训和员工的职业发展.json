@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-重视培训和员工的职业发展",
+  "meta": {
+    "name": "重视培训和员工的职业发展",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):重视培训和员工的职业发展",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "针对员工的特点提供一系列的培训指导，除了课堂培训外还有临时代理主管 负责等参与式、启发式等多种方式。员工培训是全方位的，除了各种岗位技能培 训，还有全面的素质培训。帮助员工制定个人职业发展计划。员工要树立正确的 职业发展计划必须要充分认识",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以重视培训和员工的职业发展的方式思考这个问题。",
+    "activation_phrase": "请用重视培训和员工的职业发展分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

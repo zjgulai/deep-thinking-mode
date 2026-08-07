@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-潜在竞争者的影响力-活力-能力",
+  "meta": {
+    "name": "潜在竞争者的影响力、活力、能力",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):潜在竞争者的影响力、活力、能力",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "潜在竞争者目前并不在此一行业中，但一旦环境改变，潜在竞争者将随时准 备进入市场内。潜在竞争者通常会带来一些新产能，不仅分享既有市场，也会拿 走一些资源。  Aaker认为，业界中凡采取市场及产品扩张策略、垂直整合策略、拥有特殊 能力或资产",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以潜在竞争者的影响力、活力、能力的方式思考这个问题。",
+    "activation_phrase": "请用潜在竞争者的影响力、活力、能力分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

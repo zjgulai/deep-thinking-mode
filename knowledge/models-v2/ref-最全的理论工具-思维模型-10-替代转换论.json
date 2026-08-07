@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-替代转换论",
+  "meta": {
+    "name": "替代转换论",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):替代转换论",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "具体来看，替代转换原理在绿色供应链运作中的含义是指，在绿色供应链管 理中的各子系统层面的变量之间，在一定的边界条件下所具有的替代转换功能 即生产系统、消费系统、环境系统之间的替代转化。在绿色供应链管理中，供应 商、制造商、分销商、消费者、",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以替代转换论的方式思考这个问题。",
+    "activation_phrase": "请用替代转换论分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

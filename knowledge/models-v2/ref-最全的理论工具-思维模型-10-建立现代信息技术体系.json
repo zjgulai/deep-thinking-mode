@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-建立现代信息技术体系",
+  "meta": {
+    "name": "建立现代信息技术体系",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立现代信息技术体系",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "建立现代信息技术体系是企业实现大规模定制必不可少的条件之一。通过多 种电子商务实现企业与用户的沟通，快速与用户就定制产品进行协商，并予以定 货，提高企业的市场快速响应能力。另外企业通过网络对设计、制造、装配及销 售等各部门进行有效管理，使",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以建立现代信息技术体系的方式思考这个问题。",
+    "activation_phrase": "请用建立现代信息技术体系分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

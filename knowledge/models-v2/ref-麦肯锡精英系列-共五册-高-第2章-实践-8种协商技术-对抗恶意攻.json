@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-麦肯锡精英系列-共五册-高-第2章-实践-8种协商技术-对抗恶意攻",
+  "meta": {
+    "name": "第2章 实践！8种协商技术──对抗恶意攻",
+    "category": "06",
+    "tags": [],
+    "source": "ref:麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝]):第2章 实践！8种协商技术──对抗恶意攻",
+    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "出示“固定价格”，用“不喜欢您就别买”来逼迫对方做出决策的战术",
+    "trigger_signals": [
+      "如果我的话惹您不高兴了，请恕我失礼。貌似是我搞错了。不过，贵公司是我公司重要的潜在客户，如果您刚才所说是贵公司的真心话，作为我",
+      "如果我们自己派卡车去取的话，能给我们便宜多少？ 泷泽：那样的话……（查阅价目表）……贵公司的卡车自己来取的话给您便宜3%。 大"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，大家在超市不会与对方谈判，要求对方把138日元的低脂牛奶便宜到100日元吧"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第2章 实践！8种协商技术──对抗恶意攻的方式思考这个问题。",
+    "activation_phrase": "请用第2章 实践！8种协商技术──分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 3,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 3
+  }
+}

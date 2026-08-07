@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-反熵增思维模型",
+  "meta": {
+    "name": "反熵增思维模型",
+    "category": "07",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:反熵增思维模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "测量在动力学方面不能做功的能量总数,熵亦被用于计算一个系统中的失序现象,即一个系统的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以反熵增思维模型的方式思考这个问题。",
+    "activation_phrase": "请用反熵增思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-麦肯锡结构化战略思维-第2章-维度",
+  "meta": {
+    "name": "第2章 维度",
+    "category": "02",
+    "tags": [],
+    "source": "ref:《麦肯锡结构化战略思维》:第2章 维度",
+    "sourceTitle": "《麦肯锡结构化战略思维》",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "2.1 重塑“问题观” 2.2 跨界的“简单按钮” 2.3 “切”名词是结构化战略思维的起点 2.4 “切”问题，更上一层楼 2.5 从单一维度到多维度的飞跃 2.6 小结",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第2章 维度的方式思考这个问题。",
+    "activation_phrase": "请用第2章 维度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

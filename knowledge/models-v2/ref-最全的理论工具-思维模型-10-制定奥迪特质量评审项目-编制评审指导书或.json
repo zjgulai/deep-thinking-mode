@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-制定奥迪特质量评审项目-编制评审指导书或",
+  "meta": {
+    "name": "制定奥迪特质量评审项目，编制评审指导书或",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):制定奥迪特质量评审项目，编制评审指导书或",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "根据用户反馈的质量信息中质量缺陷发生频次较多的项目和产品现生产中 存在的质量缺陷，在分析产品结构的基础上，参考国家标准和企业技术标准，确 定详细的检查项目。对每一个缺陷检查项目都要明确责任部门及其扣分值和缺陷 类别．把以上内容汇总制成文件",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以制定奥迪特质量评审项目，编制评审指导书或的方式思考这个问题。",
+    "activation_phrase": "请用制定奥迪特质量评审项目，编制评分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

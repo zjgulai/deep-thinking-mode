@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-问题点的种类",
+  "meta": {
+    "name": "问题点的种类",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):问题点的种类",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "(1)日常的问题：与基准、规则、标准有差异而发生的问题，例如不良状况、机 械故障等日常发生的问题点。 (2)寻找的问题：稍有问题的症状，根据这些症状，可找出真正的问题点。 (3)提出的问题：现状是否顺利，提出有无浪费、勉强、不均等怀疑，追求",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "不良状况、机 械故障等日常发生的问题点。"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题点的种类的方式思考这个问题。",
+    "activation_phrase": "请用问题点的种类分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

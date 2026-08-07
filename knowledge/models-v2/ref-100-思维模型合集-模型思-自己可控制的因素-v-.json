@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-自己可控制的因素-v-",
+  "meta": {
+    "name": "自己可控制的因素（V）",
+    "category": "10",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):自己可控制的因素（V）",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "当人们沉浸在当下着手的某件事情或某个目标中时，全",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在冰里面，水分子相对固定在一个位置附近振动，系"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以自己可控制的因素（V）的方式思考这个问题。",
+    "activation_phrase": "请用自己可控制的因素（V）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

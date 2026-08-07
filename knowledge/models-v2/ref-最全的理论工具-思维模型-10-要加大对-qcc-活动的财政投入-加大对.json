@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-要加大对-qcc-活动的财政投入-加大对",
+  "meta": {
+    "name": "要加大对 QCC 活动的财政投入，加大对",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):要加大对 QCC 活动的财政投入，加大对",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "QCC 活动的成果如果能给企业带来效益，而企业领导者又能给参与 QCC 活 动的人员给予精神、物质奖励，必定能调动员工的劳动热情和积极性，形成更良 性的循环，创造出更高质量的成果。加大对 QCC 先进设备的添置，改善工作环 境，增加技术智",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以要加大对 QCC 活动的财政投入，加大对的方式思考这个问题。",
+    "activation_phrase": "请用要加大对 QCC 活动的财政投分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

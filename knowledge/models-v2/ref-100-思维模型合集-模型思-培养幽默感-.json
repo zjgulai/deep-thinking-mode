@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-培养幽默感-",
+  "meta": {
+    "name": "培养幽默感",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):培养幽默感。",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "幽默是人类智慧的最高形式,幽默可以有效提升管理效率,培养高情商, 并开发右脑思维。比如,戈尔曼和合益集团研究发现,在各个机构内,最具 领导力的管理者往往幽默风趣,巧妙地运用幽默可以提高管理水平,减 少敌意,消除偏见,缓解紧张气氛,振奋士气,",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ",戈尔曼和合益集团研究发现,在各个机构内,最具"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以培养幽默感。的方式思考这个问题。",
+    "activation_phrase": "请用培养幽默感。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

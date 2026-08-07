@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-学会多因果思维",
+  "meta": {
+    "name": "学会多因果思维",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):学会多因果思维",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "蝴蝶效应告诉我们，在一个混沌的系统里，一个小小的扰动可能带来 一场巨大的风暴。复杂系统的因果关系多如牛毛且错综复杂，时常存 在着动态波动，像我们的人体系统、大脑系统、社会系统、经济系统、 股票系统、企业系统都属于复杂系统，如果用简单的线性因",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以学会多因果思维的方式思考这个问题。",
+    "activation_phrase": "请用学会多因果思维分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

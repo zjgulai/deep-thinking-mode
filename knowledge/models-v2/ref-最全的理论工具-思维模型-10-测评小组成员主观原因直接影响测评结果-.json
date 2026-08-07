@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-测评小组成员主观原因直接影响测评结果-",
+  "meta": {
+    "name": "测评小组成员主观原因直接影响测评结果",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):测评小组成员主观原因直接影响测评结果。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "测评小组成员对标杆岗位进行测评的过程中，在部门和个人利益的驱动下， 个别测评小组成员的打分可能会违背客观事实。岗位测评原则上说是不针对部门 和个人。只针对岗位。但实际上只要涉及到其所在部门的岗位或有自己较亲近的 人所从事的岗位，个别测评小",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以测评小组成员主观原因直接影响测评结果。的方式思考这个问题。",
+    "activation_phrase": "请用测评小组成员主观原因直接影响测分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

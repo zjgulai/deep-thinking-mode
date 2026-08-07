@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-遗留问题",
+  "meta": {
+    "name": "遗留问题",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):遗留问题",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "P2 阶段：计划  目标为 15 分钟完成上版调试工作，生产出首件待检产品。现状调查：机长 负责前规尺寸、调试压力以及一组上版、开槽尺寸；一辅负责其他机组上版以及 最后找规矩；二辅协助。原因：机长任务较多，其他人完工后需要等待，造成误",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以遗留问题的方式思考这个问题。",
+    "activation_phrase": "请用遗留问题分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

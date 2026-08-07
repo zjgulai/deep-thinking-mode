@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-参观创意博物馆",
+  "meta": {
+    "name": "参观创意博物馆",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):参观创意博物馆",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "博物馆收藏了美术、雕塑、工业设计、平面设计、室内设计和建筑设 计等各种各样的艺术作品,并配有详细的说明,多去看一看,可以大大增 强你的设计敏感性。现在全世界基本上每个城市都拥有自己的博物馆, 在周末可以带上家人和孩子去博物馆发现世界的美,培",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以参观创意博物馆的方式思考这个问题。",
+    "activation_phrase": "请用参观创意博物馆分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

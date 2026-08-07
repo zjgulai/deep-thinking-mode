@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-依重要度决定活动题目",
+  "meta": {
+    "name": "依重要度决定活动题目",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):依重要度决定活动题目",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "(1)选取能符合自己圈水准的题目； (2)选取圈员平时经常接触到的题目； (3)选取全员都能参与的题目； (4)选取三个月左右有办法解决的题目； (5)选取尽可能有办法反应上司方针的题目； (6)能力、实力及信心提高后才选取较难而有挑战性的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "“如何减少拜访客户前的准备时间”，  “如何减少某个品种的不良率”等等"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以依重要度决定活动题目的方式思考这个问题。",
+    "activation_phrase": "请用依重要度决定活动题目分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

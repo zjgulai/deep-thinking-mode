@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-竞争者尚未完全控制细分市场",
+  "meta": {
+    "name": "竞争者尚未完全控制细分市场",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):竞争者尚未完全控制细分市场",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "企业进入某个细分市场时，必须考虑进入的成本，如细分市场上的竞争已经 十分激烈，市场已经趋于饱和，企业再进入必然会付出很高的成本。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以竞争者尚未完全控制细分市场的方式思考这个问题。",
+    "activation_phrase": "请用竞争者尚未完全控制细分市场分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

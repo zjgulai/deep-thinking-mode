@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-信息性从众动机-内化-",
+  "meta": {
+    "name": "信息性从众动机(内化)",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):信息性从众动机(内化)",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "信息不对称,由于信息不对称,从而增大了不确 定性,而不确定性的增大则很容易诱致盲从。 例如:股市里面有很多小道消息和荐股机构,由于信息不对称,不能确定 消息的真伪,很多散户就会产生从众行为。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "股市里面有很多小道消息和荐股机构,由于信息不对称,不能确定"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以信息性从众动机(内化)的方式思考这个问题。",
+    "activation_phrase": "请用信息性从众动机(内化)分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

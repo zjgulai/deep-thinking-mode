@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-信念",
+  "meta": {
+    "name": "信念",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):信念",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人相信的观念。正确的行为背后一定是正确的观念",
+    "trigger_signals": [
+      "如果你对价值投资信念强度不高。很难耐的住寂寞，"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，巴菲特对价值投资的信念强度是非常高的，所以他才能坚持 50"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以信念的方式思考这个问题。",
+    "activation_phrase": "请用信念分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

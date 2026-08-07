@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-定义绩效标准",
+  "meta": {
+    "name": "定义绩效标准",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):定义绩效标准",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "绩效标准一般采用工作分析和专家小组讨论的办法来确定。即采用工作分析 的各种工具与方法明确工作的具体要求，提炼出鉴别工作优秀的员工与工作一般 的员工的标准。专家小组讨论则是由优秀的领导者、人力资源管理层和研究人员 组成的专家小组，就此岗位的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以定义绩效标准的方式思考这个问题。",
+    "activation_phrase": "请用定义绩效标准分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

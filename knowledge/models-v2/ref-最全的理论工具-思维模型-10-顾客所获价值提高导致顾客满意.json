@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-顾客所获价值提高导致顾客满意",
+  "meta": {
+    "name": "顾客所获价值提高导致顾客满意",
+    "category": "09",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):顾客所获价值提高导致顾客满意",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "顾客所获价值，也称顾客让渡价值，它是指顾客总价值与顾客总成本之间的 差额。顾客总价值是顾客期望从某一特定产品或服务中获得的一组利益，包括产 品价值、 服务价值、人员价值和形象价值。顾客总成本是在评估、获得和使用 该产品或服务时引起的顾客的",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以顾客所获价值提高导致顾客满意的方式思考这个问题。",
+    "activation_phrase": "请用顾客所获价值提高导致顾客满意分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "逆向思维四型速查卡",
+  "meta": {
+    "name": "逆向思维四型",
+    "category": "06",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "逆向思维",
+      "正方形的认知工具箱",
+      "思维模型"
+    ],
+    "source": "逆向思维四型速查卡.md",
+    "sourceTitle": "逆向思维四型速查卡"
+  },
+  "engine": {
+    "core_question": "反转型、转换型、缺点逆用型、对立互补型——四种逆向思维模型，配四个核心追问，把“反过来想”从一句空话变成可落地的工具箱",
+    "trigger_signals": [
+      "需要快速查阅「逆向思维四型」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "反转型、转换型、缺点逆用型、对立互补型—",
+        "action": "反转型、转换型、缺点逆用型、对立互补型——四种逆向思维模型",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "反转型最直观：把功能、结构或因果颠倒过来",
+        "action": "反转型最直观：把功能、结构或因果颠倒过来",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "缺点逆用型是最容易被忽视的逆向武器",
+        "action": "缺点逆用型是最容易被忽视的逆向武器",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "对立互补型跳出非此即彼的二元思维",
+        "action": "对立互补型跳出非此即彼的二元思维",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "能否让两个对立特质彼此成就、共生增值",
+        "action": "能否让两个对立特质彼此成就、共生增值",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "逆向思维 #创新工具 #认知破局 #思维",
+        "action": "逆向思维 #创新工具 #认知破局 #思维模型 #问题解决 #问题分析 #正方形的认知工具箱",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「逆向思维四型」速查模式运行。\n\n【认知模式】快速调用逆向思维四型的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 反转型、转换型、缺点逆用型、对立互补型—：反转型、转换型、缺点逆用型、对立互补型——四种逆向思维模型\n\nStep 2 - 反转型最直观：把功能、结构或因果颠倒过来：反转型最直观：把功能、结构或因果颠倒过来\n\nStep 3 - 缺点逆用型是最容易被忽视的逆向武器：缺点逆用型是最容易被忽视的逆向武器\n\nStep 4 - 对立互补型跳出非此即彼的二元思维：对立互补型跳出非此即彼的二元思维\n\nStep 5 - 能否让两个对立特质彼此成就、共生增值：能否让两个对立特质彼此成就、共生增值\n\nStep 6 - 逆向思维 #创新工具 #认知破局 #思维：逆向思维 #创新工具 #认知破局 #思维模型 #问题解决 #问题分析 #正方形的认知工具箱\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用逆向思维四型速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

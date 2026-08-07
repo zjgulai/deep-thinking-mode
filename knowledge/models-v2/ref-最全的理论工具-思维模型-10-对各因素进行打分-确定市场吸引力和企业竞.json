@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-对各因素进行打分-确定市场吸引力和企业竞",
+  "meta": {
+    "name": "对各因素进行打分，确定市场吸引力和企业竞",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):对各因素进行打分，确定市场吸引力和企业竞",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "可以采取五级评分标准。例如，对于市场容量因素：1=市场容量极小，2= 市场容量较小，3=市场容量适中，4=市场容量较大，5=市场容量极大。假设市场 吸引力各因素的得分分别为 Si，企业竞争地位各因素的得分分别为 Qi。根据打 分结果和权重",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，对于市场容量因素：1=市场容量极小，2="
+    }
+  },
+  "codex": {
+    "system_prompt": "请以对各因素进行打分，确定市场吸引力和企业竞的方式思考这个问题。",
+    "activation_phrase": "请用对各因素进行打分，确定市场吸引分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

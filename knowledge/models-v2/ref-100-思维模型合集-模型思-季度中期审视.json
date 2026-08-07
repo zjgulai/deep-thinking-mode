@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-季度中期审视",
+  "meta": {
+    "name": "季度中期审视",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):季度中期审视",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "周会中的每个主题都可以应用在中期审视，但这个时候应更多关注“状 态确认”。需要根据收集上来的新信息重新调整期望值，以确保在余下 的六周里重点采取哪些行动？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以季度中期审视的方式思考这个问题。",
+    "activation_phrase": "请用季度中期审视分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

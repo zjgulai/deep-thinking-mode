@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-支配原理",
+  "meta": {
+    "name": "支配原理",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):支配原理",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "系统内部的不同组分、要素、趋势、力量、变量、模式之间如果不分 伯仲,一样的起作用,系统就不会形成有序结构;只有形成少数趋势(或力 量、模式、中心部分等)去引导、规范、支配大量其他组分、要素、趋 势、模式等的行为,使它们协同动作,才能形成有序",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以支配原理的方式思考这个问题。",
+    "activation_phrase": "请用支配原理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

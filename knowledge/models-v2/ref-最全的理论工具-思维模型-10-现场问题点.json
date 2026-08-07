@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-现场问题点",
+  "meta": {
+    "name": "现场问题点",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):现场问题点",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们可以从以下几个方面发现现场的问题(见表 1)： 质量 成本 产量 管理 \f http://wiki.mbalib.com/ ①产品不良率 ①人员多 ①库存多 ①士气提高 ②退货率 ②效率 ②保管损失 ②安全管理 ③初期不良 ③经费 ③生",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以现场问题点的方式思考这个问题。",
+    "activation_phrase": "请用现场问题点分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

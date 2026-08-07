@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-11个分析模型-运营必备-11-大数据分析模型-",
+  "meta": {
+    "name": "运营必备 11 大数据分析模型",
+    "category": "00",
+    "tags": [],
+    "source": "ref:11个分析模型:《运营必备 11 大数据分析模型》",
+    "sourceTitle": "11个分析模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "易观方舟 logo 《运营必备 11 大数据分析模型》  11 大模型相关卡通图标  （+ 模型名称） \f 《运营必备 11 大数据分析模型》 运营必备 11 大数据分析模型 目录\f 《运营必备 11 大数据分析模型》  前 言  数据运营",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以《运营必备 11 大数据分析模型》的方式思考这个问题。",
+    "activation_phrase": "请用《运营必备 11 大数据分析模分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

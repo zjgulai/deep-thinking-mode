@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "id": "意志力面对的挑战",
+  "meta": {
+    "name": "一、生理与神经层面的根本性挑战",
+    "category": "09",
+    "tags": [
+      "wechat_redirec"
+    ],
+    "source": "意志力面对的挑战.md",
+    "sourceTitle": "意志力面对的挑战"
+  },
+  "engine": {
+    "core_question": "这个问题的根本原因是什么？一、生理与神经层面的根本性挑战如何找到它？",
+    "trigger_signals": [
+      "**“选择架构”的力量**：默认选项、选项的排列方式等，会潜移默化地影响我们的选择，很多时候我们是在无意识中“被选择”了。",
+      "*社会影响与同伴压力**",
+      "**从众心理**：当周围人都在拖延、放纵时，保持自律需要对抗强大的群体压力。“大家都这样”是最具腐蚀性的借口之一。",
+      "**社会认同与示范**：看到他人违反规则而未受惩罚（如插队成功），或看到偶像、权威人物从事不良行为，会削弱个人的道德约束和自我控制。",
+      "*多重任务与数字时代干扰**"
+    ],
+    "stop_conditions": [
+      "不是单一的“不坚强”，而是一个**复杂的系统在特定条件下的必然反应**"
+    ],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "**能量有限与自我损耗**",
+        "action": "**能量有限与自我损耗**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "**动机矛盾与价值折扣**",
+        "action": "**动机矛盾与价值折扣**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "**认知扭曲与自我欺骗**",
+        "action": "**认知扭曲与自我欺骗**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "**诱惑的可见性与便捷性**",
+        "action": "**诱惑的可见性与便捷性**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "**社会影响与同伴压力**",
+        "action": "**社会影响与同伴压力**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "**多重任务与数字时代干扰**",
+        "action": "**多重任务与数字时代干扰**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 7,
+        "name": "**习惯的引力与改变的阻力**",
+        "action": "**习惯的引力与改变的阻力**",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "“我今天健身了，所以晚上可以大吃一顿。”将好的行为作为放纵的借口。"
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「一、生理与神经层面的根本性挑战」思维框架运行。核心立场：这个问题的根本原因是什么？一、生理与神经层面的根本性挑战如何找到它？\n\n【推理协议】\n1. **能量有限与自我损耗**\n2. **动机矛盾与价值折扣**\n3. **认知扭曲与自我欺骗**\n4. **诱惑的可见性与便捷性**\n5. **社会影响与同伴压力**\n6. **多重任务与数字时代干扰**\n\n【质量门禁】每完成一步，自问：我的分析是基于「一、生理与神经层面的根本」的核心逻辑，还是在用普通直觉？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用一、生理与神经层面的根本性挑战分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

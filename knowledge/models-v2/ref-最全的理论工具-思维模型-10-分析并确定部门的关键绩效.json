@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-分析并确定部门的关键绩效",
+  "meta": {
+    "name": "分析并确定部门的关键绩效",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):分析并确定部门的关键绩效",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "绩效之后，第二步就是要分析并确定各个部门及各岗位的关键绩 效。部门及岗位的关键绩效是依据企业的关键绩效制定的，是对企业关键绩效的分化各细化， 具有具体性、操作性的特点。各部门的主管协同人力资源部，依据",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以分析并确定部门的关键绩效的方式思考这个问题。",
+    "activation_phrase": "请用分析并确定部门的关键绩效分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

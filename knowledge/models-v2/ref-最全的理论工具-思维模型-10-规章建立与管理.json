@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-规章建立与管理",
+  "meta": {
+    "name": "规章建立与管理",
+    "category": "06",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):规章建立与管理",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "这个元素主要是在企业总体战略目标基础上，确定每个基础流程的决策支 持标准，从而形成企业规章制度，指导企业各个基础流程的决策过程。主要包括 以下一些元素，如：客户服务水平、供应商的选择标准、物料管理标准、配送标 准、合作伙伴服务标准等。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以规章建立与管理的方式思考这个问题。",
+    "activation_phrase": "请用规章建立与管理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

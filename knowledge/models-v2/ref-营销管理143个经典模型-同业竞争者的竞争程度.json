@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-同业竞争者的竞争程度",
+  "meta": {
+    "name": "同业竞争者的竞争程度",
+    "category": "07",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:同业竞争者的竞争程度",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "理论思考工具，而非可以实际操作的战略工具",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "要求得到很大的市场份额， 否则客户可以通过设置进入壁垒，包括差异化和转换成本来保护自己"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以同业竞争者的竞争程度的方式思考这个问题。",
+    "activation_phrase": "请用同业竞争者的竞争程度分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

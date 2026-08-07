@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-作用与不足",
+  "meta": {
+    "name": "作用与不足",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作用与不足",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "成功因素，通过建立各级业务单元乃至各岗位的关键绩效 指标，并与企业战略目标紧密相连，形成有机统一的企业战略保障体系和绩效评 价体系，可以促进各岗位工作的有序和效率，明显节约企业管理者的时间，提高 企业",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以作用与不足的方式思考这个问题。",
+    "activation_phrase": "请用作用与不足分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

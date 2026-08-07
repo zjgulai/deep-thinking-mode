@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-能力提升-85个著名认知思维模-费曼技巧思维模型",
+  "meta": {
+    "name": "费曼技巧思维模型",
+    "category": "08",
+    "tags": [],
+    "source": "ref:能力提升-85个著名认知思维模型:费曼技巧思维模型",
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 费曼技巧或称费曼学习法的灵感源于诺贝尔物理奖获得者理查德 · 费曼（Richard Feyn",
+    "trigger_signals": [
+      "如果你只能使用一两个,研究 一百四十个字,曾国藩的日记也不长,一天大概也是一二百字,而且"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "日记中 者至少到你认为它符合你的模型为止"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以费曼技巧思维模型的方式思考这个问题。",
+    "activation_phrase": "请用费曼技巧思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

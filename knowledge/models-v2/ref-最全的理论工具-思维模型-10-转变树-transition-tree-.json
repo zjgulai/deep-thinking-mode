@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-转变树-transition-tree-",
+  "meta": {
+    "name": "转变树（Transition Tree）",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):转变树（Transition Tree）",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "步骤与思维流程  过去，我们说：\"管理 30 项活动要比管 3 项活动麻烦得多\"。其实我们说这 句话是暗含了一个意思，就是活动和活动之间的关联得我们去管。对 3 项活动来 讲，有 3！＝6 个关联。而",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，具体的设备、工序等是约束）， 五大核心步骤可以提供解决这些约束的必要步骤"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以转变树（Transition Tree）的方式思考这个问题。",
+    "activation_phrase": "请用转变树（Transition 分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

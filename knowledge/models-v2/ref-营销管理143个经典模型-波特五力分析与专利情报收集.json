@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-波特五力分析与专利情报收集",
+  "meta": {
+    "name": "波特五力分析与专利情报收集",
+    "category": "00",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:波特五力分析与专利情报收集",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "绝对指标，并不能反映企业使用资产的",
+    "trigger_signals": [
+      "如果你不能衡量，那么，你就不能管理；而如果你不能描述，那么你就不能衡量。显",
+      "如果你不能描述，那么你就不能衡量，如果你不能"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说，我们经常发现企业的内部业务流程指标和客户价值主张之间缺"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以波特五力分析与专利情报收集的方式思考这个问题。",
+    "activation_phrase": "请用波特五力分析与专利情报收集分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

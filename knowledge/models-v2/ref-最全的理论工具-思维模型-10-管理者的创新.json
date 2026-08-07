@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-管理者的创新",
+  "meta": {
+    "name": "管理者的创新",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):管理者的创新",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "管理者在实施每项管理机制时，应用为什么一为什么分析法有助于实现管 理创新，如对企业劳动纪律的管理条目，企业员工劳动纪律为何较差?有制度缺 少监督考核机制；完善监督考核机制，由谁来监督考核?成立劳动纪律检查小组； 但日常由谁来监督考核?班长",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以管理者的创新的方式思考这个问题。",
+    "activation_phrase": "请用管理者的创新分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

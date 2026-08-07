@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-生物层面",
+  "meta": {
+    "name": "生物层面",
+    "category": "07",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):生物层面",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "《超级合作者》作者马丁•诺瓦克是哈佛大学数学与生物学教授，进化 动力学中心主任，与著名生物学家理查德•道金斯和爱德华•威尔逊齐 名的科学巨星。他是继达尔文之后为进化论作出突破性贡献的第一人。 诺瓦克用数学和博弈论模型作为研究的工具，将整个生",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以生物层面的方式思考这个问题。",
+    "activation_phrase": "请用生物层面分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

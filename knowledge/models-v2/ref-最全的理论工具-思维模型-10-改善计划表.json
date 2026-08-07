@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-改善计划表",
+  "meta": {
+    "name": "改善计划表",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):改善计划表",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对改善活动的具体改善项目明确具体的责任人和完成日期，建立可追溯性的 台账。并制定能有效推进改善的明确有效的改善计划。该计划表展示在现场，现 场人员可以随时记录问题点，提出改进方案。改善计划表与生产实绩管理表配套 使用。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以改善计划表的方式思考这个问题。",
+    "activation_phrase": "请用改善计划表分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

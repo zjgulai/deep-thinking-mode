@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "id": "框架效应话术速查卡",
+  "meta": {
+    "name": "框架效应话术",
+    "category": "06",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "框架效应",
+      "沟通技巧",
+      "认知科学"
+    ],
+    "source": "框架效应话术速查卡.md",
+    "sourceTitle": "框架效应话术速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡精选10组最常用的框架效应话术，覆盖商业营销和职场管理场景，每组包含普通表述、优质框架和核心心理机制",
+    "trigger_signals": [
+      "需要快速查阅「框架效应话术」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "3元（极小单位降低痛感） 库存营销：仅剩",
+        "action": "3元（极小单位降低痛感） 库存营销：仅剩2件 → 已热销1000件（稀缺性或社会认同） 加班通知：加班得双倍工资 → 不加班错失双倍收入（不赚即亏） 绩效沟通：",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "选一个你明天要沟通的场景",
+        "action": "选一个你明天要沟通的场景",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「框架效应话术」速查模式运行。\n\n【认知模式】快速调用框架效应话术的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 3元（极小单位降低痛感） 库存营销：仅剩：3元（极小单位降低痛感） 库存营销：仅剩2件 → 已热销1000件（稀缺性或社会认同） 加班通知：加班得双倍工资 → 不加班错失双倍收入（不赚即亏） 绩效沟通：\n\nStep 2 - 选一个你明天要沟通的场景：选一个你明天要沟通的场景\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用框架效应话术速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

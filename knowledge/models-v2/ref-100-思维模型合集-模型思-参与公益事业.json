@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-参与公益事业",
+  "meta": {
+    "name": "参与公益事业",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):参与公益事业",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "智慧，需要根据不同人选择不同的礼物，用适当的",
+    "trigger_signals": [
+      "如果我们了解人类自动化行为的触发开关，我们",
+      "当我们认为那些人与我们相似的时",
+      "当我们陷入困境不知道怎么办时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "高 价格等于高质量。一分价钱一分货，十分价钱买不错"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以参与公益事业的方式思考这个问题。",
+    "activation_phrase": "请用参与公益事业分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

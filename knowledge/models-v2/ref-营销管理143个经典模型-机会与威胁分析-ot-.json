@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-营销管理143个经典模型-机会与威胁分析-ot-",
+  "meta": {
+    "name": "机会与威胁分析（OT）",
+    "category": "05",
+    "tags": [],
+    "source": "ref:营销管理143个经典模型:机会与威胁分析（OT）",
+    "sourceTitle": "营销管理143个经典模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "随着经济、社会、科技等诸多方面的迅速发展，特别是世界经济全球化、一体化过程的加 快，全球信息网络的建立和消费需求的多样化，企业所处的环境更为开放和动荡。这种变化几乎 对所有企业都产生了深刻的影响。正因为如此，环境分析成为一种日益重要的企业",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，一种简明扼要的方法就是 PEST 分析，另外一"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以机会与威胁分析（OT）的方式思考这个问题。",
+    "activation_phrase": "请用机会与威胁分析（OT）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

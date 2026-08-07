@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么让坚持像玩游戏一样上瘾_三方法速查卡",
+  "meta": {
+    "name": "怎么让坚持像玩游戏一样上瘾_三方法",
+    "category": "00",
+    "tags": [
+      "ffe58f;",
+      "长期主义",
+      "ccc;",
+      "行为设计",
+      "认知科学"
+    ],
+    "source": "怎么让坚持像玩游戏一样上瘾_三方法速查卡.md",
+    "sourceTitle": "怎么让坚持像玩游戏一样上瘾_三方法速查卡"
+  },
+  "engine": {
+    "core_question": "年初定下目标坚持两周就放弃——不是你不自律，是大脑觉得这事太枯燥了",
+    "trigger_signals": [
+      "需要快速查阅「怎么让坚持像玩游戏一样上」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "游戏让人上瘾的机制拆成三个可套用的方法：",
+        "action": "游戏让人上瘾的机制拆成三个可套用的方法： 进度可视化把遥远目标变成看得见的格子",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "三个方法分别激活多巴胺的三大引擎：进度感",
+        "action": "三个方法分别激活多巴胺的三大引擎：进度感知、不确定性、奖励期待",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "拆出第一个10分钟能完成的小节点",
+        "action": "拆出第一个10分钟能完成的小节点",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么让坚持像玩游戏一样上」速查模式运行。\n\n【认知模式】快速调用怎么让坚持像玩游戏一样上瘾_三的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 游戏让人上瘾的机制拆成三个可套用的方法：：游戏让人上瘾的机制拆成三个可套用的方法： 进度可视化把遥远目标变成看得见的格子\n\nStep 2 - 三个方法分别激活多巴胺的三大引擎：进度感：三个方法分别激活多巴胺的三大引擎：进度感知、不确定性、奖励期待\n\nStep 3 - 拆出第一个10分钟能完成的小节点：拆出第一个10分钟能完成的小节点\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么让坚持像玩游戏一样上瘾_三速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-决策科学化",
+  "meta": {
+    "name": "决策科学化",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):决策科学化",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "人生就是决策的集合，在工作生活中，我们面临的决策有简单问题和 复杂问题，复杂问题不仅需要考虑动态复杂性，还要考虑社会复杂性， 需要平衡各种利益相关方。稍有不慎就有可能导致决策失败。此时我 们就需要跨学科思维，从不同视角去进行科学论证，平衡多",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以决策科学化的方式思考这个问题。",
+    "activation_phrase": "请用决策科学化分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

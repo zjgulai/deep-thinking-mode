@@ -1,0 +1,33 @@
+{
+  "schema_version": "2.0.0",
+  "id": "神经系统中交感神经被激活后该如何关闭",
+  "meta": {
+    "name": "神经系统中交感神经被激活后该如",
+    "category": "05",
+    "tags": [],
+    "source": "神经系统中交感神经被激活后该如何关闭.md",
+    "sourceTitle": ""
+  },
+  "engine": {
+    "core_question": "神经系统中交感神经被激活后该如何关闭 ==================  原创 正方形SQUARE 2025-12-14 10:20 上海  > 原文地址: [https://mp.weixin.qq.com/s/0kXWYfDMAvZjPk3oejCdsQ](https://mp.weixin",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以神经系统中交感神经被激活后该如的方式思考。",
+    "activation_phrase": "请用神经系统中交感神经被激活后该如分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

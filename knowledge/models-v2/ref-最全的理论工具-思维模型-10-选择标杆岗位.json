@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-选择标杆岗位",
+  "meta": {
+    "name": "选择标杆岗位",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):选择标杆岗位",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "规模大的企业岗位往往比较多，如果所有的岗位参加测评，一方面会耗费大 量的人力、物力；另一方面如果岗位太多，评估者往往会因为被评估的岗位过多 而敷衍了事。或者因岗位较多而难于对不同岗位进行区分，这样会使评估工作出 现较大的偏差。因此在进行海",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以选择标杆岗位的方式思考这个问题。",
+    "activation_phrase": "请用选择标杆岗位分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

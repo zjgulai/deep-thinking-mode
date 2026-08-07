@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-愿景陈述",
+  "meta": {
+    "name": "愿景陈述",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):愿景陈述",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "采用 PPT、草图、软件模拟、工程样机等方式呈现出的产品原型",
+    "trigger_signals": [
+      "如果你不清楚如何以低于客户支付意愿"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "设计师创作的汽车模型、手机模型等，虽然不能够使用，但是"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以愿景陈述的方式思考这个问题。",
+    "activation_phrase": "请用愿景陈述分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

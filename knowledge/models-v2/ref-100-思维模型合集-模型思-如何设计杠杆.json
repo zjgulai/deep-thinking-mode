@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-如何设计杠杆",
+  "meta": {
+    "name": "如何设计杠杆",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):如何设计杠杆",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "综合性的创新方法论，融合了创业学的精益创业",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "中，有个经典案例不得不提，那就是被称之为世界"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以如何设计杠杆的方式思考这个问题。",
+    "activation_phrase": "请用如何设计杠杆分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

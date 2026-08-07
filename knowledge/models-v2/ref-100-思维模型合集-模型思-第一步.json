@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-第一步",
+  "meta": {
+    "name": "第一步",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):第一步",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "观点，如“所谓天才，不过是刻意练习的结果”、“线上营销，内容 为王”等。 如何流畅的引出这个问题或者主题呢？加一个序言！通过概述已知的 信息，与问题或者主题建立某种关联，将读者的注意力，以他熟悉的 信",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "说水光针啊、热玛吉啊什么的（S），但是呢它们又贵又"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以第一步的方式思考这个问题。",
+    "activation_phrase": "请用第一步分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

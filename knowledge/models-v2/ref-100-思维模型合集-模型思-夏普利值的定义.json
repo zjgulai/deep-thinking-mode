@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-夏普利值的定义",
+  "meta": {
+    "name": "夏普利值的定义",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):夏普利值的定义",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "在合作博弈中，行动者遍历所有可能",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "在一个由三个人组成的团队中，要求出一位行动者的夏普利值，"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以夏普利值的定义的方式思考这个问题。",
+    "activation_phrase": "请用夏普利值的定义分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

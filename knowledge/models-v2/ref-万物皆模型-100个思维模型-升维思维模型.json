@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-万物皆模型-100个思维模型-升维思维模型",
+  "meta": {
+    "name": "升维思维模型",
+    "category": "07",
+    "tags": [],
+    "source": "ref:万物皆模型-100个思维模型:升维思维模型",
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "“不识庐山真面目,只缘身在此山中”,升维思维模型指在原有的维度上不能解決问题,只能呈现 问题,只有换一个维度才能解決问题,即跳出眼前问题的限製和常规解法,通过“层级、时间、视 角、边界、位置、结构”的变化,重新思考问题及其解決之道的思维模型",
+    "trigger_signals": [
+      "当你与问题处于相同纬度时问题无法解決,而当你切换为高维时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以升维思维模型的方式思考这个问题。",
+    "activation_phrase": "请用升维思维模型分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

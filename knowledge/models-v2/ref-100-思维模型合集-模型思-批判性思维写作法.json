@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-批判性思维写作法",
+  "meta": {
+    "name": "批判性思维写作法",
+    "category": "01",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):批判性思维写作法",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "国际批判性思维的权威、美国“批判性思维国家高层理事会”主席理查德. 保罗先生提出了批判性思维的八大元素：目的、问题、信息、推理、 概念、假设、意义和观点。正如前文所述，写作的背后是思维，写作 力是通过文字呈现思维的能力。我们完全可以运用思维",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以批判性思维写作法的方式思考这个问题。",
+    "activation_phrase": "请用批判性思维写作法分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

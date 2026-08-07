@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-智能控制",
+  "meta": {
+    "name": "智能控制",
+    "category": "02",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):智能控制",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "多学科和技术交叉相结合的综合高技术",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "是形式化：把实际问题的描述形式化（即符号",
+        "action": "是形式化：把实际问题的描述形式化（即符号化）。形式化是思",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "是机械化：把求解这个问题的过程“机械化”",
+        "action": "是机械化：把求解这个问题的过程“机械化”，即把它转化成某种",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "是自动化：对计算机来说，就是用某种方便的",
+        "action": "是自动化：对计算机来说，就是用某种方便的计算机语言把这",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "要 写多少个模型？怎么选择模型？呈现采用音频还是视频？这些问题不"
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「智能控制」思维模式运行。\n\nStep 1 - 是形式化：把实际问题的描述形式化（即符号：是形式化：把实际问题的描述形式化（即符号化）。形式化是思\n\nStep 2 - 是机械化：把求解这个问题的过程“机械化”：是机械化：把求解这个问题的过程“机械化”，即把它转化成某种\n\nStep 3 - 是自动化：对计算机来说，就是用某种方便的：是自动化：对计算机来说，就是用某种方便的计算机语言把这\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用智能控制分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

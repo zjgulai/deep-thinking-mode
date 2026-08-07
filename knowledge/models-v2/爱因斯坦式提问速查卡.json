@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0.0",
+  "id": "爱因斯坦式提问速查卡",
+  "meta": {
+    "name": "爱因斯坦式提问",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "爱因斯坦式提问",
+      "问题重构",
+      "faad14;"
+    ],
+    "source": "爱因斯坦式提问速查卡.md",
+    "sourceTitle": "爱因斯坦式提问速查卡"
+  },
+  "engine": {
+    "core_question": "这张速查卡帮你快速掌握爱因斯坦式提问的核心方法，包含核心理念、5步法和入门级3问模板",
+    "trigger_signals": [
+      "遇到问题先问这3句） 我正在解决的问题",
+      "遇到难题时拿出来——先花时间定义问题"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "查卡帮你快速掌握爱因斯坦式提问的核心方法",
+        "action": "查卡帮你快速掌握爱因斯坦式提问的核心方法",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "质疑每个部分 拆解隐含假设、关键词定义",
+        "action": "质疑每个部分 拆解隐含假设、关键词定义",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "生成多个版本 用5种技巧变换问题：反转、",
+        "action": "生成多个版本 用5种技巧变换问题：反转、放大、缩小、替换、删除",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "入门级3问模板（遇到问题先问这3句） 我",
+        "action": "入门级3问模板（遇到问题先问这3句） 我正在解决的问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "有没有一个更基础的问题",
+        "action": "有没有一个更基础的问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "解决了它这个就自动解决",
+        "action": "解决了它这个就自动解决",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「爱因斯坦式提问」速查模式运行。\n\n【认知模式】快速调用爱因斯坦式提问的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 查卡帮你快速掌握爱因斯坦式提问的核心方法：查卡帮你快速掌握爱因斯坦式提问的核心方法\n\nStep 2 - 质疑每个部分 拆解隐含假设、关键词定义：质疑每个部分 拆解隐含假设、关键词定义\n\nStep 3 - 生成多个版本 用5种技巧变换问题：反转、：生成多个版本 用5种技巧变换问题：反转、放大、缩小、替换、删除\n\nStep 4 - 入门级3问模板（遇到问题先问这3句） 我：入门级3问模板（遇到问题先问这3句） 我正在解决的问题\n\nStep 5 - 有没有一个更基础的问题：有没有一个更基础的问题\n\nStep 6 - 解决了它这个就自动解决：解决了它这个就自动解决\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用爱因斯坦式提问速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

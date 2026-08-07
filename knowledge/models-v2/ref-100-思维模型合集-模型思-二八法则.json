@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-二八法则",
+  "meta": {
+    "name": "二八法则",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):二八法则",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "19 世纪意大利经济学家帕雷托（VilfredoPareto）研究了个人收入的统 计分布，发现少数人的收入要远多于大多数人的收入，提出了著名的 80/20 法则，即 20%的人口占据了 80%的社会财富。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「二八法则」思维框架运行。核心立场：19 世纪意大利经济学家帕雷托（VilfredoPareto）研究了个人收入的统 计分布，发现少数人的收入要远多于大多数人的收入，提出了著名的 80/20 法则，\n\n【推理协议】\n1. 三把剃刀（归因场景）：停止恶意脑补，客观还原真相\n2. 二八法则+四象限（决策场景）：告别无效忙碌，聚焦核心要事\n3. 反向思维（避险决策）：先规避失败，再谋求成功\n4. 第一性原理（创新场景）：跳出经验桎梏，实现底层破局\n5. 二阶思维（推演场景）：看透连锁反应，拒绝短视决策\n6. 系统思维（全局复盘）：跳出单线因果，根治反复问题\n\n【质量门禁】每完成一步推理后，自问：这个结论是基于「二八法则」的核心逻辑得出的，还是在用普通直觉回答？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用二八法则分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

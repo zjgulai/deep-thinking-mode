@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-文化层面",
+  "meta": {
+    "name": "文化层面",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):文化层面",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "文化是什么？文化就是一套人类生存体系图谱。文化的传承是通过语 言和文字来完成。 想想自然界，为什么只有人类进化出了语言？从进化的角度讲，只有 语言带来的收益高于学习成本时，语言才能保留。自然界的不同物种， 平时的沟通都非常简单，无外乎就是前",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以文化层面的方式思考这个问题。",
+    "activation_phrase": "请用文化层面分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

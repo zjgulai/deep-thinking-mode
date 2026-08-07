@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-选择-从多样性中做出正确的选择",
+  "meta": {
+    "name": "选择——从多样性中做出正确的选择",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):选择——从多样性中做出正确的选择",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "移动的基因库。一个物种所包含的基因越丰富，它对环境的适",
+    "trigger_signals": [
+      "如果你不能觉察到失败，你就"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "蚁群能够在不同的环境下， 以最短的时间沿着最短的路径到达食物源"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以选择——从多样性中做出正确的选择的方式思考这个问题。",
+    "activation_phrase": "请用选择——从多样性中做出正确的选分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-必知必会13个个人精进方法-必知必会个人成长学习",
+  "meta": {
+    "name": "必知必会个人成长学习",
+    "category": "06",
+    "tags": [],
+    "source": "ref:必知必会13个个人精进方法:必知必会个人成长学习",
+    "sourceTitle": "必知必会13个个人精进方法",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "不断评估、不断改进、不断优化的过",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "团队合作、时  业 间、精力等  商 进行范式 在其他两"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以必知必会个人成长学习的方式思考这个问题。",
+    "activation_phrase": "请用必知必会个人成长学习分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

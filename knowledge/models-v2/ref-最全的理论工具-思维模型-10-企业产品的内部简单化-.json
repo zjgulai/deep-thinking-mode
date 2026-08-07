@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-企业产品的内部简单化-",
+  "meta": {
+    "name": "企业产品的内部简单化",
+    "category": "05",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业产品的内部简单化。",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "大规模定制除了要求企业有合理的产品结构之外，还要求大幅降低产品的内 部复杂性，即对零件、材料、工具和工艺过程进行标准化和通用化。随着客户需 求多样性的增加，企业所要生产的零件种类急速增加，造成企业拥有数千甚至数 万个不同的零件种类，同样也",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "为减少零件种类，对企业所有零件 (包括自制零件和外购零件)进行通用化；为消减生产准备工作，对在装配、调整、"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以企业产品的内部简单化。的方式思考这个问题。",
+    "activation_phrase": "请用企业产品的内部简单化。分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

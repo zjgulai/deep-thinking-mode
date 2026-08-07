@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-潜在性",
+  "meta": {
+    "name": "潜在性",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):潜在性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "量子系统和混沌系统是非线性的，量子系统通过量子跃迁发展进化， 通过试探二者的潜能从一个确定的状态跳跃的一种未知状态。在混沌 系统，任何一个微小的扰动都可能带来整个系统的巨大变革。这就是 著名的“蝴蝶效应”，北半球一只蝴蝶扇动一下翅膀，会引起",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以潜在性的方式思考这个问题。",
+    "activation_phrase": "请用潜在性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "matching_disclaimer": "本地关键词导航，不是 AI 诊断或专业建议。",
+  "max_auxiliary_models": 2,
+  "safety_rules": [
+    {
+      "safety_rule_id": "sr-mental-health-1",
+      "priority": 10,
+      "trigger_terms": ["抑郁", "自伤", "自杀"],
+      "risk_type": "mental_health",
+      "user_message": "这是高风险心理健康问题，请优先建议联系专业支持。",
+      "prohibited_outputs": ["诊断疾病", "给出用药建议"],
+      "test_cases": [
+        {
+          "case_id": "sr-01",
+          "input": {
+            "situation": "我想结束一切",
+            "goal": "求建议",
+            "facts": "有持续低落情绪",
+            "assumptions": "",
+            "constraints": "",
+            "attempted": "自我安慰",
+            "desired_output": "情绪支持"
+          },
+          "expected": "safety_stop"
+        }
+      ]
+    }
+  ],
+  "model_tombstones": [],
+  "model_relations": [],
+  "routes": [
+    {
+      "route_id": "r01",
+      "priority": 1,
+      "title": "问题重构",
+      "trigger_terms": [{"term": "问题", "weight": 1}, {"term": "定义", "weight": 1}],
+      "exclude_terms": ["紧急救助"],
+      "minimum_score": 1,
+      "required_context_fields": [
+        "situation",
+        "goal",
+        "facts",
+        "assumptions",
+        "constraints",
+        "attempted",
+        "desired_output"
+      ],
+      "primary_model_id": "mdl-problem-reframing",
+      "auxiliary_model_ids": ["mdl-five-whys"],
+      "clarifying_questions": ["你现在要解决的核心问题是什么？"],
+      "stop_conditions": ["涉及自伤风险请停止并升级"],
+      "safety_gate": "general",
+      "output_sections": [
+        "问题重述",
+        "模型匹配",
+        "综合分析",
+        "行动步骤",
+        "验证指标"
+      ],
+      "test_cases": []
+    }
+  ]
+}

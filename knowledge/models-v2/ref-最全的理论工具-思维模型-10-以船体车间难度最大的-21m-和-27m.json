@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-以船体车间难度最大的-21m-和-27m",
+  "meta": {
+    "name": "以船体车间难度最大的 21m 和 27m",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):以船体车间难度最大的 21m 和 27m",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "，进行现场总体规划，绘出车间、工段定 置管理图。该图要求反映出设备布置、安全通道，各类原材料、构件、预制件、 半成品、垃圾堆场的位置，及作业场所和生产流水线的走向，并按全厂统一的标 准格式和颜色标志制",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以以船体车间难度最大的 21m 和 27m的方式思考这个问题。",
+    "activation_phrase": "请用以船体车间难度最大的 21m 分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

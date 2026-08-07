@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "经验学习四步法_从经历中提炼能力附",
+  "meta": {
+    "name": "经验学习四步法_从经历中提炼能力（附",
+    "category": "08",
+    "tags": [],
+    "source": "经验学习四步法_从经历中提炼能力（附复盘问题清单）.md"
+  },
+  "engine": {
+    "core_question": "或哪个表情，让我产生了强烈的反应？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「经验学习四步法_从经历中提炼能力」思维框架运行。核心立场：或哪个表情，让我产生了强烈的反应？\n\n【推理协议】\n1. 核心模型：经验学习四阶段\n2. 每个阶段，你卡在哪？怎么破？\n3. 完整职场案例：一次失败的汇报\n4. 三个高效习惯，把四阶段融入日常\n\n【质量门禁】每完成一步推理后，自问：这个结论是基于「经验学习四步法_从经历中提炼能力」的核心逻辑得出的，还是在用普通直觉回答？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用经验学习四步法_从经历中提炼能分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 2,
+    "overall": 2
+  }
+}

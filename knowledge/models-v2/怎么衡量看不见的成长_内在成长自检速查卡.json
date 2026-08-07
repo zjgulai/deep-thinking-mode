@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "怎么衡量看不见的成长_内在成长自检速查卡",
+  "meta": {
+    "name": "怎么衡量看不见的成长_内在成长",
+    "category": "08",
+    "tags": [
+      "ffe58f;",
+      "自我觉察",
+      "ccc;",
+      "正方形的认知工具箱",
+      "深度思考"
+    ],
+    "source": "怎么衡量看不见的成长_内在成长自检速查卡.md",
+    "sourceTitle": "怎么衡量看不见的成长_内在成长自检速查卡"
+  },
+  "engine": {
+    "core_question": "四维内在成长自检卡，把“感觉自己好像成长了”变成可以对照观察的具体指标",
+    "trigger_signals": [
+      "需要系统检验自己的思维或行为时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "以下四个维度十二个指标",
+        "action": "以下四个维度十二个指标",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "而不是焦虑地抓住一个确定但可能错误的答案",
+        "action": "而不是焦虑地抓住一个确定但可能错误的答案来获得暂时的安慰",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "看的是刺激和回应之间的那个空隙有没有变长",
+        "action": "看的是刺激和回应之间的那个空隙有没有变长",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "然后选择一个新的、更符合你价值观的回应方",
+        "action": "然后选择一个新的、更符合你价值观的回应方式",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "从一个严苛的审判官",
+        "action": "从一个严苛的审判官",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "变成了一个支持的盟友",
+        "action": "变成了一个支持的盟友",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「怎么衡量看不见的成长_内」速查模式运行。\n\n【认知模式】快速调用怎么衡量看不见的成长_内在成长的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 以下四个维度十二个指标：以下四个维度十二个指标\n\nStep 2 - 而不是焦虑地抓住一个确定但可能错误的答案：而不是焦虑地抓住一个确定但可能错误的答案来获得暂时的安慰\n\nStep 3 - 看的是刺激和回应之间的那个空隙有没有变长：看的是刺激和回应之间的那个空隙有没有变长\n\nStep 4 - 然后选择一个新的、更符合你价值观的回应方：然后选择一个新的、更符合你价值观的回应方式\n\nStep 5 - 从一个严苛的审判官：从一个严苛的审判官\n\nStep 6 - 变成了一个支持的盟友：变成了一个支持的盟友\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用怎么衡量看不见的成长_内在成长速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

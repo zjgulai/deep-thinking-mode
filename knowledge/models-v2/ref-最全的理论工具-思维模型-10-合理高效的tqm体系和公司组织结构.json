@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-合理高效的tqm体系和公司组织结构",
+  "meta": {
+    "name": "合理高效的TQM体系和公司组织结构",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):合理高效的TQM体系和公司组织结构",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "实施TQM 必须要有相适应的、合理、高效的管理体系和组织结构。APL建立 了一套自上而下的质量管理体系。目前，APL已在新加坡、美国、泰国、德国、 英国、斯里兰卡，中国台湾通过了ISO9002认证。  随着市场的不断扩大，APL于l987",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以合理高效的TQM体系和公司组织结构的方式思考这个问题。",
+    "activation_phrase": "请用合理高效的TQM体系和公司组织分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-常用咨询方法-分析模型及案例分-根据企业资源组合情况-确认企业的关键能力",
+  "meta": {
+    "name": "根据企业资源组合情况，确认企业的关键能力",
+    "category": "00",
+    "tags": [],
+    "source": "ref:常用咨询方法、分析模型及案例分析:根据企业资源组合情况，确认企业的关键能力",
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "3 \f4、 按照通用矩阵或类似的方式打分评价  把识别出的所有优势分成两组，分的时候以两个原则为基础：它们是与行业中 潜在的机会有关，还是与潜在的威胁有关。用同样的办法把所有的劣势分成两组， 一组与机会有关，另一组与威胁有关。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以根据企业资源组合情况，确认企业的关键能力的方式思考这个问题。",
+    "activation_phrase": "请用根据企业资源组合情况，确认企业分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

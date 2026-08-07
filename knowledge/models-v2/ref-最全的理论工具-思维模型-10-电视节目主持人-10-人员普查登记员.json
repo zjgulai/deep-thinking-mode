@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-电视节目主持人-10-人员普查登记员",
+  "meta": {
+    "name": "电视节目主持人 10、 人员普查登记员",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):电视节目主持人 10、 人员普查登记员",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "http://wiki.mbalib.com/ 第五部份 您的能力类型简评 下面两张表是您在 6 个职业能力方面的自我评定表。您可先与同龄人比较出自己在每一方面 的能力，然后斟酌后对自己的能力作评估。请在表中适当的数字上画圈，数值越大表",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以电视节目主持人 10、 人员普查登记员的方式思考这个问题。",
+    "activation_phrase": "请用电视节目主持人 10、 人员普分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

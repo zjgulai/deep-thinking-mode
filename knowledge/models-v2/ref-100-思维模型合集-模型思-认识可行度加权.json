@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-认识可行度加权",
+  "meta": {
+    "name": "认识可行度加权",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):认识可行度加权",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "797 / 1937 \f可行度加权就是让可信的人在投票的时候多一些权重。瑞·达利欧认为 可信度加权的决策方式是最好的决策方式。让靠谱的人和能力强的人 发挥更大的影响力。那么，怎样知道谁最靠谱呢？一般来说最具有可 信度的观点来自： （1）多",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以认识可行度加权的方式思考这个问题。",
+    "activation_phrase": "请用认识可行度加权分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

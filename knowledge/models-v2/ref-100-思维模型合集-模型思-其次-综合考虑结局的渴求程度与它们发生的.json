@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-其次-综合考虑结局的渴求程度与它们发生的",
+  "meta": {
+    "name": "其次，综合考虑结局的渴求程度与它们发生的",
+    "category": "00",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):其次，综合考虑结局的渴求程度与它们发生的",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "进入市中心公立小学的概率是 75％，是一个非常高的概率，所以还是 值得冒险尝试呢。如果概率降到 50％以下，那就要重新考虑了。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以其次，综合考虑结局的渴求程度与它们发生的的方式思考这个问题。",
+    "activation_phrase": "请用其次，综合考虑结局的渴求程度与分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-问题的严重性",
+  "meta": {
+    "name": "问题的严重性",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):问题的严重性",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "某主机厂给某仪表电器厂的质量问题信息单明确表示了对某仪表电器厂的不 满。继电器失效将导致车辆的电喇叭无声，影响行车安全。主机厂要求某仪表电 器厂立即整改，并计划从 6 月份开始对该继电器进行质量跟踪考核，若故障率仍 高于 0.3％ ，将对",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以问题的严重性的方式思考这个问题。",
+    "activation_phrase": "请用问题的严重性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

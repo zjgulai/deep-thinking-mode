@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-按数据的性质分成计量值控制图和计数值控制",
+  "meta": {
+    "name": "按数据的性质分成计量值控制图和计数值控制",
+    "category": "02",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按数据的性质分成计量值控制图和计数值控制",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "每类又可细分为具体的控制图，如计量值控制图可具体分为均值—极差控制 图、单值一移动极差控制图等。而最常用的是计量值控制图中的平均值—极差控 制图，这两类控制图的特点与适用场合详见下表。 类 名称 特点 适用场合 别  计量值控制图  平均",
+    "trigger_signals": [
+      "极差控制图 最常用,判断工序是否正常 产品批量较大的工序",
+      "移动极差控制 简便省事,并能及时判断工序是 因各种原因(时间等)每次"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "随机抽取样品 50 件以上，测出样品的数",
+        "action": "随机抽取样品 50 件以上，测出样品的数据，计算控制界限，做控制图；",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "观察控制图是否在控制状态中，即稳定情况，",
+        "action": "观察控制图是否在控制状态中，即稳定情况，如果点全部在控制界限内．而",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "如果有异常状态，或虽未超出控制界限，但排",
+        "action": "如果有异常状态，或虽未超出控制界限，但排列有异常，则需查明导致异",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "把上述所取数据作立方图，将立方图和标准界",
+        "action": "把上述所取数据作立方图，将立方图和标准界限(公差上限和下限)相比",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「按数据的性质分成计量值控」思维模式运行。\n\nStep 1 - 随机抽取样品 50 件以上，测出样品的数：随机抽取样品 50 件以上，测出样品的数据，计算控制界限，做控制图；\n\nStep 2 - 观察控制图是否在控制状态中，即稳定情况，：观察控制图是否在控制状态中，即稳定情况，如果点全部在控制界限内．而\n\nStep 3 - 如果有异常状态，或虽未超出控制界限，但排：如果有异常状态，或虽未超出控制界限，但排列有异常，则需查明导致异\n\nStep 4 - 把上述所取数据作立方图，将立方图和标准界：把上述所取数据作立方图，将立方图和标准界限(公差上限和下限)相比\n\n约束：按步骤顺序推理，不跳过任何一步。",
+    "activation_phrase": "请用按数据的性质分成计量值控制图和分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

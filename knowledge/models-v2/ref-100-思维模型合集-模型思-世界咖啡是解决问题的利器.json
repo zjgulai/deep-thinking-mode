@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-世界咖啡是解决问题的利器",
+  "meta": {
+    "name": "世界咖啡是解决问题的利器",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):世界咖啡是解决问题的利器",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "彼得．德鲁克说“世界咖啡式汇谈提供了能将分析转变为深刻变革的工 具和将天才人物紧密相连的结构。” 每个人都有自己的知识盲点，每个人都是在盲人摸象，每个人都是从 自己的维度去看待这个世界。当一个复杂问题出现的时候，一个人的 思维总有他的局限，",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以世界咖啡是解决问题的利器的方式思考这个问题。",
+    "activation_phrase": "请用世界咖啡是解决问题的利器分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

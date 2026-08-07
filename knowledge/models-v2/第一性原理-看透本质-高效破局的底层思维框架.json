@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0.0",
+  "id": "第一性原理-看透本质-高效破局的底层思维框架",
+  "meta": {
+    "name": "第一性原理",
+    "category": "04",
+    "tags": [],
+    "source": "第一性原理_看透本质_高效破局的底层思维框架.md",
+    "sourceTitle": "第一性原理：看透本质、高效破局的底层思维框架"
+  },
+  "engine": {
+    "core_question": "核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖",
+    "trigger_signals": [
+      "打破思维定式：摆脱常识、经验束缚，看见破局可能性。",
+      "实现真正创新：从零搭建方案，突破现有模式局限。",
+      "提升决策质量：基于事实逻辑，规避情绪、跟风干扰。",
+      "应对复杂未知：无先例可借鉴时，回归本质找解法。"
+    ],
+    "stop_conditions": [
+      "提升决策质量：基于事实逻辑，规避情绪、跟风干扰。",
+      "应对复杂未知：无先例可借鉴时，回归本质找解法。"
+    ],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "质疑拆解",
+        "action": "打破固有假设",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "拆至本质",
+        "action": "提炼核心元素",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "重构方案",
+        "action": "搭建全新路径",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "工作应用（四步框架）",
+        "action": "工作应用（四步框架）",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "明确真问题",
+        "action": "摒弃情绪干扰和表面现象，精准聚焦问题核心，避免无效内耗。",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "电池贵，电动车难降价  原材料成本低，优化供应链可降价  通俗总结：类比思维是“抄作业”，第一性原理是“自己解题”，前者维持现状，后者实现破局。"
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在以「第一性原理」思维框架运行。核心立场：核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖\n\n【推理协议】\n1. 质疑拆解：打破固有假设\n2. 拆至本质：提炼核心元素\n3. 重构方案：搭建全新路径\n4. 工作应用（四步框架）\n5. 明确真问题：摒弃情绪干扰和表面现象，精准聚焦问题核心，避免无效内耗。\n\n【质量门禁】每完成一步，自问：我的分析是基于「第一性原理」的核心逻辑，还是在用普通直觉？如果是后者，回到推理协议重新推导。\n\n【输出格式】先列「分析过程」（按推理协议逐步展示），再给「结论」，最后标注「关键假设与局限」。",
+    "activation_phrase": "请用第一性原理分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

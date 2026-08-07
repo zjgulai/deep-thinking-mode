@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-等待清单-交给别人做-",
+  "meta": {
+    "name": "等待清单（交给别人做）",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):等待清单（交给别人做）",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "针对交个别人的做的任务，要放到等待清单，例如：财务报销，方案 撰写等。  994 / 1937 \f3、项目清单（需要多步骤完成的） 有些项目跨越周期长，例如：内训师培养项目，历时 6 个月的时间。 把这类项目，放入项目清单。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "财务报销，方案 撰写等。  994 / 1937"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以等待清单（交给别人做）的方式思考这个问题。",
+    "activation_phrase": "请用等待清单（交给别人做）分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

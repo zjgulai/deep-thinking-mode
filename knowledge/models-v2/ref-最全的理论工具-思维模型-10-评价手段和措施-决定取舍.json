@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-评价手段和措施-决定取舍",
+  "meta": {
+    "name": "评价手段和措施，决定取舍",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):评价手段和措施，决定取舍",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "对找出的手段、措施是否得当进行评价，并进行取舍选择，决定下一步应保 留和淘汰的东西。评价中可用一些符号来表示评价的结果。如 x 代表不可行，O 表示可行等。",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以评价手段和措施，决定取舍的方式思考这个问题。",
+    "activation_phrase": "请用评价手段和措施，决定取舍分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-设置里程碑",
+  "meta": {
+    "name": "设置里程碑",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):设置里程碑",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "一个远大的目标,需要很长的时间去实现,在追求目标的路上,会有很多 挫折,如果我们设计一个个小的里程碑,就会更快的实现目标。 案例:山田本一是日本八十年代的一名马拉松运动员。1984 年,在东京国 际马拉松邀请赛中,名不见经传的日本选手山田本",
+    "trigger_signals": [
+      "如果我们设计一个个小的里程碑,就会更快的实现目标。"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "山田本一是日本八十年代的一名马拉松运动员"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以设置里程碑的方式思考这个问题。",
+    "activation_phrase": "请用设置里程碑分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

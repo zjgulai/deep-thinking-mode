@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-麦肯锡结构化战略思维模型-如何-单击此处编辑母版文本样式-第二级-第三级",
+  "meta": {
+    "name": "单击此处编辑母版文本样式 第二级 第三级",
+    "category": "04",
+    "tags": [],
+    "source": "ref:麦肯锡结构化战略思维模型：如何想清楚-说明白-做到位（65页 PPT）:单击此处编辑母版文本样式 第二级 第三级",
+    "sourceTitle": "麦肯锡结构化战略思维模型：如何想清楚-说明白-做到位（65页 PPT）",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "常见的误导手段 。比如 ， 50% 折扣（ 指定商品 ） 数据误导 Copyright © 2021 Dr. XU Hao. All Rights Reserved. 23 04 02",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "工程系统 by 芭芭拉 ・ 明托 • “切 ”是结构化分析的昵称 ， 是分析问题时抽丝剥茧的利刃 , 是结构化思维的核心 概念"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以单击此处编辑母版文本样式 第二级 第三级的方式思考这个问题。",
+    "activation_phrase": "请用单击此处编辑母版文本样式 第二分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 2,
+    "example_coverage": 1,
+    "prompt_effectiveness": 1,
+    "overall": 2
+  }
+}

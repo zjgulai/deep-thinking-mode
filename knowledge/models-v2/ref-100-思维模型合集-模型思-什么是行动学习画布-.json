@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-什么是行动学习画布-",
+  "meta": {
+    "name": "什么是行动学习画布",
+    "category": "03",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):什么是行动学习画布？",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "“视觉化的”行动学习团队研讨工具",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以什么是行动学习画布？的方式思考这个问题。",
+    "activation_phrase": "请用什么是行动学习画布？分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

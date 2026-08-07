@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-盈利模式",
+  "meta": {
+    "name": "盈利模式",
+    "category": "09",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):盈利模式",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "盈利模式包括收支来源和收支方式。需要回答四个问题，收入从哪来？ 成本向哪里支出？怎么收入？怎么支出？盈利模式包含了四定： 定向：价值的流向，就是收入从哪里来？成本支付到哪里？ 定性：收支是按照时间计价、还是按照使用量计价还是按照价值计价？",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "固定：商场里商店是交固定租金，付款在自己店里面，营收和"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以盈利模式的方式思考这个问题。",
+    "activation_phrase": "请用盈利模式分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

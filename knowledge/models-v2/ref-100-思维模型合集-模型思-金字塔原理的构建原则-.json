@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-金字塔原理的构建原则-",
+  "meta": {
+    "name": "金字塔原理的构建原则",
+    "category": "11",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):金字塔原理的构建原则：",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "要构建一个逻辑思维金字塔，需要遵守四个原则，分别是 1）结论先行。 只有一个中心思想，要先提出来。 2）以上统下。 围绕一个中心思想，展开素材形成下级。上层对下层是总结概括，下 层及上层是解释说明，上下级内容是父子关系。  1547 / 1",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以金字塔原理的构建原则：的方式思考这个问题。",
+    "activation_phrase": "请用金字塔原理的构建原则：分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

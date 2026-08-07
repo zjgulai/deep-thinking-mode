@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-以上列出的两种不同的程序-是根据企业的状",
+  "meta": {
+    "name": "以上列出的两种不同的程序，是根据企业的状",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):以上列出的两种不同的程序，是根据企业的状",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "乎没有固定的一种形式。要强调的是这一切都必须建立在 5S 活动基础上。 3.2. 关键环节",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以以上列出的两种不同的程序，是根据企业的状的方式思考这个问题。",
+    "activation_phrase": "请用以上列出的两种不同的程序，是根分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-发明等级",
+  "meta": {
+    "name": "发明等级",
+    "category": "05",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):发明等级",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "能够执行一定功能的系统，是人们为了实现某种目的而",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "手机就是一个技  1561 / 1937"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以发明等级的方式思考这个问题。",
+    "activation_phrase": "请用发明等级分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-100-思维模型合集-模型思-跨领域与多样性",
+  "meta": {
+    "name": "跨领域与多样性",
+    "category": "08",
+    "tags": [],
+    "source": "ref:100+思维模型合集 (模型思维):跨领域与多样性",
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "世界是如此复杂，无论是电脑建模、大自然、人群组织、还是企业系 统，我们都会面对很多的未知。当我们把系统视为一个整体时，就需 要我们必须具备“跨领域的思考”和“认知的多样性”。认知多样性主要体 现在两个方面：一是知识处理，个人在面对新情况时是",
+    "trigger_signals": [
+      "当我们把系统视为一个整体时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以跨领域与多样性的方式思考这个问题。",
+    "activation_phrase": "请用跨领域与多样性分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

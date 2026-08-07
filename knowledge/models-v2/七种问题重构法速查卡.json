@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0.0",
+  "id": "七种问题重构法速查卡",
+  "meta": {
+    "name": "七种问题重构法",
+    "category": "03",
+    "tags": [
+      "ffe58f;",
+      "ccc;",
+      "正方形的认知工具箱",
+      "思维模型",
+      "决策思维"
+    ],
+    "source": "七种问题重构法速查卡.md",
+    "sourceTitle": "七种问题重构法速查卡"
+  },
+  "engine": {
+    "core_question": "反向重构是打破正向思维惯性的第一刀",
+    "trigger_signals": [
+      "遇到问题先追问两次“这个问题的更深层本质是什么”"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "反向重构是打破正向思维惯性的第一刀",
+        "action": "反向重构是打破正向思维惯性的第一刀",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "困在同一个问题里反复打转",
+        "action": "困在同一个问题里反复打转",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 3,
+        "name": "边界调整给了你两个相反方向的工具：放大边",
+        "action": "边界调整给了你两个相反方向的工具：放大边界",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 4,
+        "name": "把单点问题升级为系统问题",
+        "action": "把单点问题升级为系统问题",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 5,
+        "name": "隐喻转换直击思维的底层代码",
+        "action": "隐喻转换直击思维的底层代码",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 6,
+        "name": "价值聚焦让你从救火模式切换到创造模式",
+        "action": "价值聚焦让你从救火模式切换到创造模式",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「七种问题重构法」速查模式运行。\n\n【认知模式】快速调用七种问题重构法的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 反向重构是打破正向思维惯性的第一刀：反向重构是打破正向思维惯性的第一刀\n\nStep 2 - 困在同一个问题里反复打转：困在同一个问题里反复打转\n\nStep 3 - 边界调整给了你两个相反方向的工具：放大边：边界调整给了你两个相反方向的工具：放大边界\n\nStep 4 - 把单点问题升级为系统问题：把单点问题升级为系统问题\n\nStep 5 - 隐喻转换直击思维的底层代码：隐喻转换直击思维的底层代码\n\nStep 6 - 价值聚焦让你从救火模式切换到创造模式：价值聚焦让你从救火模式切换到创造模式\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用七种问题重构法速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 5
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0.0",
+  "id": "副交感神经激活速查卡",
+  "meta": {
+    "name": "副交感神经激活",
+    "category": "00",
+    "tags": [
+      "副交感神经",
+      "ffe58f;",
+      "ccc;",
+      "压力管理",
+      "放松技巧"
+    ],
+    "source": "副交感神经激活速查卡.md",
+    "sourceTitle": "副交感神经激活速查卡"
+  },
+  "engine": {
+    "core_question": "#副交感神经 #压力管理 #放松技巧",
+    "trigger_signals": [
+      "需要快速查阅「副交感神经激活」的核心操作步骤时"
+    ],
+    "stop_conditions": [],
+    "reasoning_protocol": [
+      {
+        "step": 1,
+        "name": "试试这些方法： 深呼吸（4-7-8法）→",
+        "action": "试试这些方法： 深呼吸（4-7-8法）→ 吸4秒、屏7秒、呼8秒",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      },
+      {
+        "step": 2,
+        "name": "渐进式肌肉放松 → 从脚到头",
+        "action": "渐进式肌肉放松 → 从脚到头",
+        "thinking_question": "",
+        "expected_output": "",
+        "pitfall": ""
+      }
+    ],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "你现在以「副交感神经激活」速查模式运行。\n\n【认知模式】快速调用副交感神经激活的核心操作框架，直接给出可执行的指引。\n\n【推理协议】\nStep 1 - 试试这些方法： 深呼吸（4-7-8法）→：试试这些方法： 深呼吸（4-7-8法）→ 吸4秒、屏7秒、呼8秒\n\nStep 2 - 渐进式肌肉放松 → 从脚到头：渐进式肌肉放松 → 从脚到头\n\n【质量门禁】输出必须可立即执行，不输出模糊建议。\n\n【输出格式】按步骤直接给出操作指引，每步一句话，可选配简短说明。",
+    "activation_phrase": "请用副交感神经激活速查...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 4,
+    "example_coverage": 0,
+    "prompt_effectiveness": 3,
+    "overall": 4
+  }
+}

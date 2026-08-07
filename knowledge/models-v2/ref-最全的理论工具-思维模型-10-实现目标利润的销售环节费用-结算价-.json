@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-实现目标利润的销售环节费用-结算价-",
+  "meta": {
+    "name": "实现目标利润的销售环节费用＝ (结算价－",
+    "category": "11",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实现目标利润的销售环节费用＝ (结算价－",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "该因素单独变动l％后使利润增长的百分比",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": "，计算企业2002年预算中各因素的灵敏度指标"
+    }
+  },
+  "codex": {
+    "system_prompt": "请以实现目标利润的销售环节费用＝ (结算价－的方式思考这个问题。",
+    "activation_phrase": "请用实现目标利润的销售环节费用＝ 分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}

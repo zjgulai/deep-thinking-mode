@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ref-最全的理论工具-思维模型-10-经营战略备选方案的评价",
+  "meta": {
+    "name": "经营战略备选方案的评价",
+    "category": "00",
+    "tags": [],
+    "source": "ref:最全的理论工具，思维模型：100个工具 (mba):经营战略备选方案的评价",
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "sourceType": "book"
+  },
+  "engine": {
+    "core_question": "根据评价的结果，各备选方案吸引力总分和按大小顺序排列分别是：市场开发战略5．15； 产品开发战略4．98；技术改造，扩大生产规模4．64；产品升级4．60；市场渗透战略4．05； 合资经营战略3．64；前向一体化战略3．33；横向一体化战",
+    "trigger_signals": [],
+    "stop_conditions": [],
+    "reasoning_protocol": [],
+    "decision_points": [],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "请以经营战略备选方案的评价的方式思考这个问题。",
+    "activation_phrase": "请用经营战略备选方案的评价分析...",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 1,
+    "example_coverage": 0,
+    "prompt_effectiveness": 1,
+    "overall": 1
+  }
+}
