@@ -12,12 +12,7 @@
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [
-      {
-        "condition": "绝大多数时间焦虑都是情绪假象，客观时间大多充足充裕。",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": ""

@@ -12,20 +12,7 @@
     "trigger_signals": [],
     "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [
-      {
-        "condition": "要是我现在拒绝这个小请求，是不是就不用被后面的大请求绑架了？（别被“登门槛”套路）",
-        "action": ""
-      },
-      {
-        "condition": "我答应第一步的时候，有没有想过最后一步要付出什么代价？（别被“分步诱导”，看清全貌）",
-        "action": ""
-      },
-      {
-        "condition": "我是不是为了显得“好说话”，就放弃了自己的判断？（别委屈自己，理性才最重要）",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": ""

@@ -10,16 +10,9 @@
   "engine": {
     "core_question": "，对一件事物做出肯定 / 否定断定，有真假对错之分，就是判断",
     "trigger_signals": [],
-    "stop_conditions": [
-      "不是判断（无逻辑、不可论证）："
-    ],
+    "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [
-      {
-        "condition": "不是判断（无逻辑、不可论证）：",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": ""

@@ -19,16 +19,7 @@
       "不需要有动力才开始做事，恰恰是开始做事之后，大脑才会为你生成动力"
     ],
     "reasoning_protocol": [],
-    "decision_points": [
-      {
-        "condition": "大众错误直觉：想法 → 情绪动机 → 行动",
-        "action": ""
-      },
-      {
-        "condition": "想法优先：脆弱的火柴模式",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": "绑定触发，摆脱意志力依赖 ------------------"

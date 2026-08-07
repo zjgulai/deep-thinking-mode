@@ -62,16 +62,7 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [
-      {
-        "condition": "模糊：提升客户满意度",
-        "action": ""
-      },
-      {
-        "condition": "被动：防止产品出现故障",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": "通用）  个人规划、职场项目、业务运营均可直接套用，零基础也能快速落地："

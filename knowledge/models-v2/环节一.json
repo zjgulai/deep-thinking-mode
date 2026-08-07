@@ -53,16 +53,7 @@
         "pitfall": ""
       }
     ],
-    "decision_points": [
-      {
-        "condition": "这是一个没有终点的游戏，因为“最优”往往不存在，或者无法在有限信息中确认。**",
-        "action": ""
-      },
-      {
-        "condition": "能量流向**：在无限搜索中空转 → 无法确认“足够好” → 内耗发生。",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": ""

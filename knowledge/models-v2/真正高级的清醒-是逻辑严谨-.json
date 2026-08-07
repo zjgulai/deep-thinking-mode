@@ -16,16 +16,9 @@
       "你随口一句总结，总有人立马反驳你。",
       "你这句话，是否完整覆盖了这个概念的全部对象。"
     ],
-    "stop_conditions": [
-      "不代表覆盖所有动物"
-    ],
+    "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [
-      {
-        "condition": "不代表覆盖所有动物",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": "」      不全盘否定、不引发对立、但观点清晰。"

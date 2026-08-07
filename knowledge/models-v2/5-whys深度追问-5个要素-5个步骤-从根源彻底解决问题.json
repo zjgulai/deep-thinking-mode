@@ -11,9 +11,7 @@
   "engine": {
     "core_question": "核心是持续追问，直到找到可落地解决的根源，实现一次性根治",
     "trigger_signals": [],
-    "stop_conditions": [
-      "不合格：我做事拖延、执行力差"
-    ],
+    "stop_conditions": [],
     "reasoning_protocol": [
       {
         "step": 1,

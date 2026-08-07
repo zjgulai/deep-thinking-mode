@@ -14,9 +14,7 @@
     "triggers": [
       "当你需要运用5 Whys深度追问思维时"
     ],
-    "anti_triggers": [
-      "不合格：我做事拖延、执行力差"
-    ]
+    "anti_triggers": []
   },
   "before_after": {
     "without_model": "在掌握5 Whys深度追问之前，面对复杂问题容易依赖直觉和经验，缺乏系统化的推理框架，结论难以被验证。",

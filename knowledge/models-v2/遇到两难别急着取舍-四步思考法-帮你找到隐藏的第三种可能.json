@@ -16,12 +16,7 @@
       "不适合日常琐事决策，仅用于破解高阶复杂困境，以下场景使用效果最佳"
     ],
     "reasoning_protocol": [],
-    "decision_points": [
-      {
-        "condition": "慎用避坑：四类不适用场景",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": "认定商业战略只能在「低成本」和「差异化」中二选一，最终只能取舍让步，得出一个平庸、无竞争力的折中方案。"

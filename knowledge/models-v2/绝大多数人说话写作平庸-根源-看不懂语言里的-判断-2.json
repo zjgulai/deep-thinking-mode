@@ -13,16 +13,9 @@
     "trigger_signals": [
       "你分不清：什么是语言，什么是逻辑；看不懂一句话里，藏着的「判断」。"
     ],
-    "stop_conditions": [
-      "不是判断（无逻辑、不可论证）："
-    ],
+    "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [
-      {
-        "condition": "不是判断（无逻辑、不可论证）：",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": ""

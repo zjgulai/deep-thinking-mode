@@ -10,26 +10,9 @@
   "engine": {
     "core_question": "逻辑四维合一：读懂概念、判断、推理、论证，重塑你的底层思维  本系列全套逻辑连载：      1\\. 概念｜一切思考的底层地基      2\\. 判断｜识别语言所有真假观点      3\\. 推理｜依托规则推导可靠结论      4\\. 论证｜面向他人，完成有效说服      5\\. 【压轴总结】四",
     "trigger_signals": [],
-    "stop_conditions": [
-      "没做好：认知模糊，鸡同鸭讲，沟通永远不在一个频道",
-      "没做好：观点主观、非黑即白、把抒情当判断、语感代替逻辑",
-      "没做好：以偏概全、因果乱推、凭感觉下结论"
-    ],
+    "stop_conditions": [],
     "reasoning_protocol": [],
-    "decision_points": [
-      {
-        "condition": "没做好：认知模糊，鸡同鸭讲，沟通永远不在一个频道",
-        "action": ""
-      },
-      {
-        "condition": "没做好：观点主观、非黑即白、把抒情当判断、语感代替逻辑",
-        "action": ""
-      },
-      {
-        "condition": "没做好：以偏概全、因果乱推、凭感觉下结论",
-        "action": ""
-      }
-    ],
+    "decision_points": [],
     "output_format": {
       "structure": "",
       "example": ""
