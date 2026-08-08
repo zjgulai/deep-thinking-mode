@@ -13,7 +13,13 @@
     ],
     "skill_name": "逆向思维四型",
     "source": "逆向思维四型速查卡.md",
-    "sourceTitle": "逆向思维四型速查卡"
+    "sourceTitle": "逆向思维四型速查卡",
+    "agent_roles": [
+      "intent_clarifier",
+      "multi_perspective",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "反转型、转换型、缺点逆用型、对立互补型——四种逆向思维模型，配四个核心追问，把“反过来想”从一句空话变成可落地的工具箱",
   "when_to_use": {

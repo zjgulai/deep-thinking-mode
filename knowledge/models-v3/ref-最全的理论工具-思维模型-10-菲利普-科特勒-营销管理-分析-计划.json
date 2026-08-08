@@ -8,7 +8,10 @@
     "skill_name": "菲利普·科特勒．营销管理——-分析、计划",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):菲利普·科特勒．营销管理—— 分析、计划",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "2. Daniel Amor 著．翦爱玲，熊志耀译．电子商务基础教程[M]．北京：北京希望电子出版社，2O00(4) \f http://wiki.mbalib.com/ 服务利润链 —服务管理最经典、最有效的分析工具 \f http://wi",
   "when_to_use": {

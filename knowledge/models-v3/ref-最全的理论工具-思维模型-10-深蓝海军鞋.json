@@ -8,7 +8,11 @@
     "skill_name": "深蓝海军鞋",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):深蓝海军鞋",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "很多制服的颜色都用深蓝色或海军鞋，这个颜色暗示海军的操练、形式惯例 和一丝不苟。深蓝色是用于制服的颜色，皮鞋是非休闲穿著。深蓝色皮鞋的行动 模式代表依规章行事。海军出航的日子里，一切生活都依赖正确的练习和惯例， 所以深蓝海军鞋的行动模式包",
   "when_to_use": {

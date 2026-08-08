@@ -13,7 +13,13 @@
     ],
     "skill_name": "弱连接搭建四步",
     "source": "弱连接搭建四步速查卡.md",
-    "sourceTitle": "弱连接搭建四步速查卡"
+    "sourceTitle": "弱连接搭建四步速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "好工作往往不是最好的朋友介绍的，新机会常常来自朋友圈点赞之交——弱连接才是成长的隐藏杠杆",
   "when_to_use": {

@@ -13,7 +13,13 @@
     ],
     "skill_name": "六大时间块分类",
     "source": "六大时间块分类速查卡.md",
-    "sourceTitle": "六大时间块分类速查卡"
+    "sourceTitle": "六大时间块分类速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "忙了一整天，重要的事纹丝未动",
   "when_to_use": {

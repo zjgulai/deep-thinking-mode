@@ -8,7 +8,10 @@
     "skill_name": "生产性指标",
     "source": "ref:营销管理143个经典模型:生产性指标",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "分析生产性指标，目的在于了解在一定时期内客户的生产经营能力、水平和成果的分配。 主要指标如图所示：  企业生产性指标  生产性比率 基本含义 计算公式  1.人均销售收入 反映企业人均销售能力 销售收入/平均职工人数  2.人均净利润 反",
   "when_to_use": {

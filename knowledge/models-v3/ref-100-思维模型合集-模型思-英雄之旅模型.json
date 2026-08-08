@@ -8,7 +8,11 @@
     "skill_name": "英雄之旅模型",
     "source": "ref:100+思维模型合集 (模型思维):英雄之旅模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "上面所说的都是报告、文章、方案的编写模型，但是你说“我要写一个 故事应该怎么办呢？”其实写故事也是有模型的。在好莱坞电影界，无 论是编剧还是导演都把“英雄之旅”作为处理叙事的一个很好的指导性 工具。 “英雄之旅”模型，由一次旅程，两个世界，",
   "when_to_use": {

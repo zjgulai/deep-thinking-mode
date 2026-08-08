@@ -8,7 +8,10 @@
     "skill_name": "将结果在-swot-分析图上定位",
     "source": "ref:营销管理143个经典模型:将结果在 SWOT 分析图上定位",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "盈利能力很强的组织，它在 2004 年收入超过六亿.同年该公司所产生的收",
   "when_to_use": {

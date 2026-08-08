@@ -8,7 +8,10 @@
     "skill_name": "什么是群体",
     "source": "ref:100+思维模型合集 (模型思维):什么是群体",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "权威：为什么某某奶茶广告老是说，销量绕地球一圈",
   "when_to_use": {

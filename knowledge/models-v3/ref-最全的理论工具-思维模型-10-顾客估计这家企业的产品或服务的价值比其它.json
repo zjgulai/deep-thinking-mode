@@ -8,7 +8,10 @@
     "skill_name": "顾客估计这家企业的产品或服务的价值比其它",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):顾客估计这家企业的产品或服务的价值比其它",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "战略钟模型将基于市场的一般战略的 8 种类型在一个图上标示出来。如下图 所示： \f http://wiki.mbalib.com/  战略钟图是以平分 360 度圆的 8 条射线表示基于市场的一般战略的 8 种战略 类型的一种似钟的图形，",
   "when_to_use": {

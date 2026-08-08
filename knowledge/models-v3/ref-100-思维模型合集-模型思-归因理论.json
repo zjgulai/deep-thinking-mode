@@ -8,7 +8,11 @@
     "skill_name": "归因理论",
     "source": "ref:100+思维模型合集 (模型思维):归因理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "国家经济的晴雨表,从理论上讲股市上涨代表经济繁",
   "when_to_use": {

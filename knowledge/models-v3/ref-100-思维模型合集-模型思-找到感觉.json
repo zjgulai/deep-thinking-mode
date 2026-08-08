@@ -8,7 +8,13 @@
     "skill_name": "找到感觉",
     "source": "ref:100+思维模型合集 (模型思维):找到感觉",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "logical_analyzer",
+      "decision_maker",
+      "action_executor"
+    ]
   },
   "core_definition": "改变的发生必须同时说服大象和骑象人。说服骑象人需要方法是:分析 —思考—改变。而以上流程应用的前提就是:变量已知,假设极少,目的明 确。而人们碰到的很多问题都是变量很多,未来模糊不清,大象会因为改 变带来的不确定性而抗拒改变。而分析论证无法",
   "when_to_use": {

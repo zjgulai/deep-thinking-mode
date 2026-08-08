@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "着急时如何快速冷静？——4种“",
     "source": "着急时如何快速冷静___4种_着急_类型的应急手册.md",
-    "sourceTitle": "着急时如何快速冷静？——4种“着急”类型的应急手册"
+    "sourceTitle": "着急时如何快速冷静？——4种“着急”类型的应急手册",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "如何有效完成这件事？着急时如何快速冷静？——4种“的操作路径是什么？",
   "when_to_use": {

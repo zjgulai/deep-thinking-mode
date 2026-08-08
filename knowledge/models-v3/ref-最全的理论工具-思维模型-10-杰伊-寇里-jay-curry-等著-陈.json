@@ -8,7 +8,10 @@
     "skill_name": "杰伊·寇里(jay-curry)等著，陈",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):杰伊·寇里(Jay Curry)等著，陈",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "际(台湾)公司，2000 \f http://wiki.mbalib.com/ 植田 T 理论  —典型的竞争性理论策略工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

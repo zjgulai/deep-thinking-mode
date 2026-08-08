@@ -6,7 +6,10 @@
     "category": "04",
     "tags": [],
     "skill_name": "六种提问方式_帮你从不同角度撬开僵局",
-    "source": "六种提问方式_帮你从不同角度撬开僵局.md"
+    "source": "六种提问方式_帮你从不同角度撬开僵局.md",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "什么？我当下解决的是表象还是根源？",
   "when_to_use": {

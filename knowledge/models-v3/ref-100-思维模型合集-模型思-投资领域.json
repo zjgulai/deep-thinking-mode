@@ -8,7 +8,10 @@
     "skill_name": "投资领域",
     "source": "ref:100+思维模型合集 (模型思维):投资领域",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "幸存者偏差对投资影响巨大，例如很多大神在股票交易中赚了很多钱， 年纪轻轻就获得了别人几辈子难以获取的财富。于是成为媒体曝光的 焦点，于是“股神”开始到处宣传自己的炒股经验，韭菜们趋之若鹜。其 实“股神”的成功可能是因为运气。 我曾经买过一只",
   "when_to_use": {

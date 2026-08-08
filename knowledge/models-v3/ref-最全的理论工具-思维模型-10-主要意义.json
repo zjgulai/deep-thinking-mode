@@ -8,7 +8,10 @@
     "skill_name": "主要意义",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):主要意义",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "普遍适用的进程，它不仅适用于每一个质量体系要素",
   "when_to_use": {

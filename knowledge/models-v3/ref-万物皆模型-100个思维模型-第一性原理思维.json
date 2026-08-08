@@ -8,7 +8,13 @@
     "skill_name": "第一性原理思维",
     "source": "ref:万物皆模型-100个思维模型:第一性原理思维",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "first_principles",
+      "multi_perspective",
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "第一性原理是一个①基本的命题或假设,②  不能被省略或删除,也③不能被违反。物理学中,第  一性原理或称从头算,即是在回归事物最基本的条件 （归零）  ,用批判思维去拆解现象中的不  合理的联系（解构）  ,以此来找到新的更合理的路径的思",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "方法应用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):方法应用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "波士顿矩阵可以用于许多方面。首先，这一模型可以使公司在矩阵中标出其 业务所在的位置，使客户的管理层迅速地看到该业务在整个业务组合中的位置。 所以，可以制定出整个公司未来发展的动态战略。理想的发展次序是过剩的现金 从现金牛业务中取得并重新配",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "第一步",
     "source": "ref:100+思维模型合集 (模型思维):第一步",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "观点，如“所谓天才，不过是刻意练习的结果”、“线上营销，内容 为王”等。 如何流畅的引出这个问题或者主题呢？加一个序言！通过概述已知的 信息，与问题或者主题建立某种关联，将读者的注意力，以他熟悉的 信",
   "when_to_use": {

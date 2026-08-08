@@ -8,7 +8,11 @@
     "skill_name": "建立集成的信息系统",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立集成的信息系统",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "systems_thinker",
+      "action_executor"
+    ]
   },
   "core_definition": "供应链上信息的有效流通．供应链合作伙伴之间的信息共享是 JMI 得以成功 实施的必要物质保障，而对供应链上台作伙伴之间原有的信息系统进行信息集成 是共享信息的技术基础，传统的信息集成方案是基于传统 EDI 的数据集成方法， 但这种方案的成",
   "when_to_use": {

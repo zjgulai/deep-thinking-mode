@@ -8,7 +8,10 @@
     "skill_name": "周哈里窗思维模型",
     "source": "ref:能力提升-85个著名认知思维模型:周哈里窗思维模型",
     "sourceType": "book",
-    "sourceTitle": "能力提升-85个著名认知思维模型"
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "心理操纵的形式,其方法是一个人或一个团体隐秘地让受害人逐渐开始怀疑自己,使其质",
   "when_to_use": {

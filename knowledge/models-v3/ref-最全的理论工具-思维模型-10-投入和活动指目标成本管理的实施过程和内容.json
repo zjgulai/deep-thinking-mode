@@ -8,7 +8,11 @@
     "skill_name": "投入和活动指目标成本管理的实施过程和内容",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):投入和活动指目标成本管理的实施过程和内容",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "市场营销方略)需要结束，企业也可以迅速转",
   "when_to_use": {

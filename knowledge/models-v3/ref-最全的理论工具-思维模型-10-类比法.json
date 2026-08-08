@@ -8,7 +8,12 @@
     "skill_name": "类比法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):类比法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "类比法就是以一个类似项目的 WBS 为基础，制定本项目的工作分解结构。 例如，ABC 飞机制造公司，曾设计制造多种类型的大型客机，当他们计划投入 设计生产某种新型战斗机时，就可以使用以往制造大型客机而设计的子系统。以 从前的子系统为基础，",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "法律上的应用",
     "source": "ref:100+思维模型合集 (模型思维):法律上的应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "，所以，法庭上的论证对论证的严密性，证据的 真实性，根据的合理性，都提出了更高的要求。 案例：小张在一起群体冲突中，被人指证为谋杀嫌疑人，采用图尔敏 论证模型如下：  1298 / 1937 \f图尔敏",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "contents-目录-序言1-世界上的",
     "source": "ref:麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝]):Contents 目录 序言1 世界上的",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])"
+    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "大家庭，每学年招收900名学生",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "排中律",
     "source": "ref:100+思维模型合集 (模型思维):排中律",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对于任何事物在一定条件下的判断都要有明确的“是”或“非”，不存在中 间状态。一个事物，它要么存在，要么不存在，没有中间状态。桌上 有一盏灯，这句话要么是真要么是假，没有别的可能。  970 / 1937 \f（1）排中律的内容：在同一思维过程",
   "when_to_use": {

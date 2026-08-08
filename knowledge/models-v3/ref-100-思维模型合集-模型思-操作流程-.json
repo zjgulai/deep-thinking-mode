@@ -8,7 +8,11 @@
     "skill_name": "操作流程",
     "source": "ref:100+思维模型合集 (模型思维):操作流程：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1027 / 1937 \f第一步：聚焦话题 世界咖啡比较适合于探讨有深层意涵的事情，它可以用来探索主题的 意义。例如：如何提升企业的创新力？如何发挥人才的潜能？如何提 升公司的品牌影响力？等问题。不太适合单向信息的传递，以及公布 一些事先",
   "when_to_use": {

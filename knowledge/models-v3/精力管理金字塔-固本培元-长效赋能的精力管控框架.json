@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "精力管理金字塔",
     "source": "精力管理金字塔_固本培元_长效赋能的精力管控框架.md",
-    "sourceTitle": "精力管理金字塔：固本培元、长效赋能的精力管控框架"
+    "sourceTitle": "精力管理金字塔：固本培元、长效赋能的精力管控框架",
+    "agent_roles": [
+      "prioritizer",
+      "communicator",
+      "simplifier"
+    ]
   },
   "core_definition": "不是固定的时间，而是可管理、可提升的精力",
   "when_to_use": {

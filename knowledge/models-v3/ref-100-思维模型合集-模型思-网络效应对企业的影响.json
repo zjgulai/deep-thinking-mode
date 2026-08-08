@@ -8,7 +8,11 @@
     "skill_name": "网络效应对企业的影响",
     "source": "ref:100+思维模型合集 (模型思维):网络效应对企业的影响",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "1249 / 1937 \f网络效应可以让头部企业“赢家通吃”。网络效应可以产生“正反馈”，正 反馈产生了一种“强者恒强，弱者恒弱”的“马太效应”，在一定条件下， 优势或弱势一旦出现，就会不断加剧而自我强化，出现滚动的累计效 果，在极端的情",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "泰勒,-布伦特．生产运营与供应链管理．清",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):泰勒, 布伦特．生产运营与供应链管理．清",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 全面质量管理  —一项持续变革的有效管理体系 \f http://wiki.mbalib.com/",
   "when_to_use": {

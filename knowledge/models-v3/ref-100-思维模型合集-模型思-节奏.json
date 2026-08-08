@@ -8,7 +8,10 @@
     "skill_name": "节奏",
     "source": "ref:100+思维模型合集 (模型思维):节奏",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "伟大的竞技运动员都能够把握节奏，带动对方跟随自己的节奏，而不 是应付对方的节奏。例如优秀的拳击手能够在多个回合中分配好自己 的体能，把握好进攻和防守的节奏，从而寻找时机，一招制胜。  1127 / 1937 \f节奏分为自身节奏、系统节奏和竞",
   "when_to_use": {

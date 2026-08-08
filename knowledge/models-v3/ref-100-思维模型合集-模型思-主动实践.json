@@ -8,7 +8,11 @@
     "skill_name": "主动实践",
     "source": "ref:100+思维模型合集 (模型思维):主动实践",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "是对已获知识的应用和巩固阶段，是检验学习者是否真正“学以致用”， 或是否达到学习的效果。如果从行动中发现有新的问题出现，则学习 循环又有了新的起点，意味着新一轮的学习圈又开始运动。人们的知 识就在这种不断地学习循环中得以增长。 第二：学习圈",
   "when_to_use": {

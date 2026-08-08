@@ -8,7 +8,10 @@
     "skill_name": "改善了对电焊条的管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):改善了对电焊条的管理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "船体车间是 XX 船厂消耗电焊条的大户，长期以来电焊条随意丢弃，浪费的 现象十分严重，并严重影响生产现场的环境卫生，多次采取措施都难以解决的间 题。针对这种情况，XX 船厂在抓定置管理的同时，也加强和改善了电焊条的管 理，具体做法是把好电",
   "when_to_use": {

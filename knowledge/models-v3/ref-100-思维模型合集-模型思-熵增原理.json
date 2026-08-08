@@ -8,7 +8,10 @@
     "skill_name": "熵增原理",
     "source": "ref:100+思维模型合集 (模型思维):熵增原理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "生命体通过吃、喝、呼吸等环节可使体内的熵减少，生物学上叫“新陈",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "认知偏差理论",
     "source": "ref:100+思维模型合集 (模型思维):认知偏差理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "bias_detector"
+    ]
   },
   "core_definition": "个体根据先前的经验对当前环境中获取的信息进行感",
   "when_to_use": {

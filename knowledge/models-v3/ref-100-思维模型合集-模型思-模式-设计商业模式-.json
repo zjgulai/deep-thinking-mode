@@ -8,7 +8,12 @@
     "skill_name": "模式——设计商业模式",
     "source": "ref:100+思维模型合集 (模型思维):模式——设计商业模式。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "数字经济下的平台型企业，最容易产生网络效应。所以企业的战略和 商业模式的选择非常重要。在陈威如老师的《平台战略》一书中提到， 企业通过设计平台商业模式，建立生态圈，利用双边网络效应，获得 商业上的成功。 作者分析研究了中外近 50 个平台企",
   "when_to_use": {

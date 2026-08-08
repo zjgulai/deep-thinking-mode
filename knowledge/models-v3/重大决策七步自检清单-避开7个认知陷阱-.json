@@ -11,7 +11,11 @@
     ],
     "skill_name": "重大决策七步自检清单",
     "source": "重大决策七步自检清单_避开7个认知陷阱_.md",
-    "sourceTitle": "重大决策七步自检清单：避开7个认知陷阱，"
+    "sourceTitle": "重大决策七步自检清单：避开7个认知陷阱，",
+    "agent_roles": [
+      "decision_maker",
+      "observer_reflector"
+    ]
   },
   "core_definition": "：决策看未来，不被过去绑架",
   "when_to_use": {

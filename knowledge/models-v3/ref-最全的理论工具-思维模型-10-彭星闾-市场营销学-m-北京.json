@@ -8,7 +8,10 @@
     "skill_name": "彭星闾．市场营销学[m]．北京",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):彭星闾．市场营销学[M]．北京",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 4Ps 营销组合模型  — 市场营销人员用于制定市场  战略的一个有效工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

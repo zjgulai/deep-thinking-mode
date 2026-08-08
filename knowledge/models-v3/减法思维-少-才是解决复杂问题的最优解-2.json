@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "减法思维",
     "source": "减法思维_少_才是解决复杂问题的最优解 2.md",
-    "sourceTitle": "减法思维：少，才是解决复杂问题的最优解"
+    "sourceTitle": "减法思维：少，才是解决复杂问题的最优解",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "prioritizer",
+      "communicator"
+    ]
   },
   "core_definition": "比起不断叠加，删减剥离更能触达问题本质",
   "when_to_use": {

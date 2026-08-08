@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "第2篇",
     "source": "第2篇_失控与错觉_拖延如何扭曲你的时间与自主权 2.md",
-    "sourceTitle": "第2篇：失控与错觉：拖延如何扭曲你的时间与自主权"
+    "sourceTitle": "第2篇：失控与错觉：拖延如何扭曲你的时间与自主权",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "如何有效完成这件事？第2篇的操作路径是什么？",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "在整个产业中对现有机会与威胁做出了反应",
     "source": "ref:营销管理143个经典模型:在整个产业中对现有机会与威胁做出了反应，",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "误解。于是召开记者招待会，公布调查的",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "安全性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):安全性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "首先,并购方需要通过检查它对目标公司生产经营活动的情况来了解和衡量 投资的安全性；其次,并购方应该清楚可能对它的经营活动构成物质的,法律的或 社会的约束等环境风险因素。",
   "when_to_use": {

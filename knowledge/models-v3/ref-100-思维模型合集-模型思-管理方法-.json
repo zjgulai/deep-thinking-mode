@@ -8,7 +8,13 @@
     "skill_name": "管理方法",
     "source": "ref:100+思维模型合集 (模型思维):管理方法：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "通过严格的战略分析模型确定具有竞争优势的市场定位、制定规划， 并且建立高效执行力的团队是成功的经典型战略的基本要素 （1）做好战略定位：运用预测能力，为企业选择最佳战略定位，要力 争做行业前三名。 （2）设定合理的周期：使公司规划周期与行业",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "得出结论",
     "source": "ref:100+思维模型合集 (模型思维):得出结论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1469 / 1937 \f1470 / 1937 \f思路混乱的例子 步骤 1：列出所有要点 列出所有要点 步骤 2：找出逻辑关系(因果关系) 找出逻辑关系  1471 / 1937 \f两条单独的思路 步骤 3：得出结论 思路：",
   "when_to_use": {

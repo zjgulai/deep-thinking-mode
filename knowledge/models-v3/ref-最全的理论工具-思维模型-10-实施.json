@@ -8,7 +8,11 @@
     "skill_name": "实施",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "措施表中的计划，完成了退火炉技术改造的设计方案和施工图；完成了退火 炉炉空间增设辐射火头的设计、制造任务，并通过了可行性实验；完成了退火炉 改造部分的燃烧系统管理设计和施工准备。  在完成上述措施的基础上，QC 小组进行了退火炉炉头的技术",
   "when_to_use": {

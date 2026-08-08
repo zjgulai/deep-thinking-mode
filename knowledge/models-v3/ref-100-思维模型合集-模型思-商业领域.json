@@ -8,7 +8,11 @@
     "skill_name": "商业领域",
     "source": "ref:100+思维模型合集 (模型思维):商业领域",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "马云、乔布斯、贝索斯能够取得巨大的成功，一定是多重因素相互影 响造成的。古人讲天时地利人和。决策科学认为影响结果有三个元素， 决策、努力和运气。 我们再来做一个思想实验，如果把 1000 位和马云一模一样的人，一样 的出生、一样的学识、一样",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "制定关键举措",
     "source": "ref:100+思维模型合集 (模型思维):制定关键举措",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "举措。 举措 1:每天和孩子一起玩 5 分钟,规则是 100%的注意力放在孩子身上",
   "when_to_use": {

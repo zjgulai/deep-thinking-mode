@@ -6,7 +6,10 @@
     "category": "08",
     "tags": [],
     "skill_name": "告别_看懂不会用_一套让你快速吃透",
-    "source": "告别_看懂不会用__一套让你快速吃透陌生知识_做好刚质量输出的认知闭环方法论_.md"
+    "source": "告别_看懂不会用__一套让你快速吃透陌生知识_做好刚质量输出的认知闭环方法论_.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "5步构建认知与能力的正向循环",
   "when_to_use": {

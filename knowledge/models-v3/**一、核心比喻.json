@@ -6,7 +6,13 @@
     "category": "07",
     "tags": [],
     "skill_name": "**一、核心比喻",
-    "source": "大脑奖赏系统运作规律.md"
+    "source": "大脑奖赏系统运作规律.md",
+    "agent_roles": [
+      "systems_thinker",
+      "prioritizer",
+      "pattern_recognizer",
+      "simplifier"
+    ]
   },
   "core_definition": "大脑奖赏系统运作规律   **“愉悦与痛苦同源”** 和 **“内稳态平衡”** 理论。这是理解成瘾、情绪管理乃至人生幸福感的极其重要的神经科学基石。  这个理论框架，在学术上常被称为 **“动机的对手过程理论”**。  * * *  ### **一、核心比喻：大脑的“情感天平”**  想象你的大脑",
   "when_to_use": {

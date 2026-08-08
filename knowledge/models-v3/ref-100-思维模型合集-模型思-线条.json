@@ -8,7 +8,11 @@
     "skill_name": "线条",
     "source": "ref:100+思维模型合集 (模型思维):线条",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "的物体都喜欢用曲线去表达存在，直不楞登的东西是没有生命表征的。 所以曲线更符合自然，更有美感，更吸引眼球。",
   "when_to_use": {

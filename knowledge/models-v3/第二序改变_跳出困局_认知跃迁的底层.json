@@ -6,7 +6,11 @@
     "category": "07",
     "tags": [],
     "skill_name": "第二序改变_跳出困局_认知跃迁的底层",
-    "source": "第二序改变_跳出困局_认知跃迁的底层破局框架.md"
+    "source": "第二序改变_跳出困局_认知跃迁的底层破局框架.md",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "、落地路径与实操技巧，助力从根源化解顽固性难题",
   "when_to_use": {

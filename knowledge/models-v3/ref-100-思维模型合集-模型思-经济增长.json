@@ -8,7 +8,10 @@
     "skill_name": "经济增长",
     "source": "ref:100+思维模型合集 (模型思维):经济增长",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "关于经济增长，索洛模型是最经典的分析模型之一。索洛模型告诉我 们，什么因素能够促进一个国家的经济增长。索洛给出的答案是：储 蓄率、人口增长率以及技术进步率。 经济总量由以下方程给出： 长期均衡产出 O*由下面的方程给出： 其中，L 表示劳动",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "麦肯锡提高逻辑思考力",
     "source": "ref:麦肯锡12个逻辑思考力方法模型:麦肯锡提高逻辑思考力",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡12个逻辑思考力方法模型"
+    "sourceTitle": "麦肯锡12个逻辑思考力方法模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "典型的讲故事式的呈现方式：背景、冲突、",
   "when_to_use": {

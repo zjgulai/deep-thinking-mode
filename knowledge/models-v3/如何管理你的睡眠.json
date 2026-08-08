@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "**一、核心哲学",
     "source": "如何管理你的睡眠.md",
-    "sourceTitle": "如何管理你的睡眠"
+    "sourceTitle": "如何管理你的睡眠",
+    "agent_roles": [
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "不是在疲惫中挣扎，而是建立一个坚韧、稳定、高效的精力系统，以应对长期的高压挑战",
   "when_to_use": {

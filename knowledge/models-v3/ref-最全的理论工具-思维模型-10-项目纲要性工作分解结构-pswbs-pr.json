@@ -8,7 +8,11 @@
     "skill_name": "项目纲要性工作分解结构",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):项目纲要性工作分解结构（PSWBS，Pr",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "项目纲要性工作分解结构是针对某一特定项目，对纲要性工作分解结构进行 裁剪得到的工作分解结构。",
   "when_to_use": {

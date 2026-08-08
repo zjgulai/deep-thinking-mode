@@ -8,7 +8,10 @@
     "skill_name": "能减少产品多样化成本",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):能减少产品多样化成本。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "企业为努力向客户提供多样化产品过程中的各种成本之",
   "when_to_use": {

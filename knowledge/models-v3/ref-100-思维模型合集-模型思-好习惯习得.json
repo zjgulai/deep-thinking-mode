@@ -8,7 +8,11 @@
     "skill_name": "好习惯习得",
     "source": "ref:100+思维模型合集 (模型思维):好习惯习得",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "好习惯也是登门槛效应。比如跑步，每天坚持跑步 10 公里，对于没有 养成跑步能力和习惯的同学来说，难度相当大，也不符合福格行为模 型。想实现每天坚持跑步 10 公里，正确的方式和路径是运用等门槛效 应和福格行为模型，先登个门槛，建立微习惯。",
   "when_to_use": {

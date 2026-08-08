@@ -8,7 +8,10 @@
     "skill_name": "吉列公司力求刮胡刀片是浴室用品中拥有最高",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):吉列公司力求刮胡刀片是浴室用品中拥有最高",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "列已经申请或获得了 22 种与感应相关的专利。 评分-2 总计：-2-3-2-5-2 =-14  环境稳定性 （ES）",
   "when_to_use": {

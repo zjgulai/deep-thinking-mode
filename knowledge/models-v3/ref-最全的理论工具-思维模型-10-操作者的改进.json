@@ -8,7 +8,10 @@
     "skill_name": "操作者的改进",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):操作者的改进",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "提高素质的过程，对企业的生产经营工",
   "when_to_use": {

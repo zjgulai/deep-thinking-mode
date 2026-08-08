@@ -8,7 +8,11 @@
     "skill_name": "信息性从众动机(内化)",
     "source": "ref:100+思维模型合集 (模型思维):信息性从众动机(内化)",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "信息不对称,由于信息不对称,从而增大了不确 定性,而不确定性的增大则很容易诱致盲从。 例如:股市里面有很多小道消息和荐股机构,由于信息不对称,不能确定 消息的真伪,很多散户就会产生从众行为。",
   "when_to_use": {

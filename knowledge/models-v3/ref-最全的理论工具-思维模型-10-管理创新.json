@@ -8,7 +8,10 @@
     "skill_name": "管理创新",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):管理创新",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "竞争力  沃尔玛从建店伊始经过四十余年的发展，已经成为美国最大 的私人雇主 和世界上最大的连锁零售商。2002-2005 年在《财富》全球 500 强中连续 4 年位 \f http://wiki.mb",
   "when_to_use": {

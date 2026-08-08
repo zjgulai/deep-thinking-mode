@@ -8,7 +8,10 @@
     "skill_name": "实证结果分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实证结果分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "error_handler"
+    ]
   },
   "core_definition": "由表 5 所示结果可以发现，预警模型对财务失败组 6 家样本公司 ST 样本公司 2003 年的预测 Z 值分别为 在 0.8212～1.5904 之间，均小于预警临界值 1.8l，处于预测财务失败区域，而非财务失败组 4 家样本公 司 2",
   "when_to_use": {

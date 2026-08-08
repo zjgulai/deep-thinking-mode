@@ -8,7 +8,12 @@
     "skill_name": "实施供应商管理库存的信息沟通",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施供应商管理库存的信息沟通",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "实施供应商管理库存首先必须拥有一个良好的信息沟通平台，我们需要在原 有企业拥有的 EDI 的基础上，重新整合原有的 EDI 资源来够建一个适合于供应 商管理库存的信息沟通系统。 2 、供应商管理库存的工作流程设计  买方企业和供应商实施",
   "when_to_use": {

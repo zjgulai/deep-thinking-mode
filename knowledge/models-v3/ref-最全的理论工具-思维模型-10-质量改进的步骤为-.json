@@ -8,7 +8,12 @@
     "skill_name": "质量改进的步骤为",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):质量改进的步骤为：",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "hypothesis_tester",
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": " 证实改进的必要(争取立项)  确定专门的改进项目(设立项目组)  对项目组织指导(领导亲自参与)  组织诊断—— 为发现原因  实施诊断，找出原因  采取补救措施  在操作条件下验证补救措施的有效性  在新水平上控制．保持",
   "when_to_use": {

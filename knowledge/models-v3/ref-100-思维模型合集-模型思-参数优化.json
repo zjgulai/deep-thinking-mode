@@ -8,7 +8,10 @@
     "skill_name": "参数优化",
     "source": "ref:100+思维模型合集 (模型思维):参数优化",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对重要的变量，他们对系统的结构与行为的性质、特征的影响比较大， 而且总被包含于主回路之中。系统中的灵敏变量（或参数），对干扰与 涨落的反应十分敏感和强烈，一旦系统处于临界状态，这些灵敏变量 的作用可能导致新旧结构的更迭。对这些重要参数的优化",
   "when_to_use": {

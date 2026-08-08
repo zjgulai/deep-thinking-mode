@@ -8,7 +8,10 @@
     "skill_name": "实例应用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实例应用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "案例 1：中国电信业转型 7S 模型分析  1．战略层面  杰克·韦尔奇认为，战略“其实就是对如何开展竞争的问题做出清晰的选 择”。事实上，从电信业开始打破垄断到现在这一阶段，企业竞争(有限度的竞 争)是围绕产品而进行的，例如小灵通对GS",
   "when_to_use": {

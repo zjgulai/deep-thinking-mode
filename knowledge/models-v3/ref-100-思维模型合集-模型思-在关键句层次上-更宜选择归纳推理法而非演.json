@@ -8,7 +8,12 @@
     "skill_name": "在关键句层次上，更宜选择归纳推理法而非演",
     "source": "ref:100+思维模型合集 (模型思维):在关键句层次上，更宜选择归纳推理法而非演",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "decision_maker",
+      "prioritizer"
+    ]
   },
   "core_definition": "人们在认识事物的过程中借助于概念、判断、推理等",
   "when_to_use": {

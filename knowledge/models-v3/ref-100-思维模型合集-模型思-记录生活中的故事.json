@@ -8,7 +8,10 @@
     "skill_name": "记录生活中的故事",
     "source": "ref:100+思维模型合集 (模型思维):记录生活中的故事",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "综合能力,是把独立的要素组合在一起的能力",
   "when_to_use": {

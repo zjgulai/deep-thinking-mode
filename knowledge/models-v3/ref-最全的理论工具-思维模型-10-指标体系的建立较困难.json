@@ -8,7 +8,10 @@
     "skill_name": "指标体系的建立较困难",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):指标体系的建立较困难",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "平衡计分卡对传统业绩评价体系的突破就在于它引进了非财务指标，克服了 \f http://wiki.mbalib.com/ 单一依靠财务指标评价的局限性。然而，这又带来了另外的问题，即如何建立 非 财务指标体系、如何确立非财务指标的标准以及如",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "复利型人才的特征",
     "source": "ref:100+思维模型合集 (模型思维):复利型人才的特征",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "长时间从事某一领域工作,且成为该领域某专业方向的优秀人才; 对于再学习以及新知识获取拥有自己的独到之处; 对于组织的贡献与个人的收益均超过同龄人。 简单说,复利型人才就是能在单位时间内为组织和个人带来的价值最大。",
   "when_to_use": {

@@ -6,7 +6,10 @@
     "category": "00",
     "tags": [],
     "skill_name": "第一部分-汉语语言框架",
-    "source": "_汉语语言学_.md"
+    "source": "_汉语语言学_.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "《汉语语言学》 \\* { margin: 0; padding: 0; outline: 0; } body { font-family: \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", \"",
   "when_to_use": {

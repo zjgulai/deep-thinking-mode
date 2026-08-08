@@ -8,7 +8,10 @@
     "skill_name": "优点与缺点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):优点与缺点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "目标管理，它除了具有目标管理的优点外，还避",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "强化培训，提高素质",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):强化培训，提高素质",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "要掌握和灵活应用行为事件访谈法，需要对考察人员进行培训和多次实际练 习。同时，要求考察人员具备比较全面的社会学、心理学、人才学、管理学和行 为科学等方面的知识，并能够灵活运用。",
   "when_to_use": {

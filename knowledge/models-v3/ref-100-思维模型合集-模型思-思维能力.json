@@ -8,7 +8,10 @@
     "skill_name": "思维能力",
     "source": "ref:100+思维模型合集 (模型思维):思维能力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "遇到问题时能够快速的分析、判断、决定去解决问题的",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "决策科学化",
     "source": "ref:100+思维模型合集 (模型思维):决策科学化",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "decision_maker",
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人生就是决策的集合，在工作生活中，我们面临的决策有简单问题和 复杂问题，复杂问题不仅需要考虑动态复杂性，还要考虑社会复杂性， 需要平衡各种利益相关方。稍有不慎就有可能导致决策失败。此时我 们就需要跨学科思维，从不同视角去进行科学论证，平衡多",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "夏普利值的应用",
     "source": "ref:100+思维模型合集 (模型思维):夏普利值的应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "权力。权衡权力的大小，取决于一个人的权",
   "when_to_use": {

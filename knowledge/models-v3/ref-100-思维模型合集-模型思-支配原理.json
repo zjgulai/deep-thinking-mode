@@ -8,7 +8,11 @@
     "skill_name": "支配原理",
     "source": "ref:100+思维模型合集 (模型思维):支配原理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "系统内部的不同组分、要素、趋势、力量、变量、模式之间如果不分 伯仲,一样的起作用,系统就不会形成有序结构;只有形成少数趋势(或力 量、模式、中心部分等)去引导、规范、支配大量其他组分、要素、趋 势、模式等的行为,使它们协同动作,才能形成有序",
   "when_to_use": {

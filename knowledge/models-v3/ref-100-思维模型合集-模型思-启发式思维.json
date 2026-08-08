@@ -8,7 +8,13 @@
     "skill_name": "启发式思维",
     "source": "ref:100+思维模型合集 (模型思维):启发式思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "planner",
+      "knowledge_synthesizer",
+      "bias_detector"
+    ]
   },
   "core_definition": "人类为了适应环境的需要，我们的大脑进化出了认知（判断和推理） 的两种基本方法——算法与启发法。 第一种方法 理性算法：解决问题的公式、规则、步骤。对大脑能量消耗大，思考 问题比较周全，符合逻辑推理。 第二种方法 启发法：是凭借经验的解题方法",
   "when_to_use": {

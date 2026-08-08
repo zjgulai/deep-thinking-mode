@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "1-.-核心驱动力",
     "source": "战胜拖延后的愉悦感.md",
-    "sourceTitle": "战胜拖延后的愉悦感"
+    "sourceTitle": "战胜拖延后的愉悦感",
+    "agent_roles": [
+      "decision_maker",
+      "prioritizer",
+      "error_handler",
+      "simplifier"
+    ]
   },
   "core_definition": "**为了逃避任务带来的短期不适（启动的痛苦、对失败的恐惧、无聊感），而选择做更轻松的事，从而获得即时快感",
   "when_to_use": {

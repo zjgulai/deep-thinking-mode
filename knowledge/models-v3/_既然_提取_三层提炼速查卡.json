@@ -13,7 +13,13 @@
     ],
     "skill_name": "既然_提取_三层提炼",
     "source": "_既然_提取_三层提炼速查卡.md",
-    "sourceTitle": "_既然_提取_三层提炼速查卡"
+    "sourceTitle": "_既然_提取_三层提炼速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "反复回想“如果当时”越想越累",
   "when_to_use": {

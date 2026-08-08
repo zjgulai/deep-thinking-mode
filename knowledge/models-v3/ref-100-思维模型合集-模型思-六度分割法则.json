@@ -8,7 +8,10 @@
     "skill_name": "六度分割法则",
     "source": "ref:100+思维模型合集 (模型思维):六度分割法则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "平均来说，社会网络中任意两个素不相识的人之间，最",
   "when_to_use": {

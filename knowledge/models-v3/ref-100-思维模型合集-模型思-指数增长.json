@@ -8,7 +8,10 @@
     "skill_name": "指数增长",
     "source": "ref:100+思维模型合集 (模型思维):指数增长",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "数性的，但是逐渐减缓直到系统状态达到平衡水平",
   "when_to_use": {

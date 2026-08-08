@@ -8,7 +8,12 @@
     "skill_name": "确定核心驱动因子",
     "source": "ref:100+思维模型合集 (模型思维):确定核心驱动因子",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer",
+      "simplifier"
+    ]
   },
   "core_definition": "的驱动因子。 例如：通过大量的调研，发现了驱动趋势的有 100 个驱动因子，通过 情景未来小组的讨论，最终确定 20 个核心驱动因子（能源价格上涨、 气候变化、低碳出行等等）  。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "调查现状",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):调查现状",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "根据 1995 年 1 月份的生产月报，QC 小组作了玻壳不良品统计表见下表。 根据统计表作玻壳不良品排列图。 表：玻壳不良品统计表 不良品分类 不良品数（只） 累计数（只） 累计％ 炸裂 24216 24226 53.7 \f http:",
   "when_to_use": {

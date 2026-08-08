@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "“四层归因分析”解决复杂问题的",
     "source": "_四层归因分析_解决复杂问题的核心工具.md",
-    "sourceTitle": "“四层归因分析”解决复杂问题的核心工具"
+    "sourceTitle": "“四层归因分析”解决复杂问题的核心工具",
+    "agent_roles": [
+      "problem_framer",
+      "causal_reasoner",
+      "multi_perspective",
+      "prioritizer"
+    ]
   },
   "core_definition": "；通过正向解决，可以从根本上消除问题的产生机制",
   "when_to_use": {

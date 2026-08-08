@@ -8,7 +8,10 @@
     "skill_name": "前景理论思维模型",
     "source": "ref:万物皆模型-100个思维模型:前景理论思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "行为经济学的理论,为心理学教授卡内曼和特沃斯基提出的",
   "when_to_use": {

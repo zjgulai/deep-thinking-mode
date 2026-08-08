@@ -8,7 +8,11 @@
     "skill_name": "指明目标",
     "source": "ref:100+思维模型合集 (模型思维):指明目标",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "我们在制定目标的时候,一般会遵循 SMART 原则,我们后面称之为“聪明 目标”。聪明目标必须符合以下五个特征:具体的(Specific)、可以衡量的 (Measurable)、可以达到的(Attainable)、相关性的(Relevant",
   "when_to_use": {

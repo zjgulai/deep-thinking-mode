@@ -8,7 +8,10 @@
     "skill_name": "上海移动质量管理体系的现状",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):上海移动质量管理体系的现状。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "上海移动已通过了“ISO9001”和“TL9000”的贯标，逐步建立和完善质量 管理体系。通过多层次的“用户满意度（CSI）”调查，不断发现上海移动业务发 展和服务中的热点、难点问题；归纳起来，形成了“ISO9001”和“TL9000”为",
   "when_to_use": {

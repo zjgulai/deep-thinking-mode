@@ -8,7 +8,10 @@
     "skill_name": "革新或差异化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):革新或差异化",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如果一个经营单位已经具有了较强的市场竞争地位，则采取开发出较多的新 产品，增加研究与开发的费用，以及加强市场营销努力等措施会提高经营业绩。 反之，如果经营单位市场竞争地位较弱，则采用上面的措施会对利润有不利的影 响，因此，对革新和差别化的",
   "when_to_use": {

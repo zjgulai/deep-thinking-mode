@@ -8,7 +8,11 @@
     "skill_name": "注意事项",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):注意事项",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "error_handler"
+    ]
   },
   "core_definition": "因此，询问的时候要把握两个原则：数量不可太多；目的要明确，问那些可 以开发成明确需求，并是你的产品或服务可以解决的难题方面的问题。  研究表明  (1)背景问题与成功没有什么积极的联系。在成功的会谈中，销售人员问的 背景问题比在失败的会谈",
   "when_to_use": {

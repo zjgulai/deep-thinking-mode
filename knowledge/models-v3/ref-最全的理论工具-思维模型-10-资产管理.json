@@ -8,7 +8,10 @@
     "skill_name": "资产管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):资产管理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "主要是确定整个供应链系统以及各个环节上的资产能力，以满足企业正常运 \f http://wiki.mbalib.com/ 作以及发展的需要。资产管理还包括资产的获取、资产的维护以及资产的分配管 理。例如，在 EP．5 中包括对自制与外包比例",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "锻炼勇气",
     "source": "ref:100+思维模型合集 (模型思维):锻炼勇气",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如果在地铁里遇到一位你喜欢的女孩,你敢不敢告诉她?你敢不敢去要 她的联系方式?生活中没有太多的跌宕起伏,更多的是平平淡淡,有时候 需要挑战一下自己,锻炼一下勇气,逼着自己做一件你不敢做的事,你可 以大胆的告诉地铁中的那个女孩,你喜欢她。你也",
   "when_to_use": {

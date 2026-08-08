@@ -8,7 +8,13 @@
     "skill_name": "以竞争战略确定关键职位",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):以竞争战略确定关键职位",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "根据 X 公司决策层提出的管理是执行力，研发是竞争力，营销是利润中心， 制造是成本中心”竞争战略．可推导出管理、研发、营销、制造是战略成功的关 键因素，因而承担相应职能的管理类、营销类、技术类、作业类职位就应是构建 胜任素质模型的重点。",
   "when_to_use": {

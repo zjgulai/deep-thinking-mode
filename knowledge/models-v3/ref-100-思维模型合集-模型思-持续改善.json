@@ -8,7 +8,11 @@
     "skill_name": "持续改善",
     "source": "ref:100+思维模型合集 (模型思维):持续改善",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "竞争力的重要组成部分，对于“再造一个新华润”起到了巨大 的推动作用。 三、行动学习画布：行动学习在中国的融合创新",
   "when_to_use": {

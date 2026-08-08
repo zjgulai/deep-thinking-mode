@@ -8,7 +8,10 @@
     "skill_name": "必备树",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):必备树（Prerequisite Tre",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "就是，让那些将与这些转变直接相关的人来制定实施 转变所需的行动方案。这个工作是思维流程法中最有力的一环，也是 TOC 与其 他那些追求持续改 进的思维流程方法相比最显著的一个特色。用来显示克服障 碍路",
   "when_to_use": {

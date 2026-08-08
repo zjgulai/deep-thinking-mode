@@ -8,7 +8,10 @@
     "skill_name": "工具构建",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具构建",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "竞争力，要树立全新的企业管理理念。也就是要进行管 理观念更新。知识经济的到来，使得企业管理的对象、范围、环境发生了深刻的 变化。在工业经济时代，企业以资本管理为中心，以扩大企业规模，降低产品成 本等为",
   "when_to_use": {

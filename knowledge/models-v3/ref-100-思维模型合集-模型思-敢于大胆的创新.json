@@ -8,7 +8,10 @@
     "skill_name": "敢于大胆的创新",
     "source": "ref:100+思维模型合集 (模型思维):敢于大胆的创新",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "探索性和开创性的认识活动，如果过分追求严谨，",
   "when_to_use": {

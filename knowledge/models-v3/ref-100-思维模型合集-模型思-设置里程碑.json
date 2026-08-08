@@ -8,7 +8,11 @@
     "skill_name": "设置里程碑",
     "source": "ref:100+思维模型合集 (模型思维):设置里程碑",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一个远大的目标,需要很长的时间去实现,在追求目标的路上,会有很多 挫折,如果我们设计一个个小的里程碑,就会更快的实现目标。 案例:山田本一是日本八十年代的一名马拉松运动员。1984 年,在东京国 际马拉松邀请赛中,名不见经传的日本选手山田本",
   "when_to_use": {

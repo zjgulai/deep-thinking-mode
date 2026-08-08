@@ -8,7 +8,10 @@
     "skill_name": "学习技能",
     "source": "ref:100+思维模型合集 (模型思维):学习技能",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "，例如有的人一年看 500  725 / 1937 \f本书，有的人一年只能看 5 本书，有的学习能力快，有的人学习能力 差，所以学会高效的学习非常重要，例如费曼学习法、长短时记忆模 型、刻意练习、元认",
   "when_to_use": {

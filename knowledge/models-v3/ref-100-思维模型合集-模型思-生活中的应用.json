@@ -8,7 +8,10 @@
     "skill_name": "生活中的应用",
     "source": "ref:100+思维模型合集 (模型思维):生活中的应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "哲学。丢掉对物品的执着，不仅周身的",
   "when_to_use": {

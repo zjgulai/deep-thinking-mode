@@ -8,7 +8,10 @@
     "skill_name": "我爱学习吗",
     "source": "ref:100+思维模型合集 (模型思维):我爱学习吗？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "听起来让很多人龇牙的问题，我就是其中之一，",
   "when_to_use": {

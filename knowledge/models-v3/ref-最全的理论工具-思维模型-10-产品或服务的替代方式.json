@@ -8,7 +8,10 @@
     "skill_name": "产品或服务的替代方式",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):产品或服务的替代方式",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的因素。任何新技术、新方法及新科技都可能会 颠覆旧有的秩序，设立新的游戏规则，从而创 造一个新的环境。替代产品或服 务决定了产业中厂商订价上限，等于限制了一个产业可能获得的投资报酬率。当 替代产品或服",
   "when_to_use": {

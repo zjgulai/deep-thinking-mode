@@ -8,7 +8,10 @@
     "skill_name": "存货周转率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):存货周转率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "其计算公式为：存货周转率＝销售成本/（期初存货＋期末存货）*2＝销售 成本/平均商品存货，存货的目的在于销售并实现利润，因而公司的存货与销货 之间，必须保持合理的比率。存货周转率正是衡量公司销货能力强弱和存货是否 过多或短缺的指标。其比率",
   "when_to_use": {

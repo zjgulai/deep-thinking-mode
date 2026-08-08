@@ -8,7 +8,10 @@
     "skill_name": "思维模型",
     "source": "ref:思维模型 (彼得·霍林斯 (Peter Hollins)):思维模型",
     "sourceType": "book",
-    "sourceTitle": "思维模型 (彼得·霍林斯 (Peter Hollins))"
+    "sourceTitle": "思维模型 (彼得·霍林斯 (Peter Hollins))",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "灾难性的思考方式，也绝对是一种灾难性的处世方式",
   "when_to_use": {

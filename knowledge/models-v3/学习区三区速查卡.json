@@ -13,7 +13,13 @@
     ],
     "skill_name": "学习区三区",
     "source": "学习区三区速查卡.md",
-    "sourceTitle": "学习区三区速查卡"
+    "sourceTitle": "学习区三区速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "你有没有过这种困惑：明明一直在忙，却感觉不到进步",
   "when_to_use": {

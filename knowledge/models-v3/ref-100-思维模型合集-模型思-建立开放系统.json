@@ -8,7 +8,10 @@
     "skill_name": "建立开放系统",
     "source": "ref:100+思维模型合集 (模型思维):建立开放系统",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "狭隘框架。框架类似拍照的时候相机的取",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "投入和活动",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):投入和活动",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "项目的实施过程及内容，主要包括资源和时间等的投入",
   "when_to_use": {

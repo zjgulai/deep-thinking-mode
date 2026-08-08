@@ -8,7 +8,10 @@
     "skill_name": "无形成果",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):无形成果",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "比较不容易以数量表示者，也可以说是比较属于圈长、圈员们的个人成长或 收获，称之为无形成果。品管圈活动只要确实地活动，不但可获致很大的有形成 果，尚且可使基层员工改头换面，大幅改变对品质、对做事的观念，进而强化员 工体质及部门体质。 从过去",
   "when_to_use": {

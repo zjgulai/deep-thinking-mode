@@ -8,7 +8,13 @@
     "skill_name": "暂缓评判",
     "source": "ref:100+思维模型合集 (模型思维):暂缓评判",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "垂直思维要求从头到尾一直正确，每一个思考的步骤都是正确的，每 一个思考的步骤都是上一步骤推导出。所以，垂直思维从一开始到结 尾，一直在使用评判来排除，从而做出选择的过程。 而水平思维允许过程中的错误，只要求最终结果正确。其要求不是每 一步都",
   "when_to_use": {

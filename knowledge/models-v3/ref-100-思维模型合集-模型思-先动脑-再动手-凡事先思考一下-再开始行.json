@@ -8,7 +8,13 @@
     "skill_name": "先动脑、再动手。凡事先思考一下，再开始行",
     "source": "ref:100+思维模型合集 (模型思维):先动脑、再动手。凡事先思考一下，再开始行",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "multi_perspective",
+      "decision_maker",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "上一开始就可以规避一些盲目从众的行为。  1926 / 1937 \f2、与大众意见不一致的时候，先不要做决策，多维度寻找信息来验证， 逆向思考来辅助做出判断。比如：如果你可以尝试，用站在观点对立 面的角度，来想想这件事不成立的主要理由，写出",
   "when_to_use": {

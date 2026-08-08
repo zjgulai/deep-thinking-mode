@@ -8,7 +8,10 @@
     "skill_name": "内部模型",
     "source": "ref:100+思维模型合集 (模型思维):内部模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "个体都是有复杂的内部机制的。对于整个系统来说，这就统称为内部 模型。 例如：股市中每个投资者都有自己的分析模型，都有自己对股市预测 的方法论。比如查理芒格的多元思维模型就是帮助巴菲特进行投资分 析的内部模型。",
   "when_to_use": {

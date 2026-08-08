@@ -8,7 +8,10 @@
     "skill_name": "水平思维的本质",
     "source": "ref:100+思维模型合集 (模型思维):水平思维的本质",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer"
+    ]
   },
   "core_definition": "自组织系统，只提供信息自我组织",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "如果你有一个大大的坏消息和一个小小的好消",
     "source": "ref:100+思维模型合集 (模型思维):如果你有一个大大的坏消息和一个小小的好消",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "规范性的经济学，也就是教育人们应该怎样做",
   "when_to_use": {

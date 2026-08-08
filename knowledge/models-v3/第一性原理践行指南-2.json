@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "第一性原理践行指南",
     "source": "第一性原理践行指南 2.md",
-    "sourceTitle": "第一性原理践行指南"
+    "sourceTitle": "第一性原理践行指南",
+    "agent_roles": [
+      "intent_clarifier",
+      "first_principles",
+      "hypothesis_tester",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "层层追问“为什么”，剥离表象至不可反驳的底层规律",
   "when_to_use": {

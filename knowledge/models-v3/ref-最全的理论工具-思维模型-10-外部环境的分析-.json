@@ -8,7 +8,10 @@
     "skill_name": "外部环境的分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):外部环境的分析。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在于评估企业所面临的风险及机会，可分为四项进行。 (1)竞争构面：  未来整个市场的成长空间。  同业的竞争策略对本公司影响程度。 \f http://wiki.mbalib.com/  新竞争对手对公司的影响。 (2)社会趋势构面：",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "规避陷阱和偏见",
     "source": "ref:100+思维模型合集 (模型思维):规避陷阱和偏见",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "bias_detector"
+    ]
   },
   "core_definition": "当人确立了某一个信念或观念时，在收集信息和分析信",
   "when_to_use": {

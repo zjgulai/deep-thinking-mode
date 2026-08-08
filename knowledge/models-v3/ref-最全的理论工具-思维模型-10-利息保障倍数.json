@@ -8,7 +8,10 @@
     "skill_name": "利息保障倍数",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):利息保障倍数",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "其计算公式为：利息保障倍数＝（利息费用＋税前盈利）/利息费用，这一 比率可用于测试公司偿付利息的能力。利息保障倍数越高，说明债权人每期可收 到的利息越有安全保障；反之则不然。 2.2. 企业获利能力分析  企业必须能够获利才有存在的价值，",
   "when_to_use": {

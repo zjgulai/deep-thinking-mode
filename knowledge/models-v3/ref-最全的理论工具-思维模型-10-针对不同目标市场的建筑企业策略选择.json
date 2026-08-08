@@ -8,7 +8,11 @@
     "skill_name": "针对不同目标市场的建筑企业策略选择",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):针对不同目标市场的建筑企业策略选择",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "planner"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  对九个象限内的不同目标市场应采用不同的经营战略。综观各象限市场的特 点，企业应将事业，市场的发展重点放在第一、二、四象限区域内，采用积极发 展战略，重点投资、重点经营；对于市场吸引力和企",
   "when_to_use": {

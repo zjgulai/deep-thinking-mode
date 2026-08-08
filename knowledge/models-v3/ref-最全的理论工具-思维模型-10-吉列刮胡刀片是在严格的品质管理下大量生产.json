@@ -8,7 +8,10 @@
     "skill_name": "吉列刮胡刀片是在严格的品质管理下大量生产",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):吉列刮胡刀片是在严格的品质管理下大量生产",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "评分 -3 3、FLAG 计划下的感应是业界的新研发的产品，技术领先，目前市场上还没有类 似产品。 评分 -2 \f http://wiki.mbalib.com/",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "创建独立小机构",
     "source": "ref:100+思维模型合集 (模型思维):创建独立小机构",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "的要体现在流程和价值观的独立，去除大公司繁琐 而又官僚的管理流程，让决策更快更高效。价值观就是一个组织的思 维模式，也是一个组织的基因。 （3）如何建立",
   "when_to_use": {

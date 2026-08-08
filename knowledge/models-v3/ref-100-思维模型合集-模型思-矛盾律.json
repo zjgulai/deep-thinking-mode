@@ -8,7 +8,11 @@
     "skill_name": "矛盾律",
     "source": "ref:100+思维模型合集 (模型思维):矛盾律",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）矛盾律的内容：在同一思维过程中，两个互相否定的思维不能同 真，必有一假； （2）矛盾律的要求：对互相矛盾或互相反对的思想不能同时肯定，必 有一假； （3）违反矛盾律的逻辑错误：“自相矛盾”° 例如：这个山洞从来没有人进去过，进去的人也",
   "when_to_use": {

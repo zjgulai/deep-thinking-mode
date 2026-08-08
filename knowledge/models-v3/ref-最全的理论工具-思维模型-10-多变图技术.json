@@ -8,7 +8,11 @@
     "skill_name": "多变图技术",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):多变图技术",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer",
+      "observer_reflector"
+    ]
   },
   "core_definition": "根据以往经验确定影响质量的可能要素，例如工人班次、机床、原材料、工 艺变量等，每隔一段时间抽取连续生产的几件产品，按需观察的这些要素的几种 情况分别测试质量特性，画成图表进行比较分析，以确定引起波动的原因。  做出的多变图可以归纳为三类，",
   "when_to_use": {

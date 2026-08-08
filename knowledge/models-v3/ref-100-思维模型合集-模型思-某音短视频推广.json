@@ -8,7 +8,10 @@
     "skill_name": "某音短视频推广",
     "source": "ref:100+思维模型合集 (模型思维):某音短视频推广",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "某音的成功，有很多要素。从登门槛效应的设计来看，玩得很牛，设 计了一系列的低门槛进入。拉新门槛，介绍一个新用户，奖励 168 元 红包。看视频习惯门槛，新用户看视频 30 秒，奖励 1000 抖音金币， 看视频赚现金。看直播门槛，看 1 分",
   "when_to_use": {

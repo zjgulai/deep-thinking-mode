@@ -6,7 +6,11 @@
     "category": "10",
     "tags": [],
     "skill_name": "内耗管理系统_解释模块_意志",
-    "source": "内耗管理系统___解释模块___意志力不是美德_是脑内的_稀缺资源_.md"
+    "source": "内耗管理系统___解释模块___意志力不是美德_是脑内的_稀缺资源_.md",
+    "agent_roles": [
+      "decomposer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "】为什么越是想自律，反而越容易失控？为什么在消耗一天后，那个很小的诱惑变得无法抵抗？",
   "when_to_use": {

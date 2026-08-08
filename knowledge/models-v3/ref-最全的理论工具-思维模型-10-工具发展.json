@@ -8,7 +8,10 @@
     "skill_name": "工具发展",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具发展",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "由各部门协作、全体员工共同参与的活动，而部门之间的有效分工",
   "when_to_use": {

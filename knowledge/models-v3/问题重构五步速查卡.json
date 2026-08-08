@@ -13,7 +13,13 @@
     ],
     "skill_name": "问题重构五步",
     "source": "问题重构五步速查卡.md",
-    "sourceTitle": "问题重构五步速查卡"
+    "sourceTitle": "问题重构五步速查卡",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "前置甄别假问题加五步流程，从溯源到筛选形成完整解题闭环",
   "when_to_use": {

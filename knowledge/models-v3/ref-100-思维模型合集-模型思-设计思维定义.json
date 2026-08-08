@@ -8,7 +8,12 @@
     "skill_name": "设计思维定义",
     "source": "ref:100+思维模型合集 (模型思维):设计思维定义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "理念：以人为 本的设计（HumanCenterDesign）＋同理心（Empathy）。 从服务对象最根本需求出发，将问题和挑战转化为创新的机遇，并通  62 / 1937 \f过快速设计原型及反复测试",
   "when_to_use": {

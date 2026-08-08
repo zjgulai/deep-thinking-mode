@@ -13,7 +13,13 @@
     ],
     "skill_name": "整合思维四步",
     "source": "整合思维四步速查卡.md",
-    "sourceTitle": "整合思维四步速查卡"
+    "sourceTitle": "整合思维四步速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "被迫二选一的感觉很憋屈——好像怎么选都是错的",
   "when_to_use": {

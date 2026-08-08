@@ -8,7 +8,11 @@
     "skill_name": "信息封闭",
     "source": "ref:100+思维模型合集 (模型思维):信息封闭",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "根据熵增定律，封闭系统最终会走向衰败。而一个企业如果切断与外 界的信息交互，必将会走向灭亡。信息封闭会导致团队成员思维固化， 按照特定的模式思考，极易产生过度自信和控制幻觉。当群体领袖提 出意见时，群体成员因为缺少信息，很难分辨领袖意见的正",
   "when_to_use": {

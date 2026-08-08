@@ -8,7 +8,10 @@
     "skill_name": "遗忘曲线思维模型",
     "source": "ref:万物皆模型-100个思维模型:遗忘曲线思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 遗忘曲线（Forgetting curve）是用于表述记忆中的中长期记忆的遗忘率的一种曲线",
   "when_to_use": {

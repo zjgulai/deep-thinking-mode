@@ -8,7 +8,10 @@
     "skill_name": "莱文．闫军译．项目管理实战技巧与工具．清",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):莱文．闫军译．项目管理实战技巧与工具．清",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ VMI 模型  —国际前沿的供应链库存管理模式 \f http://wiki.mbalib.com/",
   "when_to_use": {

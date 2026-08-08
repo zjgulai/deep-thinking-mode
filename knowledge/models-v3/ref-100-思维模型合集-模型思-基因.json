@@ -8,7 +8,10 @@
     "skill_name": "基因",
     "source": "ref:100+思维模型合集 (模型思维):基因",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "以生理为基础的认知能力，如知觉、记忆、运算速度、",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "计划性思考，而非反应性思考",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):计划性思考，而非反应性思考",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "主动的，按照计划有所安排的思考，而不是碰到一件事后的突",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "加权平均预测",
     "source": "ref:100+思维模型合集 (模型思维):加权平均预测：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "将最可能销售量、最低销售量和最高销售量分别按 0.50、0.20 和 0.30 的概率加权平均，则预测平均销售量为：570×0.5+415×0.2+770×0.3=599",
   "when_to_use": {

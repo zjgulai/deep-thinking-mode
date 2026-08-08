@@ -8,7 +8,12 @@
     "skill_name": "智力多因素论",
     "source": "ref:100+思维模型合集 (模型思维):智力多因素论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1938 年，美国心理学家瑟斯顿对芝加哥大学的学生实施了 56 个能力测 验，提出智力由 7 种基本心理能力构成：字词流畅性，词语理解，空 间能力，知觉速度，计数能力，归纳推理能力和记忆能力，并且各基 本能力之间彼此独立。",
   "when_to_use": {

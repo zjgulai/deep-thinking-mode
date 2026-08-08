@@ -8,7 +8,11 @@
     "skill_name": "什么是行动学习画布",
     "source": "ref:100+思维模型合集 (模型思维):什么是行动学习画布？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“视觉化的”行动学习团队研讨工具",
   "when_to_use": {

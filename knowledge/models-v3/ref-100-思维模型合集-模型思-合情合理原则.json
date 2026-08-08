@@ -8,7 +8,10 @@
     "skill_name": "合情合理原则",
     "source": "ref:100+思维模型合集 (模型思维):合情合理原则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "强理性，合情合理是一种弱理性。强理性的特点是，追",
   "when_to_use": {

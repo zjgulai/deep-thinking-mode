@@ -8,7 +8,11 @@
     "skill_name": "随机刺激",
     "source": "ref:100+思维模型合集 (模型思维):随机刺激",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "垂直思维中，我们只处理相关信息，大量的时间被用于筛选哪些信息 是相关的，哪些信息是无关的。而水平思维中随机刺激是一个重要的 技巧。随机刺激中我们会不加选择地使用信息，迫使我们从新的视角 开始思考。我们的大脑是懒惰的，为了节省能量，它会自动的",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "幂率网络",
     "source": "ref:100+思维模型合集 (模型思维):幂率网络",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "常见的统计现象。具有幂律分布的数据，表现为一条",
   "when_to_use": {

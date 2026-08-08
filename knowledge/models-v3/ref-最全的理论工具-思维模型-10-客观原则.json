@@ -8,7 +8,11 @@
     "skill_name": "客观原则",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):客观原则",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "communicator",
+      "bias_detector"
+    ]
   },
   "core_definition": "360 度绩效考评结果能否达到最后改善被评价者的业绩，在很大程度上取决 于评价结果的反馈。结果应当体现客观、公正，应杜绝平均主义和个人偏见。要 使考评方案取得成效，还必须客观认真地分析评估数据，要针对不同方面考虑不 同数据来源的权重，并使",
   "when_to_use": {

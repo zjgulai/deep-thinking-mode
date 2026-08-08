@@ -8,7 +8,10 @@
     "skill_name": "细分者",
     "source": "ref:100+思维模型合集 (模型思维):细分者",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "领导者要将不同的战略应用到不同的部门，为了做到这一点，领导者 们必须平衡准确度与复杂性。领导者在分配战略时越仔细，战略与部 门之间的配合度就越高。",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "数理智能的培养",
     "source": "ref:100+思维模型合集 (模型思维):数理智能的培养",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "相信 自己能够发现数学之美，才能够入了数学之门。 ②注重创新思维和实践能力培养。爱因斯坦说过“想象力比知识更重 要”，就是要不断的创新和实践，才能更上一层楼。 ③注重与其他学科的关系。要多使用数学去解",
   "when_to_use": {

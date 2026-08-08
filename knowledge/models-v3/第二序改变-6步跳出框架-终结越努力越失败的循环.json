@@ -7,7 +7,10 @@
     "tags": [],
     "skill_name": "第二序改变",
     "source": "第二序改变_6步跳出框架_终结越努力越失败的循环.md",
-    "sourceTitle": "第二序改变：6步跳出框架，终结越努力越失败的循环"
+    "sourceTitle": "第二序改变：6步跳出框架，终结越努力越失败的循环",
+    "agent_roles": [
+      "error_handler"
+    ]
   },
   "core_definition": "：在梦里拼命跑，不如直接醒来。",
   "when_to_use": {

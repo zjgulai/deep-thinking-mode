@@ -8,7 +8,12 @@
     "skill_name": "运用试错法——认识进化四段图式",
     "source": "ref:100+思维模型合集 (模型思维):运用试错法——认识进化四段图式",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "根据证伪主义的观点，波普尔把科学看作是知识增长的动态过程，认 为科学知识增长一般经历如下四个程序： （1）问题：科学开始于问题，科学家开始思考； 例如：地球是不是宇宙的中心？ （2）尝试性理论：针对问题，科学家提出各种尝试和猜测（假设与理",
   "when_to_use": {

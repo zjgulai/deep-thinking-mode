@@ -8,7 +8,10 @@
     "skill_name": "营销领域",
     "source": "ref:100+思维模型合集 (模型思维):营销领域",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "保健品行业是把幸存者偏差运用最好的行业之一，尤其是直销公司和 传销公司。例如天津权健保健品公司、河北华林酸碱平生物技术有限 公司，采用幸存者讲故事方法，去欺骗大众。在上千人的大会上，幸 存者会告诉大众，他成功是多么的容易，赚钱唾手可得，只要",
   "when_to_use": {

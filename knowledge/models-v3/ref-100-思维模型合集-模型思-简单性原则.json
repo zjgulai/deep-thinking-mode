@@ -8,7 +8,10 @@
     "skill_name": "简单性原则",
     "source": "ref:100+思维模型合集 (模型思维):简单性原则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在保证逻辑严密、完整以及可以理解的",
   "when_to_use": {

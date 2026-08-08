@@ -8,7 +8,11 @@
     "skill_name": "鼓舞人心",
     "source": "ref:100+思维模型合集 (模型思维):鼓舞人心",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "和号召力。人们应当被目标本身所蕴含的内在挑战性和感染力所影响， 从而激发出他们与众不同的创造性。",
   "when_to_use": {

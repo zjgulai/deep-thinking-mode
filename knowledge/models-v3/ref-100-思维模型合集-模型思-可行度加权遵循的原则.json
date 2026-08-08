@@ -8,7 +8,11 @@
     "skill_name": "可行度加权遵循的原则",
     "source": "ref:100+思维模型合集 (模型思维):可行度加权遵循的原则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）需要你了解每个人观点的长处和可信度，以评价其观点正确的可 能性。 （2）关注可信度最高、与你观点不一致的人，尽量理解其推理过程， 而非其结论。 （3）若某人并无经验，但其所讲道理似乎符合逻辑且可经受压力测试， 则一定要试一试。没经验的",
   "when_to_use": {

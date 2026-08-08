@@ -8,7 +8,11 @@
     "skill_name": "替代性强化",
     "source": "ref:100+思维模型合集 (模型思维):替代性强化",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "multi_perspective",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "小李工作不努力，业绩没有达标，小张因为工作认真，超额完成业绩。 领导没有批判小李，而是表扬了小张，这种做法就是替代性强化，被 表扬的小张就是作为榜样存在的。",
   "when_to_use": {

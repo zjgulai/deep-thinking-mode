@@ -8,7 +8,10 @@
     "skill_name": "跨学科学习",
     "source": "ref:100+思维模型合集 (模型思维):跨学科学习",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不同学科的重新组合会让你的思维更加的宽广,可以提升我们看待问题  810 / 1937 \f的维度,单一学科会导致单一思维,单一思维的人就像手里拿着锤子的 人,看满世界都是钉子。所以我们要学习重要学科的重要思维模型,让自 己升维,从管窥思维到",
   "when_to_use": {

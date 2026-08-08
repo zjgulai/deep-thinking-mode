@@ -8,7 +8,10 @@
     "skill_name": "结果因素",
     "source": "ref:100+思维模型合集 (模型思维):结果因素：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "时间感失真，因为做一件事情太专注，导致忘记时间的",
   "when_to_use": {

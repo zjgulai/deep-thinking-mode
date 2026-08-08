@@ -6,7 +6,13 @@
     "category": "07",
     "tags": [],
     "skill_name": "一、持续不断的“微压力源”轰炸",
-    "source": "现代人的交感神经为什么容易被激活.md"
+    "source": "现代人的交感神经为什么容易被激活.md",
+    "agent_roles": [
+      "prioritizer",
+      "action_executor",
+      "error_handler",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "现代人的交感神经为什么容易被激活  #### 一、持续不断的“微压力源”轰炸  与现代人不同，史前人类面临的威胁是剧烈但短暂的。而现代人的压力是弥散、持续、低强度的。  **信息过载与注意力碎片化**  *   机制：智能手机、社交媒体、24小时新闻推送，让我们的大脑 constantly处于“信息",
   "when_to_use": {

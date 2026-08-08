@@ -8,7 +8,10 @@
     "skill_name": "实现目标利润的销售环节费用＝",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实现目标利润的销售环节费用＝ (结算价－",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "该因素单独变动l％后使利润增长的百分比",
   "when_to_use": {

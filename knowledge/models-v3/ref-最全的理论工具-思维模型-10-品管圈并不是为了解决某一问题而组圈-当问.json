@@ -8,7 +8,10 @@
     "skill_name": "品管圈并不是为了解决某一问题而组圈，当问",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):品管圈并不是为了解决某一问题而组圈，当问",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "圈是属常设性质，因为现场的问题无限多，因此必须将问题一个一个、不断地、 持续地解决与改善，何况还有无形的成果。",
   "when_to_use": {

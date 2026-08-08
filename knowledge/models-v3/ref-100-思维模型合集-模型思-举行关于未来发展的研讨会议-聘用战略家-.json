@@ -8,7 +8,10 @@
     "skill_name": "举行关于未来发展的研讨会议，聘用战略家",
     "source": "ref:100+思维模型合集 (模型思维):举行关于未来发展的研讨会议，聘用战略家，",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "机械系统，生态系统的恢复不是大刀阔斧的改造，",
   "when_to_use": {

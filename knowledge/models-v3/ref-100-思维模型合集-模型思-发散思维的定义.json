@@ -8,7 +8,12 @@
     "skill_name": "发散思维的定义",
     "source": "ref:100+思维模型合集 (模型思维):发散思维的定义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "发散思维，又称辐射思维、放射思维、扩散思维或求异思维，是指大 脑在思维时呈现的一种扩散状态的思维模式。它表现为思维视野广阔， 思维呈现出多维发散状，如“一题多解”、“一事多写”、“一物多用”等方 式，培养发散思维能力。不少心理学家认为，发散",
   "when_to_use": {

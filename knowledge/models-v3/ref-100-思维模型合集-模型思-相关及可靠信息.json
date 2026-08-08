@@ -8,7 +8,11 @@
     "skill_name": "相关及可靠信息",
     "source": "ref:100+思维模型合集 (模型思维):相关及可靠信息",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不确定性因素的信息是谁提供的？ 这些来源可信可靠吗？ 怎么保证信息中没有掺",
   "when_to_use": {

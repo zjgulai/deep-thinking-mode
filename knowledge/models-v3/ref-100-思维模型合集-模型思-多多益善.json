@@ -8,7 +8,11 @@
     "skill_name": "多多益善",
     "source": "ref:100+思维模型合集 (模型思维):多多益善",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在开发备选方案的时候，一定要多多益善，把握一个原则“先有后优”。 你可以把选择的范围再次放大，不仅要关注市区的学校，也可以关注 郊区的学校，有些郊区的私立学校非常优秀，性价比也很高。甚至可 以扩大到周边城市。",
   "when_to_use": {

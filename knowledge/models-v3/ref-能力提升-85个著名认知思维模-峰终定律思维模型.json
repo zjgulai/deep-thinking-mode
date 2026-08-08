@@ -8,7 +8,13 @@
     "skill_name": "峰终定律思维模型",
     "source": "ref:能力提升-85个著名认知思维模型:峰终定律思维模型",
     "sourceType": "book",
-    "sourceTitle": "能力提升-85个著名认知思维模型"
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "agent_roles": [
+      "multi_perspective",
+      "planner",
+      "prioritizer",
+      "observer_reflector"
+    ]
   },
   "core_definition": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 心理学家丹尼尔 · 卡纳曼（Daniel Kahneman）发现我们对体验的记忆由两个因素决",
   "when_to_use": {

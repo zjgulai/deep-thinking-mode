@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "核心机制总览",
     "source": "专注能让人感到愉悦和舒服的底层机制 2.md",
-    "sourceTitle": "专注能让人感到愉悦和舒服的底层机制"
+    "sourceTitle": "专注能让人感到愉悦和舒服的底层机制",
+    "agent_roles": [
+      "prioritizer",
+      "communicator",
+      "simplifier",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "专注能让人感到愉悦和舒服的底层机制  来深入、详细地解析专注让人感到愉悦和舒服的底层机制。这涉及到从大脑的微观化学物质到宏观的心理学理论的一个完整链条。  ### 核心机制总览  这种愉悦感并非由单一因素决定，而是一个由 **神经化学、认知心理学和进化心理学** 三者协同作用的精密系统。其核心可以概",
   "when_to_use": {

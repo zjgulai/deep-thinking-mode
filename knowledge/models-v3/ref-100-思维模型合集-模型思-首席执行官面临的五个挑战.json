@@ -8,7 +8,12 @@
     "skill_name": "首席执行官面临的五个挑战",
     "source": "ref:100+思维模型合集 (模型思维):首席执行官面临的五个挑战",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "挑战一：善于平衡短期和长期利益，实现可持续发展。 挑战二：设 定公司的发展方向。 挑战三：培育公司的软实力。 挑战四：执行 到位，他们必须把公司的战略执行到位。 挑战五：管理全球化背景 下的公司。",
   "when_to_use": {

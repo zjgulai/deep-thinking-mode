@@ -8,7 +8,10 @@
     "skill_name": "机会与威胁分析（ot）",
     "source": "ref:营销管理143个经典模型:机会与威胁分析（OT）",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "随着经济、社会、科技等诸多方面的迅速发展，特别是世界经济全球化、一体化过程的加 快，全球信息网络的建立和消费需求的多样化，企业所处的环境更为开放和动荡。这种变化几乎 对所有企业都产生了深刻的影响。正因为如此，环境分析成为一种日益重要的企业",
   "when_to_use": {

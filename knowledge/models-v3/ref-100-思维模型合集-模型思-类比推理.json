@@ -8,7 +8,12 @@
     "skill_name": "类比推理",
     "source": "ref:100+思维模型合集 (模型思维):类比推理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "类比推理是根据两个或两类对象有部分属性相同，从而推出它们的其 他属性也相同的推理。 例如： A 具有特性 R、S、T、U、V、W、X 和 Y。 B 具有特性 R、S、T、U、V、W、X 和 Y。 A 具有特性 Z。 所以，B 也具有特性 Z",
   "when_to_use": {

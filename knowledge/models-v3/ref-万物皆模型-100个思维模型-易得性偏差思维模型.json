@@ -8,7 +8,10 @@
     "skill_name": "易得性偏差思维模型",
     "source": "ref:万物皆模型-100个思维模型:易得性偏差思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "problem_framer"
+    ]
   },
   "core_definition": "非常有效的方法,能帮助人们迅速地抓住问题的本质推断出结果,但有时也会造成严",
   "when_to_use": {

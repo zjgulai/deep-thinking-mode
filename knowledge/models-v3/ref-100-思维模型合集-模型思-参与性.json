@@ -8,7 +8,10 @@
     "skill_name": "参与性",
     "source": "ref:100+思维模型合集 (模型思维):参与性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "互相参与的能量池，所有事物都是信息形式的",
   "when_to_use": {

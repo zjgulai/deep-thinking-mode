@@ -8,7 +8,10 @@
     "skill_name": "杠杆原理思维模型",
     "source": "ref:万物皆模型-100个思维模型:杠杆原理思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "prioritizer"
+    ]
   },
   "core_definition": "即用尽可能少的成本去撬动更多的资源,从而达到收益最大化。“撬 动杠杆”的目的在于找到推动事情发展的决定性因素,而决定性因素即是这个杠杆的支点。杠杆思维除了可以 撬动地球外,还可以撬动信息、物质、",
   "when_to_use": {

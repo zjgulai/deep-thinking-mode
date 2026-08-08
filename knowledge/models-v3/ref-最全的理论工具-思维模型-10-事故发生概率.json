@@ -8,7 +8,10 @@
     "skill_name": "事故发生概率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):事故发生概率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "事件树定量分析中，事故发生概率等于导致事故的各发展途径的概率和。  定量分析要有事件概率数据作为计算的依据，而且事件过程的状态又是多种 多样的，一般都因缺少概率数据而不能实现定量分析。",
   "when_to_use": {

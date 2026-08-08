@@ -8,7 +8,12 @@
     "skill_name": "像高手一样思维与行动（8册）-版权信息",
     "source": "ref:像高手一样思维与行动（8册）（让你终生收益的思维模型，像高手一样思考，5个思维习:像高手一样思维与行动（8册） 版权信息",
     "sourceType": "book",
-    "sourceTitle": "像高手一样思维与行动（8册）（让你终生收益的思维模型，像高手一样思考，5个思维习"
+    "sourceTitle": "像高手一样思维与行动（8册）（让你终生收益的思维模型，像高手一样思考，5个思维习",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor",
+      "observer_reflector"
+    ]
   },
   "core_definition": "全新的观点，这种观点认为，在决定天赋的因素中，基因起的作用要远低于我们的想象，而行动起的作用则远超我们的想象",
   "when_to_use": {

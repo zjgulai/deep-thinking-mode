@@ -8,7 +8,12 @@
     "skill_name": "知识结构",
     "source": "ref:100+思维模型合集 (模型思维):知识结构",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "知识分为陈述性知识和程序性知识，陈述性知识是关于事实、概念、 原则、规律等的知识，即“知道某事”。程序性知识是关于程序和策略的 知识，即“怎么做”。同时还有跨学科的学习，建立“群峰式知识结构”。",
   "when_to_use": {

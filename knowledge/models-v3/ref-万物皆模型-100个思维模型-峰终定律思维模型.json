@@ -8,7 +8,12 @@
     "skill_name": "峰终定律思维模型",
     "source": "ref:万物皆模型-100个思维模型:峰终定律思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "multi_perspective",
+      "prioritizer",
+      "observer_reflector"
+    ]
   },
   "core_definition": "过程的终了,同时也是另一个新过程的开始",
   "when_to_use": {

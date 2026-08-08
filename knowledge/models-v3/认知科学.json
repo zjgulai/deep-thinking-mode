@@ -6,7 +6,13 @@
     "category": "02",
     "tags": [],
     "skill_name": "认知科学",
-    "source": "揭秘_门口效应__门一过就忘事是大脑高效.md"
+    "source": "揭秘_门口效应__门一过就忘事是大脑高效.md",
+    "agent_roles": [
+      "problem_framer",
+      "planner",
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "揭秘“门口效应”：门一过就忘事是大脑高效  “门口效应”      核心定义      门口效应：个体穿过门体进入新环境后，突然遗忘此前既定目标的认知现象，是大脑高效管理记忆的表现，非记忆力衰退。      核心原理      门是“事件边界”，跨门时大脑判定上一事件结束，为腾出认知资源，将上一事件",
   "when_to_use": {

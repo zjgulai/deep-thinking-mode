@@ -8,7 +8,12 @@
     "skill_name": "空间智能的培养",
     "source": "ref:100+思维模型合集 (模型思维):空间智能的培养",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "①绘画，可以培养孩子的观察力，想象力和空间智能 ②拼图，拼图游戏可以培养逻辑推理和视觉判断的能力。 ③做手工，可以锻炼想象力。 ④搭积木模型，可以锻炼逻辑推理与手眼协调能力，培育视觉判断与 敏锐的观察力。",
   "when_to_use": {

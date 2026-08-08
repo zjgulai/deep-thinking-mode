@@ -8,7 +8,11 @@
     "skill_name": "学习重要学科的基本概念和思维模型",
     "source": "ref:100+思维模型合集 (模型思维):学习重要学科的基本概念和思维模型。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "意识，是一种为了适应信息时代的新的学习方式，是对",
   "when_to_use": {

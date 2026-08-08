@@ -8,7 +8,10 @@
     "skill_name": "尹柳营．顺畅创造财富-企业运作动态衔接管",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):尹柳营．顺畅创造财富/企业运作动态衔接管",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 5S 现场管理法  —现场科学管理的基础工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

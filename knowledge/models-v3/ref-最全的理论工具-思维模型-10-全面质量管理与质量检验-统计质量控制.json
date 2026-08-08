@@ -8,7 +8,10 @@
     "skill_name": "全面质量管理与质量检验、统计质量控制",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):全面质量管理与质量检验、统计质量控制",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的特点比较  质量检验 统计质量控制 全面质量管理 序 项目 号 1920~1940 1940~1960 1961~现在 1 生产特 以手工及半机械化 大量生产 现代化大生产  点 生产为主 2 质量概 狭义质量 从狭义质量向广义质量 广",
   "when_to_use": {

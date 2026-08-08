@@ -8,7 +8,10 @@
     "skill_name": "负效应枝条",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):负效应枝条（Negative Effec",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "当做完 CRT、EC、FRT 的一系列工作以后，就要找一些与改进后果相关程 度最大的人来参与，以保证改进的成功实施。思维流程法是一项需要高度开放、 \f http://wiki.mbalib.com/ 广 泛参与的活动。如果不和这些利益相关",
   "when_to_use": {

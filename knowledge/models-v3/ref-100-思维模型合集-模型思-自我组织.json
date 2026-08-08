@@ -8,7 +8,11 @@
     "skill_name": "自我组织",
     "source": "ref:100+思维模型合集 (模型思维):自我组织",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "多变且多样的环境可能无法等待公司进行转换。因为转换和分离都需 要时间，并且都是自上而下的进行。所以无法适应快速多变的环境。 此时可以采用自我组织的模式，各个部门要以市场为基础，独立决定 自己所采取的战略。 例如：海尔的人单合一，韩都衣舍的阿",
   "when_to_use": {

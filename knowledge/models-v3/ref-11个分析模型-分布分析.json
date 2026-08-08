@@ -8,7 +8,11 @@
     "skill_name": "分布分析",
     "source": "ref:11个分析模型:分布分析",
     "sourceType": "book",
-    "sourceTitle": "11个分析模型"
+    "sourceTitle": "11个分析模型",
+    "agent_roles": [
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "8.1 分布分析概述  分布分析（见图 8-1）主要能够提供「维度指标化」之后的数据分解能力，将 原有维度按照一定的数值区间进行维度划分，进而分析每个维度区间的分布情况， 在以下分析场景中十分常见：分析订单的金额分布、分析某类特殊事件的发生",
   "when_to_use": {

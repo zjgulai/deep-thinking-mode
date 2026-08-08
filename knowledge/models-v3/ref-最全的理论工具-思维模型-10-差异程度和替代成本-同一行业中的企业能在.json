@@ -8,7 +8,10 @@
     "skill_name": "差异程度和替代成本-同一行业中的企业能在",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):差异程度和替代成本 同一行业中的企业能在",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "大程度避免下面竞争，取决 趋同达 70％ 以上。  于它们所提供的产品和服 指标：激烈++  务的差异程度。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "确定控制点和建立控制流",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定控制点和建立控制流",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "communicator"
+    ]
   },
   "core_definition": "点之间建立控制流，即信息沟通关系。 一般需要与生产过程的两个端点建立联系。即投入和产出。 \f http://wiki.mbalib.com/",
   "when_to_use": {

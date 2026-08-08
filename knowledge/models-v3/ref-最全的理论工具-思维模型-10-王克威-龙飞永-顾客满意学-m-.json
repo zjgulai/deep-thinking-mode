@@ -8,7 +8,10 @@
     "skill_name": "王克威，龙飞永．顾客满意学【m】",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):王克威，龙飞永．顾客满意学【M】",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "．北京：企业管理出版社．1997． \f http://wiki.mbalib.com/ 满意镜 —提高顾客满意与员工满意的工具，被广泛 应用于服务培训、处理抱怨等各个环节。 \f http://wiki.mbalib.com/",
   "when_to_use": {

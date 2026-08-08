@@ -6,7 +6,10 @@
     "category": "03",
     "tags": [],
     "skill_name": "红皇后效应_竞争中的生存法则与破局路",
-    "source": "红皇后效应_竞争中的生存法则与破局路径.md"
+    "source": "红皇后效应_竞争中的生存法则与破局路径.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "始终是“持续进化以维持相对地位”",
   "when_to_use": {

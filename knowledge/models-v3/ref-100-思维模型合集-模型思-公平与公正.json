@@ -8,7 +8,10 @@
     "skill_name": "公平与公正",
     "source": "ref:100+思维模型合集 (模型思维):公平与公正",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不让个人感情影响自己的决定，人人平等，可以把私",
   "when_to_use": {

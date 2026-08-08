@@ -8,7 +8,10 @@
     "skill_name": "管理的广度不同。传统的人事管理只注重管好",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):管理的广度不同。传统的人事管理只注重管好",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "理不仅要管好现有人员，而且还必须要对组织现今和未来各种人力资源的要求进 行科学的预测和规划。",
   "when_to_use": {

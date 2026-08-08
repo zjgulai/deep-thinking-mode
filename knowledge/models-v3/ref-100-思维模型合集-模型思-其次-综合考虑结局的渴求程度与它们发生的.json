@@ -8,7 +8,10 @@
     "skill_name": "其次，综合考虑结局的渴求程度与它们发生的",
     "source": "ref:100+思维模型合集 (模型思维):其次，综合考虑结局的渴求程度与它们发生的",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "进入市中心公立小学的概率是 75％，是一个非常高的概率，所以还是 值得冒险尝试呢。如果概率降到 50％以下，那就要重新考虑了。",
   "when_to_use": {

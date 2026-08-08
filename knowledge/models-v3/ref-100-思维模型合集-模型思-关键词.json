@@ -8,7 +8,12 @@
     "skill_name": "关键词",
     "source": "ref:100+思维模型合集 (模型思维):关键词",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "词会使你的思维导图更加醒目，更为清晰，每 一个关键词都是简洁和独立，通过线条又是一个整体，这样新创意的 产生。而句子却容易扼杀这种火花效应。当然关键词一定要精准，要 高度概括句子所表达的含义。  39",
   "when_to_use": {

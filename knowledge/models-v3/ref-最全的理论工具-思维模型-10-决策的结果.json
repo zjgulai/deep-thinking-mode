@@ -8,7 +8,11 @@
     "skill_name": "决策的结果",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):决策的结果",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从以上介绍可以看出，在某种意义上，组织就是搅拌这些事件流的一个大型 垃圾桶。当一个问题、解决方案和参与者碰巧在某个点连接在一起的时候，就可 能做出一个正确的决策，如果解决方案和问题不匹配，问题就不会得到解决。因 此，当把组织视为一个整体，",
   "when_to_use": {

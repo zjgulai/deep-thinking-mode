@@ -8,7 +8,11 @@
     "skill_name": "选择目标。确定了进行-benchmark",
     "source": "ref:常用咨询方法、分析模型及案例分析:选择目标。确定了进行 benchmark",
     "sourceType": "book",
-    "sourceTitle": "常用咨询方法、分析模型及案例分析"
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "agent_roles": [
+      "decision_maker",
+      "planner"
+    ]
   },
   "core_definition": "对象。通常，竞争对手和行业领先企业是 benchmarking 的首选对象；",
   "when_to_use": {

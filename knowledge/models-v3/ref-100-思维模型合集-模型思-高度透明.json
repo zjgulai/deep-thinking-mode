@@ -8,7 +8,12 @@
     "skill_name": "高度透明",
     "source": "ref:100+思维模型合集 (模型思维):高度透明",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "事业部总经理对项目、计划和人员管理方面有很大的权限，所以他的 一言一行都会受到关注 事业部总经理必须保持自己工作和决策的透明度，因为一个小小的错 误就有可能被放大。  1161 / 1937 \f4、重视新技术对业务带来的颠覆 互联网电子商务",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "倾听力的定义",
     "source": "ref:100+思维模型合集 (模型思维):倾听力的定义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "汉语词语，出自《礼记·曲礼上》：“立不正方，不倾听",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "波士顿矩阵按照市场增长率和相对市场份额",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):波士顿矩阵按照市场增长率和相对市场份额，",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "型，相对来说，有些过于简单。实际上，市场中还存在着很难确切归入某各  象限中的业务。比如，如果金牛类业务和瘦狗类业务是互补的业务组合，如  果放弃瘦狗类业务，那么金牛类业务也会受到影响。",
   "when_to_use": {

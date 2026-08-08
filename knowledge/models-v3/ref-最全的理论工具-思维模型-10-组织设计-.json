@@ -8,7 +8,10 @@
     "skill_name": "组织设计",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):组织设计。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "由经营者及各部门最高主管组成的 TPM 推行委员会",
   "when_to_use": {

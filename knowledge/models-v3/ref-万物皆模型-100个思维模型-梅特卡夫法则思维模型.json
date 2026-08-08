@@ -8,7 +8,11 @@
     "skill_name": "梅特卡夫法则思维模型",
     "source": "ref:万物皆模型-100个思维模型:梅特卡夫法则思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "systems_thinker",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "关于网络的价值和网络技术的发展的定律,由乔治 · 季尔德于 1993 年提",
   "when_to_use": {

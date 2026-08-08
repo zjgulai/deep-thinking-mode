@@ -8,7 +8,10 @@
     "skill_name": "布雷弗格．实施-6-西格玛-权威的-6",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):布雷弗格．实施 6 西格玛/权威的 6",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "12. (美)彼得•潘德等著．六西格玛是什么．中国财政经济出版社．2002 年． \f http://wiki.mbalib.com/ JIT 生产方式  —使生产有效进行的新型生产方式 \f http://wiki.mbalib.com/",
   "when_to_use": {

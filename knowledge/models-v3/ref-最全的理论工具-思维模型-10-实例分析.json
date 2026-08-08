@@ -8,7 +8,10 @@
     "skill_name": "实例分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实例分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "7.1. 案例 1：医疗器械行业的PEST分析  医疗器械是综合应用自然科学与现代工程技术的原理和方法，在分子、细胞、 组织、器官和人体系统上多层次研究人体的结构、功能和其他生命现象，用于防 病、治病、人体功能辅助及卫生保健的人工材料、制品",
   "when_to_use": {

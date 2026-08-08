@@ -8,7 +8,11 @@
     "skill_name": "优点与局限性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):优点与局限性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "4.1. 优点  1．综合性强，因为它集中了多个角度的反馈信息。这种被认为是对被考核 人全方位的评估方式，即”360 度绩效评估制度”。通过这种理想的绩效评估， 被评估者不仅可以从自己、上司、部属、同事甚至顾客处获得多种角度的反馈， 也可从",
   "when_to_use": {

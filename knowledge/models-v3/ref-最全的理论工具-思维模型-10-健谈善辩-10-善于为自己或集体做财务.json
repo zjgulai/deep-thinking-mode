@@ -8,7 +8,10 @@
     "skill_name": "健谈善辩-10、-善于为自己或集体做财务",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):健谈善辩 10、 善于为自己或集体做财务",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "第四部份 你所喜欢的职业  下面列举了多种职业，请认真地看，请选择你有兴趣的工作，有一项计 1 分，不太喜欢 \f http://wiki.mbalib.com/ 或不关心的工作不选，不计分。请将答案直接写在第 5 页答题纸上。 R：实际型职",
   "when_to_use": {

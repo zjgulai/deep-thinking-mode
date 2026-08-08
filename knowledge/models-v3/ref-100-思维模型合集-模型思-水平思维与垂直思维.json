@@ -8,7 +8,10 @@
     "skill_name": "水平思维与垂直思维",
     "source": "ref:100+思维模型合集 (模型思维):水平思维与垂直思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "横向的思维方式，其更强调数量众多的平行的可能",
   "when_to_use": {

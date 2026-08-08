@@ -8,7 +8,10 @@
     "skill_name": "纸片法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):纸片法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  这几种方法各有优缺点，在确定采用哪种方法才能最好地得到所期望的结果 前，团队或主持讨论的领导者都必须权衡优劣做出选择。有时，最佳方法是不同 的头脑风暴法的联合使用。例如，头脑风暴会议先采",
   "when_to_use": {

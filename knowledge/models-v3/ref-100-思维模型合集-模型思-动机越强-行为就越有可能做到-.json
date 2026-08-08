@@ -8,7 +8,10 @@
     "skill_name": "动机越强，行为就越有可能做到",
     "source": "ref:100+思维模型合集 (模型思维):动机越强，行为就越有可能做到。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "当动机足够强烈的时候，一般我们可以做特别难的事情，比如学英语， 跑马拉松等。当动机一般强的时候。我们会去做相对比较容易的事情， 比如散散步，看会儿书等。",
   "when_to_use": {

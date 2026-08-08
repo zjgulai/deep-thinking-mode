@@ -8,7 +8,10 @@
     "skill_name": "要加强对-qc-小组的管理，促进-qc",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):要加强对 QC 小组的管理，促进 QC",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "4.1.5. 贯彻IS0 9000 标准  国内外不少质量管理专家、学者对 ISO 9000 系列标准和 TQM 都作过对比， 阐述它们的异同点。 根据专家们的阐述和两者的含义和特点，两者最大的共同点是它们的目的、要求 和作用是一致的，都是",
   "when_to_use": {

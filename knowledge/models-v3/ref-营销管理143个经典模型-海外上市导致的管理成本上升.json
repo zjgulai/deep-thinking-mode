@@ -8,7 +8,10 @@
     "skill_name": "海外上市导致的管理成本上升",
     "source": "ref:营销管理143个经典模型:海外上市导致的管理成本上升",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "外部因素 权重  机会  1、移动增值服务市场增长迅速 0.10  2、年轻人不断增加的消费能力 0.05  3、人们花在交通、参加会议等上的时间增加 0.10  4、3G 网络将提供更多市场空间 0",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "标识",
     "source": "ref:100+思维模型合集 (模型思维):标识",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "中是非常重要的，因而无论在建模中，还是实际系统中，标识的功能 与效率也非常重要。 例如：在股市里面，每个个体或群体都要标签，有大户、散户和机构 投资者，便于相互作用中的识别。",
   "when_to_use": {

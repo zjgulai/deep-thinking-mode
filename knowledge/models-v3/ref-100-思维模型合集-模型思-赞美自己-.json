@@ -8,7 +8,12 @@
     "skill_name": "赞美自己",
     "source": "ref:100+思维模型合集 (模型思维):赞美自己。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如果没有人赞美、表扬我们，那就自己赞美自己、表扬自己、认可自 己。大声的对自己说：“我真厉害！”“干得漂亮！”“太棒了！”。  1891 / 1937 \f4、不断挑战自己。 制定挑战性的任务，但是要把它分解成一个个小任务，当每个小任务 完成",
   "when_to_use": {

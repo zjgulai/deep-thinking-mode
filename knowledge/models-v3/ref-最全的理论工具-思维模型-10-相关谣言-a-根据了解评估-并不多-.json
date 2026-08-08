@@ -8,7 +8,11 @@
     "skill_name": "相关谣言-a-根据了解评估，并不多",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):相关谣言 A 根据了解评估，并不多。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "decision_maker"
+    ]
   },
   "core_definition": "三.决策分析(针对问题如何解决) 四.潜在问题分析(找出后遗症) A.相关谣言 A.相关谣言 (1)立即召开说明会，澄清谣言。 较无后遗症。 (2)在会中描绘公司未来远景。 B.交通不便 B.交通不便 (1)增加公司成本，且有交通事故风险。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "自下而上法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):自下而上法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "自下而上法，是要让项目团队成员从一开始就尽可能的确定项目有关的各项 具体任务，然后将各项具体任务进行整合，并归总到一个整体活动或 WBS 的上 一级内容当中去。仍以 ABC 飞机制造公司设计制造新型战斗机为例，用这种方 法，则不是开始就考",
   "when_to_use": {

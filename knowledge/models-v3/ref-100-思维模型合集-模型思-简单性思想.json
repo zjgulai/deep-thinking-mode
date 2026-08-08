@@ -8,7 +8,10 @@
     "skill_name": "简单性思想",
     "source": "ref:100+思维模型合集 (模型思维):简单性思想",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "于简单性。 早在公元前六世纪，古希腊的数学家和哲学家毕达哥拉斯运用抽象思 维把物质世界归结为几个共同的简单的四元素（土、水、火、气）学 说，认为物质是由简单的四元素构成。我国古代认为万事万物的根本 是",
   "when_to_use": {

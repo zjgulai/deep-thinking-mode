@@ -8,7 +8,11 @@
     "skill_name": "归因理论思维模型",
     "source": "ref:万物皆模型-100个思维模型:归因理论思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "causal_reasoner",
+      "observer_reflector"
+    ]
   },
   "core_definition": "观察者从他人的行为推论出行为原因、因果关系",
   "when_to_use": {

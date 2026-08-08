@@ -8,7 +8,12 @@
     "skill_name": "世界咖啡是共同学习的平台",
     "source": "ref:100+思维模型合集 (模型思维):世界咖啡是共同学习的平台",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "三人行必有我师，世界咖啡倡导“人人都是学习者”的理念，参与者在主 持人的引导下表达自己的思考、聆听他人的想法、沉淀集体的智慧， 积极地向身边人学习。参与者与主持人一起共同分享，相互学习，学 习他人的优点，反思自己的不足，在共同学习中携手成长",
   "when_to_use": {

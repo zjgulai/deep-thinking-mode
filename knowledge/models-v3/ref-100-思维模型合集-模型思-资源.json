@@ -8,7 +8,11 @@
     "skill_name": "资源",
     "source": "ref:100+思维模型合集 (模型思维):资源",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "看他的资源整合能力。人才资本和技 术就是企业成功的杠杆。但凡成就伟业者，都不是靠一己之力，而是 善于借智借力和借钱。 （1）人才：人脉和团队管理。  1882 / 1937 \f对外建立人脉网络，对内做",
   "when_to_use": {

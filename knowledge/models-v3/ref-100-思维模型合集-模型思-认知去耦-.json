@@ -8,7 +8,11 @@
     "skill_name": "认知去耦",
     "source": "ref:100+思维模型合集 (模型思维):认知去耦。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "指算法心智的去耦化操作，意思是从现实世界中抽象出一个模拟世界， 在你头脑里自行模拟推演。例如：你想超车，要在头脑里面进行模拟 思考，想象下怎么超过去？怎么骂他，如果超不过去，会不会撞车？ 超过去了，能怎么骂？是通过模拟计算去估量行动后果的过",
   "when_to_use": {

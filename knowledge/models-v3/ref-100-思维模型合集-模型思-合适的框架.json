@@ -8,7 +8,12 @@
     "skill_name": "合适的框架",
     "source": "ref:100+思维模型合集 (模型思维):合适的框架",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "合适的框架回答了“我们面临什么样的问题或机会”。很多时候我们糊里  494 / 1937 \f糊涂就做出了决定，没有考虑决策目标和问题的边界，没有考虑到利 益相关者的感受。或者我们很容易根据别人扔过来的框架跳入一个问 题，或者根本没有思考框架",
   "when_to_use": {

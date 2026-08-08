@@ -8,7 +8,10 @@
     "skill_name": "绿色营销",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绿色营销",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "绿色营销即供应链企业在市场调查、产品研制、产品定价、促销活动等整个 营销过程中，都以维持生态平衡，重视环保的绿色理论为指导，使企业的发展与 \f http://wiki.mbalib.com/ 消费者和社会的利益相一致。  绿色营销的主要技",
   "when_to_use": {

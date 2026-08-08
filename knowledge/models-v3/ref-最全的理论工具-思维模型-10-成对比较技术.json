@@ -8,7 +8,10 @@
     "skill_name": "成对比较技术",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):成对比较技术",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "随机选取 5 对以上的好的和坏的产品，用各种方法测试其各种参数并比较其 不同之处，以确定影响产品质量的主要原因。成对比较技术适用于不可拆卸的产 品。",
   "when_to_use": {

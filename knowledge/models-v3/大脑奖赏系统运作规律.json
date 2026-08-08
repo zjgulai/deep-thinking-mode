@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "大脑奖赏系统运作规律",
     "source": "大脑奖赏系统运作规律.md",
-    "sourceTitle": "大脑奖赏系统运作规律"
+    "sourceTitle": "大脑奖赏系统运作规律",
+    "agent_roles": [
+      "systems_thinker",
+      "prioritizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "不是两个独立的实体，而是同一个系统两种相反的表现",
   "when_to_use": {

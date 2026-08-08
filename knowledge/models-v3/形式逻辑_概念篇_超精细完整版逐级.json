@@ -6,7 +6,10 @@
     "category": "02",
     "tags": [],
     "skill_name": "形式逻辑_概念篇_超精细完整版",
-    "source": "形式逻辑_概念篇_超精细完整版（逐级细化_零漏洞_通俗落地可直接使用）.md"
+    "source": "形式逻辑_概念篇_超精细完整版（逐级细化_零漏洞_通俗落地可直接使用）.md",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "属性是概念的原材料，概念是属性的精华提纯",
   "when_to_use": {

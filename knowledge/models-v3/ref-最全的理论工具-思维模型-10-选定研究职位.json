@@ -8,7 +8,13 @@
     "skill_name": "选定研究职位",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):选定研究职位",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "价值观以及员工的理解和认可状况，使得工作的重点能够放在核心能力和和 关键职位上。一般可以通过收集分析组织结构图、战略计划执行记录或对企业高 层进行访谈的方式进行。",
   "when_to_use": {

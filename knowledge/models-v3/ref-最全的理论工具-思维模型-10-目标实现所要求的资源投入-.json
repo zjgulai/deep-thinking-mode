@@ -8,7 +8,11 @@
     "skill_name": "目标实现所要求的资源投入",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):目标实现所要求的资源投入。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "planner"
+    ]
   },
   "core_definition": "对目标树分支的选择，用于从多个项目目的中选择一种具有可",
   "when_to_use": {

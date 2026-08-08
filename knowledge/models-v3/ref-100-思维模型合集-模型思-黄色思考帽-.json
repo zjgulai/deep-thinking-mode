@@ -8,7 +8,10 @@
     "skill_name": "黄色思考帽",
     "source": "ref:100+思维模型合集 (模型思维):黄色思考帽：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "黄色代表阳光和乐观，代表事物合乎逻辑性、积极性的一面；黄色思 维追求的是利益和价值，是寻求解决问题的可能性。 A 使用时间：会议中 B 常用问题： 为什么可以做这件事情？ 优点是什么？ 利益是什么？  200 / 1937 \f这样做会带来哪",
   "when_to_use": {

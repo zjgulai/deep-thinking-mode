@@ -8,7 +8,10 @@
     "skill_name": "功能单一的产品，要把单一维度做到极致",
     "source": "ref:100+思维模型合集 (模型思维):功能单一的产品，要把单一维度做到极致。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "有知识有文化的人，传递着高智力的信号",
   "when_to_use": {

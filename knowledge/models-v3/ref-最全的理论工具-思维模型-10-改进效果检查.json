@@ -8,7 +8,11 @@
     "skill_name": "改进效果检查",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):改进效果检查",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "first_principles",
+      "hypothesis_tester"
+    ]
   },
   "core_definition": "令 B 为改进后的工序，而 C 为改进前的工序。为了验证改进效果，可以设 定风险率 a(第Ⅰ类风险)和 b(第Ⅱ类风险)，随机抽取 B 和 C 两种产品(样本量由 风险率决定)，进行假设检验，以确定在规定的风险率下，B 产品是否优于 C",
   "when_to_use": {

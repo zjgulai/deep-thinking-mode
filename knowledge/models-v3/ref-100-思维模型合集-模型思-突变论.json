@@ -8,7 +8,10 @@
     "skill_name": "突变论",
     "source": "ref:100+思维模型合集 (模型思维):突变论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1972 年数学家勒内·托姆在《结构稳定性和形态发生学》一书中,明确地 阐明了突变理论,宣告了突变理论的诞生。英国数学家奇曼将之命名为 “突变论”。 突变论认为,系统的相变,即由一种稳定态演化到另一种不同质的稳定 态,可以通过非连续的突变,",
   "when_to_use": {

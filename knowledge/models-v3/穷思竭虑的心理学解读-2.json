@@ -7,7 +7,10 @@
     "tags": [],
     "skill_name": "穷思竭虑的心理学解读",
     "source": "穷思竭虑的心理学解读 2.md",
-    "sourceTitle": "穷思竭虑的心理学解读"
+    "sourceTitle": "穷思竭虑的心理学解读",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不是普通的深思，而是一种失去弹性的思维固着，就像车轮在泥潭中空转，越陷越深",
   "when_to_use": {

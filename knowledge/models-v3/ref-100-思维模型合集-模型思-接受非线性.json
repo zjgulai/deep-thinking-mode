@@ -8,7 +8,10 @@
     "skill_name": "接受非线性",
     "source": "ref:100+思维模型合集 (模型思维):接受非线性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "复杂系统，经济、国际环境、宏观政策、行业动态、企业发展等等都",
   "when_to_use": {

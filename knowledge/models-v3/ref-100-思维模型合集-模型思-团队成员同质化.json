@@ -8,7 +8,12 @@
     "skill_name": "团队成员同质化",
     "source": "ref:100+思维模型合集 (模型思维):团队成员同质化",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "团队成员同质化是导致群体盲思的重要原因，想象一下如果一群教育 背景和经验都相似的专业人员凑到一起做决策会怎么样？考虑到共同 的背景和偏好习惯，他们会迅速陷入群体盲思陷阱并达成一致，他们  1499 / 1937 \f会搜集各种证据证明自己的决",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "需求——效益问题的吸引力在于",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):需求——效益问题的吸引力在于：",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "僵化的公式。你用固定不变的模式去销售，那当然是必败无疑；",
   "when_to_use": {

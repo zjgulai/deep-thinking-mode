@@ -8,7 +8,10 @@
     "skill_name": "自己经常觉得碍手碍脚的",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):自己经常觉得碍手碍脚的",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "圈员们列出了约 4~8 个问题点后，即可透过讨论选出一个最适当的问题，做为本 期活动题目。此时评价的角度有： （1） 是否属于本身的问题？ （2） 下工程（顾客）是否常抱怨？ （3） 上级是否要求改善（上级方针）？ （4） 迫切性高吗？ （",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "标识方法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):标识方法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "点检，即每个工位的员工每天进行定点清扫和捡壹",
   "when_to_use": {

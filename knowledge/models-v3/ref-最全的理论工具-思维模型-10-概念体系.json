@@ -8,7 +8,10 @@
     "skill_name": "概念体系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):概念体系",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "企业为了满足顾客需要而建立的一系",
   "when_to_use": {

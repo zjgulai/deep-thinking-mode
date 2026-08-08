@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "**一、大脑对失控-危险的反应",
     "source": "_无能感_产生的心理防御机制.md",
-    "sourceTitle": "“无能感”产生的心理防御机制"
+    "sourceTitle": "“无能感”产生的心理防御机制",
+    "agent_roles": [
+      "prioritizer",
+      "error_handler",
+      "pattern_recognizer",
+      "simplifier"
+    ]
   },
   "core_definition": "“无能感”产生的心理防御机制  ### **一、大脑对失控/危险的反应机制**  大脑将“失控”（如失败、被拒）直接解读为 **“生存危险”** ，并启动一套精密的应急程序：  1.  **触发：预测失灵**       *   当现实（失败、失业）与核心预期（成功、稳定）严重背离，大脑的“预测模型",
   "when_to_use": {

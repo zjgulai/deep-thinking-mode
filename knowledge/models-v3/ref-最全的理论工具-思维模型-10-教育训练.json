@@ -8,7 +8,10 @@
     "skill_name": "教育训练",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):教育训练",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）必要时可利用圈会时间安排一些教育训练，以启发或提高圈员水准 （2）可由圈员轮流作轮读 （3）可请上司、辅导员作教导，但必须事先征得同意 （4）内容可含 QC 手法、QCC 精神及意义、作法、对策提出的创造性思考法， 数据的收集，新标准",
   "when_to_use": {

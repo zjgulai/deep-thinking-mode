@@ -8,7 +8,11 @@
     "skill_name": "企业产品结构合理化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业产品结构合理化。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "为了实施大规模定制生产模式，有效地为单个客户定制产品，企业就要有一 个合理的产品结构。这种结构决定了产品将向客户提供多大的好处，以及在该范 围内所能提供的所有功能。为此，企业需要从三个方面做好工作： (1)对现有产品合理化。几乎所有产品系",
   "when_to_use": {

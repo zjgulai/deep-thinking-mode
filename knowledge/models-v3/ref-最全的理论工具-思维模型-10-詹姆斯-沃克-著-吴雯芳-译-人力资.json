@@ -8,7 +8,10 @@
     "skill_name": "詹姆斯·沃克(著)，吴雯芳(译)．人力资",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):詹姆斯·沃克(著)，吴雯芳(译)．人力资",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "出版社，2001．  17 \f http://wiki.mbalib.com/ QSPM 矩阵  --战略决策阶段的重要分析工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

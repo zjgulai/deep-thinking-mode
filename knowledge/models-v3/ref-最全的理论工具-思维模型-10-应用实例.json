@@ -8,7 +8,10 @@
     "skill_name": "应用实例",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):应用实例",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "6.1. 案例 1：基于SWOT分析法的企业竞争情报案例分析：IBM公司  运用SWOT分析IBM这一企业，必须对企业自身有一个充分的认识和了解，从实践的角度来加 深对企业竞争情报理论的理解。 1. IBM公司简介  IBM，即国际商业机器",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "需求",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):需求",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "decision_maker"
+    ]
   },
   "core_definition": "决策人就是在一个单位中对各项采购作出决定的那些人。决策人通常是高职 位者，这类人一般都不愿意在各种表格上签字，因为每签一个字就意味着承担了 更多的责任。显然，决策人关心的就是所购买的产品的安全度和可靠性。此外， 决策人通常还非常关心投入产",
   "when_to_use": {

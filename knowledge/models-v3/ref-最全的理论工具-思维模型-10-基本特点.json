@@ -8,7 +8,10 @@
     "skill_name": "基本特点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):基本特点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "综摄法作为一种创新技法，它的特点在于：由于两个或两类事物在某些方面 具有相同的或相似的特点，因此期望通过类比把某些事物的特点复现到另一类事 物上以实现创新，这种方法能在一定范围和一定程度上给人以某种新启示，这对 创造性思维是非常有裨益，但",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "质量策划的步骤为",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):质量策划的步骤为：",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "hypothesis_tester",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": " 识别顾客，包括外部和内部的  确定顾客需要  开发符合顾客要求的产品特性(产品包括商品和服务)  建立综合成本最低的既满足顾客要求，供方又能达到的质量目标  开发能满足产品目标的过程  验证过程能力——证实该过程在作业条件下能",
   "when_to_use": {

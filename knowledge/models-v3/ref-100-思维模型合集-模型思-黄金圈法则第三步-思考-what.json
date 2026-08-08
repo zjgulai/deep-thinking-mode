@@ -8,7 +8,10 @@
     "skill_name": "黄金圈法则第三步，思考-what",
     "source": "ref:100+思维模型合集 (模型思维):黄金圈法则第三步，思考 What",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在 Why 和 How 考虑清楚之后，最外的圈层就是 What。从企业的角度，  910 / 1937 \f最终连接客户的一定是产品或者服务，这个产品或者服务就是传承企 业理念和思想的载体。产品和服务好不好？取决于 Why 和 How，每一",
   "when_to_use": {

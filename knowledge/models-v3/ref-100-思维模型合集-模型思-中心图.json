@@ -8,7 +8,11 @@
     "skill_name": "中心图",
     "source": "ref:100+思维模型合集 (模型思维):中心图",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "上千个词汇”。它可以让你充分发挥想象力。一幅代表中心思想的图画 越生动有趣，就越能使你集中注意力，集中思想，让你的大脑更加兴 奋！",
   "when_to_use": {

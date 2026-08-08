@@ -8,7 +8,10 @@
     "skill_name": "决策标准",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):决策标准",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "净现值指标是折现的绝对值正指标。投资决策评价标准如下： （1）、如果投资方案的净现值在于或等于零，即 NPV>0,则该方案可行； （2）、如果投资方案的净现值小于零，即 NPV 0；方案可行。 若该企业建设期为1年（如下图所示：） 其项目",
   "when_to_use": {

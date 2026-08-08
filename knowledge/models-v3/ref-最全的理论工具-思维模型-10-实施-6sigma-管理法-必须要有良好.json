@@ -8,7 +8,11 @@
     "skill_name": "实施-6sigma-管理法，必须要有良好",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施 6SIGMA 管理法，必须要有良好",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "观念、员工质素、过程和检测能力 数理统计分析工具、信息技术、思维方法、团队精神、解决问题的途径、工具和 框架以及企业文化等等，是企业一项重大系统工程。因此没有一定企业整体素质 和能力，是难以执行的。摩",
   "when_to_use": {

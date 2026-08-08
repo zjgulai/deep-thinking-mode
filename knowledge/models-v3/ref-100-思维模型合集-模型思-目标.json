@@ -8,7 +8,11 @@
     "skill_name": "目标",
     "source": "ref:100+思维模型合集 (模型思维):目标",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "企业的愿景必须转化为短期可实现的目标。企业没有目标就无法管理， 这就如同一个人如果不知道目的地，就无法去旅行。管理就是管理一 系列精心制定的目标。 德鲁克认为企业需要设定八大领域的目标，分别是市场营销、创新、 人力资源、财务资源、实物资源、",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "制造定制化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):制造定制化",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decomposer"
+    ]
   },
   "core_definition": "接到客户定单后,在已有的零部件、模块的基础上进行二次",
   "when_to_use": {

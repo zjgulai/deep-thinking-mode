@@ -8,7 +8,11 @@
     "skill_name": "适可而止",
     "source": "ref:100+思维模型合集 (模型思维):适可而止",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "没有十全十美的方案，这是事实。任何一个方案都有它的优势和劣势。 要懂得适可而止，无休止的寻找新的方案，会浪费大量的时间、精力 和情绪。你要知道什么时候你应该停下来。 王刚夫妇通过 3 个月搜寻，从 50 多所学校中筛选出五所学校，两所公 立",
   "when_to_use": {

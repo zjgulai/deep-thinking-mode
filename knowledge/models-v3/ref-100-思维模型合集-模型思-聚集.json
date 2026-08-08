@@ -8,7 +8,11 @@
     "skill_name": "聚集",
     "source": "ref:100+思维模型合集 (模型思维):聚集",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "个体具有聚集的特性，它们可以在一定条件下，在双方彼此接受时， 组成一个新的个体——聚集体，在系统中象一个单独的个体那样行动。  404 / 1937 \f例如：股票市场中，有散户聚集形成的散户群，有大户聚集的大户群， 有代表国家意志的主权基金",
   "when_to_use": {

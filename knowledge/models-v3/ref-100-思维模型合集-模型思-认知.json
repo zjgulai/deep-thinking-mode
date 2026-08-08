@@ -8,7 +8,10 @@
     "skill_name": "认知",
     "source": "ref:100+思维模型合集 (模型思维):认知",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人对世界的认识，通过个体经验和学习获得",
   "when_to_use": {

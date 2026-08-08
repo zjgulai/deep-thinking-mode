@@ -8,7 +8,10 @@
     "skill_name": "要加大对-qcc-活动的财政投入，加大对",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):要加大对 QCC 活动的财政投入，加大对",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "QCC 活动的成果如果能给企业带来效益，而企业领导者又能给参与 QCC 活 动的人员给予精神、物质奖励，必定能调动员工的劳动热情和积极性，形成更良 性的循环，创造出更高质量的成果。加大对 QCC 先进设备的添置，改善工作环 境，增加技术智",
   "when_to_use": {

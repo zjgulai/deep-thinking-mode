@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "爱因斯坦式提问",
     "source": "爱因斯坦式提问_5步重新定义问题_告别无效解决.md",
-    "sourceTitle": "爱因斯坦式提问：5步重新定义问题，告别无效解决"
+    "sourceTitle": "爱因斯坦式提问：5步重新定义问题，告别无效解决",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "不是“如何更快解决问题”，而是追问：“我们正在解决的问题，真的是正确的问题吗？”，这也是5步方法的核心出发点",
   "when_to_use": {

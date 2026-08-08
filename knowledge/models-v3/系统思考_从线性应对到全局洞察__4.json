@@ -6,7 +6,10 @@
     "category": "05",
     "tags": [],
     "skill_name": "系统思考_从线性应对到全局洞察_4",
-    "source": "系统思考_从线性应对到全局洞察__4个维度_5个方法.md"
+    "source": "系统思考_从线性应对到全局洞察__4个维度_5个方法.md",
+    "agent_roles": [
+      "problem_framer"
+    ]
   },
   "core_definition": "构建框架，而智慧的本质是看见系统",
   "when_to_use": {

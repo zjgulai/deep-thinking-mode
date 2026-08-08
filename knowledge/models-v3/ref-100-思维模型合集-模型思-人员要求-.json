@@ -8,7 +8,10 @@
     "skill_name": "人员要求",
     "source": "ref:100+思维模型合集 (模型思维):人员要求：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一般情况下要超过 12 个人以上参加，人数太少不能够搜集更多不同的 思想，确定参加人员的专业性和多样性。要关注那些会提出独特视角 的参与者。跨专业跨学科人才能够带来多样化的思维，多样化的思维 可以孕育出丰富的见解和发现。",
   "when_to_use": {

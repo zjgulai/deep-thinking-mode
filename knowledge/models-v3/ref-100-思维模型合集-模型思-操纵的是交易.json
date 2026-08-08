@@ -8,7 +8,10 @@
     "skill_name": "操纵的是交易",
     "source": "ref:100+思维模型合集 (模型思维):操纵的是交易",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "贬义词，一个产品如果要想得到顾客的青睐，我们一般",
   "when_to_use": {

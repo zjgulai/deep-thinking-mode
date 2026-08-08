@@ -8,7 +8,10 @@
     "skill_name": "运动智能的培养",
     "source": "ref:100+思维模型合集 (模型思维):运动智能的培养",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "①多参与各种体育活动，例如篮球、足球、舞蹈、武术等 ②培养自己的一个兴趣和特长，养成运动的习惯。  782 / 1937 \f3、运动智能的测评 六、人际智能",
   "when_to_use": {

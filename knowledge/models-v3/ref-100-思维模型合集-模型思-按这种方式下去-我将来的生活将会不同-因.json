@@ -8,7 +8,12 @@
     "skill_name": "按这种方式下去，我将来的生活将会不同，因",
     "source": "ref:100+思维模型合集 (模型思维):按这种方式下去，我将来的生活将会不同，因",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "multi_perspective",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的思维中运用这些策略…………  1649 / 1937 \f4.我正通过以下方式来汇总我从批判性思维中 学到的观念………",
   "when_to_use": {

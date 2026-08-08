@@ -8,7 +8,10 @@
     "skill_name": "普通工作小组。这些小组由一些承担工作任务",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):普通工作小组。这些小组由一些承担工作任务",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "管理哲学。TQM 的实施方法需要在实践中不断摸索，而且 TQM 的实施是一种",
   "when_to_use": {

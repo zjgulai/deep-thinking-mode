@@ -8,7 +8,13 @@
     "skill_name": "操作检查表",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):操作检查表。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "problem_framer",
+      "planner",
+      "action_executor",
+      "observer_reflector"
+    ]
   },
   "core_definition": "3.5.3. 使用步骤 该工具的设计、使用程序包括六个步骤： 第一步，决定观察什么，建立作业定义。 \f http://wiki.mbalib.com/ 第二步，决定什么时候收集数据，以及收集多长时间。 第三步，设计表格。设计表格时，要使数据",
   "when_to_use": {

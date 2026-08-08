@@ -8,7 +8,10 @@
     "skill_name": "评价手段和措施，决定取舍",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):评价手段和措施，决定取舍",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "对找出的手段、措施是否得当进行评价，并进行取舍选择，决定下一步应保 留和淘汰的东西。评价中可用一些符号来表示评价的结果。如 x 代表不可行，O 表示可行等。",
   "when_to_use": {

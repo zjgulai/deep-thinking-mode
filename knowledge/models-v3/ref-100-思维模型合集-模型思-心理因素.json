@@ -8,7 +8,13 @@
     "skill_name": "心理因素",
     "source": "ref:100+思维模型合集 (模型思维):心理因素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "communicator",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "决策者的责任、人格、信仰、情绪和情感、认知都和承诺升级有着密 切的关系。决策者能力越强、个体责任感越强，越要面子，当项目收 到消极反馈时越倾向于升级承诺。决策者能力越强越容易过度自信， 越乐观，产生控制幻觉，越容易陷入承诺升级。在项目的早期",
   "when_to_use": {

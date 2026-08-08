@@ -8,7 +8,10 @@
     "skill_name": "效率",
     "source": "ref:100+思维模型合集 (模型思维):效率",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "要素。手持棍棒在飞机大炮面前 将不堪一击。不管是企业还是个人，如果没有先进的工具和方法。将 很难提高工作效率。例如华为于 1987 年成立，到 1997 年已经度过了 十个年头，员工人数在这一年突破了",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "在团队可控范围之内",
     "source": "ref:100+思维模型合集 (模型思维):在团队可控范围之内",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "层级内是可控的。如果自己的 OKR 需要别的部门配合，你一定要保证 在自己的掌控范围之内。",
   "when_to_use": {

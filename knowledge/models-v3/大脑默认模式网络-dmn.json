@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "一、-核心身份",
     "source": "大脑默认模式网络_DMN.md",
-    "sourceTitle": "大脑默认模式网络 DMN"
+    "sourceTitle": "大脑默认模式网络 DMN",
+    "agent_roles": [
+      "prioritizer",
+      "pattern_recognizer",
+      "simplifier",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "不是“闲置网络”，而是“内部工作网络”\n\n传统上，DMN被称为“默认模式”，意为当大脑无外部任务时自动进入的**基线状态**",
   "when_to_use": {

@@ -6,7 +6,13 @@
     "category": "04",
     "tags": [],
     "skill_name": "苏格拉底式提问-#框架思维-#思维框",
-    "source": "苏格拉底式提问实操指南_层层追问.md"
+    "source": "苏格拉底式提问实操指南_层层追问.md",
+    "agent_roles": [
+      "intent_clarifier",
+      "hypothesis_tester",
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "拆解未经验证的默认前提、寻找反例，打破认知惯性",
   "when_to_use": {

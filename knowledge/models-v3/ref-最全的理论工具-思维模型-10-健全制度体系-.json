@@ -8,7 +8,10 @@
     "skill_name": "健全制度体系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):健全制度体系。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "就是要制订和不断完善推进 TPM 管理的各项规章制度、标准和管理办法， 形成规范化的文件系统，使推进 TPM 管理的各项活动和各个环节有 章可循、有 法可依。如对设备的清洁、点检、润滑、保养等工作，尽管简单，也要研究制订 相应的标准，这样",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "占领顾客心智",
     "source": "ref:100+思维模型合集 (模型思维):占领顾客心智",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "特劳特认为在产品稀缺时代，企业的经营中心在工厂，只要提高工作 效率就可赚取利润。 在产品丰富时代，企业的经营中心在市场，只要广告和渠道做到好， 就可以赚取利润。在产品过剩时代，竞争白热化，产品同质化严重， 从功能到外观，都不相上下，顾客选择",
   "when_to_use": {

@@ -13,7 +13,13 @@
     ],
     "skill_name": "怎么跳出人际内耗_三层视角跃迁",
     "source": "怎么跳出人际内耗_三层视角跃迁速查卡.md",
-    "sourceTitle": "怎么跳出人际内耗_三层视角跃迁速查卡"
+    "sourceTitle": "怎么跳出人际内耗_三层视角跃迁速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "大多数人际内耗，根源都是我们始终以自我为中心，做人生剧情里唯一的主角",
   "when_to_use": {

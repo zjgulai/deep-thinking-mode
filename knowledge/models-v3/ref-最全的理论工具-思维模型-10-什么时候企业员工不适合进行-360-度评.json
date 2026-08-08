@@ -8,7 +8,10 @@
     "skill_name": "什么时候企业员工不适合进行-360-度评",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):什么时候企业员工不适合进行 360 度评",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "。  (一)明确考评目的。当考评目的主要",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "与一般战略的关系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):与一般战略的关系",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "三大一般性战略  竞争战略的第二个中心问题是：企业在产业中的相对位置。竞争位置会决定 企业的获利能力是高出还是低于产业的平均水平。即使在产业结构不佳，平均获 利水平差的产业中，竞争位置较好的企业，仍能获得较高的投资回报。 \f http:/",
   "when_to_use": {

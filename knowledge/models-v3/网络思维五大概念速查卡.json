@@ -13,7 +13,13 @@
     ],
     "skill_name": "网络思维五大概念",
     "source": "网络思维五大概念速查卡.md",
-    "sourceTitle": "网络思维五大概念速查卡"
+    "sourceTitle": "网络思维五大概念速查卡",
+    "agent_roles": [
+      "logical_analyzer",
+      "planner",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "减肥破功、职场隐形、家庭内耗——不是意志力差，是你被圈层网络锁死了",
   "when_to_use": {

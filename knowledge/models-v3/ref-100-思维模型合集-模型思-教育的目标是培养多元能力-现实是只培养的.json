@@ -8,7 +8,12 @@
     "skill_name": "教育的目标是培养多元能力。现实是只培养的",
     "source": "ref:100+思维模型合集 (模型思维):教育的目标是培养多元能力。现实是只培养的",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一点，我们需要深刻的反思，刷题的能力强，分数高，似乎是择优， 事实是，进入社会后，我们已对被“啪-啪-啪”打脸，“高分低能”的现象 层出不穷，我们需要痛定思痛，回归到培养多元能力的“初心”上。 四、多元智能与成人学习的思考 到了社会上，成年",
   "when_to_use": {

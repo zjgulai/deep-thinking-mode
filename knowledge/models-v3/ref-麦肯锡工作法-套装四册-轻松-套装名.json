@@ -8,7 +8,10 @@
     "skill_name": "套装名",
     "source": "ref:麦肯锡工作法（套装四册）（轻松职场系列） (高杉尚伊  齐藤显一  竹内里子  :套装名",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡工作法（套装四册）（轻松职场系列） (高杉尚伊  齐藤显一  竹内里子  "
+    "sourceTitle": "麦肯锡工作法（套装四册）（轻松职场系列） (高杉尚伊  齐藤显一  竹内里子  ",
+    "agent_roles": [
+      "hypothesis_tester"
+    ]
   },
   "core_definition": "最基本的分析方法，原本毫无意义、独立的一个个数字，按时间顺序排列以后，可以使人理解其中呈现出的变化趋势",
   "when_to_use": {

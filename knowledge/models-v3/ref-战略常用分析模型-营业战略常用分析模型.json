@@ -8,7 +8,10 @@
     "skill_name": "营业战略常用分析模型",
     "source": "ref:战略常用分析模型:营业战略常用分析模型",
     "sourceType": "book",
-    "sourceTitle": "战略常用分析模型"
+    "sourceTitle": "战略常用分析模型",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "0 \fPORTER 模型  宏观经济 技术  新入竞争者  行业竞争  供应商 客户  替代产品  需求 政府法规  1 \fPORTER 外在因素的影响  • 重大技术突破  技术 • 变化因素:  – GDP • 限制进入  – 就业率",
   "when_to_use": {

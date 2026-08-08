@@ -8,7 +8,10 @@
     "skill_name": "人生成功",
     "source": "ref:100+思维模型合集 (模型思维):人生成功",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1239 / 1937 \f（1）成功能否世袭？ 高尔顿 22 岁那年父亲去世，高尔顿获得了一笔巨额遗产。他开始放弃 工作，决定过一种无拘无束的学者生活。同时高尔顿开始研究和证实 自己的“天赋世袭”理论，也就是所谓“龙生龙凤生凤，老鼠生儿会",
   "when_to_use": {

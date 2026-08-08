@@ -8,7 +8,10 @@
     "skill_name": "对报表项目进行调整",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):对报表项目进行调整",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "作用，而把它与一般的期间费用等同起来。这种处理方法的一个 重要缺点就是可能会诱使管理层减少对这两项费用的投入，这在效益不好的年份 和管理人员即将退休的前几年尤为明显。在股东和管理层看来，研究发展费用是",
   "when_to_use": {

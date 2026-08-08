@@ -8,7 +8,10 @@
     "skill_name": "同业竞争者的竞争程度",
     "source": "ref:营销管理143个经典模型:同业竞争者的竞争程度",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "理论思考工具，而非可以实际操作的战略工具",
   "when_to_use": {

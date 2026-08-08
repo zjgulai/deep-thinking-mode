@@ -8,7 +8,10 @@
     "skill_name": "确定各因素的权重",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定各因素的权重",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  可以采用专家意见法、德尔菲法等方法，确立各影响因素的权重。对影响 S 市场吸引力的因素和影响建筑企业 Q 在 S 市场上竞争实力的因素分别分配权重： a1，a2，.....b1，b2，.",
   "when_to_use": {

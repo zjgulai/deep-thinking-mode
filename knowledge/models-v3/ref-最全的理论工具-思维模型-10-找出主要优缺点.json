@@ -8,7 +8,10 @@
     "skill_name": "找出主要优缺点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):找出主要优缺点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如果现行的做法或产品经过七个问题的审核已无懈可击，便可认为这一做法 或产品可取。如果七个问题中有一个答复不能令人满意，则表示这方面有改进余 地。如果哪方面的答复有独创的优点，则可以扩大产品这方面的效用。",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "谨慎、小心",
     "source": "ref:100+思维模型合集 (模型思维):谨慎、小心",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "一种情绪优势，它超越了你，而将你与更宏大更永久",
   "when_to_use": {

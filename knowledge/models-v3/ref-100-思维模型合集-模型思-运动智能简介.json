@@ -8,7 +8,11 @@
     "skill_name": "运动智能简介",
     "source": "ref:100+思维模型合集 (模型思维):运动智能简介",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "善于运用整个身体来表达思想和情感、灵巧地运用双手制作或操",
   "when_to_use": {

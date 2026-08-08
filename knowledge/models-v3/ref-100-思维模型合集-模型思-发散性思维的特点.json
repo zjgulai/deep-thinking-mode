@@ -8,7 +8,12 @@
     "skill_name": "发散性思维的特点",
     "source": "ref:100+思维模型合集 (模型思维):发散性思维的特点",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "multi_perspective",
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在观察问题、分析问题时可采用多角度、多层次、",
   "when_to_use": {

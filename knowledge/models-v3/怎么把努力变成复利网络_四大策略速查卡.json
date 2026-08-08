@@ -13,7 +13,13 @@
     ],
     "skill_name": "怎么把努力变成复利网络_四大策略",
     "source": "怎么把努力变成复利网络_四大策略速查卡.md",
-    "sourceTitle": "怎么把努力变成复利网络_四大策略速查卡"
+    "sourceTitle": "怎么把努力变成复利网络_四大策略速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "四大网络思维成长策略，把“连接比单点努力更重要”变成可落地的操作清单",
   "when_to_use": {

@@ -13,7 +13,11 @@
     ],
     "skill_name": "10种知识整合方式",
     "source": "10种知识整合方式速查卡.md",
-    "sourceTitle": "10种知识整合方式速查卡"
+    "sourceTitle": "10种知识整合方式速查卡",
+    "agent_roles": [
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "信息爆炸的时代，我们每天接触大量碎片化知识——读过的文章、听过的课程、刷到的观点，散落各处",
   "when_to_use": {

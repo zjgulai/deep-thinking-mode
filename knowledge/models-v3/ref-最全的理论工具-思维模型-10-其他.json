@@ -8,7 +8,10 @@
     "skill_name": "其他",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):其他",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一）、如何选定题目  题目的选定最好是经过全体圈员讨论决定，自己圈讨论出来的题目，活动起 来比较有乐趣、有干劲，若由上级主管指定，则圈员们会有被逼之感而产生排斥， \f http://wiki.mbalib.com/ 虽是圈自行讨论决定，但也",
   "when_to_use": {

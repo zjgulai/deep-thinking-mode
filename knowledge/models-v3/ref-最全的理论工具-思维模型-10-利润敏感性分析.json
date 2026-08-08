@@ -8,7 +8,10 @@
     "skill_name": "利润敏感性分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):利润敏感性分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "所谓敏感性分析就是研究与某一变量相关的因家发生变动时对该变量的影 响程度，也称为“如果……就怎么”分析。在现实经济环境中，就企业内部来说， 影响利润的因素主要包括销售价格、单位变动成本、销售量和固定成本．这些因 素经常会发生变动，因而导致",
   "when_to_use": {

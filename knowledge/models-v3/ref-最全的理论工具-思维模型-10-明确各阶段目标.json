@@ -8,7 +8,10 @@
     "skill_name": "明确各阶段目标",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):明确各阶段目标",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "正确把握目前的水准，以最佳状态作为决定的目标来开展活动，最好是以零 缺陷为目标，各阶段的目标要能够体现阶梯式上升的差异性。 \f http://wiki.mbalib.com/",
   "when_to_use": {

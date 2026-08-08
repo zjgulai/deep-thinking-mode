@@ -8,7 +8,11 @@
     "skill_name": "宽带内横向职位轮换",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):宽带内横向职位轮换",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "multi_perspective",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "同一薪酬带的部门之间存在着薪酬差异，员工无需提升职位，而通过职位转 换就能提高薪酬。在同一薪酬带中鼓励不同职能部门的员工跨部门流动，这样， 有利于增强员工对组织的适应性，提高员工多角度思考问题的能力，进而提高员 工的综合素质，增加横向流动",
   "when_to_use": {

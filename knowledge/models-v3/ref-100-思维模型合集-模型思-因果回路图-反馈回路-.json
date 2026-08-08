@@ -8,7 +8,13 @@
     "skill_name": "因果回路图（反馈回路）",
     "source": "ref:100+思维模型合集 (模型思维):因果回路图（反馈回路）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "systems_thinker",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "系统输出与来自外部环境的输入的关系",
   "when_to_use": {

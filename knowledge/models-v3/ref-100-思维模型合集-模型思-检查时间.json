@@ -8,7 +8,10 @@
     "skill_name": "检查时间",
     "source": "ref:100+思维模型合集 (模型思维):检查时间",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "检查一般分为日检查和周检查。每天抽出 10 分钟时间，对自己一天的 工作进行检查和回顾，了解自己任务的完成情况。 每周五的下午最好抽出 1 小时左右的时间，对自己一周的情况进行回 顾。 为什么周五的检查回顾非常重要，主要是因为： 第一、对于",
   "when_to_use": {

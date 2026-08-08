@@ -8,7 +8,11 @@
     "skill_name": "好奇心、对世界的兴趣",
     "source": "ref:100+思维模型合集 (模型思维):好奇心、对世界的兴趣",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "好奇心使我们对不符合预想的事物产生尝试的兴趣。好奇的人不会容 忍模棱两可的情境，他们会去追求真相。好奇心可以是很特定的（如 只对玫瑰花），也可以是很广泛的（对每一件事都睁大眼睛去观察）。 好奇心驱使我们主动地追随新奇的事物，而不是被动地吸收",
   "when_to_use": {

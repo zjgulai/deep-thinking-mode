@@ -8,7 +8,11 @@
     "skill_name": "风险不可控事件",
     "source": "ref:100+思维模型合集 (模型思维):风险不可控事件：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "error_handler"
+    ]
   },
   "core_definition": "未来不确定性的时代，竞争异常激烈，我们每个",
   "when_to_use": {

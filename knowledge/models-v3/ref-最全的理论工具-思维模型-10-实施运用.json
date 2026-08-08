@@ -8,7 +8,11 @@
     "skill_name": "实施运用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施运用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "problem_framer",
+      "action_executor"
+    ]
   },
   "core_definition": "，但又难以衡量， 因此，对工作质量建立指标进行控制特别重要。第三，可操作性。KPI 必须从技 术上保证指标的可操作性，对每一指标都必须给予明确的定义，建立完善的信息 收集渠道。同时，应当简单明了，容易",
   "when_to_use": {

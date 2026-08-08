@@ -8,7 +8,13 @@
     "skill_name": "对关键成功要素分解",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):对关键成功要素分解",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "实施公司组织机构变革的成功要素分解 (1)完成组织机构调整和岗位优化。 (2)建立有效的风险控制和财务管理体系。 \f http://wiki.mbalib.com/ (3)建立公开、公平的绩效管理体系。 (4)建立完善的员工发展体系。 (5",
   "when_to_use": {

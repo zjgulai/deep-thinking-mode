@@ -6,7 +6,10 @@
     "category": "04",
     "tags": [],
     "skill_name": "思维工具箱_16个被反复验证的底层认",
-    "source": "思维工具箱_16个被反复验证的底层认知模型.md"
+    "source": "思维工具箱_16个被反复验证的底层认知模型.md",
+    "agent_roles": [
+      "hypothesis_tester"
+    ]
   },
   "core_definition": "记住：框架是认知的脚手架，让你不再面对混乱束手无策",
   "when_to_use": {

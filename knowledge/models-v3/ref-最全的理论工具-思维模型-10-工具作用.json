@@ -8,7 +8,11 @@
     "skill_name": "工具作用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具作用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "要解决职位与人之间的动态匹配关系。这也衍生出了基于 职位的人力资源管理与基于胜任素质模型的人力资源管理两条思路。前者是人力 资源管理的传统路径，到目前为止己经形成了较为完整的方法与流程，包括信息 收集",
   "when_to_use": {

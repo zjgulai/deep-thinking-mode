@@ -8,7 +8,10 @@
     "skill_name": "可能丧失部分客户。如果采用成本领先战略的",
     "source": "ref:营销管理143个经典模型:可能丧失部分客户。如果采用成本领先战略的",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "略的厂家的产品价格差距拉得很大，在这种情况下，用户为了大量节省费用，放弃取得差异的厂 家所拥有的产品特征、服务或形象，转而选择物美价廉的产品；",
   "when_to_use": {

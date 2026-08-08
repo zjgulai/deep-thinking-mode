@@ -6,7 +6,13 @@
     "category": "10",
     "tags": [],
     "skill_name": "**🔄-模式一",
-    "source": "内耗管理系统___诊断与工具模块.md"
+    "source": "内耗管理系统___诊断与工具模块.md",
+    "agent_roles": [
+      "decomposer",
+      "prioritizer",
+      "action_executor",
+      "error_handler"
+    ]
   },
   "core_definition": "内耗管理系统 · 诊断与工具模块  你是否有过这样的体验：   同样的截止日期，同事在高效推进，你却陷入“我能不能行”的自我怀疑；   同样的错误，别人快速调整，你的大脑却反复重播“我真糟糕”的片段。  **这不是意志力或性格问题，而是你的“认知-行为操作系统”在关键时刻切换到了错误的默认模式——我",
   "when_to_use": {

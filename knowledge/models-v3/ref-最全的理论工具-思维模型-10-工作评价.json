@@ -8,7 +8,10 @@
     "skill_name": "工作评价",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工作评价",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "工作内容和工作环境的稳定程度；程序性是指工作遵循某些规程的程",
   "when_to_use": {

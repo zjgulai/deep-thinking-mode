@@ -8,7 +8,10 @@
     "skill_name": "问题点的种类",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):问题点的种类",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "(1)日常的问题：与基准、规则、标准有差异而发生的问题，例如不良状况、机 械故障等日常发生的问题点。 (2)寻找的问题：稍有问题的症状，根据这些症状，可找出真正的问题点。 (3)提出的问题：现状是否顺利，提出有无浪费、勉强、不均等怀疑，追求",
   "when_to_use": {

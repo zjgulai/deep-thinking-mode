@@ -8,7 +8,10 @@
     "skill_name": "邵晓峰，黄培清，季建华．21-世纪的主流",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):邵晓峰，黄培清，季建华．21 世纪的主流",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 朱兰三步曲  —质量战略思想和管理的有力武器 \f http://wiki.mbalib.com/",
   "when_to_use": {

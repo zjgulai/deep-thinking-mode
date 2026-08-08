@@ -8,7 +8,10 @@
     "skill_name": "生命-3.0",
     "source": "ref:100+思维模型合集 (模型思维):生命 3.0",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "[美]迈克斯·泰格马克 浙江教育出版社  联脑学习-信息时代学习加速器 原创四川院长：马坤模型思维 2021-01-02 09:30 最好的总会在不经意间出现。 作为职场生力军的你是几零后？80 后的人觉得自己是最悲催的一代， 90 后也觉",
   "when_to_use": {

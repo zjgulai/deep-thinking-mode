@@ -8,7 +8,11 @@
     "skill_name": "如何提高-360-度评估的效度",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):如何提高 360 度评估的效度?",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "observer_reflector"
+    ]
   },
   "core_definition": "传统的评估方法应用心理试验来测试一些直接观察不到的东西,如:价值观、 工作态度、办事风格、个人特性等。360 度评估法主要评估一些具体的、可观察 的行为。而评估方法的选择对于评估结果的效度影响很大。  为了提高评估效度，需要注意以下问题：",
   "when_to_use": {

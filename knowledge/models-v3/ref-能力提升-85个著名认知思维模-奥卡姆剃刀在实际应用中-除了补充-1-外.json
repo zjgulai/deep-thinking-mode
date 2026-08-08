@@ -8,7 +8,12 @@
     "skill_name": "奥卡姆剃刀在实际应用中,除了补充-1-外",
     "source": "ref:能力提升-85个著名认知思维模型:奥卡姆剃刀在实际应用中,除了补充 1 外",
     "sourceType": "book",
-    "sourceTitle": "能力提升-85个著名认知思维模型"
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "agent_roles": [
+      "intent_clarifier",
+      "decomposer",
+      "simplifier"
+    ]
   },
   "core_definition": "一些人和事物在面对冲击时,不但能够不受损",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "小世界网络",
     "source": "ref:100+思维模型合集 (模型思维):小世界网络",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在网络中，同一个顶点的邻点之间有更大的概率",
   "when_to_use": {

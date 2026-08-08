@@ -8,7 +8,11 @@
     "skill_name": "从信息中归纳整理出来的知识中，对“我”无",
     "source": "ref:100+思维模型合集 (模型思维):从信息中归纳整理出来的知识中，对“我”无",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“我”太多的时间和精力。 我们把真的信息归纳整理后获得知识，知识是反映客观世界的概念、 原理和理论。 有用的知识和无用的知识怎么区分？有没有用是相对的，这里需要有  1535 / 1937 \f一个主体——我。在这里，把能提升我自己当下某些能",
   "when_to_use": {

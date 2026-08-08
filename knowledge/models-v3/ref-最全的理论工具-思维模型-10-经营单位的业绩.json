@@ -8,7 +8,10 @@
     "skill_name": "经营单位的业绩",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):经营单位的业绩",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "systems_thinker"
+    ]
   },
   "core_definition": "2.7. 主要结论  PIMS 研究人员运用多变量回归的方法对 2000 多个经营单位建立起上述战 略因素与经营绩效的关系。通过分析发现，下面几个战略因素对投资收益率和现 金流量有较大影响。如何运用这些重要的战略因素在 8O%的程度上决定了",
   "when_to_use": {

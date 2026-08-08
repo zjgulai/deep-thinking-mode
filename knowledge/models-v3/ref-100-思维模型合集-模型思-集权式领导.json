@@ -8,7 +8,10 @@
     "skill_name": "集权式领导",
     "source": "ref:100+思维模型合集 (模型思维):集权式领导",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“权力光晕效应”，在这种光晕之下，下级",
   "when_to_use": {

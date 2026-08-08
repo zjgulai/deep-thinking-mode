@@ -8,7 +8,10 @@
     "skill_name": "波特五力分析与专利情报收集",
     "source": "ref:营销管理143个经典模型:波特五力分析与专利情报收集",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "绝对指标，并不能反映企业使用资产的",
   "when_to_use": {

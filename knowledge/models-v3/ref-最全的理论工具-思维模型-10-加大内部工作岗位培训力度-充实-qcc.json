@@ -8,7 +8,10 @@
     "skill_name": "加大内部工作岗位培训力度，充实-qcc",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):加大内部工作岗位培训力度，充实 QCC",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "我们常说的“质量兴业”实质就是“人才兴业”，产品的质量就标志着企业 员工的素质，像我们这种服务性行业更甚，因此员工的岗位再教育是现代做作业 必不可少的有机组成部分，也是提高 QCC 质量的保证。邓小平曾说过：  “忽视教 育的领导者，是缺",
   "when_to_use": {

@@ -13,7 +13,13 @@
     ],
     "skill_name": "20小时入门",
     "source": "20小时入门速查卡.md",
-    "sourceTitle": "20小时入门速查卡"
+    "sourceTitle": "20小时入门速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "想学新技能却总被一万小时定律吓退",
   "when_to_use": {

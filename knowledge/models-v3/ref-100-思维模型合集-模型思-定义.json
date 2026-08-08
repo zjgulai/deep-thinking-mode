@@ -8,7 +8,12 @@
     "skill_name": "定义",
     "source": "ref:100+思维模型合集 (模型思维):定义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "causal_reasoner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "通过分析事件发展的前后因果关系、内部一",
   "when_to_use": {

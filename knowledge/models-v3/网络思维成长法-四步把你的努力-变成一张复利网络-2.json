@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "网络思维成长法",
     "source": "网络思维成长法_四步把你的努力_变成一张复利网络 2.md",
-    "sourceTitle": "网络思维成长法：四步把你的努力，变成一张复利网络"
+    "sourceTitle": "网络思维成长法：四步把你的努力，变成一张复利网络",
+    "agent_roles": [
+      "systems_thinker",
+      "planner",
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "没有个人标志性成果，只是网络中不起眼的普通节点，无法吸引资源靠拢",
   "when_to_use": {

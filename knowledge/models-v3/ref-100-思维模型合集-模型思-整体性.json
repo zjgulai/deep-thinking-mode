@@ -8,7 +8,10 @@
     "skill_name": "整体性",
     "source": "ref:100+思维模型合集 (模型思维):整体性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在量子物理学里，每一个“量子位”即是粒子也是波，整个宇宙由这些相 互作用，互相叠加的动态能量组成，纵横交错，互相干扰，没有任何 一个“量子位”可以被抽离出来，它们是一个整体。量子思维就是要从整 体上思考问题，并且要注重与周围环境的互动。在组",
   "when_to_use": {

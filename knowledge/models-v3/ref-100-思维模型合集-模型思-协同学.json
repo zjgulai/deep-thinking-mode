@@ -8,7 +8,11 @@
     "skill_name": "协同学",
     "source": "ref:100+思维模型合集 (模型思维):协同学",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "协同学主要研究开放系统在一定条件下如何自发的产生协同有序结构 及其功能和行为的理论,研究系统在外部参量的驱动下和在子系统之间 相互作用下,以自组织的方式形成有序结构的条件、特点及其演化规律。 系统的状态可以由一组状态参量,即序参量来描述。序",
   "when_to_use": {

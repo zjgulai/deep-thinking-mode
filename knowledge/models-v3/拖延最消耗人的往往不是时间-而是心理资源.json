@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "**1-.-内疚与自我否定",
     "source": "拖延最消耗人的往往不是时间_而是心理资源.md",
-    "sourceTitle": "拖延最消耗人的往往不是时间，而是心理资源"
+    "sourceTitle": "拖延最消耗人的往往不是时间，而是心理资源",
+    "agent_roles": [
+      "planner",
+      "error_handler",
+      "pattern_recognizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "不是一个单一事件，而是一个不断自我强化的循环：\n\n*   **循环起点：任务出现** → 因恐惧、厌恶等情绪而逃避",
   "when_to_use": {

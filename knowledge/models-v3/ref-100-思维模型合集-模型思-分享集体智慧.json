@@ -8,7 +8,11 @@
     "skill_name": "分享集体智慧",
     "source": "ref:100+思维模型合集 (模型思维):分享集体智慧",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "大家共同反思的机会。留给大家几分钟沉默的时间来",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "自我管理（管理自我的情绪）",
     "source": "ref:100+思维模型合集 (模型思维):自我管理（管理自我的情绪）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "超自然的力量，如果你对宗教很虔诚，",
   "when_to_use": {

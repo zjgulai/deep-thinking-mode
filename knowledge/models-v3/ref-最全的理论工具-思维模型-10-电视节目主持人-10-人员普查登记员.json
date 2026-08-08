@@ -8,7 +8,10 @@
     "skill_name": "电视节目主持人-10、-人员普查登记员",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):电视节目主持人 10、 人员普查登记员",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 第五部份 您的能力类型简评 下面两张表是您在 6 个职业能力方面的自我评定表。您可先与同龄人比较出自己在每一方面 的能力，然后斟酌后对自己的能力作评估。请在表中适当的数字上画圈，数值越大表",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "做社区志愿者",
     "source": "ref:100+思维模型合集 (模型思维):做社区志愿者",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "全新的有益活动。其中很多在印度,孟买就有近 100 家",
   "when_to_use": {

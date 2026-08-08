@@ -8,7 +8,10 @@
     "skill_name": "创想前的准备三要素",
     "source": "ref:100+思维模型合集 (模型思维):创想前的准备三要素：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "相信自己有能力改变周围世界，拥有创",
   "when_to_use": {

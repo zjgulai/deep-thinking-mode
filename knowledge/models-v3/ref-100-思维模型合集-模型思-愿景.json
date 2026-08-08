@@ -8,7 +8,10 @@
     "skill_name": "愿景",
     "source": "ref:100+思维模型合集 (模型思维):愿景",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1884 / 1937 \f愿景是企业未来所创造的图画，回答“组织将成为什么”的问题，是实实 在在的长远图景。使命是一切的根本，愿景把使命转变为真正富有意 义的预期结果。例如迪士尼公司的使命是“使人们过得快活。”愿景是“成 为全球的超级娱乐",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "用好层别法是把握其它-qc-手法的基础",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):用好层别法是把握其它 QC 手法的基础。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "QC 七大手法中的柏拉图、查检表、散布图、直方图和管制图都必须以发现 的问题或原因来作层别法.，例如制作柏拉图时，如果设定太多项目或设定项目 中其它栏所估的比例过高，就不知道问题的重心，这就是层别不良的原因，另外 直方图的双峰型或高原型都",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "余伟萍．企业持续发展之源——能力法则与策",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):余伟萍．企业持续发展之源——能力法则与策",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ PDCA 循环  —有效控制管理过程和工作质量的工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

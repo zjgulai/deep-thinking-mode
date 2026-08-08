@@ -8,7 +8,10 @@
     "skill_name": "销售",
     "source": "ref:100+思维模型合集 (模型思维):销售",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "电话销售话术中，也需要善于设计登门槛效应。可以打扰 1 分钟时间  1932 / 1937 \f吗？给您赠送价值 1 万元的免费保单。可以打扰 1 分钟吗？给您的孩 子免费赠送了北京名师的课程。可以打扰您 2 分钟吗？做一个老用户 回访。1",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "冗余备份思维模型",
     "source": "ref:万物皆模型-100个思维模型:冗余备份思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "系统为了提升其可靠度,刻意配置重复的零件或是机能",
   "when_to_use": {

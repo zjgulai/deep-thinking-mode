@@ -8,7 +8,10 @@
     "skill_name": "鸟笼效应思维模型",
     "source": "ref:万物皆模型-100个思维模型:鸟笼效应思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "很有意思的规律,人们会在偶然获得一件物品后,会继续添加更多与之相关而自己不需要的东西",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "在通信领域的使用",
     "source": "ref:100+思维模型合集 (模型思维):在通信领域的使用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的特征是对初始条件极为 敏感,并导致了混沌信号的类随机特性。用它作为载波调制出来的信号 当然也具有类随机特性。因而,调制混沌信号即使被敌方截获,也很难被 破译,这就为混沌应用于保密通信提供了有利条件。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "颜色",
     "source": "ref:100+思维模型合集 (模型思维):颜色",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "脑兴奋。它能让你的思维导图增添跳跃感和生命力，为你的创造性思 维增添巨大的能量，不同的颜色颜色代表了不同的含义，可以让人产  38 / 1937 \f生不同个联想。",
   "when_to_use": {

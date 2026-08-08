@@ -8,7 +8,10 @@
     "skill_name": "煤气灯效应思维模型",
     "source": "ref:万物皆模型-100个思维模型:煤气灯效应思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "心理操纵的形式,其方法是一个人或一个团体隐秘地让受害人逐渐开始怀疑自己,使其质",
   "when_to_use": {

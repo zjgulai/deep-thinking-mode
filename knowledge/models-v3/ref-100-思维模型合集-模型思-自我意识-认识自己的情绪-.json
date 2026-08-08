@@ -8,7 +8,12 @@
     "skill_name": "自我意识（认识自己的情绪）",
     "source": "ref:100+思维模型合集 (模型思维):自我意识（认识自己的情绪）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "自我意识是对内在心理的持续关注，是自我观察，保持中立客观的跳 出自己看自己。 日本有个古老的传说。有一次，一位好斗的武士质问一位禅师，让他 解释何为天堂、何为地狱。禅师叱责道：“粗鄙之辈，何足论道！” 武士感到受了侮辱，暴跳如雷。他从刀鞘中",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "反熵增思维模型",
     "source": "ref:能力提升-85个著名认知思维模型:反熵增思维模型",
     "sourceType": "book",
-    "sourceTitle": "能力提升-85个著名认知思维模型"
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "测量在动力学方面不能做功的能量总数,熵亦被用于计算一个系统中的失序现象,即一个系统的",
   "when_to_use": {

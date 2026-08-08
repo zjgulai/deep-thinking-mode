@@ -8,7 +8,13 @@
     "skill_name": "根据企业的战略和核心价值观确定企业的人力",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):根据企业的战略和核心价值观确定企业的人力",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "竞争优势和核心价值观 转化为可以测量的行动计划和指标，并借助于激励性的薪酬体系强化员工的绩效 行为，增强企业的战略实施能力，有力地促动企业战略目标的实现。然后，再根 据企业的人力资源战略、外部的法律环",
   "when_to_use": {

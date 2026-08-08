@@ -8,7 +8,10 @@
     "skill_name": "开放性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):开放性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的大环境中。因此，TPM 管理必将受到企业资源条件、环境条件、人员素质、 管理 方法和管理手段的影响和作用，同时，TPM 管理状况也将作用于和影响于 企业管理及其它各项专业管理。由此可知，TPM 管理与所处的环境之间既有输 入，又有 输出，",
   "when_to_use": {

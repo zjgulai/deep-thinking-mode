@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "事物通用解读框架",
     "source": "事物通用解读框架_融合维度与逻辑方法的系统化认知工具 2.md",
-    "sourceTitle": "事物通用解读框架：融合维度与逻辑方法的系统化认知工具"
+    "sourceTitle": "事物通用解读框架：融合维度与逻辑方法的系统化认知工具",
+    "agent_roles": [
+      "problem_framer",
+      "logical_analyzer"
+    ]
   },
   "core_definition": "这件事的本质是什么？事物通用解读框架如何定义它？",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "建立组织体系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立组织体系。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "落实各个层次以 \f http://wiki.mbalib.com/ 至每一个员工在 TPM 活动体系中的职能。以公司级推进组织为例，公司 TPM 推 进委员会的基本职能是：制订 TPM 方针；批准推进",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "语言智能",
     "source": "ref:100+思维模型合集 (模型思维):语言智能",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "有很好的口头语言及文字的能力，具体表现为听、",
   "when_to_use": {

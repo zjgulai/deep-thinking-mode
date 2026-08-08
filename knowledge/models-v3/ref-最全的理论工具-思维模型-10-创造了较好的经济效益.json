@@ -8,7 +8,10 @@
     "skill_name": "创造了较好的经济效益",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):创造了较好的经济效益",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "推行定置管理工作对经济效益的影响是巨大的。如抓现场管理减少了跑、冒、 滴漏的现象，降低了消耗；扩展了生产空间提高了生产效率。使同样的投入赢得 \f http://wiki.mbalib.com/ 了更高的产出；由于工作质量、产品质量的提高，",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "各部分-why-来源",
     "source": "ref:100+思维模型合集 (模型思维):各部分 WHY 来源：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1748 / 1937 \f组织的 Why 来源是以下两者之一：第一，创始人的 Why；第二，组织 文化中最精华的部分。 组织内部某个团队或部门的 Why，就是这个团队对该组织独一无二的 贡献，可以产生非凡的影响力。它将诠释你们部门的独特价",
   "when_to_use": {

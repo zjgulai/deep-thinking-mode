@@ -8,7 +8,10 @@
     "skill_name": "净值报酬率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):净值报酬率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "净值报酬率＝净利润÷平均股东权益×100％ 则甲公司净值报酬率＝4944÷[(81207+253950)÷2]×100％＝1.48％ 四、甲公司财务报表综合分析",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "第3章-为了进一步让协商进行得更加顺利",
     "source": "ref:麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝]):第3章 为了进一步让协商进行得更加顺利",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])"
+    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "将复杂的现象分解成为有意义的“集合”，在此基础上进行结构性的把握，并弄清各个要素之间的关联能力",
   "when_to_use": {

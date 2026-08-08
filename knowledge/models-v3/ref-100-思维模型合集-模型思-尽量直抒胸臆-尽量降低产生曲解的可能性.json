@@ -8,7 +8,13 @@
     "skill_name": "尽量直抒胸臆，尽量降低产生曲解的可能性",
     "source": "ref:100+思维模型合集 (模型思维):尽量直抒胸臆，尽量降低产生曲解的可能性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "error_handler",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "我们中国人在沟通中，喜欢迂回、喜欢闪避。这有可能会使听者无法 确定现实世界，从而造成误会或曲解。我们要尽量的降低产生曲解的 可能性。 这就是逻辑思维中的概念，深入的了解了概念，我们才会发现，原来 我们在日常的生活中，很多的错误并不在于推理的",
   "when_to_use": {

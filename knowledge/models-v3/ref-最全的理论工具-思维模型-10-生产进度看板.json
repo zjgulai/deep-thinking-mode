@@ -8,7 +8,12 @@
     "skill_name": "生产进度看板",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):生产进度看板",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "systems_thinker",
+      "action_executor",
+      "error_handler"
+    ]
   },
   "core_definition": "生产进度分成正常、过快、过慢 3 类。根据存放区的库存量来判断生产进度 状况。在实施过程中首先要制定判断正常和异常的规范。如生产顺序、生产批量 等，达到随时能判断的程度，从而使问题暴露出来，时刻把握生产进度。",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "涌现",
     "source": "ref:100+思维模型合集 (模型思维):涌现",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "systems_thinker",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "涌现是系统在演进过程中新的功能和结构的出现。是复杂系统自组织 过程中出现在系统的宏观层次上的新的,协同的结构与模式和性质。尽 管涌现现象发生在不同类型的系统里,但是,他们具有一定共同性特征, 主要包括在以下方面: (1)涌现产生全新的现象;",
   "when_to_use": {

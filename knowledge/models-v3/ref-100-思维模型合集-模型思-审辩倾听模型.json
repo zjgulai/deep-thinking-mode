@@ -8,7 +8,10 @@
     "skill_name": "审辩倾听模型",
     "source": "ref:100+思维模型合集 (模型思维):审辩倾听模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "习惯，背后是思维能力的体现。倾听力是可以通过刻意练",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "组织结构和人员技能柔性化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):组织结构和人员技能柔性化。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "为了适应定制化生产的需要，企业必须对客户保持高度的敏感，并使他们的 \f http://wiki.mbalib.com/ 个性化需求得到迅速满足。这就要求企业必须具有反应迅速的组织体系，以扁平 型或网状的组织结构替代传统的锥型组织结构，尽量",
   "when_to_use": {

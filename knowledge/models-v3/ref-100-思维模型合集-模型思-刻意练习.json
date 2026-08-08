@@ -8,7 +8,10 @@
     "skill_name": "刻意练习",
     "source": "ref:100+思维模型合集 (模型思维):刻意练习",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "纸上得来终觉浅、觉知此事要躬行，知识没有经过折腾就不是自己的， 用学到的思维模型去分析自己身边的案例或者实际问题，刻意练习， 反复思考，掌握其精髓。",
   "when_to_use": {

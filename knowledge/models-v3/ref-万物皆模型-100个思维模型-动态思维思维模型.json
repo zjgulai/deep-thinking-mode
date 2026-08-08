@@ -8,7 +8,10 @@
     "skill_name": "动态思维思维模型",
     "source": "ref:万物皆模型-100个思维模型:动态思维思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一种运动的、调整性的、不断择优化的思维活动",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "饱和攻击",
     "source": "ref:100+思维模型合集 (模型思维):饱和攻击",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "生态系统，充满了竞争和合作，商业的演进是通过进化和分化两种方",
   "when_to_use": {

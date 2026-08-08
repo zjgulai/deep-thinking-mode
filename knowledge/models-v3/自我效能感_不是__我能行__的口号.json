@@ -6,7 +6,11 @@
     "category": "08",
     "tags": [],
     "skill_name": "自我效能感_不是_我能行_的口号",
-    "source": "自我效能感_不是__我能行__的口号_是__我做成过__的证据.md"
+    "source": "自我效能感_不是__我能行__的口号_是__我做成过__的证据.md",
+    "agent_roles": [
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "核心是 “我能稳住自己，完整走完整件事”",
   "when_to_use": {

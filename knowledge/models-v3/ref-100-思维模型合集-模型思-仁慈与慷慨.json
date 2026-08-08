@@ -8,7 +8,11 @@
     "skill_name": "仁慈与慷慨",
     "source": "ref:100+思维模型合集 (模型思维):仁慈与慷慨",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "具有这类优势的人对别人很仁慈、很慷慨，别人来找他们帮忙时，即 使不太熟的朋友他们也会帮忙。这类人都有一个共同点，凡事先替别 人着想，有时甚至会将自己的利益放在一边。移情和同情是达到这个 美德的两个途径。",
   "when_to_use": {

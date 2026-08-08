@@ -8,7 +8,10 @@
     "skill_name": "赋予意义",
     "source": "ref:100+思维模型合集 (模型思维):赋予意义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "沃顿商学院的亚当.格兰特教授对救生员进行了一项研究,他把 32 名救 生员分成两组,一组叫”个人受益小组”,一个叫”使命小组”。个人受益小 组阅读四篇故事,故事描述的是其它救生员通过救生员这个工作打磨的 技能让自己的人生多么受益。使命小组也",
   "when_to_use": {

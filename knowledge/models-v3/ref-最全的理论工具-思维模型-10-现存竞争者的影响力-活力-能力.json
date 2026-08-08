@@ -8,7 +8,10 @@
     "skill_name": "现存竞争者的影响力、活力、能力",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):现存竞争者的影响力、活力、能力",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "产业中厂商家数的多寡是影响竞争强度的基本要素，除此之外，竞争者的资 金充裕、同构型、产业产品的战略价值以及退出障碍的高低都会影响同业竞争强 度。  现存竞争者强度通常受到下列因素影响：  a) 产业成长速度慢；  b) 高固定或库存成本；",
   "when_to_use": {

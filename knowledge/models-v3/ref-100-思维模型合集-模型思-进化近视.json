@@ -8,7 +8,10 @@
     "skill_name": "进化近视",
     "source": "ref:100+思维模型合集 (模型思维):进化近视",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "，在人类进化的过程中，为了眼前利益放弃长远利益，",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "企业必须识别真正的顾客，并了解他们的需求",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业必须识别真正的顾客，并了解他们的需求",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "decision_maker",
+      "action_executor",
+      "error_handler"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  管理者以传统的经营方式和他们想当然的经验为基础，或以企业所拥有的资  源和能力为基础制定和实施战略，这种差异化战略就不一定符合顾客的选择  偏好和价值观，从而导致战略的失败，因此，企业高",
   "when_to_use": {

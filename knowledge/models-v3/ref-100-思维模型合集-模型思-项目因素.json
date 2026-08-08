@@ -8,7 +8,12 @@
     "skill_name": "项目因素",
     "source": "ref:100+思维模型合集 (模型思维):项目因素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "项目因素包括决策风险和决策目标。 研究发现在决策风险和承诺升级之间有负相关，高风险的情况，因为 害怕大的损失，所以决策者不会承诺升级。如果有新的更好的项目可 供选择，将大大降低承诺升级。如果没有更好的替代方案，未来充满 了不确定性，受到沉没",
   "when_to_use": {

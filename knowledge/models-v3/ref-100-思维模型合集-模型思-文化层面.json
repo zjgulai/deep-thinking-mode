@@ -8,7 +8,11 @@
     "skill_name": "文化层面",
     "source": "ref:100+思维模型合集 (模型思维):文化层面",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "文化是什么？文化就是一套人类生存体系图谱。文化的传承是通过语 言和文字来完成。 想想自然界，为什么只有人类进化出了语言？从进化的角度讲，只有 语言带来的收益高于学习成本时，语言才能保留。自然界的不同物种， 平时的沟通都非常简单，无外乎就是前",
   "when_to_use": {

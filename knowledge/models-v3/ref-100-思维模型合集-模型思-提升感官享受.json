@@ -8,7 +8,11 @@
     "skill_name": "提升感官享受",
     "source": "ref:100+思维模型合集 (模型思维):提升感官享受",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "为什么博士毕业要穿博士服?为什么结婚要穿婚纱?为什么律师要穿律 师服上法庭?因为在人生中重要的峰值时刻,要从感官上体现出不同寻 常,体现出重视的感觉。所以在一些重要场合的重要活动,在场地布置、 鲜花摆放、道具选择、舞台设计等方面非常重视,凸",
   "when_to_use": {

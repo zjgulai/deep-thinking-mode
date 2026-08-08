@@ -8,7 +8,12 @@
     "skill_name": "认真地验证现场以及实物，应把焦点放在致使",
     "source": "ref:100+思维模型合集 (模型思维):认真地验证现场以及实物，应把焦点放在致使",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "找到问题真因的诊断性技术，被用来识别说明因果",
   "when_to_use": {

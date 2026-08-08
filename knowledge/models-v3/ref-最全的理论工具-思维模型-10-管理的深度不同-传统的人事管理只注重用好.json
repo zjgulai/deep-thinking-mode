@@ -8,7 +8,10 @@
     "skill_name": "管理的深度不同。传统的人事管理只注重用好",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):管理的深度不同。传统的人事管理只注重用好",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "力，而现代人力资源管理则注重开发职工的潜能，以不断激发其工作动机。 \f http://wiki.mbalib.com/",
   "when_to_use": {

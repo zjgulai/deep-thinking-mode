@@ -13,7 +13,13 @@
     ],
     "skill_name": "怎么不等动力直接行动_动力飞轮四步",
     "source": "怎么不等动力直接行动_动力飞轮四步速查卡.md",
-    "sourceTitle": "怎么不等动力直接行动_动力飞轮四步速查卡"
+    "sourceTitle": "怎么不等动力直接行动_动力飞轮四步速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "没动力所以不想做事，不做事更加没有动力——打破这个死循环的关键不是等状态，是用行动倒逼动力",
   "when_to_use": {

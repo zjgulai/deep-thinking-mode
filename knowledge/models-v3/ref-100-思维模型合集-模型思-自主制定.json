@@ -8,7 +8,11 @@
     "skill_name": "自主制定",
     "source": "ref:100+思维模型合集 (模型思维):自主制定",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "自上而下和自下而上两者的融合。  1011 / 1937 \f5、基于进度的：KR 必须要能支持你频繁看到进步，至少两个星期要能 体现出进度变化。研究表明，取得可量化的进步相比公众的认可、金 钱刺激或实现目标本身更有驱动力。",
   "when_to_use": {

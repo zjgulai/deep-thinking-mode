@@ -8,7 +8,12 @@
     "skill_name": "认知角度",
     "source": "ref:100+思维模型合集 (模型思维):认知角度",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "bias_detector"
+    ]
   },
   "core_definition": "一个人都不知道自己的决策过程和认知偏差是非常危险的，属于不知 道自己不知道，所以企业要多组织培训，让员工拓宽自己的认知边界， 了解自己决策过程中的认知偏差，并勤加练习，不断的实践，这样才 能在未来识别出自己的认知偏差，才能做出理性的决策，规",
   "when_to_use": {

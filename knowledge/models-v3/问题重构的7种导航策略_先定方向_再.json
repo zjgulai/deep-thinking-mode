@@ -6,7 +6,13 @@
     "category": "06",
     "tags": [],
     "skill_name": "问题重构的7种导航策略_先定方向_再",
-    "source": "问题重构的7种导航策略_先定方向_再选方法（附策略_方法映射表）.md"
+    "source": "问题重构的7种导航策略_先定方向_再选方法（附策略_方法映射表）.md",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "是“策略定方向，方法做落地”：7种核心导航策略，帮你明确“该往哪个方向重构”；策略与方法的精准搭配，帮你避免无效尝试；再结合实战案例，就能真正把问题重构用在实处，解决实际难题",
   "when_to_use": {

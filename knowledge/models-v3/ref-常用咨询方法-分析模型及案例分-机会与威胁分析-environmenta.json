@@ -8,7 +8,10 @@
     "skill_name": "机会与威胁分析",
     "source": "ref:常用咨询方法、分析模型及案例分析:机会与威胁分析（environmenta",
     "sourceType": "book",
-    "sourceTitle": "常用咨询方法、分析模型及案例分析"
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "环境中一种不利的发展趋势所形成的挑战，如果不采取果断的战略行为，",
   "when_to_use": {

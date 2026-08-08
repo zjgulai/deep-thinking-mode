@@ -8,7 +8,10 @@
     "skill_name": "非-sr思维模型",
     "source": "ref:万物皆模型-100个思维模型:非 SR思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "在刺激－反应中间加上思考的过程,即刺激－思考－反应, 从而由被动的必須反应转向主动有选择反应",
   "when_to_use": {

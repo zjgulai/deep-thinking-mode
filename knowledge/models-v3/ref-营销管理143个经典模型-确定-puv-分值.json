@@ -8,7 +8,10 @@
     "skill_name": "确定-puv-分值",
     "source": "ref:营销管理143个经典模型:确定 PUV 分值",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "根据顾客对本公司和竞争对手产品的 PUV 组成的评价，得出 PUV 分值。可利用表 4 来确 定 PUV 分值。  注：其中等级率表示本公司的产品或服务与其他公司的相比较的情况，例如 根据表 2．A 公司产品的 PUV 组成之一 a 的等",
   "when_to_use": {

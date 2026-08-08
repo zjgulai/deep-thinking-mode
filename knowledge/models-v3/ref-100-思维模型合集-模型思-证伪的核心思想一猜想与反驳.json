@@ -8,7 +8,13 @@
     "skill_name": "证伪的核心思想一猜想与反驳",
     "source": "ref:100+思维模型合集 (模型思维):证伪的核心思想一猜想与反驳",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "multi_perspective",
+      "hypothesis_tester",
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "卡尔·波普尔是批判理性主义的代表人物。他认为科学的发展就是不断 作出猜测（假说），不断遭到反驳（证伪）的过程。现代科学的精神就 是批判精神，不断推翻旧理论，发展新理论的过程，科学和非科学的 划界标准不是可证实性，而是可证伪性。  938 /",
   "when_to_use": {

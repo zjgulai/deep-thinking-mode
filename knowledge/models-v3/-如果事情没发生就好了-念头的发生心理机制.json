@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "🧠-**核心心理机制分析**",
     "source": "_如果事情没发生就好了_念头的发生心理机制.md",
-    "sourceTitle": "“如果事情没发生就好了”念头的发生心理机制"
+    "sourceTitle": "“如果事情没发生就好了”念头的发生心理机制",
+    "agent_roles": [
+      "prioritizer",
+      "error_handler",
+      "simplifier",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "“如果事情没发生就好了”念头的发生心理机制  当错误发生时，我们产生“如果事情没发生就好了”这种强烈念头的心理机制，是多种认知、情绪和神经过程的复杂交织。让我为你系统地解析它背后的运作原理。  ### 🧠 **核心心理机制分析**  #### **1\\. 反事实思维（Counterfactual ",
   "when_to_use": {

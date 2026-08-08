@@ -8,7 +8,10 @@
     "skill_name": "整理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):整理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "出现场． 只留下有用的东西。它是开始改善生产现场的第一步。其要点是对生 产现场的现实摆放和停滞的各种物品进行分类， 区分什么是现场需要的，什么 是现场不需要的 对现场不需要的物品， 诸如用剩的材料、多余的设备、员工的 个人用品等， 要坚决清",
   "when_to_use": {

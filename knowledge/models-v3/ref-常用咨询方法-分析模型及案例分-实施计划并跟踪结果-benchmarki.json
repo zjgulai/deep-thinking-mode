@@ -8,7 +8,11 @@
     "skill_name": "实施计划并跟踪结果。benchmarki",
     "source": "ref:常用咨询方法、分析模型及案例分析:实施计划并跟踪结果。benchmarki",
     "sourceType": "book",
-    "sourceTitle": "常用咨询方法、分析模型及案例分析"
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "确定 benchmarking 学习的适当流程范围例子：",
   "when_to_use": {

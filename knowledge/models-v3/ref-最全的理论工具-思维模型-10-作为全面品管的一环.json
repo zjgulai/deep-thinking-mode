@@ -8,7 +8,10 @@
     "skill_name": "作为全面品管的一环",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作为全面品管的一环",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer"
+    ]
   },
   "core_definition": "的品管圈活动外，尚有中层干部的日常管理，高阶经营者的方针管理等。品管圈 活动只能说是全面品管的一环，然而，要做好全面品管，那么品管圈活动却是很 重要的关键。",
   "when_to_use": {

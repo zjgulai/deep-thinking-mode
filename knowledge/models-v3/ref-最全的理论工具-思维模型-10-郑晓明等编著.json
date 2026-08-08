@@ -8,7 +8,10 @@
     "skill_name": "郑晓明等编著",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):郑晓明等编著",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer"
+    ]
   },
   "core_definition": "事件技术 —识别工作绩效的关键性因素的工作分析  方法 \f http://wiki.mbalib.com/",
   "when_to_use": {

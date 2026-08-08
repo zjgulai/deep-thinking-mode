@@ -8,7 +8,13 @@
     "skill_name": "提高对市场的反应速度",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):提高对市场的反应速度",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "多数公司倾向于说给顾客听，却往往忽略了倾听的重要性。在相互渗透、相 互影响的市场中，对企业来说最现实的问题不在于如何制定、实施计划和控制， 而在于如何及时地倾听顾客的希望、渴望和需求，并及时做出反应来满足顾客的 需求。这样才利于市场的发展",
   "when_to_use": {

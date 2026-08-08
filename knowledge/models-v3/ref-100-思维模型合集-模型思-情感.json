@@ -8,7 +8,11 @@
     "skill_name": "情感",
     "source": "ref:100+思维模型合集 (模型思维):情感",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "什么是情绪？什么是情感？什么是感情？我们下面来区分一下。 根据《牛津英语词典》的解释，情绪是心理、感受、激情的激动或骚 动，是激烈或兴奋的精神状态。 人类有几百种情绪，很多是混合、变种、突变组合而成的情绪。加利 福尼亚大学旧金山分校心理学家",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "竞争者尚未完全控制细分市场",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):竞争者尚未完全控制细分市场",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "企业进入某个细分市场时，必须考虑进入的成本，如细分市场上的竞争已经 十分激烈，市场已经趋于饱和，企业再进入必然会付出很高的成本。",
   "when_to_use": {

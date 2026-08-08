@@ -8,7 +8,10 @@
     "skill_name": "现场问题点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):现场问题点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "我们可以从以下几个方面发现现场的问题(见表 1)： 质量 成本 产量 管理 \f http://wiki.mbalib.com/ ①产品不良率 ①人员多 ①库存多 ①士气提高 ②退货率 ②效率 ②保管损失 ②安全管理 ③初期不良 ③经费 ③生",
   "when_to_use": {

@@ -13,7 +13,13 @@
     ],
     "skill_name": "想做却迟迟不动_福格行为模型三步",
     "source": "想做却迟迟不动_福格行为模型三步速查卡.md",
-    "sourceTitle": "想做却迟迟不动_福格行为模型三步速查卡"
+    "sourceTitle": "想做却迟迟不动_福格行为模型三步速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "想做一件事却迟迟不动——不是懒，是你的行为模型缺了一个关键要素",
   "when_to_use": {

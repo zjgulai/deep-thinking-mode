@@ -8,7 +8,10 @@
     "skill_name": "保持熵增和熵减的平衡",
     "source": "ref:100+思维模型合集 (模型思维):保持熵增和熵减的平衡",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "封闭系统，由于人类的存在，地球将向开放的系统演",
   "when_to_use": {

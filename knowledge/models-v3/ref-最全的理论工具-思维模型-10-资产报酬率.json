@@ -8,7 +8,10 @@
     "skill_name": "资产报酬率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):资产报酬率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "总资产报酬率是利润总额和利息支出总额与平均资产总额的比率，用于衡量 公司运用全部资产获利的能力。总资产报酬率=(利润总额+利息支出)／平均资产 总额 x 100％ ，高于同期银行借款利率和社会平均利润率，则说明公司总资产获 利能力足。",
   "when_to_use": {

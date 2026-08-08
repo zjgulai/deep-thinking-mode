@@ -13,7 +13,10 @@
     ],
     "skill_name": "三种认知能力",
     "source": "三种认知能力自检速查卡.md",
-    "sourceTitle": "三种认知能力自检速查卡"
+    "sourceTitle": "三种认知能力自检速查卡",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "读了一下午书合上却什么也记不住，不是记性差，是三种认知能力没有各司其职",
   "when_to_use": {

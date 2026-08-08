@@ -8,7 +8,10 @@
     "skill_name": "郭国庆著.市场营销通论(第-3-版)[m",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):郭国庆著.市场营销通论(第 3 版)[M",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "4. (加)杰姆•G．•巴诺斯．客户关系管理成功奥秘——感知客户[M]．北京：机械工业出版  社，2001． 5. (美)克里斯托弗•H•洛夫洛克．服务营销(第三版)[M]．北京：中国人民大学出版社，2001． \f http://wiki.",
   "when_to_use": {

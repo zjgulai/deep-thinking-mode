@@ -8,7 +8,13 @@
     "skill_name": "管理决定了执行效率。管理由计划、组织、领",
     "source": "ref:100+思维模型合集 (模型思维):管理决定了执行效率。管理由计划、组织、领",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "问题 以共生体、商业模式和战略作为输人，我们在管理上的核心差异或流 程优势是什么？ 关键岗位上是否有合适的人才？ 员工是否知道其工作目标并围绕其展开工作？ 衡量指标 差异化的业务运营关键指标； 关键岗",
   "when_to_use": {

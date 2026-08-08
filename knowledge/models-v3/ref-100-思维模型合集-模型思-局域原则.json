@@ -8,7 +8,10 @@
     "skill_name": "局域原则",
     "source": "ref:100+思维模型合集 (模型思维):局域原则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "边界，不同领域讨论不同的问题，超越了问题的边界，很",
   "when_to_use": {

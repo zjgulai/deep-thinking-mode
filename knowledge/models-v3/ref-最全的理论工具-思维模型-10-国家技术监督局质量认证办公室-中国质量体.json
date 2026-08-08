@@ -8,7 +8,10 @@
     "skill_name": "国家技术监督局质量认证办公室、中国质量体",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):国家技术监督局质量认证办公室、中国质量体",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "系认证大全．中国标准出版社，1997． \f http://wiki.mbalib.com/ 大规模定制  —21 世纪最重要的、最具竞争优势的生产模式 \f http://wiki.mbalib.com/",
   "when_to_use": {

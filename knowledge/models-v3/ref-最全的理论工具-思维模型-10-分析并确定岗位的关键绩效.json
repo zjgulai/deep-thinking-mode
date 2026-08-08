@@ -8,7 +8,12 @@
     "skill_name": "分析并确定岗位的关键绩效",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):分析并确定岗位的关键绩效",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "prioritizer"
+    ]
   },
   "core_definition": "绩效指标进一步细 分，分解为更细的关键绩效指标及各岗位的业绩衡量指标。这些业绩衡量指标就是员工考核 的要素和依据。这种对关键绩效指标体系的建立和测评过程本身，就是使全体员工统一朝着 企业战略目标努力的",
   "when_to_use": {

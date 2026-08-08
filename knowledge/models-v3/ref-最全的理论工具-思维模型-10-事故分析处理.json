@@ -8,7 +8,10 @@
     "skill_name": "事故分析处理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):事故分析处理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在事故分析处理时，为什么一为什么分析法较为实用，根据事故的结果反推 上道工序以及各个环节的原因，会找出产生事故的实质原因。如针对高炉炉况不 顺，可追溯到烧结矿性能，再可追溯到精矿粉质量问题，以及采购环节存在的种 种弊端，用管理制衡机制予以",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "我聪明吗",
     "source": "ref:100+思维模型合集 (模型思维):我聪明吗？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "获得（语言，数学等）知识的能力，它决定于后天的",
   "when_to_use": {

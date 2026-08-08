@@ -8,7 +8,10 @@
     "skill_name": "购买者的议价能力",
     "source": "ref:营销管理143个经典模型:购买者的议价能力",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "标准化产品，同时向多个卖主购买产品在经济上也完全可",
   "when_to_use": {

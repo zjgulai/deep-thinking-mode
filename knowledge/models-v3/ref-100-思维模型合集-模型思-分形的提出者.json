@@ -8,7 +8,10 @@
     "skill_name": "分形的提出者",
     "source": "ref:100+思维模型合集 (模型思维):分形的提出者",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "分形这个名词是由曼德勃罗特在 1975 年首次提出（创造）的，其原义 是“不规则的，分数的，支离破碎的”物体。曼德勃罗特是美国 IBM 公 司沃特森研究中心自然科学部高级研究员，哈佛大学应用数学兼职教 授，美国国家科学院院士。曾先后在哈佛大",
   "when_to_use": {

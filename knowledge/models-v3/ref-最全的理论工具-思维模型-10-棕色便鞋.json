@@ -8,7 +8,11 @@
     "skill_name": "棕色便鞋",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):棕色便鞋",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "棕色是种实用的颜色，暗示泥土和所有基本的东西，并且象征双脚稳稳地站 在土地上。棕色另外也暗示烂泥巴和一团混乱的情况，没有办法清楚地为其下定 义。便鞋是种实用耐穿的鞋子，也可以用来做粗重的工作，因此棕色便鞋的行动 模式强调的是实际和务实，做",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "纵向一体化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):纵向一体化",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一般来说，对处于成熟期或稳定市场中的经营单位，提高纵向一体化程度会 带来较好的经营业绩。而在迅速增长或处于衰退期的市场。件下．提高纵向一体 化程度对经营业绩有不利的影响。",
   "when_to_use": {

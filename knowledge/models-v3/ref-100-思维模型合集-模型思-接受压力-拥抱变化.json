@@ -8,7 +8,10 @@
     "skill_name": "接受压力，拥抱变化",
     "source": "ref:100+思维模型合集 (模型思维):接受压力，拥抱变化",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "复杂系统，每一个细胞通过竞争，新陈代谢维持系统的稳",
   "when_to_use": {

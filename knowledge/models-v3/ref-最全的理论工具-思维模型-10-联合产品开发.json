@@ -8,7 +8,10 @@
     "skill_name": "联合产品开发",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):联合产品开发",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "这一步重点是服装等生命周期很短的商品，不再是一般商品和季节商品。厂 商和零售商联合开发新产品，其关系的密切超过了购买与销售的业务关系，缩短 从新产品概念到新产品上市的时间，而且经常在店内对新产品进行试销。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "批判性思考思维模型",
     "source": "ref:万物皆模型-100个思维模型:批判性思考思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "multi_perspective"
+    ]
   },
   "core_definition": "技能和思想态度,没有学科边界,任何涉及智力或想像的论",
   "when_to_use": {

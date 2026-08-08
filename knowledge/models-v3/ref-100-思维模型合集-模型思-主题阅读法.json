@@ -8,7 +8,10 @@
     "skill_name": "主题阅读法",
     "source": "ref:100+思维模型合集 (模型思维):主题阅读法",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的理论和观点，短 时间内快速的浏览所有的书籍。 画出思",
   "when_to_use": {

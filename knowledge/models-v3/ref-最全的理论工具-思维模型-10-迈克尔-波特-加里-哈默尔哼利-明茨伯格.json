@@ -8,7 +8,10 @@
     "skill_name": "迈克尔．波特-加里．哈默尔哼利．明茨伯格",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):迈克尔．波特 加里．哈默尔哼利．明茨伯格",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "竞争力》．中国发展出版社．  22 \f http://wiki.mbalib.com/ 利益相关者分析  —战略制定和战略评价分析工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

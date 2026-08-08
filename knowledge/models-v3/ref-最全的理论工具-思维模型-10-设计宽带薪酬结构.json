@@ -8,7 +8,10 @@
     "skill_name": "设计宽带薪酬结构",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):设计宽带薪酬结构",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "为了解决以上问题，A 公司决定设计更具弹性的宽带薪酬制度。  宽带薪酬设计的步骤 对于薪酬方案的设计，首先应该进行总体步骤和宏观的计划，A 公司的设计步骤 如图：  图：A 公司薪酬设计程序图 \f http://wiki.mbalib.c",
   "when_to_use": {

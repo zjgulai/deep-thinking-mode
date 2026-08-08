@@ -8,7 +8,10 @@
     "skill_name": "审美",
     "source": "ref:100+思维模型合集 (模型思维):审美",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "说服框架，具体在说服的过程中，要因人而异，灵活变",
   "when_to_use": {

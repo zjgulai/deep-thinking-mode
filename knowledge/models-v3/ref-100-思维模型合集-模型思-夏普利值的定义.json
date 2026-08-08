@@ -8,7 +8,12 @@
     "skill_name": "夏普利值的定义",
     "source": "ref:100+思维模型合集 (模型思维):夏普利值的定义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在合作博弈中，行动者遍历所有可能",
   "when_to_use": {

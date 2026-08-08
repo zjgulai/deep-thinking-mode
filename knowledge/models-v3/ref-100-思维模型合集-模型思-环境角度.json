@@ -8,7 +8,10 @@
     "skill_name": "环境角度",
     "source": "ref:100+思维模型合集 (模型思维):环境角度",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "error_handler"
+    ]
   },
   "core_definition": "医学上对于某种疾病并无实质药理或医学作用的药物或者",
   "when_to_use": {

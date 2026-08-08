@@ -8,7 +8,10 @@
     "skill_name": "工艺分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工艺分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "以工艺分析为原则，按物的加工处理过程，分成加工、搬运、检查、停滞、 储存等五个环节。同时分析工序的加工条件、经过时间、移动距离， 从而确定 合理的工艺路线、运输路线，使改进后的现场环境达到人、物、场所一体化。",
   "when_to_use": {

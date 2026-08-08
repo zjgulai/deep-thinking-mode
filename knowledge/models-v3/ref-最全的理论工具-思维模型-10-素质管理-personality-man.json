@@ -8,7 +8,10 @@
     "skill_name": "素质管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):素质管理(personality man",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在素质测评的基础上，通过构建基于企业战略、组织结构",
   "when_to_use": {

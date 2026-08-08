@@ -8,7 +8,10 @@
     "skill_name": "实现敏捷制造，提高制造系统的灵活性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实现敏捷制造，提高制造系统的灵活性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "能力的企业通过计算机网络建立动态联盟，共享 技能和资源，完成单个企业无法完成的业务，迎接市场挑战。企业联盟的建立并 \f http://wiki.mbalib.com/ 不是改变所有企业的原有生产过程与",
   "when_to_use": {

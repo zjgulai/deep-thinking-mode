@@ -8,7 +8,10 @@
     "skill_name": "影响他人",
     "source": "ref:100+思维模型合集 (模型思维):影响他人",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner"
+    ]
   },
   "core_definition": "在对他人行为进行归因的时候,往往会倾向于把别人",
   "when_to_use": {

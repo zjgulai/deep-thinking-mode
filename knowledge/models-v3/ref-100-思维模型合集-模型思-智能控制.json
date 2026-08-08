@@ -8,7 +8,10 @@
     "skill_name": "智能控制",
     "source": "ref:100+思维模型合集 (模型思维):智能控制",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "多学科和技术交叉相结合的综合高技术",
   "when_to_use": {

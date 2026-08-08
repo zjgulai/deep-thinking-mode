@@ -8,7 +8,10 @@
     "skill_name": "再造旅行服务流程",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):再造旅行服务流程",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "旅行社引进了德国 SAP 公司的协同商务系统。SAP 提供将客户关系管理、 供应链管理、财务及人力资源等实际应用结合起来的协同商务平台。旅行社 ABC 改造前信息系统限于企业内部，与服务提供商的交流主要通过电话、传真，为确 定一项服务，要",
   "when_to_use": {

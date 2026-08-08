@@ -8,7 +8,11 @@
     "skill_name": "季度结束评估",
     "source": "ref:100+思维模型合集 (模型思维):季度结束评估",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "标设定不够挑战，低于 0.6 可能目标设定过于挑战",
   "when_to_use": {

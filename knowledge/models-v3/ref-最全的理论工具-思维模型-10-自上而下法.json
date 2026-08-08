@@ -8,7 +8,11 @@
     "skill_name": "自上而下法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):自上而下法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "自上而下法常常被视为构建 WBS 的常规方法，即从项目最大的单位开始， 逐步将它们分解成下一级的多个子项。这个过程就是要不断增加级数，细化工作 任务。这种方法对项目经理来说，可以说是最佳方法，因为他们具备广泛的技术 知识和对项目的整体视角",
   "when_to_use": {

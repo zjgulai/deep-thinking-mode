@@ -6,7 +6,11 @@
     "category": "07",
     "tags": [],
     "skill_name": "遇到两难别急着取舍_四步思考法_帮你",
-    "source": "遇到两难别急着取舍_四步思考法_帮你找到隐藏的第三种可能.md"
+    "source": "遇到两难别急着取舍_四步思考法_帮你找到隐藏的第三种可能.md",
+    "agent_roles": [
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "破局：如何兼顾A、B的核心优势，创造出优于两者的全新方案C？",
   "when_to_use": {

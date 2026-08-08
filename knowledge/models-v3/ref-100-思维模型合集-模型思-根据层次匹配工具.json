@@ -8,7 +8,10 @@
     "skill_name": "根据层次匹配工具",
     "source": "ref:100+思维模型合集 (模型思维):根据层次匹配工具",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "系统的分析方法，就是通过想象可能的多个版本的未",
   "when_to_use": {

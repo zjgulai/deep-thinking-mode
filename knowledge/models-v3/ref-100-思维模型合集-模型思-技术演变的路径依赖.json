@@ -8,7 +8,12 @@
     "skill_name": "技术演变的路径依赖",
     "source": "ref:100+思维模型合集 (模型思维):技术演变的路径依赖",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "技术的演变遵循自我强化、自我积累的特征，一旦达到某个临界点, 系 统便陷入锁定状态, 即出现报酬递增、正反馈、自增强现象。 首先发展起来的技术常常可以凭借占先的优势地位，利用巨大规模效 应降低成本，利用学习效应、协调效应、网络效应，越来越流",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "笛卡尔思维模型",
     "source": "ref:万物皆模型-100个思维模型:笛卡尔思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": ",去寻找事物的特  质,从而通过严密的逻辑建立学科的基础。  基本结构  怀疑 解析 整合 检验  DOUBT ANALYSIS UNIFY CHECKOUT  结构拆解  客观审视 客观审视 客观审",
   "when_to_use": {

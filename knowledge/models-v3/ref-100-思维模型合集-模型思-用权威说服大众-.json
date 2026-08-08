@@ -8,7 +8,13 @@
     "skill_name": "用权威说服大众",
     "source": "ref:100+思维模型合集 (模型思维):用权威说服大众？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "multi_perspective",
+      "decision_maker",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "一个有创意的点子马上会招来批判，最终扼杀创意，大家吵来吵去， 最终也没有什么结果。如何才能避免这种情况？如何让大家处在一个 频道沟通？如何让我们的会议沟通决策更高效呢？ 六顶思考帽可以帮助我们简单而高效的思考，它只允许思考者在同一 时间做一",
   "when_to_use": {

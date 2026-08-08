@@ -8,7 +8,12 @@
     "skill_name": "短视性损失厌恶。例如",
     "source": "ref:100+思维模型合集 (模型思维):短视性损失厌恶。例如",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "bias_detector"
+    ]
   },
   "core_definition": "了一个投资组合，其中有股票、债券和基金等，但是你每天都去看收 益的涨跌，为了规避短期的损失，你频繁的对股票进行卖出和买入， 导致长期收益受到影响，这种只顾眼前的损失，不顾长远收益的行为， 经济学家称之为短期损失规避。 短视性损失厌恶的投资者",
   "when_to_use": {

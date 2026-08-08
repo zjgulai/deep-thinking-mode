@@ -8,7 +8,11 @@
     "skill_name": "个人内省智能",
     "source": "ref:100+思维模型合集 (模型思维):个人内省智能",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "个人内省智能就是我们对自己内心世界的认知：了解自己的感情生活 和情绪变化，有效地辨别这些感情，最后加以标识，成为理解自己和 指导自己行为准则的能力。具有较好个人内省智能的人，能自尊、自  1512 / 1937 \f律，深入自我的方式来思考，",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "建立及管理数字化数据库系统",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立及管理数字化数据库系统。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "systems_thinker",
+      "communicator"
+    ]
   },
   "core_definition": "客户资料是定制生产的基础，大规模定制的实现必须建立在对客户充分了解、 实现“一对一”沟通的前提下。为此，企业要运用现代化信息技术，以数据库方 式建立客户档案，以便在客户生涯的全过程中，持续追踪其需求的发展变化，为 其提供终身化的定制服务。",
   "when_to_use": {

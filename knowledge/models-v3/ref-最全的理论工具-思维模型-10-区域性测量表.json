@@ -8,7 +8,10 @@
     "skill_name": "区域性测量表",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):区域性测量表",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  亚洲 ECR 测量表就是区域性测量表中的一种。它是在 ECR 全球测量表还未 成型前所使用的测量表，主要提供供货商和零售商来测量公司内部甚至和交易伙 伴问在 ECR 推动的成熟度评估，推",
   "when_to_use": {

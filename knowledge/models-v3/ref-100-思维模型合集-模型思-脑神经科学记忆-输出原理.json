@@ -8,7 +8,10 @@
     "skill_name": "脑神经科学记忆-输出原理",
     "source": "ref:100+思维模型合集 (模型思维):脑神经科学记忆-输出原理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "思维的过程，所以，写作力真正考量的是我们的思维",
   "when_to_use": {

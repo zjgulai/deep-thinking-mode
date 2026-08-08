@@ -8,7 +8,13 @@
     "skill_name": "把任何任务和项目具体成行动",
     "source": "ref:100+思维模型合集 (模型思维):把任何任务和项目具体成行动：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "不管是什么任务项目，我们要问的问题是下一个动作是什么？只有这 样才能把计划具体化，任务行动化。这样一来，我们就可以把所有的 注意力专注于行动，从而快速完成任务。 三、GTD 的五大阶段  987 / 1937 \f第一步：收集阶段一填充工作篮",
   "when_to_use": {

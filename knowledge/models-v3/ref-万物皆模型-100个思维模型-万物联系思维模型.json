@@ -8,7 +8,11 @@
     "skill_name": "万物联系思维模型",
     "source": "ref:万物皆模型-100个思维模型:万物联系思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "事的描述促进了人们对时间概念的感知,物的变化促进了人们对空间概念的感知。这种以人  为点的连接关系即是万物联系思维,即世间万事万物之间都是相互作用、相互联系的。有些联  系是自然存在的,在此基础上人类通过模仿自然从而实现了人为的相互联系,",
   "when_to_use": {

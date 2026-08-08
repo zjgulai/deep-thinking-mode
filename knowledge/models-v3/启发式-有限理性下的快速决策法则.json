@@ -11,7 +11,12 @@
     ],
     "skill_name": "启发式——有限理性下的快速决策",
     "source": "启发式__有限理性下的快速决策法则.md",
-    "sourceTitle": "启发式——有限理性下的快速决策法则"
+    "sourceTitle": "启发式——有限理性下的快速决策法则",
+    "agent_roles": [
+      "problem_framer",
+      "decision_maker",
+      "bias_detector"
+    ]
   },
   "core_definition": "这件事的本质是什么？启发式——有限理性下的快速决策如何定义它？",
   "when_to_use": {

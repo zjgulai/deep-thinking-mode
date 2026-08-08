@@ -8,7 +8,11 @@
     "skill_name": "已证明没有例外的合理假定",
     "source": "ref:100+思维模型合集 (模型思维):已证明没有例外的合理假定",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "许多正当理由会遇到反驳，这时正当理由就缺乏权威性，或者结论是 假的。例如：“天鹅是白色的，在澳大利亚发现一只天鹅，那它一定是  1295 / 1937 \f白色的”。其实澳大利亚有的天鹅是黑色的，所以这就是一个反例，它 不能作为一个合理假定。",
   "when_to_use": {

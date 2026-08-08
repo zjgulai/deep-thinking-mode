@@ -8,7 +8,10 @@
     "skill_name": "主要作用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):主要作用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "推行定置管理的作用  定置管理能消除物的不安全状态推行定置管理能使各种物品定置合理化，使 \f http://wiki.mbalib.com/ 机电设备优化组合，工位器具布局合理，安全通道畅通无阻，照度充足，光线明 亮，生产现场井然有序，各种",
   "when_to_use": {

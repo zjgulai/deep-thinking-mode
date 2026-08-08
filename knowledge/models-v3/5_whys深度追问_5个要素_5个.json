@@ -6,7 +6,13 @@
     "category": "04",
     "tags": [],
     "skill_name": "5_whys深度追问_5个要素_5个",
-    "source": "5_Whys深度追问_5个要素_5个步骤_从根源彻底解决问题.md"
+    "source": "5_Whys深度追问_5个要素_5个步骤_从根源彻底解决问题.md",
+    "agent_roles": [
+      "intent_clarifier",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "核心是持续追问，直到找到可落地解决的根源，实现一次性根治",
   "when_to_use": {

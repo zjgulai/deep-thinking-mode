@@ -11,7 +11,12 @@
       "思维模型"
     ],
     "skill_name": "star法则详解-#框架思维",
-    "source": "STAR法则_从认知到落地_让表达更具说服力.md"
+    "source": "STAR法则_从认知到落地_让表达更具说服力.md",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "STAR法则：从认知到落地，让表达更具说服力 ======================  原创 正方形SQUARE 2026-03-15 15:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/b2yZLjpBVhpVp4qmPtftNA](https://m",
   "when_to_use": {

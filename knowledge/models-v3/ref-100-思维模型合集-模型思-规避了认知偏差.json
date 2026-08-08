@@ -8,7 +8,12 @@
     "skill_name": "规避了认知偏差",
     "source": "ref:100+思维模型合集 (模型思维):规避了认知偏差",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "bias_detector"
+    ]
   },
   "core_definition": "虽然自己以前对认知偏差有的一点了解，但是从来没有系统的思考过 人类到底有多少认知偏差，通过对认知心理学、认知神经科学、行为 经济学、神经金融学、生物学、决策学等多方面的研究，再次发现自 己的无知和愚蠢。这些交叉学科让我懂了很多道理，就像查理",
   "when_to_use": {

@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "空想耗竭的3个机制+woop四步破局法",
     "source": "空想耗竭的3个机制_WOOP四步破局法_告别想得多_做得少.md",
-    "sourceTitle": "空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少"
+    "sourceTitle": "空想耗竭的3个机制+WOOP四步破局法：告别想得多，做得少",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "很明确：空想会持续透支行动能量，成为个人成长的隐形阻碍",
   "when_to_use": {

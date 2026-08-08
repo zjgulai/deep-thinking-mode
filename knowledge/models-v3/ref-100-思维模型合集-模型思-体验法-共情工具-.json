@@ -8,7 +8,11 @@
     "skill_name": "体验法（共情工具）",
     "source": "ref:100+思维模型合集 (模型思维):体验法（共情工具）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从客户视角出发。和客户一起参与到任务中，体会感知客户的一切， 进而发现客户需求。 案例：海盗船 CT 机  70 / 1937 \f图片来源网络 GE 公司医用成像设备设计师道格迪兹在医院目睹了令他吃惊的一幕： 一个小女孩在接受 CT（核磁共",
   "when_to_use": {

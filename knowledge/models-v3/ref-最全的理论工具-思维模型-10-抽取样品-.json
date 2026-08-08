@@ -8,7 +8,10 @@
     "skill_name": "抽取样品",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):抽取样品。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从完成所有生产工序，检验人员检验合格，由检验部门从出具合格的产品总 数中随机抽取一定数量的样品，并当场检查抽取样品的外观有无大的碰伤、划伤、 凹痕、破损等缺陷，向样品提供部门当场说明抽取样品时的状态。",
   "when_to_use": {

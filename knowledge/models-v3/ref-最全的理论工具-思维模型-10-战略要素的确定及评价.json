@@ -8,7 +8,10 @@
     "skill_name": "战略要素的确定及评价",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):战略要素的确定及评价",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在确定了企业经营战略研究的框架之后，战略管理研究进入战略制定框架的第一阶段—— “信息输入阶段”，该阶段主要是采用EFE和IFE矩阵方法，概括制定企业战略所需要输入的基 本信息，即企业的外部环境因素和内部环境因素。  天津☆☆页岩制品有限",
   "when_to_use": {

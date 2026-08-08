@@ -8,7 +8,10 @@
     "skill_name": "借助外部专家",
     "source": "ref:100+思维模型合集 (模型思维):借助外部专家",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "非常艰难的决定，中国税务部门就采用现实模",
   "when_to_use": {

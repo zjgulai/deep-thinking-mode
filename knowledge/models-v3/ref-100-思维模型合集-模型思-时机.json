@@ -8,7 +8,10 @@
     "skill_name": "时机",
     "source": "ref:100+思维模型合集 (模型思维):时机",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "能力。例如： 滴滴、快的、大黄蜂在网约车趋势来临的前夜，就做好了准备，早早 的站在风口上排队，等着一夜东风。当风口吹过，归于宁静，战争已 经结束，剩者为王，最后滴滴进入寡头垄断时代。 时间的驾驭是创造",
   "when_to_use": {

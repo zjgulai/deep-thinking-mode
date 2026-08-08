@@ -8,7 +8,10 @@
     "skill_name": "这很重要，因为",
     "source": "ref:100+思维模型合集 (模型思维):这很重要，因为…………",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "友善的工具，它能让你成为一个高质量的思考者，",
   "when_to_use": {

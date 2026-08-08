@@ -8,7 +8,10 @@
     "skill_name": "金融中应用",
     "source": "ref:100+思维模型合集 (模型思维):金融中应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "新的范式，让我们知道我们的世界是一个沸",
   "when_to_use": {

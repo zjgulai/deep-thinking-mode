@@ -9,7 +9,13 @@
     ],
     "skill_name": "1-.-理论基础",
     "source": "情绪状态与自控力之间的神经心理学关系 2.md",
-    "sourceTitle": "情绪状态与自控力之间的神经心理学关系"
+    "sourceTitle": "情绪状态与自控力之间的神经心理学关系",
+    "agent_roles": [
+      "causal_reasoner",
+      "planner",
+      "action_executor",
+      "error_handler"
+    ]
   },
   "core_definition": "如何有效完成这件事？1\\. 理论基础的操作路径是什么？",
   "when_to_use": {

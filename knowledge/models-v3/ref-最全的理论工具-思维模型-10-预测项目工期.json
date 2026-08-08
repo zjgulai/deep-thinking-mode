@@ -8,7 +8,11 @@
     "skill_name": "预测项目工期",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):预测项目工期",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "prioritizer"
+    ]
   },
   "core_definition": "正态分布；这样，将关键工作的时间估计看作是受各种不确定因",
   "when_to_use": {

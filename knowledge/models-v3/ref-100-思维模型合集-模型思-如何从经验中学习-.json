@@ -8,7 +8,11 @@
     "skill_name": "如何从经验中学习",
     "source": "ref:100+思维模型合集 (模型思维):如何从经验中学习？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "智慧，我们不仅要关注决策结果，还要关注决策过程，",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "缺陷位置检查表",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):缺陷位置检查表；",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "若要对产品各个部位的缺陷情况进行调查，可将产品的草图或展开图画在调 查表上，当某种缺陷发生时，可采用不同的符号或颜色在发生缺陷的部位上标出。 若在草图上划分缺陷分布情况区域，可进行分层研究。分区域要尽可能等分。",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "认识有限理性",
     "source": "ref:100+思维模型合集 (模型思维):认识有限理性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人们会基于自己掌握的信息制定理性的决策，然而由于人们掌",
   "when_to_use": {

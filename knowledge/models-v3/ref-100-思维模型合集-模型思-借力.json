@@ -8,7 +8,11 @@
     "skill_name": "借力",
     "source": "ref:100+思维模型合集 (模型思维):借力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "。人发展的根源在哪？就在于我 们能找到各种杠杆，以更少的能量创造更大的能量。著名投资人吴军 曾说过，科技的进步就是人类生存的最大杠杆。比如说长矛的发明， 使我们智人在同等的力量、体积的情况下，投掷的距",
   "when_to_use": {

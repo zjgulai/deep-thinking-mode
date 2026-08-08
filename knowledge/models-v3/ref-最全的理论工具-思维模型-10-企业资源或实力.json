@@ -8,7 +8,10 @@
     "skill_name": "企业资源或实力",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业资源或实力",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "当企业生产、技术、财务等方面实力很强时，可以考虑采用差异性或无差异 性市场营销策略；资源有限，实力不强时，采用集中性营销策略效果可能更好。",
   "when_to_use": {

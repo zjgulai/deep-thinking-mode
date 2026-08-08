@@ -8,7 +8,11 @@
     "skill_name": "公民精神、责任、团队精神、忠诚",
     "source": "ref:100+思维模型合集 (模型思维):公民精神、责任、团队精神、忠诚",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "具有公民精神的人通常是集体中的优秀分子，他们很忠心，有团队精 神，富有责任感，他们努力做好本职工作，努力使团队成功。当集体 目标与个人非目标冲突时，他们会遵从集体目标。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "确定宽带内的薪酬浮动范围",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定宽带内的薪酬浮动范围",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "cognitive_manager"
+    ]
   },
   "core_definition": "根据薪酬调查得到的客观数据和内部岗位评估结果来确定每一个“带宽”的 浮动范围，设定最低和最高薪酬待遇，在每一个工资带中，应根据市场薪酬水平 和岗位评估来确定不同的工作绩效对应的薪酬。",
   "when_to_use": {

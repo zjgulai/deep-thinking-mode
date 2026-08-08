@@ -8,7 +8,11 @@
     "skill_name": "质量控制的步骤为",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):质量控制的步骤为：",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": " 选定控制对象——控制什么  配置测量设备  确定测量方法 \f http://wiki.mbalib.com/  建立作业标准  判断操作的正确性  分析与现行标准的差距  对差距采取行动",
   "when_to_use": {

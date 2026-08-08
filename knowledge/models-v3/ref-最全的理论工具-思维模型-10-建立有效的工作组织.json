@@ -8,7 +8,10 @@
     "skill_name": "建立有效的工作组织",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立有效的工作组织",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "委员会，制定有关章程包括选定试点的内容、范围和时间、员工对象、实施方案、 任务说明书、评估标准、经验教训共享等方面，并为试点提供支持和保障。",
   "when_to_use": {

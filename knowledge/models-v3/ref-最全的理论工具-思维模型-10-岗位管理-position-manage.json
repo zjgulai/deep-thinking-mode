@@ -8,7 +8,10 @@
     "skill_name": "岗位管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):岗位管理(position manage",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  岗位管理是以组织中的岗位为对象，科学地进行岗位设置、岗位分析、岗位 描述、岗位监控和岗位评估等一系列活动的管理过程。我们认为，岗位必须在分 析和评价的基础上进行管理，岗位管理较之于岗位分",
   "when_to_use": {

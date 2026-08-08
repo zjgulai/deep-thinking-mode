@@ -8,7 +8,10 @@
     "skill_name": "愿景陈述",
     "source": "ref:100+思维模型合集 (模型思维):愿景陈述",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "采用 PPT、草图、软件模拟、工程样机等方式呈现出的产品原型",
   "when_to_use": {

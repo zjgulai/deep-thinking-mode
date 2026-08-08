@@ -8,7 +8,10 @@
     "skill_name": "探索实践",
     "source": "ref:100+思维模型合集 (模型思维):探索实践",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "探索实践是针对企业业务向未来扩展的管理问题的战略方法。如何制 定一个明确的未来战略，同时该战略又应具有充分的应变灵活性。在  1180 / 1937 \f制定可行的未来发展战略时常常出现这样的两个极端： 一个是“好高骛远”倾向，企业的未来战略",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "宋彦军．tqm、iso-9000-与服务",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):宋彦军．TQM、ISO 9000 与服务",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "10. (美)洛丝特、李晓光．全面质量管理．中国人民大学出版社．1999． \f http://wiki.mbalib.com/ 定置管理 —强化现场管理和谋求系统改善的科学管  理方法 \f http://wiki.mbalib.com/",
   "when_to_use": {

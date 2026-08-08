@@ -8,7 +8,10 @@
     "skill_name": "检查内容",
     "source": "ref:100+思维模型合集 (模型思维):检查内容",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "时间管理工具，更是一个生活工作管理工具，在信息",
   "when_to_use": {

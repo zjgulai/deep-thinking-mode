@@ -8,7 +8,10 @@
     "skill_name": "集中化战略的适用条件、收益与风险",
     "source": "ref:营销管理143个经典模型:集中化战略的适用条件、收益与风险",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "典型的例子，它最初在北大西洋市场，采取不提供不必要服务的非常明确的成",
   "when_to_use": {

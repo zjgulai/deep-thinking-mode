@@ -8,7 +8,10 @@
     "skill_name": "应用实施",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):应用实施",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "“软性”的协调力和粘合剂，它以无形的",
   "when_to_use": {

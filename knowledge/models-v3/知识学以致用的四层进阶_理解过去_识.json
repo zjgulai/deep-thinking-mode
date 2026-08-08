@@ -6,7 +6,10 @@
     "category": "06",
     "tags": [],
     "skill_name": "知识学以致用的四层进阶_理解过去_识",
-    "source": "知识学以致用的四层进阶_理解过去_识别当下_纠偏行动_预判TA人.md"
+    "source": "知识学以致用的四层进阶_理解过去_识别当下_纠偏行动_预判TA人.md",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "很直白：理论无法改变行为，只有把知识固化成不可打破的规则，才能约束冲动、修正行动",
   "when_to_use": {

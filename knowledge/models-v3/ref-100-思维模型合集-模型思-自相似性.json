@@ -8,7 +8,10 @@
     "skill_name": "自相似性",
     "source": "ref:100+思维模型合集 (模型思维):自相似性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "528 / 1937 \f分形具有“粗糙和自相似”的直观特点。一个系统的自相似性是指某种结 构或过程的特征从不同的空间尺度或时间尺度来看都是相似的，或者 某系统或结构的局域性质或局域结构与整体类似。另外，在整体与整 体之间或部分与部分之间，",
   "when_to_use": {

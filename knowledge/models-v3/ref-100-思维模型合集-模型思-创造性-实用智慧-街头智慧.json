@@ -8,7 +8,10 @@
     "skill_name": "创造性、实用智慧、街头智慧",
     "source": "ref:100+思维模型合集 (模型思维):创造性、实用智慧、街头智慧",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "遇到问题，不墨守成规，善于创造性解决问题。有些人在学校里可能 考试成绩一般，但是在生活中却是一个智多星，能够接到各种问题和 烦恼，其实这就是一种实用智慧和街头智慧。",
   "when_to_use": {

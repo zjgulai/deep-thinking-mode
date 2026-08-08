@@ -8,7 +8,11 @@
     "skill_name": "常用咨询方法和分析模型",
     "source": "ref:常用咨询方法、分析模型及案例分析:常用咨询方法和分析模型",
     "sourceType": "book",
-    "sourceTitle": "常用咨询方法、分析模型及案例分析"
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "agent_roles": [
+      "problem_framer",
+      "decision_maker"
+    ]
   },
   "core_definition": "成功因素分析法、KT 决策法、雷达图分析法、麦肯锡 7S 模型、麦肯锡三层 面理论、麦肯锡七步成诗法、麦肯锡 5CS 模型等。文档中包含了模型起源、模型定义、模型适 用原则、模型的应用方法及具体应用案",
   "when_to_use": {

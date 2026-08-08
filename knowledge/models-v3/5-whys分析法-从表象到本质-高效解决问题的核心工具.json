@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "5-whys分析法",
     "source": "5_Whys分析法_从表象到本质_高效解决问题的核心工具.md",
-    "sourceTitle": "5 Whys分析法：从表象到本质，高效解决问题的核心工具"
+    "sourceTitle": "5 Whys分析法：从表象到本质，高效解决问题的核心工具",
+    "agent_roles": [
+      "intent_clarifier",
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "核心是：通过反复追问（通常5次左右），跳出表象定位根本原因，进而制定有效解决方案",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "六顶思考帽的概念",
     "source": "ref:100+思维模型合集 (模型思维):六顶思考帽的概念",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "六顶思考帽是英国爱德华·德·博诺博士开发的一种思维训练模式，是一 个全面思考问题的模型。它提供了“平行思维”的工具，避免将时间浪费 在互相争执上。 强调的是“能够成为什么”，而非 “本身是什么”，是寻求一条向前发展 的路，而不是争论谁对谁错",
   "when_to_use": {

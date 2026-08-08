@@ -8,7 +8,11 @@
     "skill_name": "理论应用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):理论应用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "3.1. 应用方面  自创立以来，贝尔宾团队角色理论在世界上很多大企业得到了推广应用，并 取得了很大成功，如波音、三菱、英国电信、IBM、诺基亚等；很多机构也采用 了该模型，如联合国、欧洲执行委员会、世界银行等。据统计，仅英国而言，该 国前",
   "when_to_use": {

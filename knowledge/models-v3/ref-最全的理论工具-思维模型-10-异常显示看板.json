@@ -8,7 +8,10 @@
     "skill_name": "异常显示看板",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):异常显示看板",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "error_handler"
+    ]
   },
   "core_definition": "在工作现场当异常发生时首先显示该工序的异常状",
   "when_to_use": {

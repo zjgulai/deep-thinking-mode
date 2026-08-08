@@ -8,7 +8,13 @@
     "skill_name": "涌现性",
     "source": "ref:100+思维模型合集 (模型思维):涌现性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "systems_thinker",
+      "planner",
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "，任何系统和物体通过不断的 分解，以便清楚其性能和主要功能，部分相加等于整体。而量子思维 体现的是涌现性，涌现是复杂系统通过自组织呈现出来的相变。就像 单个蚂蚁是愚蠢的，而蚁群就表现的很聪明。单个蚂蚁",
   "when_to_use": {

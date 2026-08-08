@@ -8,7 +8,10 @@
     "skill_name": "运用讲故事模型",
     "source": "ref:100+思维模型合集 (模型思维):运用讲故事模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "坎贝尔在 1949 年出版的《千面英雄》一书中说到,任何时代和任何文化 里的所有神话故事,其基本要素都是一样的,而且主要故事情节也是一 样的。所以,他认为世界上没有什么新故事,人们只是在复述同样的故事。  808 / 1937 \f自从人类早",
   "when_to_use": {

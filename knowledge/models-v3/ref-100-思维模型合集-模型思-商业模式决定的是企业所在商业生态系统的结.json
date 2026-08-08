@@ -8,7 +8,11 @@
     "skill_name": "商业模式决定的是企业所在商业生态系统的结",
     "source": "ref:100+思维模型合集 (模型思维):商业模式决定的是企业所在商业生态系统的结",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "问题： 能否通过调整或引入新的利益相关方扩大整个生态系统的价值空间？ 生态系统中是否存在沉睡的资源能力未被充分挖掘显现？ 能够通过交易结构的再设计提升生态系统的效率或者拓宽边界？ 衡量指标： 整个商业",
   "when_to_use": {

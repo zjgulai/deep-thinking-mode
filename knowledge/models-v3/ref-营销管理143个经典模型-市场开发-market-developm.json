@@ -8,7 +8,12 @@
     "skill_name": "市场开发",
     "source": "ref:营销管理143个经典模型:市场开发（Market Developm",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "intent_clarifier",
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "找到具有相同产品需求的使用者顾客，其中往往产品定位和销售方法会有所调整，但产品本身的 核心技术则不必改变。",
   "when_to_use": {

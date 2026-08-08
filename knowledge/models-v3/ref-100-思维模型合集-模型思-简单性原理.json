@@ -8,7 +8,11 @@
     "skill_name": "简单性原理",
     "source": "ref:100+思维模型合集 (模型思维):简单性原理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "自然界既是简单的，又是复杂的。科学理论体系的构建，在尊重客观 事实的前提下，应用简单性原则选择相对简单的体系是合理的。科学 理论的简单性原理，对科学研究提出了具体要求： 一是正确性，即理论与实践的一致，科学知识与经验事实的一致；  1263",
   "when_to_use": {

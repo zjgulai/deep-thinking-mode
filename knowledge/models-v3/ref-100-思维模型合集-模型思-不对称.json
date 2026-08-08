@@ -8,7 +8,11 @@
     "skill_name": "不对称",
     "source": "ref:100+思维模型合集 (模型思维):不对称",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "均值回归具有不对称性。例如：股票的正收益与负收益回归的幅度与 速度不可能一样。也就是如果股票在 30 天之内涨了 1000 点，不可能 在后面的 30 天之内跌去 1000 点。股票涨 1000 点的时间和速度是随机 的，没有规律可循。股票",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "实施应用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施应用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "评价企业业绩的综合性评价工具。事实上，BSC",
   "when_to_use": {

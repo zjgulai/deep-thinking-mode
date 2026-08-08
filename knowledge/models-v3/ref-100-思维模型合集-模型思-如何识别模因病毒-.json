@@ -8,7 +8,10 @@
     "skill_name": "如何识别模因病毒",
     "source": "ref:100+思维模型合集 (模型思维):如何识别模因病毒？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "原则，也是一个过程，一个在成长和转变之间",
   "when_to_use": {

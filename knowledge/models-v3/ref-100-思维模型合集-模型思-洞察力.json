@@ -8,7 +8,11 @@
     "skill_name": "洞察力",
     "source": "ref:100+思维模型合集 (模型思维):洞察力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "深入事物或问题的能力，是通过表面现象精确判断出背后本质能",
   "when_to_use": {

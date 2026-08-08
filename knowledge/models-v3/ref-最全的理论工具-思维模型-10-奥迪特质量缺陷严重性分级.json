@@ -8,7 +8,10 @@
     "skill_name": "奥迪特质量缺陷严重性分级",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):奥迪特质量缺陷严重性分级",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "按质量缺陷对产品适用性的影响程度．把质量缺陷分为五个等级，同时赋予 其不同的分值。  A级：致命缺陷，分值为100分  判定原则：影响产品的寿命、可靠性和主要功能，并使之明显降低，缺陷直 接形成安全隐患或外观质量不能被用户接受。  B级：",
   "when_to_use": {

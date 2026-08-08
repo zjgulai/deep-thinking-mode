@@ -8,7 +8,10 @@
     "skill_name": "培养习惯",
     "source": "ref:100+思维模型合集 (模型思维):培养习惯",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "心理学术语,是指给想做或必须要做的事预设一个确切的时间、地点,当",
   "when_to_use": {

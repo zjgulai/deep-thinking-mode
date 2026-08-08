@@ -8,7 +8,10 @@
     "skill_name": "系统性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):系统性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "包括引进、安装、调试、使用、维护、维修、改造，直到报废更新的各个阶段作 为 管理对象，涉及设备的各个子系统以及设备的每一个部件、零件，构成以事 后维修、预防维修、改善维修和维修预防为主导的全系统生产维修体系。同时， TPM 要 求对设备环境",
   "when_to_use": {

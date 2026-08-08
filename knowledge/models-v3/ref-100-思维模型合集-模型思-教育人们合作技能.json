@@ -8,7 +8,10 @@
     "skill_name": "教育人们合作技能",
     "source": "ref:100+思维模型合集 (模型思维):教育人们合作技能",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "经典的案例。复活节岛位于智利以西",
   "when_to_use": {

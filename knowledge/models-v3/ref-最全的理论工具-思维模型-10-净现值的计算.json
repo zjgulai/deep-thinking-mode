@@ -8,7 +8,10 @@
     "skill_name": "净现值的计算",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):净现值的计算",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "某个投资项目在整个投资周期内引起的",
   "when_to_use": {

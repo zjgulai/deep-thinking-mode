@@ -8,7 +8,10 @@
     "skill_name": "按照企业现行的战略对各个关键因素评分",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按照企业现行的战略对各个关键因素评分；",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 确定企业战略模型：  （1）生产制造战略  （2）财务投资战略  （3）人力资源战略  （4）市场营销战略  （5）产品研发战略 评分应注意问题：  （1）清楚目前战略  （2）小组评估",
   "when_to_use": {

@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "真正的深度学习",
     "source": "真正的深度学习_用四个视角_把书本知识变成自己的认知.md",
-    "sourceTitle": "真正的深度学习：用四个视角，把书本知识变成自己的认知"
+    "sourceTitle": "真正的深度学习：用四个视角，把书本知识变成自己的认知",
+    "agent_roles": [
+      "intent_clarifier",
+      "multi_perspective",
+      "decision_maker",
+      "action_executor"
+    ]
   },
   "core_definition": "不做被动的信息接收者，要做主动的知识建构者",
   "when_to_use": {

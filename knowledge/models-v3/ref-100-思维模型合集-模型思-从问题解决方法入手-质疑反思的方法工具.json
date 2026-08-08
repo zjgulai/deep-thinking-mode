@@ -8,7 +8,12 @@
     "skill_name": "从问题解决方法入手+质疑反思的方法工具",
     "source": "ref:100+思维模型合集 (模型思维):从问题解决方法入手+质疑反思的方法工具",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的工具。最终这个小组使用的方法工具有两套,一套是 基本的解决问题方法,针对效率的问题。另一个是质疑反思工具。这个 项目最后问题顺利解决,小组成员也都成长了和进步了。 质疑反思什么才是真问题 行动学习小",
   "when_to_use": {

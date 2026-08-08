@@ -8,7 +8,10 @@
     "skill_name": "品质管理的活动",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):品质管理的活动",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "因此现场员工要讨论的事项必须要以品质为中心，其有关事项不外乎有关 Q（品 质）、C（成本）、D（交期）、M（士气）、S（安全）等。",
   "when_to_use": {

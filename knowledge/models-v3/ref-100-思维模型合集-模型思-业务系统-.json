@@ -8,7 +8,11 @@
     "skill_name": "业务系统",
     "source": "ref:100+思维模型合集 (模型思维):业务系统：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "企业选择哪些行为主体作为其内部或外部的利益相关者 业务系统由构型、角色与关系三部分组成。构型指利益相关者及其联 结方式所形成的网络拓扑结构；角色指拥有资源能力，即拥有具体实 力的利益相关者；关系指利益相关者之间的治理关系，主要描述控制 权和",
   "when_to_use": {

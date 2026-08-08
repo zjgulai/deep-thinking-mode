@@ -8,7 +8,10 @@
     "skill_name": "适用范围",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):适用范围",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "波士顿矩阵主要为具有多个业务分部或分公司、实行多元化经营的大型公 司而设计。与发达国家相比，我国的产业组合结构仍旧高度分散化，但经济发展 和市场竞争也已造就了众多较大型的企业或企业集团。多元化经营也已作为一种 重要的经营战略而为众多大中型",
   "when_to_use": {

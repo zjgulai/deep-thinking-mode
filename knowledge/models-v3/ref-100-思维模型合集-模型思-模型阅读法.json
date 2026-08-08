@@ -8,7 +8,11 @@
     "skill_name": "模型阅读法",
     "source": "ref:100+思维模型合集 (模型思维):模型阅读法",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "模型阅读法是我们通过思辩总结的一种高效阅读习得工具，可以帮助 我们从阅读到习得。 大量泛读：在明确我们的阅读目标后，我们就对这一主题的书籍，进 行大量的泛读，阅读不同作者的不同书籍，一般至少在十本以上，记 录主要的理论和观点； 构建模型：通",
   "when_to_use": {

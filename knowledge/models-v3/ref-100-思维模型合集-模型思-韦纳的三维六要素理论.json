@@ -8,7 +8,11 @@
     "skill_name": "韦纳的三维六要素理论",
     "source": "ref:100+思维模型合集 (模型思维):韦纳的三维六要素理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "美国心理学家伯纳德·韦纳(B.Weiner,1974)认为,人们对行为成败原因的 分析可归纳为以下六个原因: 能力:根据自己评估个人对该项工作是否胜任;  373 / 1937 \f努力:个人反省检讨在工作过程中曾否尽力而为; 任务难度:凭个",
   "when_to_use": {

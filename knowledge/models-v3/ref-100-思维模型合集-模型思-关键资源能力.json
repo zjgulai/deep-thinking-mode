@@ -8,7 +8,11 @@
     "skill_name": "关键资源能力",
     "source": "ref:100+思维模型合集 (模型思维):关键资源能力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）资源就是企业所控制的，能够使企业构思和设计好的战略得到实 施，从而来提高企业经营效果和效率，包括全部的财产、能力、竞争 力、数据、信息、知识等。企业的资源主要有以下几类： 金融资源：来自各利益相关者的货币资源或可交换为货币的资源。 实",
   "when_to_use": {

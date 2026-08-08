@@ -8,7 +8,10 @@
     "skill_name": "按物流对企业的分类",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按物流对企业的分类",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从原材料到成品的高度相关的活动链",
   "when_to_use": {

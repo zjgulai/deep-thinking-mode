@@ -8,7 +8,11 @@
     "skill_name": "学习表演",
     "source": "ref:100+思维模型合集 (模型思维):学习表演",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "812 / 1937 \f表演是一门艺术,优秀的演员能够深入他人的思想,理解他人的情感,演 绎他人的行为,进而打动他人的心灵。优秀的演员必须具备强大的共情 力才能塑造和演绎好一个角色。我们普通人可以通过学习表演,站在对 方的角度思考问题,深",
   "when_to_use": {

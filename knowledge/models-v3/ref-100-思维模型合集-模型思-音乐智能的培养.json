@@ -8,7 +8,10 @@
     "skill_name": "音乐智能的培养",
     "source": "ref:100+思维模型合集 (模型思维):音乐智能的培养",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "①营造氛围，音乐世家的孩子音乐智能一般都比较强，因为从小就有 音乐氛围。 ②多听，聆听不同国家和民族的不同音乐，参加各种音乐会。 ③多练习，通过唱歌演奏各种乐器，提升自己的体验感，沉浸感。  777 / 1937 \f④寻找专业教练，如果走专",
   "when_to_use": {

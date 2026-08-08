@@ -8,7 +8,11 @@
     "skill_name": "拓宽了认知的边界",
     "source": "ref:100+思维模型合集 (模型思维):拓宽了认知的边界",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "，做到深度思考？ ⒊创新类模型 如何在竞争中持续不断的创新？ ⒋心理学模型 如何运用心理学规避决策陷阱？ ⒌经济学模型 如何运用经济学思维去思考问题？ ⒍管理学模型 如何让管理更高效？ ⒎决策学模型",
   "when_to_use": {

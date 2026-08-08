@@ -8,7 +8,11 @@
     "skill_name": "确定核心的利益相关者",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定核心的利益相关者",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "的利益 相关者，且他们对何谓有效的工作绩效，以及实现这种绩效必须具备什么样的能 力素质都持有重要的见解。 (一) 公司的高级主管  公司的高级主管普遍面临着持续不断地增进销售量、利润和股东收益的压力。",
   "when_to_use": {

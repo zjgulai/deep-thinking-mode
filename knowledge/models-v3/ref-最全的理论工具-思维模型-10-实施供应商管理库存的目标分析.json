@@ -8,7 +8,11 @@
     "skill_name": "实施供应商管理库存的目标分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施供应商管理库存的目标分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "竞争力；  （4）提高双方合作程度和忠诚度；",
   "when_to_use": {

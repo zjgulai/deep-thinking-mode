@@ -8,7 +8,12 @@
     "skill_name": "倾听力的价值",
     "source": "ref:100+思维模型合集 (模型思维):倾听力的价值",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "沟通力的基础是倾听力，好的倾听力可以为我们的沟通奠定基础，并 为我们创造出很多的价值。 （1）获取信息、导向行动 我们知道沟通的目的是为了获取足够且正确的信息，使我们构建解决 方案，并导向行动。而优秀的倾听力则能够帮助我们获取正确的、高 质",
   "when_to_use": {

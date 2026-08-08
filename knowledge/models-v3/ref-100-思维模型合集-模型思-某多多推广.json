@@ -8,7 +8,11 @@
     "skill_name": "某多多推广",
     "source": "ref:100+思维模型合集 (模型思维):某多多推广",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "很多人很烦某多多，但其商业结构上的运作成功，极其高明，回想自 己的同学群家人群，有几个群没有被拼多多轰炸过。某多多病毒推广， 1000 元红包，只差砍掉 1 毛钱就可以拿到，然后希望你点击砍一刀， 这个请求门槛设计得够绝。等你实施了砍一刀的",
   "when_to_use": {

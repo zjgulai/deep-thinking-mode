@@ -8,7 +8,11 @@
     "skill_name": "动机",
     "source": "ref:100+思维模型合集 (模型思维):动机",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "有的人拥有伟大的梦想，有的人只想做重复的工作，梦想愿景和目标 可以激发人的潜能，让人产生源源不断的精神力量，所以要学会激励 自己，努力使自己比别人做的更好，设定更高的目标，从内部和外部 给予自己激励，加快进化速度。",
   "when_to_use": {

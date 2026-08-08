@@ -8,7 +8,10 @@
     "skill_name": "适时生产和少人化是-jit-生产制的实质",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):适时生产和少人化是 JIT 生产制的实质",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“在必要的时间里，按必要的量，生产必要的产品”",
   "when_to_use": {

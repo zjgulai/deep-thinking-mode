@@ -8,7 +8,11 @@
     "skill_name": "找到亮点",
     "source": "ref:100+思维模型合集 (模型思维):找到亮点",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "案例:杰里斯特宁工作于国际慈善组织“救助儿童会”,在 1990 年的时候, 应越南政府邀请,去协助改善当地儿童营养不良的问题,经过大量的研 究报告,确定了儿童营养不良的原因是一系列综合问题共同作用导致的 结果,包括卫生状况差,生活贫困,没有",
   "when_to_use": {

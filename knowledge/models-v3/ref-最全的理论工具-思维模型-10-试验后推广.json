@@ -8,7 +8,10 @@
     "skill_name": "试验后推广",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):试验后推广",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "每个企业都有自己的工作方式，不可能在全公司一次性地进行 TPS 的完全 应用。这也是不现实的。丰田强调：试验(也称试运行)，即在推广任何流程、任 何方案时。先进行局部试运行。效果很明显而且不会影响生产时。才向整体进行 推广。对于 TPS",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "邵冲．人力资源管理概要．北京",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):邵冲．人力资源管理概要．北京",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 全面生产管理  —生产改善过程中的重要工具之一 \f http://wiki.mbalib.com/",
   "when_to_use": {

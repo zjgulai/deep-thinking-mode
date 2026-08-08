@@ -13,7 +13,13 @@
     ],
     "skill_name": "问题定义三层漏斗",
     "source": "问题定义三层漏斗速查卡.md",
-    "sourceTitle": "问题定义三层漏斗速查卡"
+    "sourceTitle": "问题定义三层漏斗速查卡",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "高手解题，永远先定义问题，再解决问题",
   "when_to_use": {

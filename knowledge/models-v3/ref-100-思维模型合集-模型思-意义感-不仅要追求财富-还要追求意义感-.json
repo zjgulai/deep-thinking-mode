@@ -8,7 +8,11 @@
     "skill_name": "意义感。不仅要追求财富,还要追求意义感",
     "source": "ref:100+思维模型合集 (模型思维):意义感。不仅要追求财富,还要追求意义感。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "融合了技术、认知科学、人类需求",
   "when_to_use": {

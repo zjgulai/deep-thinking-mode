@@ -8,7 +8,10 @@
     "skill_name": "必然性",
     "source": "ref:100+思维模型合集 (模型思维):必然性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "复杂适应性系统，影响因素很多，所以很难预测股市",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "空间思维",
     "source": "ref:100+思维模型合集 (模型思维):空间思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "还是用上文的两杯水的案例，同样的目标和行为，如果你是在冰天雪 地的北极户外，和你在赤道上无风的骄阳下，达到结果的时长和效果 一定会有所不同，这就是物理空间思维。同样的政策，在 A 公司可以 运行的很好；但是到了 B 公司就未必运行的好，这就",
   "when_to_use": {

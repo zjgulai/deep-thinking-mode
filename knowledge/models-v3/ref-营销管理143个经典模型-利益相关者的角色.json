@@ -8,7 +8,10 @@
     "skill_name": "利益相关者的角色",
     "source": "ref:营销管理143个经典模型:利益相关者的角色",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "问题。  除了对战略制定产生影响以外，利益相关者分析也是评价战略的有力工具。战略评价可以 通过确定持反对意见的股东和他们对一些有争议的问题的影响力来完成。",
   "when_to_use": {

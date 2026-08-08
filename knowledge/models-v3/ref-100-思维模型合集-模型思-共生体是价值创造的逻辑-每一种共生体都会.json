@@ -8,7 +8,10 @@
     "skill_name": "共生体是价值创造的逻辑。每一种共生体都会",
     "source": "ref:100+思维模型合集 (模型思维):共生体是价值创造的逻辑。每一种共生体都会",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "问题：价值创造的逻辑是什么？有哪些已经呈现迹象，但我们没  1118 / 1937 \f有感觉到变化？ 衡量指标：共生体的价值空间（天花板）",
   "when_to_use": {

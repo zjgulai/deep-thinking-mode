@@ -8,7 +8,10 @@
     "skill_name": "当前现实树（crt）",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):当前现实树（CRT）",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "要认识到 UDE 并不是真正的问题所在，它们只是一 些表面现象。难就难在要绘出将这些不良效果联系在一起的逻辑关系图。完成这 项工作，就可以找到真正的问题，它们就显示在这个逻辑图的最低部。这个逻辑 图就",
   "when_to_use": {

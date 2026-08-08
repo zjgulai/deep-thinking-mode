@@ -8,7 +8,10 @@
     "skill_name": "科学依据",
     "source": "ref:100+思维模型合集 (模型思维):科学依据：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人类很早就认识到，大脑会自动将其发现的所有事物以某种秩序组织 起来。比如，古希腊人向星空眺望时，看到的不是散乱的星辰，而是 各种星辰做成的星座，有不同的代表意义。中国古代也有不少占星术 士，将天空分为二十八星宿，并发展出了极其庞杂的学科。因",
   "when_to_use": {

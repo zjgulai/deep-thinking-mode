@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "马斯洛需求金字塔",
     "source": "马斯洛需求金字塔_一套自查工具_精准定位你当下的成长瓶颈 2.md",
-    "sourceTitle": "马斯洛需求金字塔：一套自查工具，精准定位你当下的成长瓶颈"
+    "sourceTitle": "马斯洛需求金字塔：一套自查工具，精准定位你当下的成长瓶颈",
+    "agent_roles": [
+      "intent_clarifier",
+      "prioritizer",
+      "communicator",
+      "simplifier"
+    ]
   },
   "core_definition": "核心是生活的确定性，包含稳定收入、存款保障、人身健康、无未知风险",
   "when_to_use": {

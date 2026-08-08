@@ -8,7 +8,10 @@
     "skill_name": "清洁",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):清洁",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "果，使其保持完美和最佳状态， 并将整理、整顿、清扫、安全进行到底，使之 制度化、标准化。清洁的目的是为了坚持前几个管理环节的成果。 实施清洁活动的要点： (1)职责明确。公司里所有的区域或设备都应有明确的整理、整顿、清扫、安全 的责任者，",
   "when_to_use": {

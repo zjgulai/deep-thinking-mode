@@ -8,7 +8,10 @@
     "skill_name": "产品延伸",
     "source": "ref:营销管理143个经典模型:产品延伸（Product Develop",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "用现有的顾客关系来借力使力。通常是以扩大现有产品的深度和广度，推出新一代或是相关的产 品给现有的顾客，提高该厂商在消费者荷包中的占有率。 6 \f4、多角化经营（Diversification）——提供新产品给新市场，此处由于企业的既有专业知",
   "when_to_use": {

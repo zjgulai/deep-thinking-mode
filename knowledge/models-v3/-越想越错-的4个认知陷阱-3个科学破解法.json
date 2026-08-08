@@ -12,7 +12,11 @@
     ],
     "skill_name": "“越想越错”的4个认知陷阱，3",
     "source": "_越想越错_的4个认知陷阱_3个科学破解法.md",
-    "sourceTitle": "“越想越错”的4个认知陷阱，3个科学破解法"
+    "sourceTitle": "“越想越错”的4个认知陷阱，3个科学破解法",
+    "agent_roles": [
+      "logical_analyzer",
+      "multi_perspective"
+    ]
   },
   "core_definition": "这个问题的根本原因是什么？“越想越错”的4个认知陷阱，3如何找到它？",
   "when_to_use": {

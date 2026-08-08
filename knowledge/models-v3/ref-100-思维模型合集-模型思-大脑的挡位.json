@@ -8,7 +8,10 @@
     "skill_name": "大脑的挡位",
     "source": "ref:100+思维模型合集 (模型思维):大脑的挡位",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "上个世纪，科学家们就发现，人类的大脑也是有“挡位”的。人在思考的 时候，脑细胞会有节奏的释放出电子脉冲，人的大脑越活跃，释放的 节奏就越快。 1 挡：大脑处于 theta 波段，大脑波动较为缓慢。此时人处于睡眠或白 日梦的状态，几乎完全专注",
   "when_to_use": {

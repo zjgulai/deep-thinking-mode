@@ -8,7 +8,12 @@
     "skill_name": "运气能力说",
     "source": "ref:100+思维模型合集 (模型思维):运气能力说。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "就是人们误把运气看成个体的一种品质。在现实情境中, 正确决策产生 消极结果, 以及积极结果源自失败决策的可能性是存在的。但是人们往 往混淆了能力和运气, 认为运气也是个体的品质。评估者在评估决策之 时会把运气产生的结果归于决策质量的一部分,",
   "when_to_use": {

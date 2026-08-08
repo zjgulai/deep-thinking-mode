@@ -13,7 +13,11 @@
     ],
     "skill_name": "问题重构7方法",
     "source": "问题重构7方法速查卡.md",
-    "sourceTitle": "问题重构7方法速查卡"
+    "sourceTitle": "问题重构7方法速查卡",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer"
+    ]
   },
   "core_definition": "你有没有这样的经历：一个难题反复解决却反复回来，团队吵了半天还在原地打转，明明很努力却总觉得治标不治本",
   "when_to_use": {

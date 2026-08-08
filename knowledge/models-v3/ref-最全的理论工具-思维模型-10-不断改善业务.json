@@ -8,7 +8,10 @@
     "skill_name": "不断改善业务",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):不断改善业务",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "TPM 使现在的业务更容易、更方便、更具有效率、更安全地进行。在业务 改善的 TPM 活动中，不同的小组要体现特色和价值，明确目的。改善后，变更 点必须反映到标准管理项目上，做好 TPM 与标准管理的衔接。",
   "when_to_use": {

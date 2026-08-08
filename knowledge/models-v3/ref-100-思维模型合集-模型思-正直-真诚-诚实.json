@@ -8,7 +8,10 @@
     "skill_name": "正直、真诚、诚实",
     "source": "ref:100+思维模型合集 (模型思维):正直、真诚、诚实",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "与别人，包括朋友、亲戚、点头之交，甚至陌生人交往时的积",
   "when_to_use": {

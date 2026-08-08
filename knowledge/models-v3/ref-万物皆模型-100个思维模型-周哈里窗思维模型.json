@@ -8,7 +8,10 @@
     "skill_name": "周哈里窗思维模型",
     "source": "ref:万物皆模型-100个思维模型:周哈里窗思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "我们坚信应该以不同的方式去思考问题,以此来应对这个瞬息万变的世界。因此我们将前人智慧通过“视觉语言”翻译出来,为大家提供解決问题的可视化思维公式。 周哈里窗 Johari Window 展示了关于自我认知和他人对自己的认知之间在有意识或无",
   "when_to_use": {

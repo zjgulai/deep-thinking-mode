@@ -8,7 +8,10 @@
     "skill_name": "注意使用范围",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):注意使用范围",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "行为事件访谈法比较适用于直接与考察对象谈话。如果谈话人不是考察对象 本人，也可借鉴该方法，但应对考察对象使用第三人称。谈话内容可以观察和验 证被考察人员的行为特征的准确性和真实性。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "确定解决问题的结果",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定解决问题的结果",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "小组设定整改后的继电器外场故障率 2.675 财务状况良好，没有破产可能(无破产风险区)  在“Z-Score”模型中，Altman 选择的 5 种财务比率，实际上是将反映企业的偿债能力比率(X 1，X 4)、 获利能力比率(X 2，X 3",
   "when_to_use": {

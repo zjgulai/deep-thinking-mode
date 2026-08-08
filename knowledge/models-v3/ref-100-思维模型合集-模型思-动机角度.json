@@ -8,7 +8,11 @@
     "skill_name": "动机角度",
     "source": "ref:100+思维模型合集 (模型思维):动机角度",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "844 / 1937 \f企业要建立容忍失败和鼓励创新的企业文化，开展批评和自我评判， 让所有员工相信谁都会犯错误，敢于承认错误是一种勇敢的表现，是 一种成长的过程，不是丢面子，隐瞒错误要重重的惩罚。例如：中国 的华为和美国的桥水基金，在这",
   "when_to_use": {

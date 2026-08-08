@@ -8,7 +8,10 @@
     "skill_name": "01-机会成本模型",
     "source": "ref:能力提升-85个著名认知思维模型:01 机会成本模型",
     "sourceType": "book",
-    "sourceTitle": "能力提升-85个著名认知思维模型"
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "为了某种东西而所要放弃另一些东西的最大价值;也可以理解为在面临多方",
   "when_to_use": {

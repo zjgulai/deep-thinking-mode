@@ -8,7 +8,11 @@
     "skill_name": "建构合理情景",
     "source": "ref:100+思维模型合集 (模型思维):建构合理情景。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在高度不确定的环境下，组织面对的未来环境的可能性（情景）有无 穷多种，组织将无所适从。  1138 / 1937 \f对驱动因子从两个维度打分，一个维度是影响力，一个维度是不确定 性，分值为 10 分，根据分值放入驱动力量定位图，视觉化呈现出",
   "when_to_use": {

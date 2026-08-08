@@ -8,7 +8,10 @@
     "skill_name": "专家人数",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):专家人数",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "专家人数过多多少都不恰当，人数过少则限制了代表性；人数太多则难于组 织，工作量也大。人数的多少应以达到所需的可信度为宜，经研究，可信度在专 家人数超过 15 人后，随人数增加可信度增加较少。一般说来，以 10~50 人为宜， 对重大问题，",
   "when_to_use": {

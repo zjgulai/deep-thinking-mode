@@ -8,7 +8,10 @@
     "skill_name": "活用-qc-手法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):活用 QC 手法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "是无法做好事情的。在品管圈活动之维持及改善，同样必须用到一些工具，此工 具就是 QC 手法。QC 手法有很多，对初学者而言，最常用的是 QC 七大手法， 即查检表、层别法、柏拉图、特性要因图、推移图、散布图及直方图，如有必要， \f http",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "发展品类战略",
     "source": "ref:100+思维模型合集 (模型思维):发展品类战略",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如果在品牌建设中，实在找不到差异化，我们还有一个策略就是建立 新品类。什么是品类，品类就是大脑的格子，是消费者心智中对信息  1042 / 1937 \f的归类并储存的命名，称之为“品类”。 例如：原来都是马车，发明了汽车的人就创建了新品类。",
   "when_to_use": {

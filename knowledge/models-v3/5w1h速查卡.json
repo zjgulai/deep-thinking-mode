@@ -13,7 +13,13 @@
     ],
     "skill_name": "5w1h",
     "source": "5W1H速查卡.md",
-    "sourceTitle": "5W1H速查卡"
+    "sourceTitle": "5W1H速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "这张速查卡帮你快速掌握5W1H分析法的核心六要素和问题模板，并附案例示范，让你一看就会、一用就灵",
   "when_to_use": {

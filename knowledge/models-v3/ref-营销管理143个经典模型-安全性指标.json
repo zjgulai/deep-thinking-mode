@@ -8,7 +8,10 @@
     "skill_name": "安全性指标",
     "source": "ref:营销管理143个经典模型:安全性指标",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "客户经营的安全程度，也可以说是资金调度的安全性",
   "when_to_use": {

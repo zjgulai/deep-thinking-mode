@@ -8,7 +8,11 @@
     "skill_name": "定性的",
     "source": "ref:100+思维模型合集 (模型思维):定性的",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的形式而非数字的形式来表述。用数字说话那应当是 KR 所关注的内容。 为了让大家更好的理解目标，建议为每一个目标增加一个简短的“目标 描述”，它不能过长，在大多数情况下应该两三句话就足够了。目标描 述应包含如下内容： 为什么目标很重要？它是",
   "when_to_use": {

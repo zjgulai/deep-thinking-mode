@@ -12,7 +12,11 @@
     ],
     "skill_name": "分而治之",
     "source": "分而治之_拆解困局_高效破局的思维框架.md",
-    "sourceTitle": "分而治之：拆解困局、高效破局的思维框架"
+    "sourceTitle": "分而治之：拆解困局、高效破局的思维框架",
+    "agent_roles": [
+      "problem_framer",
+      "decomposer"
+    ]
   },
   "core_definition": "这件事的本质是什么？分而治之如何定义它？",
   "when_to_use": {

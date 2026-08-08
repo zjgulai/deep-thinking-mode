@@ -8,7 +8,11 @@
     "skill_name": "情景规划的特点",
     "source": "ref:100+思维模型合集 (模型思维):情景规划的特点",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "特点 1：兼容大脑模式。情景思维与大脑功能的方式相匹配。情景（图 像与故事）的叙述方式使得它们易于记忆。你能设想的也是你能相信 的。 特点 2：发散思维的开发。一套情景代表性质不同的未来。通过强迫你 的大脑思考性质不同的发展方向，锻炼你思考",
   "when_to_use": {

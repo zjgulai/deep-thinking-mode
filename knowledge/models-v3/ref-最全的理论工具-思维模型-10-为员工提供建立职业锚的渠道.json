@@ -8,7 +8,11 @@
     "skill_name": "为员工提供建立职业锚的渠道",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):为员工提供建立职业锚的渠道",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "组织必须做好相关工作，才要为员工建立职业锚设置渠道，这些工作有如下 五项；  (1)切实对每个员工个人职业综合把握。即通过对员工工作实践、个人评价 结果的信息、职业追求、愿望、价值观和抛锚职业目标、职业工作能力、人际关 系能力及工作所要求",
   "when_to_use": {

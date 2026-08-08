@@ -8,7 +8,11 @@
     "skill_name": "分析玻壳炸裂的原因",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):分析玻壳炸裂的原因",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "causal_reasoner",
+      "action_executor"
+    ]
   },
   "core_definition": "QC 小组全体成员深入现场，用因果图法对玻壳炸裂的原因进行了分析。  经过分析，可知造成玻壳炸裂的原因很多，人的因素有操作技能。工作责任 心问题；设备因素有退火架速度慢、退火炉炉头结构设计不合理的问题；工艺因 素有退火温度曲线不适当等问题",
   "when_to_use": {

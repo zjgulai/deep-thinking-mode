@@ -8,7 +8,10 @@
     "skill_name": "整体性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):整体性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "的功能，但是由于这些活动都是有组织、有系统的活动，它们几乎都难以独自充 分 发挥其效能，因此单纯追求某一个目标是没有意义的，必须使这些活动形成 \f http://wiki.mbalib.com/ 一个集合，统一于和协调于 TPM 管理的整体",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "相、相变和序参量",
     "source": "ref:100+思维模型合集 (模型思维):相、相变和序参量",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "系统在某一条件下所处的状态,系统由一种状态向另一种",
   "when_to_use": {

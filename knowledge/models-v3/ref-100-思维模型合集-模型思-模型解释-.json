@@ -8,7 +8,10 @@
     "skill_name": "模型解释",
     "source": "ref:100+思维模型合集 (模型思维):模型解释：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "整棵树源于树根，发展于树干，这就是组织或企业的 WHY。树枝是部 门，每个部门也可以有自己的子文化（鸟巢），这个子文化是这个部门 在组织中独立存在的价值与意义。鸟儿是个人，个人也有自己的 WHY。",
   "when_to_use": {

@@ -6,7 +6,12 @@
     "category": "07",
     "tags": [],
     "skill_name": "从被动接受到清醒思考_批判性思维_多",
-    "source": "从被动接受到清醒思考_批判性思维_多元视角_整合思维_搭建你的认知护城河.md"
+    "source": "从被动接受到清醒思考_批判性思维_多元视角_整合思维_搭建你的认知护城河.md",
+    "agent_roles": [
+      "logical_analyzer",
+      "multi_perspective",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "对所有进入大脑的信息，像机场安检一样逐一核验：不盲目跟风，不情绪化排斥，审慎过后再接纳",
   "when_to_use": {

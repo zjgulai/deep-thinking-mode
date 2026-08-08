@@ -8,7 +8,12 @@
     "skill_name": "评估该企业在目标市场选择中的市场吸引力和",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):评估该企业在目标市场选择中的市场吸引力和",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "。确定这些因 素的方法可以采取头脑风暴法或名义小组法等，关键是不能遗漏重要因素，也不 能将微不足道的因素纳入分析中，同时指标之间不能重复，影响因素如表 1 所示。 表2：影响因素集 市场吸引力S 企业",
   "when_to_use": {

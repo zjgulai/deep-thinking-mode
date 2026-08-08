@@ -8,7 +8,10 @@
     "skill_name": "第1章-演示是用来“调动对方”的东西-第",
     "source": "ref:麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝]):第1章 演示是用来“调动对方”的东西 第",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])"
+    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "将所有问题分为三类，并根据每种问题类型确定相关课题的手法",
   "when_to_use": {

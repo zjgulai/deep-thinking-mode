@@ -8,7 +8,10 @@
     "skill_name": "开展-tps-深入培训",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):开展 TPS 深入培训",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对于任何一个企业，都有自己的企业理念、企业文化。运用 TPS 最主要的问 题就是 TPS 的思想与企业的文化传统、理念以及企业员工多年的工作经验相冲 \f http://wiki.mbalib.com/ 突。比如， 传统的观念认为，零部件的",
   "when_to_use": {

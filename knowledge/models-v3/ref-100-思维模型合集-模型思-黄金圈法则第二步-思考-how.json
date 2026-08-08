@@ -8,7 +8,10 @@
     "skill_name": "黄金圈法则第二步，思考-how",
     "source": "ref:100+思维模型合集 (模型思维):黄金圈法则第二步，思考 How",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在为什么圈层考虑清楚之后，下一步就要考虑第二个圈层 How 怎么 做？苹果公司在这个圈层也是下足了功夫，苹果建立了全世界最强大 的供应链管理系统，最高效的管理着全球 800 多家供应商，同时在营 销和客户服务领域，也做到了极致，例如体验店中",
   "when_to_use": {

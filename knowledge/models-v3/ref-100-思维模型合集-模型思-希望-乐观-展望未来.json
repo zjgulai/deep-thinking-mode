@@ -8,7 +8,11 @@
     "skill_name": "希望、乐观、展望未来",
     "source": "ref:100+思维模型合集 (模型思维):希望、乐观、展望未来",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "期待未来会更好，并为了实现这一目标而做好计划并努力",
   "when_to_use": {

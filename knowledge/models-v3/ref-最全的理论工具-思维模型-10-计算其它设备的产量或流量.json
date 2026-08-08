@@ -8,7 +8,10 @@
     "skill_name": "计算其它设备的产量或流量",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):计算其它设备的产量或流量",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "systems_thinker"
+    ]
   },
   "core_definition": "确定了瓶颈设备的产量或流量后，以瓶颈为中心按“拉动式”以瓶颈设备为 基准由后向前排定。按“推动式”以瓶颈设备为基准由前往后安排。",
   "when_to_use": {

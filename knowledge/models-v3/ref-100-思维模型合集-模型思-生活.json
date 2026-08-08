@@ -8,7 +8,10 @@
     "skill_name": "生活",
     "source": "ref:100+思维模型合集 (模型思维):生活",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "幸福，不管在工作、学习和生活中，当我们决心追求一个",
   "when_to_use": {

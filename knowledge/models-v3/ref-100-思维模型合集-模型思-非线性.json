@@ -8,7 +8,10 @@
     "skill_name": "非线性",
     "source": "ref:100+思维模型合集 (模型思维):非线性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "性关系。特别是在与系统的反复交互作用中，这一点更为明显。近代 科学之所以在许多方面遇到困难，重要原因之一是它把自己的眼界局 限于线性关系的狭窄范围内，从而无法描述和理解丰富多采的变化和 发展。 复杂适应系统理论认为个体之间相互影响不是简单的",
   "when_to_use": {

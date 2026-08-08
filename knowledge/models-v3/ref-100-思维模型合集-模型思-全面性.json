@@ -8,7 +8,10 @@
     "skill_name": "全面性",
     "source": "ref:100+思维模型合集 (模型思维):全面性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在分析问题的时候，要考虑周全，不能单维度思考问题，因为我们每 个人都是在“盲人摸象”，都从自己的角度认知这个世界，每个人看到的  958 / 1937 \f都是局部，所以针对重大问题要成立问题解决小组，所有参与者在自 由愉快、畅所欲言的气氛中",
   "when_to_use": {

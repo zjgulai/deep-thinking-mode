@@ -8,7 +8,11 @@
     "skill_name": "熵与人生",
     "source": "ref:100+思维模型合集 (模型思维):熵与人生",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“信息是用来消除随机不确定性的东",
   "when_to_use": {

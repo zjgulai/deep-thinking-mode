@@ -8,7 +8,12 @@
     "skill_name": "工作理念的改变",
     "source": "ref:100+思维模型合集 (模型思维):工作理念的改变",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）保持耐心：在完全充分实施和产生量化结果之前就放弃一个周期 长的项目是ＣＥ０们经常犯的错误，有些项目周期比较长，有些项目  1166 / 1937 \f周期比较短，长周期可能带来高回报，如果没有足够的耐心，只追求 短期利益，就会失去未来。",
   "when_to_use": {

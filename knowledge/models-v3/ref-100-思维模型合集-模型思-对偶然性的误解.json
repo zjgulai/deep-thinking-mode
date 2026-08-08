@@ -8,7 +8,11 @@
     "skill_name": "对偶然性的误解",
     "source": "ref:100+思维模型合集 (模型思维):对偶然性的误解",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不合逻辑的推理方式，认为一系列随机事",
   "when_to_use": {

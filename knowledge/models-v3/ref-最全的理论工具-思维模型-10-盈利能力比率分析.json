@@ -8,7 +8,10 @@
     "skill_name": "盈利能力比率分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):盈利能力比率分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从净值报酬率看，甲公司为1.48％，远远低于银行同期存款利率2.25％。说 明所有者投资的获利能力较差，资本结构不尽合理，特别是对外投资占总资产的 17.6％，而投资回报率只有4.68％，低于同期银行贷款利率5.85％。因此，甲公 司既要",
   "when_to_use": {

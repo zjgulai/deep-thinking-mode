@@ -8,7 +8,13 @@
     "skill_name": "体验因素",
     "source": "ref:100+思维模型合集 (模型思维):体验因素：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer",
+      "communicator",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "在目标明确、能够得到即时反馈，并且挑战与能力相当的情况下，人 的注意力会开始凝聚，逐渐进入心无旁骛的状态。此时就进入了心流 的体验阶段，行为和意识融为一体，心灵的所有能量专注在当下的事 情，会产生一种掌控全局的感觉，控制感油然而生。 这就是",
   "when_to_use": {

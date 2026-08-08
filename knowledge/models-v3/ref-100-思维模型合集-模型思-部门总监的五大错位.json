@@ -8,7 +8,12 @@
     "skill_name": "部门总监的五大错位",
     "source": "ref:100+思维模型合集 (模型思维):部门总监的五大错位",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）授权问题：由于对权力分散的挫折感，使决策变得集中且缓慢。 （2）绩效管理问题：不能正确指出下属问题，指明努力的方向，下属 会失去目标。 （3）团队建设问题：仅仅把下属当作单独的个人，助长个人主义，影 响团队信息共享和协同支持。 （4）",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "积极的回应",
     "source": "ref:100+思维模型合集 (模型思维):积极的回应",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "无论思考什么内容，思考者都能通过分析、评估、",
   "when_to_use": {

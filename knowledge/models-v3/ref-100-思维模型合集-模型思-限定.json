@@ -8,7 +8,10 @@
     "skill_name": "限定",
     "source": "ref:100+思维模型合集 (模型思维):限定",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“限定词”用来表明正当理由对主张证明的力度或程度。例如：当我们已 知哈里出生在百慕大群岛，但还不能百分百断定哈里是不是英国人的 情形，则只能说，在一般条件下“大概就是英国人”。这里的“大概”就是 一种“限定词”。限定词的作用是为了对主张进行",
   "when_to_use": {

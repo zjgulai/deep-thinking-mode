@@ -8,7 +8,10 @@
     "skill_name": "计算-eva-指标",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):计算 EVA 指标",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "步骤一：资产负债表调整，计算资本总额 起始：普通股权益 加：少数股东权益  递延税项贷方余额(借方余额则为负值)  累计商誉摊销  各种准备金(坏帐准备、存货跌价准备等)  研究发展费用的资本化金额 \f http://wiki.mbalib",
   "when_to_use": {

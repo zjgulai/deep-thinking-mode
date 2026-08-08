@@ -8,7 +8,11 @@
     "skill_name": "离散信号模型",
     "source": "ref:100+思维模型合集 (模型思维):离散信号模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一个规模为 N 的种群由 S 个强者类型的个体和 W 个弱者类型的个体组 成；这两种类型的个体发送信号的成本分别为 c 和 C，且 c 0）。这个模型有三种可能  1817 / 1937 \f的结果： 这个模型的假设是存在两种类型的人，强者和",
   "when_to_use": {

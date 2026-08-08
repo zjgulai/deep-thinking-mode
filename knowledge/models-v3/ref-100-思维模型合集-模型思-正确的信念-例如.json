@@ -8,7 +8,11 @@
     "skill_name": "正确的信念，例如",
     "source": "ref:100+思维模型合集 (模型思维):正确的信念，例如",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "planner"
+    ]
   },
   "core_definition": "。 当我们遇到一个问题时，先不要着急去解决，而应该首先思考问题出 现的系统是什么？系统的功能和目标是什么？系统的第一性原理是什 么？系统的运行原理和逻辑模型是什么？ 如果你能够清晰的画出系统图，然后再",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "以六西格玛管理法整合上海移动的服务质量评",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):以六西格玛管理法整合上海移动的服务质量评",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "上海移动推行六西格玛质量管理法，还有一个重要的收获，就是有效的整合 了公司目前的服务质量评价体系。选择六西格玛管理法，切入上海移动的质量管 理领域， 使得原来上海移动已经具备质量管理体系更加健全和完善。而原先我 们普遍采用的 CSI、TQ",
   "when_to_use": {

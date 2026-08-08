@@ -8,7 +8,11 @@
     "skill_name": "采访法（5w1h-工具）",
     "source": "ref:100+思维模型合集 (模型思维):采访法（5w1h 工具）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "What：是什么？比如目的是什么？做什么工作？  69 / 1937 \fHow：怎么做？如何提高效率？如何实施等？ Why：为什么？为什么这么做？理由和原因是什么？ When：何时？比如什么时间完成？ Where：何处？比如在哪里做？从哪里",
   "when_to_use": {

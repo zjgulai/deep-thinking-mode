@@ -8,7 +8,10 @@
     "skill_name": "聆听伟大的交响乐",
     "source": "ref:100+思维模型合集 (模型思维):聆听伟大的交响乐",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "聆听伟大的交响乐是开发交响力的绝佳方法。例如贝多芬第九交响曲 《欢乐颂》、莫扎特第三十五交响曲《哈夫纳交响曲》、马勒 G 大调第 四交响曲、柴可夫斯基 1812 序曲、海顿 G 大调第九十四交响曲《惊愕》 等。",
   "when_to_use": {

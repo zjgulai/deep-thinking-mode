@@ -8,7 +8,11 @@
     "skill_name": "决策损失思维模型",
     "source": "ref:万物皆模型-100个思维模型:决策损失思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "decision_maker",
+      "observer_reflector"
+    ]
   },
   "core_definition": "循环,由观察 升维思维（P37）中有讲过如何提升自身维度,即“π型人才”",
   "when_to_use": {

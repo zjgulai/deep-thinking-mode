@@ -8,7 +8,11 @@
     "skill_name": "什么是框架",
     "source": "ref:100+思维模型合集 (模型思维):什么是框架？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "simplifier"
+    ]
   },
   "core_definition": "人们简化和指导理解复杂现实的思维结构",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "成就",
     "source": "ref:100+思维模型合集 (模型思维):成就",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "塞尼亚认为，成就（或成绩）往往是一项终极追求，哪怕它不能带来 任何积极情绪、意义、关系。有些人打牌是为了娱乐、为了开心、为 了享受心流。有些人打牌就是为了赢。对于他们来说，如果输了他们 就很不开心，相反，如果赢了，哪怕是“卑劣的胜利”，也是",
   "when_to_use": {

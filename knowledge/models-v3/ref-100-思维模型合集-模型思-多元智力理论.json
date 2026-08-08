@@ -8,7 +8,12 @@
     "skill_name": "多元智力理论",
     "source": "ref:100+思维模型合集 (模型思维):多元智力理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "“个体监控自己及他人的情绪和情感，并识别、利用这",
   "when_to_use": {

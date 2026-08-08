@@ -8,7 +8,10 @@
     "skill_name": "组合使用",
     "source": "ref:100+思维模型合集 (模型思维):组合使用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "了不起的想法！”这就是现在报刊上广泛采用的一",
   "when_to_use": {

@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "容错率思维",
     "source": "容错率思维_4个维度_5个方法_让错误不再是灾难 2.md",
-    "sourceTitle": "容错率思维：4个维度+5个方法，让错误不再是灾难"
+    "sourceTitle": "容错率思维：4个维度+5个方法，让错误不再是灾难",
+    "agent_roles": [
+      "error_handler",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "不是因为错误本身太严重，而是因为我们所处的系统，压根没有为错误预留位置",
   "when_to_use": {

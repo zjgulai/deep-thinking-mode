@@ -8,7 +8,12 @@
     "skill_name": "大脑的类比",
     "source": "ref:100+思维模型合集 (模型思维):大脑的类比",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "侯世达先生认为，人类是靠类比而活着的。“不管我们是在一家新餐厅 点菜、过马路前看两边，我们都是在与过去已经分类且易于参考的经 历进行一系列的类比。”所以，我们常常选择类比的方式来处理信息， 将新的信息与大脑已经存在的类似信息进行联接。 列纳",
   "when_to_use": {

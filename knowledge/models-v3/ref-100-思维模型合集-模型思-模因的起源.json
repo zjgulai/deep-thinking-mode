@@ -8,7 +8,10 @@
     "skill_name": "模因的起源",
     "source": "ref:100+思维模型合集 (模型思维):模因的起源",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的 区别，但是要在其中找到一种不关注自身的危机、使命、难题、危险 或机遇的文化或亚文化却是一件极具挑战的事情。 模因能够持续不断的进化，背后有两个驱动因子（生成发动机）。 一级驱动因子:4 个驱动力:",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "对美和卓越的欣赏",
     "source": "ref:100+思维模型合集 (模型思维):对美和卓越的欣赏",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "你停下来去闻路边的玫瑰，你欣赏各领域中美好和卓越的东西，不论 是自然的还是人为的，不论是数学的还是科学的。你对美好的东西充 满了敬畏与惊喜，看一场精彩的球赛，目睹人类无私的高尚行为，都 会激荡你的灵魂并使你奋发。",
   "when_to_use": {

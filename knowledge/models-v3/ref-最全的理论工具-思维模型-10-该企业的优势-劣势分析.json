@@ -8,7 +8,10 @@
     "skill_name": "该企业的优势、劣势分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):该企业的优势、劣势分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "该企业的优劣势可从其公司概况及年度经营状况中略知一二：  1)优势  ① 生产能力强。  ② 浮法玻璃生产线在国内达到同规模先进水平。  ③ 某些产品透光度好、指标达到国际水平。  ④ 其产品在河口、瑞丽两个地方具有明显优势。  ⑤ 好的",
   "when_to_use": {

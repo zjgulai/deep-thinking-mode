@@ -8,7 +8,10 @@
     "skill_name": "三元智力理论——对智商的超越",
     "source": "ref:100+思维模型合集 (模型思维):三元智力理论——对智商的超越",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "获取新知识，对新知识进行编码和存储",
   "when_to_use": {

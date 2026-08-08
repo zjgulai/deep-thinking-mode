@@ -8,7 +8,10 @@
     "skill_name": "销售",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):销售",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "著名管理理论家彼得·德鲁克曾说过：“营销的目的就是要使推销成为多余。营 销的目的在于深刻地认识和了解顾客，从而使产品或服务完全适合地满足需要而 形成产品自我推销。”网络营销的目的就是为了达到使销售成为多余。 三、旅游业网络营销价值",
   "when_to_use": {

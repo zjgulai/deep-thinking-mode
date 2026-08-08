@@ -8,7 +8,10 @@
     "skill_name": "存在流程",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):存在流程。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "移动通信企业的服务流程也是工作过程。既然是工作过程，就必然有改进的 可能，必然有可以界定过程范围。所以，也就能应用六西格玛的“SIPOC”流程 分析法来找出流程中有待改进之处。",
   "when_to_use": {

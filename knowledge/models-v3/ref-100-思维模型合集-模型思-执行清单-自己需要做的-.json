@@ -8,7 +8,12 @@
     "skill_name": "执行清单（自己需要做的）",
     "source": "ref:100+思维模型合集 (模型思维):执行清单（自己需要做的）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "需要自己完成的任务就放入执行清单，如果有明确的行动日期，就标 示到日历中。 在执行清单填写时，要遵循要事第一原则，也就是艾森豪威尔法则。 先做重要紧急的事件。 在填写清单的时候，有时候项目清单和执行清单有交叉的现象，这样 很正常。项目清单执",
   "when_to_use": {

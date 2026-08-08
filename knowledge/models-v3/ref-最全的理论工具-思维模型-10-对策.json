@@ -8,7 +8,11 @@
     "skill_name": "对策",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):对策",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "decision_maker"
+    ]
   },
   "core_definition": "销售人员在接触决策人的时候，一定要非常专业，让他觉得产品是可信的。 只有满足了决策人对可靠性的需求，他才会决定购买，才会在定单上签字。因此， 销售员应该给决策人提供大量看得到、摸得着的数据，让他产生安全感，这就是 针对决策人的销售方法。",
   "when_to_use": {

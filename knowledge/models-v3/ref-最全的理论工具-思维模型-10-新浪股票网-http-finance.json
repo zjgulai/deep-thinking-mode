@@ -8,7 +8,10 @@
     "skill_name": "新浪股票网-http.--finance",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):新浪股票网 http.//finance",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ ABC 成本法  —企业控制成本的有力工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

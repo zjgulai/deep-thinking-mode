@@ -8,7 +8,10 @@
     "skill_name": "方法特点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):方法特点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "6.1. 主要特点 波士顿矩阵的最为主要的特点在于：  第一，它用一个象限图，同时表示了企业各分部所处的产业增长周期、与本 行业领先公司的相对竞争地位，以及占本公司营业收入和利润总额的比重。前两 项反映了分部与外部产品市场和竞争环境的关系，",
   "when_to_use": {

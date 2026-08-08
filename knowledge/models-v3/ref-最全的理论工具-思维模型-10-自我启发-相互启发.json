@@ -8,7 +8,10 @@
     "skill_name": "自我启发、相互启发",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):自我启发、相互启发",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "communicator"
+    ]
   },
   "core_definition": "问题，必须给予自我启发、相互启发，购买一相关的书籍、杂志或刊物让员工阅 读、研讨或轮读、报告等，这也是一种有效的充电方式。",
   "when_to_use": {

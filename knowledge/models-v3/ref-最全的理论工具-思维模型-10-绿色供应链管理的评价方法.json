@@ -8,7 +8,10 @@
     "skill_name": "绿色供应链管理的评价方法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绿色供应链管理的评价方法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "既有坚实的理论背景, 又能客观地反映专家和决策者主观",
   "when_to_use": {

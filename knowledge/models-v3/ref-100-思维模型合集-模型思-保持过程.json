@@ -8,7 +8,10 @@
     "skill_name": "保持过程",
     "source": "ref:100+思维模型合集 (模型思维):保持过程",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "将他们在记忆中进行表征、编码以及存储。保持就其内涵来说就是记 住，实验中，儿童记住了成年人的行为以及由其带来的结果，这一过  1868 / 1937 \f程就是保持。",
   "when_to_use": {

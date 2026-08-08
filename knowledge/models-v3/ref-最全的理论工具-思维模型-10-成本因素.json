@@ -8,7 +8,10 @@
     "skill_name": "成本因素",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):成本因素",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "工资增加、原材料涨价等生产成本的上升对经营业绩的影响程度及方向是比 较复杂的。这取决于经营单位如何在内部吸收成本上升部分或怎样将增加的成本 转嫁给客户。",
   "when_to_use": {

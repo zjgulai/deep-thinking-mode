@@ -8,7 +8,11 @@
     "skill_name": "把所有信息进行分类",
     "source": "ref:100+思维模型合集 (模型思维):把所有信息进行分类",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "由于信息很多，所以你需要对他们进行分类，才能保证不遗漏重要的 信息。每个人的情况可能不同。 例如： 工作方面：写周五报告的 PPT、回复供应商报价、写营销方案等。 生活方面：陪儿子去博物馆、去办理社保卡等。 学习方面：写周末发表的文章、参加",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "利润改善型",
     "source": "ref:营销管理143个经典模型:利润改善型",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1）我的公司在赔钱，怎么办？ 2）一家德国汽车制造商近年来的利润一直在下降，应该怎么办？ 10 \f3）公司的销售额近年来一直在下降，公司总裁想知道什么原因造成的？ • Revenue, Cost 分析，到底是销售额下降造成，还是成本上升造成",
   "when_to_use": {

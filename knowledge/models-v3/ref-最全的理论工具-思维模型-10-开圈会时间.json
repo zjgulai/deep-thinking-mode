@@ -8,7 +8,10 @@
     "skill_name": "开圈会时间",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):开圈会时间",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一般而言，每周一次或每二周一次即够，每次开会时间不宜过长，约 50 分钟左 右即可，可在上班的空档时间，如停机、待料时间或下班后，亦可边用餐边开会， 如用中午休息时间也是很适当的时间。",
   "when_to_use": {

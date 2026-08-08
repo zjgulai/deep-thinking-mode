@@ -8,7 +8,10 @@
     "skill_name": "自由联想",
     "source": "ref:100+思维模型合集 (模型思维):自由联想",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "著名心理学家、创造力大师米哈里.希斯赞特米哈伊在调研全球数百名 具有创造力的人后，提出了创造力的形成需要五个阶段，即准备期、 酝酿期、洞悉、评价期和精心制作阶段。其中第二个阶段被他称为神 秘的酝酿期，也是整个创新过程中最具创造力的部分。 所",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "机会成本思维模型",
     "source": "ref:万物皆模型-100个思维模型:机会成本思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "决策过程中面临多项选择,当中被放弃而价值最高的选择（Highest-valued",
   "when_to_use": {

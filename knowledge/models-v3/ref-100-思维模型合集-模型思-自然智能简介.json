@@ -8,7 +8,11 @@
     "skill_name": "自然智能简介",
     "source": "ref:100+思维模型合集 (模型思维):自然智能简介",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "善于观察自然界中的各种事物，对物体进行辨别和分类",
   "when_to_use": {

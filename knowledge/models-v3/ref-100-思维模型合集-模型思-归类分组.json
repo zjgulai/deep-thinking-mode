@@ -8,7 +8,10 @@
     "skill_name": "归类分组",
     "source": "ref:100+思维模型合集 (模型思维):归类分组",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "整个生产过程中各工段加工产品的次序，是完成产品加工的",
   "when_to_use": {

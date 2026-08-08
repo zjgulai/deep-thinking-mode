@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "5w2h分析法",
     "source": "5W2H分析法_结构化反省_高效突破自我的工具 2.md",
-    "sourceTitle": "5W2H分析法：结构化反省，高效突破自我的工具"
+    "sourceTitle": "5W2H分析法：结构化反省，高效突破自我的工具",
+    "agent_roles": [
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "核心是用“七个问题”覆盖事项关键环节",
   "when_to_use": {

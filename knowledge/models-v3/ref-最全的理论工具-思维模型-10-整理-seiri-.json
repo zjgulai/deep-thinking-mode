@@ -8,7 +8,10 @@
     "skill_name": "整理(seiri)",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):整理(SEIRI)",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "根据工作的需要把物件区分为需要的与不需要的。需要的留下来，不需要的 就要清除掉或放进仓库，身边只摆放工作必需品，以便增大工作空间，提高工作 效率。如果在工作岗位上堆满了非必需品，那么就缩小了车间有效空间，这样既 浪费空间，又容易引起使用操",
   "when_to_use": {

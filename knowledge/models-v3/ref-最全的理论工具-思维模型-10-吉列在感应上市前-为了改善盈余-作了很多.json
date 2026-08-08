@@ -8,7 +8,10 @@
     "skill_name": "吉列在感应上市前，为了改善盈余，作了很多",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):吉列在感应上市前，为了改善盈余，作了很多",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "织结构，从而提高生产力。 评分 +4 4、1988 年底，吉列已经申请或获得了 22 种与感应相关的专利。 评分 +5 \f http://wiki.mbalib.com/",
   "when_to_use": {

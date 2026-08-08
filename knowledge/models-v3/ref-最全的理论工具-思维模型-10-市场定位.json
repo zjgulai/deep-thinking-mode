@@ -8,7 +8,10 @@
     "skill_name": "市场定位",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):市场定位",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "市场定位战略主要从两方面考虑： （1）专业性的功效。  专业去除蔬菜水果内外残余农药。从整个市场环境来看，能够洗涤蔬菜水果 表面残余农药的厨房洗洁精用品为数不少，但以去除蔬菜水果残余农药为惟一功 能的厨房洗 洁精用品还没有，能够去除蔬菜水",
   "when_to_use": {

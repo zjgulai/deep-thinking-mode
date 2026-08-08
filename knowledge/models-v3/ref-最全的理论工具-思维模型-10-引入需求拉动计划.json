@@ -8,7 +8,12 @@
     "skill_name": "引入需求拉动计划",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):引入需求拉动计划",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "，只有依靠正确的预测，你才能 走在竞争对手的前面。通过分析国际市场该产品的供需情况和客户的订货规律， 有的放矢的准备货源，可以大大缩短交货时间。此外，对于预测供不应求的商品 要准备必要的存货，以满足客",
   "when_to_use": {

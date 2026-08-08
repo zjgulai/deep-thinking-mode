@@ -8,7 +8,10 @@
     "skill_name": "实践极度求真和极度透明的原则",
     "source": "ref:100+思维模型合集 (模型思维):实践极度求真和极度透明的原则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "义务。有问题应各抒己见，直到彼此达成一致",
   "when_to_use": {

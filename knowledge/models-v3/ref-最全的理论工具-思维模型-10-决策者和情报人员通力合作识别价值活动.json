@@ -8,7 +8,13 @@
     "skill_name": "决策者和情报人员通力合作识别价值活动",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):决策者和情报人员通力合作识别价值活动",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "decomposer",
+      "communicator"
+    ]
   },
   "core_definition": "价值链各价值活动的识别分解活动应该由企业决策者和竞争情报人员共同 进行，在企业决策者所熟悉的价值链的基础上，运用价值链分析方法得出一条有 利于决策者和情报人员沟通交流的价值链条，提升企业战略管理水平。  价值活动及其彼此之间联系的识别应该",
   "when_to_use": {

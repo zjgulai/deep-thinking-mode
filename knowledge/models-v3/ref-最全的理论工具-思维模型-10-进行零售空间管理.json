@@ -8,7 +8,12 @@
     "skill_name": "进行零售空间管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):进行零售空间管理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "decision_maker",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "这是根据每个店铺的需求模式来规定其经营商品的花色品种和补货业务。一 般来说，对于花色品种、数量、店内陈列及培训或激励售货员等决策，制造商也 可以参与甚至制定决策。",
   "when_to_use": {

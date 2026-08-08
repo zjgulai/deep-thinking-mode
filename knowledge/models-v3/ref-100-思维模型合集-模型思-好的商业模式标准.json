@@ -8,7 +8,11 @@
     "skill_name": "好的商业模式标准",
     "source": "ref:100+思维模型合集 (模型思维):好的商业模式标准",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "上就是利益相关者的交易结构。利益相关者需要考虑到 其中的交易价值、交易成本和交易风险。例如：汽车租赁公司，假如 一辆车每年可以赚 2 万元，这就是交易价值，交易成本就是购车成本、 场地租赁和管理成本，",
   "when_to_use": {

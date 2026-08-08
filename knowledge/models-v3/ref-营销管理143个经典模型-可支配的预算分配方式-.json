@@ -8,7 +8,10 @@
     "skill_name": "可支配的预算分配方式",
     "source": "ref:营销管理143个经典模型:可支配的预算分配方式：",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对组织经营活动具有实际与潜在影响的政治力量和有关的政",
   "when_to_use": {

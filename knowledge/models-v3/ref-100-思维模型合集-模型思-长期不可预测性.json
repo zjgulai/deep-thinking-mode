@@ -8,7 +8,10 @@
     "skill_name": "长期不可预测性",
     "source": "ref:100+思维模型合集 (模型思维):长期不可预测性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "由于初始条件仅限于某个有限精度,而初始条件的微小差异可能对以后 的时间演化产生巨大的影响,因此不可能长期预测将来某一时刻之外的 动力学特性,即混沌系统的长期演化行为是不可预测的。",
   "when_to_use": {

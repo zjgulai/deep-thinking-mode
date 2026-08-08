@@ -8,7 +8,12 @@
     "skill_name": "运用-toc-思维流程",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):运用 TOC 思维流程",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "causal_reasoner",
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "TOC 的思路就是：在不明白、不清楚一件事的时候，就会先搞清楚一件事 和一件事之间“if...then...”的因果关系是怎样，然后逐渐去理解要实现某个目标， 进而发现应该做什么  无论什么时候当企业谈到改进的时候，总意味着准备比以前做得",
   "when_to_use": {

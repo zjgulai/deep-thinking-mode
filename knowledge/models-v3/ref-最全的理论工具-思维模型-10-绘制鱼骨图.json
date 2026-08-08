@@ -8,7 +8,10 @@
     "skill_name": "绘制鱼骨图",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绘制鱼骨图",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "causal_reasoner"
+    ]
   },
   "core_definition": "A、填写鱼头（按为什么不好的方式描述），画出主骨 B、画出大骨，填写大要因 C、画出中骨、小骨，填写中小要因 D、用特殊符号标识重要因素 \f http://wiki.mbalib.com/ 要点：绘图时，应保证大骨与主骨成 60 度夹角，中",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "六西格玛产生于美国",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):六西格玛产生于美国",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "20 世纪 50 年代美国经济发展快，主要得益世界大战不影响美国经济的发展。 产品满足消费者要求。20 世纪 70 年代，日本的产品开始进入美国市场，就产生 争夺市场的竞争。美国企业界曾经发出惊呼：爆发了第二次“珍珠港事件”!说 日本的汽",
   "when_to_use": {

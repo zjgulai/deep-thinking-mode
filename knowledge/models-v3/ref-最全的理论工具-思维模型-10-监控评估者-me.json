@@ -8,7 +8,10 @@
     "skill_name": "监控评估者",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):监控评估者（ ME",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "看事情全面、善于做出判断。可接受的弱点：缺乏推动和鼓舞他人的能力。",
   "when_to_use": {

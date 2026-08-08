@@ -8,7 +8,12 @@
     "skill_name": "对学习的影响",
     "source": "ref:100+思维模型合集 (模型思维):对学习的影响",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "不良的情绪会极大的破坏智力，优秀的情绪智力对学习会产生积极的 影响，所以贵族学校的教育非常注重情绪智力的培养，在孩子的学习 过程中融入了更多的关怀、耐心、鼓励和认同，这样有助于学生成绩 的提升。 美国国家临床婴儿项目中心的报告指出，孩子掌握",
   "when_to_use": {

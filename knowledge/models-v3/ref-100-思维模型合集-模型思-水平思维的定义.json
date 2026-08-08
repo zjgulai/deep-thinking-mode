@@ -8,7 +8,11 @@
     "skill_name": "水平思维的定义",
     "source": "ref:100+思维模型合集 (模型思维):水平思维的定义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1410 / 1937 \f水平思维是由是英国思维大师、心理学家爱德华·德博诺博士提出的。 《牛津英文大辞典》对水平思维的解释是以非正统的方式或者显然地 非逻辑的方式来寻求解决问题的办法。美国学者保罗.斯隆在《水平思 考法：突破创新的思考方",
   "when_to_use": {

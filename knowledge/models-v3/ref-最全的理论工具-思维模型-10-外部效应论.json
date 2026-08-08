@@ -8,7 +8,10 @@
     "skill_name": "外部效应论",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):外部效应论",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "外部效应指在实际经济活动中，生产者或消费者的活动对其他生产者或消费 者带来的非市场性影响。这种影响可能是有益的，也可能是有害的，有益的影响 被称为外部经济性；有害的影响被称为外部不经济性。在绿色供应链管理中，节 约资源、环境保护不仅给企业",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "行动学习的七要素",
     "source": "ref:100+思维模型合集 (模型思维):行动学习的七要素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "焦点。 这些难题应当是真实存在的，尚没有确定的答案。 要素 2：多样性小组。在行动学习小组（4～8 人）中，强调“没大没小， 没上没下”，放下层级关系，放下职位高低，每个人都是平等且相互尊 重的。 要",
   "when_to_use": {

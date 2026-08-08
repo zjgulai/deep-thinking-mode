@@ -8,7 +8,10 @@
     "skill_name": "广泛的群众性。qc-是广泛吸引群众参与质",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):广泛的群众性。QC 是广泛吸引群众参与质",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 可以学技术、学管理、提高官人素质和能力，发挥个人的积极性和创造性。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "压制",
     "source": "ref:100+思维模型合集 (模型思维):压制。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "所谓压制，举个例子，当你开车在高速路上，被一辆快速行驶的汽车 插队，你来了一个急刹车，把你吓得想骂人，自主心智的本能反应就 是超过他，骂他。可是你的算法心智对你进行了压制，第一时间告诉 你危险，你的驾驶技术一般，于是你放弃了超车，继续匀速安",
   "when_to_use": {

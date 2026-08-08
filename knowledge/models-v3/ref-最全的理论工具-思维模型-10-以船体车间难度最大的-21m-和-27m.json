@@ -8,7 +8,10 @@
     "skill_name": "以船体车间难度最大的-21m-和-27m",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):以船体车间难度最大的 21m 和 27m",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "，进行现场总体规划，绘出车间、工段定 置管理图。该图要求反映出设备布置、安全通道，各类原材料、构件、预制件、 半成品、垃圾堆场的位置，及作业场所和生产流水线的走向，并按全厂统一的标 准格式和颜色标志制",
   "when_to_use": {

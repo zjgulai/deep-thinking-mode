@@ -8,7 +8,12 @@
     "skill_name": "序言仅涉及读者不会对其真实性提出质疑的内",
     "source": "ref:100+思维模型合集 (模型思维):序言仅涉及读者不会对其真实性提出质疑的内",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "序言目的是告诉读者一些已经知道的信息，当你不确定时候，所表达 的信息应该能够很容易由客观的第三方进行检验和证实 注意不要在序言中涉及任何读者不知道的信息，会导致读者提出非你 所愿的“疑问”",
   "when_to_use": {

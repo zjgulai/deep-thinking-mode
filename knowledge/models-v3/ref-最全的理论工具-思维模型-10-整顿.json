@@ -8,7 +8,10 @@
     "skill_name": "整顿",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):整顿",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 需要留下的物品进行科学合理的布置和摆放， 将工具、器材、物料、文件等的 位置固定下来．并明确数量并进行标识，以便能够最快速地取得所要之物，在最 简捷、有效的规章、制度、流程下完成工作。 整",
   "when_to_use": {

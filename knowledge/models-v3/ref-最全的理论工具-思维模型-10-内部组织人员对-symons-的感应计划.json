@@ -8,7 +8,10 @@
     "skill_name": "内部组织人员对-symons-的感应计划",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):内部组织人员对 Symons 的感应计划",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "评分 +2 6、Symons 的小组希望于 1990 年 1 月超霸杯(Super Bowl)足球比赛期间先在美 国上市，数天后在欧洲 16 国发表，然后一个月内在日本推出（舒适最早先进入 日本市场，领先吉列）。 评分 +5 总计：4+4+",
   "when_to_use": {

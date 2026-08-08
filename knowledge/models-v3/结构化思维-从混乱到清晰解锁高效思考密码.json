@@ -10,7 +10,11 @@
       "结构化思维"
     ],
     "skill_name": "框架思维-#思维框架-#结构化",
-    "source": "结构化思维_从混乱到清晰解锁高效思考密码.md"
+    "source": "结构化思维_从混乱到清晰解锁高效思考密码.md",
+    "agent_roles": [
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "结构化思维：从混乱到清晰解锁高效思考密码 ====================  原创 正方形SQUARE 2026-03-08 15:00 上海  > 原文地址: [https://mp.weixin.qq.com/s/ENQDy078AbFYrLvMR-yKQw](https://mp.we",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "用每个关键因素的权重乘以它的评分，得出每",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):用每个关键因素的权重乘以它的评分，得出每",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer"
+    ]
   },
   "core_definition": "得分计算注意要点：  （1）统计过程监督  （2）数据纠偏  （3）数据分析  5、将所有因素的加权分数相加，得到企业所处宏观环境的总加权分数",
   "when_to_use": {

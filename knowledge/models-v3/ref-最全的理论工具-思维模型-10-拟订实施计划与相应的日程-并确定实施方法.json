@@ -8,7 +8,11 @@
     "skill_name": "拟订实施计划与相应的日程，并确定实施方法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):拟订实施计划与相应的日程，并确定实施方法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "表:6S管理推行日程计划  计划 序号 项目 备注  1月 2月 3月 4月 5月 6月 7月 8月 1 6S管理推行组织成立 2 6S管理前期准备 3 宣传、教育展开 4 样板区选定 5 样板区域6S管理推行 6 区域阶段性交流会 7 标",
   "when_to_use": {

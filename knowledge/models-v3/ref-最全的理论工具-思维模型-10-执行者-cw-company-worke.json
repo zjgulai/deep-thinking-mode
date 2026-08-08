@@ -8,7 +8,11 @@
     "skill_name": "执行者-cw",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):执行者 CW（Company Worke",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "A 典型特征：保守；顺从；务实可靠。  B 积极特性：有组织能力、实践经验；工作勤奋；有自我约束力  C 能容忍的弱点：缺乏灵活性；对没有把握的主意不感兴趣  D 在团队中的作用  1、把谈话与建议转换为实际步骤  2、考虑什么是行得通的",
   "when_to_use": {

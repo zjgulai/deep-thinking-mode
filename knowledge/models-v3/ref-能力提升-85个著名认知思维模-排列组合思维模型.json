@@ -8,7 +8,10 @@
     "skill_name": "排列组合思维模型",
     "source": "ref:能力提升-85个著名认知思维模型:排列组合思维模型",
     "sourceType": "book",
-    "sourceTitle": "能力提升-85个著名认知思维模型"
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从给定个数的元素中取出指定个数",
   "when_to_use": {

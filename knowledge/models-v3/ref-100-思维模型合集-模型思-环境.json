@@ -8,7 +8,10 @@
     "skill_name": "环境",
     "source": "ref:100+思维模型合集 (模型思维):环境",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "不确定性的世界，是一个复杂的世界，生物进化是",
   "when_to_use": {

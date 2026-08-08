@@ -8,7 +8,12 @@
     "skill_name": "符合企业目标和能力",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):符合企业目标和能力",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "某些细分市场虽然有较大吸引力，但不能推动企业实现发展目标，甚至分散 企业的精力，这样的市场应考虑放弃。另外，还应考虑企业的资源条件是否适合 在某一细分市场经营。 2.2.3. 影响目标市场策略选择的因素  企业在选择目标市场时，应综合考虑",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "赵曙明．国际企业经营管理总论．南京",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):赵曙明．国际企业经营管理总论．南京",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "15 \f http://wiki.mbalib.com/ SPACE 矩阵 —分析企业外部环境及企业应该采用的战  略组合 \f http://wiki.mbalib.com/",
   "when_to_use": {

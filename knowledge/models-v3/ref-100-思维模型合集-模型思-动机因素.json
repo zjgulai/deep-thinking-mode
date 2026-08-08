@@ -8,7 +8,11 @@
     "skill_name": "动机因素",
     "source": "ref:100+思维模型合集 (模型思维):动机因素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "870 / 1937 \f个体的定价决策是受动机诱发的，所以个体在估价时表现出的禀赋效 应也受动机因素的影响。 例如:阿龙是一位地道的农民，平时没事喜欢小赌一把，由于城市化进 程，阿龙成为了一名拆迁爆发户，家里除了分了三套拆迁房之外，还 获",
   "when_to_use": {

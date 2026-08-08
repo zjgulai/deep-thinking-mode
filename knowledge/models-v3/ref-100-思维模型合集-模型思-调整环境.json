@@ -8,7 +8,10 @@
     "skill_name": "调整环境",
     "source": "ref:100+思维模型合集 (模型思维):调整环境",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "中国有句古话“近朱者赤,近墨者黑”,正所谓“与善人居如入芝兰之室,久 而不闻其香,则与之化矣。与恶人居,如入鲍鱼之肆,久而不闻其臭,亦与 之化矣。” 和什么样的人在一起,就会成为什么样的人,就是说明环境对人的影响 非常之大。所以才有了“孟母",
   "when_to_use": {

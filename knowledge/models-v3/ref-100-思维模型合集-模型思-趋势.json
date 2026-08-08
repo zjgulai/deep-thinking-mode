@@ -8,7 +8,10 @@
     "skill_name": "趋势",
     "source": "ref:100+思维模型合集 (模型思维):趋势",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "具备周期性调整的趋势，例如经济和股市",
   "when_to_use": {

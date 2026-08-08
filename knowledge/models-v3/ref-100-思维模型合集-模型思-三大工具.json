@@ -8,7 +8,11 @@
     "skill_name": "三大工具",
     "source": "ref:100+思维模型合集 (模型思维):三大工具",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "产生思想飞跃的推理，是创新创意发",
   "when_to_use": {

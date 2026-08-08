@@ -8,7 +8,10 @@
     "skill_name": "单击此处编辑母版文本样式-第二级-第三级",
     "source": "ref:麦肯锡结构化战略思维模型：如何想清楚-说明白-做到位（65页 PPT）:单击此处编辑母版文本样式 第二级 第三级",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡结构化战略思维模型：如何想清楚-说明白-做到位（65页 PPT）"
+    "sourceTitle": "麦肯锡结构化战略思维模型：如何想清楚-说明白-做到位（65页 PPT）",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "常见的误导手段 。比如 ， 50% 折扣（ 指定商品 ） 数据误导 Copyright © 2021 Dr. XU Hao. All Rights Reserved. 23 04 02",
   "when_to_use": {

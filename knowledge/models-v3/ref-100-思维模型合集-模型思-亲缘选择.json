@@ -8,7 +8,11 @@
     "skill_name": "亲缘选择",
     "source": "ref:100+思维模型合集 (模型思维):亲缘选择",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "上是 想证明，我们的关系一直持续到死，要合作，不要随意背叛。 三、促进合作的三个方法",
   "when_to_use": {

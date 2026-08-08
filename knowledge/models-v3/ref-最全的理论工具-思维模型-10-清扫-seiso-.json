@@ -8,7 +8,10 @@
     "skill_name": "清扫(seiso)",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):清扫(SEISO)",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  经过整理、整顿后，物品整整齐齐、立即可取。但是，要保证取出来的物品 要干净、完好、可用，还要对这些物品进行必要的清扫。通过大扫除，使整个厂 区环境变得干净清洁；通过局部范围的清扫，使机床",
   "when_to_use": {

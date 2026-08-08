@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "**一、内耗的精确定义**",
     "source": "内耗管理系统___内耗的全景诊断书.md",
-    "sourceTitle": "内耗管理系统 · 内耗的全景诊断书"
+    "sourceTitle": "内耗管理系统 · 内耗的全景诊断书",
+    "agent_roles": [
+      "problem_framer",
+      "multi_perspective",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "不是外部任务本身，而是个体对待任务或自身的方式——自我怀疑、自我批判、自我压制、自我恐吓等",
   "when_to_use": {

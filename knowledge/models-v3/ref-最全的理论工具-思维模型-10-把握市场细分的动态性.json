@@ -8,7 +8,12 @@
     "skill_name": "把握市场细分的动态性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):把握市场细分的动态性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "市场上的消费者需求和竞争者状况每时每刻都在发生变化，企业应注意信息 的搜集，在必要时进行市场细分的调整。由于市场细分的重要性，国内越来越多 的企业已经开始关注并加以应用。但由于传统计划经济的影响以及“市场细分” 理论体系本身尚未完善，加之",
   "when_to_use": {

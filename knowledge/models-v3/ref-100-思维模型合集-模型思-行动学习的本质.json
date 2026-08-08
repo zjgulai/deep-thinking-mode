@@ -8,7 +8,12 @@
     "skill_name": "行动学习的本质",
     "source": "ref:100+思维模型合集 (模型思维):行动学习的本质",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的公式： ·AL=P+Q+A+R ·Action Learning=Peer Consulting+QuestioningInsight+Action+Reflection 行动学习=相互咨询+洞察性",
   "when_to_use": {

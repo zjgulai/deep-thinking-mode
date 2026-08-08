@@ -8,7 +8,12 @@
     "skill_name": "紫色马靴",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):紫色马靴",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "紫色是罗马帝国的颜色，象征着权威，而马靴也暗示着人骑马，或至少骑着 摩托车，一样是权威的象征。紫色马靴的行动模式意谓扮演经由地位或权威所赋 予的角色，其要件是需有领导和命令的权利，执行行动的人并非表现他个人的能 力，而是扮演组织正式的角色",
   "when_to_use": {

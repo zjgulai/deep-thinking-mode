@@ -53,6 +53,7 @@ main{max-width:900px;margin:0 auto;padding:24px 24px 64px}h1{font-size:2rem;colo
 .stars{color:var(--w);font-size:.7rem;margin-left:6px}.tags-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.tag-chip{font-size:.65rem;padding:2px 8px;border-radius:999px;background:rgba(144,88,49,.06);color:var(--a)}
 .hero{text-align:center;padding:48px 24px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(144,88,49,.1) 0%,transparent 70%);z-index:0}.hero>*{position:relative;z-index:1}
 .ch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;padding:0 24px;max-width:1100px;margin:0 auto 48px}.ch-card{background:var(--s);border:1px solid var(--h);border-radius:var(--r);padding:22px;transition:border-color .15s,transform .15s;display:block;text-decoration:none}.ch-card:hover{border-color:var(--a);transform:translateY(-2px);text-decoration:none}.ch-num{font-size:.7rem;font-weight:700;color:var(--a);margin-bottom:8px}.ch-card h3{font-size:1rem;color:var(--t);margin:0 0 6px}.ch-card .desc{font-size:.8rem;color:var(--m);line-height:1.5;margin-bottom:8px}.ch-card .cnt{font-size:.7rem;color:var(--g);font-weight:600;padding:2px 8px;background:rgba(45,125,70,.08);border-radius:999px;display:inline-block}
+.agent-flow-section{padding:0 24px 40px;max-width:1100px;margin:0 auto}.agent-flow-title{font-size:.75rem;font-weight:700;letter-spacing:.08em;color:var(--a);text-transform:uppercase;margin-bottom:16px}.agent-flow-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}.agent-card{background:var(--c);border:1px solid var(--h);border-radius:10px;padding:16px 18px;text-decoration:none;display:block;transition:border-color .15s,background .15s}.agent-card:hover{border-color:var(--a);background:var(--s);text-decoration:none}.agent-card .agent-icon{font-size:1.3rem;margin-bottom:8px}.agent-card .agent-name{font-size:.88rem;font-weight:700;color:var(--t);margin-bottom:4px}.agent-card .agent-desc{font-size:.72rem;color:var(--m);line-height:1.4}.agent-card .agent-tag{font-size:.65rem;color:var(--a);font-weight:600;margin-top:6px}
 .nav-row{display:flex;justify-content:space-between;margin-top:48px;padding-top:24px;border-top:1px solid var(--h)}.nav-row a{font-weight:600}
 footer{border-top:1px solid var(--h);padding:32px 24px;text-align:center;color:var(--m);font-size:.8rem}footer a{font-weight:500}
 .sidebar{position:fixed;left:0;top:56px;width:260px;height:calc(100vh - 56px);overflow-y:auto;background:var(--s);border-right:1px solid var(--h);padding:16px;z-index:40;font-size:.82rem;line-height:1.8}.sidebar h3{font-size:.75rem;color:var(--a);margin-bottom:8px;letter-spacing:.05em;font-weight:700}.sidebar a{display:block;color:var(--b);padding:3px 8px;border-radius:4px;text-decoration:none;transition:background .1s}.sidebar a:hover{background:var(--h);text-decoration:none}@media(max-width:1100px){.sidebar{display:none}}main.with-sidebar{margin-left:280px;max-width:860px}@media(max-width:768px){header nav{display:none}main{padding:16px}.ch-grid{grid-template-columns:1fr}.model-card{padding:20px}}
@@ -62,10 +63,34 @@ if (!existsSync(OUT)) mkdirSync(OUT,{recursive:true});
 if (!existsSync(CH)) mkdirSync(CH,{recursive:true});
 writeFileSync(join(OUT,"style.css"),CSS,"utf8");
 
+// Agent 流程入口卡片数据
+const AGENT_FLOWS = [
+  {icon:'🔍',name:'意图澄清',desc:'苏格拉底追问 → 精确问题定义',tag:'Intent → CoT',roles:['intent_clarifier','problem_framer'],chapter:'Ch.03'},
+  {icon:'⛓️',name:'CoT 推理链',desc:'逐步推理 + Critic 自我验证',tag:'Chain of Thought',roles:['first_principles','causal_reasoner','logical_analyzer'],chapter:'Ch.04'},
+  {icon:'🌳',name:'ToT 树状推理',desc:'多路径展开 → 评估 → 剪枝选优',tag:'Tree of Thought',roles:['multi_perspective','hypothesis_tester'],chapter:'Ch.06'},
+  {icon:'📋',name:'计划制定',desc:'目标分解 → 排序 → 执行序列',tag:'Planning',roles:['planner','decomposer','prioritizer'],chapter:'Ch.07'},
+  {icon:'⚡',name:'ReAct 执行',desc:'推理-行动-观察 动态循环',tag:'Reason → Act → Observe',roles:['action_executor','observer_reflector'],chapter:'Ch.07'},
+  {icon:'🔬',name:'深度研究',desc:'假设驱动 → 证据搜集 → 洞察综合',tag:'DeepResearch',roles:['causal_reasoner','knowledge_synthesizer'],chapter:'Ch.04'},
+  {icon:'🔄',name:'反思闭环',desc:'元认知监控 → 复盘 → 认知更新',tag:'Reflect & Loop',roles:['observer_reflector','bias_detector'],chapter:'Ch.01'},
+  {icon:'🧩',name:'知识整合',desc:'多源信息 → 结构化 → 框架输出',tag:'Synthesis',roles:['knowledge_synthesizer','communicator'],chapter:'Ch.08'},
+];
+
+// 统计每个 Agent 角色有多少模型
+const roleCount={};
+for(const m of models){for(const r of(m.meta?.agent_roles||[])){roleCount[r]=(roleCount[r]||0)+1;}}
+
+const agentCards=AGENT_FLOWS.map(f=>{
+  const cnt=f.roles.reduce((s,r)=>s+(roleCount[r]||0),0);
+  const chLink=f.chapter?`chapters/ch${f.chapter.replace('Ch.','')}-${(chapters.find(c=>c.id===f.chapter.replace('Ch.',''))?.slug)||''}.html`:'#';
+  return `<a href="${chLink}" class="agent-card"><div class="agent-icon">${f.icon}</div><div class="agent-name">${f.name}</div><div class="agent-desc">${f.desc}</div><div class="agent-tag">${f.tag} · ${cnt}个模型</div></a>`;
+}).join('');
+
+const agentSection=`<div class="agent-flow-section"><div class="agent-flow-title">🤖 按 AI Agent 推理流程查找</div><div class="agent-flow-grid">${agentCards}</div></div>`;
+
 // Index
 let cards="";for(const ch of chapters){const n=(byCh[ch.id]||[]).length;cards+=`<a href="chapters/ch${ch.id}-${ch.slug}.html" class="ch-card"><div class="ch-num">Ch.${ch.id}</div><h3>${ch.title}</h3><div class="desc">${ch.description}</div><span class="cnt">${n}个</span></a>`;}
 const total=chapters.reduce((s,ch)=>s+(byCh[ch.id]||[]).length,0);
-writeFileSync(join(OUT,"index.html"),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>系统化思维 — ${total}个模型</title><link rel="stylesheet" href="style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><main id="main" class="with-sidebar"><div class="hero"><h1>把复杂问题，看成可以理解、选择与行动的系统</h1><p style="color:var(--m);max-width:560px;margin:8px auto 0">${chapters.length}章 · ${total}个推理引擎 · 每个含Codex可执行协议</p></div><div class="ch-grid">${cards}</div></main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");
+writeFileSync(join(OUT,"index.html"),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>系统化思维 — ${total}个模型</title><link rel="stylesheet" href="style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><main id="main" class="with-sidebar"><div class="hero"><h1>把复杂问题，看成可以理解、选择与行动的系统</h1><p style="color:var(--m);max-width:560px;margin:8px auto 0">${chapters.length}章 · ${total}个推理引擎 · 每个含Codex可执行协议</p></div>${agentSection}<div class="ch-grid">${cards}</div></main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");
 console.log(`✓ index.html`);
 
 // Chapters
@@ -76,8 +101,14 @@ const q=a.quality||{};
 h+=`<article class="model-card" id="${"m-"+a.id||""}"><h2>${esc(a.meta?.name||"")}<span class="stars">${stars(Math.min(q.overall||0,5))}</span></h2>`;
 if(a.core_definition)h+=`<div class="v3-def">${esc(a.core_definition)}</div>`;
 const wtu=a.when_to_use||{};
-if(wtu.triggers?.length)h+=`<div class="model-label">触发信号</div><div class="model-value"><ul>${wtu.triggers.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
-if(wtu.anti_triggers?.length)h+=`<div class="model-label">不应使用</div><div class="model-value"><ul>${wtu.anti_triggers.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
+if(wtu.triggers?.length)h+=`<div class="model-label">触发信号</div><div class="model-value"><ul>${wtu.triggers.slice(0,3).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
+if(wtu.anti_triggers?.length)h+=`<div class="model-label">不应使用</div><div class="model-value"><ul>${wtu.anti_triggers.slice(0,2).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
+// Agent roles 标签
+const agentRoles=a.meta?.agent_roles||[];
+const agentRoleLabels={'intent_clarifier':'意图澄清','problem_framer':'问题重构','first_principles':'第一性原理推理','causal_reasoner':'因果推理','systems_thinker':'系统思维','logical_analyzer':'逻辑分析','multi_perspective':'多视角','hypothesis_tester':'假设检验','decision_maker':'决策','bias_detector':'偏差识别','planner':'计划制定','decomposer':'任务分解','prioritizer':'优先级','action_executor':'执行','observer_reflector':'观察反思','error_handler':'错误处理','knowledge_synthesizer':'知识整合','pattern_recognizer':'模式识别','communicator':'输出表达','simplifier':'简化','cognitive_manager':'认知管理'};
+if(agentRoles.length){h+=`<div class="tags-row">${agentRoles.map(r=>`<span class="tag-chip" title="Agent角色: ${r}">🤖 ${esc(agentRoleLabels[r]||r)}</span>`).join("")}</div>`;}
+const spVer=a.codex_integration?.sp_version||'';
+if(spVer==='v2.0-stateful')h+=`<div style="font-size:.68rem;color:var(--g);margin-top:4px;font-weight:600">✓ 状态机格式 SP v2.0</div>`;
 const ba=a.before_after||{};
 if(ba.without_model)h+=`<div class="model-label">没这个模型之前</div><div class="model-value"><p>${esc(ba.without_model)}</p></div>`;
 if(ba.with_model)h+=`<div class="model-label">用了这个模型之后</div><div class="model-value"><p>${esc(ba.with_model)}</p></div>`;

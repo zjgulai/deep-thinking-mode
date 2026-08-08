@@ -8,7 +8,10 @@
     "skill_name": "局部多数模型",
     "source": "ref:100+思维模型合集 (模型思维):局部多数模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "位于它东、南、西、北的 4 个元胞以及 4",
   "when_to_use": {

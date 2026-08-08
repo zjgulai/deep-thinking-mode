@@ -8,7 +8,10 @@
     "skill_name": "互适应",
     "source": "ref:100+思维模型合集 (模型思维):互适应",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1176 / 1937 \f互适应是针对同一公司内多个业务的管理问题的战略方法。目的是获 取跨业务部门之间协作优势。传统的战略分析工具是波士顿矩阵。边 缘竞争倡导互适应行为。 跨部门业务一般会存在两难问题，既要保持独立，又要保持合作。各 业",
   "when_to_use": {

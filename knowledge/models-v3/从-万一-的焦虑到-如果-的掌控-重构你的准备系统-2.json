@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "**你是否常在重要事件前反复咀嚼“万一失败了怎么办？”“万一出错了怎么办？”，最",
     "source": "从_万一_的焦虑到_如果_的掌控_重构你的准备系统 2.md",
-    "sourceTitle": "从“万一”的焦虑到“如果”的掌控：重构你的准备系统"
+    "sourceTitle": "从“万一”的焦虑到“如果”的掌控：重构你的准备系统",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "decision_maker",
+      "planner"
+    ]
   },
   "core_definition": "一种心理预警，但若停留于此，它便从哨兵变成了狱卒",
   "when_to_use": {

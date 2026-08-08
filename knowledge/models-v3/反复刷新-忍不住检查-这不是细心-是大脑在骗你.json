@@ -7,7 +7,10 @@
     "tags": [],
     "skill_name": "反复刷新、忍不住检查？这不是细",
     "source": "反复刷新_忍不住检查_这不是细心_是大脑在骗你.md",
-    "sourceTitle": "反复刷新、忍不住检查？这不是细心，是大脑在骗你"
+    "sourceTitle": "反复刷新、忍不住检查？这不是细心，是大脑在骗你",
+    "agent_roles": [
+      "cognitive_manager"
+    ]
   },
   "core_definition": "并落笔记录：“如果我彻底停止检查、不再刷新确认，我最怕发生的事情是什么？”",
   "when_to_use": {

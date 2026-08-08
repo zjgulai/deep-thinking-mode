@@ -8,7 +8,11 @@
     "skill_name": "加强管理沟通",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):加强管理沟通",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "observer_reflector",
+      "communicator"
+    ]
   },
   "core_definition": "让每个员工去做最擅长的事情，是管理的高境界，但我们在很多时候并不能 作到这些。了解员工，不但要观察员工的工作行为，还要注意多与员工进行沟通， 特别是管理沟通，认真听取员工对公司管理和部门管理建议，了解员工的思想动 态，并让员工自己对自己进",
   "when_to_use": {

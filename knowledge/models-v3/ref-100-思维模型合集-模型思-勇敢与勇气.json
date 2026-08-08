@@ -8,7 +8,11 @@
     "skill_name": "勇敢与勇气",
     "source": "ref:100+思维模型合集 (模型思维):勇敢与勇气",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "一个勇敢的人是能够将恐惧情绪与自己的行为分开的人，他会抗拒要 逃跑的冲动，面对恐惧情境，他不去理会主观和生理反应所带来的不 适。胆大妄为和冲动并不是勇敢，虽然害怕但仍能面对危险才是勇敢。 现在勇敢的意义已超越了战场上的勇敢及身体上的勇敢，还",
   "when_to_use": {

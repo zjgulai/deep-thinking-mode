@@ -8,7 +8,10 @@
     "skill_name": "资产负债率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):资产负债率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "资产负债率是负债总额除以资产总额的百分比，资产负债率反映在总资产中 有多大比例是通过借债来筹资的，也可以衡量企业在清算时保护债权人利益的程 度。这个指标也被称为举债经营比率。从股东的立场看，在全部资本利润率高于 借款利息率时，负债比例越大",
   "when_to_use": {

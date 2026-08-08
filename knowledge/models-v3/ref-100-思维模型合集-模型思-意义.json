@@ -8,7 +8,10 @@
     "skill_name": "意义",
     "source": "ref:100+思维模型合集 (模型思维):意义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对他人、对社会、对自己有价值的行为",
   "when_to_use": {

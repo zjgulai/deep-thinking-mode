@@ -8,7 +8,10 @@
     "skill_name": "弗雷德.r.戴维战略管理（第八版）",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):弗雷德.R.戴维战略管理（第八版）",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "11 \f http://wiki.mbalib.com/ 竞争态势矩阵 —为企业制定战略提供的一种竞争优势  分析 \f http://wiki.mbalib.com/",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "公布评分结果。通过推行结果的公布对员工采",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):公布评分结果。通过推行结果的公布对员工采",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "到调动员工积极性的目的。激励通常有精神激励和物质激励两种。考核及竞赛的 方法也是充分激发员工积极性的有效途径，通过评分考核及竞赛结果的公布来增 强员工的集体荣誉感，以激励员工更努力地工作。",
   "when_to_use": {

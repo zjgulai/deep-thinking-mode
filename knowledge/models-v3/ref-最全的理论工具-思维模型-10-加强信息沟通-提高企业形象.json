@@ -8,7 +8,10 @@
     "skill_name": "加强信息沟通，提高企业形象",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):加强信息沟通，提高企业形象",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "communicator"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  信息沟通意味着在企业内部与顾客之间营造一个良好的氛围。而“口碑”传 播可以称得上是信息沟通中最为有效的工具，能够对企业宣传起到意想不到的作 用。顾客通常在接受服务之后会向其他潜在顾客谈论",
   "when_to_use": {

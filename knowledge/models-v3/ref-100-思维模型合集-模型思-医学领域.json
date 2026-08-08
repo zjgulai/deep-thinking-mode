@@ -8,7 +8,10 @@
     "skill_name": "医学领域",
     "source": "ref:100+思维模型合集 (模型思维):医学领域",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "当一个人生病的时候，身边人都会好心的推荐各种各样的神奇偏方， 或者推荐闻名神州的某某大师，其实他们都没有错，他们也没有欺骗 你，只是他们掉入了“幸存者偏差陷阱”。例如某某大师运用祖传秘法治 了 100 个病人，其中有 10 个病人康复了，5",
   "when_to_use": {

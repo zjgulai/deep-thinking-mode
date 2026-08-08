@@ -9,7 +9,10 @@
       "反刍思维"
     ],
     "skill_name": "如何用心算倒减法强制切断思维循",
-    "source": "如何用心算倒减法强制切断思维循环_.md"
+    "source": "如何用心算倒减法强制切断思维循环_.md",
+    "agent_roles": [
+      "simplifier"
+    ]
   },
   "core_definition": "如何用心算倒减法强制切断思维循环？ =================  原创 正方形SQUARE 2026-02-18 08:09 上海  > 原文地址: [https://mp.weixin.qq.com/s/8ipFe1AViHml8vSGoHEz8g](https://mp.weixin.q",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "作用特点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作用特点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "于一线经理。 如果基层管理不得力，则高层意志和决策难以贯彻。Q12 调查以部门/班组为单 位，重在评测基层工作环境，其所涉及的问题，均在基层管理者和员工控制之下， 易于改进。  3、与企业业绩挂钩。Q",
   "when_to_use": {

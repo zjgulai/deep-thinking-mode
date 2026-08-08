@@ -8,7 +8,11 @@
     "skill_name": "造就一大批-6slgma-骨干队伍",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):造就一大批 6SlGMA 骨干队伍",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer",
+      "action_executor"
+    ]
   },
   "core_definition": "摩托罗拉认识到对员工的持续教育和培训是事业成功的必要因素。每年拿出 的培训费约为薪资的 4％，使主要员工熟悉有关质量管理的概念以及提高质量管 理水平的必要工具，强烈要求员工快速地接受 6SIGMA，严肃认真地实施 6SIGMA，达到“由上",
   "when_to_use": {

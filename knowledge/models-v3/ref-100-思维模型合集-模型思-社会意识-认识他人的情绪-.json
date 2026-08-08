@@ -8,7 +8,11 @@
     "skill_name": "社会意识（认识他人的情绪）",
     "source": "ref:100+思维模型合集 (模型思维):社会意识（认识他人的情绪）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "人要想真正了解别人，就要设身处地、将心比心的学",
   "when_to_use": {

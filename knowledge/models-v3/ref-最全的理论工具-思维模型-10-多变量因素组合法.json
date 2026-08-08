@@ -8,7 +8,10 @@
     "skill_name": "多变量因素组合法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):多变量因素组合法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "就是根据影响消费者需求的两种或两种以上的因素进行市场细分。如生产锅 炉的生产厂，主要根据企业规模的大小、用户的地理位置、产品的最终用途及潜 在市场规模来细分市场。",
   "when_to_use": {

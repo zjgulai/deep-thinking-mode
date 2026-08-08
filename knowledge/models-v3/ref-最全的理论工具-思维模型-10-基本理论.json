@@ -8,7 +8,10 @@
     "skill_name": "基本理论",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):基本理论",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "从原材料进厂、按工艺流程依次进入各工序，经加工、",
   "when_to_use": {

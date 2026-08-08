@@ -8,7 +8,11 @@
     "skill_name": "路径依赖思维模型",
     "source": "ref:万物皆模型-100个思维模型:路径依赖思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "decision_maker",
+      "planner"
+    ]
   },
   "core_definition": "制度的自我加强,即 依旧使用 A 路径 新决策",
   "when_to_use": {

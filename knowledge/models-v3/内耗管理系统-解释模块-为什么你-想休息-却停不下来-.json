@@ -9,7 +9,12 @@
     ],
     "skill_name": "解释模块-·-为什么你“想休息",
     "source": "内耗管理系统___解释模块___为什么你_想休息_却停不下来_.md",
-    "sourceTitle": "内耗管理系统 · 解释模块 · 为什么你“想休息”却停不下来？"
+    "sourceTitle": "内耗管理系统 · 解释模块 · 为什么你“想休息”却停不下来？",
+    "agent_roles": [
+      "decomposer",
+      "pattern_recognizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "】** 深入内耗的神经引擎：一个名为“默认模式网络”的后台系统，如何在你放松时制造纷扰？",
   "when_to_use": {

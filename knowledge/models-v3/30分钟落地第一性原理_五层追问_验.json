@@ -6,7 +6,13 @@
     "category": "04",
     "tags": [],
     "skill_name": "30分钟落地第一性原理_五层追问_验",
-    "source": "30分钟落地第一性原理_五层追问_验证清单_行动指南.md"
+    "source": "30分钟落地第一性原理_五层追问_验证清单_行动指南.md",
+    "agent_roles": [
+      "intent_clarifier",
+      "first_principles",
+      "hypothesis_tester",
+      "prioritizer"
+    ]
   },
   "core_definition": "通过层层“为什么”追问，剥离表象，触及不可反驳的底层规律，即第一性原理核心",
   "when_to_use": {

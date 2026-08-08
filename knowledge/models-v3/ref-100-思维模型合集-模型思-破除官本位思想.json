@@ -8,7 +8,11 @@
     "skill_name": "破除官本位思想",
     "source": "ref:100+思维模型合集 (模型思维):破除官本位思想",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "上还是独裁，且事 后或明或暗惩戒发表“异见”的人员，对于这样的领导应当通过必要的程 序让其离开企业决策群体。",
   "when_to_use": {

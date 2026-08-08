@@ -8,7 +8,11 @@
     "skill_name": "实用性原则",
     "source": "ref:100+思维模型合集 (模型思维):实用性原则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "图尔敏把论证分为两大类：分析论证和实用论证。其中分析论证与柏 拉图的形式演绎逻辑相一致，它通向普遍真理但不考虑语境。它注重 的逻辑严密、分析纯粹，进行推理时，必须是主谓结构，在形式上较 为固定和死板。而实用论证与亚里士多德在《论题篇》和《修",
   "when_to_use": {

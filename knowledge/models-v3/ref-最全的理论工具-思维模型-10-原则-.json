@@ -8,7 +8,10 @@
     "skill_name": "原则",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):原则：",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "即在此。 (3)内部师资群可概分两大类：一种是概念、观念的传授， 由单位主管或 TPM 推 进机构人员担任；另一种是技术类，需挑选专门技术人员担任，一般这种技术类 的师资，可聘请公司内服务已达退休年限",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "依据-why-来制定-how，用-how",
     "source": "ref:100+思维模型合集 (模型思维):依据 Why 来制定 How，用 How",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "来制定具体实施的准则/规范/标准，依据准则/规范/标准来监督结果/ 现象/产品的产出过程。",
   "when_to_use": {

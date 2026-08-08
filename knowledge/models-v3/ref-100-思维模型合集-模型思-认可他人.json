@@ -8,7 +8,10 @@
     "skill_name": "认可他人",
     "source": "ref:100+思维模型合集 (模型思维):认可他人",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如果我们得到了别人的帮助,一定不要忘记感谢,可以给予别人语言的 赞美,也可以写一份感谢信,或者送一个礼物给到对方,对方在收到你的 赞美或礼物之后,会对自己更加的认同,产生一种荣耀感,得到短暂的峰 值体验。",
   "when_to_use": {

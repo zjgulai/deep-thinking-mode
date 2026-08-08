@@ -8,7 +8,10 @@
     "skill_name": "对合作与背叛都要给以回报。对于合作我们要",
     "source": "ref:100+思维模型合集 (模型思维):对合作与背叛都要给以回报。对于合作我们要",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "我们可以根据实际情况采用以牙还牙，或者一牙还二牙，而不是一味 的宽恕，太多的宽恕会助长背叛者的气焰，欺负老实人。",
   "when_to_use": {

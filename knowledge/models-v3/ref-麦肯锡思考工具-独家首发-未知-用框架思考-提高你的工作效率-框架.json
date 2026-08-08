@@ -8,7 +8,10 @@
     "skill_name": "未知-用框架思考，提高你的工作效率-框架",
     "source": "ref:麦肯锡思考工具（独家首发） ():未知 用框架思考，提高你的工作效率 框架",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡思考工具（独家首发） ()"
+    "sourceTitle": "麦肯锡思考工具（独家首发） ()",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "从不同的角度对负面因素进行分析，将其转变为正面因素的方法",
   "when_to_use": {

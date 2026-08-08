@@ -8,7 +8,11 @@
     "skill_name": "探索真正问题",
     "source": "ref:100+思维模型合集 (模型思维):探索真正问题",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "世界咖啡的目的在于在汇谈中发现、探讨有价值的问题，真正的问题， 也就是那些我们尚没有答案的问题，引导我们去创新，召唤着尚未存  1030 / 1937 \f在的观点和洞见。其重要程度与寻找当下对策是一样的。爱因斯坦说： “提出问题比解决问题更",
   "when_to_use": {

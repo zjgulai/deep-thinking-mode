@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "决策心理学20个核心概念",
     "source": "决策心理学20个核心概念 2.md",
-    "sourceTitle": "决策心理学20个核心概念"
+    "sourceTitle": "决策心理学20个核心概念",
+    "agent_roles": [
+      "problem_framer",
+      "logical_analyzer",
+      "decision_maker",
+      "prioritizer"
+    ]
   },
   "core_definition": "这件事的本质是什么？决策心理学20个核心概念如何定义它？",
   "when_to_use": {

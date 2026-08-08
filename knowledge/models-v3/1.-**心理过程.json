@@ -6,7 +6,13 @@
     "category": "06",
     "tags": [],
     "skill_name": "1.-**心理过程",
-    "source": "冲动的本质.md"
+    "source": "冲动的本质.md",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "action_executor",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "### 1. **心理过程：认知捷径与情绪驱动**  冲动的决策绕过了大脑中负责深度分析和长远规划的“高速公路”，转而走上了一条“情绪捷径”。  *   **快思系统主导**：心理学家丹尼尔·卡尼曼提出的“双系统理论”中，系统一（快思、直觉、情绪化）完全压制了系统二（慢想、理性、分析）。在冲动状态下",
   "when_to_use": {

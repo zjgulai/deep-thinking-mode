@@ -8,7 +8,11 @@
     "skill_name": "大规模定制与大规模生产的区别",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):大规模定制与大规模生产的区别",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "大规模生产方式，以其生产的高效率极大地满足了人们在物质紧缺时代的需 求。但是随着现代市场竞争的加剧，人们的需求日益向个性化、多样化发展，大 规模量产生式逐渐失去了耀眼的光环。而大规模定制生产模式结合了定制生产和 大规模生产两种生产方式的优",
   "when_to_use": {

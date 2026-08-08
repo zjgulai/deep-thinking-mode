@@ -8,7 +8,10 @@
     "skill_name": "拟订推行-6s-管理的方针及目标。对于推",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):拟订推行 6S 管理的方针及目标。对于推",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "作为活动努力的方向及便于活动过程中的成果检讨，每个推行部门可以考虑为自 身设置一些阶段性的目标，脚踏实地地实现这些目标，从而达到企业的整体目标。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "剪枝做决策",
     "source": "ref:100+思维模型合集 (模型思维):剪枝做决策",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "交易中的每个人拥有的信息不同，在社会、政治、经济活动中，",
   "when_to_use": {

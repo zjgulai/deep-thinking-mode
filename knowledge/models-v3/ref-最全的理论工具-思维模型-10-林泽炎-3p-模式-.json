@@ -8,7 +8,10 @@
     "skill_name": "林泽炎．3p-模式-",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):林泽炎．3P 模式/",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 职位分析问卷法 —最普遍和流行的人员导向职务分析系统 \f http://wiki.mbalib.com/",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "代表性启发的概念",
     "source": "ref:100+思维模型合集 (模型思维):代表性启发的概念",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "decision_maker",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "857 / 1937 \f代表性法则指人们在不确定性的情形下，会抓住问题的某个特征直接 推断结果，会关注一个事物与另一个事物的相似性，以推断第一个事 物与第二个事物的类似之处，人们假定将来的模式会与过去相似（历 史会重演）并寻求熟悉的模式来",
   "when_to_use": {

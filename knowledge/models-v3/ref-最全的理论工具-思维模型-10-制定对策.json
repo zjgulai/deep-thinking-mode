@@ -8,7 +8,10 @@
     "skill_name": "制定对策",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):制定对策",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "玻壳生产线是从日本旭硝子公司引进有关设备，其中就包括退火炉炉头设 备，QC 小组认为，要用“消化、吸收、提高和创新”的态度对待外国的技术。 于是大胆制定了改造退火炉炉头设备的措施，如下表所示。 表：改进退火炉炉头设备措施 \f http:/",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "共生进化论",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):共生进化论",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "人类社会与自然共生是任何经济系统必须遵循的客观规律。也是绿色供应链 管理应遵循的基本原理之一。科学技术的发展，使人类在 20 世纪创造了前所未 \f http://wiki.mbalib.com/ 有的财富，加速了经济全球化的进程，同时也促",
   "when_to_use": {

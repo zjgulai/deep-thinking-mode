@@ -8,7 +8,10 @@
     "skill_name": "单一变量因素法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):单一变量因素法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "就是根据影响消费者需求的某一个重要因素进行市场细分。如服装企业，按 年龄细分市场，可分为童装、少年装、青年装、中年装、中老年装、老年装；或 \f http://wiki.mbalib.com/ 按气候的不同，可分为春装、夏装、秋装、冬装。",
   "when_to_use": {

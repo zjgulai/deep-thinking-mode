@@ -8,7 +8,10 @@
     "skill_name": "认知因素",
     "source": "ref:100+思维模型合集 (模型思维):认知因素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对于交易的认知角度来说，卖者与买者将他们的焦点注意在交易中将 要放弃的，卖者关注交易发生时可能失去的物品，而买者关注交易发 生时可能失去的金钱。因此，卖者给出更高的卖出价格，而买者给出 更低的购买价格。就交易物品的认知角度来说，卖者与买者以",
   "when_to_use": {

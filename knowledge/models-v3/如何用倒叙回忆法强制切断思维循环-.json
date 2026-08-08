@@ -9,7 +9,10 @@
       "反刍思维"
     ],
     "skill_name": "如何用倒叙回忆法强制切断思维循",
-    "source": "如何用倒叙回忆法强制切断思维循环_.md"
+    "source": "如何用倒叙回忆法强制切断思维循环_.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如何用倒叙回忆法强制切断思维循环？ =================  原创 正方形SQUARE 2026-02-17 09:16 上海  > 原文地址: [https://mp.weixin.qq.com/s/GY2P7qjaHM7nCAu-04Oy1g](https://mp.weixin.q",
   "when_to_use": {

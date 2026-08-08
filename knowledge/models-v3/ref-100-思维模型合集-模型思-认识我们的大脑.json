@@ -8,7 +8,10 @@
     "skill_name": "认识我们的大脑",
     "source": "ref:100+思维模型合集 (模型思维):认识我们的大脑",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）脑细胞 科学研究证明，人类的大脑中有约 1 万亿个脑细胞。其中负责思考的 脑细胞（称为神经元）就有 1000 亿个。每一个脑细胞就像一个超级章 鱼，不止有身体，周围还有数十根、甚至上千根的触须。 脑细胞的每根触须都像是树干，从细胞中央",
   "when_to_use": {

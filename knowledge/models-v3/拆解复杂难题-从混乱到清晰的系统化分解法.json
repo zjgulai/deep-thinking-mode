@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "拆解复杂难题",
     "source": "拆解复杂难题_从混乱到清晰的系统化分解法.md",
-    "sourceTitle": "拆解复杂难题：从混乱到清晰的系统化分解法"
+    "sourceTitle": "拆解复杂难题：从混乱到清晰的系统化分解法",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "action_executor"
+    ]
   },
   "core_definition": "如何有效完成这件事？拆解复杂难题的操作路径是什么？",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "按两种因素交叉分层",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按两种因素交叉分层：",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "气缸垫 合计  操作者 漏油情况  A厂 B厂 操作者 漏油 6 0 6  王师傅  不漏油 2 11 13  漏油 0 3 3  李师傅  不漏油 5 4 9  漏油 3 7 10  张师傅  不漏油 7 2 9  漏油 9 10 19",
   "when_to_use": {

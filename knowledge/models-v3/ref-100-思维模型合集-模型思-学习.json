@@ -8,7 +8,13 @@
     "skill_name": "学习",
     "source": "ref:100+思维模型合集 (模型思维):学习",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer",
+      "communicator",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "905 / 1937 \f心流可以让自己的技能和能力快速的提升。埃里克森在《刻意练习》 一书中提到，技能的获得需要四个步骤： 仔细分析后你会发现，前三步就是心流产生的条件，明确的目标、技 能和挑战的平衡和即时反馈。所以刻意练习就是运用心流理",
   "when_to_use": {

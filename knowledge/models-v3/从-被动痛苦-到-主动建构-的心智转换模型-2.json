@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "从“被动痛苦”到“主动建构”的",
     "source": "从_被动痛苦_到_主动建构_的心智转换模型 2.md",
-    "sourceTitle": "从“被动痛苦”到“主动建构”的心智转换模型"
+    "sourceTitle": "从“被动痛苦”到“主动建构”的心智转换模型",
+    "agent_roles": [
+      "prioritizer",
+      "observer_reflector",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "当面对复杂情况时，人会陷入 **“被动反应状态”**：",
   "when_to_use": {

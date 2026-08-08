@@ -8,7 +8,13 @@
     "skill_name": "黑色思考帽",
     "source": "ref:100+思维模型合集 (模型思维):黑色思考帽：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "multi_perspective",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "黑色是阴沉、负面的。黑帽思维考虑的是事物的负面因素，它是对事 物的负面因素进行逻辑判断和评估。使用黑帽思维的主要目的有两个： 发现缺点，做出评价。用它来检查证据、逻辑、可能性、影响、适用 性和缺点。类似于西方的批判性思维和证伪思维。 A 使",
   "when_to_use": {

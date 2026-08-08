@@ -8,7 +8,11 @@
     "skill_name": "保权性原则",
     "source": "ref:100+思维模型合集 (模型思维):保权性原则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“实质推理”，实质有效的推理不是逻辑真理，",
   "when_to_use": {

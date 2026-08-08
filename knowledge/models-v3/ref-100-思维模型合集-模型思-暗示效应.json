@@ -8,7 +8,10 @@
     "skill_name": "暗示效应",
     "source": "ref:100+思维模型合集 (模型思维):暗示效应",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在无对抗的条件下，用含蓄、抽象诱导的间接方法对人",
   "when_to_use": {

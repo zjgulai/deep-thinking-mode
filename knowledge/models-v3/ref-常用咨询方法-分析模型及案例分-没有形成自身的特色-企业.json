@@ -8,7 +8,10 @@
     "skill_name": "没有形成自身的特色,企业",
     "source": "ref:常用咨询方法、分析模型及案例分析:没有形成自身的特色,企业",
     "sourceType": "book",
-    "sourceTitle": "常用咨询方法、分析模型及案例分析"
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "市场占有率很高的老企业，而 P",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "量子力学的核心概念",
     "source": "ref:100+思维模型合集 (模型思维):量子力学的核心概念",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "decision_maker",
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "具有一定动量的微观粒子的位置是不确定的，我们根本不",
   "when_to_use": {

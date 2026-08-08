@@ -8,7 +8,11 @@
     "skill_name": "富者越富法则",
     "source": "ref:100+思维模型合集 (模型思维):富者越富法则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "那些出圈的连接。例如：你是一个律师，如果你乘坐航班",
   "when_to_use": {

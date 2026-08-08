@@ -8,7 +8,11 @@
     "skill_name": "检查评审",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):检查评审。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "error_handler"
+    ]
   },
   "core_definition": "在抽取样品后，保持其原来的状况，不进行任何的修复，选择光照好，不受 影响的场地，按评审卡的内容从静态到动态，从里到外，从性能检查到外观检查， 采取看、听、摸、试、测等手段进行认真的评审，并做好详细的记录。",
   "when_to_use": {

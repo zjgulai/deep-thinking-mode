@@ -8,7 +8,12 @@
     "skill_name": "成功智力的三种能力",
     "source": "ref:100+思维模型合集 (模型思维):成功智力的三种能力：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "循环过程，包括问题确认、定义问题、形成解决问题的策略、信息表",
   "when_to_use": {

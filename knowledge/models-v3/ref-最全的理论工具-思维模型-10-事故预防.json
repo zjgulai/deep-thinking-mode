@@ -8,7 +8,10 @@
     "skill_name": "事故预防",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):事故预防",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "事件树分析把事故的发生发展过程表述得清楚而有条理，对设计事故预防方 案，制定事故预防措施提供了有力的依据。  从事件树上可以看出，最后的事故是一系列危害和危险的发展结果，如果中 断这种发展过程就可以避免事故发生。因此，在事故发展过程的各阶",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "断裂点理论思维模型",
     "source": "ref:能力提升-85个著名认知思维模型:断裂点理论思维模型",
     "sourceType": "book",
-    "sourceTitle": "能力提升-85个著名认知思维模型"
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "agent_roles": [
+      "observer_reflector",
+      "communicator"
+    ]
   },
   "core_definition": "方面,另一个重要的方面即是要符合自 我一直反复举例曾国藩,其意义在于曾国藩的反思用的好,无论是什么形 （P24、P25、34、P45）来规避,当然如果能得到他人诚实的反馈,也有助",
   "when_to_use": {

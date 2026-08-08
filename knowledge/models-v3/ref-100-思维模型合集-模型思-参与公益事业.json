@@ -8,7 +8,10 @@
     "skill_name": "参与公益事业",
     "source": "ref:100+思维模型合集 (模型思维):参与公益事业",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "智慧，需要根据不同人选择不同的礼物，用适当的",
   "when_to_use": {

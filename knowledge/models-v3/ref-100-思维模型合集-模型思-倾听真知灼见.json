@@ -8,7 +8,11 @@
     "skill_name": "倾听真知灼见",
     "source": "ref:100+思维模型合集 (模型思维):倾听真知灼见",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "世界咖啡倡导倾听的文化，而不是一味的维护自己的观点，倾听可以 让你看到你看不到的一面，可以让你站在别人的的角度“换位思考”，这 样你就会多一个维度看世界。同时在倾听的过程中，要不断的反思自 己的观点，不断去迭代和完善。",
   "when_to_use": {

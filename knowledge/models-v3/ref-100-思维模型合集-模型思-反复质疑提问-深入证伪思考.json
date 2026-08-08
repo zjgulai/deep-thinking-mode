@@ -8,7 +8,12 @@
     "skill_name": "反复质疑提问——深入证伪思考",
     "source": "ref:100+思维模型合集 (模型思维):反复质疑提问——深入证伪思考",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "复杂适应性系统。有常规时件有随机事件",
   "when_to_use": {

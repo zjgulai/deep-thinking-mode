@@ -8,7 +8,12 @@
     "skill_name": "喜爱学习",
     "source": "ref:100+思维模型合集 (模型思维):喜爱学习",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "multi_perspective",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "你喜欢学习新的东西，不论在课堂上还是在生活中；你喜欢上学、阅 读、去博物馆，去任何可以学到新东西的地方。在没有任何外在诱因 的情况下，你仍然对某个领域有继续学习的兴趣。  882 / 1937 \f3、判断力、批判性思维、思想开放 能够周详地",
   "when_to_use": {

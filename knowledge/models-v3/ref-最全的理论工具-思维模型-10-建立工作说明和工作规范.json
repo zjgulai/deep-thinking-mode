@@ -8,7 +8,10 @@
     "skill_name": "建立工作说明和工作规范",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立工作说明和工作规范",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人完成工作所必备的知识、技能和能力等基本素质的文件",
   "when_to_use": {

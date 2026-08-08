@@ -8,7 +8,10 @@
     "skill_name": "成本动因。是指导致成本发生的任何因素。作",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):成本动因。是指导致成本发生的任何因素。作",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "利用回归分析，比较各成本动因与成本间的相关程度",
   "when_to_use": {

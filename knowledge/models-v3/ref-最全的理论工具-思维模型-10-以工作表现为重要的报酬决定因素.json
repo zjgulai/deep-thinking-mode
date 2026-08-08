@@ -8,7 +8,10 @@
     "skill_name": "以工作表现为重要的报酬决定因素",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):以工作表现为重要的报酬决定因素",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "取决于员工认为其所获得的报酬是否",
   "when_to_use": {

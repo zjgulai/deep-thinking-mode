@@ -8,7 +8,11 @@
     "skill_name": "从心理学的角度来解释",
     "source": "ref:100+思维模型合集 (模型思维):从心理学的角度来解释",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如果你老担心一件事情会失败，如担心、惶恐等，自然从心理上就会 紧张。事实上，“越怕出错，越会出事”的就是在形容一种对难以预料或 无法控制之事的恐惧或担忧，是一种展示负面心理暗示作用的心魔。 负面心理暗示会对人的心态及行为造成不良影响。美国斯",
   "when_to_use": {

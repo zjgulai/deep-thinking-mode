@@ -13,7 +13,10 @@
     ],
     "skill_name": "三种思维",
     "source": "三种思维速查卡.md",
-    "sourceTitle": "三种思维速查卡"
+    "sourceTitle": "三种思维速查卡",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "你是不是也遇到过这种困境：明明很努力，问题却反复出现；想破局却不知从哪下手；手里有方案，却没人配合、没资源落地…… 别急着否定自己，很可能是你用错了思维工具",
   "when_to_use": {

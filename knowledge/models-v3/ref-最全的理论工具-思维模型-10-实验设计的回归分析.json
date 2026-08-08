@@ -8,7 +8,10 @@
     "skill_name": "实验设计的回归分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实验设计的回归分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "对散布数据作出散布图，应用回归理论，诊断出对产品影响大和小的因素， 从而找出影响产品质量波动的主要原因，并根据波动大小，确定各因素的目标值 和容差。 5.1.3. 经典方法、田口方法以及谢宁方法比较  经典 DOE 田口 DOE 谢宁 D",
   "when_to_use": {

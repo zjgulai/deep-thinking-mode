@@ -8,7 +8,10 @@
     "skill_name": "透过表象",
     "source": "ref:100+思维模型合集 (模型思维):透过表象",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1651 / 1937 \f我曾与朋友们讨论过关于孩子“粗心”的问题，很多的家长常常抱怨孩子 的粗心，认为孩子的成绩不稳定只是粗心的问题。但是我们是否仔细 思考和分析过“粗心”背后的问题？ 粗心其实往往折射的有三种可能原因：一是“真的粗心”",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "运用-toc-的指标体系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):运用 TOC 的指标体系",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "systems_thinker",
+      "decision_maker"
+    ]
   },
   "core_definition": "衡量一个企业是否盈利，目前通常采用的指标是:净利润(NP),投资收益率(ROI) 和现金流量(CF)。但用它们来进行日常决策时，这些指标显示出某些弊端  决策预期的滞延性  局部标准与全局优化的不一致性  直接指导生产的不适性  为缓",
   "when_to_use": {

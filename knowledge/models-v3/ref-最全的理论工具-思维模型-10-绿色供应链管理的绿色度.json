@@ -8,7 +8,11 @@
     "skill_name": "绿色供应链管理的绿色度",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绿色供应链管理的绿色度",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "problem_framer",
+      "logical_analyzer"
+    ]
   },
   "core_definition": "显而易见的概念, 至今没有一个明确的定义",
   "when_to_use": {

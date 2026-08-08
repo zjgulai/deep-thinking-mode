@@ -13,7 +13,10 @@
     ],
     "skill_name": "系统思考",
     "source": "系统思考速查卡.md",
-    "sourceTitle": "系统思考速查卡"
+    "sourceTitle": "系统思考速查卡",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "这张速查卡帮你从“头痛医头”的线性思维，升级到“看见全局”的系统思考",
   "when_to_use": {

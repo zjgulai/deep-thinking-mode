@@ -8,7 +8,10 @@
     "skill_name": "模型理论",
     "source": "ref:100+思维模型合集 (模型思维):模型理论：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如果把一个组织比喻做一棵树，那么它的树根和树干代表了它的起源 和根基。树枝就是该组织的各个部门，鸟巢就是依附于这棵树的子文 化或团队。每一个鸟巢里面都住着一家人，他们就是部门的成员，他 们属于彼此。",
   "when_to_use": {

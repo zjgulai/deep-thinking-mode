@@ -8,7 +8,11 @@
     "skill_name": "奇异吸引子",
     "source": "ref:100+思维模型合集 (模型思维):奇异吸引子",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "性决定作用的范式,是 混沌运动过程中内在的根本性结构。奇异吸引子具有分形结构和自相 似性特征。 奇异吸引子具有不同属性的内外两种运动模式:在奇异吸引子外的一切 运动都趋向于吸引子,即事物表面看似杂乱无",
   "when_to_use": {

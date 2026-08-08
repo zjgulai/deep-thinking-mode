@@ -8,7 +8,11 @@
     "skill_name": "战略思维",
     "source": "ref:100+思维模型合集 (模型思维):战略思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对正确的战略选择。  1360 / 1937 \f5、复杂思维：通过 7 大模型学习，让我们深刻的认知这个世界底层的 运行法则，建立新的世界观，进而指导我们的思维方式。 三、五大学习方法 1、LPDA 学习圈是 learn 学习、practi",
   "when_to_use": {

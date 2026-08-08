@@ -8,7 +8,10 @@
     "skill_name": "版权信息",
     "source": "ref:100种思维  力量的来源 (帕斯卡):版权信息",
     "sourceType": "book",
-    "sourceTitle": "100种思维  力量的来源 (帕斯卡)"
+    "sourceTitle": "100种思维  力量的来源 (帕斯卡)",
+    "agent_roles": [
+      "error_handler"
+    ]
   },
   "core_definition": "真实做自己的人，他的理论无论是“我是太",
   "when_to_use": {

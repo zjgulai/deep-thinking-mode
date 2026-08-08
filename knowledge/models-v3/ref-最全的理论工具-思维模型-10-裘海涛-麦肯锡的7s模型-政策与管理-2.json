@@ -8,7 +8,10 @@
     "skill_name": "裘海涛-麦肯锡的7s模型．政策与管理.2",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):裘海涛 麦肯锡的7s模型．政策与管理.2",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "3. Richard A.Daven著．许梅芒译 超优势竞争一新时代的动态竞争理论与应用[M],远洋  出版事业股份有限公司.1998.  19 \f http://wiki.mbalib.com/ 3C战略三角模型  —经典的营销战略管理模",
   "when_to_use": {

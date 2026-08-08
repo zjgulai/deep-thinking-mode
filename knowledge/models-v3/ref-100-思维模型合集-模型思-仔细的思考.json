@@ -8,7 +8,13 @@
     "skill_name": "仔细的思考",
     "source": "ref:100+思维模型合集 (模型思维):仔细的思考",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "logical_analyzer",
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "倾听的背后是思维能力，不断练习运用 FFA 倾听模型去分辨事实、情 绪和行动需求；运用逻辑倾听模型去思考概念、前提、相关性、推理 和事实；运用审辩倾听模型去辨析精度、程度和相关度；只有仔细的 思考才能明晰问题，从而得出正确的行动计划，解决问",
   "when_to_use": {

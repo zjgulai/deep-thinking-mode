@@ -8,7 +8,12 @@
     "skill_name": "高效学习工具",
     "source": "ref:100+思维模型合集 (模型思维):高效学习工具",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "multi_perspective",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "看是否注重提高并控制自己的思维方式。批判性思维是 一种学习工具，并且它适合所有水平的学生。优秀的思考者对自己的 思维",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "战略定位决定了企业的竞争效率。需求端、供",
     "source": "ref:100+思维模型合集 (模型思维):战略定位决定了企业的竞争效率。需求端、供",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "问题 为哪一类客户提供独特的价值主张？ 不可取代的竞争优势是什么？ 衡量指标：企业投资回报率，收入增长率，现金流。",
   "when_to_use": {

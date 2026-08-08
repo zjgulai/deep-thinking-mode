@@ -8,7 +8,11 @@
     "skill_name": "夏普利值的公理基础",
     "source": "ref:100+思维模型合集 (模型思维):夏普利值的公理基础",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "零性：如果博弈参与者为任何联盟增加的价值都等于零，那么该博弈 参与者的价值等于零。例如：四个人打麻将刚刚好，第五个人对于团 队来说，就没有任何价值。 公平性／对称性：如果两个博弈参与者对任何联盟都具有相同的增加  1718 / 1937",
   "when_to_use": {

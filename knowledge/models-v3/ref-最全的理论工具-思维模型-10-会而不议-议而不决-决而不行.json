@@ -8,7 +8,10 @@
     "skill_name": "会而不议，议而不决，决而不行",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):会而不议，议而不决，决而不行",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "80—20 原则，是意大利经济学家 Pareto 所提出，故直接称之为",
   "when_to_use": {

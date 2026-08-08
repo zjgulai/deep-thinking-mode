@@ -8,7 +8,11 @@
     "skill_name": "选择——从多样性中做出正确的选择",
     "source": "ref:100+思维模型合集 (模型思维):选择——从多样性中做出正确的选择",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "移动的基因库。一个物种所包含的基因越丰富，它对环境的适",
   "when_to_use": {

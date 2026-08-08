@@ -8,7 +8,10 @@
     "skill_name": "颠覆者",
     "source": "ref:100+思维模型合集 (模型思维):颠覆者",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "角色就是保持组织战略的流动性，领导者必须同时 扮演两个角色：对抗墨守成规的惰性；以及企业阶段性自我颠覆的催 化剂。  1107 / 1937 \f4、指导者 成功的领导者能够把正确的人才安排到公司正确的",
   "when_to_use": {

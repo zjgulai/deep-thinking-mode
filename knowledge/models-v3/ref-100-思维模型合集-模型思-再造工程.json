@@ -8,7 +8,10 @@
     "skill_name": "再造工程",
     "source": "ref:100+思维模型合集 (模型思维):再造工程",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "再造工程是针对新旧业务之间关系的管理问题的战略方法。对于新旧 业务之间的关系存在着这样的两个极端：一是新旧业务之间关联过度 的倾向，这就造成了创新不足，简单重复的外延式扩张。另一个极端 是新旧业务之间割裂，这就造成了过多的创新，缺乏具有丰富",
   "when_to_use": {

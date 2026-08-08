@@ -8,7 +8,10 @@
     "skill_name": "逆向思维模型",
     "source": "ref:万物皆模型-100个思维模型:逆向思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "multi_perspective"
+    ]
   },
   "core_definition": "从事物的反面去思考问题的思维方法",
   "when_to_use": {

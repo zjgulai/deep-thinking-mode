@@ -8,7 +8,12 @@
     "skill_name": "多元思维",
     "source": "ref:100+思维模型合集 (模型思维):多元思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "思想是:首先,充分考虑各种可能的假设,并在更大范围内列举证 据。然后,列出“假设——证据”矩阵,对每个证据与每个假设是否一致进 行判断。接着,重新组织假设,进行假设与证据一致性的再评估,标注出与 所有",
   "when_to_use": {

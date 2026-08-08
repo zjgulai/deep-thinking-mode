@@ -8,7 +8,11 @@
     "skill_name": "实施供应商管理库存的资源准备",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):实施供应商管理库存的资源准备",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor"
+    ]
   },
   "core_definition": "这是针对实施供应商管理库存所必须的一些支持:如一些信息网络的组建和 IT 技术的准备用于建立供应商管理库存信息决策支持系统:  （1）电子数据交换 (EDI) 系统，它可以降低成本，美国通用汽车通过实施 EDI，每年大概可以获得 12.5",
   "when_to_use": {

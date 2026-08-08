@@ -8,7 +8,10 @@
     "skill_name": "有形成果",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):有形成果",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "systems_thinker"
+    ]
   },
   "core_definition": "一般很容易可以用数量表示的成果，如不良率、延迟率、抱怨次数、缺勤率 等，可以算出由改善前的多少进步至改善后的多少，这种成果称之为有形成果。  从过去的发表资料中常遇到的有形成果是： *抱怨次数的降低 *设备故障次数的降低 \f http:/",
   "when_to_use": {

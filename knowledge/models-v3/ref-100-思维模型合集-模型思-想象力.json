@@ -8,7 +8,10 @@
     "skill_name": "想象力",
     "source": "ref:100+思维模型合集 (模型思维):想象力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "现实生活里,想象力是概率评估中的重要角色。某些事不常发生在人们 的生活里,要评估这类事情发生的频率,无法从大脑中找到已发生过的 实例,人们常常通过寻找相关的,容易被构建的例证,来评估此类事件发 生的频率和概率、例证构建的容易性,并不能总是反",
   "when_to_use": {

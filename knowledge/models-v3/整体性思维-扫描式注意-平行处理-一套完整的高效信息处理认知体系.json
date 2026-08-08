@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "整体性思维+扫描式注意+平行处",
     "source": "整体性思维_扫描式注意_平行处理_一套完整的高效信息处理认知体系.md",
-    "sourceTitle": "整体性思维+扫描式注意+平行处理：一套完整的高效信息处理认知体系"
+    "sourceTitle": "整体性思维+扫描式注意+平行处理：一套完整的高效信息处理认知体系",
+    "agent_roles": [
+      "problem_framer",
+      "decomposer",
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "核心是把握全局、看清本质，而非纠结局部细节",
   "when_to_use": {

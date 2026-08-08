@@ -6,7 +6,13 @@
     "category": "07",
     "tags": [],
     "skill_name": "🧠-多巴胺与情境互动的四大核心机制",
-    "source": "多巴胺与情境框架的动态关系.md"
+    "source": "多巴胺与情境框架的动态关系.md",
+    "agent_roles": [
+      "decision_maker",
+      "prioritizer",
+      "knowledge_synthesizer",
+      "simplifier"
+    ]
   },
   "core_definition": "多巴胺与情境框架的动态关系  ### 🧠 多巴胺与情境互动的四大核心机制  为了让你身临其境，我们用“**下雨天买伞**”这个经典场景，来贯穿解释这四大机制：  **核心场景**：你走在街上，天空突然开始下雨（情境变化）。路边小贩正在卖伞。  * * *  #### 1. **价值编码：从“绝对值",
   "when_to_use": {

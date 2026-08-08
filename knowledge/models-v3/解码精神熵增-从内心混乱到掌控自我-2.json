@@ -13,7 +13,10 @@
     ],
     "skill_name": "解码精神熵增",
     "source": "解码精神熵增_从内心混乱到掌控自我 2.md",
-    "sourceTitle": "解码精神熵增：从内心混乱到掌控自我"
+    "sourceTitle": "解码精神熵增：从内心混乱到掌控自我",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "这个问题的根本原因是什么？解码精神熵增如何找到它？",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "起源",
     "source": "ref:100+思维模型合集 (模型思维):起源：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "20 世纪六十年代，麦肯锡咨询的第一位女咨询师芭芭拉•明托，她也是 哈佛商学院录取的第一批女学员之一，是一个传奇性的人物。她在思 考如何构建清晰的逻辑框架的过程中，总结出了“金字塔原理”。初期麦 肯锡旨在内部进行培训，提高员工的写作能力。后",
   "when_to_use": {

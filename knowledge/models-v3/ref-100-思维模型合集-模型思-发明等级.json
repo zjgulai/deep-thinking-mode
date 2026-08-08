@@ -8,7 +8,12 @@
     "skill_name": "发明等级",
     "source": "ref:100+思维模型合集 (模型思维):发明等级",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "能够执行一定功能的系统，是人们为了实现某种目的而",
   "when_to_use": {

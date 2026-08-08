@@ -8,7 +8,10 @@
     "skill_name": "坚持自愿自律",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):坚持自愿自律",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "TPM 小组活动是员工自愿参与的，在业务中相互交换情报与信息，共同提 高，并谋求解决问题的自律性的小组活动。如果只是一部分少数人的活动或者为 了应付诊断搞一些突 击行动，那么，TPM 是绝对不会成功的。TPM 是一个循 序渐进的 STEP",
   "when_to_use": {

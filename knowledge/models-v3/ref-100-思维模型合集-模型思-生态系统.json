@@ -8,7 +8,10 @@
     "skill_name": "生态系统",
     "source": "ref:100+思维模型合集 (模型思维):生态系统",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "上 说，充满活力的生态系统是自我组织战略的外部化版本。小米、苹果、 乐视、阿里巴巴都是采用了生态系统战略。  1105 / 1937 \f例如：苹果公司的成功靠的不是自我的强大，靠的是不同公司组成的 复",
   "when_to_use": {

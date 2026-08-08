@@ -8,7 +8,11 @@
     "skill_name": "内省智能简介",
     "source": "ref:100+思维模型合集 (模型思维):内省智能简介",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "认识自己的长处和短处，意识到自己的内在爱好、情绪、",
   "when_to_use": {

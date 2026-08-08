@@ -8,7 +8,10 @@
     "skill_name": "与质量检验的区别",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):与质量检验的区别",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "(1)时间不同：“AUDIT”评审的产品是经过检验验收合格的产品；  (2)立场不同：质量检验员应该是代表国家、代表用户和企业检验产品质量， 但实际工作中由于种种原因，很多的质量检验员是站在企业的立场上检验的。而 “AUDIT”评审员是完",
   "when_to_use": {

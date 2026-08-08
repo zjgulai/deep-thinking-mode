@@ -8,7 +8,10 @@
     "skill_name": "领导者",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):领导者",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "该角色须具备八种素质。这一角色指人力资源管理者凭借其人格魅力与专业 知识发挥其影响力，在团队中或与其他同事的协作中承担领导者角色，从而更有 效率、更好地实现组织的目标。 \f http://wiki.mbalib.com/  这一角色实际上",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "新产品引入类",
     "source": "ref:营销管理143个经典模型:新产品引入类",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "• 4C（Customer, Competition, Cost, Capabilities） • 市场促销，分销渠道（渠道选择，库存，运输，仓储） • STP 和 4P（Product, Price, Place, Promotion）",
   "when_to_use": {

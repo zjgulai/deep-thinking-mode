@@ -8,7 +8,10 @@
     "skill_name": "甘华鸣．创新的策略-通用方法指南．红旗出",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):甘华鸣．创新的策略/通用方法指南．红旗出",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 戈登法  —适用自由联想的技术创新技法 \f http://wiki.mbalib.com/",
   "when_to_use": {

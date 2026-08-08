@@ -12,7 +12,11 @@
       "思维模型"
     ],
     "skill_name": "逆向思维创新框架-#思维框架",
-    "source": "逆向思维_打破定式_高效破局的创新框架.md"
+    "source": "逆向思维_打破定式_高效破局的创新框架.md",
+    "agent_roles": [
+      "multi_perspective",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "逆向思维：打破定式、高效破局的创新框架 ===================  原创 正方形SQUARE 2026-03-11 15:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/sxnBj7vLEZ91yqVPy2gFFQ](https://mp.weix",
   "when_to_use": {

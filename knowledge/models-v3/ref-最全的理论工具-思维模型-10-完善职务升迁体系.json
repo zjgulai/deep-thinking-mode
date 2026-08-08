@@ -8,7 +8,10 @@
     "skill_name": "完善职务升迁体系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):完善职务升迁体系",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "职务的晋升是对员工工作的肯定和嘉奖。但如果将晋升只局限在行政级别 的提高，则会出现管理上的混乱，因为每个部门的部门经理只有一个。所以职务 晋升要注重专业职务和行政职务并重，使员工即可以向专业深度发展也可以向管 理发展。如一个软件开发人员，",
   "when_to_use": {

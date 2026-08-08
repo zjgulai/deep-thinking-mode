@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "核心理论-蔡格尼克效应",
     "source": "拖延阻力突破奖赏.md",
-    "sourceTitle": "拖延阻力突破奖赏"
+    "sourceTitle": "拖延阻力突破奖赏",
+    "agent_roles": [
+      "problem_framer",
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "这件事的本质是什么？核心理论：蔡格尼克效应如何定义它？",
   "when_to_use": {

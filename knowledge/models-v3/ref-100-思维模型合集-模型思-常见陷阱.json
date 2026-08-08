@@ -8,7 +8,12 @@
     "skill_name": "常见陷阱",
     "source": "ref:100+思维模型合集 (模型思维):常见陷阱",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）形式化：为了追求形式化，采用复杂的战略规划工具，结果导致 流于形式，不好执行。 （2）以预算取代战略：只追求短期的预算和利益，忽略长期的计划。  1096 / 1937 \f（3）一成不变：经验代表着一切，“总是这样”代替了“应该这样”",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "为什么要教别人",
     "source": "ref:100+思维模型合集 (模型思维):为什么要教别人？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "prioritizer",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "环节。下面和大家分享两个理论 来论证教别人的重要性。 理论一：学习金字塔 美国学者、著名学习专家埃德格·戴尔于 1946 年首先提出了“学习金字 塔”。该理论用图形和数字形象地显示：学习者采用不同的学",
   "when_to_use": {

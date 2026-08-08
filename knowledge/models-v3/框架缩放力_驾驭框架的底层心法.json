@@ -6,7 +6,11 @@
     "category": "11",
     "tags": [],
     "skill_name": "框架缩放力_驾驭框架的底层心法",
-    "source": "框架缩放力_驾驭框架的底层心法.md"
+    "source": "框架缩放力_驾驭框架的底层心法.md",
+    "agent_roles": [
+      "decomposer",
+      "action_executor"
+    ]
   },
   "core_definition": "，将抽象原理转化为可拆解流程。",
   "when_to_use": {

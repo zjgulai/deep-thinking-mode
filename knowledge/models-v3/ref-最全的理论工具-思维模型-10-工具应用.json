@@ -8,7 +8,10 @@
     "skill_name": "工具应用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工具应用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如今，SWOT 已被广泛应用于各行各业，尤其在一些发达国家，SWOT 分析法甚至已深入到企 业和人们的日常活动中。  SWOT 作为一种有效的评估方法，可以作为一种了解企业本身的优势、弱势、机会、风险的重 要理论工具，并且可以根据环境的变",
   "when_to_use": {

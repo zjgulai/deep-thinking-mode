@@ -13,7 +13,13 @@
     ],
     "skill_name": "深度学习四视角",
     "source": "深度学习四视角速查卡.md",
-    "sourceTitle": "深度学习四视角速查卡"
+    "sourceTitle": "深度学习四视角速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "四个视角配核心动作，把深度学习从一句口号变成可套用的操作清单",
   "when_to_use": {

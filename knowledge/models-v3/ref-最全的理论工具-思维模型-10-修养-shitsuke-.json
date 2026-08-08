@@ -8,7 +8,10 @@
     "skill_name": "修养(shitsuke)",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):修养(SHITSUKE)",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "企业全员性的活动，必须得到企业上上下下的支持才能成功",
   "when_to_use": {

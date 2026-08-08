@@ -8,7 +8,10 @@
     "skill_name": "参考文献",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):参考文献",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "[1]张勤国等：《管理学——理念、方法与实务》.立信会计出版社.2003  [2]Anna Hassan: I Liked Everything – Celebrating New Audiences, Arts Council Engl",
   "when_to_use": {

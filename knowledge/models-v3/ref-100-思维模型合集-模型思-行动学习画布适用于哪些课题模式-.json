@@ -8,7 +8,12 @@
     "skill_name": "行动学习画布适用于哪些课题模式",
     "source": "ref:100+思维模型合集 (模型思维):行动学习画布适用于哪些课题模式？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "工具，它同时也承载着一套思想理念，并拥有 8",
   "when_to_use": {

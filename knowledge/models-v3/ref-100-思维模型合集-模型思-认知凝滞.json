@@ -8,7 +8,12 @@
     "skill_name": "认知凝滞",
     "source": "ref:100+思维模型合集 (模型思维):认知凝滞",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "心理学的研究表明, 由于认知的局限性, 人在面临复杂决策的时候, 思 维模式会选择性地对信息加以解释,思维模式和认知具有黏滞性, 即在 过去场景中用来解释和做出反应的思维模式, 在面对新环境时也会有 被拿出来重复使用。固化的思维模式将人们的",
   "when_to_use": {

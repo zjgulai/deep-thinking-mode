@@ -8,7 +8,10 @@
     "skill_name": "生活环境（c）",
     "source": "ref:100+思维模型合集 (模型思维):生活环境（C）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "关于环境这个因素，好的一面是，它的确可以提升幸福感，坏的一面 是，这种改进很昂贵且不切实际。因为改变环境非常困难。生活环境 包括金钱、婚姻、社交生活、健康、教育、气候和宗教等。金钱的增 加可以带来幸福指数的增加，但不是越多越幸福，也不是金钱",
   "when_to_use": {

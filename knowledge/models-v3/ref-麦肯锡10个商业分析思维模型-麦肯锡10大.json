@@ -8,7 +8,10 @@
     "skill_name": "麦肯锡10大",
     "source": "ref:麦肯锡10个商业分析思维模型:麦肯锡10大",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡10个商业分析思维模型"
+    "sourceTitle": "麦肯锡10个商业分析思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "商业分析思维模型 ｒｉ  Ｓｕ  析  By 商业分析家Suri  家  分  业  商  扫码关注 扫码进入 扫码添加  微信公众号 知识店铺 小助手微信 商业分析家Suri  By商业分析家Suri \f 目录  GE矩阵  波士顿矩阵",
   "when_to_use": {

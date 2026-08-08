@@ -8,7 +8,13 @@
     "skill_name": "第4章-新麦肯锡五步法",
     "source": "ref:《麦肯锡结构化战略思维》:第4章 新麦肯锡五步法",
     "sourceType": "book",
-    "sourceTitle": "《麦肯锡结构化战略思维》"
+    "sourceTitle": "《麦肯锡结构化战略思维》",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "清晰的问题陈述。很多时候，如果可以精准地把问题定义清楚，离找到",
   "when_to_use": {

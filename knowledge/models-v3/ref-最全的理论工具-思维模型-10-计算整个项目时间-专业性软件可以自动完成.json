@@ -8,7 +8,11 @@
     "skill_name": "计算整个项目时间。专业性软件可以自动完成",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):计算整个项目时间。专业性软件可以自动完成",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 3.2. 注意事项  甘特图中的所绘的实施线应是边做边画，同时进行。  计划线与实施线要区别清楚。  实施的进度要与事实配合。  计划线与实施线有差异时，要备注说明理由。  在品",
   "when_to_use": {

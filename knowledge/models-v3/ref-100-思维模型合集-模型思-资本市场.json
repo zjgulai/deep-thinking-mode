@@ -8,7 +8,10 @@
     "skill_name": "资本市场",
     "source": "ref:100+思维模型合集 (模型思维):资本市场",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）股市是否可预测？ 从证券投资理论的发展历程看，对股票收益率的预测主要包括随机漫 步理论、技术分析、基本分析和资产组合投资理论，一个很有影响的 关于股票价格走势的研究是随机漫步理论。巴契里耶认为市场价格包 含着过去、现在和将来的所有信息",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "建立模型后也并非一劳永逸",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立模型后也并非一劳永逸",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "模型如果不符合实际，就需要进行修正，根据不断变化的现实调整。随着时代的 变化，一方面构成职位素质模型的要素变化了；另一方面，构成胜任特征的内涵 也将变化。",
   "when_to_use": {

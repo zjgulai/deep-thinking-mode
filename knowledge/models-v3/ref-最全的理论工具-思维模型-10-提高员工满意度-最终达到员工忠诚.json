@@ -8,7 +8,11 @@
     "skill_name": "提高员工满意度，最终达到员工忠诚",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):提高员工满意度，最终达到员工忠诚",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "能力 的发展，因此员工是否忠诚将影响企业核心能力作用的发挥和企业竞争优势的取 得。",
   "when_to_use": {

@@ -9,7 +9,13 @@
     ],
     "skill_name": "解释模块-·-决策瘫痪",
     "source": "内耗管理系统___解释模块___决策瘫痪_你的前额叶_带宽_是如何被耗尽的_ 2.md",
-    "sourceTitle": "内耗管理系统 · 解释模块 · 决策瘫痪：你的前额叶“带宽”是如何被耗尽的？"
+    "sourceTitle": "内耗管理系统 · 解释模块 · 决策瘫痪：你的前额叶“带宽”是如何被耗尽的？",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "decomposer",
+      "prioritizer"
+    ]
   },
   "core_definition": "】面对众多选择，为何不是感到自由，而是疲惫与停滞？决策瘫痪的底层，是一场前额叶的“资源挤兑”",
   "when_to_use": {

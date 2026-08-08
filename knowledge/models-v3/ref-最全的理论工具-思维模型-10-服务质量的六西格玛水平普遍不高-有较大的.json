@@ -8,7 +8,10 @@
     "skill_name": "服务质量的六西格玛水平普遍不高，有较大的",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):服务质量的六西格玛水平普遍不高，有较大的",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "普通用户试用移动电话进行语音呼叫的示意流程图，",
   "when_to_use": {

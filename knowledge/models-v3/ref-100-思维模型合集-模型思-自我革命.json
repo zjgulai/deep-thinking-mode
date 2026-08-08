@@ -8,7 +8,10 @@
     "skill_name": "自我革命",
     "source": "ref:100+思维模型合集 (模型思维):自我革命",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "大公司可以通过改变组织结构来获取机械化组织和有机组织的优势。 许多大公司都试图通过分权来克服组织的僵化和惰性，进而使公司的 各个部门像小公司那样运作。  谷歌 Google 允许工程师拿出 20％的时间来研究自己喜欢的项目， 例如： 也就是",
   "when_to_use": {

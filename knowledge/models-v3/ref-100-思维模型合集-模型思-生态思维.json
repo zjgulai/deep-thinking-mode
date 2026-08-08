@@ -8,7 +8,11 @@
     "skill_name": "生态思维",
     "source": "ref:100+思维模型合集 (模型思维):生态思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "生态思维模式是关注商业生态系统中不同利益相关方的利益，不能只 顾自己不顾别人，要平衡共生体中各种利益相关方的利益，协同把市 场做大，清楚的知道自己应该控制什么？不应该控制什么？例如阿里 巴巴、腾讯、苹果都是生态思维的典范。",
   "when_to_use": {

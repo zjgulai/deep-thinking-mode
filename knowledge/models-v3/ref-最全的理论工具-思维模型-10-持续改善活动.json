@@ -8,7 +8,10 @@
     "skill_name": "持续改善活动",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):持续改善活动",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  持续改善活动是丰田公司生产经营的信条，是生产系统所具有的动态完善机 制激发的结果。持续改善活动基于以上几点理由： (1)改善工作并非一蹴而就的事情，更何况生产现场的情况复杂多变，再完善的",
   "when_to_use": {

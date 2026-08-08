@@ -8,7 +8,10 @@
     "skill_name": "使命",
     "source": "ref:100+思维模型合集 (模型思维):使命",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "什么是使命呢？企业的使命就是企业存在的原因，即该组织对整个经 济和社会应做出何种贡献。不论这种原因或者理由是“提供某种产品或 者服务”，还是“满足某种需要”或者“承担某个不可或缺的责任”，如果 一个企业找不到存在的原因，或者连自己都不能有效",
   "when_to_use": {

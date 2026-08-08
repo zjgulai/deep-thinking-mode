@@ -8,7 +8,10 @@
     "skill_name": "什么是耗散结构",
     "source": "ref:100+思维模型合集 (模型思维):什么是耗散结构",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "封闭系统，地球只和太阳交换能量，没有和其",
   "when_to_use": {

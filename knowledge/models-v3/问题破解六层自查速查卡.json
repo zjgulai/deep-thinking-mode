@@ -13,7 +13,10 @@
     ],
     "skill_name": "问题破解六层自查",
     "source": "问题破解六层自查速查卡.md",
-    "sourceTitle": "问题破解六层自查速查卡"
+    "sourceTitle": "问题破解六层自查速查卡",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不是能力不行，是思考层次没对上",
   "when_to_use": {

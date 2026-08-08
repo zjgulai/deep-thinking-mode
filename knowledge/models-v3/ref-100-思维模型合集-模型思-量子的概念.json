@@ -8,7 +8,11 @@
     "skill_name": "量子的概念",
     "source": "ref:100+思维模型合集 (模型思维):量子的概念",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "量子（quantum）是现代物理研究微观世界的的重要概念。即一个物理 量如果存在最小的不可分割的基本单位，则这个物理量是量子化的， 并把最小单位称为量子。 量子一词来自拉丁语 quantus，意为“有多少”，代表“相当数量的某物质”， 它最",
   "when_to_use": {

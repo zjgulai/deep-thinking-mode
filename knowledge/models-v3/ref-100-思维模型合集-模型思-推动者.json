@@ -8,7 +8,10 @@
     "skill_name": "推动者",
     "source": "ref:100+思维模型合集 (模型思维):推动者",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "复杂适应性系统，每个企业都在其中扮演着自己的角色，有些企业嗅",
   "when_to_use": {

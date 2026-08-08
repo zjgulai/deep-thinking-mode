@@ -8,7 +8,10 @@
     "skill_name": "发起对连续性联结认知的控制",
     "source": "ref:100+思维模型合集 (模型思维):发起对连续性联结认知的控制",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "节奏和旋律是不是能很快占领你的自主心智，",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "驱动正确的行为表现",
     "source": "ref:100+思维模型合集 (模型思维):驱动正确的行为表现",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "项，而非全部罗列：KR 要确保足够的战略聚焦，侧重于突出 和最大化对业务而言最关键的价值驱动因素。 基于结果，而非任务：我们的目的是找出影响 Objective 的 KR，而不是 制作一个任务或行动清",
   "when_to_use": {

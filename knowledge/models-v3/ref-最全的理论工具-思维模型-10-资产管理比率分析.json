@@ -8,7 +8,10 @@
     "skill_name": "资产管理比率分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):资产管理比率分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "全部流动资产周转次数为1.01次，说明该公司流动资产使用效率较低。表现 在其他应收款、其他流动资产、存货、预付帐款上，期末数比期初数增加了2.51 倍，流动资金周转困难的局面仍在加剧。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "您认为公司以及所从事的工作中存在哪些不合",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):您认为公司以及所从事的工作中存在哪些不合",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不合理处： 对应的改进建议： 1） 1） 2） 2） \f http://wiki.mbalib.com/  1， 本岗位调研问卷根据 X 公司具体情况设计。  2， 为了了解企业的职位设置和职位体系实际情况，更好的向 X 公司提供人力资源咨",
   "when_to_use": {

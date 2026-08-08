@@ -8,7 +8,10 @@
     "skill_name": "绿色设计",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):绿色设计",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "于 设计与制造过程，不能等产品产生了不良的环境后果再采取防治措施(如目前常 采用的末端处理)，应该在设计阶段就充分考虑到产品在制造、销售、使用及报 废后对环境的各种影响，与产品有关的人员密切合作，信息",
   "when_to_use": {

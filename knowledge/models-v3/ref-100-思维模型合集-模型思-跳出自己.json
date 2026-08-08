@@ -8,7 +8,11 @@
     "skill_name": "跳出自己",
     "source": "ref:100+思维模型合集 (模型思维):跳出自己",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "自己的认知和眼界决定了自己能看到的，自己没有看到可能对你来说 很重要，所以跳出自己的思维框架去找寻更优秀的方案非常重要，例 如王刚夫妇为什么只看到一所好的公立学校，就决定要买旁边的学区 房呢？有没有更好的公立学校呢？为什么非要选择公立学校呢",
   "when_to_use": {

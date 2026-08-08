@@ -8,7 +8,11 @@
     "skill_name": "识别问题",
     "source": "ref:100+思维模型合集 (模型思维):识别问题：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "准确地认识问题，是解决问题的前提。我们失败的原因多半是因为尝 试用正确的方法解决错误的问题。要想真正的识别问题，我们要遵循“三 现原则”。 现实：亲自去了解现实情况，分析原因； 现场：亲自到现场； 现物：亲自看实物、接触实物。 必须要身处现",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "战略与竞争分析弗莱舍，本苏桑，王俊杰译清",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):战略与竞争分析弗莱舍，本苏桑，王俊杰译清",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "20 \f http://wiki.mbalib.com/ 定向政策矩阵  --战略业务组合计划分析工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

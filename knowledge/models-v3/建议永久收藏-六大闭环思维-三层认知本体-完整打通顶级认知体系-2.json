@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "建议永久收藏",
     "source": "建议永久收藏_六大闭环思维_三层认知本体_完整打通顶级认知体系_ 2.md",
-    "sourceTitle": "建议永久收藏：六大闭环思维+三层认知本体，完整打通顶级认知体系。"
+    "sourceTitle": "建议永久收藏：六大闭环思维+三层认知本体，完整打通顶级认知体系。",
+    "agent_roles": [
+      "logical_analyzer",
+      "observer_reflector",
+      "communicator"
+    ]
   },
   "core_definition": "→匹配熟悉旧知识→建立对应关系→跨领域复用逻辑，大幅降低专业内容理解门槛",
   "when_to_use": {

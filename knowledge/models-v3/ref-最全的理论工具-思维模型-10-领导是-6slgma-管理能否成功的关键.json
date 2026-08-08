@@ -8,7 +8,12 @@
     "skill_name": "领导是-6slgma-管理能否成功的关键",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):领导是 6SlGMA 管理能否成功的关键",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "作用，亲自策划、庄重承 诺、身体力行、贯彻始终。  摩托罗拉总裁盖尔文亲自决定实施 6SIGMA 方案，提出具体目标和采取其 \f http://wiki.mbalib.com/ 他相应措施。  GE",
   "when_to_use": {

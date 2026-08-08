@@ -6,7 +6,10 @@
     "category": "04",
     "tags": [],
     "skill_name": "框架思维入门-从每日三问开始",
-    "source": "框架思维入门_从每日三问开始.md"
+    "source": "框架思维入门_从每日三问开始.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "框架思维入门：从每日三问开始 ==============  原创 正方形SQUARE 2026-02-28 11:16 上海  > 原文地址: [https://mp.weixin.qq.com/s/WY4kMoJMW4wGqOAtZi\\_gig](https://mp.weixin.qq.com",
   "when_to_use": {

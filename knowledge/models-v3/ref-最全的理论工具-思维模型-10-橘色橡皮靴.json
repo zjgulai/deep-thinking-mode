@@ -8,7 +8,12 @@
     "skill_name": "橘色橡皮靴",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):橘色橡皮靴",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor",
+      "pattern_recognizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "橘色暗示危险、爆发、注意力和警告，至于橡皮靴则暗示消防队员和救难人 员，所以橘色橡皮靴的行动模式即代表危险和紧急状况，必须采取紧急行动，这 时安全是最主要的考虑。  桔黄色行动模式要求把危险降到最小限度，甚至杜绝危险。所以，应该认真 研究",
   "when_to_use": {

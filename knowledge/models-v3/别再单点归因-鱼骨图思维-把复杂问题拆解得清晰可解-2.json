@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "别再单点归因",
     "source": "别再单点归因_鱼骨图思维_把复杂问题拆解得清晰可解 2.md",
-    "sourceTitle": "别再单点归因：鱼骨图思维，把复杂问题拆解得清晰可解"
+    "sourceTitle": "别再单点归因：鱼骨图思维，把复杂问题拆解得清晰可解",
+    "agent_roles": [
+      "problem_framer",
+      "causal_reasoner",
+      "hypothesis_tester",
+      "decomposer"
+    ]
   },
   "core_definition": "根本原因 = 多维穷举 + 逐层拆解 + 验证排除，全面覆盖问题维度，穿透表象直击本质",
   "when_to_use": {

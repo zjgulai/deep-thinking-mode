@@ -8,7 +8,11 @@
     "skill_name": "追求范围经济和客人终身价值",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):追求范围经济和客人终身价值。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "action_executor"
+    ]
   },
   "core_definition": "大规模定制生产范式在战略理念上强调给每一个客户以充分的关注和满足， 而在实际操作中仍需一定的经营规模来保证，以降低成本，实现其预期的盈利目 标。实行大规模定制的企业始终能够在总能力的范围内根据需求制造产品，它不 会忽略任何单体或小批量市场",
   "when_to_use": {

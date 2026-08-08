@@ -8,7 +8,10 @@
     "skill_name": "弗里曼,-freeman．王彦华,-梁豪",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):弗里曼, Freeman．王彦华, 梁豪",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "版社,2006.  14 \f http://wiki.mbalib.com/ PIMS 分析法  —有效的战略评价分析工具 \f http://wiki.mbalib.com/ 概念含义...........................",
   "when_to_use": {

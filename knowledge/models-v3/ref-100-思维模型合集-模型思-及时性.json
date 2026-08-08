@@ -8,7 +8,12 @@
     "skill_name": "及时性",
     "source": "ref:100+思维模型合集 (模型思维):及时性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "hypothesis_tester",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "件的第一时间介入到问题的解决当中。实践操作中往往很多问题都是 间隔的时间太久找不到真正的原因。如果我们不及时去分析问题，可 能很多证据已经全部消失了，在没有证据的状态下，是很难找到真因 呢。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "前-言",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):前 言",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "您是否急于掌握并随时运用所有重要的管理方法，却苦于时间的局限无法饱 览浩瀚的理论书籍？管理者如何在百忙之中快速地掌握当前最重要、最前沿的管 理理论和管理方法呢？藉于此，MBA 智库全体编辑收集了在世界知识企业中比 较流行或成功的 100",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "存量流量图",
     "source": "ref:100+思维模型合集 (模型思维):存量流量图",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "systems_thinker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "某一指定的时点上，过去生产与积累起来的产品、货物、",
   "when_to_use": {

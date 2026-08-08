@@ -8,7 +8,10 @@
     "skill_name": "标准作业的推进",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):标准作业的推进",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "现场所有的管理对象都按照某一标准进行有规律的运",
   "when_to_use": {

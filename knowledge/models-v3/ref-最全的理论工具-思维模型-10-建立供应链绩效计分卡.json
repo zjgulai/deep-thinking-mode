@@ -8,7 +8,10 @@
     "skill_name": "建立供应链绩效计分卡",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立供应链绩效计分卡",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  在经过市场研究和企业高层领导讨论之后，旅行社 ABC 公司识别了 5 个需 要进行测量和标杆的第一层 SCOR 指标和全部财务指标，5 个需要进行测量的指 标分别是导游服务水平，供应商服",
   "when_to_use": {

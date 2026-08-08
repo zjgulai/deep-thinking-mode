@@ -8,7 +8,10 @@
     "skill_name": "企业环境管理协调方面的问题",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业环境管理协调方面的问题",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "绿色供应链管理突出强调供应链的环境属性，如何确保供应链系统的环境属 \f http://wiki.mbalib.com/ 性是实施绿色供应链管理所面临的一个问题。一方面，供应链的每个角色内部必 须实施有效的环境管理，确保产品在生命周期的每一",
   "when_to_use": {

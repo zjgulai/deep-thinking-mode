@@ -8,7 +8,10 @@
     "skill_name": "热图分析",
     "source": "ref:11个分析模型:热图分析",
     "sourceType": "book",
-    "sourceTitle": "11个分析模型"
+    "sourceTitle": "11个分析模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "7.1 热图分析概述  热图分析能够用热谱图直观呈现用户在网站、H5 页面、APP 上的点击、滚动 行为，帮助产品、运营人员了解用户的点击偏好，辅助做页面设计优化、内容调 整等。常见的热图分析有以下 4 种类型：  • 点击位置热图（见图",
   "when_to_use": {

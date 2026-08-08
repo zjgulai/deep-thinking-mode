@@ -8,7 +8,10 @@
     "skill_name": "依据",
     "source": "ref:100+思维模型合集 (模型思维):依据",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“依据”是支持“主张”的事实或数据 ；一般属于客观事实，如“哈里出 生在百慕大群岛”。 ３、正当理由 “正当理由”解释了如何从“依据”得到“主张”，即“主张”和“依据”之间具 有的关联性，它为这一过程提供了“担保”。“依据”和“正当理由”的",
   "when_to_use": {

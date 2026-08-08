@@ -8,7 +8,11 @@
     "skill_name": "需求预测",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):需求预测",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "decision_maker"
+    ]
   },
   "core_definition": "需求预测最主要的目的就是要协助上游企业做库存管理决策，准确的预测可 让上游企业明确提供何种商品，提供给谁，以何种价格提供，何时提供等。而预 测所需的参考要素有：下游企业订货历史资料（下游企业平常的订货资料，可以 作为未来预测的需求)、外部",
   "when_to_use": {

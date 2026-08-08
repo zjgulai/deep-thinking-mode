@@ -8,7 +8,10 @@
     "skill_name": "保持开放",
     "source": "ref:100+思维模型合集 (模型思维):保持开放",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "解答智力测验考试题目的能力，具体的智能数值就是最后的分",
   "when_to_use": {

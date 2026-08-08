@@ -8,7 +8,10 @@
     "skill_name": "在拍卖中的应用",
     "source": "ref:100+思维模型合集 (模型思维):在拍卖中的应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对宇宙的理解，即有客观的又有主观的",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "认识可行度加权",
     "source": "ref:100+思维模型合集 (模型思维):认识可行度加权",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "797 / 1937 \f可行度加权就是让可信的人在投票的时候多一些权重。瑞·达利欧认为 可信度加权的决策方式是最好的决策方式。让靠谱的人和能力强的人 发挥更大的影响力。那么，怎样知道谁最靠谱呢？一般来说最具有可 信度的观点来自： （1）多",
   "when_to_use": {

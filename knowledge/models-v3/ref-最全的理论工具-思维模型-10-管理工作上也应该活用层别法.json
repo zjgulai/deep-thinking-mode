@@ -8,7 +8,10 @@
     "skill_name": "管理工作上也应该活用层别法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):管理工作上也应该活用层别法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "工具 3.7.1. 工具说明  管制图在质量管理方面成了一个不可或缺的管理工具。它是一种有控制界限 的图，用来区分引起质量波动的原因是偶然的还是系统的，可以提供系统原因存 在的信息，从而判断生产过程是",
   "when_to_use": {

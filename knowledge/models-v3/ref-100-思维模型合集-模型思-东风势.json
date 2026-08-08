@@ -8,7 +8,10 @@
     "skill_name": "东风势",
     "source": "ref:100+思维模型合集 (模型思维):东风势",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在传播的过程中，一定要善于借东风，东风就是社会的热点，这些热 点事件具备很大的势能，它可以起到事半功倍，四两拨千斤的效果。 例如：加多宝和王老吉离婚后，快速的借助浙江卫视《中国好声音》 的东风势，让全国人们知道了加多宝。建立的新的口号“怕上",
   "when_to_use": {

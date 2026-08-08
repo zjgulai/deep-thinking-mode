@@ -8,7 +8,10 @@
     "skill_name": "杜绝一切形式的浪费",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):杜绝一切形式的浪费",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "机会，认为只有不断地发现问题、解决问题，才能不断地进行改善，",
   "when_to_use": {

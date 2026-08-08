@@ -8,7 +8,11 @@
     "skill_name": "东北角迁移力",
     "source": "ref:100+思维模型合集 (模型思维):东北角迁移力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "思维是大企业为了增加利润，利用渐进式的持续 创新，不断的优化产品，不断的向高端市场进军的过程。东北角就像 地球引力一样吸引着大企业向上前进。他们为什么要这样做呢？这是 由于大企业的特征所导致的。大企业",
   "when_to_use": {

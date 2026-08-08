@@ -8,7 +8,11 @@
     "skill_name": "在设计-kpi-的时候，设计者一定要遵循",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):在设计 KPI 的时候，设计者一定要遵循",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "observer_reflector"
+    ]
   },
   "core_definition": "目标结果是实实在在的，可观察或证明；",
   "when_to_use": {

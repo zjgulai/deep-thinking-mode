@@ -8,7 +8,10 @@
     "skill_name": "人际关系智能",
     "source": "ref:100+思维模型合集 (模型思维):人际关系智能",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "能够有效的识别、理解与别人关系以及有效的建立与别人人际关",
   "when_to_use": {

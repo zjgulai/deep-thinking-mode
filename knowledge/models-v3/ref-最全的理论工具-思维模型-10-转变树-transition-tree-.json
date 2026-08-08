@@ -8,7 +8,11 @@
     "skill_name": "转变树（transition-tree）",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):转变树（Transition Tree）",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "步骤与思维流程  过去，我们说：\"管理 30 项活动要比管 3 项活动麻烦得多\"。其实我们说这 句话是暗含了一个意思，就是活动和活动之间的关联得我们去管。对 3 项活动来 讲，有 3！＝6 个关联。而",
   "when_to_use": {

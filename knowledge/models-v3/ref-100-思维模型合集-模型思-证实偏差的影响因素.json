@@ -8,7 +8,10 @@
     "skill_name": "证实偏差的影响因素",
     "source": "ref:100+思维模型合集 (模型思维):证实偏差的影响因素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "当人们需要对某个事件做定量估测时,会将某些特定数值",
   "when_to_use": {

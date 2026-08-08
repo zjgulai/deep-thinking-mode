@@ -8,7 +8,11 @@
     "skill_name": "季度中期审视",
     "source": "ref:100+思维模型合集 (模型思维):季度中期审视",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "周会中的每个主题都可以应用在中期审视，但这个时候应更多关注“状 态确认”。需要根据收集上来的新信息重新调整期望值，以确保在余下 的六周里重点采取哪些行动？",
   "when_to_use": {

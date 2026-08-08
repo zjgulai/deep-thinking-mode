@@ -8,7 +8,10 @@
     "skill_name": "积木块",
     "source": "ref:100+思维模型合集 (模型思维):积木块",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "具有复杂性与多面性的复杂适应系统",
   "when_to_use": {

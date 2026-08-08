@@ -13,7 +13,13 @@
     ],
     "skill_name": "解题时该怎么想_四种底层思维",
     "source": "解题时该怎么想_四种底层思维速查卡.md",
-    "sourceTitle": "解题时该怎么想_四种底层思维速查卡"
+    "sourceTitle": "解题时该怎么想_四种底层思维速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "四种底层思维，决定你解题时该怎么想",
   "when_to_use": {

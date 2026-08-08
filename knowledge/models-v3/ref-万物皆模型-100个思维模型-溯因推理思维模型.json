@@ -8,7 +8,11 @@
     "skill_name": "溯因推理思维模型",
     "source": "ref:万物皆模型-100个思维模型:溯因推理思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "logical_analyzer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "从已知事实出发,运用一般规律性知识,推测事件发生的原因",
   "when_to_use": {

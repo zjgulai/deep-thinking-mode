@@ -8,7 +8,10 @@
     "skill_name": "赵曙明.中国企业人力资源管理（第三版）",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):赵曙明.中国企业人力资源管理（第三版）.",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "6. [美]罗纳德·克林格勒，约翰·纳尔班迪.公共部门人力资源管理：系统与战略（第四版）.中国人民大  学出版社，2001",
   "when_to_use": {

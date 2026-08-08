@@ -6,7 +6,11 @@
     "category": "05",
     "tags": [],
     "skill_name": "系统思考的致命陷阱_延迟反馈_4步",
-    "source": "系统思考的致命陷阱_延迟反馈__4步识别与应对.md"
+    "source": "系统思考的致命陷阱_延迟反馈__4步识别与应对.md",
+    "agent_roles": [
+      "systems_thinker",
+      "communicator"
+    ]
   },
   "core_definition": "两个原因：存量（水池）太大，或者流量（管道）太细",
   "when_to_use": {

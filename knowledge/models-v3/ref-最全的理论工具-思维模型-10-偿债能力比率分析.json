@@ -8,7 +8,10 @@
     "skill_name": "偿债能力比率分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):偿债能力比率分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "甲公司流动比率为1.28，离国际公认的安全比率2相差0.72，说明该公司短期 偿债能力不足；甲公司资产负债率为45.4％基本正常，说明该公司银行信誉较好。",
   "when_to_use": {

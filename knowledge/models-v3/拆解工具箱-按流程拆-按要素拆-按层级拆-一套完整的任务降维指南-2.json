@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "拆解工具箱",
     "source": "拆解工具箱_按流程拆_按要素拆_按层级拆_一套完整的任务降维指南 2.md",
-    "sourceTitle": "拆解工具箱：按流程拆、按要素拆、按层级拆，一套完整的任务降维指南"
+    "sourceTitle": "拆解工具箱：按流程拆、按要素拆、按层级拆，一套完整的任务降维指南",
+    "agent_roles": [
+      "decomposer",
+      "action_executor"
+    ]
   },
   "core_definition": "讲透：把一座无从下手的大山，拆成一堆能随手搬运的石块",
   "when_to_use": {

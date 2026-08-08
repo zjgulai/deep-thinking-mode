@@ -8,7 +8,11 @@
     "skill_name": "证实偏差的心理机制",
     "source": "ref:100+思维模型合集 (模型思维):证实偏差的心理机制",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "bias_detector"
+    ]
   },
   "core_definition": "非理性的决策行为,必然会降低判断和决策的效果",
   "when_to_use": {

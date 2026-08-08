@@ -8,7 +8,12 @@
     "skill_name": "根据股市生命周期判断现在也应该上涨了吧",
     "source": "ref:100+思维模型合集 (模型思维):根据股市生命周期判断现在也应该上涨了吧。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "前那次牛市进行了比对，发现一模一样。于是做出判断，未来 6 个月 一定是个大牛市。这就是代表性启发的决策流程，根据现在问题的特  859 / 1937 \f征和原来的经验进行比对，做出判断。 二、代表性启发可能导致的偏差 代表性启发是根据相似",
   "when_to_use": {

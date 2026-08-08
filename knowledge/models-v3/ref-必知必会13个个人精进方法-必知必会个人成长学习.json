@@ -8,7 +8,10 @@
     "skill_name": "必知必会个人成长学习",
     "source": "ref:必知必会13个个人精进方法:必知必会个人成长学习",
     "sourceType": "book",
-    "sourceTitle": "必知必会13个个人精进方法"
+    "sourceTitle": "必知必会13个个人精进方法",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不断评估、不断改进、不断优化的过",
   "when_to_use": {

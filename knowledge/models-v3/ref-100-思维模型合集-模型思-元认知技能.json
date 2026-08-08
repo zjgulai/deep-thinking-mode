@@ -8,7 +8,11 @@
     "skill_name": "元认知技能",
     "source": "ref:100+思维模型合集 (模型思维):元认知技能",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人们理解和控制他们自己的认知的技能，是认知背后",
   "when_to_use": {

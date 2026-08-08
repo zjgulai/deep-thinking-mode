@@ -8,7 +8,10 @@
     "skill_name": "认真进行生产现场的“5s”活动",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):认真进行生产现场的“5s”活动",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "5S 活动是定置管理中难度大，工作量大，又非常重要的环节。船体车间的 “5S”活动，以定置管理图为指导，围绕优化人、物生产场地的组合条件，保证 人流、物流、产品流畅通。  首先应进行生产现场的清理、清洗和整顿，组织职工利用节假日、工余时间",
   "when_to_use": {

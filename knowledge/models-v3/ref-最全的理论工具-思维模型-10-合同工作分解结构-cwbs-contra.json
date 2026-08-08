@@ -8,7 +8,11 @@
     "skill_name": "合同工作分解结构",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):合同工作分解结构（CWBS，Contra",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "合同工作分解结构是适用于特定合同或采购活动的完整的工作分解结构。 CWBS 概括了项目的任务，确定了这些任务与项目的组织机构、技术状态的关系， 为项目的性能、技术目标、进度和费用之间的联系，确定了逻辑上的约束框架。 合同工作分解结构应与合",
   "when_to_use": {

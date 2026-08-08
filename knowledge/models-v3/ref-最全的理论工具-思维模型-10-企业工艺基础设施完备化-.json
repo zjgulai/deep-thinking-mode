@@ -8,7 +8,10 @@
     "skill_name": "企业工艺基础设施完备化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):企业工艺基础设施完备化。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1 个或若干个能覆盖产品类中既定型号和规格变化",
   "when_to_use": {

@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "8种知识整合方式",
     "source": "8种知识整合方式_结构化_流程化_因果_系统_类比_辩证_空间_演化_一套完整的认知工具包.md",
-    "sourceTitle": "8种知识整合方式：结构化+流程化+因果+系统+类比+辩证+空间+演化，一套完整的认知工具包"
+    "sourceTitle": "8种知识整合方式：结构化+流程化+因果+系统+类比+辩证+空间+演化，一套完整的认知工具包",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如何有效完成这件事？8种知识整合方式的操作路径是什么？",
   "when_to_use": {

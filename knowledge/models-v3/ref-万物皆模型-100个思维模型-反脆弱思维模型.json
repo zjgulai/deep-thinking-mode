@@ -8,7 +8,10 @@
     "skill_name": "反脆弱思维模型",
     "source": "ref:万物皆模型-100个思维模型:反脆弱思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一些人和事物在面对冲击时,不但能够不受损",
   "when_to_use": {

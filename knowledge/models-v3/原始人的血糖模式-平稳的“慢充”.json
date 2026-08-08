@@ -6,7 +6,11 @@
     "category": "12",
     "tags": [],
     "skill_name": "原始人的血糖模式-平稳的“慢充”",
-    "source": "现代人的血糖波动.md"
+    "source": "现代人的血糖波动.md",
+    "agent_roles": [
+      "pattern_recognizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "现代人的血糖波动  ### 原始人的血糖模式：平稳的“慢充”  原始人（以狩猎-采集者为代表）的血糖模式可以概括为 **“长期平稳，偶尔剧烈消耗”**。  1.  **食物来源：**       *   **低升糖指数（低GI）：** 他们的碳水化合物主要来自富含纤维的野生植物、块茎、坚果和浆果。这",
   "when_to_use": {

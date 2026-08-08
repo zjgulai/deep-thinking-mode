@@ -13,7 +13,10 @@
     ],
     "skill_name": "思维卡壳时怎么破局_六种提问方式",
     "source": "思维卡壳时怎么破局_六种提问方式速查卡.md",
-    "sourceTitle": "思维卡壳时怎么破局_六种提问方式速查卡"
+    "sourceTitle": "思维卡壳时怎么破局_六种提问方式速查卡",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "苏格拉底式提问是暴露逻辑断层的利器",
   "when_to_use": {

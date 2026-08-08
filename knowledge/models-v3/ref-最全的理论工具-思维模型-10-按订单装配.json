@@ -8,7 +8,10 @@
     "skill_name": "按订单装配",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按订单装配",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "参照大规模定制的四种分类，戴尔公司属于采用按订单装配 （Assemble-to-Order）的典型代表。基于以下几个原因，按订单装配的模式特别 \f http://wiki.mbalib.com/ 适合个人电脑：产品更新快和配件价格下降快使",
   "when_to_use": {

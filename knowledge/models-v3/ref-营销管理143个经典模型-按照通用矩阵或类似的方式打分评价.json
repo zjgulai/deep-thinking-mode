@@ -8,7 +8,10 @@
     "skill_name": "按照通用矩阵或类似的方式打分评价",
     "source": "ref:营销管理143个经典模型:按照通用矩阵或类似的方式打分评价",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "把识别出的所有优势分成两组，分的时候以两个原则为基础：它们是与行业中潜在的机会 有关，还是与潜在的威胁有关。用同样的办法把所有的劣势分成两组，一组与机会有关，另一组 与威胁有关。",
   "when_to_use": {

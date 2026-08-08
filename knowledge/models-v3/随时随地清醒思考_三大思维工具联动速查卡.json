@@ -13,7 +13,13 @@
     ],
     "skill_name": "随时随地清醒思考_三大思维工具联动",
     "source": "随时随地清醒思考_三大思维工具联动速查卡.md",
-    "sourceTitle": "随时随地清醒思考_三大思维工具联动速查卡"
+    "sourceTitle": "随时随地清醒思考_三大思维工具联动速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "人云亦云、固执己见、非黑即白——不是智商不够，是缺一套随时调用的思考工具",
   "when_to_use": {

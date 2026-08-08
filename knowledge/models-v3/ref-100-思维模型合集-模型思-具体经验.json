@@ -8,7 +8,10 @@
     "skill_name": "具体经验",
     "source": "ref:100+思维模型合集 (模型思维):具体经验",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "接经验即人们通过做某事获得某种感知。也可以是间接经验，因为人 们不可能在有限的生命周期内将世界的每一件事都“经验”过一次。",
   "when_to_use": {

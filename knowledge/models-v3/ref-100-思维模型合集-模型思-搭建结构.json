@@ -8,7 +8,11 @@
     "skill_name": "搭建结构",
     "source": "ref:100+思维模型合集 (模型思维):搭建结构",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "演绎性的推论，就可以这个演绎推理的",
   "when_to_use": {

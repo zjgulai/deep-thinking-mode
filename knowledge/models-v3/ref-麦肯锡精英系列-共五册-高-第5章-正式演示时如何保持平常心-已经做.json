@@ -8,7 +8,10 @@
     "skill_name": "第5章-正式演示时如何保持平常心-已经做",
     "source": "ref:麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝]):第5章 正式演示时如何保持平常心 已经做",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])"
+    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不受情感左右且基于理性与诚实的具有建设性的谈判技巧",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "情绪abc理论思维模型",
     "source": "ref:万物皆模型-100个思维模型:情绪ABC理论思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "action_executor",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "当事件本身超越你的认知局限时,除了发脾气以外,你还会",
   "when_to_use": {

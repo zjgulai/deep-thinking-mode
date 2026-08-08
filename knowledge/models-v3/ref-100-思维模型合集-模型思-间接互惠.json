@@ -8,7 +8,10 @@
     "skill_name": "间接互惠",
     "source": "ref:100+思维模型合集 (模型思维):间接互惠",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "上讲，我们就是在购买一 个名声。 社会能够发展出更大规模、更为复杂的结构，以及彼此间更紧密的相 互连结。正是因",
   "when_to_use": {

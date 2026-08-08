@@ -8,7 +8,12 @@
     "skill_name": "范围经济是指在同一核心专长下，因各项活动",
     "source": "ref:100+思维模型合集 (模型思维):范围经济是指在同一核心专长下，因各项活动",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer",
+      "simplifier"
+    ]
   },
   "core_definition": "专长，从而导致各项活动费用的降低和经济效益的提高。 通俗讲就是品种越多，成本越低。  1309 / 1937 \f企业在特定的范围内，通过资源共享，均摊成本导致成本的降低。例 如多个品种共享一个模板，中",
   "when_to_use": {

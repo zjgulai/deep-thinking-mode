@@ -8,7 +8,10 @@
     "skill_name": "同质异化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):同质异化",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "对某些早已熟悉的事物，根据人们的需要，从新的角",
   "when_to_use": {

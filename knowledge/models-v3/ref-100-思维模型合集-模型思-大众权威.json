@@ -8,7 +8,10 @@
     "skill_name": "大众权威",
     "source": "ref:100+思维模型合集 (模型思维):大众权威",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "连续七年，全国销量领先。就是利用人的从众效应，认为很多人都买 的东西肯定不会有错。  1047 / 1937 \f４、文化权威：例如《本草纲目》中提到滋补有三宝：人参、鹿茸和 阿胶。就是利用文化和传统来建立顾客信任。 ５、团队权威：例如来自清",
   "when_to_use": {

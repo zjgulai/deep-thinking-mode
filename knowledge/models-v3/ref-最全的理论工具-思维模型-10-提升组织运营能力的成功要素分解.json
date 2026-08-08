@@ -8,7 +8,12 @@
     "skill_name": "提升组织运营能力的成功要素分解",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):提升组织运营能力的成功要素分解",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "prioritizer"
+    ]
   },
   "core_definition": "业绩指标以“实现经营目标的稳步增长”为 例，进行分析、分解，见下表所示。 公司战略子 实现该目标的关 各部门可能的关键业 考核  责任／部门  目标 键因素 绩指标 频度  ① 实 现 营 业 额 稳",
   "when_to_use": {

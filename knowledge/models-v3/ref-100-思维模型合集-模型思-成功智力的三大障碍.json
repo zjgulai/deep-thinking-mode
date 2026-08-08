@@ -8,7 +8,11 @@
     "skill_name": "成功智力的三大障碍",
     "source": "ref:100+思维模型合集 (模型思维):成功智力的三大障碍",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "第一大障碍是权威人物的负面期望。当这些权威人物，不管是老师、 领导、老板、家长不看好你的时候，常常会导致你成为平庸之辈。具 有成功智力的人无视负面期望，即使这些期望源自于智商或类似测验 的低得分。他们不会因他人的评论而停止向目标前进的脚步，",
   "when_to_use": {

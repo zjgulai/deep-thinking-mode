@@ -8,7 +8,10 @@
     "skill_name": "某滴打车",
     "source": "ref:100+思维模型合集 (模型思维):某滴打车",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "最开始培养用户习惯，超额补贴，降低使用门槛。打车费用总共 15 元， 可以补贴客户 14 元，1 元打车，另外还补贴司机 10 元，皆大欢喜。等 习惯逐渐养成，补贴开始减少到 5 元，再然后 2 元，再然后就没有补 贴。等占领市场，某滴打车",
   "when_to_use": {

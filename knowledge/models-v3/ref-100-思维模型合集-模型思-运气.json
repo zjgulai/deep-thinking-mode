@@ -8,7 +8,10 @@
     "skill_name": "运气",
     "source": "ref:100+思维模型合集 (模型思维):运气",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "所出身的社会阶层，假如你一出生就是官二代，富二",
   "when_to_use": {

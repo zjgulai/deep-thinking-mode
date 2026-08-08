@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "血清素是一个负责“稳定与满足”",
     "source": "血清素是一个负责_稳定与满足_的超级管家.md",
-    "sourceTitle": "血清素是一个负责“稳定与满足”的超级管家"
+    "sourceTitle": "血清素是一个负责“稳定与满足”的超级管家",
+    "agent_roles": [
+      "problem_framer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "这件事的本质是什么？血清素是一个负责“稳定与满足”如何定义它？",
   "when_to_use": {

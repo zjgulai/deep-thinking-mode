@@ -8,7 +8,10 @@
     "skill_name": "确定-puv-组成的权重",
     "source": "ref:营销管理143个经典模型:确定 PUV 组成的权重",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "可以通过以下方法来确定：首先让调查对象先对 PUV 组成的重要程度进行排序，认为 最重要的排“l”，次重要排“2”，依次类推。若调查对象^数为 n，则得到 PUV 组成重要程度排序 的 n 个评价值，具体如表 3 所示：  129 \f 然",
   "when_to_use": {

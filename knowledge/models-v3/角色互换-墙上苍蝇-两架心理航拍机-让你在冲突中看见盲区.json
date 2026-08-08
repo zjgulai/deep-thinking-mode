@@ -7,7 +7,10 @@
     "tags": [],
     "skill_name": "角色互换+墙上苍蝇",
     "source": "角色互换_墙上苍蝇_两架心理航拍机_让你在冲突中看见盲区.md",
-    "sourceTitle": "角色互换+墙上苍蝇：两架心理航拍机，让你在冲突中看见盲区"
+    "sourceTitle": "角色互换+墙上苍蝇：两架心理航拍机，让你在冲突中看见盲区",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不是也有点过分？”\n\n大多数人困在冲突里，不是因为缺道理，而是因为缺一个不同的视角",
   "when_to_use": {

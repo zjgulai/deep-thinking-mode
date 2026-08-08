@@ -8,7 +8,11 @@
     "skill_name": "社会智慧、个人智慧、情商",
     "source": "ref:100+思维模型合集 (模型思维):社会智慧、个人智慧、情商",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "能够识别自我情绪、管理自我情绪、",
   "when_to_use": {

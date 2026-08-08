@@ -8,7 +8,11 @@
     "skill_name": "《结构化分析》内容导读",
     "source": "ref:本书高清知识地图:《结构化分析》内容导读",
     "sourceType": "book",
-    "sourceTitle": "本书高清知识地图"
+    "sourceTitle": "本书高清知识地图",
+    "agent_roles": [
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "搭建  客 户 数 据指标  洞察  会分析  体系  在 务 制  所 业 目  和 定  的 剖析 2.  将  标  公 务  司  业 新  2. 将 商业分析方法论与实践指南  解新 业  研究 布局  务  务数  竞争对 1",
   "when_to_use": {

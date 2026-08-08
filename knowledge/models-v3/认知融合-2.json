@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "一、认知融合的表现-它像什么？",
     "source": "认知融合 2.md",
-    "sourceTitle": "一、认知融合的表现：它像什么？"
+    "sourceTitle": "一、认知融合的表现：它像什么？",
+    "agent_roles": [
+      "multi_perspective",
+      "decision_maker",
+      "observer_reflector",
+      "error_handler"
+    ]
   },
   "core_definition": "当处于认知融合状态时，我们通常会：  1.  **被想法“劫持”**：一个想法（如“我一无是处”）出现，我们立刻深信不疑，情绪和行为随之完全被这个想法控制，仿佛它就是现实本身。      2.  **陷入思维漩涡**：大脑进入“自动驾驶”模式，反复思考、分析、担忧、评判，停不下来。例如，对未来可能发",
   "when_to_use": {

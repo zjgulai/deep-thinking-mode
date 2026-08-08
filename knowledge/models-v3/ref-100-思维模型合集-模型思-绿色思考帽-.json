@@ -8,7 +8,12 @@
     "skill_name": "绿色思考帽",
     "source": "ref:100+思维模型合集 (模型思维):绿色思考帽：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "绿色是有生命的颜色，是充满生机的，绿色思维不需要以逻辑性为基 础；允许人们做出多种假设。使用绿色思维时，绿色思维可以帮助寻 求新方案和备选方案，修改和去除现存方法的错误；为创造力的尝试 提供时间和空间。为我们找寻更多的“可能性”。 A 使用",
   "when_to_use": {

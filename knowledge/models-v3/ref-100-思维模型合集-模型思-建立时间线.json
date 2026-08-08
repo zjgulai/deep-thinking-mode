@@ -8,7 +8,11 @@
     "skill_name": "建立时间线",
     "source": "ref:100+思维模型合集 (模型思维):建立时间线",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "预想的未来，是对未来长远目标的生动化描述",
   "when_to_use": {

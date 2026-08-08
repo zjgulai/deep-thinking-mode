@@ -8,7 +8,10 @@
     "skill_name": "经济系统的自组织理论",
     "source": "ref:100+思维模型合集 (模型思维):经济系统的自组织理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "他组织的行为,而市场经济是一种自组织行为",
   "when_to_use": {

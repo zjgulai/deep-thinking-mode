@@ -8,7 +8,12 @@
     "skill_name": "推理",
     "source": "ref:100+思维模型合集 (模型思维):推理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "推理是由一个或几个已知的判断（前提）推出新判断（结论）的过程。 例如：所有人都会死——苏格拉底是人——所以苏格拉底会死。 推理在各种思维形态中有着特殊的地位和作用。 从众多的的感性现象中概括出普遍的、一般的新知识，必须要依赖推 理，这样的推",
   "when_to_use": {

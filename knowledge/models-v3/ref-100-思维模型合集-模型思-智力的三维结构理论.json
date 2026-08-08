@@ -8,7 +8,10 @@
     "skill_name": "智力的三维结构理论",
     "source": "ref:100+思维模型合集 (模型思维):智力的三维结构理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "714 / 1937 \f1967 年，美国心理学家吉尔福特提出智力三维结构模型。这个智力结 构模型首先发表在 1959 年 4 月号的《美国心理学》杂志上，简称为 SOI 模型。智力的思维过程包括认知、记忆、发散思维、聚合思维和评价 这",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "对方有没有审美素养",
     "source": "ref:100+思维模型合集 (模型思维):对方有没有审美素养？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在一定时间范围内不练习，联结的力量就会减弱甚至消失",
   "when_to_use": {

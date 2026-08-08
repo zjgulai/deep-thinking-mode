@@ -8,7 +8,11 @@
     "skill_name": "燃油效率-90、价格为-50），x=",
     "source": "ref:100+思维模型合集 (模型思维):燃油效率 90、价格为 50），x=（质",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "20% 、 价 格 权 重 为 40% ）， 那 么 买 车 的 收 益 为 ： π=80×40%+90×20%+50×40%=70。如果是多个产品选择，得分最高者就 是最优选择。享受竞争模型更看重赋予某项维度的权重，在客户最关 心的维度做",
   "when_to_use": {

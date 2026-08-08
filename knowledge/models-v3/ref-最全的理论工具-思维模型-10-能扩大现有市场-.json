@@ -8,7 +8,11 @@
     "skill_name": "能扩大现有市场",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):能扩大现有市场。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decomposer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "大规模定制模式下通用的设计和柔性的加工，即使不是为单个客户定制产 品，也能为许多小批量市场有效地提供产品，否则这些小批量市场则可能被忽 略。即使企业产品参与的是许多小批量市场的竞争，通用化的模块仍能获得规模 化的效益。因此，在小批量市场中",
   "when_to_use": {

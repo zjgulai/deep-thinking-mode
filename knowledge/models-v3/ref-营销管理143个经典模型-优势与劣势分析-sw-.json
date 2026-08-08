@@ -8,7 +8,10 @@
     "skill_name": "优势与劣势分析（sw）",
     "source": "ref:营销管理143个经典模型:优势与劣势分析（SW）",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一个企业超越其竞争对手的能力，这种能力有助于实现企业",
   "when_to_use": {

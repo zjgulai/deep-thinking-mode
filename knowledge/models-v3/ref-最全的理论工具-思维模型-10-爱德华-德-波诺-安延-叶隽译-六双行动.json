@@ -8,7 +8,11 @@
     "skill_name": "爱德华•德•波诺．安延、叶隽译．六双行动",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):爱德华•德•波诺．安延、叶隽译．六双行动",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ KT 决策法  —最负盛名的决策模型 \f http://wiki.mbalib.com/",
   "when_to_use": {

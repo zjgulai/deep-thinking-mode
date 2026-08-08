@@ -8,7 +8,10 @@
     "skill_name": "生成与测验",
     "source": "ref:100+思维模型合集 (模型思维):生成与测验",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "促进编码与提取的更有效的方式。",
   "when_to_use": {

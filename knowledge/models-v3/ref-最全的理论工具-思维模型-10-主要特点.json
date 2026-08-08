@@ -8,7 +8,11 @@
     "skill_name": "主要特点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):主要特点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "绩效指标所体现的 衡量内容最终取决于公司的战略目标。当关键绩效指标构成公司战略目标的有效 组成部分或 支持体系时，它所衡量的职位便以实现公司战略目标的相关部分作 为自身的主要职责；如果 KPI 与公司",
   "when_to_use": {

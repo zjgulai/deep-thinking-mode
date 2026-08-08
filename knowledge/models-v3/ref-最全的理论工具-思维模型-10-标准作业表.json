@@ -8,7 +8,10 @@
     "skill_name": "标准作业表",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):标准作业表",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "该表体现现场管理人员的意志。并对操作人员的操作顺序和每道工序的标准 \f http://wiki.mbalib.com/ 作业时间做出明确的规定。标准作业表可以使作业规则明确化。以节拍来分配作 业内容。标准作业以人的有效劳动为中心，在没有浪",
   "when_to_use": {

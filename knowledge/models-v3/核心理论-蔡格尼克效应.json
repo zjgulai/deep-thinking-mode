@@ -6,7 +6,13 @@
     "category": "09",
     "tags": [],
     "skill_name": "核心理论-蔡格尼克效应",
-    "source": "拖延阻力突破奖赏.md"
+    "source": "拖延阻力突破奖赏.md",
+    "agent_roles": [
+      "problem_framer",
+      "planner",
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "拖延阻力突破奖赏  ### 核心理论：蔡格尼克效应  这是理解该机制的基石。  *   **定义**：由心理学家布鲁玛·蔡格尼克发现，指**人们对未完成或中断的任务，比已完成的任务记忆更深刻、心理投入更持续**。      *   **大脑的逻辑**：大脑的进化目标是节能和高效。当一个任务被标识为“",
   "when_to_use": {

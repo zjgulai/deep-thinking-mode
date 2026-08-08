@@ -13,7 +13,13 @@
     ],
     "skill_name": "事前验尸",
     "source": "事前验尸速查卡.md",
-    "sourceTitle": "事前验尸速查卡"
+    "sourceTitle": "事前验尸速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "这张速查卡帮你快速掌握“事前验尸”这一风险管理工具，包含6步操作流程、适用场景和快速自查3问",
   "when_to_use": {

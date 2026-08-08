@@ -8,7 +8,10 @@
     "skill_name": "重在行动",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):重在行动",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "人独处时的思考，更多的是在集体思考的时候运用",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "组织因素",
     "source": "ref:100+思维模型合集 (模型思维):组织因素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "原因。 （4）决策流程不科学以及缺少监督也是承诺升级的主要原因。 案例：1992 年 7 月 17 日，作为巴林期货新加坡分公司的主管，利森刚 聘佣了一位新的操盘手。这位操盘手误将应该买入的合约卖出，",
   "when_to_use": {

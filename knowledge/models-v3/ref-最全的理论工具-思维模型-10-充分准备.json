@@ -8,7 +8,10 @@
     "skill_name": "充分准备",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):充分准备",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "SPIN 这种提问方式，是为了把客户的隐藏需求转变为明显需求，而要达到 这个目的并不容易，所以要求销售员在拜访客户之前一定要进行非常充分的准 备。只有进行大量的案头工作，把所有的问题提前准备好，才有可能成功地进行 提问。",
   "when_to_use": {

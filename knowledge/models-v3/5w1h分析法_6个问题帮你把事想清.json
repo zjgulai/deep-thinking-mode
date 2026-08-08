@@ -6,7 +6,10 @@
     "category": "07",
     "tags": [],
     "skill_name": "5w1h分析法_6个问题帮你把事想清",
-    "source": "5W1H分析法_6个问题帮你把事想清楚_说明白.md"
+    "source": "5W1H分析法_6个问题帮你把事想清楚_说明白.md",
+    "agent_roles": [
+      "communicator"
+    ]
   },
   "core_definition": "或结论为中心论点，六个维度作为支撑论据，每个维度再展开具体细节，让表达更具逻辑性",
   "when_to_use": {

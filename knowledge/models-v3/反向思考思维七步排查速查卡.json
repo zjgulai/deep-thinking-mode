@@ -13,7 +13,13 @@
     ],
     "skill_name": "反向思考思维七步排查",
     "source": "反向思考思维七步排查速查卡.md",
-    "sourceTitle": "反向思考思维七步排查速查卡"
+    "sourceTitle": "反向思考思维七步排查速查卡",
+    "agent_roles": [
+      "multi_perspective",
+      "planner",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "这张速查卡把反向问题排查拆成七步： 从明确SMART目标、反向扫描五个维度，到无禁忌罗列诱因、按概率和影响双重打分锁定3-5个致命风险，再到制定预案、转为日常行动、周期性复盘更新",
   "when_to_use": {

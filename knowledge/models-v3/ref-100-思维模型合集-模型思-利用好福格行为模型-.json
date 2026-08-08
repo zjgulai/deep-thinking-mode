@@ -8,7 +8,11 @@
     "skill_name": "利用好福格行为模型",
     "source": "ref:100+思维模型合集 (模型思维):利用好福格行为模型：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "想要达成一个目标，可以顺应福格行为模型，培养一个又一个微习惯。 评估行为需要的动力和能力，动力不可控，而能力能大致量化。设计  1936 / 1937 \f最初的行为足够简单，简单到只要你想，就一定能做的地步。即为登 门槛效应。明代洪自诚在《",
   "when_to_use": {

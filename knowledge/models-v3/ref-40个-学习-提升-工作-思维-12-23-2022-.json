@@ -8,7 +8,10 @@
     "skill_name": "12-23-2022-‹#›",
     "source": "ref:40个（学习、提升、工作）思维模型:12/23/2022 ‹#›",
     "sourceType": "book",
-    "sourceTitle": "40个（学习、提升、工作）思维模型"
+    "sourceTitle": "40个（学习、提升、工作）思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "全面思考问题的模型。 它提 供 了 “ 平 行 思 维 ” 的 工 具 ， 避免 将 时 间 浪 费 在互 相 争 执 上",
   "when_to_use": {

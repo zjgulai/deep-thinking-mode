@@ -8,7 +8,10 @@
     "skill_name": "王璞、李小勇，北大纵横管理咨询系列—事业",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):王璞、李小勇，北大纵横管理咨询系列—事业",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "中信出版社。 4. J.戴维.亨格、托马斯.L.惠伦，《战略管理精要》2002 年，电子工业出版社。  17 \f http://wiki.mbalib.com/ 战略钟模型 --分析企业竞争战略选择的一种工具，为企 业的管理人员和咨询顾问",
   "when_to_use": {

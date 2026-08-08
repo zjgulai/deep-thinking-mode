@@ -8,7 +8,10 @@
     "skill_name": "冯之浚、王春法、许定．战略研究与中国发展",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):冯之浚、王春法、许定．战略研究与中国发展",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 奥斯本检核表法 —创造技法之母，最著名、最典型的检核提  问型创新法 \f http://wiki.mbalib.com/",
   "when_to_use": {

@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "1-.-持续性低强度活动",
     "source": "持续性低强度活动与间歇性高强度活动结合.md",
-    "sourceTitle": "持续性低强度活动与间歇性高强度活动结合"
+    "sourceTitle": "持续性低强度活动与间歇性高强度活动结合",
+    "agent_roles": [
+      "logical_analyzer",
+      "prioritizer",
+      "error_handler",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "持续性低强度活动与间歇性高强度活动结合  **“持续性低强度活动与间歇性高强度活动结合……这种活动模式非常有利于肌肉对葡萄糖的摄取和利用，增强了胰岛素敏感性。”**  这其实是理解运动与血糖关系的一个核心概念。我们可以把身体想象成一个极其智能的能源管理系统。  ### 1\\. 持续性低强度活动（如行",
   "when_to_use": {

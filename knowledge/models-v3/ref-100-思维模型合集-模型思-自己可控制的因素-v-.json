@@ -8,7 +8,11 @@
     "skill_name": "自己可控制的因素（v）",
     "source": "ref:100+思维模型合集 (模型思维):自己可控制的因素（V）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "当人们沉浸在当下着手的某件事情或某个目标中时，全",
   "when_to_use": {

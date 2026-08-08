@@ -8,7 +8,10 @@
     "skill_name": "决定目标值的意义",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):决定目标值的意义",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "(1)将圈员对品管圈活动的想法导入同一方向； (2)将要改善到什么程度的动机，具体地向圈员表示出来； (3)对活动结果好坏能容易判断，可作为下期活动的反省。",
   "when_to_use": {

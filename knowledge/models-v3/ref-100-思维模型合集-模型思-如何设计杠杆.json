@@ -8,7 +8,11 @@
     "skill_name": "如何设计杠杆",
     "source": "ref:100+思维模型合集 (模型思维):如何设计杠杆",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "综合性的创新方法论，融合了创业学的精益创业",
   "when_to_use": {

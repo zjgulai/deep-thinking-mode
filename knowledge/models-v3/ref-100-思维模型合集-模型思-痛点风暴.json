@@ -8,7 +8,12 @@
     "skill_name": "痛点风暴",
     "source": "ref:100+思维模型合集 (模型思维):痛点风暴",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "痛点风暴的目的在于帮助你清晰理解问题所在，以便测试你的假设。 有效的痛点风暴包括五个步骤： 第一步：根据客户及其需要完成的工作创建问题假设。 从客户的角度填写以下模板。 我是_____________（客户，至少三个特征） 我正努力____",
   "when_to_use": {

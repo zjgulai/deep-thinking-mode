@@ -8,7 +8,10 @@
     "skill_name": "学习力",
     "source": "ref:100+思维模型合集 (模型思维):学习力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "马斯克 12 岁就读完了大英百科全书，学会了电脑编程。凭他的才华， 可以进入美国的任何一所大学。马斯克在多个领域都能够成功，跟他 的超强学习力密切相关，当马斯克开始盘算如何在航天领域创业时， 他首先把家搬到了美国航天工业重镇洛杉矶，便于接触",
   "when_to_use": {

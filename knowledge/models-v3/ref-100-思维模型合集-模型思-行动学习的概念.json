@@ -8,7 +8,13 @@
     "skill_name": "行动学习的概念",
     "source": "ref:100+思维模型合集 (模型思维):行动学习的概念",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "planner",
+      "action_executor",
+      "observer_reflector"
+    ]
   },
   "core_definition": "计划、实施、总结、反思进而制定下一",
   "when_to_use": {

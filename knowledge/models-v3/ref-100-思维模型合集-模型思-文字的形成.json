@@ -8,7 +8,11 @@
     "skill_name": "文字的形成",
     "source": "ref:100+思维模型合集 (模型思维):文字的形成",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "在人类进化历程和人类文化发展中，语言先于文字出现。语言形成的 过程是，有一个客观存在的事物或事件，在我们的脑海中形成了一个 观念（或思维）  ，然后我们用语言把它表达了出来。而文字就是语言的 形象化符号。那么，对文字的解析过程就是从形象到抽",
   "when_to_use": {

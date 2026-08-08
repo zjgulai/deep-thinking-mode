@@ -8,7 +8,11 @@
     "skill_name": "质疑假设",
     "source": "ref:100+思维模型合集 (模型思维):质疑假设",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "以其他鱼类为食的大型淡水鱼。把一条梭鱼放在一个玻璃",
   "when_to_use": {

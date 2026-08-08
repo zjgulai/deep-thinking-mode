@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "**1-.-什么是导致拖延的“",
     "source": "冲动性_导致拖延的致命弱点.md",
-    "sourceTitle": "冲动性，导致拖延的致命弱点"
+    "sourceTitle": "冲动性，导致拖延的致命弱点",
+    "agent_roles": [
+      "problem_framer",
+      "planner",
+      "prioritizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "冲动性，导致拖延的致命弱点  **拖延往往并非源于“不想做”，而是源于在那些微小而关键的瞬间，对“做更轻松之事”的冲动性屈服。**  * * *  ### **1\\. 什么是导致拖延的“冲动性”？**  这里的“冲动性”并非指性格上的莽撞，而是一种 **“认知-情感”的即时反应模式**：  *   ",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "分支",
     "source": "ref:100+思维模型合集 (模型思维):分支",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "接着再连二级分支和三级分支，依次类推。各分支之间不能断，从一 点钟方向开始画，顺时针方向展开。 这样就很容易地理解和记住更多的东西。这就像一棵有生命的大树， 树杈从主干生出，向四面八方发散，整幅图就气韵流畅，自然相连， 富有生机感。",
   "when_to_use": {

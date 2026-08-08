@@ -8,7 +8,11 @@
     "skill_name": "少数服从多数的刚性运用",
     "source": "ref:100+思维模型合集 (模型思维):少数服从多数的刚性运用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "少数服从多数是民主决策的重要原则，是集体智慧的表现。它的基本 前提是，每个人都具备相同的表决权重，所有参与决策的人员对决策 事项在信息获取、认知能力和思维水平上是相等的。而在现实中，由 于个体差异，是不可能做到每一个参与者对决策事项的理解是",
   "when_to_use": {

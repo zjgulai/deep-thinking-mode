@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "系统思维实用指南",
     "source": "系统思维实用指南_拆解报复性熬夜_轻松打破内耗循环.md",
-    "sourceTitle": "系统思维实用指南：拆解报复性熬夜，轻松打破内耗循环"
+    "sourceTitle": "系统思维实用指南：拆解报复性熬夜，轻松打破内耗循环",
+    "agent_roles": [
+      "systems_thinker",
+      "decomposer",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "用有限的意志力对抗持续的系统压力，而非意志力不足",
   "when_to_use": {

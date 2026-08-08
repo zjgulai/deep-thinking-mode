@@ -8,7 +8,10 @@
     "skill_name": "服务设施具有吸引力；3.-员工有整洁的服",
     "source": "ref:营销管理143个经典模型:服务设施具有吸引力；3. 员工有整洁的服",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "可靠的，准确地履行服务承诺的能力",
   "when_to_use": {

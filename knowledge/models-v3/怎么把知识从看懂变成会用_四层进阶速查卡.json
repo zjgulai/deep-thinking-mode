@@ -13,7 +13,13 @@
     ],
     "skill_name": "怎么把知识从看懂变成会用_四层进阶",
     "source": "怎么把知识从看懂变成会用_四层进阶速查卡.md",
-    "sourceTitle": "怎么把知识从看懂变成会用_四层进阶速查卡"
+    "sourceTitle": "怎么把知识从看懂变成会用_四层进阶速查卡",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "四层进阶，每层配一个核心自问和前景理论示例",
   "when_to_use": {

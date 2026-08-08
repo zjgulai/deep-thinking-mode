@@ -6,7 +6,12 @@
     "category": "08",
     "tags": [],
     "skill_name": "解题思维工具箱_精准定义_拆解溯源",
-    "source": "解题思维工具箱_精准定义_拆解溯源_发散解题_理性决策_落地执行_复盘沉淀.md"
+    "source": "解题思维工具箱_精准定义_拆解溯源_发散解题_理性决策_落地执行_复盘沉淀.md",
+    "agent_roles": [
+      "problem_framer",
+      "decomposer",
+      "action_executor"
+    ]
   },
   "core_definition": "一套可以刻意练习、持续习得的思维与行动习惯",
   "when_to_use": {

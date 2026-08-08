@@ -8,7 +8,11 @@
     "skill_name": "推论阶梯思维模型",
     "source": "ref:万物皆模型-100个思维模型:推论阶梯思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "decision_maker",
+      "observer_reflector"
+    ]
   },
   "core_definition": "积极运用自己的信念和经验的方 你可以在决策过程的任何阶段使用推论阶梯,而不仅仅是在你已经做出选择的时候",
   "when_to_use": {

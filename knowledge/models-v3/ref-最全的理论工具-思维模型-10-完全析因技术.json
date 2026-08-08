@@ -8,7 +8,10 @@
     "skill_name": "完全析因技术",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):完全析因技术",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "采用以上四项技术，寻找出 4 个以下的主要因素，这些因素按全部因素所有 水平的一切组合逐次进行实验，研究这些因素的主效应和相互之间的交互作用， 以确定最佳的因素水平匹配方案。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "流动性指标",
     "source": "ref:营销管理143个经典模型:流动性指标",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "分析流动性指标，目的在于观察客户在一定时期内的资金周转状况，掌握客户资金的运用 效率。主要指标含义及计算公式如图所示：  企业流动性指标 流动性比率 基本含义 计算公式 总资产周转率 反映全部资产的使用效率 销售收入/平均资产总额 282",
   "when_to_use": {

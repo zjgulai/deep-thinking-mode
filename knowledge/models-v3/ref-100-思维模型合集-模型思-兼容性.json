@@ -8,7 +8,10 @@
     "skill_name": "兼容性",
     "source": "ref:100+思维模型合集 (模型思维):兼容性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "“非此即彼”的科学，按照亚里士多德的逻辑，一个",
   "when_to_use": {

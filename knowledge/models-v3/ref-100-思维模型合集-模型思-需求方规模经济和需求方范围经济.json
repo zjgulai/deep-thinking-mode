@@ -8,7 +8,10 @@
     "skill_name": "需求方规模经济和需求方范围经济",
     "source": "ref:100+思维模型合集 (模型思维):需求方规模经济和需求方范围经济",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "分散的利基市场，如果没有互联网",
   "when_to_use": {

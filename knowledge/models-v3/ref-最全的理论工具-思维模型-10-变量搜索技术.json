@@ -8,7 +8,10 @@
     "skill_name": "变量搜索技术",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):变量搜索技术",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "与零件搜索有许多相似之处，都是逐个替换，进行测试比较，以搜索引起产 品质量波动的主要原因，但变量搜索是针对变量的，而零件搜索则是针对零件的。",
   "when_to_use": {

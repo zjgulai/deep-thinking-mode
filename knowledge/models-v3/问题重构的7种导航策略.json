@@ -11,7 +11,12 @@
       "问题分析"
     ],
     "skill_name": "问题重构-#框架思维-#思维框",
-    "source": "问题重构的7种导航策略.md"
+    "source": "问题重构的7种导航策略.md",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "问题重构的7种导航策略 ===========  原创 正方形SQUARE 2026-04-14 16:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/y\\_GIrTlQyI0LUzhLvsrL5A](https://mp.weixin.qq.com/s/y_G",
   "when_to_use": {

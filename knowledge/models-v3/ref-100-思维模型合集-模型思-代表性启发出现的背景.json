@@ -8,7 +8,11 @@
     "skill_name": "代表性启发出现的背景",
     "source": "ref:100+思维模型合集 (模型思维):代表性启发出现的背景",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "没有时间认真思考某个问题； 负载信息过多以至于无法充分地对其进行加工； 认为问题不十分重要，没必要过多思考； 缺乏作决策所需的可靠知识或信息。",
   "when_to_use": {

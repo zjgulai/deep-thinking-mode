@@ -8,7 +8,10 @@
     "skill_name": "路径分析",
     "source": "ref:11个分析模型:路径分析",
     "sourceType": "book",
-    "sourceTitle": "11个分析模型"
+    "sourceTitle": "11个分析模型",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "用户在应用中使用的行为轨迹。在产品运营过程中，无论是产品、",
   "when_to_use": {

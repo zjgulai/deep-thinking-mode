@@ -6,7 +6,12 @@
     "category": "02",
     "tags": [],
     "skill_name": "形式逻辑_概念_篇_7大模块完整拆",
-    "source": "形式逻辑_概念_篇__7大模块完整拆解逻辑基础核心概念_零基础吃透形式逻辑底层框架_建议永久收藏_.md"
+    "source": "形式逻辑_概念_篇__7大模块完整拆解逻辑基础核心概念_零基础吃透形式逻辑底层框架_建议永久收藏_.md",
+    "agent_roles": [
+      "problem_framer",
+      "logical_analyzer",
+      "decomposer"
+    ]
   },
   "core_definition": "关系、不会规范定义专业概念、不懂两种推理的适用边界，思考自然依靠直觉，分析必然片面松散",
   "when_to_use": {

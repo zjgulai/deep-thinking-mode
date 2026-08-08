@@ -6,7 +6,13 @@
     "category": "07",
     "tags": [],
     "skill_name": "erg动机理论_读懂动态人性需求_停",
-    "source": "ERG动机理论_读懂动态人性需求_停止无谓自我内耗.md"
+    "source": "ERG动机理论_读懂动态人性需求_停止无谓自我内耗.md",
+    "agent_roles": [
+      "intent_clarifier",
+      "prioritizer",
+      "simplifier",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "ERG动机理论：读懂动态人性需求，停止无谓自我内耗  我们时常会陷入心理矛盾：生活安稳无忧，却依旧空虚内耗；一心追求自我成长，遭遇挫折后，反而执着于物质满足、过度渴望他人认可。马斯洛静态需求理论只能解释人向上进取的心理，而ERG理论，能精准解释人需求倒退、心态下沉的真实人性。  一、理论核心：ERG",
   "when_to_use": {

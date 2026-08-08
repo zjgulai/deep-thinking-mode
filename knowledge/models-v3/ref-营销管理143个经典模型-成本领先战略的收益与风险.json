@@ -8,7 +8,10 @@
     "skill_name": "成本领先战略的收益与风险",
     "source": "ref:营销管理143个经典模型:成本领先战略的收益与风险",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "为使企业产品与竞争对手产品有明显的区别，形成与众不同的特点",
   "when_to_use": {

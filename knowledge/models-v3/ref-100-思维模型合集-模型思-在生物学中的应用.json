@@ -8,7 +8,12 @@
     "skill_name": "在生物学中的应用",
     "source": "ref:100+思维模型合集 (模型思维):在生物学中的应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "混沌在生物学研究中的应用主要集中在生态学中的种群变化;医学诊断 疾病等方面。  459 / 1937 \f4、在经济学中的应用 像自然界的所有领域一样,在经济领域同样存在着混沌现象,蝴蝶效应。 对此,美国赛纳尔公司首席执行官尼尔·帕特森对此有",
   "when_to_use": {

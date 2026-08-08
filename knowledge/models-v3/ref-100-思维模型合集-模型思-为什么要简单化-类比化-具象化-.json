@@ -8,7 +8,12 @@
     "skill_name": "为什么要简单化、类比化、具象化",
     "source": "ref:100+思维模型合集 (模型思维):为什么要简单化、类比化、具象化？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decomposer",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "将非常小额度的资金聚集起来借贷给有",
   "when_to_use": {

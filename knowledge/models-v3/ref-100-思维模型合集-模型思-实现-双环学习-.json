@@ -8,7 +8,10 @@
     "skill_name": "实现“双环学习”",
     "source": "ref:100+思维模型合集 (模型思维):实现“双环学习”",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "问题已经找到了，第二环是背后的、真正造成问题的原 因是什么?于是开始第二次研讨,确定了公司定位。在 2002-2003 年之前, 地产行业里的很多公司都没有很清晰的定位,都是机会驱动的,能拿到 地就做",
   "when_to_use": {

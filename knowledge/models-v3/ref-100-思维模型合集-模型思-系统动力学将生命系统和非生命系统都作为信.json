@@ -8,7 +8,11 @@
     "skill_name": "系统动力学将生命系统和非生命系统都作为信",
     "source": "ref:100+思维模型合集 (模型思维):系统动力学将生命系统和非生命系统都作为信",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "并且认为，在每个系统之中都存在着信息反馈机制，而这恰恰是控制 论的重要观点，所以系统动力学是以控制论为理论基础的；",
   "when_to_use": {

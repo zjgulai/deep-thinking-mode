@@ -8,7 +8,10 @@
     "skill_name": "作用与好处",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作用与好处",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "运用于工商业的策略， 供应商和零售商通过共同合作(如：建立",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "一线经理转型的方法",
     "source": "ref:100+思维模型合集 (模型思维):一线经理转型的方法",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "（1）准备：让初任经理清楚地知道新岗位的要求，包括领导技能、时 间管理能力和工作理念，并为他们实现转型提供必要的培训。 （2）监督：确认初任经理在转型中是否遇到了困难，并进行分析改进。 第一要通过观察，旁听初任经理与下属的沟通，看看他们是否",
   "when_to_use": {

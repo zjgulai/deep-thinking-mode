@@ -8,7 +8,10 @@
     "skill_name": "市场渗透",
     "source": "ref:营销管理143个经典模型:市场渗透（Market Penetrat",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "合为发展焦点，力求增大产品的市场占有率。采取市场渗透的策略，藉由促销或是提升服务品质 等等方式来说服消费者改用不同品牌的产品，或是说服消费者改变使用习惯、增加购买量。",
   "when_to_use": {

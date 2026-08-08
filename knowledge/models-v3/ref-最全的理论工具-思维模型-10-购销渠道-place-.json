@@ -8,7 +8,10 @@
     "skill_name": "购销渠道(place)",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):购销渠道(place)",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "simplifier"
+    ]
   },
   "core_definition": "购销渠道就是使产品到达顾客手中的各种方式。它主要包括对采购渠道和运 输安排的决定。购销渠道的优化可以缩短和减少不必要的环节，实现精简化，效 率化，从而实现成本和效率的整体优化，增加连锁超市的竞争力。  (1)连锁超市可以通过各种渠道采购和",
   "when_to_use": {

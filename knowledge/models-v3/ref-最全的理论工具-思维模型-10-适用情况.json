@@ -8,7 +8,10 @@
     "skill_name": "适用情况",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):适用情况",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "对外部环境进行分析的工具，EFE矩阵可以帮助战略制定者归纳和评价经济、社",
   "when_to_use": {

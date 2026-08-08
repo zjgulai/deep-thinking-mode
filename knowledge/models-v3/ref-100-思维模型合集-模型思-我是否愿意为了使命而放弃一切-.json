@@ -8,7 +8,11 @@
     "skill_name": "我是否愿意为了使命而放弃一切",
     "source": "ref:100+思维模型合集 (模型思维):我是否愿意为了使命而放弃一切？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "二、神盾体——五环管理模式  1662 / 1937 \f1、战略洞察 马斯克具备极强的行业趋势洞察力，能够对未来精准预测，并快速的 抓住机会。这种洞察力来源于他有一颗改变世界之心，他在大学时， 总是在寻找“影响人类未来的事”。他找到了最能影",
   "when_to_use": {

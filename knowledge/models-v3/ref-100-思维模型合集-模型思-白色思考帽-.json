@@ -8,7 +8,10 @@
     "skill_name": "白色思考帽",
     "source": "ref:100+思维模型合集 (模型思维):白色思考帽：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "198 / 1937 \f白色是中立而客观的，代表信息、事实和数据；白色思维可以帮助你 做到像电脑那样提出事实和数据；用事实和数据支持一种观点；为某 种观点搜寻事实和数据；信任事实和检验事实；评估信息的相关性和 准确性；区分事实和推论。 A",
   "when_to_use": {

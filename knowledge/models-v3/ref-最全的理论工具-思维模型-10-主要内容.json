@@ -8,7 +8,11 @@
     "skill_name": "主要内容",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):主要内容",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "起点。分解采购和技术开发以将它们与各种具",
   "when_to_use": {

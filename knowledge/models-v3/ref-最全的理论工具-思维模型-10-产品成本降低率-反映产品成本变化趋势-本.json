@@ -8,7 +8,10 @@
     "skill_name": "产品成本降低率-反映产品成本变化趋势-本",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):产品成本降低率 反映产品成本变化趋势 本",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "2.5. 生产性指标  企业的生产性指标分析的目的在于要查明企业在一定时期内的人均生产经 营能力、生产经营水平和生产成果的分配问题。主要指标如下表所示：  生产性指标 生产性比率 基本含义 计算公式",
   "when_to_use": {

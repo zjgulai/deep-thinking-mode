@@ -8,7 +8,10 @@
     "skill_name": "做好任职资格及工资评级工作",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):做好任职资格及工资评级工作",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "在宽带薪酬结构下，由于经理人在决定员工工资时有更大的自由，薪酬的成 本有可能大幅度上升。企业的人力资源管理人员应根据企业的实际情况，有效的 \f http://wiki.mbalib.com/ 控制人力成本。所以，在建立宽带薪酬管理模式的同",
   "when_to_use": {

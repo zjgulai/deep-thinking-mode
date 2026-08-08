@@ -8,7 +8,13 @@
     "skill_name": "什么是归纳法？-为什么培根认为归纳法对于",
     "source": "ref:100+思维模型合集 (模型思维):什么是归纳法？ 为什么培根认为归纳法对于",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "hypothesis_tester",
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人的想象和虚构，不可观察、重复和相互验证，所以就不是科学",
   "when_to_use": {

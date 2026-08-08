@@ -8,7 +8,10 @@
     "skill_name": "参与政治活动-10、-写商业贸易信",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):参与政治活动 10、 写商业贸易信",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "第三部份 您所擅长获胜的活动  下面列举若干种活动，请选择你能做或大概能做的事。请将答案直接写在第 5 页答题纸 \f http://wiki.mbalib.com/  上。 R：实际型能力 A：艺术型能力",
   "when_to_use": {

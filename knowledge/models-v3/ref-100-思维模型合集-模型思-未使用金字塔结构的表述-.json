@@ -8,7 +8,11 @@
     "skill_name": "未使用金字塔结构的表述",
     "source": "ref:100+思维模型合集 (模型思维):未使用金字塔结构的表述：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "领导，张经理来电话说他有点儿急事儿需要处理，下午 3 点没办法赶 回来参加会议了，小李说他今天晚一点儿开会没关系，明天开也可以， 但最好别 10：30 之前开。另外可能会议室明天已经有人预定了，星期 四可以预定。王总还在成都出差，明天需要很",
   "when_to_use": {

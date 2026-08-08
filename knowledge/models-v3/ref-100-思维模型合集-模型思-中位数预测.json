@@ -8,7 +8,11 @@
     "skill_name": "中位数预测",
     "source": "ref:100+思维模型合集 (模型思维):中位数预测",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "企业长期的发展方向、目标、目的、自我设定的社会责",
   "when_to_use": {

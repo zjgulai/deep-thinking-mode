@@ -8,7 +8,10 @@
     "skill_name": "什么是学习能力",
     "source": "ref:100+思维模型合集 (模型思维):什么是学习能力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "个体从事学习活动所需具备的心理特征",
   "when_to_use": {

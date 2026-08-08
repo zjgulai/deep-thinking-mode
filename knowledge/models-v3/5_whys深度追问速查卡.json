@@ -13,7 +13,13 @@
     ],
     "skill_name": "5_whys深度追问",
     "source": "5_Whys深度追问速查卡.md",
-    "sourceTitle": "5_Whys深度追问速查卡"
+    "sourceTitle": "5_Whys深度追问速查卡",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "这三张5 Whys深度追问速查卡收好：图一是追问链示范，图二是五大核心要素，图三是五步落地路径",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "方法(method)－包括作业方法、条件",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):方法(Method)－包括作业方法、条件",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "1、“人”的管理  在四大因素中，人是最重要的因素。不论是设备的操作、检修、保养、还是 材料的验收把关，以及作业方法的遵守和改进，都依靠工人的智能和积极性。因 此，对于班组长来说，做好以下几方面工作： １)加强对工人的技能训练 a.让工人充",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "逻辑倾听模型",
     "source": "ref:100+思维模型合集 (模型思维):逻辑倾听模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "causal_reasoner",
+      "logical_analyzer",
+      "prioritizer"
+    ]
   },
   "core_definition": "概念是否一致、核心概念是否准确； 前提是否正确：每一个逻辑表达，都有一个推导的前提，我们要确认 前提假设是否正确； 确认前提与结论的相关性：确认前提和结论之间是否有因果关系，因 果关系是否充足； 推理",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "界定边界",
     "source": "ref:100+思维模型合集 (模型思维):界定边界",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "系统，我们生活的社群是一个系统，我们的生态是一",
   "when_to_use": {

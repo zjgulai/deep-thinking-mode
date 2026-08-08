@@ -8,7 +8,10 @@
     "skill_name": "颠覆性创新的分类",
     "source": "ref:100+思维模型合集 (模型思维):颠覆性创新的分类",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "颠覆性创新分为主流市场低端颠覆性和新市场颠覆性。 主流市场低端颠覆性是竞争现有产品市场上的低端消费者。例如沃尔 玛、奥特莱斯等折扣店等。新市场颠覆性是通过锁定现有产品没有服 务到的顾客群体从而产生新的市场。例如：IBM 刚开始只把计算机卖给",
   "when_to_use": {

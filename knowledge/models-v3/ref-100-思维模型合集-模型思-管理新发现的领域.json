@@ -8,7 +8,12 @@
     "skill_name": "管理新发现的领域",
     "source": "ref:100+思维模型合集 (模型思维):管理新发现的领域",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "创新往往存在于混沌的边缘，集团高管要具备敏锐的商业洞察力，对 国家趋势、行业趋势和技术趋势进行研判，对新业务要保持关注，及 时的进行战略关注和试错实验，才能找到第二曲线，跨越非连续性。 阶段六：首席执行官（管理全集团）  1165 / 19",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "不稳定性原理",
     "source": "ref:100+思维模型合集 (模型思维):不稳定性原理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "systems_thinker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "新结构的出现以原有结构失去稳定性为前提,或者以破坏系统与环境间 的稳定平衡为前提。去除系统结构的刚性,让系统变得柔性,降低系统内 子系统之间的耦合度,这样系统才能适应外界的变化,才能在系统内形 成各种自组织。",
   "when_to_use": {

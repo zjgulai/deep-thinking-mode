@@ -8,7 +8,12 @@
     "skill_name": "理性态度",
     "source": "ref:100+思维模型合集 (模型思维):理性态度",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "multi_perspective",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "特征，可以从两个 层面来看： 对世界的态度 现有模式并不代表现实，它仅仅是我们思维的反应。 鼓励思辨模式，接受矛盾和冲突，不惧怕观点对立。 现有的模式并不完美，一定存在更好的模式未出现。  352 /",
   "when_to_use": {

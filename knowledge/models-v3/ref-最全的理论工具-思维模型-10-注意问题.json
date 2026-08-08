@@ -8,7 +8,11 @@
     "skill_name": "注意问题",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):注意问题",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "error_handler"
+    ]
   },
   "core_definition": "销售人员最易犯的错误就是在积聚起问题的严重性之前过早地介绍对策．在 潜在顾客没有认识到问题的严重性之前为你的需求开发设置障碍。因此．问需求 一效益问题的最佳时机是，在你通过暗示问题建立起买方难题的严重性后，而又 在你描述对策之前。在每笔生",
   "when_to_use": {

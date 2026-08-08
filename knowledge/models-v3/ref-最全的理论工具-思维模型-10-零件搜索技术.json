@@ -8,7 +8,10 @@
     "skill_name": "零件搜索技术",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):零件搜索技术",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "根据以往经验确定影响产品质量的可疑零件，随机选取几个好的产品和坏的 产品，将坏产品上的可疑零件与好产品上的对应零件进行交换，重新装配后进行 质量特性参数的测量、比较、分析，以找到影响产品质量的主要零件。",
   "when_to_use": {

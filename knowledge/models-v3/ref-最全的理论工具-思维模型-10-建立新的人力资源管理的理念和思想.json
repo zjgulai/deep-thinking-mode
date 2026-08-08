@@ -8,7 +8,10 @@
     "skill_name": "建立新的人力资源管理的理念和思想",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立新的人力资源管理的理念和思想",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "能力、员工业绩水平、员工能力素质特征、行为特征结合起来，利 用标竿分析，挖掘其中存在的内在联系，而传统的能力素质往往并不严格要求按 照这种模式去建立。",
   "when_to_use": {

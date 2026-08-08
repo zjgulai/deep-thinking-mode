@@ -8,7 +8,10 @@
     "skill_name": "邓正红的博客--用“盖洛普路径”-诠释企",
     "source": "ref:营销管理143个经典模型:邓正红的博客--用“盖洛普路径” 诠释企",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "比较详细的 SWOT 分析表。通过这两个稍微复杂的表格不难发现，相对",
   "when_to_use": {

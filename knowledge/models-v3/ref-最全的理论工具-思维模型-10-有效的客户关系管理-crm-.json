@@ -8,7 +8,11 @@
     "skill_name": "有效的客户关系管理（crm）",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):有效的客户关系管理（CRM）。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "客户的“一对一营销”，能准确快速地把握客户个性化需求。 在大规模定制模式中，企业和客户的关系是一种协调互动的关系，完全超越了企 业通常收集信息、满足客户需求的内涵。生产者与消费者不再是传统意义上的供",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "诊断者",
     "source": "ref:100+思维模型合集 (模型思维):诊断者",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "领导者们第一个重要角色就是判断公司所处环境，决定最佳战略。不 断从外部视角判断每种业务环境下的可预测性、可塑造性及环境严苛 性，诊断出自己的优势和劣势，外部环境的机会和威胁，为公司匹配 合适的战略。",
   "when_to_use": {

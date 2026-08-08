@@ -8,7 +8,10 @@
     "skill_name": "都是环境分析的工具",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):都是环境分析的工具",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "影响因素。  2．组织外部环境分析(O、P)。由于任何组织都是一个开放的系统，总是在 一定的环境中运行的，因此外部环境是组织战略决策的依据。通过对不同层次环 境的总体分析，找出外部环境中存在的机会与威",
   "when_to_use": {

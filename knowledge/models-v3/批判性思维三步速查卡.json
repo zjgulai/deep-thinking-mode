@@ -13,7 +13,13 @@
     ],
     "skill_name": "批判性思维三步",
     "source": "批判性思维三步速查卡.md",
-    "sourceTitle": "批判性思维三步速查卡"
+    "sourceTitle": "批判性思维三步速查卡",
+    "agent_roles": [
+      "logical_analyzer",
+      "multi_perspective",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "刷到观点就转发，事后发现是谣言——不是你的错，是缺一套信息质检流程",
   "when_to_use": {

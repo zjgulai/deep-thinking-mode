@@ -8,7 +8,13 @@
     "skill_name": "连接感。和他人一起经历痛苦、实现目标时",
     "source": "ref:100+思维模型合集 (模型思维):连接感。和他人一起经历痛苦、实现目标时,",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "knowledge_synthesizer",
+      "simplifier"
+    ]
   },
   "core_definition": "事件,是搭建信任、 尊重、责任和忠诚度的最佳时机。结合以上 4 种峰值体验,凸显转变时 刻,纪念里程碑事件,填平低谷感受,就抓住了行为设计的核心。 一、欣喜时刻 Elevtion",
   "when_to_use": {

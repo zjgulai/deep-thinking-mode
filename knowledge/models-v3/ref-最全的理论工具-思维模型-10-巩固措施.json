@@ -8,7 +8,10 @@
     "skill_name": "巩固措施",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):巩固措施",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "经过半年多的运行，效果稳定。此后，又采取了以下巩固措施：按改进后的 玻壳退火工艺，编制工艺文件；建立工序质量管理点 2 个，纳入了玻壳生产线工 序质量管理文件。",
   "when_to_use": {

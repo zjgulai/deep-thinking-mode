@@ -8,7 +8,11 @@
     "skill_name": "提取",
     "source": "ref:100+思维模型合集 (模型思维):提取",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "已经编码的信息在使用之前必须要能提取出来，因为大多数记忆失败 都是提取失败，所以提取过程非常重要。提取信息一般有两种方式线 索提取和情景提取。 线索提取就是在回忆某个知识点的时候，有一个线索提示你。例如： 世界最高的山峰有多高？有一款手机叫",
   "when_to_use": {

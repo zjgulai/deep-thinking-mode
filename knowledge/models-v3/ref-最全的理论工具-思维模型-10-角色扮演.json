@@ -8,7 +8,10 @@
     "skill_name": "角色扮演",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):角色扮演",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "这种思维方式一定要做角色扮演，就是不以自我为出发点，需要做什么事情 就必须做什么事情。以自我为中心，容易封闭自己的思想，而不再接受别人的观 点，既害了自己，也害了别人。尤其是在一定领导岗位的人，如果不能广纳众议， 同事的积极的思考就没有回",
   "when_to_use": {

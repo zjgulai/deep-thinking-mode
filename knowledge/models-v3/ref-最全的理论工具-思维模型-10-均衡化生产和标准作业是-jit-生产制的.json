@@ -8,7 +8,10 @@
     "skill_name": "均衡化生产和标准作业是-jit-生产制的",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):均衡化生产和标准作业是 JIT 生产制的",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "操作工人加工工件时，运送工件、在机",
   "when_to_use": {

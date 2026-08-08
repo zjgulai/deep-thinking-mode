@@ -13,7 +13,13 @@
     ],
     "skill_name": "怎么把经历变成能力_经验学习圈四阶",
     "source": "怎么把经历变成能力_经验学习圈四阶速查卡.md",
-    "sourceTitle": "怎么把经历变成能力_经验学习圈四阶速查卡"
+    "sourceTitle": "怎么把经历变成能力_经验学习圈四阶速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "第一阶段具体体验，是学习的原材料入口",
   "when_to_use": {

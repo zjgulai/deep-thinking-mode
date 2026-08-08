@@ -8,7 +8,10 @@
     "skill_name": "配称的原则",
     "source": "ref:100+思维模型合集 (模型思维):配称的原则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "原则 1：简单一致性 保持各运营活动或职能部门与总体战略之间的简单一致性，使企业每 一项活动都指向明确的单一方向，发挥应有作用。 原则２：各项活动间的互相加强 使每一项运营活动通过定位连接，各项活动之间得以相互加强，超出 其本身应有的作用。",
   "when_to_use": {

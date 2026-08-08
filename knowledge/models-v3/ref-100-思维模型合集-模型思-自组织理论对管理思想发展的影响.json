@@ -8,7 +8,10 @@
     "skill_name": "自组织理论对管理思想发展的影响",
     "source": "ref:100+思维模型合集 (模型思维):自组织理论对管理思想发展的影响",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "基于价值的网状结构形态。在非线性、网状的结构中,任何一个",
   "when_to_use": {

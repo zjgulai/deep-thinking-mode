@@ -8,7 +8,10 @@
     "skill_name": "成长性指标",
     "source": "ref:营销管理143个经典模型:成长性指标",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "分析成长性指标，目的在于观察客户在一定时期内经营能力的发展变化趋势，一个客户既 使收益性高，但成长必不好，也就表明其未来盈利能力下降。因此，以发展的眼光看客户，动态 的分析客户财务资料，对战略制定来讲特别重要。计算这类指标比较简单，见下图",
   "when_to_use": {

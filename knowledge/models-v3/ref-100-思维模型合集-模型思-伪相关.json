@@ -8,7 +8,10 @@
     "skill_name": "伪相关",
     "source": "ref:100+思维模型合集 (模型思维):伪相关",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "快速的直觉思维,人们通常根据相关信息的易获得性来作",
   "when_to_use": {

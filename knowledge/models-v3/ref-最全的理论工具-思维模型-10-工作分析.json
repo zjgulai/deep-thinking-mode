@@ -8,7 +8,10 @@
     "skill_name": "工作分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工作分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "工作分析是确立完成各项工作所需技能、责任和知识的系统工程，它是最基 本的人力资源管理职能，也是一项基础技术，它的目的在于解决以下几个问题：  （1）员工将完成什么样的活动？（What）  （2）工作将在什么时候完成？（When）  （3）",
   "when_to_use": {

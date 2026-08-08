@@ -8,7 +8,10 @@
     "skill_name": "巫宁．2004中国旅游电子商务观察",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):巫宁．2004中国旅游电子商务观察",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "21 \f http://wiki.mbalib.com/ 波士顿矩阵法  —制定公司层战略最流行的方法之一 \f http://wiki.mbalib.com/  目 录",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "稳定策略",
     "source": "ref:常用咨询方法、分析模型及案例分析:稳定策略",
     "sourceType": "book",
-    "sourceTitle": "常用咨询方法、分析模型及案例分析"
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "采用这种策略的目的是为了保持品牌的市场份额，增加短期现金收入，这一策 略适用于金牛品牌，因为这类品牌能够为企业挣得大量的现金。稳定策略也适用于 部分问题品牌和瘦狗品牌。  3.撤退策略  90 \f 采用这种策略的目的在于清理某些不景气的品",
   "when_to_use": {

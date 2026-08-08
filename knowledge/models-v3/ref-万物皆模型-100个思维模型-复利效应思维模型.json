@@ -8,7 +8,10 @@
     "skill_name": "复利效应思维模型",
     "source": "ref:万物皆模型-100个思维模型:复利效应思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "计算利息的方法,即复合利息,利滚利,把上一期的本利和作为下一期的本金来计算",
   "when_to_use": {

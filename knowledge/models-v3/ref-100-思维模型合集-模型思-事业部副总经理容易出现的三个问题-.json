@@ -8,7 +8,12 @@
     "skill_name": "事业部副总经理容易出现的三个问题",
     "source": "ref:100+思维模型合集 (模型思维):事业部副总经理容易出现的三个问题：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）无法从项目运作导向转变到战略导向  1157 / 1937 \f缺乏经营业务的整体思维； 缺乏长期考虑，更多关注短期； 缺乏将职能活动与业务目标相联系的职能战略； 忽视公司的职能部门标准、需求、政策和规划。 （2）不能重视和应对不熟悉或",
   "when_to_use": {

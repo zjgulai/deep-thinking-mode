@@ -8,7 +8,10 @@
     "skill_name": "骗子公司",
     "source": "ref:100+思维模型合集 (模型思维):骗子公司",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "部分无抵押贷款骗术：第一步：交 200 元保证金，10 万的免息贷款； 第二步，交 2%的手续费，共 2000 元，贷款到账后，2000 元全部返还； 第三步，马上到账，但银行需要验资，转账 2 万到指定账号后，银行 会直接转账 12220",
   "when_to_use": {

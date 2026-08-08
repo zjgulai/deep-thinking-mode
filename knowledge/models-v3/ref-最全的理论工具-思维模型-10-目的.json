@@ -8,7 +8,10 @@
     "skill_name": "目的",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):目的",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在每一笔生意会谈的初期阶段。特别是因为新的原因与新客户接触时，如果 不知道他处于什么状况，就要涉及现状问题。找出现状问题的目的是为了了解客 户可能存在的不满和问题，因为客户不可能主动告诉销售人员他有什么不满或者 \f http://wiki",
   "when_to_use": {

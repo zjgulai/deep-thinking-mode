@@ -8,7 +8,10 @@
     "skill_name": "转换成本",
     "source": "ref:100+思维模型合集 (模型思维):转换成本",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "转换成本实际上是获取、学习和使用一种新技术的机会成本。 个人发展：如果你想转行，之前的经验全部归零，重新学习新知识， 工资下调，转换成本极高。 技术演变：技术具有专用性，一旦用户转向了另外一种技术，那么在 原有技术上的投资就几乎没有任何价值",
   "when_to_use": {

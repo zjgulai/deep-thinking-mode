@@ -8,7 +8,11 @@
     "skill_name": "零部件标准化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):零部件标准化",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer"
+    ]
   },
   "core_definition": "于真正从本质上弄清顾客的个性化需求和共性需求，然后，把顾客的个性 化需求和共性需求分别进行总体规划，按不同的供应链来组织生产和供应，以确 保定 制产品的高质量",
   "when_to_use": {

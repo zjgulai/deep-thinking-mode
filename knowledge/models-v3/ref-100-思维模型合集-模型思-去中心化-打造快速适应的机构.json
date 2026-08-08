@@ -8,7 +8,10 @@
     "skill_name": "去中心化——打造快速适应的机构",
     "source": "ref:100+思维模型合集 (模型思维):去中心化——打造快速适应的机构",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "节点，任何人也都可以成为一个中心",
   "when_to_use": {

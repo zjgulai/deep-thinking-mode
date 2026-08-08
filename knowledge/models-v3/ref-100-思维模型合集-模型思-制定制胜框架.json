@@ -8,7 +8,10 @@
     "skill_name": "制定制胜框架",
     "source": "ref:100+思维模型合集 (模型思维):制定制胜框架",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "价值投资者，我关心的是 10 年以后的收益，我从历史学、",
   "when_to_use": {

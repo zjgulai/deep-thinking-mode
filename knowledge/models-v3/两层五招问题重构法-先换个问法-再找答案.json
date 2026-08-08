@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "两层五招问题重构法",
     "source": "两层五招问题重构法_先换个问法_再找答案.md",
-    "sourceTitle": "两层五招问题重构法：先换个问法，再找答案"
+    "sourceTitle": "两层五招问题重构法：先换个问法，再找答案",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer"
+    ]
   },
   "core_definition": "同步信息、达成共识，可用异步文档、协作白板、录屏替代",
   "when_to_use": {

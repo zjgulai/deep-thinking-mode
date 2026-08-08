@@ -8,7 +8,10 @@
     "skill_name": "自律化和创造性思考制度是-jit-生产制",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):自律化和创造性思考制度是 JIT 生产制",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "JIT 生产制作为一种生产组织方式，为生产过程中“人——机”自律创造一定的 环境，如当生产中出现不良状况时：出现缺陷或不合格的零件，自动或手动装置 如机械或生产线均能自动停止作业的设备运行；又如一个工人只做一个(或一小 批)某种零部件，并立",
   "when_to_use": {

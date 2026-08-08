@@ -8,7 +8,13 @@
     "skill_name": "优点与不足",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):优点与不足",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "指标 的变动进行分析。从而全面、直观、系统地反映出了企业的财务状况，可大大提 高对财务报表分析的效率。  杜邦分析体系是通过综合性指标“权益净利率”的分解图来完成的，该体系 最大特点就是简洁、操作性强",
   "when_to_use": {

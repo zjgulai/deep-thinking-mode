@@ -8,7 +8,12 @@
     "skill_name": "特性框架，它会影响对于事物特征的评价，当",
     "source": "ref:100+思维模型合集 (模型思维):特性框架，它会影响对于事物特征的评价，当",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "knowledge_synthesizer",
+      "bias_detector"
+    ]
   },
   "core_definition": "框架下时，就会产生特性框架效应。一般而言，人们更喜爱用积极框 架描述的事物。例如，将牛肉分别用７５％瘦肉和２５％肥肉来描述 时，人们更喜爱有７５％瘦肉的牛肉（即用积极框架描述的牛肉）。",
   "when_to_use": {

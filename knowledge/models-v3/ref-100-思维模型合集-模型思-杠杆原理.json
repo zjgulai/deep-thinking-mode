@@ -8,7 +8,11 @@
     "skill_name": "杠杆原理",
     "source": "ref:100+思维模型合集 (模型思维):杠杆原理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "简单机械。通常，人们把在力的作用下能绕着固定点转动",
   "when_to_use": {

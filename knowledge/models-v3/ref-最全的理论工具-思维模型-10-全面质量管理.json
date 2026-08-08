@@ -8,7 +8,10 @@
     "skill_name": "全面质量管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):全面质量管理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "提高单据的准确程度，以免造成一些不必要的损失。在这里采用二级审 核制度，设立一名质量审核员，对信用证、提单、发票、保险单、质检单等进行 二次复核，发现单据还存在的一些问题提前解决，预防质量问题的出现，",
   "when_to_use": {

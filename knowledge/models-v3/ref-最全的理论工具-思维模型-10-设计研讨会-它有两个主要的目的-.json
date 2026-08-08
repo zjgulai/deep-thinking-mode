@@ -8,7 +8,11 @@
     "skill_name": "设计研讨会。它有两个主要的目的",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):设计研讨会。它有两个主要的目的：",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor"
+    ]
   },
   "core_definition": " 对实施小组进行 ABC 教育；  确保实施小组理解设计组所作决策的含意。  设计研讨会还要为建立高度地小组一致性服务。高度一致性已经被证明是新 系统实施成功的主要因素。设计研讨会持续四天。这期间，设计小组成员使用计 算机进行仿真设计练",
   "when_to_use": {

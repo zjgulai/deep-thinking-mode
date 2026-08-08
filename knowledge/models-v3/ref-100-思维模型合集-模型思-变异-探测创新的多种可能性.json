@@ -8,7 +8,10 @@
     "skill_name": "变异——探测创新的多种可能性",
     "source": "ref:100+思维模型合集 (模型思维):变异——探测创新的多种可能性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "能够与 DNA 分子起作用而改变 DNA 分子性质",
   "when_to_use": {

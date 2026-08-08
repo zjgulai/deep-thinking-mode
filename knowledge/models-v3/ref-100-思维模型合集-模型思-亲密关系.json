@@ -8,7 +8,10 @@
     "skill_name": "亲密关系",
     "source": "ref:100+思维模型合集 (模型思维):亲密关系",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "敞开心扉、增加接触和礼尚往来可以让彼此的关系更亲密。敞开心扉 和增加接触可以让对方更加的了解你,礼尚往来可以更加肯定双方的友 谊,随着时间的积累,你们的关系会越来越亲密。 总结 随着经济的快速发展,物质水平的不断提升,人们越来越追求精神体验",
   "when_to_use": {

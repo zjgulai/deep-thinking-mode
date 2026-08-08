@@ -8,7 +8,12 @@
     "skill_name": "目标性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):目标性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "管理也不例外，它的目标就是要不断追求企业生产效率的最大化，全面提升企业 的综合素质。具体来讲，TPM 管理是通过对设备的六大损失（故障损失、工艺 调整损失、突停和空转损失、速度损失、废次品损失、开工损失）和生产现场的 一切 不良因素实施持续",
   "when_to_use": {

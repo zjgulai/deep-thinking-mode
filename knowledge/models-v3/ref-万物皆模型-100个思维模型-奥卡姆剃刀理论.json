@@ -8,7 +8,10 @@
     "skill_name": "奥卡姆剃刀理论",
     "source": "ref:万物皆模型-100个思维模型:奥卡姆剃刀理论",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "simplifier"
+    ]
   },
   "core_definition": "非常主观的领域。建立确定实际的简单性的基本规",
   "when_to_use": {

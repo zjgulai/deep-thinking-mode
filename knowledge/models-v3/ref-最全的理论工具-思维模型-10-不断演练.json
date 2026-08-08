@@ -8,7 +8,10 @@
     "skill_name": "不断演练",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):不断演练",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "强有力的推销技巧，但使用不当会适得其反",
   "when_to_use": {

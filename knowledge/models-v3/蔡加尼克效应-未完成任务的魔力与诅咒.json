@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "**蔡加尼克效应",
     "source": "蔡加尼克效应_未完成任务的魔力与诅咒.md",
-    "sourceTitle": "蔡加尼克效应：未完成任务的魔力与诅咒"
+    "sourceTitle": "蔡加尼克效应：未完成任务的魔力与诅咒",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "**大脑对“未完成”或“中断”的任务，会保持更高水平的激活和记忆优先级，从而形成一种“认知紧张”状态，驱使我们回到任务，以求得闭合",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "纳入定期管理活动中。在促使-6s-管理逐",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):纳入定期管理活动中。在促使 6S 管理逐",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "管理纳入定期管理活动之中， 使 6S 管理效果得以维持，同时将日常维护纳入公 司的人事考核中。",
   "when_to_use": {

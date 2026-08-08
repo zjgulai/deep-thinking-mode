@@ -8,7 +8,10 @@
     "skill_name": "战略分析",
     "source": "ref:常用咨询方法、分析模型及案例分析:战略分析",
     "sourceType": "book",
-    "sourceTitle": "常用咨询方法、分析模型及案例分析"
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "只涉及为数很少的内外部宏观因素的分析",
   "when_to_use": {

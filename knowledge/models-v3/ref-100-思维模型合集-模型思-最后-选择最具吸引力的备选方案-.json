@@ -8,7 +8,11 @@
     "skill_name": "最后，选择最具吸引力的备选方案",
     "source": "ref:100+思维模型合集 (模型思维):最后，选择最具吸引力的备选方案。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "股票价格、房产价格等社会现象、自然现象（气温、降",
   "when_to_use": {

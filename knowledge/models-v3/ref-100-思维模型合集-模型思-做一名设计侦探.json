@@ -8,7 +8,11 @@
     "skill_name": "做一名设计侦探",
     "source": "ref:100+思维模型合集 (模型思维):做一名设计侦探",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "身边不缺少美,缺少的是发现美的眼睛。不管去餐厅吃饭,还是出差住酒 店,多观察一下他们的设计,有些餐厅和酒店的设计都是花了很多费用, 请顶级的设计师精心设计而成,所以我们可以做个有心人,多去发现和 记录身边的美。 二、故事力:做生活的策划者",
   "when_to_use": {

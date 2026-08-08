@@ -8,7 +8,10 @@
     "skill_name": "创业",
     "source": "ref:100+思维模型合集 (模型思维):创业",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "我们是工作还是创业？如果你不能成为公司的高管，也不能获得公司 的股权分配，那么一个基础的工作，随着时间的积累，你的收入只能 获得线性增长，你拥有的财富很难指数级增长。  1708 / 1937 \f例如：一名职场人士通过不断的换工作来提升收入",
   "when_to_use": {

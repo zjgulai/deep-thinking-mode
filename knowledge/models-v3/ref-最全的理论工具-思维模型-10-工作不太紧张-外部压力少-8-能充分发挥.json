@@ -8,7 +8,10 @@
     "skill_name": "工作不太紧张、外部压力少-8、能充分发挥",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):工作不太紧张、外部压力少 8、能充分发挥",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "献大 2.4. 自我导向搜索测验量表  自我导向搜索测验量表(SDS)是在 VPI 基础上发展而成的量表，SDS 测验由 活(Activities)、能力(Competence)、职业(Occupation)、自我评定(Self estim",
   "when_to_use": {

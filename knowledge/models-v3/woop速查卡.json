@@ -13,7 +13,13 @@
     ],
     "skill_name": "woop",
     "source": "WOOP速查卡.md",
-    "sourceTitle": "WOOP速查卡"
+    "sourceTitle": "WOOP速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "你是不是也这样：脑子里幻想了很多目标，却迟迟动不起来；每次想做点事，总被“等状态好了再说”卡住；定计划时热血沸腾，执行时却一拖再拖…… 不是你懒，是大脑被空想的即时快感“骗”了",
   "when_to_use": {

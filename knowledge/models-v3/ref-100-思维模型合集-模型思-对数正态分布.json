@@ -8,7 +8,11 @@
     "skill_name": "对数正态分布",
     "source": "ref:100+思维模型合集 (模型思维):对数正态分布",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "概率分布，假设变量 x 服从参数为α的幂律分布，则",
   "when_to_use": {

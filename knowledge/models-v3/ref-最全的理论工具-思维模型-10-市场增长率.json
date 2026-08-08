@@ -8,7 +8,10 @@
     "skill_name": "市场增长率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):市场增长率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "systems_thinker"
+    ]
   },
   "core_definition": "一般说来，较高的市场增长率会带来较多的利润总额，但对投资收益率没有 什么影响，而对现金流量有不利的影响。也就是说，处于高市场增长率行业的经 \f http://wiki.mbalib.com/ 营单位需要资金来维持或发展其所处的竞争地位，因",
   "when_to_use": {

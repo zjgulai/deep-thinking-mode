@@ -8,7 +8,10 @@
     "skill_name": "理论框架",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):理论框架",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在必要的时刻，生产必要数量的必要产品或零部",
   "when_to_use": {

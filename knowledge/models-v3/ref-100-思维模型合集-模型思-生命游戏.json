@@ -8,7 +8,10 @@
     "skill_name": "生命游戏",
     "source": "ref:100+思维模型合集 (模型思维):生命游戏",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "二维网格游戏，这个网格中每个方格居住着一个活着",
   "when_to_use": {

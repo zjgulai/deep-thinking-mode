@@ -8,7 +8,10 @@
     "skill_name": "供应商的议价能力",
     "source": "ref:营销管理143个经典模型:供应商的议价能力",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "供方主要通过其提高投入要素价格与降低单位价值质量的能力，来影响行业中现有企业的 盈利能力与产品竞争力。供方力量的强弱主要取决于他们所提供给买主的是什么投入要素，当供 方所提供的投入要素其价值构成了买主产品总成本的较大比例、对买主产品生产过",
   "when_to_use": {

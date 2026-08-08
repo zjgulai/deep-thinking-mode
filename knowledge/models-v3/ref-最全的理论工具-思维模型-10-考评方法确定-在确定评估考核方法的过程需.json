@@ -8,7 +8,10 @@
     "skill_name": "考评方法确定。在确定评估考核方法的过程需",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):考评方法确定。在确定评估考核方法的过程需",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "适的考评标准，并在不同的系统内因地制宜地使用合适的标准：对企业内所有生 产现场的 6S 管理考评都依照同一种现场标准进行打分，对办公区域则应该按照 另一套标准打分。",
   "when_to_use": {

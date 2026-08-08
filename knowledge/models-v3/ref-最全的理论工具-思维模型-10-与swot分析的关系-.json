@@ -8,7 +8,10 @@
     "skill_name": "与swot分析的关系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):与SWOT分析的关系 .........",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "6.1. 异同点...............................................................................................................",
   "when_to_use": {

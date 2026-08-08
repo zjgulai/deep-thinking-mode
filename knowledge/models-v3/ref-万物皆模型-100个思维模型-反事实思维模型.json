@@ -8,7 +8,10 @@
     "skill_name": "反事实思维模型",
     "source": "ref:万物皆模型-100个思维模型:反事实思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "first_principles"
+    ]
   },
   "core_definition": "人们往往会为已经发生的事情提出可能出现的不同结果和假设",
   "when_to_use": {

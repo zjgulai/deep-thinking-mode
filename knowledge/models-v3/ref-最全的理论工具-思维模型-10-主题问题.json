@@ -8,7 +8,10 @@
     "skill_name": "主题问题",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):主题问题",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "头脑风暴虽然鼓励畅所欲言，但是并不是漫无目的的瞎编乱造，海阔天空。 而是要针对一个特定的问题。所以，在头脑风暴之前，应该事先宣布主题，让参 与者有个思考的时间与过程。同时，主持人要把握好大家讨论与发言的方向。",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "判断证伪度",
     "source": "ref:100+思维模型合集 (模型思维):判断证伪度",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "科学知识的可证伪度越高，越有价值。 无数的科学家每天都在研究新的知识，他们在知识市场要接受严格的 考验，就像进化论一样，一个物种只有经过自然选择，优胜劣汰，才 能够最终生存下去。知识理论一样要经受住自然选择的考验，只有最 有生命力的理论才能",
   "when_to_use": {

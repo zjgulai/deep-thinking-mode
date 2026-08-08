@@ -8,7 +8,10 @@
     "skill_name": "查询理论",
     "source": "ref:100+思维模型合集 (模型思维):查询理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "Johnson，Haubl 和 Keinan 从记忆的视角来解释禀赋效应，针对禀赋效  869 / 1937 \f应产生的过程提出查询理论。查询理论基于这样一种观点：估价取决 于记忆的提取过程。概括地说，这一理论对禀赋效应的解释可以表述 为：",
   "when_to_use": {

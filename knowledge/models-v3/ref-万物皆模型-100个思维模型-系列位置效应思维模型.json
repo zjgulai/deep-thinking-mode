@@ -8,7 +8,10 @@
     "skill_name": "系列位置效应思维模型",
     "source": "ref:万物皆模型-100个思维模型:系列位置效应思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "心理学现象,指人们倾向于对首先见到的事物和最后见到的事物",
   "when_to_use": {

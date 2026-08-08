@@ -8,7 +8,12 @@
     "skill_name": "证据的有效性",
     "source": "ref:100+思维模型合集 (模型思维):证据的有效性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "确实性推理。演绎性推理是通过别人证明已经相对正",
   "when_to_use": {

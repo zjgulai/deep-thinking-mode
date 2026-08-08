@@ -8,7 +8,10 @@
     "skill_name": "激发智力",
     "source": "ref:100+思维模型合集 (模型思维):激发智力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "领导者实施惩罚和控制的权力。对于领导者的强制权，下属会害",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "简•埃里克•莱恩．谭功译．公共部门",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):简•埃里克•莱恩．谭功译．公共部门",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 5W2H 分析法  —一种调查研究和思考问题的有效办法 \f http://wiki.mbalib.com/",
   "when_to_use": {

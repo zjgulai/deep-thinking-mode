@@ -8,7 +8,10 @@
     "skill_name": "智力形态理论（流体智力和晶体智力说）",
     "source": "ref:100+思维模型合集 (模型思维):智力形态理论（流体智力和晶体智力说）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在信息加工和问题解决过程中所表现出来的能力",
   "when_to_use": {

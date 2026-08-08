@@ -9,7 +9,11 @@
       "框架思维"
     ],
     "skill_name": "第一性原理思维-#框架思维",
-    "source": "用第一性原理穿透表象_找到问题的根本解法.md"
+    "source": "用第一性原理穿透表象_找到问题的根本解法.md",
+    "agent_roles": [
+      "first_principles",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "用第一性原理穿透表象，找到问题的根本解法 ====================  原创 正方形SQUARE 2026-03-04 15:00 上海  > 原文地址: [https://mp.weixin.qq.com/s/grPMPmxCcDlmkY0v4AhnLg](https://mp.we",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "计算方法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):计算方法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "2.1. 计算公式  EVA 是扣除了资本成本(既包括债务资本成本，又包括股权资本成本)后的资 本收益，用公式表示就是：  EVA=投资资本×（投资资本回报率-加权平均的资本成本）  =税后营业利润-资本费用  =税后营业利润-投资资本额×",
   "when_to_use": {

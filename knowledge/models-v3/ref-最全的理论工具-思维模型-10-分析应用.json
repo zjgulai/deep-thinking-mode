@@ -8,7 +8,10 @@
     "skill_name": "分析应用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):分析应用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "problem_framer"
+    ]
   },
   "core_definition": "GE矩阵可以用来根据事业单位在市场上的实力和所在市场的吸引力对这些 事业单位进行评估，也可以表述一个公司的事业单位组合判断其强项和弱点。在 需要对产业吸引力和业务实力作广义而灵活的定义时，可以以GE矩阵为基础进行 战略规划。按市场吸引力和",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "视角多元化",
     "source": "ref:100+思维模型合集 (模型思维):视角多元化",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "问题的答案是未知的，问题陈述本身尚未展开，关键",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "培养创新力",
     "source": "ref:100+思维模型合集 (模型思维):培养创新力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一些以人的内心活动、精神世界以及作为人的精神世界",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "宜家的“为什么”",
     "source": "ref:100+思维模型合集 (模型思维):宜家的“为什么”",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1749 / 1937 \f宽松的购物环境折射出宜家的企业文化——人性化、简单、方便、自给 自足。 宜家创始人英格瓦•坎普拉德（Ingvar Kamprad）有一句名言：“真正的 宜家精神，是依据我们的热忱，我们持之以恒的创新精神，我们的成",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "行动者—观察者效应",
     "source": "ref:100+思维模型合集 (模型思维):行动者—观察者效应",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "action_executor",
+      "observer_reflector",
+      "error_handler"
+    ]
   },
   "core_definition": "双方认知到的是同一个行为 ,但是行动者倾向于把成功原因归为个人, 把失败原因归于情境;而观察者则会更多把成功原因归于情境,把失败 归因于个人特质。形成这种偏差主要是双方所站的角度和出发点不同。 中国有句古话,“当局者迷,旁观者清”。旁观者往",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "营销组合",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):营销组合",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner"
+    ]
   },
   "core_definition": "(1)网页策略。网页是运用网络营销策略的企业的变动性最强并自我推销的 形象产品。网页设计也必须是以满足消费者需求为前提，所以，设计网页内容时， 首先要了解目标顾客的需求特征，如针对直接信息寻求者，针对间接信息寻求者， 针对免费品寻觅者，针",
   "when_to_use": {

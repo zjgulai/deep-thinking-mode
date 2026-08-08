@@ -8,7 +8,10 @@
     "skill_name": "增长员工工作经验",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):增长员工工作经验",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "职业锚是员工职业工作的定位，不但能使员工在长期从事某项职业中增长工 作经验，同时，员工职业技能也能不断增强，直接产生提高工作效率或劳动生产 率的明显效益。",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "群体选择",
     "source": "ref:100+思维模型合集 (模型思维):群体选择",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "空间博弈所关注的问题是个体结盟而构成群体比孤立者更易于竞争和 生存，而群体选择机制更进一步，它是指合作者组成的群体比背叛者 组成的群体以更快的速度发展壮大。 达尔文在 1871 年出版的《人类的由来》一书中指出，个体为了群体利 益而行动，群",
   "when_to_use": {

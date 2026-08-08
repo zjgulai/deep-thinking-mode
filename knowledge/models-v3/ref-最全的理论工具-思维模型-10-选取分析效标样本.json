@@ -8,7 +8,12 @@
     "skill_name": "选取分析效标样本",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):选取分析效标样本",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer",
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "根据岗位要求，在从事该岗位工作的员工中，分别从绩效优秀和绩效普通的 \f http://wiki.mbalib.com/ 员工中随机抽取一定数量的员工进行调查。 将职位的绩优标准分解细化成为一 些具体的任务要项，以此发现并归纳驱动任职者产生",
   "when_to_use": {

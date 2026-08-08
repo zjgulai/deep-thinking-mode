@@ -8,7 +8,10 @@
     "skill_name": "付诸行动",
     "source": "ref:100+思维模型合集 (模型思维):付诸行动",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "进化的过程，在生物界和人类社会这种进化尤为明显，于是产生了克",
   "when_to_use": {

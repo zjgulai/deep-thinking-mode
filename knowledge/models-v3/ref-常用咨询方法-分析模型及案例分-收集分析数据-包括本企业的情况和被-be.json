@@ -8,7 +8,10 @@
     "skill_name": "收集分析数据，包括本企业的情况和被-be",
     "source": "ref:常用咨询方法、分析模型及案例分析:收集分析数据，包括本企业的情况和被 be",
     "sourceType": "book",
-    "sourceTitle": "常用咨询方法、分析模型及案例分析"
+    "sourceTitle": "常用咨询方法、分析模型及案例分析",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "也可以是非竞争对手）的情况。分析数据必须建立在充分了解本公司目前的状况以  109 \f及被 benchmarking 的企业状况的基础之上，数据必须主要是针对企业的经营过程和 活动，而不仅仅是针对经营结果；",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "帮我找到它",
     "source": "ref:100+思维模型合集 (模型思维):帮我找到它。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "宇宙辐射。后来，普林斯顿大学的迪克与他们共同确认这",
   "when_to_use": {

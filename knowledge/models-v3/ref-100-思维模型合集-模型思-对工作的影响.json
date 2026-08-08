@@ -8,7 +8,11 @@
     "skill_name": "对工作的影响",
     "source": "ref:100+思维模型合集 (模型思维):对工作的影响",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "拥有高情绪智力的领导者，能够有效的激励员工，能够点燃员工的激  928 / 1937 \f情和力量，能够使用最少的资源团结下属，去完成有挑战性的任务。 例如：电视剧《亮剑》中的李云龙，是独立团团长，当时刚接管独立 团的时候，面对的是一没人，二",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "具体目标",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):具体目标",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "项目的直接效果，是项目立项的重要依据，指",
   "when_to_use": {

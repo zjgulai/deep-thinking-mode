@@ -8,7 +8,10 @@
     "skill_name": "背景",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):背景",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "A 公司是中国网络通信集团有限责任公司在某省设立的地区性分公司，下属六家 县区支公司和一家直属营业厅，共计员工 1000 余人，其中有各级管理人员 40 余人、技术人员 220 余人、各级营业人员 700 人。该公司以前在薪酬管理 上主 要",
   "when_to_use": {

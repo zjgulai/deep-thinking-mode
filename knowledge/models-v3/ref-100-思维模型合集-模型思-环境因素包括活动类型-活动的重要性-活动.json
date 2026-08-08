@@ -8,7 +8,12 @@
     "skill_name": "环境因素包括活动类型、活动的重要性，活动",
     "source": "ref:100+思维模型合集 (模型思维):环境因素包括活动类型、活动的重要性，活动",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "例如围棋、登山、攀岩和阅读，这种类型的活动能够激发个体的内在 动机，同时具备一定的挑战性，并且参与者也认为这项活动对自己很 重要，往往很容易在活动中体验到沉浸感。  904 / 1937 \f四、心流的应用",
   "when_to_use": {

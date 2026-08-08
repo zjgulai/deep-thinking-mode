@@ -6,7 +6,13 @@
     "category": "07",
     "tags": [],
     "skill_name": "一、进化层面-失控-≈-死亡风险",
-    "source": "对于大脑来说_何为失控.md"
+    "source": "对于大脑来说_何为失控.md",
+    "agent_roles": [
+      "problem_framer",
+      "prioritizer",
+      "error_handler",
+      "simplifier"
+    ]
   },
   "core_definition": "对于大脑来说，何为失控  ### 一、进化层面：失控 ≈ 死亡风险  我们的大脑是在一个充满直接物理威胁（如野兽、饥饿、敌对部落）的环境中进化而来的。在那个世界里，**“失控”往往意味着下一秒就会死亡**。  *   **预测能力是生存的基石**：大脑的核心功能是成为一个“预测机器”。它不断接收感官",
   "when_to_use": {

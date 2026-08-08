@@ -8,7 +8,11 @@
     "skill_name": "按项目的合同进行分解",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):按项目的合同进行分解",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "合同用的完整的工作分解结构。此方法是将项目的",
   "when_to_use": {

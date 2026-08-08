@@ -8,7 +8,10 @@
     "skill_name": "系统动力学的研究方法是建立计算机仿真模型",
     "source": "ref:100+思维模型合集 (模型思维):系统动力学的研究方法是建立计算机仿真模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "由相互区别、相互作用的元素有机地联结在一起，为同一",
   "when_to_use": {

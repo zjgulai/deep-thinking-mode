@@ -8,7 +8,11 @@
     "skill_name": "模型思维",
     "source": "ref:100+思维模型合集 (模型思维):模型思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "模型思维就是要使用思维模型去思考问题，点状的碎片化的信息，只 有放到思维框架里才能产生结构性的协同价值，理论家和实践家已经 通过实践验证过很多理论模型，我们要学习这些模型，放到自己的思 维格栅里，遇到问题随时调用。  1126 / 1937",
   "when_to_use": {

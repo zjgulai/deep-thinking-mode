@@ -8,7 +8,10 @@
     "skill_name": "绘制利益相关者图",
     "source": "ref:营销管理143个经典模型:绘制利益相关者图",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "利益相关者图清晰地描绘谁是利益相关者集团，在采取新的战略时，代表哪个集团的利益， 他们是否可能阻碍变革，他们的力量如何，应该怎样对待他们。绘制时首先确定所有利益相关者， 标出他们之间的重要关系，然后分析这张图表所显示的风险与机会，识别任何",
   "when_to_use": {

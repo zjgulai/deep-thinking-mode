@@ -8,7 +8,11 @@
     "skill_name": "搜索集的有限性",
     "source": "ref:100+思维模型合集 (模型思维):搜索集的有限性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "当我们做出决策时,通常会搜索记忆中的搜索集进行判断,有的信息能 够有效反应在大脑中,有的信息不能,此时决策主体会产生判断偏差。 心理学家就此项偏差做了研究:在书面英文词汇中,抽象词(爱情)和具体 词(门)哪个更多?大部分人认为抽象词比具体词",
   "when_to_use": {

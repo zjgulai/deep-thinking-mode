@@ -8,7 +8,10 @@
     "skill_name": "记忆学习的原理",
     "source": "ref:100+思维模型合集 (模型思维):记忆学习的原理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "高效的学习方法，其通过知识切块、写下来、理解到讲给别人",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "能迅速地生产定制产品",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):能迅速地生产定制产品。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "活动，质量是企业的立 足之本，成本是生存之道，时间则是发展之源。大规模定制模式通过一些“软” 措施，如缩短生产准备时间、准时制生产、柔性制造、连续流制造、需求流制造、 按订单生产、以及各种敏捷活动等，",
   "when_to_use": {

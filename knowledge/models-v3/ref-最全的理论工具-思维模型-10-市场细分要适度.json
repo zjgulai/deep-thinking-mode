@@ -8,7 +8,11 @@
     "skill_name": "市场细分要适度",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):市场细分要适度",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "planner"
+    ]
   },
   "core_definition": "细分国际市场的变量也不是越多越好。因为若对某市场采用了过多的变量进 行细分，会导致各个子市场过小，即给企业选择目标市场带来了困难，又会使得 企业的营销活动缺乏效率。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "坚持实践主义",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):坚持实践主义",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "TPM 是彻底的实践活动， 改善不能急于求成。如果省略过程，只重视结果 的话，那么在现场上要遵守的基本和原则将不复存在。整理、整顿、清扫 3S 活 动要习惯化，维持好干净规则的工作现场，制定并遵守有活力的标准，及时发现 和复原，改善不合理",
   "when_to_use": {

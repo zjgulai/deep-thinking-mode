@@ -8,7 +8,10 @@
     "skill_name": "消雾法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):消雾法（Evaporating Clou",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "消雾法用来以双赢（Win-Win）的方式解决企业中的冲突。此法的得名是由 于企业中的冲突像一团团的云雾一样，人们往往不能很清楚地说出究竟是哪些原 因造成了这些冲突。消雾法就是要驱散那些弥漫在冲突周围的混淆和含糊，找到 解决问题的突破点，也",
   "when_to_use": {

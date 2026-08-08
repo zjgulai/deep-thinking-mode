@@ -8,7 +8,10 @@
     "skill_name": "每一个康波又嵌套着几个库兹涅茨周期",
     "source": "ref:100+思维模型合集 (模型思维):每一个康波又嵌套着几个库兹涅茨周期（20",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "原理。  1241 / 1937 \f熊彼特在 1934 年出版的《经济发展理论》中对三次长周期的分期为： 第一波“长波”——从大约 1783 年到 1842 年，是所谓“产业革命时期”， 这个周期的基",
   "when_to_use": {

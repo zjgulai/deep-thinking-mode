@@ -8,7 +8,10 @@
     "skill_name": "有的放矢的推进阶段",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):有的放矢的推进阶段",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "随着黑带人员、绿带人员的成熟，上海移动在 2004 年开展了多个六西格玛 的项目。根据上海移动选取六西格玛项目的策略，计费准确性、通话掉话率和 1860 帐务查询优化项目等项目先期展开，其中计费准确性项目的改进重点是改 善公司计费批价处理",
   "when_to_use": {

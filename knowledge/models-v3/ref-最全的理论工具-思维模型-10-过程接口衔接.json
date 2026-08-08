@@ -8,7 +8,10 @@
     "skill_name": "过程接口衔接",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):过程接口衔接",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "市场规律，如何使过程接口的衔接更为紧密，是企业管理追求的",
   "when_to_use": {

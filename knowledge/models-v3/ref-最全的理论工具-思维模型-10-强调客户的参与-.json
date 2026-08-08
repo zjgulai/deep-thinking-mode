@@ -8,7 +8,11 @@
     "skill_name": "强调客户的参与",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):强调客户的参与。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "decomposer"
+    ]
   },
   "core_definition": "大规模定制最显著的特点是，变一般的市场导向为客户参与的市场导向，由 客户亲自参与产品的设计。企业也根据客户的意见直接改进产品，从而达到产品、 技术上的创新，并能始终与客户的需求保持一致。客户可以将各种产品模块任意 拆拼、组合，甚至可以完全",
   "when_to_use": {

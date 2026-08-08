@@ -8,7 +8,10 @@
     "skill_name": "时间节奏",
     "source": "ref:100+思维模型合集 (模型思维):时间节奏",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "摩尔定律。 1975 年的某一天，公司的创始人戈登·摩尔预言，计算机微处理器芯片 的计算能力每 18 个月就会翻一番。当时，除了英特尔自己之外，没有 任何一家公司认真地看待摩尔的预言，当然，摩尔定律并",
   "when_to_use": {

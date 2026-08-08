@@ -8,7 +8,10 @@
     "skill_name": "使组织获得正确的反馈",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):使组织获得正确的反馈",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "communicator"
+    ]
   },
   "core_definition": "职业锚是员工经过搜索，所确定的长期职业贡献区或职业定位。这一搜索定 位过程，依循着员工的需要、动机和价值观进行。所以，职业锚清楚的反映出员 工职业追求与抱负。",
   "when_to_use": {

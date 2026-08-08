@@ -8,7 +8,11 @@
     "skill_name": "数理智能简介",
     "source": "ref:100+思维模型合集 (模型思维):数理智能简介",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "有效地计算、测量、推理、归纳、分类，并进行复杂数",
   "when_to_use": {

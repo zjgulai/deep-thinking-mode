@@ -8,7 +8,11 @@
     "skill_name": "第2章-维度",
     "source": "ref:《麦肯锡结构化战略思维》:第2章 维度",
     "sourceType": "book",
-    "sourceTitle": "《麦肯锡结构化战略思维》"
+    "sourceTitle": "《麦肯锡结构化战略思维》",
+    "agent_roles": [
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "2.1 重塑“问题观” 2.2 跨界的“简单按钮” 2.3 “切”名词是结构化战略思维的起点 2.4 “切”问题，更上一层楼 2.5 从单一维度到多维度的飞跃 2.6 小结",
   "when_to_use": {

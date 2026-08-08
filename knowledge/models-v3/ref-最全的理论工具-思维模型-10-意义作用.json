@@ -8,7 +8,10 @@
     "skill_name": "意义作用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):意义作用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "3.1. 战略意义  从战略层面来看，用三四规则矩阵分析市场地位的意义如下：  1、在有大量竞争者存在的情况下，如果没有外力的约束和控制，大浪淘沙 的竞争局面将不可避免，对手越来越少，即使只是为了保持相对市场份额，竞争 者的增长也必须超过市",
   "when_to_use": {

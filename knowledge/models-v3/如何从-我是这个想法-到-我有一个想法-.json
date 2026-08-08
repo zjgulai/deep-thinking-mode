@@ -9,7 +9,10 @@
       "内耗"
     ],
     "skill_name": "如何从“我是这个想法”到“我有",
-    "source": "如何从_我是这个想法_到_我有一个想法_.md"
+    "source": "如何从_我是这个想法_到_我有一个想法_.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如何从“我是这个想法”到“我有一个想法” ====================  原创 正方形SQUARE 2026-02-13 10:46 上海  > 原文地址: [https://mp.weixin.qq.com/s/BkHP6IYKH3SUeM26bM7leA](https://mp.we",
   "when_to_use": {

@@ -11,7 +11,10 @@
     ],
     "skill_name": "大脑能耗机制与减肥真相",
     "source": "大脑能耗机制与减肥真相.md",
-    "sourceTitle": "大脑能耗机制与减肥真相"
+    "sourceTitle": "大脑能耗机制与减肥真相",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "这个问题的根本原因是什么？大脑能耗机制与减肥真相如何找到它？",
   "when_to_use": {

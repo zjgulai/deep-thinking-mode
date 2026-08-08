@@ -8,7 +8,10 @@
     "skill_name": "运用杠铃策略，增加可选择性",
     "source": "ref:100+思维模型合集 (模型思维):运用杠铃策略，增加可选择性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "实现反脆弱性的方法。杠铃就是一",
   "when_to_use": {

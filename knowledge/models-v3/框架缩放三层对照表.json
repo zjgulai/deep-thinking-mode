@@ -11,7 +11,13 @@
     ],
     "skill_name": "框架缩放三层对照表",
     "source": "框架缩放三层对照表.md",
-    "sourceTitle": "框架缩放三层对照表"
+    "sourceTitle": "框架缩放三层对照表",
+    "agent_roles": [
+      "problem_framer",
+      "decision_maker",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "、作用、抽象程度、适用范围、风险、典型工具",
   "when_to_use": {

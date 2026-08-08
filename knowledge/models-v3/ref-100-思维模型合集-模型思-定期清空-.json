@@ -8,7 +8,10 @@
     "skill_name": "定期清空",
     "source": "ref:100+思维模型合集 (模型思维):定期清空。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "注意是清空不是清理。必须定期空无一物，清空不是扔掉，而是把任 务从工作篮中移出，进入下一环节。  989 / 1937 \f第二步：处理阶段一清空工作篮 当我们收集了所有的工作任务，我们就要清空工作篮，清空工作篮并 不是要去全部把事情做完，而",
   "when_to_use": {

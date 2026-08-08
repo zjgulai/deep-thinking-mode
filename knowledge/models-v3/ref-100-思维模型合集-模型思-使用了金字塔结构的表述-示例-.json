@@ -8,7 +8,11 @@
     "skill_name": "使用了金字塔结构的表述（示例）",
     "source": "ref:100+思维模型合集 (模型思维):使用了金字塔结构的表述（示例）：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "我们可以将今天下午 3 点的会议改到周四上午 11 点开吗？因为， 领导， 李总、王经理、小赵等人都能参加，并且周四的会议室还能预定。今 天下午开的话，李总有急事不能参加，王经理出差了明天晚上才能回 来。而明天的会议室也满了。  1555",
   "when_to_use": {

@@ -8,7 +8,13 @@
     "skill_name": "什么是控制论",
     "source": "ref:100+思维模型合集 (模型思维):什么是控制论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer",
+      "pattern_recognizer",
+      "communicator"
+    ]
   },
   "core_definition": "控制论是研究动物、机器、自然和社会等系统中控制、反馈和通信的 共同规律的科学。是研究如何利用控制器，通过信息的变换和反馈作 用，使系统能自动按照人们预定的程序运行，最终达到最优目标的学 问。它是自动控制、通讯技术、计算机科学、数理逻辑、神经",
   "when_to_use": {

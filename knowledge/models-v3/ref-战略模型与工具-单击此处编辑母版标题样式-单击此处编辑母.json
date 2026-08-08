@@ -8,7 +8,10 @@
     "skill_name": "单击此处编辑母版标题样式-单击此处编辑母",
     "source": "ref:战略模型与工具:单击此处编辑母版标题样式 单击此处编辑母",
     "sourceType": "book",
-    "sourceTitle": "战略模型与工具"
+    "sourceTitle": "战略模型与工具",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "行业从出现直至完全退出社会经济领域所经历的时间",
   "when_to_use": {

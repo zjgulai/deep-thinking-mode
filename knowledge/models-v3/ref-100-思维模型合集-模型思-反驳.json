@@ -8,7 +8,11 @@
     "skill_name": "反驳",
     "source": "ref:100+思维模型合集 (模型思维):反驳",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从依据、正当理由和支持进行反驳，怀疑其正确合法性",
   "when_to_use": {

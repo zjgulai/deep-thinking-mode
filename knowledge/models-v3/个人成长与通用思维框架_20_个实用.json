@@ -6,7 +6,12 @@
     "category": "08",
     "tags": [],
     "skill_name": "个人成长与通用思维框架_20_个实用",
-    "source": "个人成长与通用思维框架_20_个实用工具与生活指南.md"
+    "source": "个人成长与通用思维框架_20_个实用工具与生活指南.md",
+    "agent_roles": [
+      "problem_framer",
+      "multi_perspective",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "如果没有任何限制，我真正追求的是什么？",
   "when_to_use": {

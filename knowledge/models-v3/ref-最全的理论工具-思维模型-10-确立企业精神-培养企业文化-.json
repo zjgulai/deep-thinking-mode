@@ -8,7 +8,10 @@
     "skill_name": "确立企业精神，培养企业文化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确立企业精神，培养企业文化。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "企业的观念形态，文化形式和价值体系的总和，是企业员工",
   "when_to_use": {

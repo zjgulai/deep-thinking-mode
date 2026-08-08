@@ -8,7 +8,10 @@
     "skill_name": "拆屋效应",
     "source": "ref:100+思维模型合集 (模型思维):拆屋效应",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "和登门槛效应相关联的还有拆屋效应。  1934 / 1937 \f鲁迅先生曾于 1927 年在《无声的中国》一文中写道：“中国人的性情 总是喜欢调和、折中的，譬如你说，这屋子太暗，说在这里开一个天 窗，大家一定是不允许的。但如果你主张拆掉屋顶",
   "when_to_use": {

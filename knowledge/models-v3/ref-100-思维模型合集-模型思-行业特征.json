@@ -8,7 +8,10 @@
     "skill_name": "行业特征",
     "source": "ref:100+思维模型合集 (模型思维):行业特征",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "预测；行业可塑性低；行业增长平衡持续；行业集中度高；行业成熟； 行业基于稳定的技术；行业监管环境稳定。",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "产品定价(price)",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):产品定价(price)",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从市场营销角度看，产品定价包括产品的价值，销售时间，顾客的支付能力， 所需要的销售量，市场饱和度和竞争价格等。从消费心理角度看，价格太低会让 消费者怀疑产品的质量是否存在问题。价格太高又超过大多数消费者的购买能 力。因此太低的价格和太高的",
   "when_to_use": {

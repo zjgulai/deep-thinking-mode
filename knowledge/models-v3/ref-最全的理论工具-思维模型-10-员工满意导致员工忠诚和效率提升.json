@@ -8,7 +8,10 @@
     "skill_name": "员工满意导致员工忠诚和效率提升",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):员工满意导致员工忠诚和效率提升",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  员工满意意味着员工对公司未来发展有信心，更愿意留在公司工作，从而 导致员工忠诚度的提高。一般而言，如果员工愿留在公司工作，是因为他们为顾 客创造了价值而自豪．而心满意足。  那么这样的员",
   "when_to_use": {

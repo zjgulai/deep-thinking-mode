@@ -8,7 +8,11 @@
     "skill_name": "分割、重组、标签",
     "source": "ref:100+思维模型合集 (模型思维):分割、重组、标签",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "注意力是有限且连贯的，这是由大脑自我最大化记忆表层的机制所决 定的。我们只能对整个环境中的一部分做出反应。在一段时间内，我 们可能会依次关注各个部分，直至覆盖整个环境为止。所以，我们在 具体处理问题和进行创新的过程中，可以划分小的独立单元、",
   "when_to_use": {

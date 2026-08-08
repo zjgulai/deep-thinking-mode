@@ -8,7 +8,10 @@
     "skill_name": "投资",
     "source": "ref:100+思维模型合集 (模型思维):投资",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "风险投资人，一般在公司创办早期进行投资，风险极大，",
   "when_to_use": {

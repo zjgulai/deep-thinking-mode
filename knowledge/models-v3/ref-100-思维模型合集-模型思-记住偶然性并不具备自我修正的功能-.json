@@ -8,7 +8,10 @@
     "skill_name": "记住偶然性并不具备自我修正的功能",
     "source": "ref:100+思维模型合集 (模型思维):记住偶然性并不具备自我修正的功能。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "亿，远远超过了政府的预算，导致拆迁工",
   "when_to_use": {

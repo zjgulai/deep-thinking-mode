@@ -8,7 +8,10 @@
     "skill_name": "内向活动(属于输出部分)",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):内向活动(属于输出部分)",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "与节点衔接有下列三种逻辑关系：  (1)“互斥或”型。有多个内向活动同时参与选择，但只能实现其中的一项。 \f http://wiki.mbalib.com/ 当该项活动完成后，节点就可以实现，并向下一个节点继续进行。在“互斥或” 型中，各",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "娱乐感。不仅要严肃,还要有娱乐感。研究表",
     "source": "ref:100+思维模型合集 (模型思维):娱乐感。不仅要严肃,还要有娱乐感。研究表",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的心情和幽默感有益于身心健康和事业发展。当然,我们需要保持严肃 认真的处世态度,但是过于严苛同样有损于身心和事业。在概念时代,无 论工作还是生活,我们都需要拥有快乐。",
   "when_to_use": {

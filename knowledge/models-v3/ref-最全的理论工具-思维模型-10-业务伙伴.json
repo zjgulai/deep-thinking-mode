@@ -8,7 +8,12 @@
     "skill_name": "业务伙伴",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):业务伙伴",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "该角色具备十二种素质。这一角色要求人力资源管理者作为业务经理的合作伙 伴，熟悉业务，在制定人力资源发展规划的同时，参与制定业务规划，同时将两 项规划进行整合，并使之与组织的战略目标联系起来，以协助组织适应不断的变 革，满足客户的需求，达到产",
   "when_to_use": {

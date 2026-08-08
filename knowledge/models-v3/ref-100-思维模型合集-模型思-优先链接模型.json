@@ -8,7 +8,10 @@
     "skill_name": "优先链接模型",
     "source": "ref:100+思维模型合集 (模型思维):优先链接模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "Barabási 与 Albert 针对复杂网络中普遍存在的幂律分布现象，提出了网 络动态演化的 BA 模型，他们解释，成长性和优先连接性是无标度网络 度分布呈现幂律的两个最根本的原因。所谓成长性是指网络节点数的 增加，像路由器的添加、网站",
   "when_to_use": {

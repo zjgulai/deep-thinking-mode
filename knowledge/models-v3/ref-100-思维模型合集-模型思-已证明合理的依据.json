@@ -8,7 +8,10 @@
     "skill_name": "已证明合理的依据",
     "source": "ref:100+思维模型合集 (模型思维):已证明合理的依据",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "权威性参考源，比如百科全书或专业类杂志",
   "when_to_use": {

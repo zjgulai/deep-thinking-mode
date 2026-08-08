@@ -8,7 +8,10 @@
     "skill_name": "相关工具",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):相关工具",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "7.1. TOWS分析  TOWS 分析法也被称为倒 SWOT 分析法， TOWS 分析法与 SWOT 分析法十分类似，其分析顺序与 SWOT 分析法恰好相反。  它首先分析市场的机会和危险，再分析企业的优势和劣势。SWOT 分析法首先分析",
   "when_to_use": {

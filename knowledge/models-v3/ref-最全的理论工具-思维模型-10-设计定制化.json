@@ -8,7 +8,10 @@
     "skill_name": "设计定制化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):设计定制化",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "根据客户的具体要求,设计能够满足客户特殊要求的产品",
   "when_to_use": {

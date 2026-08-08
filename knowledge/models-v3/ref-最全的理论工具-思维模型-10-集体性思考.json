@@ -8,7 +8,10 @@
     "skill_name": "集体性思考",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):集体性思考",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "六顶帽子思考法基本上是集体性思考，而不是个人思考。当然一个人思考的 时候也可以采用六顶帽子的思考方式，从不同的角度去看问题，但是这种思考方 法用在集体思考时最有效。",
   "when_to_use": {

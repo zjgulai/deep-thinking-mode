@@ -8,7 +8,11 @@
     "skill_name": "整个战略发生很大的变化",
     "source": "ref:商业十二模型:整个战略发生很大的变化",
     "sourceType": "book",
-    "sourceTitle": "商业十二模型"
+    "sourceTitle": "商业十二模型",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的就  互联网消除了距离，  $\u0013# 是做连接器。  这是它最大的影响。  ⸆腊 ⡤낉 ⚡䚍  1$  0\u00130  ⥌䜂 餴ꆄ 暟崨  互联网物理化是大趋势。  1\u00131  一淘 vs 线下店  可口可乐",
   "when_to_use": {

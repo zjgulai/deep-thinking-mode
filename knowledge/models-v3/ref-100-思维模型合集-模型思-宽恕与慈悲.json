@@ -8,7 +8,10 @@
     "skill_name": "宽恕与慈悲",
     "source": "ref:100+思维模型合集 (模型思维):宽恕与慈悲",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "慈悲的人原谅那些曾对不起他们的人，他们永远会给别人第二次机会， 他们处世的原则是慈悲而不是复仇。当他们宽恕别人时，他们的主要 动机或行为就转向积极（仁慈、慷慨）而较少消极（回避或报复）。",
   "when_to_use": {

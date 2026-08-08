@@ -8,7 +8,11 @@
     "skill_name": "海德的归因理论",
     "source": "ref:100+思维模型合集 (模型思维):海德的归因理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "某个特定的原因在许多不同的情境下和某个特定",
   "when_to_use": {

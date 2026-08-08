@@ -8,7 +8,11 @@
     "skill_name": "忽视基准概率，对结果的先验概率不敏感",
     "source": "ref:100+思维模型合集 (模型思维):忽视基准概率，对结果的先验概率不敏感",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "大学生，朋友们形容她稍微有些不切实际、情绪化和",
   "when_to_use": {

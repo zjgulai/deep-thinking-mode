@@ -8,7 +8,12 @@
     "skill_name": "领导力",
     "source": "ref:100+思维模型合集 (模型思维):领导力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "有很好的组织才能，并能监督任务的执行",
   "when_to_use": {

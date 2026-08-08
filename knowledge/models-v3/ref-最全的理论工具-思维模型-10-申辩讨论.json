@@ -8,7 +8,10 @@
     "skill_name": "申辩讨论",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):申辩讨论",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  检查完毕，评审组汇总情况，将各单位负责人请到奥迪特质量评审现场，宣 布检查情况，若缺陷责任部门有不同的意见可以申辨，以找准缺陷的真正原因。 (上海桑塔纳奥迪特质量评审认为评审组的判定准确",
   "when_to_use": {

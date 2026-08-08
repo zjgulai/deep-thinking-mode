@@ -8,7 +8,10 @@
     "skill_name": "众行管理资讯研发中心．管理工具全解．广东",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):众行管理资讯研发中心．管理工具全解．广东",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 宽带薪酬设计  —一种新的薪酬管理系统及操作流程 \f http://wiki.mbalib.com/",
   "when_to_use": {

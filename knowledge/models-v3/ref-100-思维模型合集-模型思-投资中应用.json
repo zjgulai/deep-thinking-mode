@@ -8,7 +8,10 @@
     "skill_name": "投资中应用",
     "source": "ref:100+思维模型合集 (模型思维):投资中应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "损失，有些人认为花钱是一种投资，有些人对",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "组织创新",
     "source": "ref:100+思维模型合集 (模型思维):组织创新",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "阿米巴，韩都衣舍的团队赋能，海尔的人单合一模式，都属于组织创 新。 案例：IBM 公司与设计思维 作为分支机构遍布全球的百年科技企业，IBM 公司积极探索，力求将自 己重塑为一个“设计思维”公司。IBM 公司在招聘 1000 多名专业设计师",
   "when_to_use": {

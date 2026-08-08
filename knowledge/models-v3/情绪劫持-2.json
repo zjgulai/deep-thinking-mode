@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "核心概念",
     "source": "情绪劫持 2.md",
-    "sourceTitle": "核心概念：大脑的“紧急按钮”——杏仁核"
+    "sourceTitle": "核心概念：大脑的“紧急按钮”——杏仁核",
+    "agent_roles": [
+      "intent_clarifier",
+      "logical_analyzer",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "如何有效完成这件事？核心概念的操作路径是什么？",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "感召的是灵魂",
     "source": "ref:100+思维模型合集 (模型思维):感召的是灵魂",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "精神的召唤，是思想和理念的认同，是一种模因，是一种",
   "when_to_use": {

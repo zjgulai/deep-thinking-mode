@@ -8,7 +8,12 @@
     "skill_name": "基本归因偏差",
     "source": "ref:100+思维模型合集 (模型思维):基本归因偏差",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "归结为内在因素,而低估了情境的影响。 假如你每个月都能完成销售任务,这个月却没有完成,那么你觉得怎么 向领导解释这件事情?第一是因为你不够努力,第二是市场环境不好。研 究表明,人们更愿意选择你不够努力的解释,即倾向性解释。",
   "when_to_use": {

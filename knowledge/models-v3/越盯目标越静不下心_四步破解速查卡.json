@@ -13,7 +13,13 @@
     ],
     "skill_name": "越盯目标越静不下心_四步破解",
     "source": "越盯目标越静不下心_四步破解速查卡.md",
-    "sourceTitle": "越盯目标越静不下心_四步破解速查卡"
+    "sourceTitle": "越盯目标越静不下心_四步破解速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "心里装着一个重要目标，越迫切想完成，越沉不下心做事——不是意志力差，是大脑的聚光灯死盯着终点，反而压制了专注当下的泛光灯模式",
   "when_to_use": {

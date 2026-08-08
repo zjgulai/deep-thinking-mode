@@ -6,7 +6,13 @@
     "category": "09",
     "tags": [],
     "skill_name": "**一、真正的休息是“身份切换”，而",
-    "source": "什么是真正的休息.md"
+    "source": "什么是真正的休息.md",
+    "agent_roles": [
+      "problem_framer",
+      "prioritizer",
+      "error_handler",
+      "simplifier"
+    ]
   },
   "core_definition": "什么是真正的休息  真正的休息，远非“停下手中的事”那么简单。它是一种**系统性的、有意识的自我修复过程**，其核心在于 **“状态的转换”和“能量的回流”**，而非“什么都不做”。  可以从四个维度来定义真正的休息：  * * *  ### **一、真正的休息是“身份切换”，而非“行为停止”** ",
   "when_to_use": {

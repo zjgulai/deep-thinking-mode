@@ -8,7 +8,13 @@
     "skill_name": "使用问题解决框架,聚焦核心问题",
     "source": "ref:100+思维模型合集 (模型思维):使用问题解决框架,聚焦核心问题",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "prioritizer",
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的问题再到原因,最后聚焦到四个影响项目的核心问题。  1488 / 1937 \f在解决问题的过程中分成四个小组,每一个小组研究的结论是什么?依 据是什么?得出来的成果是什么?反复进行质疑和反思,这样是",
   "when_to_use": {

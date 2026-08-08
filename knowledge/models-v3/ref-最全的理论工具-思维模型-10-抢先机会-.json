@@ -8,7 +8,10 @@
     "skill_name": "抢先机会",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):抢先机会：",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "机不可失，失不再来，在商战中，许多机会往往是稍纵即逝，竞争中经常是 领先一步就会领先一路，比竞争对手更快，往往更有战胜的机会；如，战争中抢 先占领制高点，企业在竞争也是一样的。 第三；匹配的措施",
   "when_to_use": {

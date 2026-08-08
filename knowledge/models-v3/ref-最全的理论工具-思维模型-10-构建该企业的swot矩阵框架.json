@@ -8,7 +8,11 @@
     "skill_name": "构建该企业的swot矩阵框架",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):构建该企业的SWOT矩阵框架",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "综合对该企业的内外环境分析，明确了企业的优劣势及机会与威胁所在就可以科学地构建 SWOT矩阵框架，为企业制定出合理的战略目标． 表 13：某企业的 SWOT 矩阵框架  (W) 内部优势(s) 内部劣势(w)  1)生产能力强 1)期间费",
   "when_to_use": {

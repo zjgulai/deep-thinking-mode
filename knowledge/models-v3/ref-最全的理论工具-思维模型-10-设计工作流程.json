@@ -8,7 +8,10 @@
     "skill_name": "设计工作流程",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):设计工作流程",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "， 这将给客户一个良好的第一印象，所以必须做好基础数据的管理工作，一方面对 于公司的主要产品，要详细了解生产商分布情况，生产能力，价格水平，质量水 平，信誉情况等等，所有资料最好是实地调查得到的第一手",
   "when_to_use": {

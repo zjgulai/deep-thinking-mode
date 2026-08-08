@@ -8,7 +8,11 @@
     "skill_name": "利用标准化、模块化减少产品内部多样化",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):利用标准化、模块化减少产品内部多样化",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "decomposer"
+    ]
   },
   "core_definition": "产品多样化有两类：①客户可感受到的产品外部多样化；② 产品在设计、 制造、装配、销售服务过程中，企业可感受到的产品内部多样化。产品外部多样 \f http://wiki.mbalib.com/ 化能为客户提供丰富的选择，而产品内部多样化则会",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "基础框架",
     "source": "ref:100+思维模型合集 (模型思维):基础框架",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的反思。科学是一种方法论，是帮助我们更好的认 识这个客观的世界。艺术是人类对美的向往，是创造的源泉。宗教是 人类的精神家园，是安放心灵的后花园，是修复心灵的暖房。这四个 维度可以让我们更好的发现和理解",
   "when_to_use": {

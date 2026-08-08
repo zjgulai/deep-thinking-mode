@@ -8,7 +8,10 @@
     "skill_name": "随机对照组双盲实验",
     "source": "ref:100+思维模型合集 (模型思维):随机对照组双盲实验",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "严格的实验方法，它以严格的规则将我们",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "看板的机能",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):看板的机能",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1)生产以及运送的工作指令。看板中记载着生产量、时间、方法、顺序以及运送 量、运送时间、运送目的地、放置场所、搬运工具等信息，从装配工序逐次向前 工序追溯，在装配线将所使用的零部件上所带的看板取下，以此再去前工序领取。 “后工序领取”以及“",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "第4章-演示者应该掌握的技巧-第4章将从",
     "source": "ref:麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝]):第4章 演示者应该掌握的技巧 第4章将从",
     "sourceType": "book",
-    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])"
+    "sourceTitle": "麦肯锡精英系列（共五册） (高杉尚孝  户塚隆将  大岛祥誉 [高杉尚孝])",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "与大家期待相反的结论，但是希望各位能够听到最后”",
   "when_to_use": {

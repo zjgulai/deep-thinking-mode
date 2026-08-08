@@ -8,7 +8,10 @@
     "skill_name": "思维导图",
     "source": "ref:100+思维模型合集 (模型思维):思维导图",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "矛盾体，需要平衡好工作与学习的矛盾、感性与理性",
   "when_to_use": {

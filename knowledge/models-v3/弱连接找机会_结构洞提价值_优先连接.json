@@ -6,7 +6,10 @@
     "category": "05",
     "tags": [],
     "skill_name": "弱连接找机会_结构洞提价值_优先连接",
-    "source": "弱连接找机会_结构洞提价值_优先连接建品牌_涌现思维开新路.md"
+    "source": "弱连接找机会_结构洞提价值_优先连接建品牌_涌现思维开新路.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "没有个人标志性成果，只是网络中不起眼的普通节点，无法吸引资源靠拢",
   "when_to_use": {

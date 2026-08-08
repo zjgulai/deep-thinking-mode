@@ -8,7 +8,10 @@
     "skill_name": "概率思维－贝叶斯定理",
     "source": "ref:100+思维模型合集 (模型思维):概率思维－贝叶斯定理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "统计学思维方法，是一种理性思维，其中贝叶斯定理",
   "when_to_use": {

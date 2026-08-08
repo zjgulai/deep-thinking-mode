@@ -8,7 +8,12 @@
     "skill_name": "检验显著性",
     "source": "ref:100+思维模型合集 (模型思维):检验显著性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "我们可以利用正态分布的规律来检验各种平均值的显著性差异。显著 性检验就是事先对总体（随机变量）的参数或总体分布形式做出一个 假设，然后利用样本信息来判断这个假设（备择假设）是否合理，即 判断总体的真实情况与原假设是否有显著性差异。其原理就是",
   "when_to_use": {

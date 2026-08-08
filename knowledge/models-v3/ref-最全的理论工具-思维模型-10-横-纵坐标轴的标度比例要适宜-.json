@@ -8,7 +8,10 @@
     "skill_name": "横、纵坐标轴的标度比例要适宜",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):横、纵坐标轴的标度比例要适宜。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "制出的直方图要给人以正确的视觉，否则不便于客观地掌握分布全貌。正确 的直方图应近似于正方形，也就是最大频数组的直方柱高度要与横轴第 1 组到最 \f http://wiki.mbalib.com/ 后一组的长度一致。",
   "when_to_use": {

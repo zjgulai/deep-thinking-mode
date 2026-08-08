@@ -8,7 +8,10 @@
     "skill_name": "为了改进经营单位的绩效，应进行怎样的战略",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):为了改进经营单位的绩效，应进行怎样的战略",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "做出这些变化？  PIMS 分析的主要目的是现决定业务战略的某些“市场法则”，研究影响投资 收益率(ROI)、现金及利润变动情况的战略因素以及特定业务可以采取的战略类 型。  PIMS 分析项目的研究对象是各公司中的战略经营单位。针对这些",
   "when_to_use": {

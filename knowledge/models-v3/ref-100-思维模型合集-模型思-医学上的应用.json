@@ -8,7 +8,10 @@
     "skill_name": "医学上的应用",
     "source": "ref:100+思维模型合集 (模型思维):医学上的应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在一段时间内储存少量信息的记忆系统，通过感觉记忆",
   "when_to_use": {

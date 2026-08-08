@@ -8,7 +8,10 @@
     "skill_name": "涨落原理",
     "source": "ref:100+思维模型合集 (模型思维):涨落原理",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "423 / 1937 \f状态量对其平均值的偏离,称为涨落。涨落的特点是随机生灭,或大或小。 按其来源,有内涨落和外涨落之分,按其规模,有小涨落、大涨落、巨涨落 之分。一切真实系统都存在涨落。涨落在自组织中起极为重要的作用, 系统通过涨落去",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "产品或服务的质量",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):产品或服务的质量",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "产品质量与经营业绩密切相关。出售高质量产品（服务）的单位较出售低质 量产品（服务）的单位具有较好的经营业绩。并且还发现，产品质量与市场占有 率具有强正相关关系，二者起互相加强的作用。当一个经营单位具有较高的市场 占有率并出售较高质量的产品",
   "when_to_use": {

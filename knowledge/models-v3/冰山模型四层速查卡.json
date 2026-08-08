@@ -13,7 +13,10 @@
     ],
     "skill_name": "冰山模型四层",
     "source": "冰山模型四层速查卡.md",
-    "sourceTitle": "冰山模型四层速查卡"
+    "sourceTitle": "冰山模型四层速查卡",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "你有没有遇到过这种情况：同一个问题反复出现，每次解决了没几天又回来",
   "when_to_use": {

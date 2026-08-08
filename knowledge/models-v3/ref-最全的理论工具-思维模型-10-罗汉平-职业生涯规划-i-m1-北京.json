@@ -8,7 +8,10 @@
     "skill_name": "罗汉平．职业生涯规划-i-m1．北京",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):罗汉平．职业生涯规划 I-M1．北京",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "7. [美]E．H．施恩．职业锚理论[J]．中国人才，2002(9)． \f http://wiki.mbalib.com/ 海氏工作评价系统 —目前国际上最为流行、使用最为广泛的岗  位评估工具 \f http://wiki.mbalib.c",
   "when_to_use": {

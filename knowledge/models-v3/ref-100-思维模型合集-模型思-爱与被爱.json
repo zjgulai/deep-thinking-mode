@@ -8,7 +8,10 @@
     "skill_name": "爱与被爱",
     "source": "ref:100+思维模型合集 (模型思维):爱与被爱",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "你非常珍惜自己与别人的亲密关系，如果是，这就证明你有爱与被爱 的优势。 第四种美德：正义 正义是你与集体的关系，如你与家庭、你与社区、你与国家及你与世 界的关系。",
   "when_to_use": {

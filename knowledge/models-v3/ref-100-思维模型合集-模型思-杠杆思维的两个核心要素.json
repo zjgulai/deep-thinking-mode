@@ -8,7 +8,12 @@
     "skill_name": "杠杆思维的两个核心要素",
     "source": "ref:100+思维模型合集 (模型思维):杠杆思维的两个核心要素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "prioritizer",
+      "knowledge_synthesizer",
+      "simplifier"
+    ]
   },
   "core_definition": "要素，一个是杠杆本身，另一个是支点。杠杆 要足够长，自身坚实，支点要硬核，才可以发挥放大作用。 3.1 杠杆 杠杆就是你可以调动的资源，支点就是核心能力。常用的杠杆有很多 种，我们重点介绍以下几种杠杆",
   "when_to_use": {

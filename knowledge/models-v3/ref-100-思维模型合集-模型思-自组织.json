@@ -8,7 +8,10 @@
     "skill_name": "自组织",
     "source": "ref:100+思维模型合集 (模型思维):自组织",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "系统的构建及演化依靠与外界的“特定”干涉,不断向结",
   "when_to_use": {

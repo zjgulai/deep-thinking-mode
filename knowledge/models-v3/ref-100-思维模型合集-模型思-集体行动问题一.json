@@ -8,7 +8,11 @@
     "skill_name": "集体行动问题一",
     "source": "ref:100+思维模型合集 (模型思维):集体行动问题一",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "道路、公园、旅游景点等公共物品对个人的价值随着用",
   "when_to_use": {

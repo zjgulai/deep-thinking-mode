@@ -8,7 +8,10 @@
     "skill_name": "保利点的含义",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):保利点的含义",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "企业在价格和成本水平既定的情况下，为确保预先制定的目标利润的实现，",
   "when_to_use": {

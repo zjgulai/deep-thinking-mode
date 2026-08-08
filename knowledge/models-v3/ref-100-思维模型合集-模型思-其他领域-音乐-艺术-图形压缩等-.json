@@ -8,7 +8,11 @@
     "skill_name": "其他领域（音乐、艺术、图形压缩等）",
     "source": "ref:100+思维模型合集 (模型思维):其他领域（音乐、艺术、图形压缩等）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "个体为了实现任何目标而付出的努力",
   "when_to_use": {

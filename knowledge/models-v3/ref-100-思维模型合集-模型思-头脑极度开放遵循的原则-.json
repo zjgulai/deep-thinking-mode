@@ -8,7 +8,10 @@
     "skill_name": "头脑极度开放遵循的原则",
     "source": "ref:100+思维模型合集 (模型思维):头脑极度开放遵循的原则：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人的大脑思考，而是一张大脑网，这张网连",
   "when_to_use": {

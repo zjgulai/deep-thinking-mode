@@ -8,7 +8,10 @@
     "skill_name": "使用指导方针",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):使用指导方针",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "互相影响的过程，在主要项日管理人员稀缺的情",
   "when_to_use": {

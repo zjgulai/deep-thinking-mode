@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "7种高效提问方法，帮你跳出思维",
     "source": "7种高效提问方法_帮你跳出思维_高效破局 2.md",
-    "sourceTitle": "7种高效提问方法，帮你跳出思维、高效破局"
+    "sourceTitle": "7种高效提问方法，帮你跳出思维、高效破局",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer"
+    ]
   },
   "core_definition": "这件事的本质是什么？7种高效提问方法，帮你跳出思维如何定义它？",
   "when_to_use": {

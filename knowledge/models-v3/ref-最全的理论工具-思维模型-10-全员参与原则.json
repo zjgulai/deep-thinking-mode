@@ -8,7 +8,12 @@
     "skill_name": "全员参与原则",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):全员参与原则",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "prioritizer",
+      "communicator"
+    ]
   },
   "core_definition": "性人员要么对决策持支持态度，要么持反对 态度。另外，他们知道反馈信息既能提高他们的名誉，又能损害他们的名誉。因 此这种体系承担的责任和共享的信息越多，主要人员参与的重要性就越大。并且， 让这些人参与能",
   "when_to_use": {

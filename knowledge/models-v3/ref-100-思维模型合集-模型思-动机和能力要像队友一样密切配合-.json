@@ -8,7 +8,10 @@
     "skill_name": "动机和能力要像队友一样密切配合",
     "source": "ref:100+思维模型合集 (模型思维):动机和能力要像队友一样密切配合。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "动机很高，但能力不行，行为没办法实现。例如对于公众演讲，你虽 然有很强的动机，就是演讲水平太差，所以遇到公众演讲的时候，你 一样会逃避。",
   "when_to_use": {

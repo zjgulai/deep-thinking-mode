@@ -8,7 +8,10 @@
     "skill_name": "为了工作，你所需要的物品及相关资源是否能",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):为了工作，你所需要的物品及相关资源是否能",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "A．几乎总是能够及时供应 B．经常能够及时供应 C．有时能够及时供应 D．经常不能及时供应 E．几乎总是不能及时供应",
   "when_to_use": {

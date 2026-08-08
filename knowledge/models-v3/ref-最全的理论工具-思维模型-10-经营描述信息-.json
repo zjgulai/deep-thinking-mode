@@ -8,7 +8,10 @@
     "skill_name": "经营描述信息",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):经营描述信息。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "的竞争战略数据库中，每个业务单位都提供了产品/服务、 消费者、分销渠道和生产过程等基本的描述信息。最主要的经营描述信息类型如 表 1 所示。 表 1：业务单位经营信息描述 类 型 具体数据和信息描述",
   "when_to_use": {

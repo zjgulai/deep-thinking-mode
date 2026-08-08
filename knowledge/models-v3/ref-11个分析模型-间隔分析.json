@@ -8,7 +8,11 @@
     "skill_name": "间隔分析",
     "source": "ref:11个分析模型:间隔分析",
     "sourceType": "book",
-    "sourceTitle": "11个分析模型"
+    "sourceTitle": "11个分析模型",
+    "agent_roles": [
+      "planner",
+      "observer_reflector"
+    ]
   },
   "core_definition": "10.1 间隔分析概述  间隔分析，主要用于统计用户从触发指定的起始事件开始，到完成指定目标 事件之间的时间间隔。也就是说主要提供从起始事件到转化目标之间的时间角度 和步长角度的相关指标统计，便于从这些指标中观察转化过程的情况。  图 10",
   "when_to_use": {

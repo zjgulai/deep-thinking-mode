@@ -11,7 +11,11 @@
       "金字塔原理"
     ],
     "skill_name": "框架思维-#思维框架-#思维模",
-    "source": "金字塔原理_理清逻辑_高效表达的思维框架.md"
+    "source": "金字塔原理_理清逻辑_高效表达的思维框架.md",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "金字塔原理：理清逻辑、高效表达的思维框架 ====================  原创 正方形SQUARE 2026-03-06 15:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/sSr586jndcbDh9Ksm8Z1yg](https://mp.we",
   "when_to_use": {

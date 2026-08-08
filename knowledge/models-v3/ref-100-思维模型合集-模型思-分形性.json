@@ -8,7 +8,10 @@
     "skill_name": "分形性",
     "source": "ref:100+思维模型合集 (模型思维):分形性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "局部与整体具有相似性,或者说在标度变换下具有相似性的几何形体。  457 / 1937 \f例如中国的海岸线在中国地图上看是弯弯曲曲的,其局部例如浙江的海 岸线,放大后从浙江地图上看也是弯弯曲曲的,两者间具有相似性,这样 我们就说海岸线是分形",
   "when_to_use": {

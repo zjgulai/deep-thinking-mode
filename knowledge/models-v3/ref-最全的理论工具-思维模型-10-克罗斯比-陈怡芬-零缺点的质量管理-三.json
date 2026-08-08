@@ -8,7 +8,10 @@
     "skill_name": "克罗斯比,-陈怡芬．零缺点的质量管理-三",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):克罗斯比, 陈怡芬．零缺点的质量管理 三",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ QC 七大手法 —一组对质量管理活动的数据进行客观分  析的有力工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

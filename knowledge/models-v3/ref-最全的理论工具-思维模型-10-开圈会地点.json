@@ -8,7 +8,10 @@
     "skill_name": "开圈会地点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):开圈会地点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在公司内公司外均可，最好是有桌椅及白板之会议室，桌子的排法宜采会议型， 由于人数不多，因此两张桌子并排对坐即可。如没有桌椅时，席地而坐也是很好 的，在公司内开会的地点一般是在：会议室、餐厅、工作场所、草地上等。如在 公司外时，可选野外如烧烤",
   "when_to_use": {

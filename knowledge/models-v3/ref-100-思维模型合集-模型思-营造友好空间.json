@@ -8,7 +8,11 @@
     "skill_name": "营造友好空间",
     "source": "ref:100+思维模型合集 (模型思维):营造友好空间",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "环境对人的影响非常大，一个好的空间能够催化合作性汇谈的价值， MIT 媒体实验室研究员迈克．斯科拉齐，在《思维共享》一书中指出， 大多数会议的会场布置实际上破坏了合作性努力，这种布置主要服务 于呆板的单向报告，这种会场布置损失了合作性的团队",
   "when_to_use": {

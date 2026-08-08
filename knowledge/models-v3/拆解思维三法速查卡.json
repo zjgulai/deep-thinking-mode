@@ -13,7 +13,13 @@
     ],
     "skill_name": "拆解思维三法",
     "source": "拆解思维三法速查卡.md",
-    "sourceTitle": "拆解思维三法速查卡"
+    "sourceTitle": "拆解思维三法速查卡",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "盯着堆满水槽的碗碟、三个月没整理的衣柜，脑子里一团乱麻，手脚就是动不了——不是懒，是被“整体”这个词吓住了",
   "when_to_use": {

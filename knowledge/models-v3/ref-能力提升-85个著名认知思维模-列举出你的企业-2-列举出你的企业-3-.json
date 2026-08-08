@@ -8,7 +8,10 @@
     "skill_name": "列举出你的企业-2、列举出你的企业-3、",
     "source": "ref:能力提升-85个著名认知思维模型:列举出你的企业 2、列举出你的企业 3、",
     "sourceType": "book",
-    "sourceTitle": "能力提升-85个著名认知思维模型"
+    "sourceTitle": "能力提升-85个著名认知思维模型",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "简单、透彻的概念,它来自对一下三",
   "when_to_use": {

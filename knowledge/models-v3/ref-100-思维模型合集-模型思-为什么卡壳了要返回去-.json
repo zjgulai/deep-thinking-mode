@@ -8,7 +8,11 @@
     "skill_name": "为什么卡壳了要返回去",
     "source": "ref:100+思维模型合集 (模型思维):为什么卡壳了要返回去？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "hypothesis_tester",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "感到疑惑或者卡壳了，就说明肯定有知识点没有理解清楚，这其实是 一个很好的自我检测技巧，这个技巧是费曼经常用的，也是极力推荐 的、得到验证的。《费曼传》描述了一个桥段：费曼在普林斯顿大学读 研究生时，在他妹妹琼生日的时候送了一本大学天文学课本",
   "when_to_use": {

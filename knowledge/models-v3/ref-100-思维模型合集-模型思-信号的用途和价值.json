@@ -8,7 +8,10 @@
     "skill_name": "信号的用途和价值",
     "source": "ref:100+思维模型合集 (模型思维):信号的用途和价值",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "信号，高学历并不能代表你拥有高能力，很",
   "when_to_use": {

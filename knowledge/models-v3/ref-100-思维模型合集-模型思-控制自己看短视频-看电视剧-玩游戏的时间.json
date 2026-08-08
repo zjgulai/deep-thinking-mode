@@ -8,7 +8,10 @@
     "skill_name": "控制自己看短视频、看电视剧、玩游戏的时间",
     "source": "ref:100+思维模型合集 (模型思维):控制自己看短视频、看电视剧、玩游戏的时间",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "SSRI 类药物，化学名称叫氟西汀",
   "when_to_use": {

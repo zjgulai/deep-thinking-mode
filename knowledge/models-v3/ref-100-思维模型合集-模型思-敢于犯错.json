@@ -8,7 +8,11 @@
     "skill_name": "敢于犯错",
     "source": "ref:100+思维模型合集 (模型思维):敢于犯错",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "从表象问题寻找根本原因的逆向推理分析法，也是",
   "when_to_use": {

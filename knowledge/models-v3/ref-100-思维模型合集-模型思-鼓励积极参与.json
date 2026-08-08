@@ -8,7 +8,11 @@
     "skill_name": "鼓励积极参与",
     "source": "ref:100+思维模型合集 (模型思维):鼓励积极参与",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "每一桌仅仅安排坐四五个人的原因之一就是想让每个人都有发言的机 会。那些在一个大群体里不愿主动发言的人，在世界咖啡这种更加亲 切的环境中常常会提出一些出人意料的观点。在这个开放的空间里， 大家都愿意并勇敢的贡献自己的想法。认真聆听、欣赏及观察",
   "when_to_use": {

@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "真正的逆向思维",
     "source": "真正的逆向思维_不是反向抬杠_是一套可落地的创新工具箱.md",
-    "sourceTitle": "真正的逆向思维：不是反向抬杠，是一套可落地的创新工具箱"
+    "sourceTitle": "真正的逆向思维：不是反向抬杠，是一套可落地的创新工具箱",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer",
+      "multi_perspective",
+      "planner"
+    ]
   },
   "core_definition": "问题定义错误。重构问题、替换解题路径，即可化难为易",
   "when_to_use": {

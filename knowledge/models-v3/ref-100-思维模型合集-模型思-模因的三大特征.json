@@ -8,7 +8,10 @@
     "skill_name": "模因的三大特征",
     "source": "ref:100+思维模型合集 (模型思维):模因的三大特征",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "模因在模因库内存留很久，模因能否在纸上",
   "when_to_use": {

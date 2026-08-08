@@ -8,7 +8,10 @@
     "skill_name": "颠覆式创新的主要特征",
     "source": "ref:100+思维模型合集 (模型思维):颠覆式创新的主要特征",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "颠覆性创新（无论是新市场的颠覆还是低端市场",
   "when_to_use": {

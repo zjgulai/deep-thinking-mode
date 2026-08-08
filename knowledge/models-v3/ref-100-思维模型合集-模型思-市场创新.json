@@ -8,7 +8,10 @@
     "skill_name": "市场创新",
     "source": "ref:100+思维模型合集 (模型思维):市场创新",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不曾进入的市场，不管这个市场以前是否存在过。比如说，国内很多 企业可以走出去，开拓欧洲、美洲和非洲市场都属于市场创新，当然 很多做代工的外贸企业，如果开发国内市场，也属于市场创新。  65 / 1937 \f4、资源配置创新：掠取或控制原材料",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "学会概率思维",
     "source": "ref:100+思维模型合集 (模型思维):学会概率思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "首先要承认这个是世界是复杂性，百分之百确定的事情很少，就像投 资股票一样，如果有人告诉你有一支股票，会百分之百上涨，那你一 定要小心，因为股价的涨跌是不确定性的。所以理性的人，是不会把 不确定的事情，说的很绝对。他们尊重客观规律，尊重世界的",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "网络效应的形成原因",
     "source": "ref:100+思维模型合集 (模型思维):网络效应的形成原因",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "一个消费者所拥有的产品价值随着另一个消费者",
   "when_to_use": {

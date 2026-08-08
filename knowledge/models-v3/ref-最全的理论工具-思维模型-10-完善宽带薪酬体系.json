@@ -8,7 +8,10 @@
     "skill_name": "完善宽带薪酬体系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):完善宽带薪酬体系",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "communicator"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/  完善组织结构、培训体系和宣传沟通  首先是组织结构的完善。A 公司现有组织机构的情况是职位繁多、层级较多。 在宽带薪酬的理念下，要求公司的组织机构相对扁平，从而实现员工在不晋升的 情况下",
   "when_to_use": {

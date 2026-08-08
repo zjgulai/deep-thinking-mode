@@ -8,7 +8,10 @@
     "skill_name": "什么是复利型人才",
     "source": "ref:100+思维模型合集 (模型思维):什么是复利型人才?",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "受过良好教育、工作稳定,而且其能力、收入以及个人",
   "when_to_use": {

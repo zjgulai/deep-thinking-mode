@@ -8,7 +8,10 @@
     "skill_name": "论证的结构",
     "source": "ref:100+思维模型合集 (模型思维):论证的结构",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "明确的判断，是作者观点的完整陈述，表示肯定或否定的",
   "when_to_use": {

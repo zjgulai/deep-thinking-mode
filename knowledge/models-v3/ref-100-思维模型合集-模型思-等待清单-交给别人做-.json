@@ -8,7 +8,11 @@
     "skill_name": "等待清单（交给别人做）",
     "source": "ref:100+思维模型合集 (模型思维):等待清单（交给别人做）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "针对交个别人的做的任务，要放到等待清单，例如：财务报销，方案 撰写等。  994 / 1937 \f3、项目清单（需要多步骤完成的） 有些项目跨越周期长，例如：内训师培养项目，历时 6 个月的时间。 把这类项目，放入项目清单。",
   "when_to_use": {

@@ -7,7 +7,10 @@
     "tags": [],
     "skill_name": "第3篇",
     "source": "第3篇_从拖延到行动_重塑任务_环境与大脑的协作系统.md",
-    "sourceTitle": "第3篇：从拖延到行动：重塑任务、环境与大脑的协作系统"
+    "sourceTitle": "第3篇：从拖延到行动：重塑任务、环境与大脑的协作系统",
+    "agent_roles": [
+      "cognitive_manager"
+    ]
   },
   "core_definition": "不是一味地责备自己“意志力薄弱”，而是像一个聪明的工程师一样，重新设计这个系统",
   "when_to_use": {

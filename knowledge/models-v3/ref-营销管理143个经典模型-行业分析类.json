@@ -8,7 +8,11 @@
     "skill_name": "行业分析类",
     "source": "ref:营销管理143个经典模型:行业分析类",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "intent_clarifier",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "• 市场（市场规模，市场细分，产品需求/趋势分析，客户需求） • 竞争（竞争对手的经济情况，产品差异化，市场整合度，产业集中度） • 顾客/供应商关系（谈判能力，替代者，评估垂直整合） • 进入/离开的障碍（评估公司进入/离开。对新加入者的",
   "when_to_use": {

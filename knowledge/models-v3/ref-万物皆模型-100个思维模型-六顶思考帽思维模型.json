@@ -8,7 +8,10 @@
     "skill_name": "六顶思考帽思维模型",
     "source": "ref:万物皆模型-100个思维模型:六顶思考帽思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "全面思考问题的模型。它提供了“平行思维”的工具,避免将时间浪费在互相争执上",
   "when_to_use": {

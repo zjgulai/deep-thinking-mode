@@ -8,7 +8,10 @@
     "skill_name": "确定议题",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):确定议题",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "支持人宣布开会，真正的主题不宣布，而是提出与主题相关的实质性的问题 让与会者自由发言，若戈登法的主题是\"开启\" ，那么实质性的问题可以是“新 型罐头盒的起子设计”，若主题是\"储藏\" ，实质性问题就可以是\"城市停车场设 计”，若主题是“无摩",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "天津爱三公司丰田生产方式应用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):天津爱三公司丰田生产方式应用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "公司现组织机构的职能分配，分别由成本、技术、生产技术、品质、",
   "when_to_use": {

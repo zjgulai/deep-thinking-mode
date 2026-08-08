@@ -8,7 +8,11 @@
     "skill_name": "语言智能简介",
     "source": "ref:100+思维模型合集 (模型思维):语言智能简介",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "有效的运用口头语言或文字表达自己的思想并理解他人，灵活掌",
   "when_to_use": {

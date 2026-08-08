@@ -8,7 +8,10 @@
     "skill_name": "同一律",
     "source": "ref:100+思维模型合集 (模型思维):同一律",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "广大的人类这一集体，而后一个人，则特指",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "反馈性",
     "source": "ref:100+思维模型合集 (模型思维):反馈性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "由于德尔菲法采用匿名形式，专家之间互不接触，仅靠一轮调查，专 家意见往往比较分散，不易作出结论，为了使受邀的专家们能够了解 每一轮咨询的汇总情况和其他专家的意见，组织者要对每一轮咨询的 结果进行整理、分析、综合，并在下一轮咨询中反馈给每个受",
   "when_to_use": {

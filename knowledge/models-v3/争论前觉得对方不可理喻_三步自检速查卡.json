@@ -13,7 +13,10 @@
     ],
     "skill_name": "争论前觉得对方不可理喻_三步",
     "source": "争论前觉得对方不可理喻_三步自检速查卡.md",
-    "sourceTitle": "争论前觉得对方不可理喻_三步自检速查卡"
+    "sourceTitle": "争论前觉得对方不可理喻_三步自检速查卡",
+    "agent_roles": [
+      "hypothesis_tester"
+    ]
   },
   "core_definition": "争到一半觉得全是对方的错，冷静后偶尔想“他说的好像也不是完全没道理”——这时候你需要的不是更用力地反驳，是先完整复述一遍",
   "when_to_use": {

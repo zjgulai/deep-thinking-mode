@@ -8,7 +8,10 @@
     "skill_name": "建立业绩衡量系统，评定考核结果",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立业绩衡量系统，评定考核结果",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "业绩衡量系统不仅应该包含当前以财务为主的指标体系(如利润、净资产收 益等)，还应该考虑到对未来财务绩效有影响的因素，同时还应该将人力资源管 理、技术创新、顾客满意和忠诚等一系列相关因素加入到整体业绩衡量系统里来。 \f http://wik",
   "when_to_use": {

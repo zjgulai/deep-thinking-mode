@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "“如果-那么”计划",
     "source": "_如果_那么_计划_四个维度_一套完整的执行意图落地系统 2.md",
-    "sourceTitle": "“如果-那么”计划：四个维度，一套完整的执行意图落地系统"
+    "sourceTitle": "“如果-那么”计划：四个维度，一套完整的执行意图落地系统",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "不是任务太难，而是启动的心理阻力太大",
   "when_to_use": {

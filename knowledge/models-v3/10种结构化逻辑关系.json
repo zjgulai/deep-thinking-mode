@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "10种结构化逻辑关系",
     "source": "10种结构化逻辑关系.md",
-    "sourceTitle": "10种结构化逻辑关系"
+    "sourceTitle": "10种结构化逻辑关系",
+    "agent_roles": [
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "这个问题的根本原因是什么？10种结构化逻辑关系如何找到它？",
   "when_to_use": {

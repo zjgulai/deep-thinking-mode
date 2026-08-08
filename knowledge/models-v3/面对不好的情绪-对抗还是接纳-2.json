@@ -9,7 +9,12 @@
     ],
     "skill_name": "面对不好的情绪，对抗还是接纳",
     "source": "面对不好的情绪_对抗还是接纳 2.md",
-    "sourceTitle": "面对不好的情绪，对抗还是接纳"
+    "sourceTitle": "面对不好的情绪，对抗还是接纳",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "这个问题的根本原因是什么？面对不好的情绪，对抗还是接纳如何找到它？",
   "when_to_use": {

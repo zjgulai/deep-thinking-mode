@@ -8,7 +8,10 @@
     "skill_name": "对各类质量缺陷实行立项管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):对各类质量缺陷实行立项管理。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "先进的质量管理方法。只要是存在着顾客关系的各个环节，并",
   "when_to_use": {

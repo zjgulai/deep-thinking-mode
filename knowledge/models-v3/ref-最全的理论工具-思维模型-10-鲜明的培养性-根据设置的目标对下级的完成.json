@@ -8,7 +8,13 @@
     "skill_name": "鲜明的培养性。根据设置的目标对下级的完成",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):鲜明的培养性。根据设置的目标对下级的完成",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "problem_framer",
+      "planner",
+      "prioritizer",
+      "communicator"
+    ]
   },
   "core_definition": "环节，在这个总结、反馈的过程中，上级与下级共同探讨需要 进行怎样的培训才能实现预期的目标。 4.2. KPI的局限  KPI 绩效管理的本质是找出本企业或本部门成功的关键领域(关键成功要素)， 再确定",
   "when_to_use": {

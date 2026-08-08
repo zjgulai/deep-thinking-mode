@@ -8,7 +8,11 @@
     "skill_name": "半衰期模型",
     "source": "ref:100+思维模型合集 (模型思维):半衰期模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "first_principles",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在半衰期模型中，每 H 周期，数量就会衰减一半。假设世界上分布着 1000 个原子，每个原子每过 1 秒都有 50%的概率衰变，那么： 1 秒后：衰变了接近 500 个原子，还剩 500 个原子 2 秒后：还剩 250 个原子 3 秒后：还",
   "when_to_use": {

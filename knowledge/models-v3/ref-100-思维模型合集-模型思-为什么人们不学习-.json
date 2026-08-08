@@ -8,7 +8,12 @@
     "skill_name": "为什么人们不学习",
     "source": "ref:100+思维模型合集 (模型思维):为什么人们不学习？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "第一：学习需要大量的时间和精力。 第二：工作太忙。就像丘吉尔所说，我们匆匆忙忙，为的是完成眼前 的紧急任务。 第三：个人防御系统强大。我们每个人对自己的能力很自信，如果决 策的结果很好，就归因为自己的天赋和能力，如果决策的结果不好， 就归因",
   "when_to_use": {

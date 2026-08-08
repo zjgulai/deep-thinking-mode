@@ -8,7 +8,10 @@
     "skill_name": "属性分析",
     "source": "ref:11个分析模型:属性分析",
     "sourceType": "book",
-    "sourceTitle": "11个分析模型"
+    "sourceTitle": "11个分析模型",
+    "agent_roles": [
+      "decision_maker"
+    ]
   },
   "core_definition": "「新手引导」的「用户数」，细分维度选择",
   "when_to_use": {

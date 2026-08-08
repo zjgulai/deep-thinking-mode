@@ -8,7 +8,11 @@
     "skill_name": "网络效应的概念",
     "source": "ref:100+思维模型合集 (模型思维):网络效应的概念",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "当一种产品对用户的价值随着采用相同产品或可兼容产品的用户增加 而增大时，即出现了网络外部性。也就是“网络效应”。在学术上，关于 网络外部性和网络效应拥有不同的解释，便于理解方便，本篇文章所 说的网络外部性就是指网络效应。 例如：微信用的人越",
   "when_to_use": {

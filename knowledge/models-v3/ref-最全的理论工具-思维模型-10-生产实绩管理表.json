@@ -8,7 +8,12 @@
     "skill_name": "生产实绩管理表",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):生产实绩管理表",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "error_handler"
+    ]
   },
   "core_definition": "生产实绩管理表是记录各工序、生产线每个时间段的计划数量与实际制造数 量的差异及异常内容。通过把握每个时间段的计划与实绩的差异，使异常表面化， 使操作人员了解异常内容，问题点共有化．促进问题的改善。管理人员要化精力 进行调查、分析并制定改善",
   "when_to_use": {

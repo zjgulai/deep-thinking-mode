@@ -8,7 +8,11 @@
     "skill_name": "企业管理中的应用",
     "source": "ref:100+思维模型合集 (模型思维):企业管理中的应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在企业管理中，拥有禀赋效应的员工持股计划可以提升企业的管理效 率。 员工持股计划是员工所有权的一种实现形式，是企业所有者与员工分 享企业所有权和未来收益权的一种制度安排。员工通过购买企业部分 股票（或股权）而拥有企业的部分产权，并获得相应的",
   "when_to_use": {

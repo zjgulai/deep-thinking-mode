@@ -8,7 +8,12 @@
     "skill_name": "结果启发式",
     "source": "ref:100+思维模型合集 (模型思维):结果启发式。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer",
+      "bias_detector"
+    ]
   },
   "core_definition": "1421 / 1937 \f结果启发式的思维过程这样的，如果 A,所以 B，因为 B 所以 A，就是如 果是好的决策，就会是好的结果。如果是好的结果，一定是好的决策。 因为我们每个人都是认知吝啬鬼，相对于精细加工, 它只需要较少的努 力和认",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "格局思维",
     "source": "ref:100+思维模型合集 (模型思维):格局思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "格局思维是建立在三重竞争空间之上的思维方式，是从更高的空间去 看待问题，能够从整体去看待问题，能够从宏观技术演进，政策变化 去分析行业的未来走向和对自己企业的微观影响。也能够从细节的微 观变化，推演出对整个生态系统的影响，既能够系统思考又能",
   "when_to_use": {

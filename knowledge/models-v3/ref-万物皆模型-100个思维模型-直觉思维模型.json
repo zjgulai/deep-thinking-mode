@@ -8,7 +8,10 @@
     "skill_name": "直觉思维模型",
     "source": "ref:万物皆模型-100个思维模型:直觉思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "problem_framer"
+    ]
   },
   "core_definition": "不受某种固定的逻辑规则约束而直接领悟事物本质的一种思维形式",
   "when_to_use": {

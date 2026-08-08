@@ -8,7 +8,10 @@
     "skill_name": "混沌与秩序思维模型",
     "source": "ref:万物皆模型-100个思维模型:混沌与秩序思维模型",
     "sourceType": "book",
-    "sourceTitle": "万物皆模型-100个思维模型"
+    "sourceTitle": "万物皆模型-100个思维模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "是人为的混沌,也就是说混沌即秩",
   "when_to_use": {

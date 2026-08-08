@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "方法模块-·-反刍思维",
     "source": "内耗管理系统___方法模块___反刍思维_如何用_5_4_3_2_1_强制切断思维循环_ 2.md",
-    "sourceTitle": "内耗管理系统 · 方法模块 · 反刍思维：如何用“5-4-3-2-1”强制切断思维循环？"
+    "sourceTitle": "内耗管理系统 · 方法模块 · 反刍思维：如何用“5-4-3-2-1”强制切断思维循环？",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "action_executor",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "如何有效完成这件事？方法模块 · 反刍思维的操作路径是什么？",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "以通用素质词典完善职类素质",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):以通用素质词典完善职类素质",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "职类的素质模型进行总结和完善。  管理类 营销类 技术类  关系建立、团队合作、培养 客户服务、培养人才 关注程序、客户服务  人才、监控能力、领导能力 人际理解力 团队合作  共有：成熟导向、主动",
   "when_to_use": {

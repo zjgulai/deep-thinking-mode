@@ -8,7 +8,12 @@
     "skill_name": "挑战新目标。社会每天都在发展进步。6s",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):挑战新目标。社会每天都在发展进步。6S",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor"
+    ]
   },
   "core_definition": "注意要点  要成功实施“6S 管理”方法，关键的问题是做好以下工作：  (1)首先要确定 6S 管理的推行者。6S 管理推行者在推行过程中扮演重要角 色，应该由有一定威望、协调能力强的中高层领导出任推",
   "when_to_use": {

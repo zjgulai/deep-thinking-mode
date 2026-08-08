@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0-agent-chain",
+  "id": "react-reason-act-observe",
+  "meta": {
+    "name": "ReAct 推理行动链",
+    "description": "Reason → Act → Observe 循环，用于需要与外部工具/环境交互的复杂任务",
+    "agent_flow": "ReAct",
+    "problem_types": ["信息搜集+推理", "验证假设", "迭代求解", "工具调用规划"],
+    "trigger_signals": [
+      "任务需要搜集信息然后推理，而非纯粹推理",
+      "答案不确定，需要行动后观察结果再调整",
+      "有多个可选工具/方法，需要动态选择"
+    ]
+  },
+
+  "phases": [
+    {
+      "phase": 1,
+      "name": "意图澄清（Intent Clarification）",
+      "model": "苏格拉底式提问 / 爱因斯坦式提问",
+      "agent_role": "intent_clarifier",
+      "system_prompt_key": "苏格拉底式追问：在开始行动前，确认任务的真实意图。追问：1) 最终要得到什么？2) 成功的标准是什么？3) 有哪些已知约束？",
+      "input": "用户的原始任务描述",
+      "output": "结构化任务规范：{目标, 成功标准, 约束, 已知信息}",
+      "stop_condition": "任务目标和成功标准已被明确确认",
+      "handoff_to": "phase_2"
+    },
+    {
+      "phase": 2,
+      "name": "推理（Reason）",
+      "model": "第一性原理 / 系统思维 / 批判性思维",
+      "agent_role": "first_principles",
+      "system_prompt_key": "基于已知信息，推导：1) 什么信息/行动是必须的？2) 推断顺序是什么？3) 预期结果是什么？",
+      "input": "来自 Phase 1 的结构化任务规范",
+      "output": "行动计划：{行动序列, 每步预期输出, 判断标准}",
+      "stop_condition": "行动计划覆盖了所有必要步骤",
+      "handoff_to": "phase_3"
+    },
+    {
+      "phase": 3,
+      "name": "行动（Act）",
+      "model": "SOP思维 / OODA",
+      "agent_role": "action_executor",
+      "system_prompt_key": "执行第一个行动。行动前声明：1) 这一步的目标是什么？2) 使用什么工具/方法？3) 预期返回什么格式？",
+      "input": "来自 Phase 2 的行动计划，执行第 N 步",
+      "output": "行动结果：{原始输出, 工具/方法, 执行状态}",
+      "stop_condition": "行动已执行，有明确的输出（成功/失败/需要追问）",
+      "handoff_to": "phase_4"
+    },
+    {
+      "phase": 4,
+      "name": "观察（Observe）",
+      "model": "元认知 / 批判性思维",
+      "agent_role": "observer_reflector",
+      "system_prompt_key": "分析行动结果：1) 结果是否符合预期？2) 发现了什么新信息？3) 需要修正计划吗？4) 是否满足停止条件？",
+      "input": "来自 Phase 3 的行动结果",
+      "output": "观察报告：{匹配度, 新发现, 计划修正（如需）, 是否继续循环}",
+      "stop_condition": "任务完成 OR 达到最大迭代次数 OR 无法继续",
+      "loop_back_to": "phase_2（如需修正计划）或 phase_3（如继续下一步）",
+      "handoff_to": "phase_5（如完成）"
+    },
+    {
+      "phase": 5,
+      "name": "综合输出（Synthesize）",
+      "model": "金字塔原理 / 结构化思维",
+      "agent_role": "communicator",
+      "system_prompt_key": "将所有观察和行动结果综合为最终答案。格式：结论→依据→局限边界→下一步建议。",
+      "input": "所有历史 Reason-Act-Observe 记录",
+      "output": "最终结论：{核心答案, 推理过程, 置信度, 局限说明}",
+      "stop_condition": "用户目标已被满足",
+      "handoff_to": "用户"
+    }
+  ],
+
+  "codex_composite_prompt": "你现在运行 ReAct（推理-行动-观察）Agent 模式，处理需要动态获取信息和迭代推理的任务。\n\n## 循环结构\n每轮循环执行：\n1. **Reason（推理）**：基于当前信息，推导下一步最优行动\n2. **Act（行动）**：执行一个具体行动（搜索/计算/调用/分析）\n3. **Observe（观察）**：分析行动结果，判断是否达成目标\n\n## 状态标记格式\n每步输出必须包含状态标签：\n```\n[REASON] 我认为应该... 因为...\n[ACT] 执行：...\n[OBSERVE] 结果是... 这意味着...\n[STATUS] 继续/完成/失败回退\n```\n\n## 停止条件\n满足以下任一：\n- 任务目标已达成（输出[STATUS: 完成]）\n- 迭代超过5轮（输出[STATUS: 达到上限]）\n- 遇到无法克服的障碍（输出[STATUS: 失败回退]，并说明原因）\n\n## 质量门禁\n每次 Reason 前：先声明当前已知信息和知识缺口。\n每次 Observe 后：明确更新「任务完成度」百分比估计。"
+}

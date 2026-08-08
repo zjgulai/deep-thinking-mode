@@ -8,7 +8,11 @@
     "skill_name": "自我升級第一原理-3-自我保護的本能-「",
     "source": "ref:自我升级第一原理:自我升級第一原理 3 自我保護的本能 「",
     "sourceType": "book",
-    "sourceTitle": "自我升级第一原理"
+    "sourceTitle": "自我升级第一原理",
+    "agent_roles": [
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "，人們如何回答「我是誰？」這個問題",
   "when_to_use": {

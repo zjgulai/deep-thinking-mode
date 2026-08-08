@@ -8,7 +8,10 @@
     "skill_name": "应用分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):应用分析",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在产品研制或质量改进的过程中所经历的 3 个阶段，即系统设",
   "when_to_use": {

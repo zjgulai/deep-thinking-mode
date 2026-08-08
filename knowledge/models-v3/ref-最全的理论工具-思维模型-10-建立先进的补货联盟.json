@@ -8,7 +8,11 @@
     "skill_name": "建立先进的补货联盟",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):建立先进的补货联盟",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner"
+    ]
   },
   "core_definition": "这是为了保证补货业务的流畅，零售商和消费品制造商联合检查销售数据， 制定关于未来需求的计划和预测，在保证有货和减少缺货的情况下降低库存水 平。还可以进一步有消费品制造商管理零售商的存货和补货，以加快库存周转速 度，提高投资毛利率。",
   "when_to_use": {

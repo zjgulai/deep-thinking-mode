@@ -8,7 +8,12 @@
     "skill_name": "关键结果（key-results）",
     "source": "ref:100+思维模型合集 (模型思维):关键结果（Key results）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "定量描述，用于衡量目标的达成情况",
   "when_to_use": {

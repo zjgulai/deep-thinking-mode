@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "总被人说“你说话好伤人”？一个",
     "source": "总被人说_你说话好伤人__一个公式_让你的反馈不再得罪人 2.md",
-    "sourceTitle": "总被人说“你说话好伤人”？一个公式，让你的反馈不再得罪人"
+    "sourceTitle": "总被人说“你说话好伤人”？一个公式，让你的反馈不再得罪人",
+    "agent_roles": [
+      "decision_maker",
+      "pattern_recognizer",
+      "communicator"
+    ]
   },
   "core_definition": "不是因为内容不对，而是踩了同一条红线：对方听到的不是“你做了什么”，而是“你是一个什么样的人”",
   "when_to_use": {

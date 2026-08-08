@@ -8,7 +8,10 @@
     "skill_name": "检查原产品的合理性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):检查原产品的合理性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）为什么（Why）？  为什么采用这个技术参数？为什么不能有响声？为什么停用？为什么变成 红色：为什么要做成这个形状？为什么采用机器代替人力？为什么产品的制造要 经过这么多环节？为什么非做不可？  （2）做什么（What）？ \f ht",
   "when_to_use": {

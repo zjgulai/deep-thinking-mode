@@ -8,7 +8,10 @@
     "skill_name": "作用功能",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):作用功能",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "4.1. 作用  QFD 是把顾客或市场的要求转化为设计要求、零部件特性、工艺要求、生 产要求的多层次演绎分析......根据文献报道，运用 QFD 方法，产品开发周期可缩 短三分之一，成本可减少二分之一，质量大幅度提高，产量成倍增加。促使",
   "when_to_use": {

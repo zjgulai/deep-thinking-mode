@@ -13,7 +13,10 @@
     ],
     "skill_name": "信息过载时脑子乱_三种认知能力",
     "source": "信息过载时脑子乱_三种认知能力自检速查卡.md",
-    "sourceTitle": "信息过载时脑子乱_三种认知能力自检速查卡"
+    "sourceTitle": "信息过载时脑子乱_三种认知能力自检速查卡",
+    "agent_roles": [
+      "communicator"
+    ]
   },
   "core_definition": "花一上午刷资讯看报告，下午开会却说不清重点——不是你不够努力，是三种认知能力没有各司其职",
   "when_to_use": {

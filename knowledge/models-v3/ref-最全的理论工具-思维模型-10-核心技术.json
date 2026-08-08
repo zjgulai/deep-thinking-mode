@@ -8,7 +8,11 @@
     "skill_name": "核心技术",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):核心技术",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer",
+      "simplifier"
+    ]
   },
   "core_definition": "技术是华为核心竞争力的主要内容。在华为进入电信领域之前，国内通 信设备市场几乎完全为国外企业所垄断。其原因有两个:一个是技术领先，另一 \f http://wiki.mbalib.com/ 个是切入市场",
   "when_to_use": {

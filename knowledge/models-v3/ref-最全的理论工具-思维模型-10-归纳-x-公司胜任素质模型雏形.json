@@ -8,7 +8,13 @@
     "skill_name": "归纳-x-公司胜任素质模型雏形",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):归纳 X 公司胜任素质模型雏形",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer",
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "综合分析步骤 1～3 的成果．以简化、可操作性及与绩效相关性为原则使用德尔 斐专家调查法初步归纳出 X 公司素质模型构成及要素(表 2)： 素质构成 素质要素 知识与技能(A) 专业知识(A1) 、岗位工作流程与制度(A2)  、岗位业务操",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "超循环理论",
     "source": "ref:100+思维模型合集 (模型思维):超循环理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "1970 年,英国生物化学家艾根总结了大量的生物学实验事实提出了超循 环思想,并于 1971 年发表了《物质的自组织和生物大分子的进化》一文, 正式建立了超循环理论。超循环理论已成为系统学的一个组成部分,对 研究系统演化规律、系统自组织方式",
   "when_to_use": {

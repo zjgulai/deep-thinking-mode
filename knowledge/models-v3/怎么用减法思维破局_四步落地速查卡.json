@@ -13,7 +13,13 @@
     ],
     "skill_name": "怎么用减法思维破局_四步落地",
     "source": "怎么用减法思维破局_四步落地速查卡.md",
-    "sourceTitle": "怎么用减法思维破局_四步落地速查卡"
+    "sourceTitle": "怎么用减法思维破局_四步落地速查卡",
+    "agent_roles": [
+      "intent_clarifier",
+      "decision_maker",
+      "planner",
+      "prioritizer"
+    ]
   },
   "core_definition": "流程删减、功能断舍离、决策清空、沟通降噪，四大策略配通用四句提问",
   "when_to_use": {

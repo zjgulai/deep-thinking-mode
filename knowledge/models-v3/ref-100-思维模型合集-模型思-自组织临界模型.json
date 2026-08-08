@@ -8,7 +8,10 @@
     "skill_name": "自组织临界模型",
     "source": "ref:100+思维模型合集 (模型思维):自组织临界模型",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "开放系统,存在着能量的交换：它的能",
   "when_to_use": {

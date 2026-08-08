@@ -8,7 +8,10 @@
     "skill_name": "戴尔公司简介",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):戴尔公司简介",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "总部设在美国德克萨斯州奥斯汀的戴尔公司是全球领先的 IT 产品及服务 提供商。戴尔公司于 1984 年由迈克尔•戴尔创立。戴尔公司是全球 IT 界发展最 快的公司之一，1996 年开始通过网站 www.dell.com 采用直销手段销售戴",
   "when_to_use": {

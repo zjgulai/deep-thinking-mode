@@ -8,7 +8,12 @@
     "skill_name": "路径长度，指两个节点之间的最小距离",
     "source": "ref:100+思维模型合集 (模型思维):路径长度，指两个节点之间的最小距离（最小",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "度成反比。 例如：在航空公司的航线网络中，路径长度对应于人们从航线网络中 的某个城市到另一个城市所需的航班数量。如果要在两家航空公司之 间做出选择，在其他所有条件（即价格）都相同的情况下，旅客会更 喜欢平均路径长度更低的那家航空公司。  1",
   "when_to_use": {

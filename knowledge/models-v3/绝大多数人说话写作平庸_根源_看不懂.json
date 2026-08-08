@@ -6,7 +6,10 @@
     "category": "02",
     "tags": [],
     "skill_name": "绝大多数人说话写作平庸_根源_看不懂",
-    "source": "绝大多数人说话写作平庸_根源_看不懂语言里的_判断_.md"
+    "source": "绝大多数人说话写作平庸_根源_看不懂语言里的_判断_.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "，对一件事物做出肯定 / 否定断定，有真假对错之分，就是判断",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "在气象学中的应用",
     "source": "ref:100+思维模型合集 (模型思维):在气象学中的应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "天气预报逐日预报的可预报时限大约是两三周左右的时间。混沌理论 认为长期预报是不可能的。在近年的气象研究中,利用混沌进行中期预 报的研究。由于气候系统是非线性系统,其初值问题的数值解是不确定 的,研究气候状态的特征就要研究混沌态的特征,研究气",
   "when_to_use": {

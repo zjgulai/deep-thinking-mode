@@ -8,7 +8,11 @@
     "skill_name": "激进目标",
     "source": "ref:100+思维模型合集 (模型思维):激进目标",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "冷冰冰的机器，而应该是一个和世界相",
   "when_to_use": {

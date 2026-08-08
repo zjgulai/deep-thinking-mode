@@ -8,7 +8,10 @@
     "skill_name": "新进入者的威胁",
     "source": "ref:营销管理143个经典模型:新进入者的威胁",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "新进入者在给行业带来新生产能力、新资源的同时，将希望在已被现有企业瓜分完毕的市 场中赢得一席之地，这就有可能会与现有企业发生原材料与市场份额的竞争，最终导致行业中现 有企业盈利水平降低，严重的话还有可能危及这些企业的生存。竞争性进入威胁的",
   "when_to_use": {

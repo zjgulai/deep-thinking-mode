@@ -7,7 +7,10 @@
     "tags": [],
     "skill_name": "经验学习四步法",
     "source": "经验学习四步法_从经历中提炼能力（附复盘问题清单）.md",
-    "sourceTitle": "经验学习四步法：从经历中提炼能力（附复盘问题清单）"
+    "sourceTitle": "经验学习四步法：从经历中提炼能力（附复盘问题清单）",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "或哪个表情，让我产生了强烈的反应？",
   "when_to_use": {

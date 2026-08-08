@@ -8,7 +8,10 @@
     "skill_name": "问题可能被解决而一直存在",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):问题可能被解决而一直存在",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "组织参与者会习惯于特定的问题而放弃了解决它们的尝试，或者组织参与者 因为技术不清楚而不知道如何解决特定的问题。比如许多公司的 ERP、CRM 系 \f http://wiki.mbalib.com/ 统上马后，很多参与者特别是领导者由于习惯",
   "when_to_use": {

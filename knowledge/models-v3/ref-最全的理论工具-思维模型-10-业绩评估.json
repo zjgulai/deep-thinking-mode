@@ -8,7 +8,11 @@
     "skill_name": "业绩评估",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):业绩评估",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "比照已制定的标准，对每个基本流程的现有业绩进行评估，并且建立和实施 一系列措施，获取目标业绩水平，从而能够满足客户和竞争的需要。通过评估可 以帮助经营者清醒地认识到企业目前的经营状况，有利于企业不断改善经营方式 以提高企业的经营水平。包括",
   "when_to_use": {

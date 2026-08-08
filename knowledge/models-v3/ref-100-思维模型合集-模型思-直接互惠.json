@@ -8,7 +8,10 @@
     "skill_name": "直接互惠",
     "source": "ref:100+思维模型合集 (模型思维):直接互惠",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "通俗的解释就是“我给你挠挠背，你也给我挠挠背。”由直接互惠引起的 合作进化，需要参与者有能力识别出眼前的同伴，并回忆起之前与之 打交道的结果。也就是直接互惠有个前提，你需要一张脸或者一个标 签，让对方能够记住你。不然，我给你挠挠背，你不知道",
   "when_to_use": {

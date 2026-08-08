@@ -8,7 +8,10 @@
     "skill_name": "哲学",
     "source": "ref:100+思维模型合集 (模型思维):哲学",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）整体与部分 分形理论打破了整体与部分之间的隔膜，找到了部分过渡到整体的媒 介和桥梁即整体与部分之间的相似。从认识事物的途径或思考问题的 方法来看，分形论与系统论分别体现了从两个端点出发的思路。它们 之间的互补，恰好完整地、全面地体现了",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "需要根据学生涌现出来的优势智能有针对性的",
     "source": "ref:100+思维模型合集 (模型思维):需要根据学生涌现出来的优势智能有针对性的",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "systems_thinker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "性培养就像大树效应一样，所有的智能都要发展，其中优势智能培养 成一眼就能看到的“大树”，明显、突出、成材。",
   "when_to_use": {

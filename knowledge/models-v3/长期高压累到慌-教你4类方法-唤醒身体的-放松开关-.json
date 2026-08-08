@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "长期高压累到慌？教你4类方法，",
     "source": "长期高压累到慌_教你4类方法_唤醒身体的_放松开关_.md",
-    "sourceTitle": "长期高压累到慌？教你4类方法，唤醒身体的“放松开关”"
+    "sourceTitle": "长期高压累到慌？教你4类方法，唤醒身体的“放松开关”",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "核心是通过简单练习，唤醒身体的放松反应，让交感神经和副交感神经恢复平衡，学会主动从高压状态中抽离，找回身心松弛感",
   "when_to_use": {

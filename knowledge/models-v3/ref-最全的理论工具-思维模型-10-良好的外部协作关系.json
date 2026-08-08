@@ -8,7 +8,10 @@
     "skill_name": "良好的外部协作关系",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):良好的外部协作关系",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "理想的生产模式。一是因为它设置了一个最高标准，就是零库存",
   "when_to_use": {

@@ -8,7 +8,11 @@
     "skill_name": "系列变量因素法",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):系列变量因素法",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner"
+    ]
   },
   "core_definition": "根据企业经营的特点并按照影响消费者需求的诸因素，由粗到细地进行市场 细分。这种方法可使用目标市场更加明确而具体，有利于企业更好地制定相应的 市场营销策略。如自行车市场，可按地理位置（城市、郊区、农村、山区）、性 别（男、女）、年龄（儿童、",
   "when_to_use": {

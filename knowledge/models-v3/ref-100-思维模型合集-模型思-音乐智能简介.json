@@ -8,7 +8,10 @@
     "skill_name": "音乐智能简介",
     "source": "ref:100+思维模型合集 (模型思维):音乐智能简介",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人能够敏锐地感知音调、旋律、节奏、音色等能力",
   "when_to_use": {

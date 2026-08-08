@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "总是碰壁，该坚持还是放弃？两种",
     "source": "总是碰壁_该坚持还是放弃_两种模式_决定你的人生走向.md",
-    "sourceTitle": "总是碰壁，该坚持还是放弃？两种模式，决定你的人生走向"
+    "sourceTitle": "总是碰壁，该坚持还是放弃？两种模式，决定你的人生走向",
+    "agent_roles": [
+      "action_executor",
+      "pattern_recognizer",
+      "communicator"
+    ]
   },
   "core_definition": "模式A：负反馈 → 难受 → 行动停滞",
   "when_to_use": {

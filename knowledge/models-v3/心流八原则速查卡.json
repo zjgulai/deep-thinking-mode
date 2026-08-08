@@ -13,7 +13,13 @@
     ],
     "skill_name": "心流八原则",
     "source": "心流八原则速查卡.md",
-    "sourceTitle": "心流八原则速查卡"
+    "sourceTitle": "心流八原则速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "simplifier"
+    ]
   },
   "core_definition": "你有没有过这种体验：全身心投入一件事，回过神来发现几小时过去了，效率高得不可思议",
   "when_to_use": {

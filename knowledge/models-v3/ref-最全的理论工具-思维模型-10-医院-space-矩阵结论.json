@@ -8,7 +8,10 @@
     "skill_name": "医院-space-矩阵结论",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):医院 SPACE 矩阵结论",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "根据分析结果，医院总战略应该是采取进取型战略。行动评价为：  1) 医院应该进一步加强人才培养，加大教育经费投入力度，在充分做好留  住现有人才的基础上，多渠道引进高层次人才；  2) 表明医院在发展整体优势的同时，更要注重专科特色的发展",
   "when_to_use": {

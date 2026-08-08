@@ -8,7 +8,10 @@
     "skill_name": "命题",
     "source": "ref:100+思维模型合集 (模型思维):命题",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "文明古国”就是真命题。“中国不是文明古国”就是假",
   "when_to_use": {

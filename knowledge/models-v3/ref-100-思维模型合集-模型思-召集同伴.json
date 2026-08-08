@@ -8,7 +8,10 @@
     "skill_name": "召集同伴",
     "source": "ref:100+思维模型合集 (模型思维):召集同伴",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "持续过程。从现在开始,让改变发生",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "语言智能的培养",
     "source": "ref:100+思维模型合集 (模型思维):语言智能的培养",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "①最少掌握 2 种以上的语言，互联网支付公司 paypal 创业阶段在招聘 的时候，就要求最少掌握 3 门语言，并且数学成绩也要求非常好。 ②多写作，写作可以锻炼我们的语言组织能力。 ③多演讲和分享，演讲和分享可以锻炼我们口头传递思想和情感",
   "when_to_use": {

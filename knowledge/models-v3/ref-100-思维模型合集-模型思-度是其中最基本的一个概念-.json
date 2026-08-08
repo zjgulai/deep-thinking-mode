@@ -8,7 +8,11 @@
     "skill_name": "度是其中最基本的一个概念",
     "source": "ref:100+思维模型合集 (模型思维):度是其中最基本的一个概念。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "网络中存在节点，节点之间的连线表示连边。对于表示人和人之间朋 友关系的社交网络，每个点代表一个人，节点之间的连边表示朋友关 系。一个节点的度，就表示这个节点的连边数。在社交网络中，节点 的度表示一个人的朋友数目。 网络中不同节点的度可以完全",
   "when_to_use": {

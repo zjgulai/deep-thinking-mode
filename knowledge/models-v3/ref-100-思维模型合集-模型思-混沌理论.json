@@ -8,7 +8,11 @@
     "skill_name": "混沌理论",
     "source": "ref:100+思维模型合集 (模型思维):混沌理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "无序和混乱的状态。这些表面上看起来无规律、不可",
   "when_to_use": {

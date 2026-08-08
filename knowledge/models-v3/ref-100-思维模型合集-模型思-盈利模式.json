@@ -8,7 +8,11 @@
     "skill_name": "盈利模式",
     "source": "ref:100+思维模型合集 (模型思维):盈利模式",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "盈利模式包括收支来源和收支方式。需要回答四个问题，收入从哪来？ 成本向哪里支出？怎么收入？怎么支出？盈利模式包含了四定： 定向：价值的流向，就是收入从哪里来？成本支付到哪里？ 定性：收支是按照时间计价、还是按照使用量计价还是按照价值计价？",
   "when_to_use": {

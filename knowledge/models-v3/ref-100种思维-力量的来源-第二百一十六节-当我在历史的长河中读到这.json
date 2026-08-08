@@ -8,7 +8,10 @@
     "skill_name": "第二百一十六节。当我在历史的长河中读到这",
     "source": "ref:100种思维  力量的来源 (帕斯卡):第二百一十六节。当我在历史的长河中读到这",
     "sourceType": "book",
-    "sourceTitle": "100种思维  力量的来源 (帕斯卡)"
+    "sourceTitle": "100种思维  力量的来源 (帕斯卡)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "处在轮子的边缘，一个接近轮子的中心",
   "when_to_use": {

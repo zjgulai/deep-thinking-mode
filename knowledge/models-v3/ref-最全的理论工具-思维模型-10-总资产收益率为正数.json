@@ -8,7 +8,10 @@
     "skill_name": "总资产收益率为正数",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):总资产收益率为正数",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ 评分 +5 3. 1988 年年底大约有 17 亿美元的长期负债，股东权益为负数。预估 1990 年时 需要 3 亿以上的现金支付利息。两次巨额回购股票使得吉列报表所体现的杠杆比 率中的负",
   "when_to_use": {

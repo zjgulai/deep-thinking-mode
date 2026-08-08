@@ -8,7 +8,10 @@
     "skill_name": "供应链网络结构管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):供应链网络结构管理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "主要对供应链网络结构进行设计与管理，确定产品从供货点到需求点流动的 网络结构。EP．7 主要对市场总体需求情况进行评价，确定产品开发、引进、 生产、退出以及售后支持，该支持元素还包含对诸如产品路线、ABC 分类、物 料清单等的确定。在 E",
   "when_to_use": {

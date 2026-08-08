@@ -8,7 +8,10 @@
     "skill_name": "文件持续高效",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):文件持续高效",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "企业在对文件进行改进时，应广泛纳取各方面的成功做法与先进经验，在此 过程中应用为什么一为什么分析法，本着务实高效的原则来对文件进行修订与改 进，并且通过召开研讨会，上上下下反复探讨，多提为什么，以便保证文件的持 续高效性。",
   "when_to_use": {

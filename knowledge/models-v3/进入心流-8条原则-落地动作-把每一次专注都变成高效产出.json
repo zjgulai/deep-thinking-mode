@@ -7,7 +7,11 @@
     "tags": [],
     "skill_name": "进入心流",
     "source": "进入心流_8条原则_落地动作_把每一次专注都变成高效产出.md",
-    "sourceTitle": "进入心流：8条原则+落地动作，把每一次专注都变成高效产出"
+    "sourceTitle": "进入心流：8条原则+落地动作，把每一次专注都变成高效产出",
+    "agent_roles": [
+      "problem_framer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "是：专注是做事的手段，愉悦是过程的副产品，心流的本质是重建意识秩序，杜绝精神能量的无效耗散",
   "when_to_use": {

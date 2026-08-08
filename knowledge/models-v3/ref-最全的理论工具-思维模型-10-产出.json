@@ -8,7 +8,10 @@
     "skill_name": "产出",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):产出",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "项目“干了些什么”，即项目的建设内容或企业所投入",
   "when_to_use": {

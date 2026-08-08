@@ -8,7 +8,10 @@
     "skill_name": "成立岗位测评小组",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):成立岗位测评小组",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "。岗位测评小组成员必须符合以下要求：  (1)客观公正的品格。企业中大多数同事认为测评人员为人正直，能一贯公 正客观地处理问题。在测评时能尽可能摆脱部门利益、小团体利益和个人利益；  (2)熟悉岗位测",
   "when_to_use": {

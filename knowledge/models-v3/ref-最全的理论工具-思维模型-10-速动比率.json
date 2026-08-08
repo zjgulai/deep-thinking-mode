@@ -8,7 +8,10 @@
     "skill_name": "速动比率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):速动比率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "速动比率又称酸性测验比率，速动比率是流动比率的一种变形，是衡量企业 短期偿债能力的更为严格的测试比率，它是从流动资产中扣除存货部分再除以流 动负债的比值，一般认为，1：1 的速动比率被认为是合理的，如果速动比率偏 高，说明企业有足够的能力",
   "when_to_use": {

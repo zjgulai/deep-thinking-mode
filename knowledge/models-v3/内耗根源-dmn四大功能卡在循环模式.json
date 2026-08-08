@@ -10,7 +10,10 @@
     ],
     "skill_name": "内耗根源揭秘",
     "source": "内耗根源_DMN四大功能卡在循环模式.md",
-    "sourceTitle": "内耗根源：DMN四大功能卡在循环模式"
+    "sourceTitle": "内耗根源：DMN四大功能卡在循环模式",
+    "agent_roles": [
+      "cognitive_manager"
+    ]
   },
   "core_definition": "这个问题的根本原因是什么？内耗根源揭秘如何找到它？",
   "when_to_use": {

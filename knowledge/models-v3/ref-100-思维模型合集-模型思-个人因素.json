@@ -8,7 +8,11 @@
     "skill_name": "个人因素",
     "source": "ref:100+思维模型合集 (模型思维):个人因素",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "个体特征:高焦虑者容易从众、保持自身独特、强烈控制的欲望的人不 易从众。智力、创新性和适应性比较低的个体更容易从众;当个体具备 服从、驯服、顺从等特质时,会比那些具有攻击性、支配欲和不甘人后 的个体较易屈服于从众的压力; 自保意识:自我保护",
   "when_to_use": {

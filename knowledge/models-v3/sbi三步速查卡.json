@@ -13,7 +13,13 @@
     ],
     "skill_name": "sbi三步",
     "source": "SBI三步速查卡.md",
-    "sourceTitle": "SBI三步速查卡"
+    "sourceTitle": "SBI三步速查卡",
+    "agent_roles": [
+      "planner",
+      "prioritizer",
+      "action_executor",
+      "communicator"
+    ]
   },
   "core_definition": "明明想好好提建议，话一出口对方脸就沉了——不是你情商低，是缺一套安全表达的公式",
   "when_to_use": {

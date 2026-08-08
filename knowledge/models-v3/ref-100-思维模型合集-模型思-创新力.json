@@ -8,7 +8,10 @@
     "skill_name": "创新力",
     "source": "ref:100+思维模型合集 (模型思维):创新力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "数级进步。根据摩尔定律，电脑的计算能力每 18 个月",
   "when_to_use": {

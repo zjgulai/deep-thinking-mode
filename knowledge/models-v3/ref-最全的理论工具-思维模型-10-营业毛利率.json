@@ -8,7 +8,10 @@
     "skill_name": "营业毛利率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):营业毛利率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "营业毛利率是营业毛利额与营业净收入之间的比率。其计算公式如下：营业 毛利率=营业毛利额／营业净收入×100％。这个指标主要是反映构成主营业务的 商品生产、经营的获利能力。毛利是公司利润形成的基础。单位收入的毛利越高， 抵补各项支出的能力越",
   "when_to_use": {

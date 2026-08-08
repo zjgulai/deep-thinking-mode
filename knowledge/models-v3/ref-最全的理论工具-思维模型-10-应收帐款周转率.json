@@ -8,7 +8,10 @@
     "skill_name": "应收帐款周转率",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):应收帐款周转率",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "其计算公式为应收帐款周转率＝销售收入/（期初应收帐款＋期末应收帐款） *2＝销售收入/平均应收帐款，由于应收帐款是指未取得现金的销售收入，所以 用这一比率可以测知公司应收帐款金额是否合理以及收款效率高低。这一比率是 应收帐款每年的周转次数",
   "when_to_use": {

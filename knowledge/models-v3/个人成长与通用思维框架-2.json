@@ -7,7 +7,12 @@
     "tags": [],
     "skill_name": "个人成长与通用思维框架",
     "source": "个人成长与通用思维框架 2.md",
-    "sourceTitle": "个人成长与通用思维框架"
+    "sourceTitle": "个人成长与通用思维框架",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "如何有效完成这件事？个人成长与通用思维框架的操作路径是什么？",
   "when_to_use": {

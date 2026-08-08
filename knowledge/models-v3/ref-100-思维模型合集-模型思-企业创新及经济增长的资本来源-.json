@@ -8,7 +8,10 @@
     "skill_name": "企业创新及经济增长的资本来源",
     "source": "ref:100+思维模型合集 (模型思维):企业创新及经济增长的资本来源。",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "德鲁克提出的管理的三大任务；“5”是指德鲁克列举的管",
   "when_to_use": {

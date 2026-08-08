@@ -8,7 +8,11 @@
     "skill_name": "自然智能的培养",
     "source": "ref:100+思维模型合集 (模型思维):自然智能的培养",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "①多去博物馆认识更多的自然界生物。 ②多去动物园和植物园，了解它们的习性和历史。 ③多接触大自然、多观察和思考。  786 / 1937 \f④多去探险，探索未知的世界。",
   "when_to_use": {

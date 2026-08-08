@@ -8,7 +8,10 @@
     "skill_name": "会议记录之整理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):会议记录之整理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1） 记录作成后由圈长复读一次； （2） 分配工作； （3） 决定下次开会之预定时间； （4） 圈会后 2~3 天内应将会议记录交当天缺席之圈员阅读，如有任何意见可 补入。",
   "when_to_use": {

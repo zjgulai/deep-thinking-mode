@@ -8,7 +8,10 @@
     "skill_name": "讨论分享——联脑思辨",
     "source": "ref:100+思维模型合集 (模型思维):讨论分享——联脑思辨",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "新的“世界通用语”。广泛应用于多种学科",
   "when_to_use": {

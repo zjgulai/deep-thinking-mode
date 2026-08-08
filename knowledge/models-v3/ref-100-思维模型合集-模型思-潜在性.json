@@ -8,7 +8,10 @@
     "skill_name": "潜在性",
     "source": "ref:100+思维模型合集 (模型思维):潜在性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "量子系统和混沌系统是非线性的，量子系统通过量子跃迁发展进化， 通过试探二者的潜能从一个确定的状态跳跃的一种未知状态。在混沌 系统，任何一个微小的扰动都可能带来整个系统的巨大变革。这就是 著名的“蝴蝶效应”，北半球一只蝴蝶扇动一下翅膀，会引起",
   "when_to_use": {

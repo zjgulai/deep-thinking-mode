@@ -8,7 +8,10 @@
     "skill_name": "渠道分析概述",
     "source": "ref:11个分析模型:渠道分析概述",
     "sourceType": "book",
-    "sourceTitle": "11个分析模型"
+    "sourceTitle": "11个分析模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "用户在渠道完成的某个为企业带来收益的活动，例如，注册、购买、",
   "when_to_use": {

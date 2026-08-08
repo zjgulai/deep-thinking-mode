@@ -8,7 +8,10 @@
     "skill_name": "写作能力",
     "source": "ref:100+思维模型合集 (模型思维):写作能力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "写作对我们来说一点都不陌生，从小学一年级就开始学习写句子，到 步入职场，我们最少的也写了十多年。扪心自问，我对自己写的文章 满意吗？如果不满意，怎么提升我们的写作能力？好的文章要求有结 构、有逻辑、有修辞…这些都离不开思维，巨人们也早就为我",
   "when_to_use": {

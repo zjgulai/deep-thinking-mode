@@ -8,7 +8,10 @@
     "skill_name": "罗伯特·西蒙斯《战略实施中的绩效评估和控",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):罗伯特·西蒙斯《战略实施中的绩效评估和控",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "http://wiki.mbalib.com/ LIFO 管理系统 —美国应用最广、发展最早的行为风格行为  系统之一 \f http://wiki.mbalib.com/",
   "when_to_use": {

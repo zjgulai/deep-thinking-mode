@@ -8,7 +8,10 @@
     "skill_name": "安装条形码和-edi",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):安装条形码和 EDI",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "communicator"
+    ]
   },
   "core_definition": "零售商首先必须安装条形码（UPC 码）、POS 扫描和 EDI 等技术设备，以 加快 POS 机收款速度、获得更准确的销售数据并使信息沟通更加流畅。POS 扫 描用于数据输入和数据采集，即在收款检查时用光学方式阅读，任何将条形码转 换成相",
   "when_to_use": {

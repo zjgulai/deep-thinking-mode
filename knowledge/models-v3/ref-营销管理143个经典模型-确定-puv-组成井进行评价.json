@@ -8,7 +8,10 @@
     "skill_name": "确定-puv-组成井进行评价",
     "source": "ref:营销管理143个经典模型:确定 PUV 组成井进行评价",
     "sourceType": "book",
-    "sourceTitle": "营销管理143个经典模型"
+    "sourceTitle": "营销管理143个经典模型",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "128 \f PUV 可由影响顾客购买一种产品的主要因素构成(如质量、功能、外观、服务等)。首先必 须选定一定的顾客作为调查对象，然后设计调查表，通过各种询同的方式来了解顾客购买公司同 类产品主要依据的是哪些因素。  比如对一家厨具公司的组台",
   "when_to_use": {

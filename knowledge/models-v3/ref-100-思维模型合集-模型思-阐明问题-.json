@@ -8,7 +8,12 @@
     "skill_name": "阐明问题",
     "source": "ref:100+思维模型合集 (模型思维):阐明问题：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "decomposer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "，阐明问题需要描述为：在哪里？ 发生了什么事情？ 例如：在第一车间西门走廊 30 米处，发生有一名工人摔倒后手部受伤。  953 / 1937 \f3、分解问题： 有些问题可能比较大，需要把问题分解成小",
   "when_to_use": {

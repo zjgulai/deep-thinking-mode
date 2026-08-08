@@ -8,7 +8,12 @@
     "skill_name": "可控性",
     "source": "ref:100+思维模型合集 (模型思维):可控性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "error_handler",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在此一向度上,六因素中只有努力一项是可以凭个人意愿控制的,其他 各项均非个人所能为力。 无论是成功还是失败,一个人在分析其根由时,主要有三个维度与六个 因素。三维度与六因素的结合见下表:  374 / 1937 \f归因的偏差 归因误差有的来",
   "when_to_use": {

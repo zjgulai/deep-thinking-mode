@@ -8,7 +8,12 @@
     "skill_name": "观察性反思",
     "source": "ref:100+思维模型合集 (模型思维):观察性反思",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "进行“反思”，即人们对经验过程中的“知识碎片”进行回忆、筛选、整合、 分享等等。把“有限的经验”进行归类、条理化和记忆。  1432 / 1937 \f3. 抽象概念化，有一定理论知识背景和一定理论概括能力的人便会对 反思的结果从理论上进行系",
   "when_to_use": {

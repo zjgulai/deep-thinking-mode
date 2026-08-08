@@ -8,7 +8,10 @@
     "skill_name": "发挥员工的脑力，开发无限脑力资源",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):发挥员工的脑力，开发无限脑力资源。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "苏联一位学者做过一个形象的比喻：一个正常的人，如果发挥自身潜能的 一半，那么他将掌握 40 多种语言，学完几十门课程，可以将叠起来几个人厚的 全苏百科全书背得滚瓜烂熟。所以说员工的脑力资源是无限的。 \f http://wiki.mbali",
   "when_to_use": {

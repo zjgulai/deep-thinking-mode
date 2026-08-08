@@ -8,7 +8,11 @@
     "skill_name": "边缘竞争的-6-大特征",
     "source": "ref:100+思维模型合集 (模型思维):边缘竞争的 6 大特征",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "（1）不确定性。边缘竞争战略并不是预先设计好的，而且发展方向也 不能预先可知，对企业而言，过去的市场状况和未来的市场都非常重 要，但边缘竞争战略主要关心目前市场上发生的情况，并产生反应。 因而，对于不确定性的未来发展变化过程，那些精确的细节",
   "when_to_use": {

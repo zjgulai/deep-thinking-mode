@@ -8,7 +8,10 @@
     "skill_name": "内部环境分析",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):内部环境分析。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "在于了解公司的能力，藉以具体评估现行企业经营策略及预期引入 TPM 活动后 \f http://wiki.mbalib.com/ 所能达到的目标，有关分项可综列成以下各项。 (1)财务构面：  成本收益比。  利润对销售收入的比率。 ",
   "when_to_use": {

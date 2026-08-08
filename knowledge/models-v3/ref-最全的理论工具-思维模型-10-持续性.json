@@ -8,7 +8,10 @@
     "skill_name": "持续性",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):持续性",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "业推进 TPM 管理不是突击性的、临时性的工作，不可能一劳永逸，它是一项连 续 不断的、持久的、艰巨的管理活动，稍有松懈，就有可能崩跨，前功尽弃。 因此，推进 TPM 管理必须思想上重视，工作上狠抓，切实下大力量，常抓不懈， 才能推动企业管",
   "when_to_use": {

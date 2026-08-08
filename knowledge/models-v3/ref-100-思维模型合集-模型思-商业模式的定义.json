@@ -8,7 +8,12 @@
     "skill_name": "商业模式的定义",
     "source": "ref:100+思维模型合集 (模型思维):商业模式的定义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "北京大学汇丰商学院的教授魏炜和清华大学经管学院的朱武祥教授是 研究商业模式的权威，在国际上享有极高的声誉。他们给商业模式定 义为：商业模式是企业为了最大化价值而构建的从事业务活动的利益 相关者的交易结构。 企业的利益相关者包括外部利益相关者",
   "when_to_use": {

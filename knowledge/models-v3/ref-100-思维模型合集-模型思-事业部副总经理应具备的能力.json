@@ -8,7 +8,12 @@
     "skill_name": "事业部副总经理应具备的能力",
     "source": "ref:100+思维模型合集 (模型思维):事业部副总经理应具备的能力",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "1158 / 1937 \f（1）战略思维的能力 长期思维：事业部总经理必须执行长期战略，而副总经理要制定出与 长期战略相吻合的计划。 觉察最新发展动态：职能部门主管需要利用网络和其他工具了解那些 能让他们的部门保持或达到优势地位的新进展。",
   "when_to_use": {

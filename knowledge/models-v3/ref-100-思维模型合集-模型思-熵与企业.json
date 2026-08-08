@@ -8,7 +8,10 @@
     "skill_name": "熵与企业",
     "source": "ref:100+思维模型合集 (模型思维):熵与企业",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "系统，企业系统演化的主要矛盾就是管理熵增和管理熵",
   "when_to_use": {

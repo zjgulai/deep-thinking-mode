@@ -8,7 +8,10 @@
     "skill_name": "运输管理",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):运输管理",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor"
+    ]
   },
   "core_definition": "主要是解决供应链中各环节中的运输问题，规避风险，降低运输成本，提高 运输效率。例如在 ED．6 主要确定了配送流程中的运输方式，并且对配送流程 中的各类运输信息加以管理，包括车辆、路线、管制、税章／关税和逆向物流机 会以及承运人管理。",
   "when_to_use": {

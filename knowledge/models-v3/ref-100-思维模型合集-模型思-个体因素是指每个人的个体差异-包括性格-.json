@@ -8,7 +8,12 @@
     "skill_name": "个体因素是指每个人的个体差异，包括性格、",
     "source": "ref:100+思维模型合集 (模型思维):个体因素是指每个人的个体差异，包括性格、",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "意力、品质等。 米哈里认为拥要好奇心、耐心、专注力、创造力和活力的人更容易获 得心流体验，他们高频次地参加某项活动是出于内在动机（出于自我 实现的需求）  ，而不仅仅是为了某个结果。",
   "when_to_use": {

@@ -8,7 +8,12 @@
     "skill_name": "统计性",
     "source": "ref:100+思维模型合集 (模型思维):统计性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "intent_clarifier",
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "德尔菲法依据系统的程序，通过多轮次调查专家对问卷所提问题的看 法，经过反复征询、归纳、修改，并对诸多专家的回答必须进行统计 学处理，最后汇总成专家基本一致的看法。  231 / 1937 \f所以，应用德尔菲法所得的结果带有统计学的特征，往往",
   "when_to_use": {

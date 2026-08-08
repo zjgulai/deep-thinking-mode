@@ -8,7 +8,11 @@
     "skill_name": "社会管理（管理他人的情绪）",
     "source": "ref:100+思维模型合集 (模型思维):社会管理（管理他人的情绪）",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "能很好地理解别人和与人交往的能力",
   "when_to_use": {

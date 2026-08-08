@@ -8,7 +8,11 @@
     "skill_name": "可提高提案之件数",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):可提高提案之件数",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "该案对策执行之负责人，但并非一定要该担当者亲自去执行，而是指该",
   "when_to_use": {

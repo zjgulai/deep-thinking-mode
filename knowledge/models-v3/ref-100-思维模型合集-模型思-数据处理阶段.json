@@ -8,7 +8,11 @@
     "skill_name": "数据处理阶段",
     "source": "ref:100+思维模型合集 (模型思维):数据处理阶段",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "logical_analyzer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "在回收最后一轮的专家意见调查表后，预测组织者需要对预测结论进 行统计归纳分析，以取代专家意见的最终预测值和预测区间。 案例：新产品销量预测 某医疗设备公司研制出一种新兴产品，现在市场上还没有相似产品出 现，因此没有历史数据可以获得。公司需要",
   "when_to_use": {

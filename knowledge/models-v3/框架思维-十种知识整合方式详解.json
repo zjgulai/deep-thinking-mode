@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "框架思维-十种知识整合方式详解",
     "source": "框架思维_十种知识整合方式详解.md",
-    "sourceTitle": "框架思维：十种知识整合方式详解"
+    "sourceTitle": "框架思维：十种知识整合方式详解",
+    "agent_roles": [
+      "logical_analyzer",
+      "planner",
+      "action_executor",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "按照既定类别、层级与维度，对零散信息进行分类归纳，让信息逻辑更清晰、内容更规整，进而形成系统的信息体系",
   "when_to_use": {

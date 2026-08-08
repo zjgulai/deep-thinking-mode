@@ -8,7 +8,10 @@
     "skill_name": "海伊的“为什么”",
     "source": "ref:100+思维模型合集 (模型思维):海伊的“为什么”",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "非常重要的思维方式，是一种将复杂问题简",
   "when_to_use": {

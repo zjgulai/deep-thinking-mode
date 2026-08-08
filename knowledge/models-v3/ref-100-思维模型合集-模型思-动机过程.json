@@ -8,7 +8,11 @@
     "skill_name": "动机过程",
     "source": "ref:100+思维模型合集 (模型思维):动机过程",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "observer_reflector",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "与材料中榜样一模一样的行为并得到强化就是动机过程。 根据这一实验，班杜拉提出了观察学习的强化理论，他把强化分成以 下三类：",
   "when_to_use": {

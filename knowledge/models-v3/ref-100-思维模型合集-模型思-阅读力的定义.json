@@ -8,7 +8,11 @@
     "skill_name": "阅读力的定义",
     "source": "ref:100+思维模型合集 (模型思维):阅读力的定义",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "problem_framer",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "我们对一切视觉信息的处理能力。阅读的过程是注意、感",
   "when_to_use": {

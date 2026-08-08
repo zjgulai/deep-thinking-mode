@@ -8,7 +8,10 @@
     "skill_name": "罗伯特•卡普兰、大卫•诺顿",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):罗伯特•卡普兰、大卫•诺顿，",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "《战略地图：化无形资产为有形成果》，刘俊勇、孙薇译，广东经济出版  社，2005 年 \f http://wiki.mbalib.com/ 360 度绩效考核  —推进员工行为改变最有效的工具之一 \f http://wiki.mbalib.",
   "when_to_use": {

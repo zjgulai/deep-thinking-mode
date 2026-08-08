@@ -8,7 +8,13 @@
     "skill_name": "组织管理中应用",
     "source": "ref:100+思维模型合集 (模型思维):组织管理中应用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor",
+      "knowledge_synthesizer",
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "资 源，构建赋能型治理结构，实施管理模式变革与产业技术创新，使组 织具有更强的应对不确定性与共创商业生态系统价值的能力。 量子思维下，整个组织的驱动机制、能量来源来自于信念和使命，而 不是来自权威和控",
   "when_to_use": {

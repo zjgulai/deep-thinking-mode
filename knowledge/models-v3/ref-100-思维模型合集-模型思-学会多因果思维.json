@@ -8,7 +8,11 @@
     "skill_name": "学会多因果思维",
     "source": "ref:100+思维模型合集 (模型思维):学会多因果思维",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "causal_reasoner",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "蝴蝶效应告诉我们，在一个混沌的系统里，一个小小的扰动可能带来 一场巨大的风暴。复杂系统的因果关系多如牛毛且错综复杂，时常存 在着动态波动，像我们的人体系统、大脑系统、社会系统、经济系统、 股票系统、企业系统都属于复杂系统，如果用简单的线性因",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "在制定企业策略方面，一些权威们尤其是哈佛",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):在制定企业策略方面，一些权威们尤其是哈佛",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
   },
   "core_definition": "精炼了竞争战略的概念。他们强调这样一种观点，即最重要的事情事一个企  业相对于竞争对手所处的地位及采取的策略。 \f http://wiki.mbalib.com/  通用电气公司的经理和规划专家们开发了一些衡量竞争对手地位和绩效的 方法，",
   "when_to_use": {

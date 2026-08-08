@@ -8,7 +8,10 @@
     "skill_name": "分析意义",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):分析意义",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "planner"
+    ]
   },
   "core_definition": "PEST 分析主要分析宏观环境对企业的现实和潜在的影响，对于评价一些因素对企业战 略目标和战略制定的影响有深刻的意义。  不过，PEST 分析仅仅只提供了一个分析的框架，远不够完善，大量的指标必须具体到 环境中去才有意义，企业可根据自身的",
   "when_to_use": {

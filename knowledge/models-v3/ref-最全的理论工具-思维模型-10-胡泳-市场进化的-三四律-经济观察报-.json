@@ -8,7 +8,10 @@
     "skill_name": "胡泳．市场进化的“三四律”，经济观察报",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):胡泳．市场进化的“三四律”，经济观察报，",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "observer_reflector"
+    ]
   },
   "core_definition": "12 \f http://wiki.mbalib.com/ 7S 模型 --分析评价组织绩效与企业战略相适应的  有价值的工具 \f http://wiki.mbalib.com/",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "原理效能",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):原理效能",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "3.1. 作用原理  5S 的作用原理是通过提升人的品质来实现的，这些品质包括：革除马虎之 心，养成凡事认真的习惯(认认真真地对待工作中的每一件“小事”)、遵守规定 的习惯、自觉维护工作环境、整洁明了的良好习惯、文明礼貌的习惯。  从心理学",
   "when_to_use": {

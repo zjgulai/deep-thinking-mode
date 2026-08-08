@@ -8,7 +8,10 @@
     "skill_name": "特点",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):特点",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "PDCA 循环有如下四个特点：  1、周而复始  PDCA 循环的四个过程不是运行一次就完结，而是周而复始地进行。一个 循环结束了，解决了一部分问题，可能还有问题没有解决，或者又出现了新的问 题，再进行下一个 PDCA 循环，依此类推。",
   "when_to_use": {

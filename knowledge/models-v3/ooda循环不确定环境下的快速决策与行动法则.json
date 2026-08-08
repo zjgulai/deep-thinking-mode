@@ -11,7 +11,13 @@
     ],
     "skill_name": "ooda循环不确定环境下的快速",
     "source": "OODA循环不确定环境下的快速决策与行动法则.md",
-    "sourceTitle": "OODA循环不确定环境下的快速决策与行动法则"
+    "sourceTitle": "OODA循环不确定环境下的快速决策与行动法则",
+    "agent_roles": [
+      "decision_maker",
+      "prioritizer",
+      "action_executor",
+      "observer_reflector"
+    ]
   },
   "core_definition": "比对手更快完成“观察→定位→决策→行动”闭环，即可掌握主动权，打破对手节奏",
   "when_to_use": {

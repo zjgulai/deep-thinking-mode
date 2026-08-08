@@ -8,7 +8,11 @@
     "skill_name": "长尾理论",
     "source": "ref:100+思维模型合集 (模型思维):长尾理论",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "克里斯·安德森（Chris Aderson）的“长尾理论”即是幂律的口语化表达。 安德森系统研究了亚马逊、狂想曲公司、Blog、Google、eBay、Netflix 等互联网零售商的销售数据，并与沃尔玛等传统零售商的销售数据进 行了对比，",
   "when_to_use": {

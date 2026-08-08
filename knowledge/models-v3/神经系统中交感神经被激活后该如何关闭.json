@@ -6,7 +6,10 @@
     "category": "05",
     "tags": [],
     "skill_name": "神经系统中交感神经被激活后该如",
-    "source": "神经系统中交感神经被激活后该如何关闭.md"
+    "source": "神经系统中交感神经被激活后该如何关闭.md",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "神经系统中交感神经被激活后该如何关闭 ==================  原创 正方形SQUARE 2025-12-14 10:20 上海  > 原文地址: [https://mp.weixin.qq.com/s/0kXWYfDMAvZjPk3oejCdsQ](https://mp.weixin",
   "when_to_use": {

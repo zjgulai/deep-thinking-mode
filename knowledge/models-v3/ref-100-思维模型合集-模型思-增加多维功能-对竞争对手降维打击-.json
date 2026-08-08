@@ -8,7 +8,10 @@
     "skill_name": "增加多维功能，对竞争对手降维打击",
     "source": "ref:100+思维模型合集 (模型思维):增加多维功能，对竞争对手降维打击.",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "不断增加多维功能的产品，最开始仅仅是视频展",
   "when_to_use": {

@@ -7,7 +7,13 @@
     "tags": [],
     "skill_name": "思维拆解、注意力聚焦、按序执行",
     "source": "思维拆解_注意力聚焦_按序执行_一套完整的问题解决认知体系.md",
-    "sourceTitle": "思维拆解、注意力聚焦、按序执行：一套完整的问题解决认知体系"
+    "sourceTitle": "思维拆解、注意力聚焦、按序执行：一套完整的问题解决认知体系",
+    "agent_roles": [
+      "problem_framer",
+      "decision_maker",
+      "planner",
+      "decomposer"
+    ]
   },
   "core_definition": "这件事的本质是什么？思维拆解、注意力聚焦、按序执行如何定义它？",
   "when_to_use": {

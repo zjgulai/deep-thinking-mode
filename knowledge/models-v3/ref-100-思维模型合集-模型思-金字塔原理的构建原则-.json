@@ -8,7 +8,11 @@
     "skill_name": "金字塔原理的构建原则",
     "source": "ref:100+思维模型合集 (模型思维):金字塔原理的构建原则：",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer",
+      "communicator"
+    ]
   },
   "core_definition": "要构建一个逻辑思维金字塔，需要遵守四个原则，分别是 1）结论先行。 只有一个中心思想，要先提出来。 2）以上统下。 围绕一个中心思想，展开素材形成下级。上层对下层是总结概括，下 层及上层是解释说明，上下级内容是父子关系。  1547 / 1",
   "when_to_use": {

@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0-agent-chain",
+  "id": "cot-critic-verify",
+  "meta": {
+    "name": "CoT + Critic 验证链",
+    "description": "深度推理链（Chain of Thought）+ 批判者角色自我验证，用于高风险/高精度推理任务",
+    "agent_flow": "CoT-with-Critic",
+    "problem_types": ["复杂逻辑推理", "多步骤分析", "需要自我验证的结论", "容错率低的决策"],
+    "trigger_signals": [
+      "推理步骤多于3步，容易出现中间错误",
+      "结论需要高置信度，错误代价大",
+      "需要区分事实和推断"
+    ]
+  },
+
+  "phases": [
+    {
+      "phase": 1,
+      "name": "问题分解（Decompose）",
+      "model": "框架思维 / 结构化思维 / MECE",
+      "agent_role": "decomposer",
+      "system_prompt_key": "将问题分解为互斥完整的子问题。每个子问题必须：1) 独立可解 2) 有明确答案格式 3) 按依赖关系排序",
+      "input": "原始复杂问题",
+      "output": "子问题树：{子问题列表, 依赖关系, 求解顺序}",
+      "stop_condition": "所有子问题合起来完整覆盖原问题"
+    },
+    {
+      "phase": 2,
+      "name": "逐步推理（Chain-of-Thought）",
+      "model": "第一性原理 / 批判性思维 / 逻辑分析",
+      "agent_role": "logical_analyzer",
+      "system_prompt_key": "对每个子问题进行深度推理。每步必须：1) 声明使用的推理规则 2) 区分「事实」和「推断」3) 给出置信度（高/中/低）",
+      "input": "子问题 + 已知信息",
+      "output": "推理链：每步格式 = {规则, 应用, 结论, 置信度, 依赖假设}",
+      "stop_condition": "所有子问题有推理结论"
+    },
+    {
+      "phase": 3,
+      "name": "批判审查（Critic）",
+      "model": "批判性思维 / 第二层思维 / 假设审计",
+      "agent_role": "hypothesis_tester",
+      "system_prompt_key": "扮演严格的批判者，审查推理链。检查：1) 有没有逻辑跳跃？2) 关键假设是否成立？3) 有没有反例？4) 置信度低的步骤是否影响结论？",
+      "input": "Phase 2 的完整推理链",
+      "output": "批判报告：{发现的问题列表, 每个问题的严重程度, 修复建议}",
+      "stop_condition": "没有严重问题 OR 所有严重问题已标注"
+    },
+    {
+      "phase": 4,
+      "name": "修正推理（Revise）",
+      "model": "第一性原理 / 元认知",
+      "agent_role": "first_principles",
+      "system_prompt_key": "根据 Critic 的报告修正推理。对每个被标注的问题：1) 承认原推理的问题 2) 重新推导 3) 说明修正了什么",
+      "input": "Phase 2 推理链 + Phase 3 批判报告",
+      "output": "修正后的推理链（标注哪些步骤被修改）",
+      "stop_condition": "所有严重问题已被修复",
+      "loop_back_to": "phase_3（再次验证，最多2轮）"
+    },
+    {
+      "phase": 5,
+      "name": "验证综合（Verify & Synthesize）",
+      "model": "元认知 / 金字塔原理",
+      "agent_role": "observer_reflector",
+      "system_prompt_key": "综合验证后的推理链，输出最终结论。必须：1) 列出最终依赖的关键假设 2) 整体置信度评估 3) 结论的适用边界",
+      "input": "修正后的推理链",
+      "output": "最终结论：{核心答案, 关键假设, 整体置信度, 适用边界, 无效场景}",
+      "stop_condition": "输出完整"
+    }
+  ],
+
+  "codex_composite_prompt": "你现在运行「CoT + Critic 验证推理」模式，用于需要高精度的深度推理任务。\n\n## 推理格式规范\n每步推理必须标注：\n```\n[步骤N] 推理规则：...\n事实依据：...\n推导结论：...\n置信度：高/中/低\n关键假设：...\n```\n\n## Critic 审查清单\n推理完成后，从以下角度批判：\n- [ ] 有无逻辑跳跃（结论超出前提范围）\n- [ ] 有无循环论证（用结论支持前提）\n- [ ] 关键假设是否明确\n- [ ] 置信度低的步骤是否影响最终结论\n- [ ] 是否存在已知反例\n\n## 质量门禁\n**进入每步推理前**：声明本步使用的推理规则（演绎/归纳/类比/溯因）\n**完成全部推理后**：运行 Critic 检查，未通过则修正后重新提交\n**最终输出前**：整体置信度低于「高」时，必须说明哪些假设未被验证"
+}

@@ -8,7 +8,10 @@
     "skill_name": "第二部",
     "source": "ref:100种思维  力量的来源 (帕斯卡):第二部",
     "sourceType": "book",
-    "sourceTitle": "100种思维  力量的来源 (帕斯卡)"
+    "sourceTitle": "100种思维  力量的来源 (帕斯卡)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "常见的不幸；但若有意地说愚蠢的话就是",
   "when_to_use": {

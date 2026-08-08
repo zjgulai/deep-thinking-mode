@@ -8,7 +8,11 @@
     "skill_name": "做出选择而没有解决问题",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):做出选择而没有解决问题",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "decision_maker",
+      "action_executor"
+    ]
   },
   "core_definition": "比如做出如创立一个新部门，在高度的不确定性情况下，选择方案可能是不 正确的，还有的情况下，许多选择方案只是看起来要发生，但总是没有得到实施。",
   "when_to_use": {

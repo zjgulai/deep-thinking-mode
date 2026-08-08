@@ -8,7 +8,10 @@
     "skill_name": "复制过程",
     "source": "ref:100+思维模型合集 (模型思维):复制过程",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "别人怎么做，我也怎么做，就是学习别人的做法，",
   "when_to_use": {

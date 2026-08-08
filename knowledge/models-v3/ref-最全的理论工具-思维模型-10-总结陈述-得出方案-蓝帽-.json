@@ -8,7 +8,10 @@
     "skill_name": "总结陈述，得出方案（蓝帽）",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):总结陈述，得出方案（蓝帽）",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "用帽子来说明我们正在使用的思维类",
   "when_to_use": {

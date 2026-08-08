@@ -8,7 +8,11 @@
     "skill_name": "回报是营销的源泉",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):回报是营销的源泉",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier",
+      "planner"
+    ]
   },
   "core_definition": "由于营销目标必须注重产出，注重企业在营销活动中的回报，所以企业要满 \f http://wiki.mbalib.com/ 足客户需求，为客户提供价值，不能做无用的事情。一方面，回报是维持市场关 系的必要条件；另一方面，追求回报是营销发展的动",
   "when_to_use": {

@@ -8,7 +8,10 @@
     "skill_name": "使每一位员工事先明白关键绩效的标准",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):使每一位员工事先明白关键绩效的标准",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "prioritizer"
+    ]
   },
   "core_definition": "绩效的标准为每一位员工所认识、熟知和理解，从而更好 地达到评估的目的。因此，让员工事先都清楚地了解关键绩效的标准十分重要。",
   "when_to_use": {

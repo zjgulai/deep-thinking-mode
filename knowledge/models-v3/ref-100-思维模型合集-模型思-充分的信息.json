@@ -8,7 +8,12 @@
     "skill_name": "充分的信息",
     "source": "ref:100+思维模型合集 (模型思维):充分的信息",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "multi_perspective",
+      "decision_maker",
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "信息的获得要全方位多角度，如果能从多人多处多维度获得信息，肯 定比单人单维度获得信息更加的可靠。在搜集信息阶段，务必要克服“证 实偏差”造成的影响，就是只搜集利于某个结论的信息，对其它信息进 行选择性忽略。",
   "when_to_use": {

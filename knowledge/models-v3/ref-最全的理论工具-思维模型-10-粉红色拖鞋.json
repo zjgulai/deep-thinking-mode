@@ -8,7 +8,12 @@
     "skill_name": "粉红色拖鞋",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):粉红色拖鞋",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "action_executor",
+      "pattern_recognizer",
+      "cognitive_manager"
+    ]
   },
   "core_definition": "粉红色象征暖意和温柔，是种传统的女性色调，代表家庭、家庭气氛和舒适。 粉红色是温和的颜色，因此粉红色拖鞋的行动模式代表关心、同情、对人的感情 投以注意力，而且具有敏感性。  有些人善于体验情感，却不善于采取相应的行动。情感当然也有价值，但",
   "when_to_use": {

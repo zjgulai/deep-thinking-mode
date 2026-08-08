@@ -8,7 +8,10 @@
     "skill_name": "要选好-qc-小组组长",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):要选好 QC 小组组长。",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "人物，是 QC 小组的领导，是 QC 小组发挥作 用的重要保证。必须热心于全面质量管理工作，能够发挥抬头作用。要有丰富的 业务知识，发挥骨干作用。要具有一定的组织能力，把 QC 小组的活动开展起来。",
   "when_to_use": {

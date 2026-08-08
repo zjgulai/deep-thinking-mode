@@ -8,7 +8,10 @@
     "skill_name": "紧密联系顾客",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):紧密联系顾客",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "intent_clarifier"
+    ]
   },
   "core_definition": "企业必须通过某些有效的方式在业务、需求等方面与顾客建立关联，形成一 种互助、互求、互需的关系，把顾客与企业联系在一起，减少顾客的流失，以此 来提高顾客的忠诚度，赢得长期而稳定的市场。",
   "when_to_use": {

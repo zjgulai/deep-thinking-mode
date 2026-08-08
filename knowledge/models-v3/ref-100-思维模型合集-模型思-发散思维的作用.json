@@ -8,7 +8,10 @@
     "skill_name": "发散思维的作用",
     "source": "ref:100+思维模型合集 (模型思维):发散思维的作用",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "knowledge_synthesizer"
+    ]
   },
   "core_definition": "性和基础保障性作用。无限联想是人脑的基本工作原理，而 想象是创新活动的源泉，发散思维就是构建想象的通道。在创新思维 的众多技巧和方法中，发散思维是很多技巧和工具的基础。而发散思 维可以为随后的收敛思维",
   "when_to_use": {

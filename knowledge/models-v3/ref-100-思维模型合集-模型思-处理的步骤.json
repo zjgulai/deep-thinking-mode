@@ -8,7 +8,11 @@
     "skill_name": "处理的步骤",
     "source": "ref:100+思维模型合集 (模型思维):处理的步骤",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)"
+    "sourceTitle": "100+思维模型合集 (模型思维)",
+    "agent_roles": [
+      "planner",
+      "action_executor"
+    ]
   },
   "core_definition": "问题 1：是否可以付诸实施？ 如果你的回答是不可以：那么这就是一些不需要采取行动的任务。一  991 / 1937 \f般有三种情况： 垃圾：如果是些没用的事情，例如参加一个没有意义的会议，你考虑 后不参加，就把这条任务删除。 储备：例如你想",
   "when_to_use": {

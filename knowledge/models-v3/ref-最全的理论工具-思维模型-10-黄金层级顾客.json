@@ -8,7 +8,10 @@
     "skill_name": "黄金层级顾客",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):黄金层级顾客",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
+    "agent_roles": [
+      "pattern_recognizer"
+    ]
   },
   "core_definition": "如果顾客当前行为模式不发生改变的话，在将来会",
   "when_to_use": {
