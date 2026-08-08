@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "bayesian-updating",
+  "meta": {
+    "name": "贝叶斯更新：不确定性的科学语言",
+    "category": "06",
+    "tags": [
+      "概率论 / 认知科学"
+    ],
+    "source": "认知传统×AI推理迁移:概率论 / 认知科学:贝叶斯更新：不确定性的科学语言",
+    "sourceType": "cognitive_tradition",
+    "tradition": "概率论 / 认知科学"
+  },
+  "engine": {
+    "core_question": "用「先验×证据=后验」的框架管理不确定性：不是非黑即白，而是在每条新证据后更新置信度",
+    "trigger_signals": [
+      "面对不完整信息需要做决策",
+      "新证据出现后不知道如何调整之前的判断",
+      "需要区分「真正改变想法的证据」和「确认偏见的证据」"
+    ],
+    "stop_conditions": [
+      "已有完整信息的确定性场景",
+      "一次性决策无需更新"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "先验设定本身有偏见会导致更新方向错误",
+        "action": ""
+      },
+      {
+        "condition": "贝叶斯更新需要清晰的似然函数，实际情况往往模糊",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「贝叶斯更新」模式。不用数学公式——而是用「先验信念×新证据强度=更新后信念」的直觉框架，系统管理不确定性。\n\n【推理协议】\n1. 声明先验：对当前问题，我的初始判断是什么？置信度多少？（0-100%）\n2. 评估证据质量：新证据有多强？（决定性/支持性/弱相关/可能是噪音）\n3. 更新方向：这条证据支持还是反对我的先验？\n4. 更新幅度：根据证据质量，我应该更新多少置信度？\n   - 决定性证据：更新±40%\n   - 支持性证据：更新±15%\n   - 弱相关：更新±5%\n   - 可能噪音：不更新\n5. 记录更新历史：保持「判断演变链」，追踪哪条证据改变了什么\n\n【质量门禁】如果新证据总是「巧合地」支持你的先验——这是确认偏见在运作，需要主动寻找反证。\n\n【输出格式】先验置信度 | 新证据评级 | 更新后置信度 | 判断演变链",
+    "activation_phrase": "请用「贝叶斯更新：不确定性的科学语言」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

@@ -87,10 +87,32 @@ const agentCards=AGENT_FLOWS.map(f=>{
 
 const agentSection=`<div class="agent-flow-section"><div class="agent-flow-title">🤖 按 AI Agent 推理流程查找</div><div class="agent-flow-grid">${agentCards}</div></div>`;
 
+// Curated Collections
+const CURATED_PATH = join(ROOT, "knowledge", "curated-collections.json");
+let curatedSection = "";
+if (existsSync(CURATED_PATH)) {
+  const curated = JSON.parse(readFileSync(CURATED_PATH, "utf8"));
+  // Build a lookup: keyword → model (from models array)
+  const modelByKeyword = {};
+  for (const m of models) {
+    const kws = (m.codex?.activation_phrase || m.engine?.core_question || "").toLowerCase();
+    const name = (m.meta?.name || m.id || "").toLowerCase();
+    modelByKeyword[name] = m;
+  }
+  const colCards = Object.entries(curated).map(([key, col]) => {
+    const modelLinks = (col.models || []).map(item => {
+      const label = item.name || item;
+      return `<span class="curated-item">${esc(label)}</span>`;
+    }).join("");
+    return `<div class="curated-card"><div class="curated-icon">${col.title?.match(/^[\u{1F300}-\u{1FFFF}\u{2600}-\u{27FF}]/u)?.[0]||"✦"}</div><div class="curated-title">${esc(col.title||"")}</div><div class="curated-desc">${esc(col.desc||"")}</div><div class="curated-items">${modelLinks}</div></div>`;
+  }).join("");
+  curatedSection = `<div class="curated-section"><div class="curated-section-title">✦ 精选集 · 按场景直取精华</div><div class="curated-grid">${colCards}</div></div>`;
+}
+
 // Index
 let cards="";for(const ch of chapters){const n=(byCh[ch.id]||[]).length;cards+=`<a href="chapters/ch${ch.id}-${ch.slug}.html" class="ch-card"><div class="ch-num">Ch.${ch.id}</div><h3>${ch.title}</h3><div class="desc">${ch.description}</div><span class="cnt">${n}个</span></a>`;}
 const total=chapters.reduce((s,ch)=>s+(byCh[ch.id]||[]).length,0);
-writeFileSync(join(OUT,"index.html"),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>系统化思维 — ${total}个模型</title><link rel="stylesheet" href="style.css"></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><main id="main" class="with-sidebar"><div class="hero"><h1>把复杂问题，看成可以理解、选择与行动的系统</h1><p style="color:var(--m);max-width:560px;margin:8px auto 0">${chapters.length}章 · ${total}个推理引擎 · 每个含Codex可执行协议</p></div>${agentSection}<div class="ch-grid">${cards}</div></main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");
+writeFileSync(join(OUT,"index.html"),`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>系统化思维 — ${total}个模型</title><link rel="stylesheet" href="style.css"><style>.curated-section{padding:0 24px 32px;max-width:1100px;margin:0 auto}.curated-section-title{font-size:.75rem;font-weight:700;letter-spacing:.08em;color:var(--a);text-transform:uppercase;margin-bottom:16px}.curated-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}.curated-card{background:var(--s);border:1px solid var(--h);border-radius:10px;padding:18px;transition:border-color .15s}.curated-card:hover{border-color:var(--a)}.curated-icon{font-size:1.4rem;margin-bottom:6px}.curated-title{font-size:.9rem;font-weight:700;color:var(--t);margin-bottom:4px}.curated-desc{font-size:.72rem;color:var(--m);line-height:1.4;margin-bottom:10px}.curated-items{display:flex;flex-wrap:wrap;gap:4px}.curated-item{font-size:.62rem;padding:2px 7px;border-radius:999px;background:rgba(144,88,49,.07);color:var(--a);white-space:nowrap}</style></head><body><a href="#main" class="skip-link">跳至正文</a><header><span class="logo"><a href="index.html" style="color:var(--t);text-decoration:none">系统化思维</a></span><nav><a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></nav></header><main id="main" class="with-sidebar"><div class="hero"><h1>把复杂问题，看成可以理解、选择与行动的系统</h1><p style="color:var(--m);max-width:560px;margin:8px auto 0">${chapters.length}章 · ${total}个推理引擎 · 每个含Codex可执行协议</p></div>${curatedSection}${agentSection}<div class="ch-grid">${cards}</div></main><footer><p><strong>系统化思维</strong> &copy; 2026 · <a href="https://github.com/zjgulai/deep-thinking-mode">GitHub</a></p></footer></body></html>`,"utf8");
 console.log(`✓ index.html`);
 
 // Chapters

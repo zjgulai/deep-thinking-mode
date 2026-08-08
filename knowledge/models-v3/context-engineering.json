@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "context-engineering",
+  "meta": {
+    "name": "上下文工程（Context Engineering）",
+    "category": "04",
+    "tags": [
+      "AI工程科学"
+    ],
+    "source": "认知传统×AI推理迁移:AI工程科学:上下文工程（Context Engineering）",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI工程科学"
+  },
+  "engine": {
+    "core_question": "在有限的context window里放入最高价值信息的系统方法：信息密度×状态管理×分块策略",
+    "trigger_signals": [
+      "AI随着对话变长开始「遗忘」早期重要信息",
+      "复杂任务的prompt已经很长但效果还不理想",
+      "需要设计多轮对话系统，保持AI的「工作记忆」"
+    ],
+    "stop_conditions": [
+      "单次简单对话",
+      "无状态的一次性任务"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "过度压缩上下文会丢失关键细节",
+        "action": ""
+      },
+      {
+        "condition": "信息密度太高反而触发认知过载",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「上下文工程」模式。任务是设计和优化传递给AI的信息结构，让有限的context window发挥最大价值。\n\n【推理协议】\n1. 信息价值评估：对所有候选信息按「相关性×不可替代性」打分，只保留高分项\n2. 分层存储设计：System Prompt放稳定规则/角色定义；User Message放动态任务；工具结果放执行证据\n3. 状态压缩：将历史对话压缩为「关键决策+当前状态+待解决问题」三要素\n4. 渐进式展开：不要一次性塞入所有信息，按推理需要逐步引入\n\n【质量门禁】每增加一段信息前自问：如果删掉这段，AI的推理质量会显著下降吗？如果不会，删掉它。\n\n【输出格式】信息优先级矩阵 | 推荐的分层结构 | 压缩后的状态摘要 | 渐进式展开计划",
+    "activation_phrase": "请用「上下文工程（Context E」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

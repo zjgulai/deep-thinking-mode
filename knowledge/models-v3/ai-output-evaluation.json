@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "ai-output-evaluation",
+  "meta": {
+    "name": "AI输出质量评估框架",
+    "category": "04",
+    "tags": [
+      "AI科学 / RLHF研究"
+    ],
+    "source": "认知传统×AI推理迁移:AI科学 / RLHF研究:AI输出质量评估框架",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI科学 / RLHF研究"
+  },
+  "engine": {
+    "core_question": "系统化评估AI输出质量的五维框架：准确性/推理完整性/幻觉风险/实用性/一致性",
+    "trigger_signals": [
+      "收到AI输出但不确定是否可以直接使用",
+      "AI给出的结论感觉「对」但难以验证",
+      "需要比较多个AI回答的质量"
+    ],
+    "stop_conditions": [
+      "纯创意输出不需要事实核查",
+      "已有明确评估标准的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "过度追求完美会导致决策瘫痪",
+        "action": ""
+      },
+      {
+        "condition": "某些高质量输出可能在某些维度刻意留白",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「AI输出质量评估」模式。对AI的回答进行系统性的五维质量审查，而非凭感觉判断。\n\n【推理协议】\n1. 准确性检验：核心事实是否可验证？有没有明显的错误？\n2. 推理完整性：逻辑链是否完整？有没有跳跃？中间步骤是否显式？\n3. 幻觉风险：有没有过于具体的数字/引用/案例但来源不明？这是高风险信号\n4. 实用性评估：这个回答能直接指导行动吗？还是停留在原则层面？\n5. 一致性测试：如果换一种问法，答案是否保持一致？不一致说明推理不稳健\n\n输出质量等级：\nA：可直接使用 | B：需要验证关键数据后使用 | C：需要大幅修改 | D：重新问\n\n【质量门禁】不能因为回答「读起来很流畅」就给高分——流畅是幻觉的伪装，质量在于逻辑和可验证性。\n\n【输出格式】五维评分（1-5）→ 最大风险点 → 建议使用等级（A/B/C/D）→ 如何改善",
+    "activation_phrase": "请用「AI输出质量评估框架」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

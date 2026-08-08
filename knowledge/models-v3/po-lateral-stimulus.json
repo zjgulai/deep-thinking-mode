@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "po-lateral-stimulus",
+  "meta": {
+    "name": "PO随机激发（横向思维操作）",
+    "category": "03",
+    "tags": [
+      "横向思维 / 德波诺创意方法"
+    ],
+    "source": "认知传统×AI推理迁移:横向思维 / 德波诺创意方法:PO随机激发（横向思维操作）",
+    "sourceType": "cognitive_tradition",
+    "tradition": "横向思维 / 德波诺创意方法"
+  },
+  "engine": {
+    "core_question": "用一个随机词/概念强制与问题建立联系，打破惯性思维路径，激活完全意想不到的解决方案",
+    "trigger_signals": [
+      "所有常规方案都已尝试，需要跳出惯性",
+      "团队创意枯竭，总在同一个框架内打转",
+      "需要颠覆式创新而非渐进改良"
+    ],
+    "stop_conditions": [
+      "已有清晰解决路径的技术问题",
+      "时间紧急无法探索"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "强行联系会产生大量无价值的随机想法",
+        "action": ""
+      },
+      {
+        "condition": "需要对随机联系进行过滤和提炼",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「PO随机激发」横向思维模式。用一个随机输入强制创建与目标问题的连接，突破「最可能的答案」偏见。\n\n【推理协议】\n1. 明确问题核心：用一句话描述你想解决的核心问题\n2. 选择随机刺激：从以下来源随机选一个词/概念：[日历上今天的日期对应的词] 或 [打开一本书随机翻到一页的第一个名词]\n3. 强制联系：「如果把随机词的特性强行用到问题上，会是什么？」（不允许说「没有关联」）\n4. 提炼价值：从强制联系中，哪些方向有实际价值？即使很荒谬，能否提炼出有用的内核？\n5. 系统化：将有价值的方向转化为具体可执行的概念\n\nPO（Provocative Operation）原则：「PO X」= 「暂时假设X成立，看看它通向哪里」\n\n【质量门禁】不能说「这个联系太牵强了」——PO方法的价值就在于牵强联系，因为最有创意的解决方案往往来自不可能的联系。\n\n【输出格式】随机刺激词 | 强制联系（至少5个）| 提炼的有价值方向 | 可执行概念",
+    "activation_phrase": "请用「PO随机激发（横向思维操作）」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

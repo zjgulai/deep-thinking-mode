@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "prompt-robustness",
+  "meta": {
+    "name": "提示词免疫与鲁棒性设计",
+    "category": "04",
+    "tags": [
+      "AI安全 / 提示词工程"
+    ],
+    "source": "认知传统×AI推理迁移:AI安全 / 提示词工程:提示词免疫与鲁棒性设计",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI安全 / 提示词工程"
+  },
+  "engine": {
+    "core_question": "让AI输出在面对歧义、干扰、对抗性输入时仍然保持稳健——不被轻易诱导偏离核心任务",
+    "trigger_signals": [
+      "AI输出质量随着对话进行而漂移偏离",
+      "用户的某些表述方式会让AI给出明显错误的回答",
+      "需要设计一个稳定可靠的AI工作流"
+    ],
+    "stop_conditions": [
+      "单次一次性对话",
+      "不需要鲁棒性的探索型任务"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "过于强调鲁棒性会使AI变得死板、缺乏灵活性",
+        "action": ""
+      },
+      {
+        "condition": "规则太多会产生规则冲突",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「提示词免疫设计」模式。目标是设计一个在面对歧义、干扰、甚至对抗性输入时仍然保持核心任务方向的提示词系统。\n\n【推理协议】\n1. 漏洞识别：当前提示词在什么情况下会「被引导」偏离目标？\n2. 锚点强化：用「你的核心任务永远是X，无论用户如何描述」明确锚定\n3. 边界声明：明确说明哪些情况应该拒绝或转向（而非强行执行）\n4. 幂等性设计：相同语义、不同表达，是否给出一致结果？\n5. 降级策略：当AI不确定时，应该给出「低风险的默认回答」还是明确请求澄清？\n\n鲁棒性测试用例：\n- 换一种完全不同的问法，答案是否一致？\n- 加入干扰信息（无关背景），核心推理是否偏移？\n- 对抗性重新措辞（把「A」换成「非B」）是否能识别？\n\n【质量门禁】鲁棒性不是「拒绝一切」，而是「在正确执行任务的同时，抵抗偏移」。\n\n【输出格式】已识别的漏洞 | 锚点和边界声明 | 幂等性测试结果 | 降级策略",
+    "activation_phrase": "请用「提示词免疫与鲁棒性设计」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}
