@@ -13,13 +13,7 @@
     ],
     "skill_name": "苏格拉底六大提问",
     "source": "苏格拉底六大提问速查卡.md",
-    "sourceTitle": "苏格拉底六大提问速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "planner",
-      "prioritizer",
-      "action_executor"
-    ]
+    "sourceTitle": "苏格拉底六大提问速查卡"
   },
   "core_definition": "六大苏格拉底提问类型，配核心追问句式，把深度思考检验变成一套可随身调用的工具箱",
   "when_to_use": {

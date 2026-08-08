@@ -6,12 +6,7 @@
     "category": "00",
     "tags": [],
     "skill_name": "容错率-#系统思维-#心理弹性-#压",
-    "source": "容错率自检卡.md",
-    "agent_roles": [
-      "systems_thinker",
-      "observer_reflector",
-      "error_handler"
-    ]
+    "source": "容错率自检卡.md"
   },
   "core_definition": "容错率自检卡 \\* { margin: 0; padding: 0; outline: 0; } body { font-family: \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", \"H",
   "when_to_use": {

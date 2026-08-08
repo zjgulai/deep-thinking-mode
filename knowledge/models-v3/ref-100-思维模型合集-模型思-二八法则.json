@@ -8,11 +8,7 @@
     "skill_name": "二八法则",
     "source": "ref:100+思维模型合集 (模型思维):二八法则",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)",
-    "agent_roles": [
-      "prioritizer",
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "100+思维模型合集 (模型思维)"
   },
   "core_definition": "19 世纪意大利经济学家帕雷托（VilfredoPareto）研究了个人收入的统 计分布，发现少数人的收入要远多于大多数人的收入，提出了著名的 80/20 法则，即 20%的人口占据了 80%的社会财富。",
   "when_to_use": {

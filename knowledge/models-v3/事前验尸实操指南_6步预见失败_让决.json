@@ -6,13 +6,7 @@
     "category": "08",
     "tags": [],
     "skill_name": "事前验尸实操指南_6步预见失败_让决",
-    "source": "事前验尸实操指南_6步预见失败_让决策更稳妥.md",
-    "agent_roles": [
-      "prioritizer",
-      "action_executor",
-      "error_handler",
-      "simplifier"
-    ]
+    "source": "事前验尸实操指南_6步预见失败_让决策更稳妥.md"
   },
   "core_definition": "核心是在行动开始前，主动模拟失败、回溯死因、提前设防，用理性预判规避大概率翻车问题",
   "when_to_use": {

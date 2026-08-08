@@ -7,12 +7,7 @@
     "tags": [],
     "skill_name": "问题重构五层速查手册",
     "source": "问题重构五层速查手册_现象层_直接原因层_假设框架层_系统关系层_价值身份层.md",
-    "sourceTitle": "问题重构五层速查手册：现象层→直接原因层→假设框架层→系统关系层→价值身份层",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "action_executor"
-    ]
+    "sourceTitle": "问题重构五层速查手册：现象层→直接原因层→假设框架层→系统关系层→价值身份层"
   },
   "core_definition": "很简单：不局限于当下的操作细节和表层矛盾，主动将问题拉升到更高的抽象层级、更大的系统边界、更深的价值观维度重新定义",
   "when_to_use": {

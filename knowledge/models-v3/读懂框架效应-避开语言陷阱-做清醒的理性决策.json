@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "读懂框架效应",
     "source": "读懂框架效应_避开语言陷阱_做清醒的理性决策.md",
-    "sourceTitle": "读懂框架效应：避开语言陷阱，做清醒的理性决策",
-    "agent_roles": [
-      "problem_framer",
-      "decision_maker",
-      "error_handler",
-      "cognitive_manager"
-    ]
+    "sourceTitle": "读懂框架效应：避开语言陷阱，做清醒的理性决策"
   },
   "core_definition": "一场认知光影游戏：客观事实从未改变，只是描述的光线不同，最终呈现的认知轮廓截然不同",
   "when_to_use": {

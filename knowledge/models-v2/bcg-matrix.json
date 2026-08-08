@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "bcg-matrix",
+  "meta": {
+    "name": "BCG「波士顿矩阵」战略分类",
+    "category": "06",
+    "tags": [
+      "顾问方法论 / BCG咨询"
+    ],
+    "source": "认知传统×AI推理迁移:顾问方法论 / BCG咨询:BCG「波士顿矩阵」战略分类",
+    "sourceType": "cognitive_tradition",
+    "tradition": "顾问方法论 / BCG咨询",
+    "ai_activation_mechanism": "强制AI在做资源分配前先做战略分类，避免对所有项目一视同仁"
+  },
+  "engine": {
+    "core_question": "用市场增长率和相对市场份额两个维度分类业务为四象限，不同象限对应不同战略",
+    "trigger_signals": [
+      "需要在多个业务/项目/产品间分配资源",
+      "需要判断哪些投资该加码哪些该放弃",
+      "资源有限必须做取舍"
+    ],
+    "stop_conditions": [
+      "单一业务场景",
+      "无需资源分配的纯分析场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "两个维度可能无法捕捉全部战略价值",
+        "action": ""
+      },
+      {
+        "condition": "静态快照无法反映动态变化",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「BCG波士顿矩阵战略分类」模式。在分配资源/优先级前，先根据两个关键维度对所有选项进行系统性分类。\n\n【推理协议】\n1. 定义两个维度：市场/机会的吸引力（高/低）× 当前竞争力/优势（强/弱）\n2. 分类定位：将所有项目定位到四个象限\n   - 明星（高吸引力×强竞争力）：加大投入\n   - 问题（高吸引力×弱竞争力）：有选择地投入\n   - 现金牛（低吸引力×强竞争力）：维持，提取现金\n   - 瘦狗（低吸引力×弱竞争力）：退出或收缩\n3. 验证分类：为什么这样分类？关键假设是什么？\n4. 资源分配策略：根据象限提出建议\n\n【质量门禁】分类必须有理由，不能仅凭「感觉」。\n\n【输出格式】各项目的象限定位 | 分类依据 | 各象限的战略含义 | 资源分配建议",
+    "activation_phrase": "请用「BCG「波士顿矩阵」战略分类」模式分析：",
+    "agent_role": "decision_maker",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

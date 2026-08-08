@@ -13,12 +13,7 @@
     ],
     "skill_name": "7种提问方法",
     "source": "7种提问方法速查卡.md",
-    "sourceTitle": "7种提问方法速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "decision_maker",
-      "communicator"
-    ]
+    "sourceTitle": "7种提问方法速查卡"
   },
   "core_definition": "遇到问题卡壳时，你第一反应是直接找答案，还是先问自己几个好问题",
   "when_to_use": {

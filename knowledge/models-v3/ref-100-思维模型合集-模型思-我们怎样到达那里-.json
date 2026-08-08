@@ -8,10 +8,7 @@
     "skill_name": "我们怎样到达那里",
     "source": "ref:100+思维模型合集 (模型思维):我们怎样到达那里？",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "100+思维模型合集 (模型思维)"
   },
   "core_definition": "发挥企业内部优势而利用企业外部机会的战略",
   "when_to_use": {

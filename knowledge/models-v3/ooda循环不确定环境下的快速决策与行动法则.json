@@ -11,13 +11,7 @@
     ],
     "skill_name": "ooda循环不确定环境下的快速",
     "source": "OODA循环不确定环境下的快速决策与行动法则.md",
-    "sourceTitle": "OODA循环不确定环境下的快速决策与行动法则",
-    "agent_roles": [
-      "decision_maker",
-      "prioritizer",
-      "action_executor",
-      "observer_reflector"
-    ]
+    "sourceTitle": "OODA循环不确定环境下的快速决策与行动法则"
   },
   "core_definition": "比对手更快完成“观察→定位→决策→行动”闭环，即可掌握主动权，打破对手节奏",
   "when_to_use": {
@@ -26,8 +20,8 @@
       "15分钟观察内外部状态，用工具记录关键信息。"
     ],
     "anti_triggers": [
-      "反馈-调整”，持续校准行动方向。",
-      "15分钟观察内外部状态，用工具记录关键信息。"
+      "不是知识，而是串联知识、梳理思路的「思考框架」",
+      "不是装知识的盒子，而是一套动态的信息处理规则，能帮你把零散的知识点串联起来，真正做到学以致用"
     ]
   },
   "before_after": {

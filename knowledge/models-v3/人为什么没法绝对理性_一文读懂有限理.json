@@ -6,10 +6,7 @@
     "category": "09",
     "tags": [],
     "skill_name": "人为什么没法绝对理性_一文读懂有限理",
-    "source": "人为什么没法绝对理性_一文读懂有限理性.md",
-    "agent_roles": [
-      "pattern_recognizer"
-    ]
+    "source": "人为什么没法绝对理性_一文读懂有限理性.md"
   },
   "core_definition": "很简单：现实规律稳定，知名度高的城市往往人口更多，靠“认不认识”这一个简单线索，比复杂数据分析更高效、更省脑力",
   "when_to_use": {

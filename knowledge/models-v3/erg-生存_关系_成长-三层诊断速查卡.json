@@ -13,10 +13,7 @@
     ],
     "skill_name": "erg（生存_关系_成长）三层诊断",
     "source": "ERG（生存_关系_成长）三层诊断速查卡.md",
-    "sourceTitle": "ERG（生存_关系_成长）三层诊断速查卡",
-    "agent_roles": [
-      "intent_clarifier"
-    ]
+    "sourceTitle": "ERG（生存_关系_成长）三层诊断速查卡"
   },
   "core_definition": "ERG 即生存、关系、成长三层需求的英文首字母缩写 你有没有过这种体验：工作顺利时觉得钱多钱少无所谓，能成长就行",
   "when_to_use": {

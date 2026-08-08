@@ -13,13 +13,7 @@
     ],
     "skill_name": "动态预测四方法",
     "source": "动态预测四方法速查卡.md",
-    "sourceTitle": "动态预测四方法速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "动态预测四方法速查卡"
   },
   "core_definition": "别再用线性思维预测未来了",
   "when_to_use": {

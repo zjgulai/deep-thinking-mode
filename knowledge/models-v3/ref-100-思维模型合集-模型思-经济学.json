@@ -8,11 +8,7 @@
     "skill_name": "经济学",
     "source": "ref:100+思维模型合集 (模型思维):经济学",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)",
-    "agent_roles": [
-      "knowledge_synthesizer",
-      "pattern_recognizer"
-    ]
+    "sourceTitle": "100+思维模型合集 (模型思维)"
   },
   "core_definition": "股票价格变动图因价格涨落得非常厉害，而且完全是随机的，因此使 人感到几乎无规律可循。但若从统计学观点解析这一变动，就会发现 有很好的规律。Mandelbrot 发现下面两个法则：  533 / 1937 \f⑴每个单位时间内的股票价格变动分布",
   "when_to_use": {

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "role-prompting",
+  "meta": {
+    "name": "角色注入推理激活",
+    "category": "04",
+    "tags": [
+      "AI认知科学 / 论文"
+    ],
+    "source": "认知传统×AI推理迁移:AI认知科学 / 论文:角色注入推理激活",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI认知科学 / 论文",
+    "ai_activation_mechanism": "具体专家角色激活模型中与该专家相关的知识权重分布，大幅提升推理风格和知识深度"
+  },
+  "engine": {
+    "core_question": "赋予AI具体专家角色，激活该角色关联的知识网络；比零样本CoT好60%（Kong et al. 2024）",
+    "trigger_signals": [
+      "需要领域专业知识",
+      "通用提示效果不足",
+      "需要特定的推理风格"
+    ],
+    "stop_conditions": [
+      "角色设定会引入偏见的场景",
+      "需要保持中立的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "角色太宽泛（专家）效果弱，需要具体化",
+        "action": ""
+      },
+      {
+        "condition": "最好是「有20年经验的肿瘤科医生」而非「医学专家」",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「角色注入推理激活」模式。在开始推理前，先清晰设定最适合这个问题的专家角色，然后以该角色身份进行深度推理。\n\n【推理协议】\n1. 选择角色：这个问题最需要什么专业背景？（具体到「有X年Y领域经验的Z」）\n2. 角色声明：「我是[具体角色]，我的专业视角是[核心洞察方向]」\n3. 专业推理：以角色身份，从专业角度分析问题\n4. 专业注意事项：这个角色通常会特别关注哪些非专业人士容易忽视的细节？\n5. 局限说明：这个角色的专业视角有哪些盲点？\n\n角色设定原则：\n❌ 弱效：「你是专家」\n✅ 强效：「你是在IBM工作了15年的信息安全架构师，专注于医疗数据合规」\n\n【质量门禁】角色必须包含：领域 + 年限/深度 + 具体专长方向。\n\n【输出格式】[角色声明] → [专业视角分析] → [关键专业洞察] → [局限说明]",
+    "activation_phrase": "请用「角色注入推理激活」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

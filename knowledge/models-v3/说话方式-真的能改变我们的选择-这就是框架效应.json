@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "说话方式，真的能改变我们的选择",
     "source": "说话方式_真的能改变我们的选择_这就是框架效应.md",
-    "sourceTitle": "说话方式，真的能改变我们的选择，这就是框架效应",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "decision_maker",
-      "cognitive_manager"
-    ]
+    "sourceTitle": "说话方式，真的能改变我们的选择，这就是框架效应"
   },
   "core_definition": "这件事的本质是什么？说话方式，真的能改变我们的选择如何定义它？",
   "when_to_use": {

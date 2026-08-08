@@ -13,13 +13,7 @@
     ],
     "skill_name": "停止脑补_看清本质大思维工具",
     "source": "停止脑补_看清本质_6大思维工具速查卡.md",
-    "sourceTitle": "停止脑补_看清本质_6大思维工具速查卡",
-    "agent_roles": [
-      "problem_framer",
-      "decision_maker",
-      "planner",
-      "prioritizer"
-    ]
+    "sourceTitle": "停止脑补_看清本质_6大思维工具速查卡"
   },
   "core_definition": "大部分人决策出错、情绪内耗、做事低效，根源并非能力不足，而是缺少标准化的思考框架",
   "when_to_use": {

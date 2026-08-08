@@ -9,13 +9,7 @@
     ],
     "skill_name": "系统思维的核心原则",
     "source": "系统思维的核心原则.md",
-    "sourceTitle": "系统思维的核心原则",
-    "agent_roles": [
-      "systems_thinker",
-      "prioritizer",
-      "pattern_recognizer",
-      "simplifier"
-    ]
+    "sourceTitle": "系统思维的核心原则"
   },
   "core_definition": "核心是跳出孤立视角，把握事物内在关联与发展规律",
   "when_to_use": {

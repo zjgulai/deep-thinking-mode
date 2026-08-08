@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "ooda循环",
     "source": "OODA循环_不确定环境下的快速决策与行动法则.md",
-    "sourceTitle": "OODA循环：不确定环境下的快速决策与行动法则",
-    "agent_roles": [
-      "decision_maker",
-      "prioritizer",
-      "action_executor",
-      "observer_reflector"
-    ]
+    "sourceTitle": "OODA循环：不确定环境下的快速决策与行动法则"
   },
   "core_definition": "OODA循环：不确定环境下的快速决策与行动法则  OODA循环（Observe–Orient–Decide–Act）由美国空军上校约翰·博伊德提出，是不确定环境下的快速决策行动法则，适用于高冲突、高不确定性场景。博伊德通过空战研究发现，胜利的关键在于决策循环效率——比对手更快完成“观察→定位→决策→",
   "when_to_use": {

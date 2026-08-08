@@ -7,11 +7,7 @@
     "tags": [],
     "skill_name": "交感神经被激活后身体没动作会消",
     "source": "交感神经被激活后身体没动作会消耗能量吗.md",
-    "sourceTitle": "交感神经被激活后身体没动作会消耗能量吗",
-    "agent_roles": [
-      "action_executor",
-      "cognitive_manager"
-    ]
+    "sourceTitle": "交感神经被激活后身体没动作会消耗能量吗"
   },
   "core_definition": "这个问题的根本原因是什么？交感神经被激活后身体没动作会消如何找到它？",
   "when_to_use": {

@@ -6,11 +6,7 @@
     "category": "10",
     "tags": [],
     "skill_name": "内耗",
-    "source": "内耗能量路径图.md",
-    "agent_roles": [
-      "planner",
-      "cognitive_manager"
-    ]
+    "source": "内耗能量路径图.md"
   },
   "core_definition": "内耗能量路径图 \\* { margin: 0; padding: 0; outline: 0; } body { font-family: \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", \"",
   "when_to_use": {

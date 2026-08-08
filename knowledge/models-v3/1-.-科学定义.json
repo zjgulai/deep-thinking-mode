@@ -6,13 +6,7 @@
     "category": "07",
     "tags": [],
     "skill_name": "1-.-科学定义",
-    "source": "压力是什么.md",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "prioritizer",
-      "simplifier"
-    ]
+    "source": "压力是什么.md"
   },
   "core_definition": "### 1\\. 科学定义：一种“需求与资源失衡”的反应  *   **经典理论**：压力研究的先驱汉斯·塞利将压力定义为 **“机体对任何需求的非特异性反应”**。      *   **核心机制**：当我们遇到一个挑战（压力源）时，大脑会判断它是否是威胁。如果是，身体会立刻启动“战斗或逃跑”反应，",
   "when_to_use": {

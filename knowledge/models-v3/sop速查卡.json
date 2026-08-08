@@ -13,13 +13,7 @@
     ],
     "skill_name": "sop",
     "source": "SOP速查卡.md",
-    "sourceTitle": "SOP速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "SOP速查卡"
   },
   "core_definition": "每次做事都要重新琢磨步骤",
   "when_to_use": {

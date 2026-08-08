@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "解释模块-·-决策困难",
     "source": "内耗管理系统___解释模块___决策困难_为什么做个决定_比跑五公里还累_.md",
-    "sourceTitle": "内耗管理系统 · 解释模块 · 决策困难：为什么做个决定，比跑五公里还累？",
-    "agent_roles": [
-      "decision_maker",
-      "decomposer",
-      "action_executor",
-      "cognitive_manager"
-    ]
+    "sourceTitle": "内耗管理系统 · 解释模块 · 决策困难：为什么做个决定，比跑五公里还累？"
   },
   "core_definition": "】** 为什么点个外卖、挑件衣服、选个方案，能让人精疲力尽？为什么做决定这件事本身，就是一种内耗？",
   "when_to_use": {

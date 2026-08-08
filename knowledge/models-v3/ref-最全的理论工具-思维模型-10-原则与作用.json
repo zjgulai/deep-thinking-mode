@@ -8,10 +8,7 @@
     "skill_name": "原则与作用",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):原则与作用",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
   },
   "core_definition": "单位时间内生产出来并销售出去的产品所创造的利润",
   "when_to_use": {

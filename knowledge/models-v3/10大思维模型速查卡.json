@@ -13,13 +13,7 @@
     ],
     "skill_name": "10大思维模型",
     "source": "10大思维模型速查卡.md",
-    "sourceTitle": "10大思维模型速查卡",
-    "agent_roles": [
-      "systems_thinker",
-      "prioritizer",
-      "communicator",
-      "simplifier"
-    ]
+    "sourceTitle": "10大思维模型速查卡"
   },
   "core_definition": "10个核心思维模型，按三大支柱分成两篇",
   "when_to_use": {

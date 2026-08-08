@@ -11,11 +11,7 @@
       "问题分析"
     ],
     "skill_name": "框架思维-#三步法-#结构化思",
-    "source": "框架思维三步法_定边界_找要素_建连接.md",
-    "agent_roles": [
-      "decomposer",
-      "knowledge_synthesizer"
-    ]
+    "source": "框架思维三步法_定边界_找要素_建连接.md"
   },
   "core_definition": "框架思维三步法：定边界、找要素、建连接 ===================  原创 正方形SQUARE 2026-04-16 16:02 上海  > 原文地址: [https://mp.weixin.qq.com/s/9mFjHRyvtcA9kMSxqKvfVQ](https://mp.weix",
   "when_to_use": {

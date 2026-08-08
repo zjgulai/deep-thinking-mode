@@ -7,11 +7,7 @@
     "tags": [],
     "skill_name": "一、呼吸法",
     "source": "锻炼副交感神经.md",
-    "sourceTitle": "一、呼吸法：最直接的“放松开关”",
-    "agent_roles": [
-      "planner",
-      "action_executor"
-    ]
+    "sourceTitle": "一、呼吸法：最直接的“放松开关”"
   },
   "core_definition": "如何有效完成这件事？一、呼吸法的操作路径是什么？",
   "when_to_use": {

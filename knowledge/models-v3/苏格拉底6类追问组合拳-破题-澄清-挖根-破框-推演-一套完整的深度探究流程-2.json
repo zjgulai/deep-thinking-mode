@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "苏格拉底6类追问组合拳",
     "source": "苏格拉底6类追问组合拳_破题_澄清_挖根_破框_推演_一套完整的深度探究流程 2.md",
-    "sourceTitle": "苏格拉底6类追问组合拳：破题→澄清→挖根→破框→推演，一套完整的深度探究流程",
-    "agent_roles": [
-      "intent_clarifier",
-      "first_principles",
-      "hypothesis_tester",
-      "planner"
-    ]
+    "sourceTitle": "苏格拉底6类追问组合拳：破题→澄清→挖根→破框→推演，一套完整的深度探究流程"
   },
   "core_definition": "如何有效完成这件事？苏格拉底6类追问组合拳的操作路径是什么？",
   "when_to_use": {

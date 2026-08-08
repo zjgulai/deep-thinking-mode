@@ -13,13 +13,7 @@
     ],
     "skill_name": "爱因斯坦式提问",
     "source": "爱因斯坦式提问速查卡.md",
-    "sourceTitle": "爱因斯坦式提问速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "prioritizer",
-      "simplifier"
-    ]
+    "sourceTitle": "爱因斯坦式提问速查卡"
   },
   "core_definition": "这张速查卡帮你快速掌握爱因斯坦式提问的核心方法，包含核心理念、5步法和入门级3问模板",
   "when_to_use": {

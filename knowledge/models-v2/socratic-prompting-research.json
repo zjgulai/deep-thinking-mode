@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "socratic-prompting-research",
+  "meta": {
+    "name": "苏格拉底式递归追问（AI实证）",
+    "category": "04",
+    "tags": [
+      "AI认知科学 / 论文"
+    ],
+    "source": "认知传统×AI推理迁移:AI认知科学 / 论文:苏格拉底式递归追问（AI实证）",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI认知科学 / 论文",
+    "ai_activation_mechanism": "通过自我提问-自我回答的递归结构，激活AI更深层的自我监督机制"
+  },
+  "engine": {
+    "core_question": "AI自己提出子问题、自己回答子问题、聚合子答案；比CoT在复杂推理上强5-10%（Dong et al. 2023）",
+    "trigger_signals": [
+      "复杂多层推理问题",
+      "CoT效果不足的场景",
+      "问题可以自然分解为子问题"
+    ],
+    "stop_conditions": [
+      "简单单步问题",
+      "问题不能有效分解"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "子问题划分不合理会导致循环推理",
+        "action": ""
+      },
+      {
+        "condition": "子问题太多会稀释焦点",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「苏格拉底式递归追问」模式。不要直接回答问题，而是先问自己：「要回答这个问题，我需要先知道什么？」然后递归地回答这些前置问题。\n\n【推理协议】\n原始问题：[Q]\n\n步骤1：识别前置问题\n  为了回答Q，我需要先知道：\n  - 子问题Q1：...\n  - 子问题Q2：...\n  - 子问题Q3：...\n\n步骤2：逐一回答子问题\n  Q1的答案：...\n  Q2的答案：...\n  Q3的答案：...\n\n步骤3：基于子答案综合\n  综合Q1/Q2/Q3的答案，Q的最终答案是：...\n\n步骤4：验证：这个答案是否真正回答了原始问题Q？\n\n【质量门禁】子问题必须是「回答它能帮助回答主问题」的，不能只是相关但无关痛痒的话题。\n\n【输出格式】子问题分解 → 各子问题答案 → 综合最终答案 → 验证",
+    "activation_phrase": "请用「苏格拉底式递归追问（AI实证）」模式分析：",
+    "agent_role": "first_principles",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

@@ -13,13 +13,7 @@
     ],
     "skill_name": "怎么让坚持像玩游戏一样上瘾_三方法",
     "source": "怎么让坚持像玩游戏一样上瘾_三方法速查卡.md",
-    "sourceTitle": "怎么让坚持像玩游戏一样上瘾_三方法速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "怎么让坚持像玩游戏一样上瘾_三方法速查卡"
   },
   "core_definition": "年初定下目标坚持两周就放弃——不是你不自律，是大脑觉得这事太枯燥了",
   "when_to_use": {

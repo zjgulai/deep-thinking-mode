@@ -7,11 +7,7 @@
     "tags": [],
     "skill_name": "20个经典思维框架",
     "source": "20个经典思维框架.md",
-    "sourceTitle": "20个经典思维框架",
-    "agent_roles": [
-      "problem_framer",
-      "planner"
-    ]
+    "sourceTitle": "20个经典思维框架"
   },
   "core_definition": "抛开固有做法，此事本质是什么？有无更底层高效的实现路径？",
   "when_to_use": {

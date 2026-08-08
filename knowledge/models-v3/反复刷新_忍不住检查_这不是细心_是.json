@@ -6,10 +6,7 @@
     "category": "07",
     "tags": [],
     "skill_name": "反复刷新_忍不住检查_这不是细心_是",
-    "source": "反复刷新_忍不住检查_这不是细心_是大脑在骗你.md",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "source": "反复刷新_忍不住检查_这不是细心_是大脑在骗你.md"
   },
   "core_definition": "并落笔记录：“如果我彻底停止检查、不再刷新确认，我最怕发生的事情是什么？”",
   "when_to_use": {

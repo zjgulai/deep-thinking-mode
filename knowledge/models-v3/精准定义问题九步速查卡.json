@@ -13,13 +13,7 @@
     ],
     "skill_name": "精准定义问题九步",
     "source": "精准定义问题九步速查卡.md",
-    "sourceTitle": "精准定义问题九步速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "planner",
-      "prioritizer"
-    ]
+    "sourceTitle": "精准定义问题九步速查卡"
   },
   "core_definition": "同一个问题反复解决、方案落地就失灵——不是执行力差，是一开始就没找对真问题",
   "when_to_use": {

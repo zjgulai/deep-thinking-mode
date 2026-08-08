@@ -6,11 +6,7 @@
     "category": "09",
     "tags": [],
     "skill_name": "摒弃忙乱_掌控时间_时间块法高效管理",
-    "source": "摒弃忙乱_掌控时间_时间块法高效管理指南.md",
-    "agent_roles": [
-      "planner",
-      "action_executor"
-    ]
+    "source": "摒弃忙乱_掌控时间_时间块法高效管理指南.md"
   },
   "core_definition": "直击管理痛点：未绑定具体执行时间的任务，永远容易拖延",
   "when_to_use": {

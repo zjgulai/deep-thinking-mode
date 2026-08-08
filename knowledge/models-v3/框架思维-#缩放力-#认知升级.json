@@ -6,10 +6,7 @@
     "category": "08",
     "tags": [],
     "skill_name": "框架思维-#缩放力-#认知升级",
-    "source": "框架缩放三层对照表.md",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "source": "框架缩放三层对照表.md"
   },
   "core_definition": "、作用、抽象程度、适用范围、风险、典型工具",
   "when_to_use": {

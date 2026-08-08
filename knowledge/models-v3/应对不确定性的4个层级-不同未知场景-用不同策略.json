@@ -7,10 +7,7 @@
     "tags": [],
     "skill_name": "应对不确定性的4个层级",
     "source": "应对不确定性的4个层级_不同未知场景_用不同策略.md",
-    "sourceTitle": "应对不确定性的4个层级：不同未知场景，用不同策略",
-    "agent_roles": [
-      "decision_maker"
-    ]
+    "sourceTitle": "应对不确定性的4个层级：不同未知场景，用不同策略"
   },
   "core_definition": "不是寻找一套万能公式，而是先分清不确定性的层级，再匹配对应的应对策略",
   "when_to_use": {

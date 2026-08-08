@@ -6,13 +6,7 @@
     "category": "10",
     "tags": [],
     "skill_name": "**一、定义-心理上的“反刍”**",
-    "source": "内耗管理系统___解释模块___反刍思维_什么是大脑的_心理咀嚼_现象_.md",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "observer_reflector",
-      "error_handler"
-    ]
+    "source": "内耗管理系统___解释模块___反刍思维_什么是大脑的_心理咀嚼_现象_.md"
   },
   "core_definition": "判别**：反思让你走出来，反刍让你陷进去",
   "when_to_use": {

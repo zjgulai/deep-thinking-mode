@@ -7,11 +7,7 @@
     "tags": [],
     "skill_name": "问题重构法破局解困升维认知的难",
     "source": "问题重构法破局解困升维认知的难题破解框架 2.md",
-    "sourceTitle": "问题重构法破局解困升维认知的难题破解框架",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer"
-    ]
+    "sourceTitle": "问题重构法破局解困升维认知的难题破解框架"
   },
   "core_definition": "看待问题的方式，比问题本身更重要",
   "when_to_use": {

@@ -13,13 +13,7 @@
     ],
     "skill_name": "经验学习四阶段",
     "source": "经验学习四阶段速查卡.md",
-    "sourceTitle": "经验学习四阶段速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "经验学习四阶段速查卡"
   },
   "core_definition": "这张速查卡帮你把“经历”转化为“能力”",
   "when_to_use": {

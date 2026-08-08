@@ -13,10 +13,7 @@
     ],
     "skill_name": "耗竭恢复三阶段",
     "source": "耗竭恢复三阶段速查卡.md",
-    "sourceTitle": "耗竭恢复三阶段速查卡",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "耗竭恢复三阶段速查卡"
   },
   "core_definition": "连续加班、连轴转之后，你发现自己彻底“宕机”了——脑子转不动、身体灌了铅、对什么都没兴趣，甚至觉得人生没意思",
   "when_to_use": {

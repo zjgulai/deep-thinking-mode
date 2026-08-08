@@ -6,13 +6,7 @@
     "category": "02",
     "tags": [],
     "skill_name": "问题重构-#思维模型-#思维框架-#",
-    "source": "问题重构的10种实战方法.md",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "prioritizer",
-      "simplifier"
-    ]
+    "source": "问题重构的10种实战方法.md"
   },
   "core_definition": "核心是解决问题前，先明确“该解决的真正问题”，避免方向偏差，是一套可直接套用的实用思维方法",
   "when_to_use": {

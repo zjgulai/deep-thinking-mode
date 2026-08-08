@@ -9,13 +9,7 @@
     ],
     "skill_name": "一、进化层面",
     "source": "对于大脑来说_何为失控.md",
-    "sourceTitle": "对于大脑来说，何为失控",
-    "agent_roles": [
-      "problem_framer",
-      "prioritizer",
-      "error_handler",
-      "simplifier"
-    ]
+    "sourceTitle": "对于大脑来说，何为失控"
   },
   "core_definition": "这件事的本质是什么？一、进化层面如何定义它？",
   "when_to_use": {

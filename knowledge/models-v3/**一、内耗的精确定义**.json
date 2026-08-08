@@ -6,13 +6,7 @@
     "category": "10",
     "tags": [],
     "skill_name": "**一、内耗的精确定义**",
-    "source": "内耗管理系统___内耗的全景诊断书.md",
-    "agent_roles": [
-      "problem_framer",
-      "prioritizer",
-      "simplifier",
-      "cognitive_manager"
-    ]
+    "source": "内耗管理系统___内耗的全景诊断书.md"
   },
   "core_definition": "内耗管理系统 · 内耗的全景诊断书  ### **一、内耗的精确定义**  内耗，在心理学范畴中，通常被称为 **“自我消耗”** 或 **“心理内耗”**。其核心定义是：  **个体因内在的冲突、矛盾、自我对抗和过度思考，而在未进行任何实际性外部劳动的情况下，持续消耗自身心理资源（如注意力、意志力",
   "when_to_use": {

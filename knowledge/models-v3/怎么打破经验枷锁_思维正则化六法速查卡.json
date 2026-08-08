@@ -13,10 +13,7 @@
     ],
     "skill_name": "怎么打破经验枷锁_思维正则化六法",
     "source": "怎么打破经验枷锁_思维正则化六法速查卡.md",
-    "sourceTitle": "怎么打破经验枷锁_思维正则化六法速查卡",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "怎么打破经验枷锁_思维正则化六法速查卡"
   },
   "core_definition": "思维过拟合：越依赖过去成功，越难适应未来变化",
   "when_to_use": {

@@ -13,10 +13,7 @@
     ],
     "skill_name": "复杂问题怎么分析_四层视角脚手架",
     "source": "复杂问题怎么分析_四层视角脚手架速查卡.md",
-    "sourceTitle": "复杂问题怎么分析_四层视角脚手架速查卡",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "复杂问题怎么分析_四层视角脚手架速查卡"
   },
   "core_definition": "面对复杂问题纠结半天拿不定主意——不是信息不够，是你不知道从哪些角度看",
   "when_to_use": {

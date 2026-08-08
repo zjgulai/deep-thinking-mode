@@ -13,10 +13,7 @@
     ],
     "skill_name": "别急着解题_爱因斯坦式提问五步",
     "source": "别急着解题_爱因斯坦式提问五步速查卡.md",
-    "sourceTitle": "别急着解题_爱因斯坦式提问五步速查卡",
-    "agent_roles": [
-      "intent_clarifier"
-    ]
+    "sourceTitle": "别急着解题_爱因斯坦式提问五步速查卡"
   },
   "core_definition": "遇到问题第一反应是找解法——你可能一直在用最努力的方式，解一个错的问题",
   "when_to_use": {

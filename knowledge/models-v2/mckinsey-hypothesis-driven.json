@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "mckinsey-hypothesis-driven",
+  "meta": {
+    "name": "麦肯锡「假设驱动」分析法",
+    "category": "04",
+    "tags": [
+      "顾问方法论 / 麦肯锡咨询"
+    ],
+    "source": "认知传统×AI推理迁移:顾问方法论 / 麦肯锡咨询:麦肯锡「假设驱动」分析法",
+    "sourceType": "cognitive_tradition",
+    "tradition": "顾问方法论 / 麦肯锡咨询",
+    "ai_activation_mechanism": "强制AI在「搜集信息」之前先「声明假设」，使分析方向清晰，避免无边界的信息积累"
+  },
+  "engine": {
+    "core_question": "不从数据出发找答案，而是先提出可竞争的假设，再用最小成本的证据验证或推翻",
+    "trigger_signals": [
+      "信息不完整但需要快速得出结论",
+      "数据分析没有明确方向",
+      "需要区分真正的根因和表象原因"
+    ],
+    "stop_conditions": [
+      "数据已经充分、可以直接分析的场景",
+      "探索性分析阶段"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "初始假设可能有偏见",
+        "action": ""
+      },
+      {
+        "condition": "假设数量太多会丧失焦点",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「麦肯锡假设驱动分析」模式。不是「给我更多数据」，而是「可能的答案有哪几个，我们用最小成本逐个验证」。\n\n【推理协议】\n1. 明确核心问题：一句话说清楚要回答的问题\n2. 生成竞争假设：提出3-5个可能的答案/原因（必须相互竞争，不能都是对的）\n3. 按验证成本排序：哪个假设最容易被证伪？优先验证它\n4. 设计最小验证：每个假设用最少的数据验证，不要等「全部数据」\n5. 逐步收敛：排除已证伪的假设，深化支持度最高的假设\n\n【质量门禁】如果你在「搜集更多信息」而还没有明确假设——这是无效分析的标志。先假设，再验证。\n\n【输出格式】核心问题 | 竞争假设（3-5个）| 验证优先级 | 初步验证结果 | 当前最强假设",
+    "activation_phrase": "请用「麦肯锡「假设驱动」分析法」模式分析：",
+    "agent_role": "hypothesis_tester",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

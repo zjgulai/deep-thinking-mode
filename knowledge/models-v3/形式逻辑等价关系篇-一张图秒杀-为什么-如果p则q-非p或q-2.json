@@ -7,11 +7,7 @@
     "tags": [],
     "skill_name": "形式逻辑等价关系篇",
     "source": "形式逻辑等价关系篇_一张图秒杀_为什么_如果P则Q___非P或Q__ 2.md",
-    "sourceTitle": "形式逻辑等价关系篇：一张图秒杀。为什么「如果P则Q」=「非P或Q」？",
-    "agent_roles": [
-      "problem_framer",
-      "logical_analyzer"
-    ]
+    "sourceTitle": "形式逻辑等价关系篇：一张图秒杀。为什么「如果P则Q」=「非P或Q」？"
   },
   "core_definition": "本质是「禁区一致」  \n  \n逻辑等价的唯一标准：  \n两个句子，允许的",
   "when_to_use": {

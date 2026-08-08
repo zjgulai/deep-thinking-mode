@@ -13,10 +13,7 @@
     ],
     "skill_name": "不确定性四层",
     "source": "不确定性四层速查卡.md",
-    "sourceTitle": "不确定性四层速查卡",
-    "agent_roles": [
-      "decision_maker"
-    ]
+    "sourceTitle": "不确定性四层速查卡"
   },
   "core_definition": "面对未知，你是不是也经常陷入纠结：要不要押注一个方向",
   "when_to_use": {

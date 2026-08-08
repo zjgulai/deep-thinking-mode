@@ -13,13 +13,7 @@
     ],
     "skill_name": "从_万一_到_如果",
     "source": "_从_万一_到_如果_速查卡.md",
-    "sourceTitle": "_从_万一_到_如果_速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "_从_万一_到_如果_速查卡"
   },
   "core_definition": "你是不是也有过这种经历：重要汇报前一晚，脑子里全是“万一PPT打不开”“万一被问住”“万一发挥失常”……越想越焦虑，失眠到天亮",
   "when_to_use": {

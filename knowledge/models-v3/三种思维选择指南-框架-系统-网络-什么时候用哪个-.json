@@ -7,12 +7,7 @@
     "tags": [],
     "skill_name": "三种思维选择指南",
     "source": "三种思维选择指南_框架_系统_网络_什么时候用哪个_.md",
-    "sourceTitle": "三种思维选择指南：框架、系统、网络，什么时候用哪个？",
-    "agent_roles": [
-      "decision_maker",
-      "knowledge_synthesizer",
-      "cognitive_manager"
-    ]
+    "sourceTitle": "三种思维选择指南：框架、系统、网络，什么时候用哪个？"
   },
   "core_definition": "这个问题的根本原因是什么？三种思维选择指南如何找到它？",
   "when_to_use": {

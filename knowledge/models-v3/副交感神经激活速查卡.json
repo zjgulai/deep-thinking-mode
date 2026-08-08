@@ -13,13 +13,7 @@
     ],
     "skill_name": "副交感神经激活",
     "source": "副交感神经激活速查卡.md",
-    "sourceTitle": "副交感神经激活速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "副交感神经激活速查卡"
   },
   "core_definition": "#副交感神经 #压力管理 #放松技巧",
   "when_to_use": {

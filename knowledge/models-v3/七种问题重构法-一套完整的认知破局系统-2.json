@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "七种问题重构法，一套完整的认知",
     "source": "七种问题重构法_一套完整的认知破局系统 2.md",
-    "sourceTitle": "七种问题重构法，一套完整的认知破局系统",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "multi_perspective",
-      "planner"
-    ]
+    "sourceTitle": "七种问题重构法，一套完整的认知破局系统"
   },
   "core_definition": "高阶同理心，把单一难题变成可多角度拆解的多维场景",
   "when_to_use": {

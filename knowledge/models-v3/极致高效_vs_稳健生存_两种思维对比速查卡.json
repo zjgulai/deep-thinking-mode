@@ -13,10 +13,7 @@
     ],
     "skill_name": "极致高效_vs_稳健生存_两种思维",
     "source": "极致高效_vs_稳健生存_两种思维对比速查卡.md",
-    "sourceTitle": "极致高效_vs_稳健生存_两种思维对比速查卡",
-    "agent_roles": [
-      "logical_analyzer"
-    ]
+    "sourceTitle": "极致高效_vs_稳健生存_两种思维对比速查卡"
   },
   "core_definition": "拼命追求极致效率，把所有备用金、空白时间、泛泛之交都砍光了——短期风光，一旦黑天鹅降临，系统瞬间脆断",
   "when_to_use": {

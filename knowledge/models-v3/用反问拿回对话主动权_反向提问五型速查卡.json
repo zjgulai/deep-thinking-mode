@@ -13,13 +13,7 @@
     ],
     "skill_name": "用反问拿回对话主动权_反向提问五型",
     "source": "用反问拿回对话主动权_反向提问五型速查卡.md",
-    "sourceTitle": "用反问拿回对话主动权_反向提问五型速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "first_principles",
-      "multi_perspective",
-      "planner"
-    ]
+    "sourceTitle": "用反问拿回对话主动权_反向提问五型速查卡"
   },
   "core_definition": "五种反问类型配通用句式，从澄清式理清模糊问题、回弹式把试探还给对方，到升维式追问底层目的、类比式换位思考、假设式试探边界",
   "when_to_use": {

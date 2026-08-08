@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "self-consistency",
+  "meta": {
+    "name": "自我一致性「多路径投票」",
+    "category": "04",
+    "tags": [
+      "AI认知科学 / 论文"
+    ],
+    "source": "认知传统×AI推理迁移:AI认知科学 / 论文:自我一致性「多路径投票」",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI认知科学 / 论文",
+    "ai_activation_mechanism": "从不同角度多次推导同一问题，汇聚最一致的结论，平均比单次CoT提升+10%"
+  },
+  "engine": {
+    "core_question": "生成多条独立推理路径，对最终答案进行多数投票；比单次CoT平均提升10%（Wang et al. 2023）",
+    "trigger_signals": [
+      "复杂推理需要高置信度",
+      "单次推理结果不稳定",
+      "多种方法都有可能得出正确答案"
+    ],
+    "stop_conditions": [
+      "资源受限场景",
+      "简单明确的问题"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "投票需要多次调用，成本较高",
+        "action": ""
+      },
+      {
+        "condition": "如果错误有系统性偏差，投票无法纠正",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「自我一致性多路径验证」模式。对同一个问题，从3个不同的推理角度各自独立推导，然后看哪个答案出现最多次。\n\n【推理协议】\n路径A：从[视角1]出发推导：...→ 答案A\n路径B：从[视角2]出发推导：...→ 答案B\n路径C：从[视角3]出发推导：...→ 答案C\n\n投票：哪个答案出现了最多次？\n一致性评估：\n- 三路径结论相同 → 高置信度\n- 两路径相同 → 中置信度，分析异常路径\n- 三路径各不同 → 低置信度，问题需要重新框架化\n\n【质量门禁】三条路径必须真正独立（不同假设、不同分析角度），而非同一方法的重复。\n\n【输出格式】路径A推导+结论 | 路径B推导+结论 | 路径C推导+结论 | 投票结果 | 置信度评估",
+    "activation_phrase": "请用「自我一致性「多路径投票」」模式分析：",
+    "agent_role": "hypothesis_tester",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

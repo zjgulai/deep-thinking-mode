@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "苏格拉底6大提问框架",
     "source": "苏格拉底6大提问框架_澄清_假设_证据_视角_结果_对问题的提问_一套完整的思维检验闭环.md",
-    "sourceTitle": "苏格拉底6大提问框架：澄清+假设+证据+视角+结果+对问题的提问，一套完整的思维检验闭环",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "planner",
-      "prioritizer"
-    ]
+    "sourceTitle": "苏格拉底6大提问框架：澄清+假设+证据+视角+结果+对问题的提问，一套完整的思维检验闭环"
   },
   "core_definition": "这件事的本质是什么？苏格拉底6大提问框架如何定义它？",
   "when_to_use": {

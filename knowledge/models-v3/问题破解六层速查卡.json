@@ -13,13 +13,7 @@
     ],
     "skill_name": "问题破解六层",
     "source": "问题破解六层速查卡.md",
-    "sourceTitle": "问题破解六层速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "问题破解六层速查卡"
   },
   "core_definition": "这张速查卡帮你快速定位问题破解的六个层次，包含每层的核心动作和判断标准",
   "when_to_use": {

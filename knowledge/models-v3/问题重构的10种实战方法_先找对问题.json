@@ -6,13 +6,7 @@
     "category": "03",
     "tags": [],
     "skill_name": "问题重构的10种实战方法_先找对问题",
-    "source": "问题重构的10种实战方法_先找对问题_再动手解决.md",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "planner",
-      "action_executor"
-    ]
+    "source": "问题重构的10种实战方法_先找对问题_再动手解决.md"
   },
   "core_definition": "问题重构的10种实战方法：先找对问题，再动手解决  很多人都有过这样的困扰：方案执行得明明白白，可问题还是没解决。其实不是你不够努力，而是一开始就把问题定义错了——方向偏了，再费劲儿也白搭。  问题重构（Problem Reframing）就是来帮你“纠偏”的：它不是什么高深理论，就是一套能直接用、",
   "when_to_use": {

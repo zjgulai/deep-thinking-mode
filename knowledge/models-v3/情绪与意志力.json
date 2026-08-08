@@ -9,13 +9,7 @@
     ],
     "skill_name": "一、情绪的“燃料”作用",
     "source": "情绪与意志力.md",
-    "sourceTitle": "一、情绪的“燃料”作用：意志力的引擎与导航",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "一、情绪的“燃料”作用：意志力的引擎与导航"
   },
   "core_definition": "意志力绝非冷酷的理性压制，**健康的情緒是意志力不可或缺的动力来源。**  1.  **提供核心动力与价值信号**       *   **渴望与兴奋**：对目标达成后的美好想象所激发的积极情绪（如渴望、兴奋），是驱动我们启动和坚持行动的最强内在动机。没有情感的投入，目标只是冰冷的待办事项。    ",
   "when_to_use": {

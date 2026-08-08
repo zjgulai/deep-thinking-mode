@@ -13,13 +13,7 @@
     ],
     "skill_name": "刻意练习7大原则",
     "source": "_刻意练习7大原则_速查清单.md",
-    "sourceTitle": "_刻意练习7大原则_速查清单",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "_刻意练习7大原则_速查清单"
   },
   "core_definition": "你是不是也这样：一项技能练了很久，却总感觉在原地踏步",
   "when_to_use": {

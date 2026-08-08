@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "porter-five-forces",
+  "meta": {
+    "name": "波特「五力模型」生态扫描",
+    "category": "05",
+    "tags": [
+      "顾问方法论 / 竞争战略"
+    ],
+    "source": "认知传统×AI推理迁移:顾问方法论 / 竞争战略:波特「五力模型」生态扫描",
+    "sourceType": "cognitive_tradition",
+    "tradition": "顾问方法论 / 竞争战略",
+    "ai_activation_mechanism": "强制AI将竞争分析从直接竞争者比较扩展到整个生态系统的力量"
+  },
+  "engine": {
+    "core_question": "同时扫描五种力量：现有竞争者、新进入者威胁、替代品威胁、买方议价力、供应商议价力",
+    "trigger_signals": [
+      "进入新市场或评估市场吸引力",
+      "理解为什么某个行业利润率高/低",
+      "竞争分析局限于直接竞争者对比"
+    ],
+    "stop_conditions": [
+      "内部运营分析",
+      "无竞争者的蓝海初期场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "五力分析是静态框架，难以捕捉快速变化",
+        "action": ""
+      },
+      {
+        "condition": "五力之间也有相互影响",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「波特五力生态扫描」模式。竞争不只是「同类产品的对比」，而是整个生态系统中五种力量的博弈。\n\n【推理协议】\n1. 现有竞争者：直接竞争的烈度如何？\n2. 新进入者威胁：进入壁垒有多高？\n3. 替代品威胁：有哪些能满足同样需求但形态不同的替代品？\n4. 买方议价力：买方集中度？切换成本？\n5. 供应商议价力：供应商集中度？原材料可替代性？\n\n综合判断：哪些力量最强？如何影响利润率和竞争策略？\n\n【质量门禁】如果分析只涵盖了「现有竞争者」——这是最常见的盲点，必须扩展到其他四个力量。\n\n【输出格式】五力评估矩阵（强/中/弱）| 关键发现 | 战略含义",
+    "activation_phrase": "请用「波特「五力模型」生态扫描」模式分析：",
+    "agent_role": "systems_thinker",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

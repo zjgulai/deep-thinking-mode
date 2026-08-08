@@ -7,11 +7,7 @@
     "tags": [],
     "skill_name": "反向提问",
     "source": "反向提问_用问题回答问题_轻松掌握对话主动权.md",
-    "sourceTitle": "反向提问：用问题回答问题，轻松掌握对话主动权",
-    "agent_roles": [
-      "intent_clarifier",
-      "multi_perspective"
-    ]
+    "sourceTitle": "反向提问：用问题回答问题，轻松掌握对话主动权"
   },
   "core_definition": "完成一次身份转换：从被动答题人，变成整场对话的设计者",
   "when_to_use": {

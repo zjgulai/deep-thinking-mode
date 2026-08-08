@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "cognitive-load-management",
+  "meta": {
+    "name": "认知负荷管理原语",
+    "category": "08",
+    "tags": [
+      "认知科学 / Sweller CLT理论"
+    ],
+    "source": "认知传统×AI推理迁移:认知科学 / Sweller CLT理论:认知负荷管理原语",
+    "sourceType": "cognitive_tradition",
+    "tradition": "认知科学 / Sweller CLT理论",
+    "ai_activation_mechanism": "将认知负荷框架应用于提示设计：清洗无关信息，聚焦核心，分块处理高复杂度任务"
+  },
+  "engine": {
+    "core_question": "减少外生负荷（无关干扰），专注关键负荷（核心推理），管理内生负荷（任务固有复杂度）",
+    "trigger_signals": [
+      "prompt很长但效果不好",
+      "复杂任务需要分步处理",
+      "AI输出质量随上下文增加而下降"
+    ],
+    "stop_conditions": [
+      "简单任务上下文少",
+      "已经高度优化的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "过度简化会丢失必要信息",
+        "action": ""
+      },
+      {
+        "condition": "分块太多会导致对话轮次增加",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「认知负荷优化」模式。复杂任务需要系统性地管理认知负荷：清除无关干扰，保留核心关键，必要时分块处理。\n\n【推理协议】\n1. 识别任务复杂度：这个任务的固有复杂度是高/中/低？\n2. 清除外生负荷：去掉所有不影响核心推理的装饰性语言\n3. 聚焦关键负荷：明确指出需要深度思考的核心问题\n4. 分块管理（高复杂度）：将大任务分解为3-5个可独立处理的子任务\n5. 顺序优化：先处理依赖少的子任务，再处理依赖多的\n\n外生负荷识别：\n❌ 高外生：「作为一个拥有丰富经验的AI助手，请全面考虑所有可能的角度...」\n✅ 低外生：「任务：[明确目标]。已知：[关键信息]。请回答：[核心问题]」\n\n【质量门禁】如果prompt中有任何一段删掉不影响推理质量——它是外生负荷，删掉它。\n\n【输出格式】任务分解 → 每块的处理 → 结果整合",
+    "activation_phrase": "请用「认知负荷管理原语」模式分析：",
+    "agent_role": "decomposer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

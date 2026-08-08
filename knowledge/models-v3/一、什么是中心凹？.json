@@ -6,13 +6,7 @@
     "category": "02",
     "tags": [],
     "skill_name": "一、什么是中心凹？",
-    "source": "眼睛的_中心凹视觉优先_原理.md",
-    "agent_roles": [
-      "logical_analyzer",
-      "planner",
-      "prioritizer",
-      "action_executor"
-    ]
+    "source": "眼睛的_中心凹视觉优先_原理.md"
   },
   "core_definition": "眼睛的“中心凹视觉优先”原理  眼睛的“中心凹视觉优先”原理。这是一个理解人类视觉如何工作的核心概念。  ### 一、什么是中心凹？  首先，需要了解眼球后部视网膜的结构。视网膜是感光的“屏幕”，上面有两种主要的光感受器细胞：  1.  **视杆细胞**：对光线非常敏感，主要负责**暗视觉**（在昏",
   "when_to_use": {

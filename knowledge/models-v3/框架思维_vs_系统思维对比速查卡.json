@@ -13,13 +13,7 @@
     ],
     "skill_name": "框架思维_vs_系统思维",
     "source": "框架思维_vs_系统思维对比速查卡.md",
-    "sourceTitle": "框架思维_vs_系统思维对比速查卡",
-    "agent_roles": [
-      "problem_framer",
-      "systems_thinker",
-      "logical_analyzer",
-      "prioritizer"
-    ]
+    "sourceTitle": "框架思维_vs_系统思维对比速查卡"
   },
   "core_definition": "这张速查卡帮你快速区分框架思维和系统思维，包含核心定义、三大差异、场景速查和使用提示",
   "when_to_use": {

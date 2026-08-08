@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "前景理论",
     "source": "前景理论_破解人类风险决策的密码.md",
-    "sourceTitle": "前景理论：破解人类风险决策的密码",
-    "agent_roles": [
-      "first_principles",
-      "decision_maker",
-      "prioritizer",
-      "simplifier"
-    ]
+    "sourceTitle": "前景理论：破解人类风险决策的密码"
   },
   "core_definition": "前景理论：破解人类风险决策的密码  一、理论基础      前景理论由丹尼尔·卡尼曼与阿莫斯·特沃斯基于1979年提出，是行为经济学核心理论，打破传统理性决策假设。2002年卡尼曼凭此获诺贝尔经济学奖（特沃斯基因早逝未共享）。其前身期望效用理论因假设“完全理性人”，无法解释阿莱悖论等现实偏差，前景理",
   "when_to_use": {

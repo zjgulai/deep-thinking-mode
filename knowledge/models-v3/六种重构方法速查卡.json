@@ -13,13 +13,7 @@
     ],
     "skill_name": "六种重构方法",
     "source": "六种重构方法速查卡.md",
-    "sourceTitle": "六种重构方法速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "planner",
-      "prioritizer",
-      "action_executor"
-    ]
+    "sourceTitle": "六种重构方法速查卡"
   },
   "core_definition": "一个问题想半天想不通，不是问题太难，是你看它的角度没换过",
   "when_to_use": {

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "empathy-role-stakeholder",
+  "meta": {
+    "name": "「推己及人×角色注入」利益相关者矩阵",
+    "category": "11",
+    "tags": [
+      "儒家推己及人 × 角色注入提示"
+    ],
+    "source": "认知传统×AI推理迁移:儒家推己及人 × 角色注入提示:「推己及人×角色注入」利益相关者矩阵",
+    "sourceType": "cognitive_tradition",
+    "tradition": "儒家推己及人 × 角色注入提示",
+    "ai_activation_mechanism": "通过角色注入让AI真正从每个利益相关者的专业视角推理，而非泛泛地考虑各方需求"
+  },
+  "engine": {
+    "core_question": "为每个利益相关者注入对应角色，从各自专业视角独立推理，再寻找可接受的交集",
+    "trigger_signals": [
+      "决策涉及多个利益相关方",
+      "方案在某方看来显然正确但会被其他方反对",
+      "需要预测各方对方案的真实反应"
+    ],
+    "stop_conditions": [
+      "单方决策场景",
+      "利益相关者视角已经充分考虑的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "角色数量太多会让分析变成清单（建议3-5个）",
+        "action": ""
+      },
+      {
+        "condition": "需要在理解后做出选择，而非无限扩展视角",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「推己及人×角色注入利益相关者矩阵」模式。为每个关键利益相关者设定专属角色，从其视角独立推理，然后寻找所有方都能接受的最大公约数。\n\n【推理协议】\n识别利益相关者（3-5个）并为每个设定角色：\n\n[利益相关者A] 角色：[具体描述，如「一线业务员，日薪制，对管理层天然不信任」]\n  担心：... | 期望：... | 底线（不可接受）：...\n  从这个视角看，方案的问题是：...\n\n[重复到所有利益相关者]\n\n综合分析：\n- 哪些需求是所有方共同的？（交集）\n- 哪些需求是某方的绝对底线？\n- 在所有底线约束下，最优方案是什么？\n\n【质量门禁】每个角色必须足够具体（包含专业背景、利益诉求、心理状态），「高管」这样模糊的角色无效。\n\n【输出格式】各方视角矩阵 | 关键冲突点 | 底线约束 | 最大公约数方案",
+    "activation_phrase": "请用「「推己及人×角色注入」利益相关者矩阵」模式分析：",
+    "agent_role": "multi_perspective",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

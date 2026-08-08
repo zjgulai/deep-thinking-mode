@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "什么是真正的休息",
     "source": "什么是真正的休息 2.md",
-    "sourceTitle": "什么是真正的休息",
-    "agent_roles": [
-      "problem_framer",
-      "planner",
-      "action_executor",
-      "observer_reflector"
-    ]
+    "sourceTitle": "什么是真正的休息"
   },
   "core_definition": "这件事的本质是什么？什么是真正的休息如何定义它？",
   "when_to_use": {

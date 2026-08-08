@@ -13,13 +13,7 @@
     ],
     "skill_name": "马斯洛需求自查",
     "source": "马斯洛需求自查速查卡.md",
-    "sourceTitle": "马斯洛需求自查速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "planner",
-      "prioritizer",
-      "action_executor"
-    ]
+    "sourceTitle": "马斯洛需求自查速查卡"
   },
   "core_definition": "努力却焦虑空虚，不是能力不足，是需求错位",
   "when_to_use": {

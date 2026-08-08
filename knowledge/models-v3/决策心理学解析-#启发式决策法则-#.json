@@ -6,13 +6,7 @@
     "category": "06",
     "tags": [],
     "skill_name": "决策心理学解析-#启发式决策法则-#",
-    "source": "启发式__有限理性下的快速决策法则.md",
-    "agent_roles": [
-      "problem_framer",
-      "decision_maker",
-      "prioritizer",
-      "simplifier"
-    ]
+    "source": "启发式__有限理性下的快速决策法则.md"
   },
   "core_definition": "启发式——有限理性下的快速决策法则  决策心理学·启发式      📌 核心定义      启发式：人类决策时的心理捷径、经验法则，无需复杂逻辑运算，能在信息有限、时间紧迫的场景下，快速得出“满意解”，是有限理性的核心体现，和追求最优解的严谨算法形成鲜明区别。      📌 经典三大启发式   ",
   "when_to_use": {

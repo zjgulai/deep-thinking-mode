@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "6种高效提问方法",
     "source": "6种高效提问方法_好问题_比答案更有力量.md",
-    "sourceTitle": "6种高效提问方法：好问题，比答案更有力量",
-    "agent_roles": [
-      "intent_clarifier",
-      "prioritizer",
-      "observer_reflector",
-      "communicator"
-    ]
+    "sourceTitle": "6种高效提问方法：好问题，比答案更有力量"
   },
   "core_definition": "与根本原因，适用于问题诊断、深度沟通及逻辑梳理",
   "when_to_use": {

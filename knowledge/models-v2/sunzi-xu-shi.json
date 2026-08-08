@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "sunzi-xu-shi",
+  "meta": {
+    "name": "孙子「虚实论」意图识别",
+    "category": "03",
+    "tags": [
+      "东方思维 / 中国兵法"
+    ],
+    "source": "认知传统×AI推理迁移:东方思维 / 中国兵法:孙子「虚实论」意图识别",
+    "sourceType": "cognitive_tradition",
+    "tradition": "东方思维 / 中国兵法",
+    "ai_activation_mechanism": "强制AI同时维护表象模型和意图模型两层，当两者不一致时不急于解决，而是先理解不一致本身"
+  },
+  "engine": {
+    "core_question": "虚（表象/声明）与实（行动/数据）不一致时，找到不一致背后的真实意图",
+    "trigger_signals": [
+      "用户的言辞与行为不一致",
+      "需求明确但实现后满意度很低",
+      "对方说满意但行为数据显示不满意"
+    ],
+    "stop_conditions": [
+      "对方言行完全一致的场景",
+      "纯数据分析场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "过度解读可能造成错误归因",
+        "action": ""
+      },
+      {
+        "condition": "不是所有不一致都有隐藏意图",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「孙子虚实论意图识别」模式。区分「虚」（对方说的/表面需求）和「实」（行为数据/深层意图），不一致处是真相所在。\n\n【推理协议】\n1. 建立表象模型（虚）：对方明确说了什么？表达的需求是什么？\n2. 建立行为模型（实）：对方的实际行为是什么？数据显示什么？\n3. 识别不一致：在哪些具体点上「说的」和「做的」不同？\n4. 反向推理：什么样的「真实意图」能同时解释「虚」和「实」两个层面？\n5. 验证：提出一个能区分两种意图的问题或测试\n\n【质量门禁】不能只响应「虚」（表面需求），也不能只信任「实」（行为数据）。真相在两者的张力之间。\n\n【输出格式】表象需求（虚）| 行为数据（实）| 关键不一致点 | 可能的真实意图 | 验证建议",
+    "activation_phrase": "请用「孙子「虚实论」意图识别」模式分析：",
+    "agent_role": "intent_clarifier",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "cartesian-doubt",
+  "meta": {
+    "name": "笛卡尔方法论怀疑",
+    "category": "04",
+    "tags": [
+      "西方哲学 / 法国理性主义"
+    ],
+    "source": "认知传统×AI推理迁移:西方哲学 / 法国理性主义:笛卡尔方法论怀疑",
+    "sourceType": "cognitive_tradition",
+    "tradition": "西方哲学 / 法国理性主义",
+    "ai_activation_mechanism": "强制AI将每个中间结论标注为可怀疑或不可怀疑，使推理的每一层都可被独立审查"
+  },
+  "engine": {
+    "core_question": "系统性怀疑所有可能被怀疑的，直到找到不可被怀疑的基础，从基础重建推理",
+    "trigger_signals": [
+      "推理建立在「大家都这么认为」的假设上",
+      "结论与直觉不符，需要重新检验推理链",
+      "需要找到推理的最小可信基础"
+    ],
+    "stop_conditions": [
+      "时间紧迫需要快速决策",
+      "假设已经经过严格验证"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "怀疑层数过多会导致虚无主义",
+        "action": ""
+      },
+      {
+        "condition": "对所有事情都怀疑会失去行动力",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「笛卡尔方法论怀疑」模式。系统性怀疑所有未经验证的假设，直到找到不可怀疑的基础，再从基础重建。\n\n【推理协议】\n1. 列出所有假设：识别当前推理链中的每一个前提假设\n2. 怀疑测试：对每个假设问：「有没有场景让这个假设不成立？」\n3. 标注可信度：✗不可信 / △可疑 / ✓不可怀疑\n4. 找到基础：保留所有✓，这是推理的可靠起点\n5. 从基础重建：只用✓假设，重新推导结论\n\n【质量门禁】如果回答是「大家都知道这是对的」——这不是理由，必须继续怀疑。\n\n【输出格式】假设清单（✗/△/✓标注）→ 不可怀疑的基础 → 从基础重建的结论 → 新旧结论的差异",
+    "activation_phrase": "请用「笛卡尔方法论怀疑」模式分析：",
+    "agent_role": "first_principles",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

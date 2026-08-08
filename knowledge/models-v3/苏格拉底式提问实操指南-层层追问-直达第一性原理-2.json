@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "苏格拉底式提问实操指南",
     "source": "苏格拉底式提问实操指南_层层追问_直达第一性原理 2.md",
-    "sourceTitle": "苏格拉底式提问实操指南：层层追问，直达第一性原理",
-    "agent_roles": [
-      "intent_clarifier",
-      "hypothesis_tester",
-      "decomposer",
-      "prioritizer"
-    ]
+    "sourceTitle": "苏格拉底式提问实操指南：层层追问，直达第一性原理"
   },
   "core_definition": "此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性",
   "when_to_use": {

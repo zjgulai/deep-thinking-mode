@@ -13,13 +13,7 @@
     ],
     "skill_name": "怎么拆解任何复杂问题_逻辑树三型",
     "source": "怎么拆解任何复杂问题_逻辑树三型速查卡.md",
-    "sourceTitle": "怎么拆解任何复杂问题_逻辑树三型速查卡",
-    "agent_roles": [
-      "planner",
-      "decomposer",
-      "prioritizer",
-      "action_executor"
-    ]
+    "sourceTitle": "怎么拆解任何复杂问题_逻辑树三型速查卡"
   },
   "core_definition": "三种逻辑树，覆盖“是什么、为什么、选什么”三大核心场景，把混沌、零散、模糊的主观思考，转化为有条理、可讨论、可质疑、可落地的清晰执行脉络",
   "when_to_use": {

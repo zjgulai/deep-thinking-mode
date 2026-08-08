@@ -6,13 +6,7 @@
     "category": "07",
     "tags": [],
     "skill_name": "🛠️-急救工具-感官接地强制关机",
-    "source": "内耗管理系统___工具模块___内耗急救箱_针对五种高频内耗场景的即时干预工具包.md",
-    "agent_roles": [
-      "decision_maker",
-      "planner",
-      "action_executor",
-      "cognitive_manager"
-    ]
+    "source": "内耗管理系统___工具模块___内耗急救箱_针对五种高频内耗场景的即时干预工具包.md"
   },
   "core_definition": "】** 当内耗突然来袭，你需要的不是长篇大论，而是一个像灭火器一样——**随手可及、一拉即用**的即时干预工具",
   "when_to_use": {

@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "**第一部分",
     "source": "人为什么会拖延.md",
-    "sourceTitle": "**第一部分：情绪与心理核心 —— “逃避不适”**",
-    "agent_roles": [
-      "prioritizer",
-      "action_executor",
-      "error_handler",
-      "simplifier"
-    ]
+    "sourceTitle": "**第一部分：情绪与心理核心 —— “逃避不适”**"
   },
   "core_definition": "不是任务本身，而是由任务引发的**负面情绪**",
   "when_to_use": {

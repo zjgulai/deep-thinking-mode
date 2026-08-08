@@ -13,13 +13,7 @@
     ],
     "skill_name": "放松",
     "source": "快速放松速查卡.md",
-    "sourceTitle": "快速放松速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "快速放松速查卡"
   },
   "core_definition": "心跳加快、呼吸急促、精神紧绷",
   "when_to_use": {

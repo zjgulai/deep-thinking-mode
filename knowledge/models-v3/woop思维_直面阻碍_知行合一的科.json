@@ -6,12 +6,7 @@
     "category": "07",
     "tags": [],
     "skill_name": "woop思维_直面阻碍_知行合一的科",
-    "source": "WOOP思维_直面阻碍_知行合一的科学行动框架.md",
-    "agent_roles": [
-      "intent_clarifier",
-      "planner",
-      "action_executor"
-    ]
+    "source": "WOOP思维_直面阻碍_知行合一的科学行动框架.md"
   },
   "core_definition": "是将心理比对（怀揣愿景同时正视现实阻碍）与执行意图（制定具象“If-Then”行动预案）深度结合，既保留正向期待，又提前预判困难、制定应对对策，将障碍应对方案转化为大脑自动化行动脚本，从根源破解“想做却不做”的执行难题",
   "when_to_use": {

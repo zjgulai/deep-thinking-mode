@@ -13,13 +13,7 @@
     ],
     "skill_name": "8种系统基模",
     "source": "8种系统基模速查卡.md",
-    "sourceTitle": "8种系统基模速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "8种系统基模速查卡"
   },
   "core_definition": "复杂问题反复发作、越解决越糟",
   "when_to_use": {

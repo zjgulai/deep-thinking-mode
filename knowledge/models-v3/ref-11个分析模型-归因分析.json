@@ -8,10 +8,7 @@
     "skill_name": "归因分析",
     "source": "ref:11个分析模型:归因分析",
     "sourceType": "book",
-    "sourceTitle": "11个分析模型",
-    "agent_roles": [
-      "causal_reasoner"
-    ]
+    "sourceTitle": "11个分析模型"
   },
   "core_definition": "指标的达成 分别贡献了多大力量，是否都如运营人员所预期的那样具有优秀的转化能力；亦 或者存在被低估的情况，在之后的运营中该如何调整对各运营位资源投入的权重 分配。  对于以上问题",
   "when_to_use": {

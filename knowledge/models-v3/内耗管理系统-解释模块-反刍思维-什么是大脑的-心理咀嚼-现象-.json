@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "解释模块-·-反刍思维",
     "source": "内耗管理系统___解释模块___反刍思维_什么是大脑的_心理咀嚼_现象_.md",
-    "sourceTitle": "内耗管理系统 · 解释模块 · 反刍思维：什么是大脑的“心理咀嚼”现象？",
-    "agent_roles": [
-      "intent_clarifier",
-      "decomposer",
-      "observer_reflector",
-      "error_handler"
-    ]
+    "sourceTitle": "内耗管理系统 · 解释模块 · 反刍思维：什么是大脑的“心理咀嚼”现象？"
   },
   "core_definition": "判别**：反思让你走出来，反刍让你陷进去",
   "when_to_use": {

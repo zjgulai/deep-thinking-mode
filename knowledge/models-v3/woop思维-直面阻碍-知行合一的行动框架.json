@@ -11,13 +11,7 @@
     ],
     "skill_name": "woop思维",
     "source": "WOOP思维_直面阻碍_知行合一的行动框架.md",
-    "sourceTitle": "WOOP思维：直面阻碍、知行合一的行动框架",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "WOOP思维：直面阻碍、知行合一的行动框架"
   },
   "core_definition": "核心是融合理想愿景+现实阻碍，打破盲目乐观陷阱，把想法转化为自动化行动，告别“想做却不做”的困境",
   "when_to_use": {

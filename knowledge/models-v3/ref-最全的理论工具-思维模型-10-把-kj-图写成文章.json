@@ -8,10 +8,7 @@
     "skill_name": "把-kj-图写成文章",
     "source": "ref:最全的理论工具，思维模型：100个工具 (mba):把 KJ 图写成文章",
     "sourceType": "book",
-    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)",
-    "agent_roles": [
-      "pattern_recognizer"
-    ]
+    "sourceTitle": "最全的理论工具，思维模型：100个工具 (mba)"
   },
   "core_definition": "问题对一个答案的模式，而是多个因素对多",
   "when_to_use": {

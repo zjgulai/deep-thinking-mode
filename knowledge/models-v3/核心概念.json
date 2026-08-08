@@ -6,13 +6,7 @@
     "category": "10",
     "tags": [],
     "skill_name": "核心概念",
-    "source": "情绪劫持.md",
-    "agent_roles": [
-      "intent_clarifier",
-      "logical_analyzer",
-      "prioritizer",
-      "simplifier"
-    ]
+    "source": "情绪劫持.md"
   },
   "core_definition": "### 核心概念：大脑的“紧急按钮”——杏仁核  1.  **什么是杏仁核**：位于大脑深部，是边缘系统的一部分，主要功能是**情绪处理和快速威胁侦测**。它像一个24小时值守的、极其敏感的“警报器”。      2.  **“劫持”如何发生**：当外界刺激（如一句批评、一个挑衅的眼神）被感官接收后",
   "when_to_use": {

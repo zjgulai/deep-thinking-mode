@@ -6,13 +6,7 @@
     "category": "09",
     "tags": [],
     "skill_name": "**1-.-理论背景与核心机制**",
-    "source": "大脑焦虑_杏仁核通道和皮层通道.md",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "simplifier",
-      "cognitive_manager"
-    ]
+    "source": "大脑焦虑_杏仁核通道和皮层通道.md"
   },
   "core_definition": "大脑焦虑：杏仁核通道和皮层通道  ### **1\\. 理论背景与核心机制**  焦虑的神经机制涉及多个脑区，主要围绕两个核心系统：  *   **杏仁核通道（快速路径）**：对应情绪处理的“自下而上”机制。      *   **皮层通道（慢速路径）**：对应认知调控的“自上而下”机制。      ",
   "when_to_use": {

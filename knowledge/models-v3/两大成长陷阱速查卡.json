@@ -13,13 +13,7 @@
     ],
     "skill_name": "两大成长陷阱",
     "source": "两大成长陷阱速查卡.md",
-    "sourceTitle": "两大成长陷阱速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "两大成长陷阱速查卡"
   },
   "core_definition": "是掉进了两个隐形成长陷阱",
   "when_to_use": {

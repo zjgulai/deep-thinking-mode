@@ -13,13 +13,7 @@
     ],
     "skill_name": "专注时为什么感到舒服_三引擎",
     "source": "专注时为什么感到舒服_三引擎速查卡.md",
-    "sourceTitle": "专注时为什么感到舒服_三引擎速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "专注时为什么感到舒服_三引擎速查卡"
   },
   "core_definition": "刷了半天手机越刷越累，偶尔专注做点什么反而心里很舒服——这不是错觉，是大脑在给你调配一套化学鸡尾酒",
   "when_to_use": {

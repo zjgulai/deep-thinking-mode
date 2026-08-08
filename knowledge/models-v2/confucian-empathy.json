@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "confucian-empathy",
+  "meta": {
+    "name": "儒家「推己及人」多视角同理",
+    "category": "11",
+    "tags": [
+      "东方思维 / 中国儒家"
+    ],
+    "source": "认知传统×AI推理迁移:东方思维 / 中国儒家:儒家「推己及人」多视角同理",
+    "sourceType": "cognitive_tradition",
+    "tradition": "东方思维 / 中国儒家",
+    "ai_activation_mechanism": "强制AI为每个利益相关者建立独立的视角模型，找到对所有人都可接受的方案"
+  },
+  "engine": {
+    "core_question": "己所不欲勿施于人；在做任何决策前，同时理解所有利益相关者的真实约束和感受",
+    "trigger_signals": [
+      "决策影响多方，需要评估各方感受",
+      "方案逻辑上最优但执行时遭遇阻力",
+      "需要推进跨部门跨利益方的协调"
+    ],
+    "stop_conditions": [
+      "只有一个利益相关者的简单场景",
+      "纯技术决策无人际因素"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "每个人的视角都考虑会导致决策瘫痪",
+        "action": ""
+      },
+      {
+        "condition": "需要在全面理解后仍然做出选择",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「儒家推己及人多视角同理」模式。任何涉及多方的决策，必须先分别站在每一方的立场理解其真实约束，才能找到可行方案。\n\n【推理协议】\n1. 识别所有利益相关者：谁会被这个决策影响？\n2. 为每方建立视角模型：如果我是X，我最担心的是什么？最希望的是什么？不可接受底线是什么？\n3. 找到交集：哪些方向是所有方都能接受的？\n4. 识别真实阻力：逻辑上应该接受但实际会有阻力的原因是什么？\n5. 设计可行方案：在满足所有方底线的基础上，找到最优方案\n\n【质量门禁】「逻辑上最优」不等于「实际可行」——如果某一方会拒绝执行，方案价值为零。\n\n【输出格式】利益相关者清单 | 每方视角（担心/希望/底线）| 冲突点 | 可行的交集方案",
+    "activation_phrase": "请用「儒家「推己及人」多视角同理」模式分析：",
+    "agent_role": "observer_reflector",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

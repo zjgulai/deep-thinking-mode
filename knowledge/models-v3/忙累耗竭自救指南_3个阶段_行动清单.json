@@ -6,13 +6,7 @@
     "category": "07",
     "tags": [],
     "skill_name": "忙累耗竭自救指南_3个阶段_行动清单",
-    "source": "忙累耗竭自救指南_3个阶段_行动清单_科学修复身心透支.md",
-    "agent_roles": [
-      "prioritizer",
-      "action_executor",
-      "simplifier",
-      "cognitive_manager"
-    ]
+    "source": "忙累耗竭自救指南_3个阶段_行动清单_科学修复身心透支.md"
   },
   "core_definition": "能量透支，并非自我缺陷。它的恢复逻辑与抑郁症完全不同：无需对抗情绪、强行振作，核心是停止消耗、补充能量",
   "when_to_use": {

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "popper-falsifiability",
+  "meta": {
+    "name": "波普尔可证伪性",
+    "category": "04",
+    "tags": [
+      "西方哲学 / 科学哲学"
+    ],
+    "source": "认知传统×AI推理迁移:西方哲学 / 科学哲学:波普尔可证伪性",
+    "sourceType": "cognitive_tradition",
+    "tradition": "西方哲学 / 科学哲学",
+    "ai_activation_mechanism": "强制AI为每个假设定义「什么证据会让我放弃这个假设」，使假设变为可操作的预测"
+  },
+  "engine": {
+    "core_question": "真正有意义的假设必须能被证伪；为每个假设定义「什么证据会让我放弃它」",
+    "trigger_signals": [
+      "需要区分真假设和万能解释",
+      "假设需要被测试但不知道怎么测试",
+      "怀疑某个理论是不可证伪的"
+    ],
+    "stop_conditions": [
+      "数学证明场景",
+      "纯演绎推理场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "某些重要假设确实难以直接证伪",
+        "action": ""
+      },
+      {
+        "condition": "不要把可证伪性当成唯一的标准",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「波普尔可证伪性」模式。任何有价值的假设都必须能被证伪——你必须能说出「什么证据会让我放弃这个假设」。\n\n【推理协议】\n1. 列出假设：明确所有正在使用的假设\n2. 可证伪测试：对每个假设问：「如果这个假设是错的，我们会观察到什么？」\n3. 不可证伪识别：如果一个假设无论什么情况都能解释，标注⚠️\n4. 设计验证：对可证伪的假设，设计最小化的验证方案\n5. 置信度校准：根据可证伪程度和已有证据，为每个假设标注置信度\n\n【质量门禁】如果某个假设「不管出现什么反例都能解释」——它是伪假设，标注⚠️。\n\n【输出格式】假设列表（可证伪测试）→ 不可证伪假设⚠️ → 验证优先级排序",
+    "activation_phrase": "请用「波普尔可证伪性」模式分析：",
+    "agent_role": "hypothesis_tester",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

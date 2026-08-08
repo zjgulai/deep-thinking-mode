@@ -13,11 +13,7 @@
     ],
     "skill_name": "集合概率vs时间概率",
     "source": "集合概率vs时间概率对比速查卡.md",
-    "sourceTitle": "集合概率vs时间概率对比速查卡",
-    "agent_roles": [
-      "logical_analyzer",
-      "decision_maker"
-    ]
+    "sourceTitle": "集合概率vs时间概率对比速查卡"
   },
   "core_definition": "集合概率 vs 时间概率：你一生的决策，被哪种思维主宰",
   "when_to_use": {

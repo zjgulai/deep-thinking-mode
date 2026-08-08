@@ -7,11 +7,7 @@
     "tags": [],
     "skill_name": "先问一句“什么会搞砸”，避开失",
     "source": "先问一句_什么会搞砸__避开失败才是最高级的成事法.md",
-    "sourceTitle": "先问一句“什么会搞砸”，避开失败才是最高级的成事法",
-    "agent_roles": [
-      "decision_maker",
-      "error_handler"
-    ]
+    "sourceTitle": "先问一句“什么会搞砸”，避开失败才是最高级的成事法"
   },
   "core_definition": "不是盲目追逐不确定的成功，而是优先规避确定的失败",
   "when_to_use": {

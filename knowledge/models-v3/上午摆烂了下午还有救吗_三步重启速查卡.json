@@ -13,13 +13,7 @@
     ],
     "skill_name": "上午摆烂了下午还有救吗_三步重启",
     "source": "上午摆烂了下午还有救吗_三步重启速查卡.md",
-    "sourceTitle": "上午摆烂了下午还有救吗_三步重启速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "上午摆烂了下午还有救吗_三步重启速查卡"
   },
   "core_definition": "早上没做好就觉得一整天废了——这是完美主义在骗你",
   "when_to_use": {

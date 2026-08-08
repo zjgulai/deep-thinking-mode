@@ -7,13 +7,7 @@
     "tags": [],
     "skill_name": "信息混乱、视角固化、两难僵局？",
     "source": "信息混乱_视角固化_两难僵局_三层思考法精准破局.md",
-    "sourceTitle": "信息混乱、视角固化、两难僵局？三层思考法精准破局",
-    "agent_roles": [
-      "problem_framer",
-      "multi_perspective",
-      "planner",
-      "prioritizer"
-    ]
+    "sourceTitle": "信息混乱、视角固化、两难僵局？三层思考法精准破局"
   },
   "core_definition": "接收海量碎片化信息，缺少筛选判断标准，正反观点全盘接收",
   "when_to_use": {

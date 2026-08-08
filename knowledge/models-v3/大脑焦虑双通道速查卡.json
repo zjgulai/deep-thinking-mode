@@ -13,13 +13,7 @@
     ],
     "skill_name": "大脑焦虑双通道",
     "source": "大脑焦虑双通道速查卡.md",
-    "sourceTitle": "大脑焦虑双通道速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "大脑焦虑双通道速查卡"
   },
   "core_definition": "明明知道没事，为什么还是心慌",
   "when_to_use": {

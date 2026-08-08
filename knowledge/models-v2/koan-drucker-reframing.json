@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "koan-drucker-reframing",
+  "meta": {
+    "name": "「公案×德鲁克」问题重框架",
+    "category": "03",
+    "tags": [
+      "禅宗公案 × 德鲁克效能理论"
+    ],
+    "source": "认知传统×AI推理迁移:禅宗公案 × 德鲁克效能理论:「公案×德鲁克」问题重框架",
+    "sourceType": "cognitive_tradition",
+    "tradition": "禅宗公案 × 德鲁克效能理论",
+    "ai_activation_mechanism": "将效能检验（做正确的事）和框架突破（找到新的正确）结合，形成完整的重框架化流程"
+  },
+  "engine": {
+    "core_question": "当问题在当前维度无解时，先检验是否在做正确的事，再用公案思维跳出框架重新定义正确的事",
+    "trigger_signals": [
+      "多次尝试后问题依然无解",
+      "感觉在高效率地解决错误的问题",
+      "需要从根本上重新定义问题"
+    ],
+    "stop_conditions": [
+      "问题定义已经经过充分验证",
+      "执行阶段无需重新框架化"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "重框架化有时是逃避而非突破",
+        "action": ""
+      },
+      {
+        "condition": "跳出框架后必须回来设计可执行方案",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「公案×德鲁克问题重框架」模式。当问题无解时，先检验问题定义是否正确，再用禅宗公案思维找到新维度的解法。\n\n【推理协议】\n第1步（德鲁克）效能检验：\n- 我们现在试图解决的问题是什么？\n- 解决这个问题最终服务于什么更深的目标？\n- 有没有更直接的方式达成那个更深的目标？\n\n第2步（公案）识别对立假设：\n- 这个问题包含什么隐含的对立？（A vs B）\n- 这个对立是真实的还是框架造成的？\n\n第3步打破假设：\n- 如果去掉那个隐含假设，会怎样？\n- 在新维度上，A和B是否还是对立的？\n\n第4步重新定义问题：\n- 用新维度重新表述问题\n\n【质量门禁】新问题必须是「比旧问题更接近真实需求」的——不是更复杂，而是更精准。\n\n【输出格式】旧问题 | 效能检验 | 隐含对立 | 打破假设 | 新问题定义",
+    "activation_phrase": "请用「「公案×德鲁克」问题重框架」模式分析：",
+    "agent_role": "problem_framer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

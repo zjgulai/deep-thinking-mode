@@ -7,10 +7,7 @@
     "tags": [],
     "skill_name": "sop思维",
     "source": "SOP思维_把偶然的高水平发挥_变成每一次的稳定输出 2.md",
-    "sourceTitle": "SOP思维：把偶然的高水平发挥，变成每一次的稳定输出",
-    "agent_roles": [
-      "action_executor"
-    ]
+    "sourceTitle": "SOP思维：把偶然的高水平发挥，变成每一次的稳定输出"
   },
   "core_definition": "不是一纸简单的文档，而是一套可落地、可复用、可迭代的底层工作思维，专门打破状态波动的局限，将偶然的高水平发挥，变成次次在线的稳定输出",
   "when_to_use": {

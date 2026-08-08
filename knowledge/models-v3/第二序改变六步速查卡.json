@@ -13,13 +13,7 @@
     ],
     "skill_name": "第二序改变六步",
     "source": "第二序改变六步速查卡.md",
-    "sourceTitle": "第二序改变六步速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "sourceTitle": "第二序改变六步速查卡"
   },
   "core_definition": "越努力越糟糕，不是执行力差，是解法没换过",
   "when_to_use": {

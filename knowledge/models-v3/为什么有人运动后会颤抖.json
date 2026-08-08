@@ -7,10 +7,7 @@
     "tags": [],
     "skill_name": "为什么有人运动后会颤抖",
     "source": "为什么有人运动后会颤抖.md",
-    "sourceTitle": "为什么有人运动后会颤抖",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "为什么有人运动后会颤抖"
   },
   "core_definition": "这个问题的根本原因是什么？为什么有人运动后会颤抖如何找到它？",
   "when_to_use": {

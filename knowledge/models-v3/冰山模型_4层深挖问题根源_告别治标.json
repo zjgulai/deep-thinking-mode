@@ -6,10 +6,7 @@
     "category": "04",
     "tags": [],
     "skill_name": "冰山模型_4层深挖问题根源_告别治标",
-    "source": "冰山模型_4层深挖问题根源_告别治标不治本.md",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "source": "冰山模型_4层深挖问题根源_告别治标不治本.md"
   },
   "core_definition": "很简单：所有看得见的表面问题，都是由水面下看不见的底层结构造成的",
   "when_to_use": {

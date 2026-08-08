@@ -7,12 +7,7 @@
     "tags": [],
     "skill_name": "弱连接定律",
     "source": "弱连接定律_强连接守住当下_弱连接带你看见未来.md",
-    "sourceTitle": "弱连接定律：强连接守住当下，弱连接带你看见未来",
-    "agent_roles": [
-      "planner",
-      "action_executor",
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "弱连接定律：强连接守住当下，弱连接带你看见未来"
   },
   "core_definition": "总结：强连接帮你稳住当下，弱连接带你走向未来",
   "when_to_use": {

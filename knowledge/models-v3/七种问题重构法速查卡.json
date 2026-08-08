@@ -13,12 +13,7 @@
     ],
     "skill_name": "七种问题重构法",
     "source": "七种问题重构法速查卡.md",
-    "sourceTitle": "七种问题重构法速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "multi_perspective"
-    ]
+    "sourceTitle": "七种问题重构法速查卡"
   },
   "core_definition": "反向重构是打破正向思维惯性的第一刀",
   "when_to_use": {

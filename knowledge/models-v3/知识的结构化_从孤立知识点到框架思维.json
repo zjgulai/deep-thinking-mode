@@ -6,11 +6,7 @@
     "category": "04",
     "tags": [],
     "skill_name": "知识的结构化_从孤立知识点到框架思维",
-    "source": "知识的结构化_从孤立知识点到框架思维的跃迁.md",
-    "agent_roles": [
-      "decomposer",
-      "knowledge_synthesizer"
-    ]
+    "source": "知识的结构化_从孤立知识点到框架思维的跃迁.md"
   },
   "core_definition": "与分支，再逐步填充细节，避免“只见树木，不见森林”",
   "when_to_use": {

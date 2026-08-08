@@ -8,11 +8,7 @@
     "skill_name": "不确定性",
     "source": "ref:100+思维模型合集 (模型思维):不确定性",
     "sourceType": "book",
-    "sourceTitle": "100+思维模型合集 (模型思维)",
-    "agent_roles": [
-      "decision_maker",
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "100+思维模型合集 (模型思维)"
   },
   "core_definition": "旧范式科学是确定性的、可预见的。确定就代表着可控，控制性越强， 系统越僵化。冯·弗尔斯特定理认为：系统部分之间的连接越严格，对 整个系统的影响越小。连接越严格，元素与整个系统越疏远。所以一 个系统部件被控制的越紧，他们对系统的贡献也就越少，",
   "when_to_use": {

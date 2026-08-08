@@ -13,13 +13,7 @@
     ],
     "skill_name": "系统化分解法",
     "source": "系统化分解法速查卡.md",
-    "sourceTitle": "系统化分解法速查卡",
-    "agent_roles": [
-      "planner",
-      "decomposer",
-      "prioritizer",
-      "action_executor"
-    ]
+    "sourceTitle": "系统化分解法速查卡"
   },
   "core_definition": "这张速查卡帮你快速掌握“拆解复杂难题”的核心方法，包含MECE原则、七大分解维度和6步流程",
   "when_to_use": {

@@ -6,10 +6,7 @@
     "category": "09",
     "tags": [],
     "skill_name": "20_低效习惯_藏着80_的时间内耗",
-    "source": "20_低效习惯_藏着80_的时间内耗.md",
-    "agent_roles": [
-      "cognitive_manager"
-    ]
+    "source": "20_低效习惯_藏着80_的时间内耗.md"
   },
   "core_definition": "时间焦虑的根源是少数反复出现的低效行为，掌控这20%的习惯，可缓解80%的内耗",
   "when_to_use": {

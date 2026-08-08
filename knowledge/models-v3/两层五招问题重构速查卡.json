@@ -13,13 +13,7 @@
     ],
     "skill_name": "两层五招问题重构",
     "source": "两层五招问题重构速查卡.md",
-    "sourceTitle": "两层五招问题重构速查卡",
-    "agent_roles": [
-      "intent_clarifier",
-      "problem_framer",
-      "planner",
-      "prioritizer"
-    ]
+    "sourceTitle": "两层五招问题重构速查卡"
   },
   "core_definition": "两层五招问题重构法，把“换个角度思考”变成按步骤可套用的思维工具箱",
   "when_to_use": {

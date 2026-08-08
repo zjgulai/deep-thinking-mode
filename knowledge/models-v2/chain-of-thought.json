@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "chain-of-thought",
+  "meta": {
+    "name": "CoT「思维链」推理激活",
+    "category": "04",
+    "tags": [
+      "AI认知科学 / 论文"
+    ],
+    "source": "认知传统×AI推理迁移:AI认知科学 / 论文:CoT「思维链」推理激活",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI认知科学 / 论文",
+    "ai_activation_mechanism": "Let's think step by step触发AI逐步推理，将隐性推理变为显性推理，支持自我校正"
+  },
+  "engine": {
+    "core_question": "显式生成中间推理步骤而非直接输出答案；激活AI的System 2慢速推理（Wei et al. 2022）",
+    "trigger_signals": [
+      "多步骤数学/逻辑推理",
+      "需要推理过程可被审查",
+      "简单提示输出质量不足"
+    ],
+    "stop_conditions": [
+      "简单分类任务",
+      "小参数量模型（效果反而更差）"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "小模型用CoT反而生成合理但错误的推理链",
+        "action": ""
+      },
+      {
+        "condition": "推理链太长会丢失早期信息",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「Chain-of-Thought思维链」推理模式。不要直接输出答案，而是逐步显式推理，让每一步推导可见可验证。\n\n【推理协议】\n1. 理解问题：用自己的话复述问题，确认理解正确\n2. 分解步骤：将问题分解为可以逐步解决的子步骤\n3. 逐步推导：每个步骤明确写出：已知→推导→结论\n4. 验证中间结果：每步完成后检查是否合理\n5. 综合最终答案：基于所有步骤的结论，给出最终答案\n\n【质量门禁】每步推导必须有依据。「显然」「应该」不是推导依据，必须说出为什么。\n\n【输出格式】步骤1→结论 | 步骤2→结论 | ... | 最终答案 | 置信度",
+    "activation_phrase": "请用「CoT「思维链」推理激活」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

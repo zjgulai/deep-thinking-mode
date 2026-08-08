@@ -6,13 +6,7 @@
     "category": "06",
     "tags": [],
     "skill_name": "框架效应-#决策心理学",
-    "source": "框架效应_表述如何影响我们的决策.md",
-    "agent_roles": [
-      "problem_framer",
-      "first_principles",
-      "decision_maker",
-      "prioritizer"
-    ]
+    "source": "框架效应_表述如何影响我们的决策.md"
   },
   "core_definition": "核心是“怎么说比说什么更重要”，颠覆了“个体偏好稳定”的传统经济学假设",
   "when_to_use": {

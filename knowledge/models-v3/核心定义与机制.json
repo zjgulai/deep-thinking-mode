@@ -6,13 +6,7 @@
     "category": "10",
     "tags": [],
     "skill_name": "核心定义与机制",
-    "source": "情感标记.md",
-    "agent_roles": [
-      "problem_framer",
-      "planner",
-      "prioritizer",
-      "action_executor"
-    ]
+    "source": "情感标记.md"
   },
   "core_definition": "### 核心定义与机制  在这种语境下，**情感标记**指的是：  > 个体有意识地**注意、识别并用语言词汇（通常是简单的词语）来命名内心正在发生的情绪状态**。  它之所以有效，关键在于它改变了大脑处理情绪信息的**神经通路**。  1.  **默认通路（无标记）**：情绪刺激（如一个愤怒的表情",
   "when_to_use": {

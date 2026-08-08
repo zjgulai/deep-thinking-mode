@@ -6,12 +6,7 @@
     "category": "07",
     "tags": [],
     "skill_name": "行动力提升秘籍-#思维框架-#框架思",
-    "source": "WOOP思维_直面阻碍_知行合一的行动框架.md",
-    "agent_roles": [
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "source": "WOOP思维_直面阻碍_知行合一的行动框架.md"
   },
   "core_definition": "核心是融合理想愿景+现实阻碍，打破盲目乐观陷阱，把想法转化为自动化行动，告别“想做却不做”的困境",
   "when_to_use": {

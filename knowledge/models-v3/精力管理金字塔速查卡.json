@@ -13,13 +13,7 @@
     ],
     "skill_name": "精力管理金字塔",
     "source": "精力管理金字塔速查卡.md",
-    "sourceTitle": "精力管理金字塔速查卡",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "communicator"
-    ]
+    "sourceTitle": "精力管理金字塔速查卡"
   },
   "core_definition": "我们总以为高效等于“挤时间”",
   "when_to_use": {

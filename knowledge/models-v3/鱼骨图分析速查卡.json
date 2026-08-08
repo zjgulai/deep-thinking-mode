@@ -13,13 +13,7 @@
     ],
     "skill_name": "鱼骨图分析",
     "source": "鱼骨图分析速查卡.md",
-    "sourceTitle": "鱼骨图分析速查卡",
-    "agent_roles": [
-      "causal_reasoner",
-      "planner",
-      "prioritizer",
-      "action_executor"
-    ]
+    "sourceTitle": "鱼骨图分析速查卡"
   },
   "core_definition": "问题反复发作，复盘总是流于形式",
   "when_to_use": {

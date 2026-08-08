@@ -13,10 +13,7 @@
     ],
     "skill_name": "复杂问题该用什么思维_四大阶段匹配",
     "source": "复杂问题该用什么思维_四大阶段匹配速查卡.md",
-    "sourceTitle": "复杂问题该用什么思维_四大阶段匹配速查卡",
-    "agent_roles": [
-      "knowledge_synthesizer"
-    ]
+    "sourceTitle": "复杂问题该用什么思维_四大阶段匹配速查卡"
   },
   "core_definition": "面对复杂问题脑子里冒出各种思路，却不知道从哪个角度切入——不是缺工具，是缺一套“什么时候该用什么”的调用地图",
   "when_to_use": {

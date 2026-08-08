@@ -6,13 +6,7 @@
     "category": "09",
     "tags": [],
     "skill_name": "四大核心类型",
-    "source": "何为着急.md",
-    "agent_roles": [
-      "planner",
-      "prioritizer",
-      "action_executor",
-      "simplifier"
-    ]
+    "source": "何为着急.md"
   },
   "core_definition": "### 四大核心类型  #### 1. **失控型着急**  *   **核心触发**：对局面失去掌控的恐惧。事情没有按照预期或计划发展。      *   **内心独白**：“这样下去不行！”“乱了，全乱了！”“我得马上做点什么把它拉回正轨！”      *   **典型情境**：项目出现意外漏洞",
   "when_to_use": {
