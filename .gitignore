@@ -7,7 +7,7 @@ node_modules/
 
 # Original Markdown corpus (moved to data/) — raw articles must stay private.
 /data/*
-!/data/AGENTS.md
+/model-chains.json
 
 # Copyrighted reference books and source materials — never public.
 /ref/

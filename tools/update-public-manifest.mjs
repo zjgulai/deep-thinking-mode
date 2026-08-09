@@ -34,6 +34,7 @@ function toPosix(path) {
 
 function isGeneratedDeploymentPath(path) {
   return (
+    path.startsWith("chain-protocols/archive-chains/") ||
     path === "deploy/tencent-cloud/xmind-site/.env" ||
     path.startsWith("deploy/tencent-cloud/xmind-site/audit/") ||
     path.startsWith("deploy/tencent-cloud/xmind-site/dist/") ||
