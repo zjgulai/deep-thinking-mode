@@ -5651,7 +5651,7 @@ const realRoot = fs.realpathSync(rootDir);
 const artifactAbsolute = join(realRoot, ...artifactPath.split("/"));
 const original = {
   open: fs.promises.open,
-  unlink: fs.promises.unlink,
+  rename: fs.promises.rename,
   writeFile: fs.promises.writeFile
 };
 let replaced = false;
@@ -5661,8 +5661,13 @@ function repoPath(value) {
 fs.promises.open = async (...args) => {
   const path = repoPath(args[0]);
   if (!replaced && /^\\.local\\/state\\/\\.current-cleaning\\./.test(path)) {
-    await original.unlink(artifactAbsolute);
-    await original.writeFile(artifactAbsolute, artifactBytes, { mode: 0o600 });
+    const replacementAbsolute =
+      join(realRoot, ".identity-replacement-" + process.pid);
+    await original.writeFile(replacementAbsolute, artifactBytes, {
+      flag: "wx",
+      mode: 0o600
+    });
+    await original.rename(replacementAbsolute, artifactAbsolute);
     replaced = true;
   }
   return original.open(...args);
@@ -6515,6 +6520,7 @@ const realRoot = fs.realpathSync(rootDir);
 const victimAbsolute = join(realRoot, ...victimPath.split("/"));
 const original = {
   open: fs.promises.open,
+  rename: fs.promises.rename,
   unlink: fs.promises.unlink,
   writeFile: fs.promises.writeFile,
   lstat: fs.promises.lstat
@@ -6563,13 +6569,18 @@ fs.promises.open = async (...args) => {
           if (!triggered && statCalls >= 2 && readObserved) {
             fullProofObserved = true;
             originalVictimInode = (await original.lstat(victimAbsolute)).ino;
-            await original.unlink(victimAbsolute);
             if (mutationKind === "replace") {
-              await original.writeFile(victimAbsolute, replacementBytes, {
+              const replacementAbsolute =
+                victimAbsolute + ".replacement-" + process.pid;
+              await original.writeFile(replacementAbsolute, replacementBytes, {
                 flag: "wx",
                 mode: 0o600
               });
-              replacementVictimInode = (await original.lstat(victimAbsolute)).ino;
+              replacementVictimInode =
+                (await original.lstat(replacementAbsolute)).ino;
+              await original.rename(replacementAbsolute, victimAbsolute);
+            } else {
+              await original.unlink(victimAbsolute);
             }
             triggered = true;
           }
@@ -8729,16 +8740,20 @@ function repoPath(value) {
 }
 async function replaceExactLeaf(path, backupPath) {
   await original.rename(path, backupPath);
-  await original.unlink(backupPath);
   await original.writeFile(path, exactBytes, { flag: "wx", mode: 0o600 });
   replacementInode = (await original.lstat(path)).ino;
+  await original.unlink(backupPath);
 }
 async function replaceExactLeafKeepingOriginal() {
   originalLeafInode = (await original.lstat(targetAbsolute)).ino;
   await original.link(targetAbsolute, outsidePath);
-  await original.unlink(targetAbsolute);
-  await original.writeFile(targetAbsolute, exactBytes, { flag: "wx", mode: 0o600 });
-  replacementInode = (await original.lstat(targetAbsolute)).ino;
+  const replacementAbsolute = targetAbsolute + ".replacement-" + process.pid;
+  await original.writeFile(replacementAbsolute, exactBytes, {
+    flag: "wx",
+    mode: 0o600
+  });
+  replacementInode = (await original.lstat(replacementAbsolute)).ino;
+  await original.rename(replacementAbsolute, targetAbsolute);
   swapped = true;
 }
 
@@ -8907,6 +8922,7 @@ const original = {
   writeFile: fs.promises.writeFile,
   mkdir: fs.promises.mkdir,
   link: fs.promises.link,
+  rename: fs.promises.rename,
   unlink: fs.promises.unlink
 };
 const targetExistedInitially = fs.existsSync(targetAbsolute);
@@ -8975,7 +8991,13 @@ async function mutateTarget() {
     const before = await original.lstat(targetAbsolute);
     originalTargetInode = before.ino;
     await original.link(targetAbsolute, config.outside_path);
-    await original.unlink(targetAbsolute);
+    const replacementAbsolute = targetAbsolute + ".replacement-" + process.pid;
+    await original.writeFile(replacementAbsolute, replacementBytes, {
+      flag: "wx",
+      mode: 0o600
+    });
+    replacementTargetInode = (await original.lstat(replacementAbsolute)).ino;
+    await original.rename(replacementAbsolute, targetAbsolute);
   } else {
     try {
       await original.lstat(targetAbsolute);
@@ -8987,12 +9009,12 @@ async function mutateTarget() {
     if (!targetAbsentImmediatelyBeforeMutation) {
       throw new Error("target appeared before the controlled post-preflight mutation");
     }
+    await original.writeFile(targetAbsolute, replacementBytes, {
+      flag: "wx",
+      mode: 0o600
+    });
+    replacementTargetInode = (await original.lstat(targetAbsolute)).ino;
   }
-  await original.writeFile(targetAbsolute, replacementBytes, {
-    flag: "wx",
-    mode: 0o600
-  });
-  replacementTargetInode = (await original.lstat(targetAbsolute)).ino;
   hookTriggered = true;
   treeAfterHook = await snapshotTree();
 }
@@ -13895,6 +13917,14 @@ let fixedUnlinkProofHookTriggered = false;
 let activeSuccessorPath = null;
 let terminalPublicationDurable = false;
 let postTerminalDurabilityLstatCount = 0;
+let identityReplacementSerial = 0;
+async function replaceRegularFile(path, bytes) {
+  const replacement = path + ".identity-replacement-" + process.pid + "-" +
+    identityReplacementSerial;
+  identityReplacementSerial += 1;
+  await originalWriteFile(replacement, bytes, { flag: "wx", mode: 0o600 });
+  await originalRename(replacement, path);
+}
 process.kill = (pid, signal) => {
   killCalls.push([pid, signal]);
   if (signal !== 0) {
@@ -13968,11 +13998,7 @@ fs.promises.lstat = async (...args) => {
         const replacedPath =
           rootDir + "/" + config.replace_at_fixed_unlink_proof_path;
         const bytes = fs.readFileSync(replacedPath);
-        await originalUnlink(replacedPath);
-        await originalWriteFile(replacedPath, bytes, {
-          flag: "wx",
-          mode: 0o600
-        });
+        await replaceRegularFile(replacedPath, bytes);
       }
       if (config.inject_successor_at_fixed_unlink_proof === true) {
         const leasesRoot = rootDir + "/.local/state/cleaning-recovery-leases";
@@ -14029,8 +14055,7 @@ fs.promises.lstat = async (...args) => {
     if (!candidateNodeReplaced && candidateNodeLstatCount === 4) {
       candidateNodeReplaced = true;
       const bytes = fs.readFileSync(path);
-      await originalUnlink(path);
-      await originalWriteFile(path, bytes, { flag: "wx", mode: 0o600 });
+      await replaceRegularFile(path, bytes);
     }
   }
   return originalLstat(...args);
@@ -14043,11 +14068,7 @@ fs.promises.readdir = async (...args) => {
       publicationCandidatePath.includes(path + "/.target.")) {
     publicationCandidateReplaced = true;
     const bytes = fs.readFileSync(publicationCandidatePath);
-    await originalUnlink(publicationCandidatePath);
-    await originalWriteFile(publicationCandidatePath, bytes, {
-      flag: "wx",
-      mode: 0o600
-    });
+    await replaceRegularFile(publicationCandidatePath, bytes);
   }
   if (!otherLeaseCandidateInjected &&
       config.inject_other_lease_candidate !== undefined &&
@@ -14082,11 +14103,7 @@ fs.promises.link = async (...args) => {
     prelinkReplacementInjected = true;
     const replacedPath = rootDir + "/" + config.replace_before_link_path;
     const bytes = fs.readFileSync(replacedPath);
-    await originalUnlink(replacedPath);
-    await originalWriteFile(replacedPath, bytes, {
-      flag: "wx",
-      mode: 0o600
-    });
+    await replaceRegularFile(replacedPath, bytes);
   }
   if (!destinationWinnerInjected &&
       config.inject_destination_before_link !== undefined &&
@@ -14186,11 +14203,7 @@ fs.promises.open = async (...args) => {
     chainReplaced = true;
     const replacedPath = rootDir + "/" + config.replace_chain_path;
     const bytes = fs.readFileSync(replacedPath);
-    await originalUnlink(replacedPath);
-    await originalWriteFile(replacedPath, bytes, {
-      flag: "wx",
-      mode: 0o600
-    });
+    await replaceRegularFile(replacedPath, bytes);
   }
   const handle = await originalOpen(...args);
   return new Proxy(handle, {

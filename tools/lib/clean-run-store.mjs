@@ -770,19 +770,31 @@ function absolutePath(context, repoPath) {
 }
 
 function identity(stat) {
-  return { dev: stat.dev, ino: stat.ino };
+  return {
+    dev: stat.dev,
+    ino: stat.ino,
+    birthtimeMs: stat.birthtimeMs ?? null
+  };
 }
 
 function sameIdentity(left, right) {
-  return left.dev === right.dev && left.ino === right.ino;
+  return left.dev === right.dev && left.ino === right.ino &&
+    left.birthtimeMs === right.birthtimeMs;
 }
 
 function fileFacts(stat) {
-  return { dev: stat.dev, ino: stat.ino, size: stat.size, nlink: stat.nlink };
+  return {
+    dev: stat.dev,
+    ino: stat.ino,
+    birthtimeMs: stat.birthtimeMs ?? null,
+    size: stat.size,
+    nlink: stat.nlink
+  };
 }
 
 function sameFileFacts(left, right) {
   return left.dev === right.dev && left.ino === right.ino &&
+    left.birthtimeMs === right.birthtimeMs &&
     left.size === right.size && left.nlink === right.nlink;
 }
 
