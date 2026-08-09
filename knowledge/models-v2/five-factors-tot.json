@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "five-factors-tot",
+  "meta": {
+    "name": "「五事×ToT」战略决策树",
+    "category": "06",
+    "tags": [
+      "孙子五事 × 树状推理ToT"
+    ],
+    "source": "认知传统×AI推理迁移:孙子五事 × 树状推理ToT:「五事×ToT」战略决策树",
+    "sourceType": "cognitive_tradition",
+    "tradition": "孙子五事 × 树状推理ToT",
+    "ai_activation_mechanism": "将二维分析（维度评估+路径选择）融合，在保证完整性的同时保持结构化"
+  },
+  "engine": {
+    "core_question": "用孙子五事定义5个独立评估维度，在每个维度上用ToT展开多个策略分支，形成5×N的决策树",
+    "trigger_signals": [
+      "高风险战略决策需要多维度×多路径评估",
+      "单维度分析会掩盖其他维度的致命问题",
+      "决策影响深远错误代价极高"
+    ],
+    "stop_conditions": [
+      "时间紧迫的操作决策",
+      "已有充分分析的确定性决策"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "5×N的评估量很大，需要控制分支数量",
+        "action": ""
+      },
+      {
+        "condition": "维度之间的交叉影响难以完整捕捉",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「五事×ToT战略决策树」模式。在5个关键维度上分别展开多个策略选项，找到在所有维度上都可接受的最优组合。\n\n【推理协议】\n在每个维度展开3个策略选项：\n\n道（价值对齐）：选项道-A...→评分 | 选项道-B...→评分 | 选项道-C...→评分\n天（时机）：[同上结构]\n地（资源）：[同上结构]\n将（能力）：[同上结构]\n法（系统）：[同上结构]\n\n维度评分后：\n- 找到在所有维度得分都≥3的组合\n- 如果无组合满足，找最薄弱维度，重新设计\n\n【质量门禁】如果某个方案在某个维度评分1-2，必须先解决这个维度的问题，再讨论整体最优。\n\n【输出格式】5维×3选项矩阵 | 得分综合 | 推荐组合 | 薄弱维度解决方案",
+    "activation_phrase": "请用「「五事×ToT」战略决策树」模式分析：",
+    "agent_role": "planner",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

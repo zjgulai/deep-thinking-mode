@@ -6,7 +6,11 @@
     "category": "04",
     "tags": [],
     "skill_name": "苏格拉底式提问实操指南_层层追问_直",
-    "source": "苏格拉底式提问实操指南_层层追问_直达第一性原理.md"
+    "source": "苏格拉底式提问实操指南_层层追问_直达第一性原理.md",
+    "agent_roles": [
+      "intent_clarifier",
+      "problem_framer"
+    ]
   },
   "core_definition": "此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性",
   "when_to_use": {

@@ -1,0 +1,50 @@
+name: xmind_site
+
+services:
+  web:
+    image: xmind-site:${XMIND_IMAGE_TAG:?set XMIND_IMAGE_TAG to the verified 12-character artifact SHA}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ARTIFACT_SHA256: ${XMIND_ARTIFACT_SHA256:?set XMIND_ARTIFACT_SHA256 to the verified 64-character artifact SHA}
+    platform: linux/amd64
+    pull_policy: never
+    restart: unless-stopped
+    stop_grace_period: 20s
+    user: "101:101"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 64
+    cpus: 0.25
+    mem_limit: 128m
+    mem_reservation: 32m
+    memswap_limit: 128m
+    tmpfs:
+      - /tmp:size=16m,mode=1777,noexec,nosuid,nodev
+    ports:
+      - name: xmind-edge-origin
+        target: 8080
+        published: "18888"
+        host_ip: 172.20.0.1
+        protocol: tcp
+        app_protocol: http
+    networks:
+      - internal
+    labels:
+      com.lute.application: xmind-site
+      com.lute.exposure: lighthouse-gateway-only
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+        compress: "true"
+
+networks:
+  internal:
+    name: xmind_site_internal
+    driver: bridge

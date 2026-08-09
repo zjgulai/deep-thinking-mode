@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "wittgenstein-language-games",
+  "meta": {
+    "name": "维特根斯坦语言游戏",
+    "category": "03",
+    "tags": [
+      "西方哲学 / 奥地利分析哲学"
+    ],
+    "source": "认知传统×AI推理迁移:西方哲学 / 奥地利分析哲学:维特根斯坦语言游戏",
+    "sourceType": "cognitive_tradition",
+    "tradition": "西方哲学 / 奥地利分析哲学",
+    "ai_activation_mechanism": "强制AI在开始推理前声明当前语言游戏的规则，切换话题时必须同时切换规则集"
+  },
+  "engine": {
+    "core_question": "同一个词在不同语境规则中含义完全不同；切换语境等于切换推理规则",
+    "trigger_signals": [
+      "对话双方使用相同的词但理解不同",
+      "在A语境成立的推理在B语境完全不适用",
+      "沟通出现莫名其妙的误解"
+    ],
+    "stop_conditions": [
+      "语境已经非常清晰明确",
+      "纯数学/逻辑类问题"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "过度语境化会导致相对主义",
+        "action": ""
+      },
+      {
+        "condition": "语言游戏分析不能替代实质性论证",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「维特根斯坦语言游戏」模式。每个概念在不同语境中有不同含义和规则。推理前先声明当前语言游戏的规则。\n\n【推理协议】\n1. 识别关键词：找出可能有多种理解的核心词汇\n2. 声明语言游戏：明确「在本次对话中，我们使用的是X规则」\n3. 检查一致性：所有推理是否都在同一个规则内进行？\n4. 切换标记：如果需要切换语境，明确说「现在切换到Y语言游戏」\n\n【质量门禁】出现「但是你刚才说的...」时，先检查是否发生了未声明的语言游戏切换。\n\n【输出格式】当前语言游戏规则 → 推理过程 → [如需切换]明确切换",
+    "activation_phrase": "请用「维特根斯坦语言游戏」模式分析：",
+    "agent_role": "problem_framer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

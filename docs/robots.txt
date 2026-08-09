@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xmind.lute-tlz-dddd.top/sitemap.xml

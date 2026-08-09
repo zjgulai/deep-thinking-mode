@@ -1,18 +1,19 @@
-# “系统化思维”单文件知识网站设计
+# “系统化思维”多页知识工作台设计
 
 ## 1. 状态与适用范围
 
-- 设计日期：2026-07-30。
+- 原始设计日期：2026-07-30；多页发布决策：2026-08-09。
 - 用户已确认采用“知识工作台”方向。
 - 产品名：`系统化思维`。
 - 公开仓库：`https://github.com/zjgulai/deep-thinking-mode`。
-- GitHub Pages 子路径：`/deep-thinking-mode/`。
-- 预期网址：`https://zjgulai.github.io/deep-thinking-mode/`。
+- 生产域名：`https://xmind.lute-tlz-dddd.top/`。
+- 生产环境：腾讯云轻量应用服务器上的独立静态站 Compose project。
 
 本文冻结网站的信息架构、视觉语言、交互、响应式、无障碍、安全、测试和发布边界。
 资料清理、语义策展、来源保护和公开历史仍以
-`2026-07-27-brain-model-knowledge-system-design.md` 为权威；两份规格冲突时，隐私、安全、
-来源证据和单文件离线约束以该总规格为准，网站表现以本文为准。
+`2026-07-27-brain-model-knowledge-system-design.md` 为权威；两份规格冲突时，隐私、安全和
+来源证据以该总规格为准，网站结构与生产发布以本文 2026-08-09 决策为准。原来的单文件
+约束已被用户明确改为完整多页静态站，不再作为验收条件。
 
 ## 2. 设计决策
 
@@ -46,32 +47,26 @@ Vite、Tailwind、lucide-react、Google Fonts 或附件中的远程视频。
 - 账户、同步、收藏、评论、在线编辑或数据库。
 - 文件上传、URL 抓取入口或浏览器内语义分析。
 - 在线 AI、聊天窗口、个性化推荐或行为追踪。
-- 多页路由、PWA、service worker 或客户端数据下载。
+- PWA、service worker、客户端远程数据下载或依赖服务端 API 的路由。
 - 远程字体、图片、视频、图标库或其他运行时资源。
 
 ## 4. 页面体验
 
-### 4.1 页面顺序
+### 4.1 页面与路由
 
 ```text
-跳至正文
-  ↓
-全局顶栏
-  ↓
-紧凑氛围首屏（系统化思维 + 问题入口）
-  ↓
-13 章系统地图
-  ↓
-三栏知识工作台
-  ├── 左：章节与二级目录
-  ├── 中：章节总览与模型正文
-  └── 右：Codex 应用卡、关系、来源和风险
-  ↓
-页尾版本与来源说明
+site/index.html                     品牌首页、精选路径、Agent 流程、13 章地图
+site/models/index.html              全量模型目录与浏览器本地筛选
+site/chapters/ch*.html              13 个章节索引页
+site/models/<stable-slug>.html      2789 个独立模型详情页
+site/router.html                    本地规则 Agent 路由器
+site/404.html                       明确的错误与恢复入口
+site/assets/*                       共享 CSS、JavaScript 与本地图标
+site/robots.txt + sitemap.xml       搜索引擎入口
 ```
 
-页面只有一个 HTML 文档。章节和模型使用稳定 hash anchor 导航，不依赖 History API、
-根绝对路径或服务端重写。
+所有页面使用稳定、确定性的相对链接，不依赖 History API、服务端重写、CDN 或第三方运行时。
+`docs/` 与 `site/` 必须由同一构建候选同步生成并逐文件一致。
 
 ### 4.2 全局顶栏
 
@@ -117,23 +112,17 @@ Vite、Tailwind、lucide-react、Google Fonts 或附件中的远程视频。
 它是二维网格，不实现自由拖拽或无限画布。桌面 3–4 列、平板 2 列、移动端 1 列。
 点击卡片移动到对应章节，并把焦点放入章节标题。
 
-### 4.5 三栏知识工作台
+### 4.5 模型详情工作台
 
 宽屏采用：
 
 ```text
-240px / minmax(0, 720px) / 280px
+minmax(0, 1fr) / 390px
 ```
 
 最大内容宽度约 1320px，栏间距 32px。
 
-左栏：
-
-- 13 章和二级目录。
-- 当前章节同时使用文字、左侧标记和颜色表达。
-- 支持章节折叠，但不能隐藏当前模型所属章节。
-
-中栏按稳定顺序渲染：
+主栏按稳定顺序渲染：
 
 1. 核心定义。
 2. 底层机制。
@@ -153,6 +142,9 @@ Vite、Tailwind、lucide-react、Google Fonts 或附件中的远程视频。
 - 前置、组合、替代和易混淆模型。
 - 来源标题、发布日期、内容作用和复核状态。
 - `needs_review`、`needs_ocr`、`needs_medical_review` 等明确文字标识。
+
+章节页只渲染模型摘要、触发信号和角色标签；完整协议进入独立模型页，避免把一个章节渲染为
+数 MB 的单文档。移动端右栏移动到主栏之前，使 Codex 应用卡仍保持可达。
 
 ### 4.6 问题面板
 
@@ -268,21 +260,22 @@ knowledge/*.json + knowledge/**/*.md
   → 安全 Markdown 渲染
   → 搜索索引与问题路由编译
   → HTML-safe JSON 序列化
-  → 模板 + CSS + client JS 内嵌
-  → CSP hash 与结构审计
-  → 同目录临时文件验证
-  → 原子替换 site/index.html
+  → 模板 + 共享本地 CSS/client JS
+  → 首页、章节、模型详情、路由、404、robots、sitemap
+  → CSP 与完整内部链接闭包审计
+  → 同文件系统候选目录验证
+  → 候选目录替换 site/，再同步替换 docs/
 ```
 
 构建器只消费公开安全的 `knowledge/`。它不得读取原始全文、清理全文、OCR、私密学习笔记或
-Graphify 输出。相同输入必须产生逐字节相同的 `site/index.html`。
+Graphify 输出。相同输入必须使 `site/` 中每个路径及其 SHA-256 集合逐字节相同。
 
 浏览器端：
 
 - 不执行 `fetch`、XHR、WebSocket、service worker 或 analytics。
 - 不写 `innerHTML`；用户输入只进入 `textContent` 或控件 `value`。
 - 不把用户输入写入 URL、storage、cookie 或远程服务。
-- 只读取构建时内嵌的数据脚本。
+- 只读取当前 HTML 中构建时渲染的数据属性和 DOM 文本。
 
 ## 9. 异常与失败边界
 
@@ -290,7 +283,7 @@ Graphify 输出。相同输入必须产生逐字节相同的 `site/index.html`�
 
 - 缺章节、重复 ID、悬空关系、无 Codex 卡、来源计数不一致或危险 Markdown 时构建失败。
 - 模板 marker 缺失或重复、CSP hash 不匹配、外部资源或损坏 HTML 时构建失败。
-- 候选文件未通过全部检查时，不替换上一份可用 `site/index.html`。
+- 候选目录未通过全部检查时，不替换上一份可用 `site/`。
 - rename 后目录 fsync 失败只报告 durability 未确认，不伪称已经回滚。
 
 客户端：
@@ -329,8 +322,8 @@ Graphify 仅用于代码与模块架构审计，不参与知识语义处理、�
 ### 11.2 人工验证
 
 - 桌面宽屏、平板、390px 手机和 320px reflow。
-- `file://` 离线打开。
-- `/deep-thinking-mode/` 本地子路径服务。
+- 本地静态 HTTP 服务与相对链接导航。
+- 腾讯云候选 origin 与 `https://xmind.lute-tlz-dddd.top/`。
 - 键盘完整操作、可见焦点、Escape、焦点归还和打印。
 - 阻断网络后搜索、匹配和提问生成仍可用。
 - 首屏背景、玻璃问题卡和正文在浅色、深色系统偏好及 reduced motion 下可读。
@@ -342,13 +335,13 @@ Graphify 仅用于代码与模块架构审计，不参与知识语义处理、�
 当前 `main` 历史包含 418 份原始 Markdown，不得直接推送。发布顺序保持：
 
 1. 验证私有 Git bundle 和恢复能力。
-2. 完成私有迁移、公开范围检查和最终单文件构建。
+2. 完成私有迁移、公开范围检查和最终多页构建。
 3. 在临时 index 中生成公开安全候选 tree。
 4. 用户确认候选 tree 后创建唯一无父公开 root commit。
 5. 用户确认后原子激活本地 `main`。
 6. 确认 GitHub 身份、公开邮箱、空仓库和 Pages 配置后绑定 `origin`。
 7. 用户确认“首次 push + 自动生产部署”后推送。
-8. 验证 Actions、Pages URL 和线上 `site/index.html` 字节身份。
+8. 验证生产域名、TLS、安全头及线上全站路径/hash 身份。
 
 GitHub Actions 使用 build/deploy 两个 job，只向 Pages 上传 `site/`，并使用
 `contents: read`、`pages: write`、`id-token: write` 和 `github-pages` environment。
@@ -357,13 +350,13 @@ GitHub Actions 使用 build/deploy 两个 job，只向 Pages 上传 `site/`，�
 
 设计完成必须同时满足：
 
-- 产品名称、仓库、子路径和网址全部使用 `系统化思维` / `deep-thinking-mode`。
+- 产品名称与网址使用 `系统化思维` / `https://xmind.lute-tlz-dddd.top/`。
 - 首屏体现暖色、渐隐背景和玻璃问题入口，但没有远程视频或持续环境动画。
 - 13 章地图、三栏工作台、搜索、问题匹配、Codex 提问、关系与来源均可用。
 - 每个 ready 模型有完整应用卡；风险、待复核和证据边界可见。
-- 只有一个 `site/index.html`，可离线和在 Pages 子路径运行。
+- `site/` 是链接闭合的多页静态目录，可由任意静态 HTTP 服务器托管。
 - 运行时网络请求为零，危险 HTML、外部资源和断裂锚点为零。
 - 键盘、reduced motion、320px reflow 和打印通过。
-- 两次相同构建 hash 一致；失败构建不覆盖上一份可用站点。
+- 两次相同构建的路径集合与全部 hash 一致；失败构建不覆盖上一份可用站点。
 - 公开 Git 历史和 Pages artifact 不含原始全文、清理全文、OCR、私人记录、bundle、
   Graphify skill 配置或 Graphify 输出。

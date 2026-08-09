@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "aristotle-syllogism",
+  "meta": {
+    "name": "亚里士多德三段论",
+    "category": "02",
+    "tags": [
+      "西方哲学 / 古希腊逻辑学"
+    ],
+    "source": "认知传统×AI推理迁移:西方哲学 / 古希腊逻辑学:亚里士多德三段论",
+    "sourceType": "cognitive_tradition",
+    "tradition": "西方哲学 / 古希腊逻辑学",
+    "ai_activation_mechanism": "强制AI显式化隐含的大前提，使推理的每一层都可被独立审查"
+  },
+  "engine": {
+    "core_question": "大前提+小前提→结论；每步可被独立验证；强制显式化隐含的大前提",
+    "trigger_signals": [
+      "需要将直觉转化为可验证的论证",
+      "结论需要严格的逻辑支撑",
+      "需要找到论证的薄弱环节"
+    ],
+    "stop_conditions": [
+      "创意生成场景",
+      "需要直觉跳跃的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "大前提本身可能有误",
+        "action": ""
+      },
+      {
+        "condition": "形式正确不等于内容正确",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「亚里士多德三段论」模式。将每个推理步骤分解为大前提+小前提→结论的结构，使推理完全透明可验证。\n\n【推理协议】\n1. 识别结论：你要证明什么？\n2. 找小前提：关于这个具体情况，有哪些已知事实？\n3. 找大前提：什么普遍规律能将小前提连接到结论？\n4. 检验大前提：大前提是否真的成立？有反例吗？\n5. 验证推理：如果大前提和小前提都成立，结论必然成立吗？\n\n【质量门禁】如果大前提是「一般来说...」「通常...」——这不是普遍规律，结论只是概率性的。\n\n【输出格式】大前提 | 小前提 | 结论 | 大前提置信度",
+    "activation_phrase": "请用「亚里士多德三段论」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "xu-shi-self-consistency",
+  "meta": {
+    "name": "「虚实交替」双模型验证",
+    "category": "03",
+    "tags": [
+      "东方虚实论 × 西方自我一致性"
+    ],
+    "source": "认知传统×AI推理迁移:东方虚实论 × 西方自我一致性:「虚实交替」双模型验证",
+    "sourceType": "cognitive_tradition",
+    "tradition": "东方虚实论 × 西方自我一致性",
+    "ai_activation_mechanism": "将两个独立推理路径（表象路径/意图路径）的不一致转化为洞察而非错误"
+  },
+  "engine": {
+    "core_question": "同时维护表象模型和意图模型，两者不一致处说明有隐性动机或信息缺口",
+    "trigger_signals": [
+      "用户说满意但行为显示不满意",
+      "数据和用户反馈给出相反信号",
+      "需要区分言辞和行为"
+    ],
+    "stop_conditions": [
+      "信息来源完全一致的场景",
+      "简单事实查询"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "过度推断可能制造不存在的矛盾",
+        "action": ""
+      },
+      {
+        "condition": "需要足够的信息量才能识别不一致",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「虚实交替双模型验证」模式。同时维护「表象模型」（对方说的/显示的）和「意图模型」（真实驱动力），不一致处是最重要的信息。\n\n【推理协议】\n模型A（虚-表象）：\n- 对方说了什么？\n- 表面数据显示什么？\n- 正式表达的需求是什么？\n\n模型B（实-意图）：\n- 对方实际做了什么？\n- 背景数据显示什么？\n- 行为背后的真实驱动是什么？\n\n差异分析：\n- 模型A和B在哪些关键点不一致？\n- 什么样的「真实意图X」能同时解释A和B？\n\n【质量门禁】不能只接受「虚」或只信任「实」。两个模型都是真实的，不一致才是需要理解的信息。\n\n【输出格式】表象模型 | 意图模型 | 关键不一致 | 可能的解释 | 需要验证的假设",
+    "activation_phrase": "请用「「虚实交替」双模型验证」模式分析：",
+    "agent_role": "hypothesis_tester",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

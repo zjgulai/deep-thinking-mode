@@ -1,140 +1,325 @@
 #!/usr/bin/env node
 /**
- * tools/verify-production.mjs
- *
- * Resolve the successful deployment for the activated root and compare
- * the decoded response bytes with site/index.html.
+ * Verify every file in the local public artifact against the activated site.
  *
  * Usage:
- *   node tools/verify-production.mjs [--url <pages-url>]
+ *   node tools/verify-production.mjs [--url <site-url>] [--site-dir <path>]
  */
 
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
-import { get as httpsGet } from "node:https";
 import { get as httpGet } from "node:http";
+import { get as httpsGet } from "node:https";
+import path from "node:path";
+import process from "node:process";
+import { fileURLToPath } from "node:url";
+import { checkSite, collectSiteFiles } from "./check-public-artifact.mjs";
 
-const PAGES_URL = process.env.PAGES_URL ||
-  "https://zjgulai.github.io/deep-thinking-mode/";
+const DEFAULT_SITE_URL =
+  process.env.PRODUCTION_URL ||
+  process.env.PAGES_URL ||
+  "https://xmind.lute-tlz-dddd.top/";
+const DEFAULT_SITE_DIR = "site";
+const MAX_REDIRECTS = 5;
+const MAX_RESPONSE_BYTES = 32 * 1024 * 1024;
+const DEFAULT_CONCURRENCY = 12;
 
-function sha256(buf) {
-  return createHash("sha256").update(buf).digest("hex");
+const CONTENT_TYPES = new Map([
+  [".avif", ["image/avif"]],
+  [".css", ["text/css"]],
+  [".gif", ["image/gif"]],
+  [".html", ["text/html"]],
+  [".ico", ["image/x-icon", "image/vnd.microsoft.icon"]],
+  [".jpeg", ["image/jpeg"]],
+  [".jpg", ["image/jpeg"]],
+  [".js", ["application/javascript", "text/javascript"]],
+  [".json", ["application/json"]],
+  [".mjs", ["application/javascript", "text/javascript"]],
+  [".png", ["image/png"]],
+  [".svg", ["image/svg+xml"]],
+  [".txt", ["text/plain"]],
+  [".webmanifest", ["application/manifest+json", "application/json"]],
+  [".webp", ["image/webp"]],
+  [".woff", ["font/woff", "application/font-woff"]],
+  [".woff2", ["font/woff2"]],
+  [".xml", ["application/xml", "text/xml"]],
+]);
+
+export function sha256(buffer) {
+  return createHash("sha256").update(buffer).digest("hex");
+}
+
+export function firstDifferingByte(left, right) {
+  const sharedLength = Math.min(left.length, right.length);
+  for (let index = 0; index < sharedLength; index += 1) {
+    if (left[index] !== right[index]) {
+      return index;
+    }
+  }
+  return left.length === right.length ? -1 : sharedLength;
+}
+
+function normalizedBaseUrl(targetUrl) {
+  const url = new URL(targetUrl);
+  if (url.protocol !== "http:" && url.protocol !== "https:") {
+    throw new Error(`Unsupported URL protocol: ${url.protocol}`);
+  }
+  if (url.search || url.hash) {
+    throw new Error("Production URL must not include a query string or fragment");
+  }
+  if (!url.pathname.endsWith("/")) {
+    url.pathname = `${url.pathname}/`;
+  }
+  return url;
+}
+
+function remoteUrlForFile(baseUrl, relativePath) {
+  if (relativePath === "index.html") {
+    return baseUrl.href;
+  }
+  const encodedPath = relativePath
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/");
+  return new URL(encodedPath, baseUrl).href;
+}
+
+function contentTypeMatches(relativePath, contentType) {
+  const extension = path.posix.extname(relativePath).toLowerCase();
+  const expected = CONTENT_TYPES.get(extension);
+  if (!expected) {
+    return relativePath === ".nojekyll";
+  }
+  const actual = contentType.split(";", 1)[0].trim().toLowerCase();
+  return expected.includes(actual);
 }
 
 /**
- * Fetch URL, follow redirects, return { body: Buffer, finalUrl, status, contentType }.
+ * Fetch a URL, following a bounded redirect chain.
  */
-async function fetchUrl(url, maxRedirects = 5) {
+export async function fetchUrl(url, options = {}) {
+  const maxRedirects = options.maxRedirects ?? MAX_REDIRECTS;
+  const redirects = options.redirects ?? [];
   return new Promise((resolve, reject) => {
-    const isHttps = url.startsWith("https://");
-    const get = isHttps ? httpsGet : httpGet;
+    const parsedUrl = new URL(url);
+    const get =
+      parsedUrl.protocol === "https:"
+        ? httpsGet
+        : parsedUrl.protocol === "http:"
+          ? httpGet
+          : null;
+    if (!get) {
+      reject(new Error(`Unsupported URL protocol: ${parsedUrl.protocol}`));
+      return;
+    }
 
-    const req = get(url, { timeout: 15000 }, (res) => {
-      const { statusCode, headers } = res;
-
-      if (statusCode >= 300 && statusCode < 400 && headers.location) {
-        if (maxRedirects <= 0) {
-          reject(new Error("Too many redirects"));
+    const request = get(
+      parsedUrl,
+      {
+        headers: {
+          accept: "*/*",
+          "accept-encoding": "identity",
+          "user-agent": "systematic-thinking-production-verifier/1",
+        },
+        timeout: options.timeoutMs ?? 15_000,
+      },
+      (response) => {
+        const status = response.statusCode ?? 0;
+        const location = response.headers.location;
+        if (status >= 300 && status < 400 && location) {
+          response.resume();
+          if (maxRedirects <= 0) {
+            reject(new Error(`Too many redirects: ${url}`));
+            return;
+          }
+          const nextUrl = new URL(location, parsedUrl).href;
+          resolve(
+            fetchUrl(nextUrl, {
+              ...options,
+              maxRedirects: maxRedirects - 1,
+              redirects: [...redirects, url],
+            }),
+          );
           return;
         }
-        const next = new URL(headers.location, url).href;
-        resolve(fetchUrl(next, maxRedirects - 1));
-        res.resume();
-        return;
-      }
 
-      const chunks = [];
-      res.on("data", (c) => chunks.push(c));
-      res.on("end", () =>
-        resolve({
-          body: Buffer.concat(chunks),
-          finalUrl: url,
-          status: statusCode,
-          contentType: headers["content-type"] || "",
-        })
-      );
-      res.on("error", reject);
-    });
+        const chunks = [];
+        let receivedBytes = 0;
+        response.on("data", (chunk) => {
+          receivedBytes += chunk.length;
+          if (receivedBytes > (options.maxBytes ?? MAX_RESPONSE_BYTES)) {
+            request.destroy(
+              new Error(`Response exceeds size limit: ${parsedUrl.href}`),
+            );
+            return;
+          }
+          chunks.push(chunk);
+        });
+        response.on("end", () => {
+          resolve({
+            body: Buffer.concat(chunks),
+            finalUrl: parsedUrl.href,
+            status,
+            contentType: response.headers["content-type"] || "",
+            redirects,
+          });
+        });
+        response.on("error", reject);
+      },
+    );
 
-    req.on("timeout", () => {
-      req.destroy();
-      reject(new Error(`Request timed out: ${url}`));
+    request.on("timeout", () => {
+      request.destroy(new Error(`Request timed out: ${parsedUrl.href}`));
     });
-    req.on("error", reject);
+    request.on("error", reject);
   });
 }
 
-async function main() {
-  const args = process.argv.slice(2);
-  let targetUrl = PAGES_URL;
-  for (let i = 0; i < args.length; i++) {
-    if (args[i] === "--url" && args[i + 1]) targetUrl = args[++i];
+function compareRemoteFile(relativePath, remoteUrl, localBody, result) {
+  const errors = [];
+  if (result.status !== 200) {
+    errors.push(`${relativePath}: HTTP ${result.status} at ${result.finalUrl}`);
+    return errors;
   }
-
-  console.log(`Verifying production: ${targetUrl}`);
-
-  let localHtml;
-  try {
-    localHtml = await readFile("site/index.html");
-  } catch {
-    console.error("✗ site/index.html not found. Run npm run build first.");
-    process.exit(1);
+  if (result.finalUrl !== remoteUrl) {
+    errors.push(
+      `${relativePath}: unexpected redirect ${remoteUrl} -> ${result.finalUrl}`,
+    );
   }
-
-  const localDigest = sha256(localHtml);
-  const localLen = localHtml.length;
-  console.log(`  local  SHA-256: ${localDigest}`);
-  console.log(`  local  length:  ${localLen}`);
-
-  let result;
-  try {
-    result = await fetchUrl(targetUrl);
-  } catch (err) {
-    console.error(`✗ Fetch failed: ${err.message}`);
-    process.exit(1);
+  if (!contentTypeMatches(relativePath, result.contentType)) {
+    errors.push(
+      `${relativePath}: unexpected content type ${result.contentType || "<missing>"}`,
+    );
   }
-
-  const { body, finalUrl, status, contentType } = result;
-
-  console.log(`  remote finalUrl: ${finalUrl}`);
-  console.log(`  remote status:   ${status}`);
-  console.log(`  remote type:     ${contentType}`);
-
-  if (status !== 200) {
-    console.error(`✗ HTTP ${status} — expected 200`);
-    process.exit(1);
+  if (!localBody.equals(result.body)) {
+    const offset = firstDifferingByte(localBody, result.body);
+    errors.push(
+      `${relativePath}: byte mismatch at offset ${offset}; ` +
+        `local=${sha256(localBody)} (${localBody.length} bytes), ` +
+        `remote=${sha256(result.body)} (${result.body.length} bytes)`,
+    );
   }
-
-  if (!contentType.includes("text/html")) {
-    console.error(`✗ Unexpected content type: ${contentType}`);
-    process.exit(1);
-  }
-
-  const remoteDigest = sha256(body);
-  const remoteLen = body.length;
-  console.log(`  remote SHA-256: ${remoteDigest}`);
-  console.log(`  remote length:  ${remoteLen}`);
-
-  if (localDigest === remoteDigest) {
-    console.log("✓ Production byte-for-byte match confirmed.");
-    process.exit(0);
-  }
-
-  // Find first differing byte
-  let firstDiff = -1;
-  const minLen = Math.min(localLen, remoteLen);
-  for (let i = 0; i < minLen; i++) {
-    if (localHtml[i] !== body[i]) { firstDiff = i; break; }
-  }
-  if (firstDiff === -1 && localLen !== remoteLen) firstDiff = minLen;
-
-  console.error("✗ Production mismatch:");
-  console.error(`  local  SHA-256: ${localDigest}  (${localLen} bytes)`);
-  console.error(`  remote SHA-256: ${remoteDigest}  (${remoteLen} bytes)`);
-  if (firstDiff >= 0) {
-    console.error(`  first differing byte offset: ${firstDiff}`);
-  }
-  process.exit(1);
+  return errors;
 }
 
-main();
+async function mapWithConcurrency(items, concurrency, mapper) {
+  const results = new Array(items.length);
+  let nextIndex = 0;
+  async function worker() {
+    while (nextIndex < items.length) {
+      const index = nextIndex;
+      nextIndex += 1;
+      results[index] = await mapper(items[index], index);
+    }
+  }
+  const workerCount = Math.min(concurrency, items.length);
+  await Promise.all(Array.from({ length: workerCount }, () => worker()));
+  return results;
+}
+
+export async function verifyProductionSite({
+  targetUrl = DEFAULT_SITE_URL,
+  siteDir = DEFAULT_SITE_DIR,
+  fetcher = fetchUrl,
+  concurrency = DEFAULT_CONCURRENCY,
+} = {}) {
+  if (!Number.isSafeInteger(concurrency) || concurrency < 1 || concurrency > 32) {
+    throw new TypeError("concurrency must be an integer between 1 and 32");
+  }
+  const localErrors = await checkSite({ siteDir });
+  if (localErrors.length > 0) {
+    return {
+      checkedFiles: 0,
+      errors: localErrors.map((issue) => `LOCAL_ARTIFACT_INVALID: ${issue}`),
+      results: [],
+    };
+  }
+
+  const baseUrl = normalizedBaseUrl(targetUrl);
+  const files = await collectSiteFiles(siteDir);
+  const results = await mapWithConcurrency(
+    files,
+    concurrency,
+    async (relativePath) => {
+      const localBody = await readFile(path.join(siteDir, relativePath));
+      const remoteUrl = remoteUrlForFile(baseUrl, relativePath);
+      try {
+        const response = await fetcher(remoteUrl, {
+          maxBytes: Math.max(localBody.length + 1, 1024 * 1024),
+        });
+        return {
+          relativePath,
+          remoteUrl,
+          response,
+          errors: compareRemoteFile(relativePath, remoteUrl, localBody, response),
+        };
+      } catch (fetchError) {
+        return {
+          relativePath,
+          remoteUrl,
+          response: null,
+          errors: [`${relativePath}: fetch failed: ${fetchError.message}`],
+        };
+      }
+    },
+  );
+
+  return {
+    checkedFiles: files.length,
+    errors: results.flatMap((result) => result.errors),
+    results,
+  };
+}
+
+function parseCliArgs(argv) {
+  const options = {};
+  for (let index = 0; index < argv.length; index += 1) {
+    const argument = argv[index];
+    if (argument === "--url" || argument === "--site-dir") {
+      const value = argv[index + 1];
+      if (!value) {
+        throw new Error(`${argument} requires a value`);
+      }
+      if (argument === "--url") {
+        options.targetUrl = value;
+      } else {
+        options.siteDir = value;
+      }
+      index += 1;
+    } else {
+      throw new Error(`Unknown argument: ${argument}`);
+    }
+  }
+  return options;
+}
+
+async function main() {
+  const options = parseCliArgs(process.argv.slice(2));
+  const targetUrl = options.targetUrl ?? DEFAULT_SITE_URL;
+  console.log(`Verifying production artifact: ${targetUrl}`);
+  const verification = await verifyProductionSite(options);
+  if (verification.errors.length > 0) {
+    console.error(
+      `✗ Production verification failed (${verification.errors.length} error${verification.errors.length === 1 ? "" : "s"}):`,
+    );
+    for (const issue of verification.errors) {
+      console.error(`  ${issue}`);
+    }
+    process.exitCode = 1;
+    return;
+  }
+  console.log(
+    `✓ Production byte-for-byte match confirmed for ${verification.checkedFiles} files.`,
+  );
+}
+
+const isMain =
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url));
+
+if (isMain) {
+  main().catch((mainError) => {
+    console.error(mainError.stack ?? mainError.message);
+    process.exitCode = 1;
+  });
+}

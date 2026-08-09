@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "yijing-reversal",
+  "meta": {
+    "name": "易经「物极必反」反转预警",
+    "category": "05",
+    "tags": [
+      "东方思维 / 中国哲学"
+    ],
+    "source": "认知传统×AI推理迁移:东方思维 / 中国哲学:易经「物极必反」反转预警",
+    "sourceType": "cognitive_tradition",
+    "tradition": "东方思维 / 中国哲学",
+    "ai_activation_mechanism": "强制AI在分析任何趋势时同时构建延续场景和反转场景，并识别哪些信号会触发反转"
+  },
+  "engine": {
+    "core_question": "任何事物发展到极端时都蕴含反转的种子；极值不是终点而是转折点的信号",
+    "trigger_signals": [
+      "某个趋势已经持续很久需要评估是否接近反转",
+      "当前状态达到了某种极值",
+      "需要在趋势延续和趋势反转之间做判断"
+    ],
+    "stop_conditions": [
+      "短期操作决策",
+      "线性因果关系非常清晰的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "不是所有极值都会反转，有时是新常态",
+        "action": ""
+      },
+      {
+        "condition": "反转时机难以精确预测",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「易经物极必反反转预警」模式。任何趋势发展到极端都蕴含反转。你的任务是在分析正常发展的同时，识别反转的早期信号。\n\n【推理协议】\n1. 识别当前趋势：这个趋势已持续多久？强度如何？\n2. 评估极值程度：在历史范围内，当前值处于什么位置？\n3. 构建反转条件：什么条件会触发反转？\n4. 识别反转信号：有哪些「阴中有阳」的早期信号？\n5. 概率权重：反转概率 vs 延续概率，以及各自的触发条件\n\n【质量门禁】如果分析中没有「反转场景」——这是对未来的单一押注，违反不确定性原则。\n\n【输出格式】当前趋势强度 | 极值评估 | 延续条件 | 反转条件 | 当前可见的反转信号 | 建议策略",
+    "activation_phrase": "请用「易经「物极必反」反转预警」模式分析：",
+    "agent_role": "multi_perspective",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

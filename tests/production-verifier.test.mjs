@@ -6,12 +6,19 @@
  */
 
 import assert from "node:assert/strict";
+import { spawn } from "node:child_process";
 import { createServer } from "node:http";
 import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
+import { verifyProductionSite } from "../tools/verify-production.mjs";
+
+const VERIFIER = fileURLToPath(
+  new URL("../tools/verify-production.mjs", import.meta.url),
+);
 
 function sha256(buf) {
   return createHash("sha256").update(buf).digest("hex");
@@ -30,6 +37,30 @@ function startServer(handler) {
 
 function stopServer(server) {
   return new Promise((resolve) => server.close(resolve));
+}
+
+function runVerifier(cwd, url) {
+  return new Promise((resolve, reject) => {
+    const child = spawn(process.execPath, [VERIFIER, "--url", url], {
+      cwd,
+      env: { ...process.env, NO_COLOR: "1" },
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+    let stdout = "";
+    let stderr = "";
+    child.stdout.setEncoding("utf8");
+    child.stderr.setEncoding("utf8");
+    child.stdout.on("data", (chunk) => {
+      stdout += chunk;
+    });
+    child.stderr.on("data", (chunk) => {
+      stderr += chunk;
+    });
+    child.once("error", reject);
+    child.once("close", (code, signal) => {
+      resolve({ code, signal, stdout, stderr });
+    });
+  });
 }
 
 // ─── inline fetch helper (mirrors verify-production.mjs logic) ──────────────
@@ -228,4 +259,78 @@ await test("production verifier — reports first differing byte offset correctl
     if (local[i] !== remote[i]) { firstDiff = i; break; }
   }
   assert.equal(firstDiff, 3, "First differing byte should be at offset 3");
+});
+
+await test("production verifier — verifies nested assets, not only index.html", async () => {
+  const rootDir = await mkdtemp(join(tmpdir(), "production-verifier-"));
+  const localIndex = Buffer.from(
+    '<!doctype html><html><head><link rel="stylesheet" href="assets/site.css"></head><body></body></html>',
+  );
+  const { server, url } = await startServer((req, res) => {
+    if (req.url === "/") {
+      res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
+      res.end(localIndex);
+      return;
+    }
+    res.writeHead(404, { "content-type": "text/plain" });
+    res.end("Not Found");
+  });
+
+  try {
+    await mkdir(join(rootDir, "site", "assets"), { recursive: true });
+    await writeFile(join(rootDir, "site", "index.html"), localIndex);
+    await writeFile(join(rootDir, "site", "assets", "site.css"), "body{}\n");
+
+    const result = await runVerifier(rootDir, url);
+    assert.notEqual(result.code, 0, `${result.stdout}\n${result.stderr}`);
+    assert.match(
+      result.stderr,
+      /assets\/site\.css[\s\S]*HTTP 404/,
+      `${result.stdout}\n${result.stderr}`,
+    );
+  } finally {
+    await stopServer(server);
+    await rm(rootDir, { recursive: true, force: true });
+  }
+});
+
+await test("production verifier — maps every local file under a deployment subpath", async () => {
+  const rootDir = await mkdtemp(join(tmpdir(), "production-verifier-subpath-"));
+  const siteDir = join(rootDir, "site");
+  const localIndex = Buffer.from(
+    '<!doctype html><html><head><link rel="stylesheet" href="assets/site.css"></head><body></body></html>',
+  );
+  const localCss = Buffer.from("body{}\n");
+  const requested = [];
+
+  try {
+    await mkdir(join(siteDir, "assets"), { recursive: true });
+    await writeFile(join(siteDir, "index.html"), localIndex);
+    await writeFile(join(siteDir, "assets", "site.css"), localCss);
+
+    const verification = await verifyProductionSite({
+      targetUrl: "https://example.test/product",
+      siteDir,
+      fetcher: async (url) => {
+        requested.push(url);
+        const isCss = url.endsWith("/assets/site.css");
+        return {
+          body: isCss ? localCss : localIndex,
+          finalUrl: url,
+          status: 200,
+          contentType: isCss ? "text/css" : "text/html; charset=utf-8",
+          redirects: [],
+        };
+      },
+    });
+
+    assert.deepEqual(verification.errors, []);
+    assert.equal(verification.checkedFiles, 2);
+    assert.deepEqual(requested.sort(), [
+      "https://example.test/product/",
+      "https://example.test/product/assets/site.css",
+    ]);
+  } finally {
+    await rm(rootDir, { recursive: true, force: true });
+  }
 });

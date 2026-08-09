@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "react-reasoning-acting",
+  "meta": {
+    "name": "ReAct「推理-行动-观察」循环",
+    "category": "07",
+    "tags": [
+      "AI认知科学 / 论文"
+    ],
+    "source": "认知传统×AI推理迁移:AI认知科学 / 论文:ReAct「推理-行动-观察」循环",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI认知科学 / 论文",
+    "ai_activation_mechanism": "将推理和行动交织，每次行动的观察结果修正下一步的推理，减少纯推理积累的幻觉"
+  },
+  "engine": {
+    "core_question": "推理→行动→观察→再推理循环；行动结果修正推理，比纯CoT减少33%的幻觉（Yao et al. 2023）",
+    "trigger_signals": [
+      "任务需要调用外部工具/搜索",
+      "推理可能产生幻觉需要外部验证",
+      "信息不完整需要动态获取"
+    ],
+    "stop_conditions": [
+      "纯推理任务无需外部交互",
+      "知识库已经完整的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "循环次数过多会失去方向",
+        "action": ""
+      },
+      {
+        "condition": "行动失败需要有明确的回退策略",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「ReAct推理-行动-观察」循环模式。不要纯推理到底，而是在推理和行动之间循环，用外部观察修正推理。\n\n【推理协议】\n每轮循环格式：\n[THINK] 基于当前已知信息，我推断应该...\n[ACT] 我需要执行：[具体行动]\n[OBS] 行动结果：[观察到的实际输出]\n[THINK] 根据观察，我更新推理：...\n\n循环终止条件：\n✅ 任务完成 | ⚠️ 达到最大循环次数（5轮）| ❌ 行动无法继续\n\n【质量门禁】不能在没有任何观察的情况下推理超过3步——这是幻觉风险的危险区。\n\n【输出格式】[轮N] THINK: ... | ACT: ... | OBS: ... | [最终]综合结论",
+    "activation_phrase": "请用「ReAct「推理-行动-观察」循环」模式分析：",
+    "agent_role": "action_executor",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

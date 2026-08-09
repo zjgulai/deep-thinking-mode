@@ -67,7 +67,7 @@ export function renderPagesWorkflow(pins) {
 
 on:
   push:
-    branches: [main, public]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -106,10 +106,13 @@ jobs:
         run: npm run build
 
       - name: Verify no site drift
-        run: git diff --exit-code -- site/index.html
+        run: git diff --exit-code -- site docs
 
       - name: Check public artifact
         run: npm run check:public
+
+      - name: Check public manifest drift
+        run: npm run manifest:check
 
       - name: Check public tree
         run: node tools/check-public-tree.mjs --git-ref HEAD --manifest tools/config/public-paths.json
@@ -124,7 +127,7 @@ jobs:
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/public'
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: \${{ steps.deployment.outputs.page_url }}

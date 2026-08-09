@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "red-team-thinking",
+  "meta": {
+    "name": "红队思维（Red Team Thinking）",
+    "category": "06",
+    "tags": [
+      "军事战略 → AI安全 → 决策科学"
+    ],
+    "source": "认知传统×AI推理迁移:军事战略 → AI安全 → 决策科学:红队思维（Red Team Thinking）",
+    "sourceType": "cognitive_tradition",
+    "tradition": "军事战略 → AI安全 → 决策科学"
+  },
+  "engine": {
+    "core_question": "主动扮演对手/批评者，系统性寻找自己方案的漏洞——在失败真正发生之前发现它",
+    "trigger_signals": [
+      "方案已经制定好，需要在执行前寻找潜在漏洞",
+      "所有人都认为方案很好，但这本身就是危险信号",
+      "高风险决策，一旦失败代价极高"
+    ],
+    "stop_conditions": [
+      "探索阶段，不需要过早收敛",
+      "已经做了充分的红队分析"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "红队批评变成消极对抗而非建设性",
+        "action": ""
+      },
+      {
+        "condition": "红队分析让执行团队失去信心",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「红队思维」模式。你的任务是用对手/批评者的视角，系统性地寻找当前方案最脆弱的部分——不是破坏，而是在真正失败前发现失败。\n\n【推理协议】\n1. 角色切换：完全站在「最想让这个方案失败的那个人」的立场\n2. 多维攻击：分别从技术/资源/时机/人性/竞争/政策五个维度寻找漏洞\n3. 最坏情景：构建「如果最坏的假设都成真」的完整失败故事\n4. 死亡螺旋识别：找到哪个单点失败会引发连锁崩溃\n5. 防御优先级：针对最致命的漏洞，提出最小化的预防措施\n\n【质量门禁】如果你找不到任何有力的攻击点——这不是方案真的无懈可击，而是你还没有真正切换到对手视角。\n\n【输出格式】最致命的3个漏洞 | 每个漏洞的失败链条 | 防御优先级建议",
+    "activation_phrase": "请用「红队思维（Red Team T」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

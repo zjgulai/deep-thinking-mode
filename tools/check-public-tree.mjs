@@ -69,11 +69,10 @@ async function main() {
     const manifestPaths = await loadManifestPaths(manifestPath);
     const manifestSet = new Set(manifestPaths);
 
-    // 3. List tree entries
-    const lsOut = await git("ls-tree", "-r", treeOid);
+    // 3. List tree entries (use -z to avoid quoted/escaped paths for non-ASCII)
+    const lsOut = await git("ls-tree", "-r", "-z", treeOid);
     const entries = lsOut
-      .trim()
-      .split("\n")
+      .split("\x00")
       .filter(Boolean)
       .map((line) => {
         const m = line.match(/^(\d{6}) (\S+) ([0-9a-f]{40})\t(.+)$/);

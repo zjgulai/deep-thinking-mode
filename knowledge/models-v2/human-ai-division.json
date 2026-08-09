@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "human-ai-division",
+  "meta": {
+    "name": "人机分工边界决策框架",
+    "category": "07",
+    "tags": [
+      "AI工程科学 / 认知人机交互"
+    ],
+    "source": "认知传统×AI推理迁移:AI工程科学 / 认知人机交互:人机分工边界决策框架",
+    "sourceType": "cognitive_tradition",
+    "tradition": "AI工程科学 / 认知人机交互"
+  },
+  "engine": {
+    "core_question": "用「价值密度×不可替代性」矩阵决定哪些任务交AI、哪些必须人做，避免「过度依赖」和「低效保留」两个极端",
+    "trigger_signals": [
+      "不确定某个任务应该让AI做还是自己做",
+      "感觉AI做了一些本应该自己做的判断",
+      "需要设计一个人机协作的工作流程"
+    ],
+    "stop_conditions": [
+      "纯技术执行任务",
+      "已经建立清晰工作流的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "过度依赖AI会弱化人的核心判断能力",
+        "action": ""
+      },
+      {
+        "condition": "过度保留人工会让AI的价值无法释放",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「人机分工边界决策」模式。用系统化的框架决定哪些任务该交给AI、哪些必须人来做，而不是凭习惯或恐惧做决定。\n\n【推理协议】\n1. 任务分解：将目标任务拆解为具体子任务\n2. AI优势评估：每个子任务是否具备「信息密集/模式识别/速度要求」特征？→ 交AI\n3. 人类不可替代评估：每个子任务是否需要「价值判断/关系维护/隐性知识/道德权衡」？→ 人做\n4. 协作设计：AI做初稿→人做评估，或人做框架→AI做填充，哪种效果更好？\n5. 能力维护：哪些任务即使AI能做，人也需要保留能力（以防AI失效或判断失误）？\n\n人类不可替代的核心任务：\n- 意图设定（What matters）\n- 价值权衡（What's right）\n- 例外处理（What's unusual）\n- 结果评估（What's enough）\n\n【质量门禁】不能以「AI能做得更快」为唯一标准——速度不等于适合。最关键的判断类任务必须人做。\n\n【输出格式】子任务列表 | AI适合/人适合/协作分类 | 协作工作流设计 | 能力维护建议",
+    "activation_phrase": "请用「人机分工边界决策框架」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

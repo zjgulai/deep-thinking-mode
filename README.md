@@ -1,217 +1,116 @@
 # 系统化思维
 
-**2654 个推理引擎 · 13 章知识体系 · 每个含 Codex 可执行协议**
+把复杂问题转化为可理解、可选择、可执行的推理协议。
 
-把复杂问题，看成可以理解、选择与行动的系统。
+「系统化思维」是一套中文思维模型知识系统，也是一座可本地运行的静态知识网站。当前版本收录 2789 个 V3 模型、13 个认知章节、19 类 Agent 角色，并提供问题路由、模型检索、推理步骤与 Codex 共学提示词。
 
----
+生产地址：[xmind.lute-tlz-dddd.top](https://xmind.lute-tlz-dddd.top/)
 
-## 项目简介
+## 产品能力
 
-本项目将人类几千年积累的系统化思维模型蒸馏为可与 AI 协作的推理协议。
+- **问题路由**：输入问题描述，在浏览器本地匹配诊断、计划、决策、研究、表达等推理路径；输入不会上传或保存。
+- **多页模型库**：按名称、定义、触发信号、标签和 Agent 角色筛选 2789 个模型。
+- **十三章知识地图**：每个模型只属于一个主章节，并通过标签和角色建立跨章节连接。
+- **推理协议**：模型详情包含适用信号、停止条件、推理步骤、检查点、场景和常见误区。
+- **Codex 应用卡**：带有 activation 和 system prompt 的模型可以一键复制完整提示词。
+- **Agent 能力图谱**：19 类角色被组织为意图澄清、结构推演、多路探索、决策取舍、计划执行、复盘校正、知识综合和清晰表达八段流程。
+- **隐私优先**：网站无追踪、无远程字体、无前端网络请求；公开产物不得包含原始 Markdown、微信来源 URL 或服务器私钥。
 
-核心产出：
-- **knowledge/models-v3/** — 2654 个 V3 格式思维模型，每个含 4 层 system_prompt（认知模式 / 推理协议 / 质量门禁 / 输出格式）
-- **chain-protocols/** — 12 个认知竞技场（Arena），支持多视角同时持有、张力驱动洞察
-- **docs/** / **site/** — 单文件知识网站，支持离线使用
-
-来源：
-- 419 篇原创微信文章（`data/`，本地私有）
-- 31 本书籍提取文本（`ref-extracted/`，本地私有）
-- 手工精馏 5 个基准模型
-
----
+完整使用方法见 [用户说明书](manuals/USER_GUIDE.md)，架构和能力边界见 [能力图谱](manuals/CAPABILITY_MAP.md)。
 
 ## 快速开始
 
-```bash
-# 安装依赖
-npm ci
-
-# 构建网站（输出到 docs/ 和 site/index.html）
-npm run build
-
-# 运行测试（881 tests）
-npm test
-
-# 检查代码语法
-npm run check
-
-# 检查站点产物（site/ 目录）
-npm run check:public
-
-# 运行完整评估（保真度 + 区分度）
-node tools/eval-prompt-quality.mjs --all
-
-# 对 29 个漏蒸馏文件重新蒸馏（如 data/ 有更新）
-node tools/distill.mjs
-
-# 从书籍提取模型
-node tools/distill-ref.mjs
-
-# 升级全量 V3
-node tools/upgrade-to-v3.mjs
-
-# 批量修复推理步骤
-node tools/batch-refine.mjs
-```
-
----
-
-## 目录结构
-
-```
-├── knowledge/
-│   ├── models-v2/          # 2654 个 V2 中间格式（推理引擎协议）
-│   ├── models-v3/          # 2654 个 V3 格式（含 Codex 应用卡）
-│   ├── taxonomy.json       # 13 章分类体系
-│   └── model-schema-v3.json
-├── chain-protocols/
-│   ├── *-arena-*.json      # 12 个认知竞技场
-│   ├── *-chain-*.json      # 27 个原始链式协议（已被 Arena 取代）
-│   └── arena-schema-v1.json
-├── tools/
-│   ├── distill.mjs         # data/ 蒸馏引擎 → V2
-│   ├── distill-ref.mjs     # ref-extracted/ 书籍蒸馏 → V2
-│   ├── upgrade-to-v3.mjs   # V2 → V3 批量升级
-│   ├── batch-refine.mjs    # V3 推理步骤补全
-│   ├── build-site.mjs      # 网站构建器
-│   ├── eval-prompt-quality.mjs  # 三维质量评估
-│   ├── build-arena.mjs     # Chain → Arena 升级
-│   ├── release-public-root.mjs  # release pipeline CLI
-│   ├── check-public-tree.mjs
-│   ├── check-public-artifact.mjs
-│   ├── verify-production.mjs
-│   ├── lib/
-│   │   ├── public-history.mjs   # release 安全层核心
-│   │   ├── pages-workflow.mjs   # workflow 确定性渲染
-│   │   └── ...                  # corpus cleaner 等
-│   └── config/
-│       ├── public-paths.json    # 公开路径清单（5935 条）
-│       └── github-actions-pins.json  # Action SHA 固定
-├── specs/
-│   ├── system-prompt-quality-standard.md  # 4层结构规范
-│   ├── prompt-eval-results.md             # 三维评估结果
-│   └── execution-plans/                   # 执行计划存档
-├── docs/                   # GitHub Pages 源（多页）
-├── site/                   # 单文件发布产物
-│   └── index.html
-├── tests/                  # 测试套件（881 tests）
-└── .github/workflows/
-    └── pages.yml           # 自动部署（main + public 分支）
-```
-
----
-
-## Codex 协作使用方式
-
-1. 打开 `docs/chapters/` 中任意章节页
-2. 找到目标模型，点击「复制」按钮获取 system_prompt
-3. 在新对话开头粘贴 system_prompt，然后描述你的问题
-4. 模型会按照推理协议（4 层结构）引导思考
-
-或直接使用认知竞技场（多视角同时持有）：
-
-```
-// 示例：决策困境竞技场
-chain-protocols/决策困境-arena-1.json → codex.system_prompt
-```
-
----
-
-## 数据质量现状
-
-| 指标 | data 模型 (772) | 书籍模型 (1882) | 总计 (2654) |
-|---|---|---|---|
-| system_prompt 4层完整 | 77% | 99% | 93% |
-| 推理协议有实质内容 | 64% | 1% | 19% |
-| anti_triggers 有值 | 33% | 96% | 78% |
-| pitfalls 有值 | 10% | 38% | 30% |
-| steps ≥ 3步 | 24% | 1% | 7% |
-
----
-
-## 发布边界
-
-本项目使用双分支结构：
-
-- **`main`** — 原始 markdown 基线 (`f876ce90d24ed486cae4060b1a4fe7b0813e9492`)，保持不变直到正式发布
-- **`public`** — 当前工作分支，包含所有工具、知识库和网站文件，触发 Pages 部署
-
-**重要约束：**
-- 原始全文（`data/`）、书籍文本（`ref/`、`ref-extracted/`）永不进入公开 Git 历史
-- `site/` 只含 `index.html`，运行时无外部依赖
-- Pages 部署仅上传 `site/` 目录
-
-**workflow_dispatch 行为：**  
-手动触发可在任意分支运行测试和构建，但生产部署仅在 `main` 或 `public` 分支触发。
-
----
-
-## Release Gate 流程（正式发布）
-
-正式发布需逐步执行，每步需人工确认：
-
-```bash
-# 1. 准备候选树
-node tools/release-public-root.mjs prepare
-
-# 2. 审查候选（人工确认 OID、manifest digest、模式）
-node tools/release-public-root.mjs inspect-candidate
-
-# 3. 批准候选（需输入精确确认字符串）
-node tools/release-public-root.mjs approve-candidate
-
-# 4. 创建 root commit（无父提交）
-node tools/release-public-root.mjs create-root
-
-# 5. 审查 root（人工确认）
-node tools/release-public-root.mjs inspect-root
-
-# 6. 批准 root
-node tools/release-public-root.mjs approve-root
-
-# 7. 激活 main（compare-and-swap）
-node tools/release-public-root.mjs activate-main
-
-# 8. 验证激活
-node tools/release-public-root.mjs verify-active
-
-# 9. 推送（需用户明确确认后执行）
-git push origin main
-
-# 10. 验证生产字节
-node tools/verify-production.mjs
-```
-
-**中断恢复：** 若激活成功但状态写入失败，执行：
-```bash
-git reset --mixed refs/heads/main
-node tools/release-public-root.mjs verify-active
-```
-
----
-
-## 本地验证（发布前必跑）
+要求 Node.js 20 或更高版本；CI 使用 Node.js 24.18.0。
 
 ```bash
 npm ci
-npm test                                                          # 881 tests pass
-npm run check                                                     # 语法检查
-npm run build                                                     # 构建
-git diff --exit-code -- site/index.html                          # 无漂移
-npm run check:public                                              # 站点检查
-node tools/check-public-tree.mjs --git-ref HEAD \
-  --manifest tools/config/public-paths.json                      # 公开树验证
+npm run release:check
+python3 -m http.server 8765 --directory site
 ```
 
----
+浏览器打开 `http://127.0.0.1:8765/`。`release:check` 会依次执行语法与数据校验、全量测试、确定性构建和公开产物闭包检查。
 
-## 技术栈
+常用命令：
 
-Node.js 20+ · 原生 ESM · `node:test` · 原生 HTML/CSS/JS  
-无构建时外部依赖（`epub2`/`markdown-it`/`pdf-parse` 仅用于蒸馏工具）
+```bash
+npm run validate:data      # V3、taxonomy、router 和公开残留检查
+npm test                   # 全量 Node 测试
+npm run build              # 生成 site/，并完整镜像到 docs/
+npm run check:public       # 校验多页链接、资源、锚点、CSP 边界和 UTF-8
+node tools/verify-production.mjs --url https://xmind.lute-tlz-dddd.top/
+```
 
----
+## 能力与数据流
 
-© 2026 · [zjgulai/deep-thinking-mode](https://github.com/zjgulai/deep-thinking-mode)
+```mermaid
+flowchart LR
+  A["本地私有来源 data/ 与 ref-extracted/"] --> B["蒸馏与清洗工具"]
+  B --> C["knowledge/models-v2"]
+  C --> D["V3 升级与公开内容清洗"]
+  D --> E["knowledge/models-v3"]
+  T["taxonomy + curated collections"] --> G["多页站生成器"]
+  R["Agent router + chain protocols"] --> V["V3 / Agent fail-closed 校验"]
+  E --> V
+  V --> G
+  G --> S["site/ + docs/"]
+  S --> Q["公开构件与生产逐文件核验"]
+  Q --> P["腾讯云隔离容器"]
+```
+
+关键契约：
+
+1. `model.meta.agent_roles` 是唯一 Agent 角色字段。
+2. 所有公开 V3 文件必须是 schema `3.0.0`，ID 唯一且能被 taxonomy 归类。
+3. Router 引用的模型必须存在，并声明该路由要求的角色。
+4. `site/` 是唯一生产构件；`docs/` 必须与它逐字节同步。
+5. 构建先写入候选目录，通过校验后再整体替换，文件名和页面排序必须确定。
+
+## 项目结构
+
+```text
+knowledge/
+  models-v2/               公开中间格式
+  models-v3/               生产模型与 Codex 协议
+  taxonomy.json            十三章唯一主分类
+  curated-collections.json 场景策展入口
+chain-protocols/            Agent router、角色与链式协议
+tools/
+  build-site.mjs            确定性多页构建
+  validate-v3-agent-data.mjs
+  sanitize-public-models.mjs
+  check-public-artifact.mjs
+  verify-production.mjs
+site/                       腾讯云和 Pages 使用的完整发布树
+docs/                       site/ 的完整镜像
+tests/                      单元、契约、安全与发布回归测试
+manuals/                    用户、架构和发布资料
+deploy/tencent-cloud/       隔离 Docker 部署资产与 Runbook
+specs/                      产品和工程设计规格
+```
+
+## 发布与安全
+
+腾讯云发布使用独立 Compose project、独立网络、非 root 只读容器、固定基础镜像 digest 和默认拒绝的 Docker build context。公网 80/443 由服务器已有的共享 Nginx 入口转发，因此上线必须执行入口配置备份、`nginx -t`、graceful reload、既有域名回归和可逆回滚。
+
+详细步骤见 [腾讯云部署 Runbook](deploy/tencent-cloud/xmind-site/RUNBOOK.md) 和 [发布验收清单](manuals/RELEASE_CHECKLIST.md)。禁止把项目根目录作为 Docker build context，禁止传输 `data/`、`.git/`、`DDDD.pem`、`ref/`、`node_modules/` 或 `graphify-out/`。
+
+## 已知边界
+
+- 问题路由器是确定性的本地关键词导航，不是大模型判断；结果用于缩小候选，不替代人的最终选择。
+- 现有语料仍存在重名、近重复和内容颗粒度不均，质量分只是内容治理信号，不是事实正确性的保证。
+- 模型用于组织思考，不替代医疗、法律、财务等专业意见；关键结论必须回到证据、数据和真实反馈中复核。
+- Graphify 是架构审计辅助，不是运行时依赖；旧图不得作为当前发布结论，发布前必须重新提取 code-only 图。
+- Git public-tree 门禁只有在候选内容形成提交后才具备完整的 commit 级证明；工作区构建成功不等于已 commit、已 push 或已上线。
+
+## 文档
+
+- [用户说明书](manuals/USER_GUIDE.md)
+- [能力图谱与架构](manuals/CAPABILITY_MAP.md)
+- [发布验收清单](manuals/RELEASE_CHECKLIST.md)
+- [腾讯云隔离部署 Runbook](deploy/tencent-cloud/xmind-site/RUNBOOK.md)
+- [知识系统设计](specs/2026-07-27-brain-model-knowledge-system-design.md)
+- [网站设计](specs/2026-07-30-systematic-thinking-site-design.md)
+
+## 贡献
+
+提交改动前至少运行 `npm run release:check`。任何模型内容、构建器或发布边界变更，都必须同时更新相应测试和文档。当前仓库尚未声明开源许可证；获得明确授权前，不应默认拥有复制、修改或再分发权。

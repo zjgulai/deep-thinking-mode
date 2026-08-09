@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="系统化思维">
+  <rect width="64" height="64" rx="18" fill="#171512"/>
+  <circle cx="22" cy="22" r="6" fill="#f6f2eb"/>
+  <circle cx="42" cy="22" r="6" fill="#c9855b"/>
+  <circle cx="22" cy="42" r="6" fill="#c9855b"/>
+  <circle cx="42" cy="42" r="6" fill="#f6f2eb"/>
+  <path d="M27 22h9M22 27v9M42 27v9M27 42h9" stroke="#8f5a39" stroke-width="2"/>
+</svg>

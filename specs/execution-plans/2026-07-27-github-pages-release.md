@@ -1,5 +1,7 @@
 # GitHub Pages Safe Public Release Implementation Plan
 
+> **状态（2026-08-09）：历史发布计划。** GitHub Pages 可保留为镜像渠道，但本次生产目标是 `https://xmind.lute-tlz-dddd.top/` 的腾讯云多页站；生产验收必须覆盖完整远端树，不再只比较 `site/index.html`。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Publish the reviewed single-file knowledge site to a new GitHub repository and GitHub Pages without exposing the existing repository history, local-only files, credentials, or an unreviewed build.

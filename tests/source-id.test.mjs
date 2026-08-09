@@ -841,13 +841,12 @@ test("existing valid exact-size 0600 key copies pass bounded reads", async () =>
   });
 });
 
-test("an absolute fixed pointer under the reader's real root is accepted", async () => {
+test("an absolute fixed pointer under the reader's real root is accepted on aliased and direct tmp roots", async () => {
   await withLocalState(async ({ root, keyPath, backupPath }) => {
     const key = Buffer.alloc(32, 0x62);
     await writeFile(keyPath, key, { mode: 0o600 });
     await writeFile(backupPath, key, { mode: 0o600 });
     const realRoot = await realpath(root);
-    assert.notEqual(realRoot, root, "the synthetic /tmp alias must differ from its real root");
     const currentPointer = join(realRoot, CURRENT_POINTER);
     const result = await ensureSourceIdKey({ keyPath, backupPath, currentPointer });
     assert.equal(result.keySha256, sha256(key));

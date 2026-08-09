@@ -21,7 +21,7 @@ async function createBaselineRepo(fileMap) {
     for (const [relativePath, contents] of Object.entries(fileMap)) {
       await writeFile(join(rootDir, relativePath), contents);
     }
-    await execFileAsync("git", ["-C", rootDir, "init", "-q"]);
+    await execFileAsync("git", ["-C", rootDir, "init", "-q", "-b", "main"]);
     await execFileAsync("git", ["-C", rootDir, "config", "user.name", "brain-model-backup"]);
     await execFileAsync("git", ["-C", rootDir, "config", "user.email", "backup@example.com"]);
     await execFileAsync("git", ["-C", rootDir, "add", ...Object.keys(fileMap)]);

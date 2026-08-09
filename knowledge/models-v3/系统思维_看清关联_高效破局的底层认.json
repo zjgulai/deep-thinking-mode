@@ -6,7 +6,12 @@
     "category": "07",
     "tags": [],
     "skill_name": "系统思维_看清关联_高效破局的底层认",
-    "source": "系统思维_看清关联_高效破局的底层认知框架.md"
+    "source": "系统思维_看清关联_高效破局的底层认知框架.md",
+    "agent_roles": [
+      "causal_reasoner",
+      "first_principles",
+      "systems_thinker"
+    ]
   },
   "core_definition": "任何事物都是相互关联的系统，系统行为由元素连接结构决定",
   "when_to_use": {

@@ -1,0 +1,94 @@
+{
+  "schema_version": "3.0.0",
+  "id": "context-engineering",
+  "meta": {
+    "name": "上下文工程（Context Engineering）",
+    "category": "04",
+    "tags": [
+      "AI工程科学"
+    ],
+    "skill_name": "context-engineering",
+    "source": "认知传统×AI推理迁移:AI工程科学:上下文工程（Context Engineering）",
+    "sourceType": "cognitive_tradition",
+    "agent_roles": [
+      "logical_analyzer"
+    ]
+  },
+  "core_definition": "在有限的context window里放入最高价值信息的系统方法：信息密度×状态管理×分块策略",
+  "when_to_use": {
+    "triggers": [
+      "AI随着对话变长开始「遗忘」早期重要信息",
+      "复杂任务的prompt已经很长但效果还不理想",
+      "需要设计多轮对话系统，保持AI的「工作记忆」"
+    ],
+    "anti_triggers": [
+      "单次简单对话",
+      "无状态的一次性任务"
+    ]
+  },
+  "before_after": {
+    "without_model": "未使用上下文工程（Context Engineering）时，容易依赖直觉处理「AI随着对话变长开始「遗忘」早期重要信息」，缺少稳定的分析边界与检查步骤。",
+    "with_model": "使用上下文工程（Context Engineering）后，可围绕「在有限的context window里放入最高价值信息的系统方法：信息密度×状态管理×分块策略」执行结构化分析，并依次检查推理结果。"
+  },
+  "reasoning_steps": [
+    {
+      "step": 1,
+      "action": "信息价值评估：对所有候选信息按「相关性×不可替代性」打分，只保留高分项",
+      "checkpoint": "确认本步结论基于明确信息，且没有超出该模型的适用边界"
+    },
+    {
+      "step": 2,
+      "action": "分层存储设计：System Prompt放稳定规则/角色定义；User Message放动态任务；工具结果放执行证据",
+      "checkpoint": "确认本步结论基于明确信息，且没有超出该模型的适用边界"
+    },
+    {
+      "step": 3,
+      "action": "状态压缩：将历史对话压缩为「关键决策+当前状态+待解决问题」三要素",
+      "checkpoint": "确认本步结论基于明确信息，且没有超出该模型的适用边界"
+    },
+    {
+      "step": 4,
+      "action": "渐进式展开：不要一次性塞入所有信息，按推理需要逐步引入",
+      "checkpoint": "确认本步结论基于明确信息，且没有超出该模型的适用边界"
+    }
+  ],
+  "scenarios": {
+    "企业管理": {
+      "situation": "AI随着对话变长开始「遗忘」早期重要信息",
+      "application": "在企业管理场景中，以「在有限的context window里放入最高价值信息的系统方法：信息密度×状态管理×分块策略」为分析主线，按模型提示词执行并检查结论。"
+    },
+    "产品设计": {
+      "situation": "复杂任务的prompt已经很长但效果还不理想",
+      "application": "在产品设计场景中，以「在有限的context window里放入最高价值信息的系统方法：信息密度×状态管理×分块策略」为分析主线，按模型提示词执行并检查结论。"
+    },
+    "分析洞察": {
+      "situation": "需要设计多轮对话系统，保持AI的「工作记忆」",
+      "application": "在分析洞察场景中，以「在有限的context window里放入最高价值信息的系统方法：信息密度×状态管理×分块策略」为分析主线，按模型提示词执行并检查结论。"
+    },
+    "决策思维": {
+      "situation": "AI随着对话变长开始「遗忘」早期重要信息",
+      "application": "在决策思维场景中，以「在有限的context window里放入最高价值信息的系统方法：信息密度×状态管理×分块策略」为分析主线，按模型提示词执行并检查结论。"
+    },
+    "任务管理": {
+      "situation": "复杂任务的prompt已经很长但效果还不理想",
+      "application": "在任务管理场景中，以「在有限的context window里放入最高价值信息的系统方法：信息密度×状态管理×分块策略」为分析主线，按模型提示词执行并检查结论。"
+    }
+  },
+  "codex_integration": {
+    "activation": "请用「上下文工程（Context E」模式分析：",
+    "system_prompt": "【认知模式】你现在运行「上下文工程」模式。任务是设计和优化传递给AI的信息结构，让有限的context window发挥最大价值。\n\n【推理协议】\n1. 信息价值评估：对所有候选信息按「相关性×不可替代性」打分，只保留高分项\n2. 分层存储设计：System Prompt放稳定规则/角色定义；User Message放动态任务；工具结果放执行证据\n3. 状态压缩：将历史对话压缩为「关键决策+当前状态+待解决问题」三要素\n4. 渐进式展开：不要一次性塞入所有信息，按推理需要逐步引入\n\n【质量门禁】每增加一段信息前自问：如果删掉这段，AI的推理质量会显著下降吗？如果不会，删掉它。\n\n【输出格式】信息优先级矩阵 | 推荐的分层结构 | 压缩后的状态摘要 | 渐进式展开计划",
+    "skill_hint": "可转为 Skill: context-engineering"
+  },
+  "pitfalls": [
+    "过度压缩上下文会丢失关键细节",
+    "信息密度太高反而触发认知过载"
+  ],
+  "quality": {
+    "definition_clarity": 5,
+    "trigger_precision": 4,
+    "step_completeness": 4,
+    "scenario_coverage": 5,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

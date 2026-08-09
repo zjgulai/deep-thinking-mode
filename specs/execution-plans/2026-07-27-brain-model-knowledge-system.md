@@ -1,5 +1,7 @@
 # Brain Model Knowledge System Rollout Implementation Plan
 
+> **状态（2026-08-09）：历史实施计划。** 单文件离线站与 GitHub Pages 子路径已被用户明确替换为腾讯云专业多页站；当前产品与发布权威见两份主设计规格和 `manuals/RELEASE_CHECKLIST.md`。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 把 418 份微信 Markdown 建设为本地私有来源层、公开安全的去重知识体系、每模型一张 Codex 共学应用卡、单文件离线 HTML，以及由 GitHub Actions 发布的 GitHub Pages 站点。

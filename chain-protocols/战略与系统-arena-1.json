@@ -54,5 +54,34 @@
     "synthesis_clarity": 4,
     "overall": 4,
     "auto_generated": true
+  },
+  "agent_chain": {
+    "recommended_flow": "DeepResearch",
+    "chain_id": "deep-research-chain",
+    "input_state": {
+      "format": "问题描述 + 已知信息 + 期望输出类型",
+      "required": [
+        "问题陈述"
+      ],
+      "optional": [
+        "上下文",
+        "约束条件",
+        "成功标准"
+      ]
+    },
+    "output_state": {
+      "format": "多视角分析结论 + 综合推荐",
+      "structure": [
+        "Phase1各角色独立分析",
+        "Phase2张力识别",
+        "Phase3综合结论"
+      ],
+      "next_step": "将 Arena 输出传入对应 Agent Chain 的执行阶段"
+    },
+    "handoff": {
+      "to_chain": "deep-research-chain",
+      "handoff_format": "将 Arena 的「综合结论」作为 Chain 的 Phase 2/3 的输入",
+      "use_case": "Arena 适合发现盲区和定义问题框架，DeepResearch Chain 适合深度执行和验证"
+    }
   }
 }

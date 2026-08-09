@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "tipping-points",
+  "meta": {
+    "name": "临界点理论（Tipping Points）",
+    "category": "05",
+    "tags": [
+      "复杂性科学 / 马尔科姆·格拉德威尔+科学基础"
+    ],
+    "source": "认知传统×AI推理迁移:复杂性科学 / 马尔科姆·格拉德威尔+科学基础:临界点理论（Tipping Points）",
+    "sourceType": "cognitive_tradition",
+    "tradition": "复杂性科学 / 马尔科姆·格拉德威尔+科学基础"
+  },
+  "engine": {
+    "core_question": "系统不是线性变化的——在临界点之前积累毫无意义，跨过临界点之后涌现变化；识别临界点比预测变化时机更重要",
+    "trigger_signals": [
+      "现象似乎在某个时间点突然爆发，而非渐进积累",
+      "努力了很久没有效果，不知道是还差得远还是快到临界点了",
+      "设计需要「引爆」的增长策略或社会变革"
+    ],
+    "stop_conditions": [
+      "线性渐进变化的系统",
+      "结果与投入成比例的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "临界点的位置几乎无法精确预测",
+        "action": ""
+      },
+      {
+        "condition": "「我们快到临界点了」容易被用来为持续无效的投入辩护",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「临界点理论」模式。识别系统中可能存在的临界点：在那个点之前，变化微不足道；越过那个点后，变化会突然加速并自我强化。\n\n【推理协议】\n1. 临界点信号识别：有没有以下信号？（非线性加速/突然涌现/早期采用者向主流渗透/网络效应启动）\n2. 三个驱动因素分析：\n   - 少数人法则：有没有极度有影响力的「连接者/信息传播者/推销员」？\n   - 附着力：信息/产品本身是否让人「记得住」并反复想起？\n   - 环境力量：背景条件是否正在形成有利于引爆的土壤？\n3. 临界点距离评估：基于当前积累，我们离临界点大约还有多远？（远/近/可能已越过）\n4. 催化策略：如何减少达到临界点所需的「积累量」？（减少摩擦/增加附着力/锁定关键节点）\n\n【质量门禁】不能用「我们快到临界点了」来掩盖「持续无效」的现实——临界点确实存在，但也可能永远不会到来。\n\n【输出格式】临界点信号评估 | 三因素分析 | 临界点距离估计 | 催化策略建议",
+    "activation_phrase": "请用「临界点理论（Tipping P」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

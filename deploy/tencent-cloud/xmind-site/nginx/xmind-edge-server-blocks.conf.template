@@ -1,0 +1,51 @@
+# 用途：仅将这两个 server block 插入现有
+# /opt/ai-video/deploy/lighthouse/nginx.conf 的 http { ... } 内。
+# 现有入口不 include conf.d，不要直接把本文件拷贝到容器。
+# 执行顺序：origin 健康 -> 专属证书存在 -> 备份主配置 -> 插入 -> nginx -t -> graceful reload。
+
+server {
+    listen 80;
+    server_name xmind.lute-tlz-dddd.top;
+
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl;
+    http2 on;
+    server_name xmind.lute-tlz-dddd.top;
+
+    ssl_certificate /etc/letsencrypt/live/xmind.lute-tlz-dddd.top/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/xmind.lute-tlz-dddd.top/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+
+    client_max_body_size 1m;
+
+    add_header Strict-Transport-Security "max-age=31536000" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "DENY" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Permissions-Policy "camera=(), microphone=(), geolocation=()" always;
+
+    location / {
+        proxy_pass http://172.20.0.1:18888;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Port 443;
+        proxy_connect_timeout 5s;
+        proxy_send_timeout 30s;
+        proxy_read_timeout 60s;
+    }
+}

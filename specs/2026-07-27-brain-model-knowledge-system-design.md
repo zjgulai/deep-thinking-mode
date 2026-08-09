@@ -24,15 +24,16 @@
 ## 2. 已确认目标
 
 网站产品名、公开仓库、Pages 子路径和网站表现以
-`2026-07-30-systematic-thinking-site-design.md` 为准；资料隐私、安全、来源证据和单文件离线约束仍以本文为准。
+`2026-07-30-systematic-thinking-site-design.md` 为准；资料隐私、安全和来源证据仍以本文为准。
+2026-08-09 用户已明确将单文件离线约束改为可部署到腾讯云的专业多页静态站。
 
 1. 保留 418 份原始资料及未来来源的完整本地快照。
 2. 在不改写原始来源的前提下生成清理全文。
 3. 深度分析全部资料，识别重复、系列、卡片、案例、对比和相关关系。
 4. 把资料融合为去重后的综合知识体系。
 5. 每个去重后的知识模型或方法都提供「与 Codex 共学应用卡」。
-6. 生成单个、可离线打开的 `site/index.html`。
-7. 同一产物通过 GitHub Pages 发布为可分享网址。
+6. 生成链接闭合的多页静态目录 `site/`。
+7. 同一产物部署到 `https://xmind.lute-tlz-dddd.top/`，并保留 GitHub Pages 兼容性。
 8. 未来新增 Markdown 或 URL 时只处理新增或变更资料，但重新生成完整 HTML。
 9. 公开内容保留来源追溯，同时不公开原始全文、清理全文、OCR 内容或私人共学记录。
 
@@ -113,7 +114,12 @@ GitHub 和 GitHub Pages 只发布理解知识体系所必需的综合内容和�
 └── package-lock.json
 
 发布层（可推送）
-├── site/index.html
+├── site/index.html                品牌首页
+├── site/chapters/                 13 个章节索引
+├── site/models/                   模型目录与独立详情页
+├── site/router.html               本地 Agent 路由
+├── site/assets/                   共享本地 CSS/JS
+├── site/404.html、robots.txt、sitemap.xml
 └── .github/workflows/pages.yml
 ```
 
@@ -1046,12 +1052,12 @@ transition 提交；不允许单独改写 catalog 或 report。只有初始 base
 
 ## 15. HTML 产品设计
 
-最终产物为 `site/index.html`：
+最终产物为完整 `site/` 静态目录：
 
-- 单文件。
-- CSS、JavaScript、目录、知识索引和问题路由全部内嵌。
-- 可离线双击打开。
-- 可在 GitHub Pages 子路径下运行。
+- 首页、模型库、章节索引、独立模型页、Agent 路由、404、robots 与 sitemap 链接闭合。
+- CSS、JavaScript 与图标仅来自 `site/assets/`，不使用外部运行时资源。
+- 可由 Nginx 或任意静态 HTTP 服务直接托管。
+- 可在域名根路径运行，并保持相对链接以兼容静态子路径托管。
 - 不使用 CDN、外部字体、在线 API 或分析追踪。
 - 用户输入只在浏览器本地处理。
 
@@ -1094,7 +1100,7 @@ transition 提交；不允许单独改写 catalog 或 report。只有初始 base
   - `actions/upload-pages-artifact@v4`
   - `actions/deploy-pages@v4`
 
-`markdown-it` 只在构建时运行。发布后的 `site/index.html` 不加载 npm 包。
+`markdown-it` 只在构建时运行。发布后的 `site/` 不加载 npm 包。
 
 ## 17. GitHub Pages 发布
 
@@ -1163,7 +1169,7 @@ Workflow：
 
 ### 19.4 HTML
 
-- `site/index.html` 可离线打开。
+- `site/` 通过本地静态 HTTP 服务可完整导航。
 - 不依赖 CDN、外部字体、在线 API 或服务端。
 - 目录、搜索、问题匹配、模型关联和提示词复制的数据完整。
 - 所有内部锚点有效。
@@ -1184,9 +1190,9 @@ Workflow：
 
 - 使用去重后的综合知识体系，而非逐篇全文排列。
 - 由用户与 Codex 共同负责未来语义总结和归档。
-- 同时交付本地单文件 HTML 和 GitHub Pages 分享网址。
+- 同时交付本地多页静态目录和腾讯云生产网址。
 - 原始 418 篇全文不公开。
-- 采用“确定性本地处理 + Codex 语义策展 + 单文件静态 HTML”方案。
+- 采用“确定性本地处理 + Codex 语义策展 + 多页静态 HTML”方案。
 - 使用 13 章目录。
 - 使用本文定义的清理、去重、综合和失败处理规则。
 - 每个去重后的模型或方法挂载 Codex 共学应用卡。

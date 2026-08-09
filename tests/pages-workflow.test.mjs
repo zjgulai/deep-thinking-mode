@@ -90,10 +90,11 @@ await test("renderPagesWorkflow — output contains all pinned SHAs", async () =
   }
 });
 
-await test("renderPagesWorkflow — push includes main and public branches", async () => {
+await test("renderPagesWorkflow — push is restricted to main", async () => {
   const pins = await loadPins(".");
   const yaml = renderPagesWorkflow(pins);
-  assert.ok(yaml.includes("branches: [main, public]"), "Missing branches: [main, public]");
+  assert.ok(yaml.includes("branches: [main]"), "Missing branches: [main]");
+  assert.ok(!yaml.includes("branches: [main, public]"), "Public branch must not trigger production Pages");
 });
 
 await test("renderPagesWorkflow — has workflow_dispatch", async () => {
@@ -170,6 +171,13 @@ await test("renderPagesWorkflow — includes npm run check:public", async () => 
   const pins = await loadPins(".");
   const yaml = renderPagesWorkflow(pins);
   assert.ok(yaml.includes("check:public"), "Missing check:public step");
+});
+
+await test("renderPagesWorkflow — verifies the complete generated site and manifest", async () => {
+  const pins = await loadPins(".");
+  const yaml = renderPagesWorkflow(pins);
+  assert.ok(yaml.includes("git diff --exit-code -- site docs"));
+  assert.ok(yaml.includes("npm run manifest:check"));
 });
 
 // ─── full-file snapshot ───────────────────────────────────────────────────────

@@ -6,7 +6,12 @@
     "category": "11",
     "tags": [],
     "skill_name": "金字塔原理_理清逻辑_高效表达的底层",
-    "source": "金字塔原理_理清逻辑_高效表达的底层思维框架.md"
+    "source": "金字塔原理_理清逻辑_高效表达的底层思维框架.md",
+    "agent_roles": [
+      "communicator",
+      "knowledge_synthesizer",
+      "simplifier"
+    ]
   },
   "core_definition": "、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升",
   "when_to_use": {

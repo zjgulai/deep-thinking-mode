@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "hypothesis-competition-popper",
+  "meta": {
+    "name": "「假设竞争场」多元验证",
+    "category": "04",
+    "tags": [
+      "麦肯锡假设驱动 × 波普尔可证伪"
+    ],
+    "source": "认知传统×AI推理迁移:麦肯锡假设驱动 × 波普尔可证伪:「假设竞争场」多元验证",
+    "sourceType": "cognitive_tradition",
+    "tradition": "麦肯锡假设驱动 × 波普尔可证伪",
+    "ai_activation_mechanism": "维护假设竞争场而非单一推理链，使分析过程更稳健，避免过早收敛"
+  },
+  "engine": {
+    "core_question": "维护3-5个竞争假设，每个都必须可证伪，用最小成本逐个排除而非寻找最可能的答案",
+    "trigger_signals": [
+      "根因不明的复杂问题",
+      "数据不完整但需要行动",
+      "担心过早锁定在单一解释"
+    ],
+    "stop_conditions": [
+      "答案非常清晰的简单问题",
+      "资源允许全面分析的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "假设太多会失去焦点（建议3-5个）",
+        "action": ""
+      },
+      {
+        "condition": "初始假设的质量决定分析质量",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「假设竞争场多元验证」模式。维护3-5个竞争假设，每个都是可证伪的，逐步用最小成本的证据排除，而非寻找「最可能的答案」。\n\n【推理协议】\n1. 建立竞争假设：\n   假设H1：... （如果成立，会看到什么？）\n   假设H2：... （如果成立，会看到什么？）\n   假设H3：... （如果成立，会看到什么？）\n\n2. 可证伪检验：每个假设必须有「如果错误，会看到什么」的具体回答\n\n3. 验证成本排序：哪个假设最容易用现有信息验证/排除？从它开始\n\n4. 逐步排除（当前证据 → 排除H2 → 存活H1 vs H3）\n\n5. 收敛到最强假设（不是「唯一答案」）\n\n【质量门禁】不能在「还没有排除其他假设」之前就锚定在「最可能的那个」——这是确认偏误。\n\n【输出格式】竞争假设清单（可证伪版）| 当前证据 | 已排除假设+原因 | 存活假设+置信度 | 下一步验证建议",
+    "activation_phrase": "请用「「假设竞争场」多元验证」模式分析：",
+    "agent_role": "hypothesis_tester",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

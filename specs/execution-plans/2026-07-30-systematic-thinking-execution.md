@@ -1,5 +1,7 @@
 # “系统化思维”完整执行计划
 
+> **状态（2026-08-09）：历史实施计划。** 用户已把单文件 Pages 目标改为腾讯云上的专业多页静态站。继续执行时以 `specs/2026-07-27-brain-model-knowledge-system-design.md`、`specs/2026-07-30-systematic-thinking-site-design.md`、`manuals/CAPABILITY_MAP.md` 与 `manuals/RELEASE_CHECKLIST.md` 为准；本文保留用于追溯早期门禁，不再作为网站结构和部署目标的权威。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 从当前 Phase A Task 5/B5 的真实断点继续，完成私有来源保护、确定性清洗、语义策展、单文件“系统化思维”知识网站、公开历史重建和 `zjgulai/deep-thinking-mode` GitHub Pages 发布。

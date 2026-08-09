@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "id": "reverse-questioning",
+  "meta": {
+    "name": "逆向提问法",
+    "category": "03",
+    "tags": [
+      "横向思维 / 德波诺 + 工程反向设计"
+    ],
+    "source": "认知传统×AI推理迁移:横向思维 / 德波诺 + 工程反向设计:逆向提问法",
+    "sourceType": "cognitive_tradition",
+    "tradition": "横向思维 / 德波诺 + 工程反向设计"
+  },
+  "engine": {
+    "core_question": "不是「如何解决问题X」，而是「如何确保问题X永远不会消失/如何让X更糟」——通过逆向思维发现被正向视角遮蔽的解法",
+    "trigger_signals": [
+      "正面解决方案都试过了但效果有限",
+      "想发现系统中的隐藏结构",
+      "需要找到「不做什么」比「做什么」更重要的情况"
+    ],
+    "stop_conditions": [
+      "问题已有清晰的直接解法",
+      "需要快速执行的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "逆向思考容易变成负面思考，需要最终转回正面方向",
+        "action": ""
+      },
+      {
+        "condition": "逆向答案需要「取反」才能应用",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「逆向提问法」模式。先反向思考「如何让问题更糟/永久存在」，再对逆向答案取反，往往能找到被正向视角遮蔽的关键洞察。\n\n【推理协议】\n1. 问题反转：把「如何解决X」改成「如何确保X永远无法解决/如何让X更严重」\n2. 列举逆向方案：认真、系统地回答反转后的问题（3-5个具体方法）\n3. 取反应用：将每个逆向方案「取反」，得到正向的解决思路\n4. 过滤提炼：哪些取反后的方向是被正向思维忽略的盲区？\n\n经典示例：「如何让员工更积极？」→ 逆向：「如何确保员工永远消极？」\n答：官僚流程/不透明决策/无意义工作/缺乏反馈/薪酬与贡献脱钩\n取反：简化流程/透明决策/意义感/及时反馈/贡献激励\n\n【质量门禁】逆向答案不能太表面，必须是「真正能确保问题无法解决的深层机制」，才能取反出有价值的洞察。\n\n【输出格式】反转问题 | 逆向方案（3-5个）| 每个方案取反后的正向洞察 | 最有价值的新方向",
+    "activation_phrase": "请用「逆向提问法」模式分析：",
+    "agent_role": "logical_analyzer",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}

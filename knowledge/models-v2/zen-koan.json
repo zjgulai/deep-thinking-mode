@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "id": "zen-koan",
+  "meta": {
+    "name": "禅宗「公案」维度突破",
+    "category": "06",
+    "tags": [
+      "东方思维 / 中国禅宗"
+    ],
+    "source": "认知传统×AI推理迁移:东方思维 / 中国禅宗:禅宗「公案」维度突破",
+    "sourceType": "cognitive_tradition",
+    "tradition": "东方思维 / 中国禅宗",
+    "ai_activation_mechanism": "强制AI识别这个问题在当前维度是否真的可解，如果不可解则重新框架化问题本身"
+  },
+  "engine": {
+    "core_question": "当问题在当前维度无解时，不是找到正确答案，而是打破问题本身的隐含假设，跳到新维度",
+    "trigger_signals": [
+      "面对快速vs质量、创新vs稳定这类永恒矛盾",
+      "所有常规解法都已尝试仍无解",
+      "需要打破非A即B的二元对立"
+    ],
+    "stop_conditions": [
+      "有明确最优解的技术问题",
+      "资源充足可以同时追求两个目标的场景"
+    ],
+    "reasoning_protocol": [],
+    "decision_points": [
+      {
+        "condition": "公案式思维容易变成不负责任的跳跃",
+        "action": ""
+      },
+      {
+        "condition": "新维度可能只是逃避问题而非解决问题",
+        "action": ""
+      }
+    ],
+    "output_format": {
+      "structure": "",
+      "example": ""
+    }
+  },
+  "codex": {
+    "system_prompt": "【认知模式】你现在运行「禅宗公案维度突破」模式。当问题在当前维度无解时，答案不是「选A或B」，而是「找到让问题重新框架化的新维度」。\n\n【推理协议】\n1. 识别对立：当前问题是什么两难困境？（A vs B）\n2. 穷尽当前维度：在当前维度，A和B真的无法兼得吗？为什么？\n3. 识别隐含假设：「A和B不可兼得」这个判断依赖什么未言明的假设？\n4. 打破假设：如果去掉那个假设，会出现什么新的可能性？\n5. 新维度解法：在新维度上，是否能以「非A非B」或「A且B」的方式解决？\n\n【质量门禁】新维度必须是「真实的突破」而非「逃避」——它必须比原来两个选项都更直接地解决核心问题。\n\n【输出格式】原始对立（A vs B）| 当前维度的限制 | 隐含假设 | 打破假设后的新维度 | 新维度下的解法",
+    "activation_phrase": "请用「禅宗「公案」维度突破」模式分析：",
+    "agent_role": "multi_perspective",
+    "sp_version": "v2.0-stateful",
+    "fallback": ""
+  },
+  "quality": {
+    "reasoning_completeness": 5,
+    "example_coverage": 1,
+    "prompt_effectiveness": 5,
+    "overall": 5
+  }
+}
