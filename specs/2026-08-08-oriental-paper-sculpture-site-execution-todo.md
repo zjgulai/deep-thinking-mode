@@ -9,7 +9,8 @@
   分批生成、定向修正、原尺寸与卡片裁切评审。用户于 2026-08-09 对十三张最终图明确“全部通过”。
   已从批准原图确定性派生 52 个版本化 AVIF/WebP 资产，接入公开映射、构建多页站并完成本地
   自动测试、桌面/移动 E2E 与设计 QA。V4 已作为不可变镜像部署到腾讯云，并完成逐文件生产校验、
-  13 章浏览器 E2E、320/390px 移动验收与同机 32 个既有域名无回归核验；尚未 commit 或 push。
+  13 章浏览器 E2E、320/390px 移动验收与同机 32 个既有域名无回归核验。核心发布提交已推送
+  `origin/main`，GitHub Pages 镜像也已完成逐文件验收。
 - 目标：以“彩绘人物 × 立体纸艺知识剧场”重制十三位导师，在不改知识内容与站点能力的前提下，
   完成史实资料、角色圣经、图片生成、前端接入、本地测试、用户视觉签字、腾讯云部署、生产 E2E
   和最终验收。
@@ -117,7 +118,7 @@
 | 项目 | 已验收结果 |
 |---|---|
 | 用户补签 | 用户明确签字确认真实物理键盘 Tab 顺序，原唯一人工未验证项闭环 |
-| 发布基线 | `main@ad9312ae9101fe3193a01d089628cb961e00493b`；未 commit、未 push |
+| 发布基线 | 从 `main@ad9312ae9101fe3193a01d089628cb961e00493b` 生成发布提交 `d929e32f4bba1fe35ab4173870c60aae338a984a` 并推送到 `origin/main` |
 | 自动门 | `npm run check`、公开构件门、11975 路径 manifest 与全量测试 `1072/1072` 通过 |
 | 不可变构件 | `8acae8761f368c441b5f596c201bad139cbd8427faba9402dbc3b8e2655c43d0`，2864 文件 |
 | 生产镜像 | `xmind-site:8acae8761f36`；服务器 image ID `sha256:e862c7cfa2fb91f442c76017b99961a0df948b91bc76f2e3c08a6867f1c8d6dc` |
@@ -128,6 +129,7 @@
 | 邻接安全 | 32/32 域名 pre/post 完全一致；70 个非 xmind 容器 ID/镜像、网络、卷和监听端口零变化 |
 | 共享入口 | Nginx hash 前后均为 `5a0fb8af2dff1fa2655898f9163b07b88133136e0bf655ee511f7fa25b0c0724`，未 reload/restart |
 | 审计与回滚 | `/opt/xmind-site/audit/20260810T101438Z/`；上一镜像 `xmind-site:40c6b7aafdc7` 与配置备份保留 |
+| GitHub Pages | Actions run `31385218882` 的 build/deploy 全绿；`https://zjgulai.github.io/deep-thinking-mode/` 2864/2864 文件逐字节通过，真实 404、严格 TLS 通过 |
 
 旧 V1 图片在 V2-G6 前继续作为生产回滚版本，不覆盖、不删除、不在服务器手工替换单张图片。
 
@@ -774,7 +776,7 @@ rtk node tools/verify-production.mjs --url https://xmind.lute-tlz-dddd.top/
 - [x] 记录生产 2864 文件 verifier、浏览器 E2E 和 32 个既有域名 pre/post 零差异。
 - [x] 记录十三位 V4 资产版本、角色圣经版本、provenance 和历史复核状态。
 - [x] 原未验证项“物理键盘完整 Tab 顺序”已由用户于 2026-08-10 明确签字补齐。
-- [ ] 用户单独确认是否 commit、push 或发布 GitHub Pages；不得从腾讯云成功推断这些动作获授权。
+- [x] 用户已于 2026-08-10 单独授权 commit、push 与 GitHub Pages；核心发布提交、Actions 和 Pages 逐文件验证均完成。
 
 ### Gate G9
 

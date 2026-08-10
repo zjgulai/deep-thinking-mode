@@ -37,7 +37,8 @@
 > **当前状态**：V4 东方彩绘导师版本已部署到腾讯云；最新生产构件为
 > `8acae8761f368c441b5f596c201bad139cbd8427faba9402dbc3b8e2655c43d0`（2864 文件）。
 > 全量测试 `1072/1072`，生产逐文件一致性、浏览器 E2E、单一安全响应头和 32 个邻接域名回归均通过。
-> 当前工作区仍未 commit/push；腾讯云部署不代表 GitHub 发布。
+> 核心发布提交 `d929e32f4bba1fe35ab4173870c60aae338a984a` 已推送到 `origin/main`，
+> [GitHub Pages 镜像](https://zjgulai.github.io/deep-thinking-mode/) 与腾讯云主站均已通过 2864/2864 文件逐字节验证。
 
 ## 快速开始
 
