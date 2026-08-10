@@ -7,6 +7,8 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { sanitizePublicModelTags } from "./lib/public-model-tags.mjs";
+
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const DATA = join(ROOT, "data");
 const TAX = join(ROOT, "knowledge", "taxonomy.json");
@@ -213,7 +215,9 @@ function distillV2(text) {
 
   // ── tags ──
   const tags = text.match(/#([^\s#]{2,14})/g);
-  if (tags) m.tags = [...new Set(tags.map(t => t.replace("#", "").trim()))].slice(0, 7);
+  if (tags) {
+    m.tags = sanitizePublicModelTags(tags.map((tag) => tag.replace("#", ""))).slice(0, 7);
+  }
 
   return m;
 }

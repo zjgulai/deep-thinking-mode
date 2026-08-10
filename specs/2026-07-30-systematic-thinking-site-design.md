@@ -1,10 +1,12 @@
-# “系统化思维”多页知识工作台设计
+# “前车之鉴-思维制胜”多页知识工作台设计
 
 ## 1. 状态与适用范围
 
 - 原始设计日期：2026-07-30；多页发布决策：2026-08-09。
 - 用户已确认采用“知识工作台”方向。
-- 产品名：`系统化思维`。
+- 产品名：`前车之鉴-思维制胜`。
+- 产品副标题：`在对的方向上前行，效率不值一提`。
+- 视觉系统：`东方纸雕纪念像`；品牌叙事为`十三卷 · 十三位历史女性导师`。
 - 公开仓库：`https://github.com/zjgulai/deep-thinking-mode`。
 - 生产域名：`https://xmind.lute-tlz-dddd.top/`。
 - 生产环境：腾讯云轻量应用服务器上的独立静态站 Compose project。
@@ -15,6 +17,12 @@
 来源证据以该总规格为准，网站结构与生产发布以本文 2026-08-09 决策为准。原来的单文件
 约束已被用户明确改为完整多页静态站，不再作为验收条件。
 
+东方纸雕、唐风品牌气象、十三位导师、章节装饰、图像提示词、史实与版权的专项权威为
+[`2026-08-08-oriental-paper-sculpture-brand-and-chapter-design.md`](2026-08-08-oriental-paper-sculpture-brand-and-chapter-design.md)；
+实施、迭代、本地测试、腾讯云部署和生产验收以
+[`2026-08-08-oriental-paper-sculpture-site-execution-todo.md`](2026-08-08-oriental-paper-sculpture-site-execution-todo.md)
+编排。专项视觉规格不得改变本文的信息架构、可访问性、安全、确定性构建和部署边界。
+
 ## 2. 设计决策
 
 采用以下组合，而不是复制某一个品牌页面：
@@ -22,9 +30,14 @@
 1. 使用 Mintlify 的三栏文档信息架构承载长期知识阅读。
 2. 使用用户附件 Wandor 与 Claude 的暖米白、陶棕、暖黑和克制玻璃质感。
 3. 使用 IBM Carbon 的 4px 网格、明确状态、焦点可见性和触控纪律。
+4. 使用“东方纸雕纪念像”的立体剪纸、浅浮雕和纪念碑式留白承接十三章历史女性导师。
 
 用户附件只作为视觉意图，不改变已确认的技术栈。最终站点不采用 React、TypeScript、
 Vite、Tailwind、lucide-react、Google Fonts 或附件中的远程视频。
+
+“唐风”只表示开阔、庄重、克制的品牌气象，不表示所有人物统一穿唐装。人物服饰与器物
+服从各自朝代；完整人物图只出现在首页章节卡和章节 Hero，2789 个模型详情页只继承章节色、
+微型签名和导师文本入口，避免错误作者归因与大规模重复资源。
 
 选择“知识工作台”而非另外两种方向的原因：
 
@@ -72,7 +85,7 @@ site/robots.txt + sitemap.xml       搜索引擎入口
 
 顶栏包含：
 
-- 左侧文字标识“系统化思维”。
+- 左侧文字标识“前车之鉴-思维制胜”。
 - 桌面端章节入口。
 - 全局搜索。
 - 黑色主按钮“我遇到一个问题”。
@@ -332,6 +345,16 @@ Graphify 仅用于代码与模块架构审计，不参与知识语义处理、�
 
 ## 12. 发布边界
 
+主生产目标是腾讯云上的完整多页静态站，发布单元始终是经过检查的整个 `site/`，不是单个
+`index.html`。首页、`assets/`、`chapters/`、`models/`、Router、404、robots 和 sitemap
+必须作为同一构建候选、同一构件 hash 和同一镜像版本发布。`docs/` 是逐字节兼容镜像，
+GitHub Pages 是兼容发布渠道，不能取代腾讯云 origin、共享入口和生产逐文件验收。
+
+腾讯云实际命令、Docker context allowlist、共享 Nginx 备份/验证/切换和回滚以
+[`deploy/tencent-cloud/xmind-site/RUNBOOK.md`](../deploy/tencent-cloud/xmind-site/RUNBOOK.md)
+为唯一权威；视觉版本的阶段门和证据清单见
+[`specs/2026-08-08-oriental-paper-sculpture-site-execution-todo.md`](2026-08-08-oriental-paper-sculpture-site-execution-todo.md)。
+
 当前 `main` 历史包含 418 份原始 Markdown，不得直接推送。发布顺序保持：
 
 1. 验证私有 Git bundle 和恢复能力。
@@ -350,8 +373,10 @@ GitHub Actions 使用 build/deploy 两个 job，只向 Pages 上传 `site/`，�
 
 设计完成必须同时满足：
 
-- 产品名称与网址使用 `系统化思维` / `https://xmind.lute-tlz-dddd.top/`。
+- 产品名称与网址使用 `前车之鉴-思维制胜` / `https://xmind.lute-tlz-dddd.top/`。
+- 产品副标题使用“在对的方向上前行，效率不值一提”。
 - 首屏体现暖色、渐隐背景和玻璃问题入口，但没有远程视频或持续环境动画。
+- 十三章导师和东方纸雕装饰遵循专项视觉规格，且不改变模型作者、史实和风险边界。
 - 13 章地图、三栏工作台、搜索、问题匹配、Codex 提问、关系与来源均可用。
 - 每个 ready 模型有完整应用卡；风险、待复核和证据边界可见。
 - `site/` 是链接闭合的多页静态目录，可由任意静态 HTTP 服务器托管。

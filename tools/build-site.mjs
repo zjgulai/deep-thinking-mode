@@ -11,21 +11,32 @@ import {
   writeFileSync,
 } from "node:fs";
 import { createHash } from "node:crypto";
-import { basename, join } from "node:path";
+import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { loadV3AgentData } from "./lib/v3-agent-data.mjs";
 import { findPublicModelResidue } from "./lib/public-model-sanitizer.mjs";
+import { sanitizePublicModelTags } from "./lib/public-model-tags.mjs";
+import { META_CONTENT_SECURITY_POLICY } from "./lib/site-security.mjs";
+import {
+  compileChapterThemesCss,
+  validateChapterPresentation,
+  verifyChapterPortraitAssets,
+} from "./lib/chapter-presentation.mjs";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const MODELS_DIR = join(ROOT, "knowledge", "models-v3");
 const TAXONOMY_PATH = join(ROOT, "knowledge", "taxonomy.json");
+const CHAPTER_MENTORS_PATH = join(ROOT, "knowledge", "chapter-mentors.json");
+const CHAPTER_THEMES_PATH = join(ROOT, "knowledge", "chapter-themes.json");
 const CURATED_PATH = join(ROOT, "knowledge", "curated-collections.json");
 const ROUTER_PATH = join(ROOT, "chain-protocols", "agent-router-index.json");
 const ASSETS_DIR = join(ROOT, "tools", "site-assets");
 const SITE_DIR = join(ROOT, "site");
 const DOCS_DIR = join(ROOT, "docs");
 const ORIGIN = "https://xmind.lute-tlz-dddd.top";
+const PRODUCT_NAME = "前车之鉴-思维制胜";
+const PRODUCT_SUBTITLE = "在对的方向上前行，效率不值一提";
 
 function writeTextFile(path, content) {
   writeFileSync(path, content.replace(/[ \t]+$/gm, ""));
@@ -93,6 +104,13 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+// 移除 emoji 及其前后紧邻空格，用于展示性文字（标题、描述）
+function stripEmoji(value) {
+  return String(value ?? "")
+    .replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]\s*/gu, "")
+    .trim();
 }
 
 function displayName(value) {
@@ -165,9 +183,9 @@ function assetPrefix(depth) {
   return depth > 0 ? "../".repeat(depth) : "";
 }
 
-function shell({ title, description, pathname, depth = 0, active = "", body, pageClass = "" }) {
+function shell({ title, description, pathname, depth = 0, active = "", body, pageClass = "", chapterId = "", themeKey = "" }) {
   const prefix = assetPrefix(depth);
-  const pageTitle = title === "系统化思维" ? title : `${title}｜系统化思维`;
+  const pageTitle = title === PRODUCT_NAME ? title : `${title}｜${PRODUCT_NAME}`;
   const nav = [
     ["home", `${prefix}index.html`, "首页"],
     ["models", `${prefix}models/index.html`, "模型库"],
@@ -179,27 +197,28 @@ function shell({ title, description, pathname, depth = 0, active = "", body, pag
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="${escapeHtml(description)}">
-  <meta name="theme-color" content="#f6f2eb">
-  <meta name="color-scheme" content="light dark">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="${META_CONTENT_SECURITY_POLICY}">
   <link rel="canonical" href="${canonical(pathname)}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:site_name" content="系统化思维">
+  <meta property="og:site_name" content="${PRODUCT_NAME}">
   <meta property="og:title" content="${escapeHtml(pageTitle)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${canonical(pathname)}">
   <link rel="icon" href="${prefix}assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${prefix}assets/site.css">
+  <link rel="stylesheet" href="${prefix}assets/chapter-themes.css">
   <title>${escapeHtml(pageTitle)}</title>
 </head>
-<body class="${escapeHtml(pageClass)}">
+<body class="${escapeHtml(pageClass)}"${chapterId ? ` data-chapter="${escapeHtml(chapterId)}"` : ""}${themeKey ? ` data-theme="${escapeHtml(themeKey)}"` : ""}>
   <a class="skip-link" href="#main-content">跳至正文</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="${prefix}index.html" aria-label="系统化思维首页">
+      <a class="brand" href="${prefix}index.html" aria-label="${PRODUCT_NAME}首页">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-        <span><strong>系统化思维</strong><small>Thinking Systems</small></span>
+        <span><strong>${PRODUCT_NAME}</strong><small>Lessons Forward · Think to Win</small></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span></span><span></span><span></span><span class="sr-only">打开导航</span></button>
       <nav class="primary-nav" id="primary-nav" aria-label="主导航" data-primary-nav>
@@ -210,13 +229,26 @@ function shell({ title, description, pathname, depth = 0, active = "", body, pag
   </header>
   <main id="main-content">${body}</main>
   <footer class="site-footer">
-    <div><strong>系统化思维</strong><span>把模型变成可执行的推理协议</span></div>
+    <div><strong>${PRODUCT_NAME}</strong><span>${PRODUCT_SUBTITLE}</span></div>
     <p>本地静态运行 · 无追踪 · 内容仅作认知工具，不替代医疗、法律或财务专业意见</p>
   </footer>
   <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
   <script src="${prefix}assets/site.js" defer></script>
 </body>
 </html>`;
+}
+
+function chapterPortrait(entry, prefix, { eager = false, className = "mentor-portrait", variant = "hero" } = {}) {
+  const portrait = entry.theme.portrait;
+  const asset = portrait[variant];
+  if (!asset) throw new Error(`Unknown chapter portrait variant: ${variant}`);
+  const loading = eager ? "eager" : "lazy";
+  const priority = eager ? ' fetchpriority="high"' : "";
+  return `<picture class="${className}" data-asset-version="${portrait.asset_version}">
+    <source srcset="${prefix}assets/${asset.avif_path}" type="image/avif">
+    <source srcset="${prefix}assets/${asset.webp_path}" type="image/webp">
+    <img src="${prefix}assets/${asset.webp_path}" width="${asset.width}" height="${asset.height}" alt="${escapeHtml(portrait.alt)}" loading="${loading}" decoding="async"${priority}>
+  </picture>`;
 }
 
 function breadcrumbs(items) {
@@ -303,6 +335,13 @@ async function build() {
   assertRequiredAssets();
   await loadV3AgentData(ROOT);
   const taxonomy = readJson(TAXONOMY_PATH);
+  const presentation = validateChapterPresentation({
+    taxonomy,
+    mentors: readJson(CHAPTER_MENTORS_PATH),
+    themes: readJson(CHAPTER_THEMES_PATH),
+  });
+  const portraitAssets = verifyChapterPortraitAssets({ assetsRoot: ASSETS_DIR, presentation });
+  const presentationById = new Map(presentation.chapters.map((entry) => [entry.chapter.id, entry]));
   const chapters = [...taxonomy.chapters].sort((a, b) => Number(a.order) - Number(b.order));
   const chapterById = new Map(chapters.map((chapter) => [chapter.id, chapter]));
   const models = loadModels();
@@ -338,18 +377,32 @@ async function build() {
   mkdirSync(modelsDir, { recursive: true });
   mkdirSync(assetsDir, { recursive: true });
   for (const name of ["site.css", "site.js", "favicon.svg"]) cpSync(join(ASSETS_DIR, name), join(assetsDir, name));
+  writeTextFile(join(assetsDir, "chapter-themes.css"), compileChapterThemesCss(presentation));
+  for (const result of portraitAssets) {
+    for (const asset of [
+      result.card.avif,
+      result.card.webp,
+      result.hero.avif,
+      result.hero.webp,
+    ]) {
+      const target = join(assetsDir, asset.path);
+      mkdirSync(dirname(target), { recursive: true });
+      cpSync(join(ASSETS_DIR, asset.path), target);
+    }
+  }
 
   const chapterCards = chapters.map((chapter) => {
+    const entry = presentationById.get(chapter.id);
     const count = byChapter.get(chapter.id).length;
     const signals = (chapter.allowed_tags ?? []).slice(0, 3);
-    return `<a class="chapter-card" href="chapters/ch${chapter.id}-${chapter.slug}.html">
-      <span class="chapter-number">${chapter.id}</span>
-      <div><p class="eyebrow">CHAPTER ${chapter.id}</p><h3>${escapeHtml(chapter.title)}</h3><p>${escapeHtml(chapter.description)}</p></div>
+    return `<a class="chapter-card" data-chapter="${chapter.id}" data-theme="${entry.theme.theme_key}" href="chapters/ch${chapter.id}-${chapter.slug}.html">
+      <div class="chapter-card-media">${chapterPortrait(entry, "", { className: "mentor-portrait mentor-portrait-card", variant: "card" })}<span class="chapter-number">${chapter.id}</span></div>
+      <div class="chapter-card-copy"><p class="eyebrow">CHAPTER ${chapter.id} · ${escapeHtml(entry.mentor.dynasty)}</p><h3>${escapeHtml(chapter.title)}</h3><p>${escapeHtml(chapter.description)}</p><p class="chapter-mentor-name">章节导师 · ${escapeHtml(entry.mentor.name)}</p></div>
       <div class="chapter-card-footer"><span>${count} 个模型</span><span>${escapeHtml(signals.join(" · "))}</span><b aria-hidden="true">↗</b></div>
     </a>`;
   }).join("");
 
-  const curatedCards = Object.entries(curated).map(([key, collection]) => {
+  const curatedCards = Object.entries(curated).map(([key, collection], curatedIndex) => {
     const matched = [];
     const seenCurated = new Set();
     for (const item of collection.models ?? []) {
@@ -361,9 +414,10 @@ async function build() {
       if (matched.length === 4) break;
     }
     const first = matched[0];
+    const indexLabel = String(curatedIndex + 1).padStart(2, "0");
     return `<article class="curated-card">
-      <div class="curated-index">${escapeHtml(key.replace(/_/g, " "))}</div>
-      <h3>${escapeHtml(collection.title)}</h3><p>${escapeHtml(collection.desc)}</p>
+      <div class="curated-index">${indexLabel} · ${escapeHtml(key.replace(/_/g, " "))}</div>
+      <h3>${escapeHtml(stripEmoji(collection.title))}</h3><p>${escapeHtml(stripEmoji(collection.desc))}</p>
       <div class="curated-links">${matched.map((model) => `<a href="models/${modelFile.get(model.id)}">${escapeHtml(model.__displayName)}</a>`).join("") || "<span>内容整理中</span>"}</div>
       ${first ? `<a class="text-link" href="models/${modelFile.get(first.id)}">从首个模型开始 <span aria-hidden="true">→</span></a>` : ""}
     </article>`;
@@ -374,20 +428,22 @@ async function build() {
     return `<a class="agent-flow-card" href="router.html#flow-${flow.code}"><span>${flow.code}</span><h3>${escapeHtml(flow.name)}</h3><p>${escapeHtml(flow.description)}</p><small>${count} 个角色关联模型</small></a>`;
   }).join("");
 
-  const homeBody = `<section class="hero section-shell">
-    <div class="hero-copy"><p class="kicker"><span></span> SYSTEMATIC THINKING WORKBENCH</p>
-      <h1>把复杂问题，<em>转化为可执行的推理。</em></h1>
-      <p class="hero-lead">一个由 ${models.length} 个思维模型构成的本地知识工作台。先澄清问题，再选择框架，最后形成可验证的行动。</p>
+  const leadChapter = presentationById.get("00");
+  const homeBody = `<section class="hero section-shell" data-chapter="00" data-theme="${leadChapter.theme.theme_key}">
+    <div class="hero-copy"><p class="kicker"><span></span> ORIENTAL THINKING WORKBENCH</p>
+      <h1>前车之鉴<em>思维制胜</em></h1>
+      <p class="hero-subtitle">${PRODUCT_SUBTITLE}</p>
+      <p class="hero-lead">由 ${models.length} 个思维模型与十三位东方章节导师构成的本地知识工作台。先辨方向，再选框架，最终形成可验证的行动。</p>
       <div class="hero-actions"><a class="button button-primary" href="router.html">描述问题，匹配模型</a><a class="button button-secondary" href="models/index.html">浏览全部模型</a></div>
       <dl class="hero-metrics"><div><dt>${models.length}</dt><dd>结构化模型</dd></div><div><dt>${chapters.length}</dt><dd>认知章节</dd></div><div><dt>${Object.keys(roleCount).length}</dt><dd>Agent 角色</dd></div></dl>
     </div>
-    <div class="hero-visual" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="core-node"><span>THINK</span><strong>系统</strong></div><i class="satellite s1">定义</i><i class="satellite s2">分析</i><i class="satellite s3">决策</i><i class="satellite s4">行动</i></div>
+    <figure class="hero-monument">${chapterPortrait(leadChapter, "", { eager: true, className: "mentor-portrait mentor-portrait-lead" })}<figcaption><strong>${escapeHtml(leadChapter.mentor.name)}</strong><span>${escapeHtml(leadChapter.mentor.role)} · ${escapeHtml(leadChapter.mentor.portrait_notice)}</span></figcaption></figure>
   </section>
   <section class="section-shell value-strip" aria-label="产品原则"><div><span>01</span><strong>问题优先</strong><p>从真实问题出发，不从模型名称出发。</p></div><div><span>02</span><strong>证据边界</strong><p>显式区分事实、假设、风险与待复核内容。</p></div><div><span>03</span><strong>可执行协议</strong><p>每个模型落到步骤、检查点和 Codex 提示词。</p></div></section>
   <section class="section-shell section-block"><div class="section-intro"><p class="kicker">CURATED PATHS</p><h2>按场景，直达关键模型</h2><p>六条经过策展的起步路径，帮你避开“模型很多，却不知道先用哪个”。</p></div><div class="curated-grid">${curatedCards}</div></section>
   <section class="agent-band"><div class="section-shell"><div class="section-intro inverse"><p class="kicker">AGENT REASONING</p><h2>让模型进入完整推理流程</h2><p>从澄清、推演到执行与复盘，把零散工具组合成可持续工作的 Agent 角色。</p></div><div class="agent-flow-grid">${agentCards}</div><a class="button button-light" href="router.html">进入 Agent 路由器</a></div></section>
   <section class="section-shell section-block"><div class="section-intro"><p class="kicker">KNOWLEDGE MAP</p><h2>十三章认知地图</h2><p>每个模型只有一个主章节，同时通过标签和 Agent 角色建立跨章节连接。</p></div><div class="chapter-grid">${chapterCards}</div></section>`;
-  writeTextFile(join(output, "index.html"), shell({ title: "系统化思维", description: "把复杂问题转化为可理解、可选择、可执行的推理协议。", pathname: "/", active: "home", body: homeBody, pageClass: "home-page" }));
+  writeTextFile(join(output, "index.html"), shell({ title: PRODUCT_NAME, description: `${PRODUCT_SUBTITLE}。把复杂问题转化为可理解、可选择、可执行的推理协议。`, pathname: "/", active: "home", body: homeBody, pageClass: "home-page" }));
 
   const allModelCards = models.map((model) => modelSummaryCard(model, modelFile.get(model.id))).join("");
   const modelsBody = `${breadcrumbs([{ href: "../index.html", label: "首页" }, { label: "模型库" }])}
@@ -396,19 +452,20 @@ async function build() {
   writeTextFile(join(modelsDir, "index.html"), shell({ title: "模型库", description: `浏览和筛选 ${models.length} 个系统化思维模型。`, pathname: "/models/", depth: 1, active: "models", body: modelsBody, pageClass: "library-page" }));
 
   for (const chapter of chapters) {
+    const entry = presentationById.get(chapter.id);
     const chapterModels = byChapter.get(chapter.id);
     const chapterPath = `ch${chapter.id}-${chapter.slug}.html`;
     const cards = chapterModels.map((model) => modelSummaryCard(model, `../models/${modelFile.get(model.id)}`)).join("");
-    const subchapters = (chapter.subchapters ?? []).map((item) => `<span class="topic-pill">${escapeHtml(item.title)}</span>`).join("");
+    const subchapters = (chapter.subchapters ?? []).map((item) => `<li class="topic-pill">${escapeHtml(item.title)}</li>`).join("");
     const index = chapters.findIndex((item) => item.id === chapter.id);
     const previous = chapters[index - 1];
     const next = chapters[index + 1];
     const chapterBody = `${breadcrumbs([{ href: "../index.html", label: "首页" }, { label: `Ch.${chapter.id} ${chapter.title}` }])}
-      <section class="page-hero section-shell chapter-hero"><div><p class="kicker">CHAPTER ${chapter.id}</p><h1>${escapeHtml(chapter.title)}</h1><p>${escapeHtml(chapter.description)}</p></div><div class="chapter-stat"><strong>${chapterModels.length}</strong><span>个模型</span></div></section>
-      <section class="section-shell chapter-topics" aria-label="本章主题">${subchapters}</section>
-      <section class="section-shell chapter-library"><div class="chapter-toolbar"><div><h2>本章模型</h2><p>按质量与名称稳定排序</p></div><div class="search-box small"><span aria-hidden="true">⌕</span><label class="sr-only" for="filter-${chapter.id}">筛选本章模型</label><input id="filter-${chapter.id}" type="search" placeholder="筛选本章…" autocomplete="off" data-filter-input></div></div><div class="model-list" data-filter-list>${cards}</div><p class="empty-state" hidden data-filter-empty>本章没有匹配的模型。</p></section>
+      <section class="page-hero section-shell chapter-hero"><div class="chapter-heading"><p class="kicker">CHAPTER ${chapter.id} · ${escapeHtml(entry.mentor.dynasty)}</p><h1>${escapeHtml(chapter.title)}</h1><p class="chapter-description">${escapeHtml(chapter.description)}</p></div><div class="mentor-intro"><span>章节导师</span><h2>${escapeHtml(entry.mentor.name)}<small>${escapeHtml(entry.mentor.role)}</small></h2><p>${escapeHtml(entry.mentor.curatorial_intro)}</p></div><dl class="chapter-symbols"><div><dt>空间</dt><dd>${escapeHtml(entry.theme.mece.space)}</dd></div><div><dt>器物</dt><dd>${escapeHtml(entry.theme.mece.object)}</dd></div><div><dt>纹样</dt><dd>${escapeHtml(entry.theme.mece.pattern)}</dd></div></dl><figure class="mentor-figure">${chapterPortrait(entry, "../", { eager: true })}<figcaption><strong>${escapeHtml(entry.mentor.name)}</strong><span>${escapeHtml(entry.mentor.portrait_notice)}</span></figcaption></figure></section>
+      <section class="section-shell chapter-topics" aria-labelledby="topics-${chapter.id}"><div class="chapter-section-title"><span aria-hidden="true"></span><div><p class="eyebrow">CHAPTER THREADS</p><h2 id="topics-${chapter.id}">本章脉络</h2></div></div><ul>${subchapters}</ul></section>
+      <section class="section-shell chapter-library"><div class="chapter-toolbar"><div><h2>本章模型</h2><p>按质量与名称稳定排序 · <strong data-filter-count>${chapterModels.length}</strong> 个结果</p></div><div class="search-box small"><span aria-hidden="true">⌕</span><label class="sr-only" for="filter-${chapter.id}">筛选本章模型</label><input id="filter-${chapter.id}" type="search" placeholder="筛选本章…" autocomplete="off" data-filter-input></div></div><div class="model-list" data-filter-list>${cards}</div><p class="empty-state" hidden data-filter-empty>本章没有匹配的模型。请减少关键词，或返回本章脉络重新选择。</p></section>
       <nav class="chapter-pager section-shell" aria-label="章节翻页">${previous ? `<a href="ch${previous.id}-${previous.slug}.html"><span>上一章</span><strong>Ch.${previous.id} ${escapeHtml(previous.title)}</strong></a>` : "<span></span>"}${next ? `<a class="next" href="ch${next.id}-${next.slug}.html"><span>下一章</span><strong>Ch.${next.id} ${escapeHtml(next.title)}</strong></a>` : "<span></span>"}</nav>`;
-    writeTextFile(join(chaptersDir, chapterPath), shell({ title: `Ch.${chapter.id} ${chapter.title}`, description: chapter.description, pathname: `/chapters/${chapterPath}`, depth: 1, body: chapterBody, pageClass: "chapter-page" }));
+    writeTextFile(join(chaptersDir, chapterPath), shell({ title: `Ch.${chapter.id} ${chapter.title}`, description: chapter.description, pathname: `/chapters/${chapterPath}`, depth: 1, body: chapterBody, pageClass: "chapter-page has-chapter-theme", chapterId: chapter.id, themeKey: entry.theme.theme_key }));
   }
 
   for (const model of models) {
@@ -426,9 +483,12 @@ async function build() {
     const activation = model.codex_integration?.activation;
     const systemPrompt = model.codex_integration?.system_prompt;
     const codexCard = activation || systemPrompt ? `<div class="codex-panel"><div class="codex-panel-head"><div><span>CODEX PLAYBOOK</span><h3>与 Codex 共学应用卡</h3></div>${systemPrompt ? `<button class="button button-copy" type="button" data-copy-target="${promptId}">复制完整提示词</button>` : ""}</div>${activation ? `<p class="activation"><strong>激活方式</strong>${escapeHtml(activation)}</p>` : ""}${systemPrompt ? `<pre id="${promptId}" tabindex="0"><code>${escapeHtml(systemPrompt)}</code></pre>` : ""}</div>` : "";
-    const tags = (model.meta.tags ?? []).map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
+    const tags = sanitizePublicModelTags(model.meta.tags)
+      .map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`)
+      .join("");
+    const chapterPresentation = presentationById.get(chapter.id);
     const modelBody = `${breadcrumbs([{ href: "../index.html", label: "首页" }, { href: `../chapters/ch${chapter.id}-${chapter.slug}.html`, label: `Ch.${chapter.id} ${chapter.title}` }, { label: model.__displayName }])}
-      <article class="model-detail section-shell"><header class="model-detail-hero"><div><p class="kicker">${escapeHtml(displayName(model.meta.skill_name) || `CHAPTER ${chapter.id}`)}</p><h1>${escapeHtml(model.__displayName)}</h1><p class="definition">${escapeHtml(plainText(model.core_definition))}</p><div class="chip-row">${tags}</div>${roleChips(model.meta.agent_roles)}</div><aside><span>PROTOCOL</span><strong>${model.reasoning_steps?.length ?? 0}<small>步</small></strong><p>${escapeHtml(chapter.title)}</p></aside></header>
+      <article class="model-detail section-shell"><header class="model-detail-hero"><div><p class="kicker">${escapeHtml(displayName(model.meta.skill_name) || `CHAPTER ${chapter.id}`)}</p><p class="model-mentor-link"><a href="../chapters/ch${chapter.id}-${chapter.slug}.html">本章导师 · ${escapeHtml(chapterPresentation.mentor.name)}</a></p><h1>${escapeHtml(model.__displayName)}</h1><p class="definition">${escapeHtml(plainText(model.core_definition))}</p><div class="chip-row">${tags}</div>${roleChips(model.meta.agent_roles)}</div><aside><span>PROTOCOL</span><strong>${model.reasoning_steps?.length ?? 0}<small>步</small></strong><p>${escapeHtml(chapter.title)}</p></aside></header>
         <div class="detail-grid"><div class="detail-main">
           ${beforeAfter}
           ${section("适用信号", triggers, { index: "01" })}
@@ -440,7 +500,7 @@ async function build() {
       </article>
       <nav class="model-pager section-shell" aria-label="模型翻页">${previous ? `<a href="${modelFile.get(previous.id)}"><span>上一个模型</span><strong>${escapeHtml(previous.__displayName)}</strong></a>` : "<span></span>"}${next ? `<a class="next" href="${modelFile.get(next.id)}"><span>下一个模型</span><strong>${escapeHtml(next.__displayName)}</strong></a>` : "<span></span>"}</nav>`;
     const file = modelFile.get(model.id);
-    writeTextFile(join(modelsDir, file), shell({ title: model.__displayName, description: model.core_definition.slice(0, 150), pathname: `/models/${file}`, depth: 1, active: "models", body: modelBody, pageClass: "model-page" }));
+    writeTextFile(join(modelsDir, file), shell({ title: model.__displayName, description: model.core_definition.slice(0, 150), pathname: `/models/${file}`, depth: 1, active: "models", body: modelBody, pageClass: "model-page has-chapter-theme", chapterId: chapter.id, themeKey: chapterPresentation.theme.theme_key }));
   }
 
   const routingCards = Object.entries(router.problem_type_signals ?? {}).map(([type, keywords], index) => {
@@ -465,7 +525,7 @@ async function build() {
   writeTextFile(join(output, "router.html"), shell({ title: "Agent 路由", description: "在浏览器本地描述问题，并按关键词匹配思维模型与 Agent 推理角色。", pathname: "/router.html", active: "router", body: routerBody, pageClass: "router-page" }));
 
   const notFoundBody = `<section class="not-found section-shell"><p class="kicker">ERROR 404</p><strong>404</strong><h1>这条推理路径不存在</h1><p>页面可能已移动，或链接指向了旧版单页结构。</p><div><a class="button button-primary" href="index.html">返回首页</a><a class="button button-secondary" href="models/index.html">浏览模型库</a></div></section>`;
-  writeTextFile(join(output, "404.html"), shell({ title: "页面未找到", description: "请求的系统化思维页面不存在。", pathname: "/404.html", body: notFoundBody, pageClass: "error-page" }));
+  writeTextFile(join(output, "404.html"), shell({ title: "页面未找到", description: `请求的${PRODUCT_NAME}页面不存在。`, pathname: "/404.html", body: notFoundBody, pageClass: "error-page" }));
   writeTextFile(join(output, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 
   const urls = ["/", "/models/", "/router.html", ...chapters.map((chapter) => `/chapters/ch${chapter.id}-${chapter.slug}.html`), ...models.map((model) => `/models/${modelFile.get(model.id)}`)];

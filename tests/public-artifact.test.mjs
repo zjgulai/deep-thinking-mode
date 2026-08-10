@@ -10,8 +10,13 @@ const CHECKER = fileURLToPath(
   new URL("../tools/check-public-artifact.mjs", import.meta.url),
 );
 
-function page({ head = "", body = "" } = {}) {
-  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">${head}</head><body>${body}</body></html>`;
+const META_CSP = "default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'";
+
+function page({ head = "", body = "", csp = META_CSP } = {}) {
+  const cspMeta = csp === null
+    ? ""
+    : `<meta http-equiv="Content-Security-Policy" content="${csp}">`;
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">${cspMeta}${head}</head><body>${body}</body></html>`;
 }
 
 async function writeFiles(rootDir, files) {
@@ -75,6 +80,32 @@ test("accepts a self-contained multi-page site", async () => {
     },
     ({ code, stdout, stderr }) => {
       assert.equal(code, 0, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("rejects an HTML page without the required CSP meta policy", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({ csp: null }),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /CSP_META_MISSING/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("rejects header-only frame-ancestors inside the CSP meta policy", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        csp: `${META_CSP}; frame-ancestors 'none'`,
+      }),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /CSP_META_MISMATCH/, `${stdout}\n${stderr}`);
     },
   );
 });

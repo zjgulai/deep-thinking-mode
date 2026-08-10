@@ -1,0 +1,208 @@
+/* Generated from knowledge/chapter-themes.json. Do not edit by hand. */
+:where([data-chapter="00"]) {
+  --chapter-accent: #96683F;
+  --chapter-accent-deep: #674225;
+  --chapter-wash: #F0E7DC;
+  --chapter-line: #D7C4AF;
+  --chapter-focus-x: 52%;
+  --chapter-focus-y: 18%;
+  --chapter-copy-order: 1;
+  --chapter-media-order: 2;
+  --chapter-copy-column: 1;
+  --chapter-media-column: 2;
+  --chapter-watermark-x: 100%;
+  --chapter-watermark-y: 0%;
+  --chapter-ornament-opacity: 0.10;
+}
+
+:where([data-chapter="01"]) {
+  --chapter-accent: #6F918B;
+  --chapter-accent-deep: #476965;
+  --chapter-wash: #E7EFEC;
+  --chapter-line: #B8CBC5;
+  --chapter-focus-x: 48%;
+  --chapter-focus-y: 17%;
+  --chapter-copy-order: 2;
+  --chapter-media-order: 1;
+  --chapter-copy-column: 2;
+  --chapter-media-column: 1;
+  --chapter-watermark-x: 0%;
+  --chapter-watermark-y: 0%;
+  --chapter-ornament-opacity: 0.10;
+}
+
+:where([data-chapter="02"]) {
+  --chapter-accent: #74536E;
+  --chapter-accent-deep: #51394C;
+  --chapter-wash: #ECE5EC;
+  --chapter-line: #C7B8C5;
+  --chapter-focus-x: 51%;
+  --chapter-focus-y: 18%;
+  --chapter-copy-order: 1;
+  --chapter-media-order: 2;
+  --chapter-copy-column: 1;
+  --chapter-media-column: 2;
+  --chapter-watermark-x: 100%;
+  --chapter-watermark-y: 100%;
+  --chapter-ornament-opacity: 0.16;
+}
+
+:where([data-chapter="03"]) {
+  --chapter-accent: #8299AC;
+  --chapter-accent-deep: #52697B;
+  --chapter-wash: #E8EEF2;
+  --chapter-line: #C1CED7;
+  --chapter-focus-x: 47%;
+  --chapter-focus-y: 18%;
+  --chapter-copy-order: 2;
+  --chapter-media-order: 1;
+  --chapter-copy-column: 2;
+  --chapter-media-column: 1;
+  --chapter-watermark-x: 0%;
+  --chapter-watermark-y: 100%;
+  --chapter-ornament-opacity: 0.10;
+}
+
+:where([data-chapter="04"]) {
+  --chapter-accent: #405C82;
+  --chapter-accent-deep: #293E5C;
+  --chapter-wash: #E4EAF2;
+  --chapter-line: #AEBED1;
+  --chapter-focus-x: 53%;
+  --chapter-focus-y: 19%;
+  --chapter-copy-order: 1;
+  --chapter-media-order: 2;
+  --chapter-copy-column: 1;
+  --chapter-media-column: 2;
+  --chapter-watermark-x: 0%;
+  --chapter-watermark-y: 0%;
+  --chapter-ornament-opacity: 0.16;
+}
+
+:where([data-chapter="05"]) {
+  --chapter-accent: #356874;
+  --chapter-accent-deep: #234D56;
+  --chapter-wash: #E2ECEC;
+  --chapter-line: #A9C2C5;
+  --chapter-focus-x: 49%;
+  --chapter-focus-y: 20%;
+  --chapter-copy-order: 2;
+  --chapter-media-order: 1;
+  --chapter-copy-column: 2;
+  --chapter-media-column: 1;
+  --chapter-watermark-x: 100%;
+  --chapter-watermark-y: 0%;
+  --chapter-ornament-opacity: 0.16;
+}
+
+:where([data-chapter="06"]) {
+  --chapter-accent: #6C6337;
+  --chapter-accent-deep: #4C4525;
+  --chapter-wash: #ECEADC;
+  --chapter-line: #C4C09D;
+  --chapter-focus-x: 52%;
+  --chapter-focus-y: 16%;
+  --chapter-copy-order: 1;
+  --chapter-media-order: 2;
+  --chapter-copy-column: 1;
+  --chapter-media-column: 2;
+  --chapter-watermark-x: 100%;
+  --chapter-watermark-y: 100%;
+  --chapter-ornament-opacity: 0.10;
+}
+
+:where([data-chapter="07"]) {
+  --chapter-accent: #8A493D;
+  --chapter-accent-deep: #65322B;
+  --chapter-wash: #F0E4E0;
+  --chapter-line: #D2B2AA;
+  --chapter-focus-x: 48%;
+  --chapter-focus-y: 17%;
+  --chapter-copy-order: 2;
+  --chapter-media-order: 1;
+  --chapter-copy-column: 2;
+  --chapter-media-column: 1;
+  --chapter-watermark-x: 0%;
+  --chapter-watermark-y: 100%;
+  --chapter-ornament-opacity: 0.16;
+}
+
+:where([data-chapter="08"]) {
+  --chapter-accent: #516853;
+  --chapter-accent-deep: #394C3B;
+  --chapter-wash: #E6ECE6;
+  --chapter-line: #B6C5B7;
+  --chapter-focus-x: 51%;
+  --chapter-focus-y: 19%;
+  --chapter-copy-order: 1;
+  --chapter-media-order: 2;
+  --chapter-copy-column: 1;
+  --chapter-media-column: 2;
+  --chapter-watermark-x: 100%;
+  --chapter-watermark-y: 0%;
+  --chapter-ornament-opacity: 0.10;
+}
+
+:where([data-chapter="09"]) {
+  --chapter-accent: #B18A4F;
+  --chapter-accent-deep: #7A5B2F;
+  --chapter-wash: #F0E9D9;
+  --chapter-line: #D3C199;
+  --chapter-focus-x: 49%;
+  --chapter-focus-y: 18%;
+  --chapter-copy-order: 2;
+  --chapter-media-order: 1;
+  --chapter-copy-column: 2;
+  --chapter-media-column: 1;
+  --chapter-watermark-x: 0%;
+  --chapter-watermark-y: 0%;
+  --chapter-ornament-opacity: 0.10;
+}
+
+:where([data-chapter="10"]) {
+  --chapter-accent: #996675;
+  --chapter-accent-deep: #704552;
+  --chapter-wash: #F0E5E8;
+  --chapter-line: #D1B8C0;
+  --chapter-focus-x: 52%;
+  --chapter-focus-y: 20%;
+  --chapter-copy-order: 1;
+  --chapter-media-order: 2;
+  --chapter-copy-column: 1;
+  --chapter-media-column: 2;
+  --chapter-watermark-x: 0%;
+  --chapter-watermark-y: 100%;
+  --chapter-ornament-opacity: 0.16;
+}
+
+:where([data-chapter="11"]) {
+  --chapter-accent: #B35E4B;
+  --chapter-accent-deep: #823C31;
+  --chapter-wash: #F2E5E1;
+  --chapter-line: #D6B0A8;
+  --chapter-focus-x: 48%;
+  --chapter-focus-y: 17%;
+  --chapter-copy-order: 2;
+  --chapter-media-order: 1;
+  --chapter-copy-column: 2;
+  --chapter-media-column: 1;
+  --chapter-watermark-x: 100%;
+  --chapter-watermark-y: 100%;
+  --chapter-ornament-opacity: 0.16;
+}
+
+:where([data-chapter="12"]) {
+  --chapter-accent: #6D805C;
+  --chapter-accent-deep: #4B5B3C;
+  --chapter-wash: #E8ECE2;
+  --chapter-line: #BEC8AF;
+  --chapter-focus-x: 51%;
+  --chapter-focus-y: 18%;
+  --chapter-copy-order: 1;
+  --chapter-media-order: 2;
+  --chapter-copy-column: 1;
+  --chapter-media-column: 2;
+  --chapter-watermark-x: 0%;
+  --chapter-watermark-y: 0%;
+  --chapter-ornament-opacity: 0.10;
+}

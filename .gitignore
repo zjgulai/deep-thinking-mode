@@ -21,6 +21,7 @@ node_modules/
 !/README.md
 /.codex/
 /.omo/
+/\.playwright-mcp/
 /graphify-out/
 /.site-build-*/
 /ref-extracted/

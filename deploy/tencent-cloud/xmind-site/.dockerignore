@@ -16,3 +16,5 @@
 !context/site/chapters/**
 !context/site/models/
 !context/site/models/**
+context/site/.gitignore
+context/site/.DS_Store

@@ -255,6 +255,7 @@ rtk curl -fsSI https://xmind.lute-tlz-dddd.top/router.html
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/models/index.html
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/chapters/ch00-overview-and-toolbox.html
 rtk curl -sS -o /dev/null -w '%{http_code}\n' https://xmind.lute-tlz-dddd.top/definitely-missing.html
+rtk npm run verify:security
 ```
 
 必须满足：
@@ -265,7 +266,7 @@ rtk curl -sS -o /dev/null -w '%{http_code}\n' https://xmind.lute-tlz-dddd.top/de
 - `/` 为 200，且 bytes hash 与已验证本地 `site/index.html` 相同。
 - CSS、路由器、模型目录和章节为 200；不存在的路径为 404，不能回落成伪 200 首页。
 - 页面 title 为系统化思维，不再是 `Short Video Factory`。
-- 响应头包含 HSTS、`nosniff`、拒绝 iframe 和 Referrer Policy。
+- CSP、HSTS、`nosniff`、拒绝 iframe、Referrer Policy 和 Permissions Policy 各出现一次且值精确匹配；不得因 origin 与共享入口叠加而重复。
 - 容器稳定为 healthy，无 restart loop。
 
 浏览器 E2E 至少覆盖：
@@ -345,6 +346,7 @@ rtk curl -fsSIL https://xmind.lute-tlz-dddd.top
 - Nginx 原配置 hash、备份 hash、新配置 hash、临时容器 `nginx -t`、入口重启与健康恢复结果。
 - 证书 lineage、SAN、issuer、notBefore/notAfter 与 renewal dry-run。
 - xmind HTTP/TLS/内容 hash/E2E 结果。
+- `npm run verify:security` 的 CSP 与单一安全头结果。
 - 全部现有域名 pre/post 回归差异。
 - 未验证项、原因和责任人。
 

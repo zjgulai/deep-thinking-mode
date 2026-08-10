@@ -5,6 +5,8 @@ import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 
+import { META_CONTENT_SECURITY_POLICY } from "./lib/site-security.mjs";
+
 const DEFAULT_SITE_DIR = "site";
 
 export const PUBLIC_FILE_EXTENSIONS = new Set([
@@ -380,6 +382,7 @@ function inspectMarkup({ markup, currentFile, fileSet, idsByFile, errors }) {
     }
   }
 
+  const cspMetaPolicies = [];
   for (const { name, attributes } of markupTags(markup)) {
     if (name === "base") {
       errors.push(
@@ -394,6 +397,12 @@ function inspectMarkup({ markup, currentFile, fileSet, idsByFile, errors }) {
       attributes.get("http-equiv")?.toLowerCase() === "refresh"
     ) {
       errors.push(error("UNSAFE_META_REFRESH", `${currentFile} uses meta refresh`));
+    }
+    if (
+      name === "meta" &&
+      attributes.get("http-equiv")?.toLowerCase() === "content-security-policy"
+    ) {
+      cspMetaPolicies.push(attributes.get("content") ?? "");
     }
 
     for (const attribute of ["href", "src", "xlink:href"]) {
@@ -455,6 +464,17 @@ function inspectMarkup({ markup, currentFile, fileSet, idsByFile, errors }) {
         errors,
         element: `${name}[style]`,
       });
+    }
+  }
+
+  if (fileExtension(currentFile) === ".html") {
+    if (cspMetaPolicies.length === 0) {
+      errors.push(error("CSP_META_MISSING", `${currentFile} has no CSP meta policy`));
+    } else if (
+      cspMetaPolicies.length !== 1 ||
+      cspMetaPolicies[0] !== META_CONTENT_SECURITY_POLICY
+    ) {
+      errors.push(error("CSP_META_MISMATCH", `${currentFile} CSP meta policy is not canonical`));
     }
   }
 

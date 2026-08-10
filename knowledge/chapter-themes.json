@@ -1,0 +1,526 @@
+{
+  "schema_version": "1.0.0",
+  "style_system": "oriental-paper-monument-v1",
+  "themes": [
+    {
+      "chapter_id": "00",
+      "theme_key": "archive-scroll",
+      "motif_key": "stepped-catalogue-tabs",
+      "mece": {
+        "space": "中轴典籍索引阁",
+        "object": "索引书匣",
+        "pattern": "阶梯目录签纹",
+        "divider": "装订线与索引签"
+      },
+      "palette": {
+        "light": { "accent": "#96683F", "accent_deep": "#674225", "wash": "#F0E7DC", "line": "#D7C4AF" },
+        "dark": { "accent": "#D7A17A", "accent_deep": "#F0C0A0", "wash": "#33271F", "line": "#675246" }
+      },
+      "layout": { "hero_side": "right", "watermark_anchor": "top-right", "density": "quiet" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-ban-zhao",
+        "source_sha256": "6fbacbef3edc9cb42f66418a9dca58944497ba93a200aefde41141e889b1fddd",
+        "card": {
+          "avif_path": "chapters/ch00-overview-and-toolbox/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch00-overview-and-toolbox/v4-20260809/portrait-card.webp",
+          "avif_sha256": "1ce853bcf01f36c35590ef3a19c356411ebbe8818658a3e6f24f2172988026ab",
+          "webp_sha256": "646b1cf5843955db8517c57ca9bf221f772edadf1c394fa8081c662969cc9875",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch00-overview-and-toolbox/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch00-overview-and-toolbox/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "e5ca7a464433aa574e2955811909715bd1b9b463e2b935b577e3262c568d44dd",
+          "webp_sha256": "0955e1b5f41b7cb81d2fd861115862e00a2be43d95aab015374c74c97b3dfadd",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 52,
+        "focus_y": 18,
+        "alt": "东汉班昭手持素面圆扇、在春日庭院观察花枝的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "01",
+      "theme_key": "mirror-boundary",
+      "motif_key": "double-boundary-rings",
+      "mece": {
+        "space": "内外双重镜庭",
+        "object": "素面铜镜",
+        "pattern": "内外双环边界纹",
+        "divider": "双线圆镜中断"
+      },
+      "palette": {
+        "light": { "accent": "#6F918B", "accent_deep": "#476965", "wash": "#E7EFEC", "line": "#B8CBC5" },
+        "dark": { "accent": "#D8A1B6", "accent_deep": "#F0C2D0", "wash": "#35252B", "line": "#684D57" }
+      },
+      "layout": { "hero_side": "left", "watermark_anchor": "top-left", "density": "quiet" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-li-qingzhao",
+        "source_sha256": "26aba65bc675e8e08ae93469bcf6b6c1fb51ddc1bff04e6f502efd0aeb96c82f",
+        "card": {
+          "avif_path": "chapters/ch01-metacognition-and-boundaries/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch01-metacognition-and-boundaries/v4-20260809/portrait-card.webp",
+          "avif_sha256": "5d4973f0889f22084ce2c5679ec1896e09042608f39dac176eea918f78bd13fe",
+          "webp_sha256": "90e12b940ec7c1ad879bbdd6dea69a90565e0bce5128a90d6a53df7e1b7b70d1",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch01-metacognition-and-boundaries/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch01-metacognition-and-boundaries/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "cedd8edcca1812e1cf2e37d7deb448933b58c58efa06748fe0d6e4b9b5c5d55e",
+          "webp_sha256": "bdac93e9df40c3425dcb24bf04554e1eef88eb711ff8024962359c986bdede0a",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 48,
+        "focus_y": 17,
+        "alt": "宋代李清照在闺阁铜镜前校对自己与倒影的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "02",
+      "theme_key": "square-logic",
+      "motif_key": "eight-way-square-grid",
+      "mece": {
+        "space": "正交无字方阵室",
+        "object": "无字璇玑方盘",
+        "pattern": "八向旋转方格纹",
+        "divider": "相扣直角括号"
+      },
+      "palette": {
+        "light": { "accent": "#74536E", "accent_deep": "#51394C", "wash": "#ECE5EC", "line": "#C7B8C5" },
+        "dark": { "accent": "#A7B9D4", "accent_deep": "#CFDBED", "wash": "#252C36", "line": "#4C5B70" }
+      },
+      "layout": { "hero_side": "right", "watermark_anchor": "bottom-right", "density": "balanced" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-su-hui",
+        "source_sha256": "1e44f324c880f110297b20729ef40c30790069bbd483c13a498854aaf47db027",
+        "card": {
+          "avif_path": "chapters/ch02-formal-logic-language/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch02-formal-logic-language/v4-20260809/portrait-card.webp",
+          "avif_sha256": "9674d2c1a84b7c70f95600288a8ec082790d9179c46186b84a9c7760177a913a",
+          "webp_sha256": "e8285d4cf53de656036c96f6cac5733e43765b83430c5046369dddc3fe35d272",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch02-formal-logic-language/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch02-formal-logic-language/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "721c8529eb5a9717a3b085e41abc42d145dfb1cc1453b323e2e02f2d7dab2489",
+          "webp_sha256": "f18b1c627248c737f7dbc7faaedddc3955d1dd10dfb6baba0d1a57c7994df846",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 51,
+        "focus_y": 18,
+        "alt": "前秦苏蕙缓步穿行于织锦方格屏风之间的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "03",
+      "theme_key": "twin-view-reframing",
+      "motif_key": "same-source-dual-view",
+      "mece": {
+        "space": "双门换景庭",
+        "object": "双景漏窗",
+        "pattern": "同源双解纹",
+        "divider": "开放Y形分岔"
+      },
+      "palette": {
+        "light": { "accent": "#8299AC", "accent_deep": "#52697B", "wash": "#E8EEF2", "line": "#C1CED7" },
+        "dark": { "accent": "#A8C4BD", "accent_deep": "#D2E3DF", "wash": "#24302E", "line": "#4D6660" }
+      },
+      "layout": { "hero_side": "left", "watermark_anchor": "bottom-left", "density": "quiet" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-xie-daoyun",
+        "source_sha256": "3765c65d6b456525bd5d56a88ebdd39f9e5876020dc839aeab71af8528d3fcd8",
+        "card": {
+          "avif_path": "chapters/ch03-problem-framing-and-questioning/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch03-problem-framing-and-questioning/v4-20260809/portrait-card.webp",
+          "avif_sha256": "d6de8e3ecedd57e6c1f20903396d00b1dd01b228e09a7e2f09829354a62b3c5e",
+          "webp_sha256": "09e86826831e458b21c62eec1fd06ca18275e9c996acc4f26f267cfe4c516bd8",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch03-problem-framing-and-questioning/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch03-problem-framing-and-questioning/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "8618332bf3ec052fb45af57b6e0404a8b45898385dbdbc76c65d4b7850d1d8d0",
+          "webp_sha256": "7cedefa55f7fddb65598805425a5b6159fa7de660a30b291d2bbddbf4a4d8d43",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 47,
+        "focus_y": 18,
+        "alt": "东晋谢道韫在雪中庭院伸手接取飞雪的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "04",
+      "theme_key": "validation-analysis",
+      "motif_key": "calibrated-causal-cone",
+      "mece": {
+        "space": "变量验证实验台",
+        "object": "悬灯",
+        "pattern": "校准因果光锥纹",
+        "divider": "短刻度标尺"
+      },
+      "palette": {
+        "light": { "accent": "#405C82", "accent_deep": "#293E5C", "wash": "#E4EAF2", "line": "#AEBED1" },
+        "dark": { "accent": "#9FC0CA", "accent_deep": "#CBE0E6", "wash": "#222E32", "line": "#48636B" }
+      },
+      "layout": { "hero_side": "right", "watermark_anchor": "top-left", "density": "balanced" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-wang-zhenyi",
+        "source_sha256": "e48b426e2acf4e518fad5e6989b429fbae60defb970743c4dfc641dda3b79ae4",
+        "card": {
+          "avif_path": "chapters/ch04-structured-root-cause-analysis/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch04-structured-root-cause-analysis/v4-20260809/portrait-card.webp",
+          "avif_sha256": "60a3e1b3f97cdeef0f753b7e827f72715f040673d7c3bbc3653fc94f04727791",
+          "webp_sha256": "e127394cda49c0f35abea22fddf3384d7050a0bfd57c3dfd753585b259f33d6f",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch04-structured-root-cause-analysis/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch04-structured-root-cause-analysis/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "833192a82c2c839dfb357d7c69568fff10d3548384753b5a1641e2501d371efe",
+          "webp_sha256": "0ca98979c88efaa35d2aa71cf22e656162d3314e7219348fdf0a4eb20a3deec8",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 53,
+        "focus_y": 19,
+        "alt": "清代王贞仪在月夜实验台前转动圆屏验证光影的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "05",
+      "theme_key": "textile-system",
+      "motif_key": "warp-weft-network",
+      "mece": {
+        "space": "连续织造工坊",
+        "object": "脚踏织机",
+        "pattern": "经纬反馈网纹",
+        "divider": "交织双线"
+      },
+      "palette": {
+        "light": { "accent": "#356874", "accent_deep": "#234D56", "wash": "#E2ECEC", "line": "#A9C2C5" },
+        "dark": { "accent": "#DFB271", "accent_deep": "#F1D4A8", "wash": "#352B1E", "line": "#705B3D" }
+      },
+      "layout": { "hero_side": "left", "watermark_anchor": "top-right", "density": "balanced" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-huang-daopo",
+        "source_sha256": "0499b62c4a53fba0865c0e3d00f671c51bb535a175136c650c6ee5617a424b1f",
+        "card": {
+          "avif_path": "chapters/ch05-systems-complexity-networks/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch05-systems-complexity-networks/v4-20260809/portrait-card.webp",
+          "avif_sha256": "cb20717bb53c013fa9961bbc14c401297379dbbe54bc458c320e0cbf492c1b26",
+          "webp_sha256": "7fc603f1178c05897917a83cc138545874fe1f25912bbaa6ab2902e796954768",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch05-systems-complexity-networks/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch05-systems-complexity-networks/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "e100bb607107c4b8ef58710dd5e2c12f798c4c3d30acffb460638ca876592d9c",
+          "webp_sha256": "ba09c2e978f07723f7b323b4d91d2d669ea903202cda1dc8805e74062012614e",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 49,
+        "focus_y": 20,
+        "alt": "元代黄道婆在棉纺工坊穿梭理线、回望织机的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "06",
+      "theme_key": "weighted-decision",
+      "motif_key": "unequal-weight-fan",
+      "mece": {
+        "space": "多门决断台",
+        "object": "空白决策板",
+        "pattern": "不等权重扇格纹",
+        "divider": "偏置权重条"
+      },
+      "palette": {
+        "light": { "accent": "#6C6337", "accent_deep": "#4C4525", "wash": "#ECEADC", "line": "#C4C09D" },
+        "dark": { "accent": "#E09183", "accent_deep": "#F3BBB1", "wash": "#38231F", "line": "#744C45" }
+      },
+      "layout": { "hero_side": "right", "watermark_anchor": "bottom-right", "density": "quiet" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-wu-zetian",
+        "source_sha256": "5080090601b667161c2dfa217f4069736df0038e978e7483df98ba41a43c7e05",
+        "card": {
+          "avif_path": "chapters/ch06-decisions-risk-and-biases/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch06-decisions-risk-and-biases/v4-20260809/portrait-card.webp",
+          "avif_sha256": "f8e33bca2d5404aeebbe332513fe66acb6025f0165a8e7ecb74c5d84c0a916f4",
+          "webp_sha256": "aa5a05c9903af4ac3a3808754b93165e33522d02188d2133db033803c06cb863",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch06-decisions-risk-and-biases/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch06-decisions-risk-and-biases/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "bb569415a6f182690b985b4844ac3dccc5a01af68f87dcaf3db114047aea2a5f",
+          "webp_sha256": "72fc2ce5c06eeb44d91fbca83859b85834cb3b2bae28032df6419163bdb3dd7c",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 52,
+        "focus_y": 16,
+        "alt": "唐代武则天在宫廷阳光中审视空白决策牌的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "07",
+      "theme_key": "mountain-execution",
+      "motif_key": "rhythmic-forward-folds",
+      "mece": {
+        "space": "单向山阶训练廊",
+        "object": "白杆长枪",
+        "pattern": "节拍递进折纹",
+        "divider": "计数短划至实线"
+      },
+      "palette": {
+        "light": { "accent": "#8A493D", "accent_deep": "#65322B", "wash": "#F0E4E0", "line": "#D2B2AA" },
+        "dark": { "accent": "#A9C29F", "accent_deep": "#D1E0CB", "wash": "#272F24", "line": "#50634A" }
+      },
+      "layout": { "hero_side": "left", "watermark_anchor": "bottom-left", "density": "balanced" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-qin-liangyu",
+        "source_sha256": "85ed09689ed46707c004cfc784e9edd2d882ee85d21db98df09107aef20eee0e",
+        "card": {
+          "avif_path": "chapters/ch07-action-habits-execution/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch07-action-habits-execution/v4-20260809/portrait-card.webp",
+          "avif_sha256": "8d72e2c52bbc2d2f273df828eebe6dd1c30cc8cfbece7e1d74ad2896309e3888",
+          "webp_sha256": "217d62e05af20b28303f36b97f2a6fdac9f9bcb8ca8701dbdd345f68f370a72a",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch07-action-habits-execution/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch07-action-habits-execution/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "82bc872e4ba53e8353d2214ee73ddce7383f9f27d10d4c72e6be8dd9cc6c023e",
+          "webp_sha256": "b18c1c2ffc480b190b69cb86fe82a05742db2c67bb968b1196fe20dc610f256c",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 48,
+        "focus_y": 17,
+        "alt": "明代秦良玉持白杆长枪策马攀登西南山径的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "08",
+      "theme_key": "calligraphy-learning",
+      "motif_key": "brushstroke-progression",
+      "mece": {
+        "space": "示范传习书室",
+        "object": "毛笔",
+        "pattern": "递进笔势纹",
+        "divider": "粗至细收锋线"
+      },
+      "palette": {
+        "light": { "accent": "#516853", "accent_deep": "#394C3B", "wash": "#E6ECE6", "line": "#B6C5B7" },
+        "dark": { "accent": "#B8A7CA", "accent_deep": "#DCCFE8", "wash": "#2D2833", "line": "#5A4D68" }
+      },
+      "layout": { "hero_side": "right", "watermark_anchor": "top-right", "density": "quiet" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-wei-shuo",
+        "source_sha256": "5355d802868fc1990b7f9f6684857e0860f4d269b1650e15a86adc0a3aeb5880",
+        "card": {
+          "avif_path": "chapters/ch08-learning-knowledge-growth/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch08-learning-knowledge-growth/v4-20260809/portrait-card.webp",
+          "avif_sha256": "ea217779ab37b57e57a35ebb489c78b664fb02aa1786f29507004164b2d07cba",
+          "webp_sha256": "f6a1db94ccca77ac46853a2be025878e4aa4dc4597d51e2386dc1b73a79d2970",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch08-learning-knowledge-growth/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch08-learning-knowledge-growth/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "827a01b3ef435fa9e36db0fd11f4b342eb0775c62bb60a99a5a84a0c7cbf2290",
+          "webp_sha256": "63545b35bb18b579517d6e7e4d8b7ccc298d312594da9d1897b9c3378403f6bd",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 51,
+        "focus_y": 19,
+        "alt": "晋代卫铄（卫夫人）临水运笔、以波纹体会笔势的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "09",
+      "theme_key": "measured-restraint",
+      "motif_key": "sparse-dense-intervals",
+      "mece": {
+        "space": "疏朗节制庭院",
+        "object": "铜漏刻",
+        "pattern": "疏密间隔纹",
+        "divider": "长短空节律线"
+      },
+      "palette": {
+        "light": { "accent": "#B18A4F", "accent_deep": "#7A5B2F", "wash": "#F0E9D9", "line": "#D3C199" },
+        "dark": { "accent": "#D2B37A", "accent_deep": "#EAD6AF", "wash": "#332D22", "line": "#665A43" }
+      },
+      "layout": { "hero_side": "left", "watermark_anchor": "top-left", "density": "quiet" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-xu-hui",
+        "source_sha256": "b29a687fa8807387aba9cf6e6f0de5ef421d8ddd377b88a6cfcde257072f534a",
+        "card": {
+          "avif_path": "chapters/ch09-attention-energy-time/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch09-attention-energy-time/v4-20260809/portrait-card.webp",
+          "avif_sha256": "3ea1352beb4bc82278a72657f33908c030a18f7c776a30d758b5f8172edeb4fe",
+          "webp_sha256": "53b3ce56c81c9caba18be5e31470a0f8dd47efaac405f6d083f6126d40977233",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch09-attention-energy-time/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch09-attention-energy-time/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "35b0361ec2d91161c57fe0ed0bc8f3c0dca32fb12cff171305369e7aa11dc523",
+          "webp_sha256": "f9c610d19b97145280e945f4f9f0b60937982c12692c0a99ec36c3d2c88815a9",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 49,
+        "focus_y": 18,
+        "alt": "唐代徐惠在疏朗庭院中循着风与铜漏的节律前行的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "10",
+      "theme_key": "fiber-repair",
+      "motif_key": "disorder-to-calm",
+      "mece": {
+        "space": "纤维修复长廊",
+        "object": "纤维修补纸带",
+        "pattern": "紊乱渐平波形纹",
+        "divider": "三针续接线"
+      },
+      "palette": {
+        "light": { "accent": "#996675", "accent_deep": "#704552", "wash": "#F0E5E8", "line": "#D1B8C0" },
+        "dark": { "accent": "#A9BCD2", "accent_deep": "#D3DFEC", "wash": "#252C34", "line": "#4F5F71" }
+      },
+      "layout": { "hero_side": "right", "watermark_anchor": "bottom-left", "density": "balanced" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-cai-yan",
+        "source_sha256": "a625e36f0727c64217451ed34de6de67f27e03d49fab9499a6f64bf146e5cda7",
+        "card": {
+          "avif_path": "chapters/ch10-emotions-stress-overload/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch10-emotions-stress-overload/v4-20260809/portrait-card.webp",
+          "avif_sha256": "0f37399d64f6497f4945adbb9d4effbd9c99322836cae4a74a830ed799533320",
+          "webp_sha256": "be4793b2adeb1cbafcedc20ad34fd96176b4117df74156b55a67d99d946312ee",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch10-emotions-stress-overload/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch10-emotions-stress-overload/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "91f3e83fd3da7eac6bfe68d6d6d269544b8907e2b38c5b6a35f2659e070f6522",
+          "webp_sha256": "b537a8b3c08e5abc4a7e854060f9faa3e6cba28e0a1364c0606878237fb87d45",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 52,
+        "focus_y": 20,
+        "alt": "汉代蔡琰（蔡文姬）在明亮塞外途中缝合断裂织带的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "11",
+      "theme_key": "document-relay",
+      "motif_key": "three-stage-folded-relay",
+      "mece": {
+        "space": "文书传递廊",
+        "object": "空白奏表封函",
+        "pattern": "三段递传折页纹",
+        "divider": "相向括号与传递点"
+      },
+      "palette": {
+        "light": { "accent": "#B35E4B", "accent_deep": "#823C31", "wash": "#F2E5E1", "line": "#D6B0A8" },
+        "dark": { "accent": "#CFA1B4", "accent_deep": "#E9C9D6", "wash": "#32262B", "line": "#654D57" }
+      },
+      "layout": { "hero_side": "left", "watermark_anchor": "bottom-right", "density": "balanced" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-shangguan-waner",
+        "source_sha256": "aca3caec8f2534b551fc4f8bcaa7b7714c1d4e89f9b95e63123ed877f723434b",
+        "card": {
+          "avif_path": "chapters/ch11-communication-expression-relations/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch11-communication-expression-relations/v4-20260809/portrait-card.webp",
+          "avif_sha256": "899113156ab1cff082fd76c298831423bd8a1c8888130d41056ce54e12b7f081",
+          "webp_sha256": "b4400f2e3f32ad59d4e19b7c5bc138aa98fc8b7564ea27b49c239adc89c95fb8",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch11-communication-expression-relations/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch11-communication-expression-relations/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "c00135ad770c9590a405765c07930faf68d7b670c2187b4ce8d001a924f0a4cb",
+          "webp_sha256": "1d4749625a3932847b5acee66ff42a99141e32f9fab9cd1852f9efbd41c9098c",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 48,
+        "focus_y": 17,
+        "alt": "唐代上官婉儿在宫廷长廊中传递奏表封函的东方彩绘历史编辑人像"
+      }
+    },
+    {
+      "chapter_id": "12",
+      "theme_key": "evidence-observation",
+      "motif_key": "evidence-point-veins",
+      "mece": {
+        "space": "安静观察诊察室",
+        "object": "脉枕",
+        "pattern": "证据点叶脉纹",
+        "divider": "三观察点细线"
+      },
+      "palette": {
+        "light": { "accent": "#6D805C", "accent_deep": "#4B5B3C", "wash": "#E8ECE2", "line": "#BEC8AF" },
+        "dark": { "accent": "#9FC7B8", "accent_deep": "#CAE2D9", "wash": "#23302B", "line": "#49665B" }
+      },
+      "layout": { "hero_side": "right", "watermark_anchor": "top-left", "density": "quiet" },
+      "portrait": {
+        "asset_version": "v4-20260809",
+        "provenance_id": "mentor-v4-20260809-tan-yunxian",
+        "source_sha256": "b46d757a0d3d5325414797d99878e978979d76dcb1738ac2e7a070a5fbf41626",
+        "card": {
+          "avif_path": "chapters/ch12-neuroscience-body-health/v4-20260809/portrait-card.avif",
+          "webp_path": "chapters/ch12-neuroscience-body-health/v4-20260809/portrait-card.webp",
+          "avif_sha256": "09619dd0f923b2b9ccd0175ae3227b9143053145be39cb37a2f8d67fba814237",
+          "webp_sha256": "8bc5bc75eed1ea9118f1b265475ed38e0c5c7b3197431b1202ad6a93d818e6e7",
+          "width": 480,
+          "height": 600
+        },
+        "hero": {
+          "avif_path": "chapters/ch12-neuroscience-body-health/v4-20260809/portrait-hero.avif",
+          "webp_path": "chapters/ch12-neuroscience-body-health/v4-20260809/portrait-hero.webp",
+          "avif_sha256": "793b57d2892041b8052c819115e968c58ef49ee3d6b7cb11a018c3822ae9849b",
+          "webp_sha256": "251f10b8bae19095f56f80c7d151fc937d5c755e537211d27d2b8e610e2cc919",
+          "width": 960,
+          "height": 1200
+        },
+        "focus_x": 51,
+        "focus_y": 18,
+        "alt": "明代谈允贤在草木庭院中对光察看叶脉的东方彩绘历史编辑人像"
+      }
+    }
+  ]
+}

@@ -386,7 +386,10 @@ export async function registerOcrAssets(rawOptions = {}) {
     mkdir(dirname(assetsPath), { recursive: true }),
     mkdir(dirname(sourceSummaryPath), { recursive: true }),
     mkdir(dirname(knowledgePath), { recursive: true }),
-    mkdir(dirname(resultsPath), { recursive: true }),
+    mkdir(dirname(resultsPath), { recursive: true })
+  ]);
+
+  await Promise.all([
     writeJsonl(assetsPath, assets),
     writeJsonl(resultsPath, []),
     writeJsonl(sourceSummaryPath, nextSourceSummaries),

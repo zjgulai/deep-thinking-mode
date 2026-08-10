@@ -15,6 +15,7 @@ import { createHash } from "node:crypto";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { verifyProductionSite } from "../tools/verify-production.mjs";
+import { META_CONTENT_SECURITY_POLICY } from "../tools/lib/site-security.mjs";
 
 const VERIFIER = fileURLToPath(
   new URL("../tools/verify-production.mjs", import.meta.url),
@@ -264,7 +265,7 @@ await test("production verifier — reports first differing byte offset correctl
 await test("production verifier — verifies nested assets, not only index.html", async () => {
   const rootDir = await mkdtemp(join(tmpdir(), "production-verifier-"));
   const localIndex = Buffer.from(
-    '<!doctype html><html><head><link rel="stylesheet" href="assets/site.css"></head><body></body></html>',
+    `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="${META_CONTENT_SECURITY_POLICY}"><link rel="stylesheet" href="assets/site.css"></head><body></body></html>`,
   );
   const { server, url } = await startServer((req, res) => {
     if (req.url === "/") {
@@ -298,7 +299,7 @@ await test("production verifier — maps every local file under a deployment sub
   const rootDir = await mkdtemp(join(tmpdir(), "production-verifier-subpath-"));
   const siteDir = join(rootDir, "site");
   const localIndex = Buffer.from(
-    '<!doctype html><html><head><link rel="stylesheet" href="assets/site.css"></head><body></body></html>',
+    `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="${META_CONTENT_SECURITY_POLICY}"><link rel="stylesheet" href="assets/site.css"></head><body></body></html>`,
   );
   const localCss = Buffer.from("body{}\n");
   const requested = [];

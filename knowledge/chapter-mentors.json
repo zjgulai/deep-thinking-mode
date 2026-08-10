@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "mentors": [
+    {
+      "chapter_id": "00",
+      "mentor_id": "ban-zhao",
+      "name": "班昭",
+      "dynasty": "东汉",
+      "role": "典籍总导师",
+      "teaching_persona": "严谨、系统、善整理",
+      "curatorial_intro": "先辨门类，再把零散工具编成可复用路径。",
+      "selection_rationale": "与典籍校理、续修和讲授传统连接，适合知识目录与工具组合。",
+      "historical_boundary": "不以女诫充当现代女性规范，艺术图不是复原肖像。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "01",
+      "mentor_id": "li-qingzhao",
+      "name": "李清照",
+      "dynasty": "宋",
+      "role": "自省导师",
+      "teaching_persona": "敏锐、清醒、辨边界",
+      "curatorial_intro": "先看见自己的判断框架，再辨认框架之外的可能。",
+      "selection_rationale": "词学批评与自我表达适合讲评价标准和认知边界。",
+      "historical_boundary": "不把个人经历心理诊断化，不编造情绪疗愈名言。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "02",
+      "mentor_id": "su-hui",
+      "name": "苏蕙",
+      "dynasty": "前秦",
+      "role": "文理导师",
+      "teaching_persona": "精巧、结构化、多路径",
+      "curatorial_intro": "改变排列与阅读路径，意义的结构也会随之显现。",
+      "selection_rationale": "璇玑图传统适合表现语言排列、约束和多路径阅读。",
+      "historical_boundary": "不称其为现代逻辑学家，字数、读法和爱情故事须区分史料与后世演绎。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "03",
+      "mentor_id": "xie-daoyun",
+      "name": "谢道韫",
+      "dynasty": "东晋",
+      "role": "问思导师",
+      "teaching_persona": "观察、换框、善类比",
+      "curatorial_intro": "换一个比喻，也许就能换一个问题入口。",
+      "selection_rationale": "咏絮典故可作为观察框架与类比表达的文化入口。",
+      "historical_boundary": "典故不等于现代实验，不把文学轶事写成方法论原话。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "04",
+      "mentor_id": "wang-zhenyi",
+      "name": "王贞仪",
+      "dynasty": "清",
+      "role": "格物导师",
+      "teaching_persona": "推演、实验、求证",
+      "curatorial_intro": "把现象拆成变量，再用推演检验真正起作用的机制。",
+      "selection_rationale": "天文与数学研究适合变量拆解、模型演示和机制验证。",
+      "historical_boundary": "只使用可核验著述与活动，不夸大为现代学科身份。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "05",
+      "mentor_id": "huang-daopo",
+      "name": "黄道婆",
+      "dynasty": "元",
+      "role": "系统导师",
+      "teaching_persona": "工具、流程、传播",
+      "curatorial_intro": "不要只看一件工具，要看工具如何进入流程与网络。",
+      "selection_rationale": "纺织工具、工序、技艺传播和生产关系构成完整系统隐喻。",
+      "historical_boundary": "传奇细节与地方记忆须标注来源层级，不制造单一英雄神话。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "06",
+      "mentor_id": "wu-zetian",
+      "name": "武则天",
+      "dynasty": "唐",
+      "role": "决断导师",
+      "teaching_persona": "多源判断、风险、权衡",
+      "curatorial_intro": "在信息不全时，仍要看见权力、风险、偏差与可逆性。",
+      "selection_rationale": "治理、用人、制度和合法性提供复杂决策语境。",
+      "historical_boundary": "区分史料、传统政统立场、性别偏见与影视传闻，不消费宫斗叙事。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "07",
+      "mentor_id": "qin-liangyu",
+      "name": "秦良玉",
+      "dynasty": "明",
+      "role": "行阵导师",
+      "teaching_persona": "纪律、行动、承担",
+      "curatorial_intro": "让目标进入队列、节奏与复盘，行动才不依赖一时冲动。",
+      "selection_rationale": "组织、训练与统兵适合执行、反馈和长期行动。",
+      "historical_boundary": "不使用从未失败等神化表述，军功叙述必须有来源。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "08",
+      "mentor_id": "wei-shuo",
+      "name": "卫铄（卫夫人）",
+      "dynasty": "晋",
+      "role": "传习导师",
+      "teaching_persona": "示范、练习、反馈",
+      "curatorial_intro": "把知识变成动作，再让动作接受示范、反馈与修正。",
+      "selection_rationale": "书法师承与笔法训练适合刻意练习和知识传承。",
+      "historical_boundary": "笔阵图使用旧题卫夫人撰等审慎表述，不把归属争议写成定论。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "09",
+      "mentor_id": "xu-hui",
+      "name": "徐惠",
+      "dynasty": "唐",
+      "role": "持衡导师",
+      "teaching_persona": "节制、优先级、恢复",
+      "curatorial_intro": "先停止无边界扩张，时间和精力才会重新形成秩序。",
+      "selection_rationale": "对频繁用兵和营建的劝谏可连接资源节制和长期权衡。",
+      "historical_boundary": "不将劝谏文本改写为现代效率学原话。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "10",
+      "mentor_id": "cai-yan",
+      "name": "蔡琰（蔡文姬）",
+      "dynasty": "汉",
+      "role": "安顿导师",
+      "teaching_persona": "承认、表达、重建",
+      "curatorial_intro": "承认情绪留下的痕迹，才能为经验重新安排位置。",
+      "selection_rationale": "战乱、离散与归还可作为压力、记忆和秩序重建的文化入口。",
+      "historical_boundary": "胡笳十八拍等作品归属争议必须可见，不做临床心理诊断。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "11",
+      "mentor_id": "shangguan-waner",
+      "name": "上官婉儿",
+      "dynasty": "唐",
+      "role": "文诏导师",
+      "teaching_persona": "对象意识、结构表达",
+      "curatorial_intro": "先辨受众和关系，再决定信息如何分层与抵达。",
+      "selection_rationale": "诏命、奏表和文学活动适合信息组织、受众和关系协调。",
+      "historical_boundary": "区分墓志、正史、文学传统和宫廷传闻，不以影视宫斗替代史料。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    },
+    {
+      "chapter_id": "12",
+      "mentor_id": "tan-yunxian",
+      "name": "谈允贤",
+      "dynasty": "明",
+      "role": "养正导师",
+      "teaching_persona": "观察、记录、个案差异",
+      "curatorial_intro": "从身体信号与个案记录出发，不让抽象结论越过证据。",
+      "selection_rationale": "医案记录适合观察、记录和身体健康史。",
+      "historical_boundary": "传统医学只作医学史材料，不转化为现代诊断、处方或治疗建议。",
+      "portrait_notice": "AI 艺术化演绎，非真实肖像"
+    }
+  ]
+}
