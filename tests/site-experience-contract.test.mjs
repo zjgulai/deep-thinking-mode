@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
+import vm from "node:vm";
 import test from "node:test";
 
 const ROOT = new URL("..", import.meta.url);
@@ -51,4 +52,49 @@ test("generated model pages do not expose CSS color fragments as chips", () => {
   }
 
   assert.deepEqual(offenders, []);
+});
+
+test("shared site runtime does not register a second Router submit or reset handler", () => {
+  const listeners = [];
+  const routerForm = {
+    addEventListener(type) {
+      listeners.push(type);
+    },
+    querySelector() {
+      throw new Error("shared runtime must not inspect Router descendants");
+    }
+  };
+  const document = {
+    querySelector(selector) {
+      if (selector === "[data-router-form]") return routerForm;
+      return null;
+    },
+    querySelectorAll() {
+      return [];
+    }
+  };
+  const window = {
+    clearTimeout() {},
+    setTimeout() {}
+  };
+
+  vm.runInNewContext(read("tools/site-assets/site.js"), { document, navigator: {}, window });
+  assert.deepEqual(listeners, []);
+});
+
+test("Router experience styles preserve touch, narrow-screen, print, and reduced-motion contracts", () => {
+  const css = read("tools/site-assets/site.css");
+  const media = (start, end) => css.slice(css.indexOf(start), end ? css.indexOf(end, css.indexOf(start) + start.length) : undefined);
+  const shortcutRule = css.match(/\.router-shortcut\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const clarifyRule = css.match(/\.router-clarify-option\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const narrow = media("@media (max-width: 680px)", "@media (prefers-reduced-motion: reduce)");
+  const reducedMotion = media("@media (prefers-reduced-motion: reduce)", "@media print");
+  const print = media("@media print");
+
+  assert.match(shortcutRule, /min-height:\s*44px\b/u);
+  assert.match(clarifyRule, /min-height:\s*44px\b/u);
+  assert.match(narrow, /[^{}]*\.router-route-grid[^{}]*\{[^}]*grid-template-columns:\s*1fr/u);
+  assert.match(reducedMotion, /\.route-result:hover[\s\S]*transform:\s*none\s*!important/u);
+  assert.match(print, /\.router-shortcuts/u);
+  assert.match(print, /\.router-copy-button/u);
 });

@@ -521,6 +521,8 @@ export function createRouterController({ root, matcher = matchRoute }) {
 
   const routeCardByKey = new Map(routeCards.map((card) => [card.getAttribute("data-route-key"), card]));
   const safetyPanelById = new Map(safetyPanels.map((panel) => [panel.getAttribute("data-safety-signal"), panel]));
+  const problemTypeById = new Map(payload?.problem_types.map((problemType) => [problemType.id, problemType]) ?? []);
+  const agentStageById = new Map(payload?.agent_stages.map((agentStage) => [agentStage.id, agentStage]) ?? []);
   let selectedShortcutIntentId = null;
   let clarificationCount = 0;
   let active = domReady;
@@ -531,11 +533,42 @@ export function createRouterController({ root, matcher = matchRoute }) {
     if (live) live.textContent = message;
   }
 
+  function setCopyText(text) {
+    if (!copyText) return;
+    copyText.textContent = text;
+    if ("value" in copyText) copyText.value = text;
+  }
+
+  function structuredPrompt(match, query) {
+    const goal = problemTypeById.get(match.problemTypeId).label;
+    const stage = agentStageById.get(match.agentStageId).label;
+    const paths = [match.problemTypeId, ...match.auxiliaryProblemTypeIds]
+      .map((id) => problemTypeById.get(id).label)
+      .join("、");
+    return `原始问题
+${query}
+
+当前目标与阶段
+目标：${goal}
+阶段：${stage}
+
+已知事实、关键假设、缺失信息
+- 已知事实：请基于原始问题区分可验证事实。
+- 关键假设：请明确列出尚未验证的判断。
+- 缺失信息：请指出继续分析所需的关键证据。
+
+核心判断、可选路径、风险与下一步
+- 核心判断：先按“${goal}”理解问题。
+- 可选路径：${paths}。
+- 风险与下一步：先核对事实与边界，再给出可验证的下一步。`;
+  }
+
   function clearTransientMessages() {
     if (hint) hint.textContent = "";
     generation += 1;
     if (copyStatus) copyStatus.textContent = "";
     if (copyButton) copyButton.textContent = copyButtonLabel;
+    setCopyText("");
   }
 
   function hideRoutes() {
@@ -630,6 +663,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
       card.hidden = false;
       card.setAttribute("data-route-kind", index === 0 ? "core" : "auxiliary");
     }
+    setCopyText(structuredPrompt(match, match.query));
     announce(`已匹配 ${routeIds.length} 条路径`);
     title.focus();
     const reducedMotion = view.matchMedia?.("(prefers-reduced-motion: reduce)").matches === true;
@@ -703,10 +737,12 @@ export function createRouterController({ root, matcher = matchRoute }) {
     }
     if (clarificationCount === 1) clarificationCount = 2;
     clearTransientMessages();
+    let query;
     let reference;
     try {
+      query = input.value;
       const request = {
-        query: input.value,
+        query,
         shortcutIntentId: selectedShortcutIntentId,
         routerData: payload
       };
@@ -727,7 +763,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
       showUnavailable();
       return;
     }
-    render(reference);
+    render({ ...reference, query: typeof query === "string" ? query : "" });
   }
 
   function resetState() {
@@ -858,3 +894,5 @@ export function createRouterController({ root, matcher = matchRoute }) {
 export function bootRouter(root = document) {
   return createRouterController({ root });
 }
+
+if (typeof document !== "undefined") bootRouter(document);

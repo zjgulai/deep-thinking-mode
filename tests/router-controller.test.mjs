@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
@@ -27,6 +28,25 @@ const ROUTER_DATA = {
   safety_signals: ROUTER_SOURCE.safety_signals,
   route_keys: ROUTER_SOURCE.routes.map(({ problem_type_id: problemTypeId, agent_stage_id: agentStageId }) => `${problemTypeId}::${agentStageId}`)
 };
+
+function expectedStructuredPrompt(query, { goal = "诊断根因", stage = "意图澄清", paths = "诊断根因" } = {}) {
+  return `原始问题
+${query}
+
+当前目标与阶段
+目标：${goal}
+阶段：${stage}
+
+已知事实、关键假设、缺失信息
+- 已知事实：请基于原始问题区分可验证事实。
+- 关键假设：请明确列出尚未验证的判断。
+- 缺失信息：请指出继续分析所需的关键证据。
+
+核心判断、可选路径、风险与下一步
+- 核心判断：先按“${goal}”理解问题。
+- 可选路径：${paths}。
+- 风险与下一步：先核对事实与边界，再给出可验证的下一步。`;
+}
 
 function clone(value) {
   return structuredClone(value);
@@ -108,6 +128,23 @@ test("parseRouterPayload accepts the real compact 8x8x4 Router payload", () => {
   assert.equal(ROUTER_DATA.safety_signals.length, 4);
   assert.equal(ROUTER_DATA.route_keys.length, 23);
   assert.deepEqual(parseRouterPayload(payloadNode(ROUTER_DATA)), ROUTER_DATA);
+});
+
+test("browser module entry auto-boots exactly once while Node imports stay side-effect free", () => {
+  const moduleUrl = new URL("../tools/site-assets/router-controller.mjs", import.meta.url).href;
+  const browserResult = execFileSync(process.execPath, [
+    "--input-type=module",
+    "--eval",
+    `let calls=0; globalThis.document={querySelectorAll(){calls+=1;return[]}}; await import(${JSON.stringify(moduleUrl)}); console.log(calls);`
+  ], { encoding: "utf8" });
+  const nodeResult = execFileSync(process.execPath, [
+    "--input-type=module",
+    "--eval",
+    `await import(${JSON.stringify(moduleUrl)}); console.log("ok");`
+  ], { encoding: "utf8" });
+
+  assert.equal(browserResult, "21\n");
+  assert.equal(nodeResult, "ok\n");
 });
 
 test("parseRouterPayload rejects missing, extra, and prototype-looking keys at every schema level", () => {
@@ -1030,24 +1067,69 @@ test("normal states hide unavailable and remain mutually exclusive across matche
   assert.ok(nodes.routeCards.every((card) => card.hidden));
 });
 
-test("copy success reports completion while failure focuses and selects the complete fallback text", async () => {
+test("matched builds and copies an exact plain-text prompt from validated labels and the current input", async () => {
+  const query = "<script>alert(1)</script>为什么失败了\u2028下一行\u2029结束";
+  const expected = expectedStructuredPrompt(query);
   const successWrites = [];
-  const success = controllerFixture({ clipboardWrite: async (text) => { successWrites.push(text); } });
+  const success = controllerFixture({ clipboardWrite: async (text) => { successWrites.push(text); }, matcher: matchRoute });
+  success.nodes.input.value = query;
+  dispatch(success.nodes.form, "submit");
+  assert.equal(success.nodes.copyText.textContent, expected);
+  assert.equal(success.nodes.copyText.value, expected);
   dispatch(success.nodes.copyButton, "click");
   await new Promise((resolve) => setImmediate(resolve));
-  assert.deepEqual(successWrites, ["结构化提问内容"]);
+  assert.deepEqual(successWrites, [expected]);
   assert.equal(success.nodes.copyButton.textContent, "已复制");
   assert.equal(success.nodes.copyStatus.textContent, "已复制");
-  assert.equal(success.nodes.live.textContent, "");
+  assert.equal(success.nodes.live.textContent, "已匹配 1 条路径");
 
-  const failure = controllerFixture({ clipboardWrite: async () => { throw new Error("denied"); } });
+  const failure = controllerFixture({ clipboardWrite: async () => { throw new Error("denied"); }, matcher: matchRoute });
+  failure.nodes.input.value = query;
+  dispatch(failure.nodes.form, "submit");
   dispatch(failure.nodes.copyButton, "click");
   await new Promise((resolve) => setImmediate(resolve));
   assert.equal(failure.nodes.copyText.focused, true);
   assert.equal(failure.nodes.copyText.selectionStart, 0);
-  assert.equal(failure.nodes.copyText.selectionEnd, failure.nodes.copyText.value.length);
+  assert.equal(failure.nodes.copyText.selectionEnd, expected.length);
   assert.equal(failure.nodes.copyStatus.textContent, "复制失败，请手动复制已选文本");
-  assert.equal(failure.nodes.live.textContent, "");
+  assert.equal(failure.nodes.live.textContent, "已匹配 1 条路径");
+});
+
+test("every non-matched state, reset, and pagehide clears stale structured prompt text", () => {
+  const cases = [
+    ["a", "needs_input"],
+    ["有点乱", "clarify"],
+    ["我正在伤害自己", "safety_stop"]
+  ];
+  for (const [query, label] of cases) {
+    const fixture = controllerFixture({ matcher: matchRoute });
+    fixture.nodes.input.value = "为什么失败了";
+    dispatch(fixture.nodes.form, "submit");
+    assert.notEqual(fixture.nodes.copyText.value, "", `${label}: precondition`);
+    fixture.nodes.input.value = query;
+    dispatch(fixture.nodes.form, "submit");
+    assert.equal(fixture.nodes.copyText.textContent, "", label);
+    assert.equal(fixture.nodes.copyText.value, "", label);
+  }
+
+  const reset = controllerFixture({ matcher: matchRoute });
+  reset.nodes.input.value = "为什么失败了";
+  dispatch(reset.nodes.form, "submit");
+  dispatch(reset.nodes.form, "reset");
+  assert.equal(reset.nodes.copyText.textContent, "");
+  assert.equal(reset.nodes.copyText.value, "");
+
+  reset.nodes.input.value = "为什么失败了";
+  dispatch(reset.nodes.form, "submit");
+  reset.view.dispatchEvent("pagehide");
+  assert.equal(reset.nodes.copyText.textContent, "");
+  assert.equal(reset.nodes.copyText.value, "");
+
+  const unavailable = createFakeRouterDom({ payload: ROUTER_DATA });
+  unavailable.nodes.payloadNode.textContent = "{";
+  createRouterController({ root: unavailable.root, matcher: matchRoute });
+  assert.equal(unavailable.nodes.copyText.textContent, "");
+  assert.equal(unavailable.nodes.copyText.value, "");
 });
 
 test("pagehide deactivates handlers and pageshow reactivates a clean controller", () => {

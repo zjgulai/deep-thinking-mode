@@ -407,7 +407,9 @@ rtk git commit -m "feat: 实现 Router 五状态交互控制器"
 - Modify: `tools/build-site.mjs`
 - Modify: `tools/site-assets/site.js`
 - Modify: `tools/site-assets/site.css`
+- Modify: `tools/site-assets/router-controller.mjs`
 - Create: `tests/router-page.test.mjs`
+- Modify: `tests/router-controller.test.mjs`
 - Modify: `tests/site-experience-contract.test.mjs`
 
 **Renderer changes:**
@@ -419,6 +421,8 @@ rtk git commit -m "feat: 实现 Router 五状态交互控制器"
 ```
 
 全站原有 `assets/site.js` 继续负责导航、复制和模型筛选；删除其中从 `const routerForm` 开始的完整 v1 `query.includes` 匹配块。构建器把 `router-engine.mjs` 与 `router-controller.mjs` 逐字节复制到 `site/assets/`。
+
+`router-controller.mjs` 作为 Router 页唯一 module entry：浏览器直接加载且存在 `document` 时自动调用 `bootRouter(document)`，Node 测试导入时不得产生 DOM 副作用；不新增第二个 bootstrap、inline script 或 `site.js` Router fallback。
 
 Router 页面预渲染：输入表单、8 个快捷意图、5 个互斥状态容器、23 个 route article、8 个澄清按钮、4 个安全停止面板和唯一 payload script。Compact payload 只含 problem types、stages、safety signals、route keys、label/priority/phrase/example；模型标题、短定义、URL 和 Chain 链接直接存在预渲染 route HTML，不把 2789 个模型全集塞入 JSON。
 
@@ -453,7 +457,7 @@ rtk node --test tests/router-page.test.mjs tests/site-experience-contract.test.m
 
 问题理解区显示问题类型、阶段和缺失信息；解释区最多 3 个正向信号与 1 个近似示例；核心 route 最多 4 个模型；辅助 route 每类最多 2 个模型；Chain 只来自核心 `${problemTypeId}::${agentStageId}` route。route 没有 Chain 时固定显示“当前没有已策展的完整组合”。
 
-页面可复制的结构化提问由已验证模板和用户当前输入在客户端通过 `textContent` 组合，不写回 HTML 字符串。
+页面可复制的结构化提问由 controller 在 `matched` 后使用已验证的固定模板、用户当前输入和 payload 中已验证的问题/阶段 label 组合；纯文本固定包含“原始问题 / 当前目标与阶段 / 已知事实、关键假设、缺失信息 / 核心判断、可选路径、风险与下一步”四层语义。内容同时写入复制节点的 `textContent` 与表单控件 `value`，不得拼接或写回 HTML 字符串；reset、离页和非 matched 状态必须清空陈旧内容。
 
 - [ ] **Step 4：完成大气、克制且状态清晰的 Router 视觉**
 
@@ -468,6 +472,8 @@ rtk npm run check:public
 rtk git diff --check
 ```
 
+Task 4 与 Task 5 存在显式生成顺序：Router 必须立即输出五条真实 Chain 详情链接，而对应详情页由 Task 5 生成。因此 Task 4 的 `check:public` 允许且只允许以下 5 个 `MISSING_TARGET`，不得有其他错误、不得创建占位页、不得隐藏链接或放宽 checker：`combinations/cot-critic-chain.html`、`combinations/deep-research-chain.html`、`combinations/plan-execute-reflect-chain.html`、`combinations/react-agent-chain.html`、`combinations/tot-tree-of-thought-chain.html`。Task 5 完成时这 5 个错误必须全部消失并恢复 `check:public` exit 0。
+
 检查 `site/router.html` 与 `docs/router.html` 都引用本地 `.mjs`，两份源 module bytes 完全相同：
 
 ```bash
@@ -481,7 +487,7 @@ rtk cmp site/router.html docs/router.html
 本任务先不提交全量生成的 `site/`、`docs/`；它们在 Task 7 经确定性审计后统一提交。
 
 ```bash
-rtk git add tools/build-site.mjs tools/site-assets/site.js tools/site-assets/site.css tests/router-page.test.mjs tests/site-experience-contract.test.mjs
+rtk git add tools/build-site.mjs tools/site-assets/site.js tools/site-assets/site.css tools/site-assets/router-controller.mjs tests/router-page.test.mjs tests/router-controller.test.mjs tests/site-experience-contract.test.mjs specs/execution-plans/2026-08-10-router-2-combination-workshop.md
 rtk git diff --cached --check
 rtk git commit -m "feat: 构建 Router 2.0 本地交互页面"
 ```

@@ -12,7 +12,7 @@ import {
 } from "node:fs";
 import { createHash } from "node:crypto";
 import { basename, dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 import { loadV3AgentData } from "./lib/v3-agent-data.mjs";
 import { findPublicModelResidue } from "./lib/public-model-sanitizer.mjs";
@@ -30,7 +30,6 @@ const TAXONOMY_PATH = join(ROOT, "knowledge", "taxonomy.json");
 const CHAPTER_MENTORS_PATH = join(ROOT, "knowledge", "chapter-mentors.json");
 const CHAPTER_THEMES_PATH = join(ROOT, "knowledge", "chapter-themes.json");
 const CURATED_PATH = join(ROOT, "knowledge", "curated-collections.json");
-const ROUTER_PATH = join(ROOT, "chain-protocols", "agent-router-index.json");
 const ASSETS_DIR = join(ROOT, "tools", "site-assets");
 const SITE_DIR = join(ROOT, "site");
 const DOCS_DIR = join(ROOT, "docs");
@@ -76,17 +75,6 @@ const AGENT_FLOWS = [
   { code: "08", name: "清晰表达", description: "把复杂结论转化为可沟通的结构。", roles: ["communicator", "simplifier"] },
 ];
 
-const PROBLEM_LABELS = {
-  diagnosis: "诊断根因",
-  planning: "制定计划",
-  decision: "辅助决策",
-  creative: "探索创新",
-  research: "深度研究",
-  communication: "组织表达",
-  reflection: "复盘反思",
-  clarification: "澄清问题",
-};
-
 function readJson(path) {
   return JSON.parse(readFileSync(path, "utf8"));
 }
@@ -104,6 +92,41 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+export function serializeScriptJson(value) {
+  return JSON.stringify(value)
+    .replace(/</gu, "\\u003c")
+    .replace(/\u2028/gu, "\\u2028")
+    .replace(/\u2029/gu, "\\u2029");
+}
+
+export function createRouterPayload(buildView) {
+  return {
+    schema_version: "2.0-router",
+    problem_types: buildView.problemTypes.map((problemType) => ({
+      id: problemType.id,
+      label: problemType.label,
+      priority: problemType.priority,
+      positive_phrases: problemType.positive_phrases.map(({ text, weight }) => ({ text, weight })),
+      negative_phrases: problemType.negative_phrases.map(({ text, weight }) => ({ text, weight })),
+      examples: [...problemType.examples],
+      clarify_label: problemType.clarify_label
+    })),
+    agent_stages: buildView.agentStages.map((agentStage) => ({
+      id: agentStage.id,
+      label: agentStage.label,
+      priority: agentStage.priority,
+      positive_phrases: agentStage.positive_phrases.map(({ text, weight }) => ({ text, weight }))
+    })),
+    safety_signals: buildView.safetySignals.map((signal) => ({
+      id: signal.id,
+      label: signal.label,
+      message: signal.message,
+      phrases: [...signal.phrases]
+    })),
+    route_keys: [...buildView.routesByProblemAndStage.keys()]
+  };
 }
 
 // 移除 emoji 及其前后紧邻空格，用于展示性文字（标题、描述）
@@ -183,7 +206,7 @@ function assetPrefix(depth) {
   return depth > 0 ? "../".repeat(depth) : "";
 }
 
-function shell({ title, description, pathname, depth = 0, active = "", body, pageClass = "", chapterId = "", themeKey = "" }) {
+function shell({ title, description, pathname, depth = 0, active = "", body, pageClass = "", chapterId = "", themeKey = "", moduleScripts = [] }) {
   const prefix = assetPrefix(depth);
   const pageTitle = title === PRODUCT_NAME ? title : `${title}｜${PRODUCT_NAME}`;
   const nav = [
@@ -234,8 +257,69 @@ function shell({ title, description, pathname, depth = 0, active = "", body, pag
   </footer>
   <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
   <script src="${prefix}assets/site.js" defer></script>
+  ${moduleScripts.map((source) => `<script type="module" src="${prefix}${escapeHtml(source)}"></script>`).join("\n  ")}
 </body>
 </html>`;
+}
+
+export function renderRouterPage({ buildView, modelFile }) {
+  const problemTypeById = new Map(buildView.problemTypes.map((problemType) => [problemType.id, problemType]));
+  const agentStageById = new Map(buildView.agentStages.map((agentStage) => [agentStage.id, agentStage]));
+  const routeCards = [...buildView.routesByProblemAndStage.entries()].map(([routeKey, route], index) => {
+    const problemType = problemTypeById.get(route.problem_type_id);
+    const agentStage = agentStageById.get(route.agent_stage_id);
+    const models = route.model_ids.map((modelId) => {
+      const model = buildView.modelsById.get(modelId);
+      const file = modelFile.get(modelId);
+      if (!model || !file) throw new Error(`Router route ${routeKey} 引用未验证模型: ${modelId}`);
+      return { file, model };
+    });
+    const modelLinks = (kind, limit) => models.slice(0, limit).map(({ file, model }) => `<a data-router-model-link="${kind}" href="models/${escapeHtml(file)}"><strong>${escapeHtml(displayName(model.meta.name))}</strong><span>${escapeHtml(excerpt(model.core_definition, 82))}</span></a>`).join("");
+    const chain = route.chain_id === null ? null : buildView.chainsById.get(route.chain_id);
+    if (route.chain_id !== null && !chain) throw new Error(`Router route ${routeKey} 引用未验证 Chain: ${route.chain_id}`);
+    const chainPanel = chain ? `<section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>${escapeHtml(chain.meta.title)}</h3><p>${escapeHtml(chain.meta.description)}</p>
+        <ol>${chain.phases.map((phase) => `<li><strong>${escapeHtml(phase.name)}</strong><span>输入：${escapeHtml(phase.input)}</span><span>输出：${escapeHtml(phase.output)}</span><span>停止：${escapeHtml(phase.stop_condition)}</span></li>`).join("")}</ol>
+        <a class="text-link" href="combinations/${escapeHtml(chain.id)}.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>` : `<p class="route-chain-empty">当前没有已策展的完整组合</p>`;
+    return `<article class="route-result" data-route-key="${escapeHtml(routeKey)}" data-route-kind="" hidden>
+      <div class="route-result-number">${String(index + 1).padStart(2, "0")}</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE ${escapeHtml(routeKey)}</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>${escapeHtml(problemType.label)} · ${escapeHtml(agentStage.label)}</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>${escapeHtml(problemType.label)}</dd></div><div><dt>Agent 阶段</dt><dd>${escapeHtml(agentStage.label)}</dd></div><div><dt>仍缺少</dt><dd>支持“${escapeHtml(problemType.clarify_label)}”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：${escapeHtml(problemType.positive_phrases.slice(0, 3).map(({ text }) => text).join(" · "))}</p><p>近似示例：${escapeHtml(problemType.examples[0])}</p></section>
+        </div>
+        ${roleChips(route.recommended_role_ids)}
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core">${modelLinks("core", 4) || "<p>当前路径没有已策展的单体模型。</p>"}</div><div class="route-models route-models-auxiliary">${modelLinks("auxiliary", 2) || "<p>当前路径没有已策展的单体模型。</p>"}</div></section>
+        ${chainPanel}
+      </div>
+    </article>`;
+  }).join("");
+  const shortcuts = buildView.problemTypes.map((problemType) => `<button class="router-shortcut" type="button" data-shortcut-intent="${escapeHtml(problemType.id)}" aria-pressed="false">${escapeHtml(problemType.clarify_label)}</button>`).join("");
+  const clarificationButtons = buildView.problemTypes.map((problemType) => `<button class="router-clarify-option" type="button" data-clarify-option="${escapeHtml(problemType.id)}" hidden>${escapeHtml(problemType.clarify_label)}</button>`).join("");
+  const safetyPanels = buildView.safetySignals.map((signal) => `<article class="router-safety-panel" data-safety-signal="${escapeHtml(signal.id)}" hidden><h2>${escapeHtml(signal.label)}</h2><p>${escapeHtml(signal.message)}</p><p>本站只能帮助整理事实与待咨询问题，不代替专业判断或紧急支持。</p></article>`).join("");
+  const payload = serializeScriptJson(createRouterPayload(buildView));
+  const body = `${breadcrumbs([{ href: "index.html", label: "首页" }, { label: "Agent 路由" }])}
+    <section class="router-hero section-shell"><div><p class="kicker">LOCAL RULE ROUTER 2.0</p><h1>把问题说清，<em>再选择路径。</em></h1><p>在本地规则中识别问题类型和 Agent 阶段，返回一条核心路径与最多两条辅助路径。</p></div>
+      <form class="problem-form" data-router-form><label for="problem-input">你现在真正想解决什么？</label><textarea id="problem-input" rows="6" placeholder="例如：项目连续延期，我想判断根因并制定下一步计划……" autocomplete="off" data-router-input></textarea><div><button class="button button-primary" type="submit">匹配推理路径</button><button class="button button-ghost" type="reset">清空</button></div><p class="form-note">本地规则导航 · 输入不会上传或保存 · 结果需要结合事实验证</p><p class="router-hint" data-router-hint></p><p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-router-live></p></form>
+    </section>
+    <section class="router-entry section-shell" data-router-examples><div><p class="eyebrow">TRY AN EXAMPLE</p><h2>从一个具体问题开始</h2><p>说明你看到的现象、希望达到的结果，以及已知约束。信息不足时，系统只会追问一个关键问题。</p></div></section>
+    <section class="router-shortcuts section-shell" data-router-shortcuts aria-label="意图快捷项"><div class="section-intro"><p class="kicker">QUICK INTENTS</p><h2>或先选择一个意图</h2><p>首次点击只选中；继续补充后提交，或再次点击已选项匹配。</p></div><div class="router-shortcut-grid">${shortcuts}</div></section>
+    <section class="router-match section-shell" data-router-results hidden><h2 class="router-result-title" tabindex="-1" data-router-result-title hidden>本地路由结果</h2><div class="router-route-grid">${routeCards}</div><section class="router-copy"><div><p class="route-section-label">NEXT STEP</p><h2>带着结构化问题继续思考</h2><p>提问只在当前页内组合，离开或清空即丢弃。</p></div><textarea class="router-copy-text" readonly rows="14" aria-label="结构化提问" data-router-copy-text></textarea><div><button class="button button-secondary router-copy-button" type="button" data-router-copy>复制结构化提问</button><span role="status" aria-live="polite" data-router-copy-status></span></div></section></section>
+    <section class="router-clarify section-shell" data-router-clarify hidden><p class="kicker">ONE CLARIFYING QUESTION</p><h2 data-router-clarify-question></h2><div class="router-clarify-grid">${clarificationButtons}</div><p>也可以回到输入框补充更多事实与约束。</p></section>
+    <section class="router-safety section-shell" data-router-safety hidden><p class="kicker">SAFETY STOP</p>${safetyPanels}<div class="router-safety-facts" data-safety-facts hidden><h2>整理事实与问题清单</h2><ul><li>记录已经发生且可核对的事实。</li><li>区分你的判断与仍需确认的假设。</li><li>写下要向当地专业人士或紧急服务询问的问题。</li></ul></div></section>
+    <section class="router-unavailable section-shell" data-router-unavailable hidden><p class="kicker">ROUTER UNAVAILABLE</p><h2>路由数据不可用</h2><p>请刷新页面，或先进入模型库按主题浏览。</p></section>
+    <script type="application/json" data-router-payload>${payload}</script>`;
+  return shell({
+    title: "Agent 路由",
+    description: "在浏览器本地识别问题类型与 Agent 阶段，并查看已策展的模型与组合。",
+    pathname: "/router.html",
+    active: "router",
+    body,
+    pageClass: "router-page",
+    moduleScripts: ["assets/router-controller.mjs"]
+  });
 }
 
 function chapterPortrait(entry, prefix, { eager = false, className = "mentor-portrait", variant = "hero" } = {}) {
@@ -298,7 +382,7 @@ function replaceDirectory(candidate, target) {
 }
 
 function assertRequiredAssets() {
-  for (const name of ["site.css", "site.js", "favicon.svg"]) {
+  for (const name of ["site.css", "site.js", "favicon.svg", "router-engine.mjs", "router-controller.mjs"]) {
     if (!existsSync(join(ASSETS_DIR, name))) throw new Error(`缺少站点源资产: tools/site-assets/${name}`);
   }
 }
@@ -331,9 +415,9 @@ function loadModels() {
   });
 }
 
-async function build() {
+export async function buildSite() {
   assertRequiredAssets();
-  await loadV3AgentData(ROOT);
+  const buildView = await loadV3AgentData(ROOT);
   const taxonomy = readJson(TAXONOMY_PATH);
   const presentation = validateChapterPresentation({
     taxonomy,
@@ -346,7 +430,6 @@ async function build() {
   const chapterById = new Map(chapters.map((chapter) => [chapter.id, chapter]));
   const models = loadModels();
   const curated = existsSync(CURATED_PATH) ? readJson(CURATED_PATH) : {};
-  const router = existsSync(ROUTER_PATH) ? readJson(ROUTER_PATH) : { problem_type_signals: {}, routing_table: {} };
 
   const byChapter = new Map(chapters.map((chapter) => [chapter.id, []]));
   for (const model of models) {
@@ -355,7 +438,6 @@ async function build() {
   }
 
   const modelFile = new Map(models.map((model) => [model.id, deterministicModelFile(model)]));
-  const modelBySource = new Map(models.map((model) => [model.__sourceFile, model]));
   const modelsByName = new Map();
   for (const model of models) {
     const name = model.meta.name.trim();
@@ -376,7 +458,7 @@ async function build() {
   mkdirSync(chaptersDir, { recursive: true });
   mkdirSync(modelsDir, { recursive: true });
   mkdirSync(assetsDir, { recursive: true });
-  for (const name of ["site.css", "site.js", "favicon.svg"]) cpSync(join(ASSETS_DIR, name), join(assetsDir, name));
+  for (const name of ["site.css", "site.js", "favicon.svg", "router-engine.mjs", "router-controller.mjs"]) cpSync(join(ASSETS_DIR, name), join(assetsDir, name));
   writeTextFile(join(assetsDir, "chapter-themes.css"), compileChapterThemesCss(presentation));
   for (const result of portraitAssets) {
     for (const asset of [
@@ -425,7 +507,7 @@ async function build() {
 
   const agentCards = AGENT_FLOWS.map((flow) => {
     const count = flow.roles.reduce((sum, role) => sum + (roleCount[role] ?? 0), 0);
-    return `<a class="agent-flow-card" href="router.html#flow-${flow.code}"><span>${flow.code}</span><h3>${escapeHtml(flow.name)}</h3><p>${escapeHtml(flow.description)}</p><small>${count} 个角色关联模型</small></a>`;
+    return `<a class="agent-flow-card" href="router.html"><span>${flow.code}</span><h3>${escapeHtml(flow.name)}</h3><p>${escapeHtml(flow.description)}</p><small>${count} 个角色关联模型</small></a>`;
   }).join("");
 
   const leadChapter = presentationById.get("00");
@@ -503,26 +585,7 @@ async function build() {
     writeTextFile(join(modelsDir, file), shell({ title: model.__displayName, description: model.core_definition.slice(0, 150), pathname: `/models/${file}`, depth: 1, active: "models", body: modelBody, pageClass: "model-page has-chapter-theme", chapterId: chapter.id, themeKey: chapterPresentation.theme.theme_key }));
   }
 
-  const routingCards = Object.entries(router.problem_type_signals ?? {}).map(([type, keywords], index) => {
-    const entries = Object.values(router.routing_table ?? {}).filter((entry) => entry.problem_type === type);
-    const roles = [...new Set(entries.flatMap((entry) => entry.recommended_roles ?? []))];
-    const recommendedModels = [];
-    for (const entry of entries) {
-      for (const item of entry.stateful_models ?? []) {
-        const model = modelBySource.get(item.file) || modelsByName.get(item.name)?.[0];
-        if (model && !recommendedModels.some((candidate) => candidate.id === model.id)) recommendedModels.push(model);
-      }
-    }
-    return `<article class="route-result" id="route-${escapeHtml(type)}" data-route-card data-keywords="${escapeHtml((keywords ?? []).join(" ").toLowerCase())}" hidden>
-      <div class="route-result-number">${String(index + 1).padStart(2, "0")}</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>${escapeHtml(PROBLEM_LABELS[type] || type)}</h2><p>识别信号：${escapeHtml((keywords ?? []).slice(0, 5).join(" · "))}</p>${roleChips(roles)}<div class="route-models">${recommendedModels.slice(0, 4).map((model) => `<a href="models/${modelFile.get(model.id)}"><strong>${escapeHtml(model.__displayName)}</strong><span>${escapeHtml(excerpt(model.core_definition, 70))}</span></a>`).join("")}</div></div>
-    </article>`;
-  }).join("");
-  const flowDetails = AGENT_FLOWS.map((flow) => `<article id="flow-${flow.code}"><span>${flow.code}</span><div><h3>${escapeHtml(flow.name)}</h3><p>${escapeHtml(flow.description)}</p><div class="chip-row">${flow.roles.map((role) => `<span class="chip chip-agent">${escapeHtml(AGENT_ROLE_LABELS[role] || role)} · ${roleCount[role] ?? 0}</span>`).join("")}</div></div></article>`).join("");
-  const routerBody = `${breadcrumbs([{ href: "index.html", label: "首页" }, { label: "Agent 路由" }])}
-    <section class="router-hero section-shell"><div><p class="kicker">LOCAL REASONING ROUTER</p><h1>先描述问题，<em>再选择模型。</em></h1><p>所有匹配都在浏览器本地完成。它是关键词导航，不是 AI 判断，也不会上传或保存你的输入。</p></div><form class="problem-form" data-router-form><label for="problem-input">你现在真正想解决什么？</label><textarea id="problem-input" rows="5" placeholder="例如：项目连续延期，我想判断根因并制定下一步计划……" data-router-input></textarea><div><button class="button button-primary" type="submit">匹配推理路径</button><button class="button button-ghost" type="reset">清空</button></div><p class="form-note" role="status" aria-live="polite" data-router-status>输入至少 2 个字，系统会返回一个核心路径和最多两个辅助路径。</p></form></section>
-    <section class="section-shell route-results" aria-label="匹配结果"><div data-route-results>${routingCards}</div><div class="route-placeholder" data-route-placeholder><span>ROUTE</span><p>匹配结果会在这里出现</p></div></section>
-    <section class="agent-system"><div class="section-shell"><div class="section-intro inverse"><p class="kicker">ROLE SYSTEM</p><h2>八段式 Agent 推理系统</h2><p>模型只是能力单元；角色与阶段决定它何时被调用、怎样交接和如何验证。</p></div><div class="flow-details">${flowDetails}</div></div></section>`;
-  writeTextFile(join(output, "router.html"), shell({ title: "Agent 路由", description: "在浏览器本地描述问题，并按关键词匹配思维模型与 Agent 推理角色。", pathname: "/router.html", active: "router", body: routerBody, pageClass: "router-page" }));
+  writeTextFile(join(output, "router.html"), renderRouterPage({ buildView, modelFile }));
 
   const notFoundBody = `<section class="not-found section-shell"><p class="kicker">ERROR 404</p><strong>404</strong><h1>这条推理路径不存在</h1><p>页面可能已移动，或链接指向了旧版单页结构。</p><div><a class="button button-primary" href="index.html">返回首页</a><a class="button button-secondary" href="models/index.html">浏览模型库</a></div></section>`;
   writeTextFile(join(output, "404.html"), shell({ title: "页面未找到", description: `请求的${PRODUCT_NAME}页面不存在。`, pathname: "/404.html", body: notFoundBody, pageClass: "error-page" }));
@@ -543,4 +606,4 @@ async function build() {
   console.log(`✅ 多页站构建完成：${models.length} 模型 · ${chapters.length} 章节 · site/ 与 docs/ 已同步`);
 }
 
-await build();
+if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) await buildSite();
