@@ -1,61 +1,78 @@
 {
-  "schema_version": "1.0-agent-chain",
-  "id": "plan-execute-reflect",
+  "schema_version": "2.0-agent-chain",
+  "id": "plan-execute-reflect-chain",
   "meta": {
-    "name": "Plan-Execute-Reflect 三段式",
+    "title": "Plan-Execute-Reflect 三段式",
     "description": "目标分解 → 执行序列 → 反思复盘，用于复杂项目/任务规划和执行",
     "agent_flow": "Plan-Execute-Reflect",
-    "problem_types": ["项目规划", "目标分解", "多步骤任务执行", "复盘改进"],
+    "problem_types": [
+      "项目规划",
+      "目标分解",
+      "多步骤任务执行",
+      "复盘改进"
+    ],
     "trigger_signals": [
       "任务涉及多个阶段和依赖关系",
       "需要在执行中动态调整计划",
       "希望在完成后沉淀可复用的经验"
     ]
   },
-
   "phases": [
     {
-      "phase": 1,
+      "id": "plan",
+      "order": 1,
       "name": "目标设定（Goal Setting）",
-      "model": "WOOP思维 / SMART原则 / 精准定义问题",
       "agent_role": "planner",
-      "system_prompt_key": "将模糊目标转化为清晰可执行的目标定义。WOOP框架：愿望→结果→障碍→计划。每个目标必须有：1) 成功标准（可量化） 2) 时间边界 3) 资源约束 4) 最大障碍",
+      "model_ids": [
+        "框架思维_核心功能解析与高效落地路径"
+      ],
       "input": "模糊目标描述",
       "output": "结构化目标：{清晰目标, 成功标准, 关键障碍, 资源约束, 完成时间}",
-      "stop_condition": "目标满足SMART：具体/可测量/可达成/相关/有时限"
+      "checkpoint": "将模糊目标转化为清晰可执行的目标定义。WOOP框架：愿望→结果→障碍→计划。每个目标必须有：1) 成功标准（可量化） 2) 时间边界 3) 资源约束 4) 最大障碍",
+      "stop_condition": "目标满足SMART：具体/可测量/可达成/相关/有时限",
+      "loop_back_to": null
     },
     {
-      "phase": 2,
+      "id": "decompose",
+      "order": 2,
       "name": "计划制定（Planning）",
-      "model": "结构化思维 / 逻辑树 / 分而治之",
       "agent_role": "decomposer",
-      "system_prompt_key": "将目标分解为执行计划。分解原则：MECE（互斥完整），按依赖关系排序，每个任务有明确负责人/工具和验收标准",
+      "model_ids": [
+        "框架思维_核心功能解析与高效落地路径"
+      ],
       "input": "结构化目标 + 可用资源",
       "output": "执行计划：{任务列表（有序）, 每个任务的输入/输出/验收标准, 关键路径, 风险点}",
-      "stop_condition": "计划覆盖所有达成目标所需的任务，无遗漏"
+      "checkpoint": "将目标分解为执行计划。分解原则：MECE（互斥完整），按依赖关系排序，每个任务有明确负责人/工具和验收标准",
+      "stop_condition": "计划覆盖所有达成目标所需的任务，无遗漏",
+      "loop_back_to": null
     },
     {
-      "phase": 3,
+      "id": "execute",
+      "order": 3,
       "name": "执行（Execute）",
-      "model": "SOP思维 / OODA循环",
       "agent_role": "action_executor",
-      "system_prompt_key": "按计划执行，同时监控偏差。每完成一个任务：1) 标记完成 2) 记录实际结果 vs 预期 3) 识别影响后续任务的新信息",
+      "model_ids": [
+        "事后总结_并非终点_而是认知的_逆向"
+      ],
       "input": "执行计划 + 当前执行状态",
       "output": "执行日志：{完成任务, 实际结果, 偏差记录, 需要调整的后续任务}",
+      "checkpoint": "按计划执行，同时监控偏差。每完成一个任务：1) 标记完成 2) 记录实际结果 vs 预期 3) 识别影响后续任务的新信息",
       "stop_condition": "所有任务完成 OR 遇到阻塞需要重规划",
-      "loop_back_to": "phase_2（如需重规划）"
+      "loop_back_to": "decompose"
     },
     {
-      "phase": 4,
+      "id": "reflect",
+      "order": 4,
       "name": "反思复盘（Reflect）",
-      "model": "元认知 / 事后总结 / 经验学习圈",
       "agent_role": "observer_reflector",
-      "system_prompt_key": "结构化复盘：1) 目标达成情况 2) 计划和执行的偏差及原因 3) 成功的可复用经验 4) 失败的根本原因 5) 下次改进点",
+      "model_ids": [
+        "事后总结_并非终点_而是认知的_逆向"
+      ],
       "input": "执行日志 + 原始目标",
       "output": "复盘报告：{完成度, 偏差分析, 可复用经验, 根本原因, 改进行动}",
-      "stop_condition": "三个层次都有覆盖：行为层/系统层/认知层"
+      "checkpoint": "结构化复盘：1) 目标达成情况 2) 计划和执行的偏差及原因 3) 成功的可复用经验 4) 失败的根本原因 5) 下次改进点",
+      "stop_condition": "三个层次都有覆盖：行为层/系统层/认知层",
+      "loop_back_to": null
     }
-  ],
-
-  "codex_composite_prompt": "你现在运行「Plan-Execute-Reflect」Agent 模式，用于复杂任务的系统化执行和学习。\n\n## 阶段标记\n每个输出必须明确当前阶段：\n- 🎯 [PLAN] 当前在规划阶段\n- ⚡ [EXECUTE] 当前在执行阶段  \n- 🔍 [REFLECT] 当前在复盘阶段\n\n## Plan 阶段规范\n使用 WOOP 框架定义目标：\n```\nW（愿望）: ...\nO（期望结果）: ...\nO（最大障碍）: ...\nP（实施计划）: ...\n```\n\n## Execute 阶段规范\n每步执行后更新进度：\n```\n[任务完成] 任务名...\n预期结果：...\n实际结果：...\n偏差：有/无\n影响：...\n```\n\n## Reflect 阶段规范\n三个层次的复盘：\n1. **行为层**：做了什么？结果怎样？\n2. **系统层**：为什么会这样？是流程/工具/信息问题？\n3. **认知层**：我的哪些假设被证实/证伪？下次如何调整思维模式？\n\n## 质量门禁\n计划阶段：每个任务必须有验收标准，否则不进入执行\n执行阶段：偏差超过20%立即暂停，重回计划阶段\n复盘阶段：必须覆盖三个层次，缺少任一层即为不完整"
+  ]
 }

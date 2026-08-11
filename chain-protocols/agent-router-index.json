@@ -1,578 +1,893 @@
 {
-  "schema_version": "1.0-router",
-  "description": "Agent 推理路由索引：根据问题类型+流程阶段，定位最优模型",
-  "problem_type_signals": {
-    "diagnosis": [
-      "原因",
-      "为什么",
-      "根因",
-      "问题出在哪",
-      "怎么回事",
-      "失败了",
-      "效果差",
-      "瓶颈"
-    ],
-    "planning": [
-      "怎么做",
-      "计划",
-      "步骤",
-      "如何实现",
-      "目标",
-      "路径",
-      "方案",
-      "规划"
-    ],
-    "decision": [
-      "选哪个",
-      "该不该",
-      "要不要",
-      "选择",
-      "取舍",
-      "判断",
-      "评估",
-      "决定"
-    ],
-    "creative": [
-      "创新",
-      "突破",
-      "新方法",
-      "另一种思路",
-      "头脑风暴",
-      "可能性",
-      "想法"
-    ],
-    "research": [
-      "了解",
-      "研究",
-      "调研",
-      "趋势",
-      "洞察",
-      "深入分析",
-      "综合"
-    ],
-    "reflection": [
-      "复盘",
-      "反思",
-      "总结",
-      "学到了什么",
-      "改进",
-      "下次",
-      "经验"
-    ],
-    "communication": [
-      "如何表达",
-      "说服",
-      "汇报",
-      "解释清楚",
-      "沟通",
-      "反馈"
-    ],
-    "clarification": [
-      "搞清楚",
-      "确认",
-      "理解",
-      "澄清",
-      "是什么意思",
-      "边界是什么"
-    ]
-  },
-  "agent_stage_signals": {
-    "intent": [
-      "在开始推理之前",
-      "先搞清楚问题",
-      "不确定要做什么",
-      "问题定义"
-    ],
-    "cot_step": [
-      "正在推理中",
-      "推理到第N步",
-      "需要继续推导",
-      "上一步结论是"
-    ],
-    "planning": [
-      "需要制定计划",
-      "分解任务",
-      "排优先级",
-      "规划执行"
-    ],
-    "execution": [
-      "开始执行",
-      "行动中",
-      "遇到障碍",
-      "需要工具"
-    ],
-    "reflect": [
-      "完成后",
-      "复盘",
-      "评估结果",
-      "回顾"
-    ],
-    "tot_branch": [
-      "需要比较多个方案",
-      "展开可能性",
-      "评估选项"
-    ],
-    "research": [
-      "需要深度分析",
-      "搜集信息",
-      "验证假设"
-    ],
-    "synthesis": [
-      "综合结论",
-      "整合信息",
-      "输出报告"
-    ]
-  },
-  "routing_table": {
-    "diagnosis::intent": {
-      "problem_type": "diagnosis",
-      "agent_stage": "intent",
-      "recommended_roles": [
+  "schema_version": "2.0-router",
+  "problem_types": [
+    {
+      "id": "diagnosis",
+      "label": "诊断根因",
+      "priority": 10,
+      "positive_phrases": [
+        {
+          "text": "原因",
+          "weight": 8
+        },
+        {
+          "text": "为什么",
+          "weight": 8
+        },
+        {
+          "text": "根因",
+          "weight": 8
+        },
+        {
+          "text": "问题出在哪",
+          "weight": 8
+        },
+        {
+          "text": "怎么回事",
+          "weight": 8
+        },
+        {
+          "text": "失败了",
+          "weight": 8
+        },
+        {
+          "text": "效果差",
+          "weight": 8
+        },
+        {
+          "text": "瓶颈",
+          "weight": 8
+        }
+      ],
+      "negative_phrases": [
+        {
+          "text": "不需要找出原因",
+          "weight": 8
+        }
+      ],
+      "examples": [
+        "产品数据突然变差，我想知道发生了什么"
+      ],
+      "clarify_label": "我想找出原因"
+    },
+    {
+      "id": "planning",
+      "label": "规划路径",
+      "priority": 20,
+      "positive_phrases": [
+        {
+          "text": "怎么做",
+          "weight": 8
+        },
+        {
+          "text": "计划",
+          "weight": 8
+        },
+        {
+          "text": "步骤",
+          "weight": 8
+        },
+        {
+          "text": "如何实现",
+          "weight": 8
+        },
+        {
+          "text": "目标",
+          "weight": 8
+        },
+        {
+          "text": "路径",
+          "weight": 8
+        },
+        {
+          "text": "方案",
+          "weight": 8
+        },
+        {
+          "text": "规划",
+          "weight": 8
+        }
+      ],
+      "negative_phrases": [
+        {
+          "text": "不需要规划下一步",
+          "weight": 8
+        }
+      ],
+      "examples": [
+        "我需要一份可执行的项目计划"
+      ],
+      "clarify_label": "我想规划下一步"
+    },
+    {
+      "id": "decision",
+      "label": "决策取舍",
+      "priority": 30,
+      "positive_phrases": [
+        {
+          "text": "选哪个",
+          "weight": 8
+        },
+        {
+          "text": "该不该",
+          "weight": 8
+        },
+        {
+          "text": "要不要",
+          "weight": 8
+        },
+        {
+          "text": "选择",
+          "weight": 8
+        },
+        {
+          "text": "取舍",
+          "weight": 8
+        },
+        {
+          "text": "判断",
+          "weight": 8
+        },
+        {
+          "text": "评估",
+          "weight": 8
+        },
+        {
+          "text": "决定",
+          "weight": 8
+        }
+      ],
+      "negative_phrases": [
+        {
+          "text": "不需要做出选择",
+          "weight": 8
+        }
+      ],
+      "examples": [
+        "两个方案各有利弊，我该怎么选"
+      ],
+      "clarify_label": "我想做出选择"
+    },
+    {
+      "id": "creative",
+      "label": "创意发散",
+      "priority": 40,
+      "positive_phrases": [
+        {
+          "text": "创新",
+          "weight": 8
+        },
+        {
+          "text": "突破",
+          "weight": 8
+        },
+        {
+          "text": "新方法",
+          "weight": 8
+        },
+        {
+          "text": "另一种思路",
+          "weight": 8
+        },
+        {
+          "text": "头脑风暴",
+          "weight": 8
+        },
+        {
+          "text": "可能性",
+          "weight": 8
+        },
+        {
+          "text": "想法",
+          "weight": 8
+        }
+      ],
+      "negative_phrases": [
+        {
+          "text": "不需要探索新方向",
+          "weight": 8
+        }
+      ],
+      "examples": [
+        "请给我几种不同的解决方向"
+      ],
+      "clarify_label": "我想探索新方向"
+    },
+    {
+      "id": "research",
+      "label": "深度研究",
+      "priority": 50,
+      "positive_phrases": [
+        {
+          "text": "了解",
+          "weight": 8
+        },
+        {
+          "text": "研究",
+          "weight": 8
+        },
+        {
+          "text": "调研",
+          "weight": 8
+        },
+        {
+          "text": "趋势",
+          "weight": 8
+        },
+        {
+          "text": "洞察",
+          "weight": 8
+        },
+        {
+          "text": "深入分析",
+          "weight": 8
+        },
+        {
+          "text": "综合",
+          "weight": 8
+        }
+      ],
+      "negative_phrases": [
+        {
+          "text": "不需要基于证据研究",
+          "weight": 8
+        }
+      ],
+      "examples": [
+        "我需要基于证据研究这个问题"
+      ],
+      "clarify_label": "我想基于证据研究"
+    },
+    {
+      "id": "reflection",
+      "label": "复盘反思",
+      "priority": 60,
+      "positive_phrases": [
+        {
+          "text": "复盘",
+          "weight": 8
+        },
+        {
+          "text": "反思",
+          "weight": 8
+        },
+        {
+          "text": "总结",
+          "weight": 8
+        },
+        {
+          "text": "学到了什么",
+          "weight": 8
+        },
+        {
+          "text": "改进",
+          "weight": 8
+        },
+        {
+          "text": "下次",
+          "weight": 8
+        },
+        {
+          "text": "经验",
+          "weight": 8
+        }
+      ],
+      "negative_phrases": [
+        {
+          "text": "不需要复盘改进",
+          "weight": 8
+        }
+      ],
+      "examples": [
+        "我想复盘这次执行为什么偏离目标"
+      ],
+      "clarify_label": "我想复盘改进"
+    },
+    {
+      "id": "communication",
+      "label": "沟通表达",
+      "priority": 70,
+      "positive_phrases": [
+        {
+          "text": "如何表达",
+          "weight": 8
+        },
+        {
+          "text": "说服",
+          "weight": 8
+        },
+        {
+          "text": "汇报",
+          "weight": 8
+        },
+        {
+          "text": "解释清楚",
+          "weight": 8
+        },
+        {
+          "text": "沟通",
+          "weight": 8
+        },
+        {
+          "text": "反馈",
+          "weight": 8
+        }
+      ],
+      "negative_phrases": [
+        {
+          "text": "不需要表达清楚",
+          "weight": 8
+        }
+      ],
+      "examples": [
+        "我需要把复杂内容讲清楚"
+      ],
+      "clarify_label": "我想表达清楚"
+    },
+    {
+      "id": "clarification",
+      "label": "问题澄清",
+      "priority": 80,
+      "positive_phrases": [
+        {
+          "text": "搞清楚",
+          "weight": 8
+        },
+        {
+          "text": "确认",
+          "weight": 8
+        },
+        {
+          "text": "理解",
+          "weight": 8
+        },
+        {
+          "text": "澄清",
+          "weight": 8
+        },
+        {
+          "text": "是什么意思",
+          "weight": 8
+        },
+        {
+          "text": "边界是什么",
+          "weight": 8
+        }
+      ],
+      "negative_phrases": [
+        {
+          "text": "不需要先澄清问题",
+          "weight": 8
+        }
+      ],
+      "examples": [
+        "我还没有想清楚真正的问题是什么"
+      ],
+      "clarify_label": "我想先澄清问题"
+    }
+  ],
+  "agent_stages": [
+    {
+      "id": "intent",
+      "label": "意图澄清",
+      "priority": 10,
+      "positive_phrases": [
+        {
+          "text": "在开始推理之前",
+          "weight": 8
+        },
+        {
+          "text": "先搞清楚问题",
+          "weight": 8
+        },
+        {
+          "text": "不确定要做什么",
+          "weight": 8
+        },
+        {
+          "text": "问题定义",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "cot_step",
+      "label": "逐步推理",
+      "priority": 20,
+      "positive_phrases": [
+        {
+          "text": "正在推理中",
+          "weight": 8
+        },
+        {
+          "text": "推理到第N步",
+          "weight": 8
+        },
+        {
+          "text": "需要继续推导",
+          "weight": 8
+        },
+        {
+          "text": "上一步结论是",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "planning",
+      "label": "计划设计",
+      "priority": 30,
+      "positive_phrases": [
+        {
+          "text": "需要制定计划",
+          "weight": 8
+        },
+        {
+          "text": "分解任务",
+          "weight": 8
+        },
+        {
+          "text": "排优先级",
+          "weight": 8
+        },
+        {
+          "text": "规划执行",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "execution",
+      "label": "行动执行",
+      "priority": 40,
+      "positive_phrases": [
+        {
+          "text": "开始执行",
+          "weight": 8
+        },
+        {
+          "text": "行动中",
+          "weight": 8
+        },
+        {
+          "text": "遇到障碍",
+          "weight": 8
+        },
+        {
+          "text": "需要工具",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "reflect",
+      "label": "复盘反思",
+      "priority": 50,
+      "positive_phrases": [
+        {
+          "text": "完成后",
+          "weight": 8
+        },
+        {
+          "text": "复盘",
+          "weight": 8
+        },
+        {
+          "text": "评估结果",
+          "weight": 8
+        },
+        {
+          "text": "回顾",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "tot_branch",
+      "label": "多路分支",
+      "priority": 60,
+      "positive_phrases": [
+        {
+          "text": "需要比较多个方案",
+          "weight": 8
+        },
+        {
+          "text": "展开可能性",
+          "weight": 8
+        },
+        {
+          "text": "评估选项",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "label": "证据研究",
+      "priority": 70,
+      "positive_phrases": [
+        {
+          "text": "需要深度分析",
+          "weight": 8
+        },
+        {
+          "text": "搜集信息",
+          "weight": 8
+        },
+        {
+          "text": "验证假设",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "label": "结论综合",
+      "priority": 80,
+      "positive_phrases": [
+        {
+          "text": "综合结论",
+          "weight": 8
+        },
+        {
+          "text": "整合信息",
+          "weight": 8
+        },
+        {
+          "text": "输出报告",
+          "weight": 8
+        }
+      ]
+    }
+  ],
+  "safety_signals": [
+    {
+      "id": "immediate_personal_danger",
+      "label": "紧急人身危险",
+      "phrases": [
+        "正在伤害自己",
+        "马上伤害别人",
+        "已经伤害了自己"
+      ],
+      "message": "请优先联系当地紧急服务、可信赖的人或合格专业人士。"
+    },
+    {
+      "id": "medical_diagnosis_or_treatment",
+      "label": "医疗诊断或治疗",
+      "phrases": [
+        "请诊断我的症状",
+        "告诉我该吃什么药",
+        "给我具体治疗方案"
+      ],
+      "message": "涉及诊断或治疗，请咨询合格医疗专业人士。若情况紧急，请联系当地紧急服务。"
+    },
+    {
+      "id": "legal_advice_with_deadline",
+      "label": "有期限的法律建议",
+      "phrases": [
+        "法律期限明天到期",
+        "马上要开庭了怎么办",
+        "今天必须提交法律文件"
+      ],
+      "message": "涉及临近期限的法律事项，请尽快联系当地合格法律专业人士。"
+    },
+    {
+      "id": "high_stakes_financial_instruction",
+      "label": "高风险金融指令",
+      "phrases": [
+        "把全部积蓄马上买入",
+        "现在替我下单卖出全部",
+        "用借来的钱立刻投资"
+      ],
+      "message": "涉及高风险资金操作，请先咨询合格专业人士并审慎核实。"
+    }
+  ],
+  "routes": [
+    {
+      "id": "diagnosis::intent",
+      "problem_type_id": "diagnosis",
+      "agent_stage_id": "intent",
+      "recommended_role_ids": [
         "intent_clarifier",
         "problem_framer"
       ],
-      "stateful_models": [
-        {
-          "name": "苏格拉底式提问实操指南_层层追问_直",
-          "file": "苏格拉底式提问实操指南_层层追问_直.json",
-          "activation": "请用苏格拉底式提问实操指南_层层追分析..."
-        },
-        {
-          "name": "爱因斯坦式提问_5步重新定义问题_告",
-          "file": "爱因斯坦式提问_5步重新定义问题_告.json",
-          "activation": "请用爱因斯坦式提问_5步重新定义问分析..."
-        }
+      "model_ids": [
+        "苏格拉底式提问实操指南_层层追问_直",
+        "爱因斯坦式提问_5步重新定义问题_告"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     },
-    "diagnosis::cot_step": {
-      "problem_type": "diagnosis",
-      "agent_stage": "cot_step",
-      "recommended_roles": [
+    {
+      "id": "diagnosis::cot_step",
+      "problem_type_id": "diagnosis",
+      "agent_stage_id": "cot_step",
+      "recommended_role_ids": [
         "causal_reasoner",
         "first_principles",
         "systems_thinker"
       ],
-      "stateful_models": [
-        {
-          "name": "5_Whys分析法_从表象到本质_高",
-          "file": "",
-          "activation": "请用5_Whys分析法_从表象到本分析..."
-        },
-        {
-          "name": "第一性原理_看透本质_高效破局的底层",
-          "file": "第一性原理_看透本质_高效破局的底层.json",
-          "activation": "请用第一性原理_看透本质_高效破局分析..."
-        },
-        {
-          "name": "系统思维_看清关联_高效破局的底层认",
-          "file": "系统思维_看清关联_高效破局的底层认.json",
-          "activation": "请用系统思维_看清关联_高效破局的分析..."
-        }
+      "model_ids": [
+        "第一性原理_看透本质_高效破局的底层",
+        "系统思维_看清关联_高效破局的底层认"
       ],
-      "chain_suggestion": "cot-critic-chain"
+      "chain_id": "cot-critic-chain"
     },
-    "diagnosis::tot_branch": {
-      "problem_type": "diagnosis",
-      "agent_stage": "tot_branch",
-      "recommended_roles": [
+    {
+      "id": "diagnosis::reflect",
+      "problem_type_id": "diagnosis",
+      "agent_stage_id": "reflect",
+      "recommended_role_ids": [
+        "observer_reflector"
+      ],
+      "model_ids": [
+        "事后总结_并非终点_而是认知的_逆向"
+      ],
+      "chain_id": "plan-execute-reflect-chain"
+    },
+    {
+      "id": "diagnosis::tot_branch",
+      "problem_type_id": "diagnosis",
+      "agent_stage_id": "tot_branch",
+      "recommended_role_ids": [
         "multi_perspective",
         "hypothesis_tester"
       ],
-      "stateful_models": [
-        {
-          "name": "逆向思维_打破定式_高效破局的创新思",
-          "file": "逆向思维_打破定式_高效破局的创新思.json",
-          "activation": "请用逆向思维_打破定式_高效破局的分析..."
-        },
-        {
-          "name": "第二层思维_超越共识_决胜决策的底层",
-          "file": "第二层思维_超越共识_决胜决策的底层.json",
-          "activation": "请用第二层思维_超越共识_决胜决策分析..."
-        }
+      "model_ids": [
+        "逆向思维_打破定式_高效破局的创新思",
+        "第二层思维_超越共识_决胜决策的底层"
       ],
-      "chain_suggestion": "tot-tree-of-thought-chain"
+      "chain_id": "tot-tree-of-thought-chain"
     },
-    "diagnosis::reflect": {
-      "problem_type": "diagnosis",
-      "agent_stage": "reflect",
-      "recommended_roles": [
-        "observer_reflector"
-      ],
-      "stateful_models": [
-        {
-          "name": "事后总结_并非终点_而是认知的_逆向",
-          "file": "事后总结_并非终点_而是认知的_逆向.json",
-          "activation": "请用事后总结_并非终点_而是认知的分析..."
-        }
-      ],
-      "chain_suggestion": "plan-execute-reflect-chain"
-    },
-    "planning::intent": {
-      "problem_type": "planning",
-      "agent_stage": "intent",
-      "recommended_roles": [
+    {
+      "id": "planning::intent",
+      "problem_type_id": "planning",
+      "agent_stage_id": "intent",
+      "recommended_role_ids": [
         "problem_framer",
         "intent_clarifier"
       ],
-      "stateful_models": [
-        {
-          "name": "爱因斯坦式提问_5步重新定义问题_告",
-          "file": "爱因斯坦式提问_5步重新定义问题_告.json",
-          "activation": "请用爱因斯坦式提问_5步重新定义问分析..."
-        },
-        {
-          "name": "苏格拉底式提问实操指南_层层追问_直",
-          "file": "苏格拉底式提问实操指南_层层追问_直.json",
-          "activation": "请用苏格拉底式提问实操指南_层层追分析..."
-        }
+      "model_ids": [
+        "爱因斯坦式提问_5步重新定义问题_告",
+        "苏格拉底式提问实操指南_层层追问_直"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     },
-    "planning::planning": {
-      "problem_type": "planning",
-      "agent_stage": "planning",
-      "recommended_roles": [
+    {
+      "id": "planning::planning",
+      "problem_type_id": "planning",
+      "agent_stage_id": "planning",
+      "recommended_role_ids": [
         "planner",
         "decomposer",
         "prioritizer"
       ],
-      "stateful_models": [
-        {
-          "name": "结构化思维_从混乱到清晰_解锁高效思",
-          "file": "结构化思维_从混乱到清晰_解锁高效思.json",
-          "activation": "请用结构化思维_从混乱到清晰_解锁分析..."
-        },
-        {
-          "name": "框架思维_核心功能解析与高效落地路径",
-          "file": "框架思维_核心功能解析与高效落地路径.json",
-          "activation": "请用框架思维_核心功能解析与高效落分析..."
-        }
+      "model_ids": [
+        "结构化思维_从混乱到清晰_解锁高效思",
+        "框架思维_核心功能解析与高效落地路径"
       ],
-      "chain_suggestion": "plan-execute-reflect-chain"
+      "chain_id": "plan-execute-reflect-chain"
     },
-    "planning::execution": {
-      "problem_type": "planning",
-      "agent_stage": "execution",
-      "recommended_roles": [
+    {
+      "id": "planning::execution",
+      "problem_type_id": "planning",
+      "agent_stage_id": "execution",
+      "recommended_role_ids": [
         "action_executor",
         "observer_reflector"
       ],
-      "stateful_models": [
-        {
-          "name": "空想耗竭的3个机制_WOOP四步破局",
-          "file": "",
-          "activation": "请用空想耗竭的3个机制_WOOP四分析..."
-        },
-        {
-          "name": "事后总结_并非终点_而是认知的_逆向",
-          "file": "事后总结_并非终点_而是认知的_逆向.json",
-          "activation": "请用事后总结_并非终点_而是认知的分析..."
-        }
+      "model_ids": [
+        "事后总结_并非终点_而是认知的_逆向"
       ],
-      "chain_suggestion": "react-agent-chain"
+      "chain_id": "react-agent-chain"
     },
-    "planning::reflect": {
-      "problem_type": "planning",
-      "agent_stage": "reflect",
-      "recommended_roles": [
+    {
+      "id": "planning::reflect",
+      "problem_type_id": "planning",
+      "agent_stage_id": "reflect",
+      "recommended_role_ids": [
         "observer_reflector"
       ],
-      "stateful_models": [
-        {
-          "name": "事后总结_并非终点_而是认知的_逆向",
-          "file": "事后总结_并非终点_而是认知的_逆向.json",
-          "activation": "请用事后总结_并非终点_而是认知的分析..."
-        }
+      "model_ids": [
+        "事后总结_并非终点_而是认知的_逆向"
       ],
-      "chain_suggestion": "plan-execute-reflect-chain"
+      "chain_id": "plan-execute-reflect-chain"
     },
-    "decision::intent": {
-      "problem_type": "decision",
-      "agent_stage": "intent",
-      "recommended_roles": [
+    {
+      "id": "decision::intent",
+      "problem_type_id": "decision",
+      "agent_stage_id": "intent",
+      "recommended_role_ids": [
         "intent_clarifier"
       ],
-      "stateful_models": [
-        {
-          "name": "苏格拉底式提问实操指南_层层追问_直",
-          "file": "苏格拉底式提问实操指南_层层追问_直.json",
-          "activation": "请用苏格拉底式提问实操指南_层层追分析..."
-        }
+      "model_ids": [
+        "苏格拉底式提问实操指南_层层追问_直"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     },
-    "decision::cot_step": {
-      "problem_type": "decision",
-      "agent_stage": "cot_step",
-      "recommended_roles": [
+    {
+      "id": "decision::cot_step",
+      "problem_type_id": "decision",
+      "agent_stage_id": "cot_step",
+      "recommended_role_ids": [
         "logical_analyzer",
         "first_principles"
       ],
-      "stateful_models": [
-        {
-          "name": "批判性思维工具包_3步拆解论点_5类",
-          "file": "批判性思维工具包_3步拆解论点_5类.json",
-          "activation": "请用批判性思维工具包_3步拆解论点分析..."
-        },
-        {
-          "name": "第一性原理_看透本质_高效破局的底层",
-          "file": "第一性原理_看透本质_高效破局的底层.json",
-          "activation": "请用第一性原理_看透本质_高效破局分析..."
-        }
+      "model_ids": [
+        "批判性思维工具包_3步拆解论点_5类",
+        "第一性原理_看透本质_高效破局的底层"
       ],
-      "chain_suggestion": "cot-critic-chain"
+      "chain_id": "cot-critic-chain"
     },
-    "decision::tot_branch": {
-      "problem_type": "decision",
-      "agent_stage": "tot_branch",
-      "recommended_roles": [
+    {
+      "id": "decision::reflect",
+      "problem_type_id": "decision",
+      "agent_stage_id": "reflect",
+      "recommended_role_ids": [
+        "observer_reflector"
+      ],
+      "model_ids": [
+        "事后总结_并非终点_而是认知的_逆向"
+      ],
+      "chain_id": "plan-execute-reflect-chain"
+    },
+    {
+      "id": "decision::tot_branch",
+      "problem_type_id": "decision",
+      "agent_stage_id": "tot_branch",
+      "recommended_role_ids": [
         "decision_maker",
         "bias_detector",
         "multi_perspective"
       ],
-      "stateful_models": [
-        {
-          "name": "10个时间黑洞_多巴胺陷阱_决策瘫痪",
-          "file": "10个时间黑洞_多巴胺陷阱_决策瘫痪.json",
-          "activation": "请用10个时间黑洞_多巴胺陷阱_决分析..."
-        },
-        {
-          "name": "重大决策七步自检清单_避开7个认知陷",
-          "file": "重大决策七步自检清单_避开7个认知陷.json",
-          "activation": "请用重大决策七步自检清单_避开7个分析..."
-        },
-        {
-          "name": "逆向思维_打破定式_高效破局的创新思",
-          "file": "逆向思维_打破定式_高效破局的创新思.json",
-          "activation": "请用逆向思维_打破定式_高效破局的分析..."
-        }
+      "model_ids": [
+        "10个时间黑洞_多巴胺陷阱_决策瘫痪",
+        "重大决策七步自检清单_避开7个认知陷",
+        "逆向思维_打破定式_高效破局的创新思"
       ],
-      "chain_suggestion": "tot-tree-of-thought-chain"
+      "chain_id": "tot-tree-of-thought-chain"
     },
-    "decision::reflect": {
-      "problem_type": "decision",
-      "agent_stage": "reflect",
-      "recommended_roles": [
-        "observer_reflector"
-      ],
-      "stateful_models": [
-        {
-          "name": "事后总结_并非终点_而是认知的_逆向",
-          "file": "事后总结_并非终点_而是认知的_逆向.json",
-          "activation": "请用事后总结_并非终点_而是认知的分析..."
-        }
-      ],
-      "chain_suggestion": "plan-execute-reflect-chain"
-    },
-    "creative::intent": {
-      "problem_type": "creative",
-      "agent_stage": "intent",
-      "recommended_roles": [
+    {
+      "id": "creative::intent",
+      "problem_type_id": "creative",
+      "agent_stage_id": "intent",
+      "recommended_role_ids": [
         "problem_framer"
       ],
-      "stateful_models": [
-        {
-          "name": "爱因斯坦式提问_5步重新定义问题_告",
-          "file": "爱因斯坦式提问_5步重新定义问题_告.json",
-          "activation": "请用爱因斯坦式提问_5步重新定义问分析..."
-        }
+      "model_ids": [
+        "爱因斯坦式提问_5步重新定义问题_告"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     },
-    "creative::tot_branch": {
-      "problem_type": "creative",
-      "agent_stage": "tot_branch",
-      "recommended_roles": [
-        "multi_perspective",
-        "pattern_recognizer"
-      ],
-      "stateful_models": [
-        {
-          "name": "逆向思维_打破定式_高效破局的创新思",
-          "file": "逆向思维_打破定式_高效破局的创新思.json",
-          "activation": "请用逆向思维_打破定式_高效破局的分析..."
-        }
-      ],
-      "chain_suggestion": "tot-tree-of-thought-chain"
-    },
-    "creative::cot_step": {
-      "problem_type": "creative",
-      "agent_stage": "cot_step",
-      "recommended_roles": [
+    {
+      "id": "creative::cot_step",
+      "problem_type_id": "creative",
+      "agent_stage_id": "cot_step",
+      "recommended_role_ids": [
         "first_principles",
         "systems_thinker"
       ],
-      "stateful_models": [
-        {
-          "name": "第一性原理_看透本质_高效破局的底层",
-          "file": "第一性原理_看透本质_高效破局的底层.json",
-          "activation": "请用第一性原理_看透本质_高效破局分析..."
-        },
-        {
-          "name": "系统思维_看清关联_高效破局的底层认",
-          "file": "系统思维_看清关联_高效破局的底层认.json",
-          "activation": "请用系统思维_看清关联_高效破局的分析..."
-        }
+      "model_ids": [
+        "第一性原理_看透本质_高效破局的底层",
+        "系统思维_看清关联_高效破局的底层认"
       ],
-      "chain_suggestion": "cot-critic-chain"
+      "chain_id": "cot-critic-chain"
     },
-    "creative::synthesis": {
-      "problem_type": "creative",
-      "agent_stage": "synthesis",
-      "recommended_roles": [
+    {
+      "id": "creative::tot_branch",
+      "problem_type_id": "creative",
+      "agent_stage_id": "tot_branch",
+      "recommended_role_ids": [
+        "multi_perspective",
+        "pattern_recognizer"
+      ],
+      "model_ids": [
+        "逆向思维_打破定式_高效破局的创新思"
+      ],
+      "chain_id": "tot-tree-of-thought-chain"
+    },
+    {
+      "id": "creative::synthesis",
+      "problem_type_id": "creative",
+      "agent_stage_id": "synthesis",
+      "recommended_role_ids": [
         "knowledge_synthesizer",
         "communicator"
       ],
-      "stateful_models": [
-        {
-          "name": "知识复利 #复利思维 #框架思维 #",
-          "file": "",
-          "activation": "请用知识复利 #复利思维 #框架思分析..."
-        },
-        {
-          "name": "金字塔原理_理清逻辑_高效表达的底层",
-          "file": "金字塔原理_理清逻辑_高效表达的底层.json",
-          "activation": "请用金字塔原理_理清逻辑_高效表达分析..."
-        }
+      "model_ids": [
+        "金字塔原理_理清逻辑_高效表达的底层"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     },
-    "research::intent": {
-      "problem_type": "research",
-      "agent_stage": "intent",
-      "recommended_roles": [
+    {
+      "id": "research::intent",
+      "problem_type_id": "research",
+      "agent_stage_id": "intent",
+      "recommended_role_ids": [
         "intent_clarifier",
         "problem_framer"
       ],
-      "stateful_models": [
-        {
-          "name": "苏格拉底式提问实操指南_层层追问_直",
-          "file": "苏格拉底式提问实操指南_层层追问_直.json",
-          "activation": "请用苏格拉底式提问实操指南_层层追分析..."
-        },
-        {
-          "name": "爱因斯坦式提问_5步重新定义问题_告",
-          "file": "爱因斯坦式提问_5步重新定义问题_告.json",
-          "activation": "请用爱因斯坦式提问_5步重新定义问分析..."
-        }
+      "model_ids": [
+        "苏格拉底式提问实操指南_层层追问_直",
+        "爱因斯坦式提问_5步重新定义问题_告"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     },
-    "research::research": {
-      "problem_type": "research",
-      "agent_stage": "research",
-      "recommended_roles": [
+    {
+      "id": "research::research",
+      "problem_type_id": "research",
+      "agent_stage_id": "research",
+      "recommended_role_ids": [
         "causal_reasoner",
         "hypothesis_tester",
         "logical_analyzer"
       ],
-      "stateful_models": [
-        {
-          "name": "5_Whys分析法_从表象到本质_高",
-          "file": "",
-          "activation": "请用5_Whys分析法_从表象到本分析..."
-        },
-        {
-          "name": "第二层思维_超越共识_决胜决策的底层",
-          "file": "第二层思维_超越共识_决胜决策的底层.json",
-          "activation": "请用第二层思维_超越共识_决胜决策分析..."
-        },
-        {
-          "name": "批判性思维工具包_3步拆解论点_5类",
-          "file": "批判性思维工具包_3步拆解论点_5类.json",
-          "activation": "请用批判性思维工具包_3步拆解论点分析..."
-        }
+      "model_ids": [
+        "第二层思维_超越共识_决胜决策的底层",
+        "批判性思维工具包_3步拆解论点_5类"
       ],
-      "chain_suggestion": "deep-research-chain"
+      "chain_id": "deep-research-chain"
     },
-    "research::synthesis": {
-      "problem_type": "research",
-      "agent_stage": "synthesis",
-      "recommended_roles": [
+    {
+      "id": "research::synthesis",
+      "problem_type_id": "research",
+      "agent_stage_id": "synthesis",
+      "recommended_role_ids": [
         "knowledge_synthesizer"
       ],
-      "stateful_models": [
-        {
-          "name": "知识复利 #复利思维 #框架思维 #",
-          "file": "",
-          "activation": "请用知识复利 #复利思维 #框架思分析..."
-        }
-      ],
-      "chain_suggestion": null
+      "model_ids": [],
+      "chain_id": null
     },
-    "reflection::reflect": {
-      "problem_type": "reflection",
-      "agent_stage": "reflect",
-      "recommended_roles": [
+    {
+      "id": "reflection::reflect",
+      "problem_type_id": "reflection",
+      "agent_stage_id": "reflect",
+      "recommended_role_ids": [
         "observer_reflector"
       ],
-      "stateful_models": [
-        {
-          "name": "事后总结_并非终点_而是认知的_逆向",
-          "file": "事后总结_并非终点_而是认知的_逆向.json",
-          "activation": "请用事后总结_并非终点_而是认知的分析..."
-        }
+      "model_ids": [
+        "事后总结_并非终点_而是认知的_逆向"
       ],
-      "chain_suggestion": "plan-execute-reflect-chain"
+      "chain_id": "plan-execute-reflect-chain"
     },
-    "reflection::synthesis": {
-      "problem_type": "reflection",
-      "agent_stage": "synthesis",
-      "recommended_roles": [
+    {
+      "id": "reflection::synthesis",
+      "problem_type_id": "reflection",
+      "agent_stage_id": "synthesis",
+      "recommended_role_ids": [
         "knowledge_synthesizer",
         "communicator"
       ],
-      "stateful_models": [
-        {
-          "name": "知识复利 #复利思维 #框架思维 #",
-          "file": "",
-          "activation": "请用知识复利 #复利思维 #框架思分析..."
-        },
-        {
-          "name": "金字塔原理_理清逻辑_高效表达的底层",
-          "file": "金字塔原理_理清逻辑_高效表达的底层.json",
-          "activation": "请用金字塔原理_理清逻辑_高效表达分析..."
-        }
+      "model_ids": [
+        "金字塔原理_理清逻辑_高效表达的底层"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     },
-    "communication::synthesis": {
-      "problem_type": "communication",
-      "agent_stage": "synthesis",
-      "recommended_roles": [
+    {
+      "id": "communication::synthesis",
+      "problem_type_id": "communication",
+      "agent_stage_id": "synthesis",
+      "recommended_role_ids": [
         "communicator",
         "simplifier"
       ],
-      "stateful_models": [
-        {
-          "name": "金字塔原理_理清逻辑_高效表达的底层",
-          "file": "金字塔原理_理清逻辑_高效表达的底层.json",
-          "activation": "请用金字塔原理_理清逻辑_高效表达分析..."
-        }
+      "model_ids": [
+        "金字塔原理_理清逻辑_高效表达的底层"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     },
-    "clarification::intent": {
-      "problem_type": "clarification",
-      "agent_stage": "intent",
-      "recommended_roles": [
+    {
+      "id": "clarification::intent",
+      "problem_type_id": "clarification",
+      "agent_stage_id": "intent",
+      "recommended_role_ids": [
         "intent_clarifier",
         "problem_framer"
       ],
-      "stateful_models": [
-        {
-          "name": "苏格拉底式提问实操指南_层层追问_直",
-          "file": "苏格拉底式提问实操指南_层层追问_直.json",
-          "activation": "请用苏格拉底式提问实操指南_层层追分析..."
-        },
-        {
-          "name": "爱因斯坦式提问_5步重新定义问题_告",
-          "file": "爱因斯坦式提问_5步重新定义问题_告.json",
-          "activation": "请用爱因斯坦式提问_5步重新定义问分析..."
-        }
+      "model_ids": [
+        "苏格拉底式提问实操指南_层层追问_直",
+        "爱因斯坦式提问_5步重新定义问题_告"
       ],
-      "chain_suggestion": null
+      "chain_id": null
     }
-  }
+  ]
 }

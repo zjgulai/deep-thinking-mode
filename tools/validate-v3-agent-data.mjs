@@ -11,7 +11,7 @@ try {
     ok: true,
     schema_version: "3.0.0",
     ...result.stats,
-    agentRoles: result.agentRoles,
+    safetySignalCount: result.safetySignals.length,
     roleCounts: result.roleCounts
   }, null, 2)}\n`);
 } catch (cause) {
