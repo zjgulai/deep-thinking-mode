@@ -232,6 +232,15 @@ test("v3 agent data: returns independent, deeply frozen V2 build views", () => {
     result.compositionsByModelId,
     result.compositionsByChapterId
   ]) {
+    const [firstKey, firstValue] = [...map][0];
+    assert.ok(map instanceof Map);
+    assert.equal(map.get(firstKey), firstValue);
+    assert.equal(map.has(firstKey), true);
+    assert.ok(map.size > 0);
+    assert.deepEqual([...new Map(map)], [...map]);
+    assert.throws(() => map.set("other", {}), TypeError);
+    assert.throws(() => map.delete("other"), TypeError);
+    assert.throws(() => map.clear(), TypeError);
     assert.throws(() => Map.prototype.set.call(map, "other", {}), TypeError);
     assert.throws(() => Map.prototype.delete.call(map, "other"), TypeError);
     assert.throws(() => Map.prototype.clear.call(map), TypeError);

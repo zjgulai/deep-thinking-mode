@@ -408,20 +408,22 @@ function deepFreeze(value, seen = new WeakSet()) {
 }
 
 function readonlyMap(entries) {
-  const map = new Map(entries);
-  const facade = Object.create(null);
-  Object.defineProperties(facade, {
-    size: { enumerable: true, get: () => map.size },
-    get: { value: (key) => map.get(key) },
-    has: { value: (key) => map.has(key) },
-    entries: { value: () => map.entries() },
-    keys: { value: () => map.keys() },
-    values: { value: () => map.values() },
-    forEach: { value: (callback, thisArg) => map.forEach((value, key) => callback.call(thisArg, value, key, facade)) },
-    [Symbol.iterator]: { value: () => map[Symbol.iterator]() },
-    [Symbol.toStringTag]: { value: "ReadonlyMap" }
+  const target = new Map(entries);
+  let view;
+  view = new Proxy(target, {
+    get(map, property) {
+      if (property === "size") return map.size;
+      if (["set", "delete", "clear"].includes(property)) {
+        return () => { throw new TypeError("read-only map"); };
+      }
+      if (property === "forEach") {
+        return (callback, thisArg) => map.forEach((value, key) => callback.call(thisArg, value, key, view));
+      }
+      const value = Reflect.get(map, property, map);
+      return typeof value === "function" ? value.bind(map) : value;
+    }
   });
-  return Object.freeze(facade);
+  return Object.freeze(view);
 }
 
 function frozenClone(value) {
