@@ -15,6 +15,15 @@ import {
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const goldenCases = JSON.parse(await readFile(join(ROOT, "tests/fixtures/router/router-golden-cases.json"), "utf8"));
 const routerData = JSON.parse(await readFile(join(ROOT, "chain-protocols/agent-router-index.json"), "utf8"));
+const routeKeys = routerData.routes.map(({ id }) => id);
+const routeKeySet = new Set(routeKeys);
+const compactRouterData = {
+  schema_version: routerData.schema_version,
+  problem_types: routerData.problem_types,
+  agent_stages: routerData.agent_stages,
+  safety_signals: routerData.safety_signals,
+  route_keys: routeKeys
+};
 
 const CASE_FIELDS = [
   "id",
@@ -57,11 +66,13 @@ function syntheticType(id, { priority = 10, positive = [], negative = [], exampl
   };
 }
 
-function syntheticRouterData(problemTypes, { agentStages, safetySignals = [] } = {}) {
+function syntheticRouterData(problemTypes, { agentStages, routeKeys: syntheticRouteKeys, safetySignals = [] } = {}) {
+  assert.ok(Array.isArray(syntheticRouteKeys), "synthetic Router data must declare routeKeys");
   return {
     problem_types: problemTypes,
     agent_stages: agentStages ?? [{ id: "intent", priority: 10, positive_phrases: [] }],
-    safety_signals: safetySignals
+    safety_signals: safetySignals,
+    route_keys: syntheticRouteKeys
   };
 }
 
@@ -187,7 +198,7 @@ test("an example-only six-point score cannot produce matched", () => {
   const data = syntheticRouterData([
     syntheticType("example-only", { examples: ["完整示例"] }),
     syntheticType("other", { priority: 20 })
-  ]);
+  ], { routeKeys: ["example-only::intent", "other::intent"] });
   const result = matchRoute({ query: "完整示例", routerData: data });
   assert.equal(result.state, "clarify");
   assert.equal(result.problemTypeId, null);
@@ -199,7 +210,7 @@ test("match thresholds distinguish seven, eight, double-six, and score gaps of o
     routerData: syntheticRouterData([
       syntheticType("first", { positive: [["甲信号", firstWeight]] }),
       syntheticType("second", { priority: 20, positive: secondWeight ? [["乙信号", secondWeight]] : [] })
-    ])
+    ], { routeKeys: ["first::intent", "second::intent"] })
   });
 
   assert.equal(resultFor(7).state, "clarify");
@@ -218,7 +229,7 @@ test("auxiliaries use the six-point threshold, only the second and third ranks, 
       syntheticType("second", { priority: 20, positive: [["第二信号", 7]] }),
       syntheticType("third", { priority: 30, positive: [["第三信号", 6]] }),
       syntheticType("fourth", { priority: 40, positive: [["第四信号", 6]] })
-    ])
+    ], { routeKeys: ["core::intent", "second::intent", "third::intent", "fourth::intent"] })
   });
   assert.deepEqual(full.auxiliaryProblemTypeIds, ["second", "third"]);
 
@@ -228,7 +239,7 @@ test("auxiliaries use the six-point threshold, only the second and third ranks, 
       syntheticType("core", { positive: [["核心信号", 10]] }),
       syntheticType("second", { priority: 20, positive: [["第二信号", 6]] }),
       syntheticType("third", { priority: 30, positive: [["第三信号", 5]] })
-    ])
+    ], { routeKeys: ["core::intent", "second::intent", "third::intent"] })
   });
   assert.deepEqual(belowThreshold.auxiliaryProblemTypeIds, ["second"]);
 });
@@ -240,7 +251,7 @@ test("matchRoute applies shortcut plus eight and exposes the selected shortcut a
     routerData: syntheticRouterData([
       syntheticType("selected"),
       syntheticType("other", { priority: 20 })
-    ])
+    ], { routeKeys: ["selected::intent", "other::intent"] })
   });
   assert.equal(result.state, "matched");
   assert.equal(result.problemTypeId, "selected");
@@ -282,6 +293,110 @@ test("matchRoute exposes only the frozen local-rule result contract", () => {
   assert.equal(result.problemTypeId, "diagnosis");
 });
 
+test("matchRoute produces identical results from canonical routes and compact route keys", () => {
+  for (const entry of goldenCases) {
+    const request = { query: entry.input, shortcutIntentId: entry.shortcut_intent_id };
+    assert.deepEqual(
+      matchRoute({ ...request, routerData: routerData }),
+      matchRoute({ ...request, routerData: compactRouterData }),
+      entry.id
+    );
+  }
+});
+
+test("matched core stage falls back by stage priority and then ASCII id", () => {
+  const problemTypes = [
+    syntheticType("core", { positive: [["核心信号", 10]] }),
+    syntheticType("other", { priority: 20 })
+  ];
+  const agentStages = [
+    { id: "raw", priority: 10, positive_phrases: [{ text: "阶段信号", weight: 8 }] },
+    { id: "beta", priority: 20, positive_phrases: [] },
+    { id: "zeta", priority: 30, positive_phrases: [] },
+    { id: "alpha", priority: 30, positive_phrases: [] }
+  ];
+  const resultFor = (syntheticRouteKeys) => matchRoute({
+    query: "核心信号和阶段信号",
+    routerData: syntheticRouterData(problemTypes, { agentStages, routeKeys: syntheticRouteKeys })
+  });
+
+  for (const keys of [["core::alpha", "core::beta"], ["core::beta", "core::alpha"]]) {
+    const result = resultFor(keys);
+    assert.equal(result.state, "matched");
+    assert.equal(result.agentStageId, "beta");
+  }
+  assert.equal(resultFor(["core::zeta", "core::alpha"]).agentStageId, "alpha");
+});
+
+test("missing, malformed, empty, or unknown route keys fail closed to clarify at the raw stage", () => {
+  const problemTypes = [
+    syntheticType("core", { positive: [["核心信号", 10]] }),
+    syntheticType("other", { priority: 20 })
+  ];
+  const agentStages = [{ id: "raw", priority: 10, positive_phrases: [{ text: "阶段信号", weight: 8 }] }];
+  const base = {
+    problem_types: problemTypes,
+    agent_stages: agentStages,
+    safety_signals: []
+  };
+  const invalidSources = [
+    { ...base },
+    { ...base, route_keys: [] },
+    { ...base, route_keys: "core::raw", routes: [{ id: "core::raw" }] },
+    { ...base, route_keys: [null, "core::raw"] },
+    { ...base, route_keys: ["unknown::raw"] },
+    { ...base, route_keys: ["core::unknown"] }
+  ];
+
+  for (const data of invalidSources) {
+    const result = matchRoute({ query: "核心信号和阶段信号", routerData: data });
+    assert.equal(result.state, "clarify");
+    assert.equal(result.problemTypeId, null);
+    assert.equal(result.agentStageId, "raw");
+    assert.deepEqual(result.clarificationOptionIds, ["core", "other"]);
+  }
+
+  const routesFallback = matchRoute({
+    query: "核心信号和阶段信号",
+    routerData: { ...base, routes: [{ id: "core::raw" }] }
+  });
+  assert.equal(routesFallback.state, "matched");
+  assert.equal(routesFallback.agentStageId, "raw");
+});
+
+test("auxiliaries are route-filtered within the original second and third ranks without backfill", () => {
+  const result = matchRoute({
+    query: "核心信号第二信号第三信号第四信号",
+    routerData: syntheticRouterData([
+      syntheticType("core", { positive: [["核心信号", 10]] }),
+      syntheticType("second", { priority: 20, positive: [["第二信号", 7]] }),
+      syntheticType("third", { priority: 30, positive: [["第三信号", 6]] }),
+      syntheticType("fourth", { priority: 40, positive: [["第四信号", 6]] })
+    ], { routeKeys: ["core::intent", "third::intent", "fourth::intent"] })
+  });
+  assert.equal(result.state, "matched");
+  assert.deepEqual(result.auxiliaryProblemTypeIds, ["third"]);
+});
+
+test("all 80 real matched outputs and seven production regressions close to the 23-route matrix", () => {
+  const matched = goldenCases.map((entry) => ({ entry, result: runGoldenCase(entry) }))
+    .filter(({ result }) => result.state === "matched");
+  assert.equal(matched.length, 80);
+  for (const { entry, result } of matched) {
+    assert.ok(routeKeySet.has(`${result.problemTypeId}::${result.agentStageId}`), `${entry.id} core`);
+    for (const auxiliaryId of result.auxiliaryProblemTypeIds) {
+      assert.ok(routeKeySet.has(`${auxiliaryId}::${result.agentStageId}`), `${entry.id} auxiliary ${auxiliaryId}`);
+    }
+  }
+
+  const regressions = matched.filter(({ entry }) => entry.id.startsWith("production-regression-"));
+  assert.equal(regressions.length, 7);
+  const communicationRegression = regressions.find(({ entry }) => entry.id === "production-regression-05").result;
+  assert.equal(communicationRegression.problemTypeId, "communication");
+  assert.equal(communicationRegression.agentStageId, "synthesis");
+  assert.ok(routeKeySet.has("communication::synthesis"));
+});
+
 test("safety precedence is stable across input array order and covers all four signal classes", () => {
   const cases = [
     ["我正在伤害自己，请诊断我的症状，法律期限明天到期，也把全部积蓄马上买入", "immediate_personal_danger"],
@@ -308,7 +423,7 @@ test("unknown safety signal collisions fall back to ASCII id independent of arra
   for (const safetySignals of [unknownSignals, [...unknownSignals].reverse()]) {
     const result = matchRoute({
       query: "发生未知风险",
-      routerData: syntheticRouterData([], { safetySignals })
+      routerData: syntheticRouterData([], { routeKeys: [], safetySignals })
     });
     assert.equal(result.state, "safety_stop");
     assert.equal(result.safetySignalId, "alpha");
@@ -402,7 +517,7 @@ test("double-negation marker window accepts four intervening characters and reje
   const data = syntheticRouterData([
     syntheticType("target", { positive: [["目标", 8]], negative: [["不需要目标", 10]] }),
     syntheticType("other", { priority: 20 })
-  ]);
+  ], { routeKeys: ["target::intent", "other::intent"] });
   const withinBoundary = matchRoute({ query: "不是甲乙丙丁不需要目标而是目标", routerData: data });
   assert.equal(withinBoundary.state, "matched");
   assert.equal(withinBoundary.problemTypeId, "target");
@@ -453,7 +568,7 @@ test("the tightest same-end candidate prevents marker text from becoming a negat
   const data = syntheticRouterData([
     syntheticType("target", { positive: [["目标", 8]], negative: [["不需要目标", 10]] }),
     syntheticType("other", { priority: 20 })
-  ]);
+  ], { routeKeys: ["target::intent", "other::intent"] });
   const result = matchRoute({ query: "不甲不是不需要目标", routerData: data });
   assert.equal(result.state, "matched");
   assert.equal(result.problemTypeId, "target");

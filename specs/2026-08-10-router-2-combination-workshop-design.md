@@ -292,18 +292,24 @@ score = 正向精确短语权重之和
 - 明确阶段信号命中时选择最高分阶段。
 - 并列时使用 Router 数据中的稳定优先级。
 - 没有阶段信号时使用 `intent`。
+- 上述结果是 raw stage；`matched` 还必须闭合到已策展的 23 条稀疏路由矩阵。可用 route keys 优先读取 compact payload 的 `route_keys`，否则从 canonical full data 的 `routes[*].id` 派生；不得在两者都缺失或无效时静默跳过闭合。
+- 若核心类型的 `${problemTypeId}::${rawStage}` 存在，保留 raw stage；否则只在该核心类型已有的策展 route stages 中，按 `agentStages.priority` 升序、阶段 ID ASCII 升序选择第一个稳定 fallback。
+- 若核心类型没有任何可用 route，返回 `clarify`，保留 raw stage 与既有澄清选项，不得返回无法解析的 `matched` 或伪造 route。`clarify` 本身继续使用 raw stage，`idle`、`needs_input` 与 `safety_stop` 不变。
 - 页面必须显示阶段名称，不能再把同问题类型的所有阶段无序合并。
 
 ### 7.7 模型与 Chain 解析
 
-匹配器只返回 `{problemType, agentStage, evidence}`。构建时验证过的路由索引负责把它解析为：
+匹配器只返回 `{problemType, agentStage, evidence}`。对 `matched`，返回的核心 `${problemType}::${agentStage}` 必须已存在于 23 条策展路由中；构建时验证过的路由索引负责把它解析为：
 
 - `recommended_roles`
 - 稳定 `model_ids`
 - 可空 `chain_id`
 
 核心路由的 `chain_id` 成为唯一核心组合。若为空，结果页明确显示“当前没有已策展的完整组合”，
-不借用其他阶段的 Chain。辅助路由只补充模型和角色，不同时启动第二条 Chain。
+不借用其他阶段的 Chain。辅助候选仍只取问题类型原排名第二、第三名且分数至少 6；再只保留
+`${auxiliaryProblemTypeId}::${resolvedCoreStage}` 已存在的项，维持原顺序、最多两个且不向后扫描补位。
+辅助路由只补充模型和角色，不同时启动第二条 Chain。该闭合规则不新增空 route，也不改变 23 条
+策展路由计数。
 
 ## 8. 组合工坊
 

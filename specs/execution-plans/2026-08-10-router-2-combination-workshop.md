@@ -287,7 +287,7 @@ export function matchRoute({ query, shortcutIntentId = null, routerData }) {}
 
 构成严格为：8 类 × 8 条单意图 = 64；多目标 16；低信息/歧义/高风险 16。中文口语、书面语、否定表达、ASCII 大小写、全角标点分别进入不同 case；7 条线上复现输入使用 `production-regression-01` 至 `07` 固定 ID，包含在上述 96 条内而不是额外计数。
 
-测试逐条验证状态、核心类型、阶段、辅助不超过 2、禁止类型未出现；再聚合验证单意图 Top-1 ≥ 85%、多目标核心 ≥ 80%、低信息/歧义/高风险 100% 为 `clarify` 或 `safety_stop`。
+测试逐条验证状态、核心类型、阶段、辅助不超过 2、禁止类型未出现；每个 `matched` 的核心和辅助 `${problemTypeId}::${agentStageId}` 还必须存在于冻结的 23 个 route keys。真实 96 集应保持 80 个 `matched` 全部 route-closed，7 条生产回归均不得形成 controller 的 `unavailable` 前置条件，其中“讲不清重点”固定解析到 `communication::synthesis`。再聚合验证单意图 Top-1 ≥ 85%、多目标核心 ≥ 80%、低信息/歧义/高风险 100% 为 `clarify` 或 `safety_stop`。
 
 - [ ] **Step 2：运行 RED**
 
@@ -303,7 +303,7 @@ rtk node --test tests/router-engine.test.mjs
 
 只有负向短语使用有界否定作用域：内部规范化保留标点形成的硬分句边界，普通空白可忽略，且不得改变公开 `normalizeRouterText()` 返回合同。负向短语只能在同一分句内精确命中，或按字符顺序作为 subsequence 命中；从首字符到末字符的总额外插入字符最多 4。反转判断前只保留 inclusion-minimal 的最紧候选：若候选 A 严格包含候选 B，则丢弃 A；相同末端时丢弃起点更早的外层候选，防止 marker 中的字符被重新解释为负向起点。候选按起点升序生成，以从右向左维护最小末端的线性扫描完成筛选。若候选起点前同一分句内存在 `不是`、`并非` 或 `并不是`，且 marker 末尾到候选起点之间最多 4 个字符，该候选视为双重否定反转，不计负分。marker 和负向短语均不得跨标点。最紧候选集合中任一未反转候选即可计负分，整条 phrase 仍最多计一次。正向、示例、快捷意图与安全信号保持既有匹配规则。
 
-`matched` 条件固定为第一名 ≥8 且存在正向或快捷命中；第一名 <8，或前两名都 ≥6 且分差 <2 时为 `clarify`；辅助只取分数 ≥6 的第二、第三名。排序为分数降序、`priority` 升序、ASCII `id` 升序。安全门先于普通评分；阶段无命中时固定为 `intent`。
+`matched` 条件固定为第一名 ≥8 且存在正向或快捷命中；第一名 <8，或前两名都 ≥6 且分差 <2 时为 `clarify`。先按既有阶段信号得到 raw stage；可用 route keys 优先取 compact payload 的 `route_keys`，否则从 canonical full data 的 `routes[*].id` 派生。若核心 `${problemTypeId}::${rawStage}` 存在则保留；否则仅在该核心已有 route stages 中按 `agentStages.priority` 升序、ASCII stage ID 升序选择第一个 fallback。核心没有任何 route 时返回保留 raw stage 与既有选项的 `clarify`，禁止无法解析的 `matched`。辅助仍只考察原排名第二、第三名且分数 ≥6 的项，再过滤出 `${auxiliaryProblemTypeId}::${resolvedCoreStage}` 存在者，维持顺序、最多 2 且不向后补位。排序为分数降序、`priority` 升序、ASCII `id` 升序。安全门先于普通评分；`clarify` 使用 raw stage，`idle`、`needs_input`、`safety_stop` 不变。该规则不新增 route，冻结计数仍为 23。
 
 内核不得读取 DOM、`window`、时间、随机数、locale 排序或任何存储。
 
@@ -349,7 +349,7 @@ export function createRouterController({ root, matcher = matchRoute }) {}
 export function bootRouter(root = document) {}
 ```
 
-控制器只消费已构建的 compact payload 和预渲染节点。它不得拼接 `innerHTML`；用户输入、状态和解释只写 `textContent`、`value`、`hidden`、ARIA attribute。路由详情通过 `data-route-key="problem::stage"` 查找并显隐，澄清选项通过 `data-clarify-option="problem"` 查找并显隐。
+控制器只消费已构建的 compact payload 和预渲染节点。compact payload 的 23 个 `route_keys` 同时是匹配器优先使用的稀疏矩阵；Task 2 已保证正常 `matched` 的核心与辅助全部闭合到同一个 resolved core stage，控制器仍独立 fail-closed 校验 route card 是否存在。它不得拼接 `innerHTML`；用户输入、状态和解释只写 `textContent`、`value`、`hidden`、ARIA attribute。路由详情通过 `data-route-key="problem::stage"` 查找并显隐，澄清选项通过 `data-clarify-option="problem"` 查找并显隐。
 
 - [ ] **Step 1：先建立不依赖 jsdom 的 DOM 合同测试**
 
@@ -359,7 +359,7 @@ export function bootRouter(root = document) {}
 
 - 初始化 `idle`，示例/快捷项可见，结果区隐藏。
 - 空输入或少于 2 个有效字符进入 `needs_input`，焦点留在输入，不滚动。
-- `matched` 只显示一个 core route、最多两个 auxiliary route，标题获得程序焦点且 `aria-live` 只写一句。
+- `matched` 只显示一个 core route、最多两个同 resolved core stage 且存在于 23 个 route keys 的 auxiliary route；标题获得程序焦点且 `aria-live` 只写一句。96 条真实输入中的 80 个 `matched` 与 7 条生产回归不得因 route card 缺失进入 `unavailable`。
 - `clarify` 一次只显示 2–4 个按钮；点击一次后重跑；第二次仍不足则显示八类快捷入口，不继续递归追问。
 - `safety_stop` 隐藏所有 route/chain 卡，只显示对应边界与“整理事实与问题清单”。
 - reset 清空输入、快捷选择、澄清计数和结果，回到 `idle`。

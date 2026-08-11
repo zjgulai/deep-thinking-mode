@@ -211,6 +211,37 @@ function clarificationOptions(rankedProblemTypes) {
   return options;
 }
 
+function availableRouteKeys(routerData) {
+  const source = Object.prototype.hasOwnProperty.call(routerData, "route_keys")
+    ? routerData.route_keys
+    : Array.isArray(routerData.routes)
+      ? routerData.routes.map((route) => route?.id)
+      : null;
+  if (!Array.isArray(source) || source.length === 0) return new Set();
+
+  const problemTypeIds = new Set((routerData.problem_types ?? []).map(({ id }) => id));
+  const agentStageIds = new Set((routerData.agent_stages ?? []).map(({ id }) => id));
+  const keys = new Set();
+  for (const key of source) {
+    if (typeof key !== "string") return new Set();
+    const parts = key.split("::");
+    if (
+      parts.length !== 2
+      || !problemTypeIds.has(parts[0])
+      || !agentStageIds.has(parts[1])
+      || keys.has(key)
+    ) return new Set();
+    keys.add(key);
+  }
+  return keys;
+}
+
+function resolveCoreStage({ problemTypeId, rawStageId, routeKeys, agentStages }) {
+  if (routeKeys.has(`${problemTypeId}::${rawStageId}`)) return rawStageId;
+  return (agentStages ?? []).filter(({ id }) => routeKeys.has(`${problemTypeId}::${id}`))
+    .sort((left, right) => left.priority - right.priority || compareAscii(left.id, right.id))[0]?.id ?? null;
+}
+
 export function matchRoute({ query, shortcutIntentId = null, routerData }) {
   if (query == null && shortcutIntentId == null) return emptyResult("idle");
 
@@ -253,11 +284,28 @@ export function matchRoute({ query, shortcutIntentId = null, routerData }) {
     };
   }
 
+  const routeKeys = availableRouteKeys(routerData);
+  const resolvedAgentStageId = resolveCoreStage({
+    problemTypeId: first.id,
+    rawStageId: agentStageId,
+    routeKeys,
+    agentStages: routerData.agent_stages
+  });
+  if (resolvedAgentStageId === null) {
+    return {
+      ...emptyResult("clarify"),
+      agentStageId,
+      clarificationOptionIds: clarificationOptions(rankedProblemTypes)
+    };
+  }
+
   return {
     state: "matched",
     problemTypeId: first.id,
-    auxiliaryProblemTypeIds: rankedProblemTypes.slice(1, 3).filter(({ score }) => score >= 6).map(({ id }) => id),
-    agentStageId,
+    auxiliaryProblemTypeIds: rankedProblemTypes.slice(1, 3)
+      .filter(({ id, score }) => score >= 6 && routeKeys.has(`${id}::${resolvedAgentStageId}`))
+      .map(({ id }) => id),
+    agentStageId: resolvedAgentStageId,
     evidence: {
       matchedPositivePhrases: first.matchedPositivePhrases,
       matchedNegativePhrases: first.matchedNegativePhrases,
