@@ -1,4 +1,4 @@
-import { matchRoute, normalizeRouterText, scoreProblemTypes } from "./router-engine.mjs";
+import { matchRoute, normalizeRouterText } from "./router-engine.mjs";
 
 const PROBLEM_TYPE_IDS = Object.freeze([
   "diagnosis",
@@ -60,6 +60,7 @@ const AGENT_STAGE_ID_SET = new Set(AGENT_STAGE_IDS);
 const SAFETY_SIGNAL_ID_SET = new Set(SAFETY_SIGNAL_IDS);
 const ROUTE_KEY_SET = new Set(ROUTE_KEYS);
 const CONTROLLERS = new WeakMap();
+const CONTROLLER_SNAPSHOTS = new WeakMap();
 
 const TOP_KEYS = new Set(["schema_version", "problem_types", "agent_stages", "safety_signals", "route_keys"]);
 const PROBLEM_TYPE_KEYS = new Set(["id", "label", "priority", "positive_phrases", "negative_phrases", "examples", "clarify_label"]);
@@ -213,6 +214,24 @@ function all(root, selector) {
   return [...root.querySelectorAll(selector)];
 }
 
+function collectSelectorNodes(root) {
+  return Object.fromEntries(
+    Object.entries(SELECTORS).map(([name, selector]) => [name, all(root, selector)])
+  );
+}
+
+function createSelectorSnapshot(selectorNodes) {
+  return Object.freeze(
+    Object.keys(SELECTORS).map((name) => Object.freeze([...selectorNodes[name]]))
+  );
+}
+
+function selectorSnapshotsEqual(actual, expected) {
+  return Array.isArray(actual)
+    && actual.length === expected.length
+    && actual.every((nodes, index) => arraysEqual(nodes, expected[index]));
+}
+
 function exactNodeCollection(nodes, attribute, expectedIds) {
   return nodes.length === expectedIds.length
     && nodes.every((node, index) => node.getAttribute(attribute) === expectedIds[index]);
@@ -233,7 +252,7 @@ function validateEvidence(evidence) {
     && (evidence.shortcutIntentId === null || PROBLEM_TYPE_ID_SET.has(evidence.shortcutIntentId));
 }
 
-function validateMatchResult(result, payload, request) {
+function validateMatchResult(result) {
   if (
     !hasExactKeys(result, RESULT_KEYS)
     || !validateEvidence(result.evidence)
@@ -283,44 +302,46 @@ function validateMatchResult(result, payload, request) {
     || result.safetySignalId !== null
   ) return false;
 
-  const sourceEntry = scoreProblemTypes({
-    query: request.query,
-    shortcutIntentId: request.shortcutIntentId,
-    problemTypes: payload.problem_types
-  })[0];
-  const expectedShortcutEvidence = sourceEntry?.shortcutMatched ? request.shortcutIntentId : null;
-  const hasMatchEvidence = (sourceEntry?.matchedPositivePhrases.length ?? 0) > 0
-    || sourceEntry?.shortcutMatched === true;
-  return sourceEntry?.id === result.problemTypeId
-    && sourceEntry.score >= 8
-    && hasMatchEvidence
-    && arraysEqual(result.evidence.matchedPositivePhrases, sourceEntry.matchedPositivePhrases)
-    && arraysEqual(result.evidence.matchedNegativePhrases, sourceEntry.matchedNegativePhrases)
-    && result.evidence.closestExample === sourceEntry.closestExample
-    && result.evidence.shortcutIntentId === expectedShortcutEvidence;
+  return true;
+}
+
+function matchResultsEqual(actual, expected) {
+  return actual.state === expected.state
+    && actual.problemTypeId === expected.problemTypeId
+    && arraysEqual(actual.auxiliaryProblemTypeIds, expected.auxiliaryProblemTypeIds)
+    && actual.agentStageId === expected.agentStageId
+    && arraysEqual(actual.evidence.matchedPositivePhrases, expected.evidence.matchedPositivePhrases)
+    && arraysEqual(actual.evidence.matchedNegativePhrases, expected.evidence.matchedNegativePhrases)
+    && actual.evidence.closestExample === expected.evidence.closestExample
+    && actual.evidence.shortcutIntentId === expected.evidence.shortcutIntentId
+    && arraysEqual(actual.clarificationOptionIds, expected.clarificationOptionIds)
+    && actual.safetySignalId === expected.safetySignalId;
 }
 
 export function createRouterController({ root, matcher = matchRoute }) {
+  const selectorNodes = collectSelectorNodes(root);
+  const selectorSnapshot = createSelectorSnapshot(selectorNodes);
   const existing = CONTROLLERS.get(root);
-  if (existing) return existing;
+  if (existing && selectorSnapshotsEqual(CONTROLLER_SNAPSHOTS.get(root), selectorSnapshot)) return existing;
+  if (existing) existing.destroy();
 
-  const payloadNodes = all(root, SELECTORS.payload);
-  const forms = all(root, SELECTORS.form);
-  const inputs = all(root, SELECTORS.input);
-  const liveNodes = all(root, SELECTORS.live);
-  const hintNodes = all(root, SELECTORS.hint);
-  const titleNodes = all(root, SELECTORS.title);
-  const exampleNodes = all(root, SELECTORS.examples);
-  const shortcutContainers = all(root, SELECTORS.shortcuts);
-  const resultContainers = all(root, SELECTORS.results);
-  const clarifyContainers = all(root, SELECTORS.clarify);
-  const clarifyQuestionNodes = all(root, SELECTORS.clarifyQuestion);
-  const safetyContainers = all(root, SELECTORS.safety);
-  const safetyFactNodes = all(root, SELECTORS.safetyFacts);
-  const unavailableNodes = all(root, SELECTORS.unavailable);
-  const copyButtons = all(root, SELECTORS.copy);
-  const copyStatusNodes = all(root, SELECTORS.copyStatus);
-  const copyTextNodes = all(root, SELECTORS.copyText);
+  const payloadNodes = selectorNodes.payload;
+  const forms = selectorNodes.form;
+  const inputs = selectorNodes.input;
+  const liveNodes = selectorNodes.live;
+  const hintNodes = selectorNodes.hint;
+  const titleNodes = selectorNodes.title;
+  const exampleNodes = selectorNodes.examples;
+  const shortcutContainers = selectorNodes.shortcuts;
+  const resultContainers = selectorNodes.results;
+  const clarifyContainers = selectorNodes.clarify;
+  const clarifyQuestionNodes = selectorNodes.clarifyQuestion;
+  const safetyContainers = selectorNodes.safety;
+  const safetyFactNodes = selectorNodes.safetyFacts;
+  const unavailableNodes = selectorNodes.unavailable;
+  const copyButtons = selectorNodes.copy;
+  const copyStatusNodes = selectorNodes.copyStatus;
+  const copyTextNodes = selectorNodes.copyText;
   const singletonCollections = [
     payloadNodes,
     forms,
@@ -361,15 +382,22 @@ export function createRouterController({ root, matcher = matchRoute }) {
     copyText
   ] = requiredNodes;
   const payload = parseRouterPayload(payloadNode);
-  const routeCards = all(root, SELECTORS.route);
-  const shortcutButtons = all(root, SELECTORS.shortcut);
-  const clarifyButtons = all(root, SELECTORS.clarifyOption);
-  const safetyPanels = all(root, SELECTORS.safetySignal);
+  const routeCards = selectorNodes.route;
+  const shortcutButtons = selectorNodes.shortcut;
+  const clarifyButtons = selectorNodes.clarifyOption;
+  const safetyPanels = selectorNodes.safetySignal;
   const view = root.defaultView;
   const copyButtonLabel = copyButton?.textContent ?? "";
+  const contractNodes = [
+    ...requiredNodes,
+    ...shortcutButtons,
+    ...clarifyButtons,
+    ...safetyPanels,
+    ...routeCards
+  ];
 
   const domReady = singletonCollections.every((nodes) => nodes.length === 1)
-    && new Set(requiredNodes).size === requiredNodes.length
+    && new Set(contractNodes).size === contractNodes.length
     && exactNodeCollection(shortcutButtons, "data-shortcut-intent", PROBLEM_TYPE_IDS)
     && exactNodeCollection(clarifyButtons, "data-clarify-option", PROBLEM_TYPE_IDS)
     && exactNodeCollection(safetyPanels, "data-safety-signal", SAFETY_SIGNAL_IDS)
@@ -568,8 +596,14 @@ export function createRouterController({ root, matcher = matchRoute }) {
         shortcutIntentId: selectedShortcutIntentId,
         routerData: payload
       };
-      match = matcher(request);
-      if (!validateMatchResult(match, payload, request) || !hasRequiredResultTargets(match)) {
+      const reference = matchRoute(request);
+      match = matcher === matchRoute ? reference : matcher(request);
+      if (
+        !validateMatchResult(reference)
+        || !validateMatchResult(match)
+        || !matchResultsEqual(match, reference)
+        || !hasRequiredResultTargets(match)
+      ) {
         showUnavailable();
         return;
       }
@@ -679,7 +713,10 @@ export function createRouterController({ root, matcher = matchRoute }) {
       view.removeEventListener("pagehide", handlePageHide);
       view.removeEventListener("pageshow", handlePageShow);
     }
-    if (CONTROLLERS.get(root) === controller) CONTROLLERS.delete(root);
+    if (CONTROLLERS.get(root) === controller) {
+      CONTROLLERS.delete(root);
+      CONTROLLER_SNAPSHOTS.delete(root);
+    }
   }
 
   const controller = Object.freeze({ reset, destroy });
@@ -698,6 +735,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
   else showUnavailable();
 
   CONTROLLERS.set(root, controller);
+  CONTROLLER_SNAPSHOTS.set(root, selectorSnapshot);
   return controller;
 }
 

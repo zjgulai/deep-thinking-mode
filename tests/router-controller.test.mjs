@@ -9,6 +9,7 @@ import {
   createRouterController,
   parseRouterPayload
 } from "../tools/site-assets/router-controller.mjs";
+import { matchRoute } from "../tools/site-assets/router-engine.mjs";
 import {
   FakeRouterNode,
   createFakeRouterDom,
@@ -17,6 +18,7 @@ import {
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ROUTER_SOURCE = JSON.parse(await readFile(join(ROOT, "chain-protocols/agent-router-index.json"), "utf8"));
+const GOLDEN_CASES = JSON.parse(await readFile(join(ROOT, "tests/fixtures/router/router-golden-cases.json"), "utf8"));
 const ROUTER_DATA = {
   schema_version: ROUTER_SOURCE.schema_version,
   problem_types: ROUTER_SOURCE.problem_types,
@@ -61,6 +63,12 @@ function controllerFixture(options = {}) {
   };
   const controller = createRouterController({ root: dom.root, matcher });
   return { ...dom, calls, controller };
+}
+
+function visibleRouteKeys(nodes) {
+  return nodes.routeCards
+    .filter((card) => !card.hidden)
+    .map((card) => card.getAttribute("data-route-key"));
 }
 
 test("parseRouterPayload accepts the real compact 8x8x4 Router payload", () => {
@@ -181,26 +189,17 @@ test("empty or one-character submissions enter needs_input, keep input focus, an
 });
 
 test("matched shows one exact core route and at most two exact auxiliary routes, then focuses and scrolls the title", () => {
-  const matched = result("matched", {
-    problemTypeId: "diagnosis",
-    auxiliaryProblemTypeIds: ["planning", "decision"],
-    agentStageId: "intent",
-    evidence: {
-      ...result("idle").evidence,
-      matchedPositivePhrases: ["原因"]
-    }
-  });
-  const { nodes } = controllerFixture({ matcher: () => matched });
-  nodes.input.value = "项目延期需要找原因";
+  const { nodes } = controllerFixture({ matcher: matchRoute });
+  nodes.input.value = "研究两个方案后做出选择和取舍";
   dispatch(nodes.form, "submit");
 
   assert.deepEqual(
-    nodes.routeCards.filter((card) => !card.hidden).map((card) => card.getAttribute("data-route-key")),
-    ["diagnosis::intent", "planning::intent", "decision::intent"]
+    visibleRouteKeys(nodes),
+    ["planning::intent", "decision::intent", "research::intent"]
   );
   assert.deepEqual(
     nodes.routeCards.filter((card) => !card.hidden).map((card) => card.getAttribute("data-route-kind")),
-    ["core", "auxiliary", "auxiliary"]
+    ["auxiliary", "core", "auxiliary"]
   );
   assert.equal(nodes.routeCards.find((card) => card.getAttribute("data-route-key") === "diagnosis::cot_step").hidden, true);
   assert.equal(nodes.live.textContent, "已匹配 3 条路径");
@@ -211,37 +210,25 @@ test("matched shows one exact core route and at most two exact auxiliary routes,
 test("matched respects reduced motion by using auto scrolling", () => {
   const { nodes } = controllerFixture({
     reducedMotion: true,
-    matcher: () => result("matched", {
-      problemTypeId: "planning",
-      agentStageId: "planning",
-      evidence: {
-        ...result("idle").evidence,
-        matchedPositivePhrases: ["计划"]
-      }
-    })
+    matcher: matchRoute
   });
-  nodes.input.value = "需要创新计划";
+  nodes.input.value = "需要制定计划，把任务排优先级";
   dispatch(nodes.form, "submit");
   assert.deepEqual(nodes.title.scrollCalls, [{ behavior: "auto", block: "start" }]);
 });
 
-test("clarify shows only two to four options, reruns once, then falls back to all shortcuts without recursion", () => {
-  const responses = [
-    result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "planning", "decision", "creative"] }),
-    result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "planning"] })
-  ];
-  const { nodes, calls } = controllerFixture({ matcher: (request) => responses.shift() });
+test("clarify shows the canonical options and one button answer reruns exactly once", () => {
+  const { nodes, calls } = controllerFixture({ matcher: matchRoute });
   nodes.input.value = "有点乱";
   dispatch(nodes.form, "submit");
 
   assert.equal(nodes.live.textContent, "需要澄清");
-  assert.deepEqual(nodes.clarifyButtons.filter((button) => !button.hidden).map((button) => button.getAttribute("data-clarify-option")), ["diagnosis", "planning", "decision", "creative"]);
+  assert.deepEqual(nodes.clarifyButtons.filter((button) => !button.hidden).map((button) => button.getAttribute("data-clarify-option")), ["diagnosis", "planning"]);
   dispatch(nodes.clarifyButtons[1], "click");
   assert.equal(calls.length, 2);
   assert.equal(calls[1].shortcutIntentId, "planning");
   assert.equal(nodes.clarify.hidden, true);
-  assert.equal(nodes.shortcuts.hidden, false);
-  assert.ok(nodes.shortcutButtons.every((button) => !button.hidden));
+  assert.deepEqual(visibleRouteKeys(nodes), ["planning::intent"]);
 
   dispatch(nodes.clarifyButtons[0], "click");
   assert.equal(calls.length, 2);
@@ -312,36 +299,36 @@ test("a shortcut selects on first click and matches on a second click or later s
 });
 
 test("reset and pagehide clear input, shortcut state, clarification state, and visible results", () => {
-  const { nodes, view, calls } = controllerFixture({
-    matcher: () => result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "planning"] })
-  });
+  const { nodes, view, calls } = controllerFixture({ matcher: matchRoute });
   nodes.input.value = "有点乱";
-  dispatch(nodes.shortcutButtons[1], "click");
   dispatch(nodes.form, "submit");
-  dispatch(nodes.clarifyButtons[0], "click");
-  assert.equal(nodes.clarify.hidden, true);
+  assert.equal(nodes.clarify.hidden, false);
   dispatch(nodes.form, "reset");
   assert.equal(nodes.input.value, "");
   assert.ok(nodes.shortcutButtons.every((button) => button.getAttribute("aria-pressed") === "false"));
   assert.equal(nodes.examples.hidden, false);
   assert.equal(nodes.results.hidden, true);
 
-  nodes.input.value = "第二次";
+  dispatch(nodes.shortcutButtons[1], "click");
+  dispatch(nodes.form, "reset");
+  assert.ok(nodes.shortcutButtons.every((button) => button.getAttribute("aria-pressed") === "false"));
+
+  nodes.input.value = "有点乱";
   dispatch(nodes.form, "submit");
   assert.equal(nodes.clarify.hidden, false);
   dispatch(nodes.clarifyButtons[0], "click");
-  assert.equal(calls.length, 4);
+  assert.equal(calls.length, 3);
   view.dispatchEvent("pagehide");
   assert.equal(nodes.input.value, "");
   assert.ok(nodes.routeCards.every((card) => card.hidden));
   assert.ok(nodes.shortcutButtons.every((button) => button.getAttribute("aria-pressed") === "false"));
 
   view.dispatchEvent("pageshow");
-  nodes.input.value = "第三次";
+  nodes.input.value = "有点乱";
   dispatch(nodes.form, "submit");
   assert.equal(nodes.clarify.hidden, false);
   dispatch(nodes.clarifyButtons[0], "click");
-  assert.equal(calls.length, 6);
+  assert.equal(calls.length, 5);
 });
 
 test("missing, broken, or invalid payload fails closed without invoking the matcher", () => {
@@ -434,6 +421,53 @@ test("required singleton selectors cannot alias the same DOM node", () => {
   assert.equal(submitEvent.defaultPrevented, true);
   assert.equal(calls, 0);
   assert.equal(dom.nodes.unavailable.hidden, false);
+});
+
+test("contract nodes cannot alias across singleton, shortcut, clarify, safety, and route collections", () => {
+  const aliases = [
+    {
+      label: "form aliases diagnosis shortcut",
+      apply(dom) {
+        const shortcut = dom.nodes.shortcutButtons[0];
+        dom.root.children = dom.root.children.filter((child) => child !== shortcut);
+        dom.nodes.form.setAttribute("data-shortcut-intent", "diagnosis");
+      }
+    },
+    {
+      label: "diagnosis shortcut aliases diagnosis clarification",
+      apply(dom) {
+        const clarifyButton = dom.nodes.clarifyButtons[0];
+        dom.root.children = dom.root.children.filter((child) => child !== clarifyButton);
+        dom.nodes.shortcutButtons[0].setAttribute("data-clarify-option", "diagnosis");
+      }
+    },
+    {
+      label: "first safety panel aliases first route card",
+      apply(dom) {
+        const routeCard = dom.nodes.routeCards[0];
+        dom.root.children = dom.root.children.filter((child) => child !== routeCard);
+        dom.nodes.safetyPanels[0].setAttribute("data-route-key", "diagnosis::intent");
+      }
+    }
+  ];
+
+  for (const alias of aliases) {
+    const dom = createFakeRouterDom({ payload: ROUTER_DATA });
+    alias.apply(dom);
+    let calls = 0;
+    createRouterController({
+      root: dom.root,
+      matcher: (request) => {
+        calls += 1;
+        return matchRoute(request);
+      }
+    });
+    dom.nodes.input.value = "为什么失败了";
+    const submitEvent = dispatch(dom.nodes.form, "submit");
+    assert.equal(submitEvent.defaultPrevented, true, alias.label);
+    assert.equal(calls, 0, alias.label);
+    assert.equal(dom.nodes.unavailable.hidden, false, alias.label);
+  }
 });
 
 test("matcher throws and malformed frozen results fail closed without leaking partial UI", () => {
@@ -545,74 +579,161 @@ test("matched evidence must exactly equal the engine score entry for the current
   }
 });
 
+test("injected matcher results must equal the canonical engine result for the whole request", () => {
+  const cases = [
+    {
+      label: "8:8 ambiguity forged as matched",
+      query: "需要创新计划",
+      mutate: () => result("matched", {
+        problemTypeId: "planning",
+        agentStageId: "intent",
+        evidence: { ...result("idle").evidence, matchedPositivePhrases: ["计划"] }
+      })
+    },
+    {
+      label: "canonical auxiliary route omitted",
+      query: "这两个方案我该不该继续",
+      mutate: (reference) => ({ ...reference, auxiliaryProblemTypeIds: [] })
+    },
+    {
+      label: "canonical auxiliary route forged",
+      query: "这两个方案我该不该继续",
+      mutate: (reference) => ({ ...reference, auxiliaryProblemTypeIds: ["diagnosis"] })
+    },
+    {
+      label: "route-aware resolved stage changed",
+      query: "总结这轮工作",
+      mutate: (reference) => ({ ...reference, agentStageId: "synthesis" })
+    },
+    {
+      label: "canonical evidence changed",
+      query: "为什么失败了",
+      mutate: (reference) => ({
+        ...reference,
+        evidence: { ...reference.evidence, closestExample: ROUTER_DATA.problem_types[0].examples[0] }
+      })
+    },
+    {
+      label: "clarification order changed",
+      query: "有点乱",
+      mutate: (reference) => ({ ...reference, clarificationOptionIds: [...reference.clarificationOptionIds].reverse() })
+    },
+    {
+      label: "safety boundary changed",
+      query: "我正在伤害自己",
+      mutate: (reference) => ({ ...reference, safetySignalId: "medical_diagnosis_or_treatment" })
+    }
+  ];
+
+  for (const { label, query, mutate } of cases) {
+    const reference = matchRoute({ query, shortcutIntentId: null, routerData: ROUTER_DATA });
+    const { nodes } = controllerFixture({ matcher: () => mutate(reference) });
+    nodes.input.value = query;
+    dispatch(nodes.form, "submit");
+    assert.equal(nodes.unavailable.hidden, false, label);
+    assert.ok(nodes.routeCards.every((card) => card.hidden), label);
+    assert.equal(nodes.safety.hidden, true, label);
+  }
+});
+
+test("real compact payload renders all 96 golden engine cases without rejecting canonical matches", () => {
+  let matchedCount = 0;
+  let matchedUnavailableCount = 0;
+  const productionRegressionIds = new Set();
+
+  for (const goldenCase of GOLDEN_CASES) {
+    const dom = createFakeRouterDom({ payload: ROUTER_DATA });
+    const controller = createRouterController({ root: dom.root });
+    dom.nodes.input.value = goldenCase.input;
+    dispatch(dom.nodes.form, "submit");
+
+    if (goldenCase.expected_state === "matched") {
+      matchedCount += 1;
+      if (!dom.nodes.unavailable.hidden) matchedUnavailableCount += 1;
+      assert.ok(
+        visibleRouteKeys(dom.nodes).includes(`${goldenCase.expected_problem_type_id}::${goldenCase.expected_agent_stage_id}`),
+        goldenCase.id
+      );
+    } else if (goldenCase.expected_state === "clarify") {
+      assert.equal(dom.nodes.clarify.hidden, false, goldenCase.id);
+    } else {
+      assert.equal(dom.nodes.safety.hidden, false, goldenCase.id);
+    }
+
+    if (goldenCase.id.startsWith("production-regression-")) productionRegressionIds.add(goldenCase.id);
+    if (goldenCase.id === "production-regression-05") {
+      assert.ok(visibleRouteKeys(dom.nodes).includes("communication::synthesis"));
+    }
+    controller.destroy();
+  }
+
+  assert.equal(GOLDEN_CASES.length, 96);
+  assert.equal(matchedCount, 80);
+  assert.equal(matchedUnavailableCount, 0);
+  assert.equal(productionRegressionIds.size, 7);
+});
+
 test("a non-clarify terminal result starts a fresh clarification round", () => {
-  const clarifyResult = result("clarify", {
-    agentStageId: "intent",
-    clarificationOptionIds: ["diagnosis", "planning"]
-  });
   const terminals = [
-    result("matched", {
-      problemTypeId: "diagnosis",
-      auxiliaryProblemTypeIds: [],
-      agentStageId: "intent",
-      evidence: {
-        matchedPositivePhrases: ["为什么", "失败了"],
-        matchedNegativePhrases: [],
-        closestExample: null,
-        shortcutIntentId: null
-      }
-    }),
-    result("safety_stop", { safetySignalId: "immediate_personal_danger" }),
-    null,
-    result("needs_input")
+    { label: "matched", query: "为什么失败了" },
+    { label: "safety_stop", query: "我正在伤害自己" },
+    { label: "unavailable", query: "有效输入", invalid: true },
+    { label: "needs_input", query: "a" }
   ];
 
   for (const terminal of terminals) {
-    const responses = [clarifyResult, terminal, clarifyResult];
-    const { nodes, calls } = controllerFixture({ matcher: () => responses.shift() });
-    nodes.input.value = "为什么失败了";
+    let injectInvalid = false;
+    const { nodes, calls } = controllerFixture({
+      matcher: (request) => {
+        if (injectInvalid) {
+          injectInvalid = false;
+          return null;
+        }
+        return matchRoute(request);
+      }
+    });
+    nodes.input.value = "有点乱";
     dispatch(nodes.form, "submit");
-    assert.equal(nodes.clarify.hidden, false);
+    assert.equal(nodes.clarify.hidden, false, terminal.label);
+    nodes.input.value = terminal.query;
+    injectInvalid = terminal.invalid === true;
     dispatch(nodes.form, "submit");
+    nodes.input.value = "有点乱";
     dispatch(nodes.form, "submit");
     assert.equal(calls.length, 3);
-    assert.equal(nodes.clarify.hidden, false);
+    assert.equal(nodes.clarify.hidden, false, terminal.label);
     assert.equal(nodes.clarifyButtons.filter((button) => !button.hidden).length, 2);
     assert.equal(nodes.shortcuts.hidden, true);
   }
 });
 
 test("normal states hide unavailable and remain mutually exclusive across matched, safety, invalid, and needs_input", () => {
-  const responses = [
-    result("matched", {
-      problemTypeId: "diagnosis",
-      auxiliaryProblemTypeIds: ["planning"],
-      agentStageId: "intent",
-      evidence: { ...result("idle").evidence, matchedPositivePhrases: ["为什么", "失败了"] }
-    }),
-    result("safety_stop", { safetySignalId: "immediate_personal_danger" }),
-    null,
-    result("needs_input")
-  ];
-  const { nodes } = controllerFixture({ matcher: () => responses.shift() });
-  nodes.input.value = "为什么失败了";
+  let injectInvalid = false;
+  const { nodes } = controllerFixture({
+    matcher: (request) => injectInvalid ? null : matchRoute(request)
+  });
+  nodes.input.value = "这两个方案我该不该继续";
 
   dispatch(nodes.form, "submit");
   assert.equal(nodes.unavailable.hidden, true);
   assert.equal(nodes.results.hidden, false);
   assert.equal(nodes.routeCards.filter((card) => !card.hidden).length, 2);
 
+  nodes.input.value = "我正在伤害自己";
   dispatch(nodes.form, "submit");
   assert.equal(nodes.unavailable.hidden, true);
   assert.equal(nodes.results.hidden, true);
   assert.equal(nodes.safety.hidden, false);
   assert.ok(nodes.routeCards.every((card) => card.hidden));
 
+  injectInvalid = true;
   dispatch(nodes.form, "submit");
   assert.equal(nodes.unavailable.hidden, false);
   assert.equal(nodes.safety.hidden, true);
   assert.ok(nodes.routeCards.every((card) => card.hidden));
 
+  injectInvalid = false;
+  nodes.input.value = "a";
   dispatch(nodes.form, "submit");
   assert.equal(nodes.unavailable.hidden, true);
   assert.equal(nodes.results.hidden, true);
@@ -641,7 +762,7 @@ test("copy success reports completion while failure focuses and selects the comp
 });
 
 test("pagehide deactivates handlers and pageshow reactivates a clean controller", () => {
-  const { nodes, view, calls } = controllerFixture({ matcher: () => result("needs_input") });
+  const { nodes, view, calls } = controllerFixture({ matcher: matchRoute });
   nodes.input.value = "离页前输入";
   view.dispatchEvent("pagehide");
   assert.equal(nodes.input.value, "");
@@ -742,6 +863,42 @@ test("bootRouter is idempotent per root, destroy removes listeners, and reboot c
   nodes.input.value = "为什么失败了";
   dispatch(nodes.form, "submit");
   assert.equal(nodes.title.scrollCalls.length, 2);
+});
+
+test("bootRouter replaces an inert owner after missing DOM is repaired", () => {
+  const { root, nodes } = createFakeRouterDom({ payload: ROUTER_DATA, omit: ["input"] });
+  const inert = bootRouter(root);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+  assert.equal(nodes.unavailable.hidden, false);
+
+  root.children.push(nodes.input);
+  const repaired = bootRouter(root);
+  assert.notEqual(repaired, inert);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+  nodes.input.value = "为什么失败了";
+  const submitEvent = dispatch(nodes.form, "submit");
+  assert.equal(submitEvent.defaultPrevented, true);
+  assert.equal(nodes.unavailable.hidden, true);
+  assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"]);
+});
+
+test("bootRouter replaces a live owner when its form identity changes", () => {
+  const { root, nodes } = createFakeRouterDom({ payload: ROUTER_DATA });
+  const first = bootRouter(root);
+  const oldForm = nodes.form;
+  const replacementForm = new FakeRouterNode({ attributes: { "data-router-form": "" } });
+  root.children = root.children.map((child) => child === oldForm ? replacementForm : child);
+
+  const second = bootRouter(root);
+  assert.notEqual(second, first);
+  assert.equal(oldForm.listenerCount("submit"), 0);
+  assert.equal(oldForm.listenerCount("reset"), 0);
+  assert.equal(replacementForm.listenerCount("submit"), 1);
+  assert.equal(replacementForm.listenerCount("reset"), 1);
+  nodes.input.value = "为什么失败了";
+  const submitEvent = dispatch(replacementForm, "submit");
+  assert.equal(submitEvent.defaultPrevented, true);
+  assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"]);
 });
 
 test("createRouterController owns root lifecycle across direct create, boot, destroy, and reboot", () => {
