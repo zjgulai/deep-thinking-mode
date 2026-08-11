@@ -84,12 +84,16 @@ function boundedSubsequenceCandidates(clause, phrase) {
       if (end - start + 1 - phrase.length <= MAX_NEGATIVE_INSERTIONS) candidates.push({ start, end });
     }
   }
-  return candidates.filter((candidate) => !candidates.some((other) => (
-    other !== candidate
-    && other.start >= candidate.start
-    && other.end <= candidate.end
-    && (other.start > candidate.start || other.end < candidate.end)
-  )));
+  const minimalCandidates = [];
+  let minEnd = Number.POSITIVE_INFINITY;
+  for (let index = candidates.length - 1; index >= 0; index -= 1) {
+    const candidate = candidates[index];
+    if (candidate.end < minEnd) {
+      minimalCandidates.push(candidate);
+      minEnd = candidate.end;
+    }
+  }
+  return minimalCandidates.reverse();
 }
 
 function sequenceAt(characters, sequence, start) {

@@ -449,6 +449,43 @@ test("a later genuine negative candidate survives an earlier reversed candidate 
   assert.deepEqual(planning.matchedNegativePhrases, ["不需要规划下一步"]);
 });
 
+test("the tightest same-end candidate prevents marker text from becoming a negative start", () => {
+  const data = syntheticRouterData([
+    syntheticType("target", { positive: [["目标", 8]], negative: [["不需要目标", 10]] }),
+    syntheticType("other", { priority: 20 })
+  ]);
+  const result = matchRoute({ query: "不甲不是不需要目标", routerData: data });
+  assert.equal(result.state, "matched");
+  assert.equal(result.problemTypeId, "target");
+  assert.deepEqual(result.evidence.matchedNegativePhrases, []);
+});
+
+test("non-containing candidates with different ends remain independently eligible", () => {
+  const scored = scoreProblemTypes({
+    query: "不是不需要目标 后来不需要目标",
+    shortcutIntentId: null,
+    problemTypes: [syntheticType("target", {
+      positive: [["目标", 8]],
+      negative: [["不需要目标", 10]]
+    })]
+  })[0];
+  assert.equal(scored.score, 0);
+  assert.deepEqual(scored.matchedNegativePhrases, ["不需要目标"]);
+});
+
+test("multiple genuine minimal candidates count one negative phrase only once", () => {
+  const scored = scoreProblemTypes({
+    query: "不需要目标 后来仍不需要目标",
+    shortcutIntentId: null,
+    problemTypes: [syntheticType("target", {
+      positive: [["目标", 8]],
+      negative: [["不需要目标", 5]]
+    })]
+  })[0];
+  assert.equal(scored.score, 3);
+  assert.deepEqual(scored.matchedNegativePhrases, ["不需要目标"]);
+});
+
 test("router matches every golden case with bounded auxiliaries and no forbidden type", async (t) => {
   for (const entry of goldenCases) {
     await t.test(entry.id, () => {
