@@ -46,6 +46,8 @@ const NAVIGATION_ELEMENTS = new Set(["a", "area"]);
 const SAFE_NAVIGATION_SCHEMES = new Set(["https:", "mailto:", "tel:"]);
 const SCRIPT_NETWORK_PATTERN =
   /\b(?:fetch|XMLHttpRequest|WebSocket|EventSource|importScripts)\s*\(|\bnavigator\s*\.\s*sendBeacon\s*\(/i;
+const SCRIPT_STORAGE_PATTERN =
+  /\b(?:localStorage|sessionStorage|indexedDB)\s*(?:\.|\[)/i;
 const REMOTE_URL_PATTERN = /(?:https?:)?\/\/[^\s"'<>`)}]+/i;
 const ATTRIBUTE_PATTERN =
   /([^\s"'<>\/=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g;
@@ -511,7 +513,80 @@ function inspectMarkup({ markup, currentFile, fileSet, idsByFile, errors }) {
         ),
       );
     }
+    if (
+      !isDataScript &&
+      SCRIPT_STORAGE_PATTERN.test(javascriptCodeOnly(scriptMatch[2]))
+    ) {
+      errors.push(
+        error(
+          "STORAGE_CAPABLE_SCRIPT",
+          `${currentFile} contains inline script with a browser storage capability`,
+        ),
+      );
+    }
   }
+}
+
+function javascriptCodeOnly(script) {
+  let code = "";
+  let mode = "code";
+  for (let index = 0; index < script.length; index += 1) {
+    const character = script[index];
+    const next = script[index + 1];
+
+    if (mode === "code") {
+      if (character === "/" && next === "/") {
+        code += "  ";
+        index += 1;
+        mode = "line-comment";
+      } else if (character === "/" && next === "*") {
+        code += "  ";
+        index += 1;
+        mode = "block-comment";
+      } else if (character === "'" || character === '"' || character === "`") {
+        code += " ";
+        mode = character;
+      } else {
+        code += character;
+      }
+      continue;
+    }
+
+    if (mode === "line-comment") {
+      if (character === "\n") {
+        code += "\n";
+        mode = "code";
+      } else {
+        code += " ";
+      }
+      continue;
+    }
+
+    if (mode === "block-comment") {
+      if (character === "*" && next === "/") {
+        code += "  ";
+        index += 1;
+        mode = "code";
+      } else {
+        code += character === "\n" ? "\n" : " ";
+      }
+      continue;
+    }
+
+    if (character === "\\") {
+      code += " ";
+      if (index + 1 < script.length) {
+        code += script[index + 1] === "\n" ? "\n" : " ";
+        index += 1;
+      }
+    } else if (character === mode) {
+      code += " ";
+      mode = "code";
+    } else {
+      code += character === "\n" ? "\n" : " ";
+    }
+  }
+  return code;
 }
 
 function inspectScript(script, relativePath, errors) {
@@ -520,6 +595,14 @@ function inspectScript(script, relativePath, errors) {
       error(
         "NETWORK_CAPABLE_SCRIPT",
         `${relativePath} contains a remote/network capability`,
+      ),
+    );
+  }
+  if (SCRIPT_STORAGE_PATTERN.test(javascriptCodeOnly(script))) {
+    errors.push(
+      error(
+        "STORAGE_CAPABLE_SCRIPT",
+        `${relativePath} contains a browser storage capability`,
       ),
     );
   }

@@ -589,8 +589,10 @@ rtk git commit -m "feat: 建设五条思维组合协议工坊"
 - Modify: `manuals/RELEASE_CHECKLIST.md`
 - Modify: `deploy/tencent-cloud/xmind-site/.dockerignore`
 - Modify: `deploy/tencent-cloud/xmind-site/RUNBOOK.md`
+- Modify: `tools/check-public-artifact.mjs`
 - Modify: `tests/public-artifact.test.mjs`
 - Modify: `tests/production-verifier.test.mjs`
+- Modify: `specs/execution-plans/2026-08-10-router-2-combination-workshop.md`
 
 - [ ] **Step 1：先写发布边界 RED 测试**
 
@@ -635,7 +637,7 @@ rtk git diff --check
 - [ ] **Step 6：精确提交 Task 6**
 
 ```bash
-rtk git add README.md manuals/USER_GUIDE.md manuals/CAPABILITY_MAP.md manuals/RELEASE_CHECKLIST.md deploy/tencent-cloud/xmind-site/.dockerignore deploy/tencent-cloud/xmind-site/RUNBOOK.md tests/public-artifact.test.mjs tests/production-verifier.test.mjs
+rtk git add README.md manuals/USER_GUIDE.md manuals/CAPABILITY_MAP.md manuals/RELEASE_CHECKLIST.md deploy/tencent-cloud/xmind-site/.dockerignore deploy/tencent-cloud/xmind-site/RUNBOOK.md tools/check-public-artifact.mjs tests/public-artifact.test.mjs tests/production-verifier.test.mjs specs/execution-plans/2026-08-10-router-2-combination-workshop.md
 rtk git diff --cached --check
 rtk git commit -m "docs: 补齐 Router 与组合工坊发布说明"
 ```

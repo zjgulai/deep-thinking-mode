@@ -121,6 +121,130 @@ function fetchUrlEsm(url, maxRedirects = 5) {
 const LOCAL_HTML = Buffer.from("<!DOCTYPE html><html><body>hello</body></html>", "utf8");
 const LOCAL_DIGEST = sha256(LOCAL_HTML);
 
+const RELEASE_FIXTURE = {
+  "index.html": Buffer.from(
+    `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="${META_CONTENT_SECURITY_POLICY}"></head><body><a href="combinations/">combinations</a></body></html>`,
+  ),
+  "combinations/index.html": Buffer.from(
+    `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="${META_CONTENT_SECURITY_POLICY}"></head><body><a href="cot-critic-chain.html#phases">detail</a></body></html>`,
+  ),
+  "combinations/cot-critic-chain.html": Buffer.from(
+    `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="${META_CONTENT_SECURITY_POLICY}"><script type="module" src="../assets/router-controller.mjs"></script></head><body><main id="phases">phases</main></body></html>`,
+  ),
+  "assets/router-engine.mjs": Buffer.from(
+    'export function matchRoute() { return { state: "matched" }; }\n',
+  ),
+  "assets/router-controller.mjs": Buffer.from(
+    'import { matchRoute } from "./router-engine.mjs";\nexport const result = matchRoute();\n',
+  ),
+};
+
+function fixtureContentType(relativePath) {
+  return relativePath.endsWith(".html")
+    ? "text/html; charset=utf-8"
+    : "application/javascript; charset=utf-8";
+}
+
+async function withReleaseFixture(fault, assertion) {
+  const rootDir = await mkdtemp(join(tmpdir(), "production-release-fixture-"));
+  const siteDir = join(rootDir, "site");
+  for (const [relativePath, body] of Object.entries(RELEASE_FIXTURE)) {
+    const absolutePath = join(siteDir, relativePath);
+    await mkdir(join(absolutePath, ".."), { recursive: true });
+    await writeFile(absolutePath, body);
+  }
+
+  const { server, url } = await startServer((req, res) => {
+    const requestedPath = decodeURIComponent(new URL(req.url, "http://fixture.test").pathname);
+    const redirectedPrefix = "/redirected/";
+    const isRedirectTarget = requestedPath.startsWith(redirectedPrefix);
+    const relativePath = isRedirectTarget
+      ? requestedPath.slice(redirectedPrefix.length)
+      : requestedPath === "/"
+        ? "index.html"
+        : requestedPath.slice(1);
+    const localBody = RELEASE_FIXTURE[relativePath];
+
+    if (relativePath === fault.relativePath && !isRedirectTarget) {
+      if (fault.kind === "404") {
+        res.writeHead(404, { "content-type": "text/plain" });
+        res.end("Not Found");
+        return;
+      }
+      if (fault.kind === "redirect") {
+        res.writeHead(302, { location: `${redirectedPrefix}${relativePath}` });
+        res.end();
+        return;
+      }
+    }
+
+    if (!localBody) {
+      res.writeHead(404, { "content-type": "text/plain" });
+      res.end("Not Found");
+      return;
+    }
+
+    const responseBody = relativePath === fault.relativePath && fault.kind === "bytes"
+      ? Buffer.concat([localBody, Buffer.from("changed")])
+      : localBody;
+    const contentType = relativePath === fault.relativePath && fault.kind === "content-type"
+      ? "text/plain"
+      : fixtureContentType(relativePath);
+    res.writeHead(200, { "content-type": contentType });
+    res.end(responseBody);
+  });
+
+  try {
+    await assertion(await runVerifier(rootDir, url));
+  } finally {
+    await stopServer(server);
+    await rm(rootDir, { recursive: true, force: true });
+  }
+}
+
+function verifierFailureTest(name, relativePath, kind, expectedPattern) {
+  test(name, async () => {
+    await withReleaseFixture(
+      { relativePath, kind },
+      ({ code, stdout, stderr }) => {
+        assert.equal(code, 1, `${stdout}\n${stderr}`);
+        assert.match(stderr, expectedPattern, `${stdout}\n${stderr}`);
+      },
+    );
+  });
+}
+
+for (const [label, relativePath] of [
+  ["combination detail", "combinations/cot-critic-chain.html"],
+  ["local module", "assets/router-controller.mjs"],
+]) {
+  const escapedPath = relativePath.replaceAll(".", "\\.");
+  verifierFailureTest(
+    `production verifier — ${label} 404 exits 1`,
+    relativePath,
+    "404",
+    new RegExp(`${escapedPath}: HTTP 404`),
+  );
+  verifierFailureTest(
+    `production verifier — ${label} wrong Content-Type exits 1`,
+    relativePath,
+    "content-type",
+    new RegExp(`${escapedPath}: unexpected content type text/plain`),
+  );
+  verifierFailureTest(
+    `production verifier — ${label} redirect exits 1`,
+    relativePath,
+    "redirect",
+    new RegExp(`${escapedPath}: unexpected redirect`),
+  );
+  verifierFailureTest(
+    `production verifier — ${label} byte mismatch exits 1`,
+    relativePath,
+    "bytes",
+    new RegExp(`${escapedPath}: byte mismatch at offset`),
+  );
+}
+
 await test("production verifier — exact match passes", async () => {
   const { server, url } = await startServer((req, res) => {
     res.writeHead(200, { "content-type": "text/html; charset=utf-8" });

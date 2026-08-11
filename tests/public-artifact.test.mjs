@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
-import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
+import { mkdtemp, mkdir, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
@@ -68,14 +68,29 @@ test("accepts a self-contained multi-page site", async () => {
         head: '<link rel="stylesheet" href="assets/site.css">',
         body: [
           '<a href="chapters/one.html#detail">章节</a>',
+          '<a href="combinations/">组合工坊</a>',
           '<a href="https://github.com/example/project">源代码</a>',
         ].join(""),
       }),
       "site/assets/site.css": "body { color: #111; }",
+      "site/assets/router-engine.mjs":
+        'export function matchRoute() { return { state: "matched" }; }\n',
+      "site/assets/router-controller.mjs": [
+        'import { matchRoute } from "./router-engine.mjs";',
+        "export function bootRouter() { return matchRoute(); }",
+        "",
+      ].join("\n"),
       "site/assets/logo.svg":
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"><path d="M0 0h1v1H0z"/></svg>',
       "site/chapters/one.html": page({
         body: '<main id="detail"><img src="../assets/logo.svg" alt=""></main>',
+      }),
+      "site/combinations/index.html": page({
+        body: '<a href="cot-critic-chain.html#phases">查看组合详情</a>',
+      }),
+      "site/combinations/cot-critic-chain.html": page({
+        head: '<script type="module" src="../assets/router-controller.mjs"></script>',
+        body: '<main id="phases">组合协议</main>',
       }),
     },
     ({ code, stdout, stderr }) => {
@@ -138,6 +153,20 @@ test("rejects a missing internal chapter", async () => {
   );
 });
 
+test("rejects a missing combination detail target", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<a href="combinations/missing.html">缺失组合</a>',
+      }),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
 test("rejects path traversal even when the escaped file exists", async () => {
   await withArtifact(
     {
@@ -185,6 +214,23 @@ test("rejects a fragment that does not exist in the target page", async () => {
   );
 });
 
+test("rejects a missing fragment in a combination detail page", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<a href="combinations/one.html#missing">坏锚点</a>',
+      }),
+      "site/combinations/one.html": page({
+        body: '<main id="present">组合详情</main>',
+      }),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /MISSING_FRAGMENT/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
 test("rejects protocol-relative external subresources", async () => {
   await withArtifact(
     {
@@ -197,6 +243,106 @@ test("rejects protocol-relative external subresources", async () => {
       assert.match(stderr, /EXTERNAL_RESOURCE/, `${stdout}\n${stderr}`);
     },
   );
+});
+
+test("rejects an external module script", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module" src="https://cdn.example.com/router.mjs"></script>',
+      }),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /EXTERNAL_RESOURCE/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("rejects fetch in a local module", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module" src="assets/router-controller.mjs"></script>',
+      }),
+      "site/assets/router-controller.mjs": 'fetch("/router-data.json");\n',
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /NETWORK_CAPABLE_SCRIPT/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("rejects browser storage in a local module", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module" src="assets/router-controller.mjs"></script>',
+      }),
+      "site/assets/router-controller.mjs":
+        'localStorage.setItem("router-query", "private input");\n',
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("rejects session storage in a local module", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module" src="assets/router-controller.mjs"></script>',
+      }),
+      "site/assets/router-controller.mjs":
+        'sessionStorage.getItem("router-query");\n',
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("allows browser storage names in inert strings and comments", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module" src="assets/router-controller.mjs"></script>',
+      }),
+      "site/assets/router-controller.mjs": [
+        'const label = "localStorage.setItem";',
+        "// sessionStorage.clear() is documentation, not executable code.",
+        "/* indexedDB.open() is also inert here. */",
+        "export { label };",
+        "",
+      ].join("\n"),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.equal(code, 0, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("rejects a symbolic link inside the public tree", async () => {
+  const rootDir = await mkdtemp(path.join(tmpdir(), "public-artifact-symlink-"));
+  try {
+    await writeFiles(rootDir, {
+      "site/index.html": page(),
+      "outside.mjs": "export {};\n",
+    });
+    await symlink(
+      path.join(rootDir, "outside.mjs"),
+      path.join(rootDir, "site", "linked.mjs"),
+    );
+    const { code, stdout, stderr } = await runChecker(rootDir);
+    assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+    assert.match(stderr, /UNSAFE_FILE_TYPE/, `${stdout}\n${stderr}`);
+  } finally {
+    await rm(rootDir, { recursive: true, force: true });
+  }
 });
 
 test("rejects a missing internal src target", async () => {

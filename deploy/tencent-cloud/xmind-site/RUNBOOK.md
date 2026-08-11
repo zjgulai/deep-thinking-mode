@@ -44,12 +44,15 @@ context/site/robots.txt
 context/site/sitemap.xml
 context/site/assets/**
 context/site/chapters/**
+context/site/combinations/**
 context/site/models/**
 ```
 
 `Dockerfile` 中也只有两个精确 `COPY`：容器 Nginx 配置和经过 allowlist 的站点暂存目录。`context/site/` 的发布产物被 Git 忽略，只在每次构建前暂存，镜像完成后删除。
 
-`site/` 是多页静态站，首页还依赖 `assets/`、`chapters/`、`models/`、`router.html`、`404.html`、`robots.txt` 和 `sitemap.xml`。缺少任一类都不是可发布镜像。`.dockerignore` 仍采用默认拒绝，只放行上述路径；即使误把其他项目文件放进暂存目录，也不会进入 Docker build context。
+`site/` 是多页静态站，首页还依赖 `assets/`（包括 `router-engine.mjs` 和 `router-controller.mjs`）、`chapters/`、`combinations/`、`models/`、`router.html`、`404.html`、`robots.txt` 和 `sitemap.xml`。缺少任一类都不是可发布镜像。`.dockerignore` 仍采用默认拒绝，只放行上述路径；即使误把其他项目文件放进暂存目录，也不会进入 Docker build context。
+
+项目根不是 build context；因此项目根的 `.git/`、`data/`、`.local/` 和 `DDDD.pem` 从路径上就不可见。若同名文件被误复制到本 context，最外层 `**` 仍会拒绝；不得为了省略暂存步骤而扩大 context。
 
 ## 3. 发布门与本地构建
 
@@ -72,9 +75,19 @@ rtk install -d -m 0755 deploy/tencent-cloud/xmind-site/context/site
 rtk rsync -a --delete --exclude='.gitignore' --exclude='.DS_Store' site/ deploy/tencent-cloud/xmind-site/context/site/
 rtk rsync -rcn --delete --exclude='.gitignore' --exclude='.DS_Store' site/ deploy/tencent-cloud/xmind-site/context/site/
 rtk zsh -lc 'find deploy/tencent-cloud/xmind-site/context/site -type f ! -name .gitignore -print | LC_ALL=C sort > /tmp/xmind-site-context-files.txt && wc -l /tmp/xmind-site-context-files.txt'
+rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/index.html
+rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/cot-critic-chain.html
+rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/deep-research-chain.html
+rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/plan-execute-reflect-chain.html
+rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/react-agent-chain.html
+rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/tot-tree-of-thought-chain.html
+rtk test -f deploy/tencent-cloud/xmind-site/context/site/assets/router-engine.mjs
+rtk test -f deploy/tencent-cloud/xmind-site/context/site/assets/router-controller.mjs
+rtk node tools/hash-public-artifact.mjs site
+rtk node tools/hash-public-artifact.mjs deploy/tencent-cloud/xmind-site/context/site
 ```
 
-第二条 `rsync` 必须无输出，证明源发布树与暂存树逐字节一致。清单中的相对路径必须只属于 `index.html`、`404.html`、`router.html`、`robots.txt`、`sitemap.xml`、`assets/`、`chapters/` 或 `models/`。再生成完整构件 hash，创建本地环境文件，并把完整值及其前 12 位分别写入 `.env`：
+第二条 `rsync` 必须无输出，证明源发布树与暂存树逐字节一致。清单中的相对路径必须只属于 `index.html`、`404.html`、`router.html`、`robots.txt`、`sitemap.xml`、`assets/`、`chapters/`、`combinations/` 或 `models/`。两条 `hash-public-artifact` 输出的完整 SHA-256 与文件数必须一致。再创建本地环境文件，并把完整值及其前 12 位分别写入 `.env`：
 
 ```bash
 rtk cp deploy/tencent-cloud/xmind-site/.env.example deploy/tencent-cloud/xmind-site/.env
@@ -102,12 +115,16 @@ rtk curl -fsS http://127.0.0.1:18889/ -o /tmp/xmind-site-index.html
 rtk shasum -a 256 site/index.html /tmp/xmind-site-index.html
 rtk curl -fsS http://127.0.0.1:18889/assets/site.css -o /tmp/xmind-site.css
 rtk curl -fsS http://127.0.0.1:18889/router.html -o /tmp/xmind-site-router.html
+rtk curl -fsS http://127.0.0.1:18889/assets/router-engine.mjs -o /tmp/xmind-site-router-engine.mjs
+rtk curl -fsS http://127.0.0.1:18889/assets/router-controller.mjs -o /tmp/xmind-site-router-controller.mjs
+rtk curl -fsS http://127.0.0.1:18889/combinations/index.html -o /tmp/xmind-site-combinations.html
+rtk curl -fsS http://127.0.0.1:18889/combinations/plan-execute-reflect-chain.html -o /tmp/xmind-site-combination-detail.html
 rtk curl -fsS http://127.0.0.1:18889/models/index.html -o /tmp/xmind-site-models.html
 rtk curl -fsS http://127.0.0.1:18889/chapters/ch00-overview-and-toolbox.html -o /tmp/xmind-site-chapter.html
 rtk curl -fsS -o /dev/null -w '%{http_code}\n' http://127.0.0.1:18889/definitely-missing.html
 ```
 
-首条命令会占用当前终端；用第二个终端完成检查后用 `Ctrl-C` 退出。两个首页 HTML hash 必须一致，CSS、路由器、模型目录与章节必须返回 200，不存在的路径必须返回 404。
+首条命令会占用当前终端；用第二个终端完成检查后用 `Ctrl-C` 退出。两个首页 HTML hash 必须一致，CSS、Router、两个 `.mjs`、组合总览/详情、模型目录与章节必须返回 200，不存在的路径必须返回 404。
 
 导出不可变镜像包：
 
@@ -252,9 +269,14 @@ rtk curl -fsS https://xmind.lute-tlz-dddd.top/ -o /tmp/xmind-production.html
 rtk shasum -a 256 site/index.html /tmp/xmind-production.html
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/assets/site.css
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/router.html
+rtk curl -fsSI https://xmind.lute-tlz-dddd.top/assets/router-engine.mjs
+rtk curl -fsSI https://xmind.lute-tlz-dddd.top/assets/router-controller.mjs
+rtk curl -fsSI https://xmind.lute-tlz-dddd.top/combinations/index.html
+rtk curl -fsSI https://xmind.lute-tlz-dddd.top/combinations/plan-execute-reflect-chain.html
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/models/index.html
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/chapters/ch00-overview-and-toolbox.html
 rtk curl -sS -o /dev/null -w '%{http_code}\n' https://xmind.lute-tlz-dddd.top/definitely-missing.html
+rtk node tools/verify-production.mjs --url https://xmind.lute-tlz-dddd.top/ --site-dir site
 rtk npm run verify:security
 ```
 
@@ -264,7 +286,8 @@ rtk npm run verify:security
 - TLS 严格校验成功，SAN 精确包含 xmind。
 - `/healthz` 是 `ok`。
 - `/` 为 200，且 bytes hash 与已验证本地 `site/index.html` 相同。
-- CSS、路由器、模型目录和章节为 200；不存在的路径为 404，不能回落成伪 200 首页。
+- CSS、Router、两个 `.mjs`、组合总览/详情、模型目录和章节为 200；不存在的路径为 404，不能回落成伪 200 首页。
+- `verify-production.mjs` 必须对当次本地 `site/` 的完整文件数逐一返回 200、正确 Content-Type、无转向且 bytes 一致；组合页或 `.mjs` 任一 404、类型错误、意外转向或 byte mismatch 都必须 exit 1。
 - 页面 title 为系统化思维，不再是 `Short Video Factory`。
 - CSP、HSTS、`nosniff`、拒绝 iframe、Referrer Policy 和 Permissions Policy 各出现一次且值精确匹配；不得因 origin 与共享入口叠加而重复。
 - 容器稳定为 healthy，无 restart loop。
@@ -272,6 +295,7 @@ rtk npm run verify:security
 浏览器 E2E 至少覆盖：
 
 - 首页、13 章导航、搜索、问题匹配、Codex 提问复制。
+- Router 的一次澄清、核心/辅助路由、唯一核心 Chain，以及组合工坊总览、五个详情与模型/章节反向入口。
 - 模型 hash anchor 直达与刷新。
 - 键盘、可见焦点、Escape、焦点归还、reduced motion。
 - 1440px、390px、320px，浅色/深色，打印。
@@ -315,6 +339,10 @@ rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker exec ai_video_nginx nginx -t &&
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && docker compose --project-name xmind_site stop'
 ```
 
+如果只是内容镜像切换失败且共享入口未改，先用发布前记录的 exact image ID/tag 重新启动旧 `xmind_site`，不用 `latest` 或临时修页代替回滚。回滚验收必须使用该旧镜像对应的已保存完整 `site/` 树重跑 `verify-production.mjs`；不能拿本次新树验证旧版。
+
+对已含 Router 2.0/组合工坊的回滚目标，逐文件验证必须包含 `combinations/**` 与 `assets/router-engine.mjs`、`assets/router-controller.mjs`。若本次回滚目标是不含该功能的 V4 历史基线，则这些新路径必须恢复为该旧树声明的 404，同时旧树的全部已有文件逐字节通过。记录 checked-files、旧 artifact SHA、旧 image ID 和这些路径的预期状态。
+
 回滚时不执行 `down -v`、不删证书、不删镜像、不执行任何 prune。只有在故障复盘完成并获得单独确认后，才可精确清理 `xmind_site` 自身资源。
 
 ## 11. 证书续期与持续验证
@@ -346,6 +374,7 @@ rtk curl -fsSIL https://xmind.lute-tlz-dddd.top
 - Nginx 原配置 hash、备份 hash、新配置 hash、临时容器 `nginx -t`、入口重启与健康恢复结果。
 - 证书 lineage、SAN、issuer、notBefore/notAfter 与 renewal dry-run。
 - xmind HTTP/TLS/内容 hash/E2E 结果。
+- `combinations/**` 与两个 Router `.mjs` 在暂存树、镜像烟测、生产逐文件和回滚目标中的精确路径/状态/bytes 证据。
 - `npm run verify:security` 的 CSP 与单一安全头结果。
 - 全部现有域名 pre/post 回归差异。
 - 未验证项、原因和责任人。
