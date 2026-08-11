@@ -1,4 +1,7 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import test from "node:test";
 
 import {
@@ -12,23 +15,23 @@ import {
   dispatch
 } from "./helpers/fake-router-dom.mjs";
 
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const ROUTER_SOURCE = JSON.parse(await readFile(join(ROOT, "chain-protocols/agent-router-index.json"), "utf8"));
 const ROUTER_DATA = {
-  schema_version: "2.0-router",
-  problem_types: [
-    { id: "diagnosis", label: "诊断根因", priority: 10, positive_phrases: [{ text: "原因", weight: 8 }], negative_phrases: [], examples: ["找出原因"], clarify_label: "找原因" },
-    { id: "planning", label: "制定计划", priority: 20, positive_phrases: [{ text: "计划", weight: 8 }], negative_phrases: [], examples: ["制定计划"], clarify_label: "做计划" },
-    { id: "decision", label: "辅助决策", priority: 30, positive_phrases: [{ text: "选择", weight: 8 }], negative_phrases: [], examples: ["做出选择"], clarify_label: "做选择" },
-    { id: "creative", label: "探索创新", priority: 40, positive_phrases: [{ text: "创新", weight: 8 }], negative_phrases: [], examples: ["探索创新"], clarify_label: "想创新" },
-    { id: "research", label: "深度研究", priority: 50, positive_phrases: [{ text: "研究", weight: 8 }], negative_phrases: [], examples: ["深度研究"], clarify_label: "做研究" }
-  ],
-  agent_stages: [{ id: "intent", label: "意图", priority: 10, positive_phrases: [{ text: "需要", weight: 8 }] }],
-  safety_signals: [
-    { id: "high_stakes_financial_instruction", label: "高风险财务指令", message: "请寻求专业支持", phrases: ["全部积蓄"] },
-    { id: "immediate_personal_danger", label: "紧急人身危险", message: "请优先寻求当地紧急服务", phrases: ["伤害自己"] },
-    { id: "legal_advice_with_deadline", label: "紧迫法律意见", message: "请寻求法律专业支持", phrases: ["法律期限"] },
-    { id: "medical_diagnosis_or_treatment", label: "医疗诊疗", message: "请寻求医疗专业支持", phrases: ["诊断症状"] }
-  ]
+  schema_version: ROUTER_SOURCE.schema_version,
+  problem_types: ROUTER_SOURCE.problem_types,
+  agent_stages: ROUTER_SOURCE.agent_stages,
+  safety_signals: ROUTER_SOURCE.safety_signals,
+  route_keys: ROUTER_SOURCE.routes.map(({ problem_type_id: problemTypeId, agent_stage_id: agentStageId }) => `${problemTypeId}::${agentStageId}`)
 };
+
+function clone(value) {
+  return structuredClone(value);
+}
+
+function payloadNode(payload) {
+  return new FakeRouterNode({ textContent: JSON.stringify(payload) });
+}
 
 function result(state, overrides = {}) {
   return {
@@ -60,29 +63,96 @@ function controllerFixture(options = {}) {
   return { ...dom, calls, controller };
 }
 
-test("parseRouterPayload accepts the compact V2 matcher payload and rejects malformed schemas", () => {
-  const valid = new FakeRouterNode({ textContent: JSON.stringify(ROUTER_DATA) });
-  assert.deepEqual(parseRouterPayload(valid), ROUTER_DATA);
-  const invalidPayloads = [
-    { ...ROUTER_DATA, problem_types: [ROUTER_DATA.problem_types[0]] },
-    { ...ROUTER_DATA, problem_types: ROUTER_DATA.problem_types.map((entry, index) => index === 0 ? { ...entry, priority: 0 } : entry) },
-    { ...ROUTER_DATA, problem_types: ROUTER_DATA.problem_types.map((entry, index) => index === 0 ? { ...entry, clarify_label: "" } : entry) },
-    { ...ROUTER_DATA, problem_types: ROUTER_DATA.problem_types.map((entry, index) => index === 0 ? { ...entry, examples: [] } : entry) },
-    { ...ROUTER_DATA, problem_types: ROUTER_DATA.problem_types.map((entry, index) => index === 0 ? { ...entry, positive_phrases: [] } : entry) },
-    { ...ROUTER_DATA, problem_types: ROUTER_DATA.problem_types.map((entry, index) => index === 0 ? { ...entry, positive_phrases: [{ text: "", weight: 8 }] } : entry) },
-    { ...ROUTER_DATA, problem_types: ROUTER_DATA.problem_types.map((entry, index) => index === 0 ? { ...entry, positive_phrases: [{ text: "原因", weight: 11 }] } : entry) },
-    { ...ROUTER_DATA, agent_stages: [{ ...ROUTER_DATA.agent_stages[0], priority: -1 }] },
-    { ...ROUTER_DATA, safety_signals: [{ id: "immediate_personal_danger", phrases: [] }] },
-    { ...ROUTER_DATA, safety_signals: ROUTER_DATA.safety_signals.map((entry, index) => index === 0 ? { ...entry, id: "unknown_safety" } : entry) }
-  ];
-  for (const invalid of [
-    null,
-    new FakeRouterNode({ textContent: "{" }),
-    new FakeRouterNode({ textContent: JSON.stringify({ ...ROUTER_DATA, schema_version: "1.0-router" }) }),
-    new FakeRouterNode({ textContent: JSON.stringify({ ...ROUTER_DATA, problem_types: [] }) }),
-    new FakeRouterNode({ textContent: JSON.stringify({ ...ROUTER_DATA, safety_signals: "unsafe" }) }),
-    ...invalidPayloads.map((payload) => new FakeRouterNode({ textContent: JSON.stringify(payload) }))
-  ]) assert.equal(parseRouterPayload(invalid), null);
+test("parseRouterPayload accepts the real compact 8x8x4 Router payload", () => {
+  assert.equal(ROUTER_DATA.problem_types.length, 8);
+  assert.equal(ROUTER_DATA.agent_stages.length, 8);
+  assert.equal(ROUTER_DATA.safety_signals.length, 4);
+  assert.equal(ROUTER_DATA.route_keys.length, 23);
+  assert.deepEqual(parseRouterPayload(payloadNode(ROUTER_DATA)), ROUTER_DATA);
+});
+
+test("parseRouterPayload rejects missing, extra, and prototype-looking keys at every schema level", () => {
+  const cases = [];
+  const missingTop = clone(ROUTER_DATA);
+  delete missingTop.route_keys;
+  cases.push(missingTop, { ...ROUTER_DATA, extra: true });
+  for (const [collection, index] of [["problem_types", 0], ["agent_stages", 0], ["safety_signals", 0]]) {
+    const extra = clone(ROUTER_DATA);
+    extra[collection][index].extra = true;
+    cases.push(extra);
+  }
+  const extraPhrase = clone(ROUTER_DATA);
+  extraPhrase.problem_types[0].positive_phrases[0].extra = true;
+  cases.push(extraPhrase);
+  const protoText = JSON.stringify(ROUTER_DATA).replace("{", "{\"__proto__\":{},");
+
+  for (const invalid of [null, new FakeRouterNode({ textContent: "{" }), ...cases.map(payloadNode), new FakeRouterNode({ textContent: protoText })]) {
+    assert.equal(parseRouterPayload(invalid), null);
+  }
+});
+
+test("parseRouterPayload freezes canonical IDs, counts, ordering, priorities, and route keys", () => {
+  const mutations = [];
+  for (const collection of ["problem_types", "agent_stages", "safety_signals", "route_keys"]) {
+    const reversed = clone(ROUTER_DATA);
+    reversed[collection].reverse();
+    mutations.push(reversed);
+  }
+  const wrongProblemId = clone(ROUTER_DATA);
+  wrongProblemId.problem_types[0].id = "unknown";
+  const duplicateProblemId = clone(ROUTER_DATA);
+  duplicateProblemId.problem_types[1].id = duplicateProblemId.problem_types[0].id;
+  const wrongProblemPriority = clone(ROUTER_DATA);
+  wrongProblemPriority.problem_types[0].priority = 11;
+  const wrongStageId = clone(ROUTER_DATA);
+  wrongStageId.agent_stages[0].id = "unknown";
+  const wrongStagePriority = clone(ROUTER_DATA);
+  wrongStagePriority.agent_stages[0].priority = 11;
+  const wrongSafetyId = clone(ROUTER_DATA);
+  wrongSafetyId.safety_signals[0].id = "unknown";
+  const wrongRoute = clone(ROUTER_DATA);
+  wrongRoute.route_keys[0] = "diagnosis::unknown";
+  mutations.push(wrongProblemId, duplicateProblemId, wrongProblemPriority, wrongStageId, wrongStagePriority, wrongSafetyId, wrongRoute);
+
+  for (const payload of mutations) assert.equal(parseRouterPayload(payloadNode(payload)), null);
+});
+
+test("parseRouterPayload rejects duplicate, intersecting, empty, or out-of-range phrases", () => {
+  const duplicatePositive = clone(ROUTER_DATA);
+  duplicatePositive.problem_types[0].positive_phrases.push(clone(duplicatePositive.problem_types[0].positive_phrases[0]));
+  const duplicateNegative = clone(ROUTER_DATA);
+  duplicateNegative.problem_types[0].negative_phrases.push(clone(duplicateNegative.problem_types[0].negative_phrases[0]));
+  const intersecting = clone(ROUTER_DATA);
+  intersecting.problem_types[0].negative_phrases.push(clone(intersecting.problem_types[0].positive_phrases[0]));
+  const emptyText = clone(ROUTER_DATA);
+  emptyText.problem_types[0].positive_phrases[0].text = "";
+  const badWeight = clone(ROUTER_DATA);
+  badWeight.problem_types[0].positive_phrases[0].weight = 11;
+  const duplicateExample = clone(ROUTER_DATA);
+  duplicateExample.problem_types[0].examples.push(duplicateExample.problem_types[0].examples[0]);
+  const duplicateSafetyPhrase = clone(ROUTER_DATA);
+  duplicateSafetyPhrase.safety_signals[0].phrases.push(duplicateSafetyPhrase.safety_signals[0].phrases[0]);
+  const normalizedDuplicate = clone(ROUTER_DATA);
+  normalizedDuplicate.problem_types[0].positive_phrases.push({ text: "原 因", weight: 8 });
+  const normalizedIntersection = clone(ROUTER_DATA);
+  normalizedIntersection.problem_types[0].negative_phrases.push({ text: "原 因", weight: 8 });
+  const normalizedSafetyDuplicate = clone(ROUTER_DATA);
+  normalizedSafetyDuplicate.safety_signals[0].phrases.push("把 全部积蓄马上买入");
+
+  for (const payload of [
+    duplicatePositive,
+    duplicateNegative,
+    intersecting,
+    emptyText,
+    badWeight,
+    duplicateExample,
+    duplicateSafetyPhrase,
+    normalizedDuplicate,
+    normalizedIntersection,
+    normalizedSafetyDuplicate
+  ]) {
+    assert.equal(parseRouterPayload(payloadNode(payload)), null);
+  }
 });
 
 test("initialization is idle with examples and shortcuts visible while every result surface is hidden", () => {
@@ -113,8 +183,12 @@ test("empty or one-character submissions enter needs_input, keep input focus, an
 test("matched shows one exact core route and at most two exact auxiliary routes, then focuses and scrolls the title", () => {
   const matched = result("matched", {
     problemTypeId: "diagnosis",
-    auxiliaryProblemTypeIds: ["planning", "decision", "creative"],
-    agentStageId: "intent"
+    auxiliaryProblemTypeIds: ["planning", "decision"],
+    agentStageId: "intent",
+    evidence: {
+      ...result("idle").evidence,
+      matchedPositivePhrases: ["原因"]
+    }
   });
   const { nodes } = controllerFixture({ matcher: () => matched });
   nodes.input.value = "项目延期需要找原因";
@@ -128,7 +202,7 @@ test("matched shows one exact core route and at most two exact auxiliary routes,
     nodes.routeCards.filter((card) => !card.hidden).map((card) => card.getAttribute("data-route-kind")),
     ["core", "auxiliary", "auxiliary"]
   );
-  assert.equal(nodes.routeCards.find((card) => card.getAttribute("data-route-key") === "diagnosis::planning").hidden, true);
+  assert.equal(nodes.routeCards.find((card) => card.getAttribute("data-route-key") === "diagnosis::cot_step").hidden, true);
   assert.equal(nodes.live.textContent, "已匹配 3 条路径");
   assert.equal(nodes.title.focused, true);
   assert.deepEqual(nodes.title.scrollCalls, [{ behavior: "smooth", block: "start" }]);
@@ -137,7 +211,14 @@ test("matched shows one exact core route and at most two exact auxiliary routes,
 test("matched respects reduced motion by using auto scrolling", () => {
   const { nodes } = controllerFixture({
     reducedMotion: true,
-    matcher: () => result("matched", { problemTypeId: "creative", agentStageId: "planning" })
+    matcher: () => result("matched", {
+      problemTypeId: "planning",
+      agentStageId: "planning",
+      evidence: {
+        ...result("idle").evidence,
+        matchedPositivePhrases: ["计划"]
+      }
+    })
   });
   nodes.input.value = "需要创新计划";
   dispatch(nodes.form, "submit");
@@ -146,7 +227,7 @@ test("matched respects reduced motion by using auto scrolling", () => {
 
 test("clarify shows only two to four options, reruns once, then falls back to all shortcuts without recursion", () => {
   const responses = [
-    result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "planning", "decision", "creative", "research"] }),
+    result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "planning", "decision", "creative"] }),
     result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "planning"] })
   ];
   const { nodes, calls } = controllerFixture({ matcher: (request) => responses.shift() });
@@ -166,6 +247,22 @@ test("clarify shows only two to four options, reruns once, then falls back to al
   assert.equal(calls.length, 2);
 });
 
+test("a second consecutive submit after clarify falls back to shortcuts instead of asking again", () => {
+  const { nodes, calls } = controllerFixture({
+    matcher: () => result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "planning"] })
+  });
+  nodes.input.value = "需要帮助";
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.clarify.hidden, false);
+  assert.equal(nodes.clarifyButtons.filter((button) => !button.hidden).length, 2);
+
+  nodes.input.value = "再补充一点背景";
+  dispatch(nodes.form, "submit");
+  assert.equal(calls.length, 2);
+  assert.equal(nodes.clarify.hidden, true);
+  assert.equal(nodes.shortcuts.hidden, false);
+});
+
 test("safety_stop hides every route and chain surface and exposes only its boundary plus the facts checklist", () => {
   const { nodes } = controllerFixture({
     matcher: () => result("safety_stop", { safetySignalId: "immediate_personal_danger" })
@@ -183,12 +280,16 @@ test("safety_stop hides every route and chain surface and exposes only its bound
 
 test("a shortcut selects on first click and matches on a second click or later submit", () => {
   const { nodes, calls } = controllerFixture({
-    matcher: (request) => result("matched", { problemTypeId: request.shortcutIntentId, agentStageId: "intent" })
+    matcher: (request) => result("matched", {
+      problemTypeId: request.shortcutIntentId,
+      agentStageId: "intent",
+      evidence: { ...result("idle").evidence, shortcutIntentId: request.shortcutIntentId }
+    })
   });
   const planning = nodes.shortcutButtons[1];
   dispatch(planning, "click");
   assert.equal(planning.getAttribute("aria-pressed"), "true");
-  assert.equal(nodes.hint.textContent, "已选择“做计划”，可继续补充后提交");
+  assert.equal(nodes.hint.textContent, "已选择“我想规划下一步”，可继续补充后提交");
   assert.equal(nodes.live.textContent, "");
   assert.equal(calls.length, 0);
 
@@ -196,7 +297,13 @@ test("a shortcut selects on first click and matches on a second click or later s
   assert.equal(calls.length, 1);
   assert.equal(calls[0].shortcutIntentId, "planning");
 
-  const second = controllerFixture({ matcher: (request) => result("matched", { problemTypeId: request.shortcutIntentId, agentStageId: "intent" }) });
+  const second = controllerFixture({
+    matcher: (request) => result("matched", {
+      problemTypeId: request.shortcutIntentId,
+      agentStageId: "intent",
+      evidence: { ...result("idle").evidence, shortcutIntentId: request.shortcutIntentId }
+    })
+  });
   dispatch(second.nodes.shortcutButtons[0], "click");
   second.nodes.input.value = "还有背景";
   dispatch(second.nodes.form, "submit");
@@ -206,7 +313,7 @@ test("a shortcut selects on first click and matches on a second click or later s
 
 test("reset and pagehide clear input, shortcut state, clarification state, and visible results", () => {
   const { nodes, view, calls } = controllerFixture({
-    matcher: () => result("clarify", { clarificationOptionIds: ["diagnosis", "planning"] })
+    matcher: () => result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "planning"] })
   });
   nodes.input.value = "有点乱";
   dispatch(nodes.shortcutButtons[1], "click");
@@ -229,6 +336,7 @@ test("reset and pagehide clear input, shortcut state, clarification state, and v
   assert.ok(nodes.routeCards.every((card) => card.hidden));
   assert.ok(nodes.shortcutButtons.every((button) => button.getAttribute("aria-pressed") === "false"));
 
+  view.dispatchEvent("pageshow");
   nodes.input.value = "第三次";
   dispatch(nodes.form, "submit");
   assert.equal(nodes.clarify.hidden, false);
@@ -256,6 +364,158 @@ test("missing, broken, or invalid payload fails closed without invoking the matc
   }
 });
 
+test("missing required DOM or frozen option collections stays inert and never calls matcher", () => {
+  const omissions = [
+    "form", "input", "live", "hint", "title", "examples", "shortcuts", "results", "clarify",
+    "clarifyQuestion", "safety", "safetyFacts", "unavailable", "copyButton", "copyStatus", "copyText",
+    "shortcut:clarification", "clarifyOption:clarification", "safetyPanel:medical_diagnosis_or_treatment",
+    "route:diagnosis::intent"
+  ];
+  for (const omitted of omissions) {
+    const dom = createFakeRouterDom({ payload: ROUTER_DATA, omit: [omitted] });
+    let calls = 0;
+    const controller = createRouterController({ root: dom.root, matcher: () => { calls += 1; return result("matched"); } });
+    const submitEvent = dispatch(dom.nodes.form, "submit");
+    assert.equal(submitEvent.defaultPrevented, omitted !== "form", omitted);
+    assert.doesNotThrow(() => dispatch(dom.nodes.shortcutButtons[0], "click"), omitted);
+    assert.equal(calls, 0, omitted);
+    if (omitted !== "unavailable") assert.equal(dom.nodes.unavailable.hidden, false, omitted);
+    assert.ok(controller);
+  }
+});
+
+test("duplicate frozen shortcut, clarify, safety, or route nodes fail closed before binding", () => {
+  for (const collection of ["shortcutButtons", "clarifyButtons", "safetyPanels", "routeCards"]) {
+    const dom = createFakeRouterDom({ payload: ROUTER_DATA });
+    dom.root.children.push(dom.nodes[collection][0]);
+    let calls = 0;
+    createRouterController({ root: dom.root, matcher: () => { calls += 1; return result("matched"); } });
+    dispatch(dom.nodes.form, "submit");
+    assert.equal(calls, 0, collection);
+    assert.equal(dom.nodes.unavailable.hidden, false, collection);
+  }
+});
+
+test("matcher throws and malformed frozen results fail closed without leaking partial UI", () => {
+  const malformed = [
+    null,
+    { ...result("needs_input"), extra: true },
+    (() => { const value = result("needs_input"); delete value.auxiliaryProblemTypeIds; return value; })(),
+    { ...result("unknown") },
+    result("needs_input", { problemTypeId: "diagnosis" }),
+    result("matched", { problemTypeId: "unknown", agentStageId: "intent" }),
+    result("matched", { problemTypeId: "diagnosis", auxiliaryProblemTypeIds: ["planning", "planning"], agentStageId: "intent" }),
+    result("matched", { problemTypeId: "diagnosis", auxiliaryProblemTypeIds: ["planning", "decision", "creative"], agentStageId: "intent" }),
+    result("matched", { problemTypeId: "diagnosis", auxiliaryProblemTypeIds: [], agentStageId: "unknown" }),
+    result("matched", { problemTypeId: "diagnosis", auxiliaryProblemTypeIds: [], agentStageId: "intent" }),
+    result("matched", {
+      problemTypeId: "diagnosis",
+      auxiliaryProblemTypeIds: [],
+      agentStageId: "intent",
+      evidence: { ...result("idle").evidence, shortcutIntentId: "diagnosis" }
+    }),
+    result("matched", {
+      problemTypeId: "diagnosis",
+      auxiliaryProblemTypeIds: [],
+      agentStageId: "planning",
+      evidence: { ...result("idle").evidence, matchedPositivePhrases: ["原因"] }
+    }),
+    result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis"] }),
+    result("clarify", { agentStageId: "intent", clarificationOptionIds: ["diagnosis", "unknown"] }),
+    result("safety_stop", { safetySignalId: "unknown" }),
+    { ...result("needs_input"), evidence: { ...result("needs_input").evidence, extra: true } }
+  ];
+
+  for (const response of malformed) {
+    const { nodes, calls } = controllerFixture({ matcher: () => response });
+    nodes.input.value = "有效输入";
+    assert.doesNotThrow(() => dispatch(nodes.form, "submit"));
+    assert.equal(calls.length, 1);
+    assert.equal(nodes.unavailable.hidden, false);
+    assert.equal(nodes.results.hidden, true);
+    assert.equal(nodes.safety.hidden, true);
+    assert.ok(nodes.routeCards.every((card) => card.hidden));
+  }
+
+  const throwing = controllerFixture({ matcher: () => { throw new Error("matcher failed"); } });
+  throwing.nodes.input.value = "有效输入";
+  assert.doesNotThrow(() => dispatch(throwing.nodes.form, "submit"));
+  assert.equal(throwing.calls.length, 1);
+  assert.equal(throwing.nodes.unavailable.hidden, false);
+});
+
+test("matched fails closed when known IDs do not resolve to every declared exact route key", () => {
+  const { nodes, calls } = controllerFixture({
+    matcher: () => result("matched", {
+      problemTypeId: "diagnosis",
+      auxiliaryProblemTypeIds: ["planning"],
+      agentStageId: "cot_step",
+      evidence: { ...result("idle").evidence, shortcutIntentId: "diagnosis" }
+    })
+  });
+  dispatch(nodes.shortcutButtons[0], "click");
+  dispatch(nodes.shortcutButtons[0], "click");
+  assert.equal(calls.length, 1);
+  assert.equal(nodes.unavailable.hidden, false);
+  assert.ok(nodes.routeCards.every((card) => card.hidden));
+  assert.equal(nodes.live.textContent, "路由数据不可用");
+});
+
+test("matched requires shortcut evidence exactly when the selected shortcut becomes core", () => {
+  const { nodes, calls } = controllerFixture({
+    matcher: () => result("matched", {
+      problemTypeId: "diagnosis",
+      auxiliaryProblemTypeIds: [],
+      agentStageId: "intent",
+      evidence: { ...result("idle").evidence, matchedPositivePhrases: ["为什么"] }
+    })
+  });
+  dispatch(nodes.shortcutButtons[0], "click");
+  nodes.input.value = "为什么失败了";
+  dispatch(nodes.form, "submit");
+  assert.equal(calls.length, 1);
+  assert.equal(nodes.unavailable.hidden, false);
+  assert.ok(nodes.routeCards.every((card) => card.hidden));
+});
+
+test("normal states hide unavailable and remain mutually exclusive across matched, safety, invalid, and needs_input", () => {
+  const responses = [
+    result("matched", {
+      problemTypeId: "diagnosis",
+      auxiliaryProblemTypeIds: ["planning"],
+      agentStageId: "intent",
+      evidence: { ...result("idle").evidence, matchedPositivePhrases: ["为什么"] }
+    }),
+    result("safety_stop", { safetySignalId: "immediate_personal_danger" }),
+    null,
+    result("needs_input")
+  ];
+  const { nodes } = controllerFixture({ matcher: () => responses.shift() });
+  nodes.input.value = "为什么失败了";
+
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.unavailable.hidden, true);
+  assert.equal(nodes.results.hidden, false);
+  assert.equal(nodes.routeCards.filter((card) => !card.hidden).length, 2);
+
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.unavailable.hidden, true);
+  assert.equal(nodes.results.hidden, true);
+  assert.equal(nodes.safety.hidden, false);
+  assert.ok(nodes.routeCards.every((card) => card.hidden));
+
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.unavailable.hidden, false);
+  assert.equal(nodes.safety.hidden, true);
+  assert.ok(nodes.routeCards.every((card) => card.hidden));
+
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.unavailable.hidden, true);
+  assert.equal(nodes.results.hidden, true);
+  assert.equal(nodes.safety.hidden, true);
+  assert.ok(nodes.routeCards.every((card) => card.hidden));
+});
+
 test("copy success reports completion while failure focuses and selects the complete fallback text", async () => {
   const successWrites = [];
   const success = controllerFixture({ clipboardWrite: async (text) => { successWrites.push(text); } });
@@ -276,9 +536,106 @@ test("copy success reports completion while failure focuses and selects the comp
   assert.equal(failure.nodes.live.textContent, "");
 });
 
-test("bootRouter binds the supplied document root", () => {
+test("pagehide deactivates handlers and pageshow reactivates a clean controller", () => {
+  const { nodes, view, calls } = controllerFixture({ matcher: () => result("needs_input") });
+  nodes.input.value = "离页前输入";
+  view.dispatchEvent("pagehide");
+  assert.equal(nodes.input.value, "");
+  nodes.input.value = "不应执行";
+  const inactiveSubmit = dispatch(nodes.form, "submit");
+  assert.equal(inactiveSubmit.defaultPrevented, true);
+  dispatch(nodes.shortcutButtons[0], "click");
+  assert.equal(calls.length, 0);
+  assert.equal(nodes.shortcutButtons[0].getAttribute("aria-pressed"), "false");
+
+  view.dispatchEvent("pageshow");
+  assert.equal(nodes.input.value, "");
+  nodes.input.value = "可以再次执行";
+  dispatch(nodes.form, "submit");
+  assert.equal(calls.length, 1);
+});
+
+test("deferred clipboard completion cannot mutate or focus after pagehide or destroy", async () => {
+  let resolveCopy;
+  const pendingCopy = new Promise((resolve) => { resolveCopy = resolve; });
+  const pageHidden = controllerFixture({ clipboardWrite: () => pendingCopy });
+  dispatch(pageHidden.nodes.copyButton, "click");
+  pageHidden.view.dispatchEvent("pagehide");
+  pageHidden.view.dispatchEvent("pageshow");
+  resolveCopy();
+  await new Promise((resolve) => setImmediate(resolve));
+  assert.equal(pageHidden.nodes.copyStatus.textContent, "");
+  assert.equal(pageHidden.nodes.copyButton.textContent, "");
+  assert.equal(pageHidden.nodes.copyText.focused, false);
+
+  let rejectCopy;
+  const rejectedCopy = new Promise((resolve, reject) => { rejectCopy = reject; });
+  const destroyed = controllerFixture({ clipboardWrite: () => rejectedCopy });
+  dispatch(destroyed.nodes.copyButton, "click");
+  destroyed.controller.destroy();
+  rejectCopy(new Error("denied later"));
+  await new Promise((resolve) => setImmediate(resolve));
+  assert.equal(destroyed.nodes.copyStatus.textContent, "");
+  assert.equal(destroyed.nodes.copyText.focused, false);
+});
+
+test("older clipboard work cannot overwrite a newer copy or a later Router state", async () => {
+  let rejectFirst;
+  let resolveSecond;
+  const firstCopy = new Promise((resolve, reject) => { rejectFirst = reject; });
+  const secondCopy = new Promise((resolve) => { resolveSecond = resolve; });
+  let copyCalls = 0;
+  const concurrent = controllerFixture({
+    clipboardWrite: () => {
+      copyCalls += 1;
+      return copyCalls === 1 ? firstCopy : secondCopy;
+    }
+  });
+  dispatch(concurrent.nodes.copyButton, "click");
+  dispatch(concurrent.nodes.copyButton, "click");
+  resolveSecond();
+  await new Promise((resolve) => setImmediate(resolve));
+  rejectFirst(new Error("older denied"));
+  await new Promise((resolve) => setImmediate(resolve));
+  assert.equal(concurrent.nodes.copyStatus.textContent, "已复制");
+  assert.equal(concurrent.nodes.copyText.focused, false);
+
+  let rejectPending;
+  const pending = new Promise((resolve, reject) => { rejectPending = reject; });
+  const stateChanged = controllerFixture({ clipboardWrite: () => pending });
+  dispatch(stateChanged.nodes.copyButton, "click");
+  stateChanged.nodes.input.value = "a";
+  dispatch(stateChanged.nodes.form, "submit");
+  rejectPending(new Error("denied after submit"));
+  await new Promise((resolve) => setImmediate(resolve));
+  assert.equal(stateChanged.nodes.live.textContent, "需要补充");
+  assert.equal(stateChanged.nodes.copyStatus.textContent, "");
+  assert.equal(stateChanged.nodes.copyText.focused, false);
+});
+
+test("bootRouter is idempotent per root, destroy removes listeners, and reboot creates one fresh controller", () => {
   const { root, nodes } = createFakeRouterDom({ payload: ROUTER_DATA });
-  const controller = bootRouter(root);
-  assert.ok(controller);
-  assert.equal(nodes.examples.hidden, false);
+  const first = bootRouter(root);
+  const second = bootRouter(root);
+  assert.equal(first, second);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+  nodes.input.value = "为什么失败了";
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.title.scrollCalls.length, 1);
+
+  first.destroy();
+  assert.equal(nodes.form.listenerCount("submit"), 0);
+  assert.equal(nodes.form.listenerCount("reset"), 0);
+  assert.equal(nodes.shortcutButtons[0].listenerCount("click"), 0);
+  assert.equal(nodes.clarifyButtons[0].listenerCount("click"), 0);
+  assert.equal(nodes.copyButton.listenerCount("click"), 0);
+  assert.equal(root.defaultView.listenerCount("pagehide"), 0);
+  assert.equal(root.defaultView.listenerCount("pageshow"), 0);
+
+  const third = bootRouter(root);
+  assert.notEqual(third, first);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+  nodes.input.value = "为什么失败了";
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.title.scrollCalls.length, 2);
 });

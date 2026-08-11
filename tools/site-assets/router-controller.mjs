@@ -1,10 +1,85 @@
-import { matchRoute } from "./router-engine.mjs";
+import { matchRoute, normalizeRouterText } from "./router-engine.mjs";
 
-const SAFETY_SIGNAL_IDS = new Set([
+const PROBLEM_TYPE_IDS = Object.freeze([
+  "diagnosis",
+  "planning",
+  "decision",
+  "creative",
+  "research",
+  "reflection",
+  "communication",
+  "clarification"
+]);
+
+const AGENT_STAGE_IDS = Object.freeze([
+  "intent",
+  "cot_step",
+  "planning",
+  "execution",
+  "reflect",
+  "tot_branch",
+  "research",
+  "synthesis"
+]);
+
+const SAFETY_SIGNAL_IDS = Object.freeze([
   "high_stakes_financial_instruction",
   "immediate_personal_danger",
   "legal_advice_with_deadline",
   "medical_diagnosis_or_treatment"
+]);
+
+const ROUTE_KEYS = Object.freeze([
+  "diagnosis::intent",
+  "diagnosis::cot_step",
+  "diagnosis::reflect",
+  "diagnosis::tot_branch",
+  "planning::intent",
+  "planning::planning",
+  "planning::execution",
+  "planning::reflect",
+  "decision::intent",
+  "decision::cot_step",
+  "decision::reflect",
+  "decision::tot_branch",
+  "creative::intent",
+  "creative::cot_step",
+  "creative::tot_branch",
+  "creative::synthesis",
+  "research::intent",
+  "research::research",
+  "research::synthesis",
+  "reflection::reflect",
+  "reflection::synthesis",
+  "communication::synthesis",
+  "clarification::intent"
+]);
+
+const PROBLEM_TYPE_ID_SET = new Set(PROBLEM_TYPE_IDS);
+const AGENT_STAGE_ID_SET = new Set(AGENT_STAGE_IDS);
+const SAFETY_SIGNAL_ID_SET = new Set(SAFETY_SIGNAL_IDS);
+const ROUTE_KEY_SET = new Set(ROUTE_KEYS);
+const CONTROLLERS = new WeakMap();
+
+const TOP_KEYS = new Set(["schema_version", "problem_types", "agent_stages", "safety_signals", "route_keys"]);
+const PROBLEM_TYPE_KEYS = new Set(["id", "label", "priority", "positive_phrases", "negative_phrases", "examples", "clarify_label"]);
+const AGENT_STAGE_KEYS = new Set(["id", "label", "priority", "positive_phrases"]);
+const SAFETY_SIGNAL_KEYS = new Set(["id", "label", "message", "phrases"]);
+const WEIGHTED_PHRASE_KEYS = new Set(["text", "weight"]);
+const RESULT_KEYS = new Set([
+  "state",
+  "problemTypeId",
+  "auxiliaryProblemTypeIds",
+  "agentStageId",
+  "evidence",
+  "clarificationOptionIds",
+  "safetySignalId"
+]);
+const EVIDENCE_KEYS = new Set([
+  "matchedPositivePhrases",
+  "matchedNegativePhrases",
+  "closestExample",
+  "shortcutIntentId"
 ]);
 
 const SELECTORS = Object.freeze({
@@ -32,58 +107,82 @@ const SELECTORS = Object.freeze({
 });
 
 function isRecord(value) {
-  return value !== null && typeof value === "object" && !Array.isArray(value);
+  if (value === null || typeof value !== "object" || Array.isArray(value)) return false;
+  const prototype = Object.getPrototypeOf(value);
+  return prototype === Object.prototype || prototype === null;
+}
+
+function hasExactKeys(value, expectedKeys) {
+  if (!isRecord(value)) return false;
+  const keys = Object.keys(value);
+  return keys.length === expectedKeys.size && keys.every((key) => expectedKeys.has(key));
 }
 
 function isNonEmptyString(value) {
   return typeof value === "string" && value.trim().length > 0;
 }
 
-function validWeightedPhrases(value, { allowEmpty = false } = {}) {
-  return Array.isArray(value) && value.every((entry) => (
-    isRecord(entry)
-    && isNonEmptyString(entry.text)
-    && Number.isInteger(entry.weight)
-    && entry.weight >= 1
-    && entry.weight <= 10
-  )) && (allowEmpty || value.length > 0);
+function isUniqueStringArray(value, { allowEmpty = false } = {}) {
+  return Array.isArray(value)
+    && (allowEmpty || value.length > 0)
+    && value.every(isNonEmptyString)
+    && new Set(value).size === value.length;
 }
 
-function validProblemType(value) {
-  return isRecord(value)
-    && isNonEmptyString(value.id)
-    && isNonEmptyString(value.label)
-    && Number.isInteger(value.priority)
-    && value.priority > 0
-    && validWeightedPhrases(value.positive_phrases)
-    && validWeightedPhrases(value.negative_phrases, { allowEmpty: true })
-    && Array.isArray(value.examples)
-    && value.examples.length > 0
-    && value.examples.every(isNonEmptyString)
-    && isNonEmptyString(value.clarify_label);
+function validWeightedPhrases(value) {
+  if (!(Array.isArray(value)
+    && value.length > 0
+    && value.every((entry) => (
+      hasExactKeys(entry, WEIGHTED_PHRASE_KEYS)
+      && isNonEmptyString(entry.text)
+      && Number.isInteger(entry.weight)
+      && entry.weight >= 1
+      && entry.weight <= 10
+    )))) return false;
+  const normalizedTexts = value.map(({ text }) => normalizeRouterText(text).compactText);
+  return normalizedTexts.every((text) => text.length > 0)
+    && new Set(normalizedTexts).size === normalizedTexts.length;
 }
 
-function validAgentStage(value) {
-  return isRecord(value)
-    && isNonEmptyString(value.id)
+function arraysEqual(actual, expected) {
+  return Array.isArray(actual)
+    && actual.length === expected.length
+    && actual.every((value, index) => value === expected[index]);
+}
+
+function validProblemType(value, index) {
+  if (
+    !hasExactKeys(value, PROBLEM_TYPE_KEYS)
+    || value.id !== PROBLEM_TYPE_IDS[index]
+    || !isNonEmptyString(value.label)
+    || value.priority !== (index + 1) * 10
+    || !validWeightedPhrases(value.positive_phrases)
+    || !validWeightedPhrases(value.negative_phrases)
+    || !isUniqueStringArray(value.examples)
+    || !isNonEmptyString(value.clarify_label)
+  ) return false;
+
+  const positiveTexts = new Set(value.positive_phrases.map(({ text }) => normalizeRouterText(text).compactText));
+  return value.negative_phrases.every(({ text }) => !positiveTexts.has(normalizeRouterText(text).compactText));
+}
+
+function validAgentStage(value, index) {
+  return hasExactKeys(value, AGENT_STAGE_KEYS)
+    && value.id === AGENT_STAGE_IDS[index]
     && isNonEmptyString(value.label)
-    && Number.isInteger(value.priority)
-    && value.priority > 0
+    && value.priority === (index + 1) * 10
     && validWeightedPhrases(value.positive_phrases);
 }
 
-function validSafetySignal(value) {
-  return isRecord(value)
-    && isNonEmptyString(value.id)
+function validSafetySignal(value, index) {
+  if (!(hasExactKeys(value, SAFETY_SIGNAL_KEYS)
+    && value.id === SAFETY_SIGNAL_IDS[index]
     && isNonEmptyString(value.label)
     && isNonEmptyString(value.message)
-    && Array.isArray(value.phrases)
-    && value.phrases.length > 0
-    && value.phrases.every(isNonEmptyString);
-}
-
-function hasUniqueIds(values) {
-  return new Set(values.map(({ id }) => id)).size === values.length;
+    && isUniqueStringArray(value.phrases))) return false;
+  const normalizedPhrases = value.phrases.map((phrase) => normalizeRouterText(phrase).compactText);
+  return normalizedPhrases.every((phrase) => phrase.length > 0)
+    && new Set(normalizedPhrases).size === normalizedPhrases.length;
 }
 
 export function parseRouterPayload(scriptNode) {
@@ -91,21 +190,18 @@ export function parseRouterPayload(scriptNode) {
   try {
     const payload = JSON.parse(scriptNode.textContent);
     if (
-      !isRecord(payload)
+      !hasExactKeys(payload, TOP_KEYS)
       || payload.schema_version !== "2.0-router"
       || !Array.isArray(payload.problem_types)
-      || payload.problem_types.length < 2
+      || payload.problem_types.length !== PROBLEM_TYPE_IDS.length
       || !payload.problem_types.every(validProblemType)
-      || !hasUniqueIds(payload.problem_types)
       || !Array.isArray(payload.agent_stages)
-      || payload.agent_stages.length === 0
+      || payload.agent_stages.length !== AGENT_STAGE_IDS.length
       || !payload.agent_stages.every(validAgentStage)
-      || !hasUniqueIds(payload.agent_stages)
       || !Array.isArray(payload.safety_signals)
-      || payload.safety_signals.length !== 4
+      || payload.safety_signals.length !== SAFETY_SIGNAL_IDS.length
       || !payload.safety_signals.every(validSafetySignal)
-      || !hasUniqueIds(payload.safety_signals)
-      || !payload.safety_signals.every(({ id }) => SAFETY_SIGNAL_IDS.has(id))
+      || !arraysEqual(payload.route_keys, ROUTE_KEYS)
     ) return null;
     return payload;
   } catch {
@@ -117,8 +213,100 @@ function all(root, selector) {
   return [...root.querySelectorAll(selector)];
 }
 
+function exactNodeCollection(nodes, attribute, expectedIds) {
+  return nodes.length === expectedIds.length
+    && nodes.every((node, index) => node.getAttribute(attribute) === expectedIds[index]);
+}
+
+function isEmptyEvidence(evidence) {
+  return evidence.matchedPositivePhrases.length === 0
+    && evidence.matchedNegativePhrases.length === 0
+    && evidence.closestExample === null
+    && evidence.shortcutIntentId === null;
+}
+
+function validateEvidence(evidence) {
+  return hasExactKeys(evidence, EVIDENCE_KEYS)
+    && isUniqueStringArray(evidence.matchedPositivePhrases, { allowEmpty: true })
+    && isUniqueStringArray(evidence.matchedNegativePhrases, { allowEmpty: true })
+    && (evidence.closestExample === null || isNonEmptyString(evidence.closestExample))
+    && (evidence.shortcutIntentId === null || PROBLEM_TYPE_ID_SET.has(evidence.shortcutIntentId));
+}
+
+function validateMatchResult(result, payload, request) {
+  if (
+    !hasExactKeys(result, RESULT_KEYS)
+    || !validateEvidence(result.evidence)
+    || !Array.isArray(result.auxiliaryProblemTypeIds)
+    || !Array.isArray(result.clarificationOptionIds)
+  ) return false;
+
+  const baseEmpty = result.problemTypeId === null
+    && result.auxiliaryProblemTypeIds.length === 0
+    && result.clarificationOptionIds.length === 0
+    && result.safetySignalId === null
+    && isEmptyEvidence(result.evidence);
+
+  if (result.state === "idle" || result.state === "needs_input") {
+    return baseEmpty && result.agentStageId === null;
+  }
+
+  if (result.state === "clarify") {
+    return result.problemTypeId === null
+      && result.auxiliaryProblemTypeIds.length === 0
+      && AGENT_STAGE_ID_SET.has(result.agentStageId)
+      && result.clarificationOptionIds.length >= 2
+      && result.clarificationOptionIds.length <= 4
+      && result.clarificationOptionIds.every((id) => PROBLEM_TYPE_ID_SET.has(id))
+      && new Set(result.clarificationOptionIds).size === result.clarificationOptionIds.length
+      && result.safetySignalId === null
+      && isEmptyEvidence(result.evidence);
+  }
+
+  if (result.state === "safety_stop") {
+    return result.problemTypeId === null
+      && result.auxiliaryProblemTypeIds.length === 0
+      && result.agentStageId === null
+      && result.clarificationOptionIds.length === 0
+      && SAFETY_SIGNAL_ID_SET.has(result.safetySignalId)
+      && isEmptyEvidence(result.evidence);
+  }
+
+  if (result.state !== "matched") return false;
+  if (
+    !PROBLEM_TYPE_ID_SET.has(result.problemTypeId)
+    || result.auxiliaryProblemTypeIds.length > 2
+    || !result.auxiliaryProblemTypeIds.every((id) => PROBLEM_TYPE_ID_SET.has(id) && id !== result.problemTypeId)
+    || new Set(result.auxiliaryProblemTypeIds).size !== result.auxiliaryProblemTypeIds.length
+    || !AGENT_STAGE_ID_SET.has(result.agentStageId)
+    || result.clarificationOptionIds.length !== 0
+    || result.safetySignalId !== null
+  ) return false;
+
+  const problemType = payload.problem_types.find(({ id }) => id === result.problemTypeId);
+  const positivePhrases = new Set(problemType.positive_phrases.map(({ text }) => text));
+  const negativePhrases = new Set(problemType.negative_phrases.map(({ text }) => text));
+  const compactQuery = normalizeRouterText(request.query).compactText;
+  const expectedShortcutEvidence = request.shortcutIntentId === result.problemTypeId
+    ? request.shortcutIntentId
+    : null;
+  const shortcutEvidenceValid = result.evidence.shortcutIntentId === expectedShortcutEvidence;
+  const positiveEvidenceValid = result.evidence.matchedPositivePhrases.every((phrase) => (
+    positivePhrases.has(phrase)
+    && compactQuery.includes(normalizeRouterText(phrase).compactText)
+  ));
+  const hasMatchEvidence = result.evidence.matchedPositivePhrases.length > 0
+    || result.evidence.shortcutIntentId === result.problemTypeId;
+  return shortcutEvidenceValid
+    && positiveEvidenceValid
+    && hasMatchEvidence
+    && result.evidence.matchedNegativePhrases.every((phrase) => negativePhrases.has(phrase))
+    && (result.evidence.closestExample === null || problemType.examples.includes(result.evidence.closestExample));
+}
+
 export function createRouterController({ root, matcher = matchRoute }) {
-  const payload = parseRouterPayload(root.querySelector(SELECTORS.payload));
+  const payloadNode = root.querySelector(SELECTORS.payload);
+  const payload = parseRouterPayload(payloadNode);
   const form = root.querySelector(SELECTORS.form);
   const input = root.querySelector(SELECTORS.input);
   const live = root.querySelector(SELECTORS.live);
@@ -142,8 +330,40 @@ export function createRouterController({ root, matcher = matchRoute }) {
   const view = root.defaultView;
   const copyButtonLabel = copyButton?.textContent ?? "";
 
+  const requiredNodes = [
+    payloadNode,
+    form,
+    input,
+    live,
+    hint,
+    title,
+    examples,
+    shortcuts,
+    results,
+    clarify,
+    clarifyQuestion,
+    safety,
+    safetyFacts,
+    unavailable,
+    copyButton,
+    copyStatus,
+    copyText
+  ];
+  const domReady = requiredNodes.every(Boolean)
+    && exactNodeCollection(shortcutButtons, "data-shortcut-intent", PROBLEM_TYPE_IDS)
+    && exactNodeCollection(clarifyButtons, "data-clarify-option", PROBLEM_TYPE_IDS)
+    && exactNodeCollection(safetyPanels, "data-safety-signal", SAFETY_SIGNAL_IDS)
+    && exactNodeCollection(routeCards, "data-route-key", ROUTE_KEYS)
+    && typeof view?.addEventListener === "function"
+    && typeof view?.removeEventListener === "function";
+
+  const routeCardByKey = new Map(routeCards.map((card) => [card.getAttribute("data-route-key"), card]));
+  const safetyPanelById = new Map(safetyPanels.map((panel) => [panel.getAttribute("data-safety-signal"), panel]));
   let selectedShortcutIntentId = null;
   let clarificationCount = 0;
+  let active = domReady;
+  let destroyed = false;
+  let generation = 0;
 
   function announce(message) {
     if (live) live.textContent = message;
@@ -151,6 +371,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
 
   function clearTransientMessages() {
     if (hint) hint.textContent = "";
+    generation += 1;
     if (copyStatus) copyStatus.textContent = "";
     if (copyButton) copyButton.textContent = copyButtonLabel;
   }
@@ -173,6 +394,10 @@ export function createRouterController({ root, matcher = matchRoute }) {
     for (const panel of safetyPanels) panel.hidden = true;
   }
 
+  function hideUnavailable() {
+    if (unavailable) unavailable.hidden = true;
+  }
+
   function setShortcutSelection(intentId) {
     selectedShortcutIntentId = intentId;
     for (const button of shortcutButtons) {
@@ -186,7 +411,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
     if (shortcuts) shortcuts.hidden = false;
     if (results) results.hidden = true;
     if (title) title.hidden = true;
-    if (unavailable) unavailable.hidden = true;
+    hideUnavailable();
     hideRoutes();
     hideClarification();
     hideSafety();
@@ -215,11 +440,12 @@ export function createRouterController({ root, matcher = matchRoute }) {
     if (shortcuts) shortcuts.hidden = false;
     if (results) results.hidden = true;
     if (title) title.hidden = true;
+    hideUnavailable();
     hideRoutes();
     hideClarification();
     hideSafety();
     announce("需要补充");
-    if (input) input.focus();
+    input.focus();
   }
 
   function showMatched(match) {
@@ -227,51 +453,44 @@ export function createRouterController({ root, matcher = matchRoute }) {
     if (shortcuts) shortcuts.hidden = true;
     if (results) results.hidden = false;
     if (title) title.hidden = false;
+    hideUnavailable();
     hideClarification();
     hideSafety();
     hideRoutes();
 
-    const routeIds = [
-      match.problemTypeId,
-      ...match.auxiliaryProblemTypeIds.filter((id) => id !== match.problemTypeId).slice(0, 2)
-    ];
-    let visibleCount = 0;
+    const routeIds = [match.problemTypeId, ...match.auxiliaryProblemTypeIds];
     for (const [index, problemTypeId] of routeIds.entries()) {
-      const exactKey = `${problemTypeId}::${match.agentStageId}`;
-      const card = routeCards.find((candidate) => candidate.getAttribute("data-route-key") === exactKey);
-      if (!card) continue;
+      const card = routeCardByKey.get(`${problemTypeId}::${match.agentStageId}`);
       card.hidden = false;
       card.setAttribute("data-route-kind", index === 0 ? "core" : "auxiliary");
-      visibleCount += 1;
     }
-    announce(`已匹配 ${visibleCount} 条路径`);
-    if (title) {
-      title.focus();
-      const reducedMotion = view?.matchMedia?.("(prefers-reduced-motion: reduce)").matches === true;
-      title.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
-    }
+    announce(`已匹配 ${routeIds.length} 条路径`);
+    title.focus();
+    const reducedMotion = view.matchMedia?.("(prefers-reduced-motion: reduce)").matches === true;
+    title.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
   }
 
   function showClarify(match) {
     if (examples) examples.hidden = true;
     if (results) results.hidden = true;
     if (title) title.hidden = true;
+    hideUnavailable();
     hideRoutes();
     hideSafety();
     announce("需要澄清");
 
-    if (clarificationCount >= 1) {
+    if (clarificationCount >= 2) {
       hideClarification();
-      if (shortcuts) shortcuts.hidden = false;
+      shortcuts.hidden = false;
       return;
     }
 
-    if (shortcuts) shortcuts.hidden = true;
-    if (clarify) clarify.hidden = false;
-    if (clarifyQuestion) clarifyQuestion.textContent = "你现在最需要的是找出原因、做出选择，还是制定下一步行动？";
-    const optionIds = [...new Set(match.clarificationOptionIds)].slice(0, 4);
+    clarificationCount = 1;
+    shortcuts.hidden = true;
+    clarify.hidden = false;
+    clarifyQuestion.textContent = "你现在最需要的是找出原因、做出选择，还是制定下一步行动？";
     for (const button of clarifyButtons) {
-      button.hidden = !optionIds.includes(button.getAttribute("data-clarify-option"));
+      button.hidden = !match.clarificationOptionIds.includes(button.getAttribute("data-clarify-option"));
     }
   }
 
@@ -280,13 +499,13 @@ export function createRouterController({ root, matcher = matchRoute }) {
     if (shortcuts) shortcuts.hidden = true;
     if (results) results.hidden = true;
     if (title) title.hidden = true;
+    hideUnavailable();
     hideRoutes();
     hideClarification();
     hideSafety();
-    if (safety) safety.hidden = false;
-    if (safetyFacts) safetyFacts.hidden = false;
-    const panel = safetyPanels.find((candidate) => candidate.getAttribute("data-safety-signal") === match.safetySignalId);
-    if (panel) panel.hidden = false;
+    safety.hidden = false;
+    safetyFacts.hidden = false;
+    safetyPanelById.get(match.safetySignalId).hidden = false;
     announce(match.safetySignalId === "immediate_personal_danger"
       ? "已停止自助路由，请优先寻求当地紧急服务或可信赖的人"
       : "已停止自助路由，请寻求相应的专业支持");
@@ -297,94 +516,169 @@ export function createRouterController({ root, matcher = matchRoute }) {
     else if (match.state === "needs_input") showNeedsInput();
     else if (match.state === "matched") showMatched(match);
     else if (match.state === "clarify") showClarify(match);
-    else if (match.state === "safety_stop") showSafetyStop(match);
-    else showUnavailable();
+    else showSafetyStop(match);
+  }
+
+  function hasRequiredResultTargets(match) {
+    if (match.state === "matched") {
+      return [match.problemTypeId, ...match.auxiliaryProblemTypeIds]
+        .every((problemTypeId) => ROUTE_KEY_SET.has(`${problemTypeId}::${match.agentStageId}`)
+          && routeCardByKey.has(`${problemTypeId}::${match.agentStageId}`));
+    }
+    return match.state !== "safety_stop" || safetyPanelById.has(match.safetySignalId);
   }
 
   function runMatch() {
+    if (!active || destroyed) return;
     if (!payload) {
       showUnavailable();
       return;
     }
+    if (clarificationCount === 1) clarificationCount = 2;
     clearTransientMessages();
-    render(matcher({
-      query: input?.value ?? "",
-      shortcutIntentId: selectedShortcutIntentId,
-      routerData: payload
-    }));
+    let match;
+    try {
+      const request = {
+        query: input.value,
+        shortcutIntentId: selectedShortcutIntentId,
+        routerData: payload
+      };
+      match = matcher(request);
+      if (!validateMatchResult(match, payload, request) || !hasRequiredResultTargets(match)) {
+        showUnavailable();
+        return;
+      }
+    } catch {
+      showUnavailable();
+      return;
+    }
+    render(match);
   }
 
-  function reset() {
+  function resetState() {
     selectedShortcutIntentId = null;
     clarificationCount = 0;
+    if (input) input.value = "";
     setShortcutSelection(null);
-    if (payload) showIdle({ clearInput: true });
-    else {
-      if (input) input.value = "";
-      showUnavailable();
+    if (payload && domReady) showIdle();
+    else showUnavailable();
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    if (!active || destroyed) return;
+    runMatch();
+  }
+
+  function handleReset() {
+    if (!active || destroyed) return;
+    generation += 1;
+    resetState();
+  }
+
+  const shortcutHandlers = shortcutButtons.map((button) => function handleShortcut() {
+    if (!active || destroyed || !payload) return;
+    const intentId = button.getAttribute("data-shortcut-intent");
+    if (!PROBLEM_TYPE_ID_SET.has(intentId)) return;
+    if (selectedShortcutIntentId === intentId) {
+      runMatch();
+      return;
+    }
+    clearTransientMessages();
+    setShortcutSelection(intentId);
+    const problemType = payload.problem_types.find(({ id }) => id === intentId);
+    hint.textContent = `已选择“${problemType.clarify_label}”，可继续补充后提交`;
+  });
+
+  const clarifyHandlers = clarifyButtons.map((button) => function handleClarify() {
+    if (!active || destroyed || clarificationCount !== 1 || button.hidden) return;
+    const intentId = button.getAttribute("data-clarify-option");
+    if (!PROBLEM_TYPE_ID_SET.has(intentId)) return;
+    setShortcutSelection(intentId);
+    runMatch();
+  });
+
+  async function handleCopy() {
+    if (!active || destroyed) return;
+    generation += 1;
+    copyStatus.textContent = "";
+    copyButton.textContent = copyButtonLabel;
+    const requestGeneration = generation;
+    const text = copyText.value ?? copyText.textContent ?? "";
+    try {
+      const writeText = view.navigator?.clipboard?.writeText;
+      if (typeof writeText !== "function") throw new Error("clipboard unavailable");
+      await writeText.call(view.navigator.clipboard, text);
+      if (!active || destroyed || generation !== requestGeneration) return;
+      copyButton.textContent = "已复制";
+      copyStatus.textContent = "已复制";
+    } catch {
+      if (!active || destroyed || generation !== requestGeneration) return;
+      copyText.focus();
+      copyText.selectionStart = 0;
+      copyText.selectionEnd = text.length;
+      copyStatus.textContent = "复制失败，请手动复制已选文本";
     }
   }
 
-  if (form) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      runMatch();
-    });
-    form.addEventListener("reset", reset);
+  function handlePageHide() {
+    if (destroyed) return;
+    active = false;
+    generation += 1;
+    resetState();
   }
 
-  for (const button of shortcutButtons) {
-    button.addEventListener("click", () => {
-      const intentId = button.getAttribute("data-shortcut-intent");
-      if (!intentId) return;
-      if (selectedShortcutIntentId === intentId) {
-        runMatch();
-        return;
-      }
-      setShortcutSelection(intentId);
-      const problemType = payload?.problem_types.find(({ id }) => id === intentId);
-      if (hint) hint.textContent = `已选择“${problemType?.clarify_label ?? intentId}”，可继续补充后提交`;
-    });
+  function handlePageShow() {
+    if (destroyed || !domReady) return;
+    active = true;
+    generation += 1;
+    resetState();
   }
 
-  for (const button of clarifyButtons) {
-    button.addEventListener("click", () => {
-      if (button.hidden || clarificationCount >= 1) return;
-      const intentId = button.getAttribute("data-clarify-option");
-      if (!intentId) return;
-      clarificationCount += 1;
-      setShortcutSelection(intentId);
-      runMatch();
-    });
+  function reset() {
+    handleReset();
   }
 
-  if (copyButton) {
-    copyButton.addEventListener("click", async () => {
-      const text = copyText?.value ?? copyText?.textContent ?? "";
-      try {
-        const writeText = view?.navigator?.clipboard?.writeText;
-        if (typeof writeText !== "function") throw new Error("clipboard unavailable");
-        await writeText.call(view.navigator.clipboard, text);
-        copyButton.textContent = "已复制";
-        if (copyStatus) copyStatus.textContent = "已复制";
-      } catch {
-        if (copyText) {
-          copyText.focus();
-          copyText.selectionStart = 0;
-          copyText.selectionEnd = text.length;
-        }
-        if (copyStatus) copyStatus.textContent = "复制失败，请手动复制已选文本";
-      }
-    });
+  function destroy() {
+    if (destroyed) return;
+    destroyed = true;
+    active = false;
+    generation += 1;
+    resetState();
+    if (form) form.removeEventListener("submit", handleSubmit);
+    if (domReady) {
+      form.removeEventListener("reset", handleReset);
+      shortcutButtons.forEach((button, index) => button.removeEventListener("click", shortcutHandlers[index]));
+      clarifyButtons.forEach((button, index) => button.removeEventListener("click", clarifyHandlers[index]));
+      copyButton.removeEventListener("click", handleCopy);
+      view.removeEventListener("pagehide", handlePageHide);
+      view.removeEventListener("pageshow", handlePageShow);
+    }
+    if (CONTROLLERS.get(root) === controller) CONTROLLERS.delete(root);
   }
 
-  view?.addEventListener?.("pagehide", reset);
-  if (payload) showIdle();
+  const controller = Object.freeze({ reset, destroy });
+
+  if (form) form.addEventListener("submit", handleSubmit);
+  if (domReady) {
+    form.addEventListener("reset", handleReset);
+    shortcutButtons.forEach((button, index) => button.addEventListener("click", shortcutHandlers[index]));
+    clarifyButtons.forEach((button, index) => button.addEventListener("click", clarifyHandlers[index]));
+    copyButton.addEventListener("click", handleCopy);
+    view.addEventListener("pagehide", handlePageHide);
+    view.addEventListener("pageshow", handlePageShow);
+  }
+
+  if (payload && domReady) showIdle();
   else showUnavailable();
 
-  return Object.freeze({ reset });
+  return controller;
 }
 
 export function bootRouter(root = document) {
-  return createRouterController({ root });
+  const existing = CONTROLLERS.get(root);
+  if (existing) return existing;
+  const controller = createRouterController({ root });
+  CONTROLLERS.set(root, controller);
+  return controller;
 }
