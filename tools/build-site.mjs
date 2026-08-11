@@ -368,6 +368,7 @@ function compileCompositePrompt(chain) {
   const lines = [
     `以下复合 Prompt 由已验证阶段协议在构建时编排。请按「${chain.meta.title}」执行组合协议。`,
     `定义：${chain.meta.description}`,
+    `Agent 流程：${chain.meta.agent_flow}`,
     `适用问题：${chain.meta.problem_types.join("；")}`,
     `触发信号：${chain.meta.trigger_signals.join("；")}`,
     `开始前输入：${chain.phases[0].input}`,
@@ -381,7 +382,7 @@ function compileCompositePrompt(chain) {
       `   输出：${phase.output}`,
       `   检查点：${phase.checkpoint}`,
       `   停止条件：${phase.stop_condition}`,
-      phase.loop_back_to === null ? "" : `   回环：未通过时回到 ${phaseById(chain, phase.loop_back_to).name}`,
+      phase.loop_back_to === null ? "   回环：无" : `   回环：未通过时回到 ${phaseById(chain, phase.loop_back_to).name}`,
     );
   }
   lines.push(
@@ -725,7 +726,7 @@ export async function buildSite() {
 
   writeTextFile(join(output, "router.html"), renderRouterPage({ buildView, modelFile }));
 
-  const notFoundBody = `<section class="not-found section-shell"><p class="kicker">ERROR 404</p><strong>404</strong><h1>这条推理路径不存在</h1><p>页面可能已移动，或链接指向了旧版单页结构。</p><div><a class="button button-primary" href="index.html">返回首页</a><a class="button button-secondary" href="models/index.html">浏览模型库</a><a class="button button-secondary" href="combinations/index.html">进入组合工坊</a></div></section>`;
+  const notFoundBody = `<section class="not-found section-shell"><p class="kicker">ERROR 404</p><strong>404</strong><h1>这条推理路径不存在</h1><p>页面可能已移动，或链接指向了旧版单页结构。</p><div><a class="button button-primary" href="/">返回首页</a><a class="button button-secondary" href="/models/">浏览模型库</a><a class="button button-secondary" href="/combinations/">进入组合工坊</a><a class="button button-secondary" href="/router.html">使用 Agent 路由</a></div></section>`;
   writeTextFile(join(output, "404.html"), shell({ title: "页面未找到", description: `请求的${PRODUCT_NAME}页面不存在。`, pathname: "/404.html", body: notFoundBody, pageClass: "error-page" }));
   writeTextFile(join(output, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 

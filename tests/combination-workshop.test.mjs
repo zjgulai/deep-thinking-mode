@@ -60,6 +60,21 @@ function count(source, marker) {
   return source.split(marker).length - 1;
 }
 
+function decodeHtmlText(value) {
+  return value
+    .replace(/&lt;/gu, "<")
+    .replace(/&gt;/gu, ">")
+    .replace(/&quot;/gu, '"')
+    .replace(/&#39;/gu, "'")
+    .replace(/&amp;/gu, "&");
+}
+
+function extractCompositePrompt(html, chainId) {
+  const prompts = matches(html, /<pre\b[^>]*id="combination-prompt-[^"]+"[^>]*><code>([\s\S]*?)<\/code><\/pre>/gu);
+  assert.equal(prompts.length, 1, `${chainId}: unique composite prompt`);
+  return decodeHtmlText(prompts[0][1]);
+}
+
 function read(root, relativePath) {
   return readFileSync(join(root, relativePath), "utf8");
 }
@@ -129,12 +144,6 @@ test("all five detail renderers preserve real phase order, stable model links, a
     assert.match(html, /复合 Prompt/u, chainId);
     assert.match(html, /由已验证阶段协议在构建时编排/u, chainId);
     assert.match(html, /事实、假设与专业升级/u, chainId);
-    for (const phase of chain.phases) {
-      assert.match(html, new RegExp(phase.input.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "u"), `${chainId}:${phase.id}:input contract`);
-      assert.match(html, new RegExp(phase.output.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "u"), `${chainId}:${phase.id}:prompt output`);
-      assert.match(html, new RegExp(phase.checkpoint.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "u"), `${chainId}:${phase.id}:prompt checkpoint`);
-      assert.match(html, new RegExp(phase.stop_condition.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "u"), `${chainId}:${phase.id}:prompt stop`);
-    }
     assert.equal(
       html,
       renderDetail({ chain, modelsById: buildView.modelsById, chapterById, modelFile }),
@@ -142,6 +151,30 @@ test("all five detail renderers preserve real phase order, stable model links, a
     );
     assert.doesNotMatch(html, /源数据自带|JSON 原生字段/u, chainId);
     assert.doesNotMatch(html, /\son[a-z]+\s*=/iu, chainId);
+  }
+});
+
+test("each composite Prompt subtree contains the complete validated Chain meta and phase contract", () => {
+  const renderDetail = renderer("renderCombinationDetail");
+
+  for (const chainId of CHAIN_IDS) {
+    const chain = buildView.chainsById.get(chainId);
+    const html = renderDetail({ chain, modelsById: buildView.modelsById, chapterById, modelFile });
+    const prompt = extractCompositePrompt(html, chainId);
+
+    assert.match(prompt, /由已验证阶段协议在构建时编排/u, chainId);
+    for (const value of [chain.meta.title, chain.meta.description, chain.meta.agent_flow, ...chain.meta.problem_types, ...chain.meta.trigger_signals]) {
+      assert.ok(prompt.includes(value), `${chainId}: missing meta value ${value}`);
+    }
+    for (const phase of chain.phases) {
+      for (const value of [phase.input, phase.output, phase.checkpoint, phase.stop_condition]) {
+        assert.ok(prompt.includes(value), `${chainId}:${phase.id}: missing ${value}`);
+      }
+      const expectedLoop = phase.loop_back_to === null
+        ? "回环：无"
+        : `回环：未通过时回到 ${chain.phases.find((candidate) => candidate.id === phase.loop_back_to).name}`;
+      assert.ok(prompt.includes(expectedLoop), `${chainId}:${phase.id}: missing ${expectedLoop}`);
+    }
   }
 });
 
@@ -209,7 +242,28 @@ test("real build emits six discoverable pages and reverse entries matching the v
   for (const path of ["/combinations/", ...CHAIN_IDS.map((id) => `/combinations/${id}.html`)]) {
     assert.match(sitemap, new RegExp(`<loc>https://xmind\\.lute-tlz-dddd\\.top${path.replaceAll("/", "\\/")}</loc>`, "u"));
   }
-  assert.match(read(siteRoot, "404.html"), /href="combinations\/index\.html"/u);
+  const notFound = read(siteRoot, "404.html");
+  const recoverySection = notFound.match(/<section\b[^>]*class="not-found section-shell"[^>]*>([\s\S]*?)<\/section>/u);
+  assert.ok(recoverySection, "404 recovery section");
+  const recoveryLinks = new Map(
+    matches(recoverySection[1], /<a\b[^>]*href="([^"]+)"[^>]*>([^<]+)<\/a>/gu).map((match) => [match[2], match[1]]),
+  );
+  const expectedRecoveryPaths = new Map([
+    ["返回首页", "/"],
+    ["浏览模型库", "/models/"],
+    ["进入组合工坊", "/combinations/"],
+    ["使用 Agent 路由", "/router.html"],
+  ]);
+  assert.deepEqual([...recoveryLinks.keys()], [...expectedRecoveryPaths.keys()]);
+  for (const base of [
+    "https://xmind.lute-tlz-dddd.top/models/missing.html",
+    "https://xmind.lute-tlz-dddd.top/chapters/deep/missing.html",
+    "https://xmind.lute-tlz-dddd.top/combinations/archive/deep/missing.html",
+  ]) {
+    for (const [label, pathname] of expectedRecoveryPaths) {
+      assert.equal(new URL(recoveryLinks.get(label), base).pathname, pathname, `${base}: ${label}`);
+    }
+  }
 
   const modelFileById = new Map();
   for (const path of CHAIN_IDS.map((id) => `combinations/${id}.html`)) {
