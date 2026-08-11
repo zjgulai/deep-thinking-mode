@@ -396,6 +396,46 @@ test("duplicate frozen shortcut, clarify, safety, or route nodes fail closed bef
   }
 });
 
+test("every required singleton must appear exactly once and every form still blocks native submit", () => {
+  const singletonNames = [
+    "payloadNode", "form", "input", "live", "hint", "title", "examples", "shortcuts", "results",
+    "clarify", "clarifyQuestion", "safety", "safetyFacts", "unavailable", "copyButton", "copyStatus", "copyText"
+  ];
+  for (const singletonName of singletonNames) {
+    const dom = createFakeRouterDom({ payload: ROUTER_DATA });
+    const original = dom.nodes[singletonName];
+    const duplicate = new FakeRouterNode({
+      attributes: Object.fromEntries(original.attributes),
+      hidden: original.hidden,
+      textContent: original.textContent,
+      value: original.value
+    });
+    dom.root.children.push(duplicate);
+    let calls = 0;
+    createRouterController({ root: dom.root, matcher: () => { calls += 1; return result("needs_input"); } });
+    const firstSubmit = dispatch(dom.nodes.form, "submit");
+    assert.equal(firstSubmit.defaultPrevented, true, singletonName);
+    if (singletonName === "form") {
+      const secondSubmit = dispatch(duplicate, "submit");
+      assert.equal(secondSubmit.defaultPrevented, true, "second form");
+    }
+    assert.equal(calls, 0, singletonName);
+    assert.equal(dom.nodes.unavailable.hidden, false, singletonName);
+  }
+});
+
+test("required singleton selectors cannot alias the same DOM node", () => {
+  const dom = createFakeRouterDom({ payload: ROUTER_DATA });
+  dom.root.children = dom.root.children.filter((child) => child !== dom.nodes.input);
+  dom.nodes.form.setAttribute("data-router-input", "");
+  let calls = 0;
+  createRouterController({ root: dom.root, matcher: () => { calls += 1; return result("needs_input"); } });
+  const submitEvent = dispatch(dom.nodes.form, "submit");
+  assert.equal(submitEvent.defaultPrevented, true);
+  assert.equal(calls, 0);
+  assert.equal(dom.nodes.unavailable.hidden, false);
+});
+
 test("matcher throws and malformed frozen results fail closed without leaking partial UI", () => {
   const malformed = [
     null,
@@ -467,7 +507,7 @@ test("matched requires shortcut evidence exactly when the selected shortcut beco
       problemTypeId: "diagnosis",
       auxiliaryProblemTypeIds: [],
       agentStageId: "intent",
-      evidence: { ...result("idle").evidence, matchedPositivePhrases: ["为什么"] }
+      evidence: { ...result("idle").evidence, matchedPositivePhrases: ["为什么", "失败了"] }
     })
   });
   dispatch(nodes.shortcutButtons[0], "click");
@@ -478,13 +518,77 @@ test("matched requires shortcut evidence exactly when the selected shortcut beco
   assert.ok(nodes.routeCards.every((card) => card.hidden));
 });
 
+test("matched evidence must exactly equal the engine score entry for the current request", () => {
+  const exactEvidence = {
+    matchedPositivePhrases: ["为什么", "失败了"],
+    matchedNegativePhrases: [],
+    closestExample: null,
+    shortcutIntentId: null
+  };
+  const injectedNegative = { ...exactEvidence, matchedNegativePhrases: ["不需要找出原因"] };
+  const injectedExample = { ...exactEvidence, closestExample: ROUTER_DATA.problem_types[0].examples[0] };
+  const reversedPositiveOrder = { ...exactEvidence, matchedPositivePhrases: ["失败了", "为什么"] };
+
+  for (const evidence of [injectedNegative, injectedExample, reversedPositiveOrder]) {
+    const { nodes } = controllerFixture({
+      matcher: () => result("matched", {
+        problemTypeId: "diagnosis",
+        auxiliaryProblemTypeIds: [],
+        agentStageId: "intent",
+        evidence
+      })
+    });
+    nodes.input.value = "为什么失败了";
+    dispatch(nodes.form, "submit");
+    assert.equal(nodes.unavailable.hidden, false);
+    assert.ok(nodes.routeCards.every((card) => card.hidden));
+  }
+});
+
+test("a non-clarify terminal result starts a fresh clarification round", () => {
+  const clarifyResult = result("clarify", {
+    agentStageId: "intent",
+    clarificationOptionIds: ["diagnosis", "planning"]
+  });
+  const terminals = [
+    result("matched", {
+      problemTypeId: "diagnosis",
+      auxiliaryProblemTypeIds: [],
+      agentStageId: "intent",
+      evidence: {
+        matchedPositivePhrases: ["为什么", "失败了"],
+        matchedNegativePhrases: [],
+        closestExample: null,
+        shortcutIntentId: null
+      }
+    }),
+    result("safety_stop", { safetySignalId: "immediate_personal_danger" }),
+    null,
+    result("needs_input")
+  ];
+
+  for (const terminal of terminals) {
+    const responses = [clarifyResult, terminal, clarifyResult];
+    const { nodes, calls } = controllerFixture({ matcher: () => responses.shift() });
+    nodes.input.value = "为什么失败了";
+    dispatch(nodes.form, "submit");
+    assert.equal(nodes.clarify.hidden, false);
+    dispatch(nodes.form, "submit");
+    dispatch(nodes.form, "submit");
+    assert.equal(calls.length, 3);
+    assert.equal(nodes.clarify.hidden, false);
+    assert.equal(nodes.clarifyButtons.filter((button) => !button.hidden).length, 2);
+    assert.equal(nodes.shortcuts.hidden, true);
+  }
+});
+
 test("normal states hide unavailable and remain mutually exclusive across matched, safety, invalid, and needs_input", () => {
   const responses = [
     result("matched", {
       problemTypeId: "diagnosis",
       auxiliaryProblemTypeIds: ["planning"],
       agentStageId: "intent",
-      evidence: { ...result("idle").evidence, matchedPositivePhrases: ["为什么"] }
+      evidence: { ...result("idle").evidence, matchedPositivePhrases: ["为什么", "失败了"] }
     }),
     result("safety_stop", { safetySignalId: "immediate_personal_danger" }),
     null,
@@ -638,4 +742,32 @@ test("bootRouter is idempotent per root, destroy removes listeners, and reboot c
   nodes.input.value = "为什么失败了";
   dispatch(nodes.form, "submit");
   assert.equal(nodes.title.scrollCalls.length, 2);
+});
+
+test("createRouterController owns root lifecycle across direct create, boot, destroy, and reboot", () => {
+  const directDom = createFakeRouterDom({ payload: ROUTER_DATA });
+  let directCalls = 0;
+  const direct = createRouterController({
+    root: directDom.root,
+    matcher: () => { directCalls += 1; return result("needs_input"); }
+  });
+  const bootedAfterDirect = bootRouter(directDom.root);
+  assert.equal(bootedAfterDirect, direct);
+  assert.equal(directDom.nodes.form.listenerCount("submit"), 1);
+  directDom.nodes.input.value = "a";
+  dispatch(directDom.nodes.form, "submit");
+  assert.equal(directCalls, 1);
+
+  const bootDom = createFakeRouterDom({ payload: ROUTER_DATA });
+  const booted = bootRouter(bootDom.root);
+  const createdAfterBoot = createRouterController({ root: bootDom.root, matcher: () => result("needs_input") });
+  assert.equal(createdAfterBoot, booted);
+  assert.equal(bootDom.nodes.form.listenerCount("submit"), 1);
+  booted.destroy();
+  assert.equal(bootDom.nodes.form.listenerCount("submit"), 0);
+  const rebooted = bootRouter(bootDom.root);
+  assert.notEqual(rebooted, booted);
+  assert.equal(bootDom.nodes.form.listenerCount("submit"), 1);
+  rebooted.destroy();
+  assert.equal(bootDom.nodes.form.listenerCount("submit"), 0);
 });

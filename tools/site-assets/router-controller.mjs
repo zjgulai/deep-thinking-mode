@@ -1,4 +1,4 @@
-import { matchRoute, normalizeRouterText } from "./router-engine.mjs";
+import { matchRoute, normalizeRouterText, scoreProblemTypes } from "./router-engine.mjs";
 
 const PROBLEM_TYPE_IDS = Object.freeze([
   "diagnosis",
@@ -283,54 +283,65 @@ function validateMatchResult(result, payload, request) {
     || result.safetySignalId !== null
   ) return false;
 
-  const problemType = payload.problem_types.find(({ id }) => id === result.problemTypeId);
-  const positivePhrases = new Set(problemType.positive_phrases.map(({ text }) => text));
-  const negativePhrases = new Set(problemType.negative_phrases.map(({ text }) => text));
-  const compactQuery = normalizeRouterText(request.query).compactText;
-  const expectedShortcutEvidence = request.shortcutIntentId === result.problemTypeId
-    ? request.shortcutIntentId
-    : null;
-  const shortcutEvidenceValid = result.evidence.shortcutIntentId === expectedShortcutEvidence;
-  const positiveEvidenceValid = result.evidence.matchedPositivePhrases.every((phrase) => (
-    positivePhrases.has(phrase)
-    && compactQuery.includes(normalizeRouterText(phrase).compactText)
-  ));
-  const hasMatchEvidence = result.evidence.matchedPositivePhrases.length > 0
-    || result.evidence.shortcutIntentId === result.problemTypeId;
-  return shortcutEvidenceValid
-    && positiveEvidenceValid
+  const sourceEntry = scoreProblemTypes({
+    query: request.query,
+    shortcutIntentId: request.shortcutIntentId,
+    problemTypes: payload.problem_types
+  })[0];
+  const expectedShortcutEvidence = sourceEntry?.shortcutMatched ? request.shortcutIntentId : null;
+  const hasMatchEvidence = (sourceEntry?.matchedPositivePhrases.length ?? 0) > 0
+    || sourceEntry?.shortcutMatched === true;
+  return sourceEntry?.id === result.problemTypeId
+    && sourceEntry.score >= 8
     && hasMatchEvidence
-    && result.evidence.matchedNegativePhrases.every((phrase) => negativePhrases.has(phrase))
-    && (result.evidence.closestExample === null || problemType.examples.includes(result.evidence.closestExample));
+    && arraysEqual(result.evidence.matchedPositivePhrases, sourceEntry.matchedPositivePhrases)
+    && arraysEqual(result.evidence.matchedNegativePhrases, sourceEntry.matchedNegativePhrases)
+    && result.evidence.closestExample === sourceEntry.closestExample
+    && result.evidence.shortcutIntentId === expectedShortcutEvidence;
 }
 
 export function createRouterController({ root, matcher = matchRoute }) {
-  const payloadNode = root.querySelector(SELECTORS.payload);
-  const payload = parseRouterPayload(payloadNode);
-  const form = root.querySelector(SELECTORS.form);
-  const input = root.querySelector(SELECTORS.input);
-  const live = root.querySelector(SELECTORS.live);
-  const hint = root.querySelector(SELECTORS.hint);
-  const title = root.querySelector(SELECTORS.title);
-  const examples = root.querySelector(SELECTORS.examples);
-  const shortcuts = root.querySelector(SELECTORS.shortcuts);
-  const results = root.querySelector(SELECTORS.results);
-  const clarify = root.querySelector(SELECTORS.clarify);
-  const clarifyQuestion = root.querySelector(SELECTORS.clarifyQuestion);
-  const safety = root.querySelector(SELECTORS.safety);
-  const safetyFacts = root.querySelector(SELECTORS.safetyFacts);
-  const unavailable = root.querySelector(SELECTORS.unavailable);
-  const copyButton = root.querySelector(SELECTORS.copy);
-  const copyStatus = root.querySelector(SELECTORS.copyStatus);
-  const copyText = root.querySelector(SELECTORS.copyText);
-  const routeCards = all(root, SELECTORS.route);
-  const shortcutButtons = all(root, SELECTORS.shortcut);
-  const clarifyButtons = all(root, SELECTORS.clarifyOption);
-  const safetyPanels = all(root, SELECTORS.safetySignal);
-  const view = root.defaultView;
-  const copyButtonLabel = copyButton?.textContent ?? "";
+  const existing = CONTROLLERS.get(root);
+  if (existing) return existing;
 
-  const requiredNodes = [
+  const payloadNodes = all(root, SELECTORS.payload);
+  const forms = all(root, SELECTORS.form);
+  const inputs = all(root, SELECTORS.input);
+  const liveNodes = all(root, SELECTORS.live);
+  const hintNodes = all(root, SELECTORS.hint);
+  const titleNodes = all(root, SELECTORS.title);
+  const exampleNodes = all(root, SELECTORS.examples);
+  const shortcutContainers = all(root, SELECTORS.shortcuts);
+  const resultContainers = all(root, SELECTORS.results);
+  const clarifyContainers = all(root, SELECTORS.clarify);
+  const clarifyQuestionNodes = all(root, SELECTORS.clarifyQuestion);
+  const safetyContainers = all(root, SELECTORS.safety);
+  const safetyFactNodes = all(root, SELECTORS.safetyFacts);
+  const unavailableNodes = all(root, SELECTORS.unavailable);
+  const copyButtons = all(root, SELECTORS.copy);
+  const copyStatusNodes = all(root, SELECTORS.copyStatus);
+  const copyTextNodes = all(root, SELECTORS.copyText);
+  const singletonCollections = [
+    payloadNodes,
+    forms,
+    inputs,
+    liveNodes,
+    hintNodes,
+    titleNodes,
+    exampleNodes,
+    shortcutContainers,
+    resultContainers,
+    clarifyContainers,
+    clarifyQuestionNodes,
+    safetyContainers,
+    safetyFactNodes,
+    unavailableNodes,
+    copyButtons,
+    copyStatusNodes,
+    copyTextNodes
+  ];
+  const requiredNodes = singletonCollections.map(([node]) => node ?? null);
+  const [
     payloadNode,
     form,
     input,
@@ -348,8 +359,17 @@ export function createRouterController({ root, matcher = matchRoute }) {
     copyButton,
     copyStatus,
     copyText
-  ];
-  const domReady = requiredNodes.every(Boolean)
+  ] = requiredNodes;
+  const payload = parseRouterPayload(payloadNode);
+  const routeCards = all(root, SELECTORS.route);
+  const shortcutButtons = all(root, SELECTORS.shortcut);
+  const clarifyButtons = all(root, SELECTORS.clarifyOption);
+  const safetyPanels = all(root, SELECTORS.safetySignal);
+  const view = root.defaultView;
+  const copyButtonLabel = copyButton?.textContent ?? "";
+
+  const domReady = singletonCollections.every((nodes) => nodes.length === 1)
+    && new Set(requiredNodes).size === requiredNodes.length
     && exactNodeCollection(shortcutButtons, "data-shortcut-intent", PROBLEM_TYPE_IDS)
     && exactNodeCollection(clarifyButtons, "data-clarify-option", PROBLEM_TYPE_IDS)
     && exactNodeCollection(safetyPanels, "data-safety-signal", SAFETY_SIGNAL_IDS)
@@ -406,6 +426,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
   }
 
   function showIdle({ clearInput = false } = {}) {
+    clarificationCount = 0;
     if (clearInput && input) input.value = "";
     if (examples) examples.hidden = false;
     if (shortcuts) shortcuts.hidden = false;
@@ -420,6 +441,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
   }
 
   function showUnavailable() {
+    clarificationCount = 0;
     if (examples) examples.hidden = true;
     if (shortcuts) shortcuts.hidden = true;
     if (results) results.hidden = true;
@@ -436,6 +458,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
   }
 
   function showNeedsInput() {
+    clarificationCount = 0;
     if (examples) examples.hidden = false;
     if (shortcuts) shortcuts.hidden = false;
     if (results) results.hidden = true;
@@ -449,6 +472,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
   }
 
   function showMatched(match) {
+    clarificationCount = 0;
     if (examples) examples.hidden = true;
     if (shortcuts) shortcuts.hidden = true;
     if (results) results.hidden = false;
@@ -495,6 +519,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
   }
 
   function showSafetyStop(match) {
+    clarificationCount = 0;
     if (examples) examples.hidden = true;
     if (shortcuts) shortcuts.hidden = true;
     if (results) results.hidden = true;
@@ -645,7 +670,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
     active = false;
     generation += 1;
     resetState();
-    if (form) form.removeEventListener("submit", handleSubmit);
+    for (const candidate of new Set(forms)) candidate.removeEventListener("submit", handleSubmit);
     if (domReady) {
       form.removeEventListener("reset", handleReset);
       shortcutButtons.forEach((button, index) => button.removeEventListener("click", shortcutHandlers[index]));
@@ -659,7 +684,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
 
   const controller = Object.freeze({ reset, destroy });
 
-  if (form) form.addEventListener("submit", handleSubmit);
+  for (const candidate of new Set(forms)) candidate.addEventListener("submit", handleSubmit);
   if (domReady) {
     form.addEventListener("reset", handleReset);
     shortcutButtons.forEach((button, index) => button.addEventListener("click", shortcutHandlers[index]));
@@ -672,13 +697,10 @@ export function createRouterController({ root, matcher = matchRoute }) {
   if (payload && domReady) showIdle();
   else showUnavailable();
 
+  CONTROLLERS.set(root, controller);
   return controller;
 }
 
 export function bootRouter(root = document) {
-  const existing = CONTROLLERS.get(root);
-  if (existing) return existing;
-  const controller = createRouterController({ root });
-  CONTROLLERS.set(root, controller);
-  return controller;
+  return createRouterController({ root });
 }
