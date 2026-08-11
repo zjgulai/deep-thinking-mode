@@ -12,7 +12,7 @@
     "manifest:update": "node tools/update-public-manifest.mjs",
     "manifest:check": "node tools/update-public-manifest.mjs --check",
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check tools/build-site.mjs tools/check-public-artifact.mjs tools/check-public-tree.mjs tools/hash-public-artifact.mjs tools/register-ocr-assets.mjs tools/release-public-root.mjs tools/sanitize-public-models.mjs tools/update-public-manifest.mjs tools/validate-v3-agent-data.mjs tools/verify-production.mjs tools/verify-security-headers.mjs tools/lib/chapter-presentation.mjs tools/lib/pages-workflow.mjs tools/lib/public-history.mjs tools/lib/public-model-sanitizer.mjs tools/lib/site-security.mjs tools/lib/v3-agent-data.mjs && npm run validate:data && npm run manifest:check",
+    "check": "node --check tools/build-site.mjs tools/check-public-artifact.mjs tools/check-public-tree.mjs tools/hash-public-artifact.mjs tools/register-ocr-assets.mjs tools/release-public-root.mjs tools/sanitize-public-models.mjs tools/site-assets/router-engine.mjs tools/update-public-manifest.mjs tools/validate-v3-agent-data.mjs tools/verify-production.mjs tools/verify-security-headers.mjs tools/lib/chapter-presentation.mjs tools/lib/pages-workflow.mjs tools/lib/public-history.mjs tools/lib/public-model-sanitizer.mjs tools/lib/site-security.mjs tools/lib/v3-agent-data.mjs && npm run validate:data && npm run manifest:check",
     "check:public": "node tools/check-public-artifact.mjs",
     "verify:security": "node tools/verify-security-headers.mjs",
     "release:check": "npm run check && npm test && npm run build && npm run check:public"

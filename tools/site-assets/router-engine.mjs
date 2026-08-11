@@ -1,0 +1,177 @@
+function compareAscii(left, right) {
+  if (left === right) return 0;
+  return left < right ? -1 : 1;
+}
+
+export function normalizeRouterText(input) {
+  const normalizedText = String(input ?? "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[\p{P}\s]+/gu, " ")
+    .replace(/[^\p{Script=Han}\p{L}\p{N} ]+/gu, "")
+    .trim()
+    .replace(/\s+/gu, " ");
+  return {
+    normalizedText,
+    compactText: normalizedText.replace(/\s+/gu, "")
+  };
+}
+
+export function createBigrams(normalizedCompactText) {
+  const characters = [...String(normalizedCompactText ?? "")];
+  const bigrams = new Set();
+  for (let index = 0; index + 1 < characters.length; index += 1) {
+    bigrams.add(`${characters[index]}${characters[index + 1]}`);
+  }
+  return bigrams;
+}
+
+function jaccardSimilarity(left, right) {
+  if (left.size === 0 || right.size === 0) return 0;
+  let intersection = 0;
+  for (const value of left) {
+    if (right.has(value)) intersection += 1;
+  }
+  return intersection / (left.size + right.size - intersection);
+}
+
+function matchedPhrases(compactText, phrases = []) {
+  return phrases.filter(({ text }) => {
+    const phrase = normalizeRouterText(text).compactText;
+    return phrase.length > 0 && compactText.includes(phrase);
+  });
+}
+
+export function scoreProblemTypes({ query, shortcutIntentId, problemTypes }) {
+  const { compactText } = normalizeRouterText(query);
+  const queryBigrams = createBigrams(compactText);
+
+  return problemTypes.map((problemType) => {
+    const negativeMatches = matchedPhrases(compactText, problemType.negative_phrases);
+    const positiveMatches = matchedPhrases(compactText, problemType.positive_phrases);
+    const negativeScore = negativeMatches.reduce((total, { weight }) => total + weight, 0);
+    const positiveScore = positiveMatches.reduce((total, { weight }) => total + weight, 0);
+
+    let closestExample = null;
+    let bestSimilarity = 0;
+    for (const example of problemType.examples ?? []) {
+      const similarity = jaccardSimilarity(queryBigrams, createBigrams(normalizeRouterText(example).compactText));
+      if (similarity > bestSimilarity) {
+        closestExample = example;
+        bestSimilarity = similarity;
+      }
+    }
+    const exampleReward = bestSimilarity < 0.22 ? 0 : Math.min(6, Math.floor(bestSimilarity * 6));
+    if (exampleReward === 0) closestExample = null;
+
+    const shortcutMatched = shortcutIntentId === problemType.id;
+    return {
+      id: problemType.id,
+      priority: problemType.priority,
+      score: Math.max(0, positiveScore - negativeScore) + exampleReward + (shortcutMatched ? 8 : 0),
+      matchedPositivePhrases: positiveMatches.map(({ text }) => text),
+      matchedNegativePhrases: negativeMatches.map(({ text }) => text),
+      closestExample,
+      shortcutMatched
+    };
+  }).sort((left, right) => (
+    right.score - left.score
+    || left.priority - right.priority
+    || compareAscii(left.id, right.id)
+  ));
+}
+
+export function detectAgentStage({ query, agentStages }) {
+  const { compactText } = normalizeRouterText(query);
+  const rankedStages = agentStages.map((stage) => ({
+    id: stage.id,
+    priority: stage.priority,
+    score: matchedPhrases(compactText, stage.positive_phrases)
+      .reduce((total, { weight }) => total + weight, 0)
+  })).sort((left, right) => (
+    right.score - left.score
+    || left.priority - right.priority
+    || compareAscii(left.id, right.id)
+  ));
+  return rankedStages[0]?.score > 0 ? rankedStages[0].id : "intent";
+}
+
+function emptyResult(state) {
+  return {
+    state,
+    problemTypeId: null,
+    auxiliaryProblemTypeIds: [],
+    agentStageId: null,
+    evidence: {
+      matchedPositivePhrases: [],
+      matchedNegativePhrases: [],
+      closestExample: null,
+      shortcutIntentId: null
+    },
+    clarificationOptionIds: [],
+    safetySignalId: null
+  };
+}
+
+function clarificationOptions(rankedProblemTypes) {
+  const options = rankedProblemTypes.filter(({ score }) => score > 0).map(({ id }) => id).slice(0, 4);
+  for (const { id } of rankedProblemTypes) {
+    if (options.length >= 2) break;
+    if (!options.includes(id)) options.push(id);
+  }
+  return options;
+}
+
+export function matchRoute({ query, shortcutIntentId = null, routerData }) {
+  if (query == null && shortcutIntentId == null) return emptyResult("idle");
+
+  const normalized = normalizeRouterText(query);
+  if (normalized.compactText.length < 2 && shortcutIntentId == null) return emptyResult("needs_input");
+
+  for (const safetySignal of routerData.safety_signals ?? []) {
+    const matched = (safetySignal.phrases ?? []).some((phrase) => {
+      const compactPhrase = normalizeRouterText(phrase).compactText;
+      return compactPhrase.length > 0 && normalized.compactText.includes(compactPhrase);
+    });
+    if (matched) {
+      return {
+        ...emptyResult("safety_stop"),
+        safetySignalId: safetySignal.id
+      };
+    }
+  }
+
+  const rankedProblemTypes = scoreProblemTypes({
+    query,
+    shortcutIntentId,
+    problemTypes: routerData.problem_types
+  });
+  const first = rankedProblemTypes[0];
+  const second = rankedProblemTypes[1];
+  const agentStageId = detectAgentStage({ query, agentStages: routerData.agent_stages });
+  const hasExplicitMatch = first.matchedPositivePhrases.length > 0 || first.shortcutMatched;
+  const isAmbiguous = second && first.score >= 6 && second.score >= 6 && first.score - second.score < 2;
+
+  if (first.score < 8 || !hasExplicitMatch || isAmbiguous) {
+    return {
+      ...emptyResult("clarify"),
+      agentStageId,
+      clarificationOptionIds: clarificationOptions(rankedProblemTypes)
+    };
+  }
+
+  return {
+    state: "matched",
+    problemTypeId: first.id,
+    auxiliaryProblemTypeIds: rankedProblemTypes.slice(1, 3).filter(({ score }) => score >= 6).map(({ id }) => id),
+    agentStageId,
+    evidence: {
+      matchedPositivePhrases: first.matchedPositivePhrases,
+      matchedNegativePhrases: first.matchedNegativePhrases,
+      closestExample: first.closestExample,
+      shortcutIntentId: first.shortcutMatched ? shortcutIntentId : null
+    },
+    clarificationOptionIds: [],
+    safetySignalId: null
+  };
+}

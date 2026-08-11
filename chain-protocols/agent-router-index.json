@@ -23,6 +23,10 @@
           "weight": 8
         },
         {
+          "text": "出了问题",
+          "weight": 8
+        },
+        {
           "text": "怎么回事",
           "weight": 8
         },
@@ -84,6 +88,10 @@
           "weight": 8
         },
         {
+          "text": "下一步",
+          "weight": 8
+        },
+        {
           "text": "规划",
           "weight": 8
         }
@@ -110,7 +118,7 @@
         },
         {
           "text": "该不该",
-          "weight": 8
+          "weight": 10
         },
         {
           "text": "要不要",
@@ -130,6 +138,14 @@
         },
         {
           "text": "评估",
+          "weight": 8
+        },
+        {
+          "text": "利弊",
+          "weight": 8
+        },
+        {
+          "text": "比较",
           "weight": 8
         },
         {
@@ -167,6 +183,14 @@
         },
         {
           "text": "另一种思路",
+          "weight": 8
+        },
+        {
+          "text": "别的思路",
+          "weight": 8
+        },
+        {
+          "text": "换一种思路",
           "weight": 8
         },
         {
@@ -220,6 +244,14 @@
         },
         {
           "text": "深入分析",
+          "weight": 8
+        },
+        {
+          "text": "搜集信息",
+          "weight": 8
+        },
+        {
+          "text": "资料太多",
           "weight": 8
         },
         {
@@ -311,6 +343,10 @@
         {
           "text": "反馈",
           "weight": 8
+        },
+        {
+          "text": "讲不清",
+          "weight": 8
         }
       ],
       "negative_phrases": [
@@ -335,7 +371,7 @@
         },
         {
           "text": "确认",
-          "weight": 8
+          "weight": 10
         },
         {
           "text": "理解",
@@ -351,6 +387,10 @@
         },
         {
           "text": "边界是什么",
+          "weight": 8
+        },
+        {
+          "text": "不确定",
           "weight": 8
         }
       ],
@@ -419,7 +459,11 @@
       "priority": 30,
       "positive_phrases": [
         {
-          "text": "需要制定计划",
+          "text": "制定计划",
+          "weight": 8
+        },
+        {
+          "text": "下一步计划",
           "weight": 8
         },
         {
@@ -535,6 +579,14 @@
         },
         {
           "text": "输出报告",
+          "weight": 8
+        },
+        {
+          "text": "综合洞察",
+          "weight": 8
+        },
+        {
+          "text": "整理出结论",
           "weight": 8
         }
       ]
