@@ -47,6 +47,24 @@ function runGoldenCase(entry) {
   });
 }
 
+function syntheticType(id, { priority = 10, positive = [], negative = [], examples = [] } = {}) {
+  return {
+    id,
+    priority,
+    positive_phrases: positive.map(([text, weight]) => ({ text, weight })),
+    negative_phrases: negative.map(([text, weight]) => ({ text, weight })),
+    examples
+  };
+}
+
+function syntheticRouterData(problemTypes, { agentStages, safetySignals = [] } = {}) {
+  return {
+    problem_types: problemTypes,
+    agent_stages: agentStages ?? [{ id: "intent", priority: 10, positive_phrases: [] }],
+    safety_signals: safetySignals
+  };
+}
+
 test("router golden corpus has the frozen 96-case composition and literal regression inputs", () => {
   assert.equal(goldenCases.length, 96);
   assert.equal(new Set(goldenCases.map(({ id }) => id)).size, 96);
@@ -142,9 +160,103 @@ test("scoreProblemTypes resolves ties by priority and then ASCII id", () => {
   );
 });
 
+test("example Jaccard reward honors the 0.22 boundary, floor, and six-point cap", () => {
+  const belowBoundary = syntheticType("below", { examples: ["abxyz"] });
+  const atOrAboveBoundary = syntheticType("boundary", { examples: ["abde"] });
+  const halfSimilar = syntheticType("half", { examples: ["abce"] });
+  const identical = syntheticType("identical", { examples: ["abcd"] });
+
+  assert.deepEqual(
+    scoreProblemTypes({ query: "abcdef", shortcutIntentId: null, problemTypes: [belowBoundary] })[0],
+    {
+      id: "below",
+      priority: 10,
+      score: 0,
+      matchedPositivePhrases: [],
+      matchedNegativePhrases: [],
+      closestExample: null,
+      shortcutMatched: false
+    }
+  );
+  assert.equal(scoreProblemTypes({ query: "abc", shortcutIntentId: null, problemTypes: [atOrAboveBoundary] })[0].score, 1);
+  assert.equal(scoreProblemTypes({ query: "abcd", shortcutIntentId: null, problemTypes: [halfSimilar] })[0].score, 3);
+  assert.equal(scoreProblemTypes({ query: "abcd", shortcutIntentId: null, problemTypes: [identical] })[0].score, 6);
+});
+
+test("an example-only six-point score cannot produce matched", () => {
+  const data = syntheticRouterData([
+    syntheticType("example-only", { examples: ["完整示例"] }),
+    syntheticType("other", { priority: 20 })
+  ]);
+  const result = matchRoute({ query: "完整示例", routerData: data });
+  assert.equal(result.state, "clarify");
+  assert.equal(result.problemTypeId, null);
+});
+
+test("match thresholds distinguish seven, eight, double-six, and score gaps of one versus two", () => {
+  const resultFor = (firstWeight, secondWeight = 0) => matchRoute({
+    query: "甲信号和乙信号",
+    routerData: syntheticRouterData([
+      syntheticType("first", { positive: [["甲信号", firstWeight]] }),
+      syntheticType("second", { priority: 20, positive: secondWeight ? [["乙信号", secondWeight]] : [] })
+    ])
+  });
+
+  assert.equal(resultFor(7).state, "clarify");
+  assert.equal(resultFor(8).state, "matched");
+  assert.equal(resultFor(6, 6).state, "clarify");
+  assert.equal(resultFor(9, 8).state, "clarify");
+  assert.equal(resultFor(10, 8).state, "matched");
+});
+
+test("auxiliaries use the six-point threshold, only the second and third ranks, and never exceed two", () => {
+  const query = "核心信号第二信号第三信号第四信号";
+  const full = matchRoute({
+    query,
+    routerData: syntheticRouterData([
+      syntheticType("core", { positive: [["核心信号", 10]] }),
+      syntheticType("second", { priority: 20, positive: [["第二信号", 7]] }),
+      syntheticType("third", { priority: 30, positive: [["第三信号", 6]] }),
+      syntheticType("fourth", { priority: 40, positive: [["第四信号", 6]] })
+    ])
+  });
+  assert.deepEqual(full.auxiliaryProblemTypeIds, ["second", "third"]);
+
+  const belowThreshold = matchRoute({
+    query,
+    routerData: syntheticRouterData([
+      syntheticType("core", { positive: [["核心信号", 10]] }),
+      syntheticType("second", { priority: 20, positive: [["第二信号", 6]] }),
+      syntheticType("third", { priority: 30, positive: [["第三信号", 5]] })
+    ])
+  });
+  assert.deepEqual(belowThreshold.auxiliaryProblemTypeIds, ["second"]);
+});
+
+test("matchRoute applies shortcut plus eight and exposes the selected shortcut as evidence", () => {
+  const result = matchRoute({
+    query: "背景",
+    shortcutIntentId: "selected",
+    routerData: syntheticRouterData([
+      syntheticType("selected"),
+      syntheticType("other", { priority: 20 })
+    ])
+  });
+  assert.equal(result.state, "matched");
+  assert.equal(result.problemTypeId, "selected");
+  assert.deepEqual(result.evidence.matchedPositivePhrases, []);
+  assert.equal(result.evidence.shortcutIntentId, "selected");
+});
+
 test("detectAgentStage uses the strongest stage signal, stable priority ties, and intent fallback", () => {
   assert.equal(detectAgentStage({ query: "搜集信息并输出报告", agentStages: routerData.agent_stages }), "research");
   assert.equal(detectAgentStage({ query: "没有明确阶段", agentStages: routerData.agent_stages }), "intent");
+});
+
+test("detectAgentStage resolves real score ties by priority and then ASCII id", () => {
+  const stage = (id, priority) => ({ id, priority, positive_phrases: [{ text: "阶段信号", weight: 8 }] });
+  assert.equal(detectAgentStage({ query: "阶段信号", agentStages: [stage("beta", 20), stage("alpha", 10)] }), "alpha");
+  assert.equal(detectAgentStage({ query: "阶段信号", agentStages: [stage("beta", 10), stage("alpha", 10)] }), "alpha");
 });
 
 test("matchRoute exposes only the frozen local-rule result contract", () => {
@@ -168,6 +280,65 @@ test("matchRoute exposes only the frozen local-rule result contract", () => {
   ]);
   assert.equal(result.state, "matched");
   assert.equal(result.problemTypeId, "diagnosis");
+});
+
+test("safety precedence is stable across input array order and covers all four signal classes", () => {
+  const cases = [
+    ["我正在伤害自己，请诊断我的症状，法律期限明天到期，也把全部积蓄马上买入", "immediate_personal_danger"],
+    ["请诊断我的症状，法律期限明天到期，也把全部积蓄马上买入", "medical_diagnosis_or_treatment"],
+    ["法律期限明天到期，也把全部积蓄马上买入", "legal_advice_with_deadline"],
+    ["把全部积蓄马上买入", "high_stakes_financial_instruction"]
+  ];
+  for (const safetySignals of [routerData.safety_signals, [...routerData.safety_signals].reverse()]) {
+    const data = { ...routerData, safety_signals: safetySignals };
+    for (const [query, expectedSignalId] of cases) {
+      const result = matchRoute({ query, routerData: data });
+      assert.equal(result.state, "safety_stop");
+      assert.equal(result.safetySignalId, expectedSignalId);
+      assert.equal(result.problemTypeId, null);
+    }
+  }
+});
+
+test("safety stop wins over strong ordinary Router signals", () => {
+  const result = matchRoute({
+    query: "我正在伤害自己，同时需要制定计划和具体步骤",
+    routerData
+  });
+  assert.equal(result.state, "safety_stop");
+  assert.equal(result.safetySignalId, "immediate_personal_danger");
+  assert.equal(result.problemTypeId, null);
+  assert.deepEqual(result.auxiliaryProblemTypeIds, []);
+});
+
+test("every real negative phrase reduces its own problem type to zero and prevents that core match", () => {
+  for (const problemType of routerData.problem_types) {
+    for (const { text } of problemType.negative_phrases) {
+      const ownScore = scoreProblemTypes({
+        query: text,
+        shortcutIntentId: null,
+        problemTypes: routerData.problem_types
+      }).find(({ id }) => id === problemType.id);
+      assert.equal(ownScore.score, 0, `${problemType.id}: ${text}`);
+      const result = matchRoute({ query: text, routerData });
+      assert.notEqual(result.problemTypeId, problemType.id, `${problemType.id}: ${text}`);
+    }
+  }
+});
+
+test("composed planning and reflection negatives cancel every overlapping positive signal", () => {
+  for (const [query, problemTypeId] of [
+    ["不需要规划下一步", "planning"],
+    ["不需要复盘改进", "reflection"]
+  ]) {
+    const ownScore = scoreProblemTypes({
+      query,
+      shortcutIntentId: null,
+      problemTypes: routerData.problem_types
+    }).find(({ id }) => id === problemTypeId);
+    assert.equal(ownScore.score, 0, `${problemTypeId}: ${query}`);
+    assert.notEqual(matchRoute({ query, routerData }).problemTypeId, problemTypeId, `${problemTypeId}: ${query}`);
+  }
 });
 
 test("router matches every golden case with bounded auxiliaries and no forbidden type", async (t) => {

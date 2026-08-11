@@ -3,6 +3,13 @@ function compareAscii(left, right) {
   return left < right ? -1 : 1;
 }
 
+const SAFETY_SIGNAL_PRECEDENCE = Object.freeze({
+  immediate_personal_danger: 10,
+  medical_diagnosis_or_treatment: 20,
+  legal_advice_with_deadline: 30,
+  high_stakes_financial_instruction: 40
+});
+
 export function normalizeRouterText(input) {
   const normalizedText = String(input ?? "")
     .normalize("NFKC")
@@ -65,10 +72,11 @@ export function scoreProblemTypes({ query, shortcutIntentId, problemTypes }) {
     if (exampleReward === 0) closestExample = null;
 
     const shortcutMatched = shortcutIntentId === problemType.id;
+    const shortcutReward = shortcutMatched ? 8 : 0;
     return {
       id: problemType.id,
       priority: problemType.priority,
-      score: Math.max(0, positiveScore - negativeScore) + exampleReward + (shortcutMatched ? 8 : 0),
+      score: Math.max(0, positiveScore - negativeScore + exampleReward + shortcutReward),
       matchedPositivePhrases: positiveMatches.map(({ text }) => text),
       matchedNegativePhrases: negativeMatches.map(({ text }) => text),
       closestExample,
@@ -128,17 +136,21 @@ export function matchRoute({ query, shortcutIntentId = null, routerData }) {
   const normalized = normalizeRouterText(query);
   if (normalized.compactText.length < 2 && shortcutIntentId == null) return emptyResult("needs_input");
 
-  for (const safetySignal of routerData.safety_signals ?? []) {
-    const matched = (safetySignal.phrases ?? []).some((phrase) => {
+  const matchedSafetySignal = (routerData.safety_signals ?? []).filter((safetySignal) => (
+    (safetySignal.phrases ?? []).some((phrase) => {
       const compactPhrase = normalizeRouterText(phrase).compactText;
       return compactPhrase.length > 0 && normalized.compactText.includes(compactPhrase);
-    });
-    if (matched) {
-      return {
-        ...emptyResult("safety_stop"),
-        safetySignalId: safetySignal.id
-      };
-    }
+    })
+  )).sort((left, right) => (
+    (SAFETY_SIGNAL_PRECEDENCE[left.id] ?? Number.MAX_SAFE_INTEGER)
+    - (SAFETY_SIGNAL_PRECEDENCE[right.id] ?? Number.MAX_SAFE_INTEGER)
+    || compareAscii(left.id, right.id)
+  ))[0];
+  if (matchedSafetySignal) {
+    return {
+      ...emptyResult("safety_stop"),
+      safetySignalId: matchedSafetySignal.id
+    };
   }
 
   const rankedProblemTypes = scoreProblemTypes({
