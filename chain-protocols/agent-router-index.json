@@ -99,15 +99,11 @@
       "negative_phrases": [
         {
           "text": "不需要规划下一步",
-          "weight": 8
+          "weight": 10
         },
         {
-          "text": "不需要规划",
-          "weight": 8
-        },
-        {
-          "text": "不需要下一步",
-          "weight": 8
+          "text": "不需要规划任何下一步",
+          "weight": 10
         }
       ],
       "examples": [
@@ -270,11 +266,7 @@
       "negative_phrases": [
         {
           "text": "不需要基于证据研究",
-          "weight": 8
-        },
-        {
-          "text": "不需要基于证据",
-          "weight": 8
+          "weight": 10
         }
       ],
       "examples": [
@@ -319,15 +311,11 @@
       "negative_phrases": [
         {
           "text": "不需要复盘改进",
-          "weight": 8
+          "weight": 10
         },
         {
-          "text": "不需要复盘",
-          "weight": 8
-        },
-        {
-          "text": "不需要改进",
-          "weight": 8
+          "text": "不需要复盘任何改进",
+          "weight": 10
         }
       ],
       "examples": [

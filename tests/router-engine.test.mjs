@@ -255,7 +255,7 @@ test("detectAgentStage uses the strongest stage signal, stable priority ties, an
 
 test("detectAgentStage resolves real score ties by priority and then ASCII id", () => {
   const stage = (id, priority) => ({ id, priority, positive_phrases: [{ text: "阶段信号", weight: 8 }] });
-  assert.equal(detectAgentStage({ query: "阶段信号", agentStages: [stage("beta", 20), stage("alpha", 10)] }), "alpha");
+  assert.equal(detectAgentStage({ query: "阶段信号", agentStages: [stage("beta", 5), stage("alpha", 10)] }), "beta");
   assert.equal(detectAgentStage({ query: "阶段信号", agentStages: [stage("beta", 10), stage("alpha", 10)] }), "alpha");
 });
 
@@ -300,6 +300,21 @@ test("safety precedence is stable across input array order and covers all four s
   }
 });
 
+test("unknown safety signal collisions fall back to ASCII id independent of array order", () => {
+  const unknownSignals = [
+    { id: "zeta", phrases: ["未知风险"] },
+    { id: "alpha", phrases: ["未知风险"] }
+  ];
+  for (const safetySignals of [unknownSignals, [...unknownSignals].reverse()]) {
+    const result = matchRoute({
+      query: "发生未知风险",
+      routerData: syntheticRouterData([], { safetySignals })
+    });
+    assert.equal(result.state, "safety_stop");
+    assert.equal(result.safetySignalId, "alpha");
+  }
+});
+
 test("safety stop wins over strong ordinary Router signals", () => {
   const result = matchRoute({
     query: "我正在伤害自己，同时需要制定计划和具体步骤",
@@ -311,7 +326,7 @@ test("safety stop wins over strong ordinary Router signals", () => {
   assert.deepEqual(result.auxiliaryProblemTypeIds, []);
 });
 
-test("every real negative phrase reduces its own problem type to zero and prevents that core match", () => {
+test("every real negative phrase keeps its own type below matched threshold and prevents that core match", () => {
   for (const problemType of routerData.problem_types) {
     for (const { text } of problemType.negative_phrases) {
       const ownScore = scoreProblemTypes({
@@ -319,14 +334,14 @@ test("every real negative phrase reduces its own problem type to zero and preven
         shortcutIntentId: null,
         problemTypes: routerData.problem_types
       }).find(({ id }) => id === problemType.id);
-      assert.equal(ownScore.score, 0, `${problemType.id}: ${text}`);
+      assert.ok(ownScore.score < 8, `${problemType.id}: ${text} scored ${ownScore.score}`);
       const result = matchRoute({ query: text, routerData });
       assert.notEqual(result.problemTypeId, problemType.id, `${problemType.id}: ${text}`);
     }
   }
 });
 
-test("composed planning and reflection negatives cancel every overlapping positive signal", () => {
+test("composed planning and reflection negatives stay below the matched threshold", () => {
   for (const [query, problemTypeId] of [
     ["不需要规划下一步", "planning"],
     ["不需要复盘改进", "reflection"]
@@ -336,7 +351,33 @@ test("composed planning and reflection negatives cancel every overlapping positi
       shortcutIntentId: null,
       problemTypes: routerData.problem_types
     }).find(({ id }) => id === problemTypeId);
-    assert.equal(ownScore.score, 0, `${problemTypeId}: ${query}`);
+    assert.ok(ownScore.score < 8, `${problemTypeId}: ${query} scored ${ownScore.score}`);
+    assert.notEqual(matchRoute({ query, routerData }).problemTypeId, problemTypeId, `${problemTypeId}: ${query}`);
+  }
+});
+
+test("double negations preserve explicit planning and reflection intent", () => {
+  for (const [query, problemTypeId] of [
+    ["不是不需要下一步，而是要明确下一步", "planning"],
+    ["不是不需要复盘，而是要认真复盘", "reflection"]
+  ]) {
+    const result = matchRoute({ query, routerData });
+    assert.equal(result.state, "matched", `${problemTypeId}: ${query}`);
+    assert.equal(result.problemTypeId, problemTypeId, `${problemTypeId}: ${query}`);
+  }
+});
+
+test("narrow inserted-word negatives cannot become planning or reflection core matches", () => {
+  for (const [query, problemTypeId] of [
+    ["我不需要规划任何下一步", "planning"],
+    ["我不需要复盘任何改进", "reflection"]
+  ]) {
+    const ownScore = scoreProblemTypes({
+      query,
+      shortcutIntentId: null,
+      problemTypes: routerData.problem_types
+    }).find(({ id }) => id === problemTypeId);
+    assert.ok(ownScore.score < 8, `${problemTypeId}: ${query} scored ${ownScore.score}`);
     assert.notEqual(matchRoute({ query, routerData }).problemTypeId, problemTypeId, `${problemTypeId}: ${query}`);
   }
 });
