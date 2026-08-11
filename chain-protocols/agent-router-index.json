@@ -542,6 +542,16 @@
   ],
   "safety_signals": [
     {
+      "id": "high_stakes_financial_instruction",
+      "label": "高风险金融指令",
+      "phrases": [
+        "把全部积蓄马上买入",
+        "现在替我下单卖出全部",
+        "用借来的钱立刻投资"
+      ],
+      "message": "涉及高风险资金操作，请先咨询合格专业人士并审慎核实。"
+    },
+    {
       "id": "immediate_personal_danger",
       "label": "紧急人身危险",
       "phrases": [
@@ -550,16 +560,6 @@
         "已经伤害了自己"
       ],
       "message": "请优先联系当地紧急服务、可信赖的人或合格专业人士。"
-    },
-    {
-      "id": "medical_diagnosis_or_treatment",
-      "label": "医疗诊断或治疗",
-      "phrases": [
-        "请诊断我的症状",
-        "告诉我该吃什么药",
-        "给我具体治疗方案"
-      ],
-      "message": "涉及诊断或治疗，请咨询合格医疗专业人士。若情况紧急，请联系当地紧急服务。"
     },
     {
       "id": "legal_advice_with_deadline",
@@ -572,14 +572,14 @@
       "message": "涉及临近期限的法律事项，请尽快联系当地合格法律专业人士。"
     },
     {
-      "id": "high_stakes_financial_instruction",
-      "label": "高风险金融指令",
+      "id": "medical_diagnosis_or_treatment",
+      "label": "医疗诊断或治疗",
       "phrases": [
-        "把全部积蓄马上买入",
-        "现在替我下单卖出全部",
-        "用借来的钱立刻投资"
+        "请诊断我的症状",
+        "告诉我该吃什么药",
+        "给我具体治疗方案"
       ],
-      "message": "涉及高风险资金操作，请先咨询合格专业人士并审慎核实。"
+      "message": "涉及诊断或治疗，请咨询合格医疗专业人士。若情况紧急，请联系当地紧急服务。"
     }
   ],
   "routes": [

@@ -106,6 +106,29 @@ function assertPriorityOrder(entries, path) {
   }
 }
 
+function assertIdOrder(entries, path) {
+  for (let index = 1; index < entries.length; index += 1) {
+    if (compareAscii(entries[index - 1].id, entries[index].id) > 0) {
+      throw dataError("expected id stable order", `${path}[${index}]`);
+    }
+  }
+}
+
+function assertRouteOrder(routes, routerContract) {
+  for (let index = 1; index < routes.length; index += 1) {
+    const previous = routes[index - 1];
+    const current = routes[index];
+    const previousProblem = routerContract.problemTypes.get(previous.problem_type_id);
+    const currentProblem = routerContract.problemTypes.get(current.problem_type_id);
+    const previousStage = routerContract.agentStages.get(previous.agent_stage_id);
+    const currentStage = routerContract.agentStages.get(current.agent_stage_id);
+    const comparison = previousProblem.priority - currentProblem.priority ||
+      previousStage.priority - currentStage.priority ||
+      compareAscii(previous.id, current.id);
+    if (comparison > 0) throw dataError("expected route stable order", `routerIndex.routes[${index}]`);
+  }
+}
+
 function assertPhraseList(value, path, { allowEmpty = false } = {}) {
   if (!Array.isArray(value) || (!allowEmpty && value.length === 0)) throw dataError("expected phrase array", path);
   const texts = new Set();
@@ -233,6 +256,7 @@ function validateRouterIndex(routerIndex) {
     assertString(signal.message, `${path}.message`);
     safetySignals.set(signal.id, signal);
   }
+  assertIdOrder(routerIndex.safety_signals, "routerIndex.safety_signals");
   return { problemTypes, agentStages, safetySignals };
 }
 
@@ -325,6 +349,7 @@ function validateRoutes(routerIndex, routerContract, modelRecords, knownRoles, c
     }
     routesByProblemAndStage.set(routeKey, route);
   }
+  assertRouteOrder(routerIndex.routes, routerContract);
   return { routesByProblemAndStage, chainReferenceCount };
 }
 
@@ -384,10 +409,19 @@ function deepFreeze(value, seen = new WeakSet()) {
 
 function readonlyMap(entries) {
   const map = new Map(entries);
-  for (const method of ["set", "delete", "clear"]) {
-    Object.defineProperty(map, method, { value: () => { throw new TypeError("read-only map"); }, writable: false, configurable: false });
-  }
-  return Object.freeze(map);
+  const facade = Object.create(null);
+  Object.defineProperties(facade, {
+    size: { enumerable: true, get: () => map.size },
+    get: { value: (key) => map.get(key) },
+    has: { value: (key) => map.has(key) },
+    entries: { value: () => map.entries() },
+    keys: { value: () => map.keys() },
+    values: { value: () => map.values() },
+    forEach: { value: (callback, thisArg) => map.forEach((value, key) => callback.call(thisArg, value, key, facade)) },
+    [Symbol.iterator]: { value: () => map[Symbol.iterator]() },
+    [Symbol.toStringTag]: { value: "ReadonlyMap" }
+  });
+  return Object.freeze(facade);
 }
 
 function frozenClone(value) {
