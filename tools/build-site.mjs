@@ -29,7 +29,6 @@ const MODELS_DIR = join(ROOT, "knowledge", "models-v3");
 const TAXONOMY_PATH = join(ROOT, "knowledge", "taxonomy.json");
 const CHAPTER_MENTORS_PATH = join(ROOT, "knowledge", "chapter-mentors.json");
 const CHAPTER_THEMES_PATH = join(ROOT, "knowledge", "chapter-themes.json");
-const CURATED_PATH = join(ROOT, "knowledge", "curated-collections.json");
 const ASSETS_DIR = join(ROOT, "tools", "site-assets");
 const SITE_DIR = join(ROOT, "site");
 const DOCS_DIR = join(ROOT, "docs");
@@ -212,6 +211,7 @@ function shell({ title, description, pathname, depth = 0, active = "", body, pag
   const nav = [
     ["home", `${prefix}index.html`, "首页"],
     ["models", `${prefix}models/index.html`, "模型库"],
+    ["combinations", `${prefix}combinations/index.html`, "组合工坊"],
     ["router", `${prefix}router.html`, "Agent 路由"],
   ];
   return `<!doctype html>
@@ -347,6 +347,137 @@ function roleChips(roles) {
   return `<div class="chip-row" aria-label="Agent 角色">${roles.map((role) => `<span class="chip chip-agent">${escapeHtml(AGENT_ROLE_LABELS[role] || role)}</span>`).join("")}</div>`;
 }
 
+function stableChains(chainsById) {
+  return [...chainsById.values()].sort((left, right) => compareText(left.id, right.id));
+}
+
+function phaseById(chain, phaseId) {
+  return chain.phases.find((phase) => phase.id === phaseId);
+}
+
+function loopSummary(chain) {
+  const loops = chain.phases.filter((phase) => phase.loop_back_to !== null);
+  if (!loops.length) return "无显式回环；按各阶段停止条件结束";
+  return loops.map((phase) => {
+    const target = phaseById(chain, phase.loop_back_to);
+    return `${phase.name} → ${target.name}`;
+  }).join(" · ");
+}
+
+function compileCompositePrompt(chain) {
+  const lines = [
+    `以下复合 Prompt 由已验证阶段协议在构建时编排。请按「${chain.meta.title}」执行组合协议。`,
+    `定义：${chain.meta.description}`,
+    `适用问题：${chain.meta.problem_types.join("；")}`,
+    `触发信号：${chain.meta.trigger_signals.join("；")}`,
+    `开始前输入：${chain.phases[0].input}`,
+    "",
+    "严格按以下顺序执行；每阶段都要交付输出、核对检查点，并遵守停止条件：",
+  ];
+  for (const phase of chain.phases) {
+    lines.push(
+      `${phase.order}. ${phase.name} [角色：${AGENT_ROLE_LABELS[phase.agent_role] || phase.agent_role}]`,
+      `   输入：${phase.input}`,
+      `   输出：${phase.output}`,
+      `   检查点：${phase.checkpoint}`,
+      `   停止条件：${phase.stop_condition}`,
+      phase.loop_back_to === null ? "" : `   回环：未通过时回到 ${phaseById(chain, phase.loop_back_to).name}`,
+    );
+  }
+  lines.push(
+    "",
+    "边界：明确区分事实、假设与推断；无法验证的内容须标记，不得用本协议替代医疗、法律或财务专业判断。",
+  );
+  return lines.filter((line, index, values) => line !== "" || values[index - 1] !== "").join("\n");
+}
+
+function chainCard(chain, { home = false } = {}) {
+  const roles = [...new Set(chain.phases.map((phase) => phase.agent_role))];
+  const href = home ? `combinations/${chain.id}.html` : `${chain.id}.html`;
+  const dataAttribute = home ? `data-home-combination="${escapeHtml(chain.id)}"` : `data-combination-card="${escapeHtml(chain.id)}"`;
+  return `<article class="combination-card" ${dataAttribute}>
+    <div class="combination-card-head"><span>${escapeHtml(chain.id)}</span><strong>${chain.phases.length} 阶段</strong></div>
+    <h3>${escapeHtml(chain.meta.title)}</h3>
+    <p>${escapeHtml(chain.meta.description)}</p>
+    <dl><div><dt>适用问题</dt><dd>${escapeHtml(chain.meta.problem_types.join(" · "))}</dd></div><div><dt>触发信号</dt><dd>${escapeHtml(chain.meta.trigger_signals.join(" · "))}</dd></div><div><dt>核心角色</dt><dd>${escapeHtml(roles.map((role) => AGENT_ROLE_LABELS[role] || role).join(" · "))}</dd></div><div><dt>回退关系</dt><dd>${escapeHtml(loopSummary(chain))}</dd></div><div><dt>输入完整度</dt><dd>至少提供首阶段输入：${escapeHtml(chain.phases[0].input)}</dd></div></dl>
+    <a class="composition-link" href="${href}">查看完整组合协议 <span aria-hidden="true">→</span></a>
+  </article>`;
+}
+
+export function renderCombinationIndex({ chainsById }) {
+  const cards = stableChains(chainsById).map((chain) => chainCard(chain)).join("");
+  const body = `${breadcrumbs([{ href: "../index.html", label: "首页" }, { label: "组合工坊" }])}
+    <section class="page-hero section-shell compact combination-hero"><p class="kicker">COMBINATION WORKSHOP</p><h1>组合工坊</h1><p>把经过验证的模型按顺序、交接、停止与回退条件组成可执行的思考协议。</p></section>
+    <section class="section-shell combination-concepts" aria-labelledby="combination-concepts-title"><div class="section-intro"><p class="kicker">THREE DISTINCT OBJECTS</p><h2 id="combination-concepts-title">先分清三类工具</h2></div><div class="combination-concept-grid"><article><h3>单体模型</h3><p>一个独立的认知工具，解决一个明确的思考动作。</p></article><article><h3>主题精选</h3><p>同一场景下值得浏览的模型集合，没有固定顺序、交接或回退。</p></article><article><h3>组合协议</h3><p>有顺序、阶段交接、检查点、停止与回退条件的完整工作流。</p></article></div></section>
+    <section class="section-shell combination-catalog" aria-labelledby="combination-catalog-title"><div class="section-intro"><p class="kicker">FIVE VALIDATED CHAINS</p><h2 id="combination-catalog-title">五条组合协议</h2><p>只展示已通过稳定 ID、角色、模型与回环校验的 Chain。</p></div><div class="combination-grid">${cards}</div></section>`;
+  return shell({
+    title: "组合工坊",
+    description: "浏览五条有顺序、交接、停止与回退条件的思维组合协议。",
+    pathname: "/combinations/",
+    depth: 1,
+    active: "combinations",
+    body,
+    pageClass: "combination-page combination-index-page",
+  });
+}
+
+export function renderCombinationDetail({ chain, modelsById, chapterById, modelFile }) {
+  const phases = chain.phases.map((phase) => {
+    const modelLinks = phase.model_ids.map((modelId) => {
+      const model = modelsById.get(modelId);
+      const file = modelFile.get(modelId);
+      if (!model || !file) throw new Error(`组合 ${chain.id} 引用未验证稳定模型 ID: ${modelId}`);
+      const chapter = chapterById.get(model.meta.category);
+      if (!chapter) throw new Error(`组合 ${chain.id} 的模型 ${modelId} 引用未验证章节: ${model.meta.category}`);
+      return `<a class="phase-model-link" data-chain-model-id="${escapeHtml(modelId)}" href="../models/${escapeHtml(file)}"><span class="chapter-signature" data-chapter-id="${escapeHtml(chapter.id)}">Ch.${escapeHtml(chapter.id)}</span><strong>${escapeHtml(displayName(model.meta.name))}</strong></a>`;
+    }).join("");
+    const loop = phase.loop_back_to === null ? "" : `<p class="phase-loop"><span class="phase-decoration" aria-hidden="true">↶</span><a data-loop-from="${escapeHtml(phase.id)}" href="#phase-${escapeHtml(phase.loop_back_to)}">未通过时回到「${escapeHtml(phaseById(chain, phase.loop_back_to).name)}」</a></p>`;
+    return `<li id="phase-${escapeHtml(phase.id)}" data-phase-id="${escapeHtml(phase.id)}" data-phase-order="${phase.order}" data-phase-role="${escapeHtml(phase.agent_role)}"><span class="phase-order phase-decoration" aria-hidden="true">${String(phase.order).padStart(2, "0")}</span><div class="phase-body"><header><p>PHASE ${String(phase.order).padStart(2, "0")}</p><h3>${escapeHtml(phase.name)}</h3><span>角色：${escapeHtml(AGENT_ROLE_LABELS[phase.agent_role] || phase.agent_role)}</span></header><div class="phase-models">${modelLinks}</div><dl><div><dt>输入</dt><dd>${escapeHtml(phase.input)}</dd></div><div><dt>输出</dt><dd>${escapeHtml(phase.output)}</dd></div><div data-phase-checkpoint="${escapeHtml(phase.id)}"><dt>检查点</dt><dd>${escapeHtml(phase.checkpoint)}</dd></div><div><dt>停止条件</dt><dd>${escapeHtml(phase.stop_condition)}</dd></div></dl>${loop}</div></li>`;
+  }).join("");
+  const stopConditions = chain.phases.map((phase) => `<li><strong>${escapeHtml(phase.name)}：</strong>${escapeHtml(phase.stop_condition)}</li>`).join("");
+  const checkpointConditions = chain.phases.map((phase) => `<li><strong>${escapeHtml(phase.name)}：</strong>${escapeHtml(phase.checkpoint)}</li>`).join("");
+  const inputContract = chain.phases.filter((phase, index, phases) => phases.findIndex((candidate) => candidate.input === phase.input) === index).map((phase) => `<li><strong>${escapeHtml(phase.name)}：</strong>${escapeHtml(phase.input)}</li>`).join("");
+  const loopItems = chain.phases.filter((phase) => phase.loop_back_to !== null).map((phase) => `<li><a data-loop-from="${escapeHtml(phase.id)}" href="#phase-${escapeHtml(phase.loop_back_to)}">${escapeHtml(phase.name)} → ${escapeHtml(phaseById(chain, phase.loop_back_to).name)}</a></li>`).join("");
+  const promptId = `combination-prompt-${chain.id}`;
+  const prompt = compileCompositePrompt(chain);
+  const body = `${breadcrumbs([{ href: "../index.html", label: "首页" }, { href: "index.html", label: "组合工坊" }, { label: chain.meta.title }])}
+    <article class="combination-detail section-shell" data-combination-id="${escapeHtml(chain.id)}">
+      <header class="combination-detail-hero"><p class="kicker">VALIDATED CHAIN · ${escapeHtml(chain.id)}</p><h1>${escapeHtml(chain.meta.title)}</h1><p>${escapeHtml(chain.meta.description)}</p><p class="combination-url">协议 URL：<span>${escapeHtml(canonical(`/combinations/${chain.id}.html`))}</span></p></header>
+      <section data-combination-section="definition"><div class="section-heading"><span>01</span><h2>组合定义</h2></div><p>${escapeHtml(chain.meta.description)}</p></section>
+      <section data-combination-section="applicability"><div class="section-heading"><span>02</span><h2>适用问题</h2></div><h3>问题类型</h3>${textList(chain.meta.problem_types)}<h3>触发信号</h3>${textList(chain.meta.trigger_signals)}</section>
+      <section class="combination-warning" data-combination-section="limits"><div class="section-heading"><span>03</span><h2>不适用与停止条件</h2></div><p>以下边界直接来自已验证阶段的检查点与停止条件；任一阶段无法验证时，不应继续推进。</p><h3>阶段检查点</h3><ul class="plain-list">${checkpointConditions}</ul><h3>阶段停止条件</h3><ul class="plain-list warning-list">${stopConditions}</ul><p>站点规则：医疗、法律、财务或紧急风险问题须交由当地合格专业人士处理。</p></section>
+      <section data-combination-section="input"><div class="section-heading"><span>04</span><h2>使用前需要提供的输入</h2></div><p>输入合同按阶段顺序汇总全部唯一阶段输入；后续阶段可由前序输出交接补齐。</p><ul class="plain-list">${inputContract}</ul><p>开始前请区分已知事实、仍待验证的假设和明确约束。</p></section>
+      <section data-combination-section="phases"><div class="section-heading"><span>05</span><h2>有序阶段</h2></div><ol class="combination-phases">${phases}</ol></section>
+      <section data-combination-section="loops"><div class="section-heading"><span>06</span><h2>回退与循环</h2></div>${loopItems ? `<ul class="combination-loop-list">${loopItems}</ul>` : "<p>本协议没有显式回环；达到各阶段停止条件后结束。</p>"}</section>
+      <section data-combination-section="alternatives"><div class="section-heading"><span>07</span><h2>替代模型与替换边界</h2></div><p>当前协议只发布经验证的稳定模型 ID。替换模型必须继续满足本阶段角色、输入、输出、检查点和停止条件，并重新通过交叉引用验证；不得按显示名称猜测替换。</p></section>
+      <section data-combination-section="prompt"><div class="section-heading"><span>08</span><h2>复合 Prompt</h2></div><p>由已验证阶段协议在构建时编排；不是源 JSON 的独立字段。</p><button class="button button-secondary combination-copy" type="button" data-copy-target="${escapeHtml(promptId)}">复制复合 Prompt</button><pre id="${escapeHtml(promptId)}" tabindex="0"><code>${escapeHtml(prompt)}</code></pre></section>
+      <section class="combination-evidence" data-combination-section="evidence"><div class="section-heading"><span>09</span><h2>事实、假设与专业升级</h2></div><p>组合协议用于组织推理，不代表事实已经成立。每个阶段都要标记事实、假设与推断；医疗、法律、财务或紧急风险问题应交由当地合格专业人士处理。</p></section>
+    </article>`;
+  return shell({
+    title: chain.meta.title,
+    description: chain.meta.description,
+    pathname: `/combinations/${chain.id}.html`,
+    depth: 1,
+    active: "combinations",
+    body,
+    pageClass: "combination-page combination-detail-page",
+  });
+}
+
+export function renderCompositionLinks(compositions) {
+  if (!Array.isArray(compositions) || compositions.length === 0) return "";
+  return `<ul class="composition-links">${compositions.map((composition) => `<li data-composition-entry="${escapeHtml(composition.chain_id)}"><a class="composition-link" href="../combinations/${escapeHtml(composition.chain_id)}.html"><strong>${escapeHtml(composition.chain_title || composition.chain_id)}</strong><span>阶段 ${composition.phase_order} · ${escapeHtml(composition.phase_name || composition.phase_id)}</span><span>角色 · ${escapeHtml(AGENT_ROLE_LABELS[composition.agent_role] || composition.agent_role)}</span></a></li>`).join("")}</ul>`;
+}
+
+function decorateCompositions(compositions, buildView) {
+  return compositions.map((composition) => {
+    const chain = buildView.chainsById.get(composition.chain_id);
+    const phase = chain && phaseById(chain, composition.phase_id);
+    if (!chain || !phase) throw new Error(`组合反向入口引用未验证阶段: ${composition.chain_id}/${composition.phase_id}`);
+    return { ...composition, chain_title: chain.meta.title, phase_name: phase.name };
+  });
+}
+
 function modelSummaryCard(model, url) {
   const triggers = model.when_to_use?.triggers?.slice(0, 2) ?? [];
   const title = model.__displayName;
@@ -429,7 +560,7 @@ export async function buildSite() {
   const chapters = [...taxonomy.chapters].sort((a, b) => Number(a.order) - Number(b.order));
   const chapterById = new Map(chapters.map((chapter) => [chapter.id, chapter]));
   const models = loadModels();
-  const curated = existsSync(CURATED_PATH) ? readJson(CURATED_PATH) : {};
+  const curated = buildView.curatedCollections;
 
   const byChapter = new Map(chapters.map((chapter) => [chapter.id, []]));
   for (const model of models) {
@@ -438,12 +569,6 @@ export async function buildSite() {
   }
 
   const modelFile = new Map(models.map((model) => [model.id, deterministicModelFile(model)]));
-  const modelsByName = new Map();
-  for (const model of models) {
-    const name = model.meta.name.trim();
-    if (!modelsByName.has(name)) modelsByName.set(name, []);
-    modelsByName.get(name).push(model);
-  }
 
   const roleCount = {};
   for (const model of models) {
@@ -454,9 +579,11 @@ export async function buildSite() {
   const output = join(tempRoot, "site");
   const chaptersDir = join(output, "chapters");
   const modelsDir = join(output, "models");
+  const combinationsDir = join(output, "combinations");
   const assetsDir = join(output, "assets");
   mkdirSync(chaptersDir, { recursive: true });
   mkdirSync(modelsDir, { recursive: true });
+  mkdirSync(combinationsDir, { recursive: true });
   mkdirSync(assetsDir, { recursive: true });
   for (const name of ["site.css", "site.js", "favicon.svg", "router-engine.mjs", "router-controller.mjs"]) cpSync(join(ASSETS_DIR, name), join(assetsDir, name));
   writeTextFile(join(assetsDir, "chapter-themes.css"), compileChapterThemesCss(presentation));
@@ -485,25 +612,23 @@ export async function buildSite() {
   }).join("");
 
   const curatedCards = Object.entries(curated).map(([key, collection], curatedIndex) => {
-    const matched = [];
-    const seenCurated = new Set();
-    for (const item of collection.models ?? []) {
-      const model = modelsByName.get(item.name)?.[0];
-      if (model && !seenCurated.has(model.id)) {
-        seenCurated.add(model.id);
-        matched.push(model);
-      }
-      if (matched.length === 4) break;
-    }
+    const matched = collection.models.slice(0, 4).map(({ model_id: modelId }) => {
+      const model = buildView.modelsById.get(modelId);
+      const file = modelFile.get(modelId);
+      if (!model || !file) throw new Error(`主题精选 ${key} 引用未验证稳定模型 ID: ${modelId}`);
+      return { ...model, __displayName: displayName(model.meta.name), __file: file };
+    });
     const first = matched[0];
     const indexLabel = String(curatedIndex + 1).padStart(2, "0");
     return `<article class="curated-card">
       <div class="curated-index">${indexLabel} · ${escapeHtml(key.replace(/_/g, " "))}</div>
       <h3>${escapeHtml(stripEmoji(collection.title))}</h3><p>${escapeHtml(stripEmoji(collection.desc))}</p>
-      <div class="curated-links">${matched.map((model) => `<a href="models/${modelFile.get(model.id)}">${escapeHtml(model.__displayName)}</a>`).join("") || "<span>内容整理中</span>"}</div>
-      ${first ? `<a class="text-link" href="models/${modelFile.get(first.id)}">从首个模型开始 <span aria-hidden="true">→</span></a>` : ""}
+      <div class="curated-links">${matched.map((model) => `<a href="models/${model.__file}">${escapeHtml(model.__displayName)}</a>`).join("")}</div>
+      ${first ? `<a class="text-link" href="models/${first.__file}">从首个模型开始 <span aria-hidden="true">→</span></a>` : ""}
     </article>`;
   }).join("");
+
+  const combinationCards = stableChains(buildView.chainsById).map((chain) => chainCard(chain, { home: true })).join("");
 
   const agentCards = AGENT_FLOWS.map((flow) => {
     const count = flow.roles.reduce((sum, role) => sum + (roleCount[role] ?? 0), 0);
@@ -522,7 +647,8 @@ export async function buildSite() {
     <figure class="hero-monument">${chapterPortrait(leadChapter, "", { eager: true, className: "mentor-portrait mentor-portrait-lead" })}<figcaption><strong>${escapeHtml(leadChapter.mentor.name)}</strong><span>${escapeHtml(leadChapter.mentor.role)} · ${escapeHtml(leadChapter.mentor.portrait_notice)}</span></figcaption></figure>
   </section>
   <section class="section-shell value-strip" aria-label="产品原则"><div><span>01</span><strong>问题优先</strong><p>从真实问题出发，不从模型名称出发。</p></div><div><span>02</span><strong>证据边界</strong><p>显式区分事实、假设、风险与待复核内容。</p></div><div><span>03</span><strong>可执行协议</strong><p>每个模型落到步骤、检查点和 Codex 提示词。</p></div></section>
-  <section class="section-shell section-block"><div class="section-intro"><p class="kicker">CURATED PATHS</p><h2>按场景，直达关键模型</h2><p>六条经过策展的起步路径，帮你避开“模型很多，却不知道先用哪个”。</p></div><div class="curated-grid">${curatedCards}</div></section>
+  <section class="section-shell section-block"><div class="section-intro"><p class="kicker">CURATED PATHS</p><h2>按场景，直达关键模型</h2><p>六条经过策展的起步路径，帮你避开“模型很多，却不知道先用哪个”。主题精选不是组合协议：它没有固定顺序、交接或回退。</p></div><div class="curated-grid">${curatedCards}</div></section>
+  <section class="section-shell section-block home-combinations"><div class="section-intro"><p class="kicker">COMBINATION ROUTES</p><h2>五条有序组合路线</h2><p>把单体模型编排成有阶段、检查点、停止与回退条件的完整协议。</p></div><div class="combination-grid">${combinationCards}</div><a class="button button-secondary" href="combinations/index.html">进入组合工坊</a></section>
   <section class="agent-band"><div class="section-shell"><div class="section-intro inverse"><p class="kicker">AGENT REASONING</p><h2>让模型进入完整推理流程</h2><p>从澄清、推演到执行与复盘，把零散工具组合成可持续工作的 Agent 角色。</p></div><div class="agent-flow-grid">${agentCards}</div><a class="button button-light" href="router.html">进入 Agent 路由器</a></div></section>
   <section class="section-shell section-block"><div class="section-intro"><p class="kicker">KNOWLEDGE MAP</p><h2>十三章认知地图</h2><p>每个模型只有一个主章节，同时通过标签和 Agent 角色建立跨章节连接。</p></div><div class="chapter-grid">${chapterCards}</div></section>`;
   writeTextFile(join(output, "index.html"), shell({ title: PRODUCT_NAME, description: `${PRODUCT_SUBTITLE}。把复杂问题转化为可理解、可选择、可执行的推理协议。`, pathname: "/", active: "home", body: homeBody, pageClass: "home-page" }));
@@ -542,9 +668,13 @@ export async function buildSite() {
     const index = chapters.findIndex((item) => item.id === chapter.id);
     const previous = chapters[index - 1];
     const next = chapters[index + 1];
+    const chapterCompositions = buildView.compositionsByChapterId.get(chapter.id) ?? [];
+    const uniqueChapterCompositions = chapterCompositions.filter((composition, compositionIndex) => chapterCompositions.findIndex((candidate) => candidate.chain_id === composition.chain_id) === compositionIndex);
+    const chapterCompositionSection = uniqueChapterCompositions.length ? `<section class="section-shell chapter-compositions" data-chapter-compositions><div class="chapter-section-title"><span aria-hidden="true"></span><div><p class="eyebrow">COMBINATION ROUTES</p><h2>本章参与的组合</h2></div></div>${renderCompositionLinks(decorateCompositions(uniqueChapterCompositions, buildView))}</section>` : "";
     const chapterBody = `${breadcrumbs([{ href: "../index.html", label: "首页" }, { label: `Ch.${chapter.id} ${chapter.title}` }])}
       <section class="page-hero section-shell chapter-hero"><div class="chapter-heading"><p class="kicker">CHAPTER ${chapter.id} · ${escapeHtml(entry.mentor.dynasty)}</p><h1>${escapeHtml(chapter.title)}</h1><p class="chapter-description">${escapeHtml(chapter.description)}</p></div><div class="mentor-intro"><span>章节导师</span><h2>${escapeHtml(entry.mentor.name)}<small>${escapeHtml(entry.mentor.role)}</small></h2><p>${escapeHtml(entry.mentor.curatorial_intro)}</p></div><dl class="chapter-symbols"><div><dt>空间</dt><dd>${escapeHtml(entry.theme.mece.space)}</dd></div><div><dt>器物</dt><dd>${escapeHtml(entry.theme.mece.object)}</dd></div><div><dt>纹样</dt><dd>${escapeHtml(entry.theme.mece.pattern)}</dd></div></dl><figure class="mentor-figure">${chapterPortrait(entry, "../", { eager: true })}<figcaption><strong>${escapeHtml(entry.mentor.name)}</strong><span>${escapeHtml(entry.mentor.portrait_notice)}</span></figcaption></figure></section>
       <section class="section-shell chapter-topics" aria-labelledby="topics-${chapter.id}"><div class="chapter-section-title"><span aria-hidden="true"></span><div><p class="eyebrow">CHAPTER THREADS</p><h2 id="topics-${chapter.id}">本章脉络</h2></div></div><ul>${subchapters}</ul></section>
+      ${chapterCompositionSection}
       <section class="section-shell chapter-library"><div class="chapter-toolbar"><div><h2>本章模型</h2><p>按质量与名称稳定排序 · <strong data-filter-count>${chapterModels.length}</strong> 个结果</p></div><div class="search-box small"><span aria-hidden="true">⌕</span><label class="sr-only" for="filter-${chapter.id}">筛选本章模型</label><input id="filter-${chapter.id}" type="search" placeholder="筛选本章…" autocomplete="off" data-filter-input></div></div><div class="model-list" data-filter-list>${cards}</div><p class="empty-state" hidden data-filter-empty>本章没有匹配的模型。请减少关键词，或返回本章脉络重新选择。</p></section>
       <nav class="chapter-pager section-shell" aria-label="章节翻页">${previous ? `<a href="ch${previous.id}-${previous.slug}.html"><span>上一章</span><strong>Ch.${previous.id} ${escapeHtml(previous.title)}</strong></a>` : "<span></span>"}${next ? `<a class="next" href="ch${next.id}-${next.slug}.html"><span>下一章</span><strong>Ch.${next.id} ${escapeHtml(next.title)}</strong></a>` : "<span></span>"}</nav>`;
     writeTextFile(join(chaptersDir, chapterPath), shell({ title: `Ch.${chapter.id} ${chapter.title}`, description: chapter.description, pathname: `/chapters/${chapterPath}`, depth: 1, body: chapterBody, pageClass: "chapter-page has-chapter-theme", chapterId: chapter.id, themeKey: entry.theme.theme_key }));
@@ -569,6 +699,8 @@ export async function buildSite() {
       .map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`)
       .join("");
     const chapterPresentation = presentationById.get(chapter.id);
+    const modelCompositions = buildView.compositionsByModelId.get(model.id) ?? [];
+    const modelCompositionSection = modelCompositions.length ? section("参与组合", `<div data-model-compositions>${renderCompositionLinks(decorateCompositions(modelCompositions, buildView))}</div>`, { index: "06", className: "model-compositions" }) : "";
     const modelBody = `${breadcrumbs([{ href: "../index.html", label: "首页" }, { href: `../chapters/ch${chapter.id}-${chapter.slug}.html`, label: `Ch.${chapter.id} ${chapter.title}` }, { label: model.__displayName }])}
       <article class="model-detail section-shell"><header class="model-detail-hero"><div><p class="kicker">${escapeHtml(displayName(model.meta.skill_name) || `CHAPTER ${chapter.id}`)}</p><p class="model-mentor-link"><a href="../chapters/ch${chapter.id}-${chapter.slug}.html">本章导师 · ${escapeHtml(chapterPresentation.mentor.name)}</a></p><h1>${escapeHtml(model.__displayName)}</h1><p class="definition">${escapeHtml(plainText(model.core_definition))}</p><div class="chip-row">${tags}</div>${roleChips(model.meta.agent_roles)}</div><aside><span>PROTOCOL</span><strong>${model.reasoning_steps?.length ?? 0}<small>步</small></strong><p>${escapeHtml(chapter.title)}</p></aside></header>
         <div class="detail-grid"><div class="detail-main">
@@ -578,6 +710,7 @@ export async function buildSite() {
           ${section("推理协议", steps ? `<ol class="protocol-list">${steps}</ol>` : "", { index: "03" })}
           ${section("场景示例", scenarios ? `<div class="scenario-grid">${scenarios}</div>` : "", { index: "04" })}
           ${section("常见误区", textList(model.pitfalls), { index: "05" })}
+          ${modelCompositionSection}
         </div><aside class="detail-aside">${codexCard}<div class="evidence-note"><span>EVIDENCE NOTE</span><h3>使用边界</h3><p>模型用于组织思考，不代表事实已经成立。关键结论仍需回到来源、数据和真实反馈中验证。</p></div></aside></div>
       </article>
       <nav class="model-pager section-shell" aria-label="模型翻页">${previous ? `<a href="${modelFile.get(previous.id)}"><span>上一个模型</span><strong>${escapeHtml(previous.__displayName)}</strong></a>` : "<span></span>"}${next ? `<a class="next" href="${modelFile.get(next.id)}"><span>下一个模型</span><strong>${escapeHtml(next.__displayName)}</strong></a>` : "<span></span>"}</nav>`;
@@ -585,17 +718,22 @@ export async function buildSite() {
     writeTextFile(join(modelsDir, file), shell({ title: model.__displayName, description: model.core_definition.slice(0, 150), pathname: `/models/${file}`, depth: 1, active: "models", body: modelBody, pageClass: "model-page has-chapter-theme", chapterId: chapter.id, themeKey: chapterPresentation.theme.theme_key }));
   }
 
+  writeTextFile(join(combinationsDir, "index.html"), renderCombinationIndex({ chainsById: buildView.chainsById }));
+  for (const chain of stableChains(buildView.chainsById)) {
+    writeTextFile(join(combinationsDir, `${chain.id}.html`), renderCombinationDetail({ chain, modelsById: buildView.modelsById, chapterById, modelFile }));
+  }
+
   writeTextFile(join(output, "router.html"), renderRouterPage({ buildView, modelFile }));
 
-  const notFoundBody = `<section class="not-found section-shell"><p class="kicker">ERROR 404</p><strong>404</strong><h1>这条推理路径不存在</h1><p>页面可能已移动，或链接指向了旧版单页结构。</p><div><a class="button button-primary" href="index.html">返回首页</a><a class="button button-secondary" href="models/index.html">浏览模型库</a></div></section>`;
+  const notFoundBody = `<section class="not-found section-shell"><p class="kicker">ERROR 404</p><strong>404</strong><h1>这条推理路径不存在</h1><p>页面可能已移动，或链接指向了旧版单页结构。</p><div><a class="button button-primary" href="index.html">返回首页</a><a class="button button-secondary" href="models/index.html">浏览模型库</a><a class="button button-secondary" href="combinations/index.html">进入组合工坊</a></div></section>`;
   writeTextFile(join(output, "404.html"), shell({ title: "页面未找到", description: `请求的${PRODUCT_NAME}页面不存在。`, pathname: "/404.html", body: notFoundBody, pageClass: "error-page" }));
   writeTextFile(join(output, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 
-  const urls = ["/", "/models/", "/router.html", ...chapters.map((chapter) => `/chapters/ch${chapter.id}-${chapter.slug}.html`), ...models.map((model) => `/models/${modelFile.get(model.id)}`)];
+  const urls = ["/", "/models/", "/combinations/", ...stableChains(buildView.chainsById).map((chain) => `/combinations/${chain.id}.html`), "/router.html", ...chapters.map((chapter) => `/chapters/ch${chapter.id}-${chapter.slug}.html`), ...models.map((model) => `/models/${modelFile.get(model.id)}`)];
   writeTextFile(join(output, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url><loc>${canonical(url)}</loc></url>`).join("\n")}\n</urlset>\n`);
 
-  const expected = 2 + chapters.length + models.length + 3 + 3;
-  const actual = readdirSync(output).length + readdirSync(chaptersDir).length + readdirSync(modelsDir).length + readdirSync(assetsDir).length - 3;
+  const expected = 2 + chapters.length + models.length + buildView.chainsById.size + 1 + 3 + 3;
+  const actual = readdirSync(output).length + readdirSync(chaptersDir).length + readdirSync(modelsDir).length + readdirSync(combinationsDir).length + readdirSync(assetsDir).length - 4;
   if (actual < expected) throw new Error(`站点文件数量异常: expected>=${expected}, actual=${actual}`);
 
   replaceDirectory(output, SITE_DIR);

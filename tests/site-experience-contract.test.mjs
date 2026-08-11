@@ -98,3 +98,20 @@ test("Router experience styles preserve touch, narrow-screen, print, and reduced
   assert.match(print, /\.router-shortcuts/u);
   assert.match(print, /\.router-copy-button/u);
 });
+
+test("combination workshop styles preserve ordered desktop rhythm, single-column reflow, touch, and print contracts", () => {
+  const css = read("tools/site-assets/site.css");
+  const media = (start, end) => css.slice(css.indexOf(start), end ? css.indexOf(end, css.indexOf(start) + start.length) : undefined);
+  const phaseRule = css.match(/\.combination-phases\s*>\s*li\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const linkRule = css.match(/\.composition-link\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const narrow = media("@media (max-width: 680px)", "@media (prefers-reduced-motion: reduce)");
+  const print = media("@media print");
+
+  assert.match(phaseRule, /min-width:\s*0\b/u);
+  assert.match(linkRule, /min-height:\s*44px\b/u);
+  assert.match(narrow, /[^{}]*\.combination-grid[^{}]*\{[^}]*grid-template-columns:\s*1fr/u);
+  assert.match(narrow, /[^{}]*\.combination-phases[^{}]*\{[^}]*grid-template-columns:\s*1fr/u);
+  assert.match(print, /\.combination-copy/u);
+  assert.match(print, /\.phase-decoration/u);
+  assert.match(print, /\.combination-url/u);
+});
