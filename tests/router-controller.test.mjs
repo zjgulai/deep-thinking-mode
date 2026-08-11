@@ -71,6 +71,25 @@ function visibleRouteKeys(nodes) {
     .map((card) => card.getAttribute("data-route-key"));
 }
 
+function deepFreeze(value) {
+  if (value && typeof value === "object") {
+    for (const child of Object.values(value)) deepFreeze(child);
+    Object.freeze(value);
+  }
+  return value;
+}
+
+function assertInjectedResultRejected({ label, mutate, query = "为什么失败了" }) {
+  const reference = clone(matchRoute({ query, shortcutIntentId: null, routerData: ROUTER_DATA }));
+  const injected = mutate(reference);
+  const { nodes } = controllerFixture({ matcher: () => injected });
+  nodes.input.value = query;
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.unavailable.hidden, false, label);
+  assert.ok(nodes.routeCards.every((card) => card.hidden), label);
+  assert.equal(nodes.safety.hidden, true, label);
+}
+
 test("parseRouterPayload accepts the real compact 8x8x4 Router payload", () => {
   assert.equal(ROUTER_DATA.problem_types.length, 8);
   assert.equal(ROUTER_DATA.agent_stages.length, 8);
@@ -473,6 +492,8 @@ test("contract nodes cannot alias across singleton, shortcut, clarify, safety, a
 test("matcher throws and malformed frozen results fail closed without leaking partial UI", () => {
   const malformed = [
     null,
+    NaN,
+    Promise.resolve(result("needs_input")),
     { ...result("needs_input"), extra: true },
     (() => { const value = result("needs_input"); delete value.auxiliaryProblemTypeIds; return value; })(),
     { ...result("unknown") },
@@ -516,6 +537,175 @@ test("matcher throws and malformed frozen results fail closed without leaking pa
   assert.doesNotThrow(() => dispatch(throwing.nodes.form, "submit"));
   assert.equal(throwing.calls.length, 1);
   assert.equal(throwing.nodes.unavailable.hidden, false);
+});
+
+test("a frozen accessor result cannot swap canonical diagnosis for planning after comparison", () => {
+  const query = "为什么失败了";
+  const reference = clone(matchRoute({ query, shortcutIntentId: null, routerData: ROUTER_DATA }));
+  let reads = 0;
+  Object.defineProperty(reference, "auxiliaryProblemTypeIds", {
+    enumerable: true,
+    get() {
+      reads += 1;
+      return reads <= 7 ? [] : ["planning"];
+    }
+  });
+  Object.freeze(reference);
+
+  const { nodes } = controllerFixture({ matcher: () => reference });
+  nodes.input.value = query;
+  dispatch(nodes.form, "submit");
+
+  assert.equal(nodes.unavailable.hidden, false);
+  assert.ok(nodes.routeCards.every((card) => card.hidden));
+  assert.equal(reads, 0);
+});
+
+const DESCRIPTOR_BOUNDARY_CASES = [
+  {
+    label: "top-level non-enumerable extra",
+    mutate(value) {
+      Object.defineProperty(value, "extra", { value: true });
+      return value;
+    }
+  },
+  {
+    label: "top-level Symbol extra",
+    mutate(value) {
+      value[Symbol("extra")] = true;
+      return value;
+    }
+  },
+  {
+    label: "top-level null prototype",
+    mutate(value) {
+      Object.setPrototypeOf(value, null);
+      return value;
+    }
+  },
+  {
+    label: "top-level inherited extra on a custom prototype",
+    mutate(value) {
+      Object.setPrototypeOf(value, { extra: true });
+      return value;
+    }
+  },
+  {
+    label: "nested evidence accessor descriptor",
+    mutate(value) {
+      const closestExample = value.evidence.closestExample;
+      Object.defineProperty(value.evidence, "closestExample", {
+        enumerable: true,
+        get: () => closestExample
+      });
+      return value;
+    }
+  },
+  {
+    label: "nested evidence non-enumerable extra",
+    mutate(value) {
+      Object.defineProperty(value.evidence, "extra", { value: true });
+      return value;
+    }
+  },
+  {
+    label: "nested evidence Symbol extra",
+    mutate(value) {
+      value.evidence[Symbol("extra")] = true;
+      return value;
+    }
+  },
+  {
+    label: "array enumerable extra key",
+    mutate(value) {
+      value.auxiliaryProblemTypeIds.extra = true;
+      return value;
+    }
+  },
+  {
+    label: "array non-enumerable extra key",
+    mutate(value) {
+      Object.defineProperty(value.auxiliaryProblemTypeIds, "extra", { value: true });
+      return value;
+    }
+  },
+  {
+    label: "array Symbol extra key",
+    mutate(value) {
+      value.auxiliaryProblemTypeIds[Symbol("extra")] = true;
+      return value;
+    }
+  },
+  {
+    label: "sparse nested evidence array",
+    mutate(value) {
+      delete value.evidence.matchedPositivePhrases[0];
+      return value;
+    }
+  },
+  {
+    label: "nested array accessor descriptor",
+    mutate(value) {
+      const phrase = value.evidence.matchedPositivePhrases[0];
+      Object.defineProperty(value.evidence.matchedPositivePhrases, "0", {
+        enumerable: true,
+        get: () => phrase
+      });
+      return value;
+    }
+  },
+  {
+    label: "nested array custom prototype",
+    mutate(value) {
+      Object.setPrototypeOf(value.evidence.matchedPositivePhrases, Object.create(Array.prototype));
+      return value;
+    }
+  }
+];
+
+for (const descriptorCase of DESCRIPTOR_BOUNDARY_CASES) {
+  test(`injected result rejects ${descriptorCase.label}`, () => {
+    assertInjectedResultRejected(descriptorCase);
+  });
+}
+
+test("ordinary deeply frozen matcher data remains accepted", () => {
+  const query = "为什么失败了";
+  const frozen = deepFreeze(clone(matchRoute({ query, shortcutIntentId: null, routerData: ROUTER_DATA })));
+  const { nodes } = controllerFixture({ matcher: () => frozen });
+  nodes.input.value = query;
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.unavailable.hidden, true);
+  assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"]);
+});
+
+test("the default canonical matcher computes an instrumented request exactly once", () => {
+  function instrumentedQuery() {
+    let coercions = 0;
+    return {
+      query: {
+        [Symbol.toPrimitive]() {
+          coercions += 1;
+          return "为什么失败了";
+        }
+      },
+      coercions: () => coercions
+    };
+  }
+
+  const direct = instrumentedQuery();
+  matchRoute({ query: direct.query, shortcutIntentId: null, routerData: ROUTER_DATA });
+  const expectedCoercions = direct.coercions();
+  assert.ok(expectedCoercions > 0);
+
+  const actual = instrumentedQuery();
+  const { root, nodes } = createFakeRouterDom({ payload: ROUTER_DATA });
+  const controller = bootRouter(root);
+  nodes.input.value = actual.query;
+  dispatch(nodes.form, "submit");
+  assert.equal(actual.coercions(), expectedCoercions);
+  assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"]);
+  controller.destroy();
 });
 
 test("matched fails closed when known IDs do not resolve to every declared exact route key", () => {
@@ -880,6 +1070,75 @@ test("bootRouter replaces an inert owner after missing DOM is repaired", () => {
   assert.equal(submitEvent.defaultPrevented, true);
   assert.equal(nodes.unavailable.hidden, true);
   assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"]);
+});
+
+test("bootRouter replaces an inert owner after an invalid route key is repaired in place", () => {
+  const { root, nodes } = createFakeRouterDom({ payload: ROUTER_DATA });
+  nodes.routeCards[0].setAttribute("data-route-key", "diagnosis::unknown");
+  const inert = bootRouter(root);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+  assert.equal(nodes.unavailable.hidden, false);
+
+  nodes.routeCards[0].setAttribute("data-route-key", "diagnosis::intent");
+  const repaired = bootRouter(root);
+  assert.notEqual(repaired, inert);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+  nodes.input.value = "为什么失败了";
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.unavailable.hidden, true);
+  assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"]);
+
+  inert.destroy();
+  assert.equal(bootRouter(root), repaired);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+});
+
+test("bootRouter tracks in-place shortcut, clarification, and safety contract repairs", () => {
+  const cases = [
+    { collection: "shortcutButtons", attribute: "data-shortcut-intent" },
+    { collection: "clarifyButtons", attribute: "data-clarify-option" },
+    { collection: "safetyPanels", attribute: "data-safety-signal" }
+  ];
+
+  for (const { collection, attribute } of cases) {
+    const { root, nodes } = createFakeRouterDom({ payload: ROUTER_DATA });
+    const target = nodes[collection][0];
+    const expectedValue = target.getAttribute(attribute);
+    target.setAttribute(attribute, "unknown");
+    const inert = bootRouter(root);
+    assert.equal(nodes.unavailable.hidden, false, collection);
+
+    target.setAttribute(attribute, expectedValue);
+    const repaired = bootRouter(root);
+    assert.notEqual(repaired, inert, collection);
+    assert.equal(nodes.form.listenerCount("submit"), 1, collection);
+    nodes.input.value = "为什么失败了";
+    dispatch(nodes.form, "submit");
+    assert.equal(nodes.unavailable.hidden, true, collection);
+    assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"], collection);
+    repaired.destroy();
+  }
+});
+
+test("bootRouter replaces an inert owner after invalid payload text is repaired in place", () => {
+  const { root, nodes } = createFakeRouterDom({ payload: ROUTER_DATA });
+  nodes.payloadNode.textContent = "{";
+  const inert = bootRouter(root);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+  assert.equal(nodes.unavailable.hidden, false);
+
+  nodes.payloadNode.textContent = JSON.stringify(ROUTER_DATA);
+  const repaired = bootRouter(root);
+  assert.notEqual(repaired, inert);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
+  nodes.input.value = "为什么失败了";
+  dispatch(nodes.form, "submit");
+  assert.equal(nodes.unavailable.hidden, true);
+  assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"]);
+
+  inert.destroy();
+  assert.equal(bootRouter(root), repaired);
+  assert.equal(nodes.form.listenerCount("submit"), 1);
 });
 
 test("bootRouter replaces a live owner when its form identity changes", () => {

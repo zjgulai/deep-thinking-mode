@@ -61,6 +61,7 @@ const SAFETY_SIGNAL_ID_SET = new Set(SAFETY_SIGNAL_IDS);
 const ROUTE_KEY_SET = new Set(ROUTE_KEYS);
 const CONTROLLERS = new WeakMap();
 const CONTROLLER_SNAPSHOTS = new WeakMap();
+const INVALID_DATA_SNAPSHOT = Symbol("invalid-data-snapshot");
 
 const TOP_KEYS = new Set(["schema_version", "problem_types", "agent_stages", "safety_signals", "route_keys"]);
 const PROBLEM_TYPE_KEYS = new Set(["id", "label", "priority", "positive_phrases", "negative_phrases", "examples", "clarify_label"]);
@@ -107,16 +108,81 @@ const SELECTORS = Object.freeze({
   unavailable: "[data-router-unavailable]"
 });
 
+const SELECTOR_CONTRACT_ATTRIBUTES = Object.freeze({
+  clarifyOption: "data-clarify-option",
+  route: "data-route-key",
+  safetySignal: "data-safety-signal",
+  shortcut: "data-shortcut-intent"
+});
+
 function isRecord(value) {
   if (value === null || typeof value !== "object" || Array.isArray(value)) return false;
-  const prototype = Object.getPrototypeOf(value);
-  return prototype === Object.prototype || prototype === null;
+  return Object.getPrototypeOf(value) === Object.prototype;
 }
 
 function hasExactKeys(value, expectedKeys) {
   if (!isRecord(value)) return false;
-  const keys = Object.keys(value);
-  return keys.length === expectedKeys.size && keys.every((key) => expectedKeys.has(key));
+  const keys = Reflect.ownKeys(value);
+  return keys.length === expectedKeys.size
+    && keys.every((key) => {
+      if (typeof key !== "string" || !expectedKeys.has(key)) return false;
+      const descriptor = Object.getOwnPropertyDescriptor(value, key);
+      return descriptor?.enumerable === true && Object.hasOwn(descriptor, "value");
+    });
+}
+
+function snapshotPlainData(value, ancestors = new Set()) {
+  if (value === null || typeof value !== "object") {
+    return ["string", "number", "boolean"].includes(typeof value) || value === null
+      ? value
+      : INVALID_DATA_SNAPSHOT;
+  }
+  if (ancestors.has(value)) return INVALID_DATA_SNAPSHOT;
+  ancestors.add(value);
+
+  try {
+    if (Array.isArray(value)) {
+      if (Object.getPrototypeOf(value) !== Array.prototype) return INVALID_DATA_SNAPSHOT;
+      const keys = Reflect.ownKeys(value);
+      const lengthDescriptor = Object.getOwnPropertyDescriptor(value, "length");
+      if (!lengthDescriptor || !Object.hasOwn(lengthDescriptor, "value")) return INVALID_DATA_SNAPSHOT;
+      const length = lengthDescriptor.value;
+      if (!Number.isSafeInteger(length) || length < 0 || keys.length !== length + 1) return INVALID_DATA_SNAPSHOT;
+
+      const snapshot = [];
+      for (let index = 0; index < length; index += 1) {
+        const descriptor = Object.getOwnPropertyDescriptor(value, String(index));
+        if (!descriptor || descriptor.enumerable !== true || !Object.hasOwn(descriptor, "value")) {
+          return INVALID_DATA_SNAPSHOT;
+        }
+        const child = snapshotPlainData(descriptor.value, ancestors);
+        if (child === INVALID_DATA_SNAPSHOT) return INVALID_DATA_SNAPSHOT;
+        snapshot.push(child);
+      }
+      return snapshot;
+    }
+
+    if (Object.getPrototypeOf(value) !== Object.prototype) return INVALID_DATA_SNAPSHOT;
+    const snapshot = {};
+    for (const key of Reflect.ownKeys(value)) {
+      if (typeof key !== "string") return INVALID_DATA_SNAPSHOT;
+      const descriptor = Object.getOwnPropertyDescriptor(value, key);
+      if (!descriptor || descriptor.enumerable !== true || !Object.hasOwn(descriptor, "value")) {
+        return INVALID_DATA_SNAPSHOT;
+      }
+      const child = snapshotPlainData(descriptor.value, ancestors);
+      if (child === INVALID_DATA_SNAPSHOT) return INVALID_DATA_SNAPSHOT;
+      Object.defineProperty(snapshot, key, {
+        configurable: true,
+        enumerable: true,
+        value: child,
+        writable: true
+      });
+    }
+    return snapshot;
+  } finally {
+    ancestors.delete(value);
+  }
 }
 
 function isNonEmptyString(value) {
@@ -222,14 +288,29 @@ function collectSelectorNodes(root) {
 
 function createSelectorSnapshot(selectorNodes) {
   return Object.freeze(
-    Object.keys(SELECTORS).map((name) => Object.freeze([...selectorNodes[name]]))
+    Object.keys(SELECTORS).map((name) => Object.freeze(
+      selectorNodes[name].map((node) => Object.freeze([
+        node,
+        name === "payload"
+          ? node.textContent
+          : SELECTOR_CONTRACT_ATTRIBUTES[name]
+            ? node.getAttribute(SELECTOR_CONTRACT_ATTRIBUTES[name])
+            : null
+      ]))
+    ))
   );
 }
 
 function selectorSnapshotsEqual(actual, expected) {
   return Array.isArray(actual)
     && actual.length === expected.length
-    && actual.every((nodes, index) => arraysEqual(nodes, expected[index]));
+    && actual.every((entries, index) => (
+      entries.length === expected[index].length
+      && entries.every(([node, contractValue], entryIndex) => (
+        node === expected[index][entryIndex][0]
+        && contractValue === expected[index][entryIndex][1]
+      ))
+    ));
 }
 
 function exactNodeCollection(nodes, attribute, expectedIds) {
@@ -589,20 +670,22 @@ export function createRouterController({ root, matcher = matchRoute }) {
     }
     if (clarificationCount === 1) clarificationCount = 2;
     clearTransientMessages();
-    let match;
+    let reference;
     try {
       const request = {
         query: input.value,
         shortcutIntentId: selectedShortcutIntentId,
         routerData: payload
       };
-      const reference = matchRoute(request);
-      match = matcher === matchRoute ? reference : matcher(request);
+      reference = snapshotPlainData(matchRoute(request));
+      const injected = matcher === matchRoute ? reference : snapshotPlainData(matcher(request));
       if (
-        !validateMatchResult(reference)
-        || !validateMatchResult(match)
-        || !matchResultsEqual(match, reference)
-        || !hasRequiredResultTargets(match)
+        reference === INVALID_DATA_SNAPSHOT
+        || injected === INVALID_DATA_SNAPSHOT
+        || !validateMatchResult(reference)
+        || !validateMatchResult(injected)
+        || !matchResultsEqual(injected, reference)
+        || !hasRequiredResultTargets(reference)
       ) {
         showUnavailable();
         return;
@@ -611,7 +694,7 @@ export function createRouterController({ root, matcher = matchRoute }) {
       showUnavailable();
       return;
     }
-    render(match);
+    render(reference);
   }
 
   function resetState() {
