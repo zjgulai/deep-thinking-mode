@@ -12,7 +12,7 @@ import {
 } from "node:fs";
 import { createHash } from "node:crypto";
 import { basename, dirname, join } from "node:path";
-import { fileURLToPath, pathToFileURL } from "node:url";
+import { fileURLToPath } from "node:url";
 
 import { loadV3AgentData } from "./lib/v3-agent-data.mjs";
 import { findPublicModelResidue } from "./lib/public-model-sanitizer.mjs";
@@ -606,4 +606,4 @@ export async function buildSite() {
   console.log(`✅ 多页站构建完成：${models.length} 模型 · ${chapters.length} 章节 · site/ 与 docs/ 已同步`);
 }
 
-if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) await buildSite();
+if (import.meta.main) await buildSite();

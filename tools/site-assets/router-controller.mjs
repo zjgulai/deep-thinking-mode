@@ -895,4 +895,4 @@ export function bootRouter(root = document) {
   return createRouterController({ root });
 }
 
-if (typeof document !== "undefined") bootRouter(document);
+if (typeof document !== "undefined" && document.defaultView === globalThis) bootRouter(document);

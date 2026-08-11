@@ -436,7 +436,7 @@ createRouterPayload(buildView)
 renderRouterPage(context)
 ```
 
-为避免 import 即全量构建，`build-site.mjs` 改为导出 `buildSite()`，仅在 `process.argv[1]` 等于当前文件时执行。测试断言：
+为避免 import 即全量构建，`build-site.mjs` 改为导出 `buildSite()`，仅在 Node 24.18 的 `import.meta.main` 为 `true` 时执行；importer 不得通过伪造 `process.argv[1]` 触发构建，通过 symlink 直接执行仍必须构建。测试断言：
 
 - payload 未压缩 UTF-8 bytes ≤ 96 KiB。
 - `serializeScriptJson` 转义 `<`、`</script`、U+2028、U+2029，往返 JSON 等值。

@@ -130,21 +130,26 @@ test("parseRouterPayload accepts the real compact 8x8x4 Router payload", () => {
   assert.deepEqual(parseRouterPayload(payloadNode(ROUTER_DATA)), ROUTER_DATA);
 });
 
-test("browser module entry auto-boots exactly once while Node imports stay side-effect free", () => {
+test("Node imports do not auto-boot a document owned by another global", () => {
+  const moduleUrl = new URL("../tools/site-assets/router-controller.mjs", import.meta.url).href;
+  const nodeResult = execFileSync(process.execPath, [
+    "--input-type=module",
+    "--eval",
+    `let scans=0; let listeners=0; const foreignWindow={}; globalThis.document={defaultView:foreignWindow,querySelectorAll(){scans+=1;return[]},addEventListener(){listeners+=1}}; await import(${JSON.stringify(moduleUrl)}); console.log(JSON.stringify({scans,listeners}));`
+  ], { encoding: "utf8" });
+
+  assert.equal(nodeResult, "{\"scans\":0,\"listeners\":0}\n");
+});
+
+test("a browser-realm module auto-boots exactly once", () => {
   const moduleUrl = new URL("../tools/site-assets/router-controller.mjs", import.meta.url).href;
   const browserResult = execFileSync(process.execPath, [
     "--input-type=module",
     "--eval",
-    `let calls=0; globalThis.document={querySelectorAll(){calls+=1;return[]}}; await import(${JSON.stringify(moduleUrl)}); console.log(calls);`
-  ], { encoding: "utf8" });
-  const nodeResult = execFileSync(process.execPath, [
-    "--input-type=module",
-    "--eval",
-    `await import(${JSON.stringify(moduleUrl)}); console.log("ok");`
+    `let scans=0; globalThis.document={defaultView:globalThis,querySelectorAll(){scans+=1;return[]}}; await import(${JSON.stringify(moduleUrl)}); await import(${JSON.stringify(moduleUrl)}); console.log(scans);`
   ], { encoding: "utf8" });
 
   assert.equal(browserResult, "21\n");
-  assert.equal(nodeResult, "ok\n");
 });
 
 test("parseRouterPayload rejects missing, extra, and prototype-looking keys at every schema level", () => {

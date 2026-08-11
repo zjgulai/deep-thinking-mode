@@ -1,6 +1,18 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { fileURLToPath } from "node:url";
+import {
+  copyFileSync,
+  cpSync,
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  realpathSync,
+  rmSync,
+  symlinkSync
+} from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import test from "node:test";
 
 import {
@@ -23,14 +35,55 @@ function matches(source, pattern) {
   return [...source.matchAll(pattern)];
 }
 
-test("importing the site builder exposes pure Router renderers without starting a build", () => {
-  const stdout = execFileSync(process.execPath, [
+function createIsolatedBuilder(t) {
+  const fixtureRoot = realpathSync(mkdtempSync(join(tmpdir(), "router-site-builder-")));
+  const toolsDir = join(fixtureRoot, "tools");
+  mkdirSync(toolsDir, { recursive: true });
+  copyFileSync(join(ROOT, "tools", "build-site.mjs"), join(toolsDir, "build-site.mjs"));
+  symlinkSync(join(ROOT, "tools", "lib"), join(toolsDir, "lib"));
+  symlinkSync(join(ROOT, "tools", "site-assets"), join(toolsDir, "site-assets"));
+  cpSync(join(ROOT, "knowledge"), join(fixtureRoot, "knowledge"), { recursive: true });
+  cpSync(join(ROOT, "chain-protocols"), join(fixtureRoot, "chain-protocols"), { recursive: true });
+  t.after(() => rmSync(fixtureRoot, { recursive: true, force: true }));
+  return {
+    builder: join(toolsDir, "build-site.mjs"),
+    fixtureRoot
+  };
+}
+
+function assertIsolatedBuildExists(fixtureRoot) {
+  assert.equal(existsSync(join(fixtureRoot, "site", "router.html")), true);
+  assert.equal(existsSync(join(fixtureRoot, "docs", "router.html")), true);
+}
+
+test("importing the site builder cannot be turned into a build by a forged argv entry", (t) => {
+  const { builder, fixtureRoot } = createIsolatedBuilder(t);
+  execFileSync(process.execPath, [
     "--input-type=module",
     "--eval",
-    `await import(${JSON.stringify(new URL("../tools/build-site.mjs", import.meta.url).href)})`
-  ], { cwd: ROOT, encoding: "utf8" });
+    `process.argv[1]=${JSON.stringify(builder)}; await import(${JSON.stringify(pathToFileURL(builder).href)});`
+  ], { cwd: fixtureRoot, encoding: "utf8" });
 
-  assert.equal(stdout, "");
+  assert.equal(existsSync(join(fixtureRoot, "site")), false);
+  assert.equal(existsSync(join(fixtureRoot, "docs")), false);
+});
+
+test("executing the site builder through a symlink still performs the isolated build", (t) => {
+  const { builder, fixtureRoot } = createIsolatedBuilder(t);
+  const symlink = join(fixtureRoot, "build-site-link.mjs");
+  symlinkSync(builder, symlink);
+
+  execFileSync(process.execPath, [symlink], { cwd: fixtureRoot, encoding: "utf8" });
+
+  assertIsolatedBuildExists(fixtureRoot);
+});
+
+test("executing the ordinary site builder path still performs the isolated build", (t) => {
+  const { builder, fixtureRoot } = createIsolatedBuilder(t);
+
+  execFileSync(process.execPath, [builder], { cwd: fixtureRoot, encoding: "utf8" });
+
+  assertIsolatedBuildExists(fixtureRoot);
 });
 
 test("compact Router payload is controller-valid, complete, and below the 96 KiB boundary", () => {
