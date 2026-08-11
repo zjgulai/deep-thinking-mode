@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
+import { runInNewContext } from "node:vm";
 
 import {
   bootRouter,
@@ -88,6 +89,17 @@ function assertInjectedResultRejected({ label, mutate, query = "为什么失败�
   assert.equal(nodes.unavailable.hidden, false, label);
   assert.ok(nodes.routeCards.every((card) => card.hidden), label);
   assert.equal(nodes.safety.hidden, true, label);
+}
+
+function withPrototypeProperty(prototype, key, descriptor, callback) {
+  const previousDescriptor = Object.getOwnPropertyDescriptor(prototype, key);
+  Object.defineProperty(prototype, key, descriptor);
+  try {
+    return callback();
+  } finally {
+    if (previousDescriptor) Object.defineProperty(prototype, key, previousDescriptor);
+    else delete prototype[key];
+  }
 }
 
 test("parseRouterPayload accepts the real compact 8x8x4 Router payload", () => {
@@ -660,6 +672,22 @@ const DESCRIPTOR_BOUNDARY_CASES = [
       Object.setPrototypeOf(value.evidence.matchedPositivePhrases, Object.create(Array.prototype));
       return value;
     }
+  },
+  {
+    label: "nested array shape-mimicking custom prototype",
+    mutate(value) {
+      const prototype = Object.create(Object.prototype);
+      for (const key of Reflect.ownKeys(Array.prototype)) {
+        Object.defineProperty(prototype, key, {
+          configurable: true,
+          enumerable: false,
+          value: null,
+          writable: true
+        });
+      }
+      Object.setPrototypeOf(value.auxiliaryProblemTypeIds, prototype);
+      return value;
+    }
   }
 ];
 
@@ -668,6 +696,77 @@ for (const descriptorCase of DESCRIPTOR_BOUNDARY_CASES) {
     assertInjectedResultRejected(descriptorCase);
   });
 }
+
+const PROTOTYPE_POLLUTION_CASES = [
+  {
+    label: "current-realm Object.prototype enumerable extra",
+    prototype: Object.prototype,
+    key: "__router_test_enumerable_extra__",
+    descriptor: () => ({ configurable: true, enumerable: true, value: true, writable: true })
+  },
+  {
+    label: "current-realm Object.prototype non-enumerable extra",
+    prototype: Object.prototype,
+    key: "__router_test_non_enumerable_extra__",
+    descriptor: (onRead) => ({ configurable: true, enumerable: false, get() { onRead(); return true; } })
+  },
+  {
+    label: "current-realm Object.prototype Symbol extra",
+    prototype: Object.prototype,
+    key: Symbol("router-test-object-prototype-extra"),
+    descriptor: (onRead) => ({ configurable: true, enumerable: true, get() { onRead(); return true; } })
+  },
+  {
+    label: "current-realm Array.prototype enumerable extra",
+    prototype: Array.prototype,
+    key: "__router_test_enumerable_extra__",
+    descriptor: (onRead) => ({ configurable: true, enumerable: true, get() { onRead(); return true; } })
+  },
+  {
+    label: "current-realm Array.prototype Symbol extra",
+    prototype: Array.prototype,
+    key: Symbol("router-test-array-prototype-extra"),
+    descriptor: (onRead) => ({ configurable: true, enumerable: false, get() { onRead(); return true; } })
+  }
+];
+
+for (const pollutionCase of PROTOTYPE_POLLUTION_CASES) {
+  test(`injected result rejects ${pollutionCase.label} without reading its value`, () => {
+    const query = "为什么失败了";
+    const injected = clone(matchRoute({ query, shortcutIntentId: null, routerData: ROUTER_DATA }));
+    const { nodes } = controllerFixture({ matcher: () => injected });
+    let reads = 0;
+
+    withPrototypeProperty(
+      pollutionCase.prototype,
+      pollutionCase.key,
+      pollutionCase.descriptor(() => { reads += 1; }),
+      () => {
+        nodes.input.value = query;
+        dispatch(nodes.form, "submit");
+        assert.equal(nodes.unavailable.hidden, false, pollutionCase.label);
+        assert.ok(nodes.routeCards.every((card) => card.hidden), pollutionCase.label);
+      }
+    );
+
+    assert.equal(reads, 0, pollutionCase.label);
+  });
+}
+
+test("an exact canonical result made from clean cross-realm plain data remains accepted", () => {
+  const query = "为什么失败了";
+  const reference = matchRoute({ query, shortcutIntentId: null, routerData: ROUTER_DATA });
+  const injected = runInNewContext("JSON.parse(source)", { source: JSON.stringify(reference) });
+  assert.notEqual(Object.getPrototypeOf(injected), Object.prototype);
+  assert.notEqual(Object.getPrototypeOf(injected.auxiliaryProblemTypeIds), Array.prototype);
+
+  const { nodes } = controllerFixture({ matcher: () => injected });
+  nodes.input.value = query;
+  dispatch(nodes.form, "submit");
+
+  assert.equal(nodes.unavailable.hidden, true);
+  assert.deepEqual(visibleRouteKeys(nodes), ["diagnosis::intent"]);
+});
 
 test("ordinary deeply frozen matcher data remains accepted", () => {
   const query = "为什么失败了";

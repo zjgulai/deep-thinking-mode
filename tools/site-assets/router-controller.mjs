@@ -62,6 +62,8 @@ const ROUTE_KEY_SET = new Set(ROUTE_KEYS);
 const CONTROLLERS = new WeakMap();
 const CONTROLLER_SNAPSHOTS = new WeakMap();
 const INVALID_DATA_SNAPSHOT = Symbol("invalid-data-snapshot");
+const OBJECT_PROTOTYPE_KEYS = Object.freeze(Reflect.ownKeys(Object.prototype));
+const ARRAY_PROTOTYPE_KEYS = Object.freeze(Reflect.ownKeys(Array.prototype));
 
 const TOP_KEYS = new Set(["schema_version", "problem_types", "agent_stages", "safety_signals", "route_keys"]);
 const PROBLEM_TYPE_KEYS = new Set(["id", "label", "priority", "positive_phrases", "negative_phrases", "examples", "clarify_label"]);
@@ -115,9 +117,40 @@ const SELECTOR_CONTRACT_ATTRIBUTES = Object.freeze({
   shortcut: "data-shortcut-intent"
 });
 
+function hasSameOwnKeys(value, expectedKeys) {
+  const keys = Reflect.ownKeys(value);
+  if (keys.length !== expectedKeys.length) return false;
+  for (let keyIndex = 0; keyIndex < keys.length; keyIndex += 1) {
+    let found = false;
+    for (let expectedIndex = 0; expectedIndex < expectedKeys.length; expectedIndex += 1) {
+      if (keys[keyIndex] === expectedKeys[expectedIndex]) {
+        found = true;
+        break;
+      }
+    }
+    if (!found) return false;
+  }
+  return true;
+}
+
+function hasCanonicalObjectPrototype(prototype) {
+  return prototype !== null
+    && Object.getPrototypeOf(prototype) === null
+    && hasSameOwnKeys(prototype, OBJECT_PROTOTYPE_KEYS);
+}
+
+function hasCanonicalArrayPrototype(prototype) {
+  return prototype !== null
+    && Array.isArray(prototype)
+    && hasCanonicalObjectPrototype(Object.getPrototypeOf(prototype))
+    && hasSameOwnKeys(prototype, ARRAY_PROTOTYPE_KEYS);
+}
+
 function isRecord(value) {
-  if (value === null || typeof value !== "object" || Array.isArray(value)) return false;
-  return Object.getPrototypeOf(value) === Object.prototype;
+  return value !== null
+    && typeof value === "object"
+    && !Array.isArray(value)
+    && hasCanonicalObjectPrototype(Object.getPrototypeOf(value));
 }
 
 function hasExactKeys(value, expectedKeys) {
@@ -142,7 +175,7 @@ function snapshotPlainData(value, ancestors = new Set()) {
 
   try {
     if (Array.isArray(value)) {
-      if (Object.getPrototypeOf(value) !== Array.prototype) return INVALID_DATA_SNAPSHOT;
+      if (!hasCanonicalArrayPrototype(Object.getPrototypeOf(value))) return INVALID_DATA_SNAPSHOT;
       const keys = Reflect.ownKeys(value);
       const lengthDescriptor = Object.getOwnPropertyDescriptor(value, "length");
       if (!lengthDescriptor || !Object.hasOwn(lengthDescriptor, "value")) return INVALID_DATA_SNAPSHOT;
@@ -162,7 +195,7 @@ function snapshotPlainData(value, ancestors = new Set()) {
       return snapshot;
     }
 
-    if (Object.getPrototypeOf(value) !== Object.prototype) return INVALID_DATA_SNAPSHOT;
+    if (!isRecord(value)) return INVALID_DATA_SNAPSHOT;
     const snapshot = {};
     for (const key of Reflect.ownKeys(value)) {
       if (typeof key !== "string") return INVALID_DATA_SNAPSHOT;
