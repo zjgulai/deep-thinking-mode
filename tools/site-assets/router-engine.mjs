@@ -9,6 +9,8 @@ const SAFETY_SIGNAL_PRECEDENCE = Object.freeze({
   legal_advice_with_deadline: 30,
   high_stakes_financial_instruction: 40
 });
+const MAX_NEGATIVE_INSERTIONS = 4;
+const DOUBLE_NEGATION_MARKERS = Object.freeze(["并不是", "不是", "并非"]);
 
 export function normalizeRouterText(input) {
   const normalizedText = String(input ?? "")
@@ -49,12 +51,87 @@ function matchedPhrases(compactText, phrases = []) {
   });
 }
 
+function normalizeNegativeClauses(input) {
+  const clauses = [];
+  let clause = [];
+  for (const character of String(input ?? "").normalize("NFKC").toLowerCase()) {
+    if (/\p{P}/u.test(character)) {
+      if (clause.length > 0) clauses.push(clause);
+      clause = [];
+    } else if (/\s/u.test(character)) {
+      continue;
+    } else if (/[\p{Script=Han}\p{L}\p{N}]/u.test(character)) {
+      clause.push(character);
+    }
+  }
+  if (clause.length > 0) clauses.push(clause);
+  return clauses;
+}
+
+function boundedSubsequenceCandidates(clause, phrase) {
+  const candidates = [];
+  for (let start = 0; start < clause.length; start += 1) {
+    if (clause[start] !== phrase[0]) continue;
+    let clauseIndex = start + 1;
+    let phraseIndex = 1;
+    while (phraseIndex < phrase.length && clauseIndex < clause.length) {
+      if (clause[clauseIndex] === phrase[phraseIndex]) phraseIndex += 1;
+      clauseIndex += 1;
+      if (clauseIndex - start - phraseIndex > MAX_NEGATIVE_INSERTIONS) break;
+    }
+    if (phraseIndex === phrase.length) {
+      const end = clauseIndex - 1;
+      if (end - start + 1 - phrase.length <= MAX_NEGATIVE_INSERTIONS) candidates.push({ start, end });
+    }
+  }
+  return candidates.filter((candidate) => !candidates.some((other) => (
+    other !== candidate
+    && other.start >= candidate.start
+    && other.end <= candidate.end
+    && (other.start > candidate.start || other.end < candidate.end)
+  )));
+}
+
+function sequenceAt(characters, sequence, start) {
+  if (start < 0 || start + sequence.length > characters.length) return false;
+  for (let index = 0; index < sequence.length; index += 1) {
+    if (characters[start + index] !== sequence[index]) return false;
+  }
+  return true;
+}
+
+function isReversedNegativeCandidate(clause, negativeStart) {
+  for (const markerText of DOUBLE_NEGATION_MARKERS) {
+    const marker = [...markerText];
+    const firstMarkerStart = Math.max(0, negativeStart - marker.length - MAX_NEGATIVE_INSERTIONS);
+    for (let markerStart = firstMarkerStart; markerStart + marker.length <= negativeStart; markerStart += 1) {
+      if (
+        sequenceAt(clause, marker, markerStart)
+        && negativeStart - markerStart - marker.length <= MAX_NEGATIVE_INSERTIONS
+      ) return true;
+    }
+  }
+  return false;
+}
+
+function matchesBoundedNegative(clauses, text) {
+  const phrase = [...normalizeRouterText(text).compactText];
+  if (phrase.length === 0) return false;
+  for (const clause of clauses) {
+    const candidates = boundedSubsequenceCandidates(clause, phrase);
+    if (candidates.some(({ start }) => !isReversedNegativeCandidate(clause, start))) return true;
+  }
+  return false;
+}
+
 export function scoreProblemTypes({ query, shortcutIntentId, problemTypes }) {
   const { compactText } = normalizeRouterText(query);
   const queryBigrams = createBigrams(compactText);
+  const negativeClauses = normalizeNegativeClauses(query);
 
   return problemTypes.map((problemType) => {
-    const negativeMatches = matchedPhrases(compactText, problemType.negative_phrases);
+    const negativeMatches = (problemType.negative_phrases ?? [])
+      .filter(({ text }) => matchesBoundedNegative(negativeClauses, text));
     const positiveMatches = matchedPhrases(compactText, problemType.positive_phrases);
     const negativeScore = negativeMatches.reduce((total, { weight }) => total + weight, 0);
     const positiveScore = positiveMatches.reduce((total, { weight }) => total + weight, 0);

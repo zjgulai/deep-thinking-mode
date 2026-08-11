@@ -356,10 +356,11 @@ test("composed planning and reflection negatives stay below the matched threshol
   }
 });
 
-test("double negations preserve explicit planning and reflection intent", () => {
+test("double negations preserve explicit planning, reflection, and research intent", () => {
   for (const [query, problemTypeId] of [
-    ["不是不需要下一步，而是要明确下一步", "planning"],
-    ["不是不需要复盘，而是要认真复盘", "reflection"]
+    ["不是不需要规划下一步，而是要明确规划下一步", "planning"],
+    ["并非完全不需要复盘改进，而是必须复盘改进", "reflection"],
+    ["并不是完全不需要基于证据研究，而是更需要基于证据研究", "research"]
   ]) {
     const result = matchRoute({ query, routerData });
     assert.equal(result.state, "matched", `${problemTypeId}: ${query}`);
@@ -367,10 +368,11 @@ test("double negations preserve explicit planning and reflection intent", () => 
   }
 });
 
-test("narrow inserted-word negatives cannot become planning or reflection core matches", () => {
+test("bounded inserted-word negatives cannot become planning, reflection, or research core matches", () => {
   for (const [query, problemTypeId] of [
-    ["我不需要规划任何下一步", "planning"],
-    ["我不需要复盘任何改进", "reflection"]
+    ["我不需要现在规划下一步", "planning"],
+    ["我不需要复盘这次改进", "reflection"],
+    ["我不需要基于现有证据研究", "research"]
   ]) {
     const ownScore = scoreProblemTypes({
       query,
@@ -380,6 +382,71 @@ test("narrow inserted-word negatives cannot become planning or reflection core m
     assert.ok(ownScore.score < 8, `${problemTypeId}: ${query} scored ${ownScore.score}`);
     assert.notEqual(matchRoute({ query, routerData }).problemTypeId, problemTypeId, `${problemTypeId}: ${query}`);
   }
+});
+
+test("negative subsequence matching accepts total gap four and rejects total gap five", () => {
+  const problemTypes = [
+    syntheticType("target", { positive: [["目标", 8]], negative: [["不需要目标", 10]] }),
+    syntheticType("other", { priority: 20 })
+  ];
+  const withinBoundary = scoreProblemTypes({ query: "不需甲乙丙丁要目标", shortcutIntentId: null, problemTypes })[0];
+  assert.equal(withinBoundary.score, 0);
+  assert.deepEqual(withinBoundary.matchedNegativePhrases, ["不需要目标"]);
+
+  const outsideBoundary = scoreProblemTypes({ query: "不需甲乙丙丁戊要目标", shortcutIntentId: null, problemTypes })[0];
+  assert.equal(outsideBoundary.score, 8);
+  assert.deepEqual(outsideBoundary.matchedNegativePhrases, []);
+});
+
+test("double-negation marker window accepts four intervening characters and rejects five", () => {
+  const data = syntheticRouterData([
+    syntheticType("target", { positive: [["目标", 8]], negative: [["不需要目标", 10]] }),
+    syntheticType("other", { priority: 20 })
+  ]);
+  const withinBoundary = matchRoute({ query: "不是甲乙丙丁不需要目标而是目标", routerData: data });
+  assert.equal(withinBoundary.state, "matched");
+  assert.equal(withinBoundary.problemTypeId, "target");
+  assert.deepEqual(withinBoundary.evidence.matchedNegativePhrases, []);
+
+  const outsideBoundary = matchRoute({ query: "不是甲乙丙丁戊不需要目标", routerData: data });
+  assert.equal(outsideBoundary.state, "clarify");
+  assert.equal(outsideBoundary.problemTypeId, null);
+});
+
+test("negative scope ignores ordinary whitespace but never crosses punctuation clauses", () => {
+  const problemTypes = [
+    syntheticType("target", { positive: [["目标", 8]], negative: [["不需要目标", 10]] }),
+    syntheticType("other", { priority: 20 })
+  ];
+  const spaced = scoreProblemTypes({ query: "不 需 要 目 标", shortcutIntentId: null, problemTypes })[0];
+  assert.deepEqual(spaced.matchedNegativePhrases, ["不需要目标"]);
+  assert.equal(spaced.score, 0);
+
+  const splitClause = scoreProblemTypes({ query: "不需要。目标", shortcutIntentId: null, problemTypes })[0];
+  assert.deepEqual(splitClause.matchedNegativePhrases, []);
+  assert.equal(splitClause.score, 8);
+});
+
+test("double-negation markers do not cross punctuation into a later negative clause", () => {
+  const result = matchRoute({ query: "我不是专家。你不需要规划下一步", routerData });
+  assert.notEqual(result.problemTypeId, "planning");
+  const planning = scoreProblemTypes({
+    query: "我不是专家。你不需要规划下一步",
+    shortcutIntentId: null,
+    problemTypes: routerData.problem_types
+  }).find(({ id }) => id === "planning");
+  assert.ok(planning.score < 8);
+  assert.deepEqual(planning.matchedNegativePhrases, ["不需要规划下一步"]);
+});
+
+test("a later genuine negative candidate survives an earlier reversed candidate and counts once", () => {
+  const planning = scoreProblemTypes({
+    query: "不是不需要规划下一步 后来不需要规划下一步",
+    shortcutIntentId: null,
+    problemTypes: routerData.problem_types
+  }).find(({ id }) => id === "planning");
+  assert.ok(planning.score < 8);
+  assert.deepEqual(planning.matchedNegativePhrases, ["不需要规划下一步"]);
 });
 
 test("router matches every golden case with bounded auxiliaries and no forbidden type", async (t) => {
