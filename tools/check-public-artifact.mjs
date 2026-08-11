@@ -46,8 +46,58 @@ const NAVIGATION_ELEMENTS = new Set(["a", "area"]);
 const SAFE_NAVIGATION_SCHEMES = new Set(["https:", "mailto:", "tel:"]);
 const SCRIPT_NETWORK_PATTERN =
   /\b(?:fetch|XMLHttpRequest|WebSocket|EventSource|importScripts)\s*\(|\bnavigator\s*\.\s*sendBeacon\s*\(/i;
-const SCRIPT_STORAGE_PATTERN =
-  /\b(?:localStorage|sessionStorage|indexedDB)\s*(?:\.|\[)/i;
+const STORAGE_IDENTIFIERS = new Set([
+  "indexedDB",
+  "localStorage",
+  "sessionStorage",
+]);
+const BROWSER_GLOBAL_IDENTIFIERS = new Set(["globalThis", "self", "window"]);
+const REGEX_AFTER_CONTROL_HEAD_IDENTIFIERS = new Set([
+  "catch",
+  "for",
+  "if",
+  "switch",
+  "while",
+  "with",
+]);
+const REGEX_PREFIX_IDENTIFIERS = new Set([
+  "await",
+  "case",
+  "delete",
+  "do",
+  "else",
+  "in",
+  "instanceof",
+  "new",
+  "of",
+  "return",
+  "throw",
+  "typeof",
+  "void",
+  "yield",
+]);
+const REGEX_PREFIX_PUNCTUATORS = new Set([
+  "(",
+  "[",
+  "{",
+  ",",
+  ";",
+  ":",
+  "=",
+  "!",
+  "?",
+  "=>",
+  "+",
+  "-",
+  "*",
+  "%",
+  "&",
+  "|",
+  "^",
+  "~",
+  "<",
+  ">",
+]);
 const REMOTE_URL_PATTERN = /(?:https?:)?\/\/[^\s"'<>`)}]+/i;
 const ATTRIBUTE_PATTERN =
   /([^\s"'<>\/=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g;
@@ -265,13 +315,13 @@ function validateReference({
     if (attribute !== "href") {
       errors.push(error("EMPTY_REFERENCE", sourceLabel));
     }
-    return;
+    return null;
   }
 
   const compactForScheme = value.replace(/[\u0000-\u0020\u007f]+/g, "");
   if (compactForScheme.startsWith("//")) {
     errors.push(error("EXTERNAL_RESOURCE", `${sourceLabel}: ${value}`));
-    return;
+    return null;
   }
 
   const schemeMatch = compactForScheme.match(/^([a-z][a-z0-9+.-]*:)/i);
@@ -281,7 +331,7 @@ function validateReference({
       return;
     }
     errors.push(error("EXTERNAL_RESOURCE", `${sourceLabel}: ${value}`));
-    return;
+    return null;
   }
 
   const { rawPath, rawFragment } = splitReference(value);
@@ -292,13 +342,13 @@ function validateReference({
     errors,
   });
   if (!targetFile) {
-    return;
+    return null;
   }
   if (!fileSet.has(targetFile)) {
     errors.push(
       error("MISSING_TARGET", `${sourceLabel}: ${value} -> ${targetFile}`),
     );
-    return;
+    return null;
   }
 
   if (rawFragment) {
@@ -307,7 +357,7 @@ function validateReference({
       fragment = decodeURIComponent(rawFragment);
     } catch {
       errors.push(error("INVALID_URL_ENCODING", `${sourceLabel}: #${rawFragment}`));
-      return;
+      return null;
     }
     const targetIds = idsByFile.get(targetFile);
     if ((attribute === "href" || targetIds) && !targetIds?.has(fragment)) {
@@ -319,6 +369,7 @@ function validateReference({
       );
     }
   }
+  return targetFile;
 }
 
 function collectIds(markup, relativePath, errors) {
@@ -513,83 +564,492 @@ function inspectMarkup({ markup, currentFile, fileSet, idsByFile, errors }) {
         ),
       );
     }
-    if (
-      !isDataScript &&
-      SCRIPT_STORAGE_PATTERN.test(javascriptCodeOnly(scriptMatch[2]))
-    ) {
-      errors.push(
-        error(
-          "STORAGE_CAPABLE_SCRIPT",
-          `${currentFile} contains inline script with a browser storage capability`,
-        ),
-      );
+    if (!isDataScript) {
+      inspectScript({
+        script: scriptMatch[2],
+        relativePath: currentFile,
+        fileSet,
+        idsByFile,
+        errors,
+        inspectImports: type === "module",
+        sourceKind: "inline script",
+      });
     }
   }
 }
 
-function javascriptCodeOnly(script) {
-  let code = "";
-  let mode = "code";
-  for (let index = 0; index < script.length; index += 1) {
-    const character = script[index];
-    const next = script[index + 1];
+function tokenizeJavaScript(script) {
+  const tokens = [];
+  let index = 0;
 
-    if (mode === "code") {
+  function fail(message) {
+    throw new Error(`${message} at byte ${Buffer.byteLength(script.slice(0, index), "utf8")}`);
+  }
+
+  function codePoint() {
+    const value = script.codePointAt(index);
+    return value === undefined ? "" : String.fromCodePoint(value);
+  }
+
+  function isIdentifierStart(character) {
+    return character !== "" && /[$_\p{ID_Start}]/u.test(character);
+  }
+
+  function isIdentifierPart(character) {
+    return character !== "" && /[$\u200c\u200d_\p{ID_Continue}]/u.test(character);
+  }
+
+  function readIdentifier() {
+    const start = index;
+    let value = "";
+    let first = true;
+    while (index < script.length) {
+      if (script[index] === "\\" && script[index + 1] === "u") {
+        const escapeStart = index;
+        index += 2;
+        let digits;
+        if (script[index] === "{") {
+          const close = script.indexOf("}", index + 1);
+          digits = close === -1 ? "" : script.slice(index + 1, close);
+          if (!/^[0-9a-f]{1,6}$/i.test(digits)) {
+            fail("invalid Unicode identifier escape");
+          }
+          index = close + 1;
+        } else {
+          digits = script.slice(index, index + 4);
+          if (!/^[0-9a-f]{4}$/i.test(digits)) {
+            fail("invalid Unicode identifier escape");
+          }
+          index += 4;
+        }
+        const point = Number.parseInt(digits, 16);
+        if (point > 0x10ffff) {
+          fail("out-of-range Unicode identifier escape");
+        }
+        const decoded = String.fromCodePoint(point);
+        if (first ? !isIdentifierStart(decoded) : !isIdentifierPart(decoded)) {
+          index = escapeStart;
+          fail("invalid escaped identifier character");
+        }
+        value += decoded;
+        first = false;
+        continue;
+      }
+      const character = codePoint();
+      if (first ? !isIdentifierStart(character) : !isIdentifierPart(character)) {
+        break;
+      }
+      value += character;
+      index += character.length;
+      first = false;
+    }
+    tokens.push({ type: "identifier", value, start });
+  }
+
+  function readString(quote) {
+    const start = index;
+    let value = "";
+    index += 1;
+    while (index < script.length) {
+      const character = script[index];
+      if (character === quote) {
+        index += 1;
+        tokens.push({ type: "string", value, start });
+        return;
+      }
+      if (character === "\n" || character === "\r") {
+        fail("unterminated string literal");
+      }
+      if (character !== "\\") {
+        value += character;
+        index += 1;
+        continue;
+      }
+
+      index += 1;
+      if (index >= script.length) {
+        fail("unterminated string escape");
+      }
+      const escaped = script[index];
+      const simpleEscapes = new Map([
+        ["b", "\b"],
+        ["f", "\f"],
+        ["n", "\n"],
+        ["r", "\r"],
+        ["t", "\t"],
+        ["v", "\v"],
+        ["0", "\0"],
+      ]);
+      if (escaped === "\n") {
+        index += 1;
+      } else if (escaped === "\r") {
+        index += script[index + 1] === "\n" ? 2 : 1;
+      } else if (escaped === "x") {
+        const digits = script.slice(index + 1, index + 3);
+        if (!/^[0-9a-f]{2}$/i.test(digits)) {
+          fail("invalid hexadecimal string escape");
+        }
+        value += String.fromCodePoint(Number.parseInt(digits, 16));
+        index += 3;
+      } else if (escaped === "u") {
+        if (script[index + 1] === "{") {
+          const close = script.indexOf("}", index + 2);
+          const digits = close === -1 ? "" : script.slice(index + 2, close);
+          if (!/^[0-9a-f]{1,6}$/i.test(digits)) {
+            fail("invalid Unicode string escape");
+          }
+          const point = Number.parseInt(digits, 16);
+          if (point > 0x10ffff) {
+            fail("out-of-range Unicode string escape");
+          }
+          value += String.fromCodePoint(point);
+          index = close + 1;
+        } else {
+          const digits = script.slice(index + 1, index + 5);
+          if (!/^[0-9a-f]{4}$/i.test(digits)) {
+            fail("invalid Unicode string escape");
+          }
+          value += String.fromCodePoint(Number.parseInt(digits, 16));
+          index += 5;
+        }
+      } else {
+        value += simpleEscapes.get(escaped) ?? escaped;
+        index += 1;
+      }
+    }
+    fail("unterminated string literal");
+  }
+
+  function regexCanStart() {
+    const previous = tokens.at(-1);
+    if (!previous) {
+      return true;
+    }
+    if (previous.type === "identifier") {
+      return REGEX_PREFIX_IDENTIFIERS.has(previous.value);
+    }
+    if (previous.type !== "punctuator") {
+      return false;
+    }
+    if (previous.value === ")") {
+      let depth = 0;
+      for (let cursor = tokens.length - 1; cursor >= 0; cursor -= 1) {
+        if (tokens[cursor].value === ")") {
+          depth += 1;
+        } else if (tokens[cursor].value === "(") {
+          depth -= 1;
+          if (depth === 0) {
+            const controlHead = tokens[cursor - 1];
+            return controlHead?.type === "identifier" &&
+              REGEX_AFTER_CONTROL_HEAD_IDENTIFIERS.has(controlHead.value);
+          }
+        }
+      }
+      return false;
+    }
+    return REGEX_PREFIX_PUNCTUATORS.has(previous.value);
+  }
+
+  function readRegex() {
+    const start = index;
+    let inCharacterClass = false;
+    index += 1;
+    while (index < script.length) {
+      const character = script[index];
+      if (character === "\n" || character === "\r") {
+        fail("unterminated regular expression literal");
+      }
+      if (character === "\\") {
+        index += 2;
+        continue;
+      }
+      if (character === "[") {
+        inCharacterClass = true;
+      } else if (character === "]") {
+        inCharacterClass = false;
+      } else if (character === "/" && !inCharacterClass) {
+        index += 1;
+        while (index < script.length && isIdentifierPart(codePoint())) {
+          index += codePoint().length;
+        }
+        tokens.push({ type: "regex", value: null, start });
+        return;
+      }
+      index += 1;
+    }
+    fail("unterminated regular expression literal");
+  }
+
+  function readTemplate() {
+    const start = index;
+    index += 1;
+    while (index < script.length) {
+      const character = script[index];
+      if (character === "\\") {
+        index += 2;
+      } else if (character === "`") {
+        index += 1;
+        tokens.push({ type: "template", value: null, start });
+        return;
+      } else if (character === "$" && script[index + 1] === "{") {
+        index += 2;
+        readCode(true);
+      } else {
+        index += 1;
+      }
+    }
+    fail("unterminated template literal");
+  }
+
+  function readCode(stopAtTemplateBrace = false) {
+    let braceDepth = 0;
+    while (index < script.length) {
+      const character = script[index];
+      const next = script[index + 1];
+      if (/\s/u.test(character)) {
+        index += 1;
+        continue;
+      }
       if (character === "/" && next === "/") {
-        code += "  ";
-        index += 1;
-        mode = "line-comment";
-      } else if (character === "/" && next === "*") {
-        code += "  ";
-        index += 1;
-        mode = "block-comment";
-      } else if (character === "'" || character === '"' || character === "`") {
-        code += " ";
-        mode = character;
-      } else {
-        code += character;
+        index += 2;
+        while (index < script.length && !/[\r\n]/u.test(script[index])) {
+          index += 1;
+        }
+        continue;
       }
-      continue;
-    }
+      if (character === "/" && next === "*") {
+        index += 2;
+        const close = script.indexOf("*/", index);
+        if (close === -1) {
+          fail("unterminated block comment");
+        }
+        index = close + 2;
+        continue;
+      }
+      if (character === "'" || character === '"') {
+        readString(character);
+        continue;
+      }
+      if (character === "`") {
+        readTemplate();
+        continue;
+      }
+      if (character === "/" && regexCanStart()) {
+        readRegex();
+        continue;
+      }
+      if (stopAtTemplateBrace && character === "}" && braceDepth === 0) {
+        index += 1;
+        return;
+      }
+      if (
+        isIdentifierStart(codePoint()) ||
+        (character === "\\" && next === "u")
+      ) {
+        readIdentifier();
+        continue;
+      }
+      if (/\d/u.test(character)) {
+        const start = index;
+        index += 1;
+        while (index < script.length && /[\w.]/u.test(script[index])) {
+          index += 1;
+        }
+        tokens.push({ type: "number", value: script.slice(start, index), start });
+        continue;
+      }
 
-    if (mode === "line-comment") {
-      if (character === "\n") {
-        code += "\n";
-        mode = "code";
-      } else {
-        code += " ";
+      const start = index;
+      const punctuator = ["===", "!==", ">>>", "**=", "&&=", "||=", "??=", "=>", "==", "!=", "<=", ">=", "++", "--", "&&", "||", "??", "?.", "**", "<<", ">>"].find(
+        (candidate) => script.startsWith(candidate, index),
+      ) ?? character;
+      index += punctuator.length;
+      tokens.push({ type: "punctuator", value: punctuator, start });
+      if (stopAtTemplateBrace) {
+        if (punctuator === "{") {
+          braceDepth += 1;
+        } else if (punctuator === "}") {
+          braceDepth -= 1;
+        }
       }
-      continue;
     }
-
-    if (mode === "block-comment") {
-      if (character === "*" && next === "/") {
-        code += "  ";
-        index += 1;
-        mode = "code";
-      } else {
-        code += character === "\n" ? "\n" : " ";
-      }
-      continue;
-    }
-
-    if (character === "\\") {
-      code += " ";
-      if (index + 1 < script.length) {
-        code += script[index + 1] === "\n" ? "\n" : " ";
-        index += 1;
-      }
-    } else if (character === mode) {
-      code += " ";
-      mode = "code";
-    } else {
-      code += character === "\n" ? "\n" : " ";
+    if (stopAtTemplateBrace) {
+      fail("unterminated template expression");
     }
   }
-  return code;
+
+  readCode();
+  return tokens;
 }
 
-function inspectScript(script, relativePath, errors) {
+function hasStorageCapability(tokens) {
+  for (let index = 0; index < tokens.length; index += 1) {
+    const token = tokens[index];
+    if (token.type === "identifier" && STORAGE_IDENTIFIERS.has(token.value)) {
+      return true;
+    }
+    const bracketOffset = tokens[index + 1]?.value === "?." ? 2 : 1;
+    if (
+      token.type === "identifier" &&
+      BROWSER_GLOBAL_IDENTIFIERS.has(token.value) &&
+      tokens[index + bracketOffset]?.value === "[" &&
+      tokens[index + bracketOffset + 1]?.type === "string" &&
+      STORAGE_IDENTIFIERS.has(tokens[index + bracketOffset + 1].value) &&
+      tokens[index + bracketOffset + 2]?.value === "]"
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function matchingBrace(tokens, startIndex) {
+  let depth = 0;
+  for (let index = startIndex; index < tokens.length; index += 1) {
+    if (tokens[index].value === "{") {
+      depth += 1;
+    } else if (tokens[index].value === "}") {
+      depth -= 1;
+      if (depth === 0) {
+        return index;
+      }
+    }
+  }
+  return -1;
+}
+
+function moduleSpecifiers(tokens, relativePath, errors) {
+  const specifiers = [];
+
+  function addStringToken(token, context) {
+    if (token?.type !== "string") {
+      errors.push(error("INVALID_MODULE_IMPORT", `${relativePath} has malformed ${context}`));
+      return;
+    }
+    specifiers.push(token.value);
+  }
+
+  for (let index = 0; index < tokens.length; index += 1) {
+    const token = tokens[index];
+    const previous = tokens[index - 1];
+    if (token.type !== "identifier" || previous?.value === "." || previous?.value === "?.") {
+      continue;
+    }
+
+    if (token.value === "import") {
+      const next = tokens[index + 1];
+      if (next?.value === ".") {
+        continue;
+      }
+      if (next?.value === "(") {
+        if (tokens[index + 2]?.type !== "string" || tokens[index + 3]?.value !== ")") {
+          errors.push(
+            error(
+              "NON_LITERAL_DYNAMIC_IMPORT",
+              `${relativePath} contains a non-literal or unsupported dynamic import`,
+            ),
+          );
+        } else {
+          specifiers.push(tokens[index + 2].value);
+        }
+        continue;
+      }
+      if (next?.type === "string") {
+        specifiers.push(next.value);
+        continue;
+      }
+
+      let cursor = index + 1;
+      if (tokens[cursor]?.type === "identifier") {
+        cursor += 1;
+        if (tokens[cursor]?.value === ",") {
+          cursor += 1;
+        }
+      }
+      if (tokens[cursor]?.value === "{") {
+        cursor = matchingBrace(tokens, cursor) + 1;
+      } else if (tokens[cursor]?.value === "*") {
+        cursor += 1;
+        if (tokens[cursor]?.value === "as" && tokens[cursor + 1]?.type === "identifier") {
+          cursor += 2;
+        }
+      }
+      if (cursor <= 0 || tokens[cursor]?.value !== "from") {
+        errors.push(error("INVALID_MODULE_IMPORT", `${relativePath} has malformed static import`));
+      } else {
+        addStringToken(tokens[cursor + 1], "static import");
+      }
+      continue;
+    }
+
+    if (token.value !== "export") {
+      continue;
+    }
+    let cursor = index + 1;
+    if (tokens[cursor]?.value === "{") {
+      cursor = matchingBrace(tokens, cursor) + 1;
+      if (cursor > 0 && tokens[cursor]?.value === "from") {
+        addStringToken(tokens[cursor + 1], "export-from");
+      }
+    } else if (tokens[cursor]?.value === "*") {
+      cursor += 1;
+      if (tokens[cursor]?.value === "as" && tokens[cursor + 1]?.type === "identifier") {
+        cursor += 2;
+      }
+      if (tokens[cursor]?.value !== "from") {
+        errors.push(error("INVALID_MODULE_IMPORT", `${relativePath} has malformed export-from`));
+      } else {
+        addStringToken(tokens[cursor + 1], "export-from");
+      }
+    }
+  }
+
+  return specifiers;
+}
+
+function validateModuleSpecifier({
+  specifier,
+  currentFile,
+  fileSet,
+  idsByFile,
+  errors,
+}) {
+  const value = specifier.trim();
+  const compactForScheme = value.replace(/[\u0000-\u0020\u007f]+/g, "");
+  const isExternal = compactForScheme.startsWith("//") || /^[a-z][a-z0-9+.-]*:/i.test(compactForScheme);
+  if (!isExternal && !value.startsWith("./") && !value.startsWith("../") && !value.startsWith("/")) {
+    errors.push(error("UNSAFE_MODULE_SPECIFIER", `${currentFile} module import: ${value}`));
+    return;
+  }
+
+  const targetFile = validateReference({
+    reference: value,
+    attribute: "src",
+    element: "module",
+    currentFile,
+    fileSet,
+    idsByFile,
+    errors,
+  });
+  if (targetFile && ![".js", ".mjs"].includes(fileExtension(targetFile))) {
+    errors.push(
+      error(
+        "INVALID_MODULE_TARGET",
+        `${currentFile} module import: ${value} -> ${targetFile}`,
+      ),
+    );
+  }
+}
+
+function inspectScript({
+  script,
+  relativePath,
+  fileSet,
+  idsByFile,
+  errors,
+  inspectImports = true,
+  sourceKind = "script",
+}) {
   if (SCRIPT_NETWORK_PATTERN.test(script) || REMOTE_URL_PATTERN.test(script)) {
     errors.push(
       error(
@@ -598,13 +1058,36 @@ function inspectScript(script, relativePath, errors) {
       ),
     );
   }
-  if (SCRIPT_STORAGE_PATTERN.test(javascriptCodeOnly(script))) {
+  let tokens;
+  try {
+    tokens = tokenizeJavaScript(script);
+  } catch (tokenError) {
+    errors.push(
+      error(
+        "SCRIPT_LEXING_FAILED",
+        `${relativePath} ${sourceKind} cannot be audited: ${tokenError.message}`,
+      ),
+    );
+    return;
+  }
+  if (hasStorageCapability(tokens)) {
     errors.push(
       error(
         "STORAGE_CAPABLE_SCRIPT",
-        `${relativePath} contains a browser storage capability`,
+        `${relativePath} contains ${sourceKind} with a browser storage capability`,
       ),
     );
+  }
+  if (inspectImports) {
+    for (const specifier of moduleSpecifiers(tokens, relativePath, errors)) {
+      validateModuleSpecifier({
+        specifier,
+        currentFile: relativePath,
+        fileSet,
+        idsByFile,
+        errors,
+      });
+    }
   }
 }
 
@@ -679,7 +1162,13 @@ export async function checkSite(options = {}) {
         element: "css",
       });
     } else if (extension === ".js" || extension === ".mjs") {
-      inspectScript(content, relativePath, errors);
+      inspectScript({
+        script: content,
+        relativePath,
+        fileSet,
+        idsByFile,
+        errors,
+      });
     }
   }
 

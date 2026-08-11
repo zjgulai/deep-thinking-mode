@@ -326,6 +326,174 @@ test("allows browser storage names in inert strings and comments", async () => {
   );
 });
 
+test("rejects executable browser storage across JavaScript lexical forms", async (t) => {
+  const moduleCases = [
+    ["template expression", 'const value = `${localStorage.value}`;\n'],
+    ["globalThis bracket access", 'globalThis["localStorage"].setItem("router-query", "private");\n'],
+    ["globalThis optional bracket access", 'globalThis?.["localStorage"].clear();\n'],
+    ["window bracket access", 'window["sessionStorage"].clear();\n'],
+    ["optional chaining", 'localStorage?.setItem("router-query", "private");\n'],
+    ["code after regex literal", '/localStorage\\.value/.test(name); localStorage.value;\n'],
+    ["indexedDB identifier", 'indexedDB.open("router");\n'],
+    ["escaped storage identifier", 'local\\u0053torage.setItem("router-query", "private");\n'],
+  ];
+
+  for (const [name, source] of moduleCases) {
+    await t.test(name, async () => {
+      await withArtifact(
+        {
+          "site/index.html": page({
+            body: '<script type="module" src="assets/router-controller.mjs"></script>',
+          }),
+          "site/assets/router-controller.mjs": source,
+        },
+        ({ code, stdout, stderr }) => {
+          assert.notEqual(code, 0, `${source}\n${stdout}\n${stderr}`);
+          assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${source}\n${stdout}\n${stderr}`);
+        },
+      );
+    });
+  }
+
+  await t.test("inline module template and bracket access", async () => {
+    await withArtifact(
+      {
+        "site/index.html": page({
+          body: '<script type="module">const value = `${self["localStorage"].value}`;</script>',
+        }),
+      },
+      ({ code, stdout, stderr }) => {
+        assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+        assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${stdout}\n${stderr}`);
+      },
+    );
+  });
+});
+
+test("allows storage spellings in inert strings, comments, regexes, and template quasis", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module" src="assets/router-controller.mjs"></script>',
+      }),
+      "site/assets/router-controller.mjs": [
+        'const label = "localStorage.setItem";',
+        "const pattern = /localStorage.value|window\\[\\\"sessionStorage\\\"\\]/;",
+        'if (label) /localStorage/.test(label);',
+        "const template = `indexedDB.open is documentation`;",
+        "// globalThis['localStorage'].clear() is documentation.",
+        "/* self[\"sessionStorage\"].clear() is documentation. */",
+        "export { label, pattern, template };",
+        "",
+      ].join("\n"),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.equal(code, 0, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("rejects incomplete, escaping, non-literal, bare, and non-script module dependencies", async (t) => {
+  const cases = [
+    {
+      name: "missing static side-effect import",
+      source: 'import "./missing.mjs";\n',
+      error: /MISSING_TARGET/,
+    },
+    {
+      name: "missing static import-from",
+      source: 'import { boot } from "./missing.mjs";\n',
+      error: /MISSING_TARGET/,
+    },
+    {
+      name: "missing export-from",
+      source: 'export { boot } from "./missing.mjs";\n',
+      error: /MISSING_TARGET/,
+    },
+    {
+      name: "escaping static import",
+      source: 'import "../../secret.mjs";\n',
+      outside: { "secret.mjs": "export {};\n" },
+      error: /PATH_TRAVERSAL/,
+    },
+    {
+      name: "missing literal dynamic import",
+      source: 'import("./missing.mjs");\n',
+      error: /MISSING_TARGET/,
+    },
+    {
+      name: "non-literal dynamic import",
+      source: 'const target = "./engine.mjs"; import(target);\n',
+      error: /NON_LITERAL_DYNAMIC_IMPORT/,
+    },
+    {
+      name: "bare static import",
+      source: 'import "router-runtime";\n',
+      error: /UNSAFE_MODULE_SPECIFIER/,
+    },
+    {
+      name: "non-script import target",
+      source: 'import "./data.json";\n',
+      files: { "site/assets/data.json": "{}\n" },
+      error: /INVALID_MODULE_TARGET/,
+    },
+  ];
+
+  for (const fixture of cases) {
+    await t.test(fixture.name, async () => {
+      await withArtifact(
+        {
+          ...(fixture.outside ?? {}),
+          "site/index.html": page({
+            body: '<script type="module" src="assets/router-controller.mjs"></script>',
+          }),
+          "site/assets/router-controller.mjs": fixture.source,
+          ...(fixture.files ?? {}),
+        },
+        ({ code, stdout, stderr }) => {
+          assert.notEqual(code, 0, `${fixture.source}\n${stdout}\n${stderr}`);
+          assert.match(stderr, fixture.error, `${fixture.source}\n${stdout}\n${stderr}`);
+        },
+      );
+    });
+  }
+});
+
+test("rejects a missing dependency imported by an inline module", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module">import "./assets/missing.mjs";</script>',
+      }),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("accepts a closed file and inline module dependency graph", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module">import "./assets/router-controller.mjs";</script>',
+      }),
+      "site/assets/router-controller.mjs": [
+        'import { matchRoute } from "./router-engine.mjs";',
+        'export { matchRoute as route } from "./router-engine.mjs";',
+        'export async function load() { return import("./router-engine.mjs"); }',
+        "",
+      ].join("\n"),
+      "site/assets/router-engine.mjs":
+        'export function matchRoute() { return { state: "matched" }; }\n',
+    },
+    ({ code, stdout, stderr }) => {
+      assert.equal(code, 0, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
 test("rejects a symbolic link inside the public tree", async () => {
   const rootDir = await mkdtemp(path.join(tmpdir(), "public-artifact-symlink-"));
   try {

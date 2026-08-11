@@ -157,8 +157,7 @@ rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker ps -a --filter name=xmind; dock
 - A 记录仍是 `101.34.52.232`。
 - SSH 指纹仍是经用户确认的值。
 - `lighthouse_ai_video_net` 仍是 `172.20.0.0/16`，gateway 仍是 `172.20.0.1`。
-- `172.20.0.1:18888` 无监听、无已发布容器。
-- 没有同名 `xmind_site` 资源。
+- 首次安装时，`172.20.0.1:18888` 无监听且没有同名 `xmind_site` 资源；升级时必须恰好存在一个由 Compose labels 定位的 `xmind_site/web` 容器，不能用名称猜测或把正常旧服务误判为冲突。
 - 根盘剩余空间足以同时保留新镜像和至少一个回滚版本。
 
 先保存部署前资源清单和现有域名烟测结果。建议审计目录为 `/opt/xmind-site/audit/<UTC-timestamp>/pre/`，至少包含：
@@ -174,6 +173,96 @@ existing-domains.tsv
 ```
 
 资源清单必须使用稳定排序格式。现有域名列表位于 `existing-domains.txt`；对每个域名记录严格 TLS 校验的 HTTP code、remote IP 和证书校验结果。发布后用同一脚本和列表重跑，只允许 xmind 新增变化。
+
+### 4.1 覆盖 current 前冻结旧 origin
+
+每次发布都先生成唯一 UTC `<release-id>`。下列命令必须在覆盖 `/opt/xmind-site/current/compose.yaml` 或 `.env` 之前执行；把输出的 `PRE_RELEASE_ID` 写入发布记录，后续回滚必须显式使用同一个值，不使用“latest”软指针。它同时保存旧 Compose 输入、容器/image inspect、不可变 image ID、保留 tag、旧完整站点树、逐文件 hash 与文件数：
+
+```bash
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+umask 077
+
+release_id="$(date -u +%Y%m%dT%H%M%SZ)"
+current=/opt/xmind-site/current
+pre="/opt/xmind-site/audit/${release_id}/pre"
+if [ -e "$pre" ]; then
+  echo "refusing: audit snapshot already exists: $pre" >&2
+  exit 1
+fi
+install -d -m 0700 "$pre"
+printf '%s\n' "$release_id" > "$pre/release-id.txt"
+
+mapfile -t containers < <(
+  docker ps -aq \
+    --filter label=com.docker.compose.project=xmind_site \
+    --filter label=com.docker.compose.service=web
+)
+
+if ((${#containers[@]} == 0)); then
+  if [ -e "$current/.env" ] || [ -e "$current/compose.yaml" ]; then
+    echo 'refusing: deployment metadata exists but xmind_site/web is absent' >&2
+    exit 1
+  fi
+  : > "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+  printf 'PRE_RELEASE_ID=%s\n' "$release_id"
+  exit 0
+fi
+
+if ((${#containers[@]} != 1)); then
+  echo 'refusing: expected exactly one xmind_site/web container' >&2
+  exit 1
+fi
+test -f "$current/.env"
+test -f "$current/compose.yaml"
+
+container_id="${containers[0]}"
+image_ref="$(docker container inspect --format '{{.Config.Image}}' "$container_id")"
+image_id="$(docker container inspect --format '{{.Image}}' "$container_id")"
+test "$(docker image inspect --format '{{.Id}}' "$image_ref")" = "$image_id"
+artifact_sha="$(docker image inspect --format '{{index .Config.Labels "com.lute.artifact.sha256"}}' "$image_id")"
+[[ "$artifact_sha" =~ ^[0-9a-f]{64}$ ]]
+
+install -m 0600 "$current/.env" "$pre/previous.env"
+install -m 0644 "$current/compose.yaml" "$pre/previous-compose.yaml"
+printf '%s\n' "$container_id" > "$pre/previous-container-id.txt"
+printf '%s\n' "$image_ref" > "$pre/previous-image-ref.txt"
+printf '%s\n' "$image_id" > "$pre/previous-image-id.txt"
+printf '%s\n' "$artifact_sha" > "$pre/previous-artifact.sha256"
+docker container inspect "$container_id" > "$pre/previous-container-inspect.json"
+docker image inspect "$image_id" > "$pre/previous-image-inspect.json"
+
+hold_ref="xmind-site:rollback-${release_id}"
+if docker image inspect "$hold_ref" >/dev/null 2>&1; then
+  echo "refusing: rollback hold tag already exists: $hold_ref" >&2
+  exit 1
+fi
+docker image tag "$image_id" "$hold_ref"
+printf '%s\n' "$hold_ref" > "$pre/previous-image-hold-ref.txt"
+
+install -d -m 0700 "$pre/previous-site"
+docker container cp "$container_id":/usr/share/nginx/html/. "$pre/previous-site/"
+test -n "$(find "$pre/previous-site" -type f -print -quit)"
+test -z "$(find "$pre/previous-site" -type l -print -quit)"
+(
+  cd "$pre/previous-site"
+  find . -type f -print0 | LC_ALL=C sort -z | xargs -0 -r sha256sum
+) > "$pre/previous-site.files.sha256"
+find "$pre/previous-site" -type f | wc -l > "$pre/previous-site.file-count.txt"
+(
+  cd "$pre"
+  sha256sum previous.env previous-compose.yaml \
+    previous-container-inspect.json previous-image-inspect.json \
+    previous-image-ref.txt previous-image-id.txt \
+    previous-image-hold-ref.txt previous-artifact.sha256 \
+    previous-site.files.sha256 previous-site.file-count.txt \
+    > snapshot-metadata.sha256
+)
+printf 'PRE_RELEASE_ID=%s\n' "$release_id"
+REMOTE
+```
+
+若存在旧 origin，`previous-image-ref.txt` 与 hold ref 必须同时解析到 `previous-image-id.txt`；任一不一致立即停止。hold tag、旧容器证据和旧站点树必须保留到新版本验收及回滚窗口结束；期间禁止任何 `docker system prune` 或 `docker image prune`。首次安装只允许生成 `FIRST_INSTALL_NO_PREVIOUS_ORIGIN`，不能伪造“旧版本可恢复”证据。
 
 ## 5. 传输与启动 origin
 
@@ -191,7 +280,20 @@ rtk scp -i DDDD.pem deploy/tencent-cloud/xmind-site/dist/xmind-site-<12-char-art
 ```bash
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && sha256sum -c xmind-site-<12-char-artifact-sha>-linux-amd64.tar.sha256'
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker load -i /opt/xmind-site/current/xmind-site-<12-char-artifact-sha>-linux-amd64.tar'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'printf "%s\n" "XMIND_ARTIFACT_SHA256=<64-char-artifact-sha>" "XMIND_IMAGE_TAG=<12-char-artifact-sha>" > /opt/xmind-site/current/.env'
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+umask 077
+artifact_sha='<64-char-artifact-sha>'
+image_tag='<12-char-artifact-sha>'
+[[ "$artifact_sha" =~ ^[0-9a-f]{64}$ ]]
+[[ "$image_tag" =~ ^[0-9a-f]{12}$ ]]
+test "${artifact_sha:0:12}" = "$image_tag"
+install -m 0600 /dev/null /opt/xmind-site/current/.env
+printf '%s\n' \
+  "XMIND_ARTIFACT_SHA256=$artifact_sha" \
+  "XMIND_IMAGE_TAG=$image_tag" \
+  > /opt/xmind-site/current/.env
+REMOTE
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && docker compose --project-name xmind_site config --quiet'
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && docker compose --project-name xmind_site up -d --no-build --pull never --wait'
 ```
@@ -325,6 +427,8 @@ rtk npm run verify:security
 
 任一条件触发回滚：TLS 失败、xmind 错误页、内容 hash 不符、共享 Nginx 不健康、现有域名回归变差、不在 allowlist 的 Docker 资源变化。
 
+### 10.1 首次安装或共享入口 / TLS 变更失败
+
 先用第 7 节的临时容器方式验证备份，再恢复共享入口。由于主配置是单文件 bind mount，原子恢复后也必须重启一次才能重新挂载旧 inode：
 
 ```bash
@@ -339,9 +443,90 @@ rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker exec ai_video_nginx nginx -t &&
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && docker compose --project-name xmind_site stop'
 ```
 
-如果只是内容镜像切换失败且共享入口未改，先用发布前记录的 exact image ID/tag 重新启动旧 `xmind_site`，不用 `latest` 或临时修页代替回滚。回滚验收必须使用该旧镜像对应的已保存完整 `site/` 树重跑 `verify-production.mjs`；不能拿本次新树验证旧版。
+首次安装没有旧 xmind origin，因此这里只能证明共享入口和既有域名回到发布前状态，不能宣称旧 xmind 逐文件生产验证通过。
+
+### 10.2 已有 origin 的内容升级失败
+
+如果共享入口未改或仍健康，使用第 4.1 节记录的显式 `<release-id>` 恢复旧 Compose 输入和旧 image ID。下列命令先校验快照、旧树和两个 image ref，再恢复 `.env` / `compose.yaml`，并用 `up -d --force-recreate` 真实替换容器；不得改用 `latest`、当前候选树或临时修页：
+
+```bash
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+umask 077
+
+release_id='<release-id>'
+root=/opt/xmind-site
+current="$root/current"
+pre="$root/audit/$release_id/pre"
+rollback="$root/audit/$release_id/rollback"
+test ! -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+install -d -m 0700 "$rollback"
+
+(cd "$pre" && sha256sum -c snapshot-metadata.sha256)
+(cd "$pre/previous-site" && sha256sum -c ../previous-site.files.sha256)
+
+old_ref="$(cat "$pre/previous-image-ref.txt")"
+old_id="$(cat "$pre/previous-image-id.txt")"
+hold_ref="$(cat "$pre/previous-image-hold-ref.txt")"
+test "$(docker image inspect --format '{{.Id}}' "$old_ref")" = "$old_id"
+test "$(docker image inspect --format '{{.Id}}' "$hold_ref")" = "$old_id"
+
+install -m 0644 "$pre/previous-compose.yaml" "$current/compose.yaml"
+install -m 0600 "$pre/previous.env" "$current/.env"
+compose_image="$(
+  docker compose --project-name xmind_site \
+    --project-directory "$current" \
+    --env-file "$current/.env" \
+    -f "$current/compose.yaml" config --images
+)"
+test "$compose_image" = "$old_ref"
+
+docker compose --project-name xmind_site \
+  --project-directory "$current" \
+  --env-file "$current/.env" \
+  -f "$current/compose.yaml" \
+  up -d --no-build --pull never --force-recreate --wait --wait-timeout 90
+
+restored_container="$(
+  docker compose --project-name xmind_site \
+    --project-directory "$current" \
+    --env-file "$current/.env" \
+    -f "$current/compose.yaml" ps -q web
+)"
+test -n "$restored_container"
+test "$(docker container inspect --format '{{.Image}}' "$restored_container")" = "$old_id"
+docker container inspect "$restored_container" \
+  > "$rollback/restored-container-inspect.json"
+curl -fsS http://172.20.0.1:18888/healthz
+curl -fsS http://172.20.0.1:18888/ \
+  -o "$rollback/restored-origin-index.html"
+cmp -s "$pre/previous-site/index.html" "$rollback/restored-origin-index.html"
+REMOTE
+```
+
+容器恢复只是第一层证据。把同一 `<release-id>` 的旧完整树复制到本地独立临时目录，先复核逐文件清单和 artifact SHA，再用旧树执行生产逐文件 bytes 验证：
+
+```bash
+rtk install -d -m 0700 /tmp/xmind-rollback-<release-id>/site
+rtk rsync -a --delete -e 'ssh -i DDDD.pem' ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site/ /tmp/xmind-rollback-<release-id>/site/
+rtk scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site.files.sha256 /tmp/xmind-rollback-<release-id>/
+rtk scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site.file-count.txt /tmp/xmind-rollback-<release-id>/
+rtk scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-artifact.sha256 /tmp/xmind-rollback-<release-id>/
+rtk zsh -lc 'cd /tmp/xmind-rollback-<release-id>/site && shasum -a 256 -c ../previous-site.files.sha256'
+rtk zsh -lc 'expected=$(tr -d "[:space:]" < /tmp/xmind-rollback-<release-id>/previous-site.file-count.txt); actual=$(find /tmp/xmind-rollback-<release-id>/site -type f | wc -l | tr -d "[:space:]"); test "$actual" = "$expected"'
+rtk zsh -lc 'expected=$(tr -d "\n" < /tmp/xmind-rollback-<release-id>/previous-artifact.sha256); actual=$(node tools/hash-public-artifact.mjs /tmp/xmind-rollback-<release-id>/site | cut -d " " -f 1); test "$actual" = "$expected"'
+rtk zsh -o pipefail -lc 'expected=$(tr -d "[:space:]" < /tmp/xmind-rollback-<release-id>/previous-site.file-count.txt); node tools/verify-production.mjs --url https://xmind.lute-tlz-dddd.top/ --site-dir /tmp/xmind-rollback-<release-id>/site | tee /tmp/xmind-rollback-<release-id>/production-verifier.txt; rg -F "for ${expected} files." /tmp/xmind-rollback-<release-id>/production-verifier.txt'
+```
+
+`verify-production.mjs` 必须 exit 0，且 checked-files 等于保存的 `previous-site.file-count.txt`。不能拿本次候选 `site/` 验证旧镜像，也不能只比首页。
 
 对已含 Router 2.0/组合工坊的回滚目标，逐文件验证必须包含 `combinations/**` 与 `assets/router-engine.mjs`、`assets/router-controller.mjs`。若本次回滚目标是不含该功能的 V4 历史基线，则这些新路径必须恢复为该旧树声明的 404，同时旧树的全部已有文件逐字节通过。记录 checked-files、旧 artifact SHA、旧 image ID 和这些路径的预期状态。
+
+旧树确认为不含 Router 2.0/组合工坊时，额外执行并要求八个路径全部精确返回 404：
+
+```bash
+rtk zsh -lc 'for relative in assets/router-engine.mjs assets/router-controller.mjs combinations/index.html combinations/cot-critic-chain.html combinations/deep-research-chain.html combinations/plan-execute-reflect-chain.html combinations/react-agent-chain.html combinations/tot-tree-of-thought-chain.html; do code=$(curl -sS -o /dev/null -w "%{http_code}" "https://xmind.lute-tlz-dddd.top/$relative"); test "$code" = 404 || { echo "$relative -> $code" >&2; exit 1; }; done'
+```
 
 回滚时不执行 `down -v`、不删证书、不删镜像、不执行任何 prune。只有在故障复盘完成并获得单独确认后，才可精确清理 `xmind_site` 自身资源。
 
@@ -388,6 +573,12 @@ rtk curl -fsSIL https://xmind.lute-tlz-dddd.top
 - Docker user-defined bridge 与端口发布：<https://docs.docker.com/engine/network/drivers/bridge/>
 - Docker `json-file` 日志轮转：<https://docs.docker.com/engine/logging/drivers/json-file/>
 - Docker multi-platform build：<https://docs.docker.com/build/building/multi-platform/>
+- Docker Compose `config` 变量解析与最终模型：<https://docs.docker.com/reference/cli/docker/compose/config/>
+- Docker Compose `up --force-recreate --wait`：<https://docs.docker.com/reference/cli/docker/compose/up/>
+- Docker container/image inspect：<https://docs.docker.com/reference/cli/docker/container/inspect/>、<https://docs.docker.com/reference/cli/docker/image/inspect/>
+- Docker 从运行中或停止的容器复制旧站点树：<https://docs.docker.com/reference/cli/docker/container/cp/>
 - Docker Official Image nginx：<https://hub.docker.com/_/nginx/>
+- Node.js ESM specifier、静态 `import` / `export from` 与动态 `import()`：<https://nodejs.org/api/esm.html>
+- ECMAScript lexical grammar（comment、string、regular expression、template literal 与 `${...}`）：<https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html>
 - Nginx 信号与优雅 reload：<https://nginx.org/en/docs/control.html>
 - Certbot 稳定文档：<https://eff-certbot.readthedocs.io/en/stable/>
