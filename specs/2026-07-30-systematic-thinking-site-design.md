@@ -276,12 +276,27 @@ knowledge/*.json + knowledge/**/*.md
   → 模板 + 共享本地 CSS/client JS
   → 首页、章节、模型详情、路由、404、robots、sitemap
   → CSP 与完整内部链接闭包审计
+  → Acorn 严格 AST 能力审计 + 三份公开脚本 trusted source bytes 对等
+  → HTML script 引用与静态 `.mjs` import 闭包审计
   → 同文件系统候选目录验证
   → 候选目录替换 site/，再同步替换 docs/
 ```
 
 构建器只消费公开安全的 `knowledge/`。它不得读取原始全文、清理全文、OCR、私密学习笔记或
 Graphify 输出。相同输入必须使 `site/` 中每个路径及其 SHA-256 集合逐字节相同。
+
+公开脚本门采用三层分工：构建期使用精确固定的 `acorn@8.18.0` 解析 `.js` 的 script grammar
+和 `.mjs` 的 module grammar，AST 拒绝 storage、cookie、动态代码生成、网络、service worker 与
+dynamic import；同时仅允许 `assets/site.js`、`assets/router-controller.mjs`、
+`assets/router-engine.mjs`，且发布 bytes 必须与 `tools/site-assets/` trusted source 完全相同。
+checker 再验证 HTML script 引用与静态 `.mjs` import 的本地文件闭包。AST policy 不是任意
+JavaScript taint proof；对 computed/alias 旁路的承重保证是固定 allowlist 与 source bytes parity。
+Task 8 的真实浏览器 smoke 才验证 DOM 生命周期和离线运行时行为。Acorn 只属于 build/test
+devDependency；Docker 静态镜像与浏览器运行时不包含 `node_modules`。
+
+解析器选择依据 [Acorn 官方仓库](https://github.com/acornjs/acorn) 与
+[npm 官方包元数据](https://www.npmjs.com/package/acorn)。不采用仍需实验标志的 Node
+`SourceTextModule` 作为发布门。
 
 浏览器端：
 
@@ -328,6 +343,7 @@ Graphify 仅用于代码与模块架构审计，不参与知识语义处理、�
 - Markdown 安全渲染与 URL allowlist。
 - 搜索排序、问题匹配、安全停止和提示词生成测试。
 - HTML lexer、CSP、外部资源、内部锚点和 manifest 计数审计。
+- Acorn AST、公开脚本 trusted-source bytes、脚本 allowlist 与静态 module 闭包审计。
 - 原子构建失败保护与连续两次构建 SHA-256 相同。
 - 最小 DOM 测试覆盖导航、搜索、匹配、复制、目录抽屉和焦点状态。
 - Pages workflow 只上传 `site/`。

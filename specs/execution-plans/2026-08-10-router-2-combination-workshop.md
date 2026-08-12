@@ -6,14 +6,14 @@
 
 **Architecture:** `tools/lib/v3-agent-data.mjs` 负责 V3、Router、Chain、精选集合的 fail-closed 验证与只读构建视图；`tools/site-assets/router-engine.mjs` 是 Node 与浏览器共用的唯一纯匹配内核；`tools/site-assets/router-controller.mjs` 只管理五种 DOM 状态；`tools/build-site.mjs` 确定性渲染 Router、组合总览、五个组合详情及章节/模型反向入口。浏览器不联网、不持久化输入、不执行 Chain，也不把规则匹配描述为 AI。
 
-**Tech Stack:** Node.js 原生 ESM、`node:test`、原生 HTML/CSS/JavaScript、现有静态多页构建器、现有公开构件检查器、Docker Compose、Nginx、腾讯云轻量应用服务器。
+**Tech Stack:** Node.js 原生 ESM、`node:test`、build/test-only `acorn@8.18.0`、原生 HTML/CSS/JavaScript、现有静态多页构建器、公开构件检查器、Docker Compose、Nginx、腾讯云轻量应用服务器。
 
 ## Global Constraints
 
 - 只在 `main` 分支工作，禁止 worktree；每条 shell 命令必须以 `rtk` 开头。
 - 开始每个任务前执行 `rtk git status --short --branch`，不得覆盖、格式化、删除或提交与本任务无关的工作区文件。
 - 当前未跟踪 `AGENTS.md` 属于用户工作区边界；本计划的所有 `git add` 命令均显式列路径，不包含它。
-- 不新增 runtime 或 test dependency，不引入分词器、前端框架、bundler、远程字体、远程脚本、analytics、XHR 或 `fetch`。
+- 不新增 runtime dependency；只允许用户已批准、精确固定且不进入 Docker/browser runtime 的 `acorn@8.18.0` devDependency。不得引入 acorn-walk、分词器、前端框架、bundler、远程字体、远程脚本、analytics、XHR 或 `fetch`。
 - 13 个现有知识章节保持不变；“组合工坊”是新的一级能力，不作为第 14 章。
 - `model.meta.agent_roles` 是唯一 Agent 角色权威；模型、Router、Chain、精选集合之间只用稳定 ID 关联。
 - Router 输入与规范化值只存在内存，不进入 URL、storage、cookie、日志、控制台、截图文件名或构建产物。
@@ -589,14 +589,24 @@ rtk git commit -m "feat: 建设五条思维组合协议工坊"
 - Modify: `manuals/RELEASE_CHECKLIST.md`
 - Modify: `deploy/tencent-cloud/xmind-site/.dockerignore`
 - Modify: `deploy/tencent-cloud/xmind-site/RUNBOOK.md`
+- Add: `deploy/tencent-cloud/xmind-site/snapshot-host.sh`
+- Add: `deploy/tencent-cloud/xmind-site/compare-snapshots.sh`
+- Modify: `package.json`
+- Modify: `package-lock.json`
 - Modify: `tools/check-public-artifact.mjs`
+- Add: `tools/lib/public-script-policy.mjs`
 - Modify: `tests/public-artifact.test.mjs`
+- Add: `tests/public-script-policy.test.mjs`
+- Add: `tests/deploy-snapshot-contract.test.mjs`
 - Modify: `tests/production-verifier.test.mjs`
 - Modify: `specs/execution-plans/2026-08-10-router-2-combination-workshop.md`
 
 - [ ] **Step 1：先写发布边界 RED 测试**
 
-扩展公开构件 fixture，使合法树包含 `combinations/index.html`、一个组合详情、`assets/router-engine.mjs`、`assets/router-controller.mjs`；验证 checker 递归接受合法 `.mjs`，并继续拒绝缺失组合目标、跨页坏锚点、路径逃逸、外部 module、`fetch`、storage、软链和未知扩展名。
+先冻结新脚本合同：Acorn 必须按 `.js=script`、`.mjs=module` strict parse；三份公开脚本必须在
+固定 allowlist 且与 trusted source 逐 bytes 相同；所有 inline executable script、额外脚本、
+dynamic import、storage/cookie/code generation/network/service-worker capability 失败。静态 module
+只允许本地 `.mjs` import/export-from 并闭合目标、逃逸、外部、bare、symlink 和 extension 边界。
 
 扩展 production verifier fixture：当组合详情或本地 module 远端 404、Content-Type 错误、发生意外重定向或 bytes 不一致时必须退出 1。
 
@@ -606,7 +616,7 @@ rtk git commit -m "feat: 建设五条思维组合协议工坊"
 rtk node --test tests/public-artifact.test.mjs tests/production-verifier.test.mjs
 ```
 
-期望 Docker/文档尚未覆盖组合路径；checker 若已支持 `.mjs`，相应断言应直接为 GREEN，不为制造失败而破坏正确逻辑。
+期望旧 handwritten tokenizer 与任意公开脚本政策不能满足新合同；记录真实 RED，不人为破坏已有正确能力。
 
 - [ ] **Step 3：更新用户与能力说明**
 
@@ -626,10 +636,15 @@ rtk node --test tests/public-artifact.test.mjs tests/production-verifier.test.mj
 
 Runbook 的站点树清单、暂存检查、容器烟测、生产逐文件验证和回滚验收加入 `combinations/**` 与 `assets/*.mjs`。构建上下文仍然是 `deploy/tencent-cloud/xmind-site/`，不得扩大到仓库根；`DDDD.pem`、`.git`、`data/` 和 `.local/` 不得进入 daemon 或镜像。
 
+以版本化 `snapshot-host.sh` 在所有 docker load/tag/up、Certbot、Nginx patch 前生成 pre，验收后用
+同一脚本生成 post；`compare-snapshots.sh` 对 containers/images/networks/volumes/ports、gateway
+完整 inspect/config hash、certificate lineage、server markers 与固定 32 域名严格 TLS 结果做
+first-install/upgrade 分支 allowlist。两个脚本不加入 Docker context。
+
 - [ ] **Step 5：运行 GREEN**
 
 ```bash
-rtk node --test tests/public-artifact.test.mjs tests/production-verifier.test.mjs
+rtk node --test tests/public-script-policy.test.mjs tests/public-artifact.test.mjs tests/production-verifier.test.mjs tests/deploy-snapshot-contract.test.mjs
 rtk docker compose --project-directory deploy/tencent-cloud/xmind-site config --quiet
 rtk git diff --check
 ```
@@ -637,7 +652,7 @@ rtk git diff --check
 - [ ] **Step 6：精确提交 Task 6**
 
 ```bash
-rtk git add README.md manuals/USER_GUIDE.md manuals/CAPABILITY_MAP.md manuals/RELEASE_CHECKLIST.md deploy/tencent-cloud/xmind-site/.dockerignore deploy/tencent-cloud/xmind-site/RUNBOOK.md tools/check-public-artifact.mjs tests/public-artifact.test.mjs tests/production-verifier.test.mjs specs/execution-plans/2026-08-10-router-2-combination-workshop.md
+rtk git add package.json package-lock.json tools/check-public-artifact.mjs tools/lib/public-script-policy.mjs tests/public-artifact.test.mjs tests/public-script-policy.test.mjs tests/deploy-snapshot-contract.test.mjs deploy/tencent-cloud/xmind-site/RUNBOOK.md deploy/tencent-cloud/xmind-site/snapshot-host.sh deploy/tencent-cloud/xmind-site/compare-snapshots.sh specs/2026-07-30-systematic-thinking-site-design.md specs/2026-08-10-router-2-combination-workshop-design.md specs/execution-plans/2026-08-10-router-2-combination-workshop.md
 rtk git diff --cached --check
 rtk git commit -m "docs: 补齐 Router 与组合工坊发布说明"
 ```
@@ -645,6 +660,10 @@ rtk git commit -m "docs: 补齐 Router 与组合工坊发布说明"
 ---
 
 ## Task 7：生成候选站点并完成确定性与全量自动验收
+
+Task 7 复用 Task 6 的两层静态发布门：Acorn AST + trusted source bytes parity，以及 HTML/module
+artifact closure；不得降级、跳过或改成 source grep。Task 7 只生成并冻结候选构件，不替代
+Task 8 的真实浏览器 runtime 验收。Acorn 保持 build-only，`node_modules` 不进入 Docker context。
 
 **Files:**
 

@@ -160,25 +160,37 @@ rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker ps -a --filter name=xmind; dock
 - 首次安装时，`172.20.0.1:18888` 无监听且没有同名 `xmind_site` 资源；升级时必须恰好存在一个由 Compose labels 定位的 `xmind_site/web` 容器，不能用名称猜测或把正常旧服务误判为冲突。
 - 根盘剩余空间足以同时保留新镜像和至少一个回滚版本。
 
-先保存部署前资源清单和现有域名烟测结果。建议审计目录为 `/opt/xmind-site/audit/<UTC-timestamp>/pre/`，至少包含：
+部署前后只允许调用同一版本化脚本 `snapshot-host.sh` 采集。它会在 `/opt/xmind-site/audit/<release-id>/<pre|post>/` 生成并自校验：
 
 ```text
-docker-ps.txt
-docker-images.txt
-docker-networks.txt
-docker-volumes.txt
-listening-ports.txt
-nginx-config.sha256
+containers.json
+images.json
+networks.json
+volumes.json
+listening-ports.tsv
+gateway-contract.json
+gateway-nginx-host.sha256
+gateway-nginx-container.sha256
+cert-lineages.tsv
+server-markers.tsv
+existing-domains.sha256
 existing-domains.tsv
+snapshot-files.sha256
 ```
 
-资源清单必须使用稳定排序格式。现有域名列表位于 `existing-domains.txt`；对每个域名记录严格 TLS 校验的 HTTP code、remote IP 和证书校验结果。发布后用同一脚本和列表重跑，只允许 xmind 新增变化。
+资源清单使用 `docker inspect` 与 `jq -S` 稳定排序；证书快照只读取 renewal 配置、公钥证书、symlink 目标、fingerprint、serial、SAN、issuer 和有效期，绝不读取私钥。域名清单必须保持固定 SHA、固定顺序、恰好 32 个非空唯一域名；每个域名记录严格 TLS 的 curl exit code、HTTP code、remote IP 和 `ssl_verify_result`，任一 TLS 失败都使快照失败。
 
 在任何 snapshot 写入前，先只创建本项目专属目录并把子目录交给 `ubuntu`；这一 bootstrap 对首次安装和升级都幂等，不修改其他项目：
 
 ```bash
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo install -d -m 0755 /opt/xmind-site && sudo install -d -o ubuntu -g ubuntu -m 0755 /opt/xmind-site/current /opt/xmind-site/audit /opt/xmind-site/rollback'
+rtk scp -i DDDD.pem deploy/tencent-cloud/xmind-site/snapshot-host.sh deploy/tencent-cloud/xmind-site/compare-snapshots.sh deploy/tencent-cloud/xmind-site/existing-domains.txt ubuntu@101.34.52.232:/opt/xmind-site/current/
+rtk shasum -a 256 deploy/tencent-cloud/xmind-site/snapshot-host.sh deploy/tencent-cloud/xmind-site/compare-snapshots.sh deploy/tencent-cloud/xmind-site/existing-domains.txt
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sha256sum /opt/xmind-site/current/snapshot-host.sh /opt/xmind-site/current/compare-snapshots.sh /opt/xmind-site/current/existing-domains.txt'
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo bash /opt/xmind-site/current/snapshot-host.sh <release-id> pre'
 ```
+
+本地与远端三个 SHA 必须逐项一致。`pre` 必须早于 `docker load`、旧镜像 hold tag、`compose up`、Certbot、Nginx patch/restart；脚本拒绝覆盖同 phase，避免重试掩盖真实变化。两个发布脚本没有被 `.dockerignore` 放行，不进入静态镜像。
 
 ### 4.1 覆盖 current 前冻结旧 origin
 
@@ -189,20 +201,12 @@ rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
 set -Eeuo pipefail
 umask 077
 
-release_id="$(date -u +%Y%m%dT%H%M%SZ)"
+release_id='<release-id>'
 current=/opt/xmind-site/current
 pre="/opt/xmind-site/audit/${release_id}/pre"
-if [ -e "$pre" ]; then
-  echo "refusing: audit snapshot already exists: $pre" >&2
-  exit 1
-fi
-install -d -m 0700 "$pre"
-printf '%s\n' "$release_id" > "$pre/release-id.txt"
-sudo sha256sum /opt/ai-video/deploy/lighthouse/nginx.conf \
-  > "$pre/gateway-nginx-config.sha256"
-docker inspect ai_video_nginx \
-  --format '{{.Id}} {{.State.StartedAt}} {{.RestartCount}} {{.State.Health.Status}}' \
-  > "$pre/gateway-state.txt"
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/phase.txt")" = pre
+(cd "$pre" && sha256sum -c snapshot-files.sha256)
 
 mapfile -t containers < <(
   docker ps -aq \
@@ -269,7 +273,7 @@ printf '%s\n' upgrade > "$pre/deploy-mode.txt"
     previous-image-ref.txt previous-image-id.txt \
     previous-image-hold-ref.txt previous-artifact.sha256 \
     previous-site.files.sha256 previous-site.file-count.txt deploy-mode.txt \
-    gateway-nginx-config.sha256 gateway-state.txt \
+    snapshot-files.sha256 \
     > snapshot-metadata.sha256
 )
 printf 'PRE_RELEASE_ID=%s\n' "$release_id"
@@ -445,9 +449,10 @@ test "$(cat "$pre/release-id.txt")" = "$release_id"
 test "$(cat "$pre/deploy-mode.txt")" = first_install
 test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
 docker run --rm --name xmind_nginx_config_test \
+  --pull=never \
   --network lighthouse_ai_video_net --volumes-from ai_video_nginx:ro \
   -v /opt/xmind-site/current/nginx.conf.candidate:/etc/nginx/nginx.conf:ro \
-  nginx:alpine nginx -t
+  "$(docker inspect ai_video_nginx --format '{{.Image}}')" nginx -t
 REMOTE
 ```
 
@@ -509,14 +514,16 @@ test "$(sudo grep -Fc '# END xmind.lute-tlz-dddd.top' "$config")" -eq 1
 test "$(sudo grep -Ec '^[[:space:]]*server_name[[:space:]]+xmind[.]lute-tlz-dddd[.]top;' "$config")" -eq 2
 test "$(sudo grep -Fc 'proxy_pass http://172.20.0.1:18888;' "$config")" -eq 1
 docker exec ai_video_nginx nginx -t
-test "$(docker inspect ai_video_nginx --format '{{.Id}} {{.State.StartedAt}} {{.RestartCount}} {{.State.Health.Status}}')" = "$(cat "$pre/gateway-state.txt")"
-test "$(sudo sha256sum "$config" | cut -d ' ' -f 1)" = "$(cut -d ' ' -f 1 "$pre/gateway-nginx-config.sha256")"
+expected_gateway="$(jq -r '[.Id,.StartedAt,(.RestartCount|tostring),.Health] | join(" ")' "$pre/gateway-contract.json")"
+test "$(docker inspect ai_video_nginx --format '{{.Id}} {{.State.StartedAt}} {{.RestartCount}} {{.State.Health.Status}}')" = "$expected_gateway"
+test "$(sudo sha256sum "$config" | cut -d ' ' -f 1)" = "$(cat "$pre/gateway-nginx-host.sha256")"
+test "$(docker exec ai_video_nginx sha256sum /etc/nginx/nginx.conf | cut -d ' ' -f 1)" = "$(cat "$pre/gateway-nginx-container.sha256")"
 curl -fsS http://172.20.0.1:18888/healthz
 docker exec ai_video_nginx wget -q -O - http://172.20.0.1:18888/healthz
 REMOTE
 ```
 
-上述命令已将 gateway container ID、StartedAt、RestartCount 和 Nginx config hash 与第 4 节 pre 证据做精确比对；随后直接执行第 8 节公网逐文件与安全头验证。
+上述命令完成候选前置只读验证；第 9 节还会用机器比较器精确检查 gateway 的 image、mount、network、port bindings、container config、ID、StartedAt、RestartCount 与配置 hash 均未变化。
 
 ## 8. E2E 和产品验收
 
@@ -565,7 +572,23 @@ rtk npm run verify:security
 
 ## 9. 前后资源差异与现有应用回归
 
-用第 4 节的完全相同命令生成 `post/` 快照，并与同一 `<release-id>` 的 `pre/` 比较。
+完成第 8 节逐文件验收后，用第 4 节同一份、同 SHA 脚本生成 `post/`，再由版本化比较器 fail closed 判定。`mode` 必须来自本 release 的 `deploy-mode.txt`，不得手输另一个分支：
+
+```bash
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+artifact_sha='<64-char-artifact-sha>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+mode="$(cat "$pre/deploy-mode.txt")"
+[[ "$mode" = first_install || "$mode" = upgrade ]]
+sudo bash /opt/xmind-site/current/snapshot-host.sh "$release_id" post
+sudo bash /opt/xmind-site/current/compare-snapshots.sh "$release_id" "$mode" "$artifact_sha"
+REMOTE
+```
+
+`snapshot-files.sha256` 先阻止审计证据被修改；比较器随后检查完整 containers/images/networks/volumes/ports、gateway contract、宿主与容器 Nginx hash、certificate lineage、server markers 与 32 域名严格 TLS 结果。
 
 首次安装只允许：
 
@@ -608,9 +631,10 @@ if [ -e "$pre/SHARED_NGINX_CUTOVER_ATTEMPTED" ]; then
   test -f "$pre/shared-nginx.conf.pre-xmind"
   (cd "$pre" && sha256sum -c shared-nginx.pre.sha256)
   docker run --rm --name xmind_nginx_rollback_test \
+    --pull=never \
     --network lighthouse_ai_video_net --volumes-from ai_video_nginx:ro \
     -v "$pre/shared-nginx.conf.pre-xmind":/etc/nginx/nginx.conf:ro \
-    nginx:alpine nginx -t
+    "$(docker inspect ai_video_nginx --format '{{.Image}}')" nginx -t
   tmp="${config}.rollback-${release_id}"
   sudo install -m 0644 "$pre/shared-nginx.conf.pre-xmind" "$tmp"
   sudo mv "$tmp" "$config"

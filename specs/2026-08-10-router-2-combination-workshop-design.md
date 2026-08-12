@@ -451,7 +451,15 @@ safetySignals
 - `tools/site-assets/site.js`：保留全站导航、模型筛选和通用交互；移除旧 Router 匹配逻辑。
 
 `router-controller.mjs` 必须通过相对路径 import `router-engine.mjs`；测试导入同一文件，不能
-在测试与浏览器各复制一套评分规则。两者作为本地 ESM 发布，不使用 bundler 或新增 dependency。
+在测试与浏览器各复制一套评分规则。两者作为本地 ESM 发布，不使用 bundler。唯一新增依赖是
+build/test-only、精确固定的 `acorn@8.18.0`；它不进入 Docker 静态镜像或浏览器运行时。
+
+公开脚本发布边界分三层：第一层以 Acorn strict AST 拒绝 storage、cookie、eval/Function、网络、
+service worker 与所有 dynamic import，并要求三个 allowlisted artifact 与 `tools/site-assets/`
+trusted source bytes 完全一致；第二层闭合 HTML script src 与静态 `.mjs` import/export-from，
+拒绝额外脚本、inline executable script、外部/bare/逃逸/缺失/错误扩展目标；第三层由 Task 8
+浏览器 E2E 验证实际 DOM 行为与断网运行。AST 本身不声称证明任意 computed JavaScript 安全，
+source parity 才是阻止任意 taint/alias 变体进入公开产物的承重边界。
 
 ### 10.2 页面数据
 
@@ -503,6 +511,8 @@ Router 所需的紧凑数据在构建时安全嵌入页面，不通过 `fetch` �
 - 组合页面路径冲突、链接或锚点断裂。
 - Router 嵌入数据超预算或不能安全序列化。
 - 运行时引入外部资源、fetch、storage、危险 HTML 或内联事件。
+- 公开 `.js/.mjs` 不在三文件 allowlist、与 trusted source bytes 不同、AST syntax/capability
+  不合格、包含 dynamic import，或静态 import 闭包不完整。
 
 ### 12.2 客户端恢复
 

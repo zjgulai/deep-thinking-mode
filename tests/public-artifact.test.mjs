@@ -1,22 +1,28 @@
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
-import { mkdtemp, mkdir, rm, symlink, writeFile } from "node:fs/promises";
+import { mkdtemp, mkdir, readFile, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 
-const CHECKER = fileURLToPath(
-  new URL("../tools/check-public-artifact.mjs", import.meta.url),
-);
-
+const CHECKER = fileURLToPath(new URL("../tools/check-public-artifact.mjs", import.meta.url));
+const TRUSTED_SOURCE_URLS = {
+  "site/assets/site.js": new URL("../tools/site-assets/site.js", import.meta.url),
+  "site/assets/router-controller.mjs": new URL("../tools/site-assets/router-controller.mjs", import.meta.url),
+  "site/assets/router-engine.mjs": new URL("../tools/site-assets/router-engine.mjs", import.meta.url),
+};
 const META_CSP = "default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'";
 
 function page({ head = "", body = "", csp = META_CSP } = {}) {
-  const cspMeta = csp === null
-    ? ""
-    : `<meta http-equiv="Content-Security-Policy" content="${csp}">`;
+  const cspMeta = csp === null ? "" : `<meta http-equiv="Content-Security-Policy" content="${csp}">`;
   return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">${cspMeta}${head}</head><body>${body}</body></html>`;
+}
+
+async function trustedScripts() {
+  return Object.fromEntries(await Promise.all(
+    Object.entries(TRUSTED_SOURCE_URLS).map(async ([target, source]) => [target, await readFile(source)]),
+  ));
 }
 
 async function writeFiles(rootDir, files) {
@@ -38,16 +44,10 @@ async function runChecker(rootDir) {
     let stderr = "";
     child.stdout.setEncoding("utf8");
     child.stderr.setEncoding("utf8");
-    child.stdout.on("data", (chunk) => {
-      stdout += chunk;
-    });
-    child.stderr.on("data", (chunk) => {
-      stderr += chunk;
-    });
+    child.stdout.on("data", (chunk) => { stdout += chunk; });
+    child.stderr.on("data", (chunk) => { stderr += chunk; });
     child.once("error", reject);
-    child.once("close", (code, signal) => {
-      resolve({ code, signal, stdout, stderr });
-    });
+    child.once("close", (code, signal) => resolve({ code, signal, stdout, stderr }));
   });
 }
 
@@ -61,653 +61,173 @@ async function withArtifact(files, assertion) {
   }
 }
 
-test("accepts a self-contained multi-page site", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        head: '<link rel="stylesheet" href="assets/site.css">',
-        body: [
-          '<a href="chapters/one.html#detail">章节</a>',
-          '<a href="combinations/">组合工坊</a>',
-          '<a href="https://github.com/example/project">源代码</a>',
-        ].join(""),
-      }),
-      "site/assets/site.css": "body { color: #111; }",
-      "site/assets/router-engine.mjs":
-        'export function matchRoute() { return { state: "matched" }; }\n',
-      "site/assets/router-controller.mjs": [
-        'import { matchRoute } from "./router-engine.mjs";',
-        "export function bootRouter() { return matchRoute(); }",
-        "",
-      ].join("\n"),
-      "site/assets/logo.svg":
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"><path d="M0 0h1v1H0z"/></svg>',
-      "site/chapters/one.html": page({
-        body: '<main id="detail"><img src="../assets/logo.svg" alt=""></main>',
-      }),
-      "site/combinations/index.html": page({
-        body: '<a href="cot-critic-chain.html#phases">查看组合详情</a>',
-      }),
-      "site/combinations/cot-critic-chain.html": page({
-        head: '<script type="module" src="../assets/router-controller.mjs"></script>',
-        body: '<main id="phases">组合协议</main>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.equal(code, 0, `${stdout}\n${stderr}`);
-    },
-  );
+function assertRejected(pattern) {
+  return ({ code, stdout, stderr }) => {
+    assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+    assert.match(stderr, pattern, `${stdout}\n${stderr}`);
+  };
+}
+
+test("accepts a self-contained site with all three trusted script bytes", async () => {
+  await withArtifact({
+    "site/index.html": page({
+      head: '<link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script>',
+      body: '<a href="combinations/">组合工坊</a>',
+    }),
+    "site/assets/site.css": "body { color: #111; }",
+    ...(await trustedScripts()),
+    "site/combinations/index.html": page({
+      body: '<script type="module" src="../assets/router-controller.mjs"></script><main id="phases">组合协议</main>',
+    }),
+  }, ({ code, stdout, stderr }) => assert.equal(code, 0, `${stdout}\n${stderr}`));
 });
 
-test("rejects an HTML page without the required CSP meta policy", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({ csp: null }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /CSP_META_MISSING/, `${stdout}\n${stderr}`);
-    },
-  );
+test("rejects missing or noncanonical CSP", async (t) => {
+  await t.test("missing", () => withArtifact(
+    { "site/index.html": page({ csp: null }) },
+    assertRejected(/CSP_META_MISSING/),
+  ));
+  await t.test("frame-ancestors cannot be carried by meta", () => withArtifact(
+    { "site/index.html": page({ csp: `${META_CSP}; frame-ancestors 'none'` }) },
+    assertRejected(/CSP_META_MISMATCH/),
+  ));
 });
 
-test("rejects header-only frame-ancestors inside the CSP meta policy", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        csp: `${META_CSP}; frame-ancestors 'none'`,
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /CSP_META_MISMATCH/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects an internal stylesheet that is missing", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        head: '<link rel="stylesheet" href="assets/missing.css">',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects a missing internal chapter", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<a href="chapters/missing.html">缺失章节</a>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects a missing combination detail target", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<a href="combinations/missing.html">缺失组合</a>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects path traversal even when the escaped file exists", async () => {
-  await withArtifact(
-    {
-      "secret.html": page({ body: "secret" }),
-      "site/index.html": page({
-        body: '<a href="../secret.html">越界</a>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /PATH_TRAVERSAL/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects encoded path traversal", async () => {
-  await withArtifact(
-    {
-      "secret.html": page({ body: "secret" }),
-      "site/index.html": page({
-        body: '<a href="%2e%2e/secret.html">编码越界</a>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /PATH_TRAVERSAL/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects a fragment that does not exist in the target page", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<a href="chapters/one.html#missing">坏锚点</a>',
-      }),
-      "site/chapters/one.html": page({
-        body: '<main id="present">内容</main>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /MISSING_FRAGMENT/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects a missing fragment in a combination detail page", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<a href="combinations/one.html#missing">坏锚点</a>',
-      }),
-      "site/combinations/one.html": page({
-        body: '<main id="present">组合详情</main>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /MISSING_FRAGMENT/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects protocol-relative external subresources", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script src="//cdn.example.com/app.js"></script>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /EXTERNAL_RESOURCE/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects an external module script", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module" src="https://cdn.example.com/router.mjs"></script>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /EXTERNAL_RESOURCE/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects fetch in a local module", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module" src="assets/router-controller.mjs"></script>',
-      }),
-      "site/assets/router-controller.mjs": 'fetch("/router-data.json");\n',
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /NETWORK_CAPABLE_SCRIPT/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects browser storage in a local module", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module" src="assets/router-controller.mjs"></script>',
-      }),
-      "site/assets/router-controller.mjs":
-        'localStorage.setItem("router-query", "private input");\n',
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects session storage in a local module", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module" src="assets/router-controller.mjs"></script>',
-      }),
-      "site/assets/router-controller.mjs":
-        'sessionStorage.getItem("router-query");\n',
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("allows browser storage names in inert strings and comments", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module" src="assets/router-controller.mjs"></script>',
-      }),
-      "site/assets/router-controller.mjs": [
-        'const label = "localStorage.setItem";',
-        "// sessionStorage.clear() is documentation, not executable code.",
-        "/* indexedDB.open() is also inert here. */",
-        "export { label };",
-        "",
-      ].join("\n"),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.equal(code, 0, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects executable browser storage across JavaScript lexical forms", async (t) => {
-  const moduleCases = [
-    ["template expression", 'const value = `${localStorage.value}`;\n'],
-    ["globalThis bracket access", 'globalThis["localStorage"].setItem("router-query", "private");\n'],
-    ["globalThis optional bracket access", 'globalThis?.["localStorage"].clear();\n'],
-    ["window bracket access", 'window["sessionStorage"].clear();\n'],
-    ["optional chaining", 'localStorage?.setItem("router-query", "private");\n'],
-    ["code after regex literal", '/localStorage\\.value/.test(name); localStorage.value;\n'],
-    ["indexedDB identifier", 'indexedDB.open("router");\n'],
-    ["escaped storage identifier", 'local\\u0053torage.setItem("router-query", "private");\n'],
-  ];
-
-  for (const [name, source] of moduleCases) {
-    await t.test(name, async () => {
-      await withArtifact(
-        {
-          "site/index.html": page({
-            body: '<script type="module" src="assets/router-controller.mjs"></script>',
-          }),
-          "site/assets/router-controller.mjs": source,
-        },
-        ({ code, stdout, stderr }) => {
-          assert.notEqual(code, 0, `${source}\n${stdout}\n${stderr}`);
-          assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${source}\n${stdout}\n${stderr}`);
-        },
-      );
-    });
-  }
-
-  await t.test("inline module template and bracket access", async () => {
-    await withArtifact(
-      {
-        "site/index.html": page({
-          body: '<script type="module">const value = `${self["localStorage"].value}`;</script>',
-        }),
-      },
-      ({ code, stdout, stderr }) => {
-        assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-        assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${stdout}\n${stderr}`);
-      },
-    );
-  });
-});
-
-test("rejects literal storage keys used through simple aliases and destructuring", async (t) => {
-  const moduleCases = [
-    [
-      "computed destructuring key",
-      'const {["localStorage"]: storage} = globalThis; storage.setItem("query", "private");\n',
-    ],
-    [
-      "aliased browser global",
-      'const root = window; root["localStorage"].setItem("query", "private");\n',
-    ],
-    [
-      "literal key variable",
-      'const key = "localStorage"; globalThis[key].setItem("query", "private");\n',
-    ],
-  ];
-
-  for (const [name, source] of moduleCases) {
-    await t.test(name, async () => {
-      await withArtifact(
-        {
-          "site/index.html": page({
-            body: '<script type="module" src="assets/router-controller.mjs"></script>',
-          }),
-          "site/assets/router-controller.mjs": source,
-        },
-        ({ code, stdout, stderr }) => {
-          assert.notEqual(code, 0, `${source}\n${stdout}\n${stderr}`);
-          assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${source}\n${stdout}\n${stderr}`);
-        },
-      );
-    });
-  }
-});
-
-test("allows storage spellings in inert strings, comments, regexes, and template quasis", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module" src="assets/router-controller.mjs"></script>',
-      }),
-      "site/assets/router-controller.mjs": [
-        'const label = "localStorage.setItem";',
-        "const pattern = /localStorage.value|window\\[\\\"sessionStorage\\\"\\]/;",
-        'if (label) /localStorage/.test(label);',
-        "const template = `indexedDB.open is documentation`;",
-        "// globalThis['localStorage'].clear() is documentation.",
-        "/* self[\"sessionStorage\"].clear() is documentation. */",
-        "export { label, pattern, template };",
-        "",
-      ].join("\n"),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.equal(code, 0, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("allows inert storage regexes after completed blocks and function declarations", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module" src="assets/router-controller.mjs"></script>',
-      }),
-      "site/assets/router-controller.mjs": [
-        "const ok = true;",
-        "const value = 'safe';",
-        "if (ok) {} /localStorage/.test(value);",
-        "function check() {} /sessionStorage/.test(value);",
-        "const ratio = 12 / 3 / 2;",
-        "export { ratio };",
-        "",
-      ].join("\n"),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.equal(code, 0, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects incomplete, escaping, non-literal, bare, and non-script module dependencies", async (t) => {
+test("rejects missing targets, bad anchors, and path escape", async (t) => {
   const cases = [
-    {
-      name: "missing static side-effect import",
-      source: 'import "./missing.mjs";\n',
-      error: /MISSING_TARGET/,
-    },
-    {
-      name: "missing static import-from",
-      source: 'import { boot } from "./missing.mjs";\n',
-      error: /MISSING_TARGET/,
-    },
-    {
-      name: "missing export-from",
-      source: 'export { boot } from "./missing.mjs";\n',
-      error: /MISSING_TARGET/,
-    },
-    {
-      name: "escaping static import",
-      source: 'import "../../secret.mjs";\n',
-      outside: { "secret.mjs": "export {};\n" },
-      error: /PATH_TRAVERSAL/,
-    },
-    {
-      name: "missing literal dynamic import",
-      source: 'import("./missing.mjs");\n',
-      error: /MISSING_TARGET/,
-    },
-    {
-      name: "non-literal dynamic import",
-      source: 'const target = "./engine.mjs"; import(target);\n',
-      error: /NON_LITERAL_DYNAMIC_IMPORT/,
-    },
-    {
-      name: "bare static import",
-      source: 'import "router-runtime";\n',
-      error: /UNSAFE_MODULE_SPECIFIER/,
-    },
-    {
-      name: "non-script import target",
-      source: 'import "./data.json";\n',
-      files: { "site/assets/data.json": "{}\n" },
-      error: /INVALID_MODULE_TARGET/,
-    },
+    ["missing stylesheet", { "site/index.html": page({ head: '<link rel="stylesheet" href="assets/missing.css">' }) }, /MISSING_TARGET/],
+    ["missing combination", { "site/index.html": page({ body: '<a href="combinations/missing.html">缺失</a>' }) }, /MISSING_TARGET/],
+    ["path escape", { "secret.html": page(), "site/index.html": page({ body: '<a href="../secret.html">越界</a>' }) }, /PATH_TRAVERSAL/],
+    ["encoded path escape", { "secret.html": page(), "site/index.html": page({ body: '<a href="%2e%2e/secret.html">越界</a>' }) }, /PATH_TRAVERSAL/],
+    ["missing anchor", { "site/index.html": page({ body: '<a href="chapter.html#missing">坏锚点</a>' }), "site/chapter.html": page({ body: '<main id="present"></main>' }) }, /MISSING_FRAGMENT/],
   ];
+  for (const [name, files, pattern] of cases) {
+    await t.test(name, () => withArtifact(files, assertRejected(pattern)));
+  }
+});
 
-  for (const fixture of cases) {
-    await t.test(fixture.name, async () => {
-      await withArtifact(
-        {
-          ...(fixture.outside ?? {}),
-          "site/index.html": page({
-            body: '<script type="module" src="assets/router-controller.mjs"></script>',
-          }),
-          "site/assets/router-controller.mjs": fixture.source,
-          ...(fixture.files ?? {}),
-        },
-        ({ code, stdout, stderr }) => {
-          assert.notEqual(code, 0, `${fixture.source}\n${stdout}\n${stderr}`);
-          assert.match(stderr, fixture.error, `${fixture.source}\n${stdout}\n${stderr}`);
-        },
-      );
+test("rejects external subresources and allows external navigation metadata", async (t) => {
+  await t.test("external script", () => withArtifact(
+    { "site/index.html": page({ body: '<script src="https://cdn.example/app.js"></script>' }) },
+    assertRejected(/EXTERNAL_RESOURCE/),
+  ));
+  await t.test("protocol-relative image", () => withArtifact(
+    { "site/index.html": page({ body: '<img src="//cdn.example/a.png">' }) },
+    assertRejected(/EXTERNAL_RESOURCE/),
+  ));
+  await t.test("canonical link", () => withArtifact(
+    { "site/index.html": page({ head: '<link rel="canonical" href="https://example.test/">' }) },
+    ({ code, stdout, stderr }) => assert.equal(code, 0, `${stdout}\n${stderr}`),
+  ));
+});
+
+test("rejects a byte mismatch for every trusted script path", async (t) => {
+  for (const target of Object.keys(TRUSTED_SOURCE_URLS)) {
+    await t.test(target, async () => {
+      const files = await trustedScripts();
+      files[target] = Buffer.concat([files[target], Buffer.from("\n")]);
+      await withArtifact({
+        "site/index.html": page(),
+        ...files,
+      }, assertRejected(/SCRIPT_BYTES_MISMATCH/));
     });
   }
 });
 
-test("rejects a missing dependency imported by an inline module", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module">import "./assets/missing.mjs";</script>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
-    },
-  );
+test("rejects an extra script file or an untrusted script src", async (t) => {
+  await t.test("extra script", () => withArtifact({
+    "site/index.html": page(),
+    "site/assets/extra.mjs": "export {};\n",
+  }, assertRejected(/UNTRUSTED_SCRIPT/)));
+  await t.test("untrusted src", () => withArtifact({
+    "site/index.html": page({ body: '<script src="assets/extra.js"></script>' }),
+    "site/assets/extra.js": "void 0;\n",
+  }, assertRejected(/UNTRUSTED_SCRIPT/)));
 });
 
-test("audits dynamic imports in classic inline scripts", async (t) => {
-  await t.test("missing literal dependency", async () => {
-    await withArtifact(
-      {
-        "site/index.html": page({
-          body: '<script>import("./assets/missing.mjs");</script>',
-        }),
-      },
-      ({ code, stdout, stderr }) => {
-        assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-        assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
-      },
-    );
-  });
-
-  await t.test("non-literal dependency", async () => {
-    await withArtifact(
-      {
-        "site/index.html": page({
-          body: '<script>const target = "./assets/dep.mjs"; import(target);</script>',
-        }),
-        "site/assets/dep.mjs": "export {};\n",
-      },
-      ({ code, stdout, stderr }) => {
-        assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-        assert.match(stderr, /NON_LITERAL_DYNAMIC_IMPORT/, `${stdout}\n${stderr}`);
-      },
-    );
-  });
-
-  await t.test("closed literal dependency", async () => {
-    await withArtifact(
-      {
-        "site/index.html": page({
-          body: '<script>import("./assets/dep.mjs");</script>',
-        }),
-        "site/assets/dep.mjs": "export {};\n",
-      },
-      ({ code, stdout, stderr }) => {
-        assert.equal(code, 0, `${stdout}\n${stderr}`);
-      },
-    );
-  });
+test("rejects inline executable scripts without attempting execution", async (t) => {
+  for (const body of [
+    "<script>void 0;</script>",
+    '<script type="module">export {};</script>',
+    '<script type="text/javascript">fetch("/x")</script>',
+  ]) {
+    await t.test(body, () => withArtifact(
+      { "site/index.html": page({ body }) },
+      assertRejected(/INLINE_EXECUTABLE_SCRIPT/),
+    ));
+  }
 });
 
-test("accepts a literal dynamic import with a nested options argument", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module">import("./assets/dep.mjs", { with: { type: "javascript" } });</script>',
-      }),
-      "site/assets/dep.mjs": "export {};\n",
-    },
-    ({ code, stdout, stderr }) => {
-      assert.equal(code, 0, `${stdout}\n${stderr}`);
-    },
-  );
+test("allows only strictly parsed, HTML-safe inert JSON scripts", async (t) => {
+  await t.test("application/json", () => withArtifact(
+    { "site/index.html": page({ body: '<script type="application/json">{"safe":true}</script>' }) },
+    ({ code, stdout, stderr }) => assert.equal(code, 0, `${stdout}\n${stderr}`),
+  ));
+  await t.test("application/ld+json", () => withArtifact(
+    { "site/index.html": page({ head: '<script type="application/ld+json">{"@context":"https://schema.org"}</script>' }) },
+    ({ code, stdout, stderr }) => assert.equal(code, 0, `${stdout}\n${stderr}`),
+  ));
+  await t.test("invalid JSON", () => withArtifact(
+    { "site/index.html": page({ body: '<script type="application/json">{broken}</script>' }) },
+    assertRejected(/INVALID_DATA_SCRIPT/),
+  ));
+  await t.test("unsafe JSON serialization", () => withArtifact(
+    { "site/index.html": page({ body: '<script type="application/json">{"markup":"&"}</script>' }) },
+    assertRejected(/UNSAFE_DATA_SCRIPT/),
+  ));
 });
 
-test("rejects a dynamic import with mismatched nested option delimiters", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module">import("./assets/dep.mjs", { with: [} });</script>',
-      }),
-      "site/assets/dep.mjs": "export {};\n",
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /NON_LITERAL_DYNAMIC_IMPORT/, `${stdout}\n${stderr}`);
-    },
-  );
+test("reports AST capability and syntax errors distinctly from byte mismatch", async (t) => {
+  const cases = [
+    ["storage", "localStorage.clear();\n", /SCRIPT_CAPABILITY_DENIED/],
+    ["network", "fetch('/x');\n", /SCRIPT_CAPABILITY_DENIED/],
+    ["cookie", "document.cookie;\n", /SCRIPT_CAPABILITY_DENIED/],
+    ["dynamic", 'import("./router-engine.mjs", { with: { type: "javascript" } });\n', /DYNAMIC_IMPORT_DENIED/],
+    ["source type", 'import "./router-engine.mjs";\n', /SCRIPT_SYNTAX_ERROR/],
+  ];
+  for (const [name, source, pattern] of cases) {
+    await t.test(name, () => withArtifact({
+      "site/index.html": page(),
+      "site/assets/site.js": source,
+    }, assertRejected(pattern)));
+  }
 });
 
-test("accepts a closed file and inline module dependency graph", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<script type="module">import "./assets/router-controller.mjs";</script>',
-      }),
-      "site/assets/router-controller.mjs": [
-        'import { matchRoute } from "./router-engine.mjs";',
-        'export { matchRoute as route } from "./router-engine.mjs";',
-        'export async function load() { return import("./router-engine.mjs"); }',
-        "",
-      ].join("\n"),
-      "site/assets/router-engine.mjs":
-        'export function matchRoute() { return { state: "matched" }; }\n',
-    },
-    ({ code, stdout, stderr }) => {
-      assert.equal(code, 0, `${stdout}\n${stderr}`);
-    },
-  );
+test("validates the static module closure before trusting parity", async (t) => {
+  const cases = [
+    ["missing", 'import "./missing.mjs";\n', {}, /MISSING_TARGET/],
+    ["escape", 'import "../../secret.mjs";\n', { "secret.mjs": "export {};\n" }, /PATH_TRAVERSAL/],
+    ["external", 'import "https://cdn.example/engine.mjs";\n', {}, /EXTERNAL_SCRIPT_IMPORT/],
+    ["bare", 'import "router-engine";\n', {}, /UNTRUSTED_SCRIPT_IMPORT/],
+    ["wrong extension", 'import "./data.json";\n', { "site/assets/data.json": "{}\n" }, /INVALID_SCRIPT_IMPORT_TARGET/],
+  ];
+  for (const [name, source, extra, pattern] of cases) {
+    await t.test(name, () => withArtifact({
+      "site/index.html": page(),
+      "site/assets/router-controller.mjs": source,
+      ...extra,
+    }, assertRejected(pattern)));
+  }
 });
 
 test("rejects a symbolic link inside the public tree", async () => {
   const rootDir = await mkdtemp(path.join(tmpdir(), "public-artifact-symlink-"));
   try {
-    await writeFiles(rootDir, {
-      "site/index.html": page(),
-      "outside.mjs": "export {};\n",
-    });
-    await symlink(
-      path.join(rootDir, "outside.mjs"),
-      path.join(rootDir, "site", "linked.mjs"),
-    );
-    const { code, stdout, stderr } = await runChecker(rootDir);
-    assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-    assert.match(stderr, /UNSAFE_FILE_TYPE/, `${stdout}\n${stderr}`);
+    await writeFiles(rootDir, { "site/index.html": page(), "outside.mjs": "export {};\n" });
+    await symlink(path.join(rootDir, "outside.mjs"), path.join(rootDir, "site", "linked.mjs"));
+    assertRejected(/UNSAFE_FILE_TYPE/)(await runChecker(rootDir));
   } finally {
     await rm(rootDir, { recursive: true, force: true });
   }
 });
 
-test("rejects a missing internal src target", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        body: '<img src="assets/missing.png" alt="">',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects external resources loaded from CSS", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        head: '<link rel="stylesheet" href="assets/site.css">',
-      }),
-      "site/assets/site.css":
-        '@import url("https://cdn.example.com/theme.css");',
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /EXTERNAL_RESOURCE/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("rejects files outside the public artifact allowlist", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page(),
-      "site/private.pem": "not a public asset",
-    },
-    ({ code, stdout, stderr }) => {
-      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
-      assert.match(stderr, /DISALLOWED_FILE_TYPE/, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("allows JSON-LD identifiers without treating them as network code", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        head: '<script type="application/ld+json">{"@context":"https://schema.org"}</script>',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.equal(code, 0, `${stdout}\n${stderr}`);
-    },
-  );
-});
-
-test("allows an HTTPS canonical link because it is metadata, not a subresource", async () => {
-  await withArtifact(
-    {
-      "site/index.html": page({
-        head: '<link rel="canonical" href="https://example.test/">',
-      }),
-    },
-    ({ code, stdout, stderr }) => {
-      assert.equal(code, 0, `${stdout}\n${stderr}`);
-    },
-  );
+test("rejects external CSS resources and disallowed file types", async (t) => {
+  await t.test("CSS", () => withArtifact({
+    "site/index.html": page({ head: '<link rel="stylesheet" href="assets/site.css">' }),
+    "site/assets/site.css": '@import url("https://cdn.example/theme.css");',
+  }, assertRejected(/EXTERNAL_RESOURCE/)));
+  await t.test("private key extension", () => withArtifact({
+    "site/index.html": page(),
+    "site/private.pem": "not a public asset",
+  }, assertRejected(/DISALLOWED_FILE_TYPE/)));
 });

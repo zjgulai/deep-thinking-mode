@@ -8,7 +8,7 @@
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
 import { createServer } from "node:http";
-import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
@@ -131,11 +131,11 @@ const RELEASE_FIXTURE = {
   "combinations/cot-critic-chain.html": Buffer.from(
     `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="${META_CONTENT_SECURITY_POLICY}"><script type="module" src="../assets/router-controller.mjs"></script></head><body><main id="phases">phases</main></body></html>`,
   ),
-  "assets/router-engine.mjs": Buffer.from(
-    'export function matchRoute() { return { state: "matched" }; }\n',
+  "assets/router-engine.mjs": await readFile(
+    new URL("../tools/site-assets/router-engine.mjs", import.meta.url),
   ),
-  "assets/router-controller.mjs": Buffer.from(
-    'import { matchRoute } from "./router-engine.mjs";\nexport const result = matchRoute();\n',
+  "assets/router-controller.mjs": await readFile(
+    new URL("../tools/site-assets/router-controller.mjs", import.meta.url),
   ),
 };
 
