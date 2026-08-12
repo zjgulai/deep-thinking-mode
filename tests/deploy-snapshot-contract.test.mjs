@@ -197,7 +197,11 @@ async function runCompare(root, mode, artifact = ARTIFACT_SHA) {
 }
 
 async function createUpgrade(root, mutate = () => {}) {
-  const oldImage = image({ id: "sha256:old", tags: ["xmind-site:old"] });
+  const oldImage = image({
+    id: "sha256:old",
+    tags: [EXPECTED_TAG],
+    artifact: ARTIFACT_SHA,
+  });
   const candidate = image({ id: "sha256:new", tags: [EXPECTED_TAG], artifact: ARTIFACT_SHA });
   const commonImage = image({ id: "sha256:gateway", tags: ["nginx:edge"] });
   const shared = {
@@ -207,7 +211,7 @@ async function createUpgrade(root, mutate = () => {}) {
     markers: serverMarkers("stable-block"),
   };
   await writeSnapshot(root, "pre", {
-    "containers.json": stable([shared.gateway, web({ id: "web-old", image: oldImage.Id, configImage: "xmind-site:old", startedAt: "old" })]),
+    "containers.json": stable([shared.gateway, web({ id: "web-old", image: oldImage.Id, configImage: EXPECTED_TAG, startedAt: "old" })]),
     "images.json": stable([commonImage, oldImage]),
     "networks.json": stable([shared.network]),
     "gateway-contract.json": stable(gatewayContract()),
@@ -217,7 +221,15 @@ async function createUpgrade(root, mutate = () => {}) {
   await writeReleaseContract(root, "stable-block");
   const post = {
     containers: [shared.gateway, web({ id: "web-new", image: candidate.Id, startedAt: "new" })],
-    images: [commonImage, image({ id: oldImage.Id, tags: ["xmind-site:old", `xmind-site:rollback-${RELEASE_ID}`] }), candidate],
+    images: [
+      commonImage,
+      image({
+        id: oldImage.Id,
+        tags: [`xmind-site:rollback-${RELEASE_ID}`],
+        artifact: ARTIFACT_SHA,
+      }),
+      candidate,
+    ],
     network: shared.network,
     certs: shared.certs,
     markers: shared.markers,
@@ -296,13 +308,13 @@ test("upgrade binds the running web and rollback hold to the candidate image", a
 
   const mutations = [
     ["candidate image was only loaded", (post) => {
-      post.containers[1] = web({ id: "web-new", image: "sha256:old", configImage: "xmind-site:old", startedAt: "new" });
+      post.containers[1] = web({ id: "web-new", image: "sha256:old", configImage: EXPECTED_TAG, startedAt: "new" });
     }],
     ["container image reference is not the artifact tag", (post) => {
       post.containers[1].Config.Image = "xmind-site:wrong";
     }],
     ["rollback hold tag is absent", (post) => {
-      post.images[1].RepoTags = ["xmind-site:old"];
+      post.images[1].RepoTags = [];
     }],
   ];
   for (const [name, mutate] of mutations) {

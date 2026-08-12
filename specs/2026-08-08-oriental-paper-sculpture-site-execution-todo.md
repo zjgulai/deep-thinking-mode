@@ -131,6 +131,23 @@
 | 审计与回滚 | `/opt/xmind-site/audit/20260810T101438Z/`；上一镜像 `xmind-site:40c6b7aafdc7` 与配置备份保留 |
 | GitHub Pages | Actions run `31385218882` 的 build/deploy 全绿；`https://zjgulai.github.io/deep-thinking-mode/` 2864/2864 文件逐字节通过，真实 404、严格 TLS 通过 |
 
+### 2026-08-12 Router 2.0 MIME 修复发布与生产 E2E
+
+| 项目 | 已验收结果 |
+|---|---|
+| 发现方式 | 真实生产浏览器 E2E 发现 Router 表单触发原生跳转，证明控制器没有执行；字节一致和 HTTP 200 不能代替模块执行验证 |
+| 根因 | origin Nginx 未把 `.mjs` 映射为 JavaScript MIME，在 `nosniff` 下返回 `application/octet-stream`，浏览器严格拒绝 module script |
+| 修复 | origin Nginx 显式映射 `application/javascript mjs`；生产 verifier 回归锁定 executable module 必须拒绝 `application/octet-stream`；升级比较器以构件标签与当前 image tag 共同锁定候选 image，允许站点 bytes 不变时重发 origin 配置并保留旧 image ID |
+| 构件 | `7c85af5d6e2c877216789e73241c7dbba07e2004f126b8531dd8637195418b6c`，2872 文件，逐字节生产验证通过 |
+| 生产镜像 | `xmind-site:7c85af5d6e2c` / `sha256:4923b8d7c02299892efd840e5b47b7c219cb5e07838945fdb784176db20f4ea6`，`linux/amd64`；tar SHA-256 `a1f3f86527b0ace167fab29db2388c5a3ff48e12986e8dd7ea583fbcf4e8da72` |
+| Router E2E | 正常匹配 `planning::planning`；清空复位；歧义问题追问后匹配 `diagnosis::intent` + `planning::intent`；紧急人身危险进入 `safety_stop`，0 路由、0 复制提示 |
+| 页面 E2E | 13 章、6 个组合页、模型索引与 2 个详情共 22 页：唯一 H1、主内容、导航、图片、alt、ID 与桌面溢出门全通过 |
+| 移动与无障碍 | 390×844 与 320×568 无横向滚动；主要触控目标至少 44px；移动导航 Escape 关闭并归还焦点；章节导师图加载与 alt 正确 |
+| 自动门 | 定向 36/36；全量 `npm test` 1362/1362；`npm run check`、`check:public`、strict MIME verifier、security headers 和 `git diff --check` 全部通过 |
+| 服务器隔离 | `xmind_site-web-1` healthy、restart 0，仍只绑定 `172.20.0.1:18888`；共享入口、32 个现有域名、network、volume 和监听端口 pre/post 全一致 |
+| 审计与回滚 | `/opt/xmind-site/audit/20260812T104309Z/`；修复前 image `sha256:0efeed057c2a9191b06ffd4b7c6770259a930a22f872db9c6be17e88e8e33399` 保留为 `xmind-site:rollback-20260812T104309Z` |
+| Git 收口 | 用户已授权 commit 与 push；本记录与 MIME 修复使用同一提交推送，未跟踪的根 `AGENTS.md` 不纳入提交 |
+
 旧 V1 图片在 V2-G6 前继续作为生产回滚版本，不覆盖、不删除、不在服务器手工替换单张图片。
 
 ### 2026-08-09 第二次工作记录

@@ -117,6 +117,8 @@ rtk curl -fsS http://127.0.0.1:18889/assets/site.css -o /tmp/xmind-site.css
 rtk curl -fsS http://127.0.0.1:18889/router.html -o /tmp/xmind-site-router.html
 rtk curl -fsS http://127.0.0.1:18889/assets/router-engine.mjs -o /tmp/xmind-site-router-engine.mjs
 rtk curl -fsS http://127.0.0.1:18889/assets/router-controller.mjs -o /tmp/xmind-site-router-controller.mjs
+rtk curl -fsSI http://127.0.0.1:18889/assets/router-engine.mjs | rtk grep -Fi 'Content-Type: application/javascript'
+rtk curl -fsSI http://127.0.0.1:18889/assets/router-controller.mjs | rtk grep -Fi 'Content-Type: application/javascript'
 rtk curl -fsS http://127.0.0.1:18889/combinations/index.html -o /tmp/xmind-site-combinations.html
 rtk curl -fsS http://127.0.0.1:18889/combinations/plan-execute-reflect-chain.html -o /tmp/xmind-site-combination-detail.html
 rtk curl -fsS http://127.0.0.1:18889/models/index.html -o /tmp/xmind-site-models.html
@@ -578,6 +580,8 @@ rtk curl -fsSI https://xmind.lute-tlz-dddd.top/assets/site.css
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/router.html
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/assets/router-engine.mjs
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/assets/router-controller.mjs
+rtk curl -fsSI https://xmind.lute-tlz-dddd.top/assets/router-engine.mjs | rtk grep -Fi 'content-type: application/javascript'
+rtk curl -fsSI https://xmind.lute-tlz-dddd.top/assets/router-controller.mjs | rtk grep -Fi 'content-type: application/javascript'
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/combinations/index.html
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/combinations/plan-execute-reflect-chain.html
 rtk curl -fsSI https://xmind.lute-tlz-dddd.top/models/index.html
@@ -593,7 +597,9 @@ rtk npm run verify:security
 - TLS 严格校验成功，SAN 精确包含 xmind。
 - `/healthz` 是 `ok`。
 - `/` 为 200，且 bytes hash 与已验证本地 `site/index.html` 相同。
-- CSS、Router、两个 `.mjs`、组合总览/详情、模型目录和章节为 200；不存在的路径为 404，不能回落成伪 200 首页。
+- CSS、Router、两个 `.mjs`、组合总览/详情、模型目录和章节为 200；两个 `.mjs` 必须精确使用
+  `application/javascript`，不得使用浏览器会拒绝的 `application/octet-stream`；不存在的路径为 404，
+  不能回落成伪 200 首页。
 - `verify-production.mjs` 必须对当次本地 `site/` 的完整文件数逐一返回 200、正确 Content-Type、无转向且 bytes 一致；组合页或 `.mjs` 任一 404、类型错误、意外转向或 byte mismatch 都必须 exit 1。
 - 页面 title 为系统化思维，不再是 `Short Video Factory`。
 - CSP、HSTS、`nosniff`、拒绝 iframe、Referrer Policy 和 Permissions Policy 各出现一次且值精确匹配；不得因 origin 与共享入口叠加而重复。

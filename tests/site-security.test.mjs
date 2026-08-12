@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { createServer } from "node:http";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const HEADER_CSP = "default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'; frame-ancestors 'none'";
@@ -66,4 +67,13 @@ test("security header verifier checks a real HTTP response", async (context) => 
 
   assert.equal(result.status, 200);
   assert.deepEqual(result.errors, []);
+});
+
+test("origin nginx maps .mjs modules to a JavaScript MIME type", async () => {
+  const nginxConfig = await readFile(
+    new URL("../deploy/tencent-cloud/xmind-site/nginx/nginx.conf", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(nginxConfig, /application\/javascript\s+mjs;/);
 });

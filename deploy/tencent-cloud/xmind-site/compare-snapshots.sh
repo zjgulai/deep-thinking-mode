@@ -56,7 +56,9 @@ jq -r '.[].Id' "$post/images.json" | LC_ALL=C sort > "$work/post-image-ids.txt"
 test ! -s <(comm -23 "$work/pre-image-ids.txt" "$work/post-image-ids.txt")
 comm -13 "$work/pre-image-ids.txt" "$work/post-image-ids.txt" > "$work/new-image-ids.txt"
 test "$(wc -l < "$work/new-image-ids.txt")" -eq 1
-candidate_id=$(jq -r --arg sha "$artifact_sha" '.[] | select(.Labels["com.lute.artifact.sha256"] == $sha) | .Id' "$post/images.json")
+candidate_id=$(jq -r --arg sha "$artifact_sha" --arg tag "$expected_tag" \
+  '.[] | select(.Labels["com.lute.artifact.sha256"] == $sha and ((.RepoTags // []) | index($tag) != null)) | .Id' \
+  "$post/images.json")
 test "$candidate_id" = "$(cat "$work/new-image-ids.txt")"
 while read -r old_id; do
   jq -S --arg id "$old_id" '.[] | select(.Id == $id) | del(.RepoTags)' "$pre/images.json" > "$work/pre-old-image.json"
@@ -64,7 +66,9 @@ while read -r old_id; do
   cmp "$work/pre-old-image.json" "$work/post-old-image.json"
 done < "$work/pre-image-ids.txt"
 
-candidate_count=$(jq --arg sha "$artifact_sha" '[.[] | select(.Labels["com.lute.artifact.sha256"] == $sha)] | length' "$post/images.json")
+candidate_count=$(jq --arg sha "$artifact_sha" --arg tag "$expected_tag" \
+  '[.[] | select(.Labels["com.lute.artifact.sha256"] == $sha and ((.RepoTags // []) | index($tag) != null))] | length' \
+  "$post/images.json")
 test "$candidate_count" -eq 1
 jq -e --arg sha "$artifact_sha" '.[] | select(.Labels["com.lute.artifact.sha256"] == $sha) | .RepoTags | any(startswith("xmind-site:"))' "$post/images.json" >/dev/null
 expected_tag="xmind-site:${artifact_sha:0:12}"
@@ -107,8 +111,12 @@ if [[ $mode == upgrade ]]; then
   test "$(jq '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web")] | length' "$post/containers.json")" -eq 1
   test "$(jq '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site")] | length' "$pre/containers.json")" -eq 1
   test "$(jq '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site")] | length' "$post/containers.json")" -eq 1
-  jq -S '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web") | del(.Id,.Image,.Created,.Config.Image,.State.StartedAt)]' "$pre/containers.json" > "$work/pre-xmind-web-static.json"
-  jq -S '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web") | del(.Id,.Image,.Created,.Config.Image,.State.StartedAt)]' "$post/containers.json" > "$work/post-xmind-web-static.json"
+  jq -S '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web") |
+    del(.Id,.Image,.Created,.Config.Image,.State.StartedAt) |
+    del(.Config.Labels["com.docker.compose.config-hash"], .Config.Labels["com.docker.compose.image"], .Config.Labels["com.docker.compose.replace"], .Config.Labels["com.lute.artifact.sha256"], .Config.Labels["org.opencontainers.image.version"])]' "$pre/containers.json" > "$work/pre-xmind-web-static.json"
+  jq -S '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web") |
+    del(.Id,.Image,.Created,.Config.Image,.State.StartedAt) |
+    del(.Config.Labels["com.docker.compose.config-hash"], .Config.Labels["com.docker.compose.image"], .Config.Labels["com.docker.compose.replace"], .Config.Labels["com.lute.artifact.sha256"], .Config.Labels["org.opencontainers.image.version"])]' "$post/containers.json" > "$work/post-xmind-web-static.json"
   cmp "$work/pre-xmind-web-static.json" "$work/post-xmind-web-static.json"
   while read -r old_id; do
     jq -e --arg id "$old_id" '.[] | select(.Id == $id)' "$post/images.json" >/dev/null

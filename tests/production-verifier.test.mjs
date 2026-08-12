@@ -189,7 +189,9 @@ async function withReleaseFixture(fault, assertion) {
       : localBody;
     const contentType = relativePath === fault.relativePath && fault.kind === "content-type"
       ? "text/plain"
-      : fixtureContentType(relativePath);
+      : relativePath === fault.relativePath && fault.kind === "octet-stream"
+        ? "application/octet-stream"
+        : fixtureContentType(relativePath);
     res.writeHead(200, { "content-type": contentType });
     res.end(responseBody);
   });
@@ -244,6 +246,13 @@ for (const [label, relativePath] of [
     new RegExp(`${escapedPath}: byte mismatch at offset`),
   );
 }
+
+verifierFailureTest(
+  "production verifier — executable module rejects application/octet-stream",
+  "assets/router-controller.mjs",
+  "octet-stream",
+  /assets\/router-controller\.mjs: unexpected content type application\/octet-stream/,
+);
 
 await test("production verifier — exact match passes", async () => {
   const { server, url } = await startServer((req, res) => {
