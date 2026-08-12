@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="在浏览器本地描述问题，并按关键词匹配思维模型与 Agent 推理角色。">
+  <meta name="description" content="在浏览器本地识别问题类型与 Agent 阶段，并查看已策展的模型与组合。">
   <meta name="theme-color" content="#f7f2e8">
   <meta name="color-scheme" content="light">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'">
@@ -12,7 +12,7 @@
   <meta property="og:locale" content="zh_CN">
   <meta property="og:site_name" content="前车之鉴-思维制胜">
   <meta property="og:title" content="Agent 路由｜前车之鉴-思维制胜">
-  <meta property="og:description" content="在浏览器本地描述问题，并按关键词匹配思维模型与 Agent 推理角色。">
+  <meta property="og:description" content="在浏览器本地识别问题类型与 Agent 阶段，并查看已策展的模型与组合。">
   <meta property="og:url" content="https://xmind.lute-tlz-dddd.top/router.html">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
@@ -29,36 +29,356 @@
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span></span><span></span><span></span><span class="sr-only">打开导航</span></button>
       <nav class="primary-nav" id="primary-nav" aria-label="主导航" data-primary-nav>
-        <a href="index.html">首页</a><a href="models/index.html">模型库</a><a href="router.html" aria-current="page">Agent 路由</a>
+        <a href="index.html">首页</a><a href="models/index.html">模型库</a><a href="combinations/index.html">组合工坊</a><a href="router.html" aria-current="page">Agent 路由</a>
         <a class="nav-repo" href="https://github.com/zjgulai/deep-thinking-mode" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
   <main id="main-content"><nav class="breadcrumbs" aria-label="面包屑"><a href="index.html">首页</a><span aria-hidden="true">/</span><span aria-current="page">Agent 路由</span></nav>
-    <section class="router-hero section-shell"><div><p class="kicker">LOCAL REASONING ROUTER</p><h1>先描述问题，<em>再选择模型。</em></h1><p>所有匹配都在浏览器本地完成。它是关键词导航，不是 AI 判断，也不会上传或保存你的输入。</p></div><form class="problem-form" data-router-form><label for="problem-input">你现在真正想解决什么？</label><textarea id="problem-input" rows="5" placeholder="例如：项目连续延期，我想判断根因并制定下一步计划……" data-router-input></textarea><div><button class="button button-primary" type="submit">匹配推理路径</button><button class="button button-ghost" type="reset">清空</button></div><p class="form-note" role="status" aria-live="polite" data-router-status>输入至少 2 个字，系统会返回一个核心路径和最多两个辅助路径。</p></form></section>
-    <section class="section-shell route-results" aria-label="匹配结果"><div data-route-results><article class="route-result" id="route-diagnosis" data-route-card data-keywords="原因 为什么 根因 问题出在哪 怎么回事 失败了 效果差 瓶颈" hidden>
-      <div class="route-result-number">01</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>诊断根因</h2><p>识别信号：原因 · 为什么 · 根因 · 问题出在哪 · 怎么回事</p><div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">意图澄清</span><span class="chip chip-agent">问题重构</span><span class="chip chip-agent">因果推理</span><span class="chip chip-agent">第一性原理</span><span class="chip chip-agent">系统思维</span><span class="chip chip-agent">多视角</span><span class="chip chip-agent">假设检验</span><span class="chip chip-agent">观察反思</span></div><div class="route-models"><a href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出…</span></a><a href="models/5-whys-62ad6d6b91a6.html"><strong>5 · Whys分析法 · 从表象到本质</strong><span>核心是：通过反复追问（通常5次左右），跳出表象定位根本原因，进而制定有效解决方案</span></a><a href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a></div></div>
-    </article><article class="route-result" id="route-planning" data-route-card data-keywords="怎么做 计划 步骤 如何实现 目标 路径 方案 规划" hidden>
-      <div class="route-result-number">02</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>制定计划</h2><p>识别信号：怎么做 · 计划 · 步骤 · 如何实现 · 目标</p><div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">问题重构</span><span class="chip chip-agent">意图澄清</span><span class="chip chip-agent">计划制定</span><span class="chip chip-agent">任务分解</span><span class="chip chip-agent">优先排序</span><span class="chip chip-agent">行动执行</span><span class="chip chip-agent">观察反思</span></div><div class="route-models"><a href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出…</span></a><a href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a href="models/model-b4367bc974dc.html"><strong>结构化思维 · 从混乱到清晰 · 解锁高效思</strong><span>为“树干”，分支为子问题或影响因素，分为问题树、原因树、决策树三类，能将大问题拆分为小任务，精准定位关键突破口</span></a><a href="models/model-28e57483ca6e.html"><strong>框架思维 · 核心功能解析与高效落地路径</strong><span>核心是提供“结构化支撑”，其五大功能可精准破解日常认知与行动中的各类痛点： 1.1 定位功能：锚定认知坐标，告别迷茫 -----------…</span></a></div></div>
-    </article><article class="route-result" id="route-decision" data-route-card data-keywords="选哪个 该不该 要不要 选择 取舍 判断 评估 决定" hidden>
-      <div class="route-result-number">03</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>辅助决策</h2><p>识别信号：选哪个 · 该不该 · 要不要 · 选择 · 取舍</p><div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">意图澄清</span><span class="chip chip-agent">逻辑分析</span><span class="chip chip-agent">第一性原理</span><span class="chip chip-agent">决策判断</span><span class="chip chip-agent">偏差识别</span><span class="chip chip-agent">多视角</span><span class="chip chip-agent">观察反思</span></div><div class="route-models"><a href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a href="models/3-5-719dd00f13b7.html"><strong>批判性思维工具包 · 3步拆解论点 · 5类</strong><span>求真校验，不是抬杠挑剔。无差别质疑一切，会陷入“分析瘫痪”、丧失行动力；习惯性纠错，会消耗人际关系</span></a><a href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a><a href="models/10-6e583665e265.html"><strong>10个时间黑洞 · 多巴胺陷阱 · 决策瘫痪</strong><span>10个时间黑洞：多巴胺陷阱+决策瘫痪，用认知科学逐个击破 刷短视频、反复刷新消息利用了“可变比率强化”（像老虎机一样随机奖励，让你停不下来）…</span></a></div></div>
-    </article><article class="route-result" id="route-creative" data-route-card data-keywords="创新 突破 新方法 另一种思路 头脑风暴 可能性 想法" hidden>
-      <div class="route-result-number">04</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>探索创新</h2><p>识别信号：创新 · 突破 · 新方法 · 另一种思路 · 头脑风暴</p><div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">问题重构</span><span class="chip chip-agent">多视角</span><span class="chip chip-agent">模式识别</span><span class="chip chip-agent">第一性原理</span><span class="chip chip-agent">系统思维</span><span class="chip chip-agent">知识整合</span><span class="chip chip-agent">表达输出</span></div><div class="route-models"><a href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出…</span></a><a href="models/model-a3e96a2c5aa5.html"><strong>逆向思维 · 打破定式 · 高效破局的创新思</strong><span>（一）定义：跳出常规的反向探索</span></a><a href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a><a href="models/model-9fdceb949000.html"><strong>系统思维 · 看清关联 · 高效破局的底层认</strong><span>任何事物都是相互关联的系统，系统行为由元素连接结构决定</span></a></div></div>
-    </article><article class="route-result" id="route-research" data-route-card data-keywords="了解 研究 调研 趋势 洞察 深入分析 综合" hidden>
-      <div class="route-result-number">05</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>深度研究</h2><p>识别信号：了解 · 研究 · 调研 · 趋势 · 洞察</p><div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">意图澄清</span><span class="chip chip-agent">问题重构</span><span class="chip chip-agent">因果推理</span><span class="chip chip-agent">假设检验</span><span class="chip chip-agent">逻辑分析</span><span class="chip chip-agent">知识整合</span></div><div class="route-models"><a href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出…</span></a><a href="models/5-whys-62ad6d6b91a6.html"><strong>5 · Whys分析法 · 从表象到本质</strong><span>核心是：通过反复追问（通常5次左右），跳出表象定位根本原因，进而制定有效解决方案</span></a><a href="models/model-abd2acb5db91.html"><strong>第二层思维 · 超越共识 · 决胜决策的底层</strong><span>寻找现实与共识的差距，分三步：识别大众共识，理性评估现实演变方向，判断偏离程度——现实显著好于共识为机会，显著差于共识为风险</span></a></div></div>
-    </article><article class="route-result" id="route-reflection" data-route-card data-keywords="复盘 反思 总结 学到了什么 改进 下次 经验" hidden>
-      <div class="route-result-number">06</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>复盘反思</h2><p>识别信号：复盘 · 反思 · 总结 · 学到了什么 · 改进</p><div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">观察反思</span><span class="chip chip-agent">知识整合</span><span class="chip chip-agent">表达输出</span></div><div class="route-models"><a href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事…</span></a><a href="models/model-46e211fb6b50.html"><strong>知识复利</strong><span>用框架思维为知识“建连接”，关联新旧知识、构建有序体系，推动学习从量变到质变</span></a><a href="models/model-6ef9fec8fb81.html"><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong><span>、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升</span></a></div></div>
-    </article><article class="route-result" id="route-communication" data-route-card data-keywords="如何表达 说服 汇报 解释清楚 沟通 反馈" hidden>
-      <div class="route-result-number">07</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>组织表达</h2><p>识别信号：如何表达 · 说服 · 汇报 · 解释清楚 · 沟通</p><div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">表达输出</span><span class="chip chip-agent">复杂简化</span></div><div class="route-models"><a href="models/model-6ef9fec8fb81.html"><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong><span>、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升</span></a></div></div>
-    </article><article class="route-result" id="route-clarification" data-route-card data-keywords="搞清楚 确认 理解 澄清 是什么意思 边界是什么" hidden>
-      <div class="route-result-number">08</div><div><p class="eyebrow">RECOMMENDED PATH</p><h2>澄清问题</h2><p>识别信号：搞清楚 · 确认 · 理解 · 澄清 · 是什么意思</p><div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">意图澄清</span><span class="chip chip-agent">问题重构</span></div><div class="route-models"><a href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出…</span></a></div></div>
-    </article></div><div class="route-placeholder" data-route-placeholder><span>ROUTE</span><p>匹配结果会在这里出现</p></div></section>
-    <section class="agent-system"><div class="section-shell"><div class="section-intro inverse"><p class="kicker">ROLE SYSTEM</p><h2>八段式 Agent 推理系统</h2><p>模型只是能力单元；角色与阶段决定它何时被调用、怎样交接和如何验证。</p></div><div class="flow-details"><article id="flow-01"><span>01</span><div><h3>意图澄清</h3><p>先校准目标、事实与假设，再开始推理。</p><div class="chip-row"><span class="chip chip-agent">意图澄清 · 2</span><span class="chip chip-agent">问题重构 · 2</span></div></div></article><article id="flow-02"><span>02</span><div><h3>结构推演</h3><p>把复杂问题拆为可验证的因果与结构。</p><div class="chip-row"><span class="chip chip-agent">第一性原理 · 3</span><span class="chip chip-agent">因果推理 · 4</span><span class="chip chip-agent">逻辑分析 · 22</span></div></div></article><article id="flow-03"><span>03</span><div><h3>多路探索</h3><p>展开替代路径，比较证据并主动剪枝。</p><div class="chip-row"><span class="chip chip-agent">多视角 · 4</span><span class="chip chip-agent">假设检验 · 3</span></div></div></article><article id="flow-04"><span>04</span><div><h3>决策取舍</h3><p>显式处理风险、偏差、代价与可逆性。</p><div class="chip-row"><span class="chip chip-agent">决策判断 · 3</span><span class="chip chip-agent">偏差识别 · 3</span></div></div></article><article id="flow-05"><span>05</span><div><h3>计划执行</h3><p>从目标分解到优先级与行动闭环。</p><div class="chip-row"><span class="chip chip-agent">计划制定 · 2</span><span class="chip chip-agent">任务分解 · 2</span><span class="chip chip-agent">优先排序 · 2</span><span class="chip chip-agent">行动执行 · 1</span></div></div></article><article id="flow-06"><span>06</span><div><h3>复盘校正</h3><p>观察反馈、识别误差并更新认知。</p><div class="chip-row"><span class="chip chip-agent">观察反思 · 1</span></div></div></article><article id="flow-07"><span>07</span><div><h3>知识综合</h3><p>连接多源证据，压缩成可复用框架。</p><div class="chip-row"><span class="chip chip-agent">知识整合 · 1</span><span class="chip chip-agent">模式识别 · 1</span></div></div></article><article id="flow-08"><span>08</span><div><h3>清晰表达</h3><p>把复杂结论转化为可沟通的结构。</p><div class="chip-row"><span class="chip chip-agent">表达输出 · 1</span><span class="chip chip-agent">复杂简化 · 1</span></div></div></article></div></div></section></main>
+    <section class="router-hero section-shell"><div><p class="kicker">LOCAL RULE ROUTER 2.0</p><h1>把问题说清，<em>再选择路径。</em></h1><p>在本地规则中识别问题类型和 Agent 阶段，返回一条核心路径与最多两条辅助路径。</p></div>
+      <form class="problem-form" data-router-form><label for="problem-input">你现在真正想解决什么？</label><textarea id="problem-input" rows="6" placeholder="例如：项目连续延期，我想判断根因并制定下一步计划……" autocomplete="off" data-router-input></textarea><div><button class="button button-primary" type="submit">匹配推理路径</button><button class="button button-ghost" type="reset">清空</button></div><p class="form-note">本地规则导航 · 输入不会上传或保存 · 结果需要结合事实验证</p><p class="router-hint" data-router-hint></p><p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-router-live></p></form>
+    </section>
+    <section class="router-entry section-shell" data-router-examples><div><p class="eyebrow">TRY AN EXAMPLE</p><h2>从一个具体问题开始</h2><p>说明你看到的现象、希望达到的结果，以及已知约束。信息不足时，系统只会追问一个关键问题。</p></div></section>
+    <section class="router-shortcuts section-shell" data-router-shortcuts aria-label="意图快捷项"><div class="section-intro"><p class="kicker">QUICK INTENTS</p><h2>或先选择一个意图</h2><p>首次点击只选中；继续补充后提交，或再次点击已选项匹配。</p></div><div class="router-shortcut-grid"><button class="router-shortcut" type="button" data-shortcut-intent="diagnosis" aria-pressed="false">我想找出原因</button><button class="router-shortcut" type="button" data-shortcut-intent="planning" aria-pressed="false">我想规划下一步</button><button class="router-shortcut" type="button" data-shortcut-intent="decision" aria-pressed="false">我想做出选择</button><button class="router-shortcut" type="button" data-shortcut-intent="creative" aria-pressed="false">我想探索新方向</button><button class="router-shortcut" type="button" data-shortcut-intent="research" aria-pressed="false">我想基于证据研究</button><button class="router-shortcut" type="button" data-shortcut-intent="reflection" aria-pressed="false">我想复盘改进</button><button class="router-shortcut" type="button" data-shortcut-intent="communication" aria-pressed="false">我想表达清楚</button><button class="router-shortcut" type="button" data-shortcut-intent="clarification" aria-pressed="false">我想先澄清问题</button></div></section>
+    <section class="router-match section-shell" data-router-results hidden><h2 class="router-result-title" tabindex="-1" data-router-result-title hidden>本地路由结果</h2><div class="router-route-grid"><article class="route-result" data-route-key="diagnosis::intent" data-route-kind="" hidden>
+      <div class="route-result-number">01</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE diagnosis::intent</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>诊断根因 · 意图澄清</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>诊断根因</dd></div><div><dt>Agent 阶段</dt><dd>意图澄清</dd></div><div><dt>仍缺少</dt><dd>支持“我想找出原因”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：原因 · 为什么 · 根因</p><p>近似示例：产品数据突然变差，我想知道发生了什么</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">意图澄清</span><span class="chip chip-agent">问题重构</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a data-router-model-link="core" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a data-router-model-link="auxiliary" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="diagnosis::cot_step" data-route-kind="" hidden>
+      <div class="route-result-number">02</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE diagnosis::cot_step</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>诊断根因 · 逐步推理</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>诊断根因</dd></div><div><dt>Agent 阶段</dt><dd>逐步推理</dd></div><div><dt>仍缺少</dt><dd>支持“我想找出原因”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：原因 · 为什么 · 根因</p><p>近似示例：产品数据突然变差，我想知道发生了什么</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">因果推理</span><span class="chip chip-agent">第一性原理</span><span class="chip chip-agent">系统思维</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a><a data-router-model-link="core" href="models/model-9fdceb949000.html"><strong>系统思维 · 看清关联 · 高效破局的底层认</strong><span>任何事物都是相互关联的系统，系统行为由元素连接结构决定</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a><a data-router-model-link="auxiliary" href="models/model-9fdceb949000.html"><strong>系统思维 · 看清关联 · 高效破局的底层认</strong><span>任何事物都是相互关联的系统，系统行为由元素连接结构决定</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>CoT + Critic 验证链</h3><p>深度推理链（Chain of Thought）+ 批判者角色自我验证，用于高风险/高精度推理任务</p>
+        <ol><li><strong>问题分解（Decompose）</strong><span>输入：原始复杂问题</span><span>输出：子问题树：{子问题列表, 依赖关系, 求解顺序}</span><span>停止：所有子问题合起来完整覆盖原问题</span></li><li><strong>逐步推理（Chain-of-Thought）</strong><span>输入：子问题 + 已知信息</span><span>输出：推理链：每步格式 = {规则, 应用, 结论, 置信度, 依赖假设}</span><span>停止：所有子问题有推理结论</span></li><li><strong>批判审查（Critic）</strong><span>输入：Phase 2 的完整推理链</span><span>输出：批判报告：{发现的问题列表, 每个问题的严重程度, 修复建议}</span><span>停止：没有严重问题 OR 所有严重问题已标注</span></li><li><strong>修正推理（Revise）</strong><span>输入：Phase 2 推理链 + Phase 3 批判报告</span><span>输出：修正后的推理链（标注哪些步骤被修改）</span><span>停止：所有严重问题已被修复</span></li><li><strong>验证综合（Verify &amp; Synthesize）</strong><span>输入：修正后的推理链</span><span>输出：最终结论：{核心答案, 关键假设, 整体置信度, 适用边界, 无效场景}</span><span>停止：输出完整</span></li></ol>
+        <a class="text-link" href="combinations/cot-critic-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="diagnosis::reflect" data-route-kind="" hidden>
+      <div class="route-result-number">03</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE diagnosis::reflect</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>诊断根因 · 复盘反思</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>诊断根因</dd></div><div><dt>Agent 阶段</dt><dd>复盘反思</dd></div><div><dt>仍缺少</dt><dd>支持“我想找出原因”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：原因 · 为什么 · 根因</p><p>近似示例：产品数据突然变差，我想知道发生了什么</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">观察反思</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>Plan-Execute-Reflect 三段式</h3><p>目标分解 → 执行序列 → 反思复盘，用于复杂项目/任务规划和执行</p>
+        <ol><li><strong>目标设定（Goal Setting）</strong><span>输入：模糊目标描述</span><span>输出：结构化目标：{清晰目标, 成功标准, 关键障碍, 资源约束, 完成时间}</span><span>停止：目标满足SMART：具体/可测量/可达成/相关/有时限</span></li><li><strong>计划制定（Planning）</strong><span>输入：结构化目标 + 可用资源</span><span>输出：执行计划：{任务列表（有序）, 每个任务的输入/输出/验收标准, 关键路径, 风险点}</span><span>停止：计划覆盖所有达成目标所需的任务，无遗漏</span></li><li><strong>执行（Execute）</strong><span>输入：执行计划 + 当前执行状态</span><span>输出：执行日志：{完成任务, 实际结果, 偏差记录, 需要调整的后续任务}</span><span>停止：所有任务完成 OR 遇到阻塞需要重规划</span></li><li><strong>反思复盘（Reflect）</strong><span>输入：执行日志 + 原始目标</span><span>输出：复盘报告：{完成度, 偏差分析, 可复用经验, 根本原因, 改进行动}</span><span>停止：三个层次都有覆盖：行为层/系统层/认知层</span></li></ol>
+        <a class="text-link" href="combinations/plan-execute-reflect-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="diagnosis::tot_branch" data-route-kind="" hidden>
+      <div class="route-result-number">04</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE diagnosis::tot_branch</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>诊断根因 · 多路分支</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>诊断根因</dd></div><div><dt>Agent 阶段</dt><dd>多路分支</dd></div><div><dt>仍缺少</dt><dd>支持“我想找出原因”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：原因 · 为什么 · 根因</p><p>近似示例：产品数据突然变差，我想知道发生了什么</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">多视角</span><span class="chip chip-agent">假设检验</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-a3e96a2c5aa5.html"><strong>逆向思维 · 打破定式 · 高效破局的创新思</strong><span>（一）定义：跳出常规的反向探索</span></a><a data-router-model-link="core" href="models/model-abd2acb5db91.html"><strong>第二层思维 · 超越共识 · 决胜决策的底层</strong><span>寻找现实与共识的差距，分三步：识别大众共识，理性评估现实演变方向，判断偏离程度——现实显著好于共识为机会，显著差于共识为风险</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-a3e96a2c5aa5.html"><strong>逆向思维 · 打破定式 · 高效破局的创新思</strong><span>（一）定义：跳出常规的反向探索</span></a><a data-router-model-link="auxiliary" href="models/model-abd2acb5db91.html"><strong>第二层思维 · 超越共识 · 决胜决策的底层</strong><span>寻找现实与共识的差距，分三步：识别大众共识，理性评估现实演变方向，判断偏离程度——现实显著好于共识为机会，显著差于共识为风险</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>ToT 树状推理链</h3><p>Tree of Thought：从同一节点展开多个推理分支，按评分剪枝，选择最优路径</p>
+        <ol><li><strong>问题解构（Decompose）</strong><span>输入：原始问题</span><span>输出：问题规范：{本质问题, 解法空间维度, 评估标准（可量化）, 约束条件}</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>分支展开（Branch）</strong><span>输入：问题规范</span><span>输出：分支树：每个分支 = {方向名称, 核心假设, 预期结果, 需要验证的条件}</span><span>停止：覆盖了足够多样的方向（不同策略原理）</span></li><li><strong>分支评估（Evaluate）</strong><span>输入：所有分支</span><span>输出：评估矩阵：每个分支有多维评分 + 综合得分 + 优先推进的1-2个分支</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>深度展开（Deepen）</strong><span>输入：排名前2的分支</span><span>输出：每条路径的完整推演：{步骤序列, 关键决策点, 可能的障碍, 最终状态}</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>路径选择（Select）</strong><span>输入：所有深度推演结果</span><span>输出：最终决策：{选择的路径, 选择理由, 触发重选的条件, 风险缓解措施}</span><span>停止：产出可供下一阶段使用的结果</span></li></ol>
+        <a class="text-link" href="combinations/tot-tree-of-thought-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="planning::intent" data-route-kind="" hidden>
+      <div class="route-result-number">05</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE planning::intent</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>规划路径 · 意图澄清</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>规划路径</dd></div><div><dt>Agent 阶段</dt><dd>意图澄清</dd></div><div><dt>仍缺少</dt><dd>支持“我想规划下一步”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：怎么做 · 计划 · 步骤</p><p>近似示例：我需要一份可执行的项目计划</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">问题重构</span><span class="chip chip-agent">意图澄清</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a><a data-router-model-link="core" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a><a data-router-model-link="auxiliary" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="planning::planning" data-route-kind="" hidden>
+      <div class="route-result-number">06</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE planning::planning</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>规划路径 · 计划设计</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>规划路径</dd></div><div><dt>Agent 阶段</dt><dd>计划设计</dd></div><div><dt>仍缺少</dt><dd>支持“我想规划下一步”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：怎么做 · 计划 · 步骤</p><p>近似示例：我需要一份可执行的项目计划</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">计划制定</span><span class="chip chip-agent">任务分解</span><span class="chip chip-agent">优先排序</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-b4367bc974dc.html"><strong>结构化思维 · 从混乱到清晰 · 解锁高效思</strong><span>为“树干”，分支为子问题或影响因素，分为问题树、原因树、决策树三类，能将大问题拆分为小任务，精准定位关键突破口</span></a><a data-router-model-link="core" href="models/model-28e57483ca6e.html"><strong>框架思维 · 核心功能解析与高效落地路径</strong><span>核心是提供“结构化支撑”，其五大功能可精准破解日常认知与行动中的各类痛点： 1.1 定位功能：锚定认知坐标，告别迷茫 -------------------- 困惑…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-b4367bc974dc.html"><strong>结构化思维 · 从混乱到清晰 · 解锁高效思</strong><span>为“树干”，分支为子问题或影响因素，分为问题树、原因树、决策树三类，能将大问题拆分为小任务，精准定位关键突破口</span></a><a data-router-model-link="auxiliary" href="models/model-28e57483ca6e.html"><strong>框架思维 · 核心功能解析与高效落地路径</strong><span>核心是提供“结构化支撑”，其五大功能可精准破解日常认知与行动中的各类痛点： 1.1 定位功能：锚定认知坐标，告别迷茫 -------------------- 困惑…</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>Plan-Execute-Reflect 三段式</h3><p>目标分解 → 执行序列 → 反思复盘，用于复杂项目/任务规划和执行</p>
+        <ol><li><strong>目标设定（Goal Setting）</strong><span>输入：模糊目标描述</span><span>输出：结构化目标：{清晰目标, 成功标准, 关键障碍, 资源约束, 完成时间}</span><span>停止：目标满足SMART：具体/可测量/可达成/相关/有时限</span></li><li><strong>计划制定（Planning）</strong><span>输入：结构化目标 + 可用资源</span><span>输出：执行计划：{任务列表（有序）, 每个任务的输入/输出/验收标准, 关键路径, 风险点}</span><span>停止：计划覆盖所有达成目标所需的任务，无遗漏</span></li><li><strong>执行（Execute）</strong><span>输入：执行计划 + 当前执行状态</span><span>输出：执行日志：{完成任务, 实际结果, 偏差记录, 需要调整的后续任务}</span><span>停止：所有任务完成 OR 遇到阻塞需要重规划</span></li><li><strong>反思复盘（Reflect）</strong><span>输入：执行日志 + 原始目标</span><span>输出：复盘报告：{完成度, 偏差分析, 可复用经验, 根本原因, 改进行动}</span><span>停止：三个层次都有覆盖：行为层/系统层/认知层</span></li></ol>
+        <a class="text-link" href="combinations/plan-execute-reflect-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="planning::execution" data-route-kind="" hidden>
+      <div class="route-result-number">07</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE planning::execution</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>规划路径 · 行动执行</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>规划路径</dd></div><div><dt>Agent 阶段</dt><dd>行动执行</dd></div><div><dt>仍缺少</dt><dd>支持“我想规划下一步”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：怎么做 · 计划 · 步骤</p><p>近似示例：我需要一份可执行的项目计划</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">行动执行</span><span class="chip chip-agent">观察反思</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>ReAct 推理行动链</h3><p>Reason → Act → Observe 循环，用于需要与外部工具/环境交互的复杂任务</p>
+        <ol><li><strong>意图澄清（Intent Clarification）</strong><span>输入：用户的原始任务描述</span><span>输出：结构化任务规范：{目标, 成功标准, 约束, 已知信息}</span><span>停止：任务目标和成功标准已被明确确认</span></li><li><strong>推理（Reason）</strong><span>输入：来自 Phase 1 的结构化任务规范</span><span>输出：行动计划：{行动序列, 每步预期输出, 判断标准}</span><span>停止：行动计划覆盖了所有必要步骤</span></li><li><strong>行动（Act）</strong><span>输入：来自 Phase 2 的行动计划，执行第 N 步</span><span>输出：行动结果：{原始输出, 工具/方法, 执行状态}</span><span>停止：行动已执行，有明确的输出（成功/失败/需要追问）</span></li><li><strong>观察（Observe）</strong><span>输入：来自 Phase 3 的行动结果</span><span>输出：观察报告：{匹配度, 新发现, 计划修正（如需）, 是否继续循环}</span><span>停止：任务完成 OR 达到最大迭代次数 OR 无法继续</span></li><li><strong>综合输出（Synthesize）</strong><span>输入：所有历史 Reason-Act-Observe 记录</span><span>输出：最终结论：{核心答案, 推理过程, 置信度, 局限说明}</span><span>停止：用户目标已被满足</span></li></ol>
+        <a class="text-link" href="combinations/react-agent-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="planning::reflect" data-route-kind="" hidden>
+      <div class="route-result-number">08</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE planning::reflect</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>规划路径 · 复盘反思</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>规划路径</dd></div><div><dt>Agent 阶段</dt><dd>复盘反思</dd></div><div><dt>仍缺少</dt><dd>支持“我想规划下一步”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：怎么做 · 计划 · 步骤</p><p>近似示例：我需要一份可执行的项目计划</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">观察反思</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>Plan-Execute-Reflect 三段式</h3><p>目标分解 → 执行序列 → 反思复盘，用于复杂项目/任务规划和执行</p>
+        <ol><li><strong>目标设定（Goal Setting）</strong><span>输入：模糊目标描述</span><span>输出：结构化目标：{清晰目标, 成功标准, 关键障碍, 资源约束, 完成时间}</span><span>停止：目标满足SMART：具体/可测量/可达成/相关/有时限</span></li><li><strong>计划制定（Planning）</strong><span>输入：结构化目标 + 可用资源</span><span>输出：执行计划：{任务列表（有序）, 每个任务的输入/输出/验收标准, 关键路径, 风险点}</span><span>停止：计划覆盖所有达成目标所需的任务，无遗漏</span></li><li><strong>执行（Execute）</strong><span>输入：执行计划 + 当前执行状态</span><span>输出：执行日志：{完成任务, 实际结果, 偏差记录, 需要调整的后续任务}</span><span>停止：所有任务完成 OR 遇到阻塞需要重规划</span></li><li><strong>反思复盘（Reflect）</strong><span>输入：执行日志 + 原始目标</span><span>输出：复盘报告：{完成度, 偏差分析, 可复用经验, 根本原因, 改进行动}</span><span>停止：三个层次都有覆盖：行为层/系统层/认知层</span></li></ol>
+        <a class="text-link" href="combinations/plan-execute-reflect-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="decision::intent" data-route-kind="" hidden>
+      <div class="route-result-number">09</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE decision::intent</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>决策取舍 · 意图澄清</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>决策取舍</dd></div><div><dt>Agent 阶段</dt><dd>意图澄清</dd></div><div><dt>仍缺少</dt><dd>支持“我想做出选择”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：选哪个 · 该不该 · 要不要</p><p>近似示例：两个方案各有利弊，我该怎么选</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">意图澄清</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="decision::cot_step" data-route-kind="" hidden>
+      <div class="route-result-number">10</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE decision::cot_step</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>决策取舍 · 逐步推理</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>决策取舍</dd></div><div><dt>Agent 阶段</dt><dd>逐步推理</dd></div><div><dt>仍缺少</dt><dd>支持“我想做出选择”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：选哪个 · 该不该 · 要不要</p><p>近似示例：两个方案各有利弊，我该怎么选</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">逻辑分析</span><span class="chip chip-agent">第一性原理</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/3-5-719dd00f13b7.html"><strong>批判性思维工具包 · 3步拆解论点 · 5类</strong><span>求真校验，不是抬杠挑剔。无差别质疑一切，会陷入“分析瘫痪”、丧失行动力；习惯性纠错，会消耗人际关系</span></a><a data-router-model-link="core" href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/3-5-719dd00f13b7.html"><strong>批判性思维工具包 · 3步拆解论点 · 5类</strong><span>求真校验，不是抬杠挑剔。无差别质疑一切，会陷入“分析瘫痪”、丧失行动力；习惯性纠错，会消耗人际关系</span></a><a data-router-model-link="auxiliary" href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>CoT + Critic 验证链</h3><p>深度推理链（Chain of Thought）+ 批判者角色自我验证，用于高风险/高精度推理任务</p>
+        <ol><li><strong>问题分解（Decompose）</strong><span>输入：原始复杂问题</span><span>输出：子问题树：{子问题列表, 依赖关系, 求解顺序}</span><span>停止：所有子问题合起来完整覆盖原问题</span></li><li><strong>逐步推理（Chain-of-Thought）</strong><span>输入：子问题 + 已知信息</span><span>输出：推理链：每步格式 = {规则, 应用, 结论, 置信度, 依赖假设}</span><span>停止：所有子问题有推理结论</span></li><li><strong>批判审查（Critic）</strong><span>输入：Phase 2 的完整推理链</span><span>输出：批判报告：{发现的问题列表, 每个问题的严重程度, 修复建议}</span><span>停止：没有严重问题 OR 所有严重问题已标注</span></li><li><strong>修正推理（Revise）</strong><span>输入：Phase 2 推理链 + Phase 3 批判报告</span><span>输出：修正后的推理链（标注哪些步骤被修改）</span><span>停止：所有严重问题已被修复</span></li><li><strong>验证综合（Verify &amp; Synthesize）</strong><span>输入：修正后的推理链</span><span>输出：最终结论：{核心答案, 关键假设, 整体置信度, 适用边界, 无效场景}</span><span>停止：输出完整</span></li></ol>
+        <a class="text-link" href="combinations/cot-critic-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="decision::reflect" data-route-kind="" hidden>
+      <div class="route-result-number">11</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE decision::reflect</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>决策取舍 · 复盘反思</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>决策取舍</dd></div><div><dt>Agent 阶段</dt><dd>复盘反思</dd></div><div><dt>仍缺少</dt><dd>支持“我想做出选择”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：选哪个 · 该不该 · 要不要</p><p>近似示例：两个方案各有利弊，我该怎么选</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">观察反思</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>Plan-Execute-Reflect 三段式</h3><p>目标分解 → 执行序列 → 反思复盘，用于复杂项目/任务规划和执行</p>
+        <ol><li><strong>目标设定（Goal Setting）</strong><span>输入：模糊目标描述</span><span>输出：结构化目标：{清晰目标, 成功标准, 关键障碍, 资源约束, 完成时间}</span><span>停止：目标满足SMART：具体/可测量/可达成/相关/有时限</span></li><li><strong>计划制定（Planning）</strong><span>输入：结构化目标 + 可用资源</span><span>输出：执行计划：{任务列表（有序）, 每个任务的输入/输出/验收标准, 关键路径, 风险点}</span><span>停止：计划覆盖所有达成目标所需的任务，无遗漏</span></li><li><strong>执行（Execute）</strong><span>输入：执行计划 + 当前执行状态</span><span>输出：执行日志：{完成任务, 实际结果, 偏差记录, 需要调整的后续任务}</span><span>停止：所有任务完成 OR 遇到阻塞需要重规划</span></li><li><strong>反思复盘（Reflect）</strong><span>输入：执行日志 + 原始目标</span><span>输出：复盘报告：{完成度, 偏差分析, 可复用经验, 根本原因, 改进行动}</span><span>停止：三个层次都有覆盖：行为层/系统层/认知层</span></li></ol>
+        <a class="text-link" href="combinations/plan-execute-reflect-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="decision::tot_branch" data-route-kind="" hidden>
+      <div class="route-result-number">12</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE decision::tot_branch</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>决策取舍 · 多路分支</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>决策取舍</dd></div><div><dt>Agent 阶段</dt><dd>多路分支</dd></div><div><dt>仍缺少</dt><dd>支持“我想做出选择”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：选哪个 · 该不该 · 要不要</p><p>近似示例：两个方案各有利弊，我该怎么选</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">决策判断</span><span class="chip chip-agent">偏差识别</span><span class="chip chip-agent">多视角</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/10-6e583665e265.html"><strong>10个时间黑洞 · 多巴胺陷阱 · 决策瘫痪</strong><span>10个时间黑洞：多巴胺陷阱+决策瘫痪，用认知科学逐个击破 刷短视频、反复刷新消息利用了“可变比率强化”（像老虎机一样随机奖励，让你停不下来） 纠结选择源于“损失厌恶…</span></a><a data-router-model-link="core" href="models/7-1c9218ce9382.html"><strong>重大决策七步自检清单 · 避开7个认知陷</strong><span>重大决策七步自检清单：避开7个认知陷阱，不踩坑 这套基于认知心理学设计的「重大决策七步自检清单」，可不是帮你“速战速决”的，而是在你要签字、投资、跳槽，甚至忍不住要…</span></a><a data-router-model-link="core" href="models/model-a3e96a2c5aa5.html"><strong>逆向思维 · 打破定式 · 高效破局的创新思</strong><span>（一）定义：跳出常规的反向探索</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/10-6e583665e265.html"><strong>10个时间黑洞 · 多巴胺陷阱 · 决策瘫痪</strong><span>10个时间黑洞：多巴胺陷阱+决策瘫痪，用认知科学逐个击破 刷短视频、反复刷新消息利用了“可变比率强化”（像老虎机一样随机奖励，让你停不下来） 纠结选择源于“损失厌恶…</span></a><a data-router-model-link="auxiliary" href="models/7-1c9218ce9382.html"><strong>重大决策七步自检清单 · 避开7个认知陷</strong><span>重大决策七步自检清单：避开7个认知陷阱，不踩坑 这套基于认知心理学设计的「重大决策七步自检清单」，可不是帮你“速战速决”的，而是在你要签字、投资、跳槽，甚至忍不住要…</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>ToT 树状推理链</h3><p>Tree of Thought：从同一节点展开多个推理分支，按评分剪枝，选择最优路径</p>
+        <ol><li><strong>问题解构（Decompose）</strong><span>输入：原始问题</span><span>输出：问题规范：{本质问题, 解法空间维度, 评估标准（可量化）, 约束条件}</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>分支展开（Branch）</strong><span>输入：问题规范</span><span>输出：分支树：每个分支 = {方向名称, 核心假设, 预期结果, 需要验证的条件}</span><span>停止：覆盖了足够多样的方向（不同策略原理）</span></li><li><strong>分支评估（Evaluate）</strong><span>输入：所有分支</span><span>输出：评估矩阵：每个分支有多维评分 + 综合得分 + 优先推进的1-2个分支</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>深度展开（Deepen）</strong><span>输入：排名前2的分支</span><span>输出：每条路径的完整推演：{步骤序列, 关键决策点, 可能的障碍, 最终状态}</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>路径选择（Select）</strong><span>输入：所有深度推演结果</span><span>输出：最终决策：{选择的路径, 选择理由, 触发重选的条件, 风险缓解措施}</span><span>停止：产出可供下一阶段使用的结果</span></li></ol>
+        <a class="text-link" href="combinations/tot-tree-of-thought-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="creative::intent" data-route-kind="" hidden>
+      <div class="route-result-number">13</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE creative::intent</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>创意发散 · 意图澄清</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>创意发散</dd></div><div><dt>Agent 阶段</dt><dd>意图澄清</dd></div><div><dt>仍缺少</dt><dd>支持“我想探索新方向”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：创新 · 突破 · 新方法</p><p>近似示例：请给我几种不同的解决方向</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">问题重构</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="creative::cot_step" data-route-kind="" hidden>
+      <div class="route-result-number">14</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE creative::cot_step</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>创意发散 · 逐步推理</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>创意发散</dd></div><div><dt>Agent 阶段</dt><dd>逐步推理</dd></div><div><dt>仍缺少</dt><dd>支持“我想探索新方向”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：创新 · 突破 · 新方法</p><p>近似示例：请给我几种不同的解决方向</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">第一性原理</span><span class="chip chip-agent">系统思维</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a><a data-router-model-link="core" href="models/model-9fdceb949000.html"><strong>系统思维 · 看清关联 · 高效破局的底层认</strong><span>任何事物都是相互关联的系统，系统行为由元素连接结构决定</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-c9d49e306de4.html"><strong>第一性原理 · 看透本质 · 高效破局的底层</strong><span>核心是回归事物本质、从头理性推导的思维逻辑：不依赖经验、不盲从类比，先找到问题中不可动摇的基石事实，再以此为起点，重构解决方案，摆脱路径依赖</span></a><a data-router-model-link="auxiliary" href="models/model-9fdceb949000.html"><strong>系统思维 · 看清关联 · 高效破局的底层认</strong><span>任何事物都是相互关联的系统，系统行为由元素连接结构决定</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>CoT + Critic 验证链</h3><p>深度推理链（Chain of Thought）+ 批判者角色自我验证，用于高风险/高精度推理任务</p>
+        <ol><li><strong>问题分解（Decompose）</strong><span>输入：原始复杂问题</span><span>输出：子问题树：{子问题列表, 依赖关系, 求解顺序}</span><span>停止：所有子问题合起来完整覆盖原问题</span></li><li><strong>逐步推理（Chain-of-Thought）</strong><span>输入：子问题 + 已知信息</span><span>输出：推理链：每步格式 = {规则, 应用, 结论, 置信度, 依赖假设}</span><span>停止：所有子问题有推理结论</span></li><li><strong>批判审查（Critic）</strong><span>输入：Phase 2 的完整推理链</span><span>输出：批判报告：{发现的问题列表, 每个问题的严重程度, 修复建议}</span><span>停止：没有严重问题 OR 所有严重问题已标注</span></li><li><strong>修正推理（Revise）</strong><span>输入：Phase 2 推理链 + Phase 3 批判报告</span><span>输出：修正后的推理链（标注哪些步骤被修改）</span><span>停止：所有严重问题已被修复</span></li><li><strong>验证综合（Verify &amp; Synthesize）</strong><span>输入：修正后的推理链</span><span>输出：最终结论：{核心答案, 关键假设, 整体置信度, 适用边界, 无效场景}</span><span>停止：输出完整</span></li></ol>
+        <a class="text-link" href="combinations/cot-critic-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="creative::tot_branch" data-route-kind="" hidden>
+      <div class="route-result-number">15</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE creative::tot_branch</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>创意发散 · 多路分支</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>创意发散</dd></div><div><dt>Agent 阶段</dt><dd>多路分支</dd></div><div><dt>仍缺少</dt><dd>支持“我想探索新方向”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：创新 · 突破 · 新方法</p><p>近似示例：请给我几种不同的解决方向</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">多视角</span><span class="chip chip-agent">模式识别</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-a3e96a2c5aa5.html"><strong>逆向思维 · 打破定式 · 高效破局的创新思</strong><span>（一）定义：跳出常规的反向探索</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-a3e96a2c5aa5.html"><strong>逆向思维 · 打破定式 · 高效破局的创新思</strong><span>（一）定义：跳出常规的反向探索</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>ToT 树状推理链</h3><p>Tree of Thought：从同一节点展开多个推理分支，按评分剪枝，选择最优路径</p>
+        <ol><li><strong>问题解构（Decompose）</strong><span>输入：原始问题</span><span>输出：问题规范：{本质问题, 解法空间维度, 评估标准（可量化）, 约束条件}</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>分支展开（Branch）</strong><span>输入：问题规范</span><span>输出：分支树：每个分支 = {方向名称, 核心假设, 预期结果, 需要验证的条件}</span><span>停止：覆盖了足够多样的方向（不同策略原理）</span></li><li><strong>分支评估（Evaluate）</strong><span>输入：所有分支</span><span>输出：评估矩阵：每个分支有多维评分 + 综合得分 + 优先推进的1-2个分支</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>深度展开（Deepen）</strong><span>输入：排名前2的分支</span><span>输出：每条路径的完整推演：{步骤序列, 关键决策点, 可能的障碍, 最终状态}</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>路径选择（Select）</strong><span>输入：所有深度推演结果</span><span>输出：最终决策：{选择的路径, 选择理由, 触发重选的条件, 风险缓解措施}</span><span>停止：产出可供下一阶段使用的结果</span></li></ol>
+        <a class="text-link" href="combinations/tot-tree-of-thought-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="creative::synthesis" data-route-kind="" hidden>
+      <div class="route-result-number">16</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE creative::synthesis</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>创意发散 · 结论综合</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>创意发散</dd></div><div><dt>Agent 阶段</dt><dd>结论综合</dd></div><div><dt>仍缺少</dt><dd>支持“我想探索新方向”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：创新 · 突破 · 新方法</p><p>近似示例：请给我几种不同的解决方向</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">知识整合</span><span class="chip chip-agent">表达输出</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-6ef9fec8fb81.html"><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong><span>、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-6ef9fec8fb81.html"><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong><span>、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="research::intent" data-route-kind="" hidden>
+      <div class="route-result-number">17</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE research::intent</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>深度研究 · 意图澄清</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>深度研究</dd></div><div><dt>Agent 阶段</dt><dd>意图澄清</dd></div><div><dt>仍缺少</dt><dd>支持“我想基于证据研究”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：了解 · 研究 · 调研</p><p>近似示例：我需要基于证据研究这个问题</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">意图澄清</span><span class="chip chip-agent">问题重构</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a data-router-model-link="core" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a data-router-model-link="auxiliary" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="research::research" data-route-kind="" hidden>
+      <div class="route-result-number">18</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE research::research</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>深度研究 · 证据研究</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>深度研究</dd></div><div><dt>Agent 阶段</dt><dd>证据研究</dd></div><div><dt>仍缺少</dt><dd>支持“我想基于证据研究”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：了解 · 研究 · 调研</p><p>近似示例：我需要基于证据研究这个问题</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">因果推理</span><span class="chip chip-agent">假设检验</span><span class="chip chip-agent">逻辑分析</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-abd2acb5db91.html"><strong>第二层思维 · 超越共识 · 决胜决策的底层</strong><span>寻找现实与共识的差距，分三步：识别大众共识，理性评估现实演变方向，判断偏离程度——现实显著好于共识为机会，显著差于共识为风险</span></a><a data-router-model-link="core" href="models/3-5-719dd00f13b7.html"><strong>批判性思维工具包 · 3步拆解论点 · 5类</strong><span>求真校验，不是抬杠挑剔。无差别质疑一切，会陷入“分析瘫痪”、丧失行动力；习惯性纠错，会消耗人际关系</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-abd2acb5db91.html"><strong>第二层思维 · 超越共识 · 决胜决策的底层</strong><span>寻找现实与共识的差距，分三步：识别大众共识，理性评估现实演变方向，判断偏离程度——现实显著好于共识为机会，显著差于共识为风险</span></a><a data-router-model-link="auxiliary" href="models/3-5-719dd00f13b7.html"><strong>批判性思维工具包 · 3步拆解论点 · 5类</strong><span>求真校验，不是抬杠挑剔。无差别质疑一切，会陷入“分析瘫痪”、丧失行动力；习惯性纠错，会消耗人际关系</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>深度研究链（Deep Research）</h3><p>假设驱动的系统性研究流程：问题→假设→搜集→分析→综合→结论</p>
+        <ol><li><strong>问题精炼（Question Refinement）</strong><span>输入：原始研究问题</span><span>输出：精炼后的研究问题 + 研究边界 + 排除范围</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>假设生成（Hypothesis Generation）</strong><span>输入：精炼后的研究问题 + 已知信息</span><span>输出：假设清单：每个假设 = {假设内容, 核心前提, 如果成立会看到的证据, 如果不成立会看到的证据}</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>证据搜集（Evidence Collection）</strong><span>输入：假设清单</span><span>输出：证据矩阵：行=假设，列=证据类别，格=支持/反对/中立 + 来源</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>假设检验（Hypothesis Testing）</strong><span>输入：假设清单 + 证据矩阵</span><span>输出：检验结论：{最支持的假设, 排除的假设, 需要更多证据的假设, 修正后的假设（如有）}</span><span>停止：产出可供下一阶段使用的结果</span></li><li><strong>综合与洞察（Synthesis &amp; Insight）</strong><span>输入：所有假设检验结论</span><span>输出：研究报告：{核心发现（3条以内）, 反常识发现, 知识边界, 实践建议, 后续研究方向}</span><span>停止：产出可供下一阶段使用的结果</span></li></ol>
+        <a class="text-link" href="combinations/deep-research-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="research::synthesis" data-route-kind="" hidden>
+      <div class="route-result-number">19</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE research::synthesis</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>深度研究 · 结论综合</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>深度研究</dd></div><div><dt>Agent 阶段</dt><dd>结论综合</dd></div><div><dt>仍缺少</dt><dd>支持“我想基于证据研究”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：了解 · 研究 · 调研</p><p>近似示例：我需要基于证据研究这个问题</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">知识整合</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><p>当前路径没有已策展的单体模型。</p></div><div class="route-models route-models-auxiliary"><p>当前路径没有已策展的单体模型。</p></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="reflection::reflect" data-route-kind="" hidden>
+      <div class="route-result-number">20</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE reflection::reflect</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>复盘反思 · 复盘反思</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>复盘反思</dd></div><div><dt>Agent 阶段</dt><dd>复盘反思</dd></div><div><dt>仍缺少</dt><dd>支持“我想复盘改进”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：复盘 · 反思 · 总结</p><p>近似示例：我想复盘这次执行为什么偏离目标</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">观察反思</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-829614ba45b5.html"><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong><span>事后总结：并非终点，而是认知的“逆向工程” 我们通常将事后总结理解为复盘、记录与归档，但这仅仅是它的表层形态。从认知科学的视角看，高质量的事后总结，本质不是简单回顾…</span></a></div></section>
+        <section class="route-chain" data-router-chain>
+        <p class="route-section-label">推荐组合</p><h3>Plan-Execute-Reflect 三段式</h3><p>目标分解 → 执行序列 → 反思复盘，用于复杂项目/任务规划和执行</p>
+        <ol><li><strong>目标设定（Goal Setting）</strong><span>输入：模糊目标描述</span><span>输出：结构化目标：{清晰目标, 成功标准, 关键障碍, 资源约束, 完成时间}</span><span>停止：目标满足SMART：具体/可测量/可达成/相关/有时限</span></li><li><strong>计划制定（Planning）</strong><span>输入：结构化目标 + 可用资源</span><span>输出：执行计划：{任务列表（有序）, 每个任务的输入/输出/验收标准, 关键路径, 风险点}</span><span>停止：计划覆盖所有达成目标所需的任务，无遗漏</span></li><li><strong>执行（Execute）</strong><span>输入：执行计划 + 当前执行状态</span><span>输出：执行日志：{完成任务, 实际结果, 偏差记录, 需要调整的后续任务}</span><span>停止：所有任务完成 OR 遇到阻塞需要重规划</span></li><li><strong>反思复盘（Reflect）</strong><span>输入：执行日志 + 原始目标</span><span>输出：复盘报告：{完成度, 偏差分析, 可复用经验, 根本原因, 改进行动}</span><span>停止：三个层次都有覆盖：行为层/系统层/认知层</span></li></ol>
+        <a class="text-link" href="combinations/plan-execute-reflect-chain.html">查看完整组合协议 <span aria-hidden="true">→</span></a>
+      </section>
+      </div>
+    </article><article class="route-result" data-route-key="reflection::synthesis" data-route-kind="" hidden>
+      <div class="route-result-number">21</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE reflection::synthesis</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>复盘反思 · 结论综合</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>复盘反思</dd></div><div><dt>Agent 阶段</dt><dd>结论综合</dd></div><div><dt>仍缺少</dt><dd>支持“我想复盘改进”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：复盘 · 反思 · 总结</p><p>近似示例：我想复盘这次执行为什么偏离目标</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">知识整合</span><span class="chip chip-agent">表达输出</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-6ef9fec8fb81.html"><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong><span>、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-6ef9fec8fb81.html"><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong><span>、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="communication::synthesis" data-route-kind="" hidden>
+      <div class="route-result-number">22</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE communication::synthesis</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>沟通表达 · 结论综合</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>沟通表达</dd></div><div><dt>Agent 阶段</dt><dd>结论综合</dd></div><div><dt>仍缺少</dt><dd>支持“我想表达清楚”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：如何表达 · 说服 · 汇报</p><p>近似示例：我需要把复杂内容讲清楚</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">表达输出</span><span class="chip chip-agent">复杂简化</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-6ef9fec8fb81.html"><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong><span>、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-6ef9fec8fb81.html"><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong><span>、价值、原则，到搭建方法、实践避坑，全方位拆解，帮你快速掌握并灵活运用，实现思考与表达的双重提升</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article><article class="route-result" data-route-key="clarification::intent" data-route-kind="" hidden>
+      <div class="route-result-number">23</div>
+      <div class="route-result-body">
+        <header><p class="eyebrow">ROUTE clarification::intent</p><div class="route-kind-row"><span class="route-kind route-kind-core">核心路径</span><span class="route-kind route-kind-auxiliary">辅助路径</span></div><h2>问题澄清 · 意图澄清</h2></header>
+        <div class="route-explanation-grid">
+          <section><p class="route-section-label">问题理解</p><dl><div><dt>问题类型</dt><dd>问题澄清</dd></div><div><dt>Agent 阶段</dt><dd>意图澄清</dd></div><div><dt>仍缺少</dt><dd>支持“我想先澄清问题”的可验证事实、约束与停止条件</dd></div></dl></section>
+          <section><p class="route-section-label">为什么这样匹配</p><p>可解释信号：搞清楚 · 确认 · 理解</p><p>近似示例：我还没有想清楚真正的问题是什么</p></section>
+        </div>
+        <div class="chip-row" aria-label="Agent 角色"><span class="chip chip-agent">意图澄清</span><span class="chip chip-agent">问题重构</span></div>
+        <section class="route-model-section"><p class="route-section-label">策展模型</p><div class="route-models route-models-core"><a data-router-model-link="core" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a data-router-model-link="core" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a></div><div class="route-models route-models-auxiliary"><a data-router-model-link="auxiliary" href="models/model-e7e15abf46c3.html"><strong>苏格拉底式提问实操指南 · 层层追问</strong><span>此类主张默认前提未经验证，核心是拆解前提、寻找反例，打破认知惯性</span></a><a data-router-model-link="auxiliary" href="models/5-7f7abd4b4125.html"><strong>爱因斯坦式提问 · 5步重新定义问题</strong><span>爱因斯坦式提问：5步重新定义问题，告别无效解决 “如果我有1小时拯救世界，我会花55分钟定义问题，花5分钟解决它。” 爱因斯坦的这句话，道出了爱因斯坦式提问的核心—…</span></a></div></section>
+        <p class="route-chain-empty">当前没有已策展的完整组合</p>
+      </div>
+    </article></div><section class="router-copy"><div><p class="route-section-label">NEXT STEP</p><h2>带着结构化问题继续思考</h2><p>提问只在当前页内组合，离开或清空即丢弃。</p></div><textarea class="router-copy-text" readonly rows="14" aria-label="结构化提问" data-router-copy-text></textarea><div><button class="button button-secondary router-copy-button" type="button" data-router-copy>复制结构化提问</button><span role="status" aria-live="polite" data-router-copy-status></span></div></section></section>
+    <section class="router-clarify section-shell" data-router-clarify hidden><p class="kicker">ONE CLARIFYING QUESTION</p><h2 data-router-clarify-question></h2><div class="router-clarify-grid"><button class="router-clarify-option" type="button" data-clarify-option="diagnosis" hidden>我想找出原因</button><button class="router-clarify-option" type="button" data-clarify-option="planning" hidden>我想规划下一步</button><button class="router-clarify-option" type="button" data-clarify-option="decision" hidden>我想做出选择</button><button class="router-clarify-option" type="button" data-clarify-option="creative" hidden>我想探索新方向</button><button class="router-clarify-option" type="button" data-clarify-option="research" hidden>我想基于证据研究</button><button class="router-clarify-option" type="button" data-clarify-option="reflection" hidden>我想复盘改进</button><button class="router-clarify-option" type="button" data-clarify-option="communication" hidden>我想表达清楚</button><button class="router-clarify-option" type="button" data-clarify-option="clarification" hidden>我想先澄清问题</button></div><p>也可以回到输入框补充更多事实与约束。</p></section>
+    <section class="router-safety section-shell" data-router-safety hidden><p class="kicker">SAFETY STOP</p><article class="router-safety-panel" data-safety-signal="high_stakes_financial_instruction" hidden><h2>高风险金融指令</h2><p>涉及高风险资金操作，请先咨询合格专业人士并审慎核实。</p><p>本站只能帮助整理事实与待咨询问题，不代替专业判断或紧急支持。</p></article><article class="router-safety-panel" data-safety-signal="immediate_personal_danger" hidden><h2>紧急人身危险</h2><p>请优先联系当地紧急服务、可信赖的人或合格专业人士。</p><p>本站只能帮助整理事实与待咨询问题，不代替专业判断或紧急支持。</p></article><article class="router-safety-panel" data-safety-signal="legal_advice_with_deadline" hidden><h2>有期限的法律建议</h2><p>涉及临近期限的法律事项，请尽快联系当地合格法律专业人士。</p><p>本站只能帮助整理事实与待咨询问题，不代替专业判断或紧急支持。</p></article><article class="router-safety-panel" data-safety-signal="medical_diagnosis_or_treatment" hidden><h2>医疗诊断或治疗</h2><p>涉及诊断或治疗，请咨询合格医疗专业人士。若情况紧急，请联系当地紧急服务。</p><p>本站只能帮助整理事实与待咨询问题，不代替专业判断或紧急支持。</p></article><div class="router-safety-facts" data-safety-facts hidden><h2>整理事实与问题清单</h2><ul><li>记录已经发生且可核对的事实。</li><li>区分你的判断与仍需确认的假设。</li><li>写下要向当地专业人士或紧急服务询问的问题。</li></ul></div></section>
+    <section class="router-unavailable section-shell" data-router-unavailable hidden><p class="kicker">ROUTER UNAVAILABLE</p><h2>路由数据不可用</h2><p>请刷新页面，或先进入模型库按主题浏览。</p></section>
+    <script type="application/json" data-router-payload>{"schema_version":"2.0-router","problem_types":[{"id":"diagnosis","label":"诊断根因","priority":10,"positive_phrases":[{"text":"原因","weight":8},{"text":"为什么","weight":8},{"text":"根因","weight":8},{"text":"问题出在哪","weight":8},{"text":"出了问题","weight":8},{"text":"怎么回事","weight":8},{"text":"失败了","weight":8},{"text":"效果差","weight":8},{"text":"瓶颈","weight":8}],"negative_phrases":[{"text":"不需要找出原因","weight":8}],"examples":["产品数据突然变差，我想知道发生了什么"],"clarify_label":"我想找出原因"},{"id":"planning","label":"规划路径","priority":20,"positive_phrases":[{"text":"怎么做","weight":8},{"text":"计划","weight":8},{"text":"步骤","weight":8},{"text":"如何实现","weight":8},{"text":"目标","weight":8},{"text":"路径","weight":8},{"text":"方案","weight":8},{"text":"下一步","weight":8},{"text":"规划","weight":8}],"negative_phrases":[{"text":"不需要规划下一步","weight":10}],"examples":["我需要一份可执行的项目计划"],"clarify_label":"我想规划下一步"},{"id":"decision","label":"决策取舍","priority":30,"positive_phrases":[{"text":"选哪个","weight":8},{"text":"该不该","weight":10},{"text":"要不要","weight":8},{"text":"选择","weight":8},{"text":"取舍","weight":8},{"text":"判断","weight":8},{"text":"评估","weight":8},{"text":"利弊","weight":8},{"text":"比较","weight":8},{"text":"决定","weight":8}],"negative_phrases":[{"text":"不需要做出选择","weight":8}],"examples":["两个方案各有利弊，我该怎么选"],"clarify_label":"我想做出选择"},{"id":"creative","label":"创意发散","priority":40,"positive_phrases":[{"text":"创新","weight":8},{"text":"突破","weight":8},{"text":"新方法","weight":8},{"text":"另一种思路","weight":8},{"text":"别的思路","weight":8},{"text":"换一种思路","weight":8},{"text":"头脑风暴","weight":8},{"text":"可能性","weight":8},{"text":"想法","weight":8}],"negative_phrases":[{"text":"不需要探索新方向","weight":8}],"examples":["请给我几种不同的解决方向"],"clarify_label":"我想探索新方向"},{"id":"research","label":"深度研究","priority":50,"positive_phrases":[{"text":"了解","weight":8},{"text":"研究","weight":8},{"text":"调研","weight":8},{"text":"趋势","weight":8},{"text":"洞察","weight":8},{"text":"深入分析","weight":8},{"text":"搜集信息","weight":8},{"text":"资料太多","weight":8},{"text":"综合","weight":8}],"negative_phrases":[{"text":"不需要基于证据研究","weight":10}],"examples":["我需要基于证据研究这个问题"],"clarify_label":"我想基于证据研究"},{"id":"reflection","label":"复盘反思","priority":60,"positive_phrases":[{"text":"复盘","weight":8},{"text":"反思","weight":8},{"text":"总结","weight":8},{"text":"学到了什么","weight":8},{"text":"改进","weight":8},{"text":"下次","weight":8},{"text":"经验","weight":8}],"negative_phrases":[{"text":"不需要复盘改进","weight":10}],"examples":["我想复盘这次执行为什么偏离目标"],"clarify_label":"我想复盘改进"},{"id":"communication","label":"沟通表达","priority":70,"positive_phrases":[{"text":"如何表达","weight":8},{"text":"说服","weight":8},{"text":"汇报","weight":8},{"text":"解释清楚","weight":8},{"text":"沟通","weight":8},{"text":"反馈","weight":8},{"text":"讲不清","weight":8}],"negative_phrases":[{"text":"不需要表达清楚","weight":8}],"examples":["我需要把复杂内容讲清楚"],"clarify_label":"我想表达清楚"},{"id":"clarification","label":"问题澄清","priority":80,"positive_phrases":[{"text":"搞清楚","weight":8},{"text":"确认","weight":10},{"text":"理解","weight":8},{"text":"澄清","weight":8},{"text":"是什么意思","weight":8},{"text":"边界是什么","weight":8},{"text":"不确定","weight":8}],"negative_phrases":[{"text":"不需要先澄清问题","weight":8}],"examples":["我还没有想清楚真正的问题是什么"],"clarify_label":"我想先澄清问题"}],"agent_stages":[{"id":"intent","label":"意图澄清","priority":10,"positive_phrases":[{"text":"在开始推理之前","weight":8},{"text":"先搞清楚问题","weight":8},{"text":"不确定要做什么","weight":8},{"text":"问题定义","weight":8}]},{"id":"cot_step","label":"逐步推理","priority":20,"positive_phrases":[{"text":"正在推理中","weight":8},{"text":"推理到第N步","weight":8},{"text":"需要继续推导","weight":8},{"text":"上一步结论是","weight":8}]},{"id":"planning","label":"计划设计","priority":30,"positive_phrases":[{"text":"制定计划","weight":8},{"text":"下一步计划","weight":8},{"text":"分解任务","weight":8},{"text":"排优先级","weight":8},{"text":"规划执行","weight":8}]},{"id":"execution","label":"行动执行","priority":40,"positive_phrases":[{"text":"开始执行","weight":8},{"text":"行动中","weight":8},{"text":"遇到障碍","weight":8},{"text":"需要工具","weight":8}]},{"id":"reflect","label":"复盘反思","priority":50,"positive_phrases":[{"text":"完成后","weight":8},{"text":"复盘","weight":8},{"text":"评估结果","weight":8},{"text":"回顾","weight":8}]},{"id":"tot_branch","label":"多路分支","priority":60,"positive_phrases":[{"text":"需要比较多个方案","weight":8},{"text":"展开可能性","weight":8},{"text":"评估选项","weight":8}]},{"id":"research","label":"证据研究","priority":70,"positive_phrases":[{"text":"需要深度分析","weight":8},{"text":"搜集信息","weight":8},{"text":"验证假设","weight":8}]},{"id":"synthesis","label":"结论综合","priority":80,"positive_phrases":[{"text":"综合结论","weight":8},{"text":"整合信息","weight":8},{"text":"输出报告","weight":8},{"text":"综合洞察","weight":8},{"text":"整理出结论","weight":8}]}],"safety_signals":[{"id":"high_stakes_financial_instruction","label":"高风险金融指令","message":"涉及高风险资金操作，请先咨询合格专业人士并审慎核实。","phrases":["把全部积蓄马上买入","现在替我下单卖出全部","用借来的钱立刻投资"]},{"id":"immediate_personal_danger","label":"紧急人身危险","message":"请优先联系当地紧急服务、可信赖的人或合格专业人士。","phrases":["正在伤害自己","马上伤害别人","已经伤害了自己"]},{"id":"legal_advice_with_deadline","label":"有期限的法律建议","message":"涉及临近期限的法律事项，请尽快联系当地合格法律专业人士。","phrases":["法律期限明天到期","马上要开庭了怎么办","今天必须提交法律文件"]},{"id":"medical_diagnosis_or_treatment","label":"医疗诊断或治疗","message":"涉及诊断或治疗，请咨询合格医疗专业人士。若情况紧急，请联系当地紧急服务。","phrases":["请诊断我的症状","告诉我该吃什么药","给我具体治疗方案"]}],"route_keys":["diagnosis::intent","diagnosis::cot_step","diagnosis::reflect","diagnosis::tot_branch","planning::intent","planning::planning","planning::execution","planning::reflect","decision::intent","decision::cot_step","decision::reflect","decision::tot_branch","creative::intent","creative::cot_step","creative::tot_branch","creative::synthesis","research::intent","research::research","research::synthesis","reflection::reflect","reflection::synthesis","communication::synthesis","clarification::intent"]}</script></main>
   <footer class="site-footer">
     <div><strong>前车之鉴-思维制胜</strong><span>在对的方向上前行，效率不值一提</span></div>
     <p>本地静态运行 · 无追踪 · 内容仅作认知工具，不替代医疗、法律或财务专业意见</p>
   </footer>
   <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
   <script src="assets/site.js" defer></script>
+  <script type="module" src="assets/router-controller.mjs"></script>
 </body>
 </html>

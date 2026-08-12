@@ -29,7 +29,7 @@
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span></span><span></span><span></span><span class="sr-only">打开导航</span></button>
       <nav class="primary-nav" id="primary-nav" aria-label="主导航" data-primary-nav>
-        <a href="../index.html">首页</a><a href="../models/index.html" aria-current="page">模型库</a><a href="../router.html">Agent 路由</a>
+        <a href="../index.html">首页</a><a href="../models/index.html" aria-current="page">模型库</a><a href="../combinations/index.html">组合工坊</a><a href="../router.html">Agent 路由</a>
         <a class="nav-repo" href="https://github.com/zjgulai/deep-thinking-mode" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
@@ -43,6 +43,7 @@
           <section class="detail-section"><div class="section-heading"><span>03</span><h2>推理协议</h2></div><ol class="protocol-list"><li><span>01</span><div><h3>声明先验：对当前问题，我的初始判断是什么？置信度多少？（0-100%）</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>02</span><div><h3>评估证据质量：新证据有多强？（决定性/支持性/弱相关/可能是噪音）</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>03</span><div><h3>更新方向：这条证据支持还是反对我的先验？</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>04</span><div><h3>更新幅度：根据证据质量，我应该更新多少置信度？</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>05</span><div><h3>记录更新历史：保持「判断演变链」，追踪哪条证据改变了什么</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li></ol></section>
           <section class="detail-section"><div class="section-heading"><span>04</span><h2>场景示例</h2></div><div class="scenario-grid"><article><span>企业管理</span><h3>面对不完整信息需要做决策</h3><p>在企业管理场景中，以「用「先验×证据=后验」的框架管理不确定性：不是非黑即白，而是在每条新证据后更新置信度」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>产品设计</span><h3>新证据出现后不知道如何调整之前的判断</h3><p>在产品设计场景中，以「用「先验×证据=后验」的框架管理不确定性：不是非黑即白，而是在每条新证据后更新置信度」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>分析洞察</span><h3>需要区分「真正改变想法的证据」和「确认偏见的证据」</h3><p>在分析洞察场景中，以「用「先验×证据=后验」的框架管理不确定性：不是非黑即白，而是在每条新证据后更新置信度」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>决策思维</span><h3>面对不完整信息需要做决策</h3><p>在决策思维场景中，以「用「先验×证据=后验」的框架管理不确定性：不是非黑即白，而是在每条新证据后更新置信度」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>任务管理</span><h3>新证据出现后不知道如何调整之前的判断</h3><p>在任务管理场景中，以「用「先验×证据=后验」的框架管理不确定性：不是非黑即白，而是在每条新证据后更新置信度」为分析主线，按模型提示词执行并检查结论。</p></article></div></section>
           <section class="detail-section"><div class="section-heading"><span>05</span><h2>常见误区</h2></div><ul class="plain-list"><li>先验设定本身有偏见会导致更新方向错误</li><li>贝叶斯更新需要清晰的似然函数，实际情况往往模糊</li></ul></section>
+
         </div><aside class="detail-aside"><div class="codex-panel"><div class="codex-panel-head"><div><span>CODEX PLAYBOOK</span><h3>与 Codex 共学应用卡</h3></div><button class="button button-copy" type="button" data-copy-target="prompt-715d2bde1e">复制完整提示词</button></div><p class="activation"><strong>激活方式</strong>请用「贝叶斯更新：不确定性的科学语言」模式分析：</p><pre id="prompt-715d2bde1e" tabindex="0"><code>【认知模式】你现在运行「贝叶斯更新」模式。不用数学公式——而是用「先验信念×新证据强度=更新后信念」的直觉框架，系统管理不确定性。
 
 【推理协议】
@@ -67,5 +68,6 @@
   </footer>
   <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
   <script src="../assets/site.js" defer></script>
+
 </body>
 </html>

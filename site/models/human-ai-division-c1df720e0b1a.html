@@ -29,7 +29,7 @@
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span></span><span></span><span></span><span class="sr-only">打开导航</span></button>
       <nav class="primary-nav" id="primary-nav" aria-label="主导航" data-primary-nav>
-        <a href="../index.html">首页</a><a href="../models/index.html" aria-current="page">模型库</a><a href="../router.html">Agent 路由</a>
+        <a href="../index.html">首页</a><a href="../models/index.html" aria-current="page">模型库</a><a href="../combinations/index.html">组合工坊</a><a href="../router.html">Agent 路由</a>
         <a class="nav-repo" href="https://github.com/zjgulai/deep-thinking-mode" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
@@ -43,6 +43,7 @@
           <section class="detail-section"><div class="section-heading"><span>03</span><h2>推理协议</h2></div><ol class="protocol-list"><li><span>01</span><div><h3>任务分解：将目标任务拆解为具体子任务</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>02</span><div><h3>AI优势评估：每个子任务是否具备「信息密集/模式识别/速度要求」特征？→ 交AI</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>03</span><div><h3>人类不可替代评估：每个子任务是否需要「价值判断/关系维护/隐性知识/道德权衡」？→ 人做</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>04</span><div><h3>协作设计：AI做初稿→人做评估，或人做框架→AI做填充，哪种效果更好？</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>05</span><div><h3>能力维护：哪些任务即使AI能做，人也需要保留能力（以防AI失效或判断失误）？</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li></ol></section>
           <section class="detail-section"><div class="section-heading"><span>04</span><h2>场景示例</h2></div><div class="scenario-grid"><article><span>企业管理</span><h3>不确定某个任务应该让AI做还是自己做</h3><p>在企业管理场景中，以「用「价值密度×不可替代性」矩阵决定哪些任务交AI、哪些必须人做，避免「过度依赖」和「低效保留」两个极端」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>产品设计</span><h3>感觉AI做了一些本应该自己做的判断</h3><p>在产品设计场景中，以「用「价值密度×不可替代性」矩阵决定哪些任务交AI、哪些必须人做，避免「过度依赖」和「低效保留」两个极端」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>分析洞察</span><h3>需要设计一个人机协作的工作流程</h3><p>在分析洞察场景中，以「用「价值密度×不可替代性」矩阵决定哪些任务交AI、哪些必须人做，避免「过度依赖」和「低效保留」两个极端」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>决策思维</span><h3>不确定某个任务应该让AI做还是自己做</h3><p>在决策思维场景中，以「用「价值密度×不可替代性」矩阵决定哪些任务交AI、哪些必须人做，避免「过度依赖」和「低效保留」两个极端」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>任务管理</span><h3>感觉AI做了一些本应该自己做的判断</h3><p>在任务管理场景中，以「用「价值密度×不可替代性」矩阵决定哪些任务交AI、哪些必须人做，避免「过度依赖」和「低效保留」两个极端」为分析主线，按模型提示词执行并检查结论。</p></article></div></section>
           <section class="detail-section"><div class="section-heading"><span>05</span><h2>常见误区</h2></div><ul class="plain-list"><li>过度依赖AI会弱化人的核心判断能力</li><li>过度保留人工会让AI的价值无法释放</li></ul></section>
+
         </div><aside class="detail-aside"><div class="codex-panel"><div class="codex-panel-head"><div><span>CODEX PLAYBOOK</span><h3>与 Codex 共学应用卡</h3></div><button class="button button-copy" type="button" data-copy-target="prompt-c1df720e0b">复制完整提示词</button></div><p class="activation"><strong>激活方式</strong>请用「人机分工边界决策框架」模式分析：</p><pre id="prompt-c1df720e0b" tabindex="0"><code>【认知模式】你现在运行「人机分工边界决策」模式。用系统化的框架决定哪些任务该交给AI、哪些必须人来做，而不是凭习惯或恐惧做决定。
 
 【推理协议】
@@ -69,5 +70,6 @@
   </footer>
   <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
   <script src="../assets/site.js" defer></script>
+
 </body>
 </html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reason → Act → Observe 循环，用于需要与外部工具/环境交互的复杂任务">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self'">
+  <link rel="canonical" href="https://xmind.lute-tlz-dddd.top/combinations/react-agent-chain.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="前车之鉴-思维制胜">
+  <meta property="og:title" content="ReAct 推理行动链｜前车之鉴-思维制胜">
+  <meta property="og:description" content="Reason → Act → Observe 循环，用于需要与外部工具/环境交互的复杂任务">
+  <meta property="og:url" content="https://xmind.lute-tlz-dddd.top/combinations/react-agent-chain.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/chapter-themes.css">
+  <title>ReAct 推理行动链｜前车之鉴-思维制胜</title>
+</head>
+<body class="combination-page combination-detail-page">
+  <a class="skip-link" href="#main-content">跳至正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html" aria-label="前车之鉴-思维制胜首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span><strong>前车之鉴-思维制胜</strong><small>Lessons Forward · Think to Win</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span></span><span></span><span></span><span class="sr-only">打开导航</span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="主导航" data-primary-nav>
+        <a href="../index.html">首页</a><a href="../models/index.html">模型库</a><a href="../combinations/index.html" aria-current="page">组合工坊</a><a href="../router.html">Agent 路由</a>
+        <a class="nav-repo" href="https://github.com/zjgulai/deep-thinking-mode" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content"><nav class="breadcrumbs" aria-label="面包屑"><a href="../index.html">首页</a><span aria-hidden="true">/</span><a href="index.html">组合工坊</a><span aria-hidden="true">/</span><span aria-current="page">ReAct 推理行动链</span></nav>
+    <article class="combination-detail section-shell" data-combination-id="react-agent-chain">
+      <header class="combination-detail-hero"><p class="kicker">VALIDATED CHAIN · react-agent-chain</p><h1>ReAct 推理行动链</h1><p>Reason → Act → Observe 循环，用于需要与外部工具/环境交互的复杂任务</p><p class="combination-url">协议 URL：<span>https://xmind.lute-tlz-dddd.top/combinations/react-agent-chain.html</span></p></header>
+      <section data-combination-section="definition"><div class="section-heading"><span>01</span><h2>组合定义</h2></div><p>Reason → Act → Observe 循环，用于需要与外部工具/环境交互的复杂任务</p></section>
+      <section data-combination-section="applicability"><div class="section-heading"><span>02</span><h2>适用问题</h2></div><h3>问题类型</h3><ul class="plain-list"><li>信息搜集+推理</li><li>验证假设</li><li>迭代求解</li><li>工具调用规划</li></ul><h3>触发信号</h3><ul class="plain-list"><li>任务需要搜集信息然后推理，而非纯粹推理</li><li>答案不确定，需要行动后观察结果再调整</li><li>有多个可选工具/方法，需要动态选择</li></ul></section>
+      <section class="combination-warning" data-combination-section="limits"><div class="section-heading"><span>03</span><h2>不适用与停止条件</h2></div><p>以下边界直接来自已验证阶段的检查点与停止条件；任一阶段无法验证时，不应继续推进。</p><h3>阶段检查点</h3><ul class="plain-list"><li><strong>意图澄清（Intent Clarification）：</strong>苏格拉底式追问：在开始行动前，确认任务的真实意图。追问：1) 最终要得到什么？2) 成功的标准是什么？3) 有哪些已知约束？</li><li><strong>推理（Reason）：</strong>基于已知信息，推导：1) 什么信息/行动是必须的？2) 推断顺序是什么？3) 预期结果是什么？</li><li><strong>行动（Act）：</strong>执行第一个行动。行动前声明：1) 这一步的目标是什么？2) 使用什么工具/方法？3) 预期返回什么格式？</li><li><strong>观察（Observe）：</strong>分析行动结果：1) 结果是否符合预期？2) 发现了什么新信息？3) 需要修正计划吗？4) 是否满足停止条件？</li><li><strong>综合输出（Synthesize）：</strong>将所有观察和行动结果综合为最终答案。格式：结论→依据→局限边界→下一步建议。</li></ul><h3>阶段停止条件</h3><ul class="plain-list warning-list"><li><strong>意图澄清（Intent Clarification）：</strong>任务目标和成功标准已被明确确认</li><li><strong>推理（Reason）：</strong>行动计划覆盖了所有必要步骤</li><li><strong>行动（Act）：</strong>行动已执行，有明确的输出（成功/失败/需要追问）</li><li><strong>观察（Observe）：</strong>任务完成 OR 达到最大迭代次数 OR 无法继续</li><li><strong>综合输出（Synthesize）：</strong>用户目标已被满足</li></ul><p>站点规则：医疗、法律、财务或紧急风险问题须交由当地合格专业人士处理。</p></section>
+      <section data-combination-section="input"><div class="section-heading"><span>04</span><h2>使用前需要提供的输入</h2></div><p>输入合同按阶段顺序汇总全部唯一阶段输入；后续阶段可由前序输出交接补齐。</p><ul class="plain-list"><li><strong>意图澄清（Intent Clarification）：</strong>用户的原始任务描述</li><li><strong>推理（Reason）：</strong>来自 Phase 1 的结构化任务规范</li><li><strong>行动（Act）：</strong>来自 Phase 2 的行动计划，执行第 N 步</li><li><strong>观察（Observe）：</strong>来自 Phase 3 的行动结果</li><li><strong>综合输出（Synthesize）：</strong>所有历史 Reason-Act-Observe 记录</li></ul><p>开始前请区分已知事实、仍待验证的假设和明确约束。</p></section>
+      <section data-combination-section="phases"><div class="section-heading"><span>05</span><h2>有序阶段</h2></div><ol class="combination-phases"><li id="phase-clarify" data-phase-id="clarify" data-phase-order="1" data-phase-role="intent_clarifier"><span class="phase-order phase-decoration" aria-hidden="true">01</span><div class="phase-body"><header><p>PHASE 01</p><h3>意图澄清（Intent Clarification）</h3><span>角色：意图澄清</span></header><div class="phase-models"><a class="phase-model-link" data-chain-model-id="爱因斯坦式提问_5步重新定义问题_告" href="../models/5-7f7abd4b4125.html"><span class="chapter-signature" data-chapter-id="03">Ch.03</span><strong>爱因斯坦式提问 · 5步重新定义问题</strong></a></div><dl><div><dt>输入</dt><dd>用户的原始任务描述</dd></div><div><dt>输出</dt><dd>结构化任务规范：{目标, 成功标准, 约束, 已知信息}</dd></div><div data-phase-checkpoint="clarify"><dt>检查点</dt><dd>苏格拉底式追问：在开始行动前，确认任务的真实意图。追问：1) 最终要得到什么？2) 成功的标准是什么？3) 有哪些已知约束？</dd></div><div><dt>停止条件</dt><dd>任务目标和成功标准已被明确确认</dd></div></dl></div></li><li id="phase-plan" data-phase-id="plan" data-phase-order="2" data-phase-role="first_principles"><span class="phase-order phase-decoration" aria-hidden="true">02</span><div class="phase-body"><header><p>PHASE 02</p><h3>推理（Reason）</h3><span>角色：第一性原理</span></header><div class="phase-models"><a class="phase-model-link" data-chain-model-id="第一性原理_看透本质_高效破局的底层" href="../models/model-c9d49e306de4.html"><span class="chapter-signature" data-chapter-id="04">Ch.04</span><strong>第一性原理 · 看透本质 · 高效破局的底层</strong></a></div><dl><div><dt>输入</dt><dd>来自 Phase 1 的结构化任务规范</dd></div><div><dt>输出</dt><dd>行动计划：{行动序列, 每步预期输出, 判断标准}</dd></div><div data-phase-checkpoint="plan"><dt>检查点</dt><dd>基于已知信息，推导：1) 什么信息/行动是必须的？2) 推断顺序是什么？3) 预期结果是什么？</dd></div><div><dt>停止条件</dt><dd>行动计划覆盖了所有必要步骤</dd></div></dl></div></li><li id="phase-act" data-phase-id="act" data-phase-order="3" data-phase-role="action_executor"><span class="phase-order phase-decoration" aria-hidden="true">03</span><div class="phase-body"><header><p>PHASE 03</p><h3>行动（Act）</h3><span>角色：行动执行</span></header><div class="phase-models"><a class="phase-model-link" data-chain-model-id="事后总结_并非终点_而是认知的_逆向" href="../models/model-829614ba45b5.html"><span class="chapter-signature" data-chapter-id="06">Ch.06</span><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong></a></div><dl><div><dt>输入</dt><dd>来自 Phase 2 的行动计划，执行第 N 步</dd></div><div><dt>输出</dt><dd>行动结果：{原始输出, 工具/方法, 执行状态}</dd></div><div data-phase-checkpoint="act"><dt>检查点</dt><dd>执行第一个行动。行动前声明：1) 这一步的目标是什么？2) 使用什么工具/方法？3) 预期返回什么格式？</dd></div><div><dt>停止条件</dt><dd>行动已执行，有明确的输出（成功/失败/需要追问）</dd></div></dl></div></li><li id="phase-observe" data-phase-id="observe" data-phase-order="4" data-phase-role="observer_reflector"><span class="phase-order phase-decoration" aria-hidden="true">04</span><div class="phase-body"><header><p>PHASE 04</p><h3>观察（Observe）</h3><span>角色：观察反思</span></header><div class="phase-models"><a class="phase-model-link" data-chain-model-id="事后总结_并非终点_而是认知的_逆向" href="../models/model-829614ba45b5.html"><span class="chapter-signature" data-chapter-id="06">Ch.06</span><strong>事后总结 · 并非终点 · 而是认知的 · 逆向</strong></a></div><dl><div><dt>输入</dt><dd>来自 Phase 3 的行动结果</dd></div><div><dt>输出</dt><dd>观察报告：{匹配度, 新发现, 计划修正（如需）, 是否继续循环}</dd></div><div data-phase-checkpoint="observe"><dt>检查点</dt><dd>分析行动结果：1) 结果是否符合预期？2) 发现了什么新信息？3) 需要修正计划吗？4) 是否满足停止条件？</dd></div><div><dt>停止条件</dt><dd>任务完成 OR 达到最大迭代次数 OR 无法继续</dd></div></dl><p class="phase-loop"><span class="phase-decoration" aria-hidden="true">↶</span><a data-loop-from="observe" href="#phase-plan">未通过时回到「推理（Reason）」</a></p></div></li><li id="phase-communicate" data-phase-id="communicate" data-phase-order="5" data-phase-role="communicator"><span class="phase-order phase-decoration" aria-hidden="true">05</span><div class="phase-body"><header><p>PHASE 05</p><h3>综合输出（Synthesize）</h3><span>角色：表达输出</span></header><div class="phase-models"><a class="phase-model-link" data-chain-model-id="金字塔原理_理清逻辑_高效表达的底层" href="../models/model-6ef9fec8fb81.html"><span class="chapter-signature" data-chapter-id="11">Ch.11</span><strong>金字塔原理 · 理清逻辑 · 高效表达的底层</strong></a></div><dl><div><dt>输入</dt><dd>所有历史 Reason-Act-Observe 记录</dd></div><div><dt>输出</dt><dd>最终结论：{核心答案, 推理过程, 置信度, 局限说明}</dd></div><div data-phase-checkpoint="communicate"><dt>检查点</dt><dd>将所有观察和行动结果综合为最终答案。格式：结论→依据→局限边界→下一步建议。</dd></div><div><dt>停止条件</dt><dd>用户目标已被满足</dd></div></dl></div></li></ol></section>
+      <section data-combination-section="loops"><div class="section-heading"><span>06</span><h2>回退与循环</h2></div><ul class="combination-loop-list"><li><a data-loop-from="observe" href="#phase-plan">观察（Observe） → 推理（Reason）</a></li></ul></section>
+      <section data-combination-section="alternatives"><div class="section-heading"><span>07</span><h2>替代模型与替换边界</h2></div><p>当前协议只发布经验证的稳定模型 ID。替换模型必须继续满足本阶段角色、输入、输出、检查点和停止条件，并重新通过交叉引用验证；不得按显示名称猜测替换。</p></section>
+      <section data-combination-section="prompt"><div class="section-heading"><span>08</span><h2>复合 Prompt</h2></div><p>由已验证阶段协议在构建时编排；不是源 JSON 的独立字段。</p><button class="button button-secondary combination-copy" type="button" data-copy-target="combination-prompt-react-agent-chain">复制复合 Prompt</button><pre id="combination-prompt-react-agent-chain" tabindex="0"><code>以下复合 Prompt 由已验证阶段协议在构建时编排。请按「ReAct 推理行动链」执行组合协议。
+定义：Reason → Act → Observe 循环，用于需要与外部工具/环境交互的复杂任务
+Agent 流程：ReAct
+适用问题：信息搜集+推理；验证假设；迭代求解；工具调用规划
+触发信号：任务需要搜集信息然后推理，而非纯粹推理；答案不确定，需要行动后观察结果再调整；有多个可选工具/方法，需要动态选择
+开始前输入：用户的原始任务描述
+
+严格按以下顺序执行；每阶段都要交付输出、核对检查点，并遵守停止条件：
+1. 意图澄清（Intent Clarification） [角色：意图澄清]
+   输入：用户的原始任务描述
+   输出：结构化任务规范：{目标, 成功标准, 约束, 已知信息}
+   检查点：苏格拉底式追问：在开始行动前，确认任务的真实意图。追问：1) 最终要得到什么？2) 成功的标准是什么？3) 有哪些已知约束？
+   停止条件：任务目标和成功标准已被明确确认
+   回环：无
+2. 推理（Reason） [角色：第一性原理]
+   输入：来自 Phase 1 的结构化任务规范
+   输出：行动计划：{行动序列, 每步预期输出, 判断标准}
+   检查点：基于已知信息，推导：1) 什么信息/行动是必须的？2) 推断顺序是什么？3) 预期结果是什么？
+   停止条件：行动计划覆盖了所有必要步骤
+   回环：无
+3. 行动（Act） [角色：行动执行]
+   输入：来自 Phase 2 的行动计划，执行第 N 步
+   输出：行动结果：{原始输出, 工具/方法, 执行状态}
+   检查点：执行第一个行动。行动前声明：1) 这一步的目标是什么？2) 使用什么工具/方法？3) 预期返回什么格式？
+   停止条件：行动已执行，有明确的输出（成功/失败/需要追问）
+   回环：无
+4. 观察（Observe） [角色：观察反思]
+   输入：来自 Phase 3 的行动结果
+   输出：观察报告：{匹配度, 新发现, 计划修正（如需）, 是否继续循环}
+   检查点：分析行动结果：1) 结果是否符合预期？2) 发现了什么新信息？3) 需要修正计划吗？4) 是否满足停止条件？
+   停止条件：任务完成 OR 达到最大迭代次数 OR 无法继续
+   回环：未通过时回到 推理（Reason）
+5. 综合输出（Synthesize） [角色：表达输出]
+   输入：所有历史 Reason-Act-Observe 记录
+   输出：最终结论：{核心答案, 推理过程, 置信度, 局限说明}
+   检查点：将所有观察和行动结果综合为最终答案。格式：结论→依据→局限边界→下一步建议。
+   停止条件：用户目标已被满足
+   回环：无
+
+边界：明确区分事实、假设与推断；无法验证的内容须标记，不得用本协议替代医疗、法律或财务专业判断。</code></pre></section>
+      <section class="combination-evidence" data-combination-section="evidence"><div class="section-heading"><span>09</span><h2>事实、假设与专业升级</h2></div><p>组合协议用于组织推理，不代表事实已经成立。每个阶段都要标记事实、假设与推断；医疗、法律、财务或紧急风险问题应交由当地合格专业人士处理。</p></section>
+    </article></main>
+  <footer class="site-footer">
+    <div><strong>前车之鉴-思维制胜</strong><span>在对的方向上前行，效率不值一提</span></div>
+    <p>本地静态运行 · 无追踪 · 内容仅作认知工具，不替代医疗、法律或财务专业意见</p>
+  </footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
+  <script src="../assets/site.js" defer></script>
+
+</body>
+</html>

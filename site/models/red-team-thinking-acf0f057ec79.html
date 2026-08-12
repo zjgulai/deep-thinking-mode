@@ -29,7 +29,7 @@
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span></span><span></span><span></span><span class="sr-only">打开导航</span></button>
       <nav class="primary-nav" id="primary-nav" aria-label="主导航" data-primary-nav>
-        <a href="../index.html">首页</a><a href="../models/index.html" aria-current="page">模型库</a><a href="../router.html">Agent 路由</a>
+        <a href="../index.html">首页</a><a href="../models/index.html" aria-current="page">模型库</a><a href="../combinations/index.html">组合工坊</a><a href="../router.html">Agent 路由</a>
         <a class="nav-repo" href="https://github.com/zjgulai/deep-thinking-mode" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
@@ -43,6 +43,7 @@
           <section class="detail-section"><div class="section-heading"><span>03</span><h2>推理协议</h2></div><ol class="protocol-list"><li><span>01</span><div><h3>角色切换：完全站在「最想让这个方案失败的那个人」的立场</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>02</span><div><h3>多维攻击：分别从技术/资源/时机/人性/竞争/政策五个维度寻找漏洞</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>03</span><div><h3>最坏情景：构建「如果最坏的假设都成真」的完整失败故事</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>04</span><div><h3>死亡螺旋识别：找到哪个单点失败会引发连锁崩溃</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li><li><span>05</span><div><h3>防御优先级：针对最致命的漏洞，提出最小化的预防措施</h3><p><strong>检查点：</strong>确认本步结论基于明确信息，且没有超出该模型的适用边界</p></div></li></ol></section>
           <section class="detail-section"><div class="section-heading"><span>04</span><h2>场景示例</h2></div><div class="scenario-grid"><article><span>企业管理</span><h3>方案已经制定好，需要在执行前寻找潜在漏洞</h3><p>在企业管理场景中，以「主动扮演对手/批评者，系统性寻找自己方案的漏洞——在失败真正发生之前发现它」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>产品设计</span><h3>所有人都认为方案很好，但这本身就是危险信号</h3><p>在产品设计场景中，以「主动扮演对手/批评者，系统性寻找自己方案的漏洞——在失败真正发生之前发现它」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>分析洞察</span><h3>高风险决策，一旦失败代价极高</h3><p>在分析洞察场景中，以「主动扮演对手/批评者，系统性寻找自己方案的漏洞——在失败真正发生之前发现它」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>决策思维</span><h3>方案已经制定好，需要在执行前寻找潜在漏洞</h3><p>在决策思维场景中，以「主动扮演对手/批评者，系统性寻找自己方案的漏洞——在失败真正发生之前发现它」为分析主线，按模型提示词执行并检查结论。</p></article><article><span>任务管理</span><h3>所有人都认为方案很好，但这本身就是危险信号</h3><p>在任务管理场景中，以「主动扮演对手/批评者，系统性寻找自己方案的漏洞——在失败真正发生之前发现它」为分析主线，按模型提示词执行并检查结论。</p></article></div></section>
           <section class="detail-section"><div class="section-heading"><span>05</span><h2>常见误区</h2></div><ul class="plain-list"><li>红队批评变成消极对抗而非建设性</li><li>红队分析让执行团队失去信心</li></ul></section>
+
         </div><aside class="detail-aside"><div class="codex-panel"><div class="codex-panel-head"><div><span>CODEX PLAYBOOK</span><h3>与 Codex 共学应用卡</h3></div><button class="button button-copy" type="button" data-copy-target="prompt-acf0f057ec">复制完整提示词</button></div><p class="activation"><strong>激活方式</strong>请用「红队思维（Red Team T」模式分析：</p><pre id="prompt-acf0f057ec" tabindex="0"><code>【认知模式】你现在运行「红队思维」模式。你的任务是用对手/批评者的视角，系统性地寻找当前方案最脆弱的部分——不是破坏，而是在真正失败前发现失败。
 
 【推理协议】
@@ -63,5 +64,6 @@
   </footer>
   <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
   <script src="../assets/site.js" defer></script>
+
 </body>
 </html>
