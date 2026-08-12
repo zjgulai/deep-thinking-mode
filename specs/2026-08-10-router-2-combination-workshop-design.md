@@ -457,9 +457,17 @@ build/test-only、精确固定的 `acorn@8.18.0`；它不进入 Docker 静态镜
 公开脚本发布边界分三层：第一层以 Acorn strict AST 拒绝 storage、cookie、eval/Function、网络、
 service worker 与所有 dynamic import，并要求三个 allowlisted artifact 与 `tools/site-assets/`
 trusted source bytes 完全一致；第二层闭合 HTML script src 与静态 `.mjs` import/export-from，
-拒绝额外脚本、inline executable script、外部/bare/逃逸/缺失/错误扩展目标；第三层由 Task 8
+并将 `site.js` 锁定为 classic script、两个 `.mjs` 锁定为 module，拒绝额外脚本、inline
+executable script、data MIME `src`、外部/bare/逃逸/缺失/错误扩展目标。Artifact hash 必须复用
+同一完整 checker 并对其已读 bytes 快照计算，非法树不得获得 digest；第三层由 Task 8
 浏览器 E2E 验证实际 DOM 行为与断网运行。AST 本身不声称证明任意 computed JavaScript 安全，
 source parity 才是阻止任意 taint/alias 变体进入公开产物的承重边界。
+
+主机发布证据采用不可覆盖的 pre/post 快照与单次 `release-contract.json`。合同绑定 release ID、
+64 位 artifact SHA、12 位 image tag 与经 `nginx -t` 验证的 marker block SHA。最终比较必须证明唯一
+`xmind_site/web` 正在运行 candidate image ID 和精确 tag；首次安装还要闭合 Compose network identity/
+labels、专属证书 lineage/SAN 与实际 marker block，升级则要保留旧 image hold tag 且共享入口证据
+不变。
 
 ### 10.2 页面数据
 

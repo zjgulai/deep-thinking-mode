@@ -1,16 +1,29 @@
 import { parse } from "acorn";
 
-export const TRUSTED_PUBLIC_SCRIPTS = Object.freeze({
-  "assets/site.js": new URL("../site-assets/site.js", import.meta.url),
-  "assets/router-controller.mjs": new URL(
-    "../site-assets/router-controller.mjs",
-    import.meta.url,
-  ),
-  "assets/router-engine.mjs": new URL(
-    "../site-assets/router-engine.mjs",
-    import.meta.url,
-  ),
+export const PUBLIC_SCRIPT_POLICY = Object.freeze({
+  "assets/site.js": Object.freeze({
+    sourceType: "script",
+    htmlTypes: Object.freeze([null, "text/javascript"]),
+    sourceUrl: new URL("../site-assets/site.js", import.meta.url),
+  }),
+  "assets/router-controller.mjs": Object.freeze({
+    sourceType: "module",
+    htmlTypes: Object.freeze(["module"]),
+    sourceUrl: new URL("../site-assets/router-controller.mjs", import.meta.url),
+  }),
+  "assets/router-engine.mjs": Object.freeze({
+    sourceType: "module",
+    htmlTypes: Object.freeze(["module"]),
+    sourceUrl: new URL("../site-assets/router-engine.mjs", import.meta.url),
+  }),
 });
+
+export const TRUSTED_PUBLIC_SCRIPTS = Object.freeze(Object.fromEntries(
+  Object.entries(PUBLIC_SCRIPT_POLICY).map(([relativePath, policy]) => [
+    relativePath,
+    policy.sourceUrl,
+  ]),
+));
 
 const STORAGE_NAMES = new Set([
   "indexedDB",
@@ -129,7 +142,8 @@ function capabilityName(node) {
 }
 
 export function auditPublicScript({ source, relativePath }) {
-  const sourceType = relativePath.endsWith(".mjs") ? "module" : "script";
+  const sourceType = PUBLIC_SCRIPT_POLICY[relativePath]?.sourceType ??
+    (relativePath.endsWith(".mjs") ? "module" : "script");
   let ast;
   try {
     ast = parse(source, {

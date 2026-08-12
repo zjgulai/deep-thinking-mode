@@ -594,8 +594,10 @@ rtk git commit -m "feat: 建设五条思维组合协议工坊"
 - Modify: `package.json`
 - Modify: `package-lock.json`
 - Modify: `tools/check-public-artifact.mjs`
+- Modify: `tools/hash-public-artifact.mjs`
 - Add: `tools/lib/public-script-policy.mjs`
 - Modify: `tests/public-artifact.test.mjs`
+- Add: `tests/artifact-hash.test.mjs`
 - Add: `tests/public-script-policy.test.mjs`
 - Add: `tests/deploy-snapshot-contract.test.mjs`
 - Modify: `tests/production-verifier.test.mjs`
@@ -607,6 +609,9 @@ rtk git commit -m "feat: 建设五条思维组合协议工坊"
 固定 allowlist 且与 trusted source 逐 bytes 相同；所有 inline executable script、额外脚本、
 dynamic import、storage/cookie/code generation/network/service-worker capability 失败。静态 module
 只允许本地 `.mjs` import/export-from 并闭合目标、逃逸、外部、bare、symlink 和 extension 边界。
+HTML 执行语义必须与该 policy 同源：`site.js` 仅 classic，`.mjs` 仅 module，data MIME 不得
+携带 `src`。`artifact:hash` 必须先运行完整公开树检查，并对同一份已读 bytes 快照计算；任一
+policy/link/anchor/tree 错误均不得输出 digest。
 
 扩展 production verifier fixture：当组合详情或本地 module 远端 404、Content-Type 错误、发生意外重定向或 bytes 不一致时必须退出 1。
 
@@ -639,12 +644,14 @@ Runbook 的站点树清单、暂存检查、容器烟测、生产逐文件验证
 以版本化 `snapshot-host.sh` 在所有 docker load/tag/up、Certbot、Nginx patch 前生成 pre，验收后用
 同一脚本生成 post；`compare-snapshots.sh` 对 containers/images/networks/volumes/ports、gateway
 完整 inspect/config hash、certificate lineage、server markers 与固定 32 域名严格 TLS 结果做
-first-install/upgrade 分支 allowlist。两个脚本不加入 Docker context。
+first-install/upgrade 分支 allowlist。`release-contract.json` 额外绑定 artifact/tag 与已通过
+`nginx -t` 的 marker block；post 必须证明唯一 web 正在运行 candidate image、升级 hold tag 存在，
+首装 network identity/labels、证书 SAN/lineage 与 marker hash 全部一致。两个脚本不加入 Docker context。
 
 - [ ] **Step 5：运行 GREEN**
 
 ```bash
-rtk node --test tests/public-script-policy.test.mjs tests/public-artifact.test.mjs tests/production-verifier.test.mjs tests/deploy-snapshot-contract.test.mjs
+rtk node --test tests/public-script-policy.test.mjs tests/public-artifact.test.mjs tests/artifact-hash.test.mjs tests/production-verifier.test.mjs tests/deploy-snapshot-contract.test.mjs
 rtk docker compose --project-directory deploy/tencent-cloud/xmind-site config --quiet
 rtk git diff --check
 ```

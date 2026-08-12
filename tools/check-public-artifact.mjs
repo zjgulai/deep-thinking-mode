@@ -3,9 +3,9 @@
 import { lstat, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
-import { fileURLToPath } from "node:url";
 
 import {
+  PUBLIC_SCRIPT_POLICY,
   TRUSTED_PUBLIC_SCRIPTS,
   auditPublicScript,
 } from "./lib/public-script-policy.mjs";
@@ -295,6 +295,24 @@ function validateScriptImport({ specifier, currentFile, fileSet, idsByFile, erro
   }
 }
 
+function validateExternalScriptType({ attributes, currentFile, targetFile, errors }) {
+  const policy = PUBLIC_SCRIPT_POLICY[targetFile];
+  if (!policy) return;
+  const htmlType = attributes.has("type")
+    ? attributes.get("type").trim().toLowerCase()
+    : null;
+  if (!policy.htmlTypes.includes(htmlType)) {
+    const actual = htmlType === null ? "<missing>" : JSON.stringify(htmlType);
+    const expected = policy.htmlTypes
+      .map((value) => value === null ? "an omitted type" : JSON.stringify(value))
+      .join(" or ");
+    errors.push(error(
+      "SCRIPT_TYPE_MISMATCH",
+      `${currentFile} references ${targetFile} with type ${actual}; expected ${expected}`,
+    ));
+  }
+}
+
 function inspectMarkup({ markup, currentFile, fileSet, idsByFile, errors }) {
   if (fileExtension(currentFile) === ".html") {
     if (!/^\s*<!doctype\s+html\b/i.test(markup)) {
@@ -330,6 +348,9 @@ function inspectMarkup({ markup, currentFile, fileSet, idsByFile, errors }) {
       });
       if (name === "script" && attribute === "src" && targetFile && !TRUSTED_SCRIPT_PATHS.has(targetFile)) {
         errors.push(error("UNTRUSTED_SCRIPT", `${currentFile} references ${targetFile}`));
+      }
+      if (name === "script" && attribute === "src" && targetFile) {
+        validateExternalScriptType({ attributes, currentFile, targetFile, errors });
       }
     }
 
@@ -391,7 +412,7 @@ export async function collectSiteFiles(siteDir = DEFAULT_SITE_DIR) {
   return inventory.files;
 }
 
-export async function checkSite(options = {}) {
+export async function inspectSiteArtifact(options = {}) {
   const siteDir = typeof options === "string" ? options : (options.siteDir ?? DEFAULT_SITE_DIR);
   const inventory = await walkSite(siteDir);
   const errors = [...inventory.errors];
@@ -410,11 +431,12 @@ export async function checkSite(options = {}) {
   const bytesByFile = new Map();
   const textByFile = new Map();
   for (const relativePath of files) {
-    if (!TEXT_FILE_EXTENSIONS.has(fileExtension(relativePath))) continue;
     try {
       const bytes = await readFile(path.join(siteDir, relativePath));
       bytesByFile.set(relativePath, bytes);
-      textByFile.set(relativePath, new TextDecoder("utf-8", { fatal: true }).decode(bytes));
+      if (TEXT_FILE_EXTENSIONS.has(fileExtension(relativePath))) {
+        textByFile.set(relativePath, new TextDecoder("utf-8", { fatal: true }).decode(bytes));
+      }
     } catch (readError) {
       const code = readError instanceof TypeError ? "INVALID_TEXT_ENCODING" : "FILE_READ_FAILED";
       errors.push(error(code, `${relativePath}: ${readError.message}`));
@@ -452,7 +474,16 @@ export async function checkSite(options = {}) {
     }
   }
 
-  return [...new Set(errors)].sort((left, right) => left.localeCompare(right, "en"));
+  return {
+    errors: [...new Set(errors)].sort((left, right) => left.localeCompare(right, "en")),
+    files: files
+      .filter((relativePath) => bytesByFile.has(relativePath))
+      .map((relativePath) => ({ relativePath, bytes: bytesByFile.get(relativePath) })),
+  };
+}
+
+export async function checkSite(options = {}) {
+  return (await inspectSiteArtifact(options)).errors;
 }
 
 function parseCliArgs(argv) {
@@ -479,9 +510,7 @@ async function main() {
   console.log("✓ public-artifact check passed");
 }
 
-const isMain = process.argv[1] &&
-  path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url));
-if (isMain) {
+if (import.meta.main) {
   main().catch((mainError) => {
     console.error(mainError.stack ?? mainError.message);
     process.exitCode = 1;

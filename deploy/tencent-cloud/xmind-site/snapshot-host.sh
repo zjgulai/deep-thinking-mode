@@ -86,7 +86,7 @@ sha256sum "$gateway_config" | awk '{print $1}' > "$output/gateway-nginx-host.sha
 docker exec "$gateway_name" sha256sum /etc/nginx/nginx.conf | awk '{print $1}' > "$output/gateway-nginx-container.sha256"
 
 cert_output="$output/cert-lineages.tsv"
-: > "$cert_output"
+printf 'lineage\trenewal_conf\trenewal_sha256\tlive_dir\tcert_target\tfullchain_target\tcert_sha256\tfullchain_sha256\tfingerprint_sha256\tserial\tissuer\tnot_before\tnot_after\tdns_names\n' > "$cert_output"
 shopt -s nullglob
 for renewal in /etc/letsencrypt/renewal/*.conf; do
   lineage=$(basename "$renewal" .conf)
@@ -96,10 +96,33 @@ for renewal in /etc/letsencrypt/renewal/*.conf; do
   fullchain_target=$(readlink -f "$live/fullchain.pem")
   cert_sha=$(sha256sum "$cert_target" | awk '{print $1}')
   fullchain_sha=$(sha256sum "$fullchain_target" | awk '{print $1}')
-  cert_fields=$(openssl x509 -in "$cert_target" -noout -fingerprint -sha256 -serial -issuer -dates -ext subjectAltName | tr '\n\t' '  ')
-  printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$lineage" "$renewal_sha" "$cert_target" "$fullchain_target" "$cert_sha" "$fullchain_sha" "$cert_fields" >> "$cert_output"
+  fingerprint=$(openssl x509 -in "$cert_target" -noout -fingerprint -sha256 | sed 's/^[^=]*=//')
+  serial=$(openssl x509 -in "$cert_target" -noout -serial | sed 's/^[^=]*=//')
+  issuer=$(openssl x509 -in "$cert_target" -noout -issuer | sed 's/^[^=]*=//')
+  not_before=$(openssl x509 -in "$cert_target" -noout -startdate | sed 's/^[^=]*=//')
+  not_after=$(openssl x509 -in "$cert_target" -noout -enddate | sed 's/^[^=]*=//')
+  dns_names=$(
+    openssl x509 -in "$cert_target" -noout -ext subjectAltName \
+      | grep -o 'DNS:[^,[:space:]]*' \
+      | sed 's/^DNS://' \
+      | LC_ALL=C sort -u \
+      | paste -sd, -
+  )
+  for field in "$lineage" "$renewal" "$renewal_sha" "$live" "$cert_target" \
+    "$fullchain_target" "$cert_sha" "$fullchain_sha" "$fingerprint" "$serial" \
+    "$issuer" "$not_before" "$not_after" "$dns_names"; do
+    [[ $field != *$'\t'* && $field != *$'\n'* && -n $field ]]
+  done
+  printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \
+    "$lineage" "$renewal" "$renewal_sha" "$live" "$cert_target" \
+    "$fullchain_target" "$cert_sha" "$fullchain_sha" "$fingerprint" "$serial" \
+    "$issuer" "$not_before" "$not_after" "$dns_names" >> "$cert_output"
 done
-LC_ALL=C sort -o "$cert_output" "$cert_output"
+{
+  head -n 1 "$cert_output"
+  tail -n +2 "$cert_output" | LC_ALL=C sort
+} > "$cert_output.sorted"
+mv "$cert_output.sorted" "$cert_output"
 
 begin_count=$(grep -Fc '# BEGIN xmind.lute-tlz-dddd.top' "$gateway_config" || true)
 end_count=$(grep -Fc '# END xmind.lute-tlz-dddd.top' "$gateway_config" || true)

@@ -180,6 +180,8 @@ snapshot-files.sha256
 
 资源清单使用 `docker inspect` 与 `jq -S` 稳定排序；证书快照只读取 renewal 配置、公钥证书、symlink 目标、fingerprint、serial、SAN、issuer 和有效期，绝不读取私钥。域名清单必须保持固定 SHA、固定顺序、恰好 32 个非空唯一域名；每个域名记录严格 TLS 的 curl exit code、HTTP code、remote IP 和 `ssl_verify_result`，任一 TLS 失败都使快照失败。
 
+`pre` 快照完成后，还必须在候选入口配置通过 `nginx -t` 后封存 `release-contract.json` 及 `release-contract.sha256`。该合同精确绑定 release ID、完整 artifact SHA、12 位 image tag 与已验证的 xmind server marker block SHA；最终比较器不接受手输或临时推断的替代值。
+
 在任何 snapshot 写入前，先只创建本项目专属目录并把子目录交给 `ubuntu`；这一 bootstrap 对首次安装和升级都幂等，不修改其他项目：
 
 ```bash
@@ -444,15 +446,36 @@ REMOTE
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
 set -Eeuo pipefail
 release_id='<release-id>'
+artifact_sha='<64-char-artifact-sha>'
 pre="/opt/xmind-site/audit/$release_id/pre"
+current=/opt/xmind-site/current
 test "$(cat "$pre/release-id.txt")" = "$release_id"
 test "$(cat "$pre/deploy-mode.txt")" = first_install
 test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+[[ "$artifact_sha" =~ ^[0-9a-f]{64}$ ]]
 docker run --rm --name xmind_nginx_config_test \
   --pull=never \
   --network lighthouse_ai_video_net --volumes-from ai_video_nginx:ro \
   -v /opt/xmind-site/current/nginx.conf.candidate:/etc/nginx/nginx.conf:ro \
   "$(docker inspect ai_video_nginx --format '{{.Image}}')" nginx -t
+
+candidate="$current/nginx.conf.candidate"
+test "$(grep -Fc '# BEGIN xmind.lute-tlz-dddd.top' "$candidate")" -eq 1
+test "$(grep -Fc '# END xmind.lute-tlz-dddd.top' "$candidate")" -eq 1
+test "$(grep -Ec '^[[:space:]]*server_name[[:space:]]+xmind[.]lute-tlz-dddd[.]top;' "$candidate")" -eq 2
+test "$(grep -Fc 'proxy_pass http://172.20.0.1:18888;' "$candidate")" -eq 1
+server_block_sha="$({ sed -n '/# BEGIN xmind[.]lute-tlz-dddd[.]top/,/# END xmind[.]lute-tlz-dddd[.]top/p' "$candidate"; } | sha256sum | cut -d ' ' -f 1)"
+[[ "$server_block_sha" =~ ^[0-9a-f]{64}$ ]]
+test ! -e "$pre/release-contract.json"
+test ! -e "$pre/release-contract.sha256"
+jq -nS \
+  --arg release_id "$release_id" \
+  --arg artifact_sha256 "$artifact_sha" \
+  --arg image_tag "xmind-site:${artifact_sha:0:12}" \
+  --arg server_block_sha256 "$server_block_sha" \
+  '{artifact_sha256: $artifact_sha256, image_tag: $image_tag, release_id: $release_id, schema_version: 1, server_block_sha256: $server_block_sha256}' \
+  > "$pre/release-contract.json"
+(cd "$pre" && sha256sum release-contract.json > release-contract.sha256)
 REMOTE
 ```
 
@@ -503,11 +526,13 @@ REMOTE
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
 set -Eeuo pipefail
 release_id='<release-id>'
+artifact_sha='<64-char-artifact-sha>'
 pre="/opt/xmind-site/audit/$release_id/pre"
 config=/opt/ai-video/deploy/lighthouse/nginx.conf
 test "$(cat "$pre/release-id.txt")" = "$release_id"
 test "$(cat "$pre/deploy-mode.txt")" = upgrade
 test ! -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+[[ "$artifact_sha" =~ ^[0-9a-f]{64}$ ]]
 (cd "$pre" && sha256sum -c snapshot-metadata.sha256)
 test "$(sudo grep -Fc '# BEGIN xmind.lute-tlz-dddd.top' "$config")" -eq 1
 test "$(sudo grep -Fc '# END xmind.lute-tlz-dddd.top' "$config")" -eq 1
@@ -520,6 +545,19 @@ test "$(sudo sha256sum "$config" | cut -d ' ' -f 1)" = "$(cat "$pre/gateway-ngin
 test "$(docker exec ai_video_nginx sha256sum /etc/nginx/nginx.conf | cut -d ' ' -f 1)" = "$(cat "$pre/gateway-nginx-container.sha256")"
 curl -fsS http://172.20.0.1:18888/healthz
 docker exec ai_video_nginx wget -q -O - http://172.20.0.1:18888/healthz
+server_block_sha="$({ sudo sed -n '/# BEGIN xmind[.]lute-tlz-dddd[.]top/,/# END xmind[.]lute-tlz-dddd[.]top/p' "$config"; } | sha256sum | cut -d ' ' -f 1)"
+test "$server_block_sha" = "$(awk -F '\t' '$1 == "block_sha256" { print $2 }' "$pre/server-markers.tsv")"
+[[ "$server_block_sha" =~ ^[0-9a-f]{64}$ ]]
+test ! -e "$pre/release-contract.json"
+test ! -e "$pre/release-contract.sha256"
+jq -nS \
+  --arg release_id "$release_id" \
+  --arg artifact_sha256 "$artifact_sha" \
+  --arg image_tag "xmind-site:${artifact_sha:0:12}" \
+  --arg server_block_sha256 "$server_block_sha" \
+  '{artifact_sha256: $artifact_sha256, image_tag: $image_tag, release_id: $release_id, schema_version: 1, server_block_sha256: $server_block_sha256}' \
+  > "$pre/release-contract.json"
+(cd "$pre" && sha256sum release-contract.json > release-contract.sha256)
 REMOTE
 ```
 

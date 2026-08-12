@@ -289,7 +289,10 @@ Graphify 输出。相同输入必须使 `site/` 中每个路径及其 SHA-256 �
 和 `.mjs` 的 module grammar，AST 拒绝 storage、cookie、动态代码生成、网络、service worker 与
 dynamic import；同时仅允许 `assets/site.js`、`assets/router-controller.mjs`、
 `assets/router-engine.mjs`，且发布 bytes 必须与 `tools/site-assets/` trusted source 完全相同。
-checker 再验证 HTML script 引用与静态 `.mjs` import 的本地文件闭包。AST policy 不是任意
+checker 再验证 HTML script 引用、执行类型与静态 `.mjs` import 的本地文件闭包：
+`site.js` 只能作为 classic script，两个 `.mjs` 只能作为 `type="module"`，data MIME 不得携带
+`src`。公开构件 SHA 只能对已通过完整 checker 的同一份 bytes 快照签发，不得为非法树
+输出 digest。AST policy 不是任意
 JavaScript taint proof；对 computed/alias 旁路的承重保证是固定 allowlist 与 source bytes parity。
 Task 8 的真实浏览器 smoke 才验证 DOM 生命周期和离线运行时行为。Acorn 只属于 build/test
 devDependency；Docker 静态镜像与浏览器运行时不包含 `node_modules`。

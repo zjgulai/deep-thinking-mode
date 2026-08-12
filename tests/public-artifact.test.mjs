@@ -82,6 +82,36 @@ test("accepts a self-contained site with all three trusted script bytes", async 
   }, ({ code, stdout, stderr }) => assert.equal(code, 0, `${stdout}\n${stderr}`));
 });
 
+test("binds every external script path to its HTML execution type", async (t) => {
+  const trusted = await trustedScripts();
+  const accepted = [
+    ["classic without type", '<script src="assets/site.js" defer></script>', "site/assets/site.js"],
+    ["classic standard MIME", '<script type="text/javascript" src="assets/site.js" defer></script>', "site/assets/site.js"],
+    ["module", '<script type="module" src="assets/router-engine.mjs"></script>', "site/assets/router-engine.mjs"],
+  ];
+  for (const [name, script, target] of accepted) {
+    await t.test(name, () => withArtifact({
+      "site/index.html": page({ body: script }),
+      [target]: trusted[target],
+    }, ({ code, stdout, stderr }) => assert.equal(code, 0, `${stdout}\n${stderr}`)));
+  }
+
+  const rejected = [
+    ["module path without type", '<script src="assets/router-engine.mjs"></script>'],
+    ["module path as classic MIME", '<script type="text/javascript" src="assets/router-engine.mjs"></script>'],
+    ["classic path as module", '<script type="module" src="assets/site.js"></script>'],
+    ["data MIME cannot carry module src", '<script type="application/json" src="assets/router-engine.mjs"></script>'],
+    ["data MIME cannot carry classic src", '<script type="application/json" src="assets/site.js"></script>'],
+    ["unknown type cannot carry src", '<script type="text/x-router" src="assets/site.js"></script>'],
+  ];
+  for (const [name, script] of rejected) {
+    await t.test(name, () => withArtifact({
+      "site/index.html": page({ body: script }),
+      ...trusted,
+    }, assertRejected(/SCRIPT_TYPE_MISMATCH/)));
+  }
+});
+
 test("rejects missing or noncanonical CSP", async (t) => {
   await t.test("missing", () => withArtifact(
     { "site/index.html": page({ csp: null }) },
