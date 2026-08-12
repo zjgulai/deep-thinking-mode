@@ -174,6 +174,12 @@ existing-domains.tsv
 
 资源清单必须使用稳定排序格式。现有域名列表位于 `existing-domains.txt`；对每个域名记录严格 TLS 校验的 HTTP code、remote IP 和证书校验结果。发布后用同一脚本和列表重跑，只允许 xmind 新增变化。
 
+在任何 snapshot 写入前，先只创建本项目专属目录并把子目录交给 `ubuntu`；这一 bootstrap 对首次安装和升级都幂等，不修改其他项目：
+
+```bash
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo install -d -m 0755 /opt/xmind-site && sudo install -d -o ubuntu -g ubuntu -m 0755 /opt/xmind-site/current /opt/xmind-site/audit /opt/xmind-site/rollback'
+```
+
 ### 4.1 覆盖 current 前冻结旧 origin
 
 每次发布都先生成唯一 UTC `<release-id>`。下列命令必须在覆盖 `/opt/xmind-site/current/compose.yaml` 或 `.env` 之前执行；把输出的 `PRE_RELEASE_ID` 写入发布记录，后续回滚必须显式使用同一个值，不使用“latest”软指针。它同时保存旧 Compose 输入、容器/image inspect、不可变 image ID、保留 tag、旧完整站点树、逐文件 hash 与文件数：
@@ -192,6 +198,11 @@ if [ -e "$pre" ]; then
 fi
 install -d -m 0700 "$pre"
 printf '%s\n' "$release_id" > "$pre/release-id.txt"
+sudo sha256sum /opt/ai-video/deploy/lighthouse/nginx.conf \
+  > "$pre/gateway-nginx-config.sha256"
+docker inspect ai_video_nginx \
+  --format '{{.Id}} {{.State.StartedAt}} {{.RestartCount}} {{.State.Health.Status}}' \
+  > "$pre/gateway-state.txt"
 
 mapfile -t containers < <(
   docker ps -aq \
@@ -205,6 +216,7 @@ if ((${#containers[@]} == 0)); then
     exit 1
   fi
   : > "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+  printf '%s\n' first_install > "$pre/deploy-mode.txt"
   printf 'PRE_RELEASE_ID=%s\n' "$release_id"
   exit 0
 fi
@@ -249,27 +261,45 @@ test -z "$(find "$pre/previous-site" -type l -print -quit)"
   find . -type f -print0 | LC_ALL=C sort -z | xargs -0 -r sha256sum
 ) > "$pre/previous-site.files.sha256"
 find "$pre/previous-site" -type f | wc -l > "$pre/previous-site.file-count.txt"
+printf '%s\n' upgrade > "$pre/deploy-mode.txt"
 (
   cd "$pre"
   sha256sum previous.env previous-compose.yaml \
     previous-container-inspect.json previous-image-inspect.json \
     previous-image-ref.txt previous-image-id.txt \
     previous-image-hold-ref.txt previous-artifact.sha256 \
-    previous-site.files.sha256 previous-site.file-count.txt \
+    previous-site.files.sha256 previous-site.file-count.txt deploy-mode.txt \
+    gateway-nginx-config.sha256 gateway-state.txt \
     > snapshot-metadata.sha256
 )
 printf 'PRE_RELEASE_ID=%s\n' "$release_id"
 REMOTE
 ```
 
-若存在旧 origin，`previous-image-ref.txt` 与 hold ref 必须同时解析到 `previous-image-id.txt`；任一不一致立即停止。hold tag、旧容器证据和旧站点树必须保留到新版本验收及回滚窗口结束；期间禁止任何 `docker system prune` 或 `docker image prune`。首次安装只允许生成 `FIRST_INSTALL_NO_PREVIOUS_ORIGIN`，不能伪造“旧版本可恢复”证据。
+若存在旧 origin，`previous-image-ref.txt` 与 hold ref 必须同时解析到 `previous-image-id.txt`；任一不一致立即停止。hold tag、旧容器证据和旧站点树必须保留到新版本验收及回滚窗口结束；期间禁止任何 `docker system prune` 或 `docker image prune`。首次安装只允许生成 `FIRST_INSTALL_NO_PREVIOUS_ORIGIN`，不能伪造“旧版本可恢复”证据。后续每个独立 SSH 阶段都必须显式传入同一 `<release-id>`、校验 `release-id.txt`，并从 marker 与 `deploy-mode.txt` fail closed 地确定模式；不得在候选 origin 启动后再用端口状态猜测。
 
 ## 5. 传输与启动 origin
 
 只传输精确文件，禁止对项目根目录使用 `scp -r`、`rsync` 或 tar：
 
 ```bash
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo install -d -o ubuntu -g ubuntu -m 0755 /opt/xmind-site/current /opt/xmind-site/audit /opt/xmind-site/rollback'
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+mode="$(cat "$pre/deploy-mode.txt")"
+if [ "$mode" = first_install ]; then
+  test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+elif [ "$mode" = upgrade ]; then
+  test ! -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+  (cd "$pre" && sha256sum -c snapshot-metadata.sha256)
+else
+  echo 'refusing: incomplete or ambiguous release snapshot' >&2
+  exit 1
+fi
+printf 'DEPLOY_MODE=%s\n' "$mode"
+REMOTE
 rtk scp -i DDDD.pem deploy/tencent-cloud/xmind-site/compose.yaml ubuntu@101.34.52.232:/opt/xmind-site/current/compose.yaml
 rtk scp -i DDDD.pem deploy/tencent-cloud/xmind-site/dist/xmind-site-<12-char-artifact-sha>-linux-amd64.tar ubuntu@101.34.52.232:/opt/xmind-site/current/
 rtk scp -i DDDD.pem deploy/tencent-cloud/xmind-site/dist/xmind-site-<12-char-artifact-sha>-linux-amd64.tar.sha256 ubuntu@101.34.52.232:/opt/xmind-site/current/
@@ -278,74 +308,128 @@ rtk scp -i DDDD.pem deploy/tencent-cloud/xmind-site/dist/xmind-site-<12-char-art
 在服务器端校验、加载并启动：
 
 ```bash
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && sha256sum -c xmind-site-<12-char-artifact-sha>-linux-amd64.tar.sha256'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker load -i /opt/xmind-site/current/xmind-site-<12-char-artifact-sha>-linux-amd64.tar'
 rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
 set -Eeuo pipefail
 umask 077
+release_id='<release-id>'
 artifact_sha='<64-char-artifact-sha>'
 image_tag='<12-char-artifact-sha>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+current=/opt/xmind-site/current
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+mode="$(cat "$pre/deploy-mode.txt")"
+if [ "$mode" = first_install ]; then
+  test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+elif [ "$mode" = upgrade ]; then
+  test ! -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+  (cd "$pre" && sha256sum -c snapshot-metadata.sha256)
+else
+  echo 'refusing: incomplete or ambiguous release snapshot' >&2
+  exit 1
+fi
 [[ "$artifact_sha" =~ ^[0-9a-f]{64}$ ]]
 [[ "$image_tag" =~ ^[0-9a-f]{12}$ ]]
 test "${artifact_sha:0:12}" = "$image_tag"
-install -m 0600 /dev/null /opt/xmind-site/current/.env
+cd "$current"
+sha256sum -c "xmind-site-${image_tag}-linux-amd64.tar.sha256"
+docker load -i "xmind-site-${image_tag}-linux-amd64.tar"
+install -m 0600 /dev/null "$current/.env"
 printf '%s\n' \
   "XMIND_ARTIFACT_SHA256=$artifact_sha" \
   "XMIND_IMAGE_TAG=$image_tag" \
-  > /opt/xmind-site/current/.env
+  > "$current/.env"
+docker compose --project-name xmind_site config --quiet
+docker compose --project-name xmind_site \
+  up -d --no-build --pull never --force-recreate --wait --wait-timeout 90
+docker compose --project-name xmind_site ps
+curl -fsS http://172.20.0.1:18888/healthz
+docker exec ai_video_nginx wget -q -O - http://172.20.0.1:18888/healthz
+curl -fsS http://172.20.0.1:18888/ -o "/tmp/xmind-origin-${release_id}.html"
+sha256sum "/tmp/xmind-origin-${release_id}.html"
 REMOTE
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && docker compose --project-name xmind_site config --quiet'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && docker compose --project-name xmind_site up -d --no-build --pull never --wait'
-```
-
-只验证 origin，暂不修改共享 Nginx：
-
-```bash
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker compose -p xmind_site -f /opt/xmind-site/current/compose.yaml ps'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'curl -fsS http://172.20.0.1:18888/healthz'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker exec ai_video_nginx wget -q -O - http://172.20.0.1:18888/healthz'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'curl -fsS http://172.20.0.1:18888/ -o /tmp/xmind-origin.html && sha256sum /tmp/xmind-origin.html'
 ```
 
 如 origin 不健康、内容 hash 不一致或共享入口容器无法访问 `172.20.0.1:18888`，到此停止，不签证书，不改入口。
 
 ## 6. xmind 专属证书
 
-现有 HTTP default server 已将 `/.well-known/acme-challenge/` 映射到 `/var/www/certbot`，`/etc/letsencrypt` 也已只读挂载到 `ai_video_nginx`。不扩容现有巨型多 SAN 证书，为 xmind 创建独立 ECDSA 证书：
+现有 HTTP default server 已将 `/.well-known/acme-challenge/` 映射到 `/var/www/certbot`，`/etc/letsencrypt` 也已只读挂载到 `ai_video_nginx`。不扩容现有巨型多 SAN 证书。首次安装才允许签发独立 ECDSA 证书；lineage 已存在则停止并人工确认是失败重试还是残留状态：
 
 ```bash
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo certbot certonly --webroot -w /var/www/certbot --cert-name xmind.lute-tlz-dddd.top -d xmind.lute-tlz-dddd.top --key-type ecdsa'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo certbot certificates --cert-name xmind.lute-tlz-dddd.top'
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/deploy-mode.txt")" = first_install
+test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+sudo test ! -e /etc/letsencrypt/live/xmind.lute-tlz-dddd.top
+sudo certbot certonly --webroot -w /var/www/certbot \
+  --cert-name xmind.lute-tlz-dddd.top \
+  -d xmind.lute-tlz-dddd.top --key-type ecdsa
+sudo certbot certificates --cert-name xmind.lute-tlz-dddd.top
+sudo test -s /etc/letsencrypt/live/xmind.lute-tlz-dddd.top/fullchain.pem
+sudo test -s /etc/letsencrypt/live/xmind.lute-tlz-dddd.top/privkey.pem
+REMOTE
 ```
 
-证书必须存在于：
+现有 Certbot deploy hook 会在签发后 reload `ai_video_nginx`；签发前保存现有域名基线，签发后立即重跑。
 
-```text
-/etc/letsencrypt/live/xmind.lute-tlz-dddd.top/fullchain.pem
-/etc/letsencrypt/live/xmind.lute-tlz-dddd.top/privkey.pem
+升级只读验证现有证书，不运行任何 Certbot 写操作、不续期、不触发 deploy hook：
+
+```bash
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/deploy-mode.txt")" = upgrade
+test ! -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+(cd "$pre" && sha256sum -c snapshot-metadata.sha256)
+sudo test -s /etc/letsencrypt/live/xmind.lute-tlz-dddd.top/fullchain.pem
+sudo test -s /etc/letsencrypt/live/xmind.lute-tlz-dddd.top/privkey.pem
+sudo openssl x509 -in /etc/letsencrypt/live/xmind.lute-tlz-dddd.top/fullchain.pem \
+  -noout -checkend 604800
+certificate=/etc/letsencrypt/live/xmind.lute-tlz-dddd.top/fullchain.pem
+sudo openssl x509 -in "$certificate" -noout -subject -issuer -dates
+san="$(sudo openssl x509 -in "$certificate" -noout -ext subjectAltName \
+  | grep -o 'DNS:[^,[:space:]]*' | LC_ALL=C sort -u)"
+test "$san" = 'DNS:xmind.lute-tlz-dddd.top'
+REMOTE
 ```
 
-现有 Certbot deploy hook 会在任何证书签发/续期后 reload `ai_video_nginx`。这是已存在的全局耦合；签发前必须先保存现有域名基线，签发后立即重跑。
+上述命令同时要求证书至少还有 7 天有效期，且 SAN 精确只有 `DNS:xmind.lute-tlz-dddd.top`。
 
 ## 7. 共享入口变更
 
-共享主配置不 include `conf.d/*.conf`，因此不能直接部署独立文件。必须把 `nginx/xmind-edge-server-blocks.conf.template` 内的两个 server block 精确插入现有 `http { ... }`。
+共享主配置不 include `conf.d/*.conf`。只有首次安装才把两个 xmind server block 插入现有 `http { ... }` 并重启共享入口；内容升级必须跳过全部 patch/reload/restart。
 
-先备份并记录原始 hash：
+### 7.1 首次安装 cutover
+
+传输精确工具文件后，以本次 release 的 `pre/` 保存旧配置，不使用可被重试覆盖的全局“latest backup”：
 
 ```bash
 rtk scp -i DDDD.pem deploy/tencent-cloud/xmind-site/nginx/xmind-edge-server-blocks.conf.template ubuntu@101.34.52.232:/opt/xmind-site/current/
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo sha256sum /opt/ai-video/deploy/lighthouse/nginx.conf'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo install -m 0644 /opt/ai-video/deploy/lighthouse/nginx.conf /opt/xmind-site/rollback/nginx.conf.pre-xmind'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo sha256sum /opt/xmind-site/rollback/nginx.conf.pre-xmind /opt/ai-video/deploy/lighthouse/nginx.conf'
-```
-
-使用 `patch-shared-nginx.py` 对唯一的顶层 `http {}` 做一次有标记、拒绝重复的插入，不手工编辑或全局替换。先生成独立候选并验证 diff：
-
-```bash
 rtk scp -i DDDD.pem deploy/tencent-cloud/xmind-site/patch-shared-nginx.py ubuntu@101.34.52.232:/opt/xmind-site/current/
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && python3 patch-shared-nginx.py --base /opt/ai-video/deploy/lighthouse/nginx.conf --snippet xmind-edge-server-blocks.conf.template --output nginx.conf.candidate'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo diff -u /opt/xmind-site/rollback/nginx.conf.pre-xmind /opt/xmind-site/current/nginx.conf.candidate'
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+current=/opt/xmind-site/current
+config=/opt/ai-video/deploy/lighthouse/nginx.conf
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/deploy-mode.txt")" = first_install
+test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+test ! -e "$pre/shared-nginx.conf.pre-xmind"
+sudo install -m 0644 "$config" "$pre/shared-nginx.conf.pre-xmind"
+sudo chown ubuntu:ubuntu "$pre/shared-nginx.conf.pre-xmind"
+(cd "$pre" && sha256sum shared-nginx.conf.pre-xmind > shared-nginx.pre.sha256)
+cd "$current"
+python3 patch-shared-nginx.py --base "$config" \
+  --snippet xmind-edge-server-blocks.conf.template \
+  --output nginx.conf.candidate
+diff -u "$pre/shared-nginx.conf.pre-xmind" nginx.conf.candidate || [ "$?" -eq 1 ]
+REMOTE
 ```
 
 `diff` 必须只包含标记包围的 xmind HTTP/HTTPS server block。现有入口把主配置作为单文件只读 bind mount；原子替换宿主文件后，运行中的容器仍固定在旧 inode。不能用容器内原配置的 `nginx -t` 或 HUP reload 证明候选有效。
@@ -353,10 +437,86 @@ rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo diff -u /opt/xmind-site/rollback/
 先用临时容器复用现有入口的全部只读挂载和同一网络，对候选配置做真实语法与依赖解析检查：
 
 ```bash
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker run --rm --name xmind_nginx_config_test --network lighthouse_ai_video_net --volumes-from ai_video_nginx:ro -v /opt/xmind-site/current/nginx.conf.candidate:/etc/nginx/nginx.conf:ro nginx:alpine nginx -t'
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/deploy-mode.txt")" = first_install
+test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+docker run --rm --name xmind_nginx_config_test \
+  --network lighthouse_ai_video_net --volumes-from ai_video_nginx:ro \
+  -v /opt/xmind-site/current/nginx.conf.candidate:/etc/nginx/nginx.conf:ro \
+  nginx:alpine nginx -t
+REMOTE
 ```
 
-成功后原子安装候选，并对共享入口执行一次有界重启，使 bind mount 指向新 inode。必须轮询到 healthy，再确认容器内配置 hash 等于候选；任一步失败都立刻原子恢复备份并再次启动旧入口。重启前后都必须执行 32 域名严格 TLS 基线。这里无法做到入口零耦合；若不能接受秒级共享入口切换，必须改用独立 VM/IP。
+重跑 32 域名 pre 基线后，先写入 attempted marker，再在同一文件系统用临时文件 + `mv` 原子替换。有界重启后必须同时校验 health 与宿主/容器配置 hash：
+
+```bash
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+current=/opt/xmind-site/current
+config=/opt/ai-video/deploy/lighthouse/nginx.conf
+candidate="$current/nginx.conf.candidate"
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/deploy-mode.txt")" = first_install
+test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+(cd "$pre" && sha256sum -c shared-nginx.pre.sha256)
+test -f "$candidate"
+: > "$pre/SHARED_NGINX_CUTOVER_ATTEMPTED"
+candidate_sha="$(sha256sum "$candidate" | cut -d ' ' -f 1)"
+tmp="${config}.xmind-${release_id}"
+sudo install -m 0644 "$candidate" "$tmp"
+sudo mv "$tmp" "$config"
+docker restart --time 30 ai_video_nginx
+healthy=false
+for attempt in $(seq 1 45); do
+  if [ "$(docker inspect ai_video_nginx --format '{{.State.Health.Status}}')" = healthy ]; then
+    healthy=true
+    break
+  fi
+  sleep 2
+done
+test "$healthy" = true
+docker exec ai_video_nginx nginx -t
+test "$(sudo sha256sum "$config" | cut -d ' ' -f 1)" = "$candidate_sha"
+test "$(docker exec ai_video_nginx sha256sum /etc/nginx/nginx.conf | cut -d ' ' -f 1)" = "$candidate_sha"
+: > "$pre/SHARED_NGINX_CUTOVER_SUCCEEDED"
+REMOTE
+```
+
+重启后立即重跑 32 域名 post 基线。任一步失败走 10.1 的本 release 备份回滚。这里无法做到入口零耦合；若不能接受秒级共享入口切换，必须改用独立 VM/IP。
+
+### 7.2 升级只读验证
+
+升级不传输 patch 工具、不备份或覆盖 Nginx 配置、不 reload/restart `ai_video_nginx`。只读验证标记、server blocks、origin 连通性及 gateway 身份：
+
+```bash
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+config=/opt/ai-video/deploy/lighthouse/nginx.conf
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/deploy-mode.txt")" = upgrade
+test ! -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+(cd "$pre" && sha256sum -c snapshot-metadata.sha256)
+test "$(sudo grep -Fc '# BEGIN xmind.lute-tlz-dddd.top' "$config")" -eq 1
+test "$(sudo grep -Fc '# END xmind.lute-tlz-dddd.top' "$config")" -eq 1
+test "$(sudo grep -Ec '^[[:space:]]*server_name[[:space:]]+xmind[.]lute-tlz-dddd[.]top;' "$config")" -eq 2
+test "$(sudo grep -Fc 'proxy_pass http://172.20.0.1:18888;' "$config")" -eq 1
+docker exec ai_video_nginx nginx -t
+test "$(docker inspect ai_video_nginx --format '{{.Id}} {{.State.StartedAt}} {{.RestartCount}} {{.State.Health.Status}}')" = "$(cat "$pre/gateway-state.txt")"
+test "$(sudo sha256sum "$config" | cut -d ' ' -f 1)" = "$(cut -d ' ' -f 1 "$pre/gateway-nginx-config.sha256")"
+curl -fsS http://172.20.0.1:18888/healthz
+docker exec ai_video_nginx wget -q -O - http://172.20.0.1:18888/healthz
+REMOTE
+```
+
+上述命令已将 gateway container ID、StartedAt、RestartCount 和 Nginx config hash 与第 4 节 pre 证据做精确比对；随后直接执行第 8 节公网逐文件与安全头验证。
 
 ## 8. E2E 和产品验收
 
@@ -405,7 +565,9 @@ rtk npm run verify:security
 
 ## 9. 前后资源差异与现有应用回归
 
-用第 4 节的完全相同命令生成 `post/` 快照，并与 `pre/` 比较。只允许：
+用第 4 节的完全相同命令生成 `post/` 快照，并与同一 `<release-id>` 的 `pre/` 比较。
+
+首次安装只允许：
 
 - 新增 Compose project `xmind_site`。
 - 新增一个 `xmind_site-web-1` 容器。
@@ -414,10 +576,12 @@ rtk npm run verify:security
 - 新增 `172.20.0.1:18888` 监听。
 - 新增 xmind 专属证书和两个 Nginx server block。
 
+升级只允许 `xmind_site/web` 容器 ID 和 image ID/tag 按候选版本变化；network、port、certificate lineage、server blocks 与共享 Nginx config 不新增、不变更，旧 image 及 rollback hold tag 仍存在。`ai_video_nginx` 的 ID、StartedAt、RestartCount、mount、network 和配置 hash 必须与 pre 完全相同。
+
 不允许：
 
 - 任何新 volume。
-- 除已记录的 `ai_video_nginx` 单次配置切换重启外，任何现有容器被 recreate/restart，或其 image/network/mount/port 变化。
+- 首次安装除已记录的 `ai_video_nginx` 单次 cutover 重启外，任何现有容器被 recreate/restart，或其 image/network/mount/port 变化；升级则不允许 `ai_video_nginx` 有任何 reload/restart/recreate。
 - 现有域名 code、remote IP、TLS 严格校验结果变差。
 - 根盘突然增长超过镜像+审计文件的合理体积。
 
@@ -425,25 +589,52 @@ rtk npm run verify:security
 
 ## 10. 回滚
 
-任一条件触发回滚：TLS 失败、xmind 错误页、内容 hash 不符、共享 Nginx 不健康、现有域名回归变差、不在 allowlist 的 Docker 资源变化。
+任一条件触发回滚：TLS 失败、xmind 错误页、内容 hash 不符、共享 Nginx 不健康、现有域名回归变差、不在 allowlist 的 Docker 资源变化。必须先以同一 `<release-id>` 重建 mode：首次安装走 10.1，升级任何候选 origin/内容/验收失败都走 10.2，不能把升级导向“移除 xmind 入口”。
 
-### 10.1 首次安装或共享入口 / TLS 变更失败
+### 10.1 首次安装失败
 
-先用第 7 节的临时容器方式验证备份，再恢复共享入口。由于主配置是单文件 bind mount，原子恢复后也必须重启一次才能重新挂载旧 inode：
-
-```bash
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'sudo install -m 0644 /opt/xmind-site/rollback/nginx.conf.pre-xmind /opt/ai-video/deploy/lighthouse/nginx.conf'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker restart --time 30 ai_video_nginx'
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'docker exec ai_video_nginx nginx -t && docker inspect ai_video_nginx --format "{{.State.Status}} {{.State.Health.Status}}"'
-```
-
-重跑全部现有域名回归。共享入口完全恢复后，停止 xmind origin，但不立即删镜像、证书或审计证据：
+若 origin 或证书阶段在 cutover 前失败，共享入口未改，只停止新 origin。只有存在本 release 的 `SHARED_NGINX_CUTOVER_ATTEMPTED` 时才验证并原子恢复本 release 备份，再有界重启共享入口：
 
 ```bash
-rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'cd /opt/xmind-site/current && docker compose --project-name xmind_site stop'
+rtk ssh -i DDDD.pem ubuntu@101.34.52.232 'bash -se' <<'REMOTE'
+set -Eeuo pipefail
+release_id='<release-id>'
+pre="/opt/xmind-site/audit/$release_id/pre"
+config=/opt/ai-video/deploy/lighthouse/nginx.conf
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/deploy-mode.txt")" = first_install
+test -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
+if [ -e "$pre/SHARED_NGINX_CUTOVER_ATTEMPTED" ]; then
+  test -f "$pre/shared-nginx.conf.pre-xmind"
+  (cd "$pre" && sha256sum -c shared-nginx.pre.sha256)
+  docker run --rm --name xmind_nginx_rollback_test \
+    --network lighthouse_ai_video_net --volumes-from ai_video_nginx:ro \
+    -v "$pre/shared-nginx.conf.pre-xmind":/etc/nginx/nginx.conf:ro \
+    nginx:alpine nginx -t
+  tmp="${config}.rollback-${release_id}"
+  sudo install -m 0644 "$pre/shared-nginx.conf.pre-xmind" "$tmp"
+  sudo mv "$tmp" "$config"
+  docker restart --time 30 ai_video_nginx
+  healthy=false
+  for attempt in $(seq 1 45); do
+    if [ "$(docker inspect ai_video_nginx --format '{{.State.Health.Status}}')" = healthy ]; then
+      healthy=true
+      break
+    fi
+    sleep 2
+  done
+  test "$healthy" = true
+  docker exec ai_video_nginx nginx -t
+  expected="$(cut -d ' ' -f 1 "$pre/shared-nginx.pre.sha256")"
+  test "$(sudo sha256sum "$config" | cut -d ' ' -f 1)" = "$expected"
+  test "$(docker exec ai_video_nginx sha256sum /etc/nginx/nginx.conf | cut -d ' ' -f 1)" = "$expected"
+fi
+cd /opt/xmind-site/current
+docker compose --project-name xmind_site stop
+REMOTE
 ```
 
-首次安装没有旧 xmind origin，因此这里只能证明共享入口和既有域名回到发布前状态，不能宣称旧 xmind 逐文件生产验证通过。
+重跑全部现有域名回归。不立即删镜像、证书或审计证据。首次安装没有旧 xmind origin，因此只能证明共享入口和既有域名回到发布前状态，不能宣称旧 xmind 逐文件生产验证通过。
 
 ### 10.2 已有 origin 的内容升级失败
 
@@ -459,6 +650,8 @@ root=/opt/xmind-site
 current="$root/current"
 pre="$root/audit/$release_id/pre"
 rollback="$root/audit/$release_id/rollback"
+test "$(cat "$pre/release-id.txt")" = "$release_id"
+test "$(cat "$pre/deploy-mode.txt")" = upgrade
 test ! -e "$pre/FIRST_INSTALL_NO_PREVIOUS_ORIGIN"
 install -d -m 0700 "$rollback"
 

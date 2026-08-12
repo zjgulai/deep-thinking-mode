@@ -370,6 +370,40 @@ test("rejects executable browser storage across JavaScript lexical forms", async
   });
 });
 
+test("rejects literal storage keys used through simple aliases and destructuring", async (t) => {
+  const moduleCases = [
+    [
+      "computed destructuring key",
+      'const {["localStorage"]: storage} = globalThis; storage.setItem("query", "private");\n',
+    ],
+    [
+      "aliased browser global",
+      'const root = window; root["localStorage"].setItem("query", "private");\n',
+    ],
+    [
+      "literal key variable",
+      'const key = "localStorage"; globalThis[key].setItem("query", "private");\n',
+    ],
+  ];
+
+  for (const [name, source] of moduleCases) {
+    await t.test(name, async () => {
+      await withArtifact(
+        {
+          "site/index.html": page({
+            body: '<script type="module" src="assets/router-controller.mjs"></script>',
+          }),
+          "site/assets/router-controller.mjs": source,
+        },
+        ({ code, stdout, stderr }) => {
+          assert.notEqual(code, 0, `${source}\n${stdout}\n${stderr}`);
+          assert.match(stderr, /STORAGE_CAPABLE_SCRIPT/, `${source}\n${stdout}\n${stderr}`);
+        },
+      );
+    });
+  }
+});
+
 test("allows storage spellings in inert strings, comments, regexes, and template quasis", async () => {
   await withArtifact(
     {
@@ -384,6 +418,28 @@ test("allows storage spellings in inert strings, comments, regexes, and template
         "// globalThis['localStorage'].clear() is documentation.",
         "/* self[\"sessionStorage\"].clear() is documentation. */",
         "export { label, pattern, template };",
+        "",
+      ].join("\n"),
+    },
+    ({ code, stdout, stderr }) => {
+      assert.equal(code, 0, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("allows inert storage regexes after completed blocks and function declarations", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module" src="assets/router-controller.mjs"></script>',
+      }),
+      "site/assets/router-controller.mjs": [
+        "const ok = true;",
+        "const value = 'safe';",
+        "if (ok) {} /localStorage/.test(value);",
+        "function check() {} /sessionStorage/.test(value);",
+        "const ratio = 12 / 3 / 2;",
+        "export { ratio };",
         "",
       ].join("\n"),
     },
@@ -469,6 +525,80 @@ test("rejects a missing dependency imported by an inline module", async () => {
     ({ code, stdout, stderr }) => {
       assert.notEqual(code, 0, `${stdout}\n${stderr}`);
       assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("audits dynamic imports in classic inline scripts", async (t) => {
+  await t.test("missing literal dependency", async () => {
+    await withArtifact(
+      {
+        "site/index.html": page({
+          body: '<script>import("./assets/missing.mjs");</script>',
+        }),
+      },
+      ({ code, stdout, stderr }) => {
+        assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+        assert.match(stderr, /MISSING_TARGET/, `${stdout}\n${stderr}`);
+      },
+    );
+  });
+
+  await t.test("non-literal dependency", async () => {
+    await withArtifact(
+      {
+        "site/index.html": page({
+          body: '<script>const target = "./assets/dep.mjs"; import(target);</script>',
+        }),
+        "site/assets/dep.mjs": "export {};\n",
+      },
+      ({ code, stdout, stderr }) => {
+        assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+        assert.match(stderr, /NON_LITERAL_DYNAMIC_IMPORT/, `${stdout}\n${stderr}`);
+      },
+    );
+  });
+
+  await t.test("closed literal dependency", async () => {
+    await withArtifact(
+      {
+        "site/index.html": page({
+          body: '<script>import("./assets/dep.mjs");</script>',
+        }),
+        "site/assets/dep.mjs": "export {};\n",
+      },
+      ({ code, stdout, stderr }) => {
+        assert.equal(code, 0, `${stdout}\n${stderr}`);
+      },
+    );
+  });
+});
+
+test("accepts a literal dynamic import with a nested options argument", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module">import("./assets/dep.mjs", { with: { type: "javascript" } });</script>',
+      }),
+      "site/assets/dep.mjs": "export {};\n",
+    },
+    ({ code, stdout, stderr }) => {
+      assert.equal(code, 0, `${stdout}\n${stderr}`);
+    },
+  );
+});
+
+test("rejects a dynamic import with mismatched nested option delimiters", async () => {
+  await withArtifact(
+    {
+      "site/index.html": page({
+        body: '<script type="module">import("./assets/dep.mjs", { with: [} });</script>',
+      }),
+      "site/assets/dep.mjs": "export {};\n",
+    },
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `${stdout}\n${stderr}`);
+      assert.match(stderr, /NON_LITERAL_DYNAMIC_IMPORT/, `${stdout}\n${stderr}`);
     },
   );
 });

@@ -571,7 +571,7 @@ function inspectMarkup({ markup, currentFile, fileSet, idsByFile, errors }) {
         fileSet,
         idsByFile,
         errors,
-        inspectImports: type === "module",
+        allowStaticImports: type === "module",
         sourceKind: "inline script",
       });
     }
@@ -747,6 +747,44 @@ function tokenizeJavaScript(script) {
       }
       return false;
     }
+    if (previous.value === "}") {
+      let braceDepth = 0;
+      let openingBrace = -1;
+      for (let cursor = tokens.length - 1; cursor >= 0; cursor -= 1) {
+        if (tokens[cursor].value === "}") {
+          braceDepth += 1;
+        } else if (tokens[cursor].value === "{") {
+          braceDepth -= 1;
+          if (braceDepth === 0) {
+            openingBrace = cursor;
+            break;
+          }
+        }
+      }
+      if (openingBrace <= 0 || tokens[openingBrace - 1]?.value !== ")") {
+        return false;
+      }
+      let parenDepth = 0;
+      let openingParen = -1;
+      for (let cursor = openingBrace - 1; cursor >= 0; cursor -= 1) {
+        if (tokens[cursor].value === ")") {
+          parenDepth += 1;
+        } else if (tokens[cursor].value === "(") {
+          parenDepth -= 1;
+          if (parenDepth === 0) {
+            openingParen = cursor;
+            break;
+          }
+        }
+      }
+      const head = tokens[openingParen - 1];
+      if (head?.type === "identifier" && REGEX_AFTER_CONTROL_HEAD_IDENTIFIERS.has(head.value)) {
+        return true;
+      }
+      return head?.type === "identifier" &&
+        tokens[openingParen - 2]?.type === "identifier" &&
+        tokens[openingParen - 2]?.value === "function";
+    }
     return REGEX_PREFIX_PUNCTUATORS.has(previous.value);
   }
 
@@ -888,6 +926,9 @@ function hasStorageCapability(tokens) {
     if (token.type === "identifier" && STORAGE_IDENTIFIERS.has(token.value)) {
       return true;
     }
+    if (token.type === "string" && STORAGE_IDENTIFIERS.has(token.value)) {
+      return true;
+    }
     const bracketOffset = tokens[index + 1]?.value === "?." ? 2 : 1;
     if (
       token.type === "identifier" &&
@@ -903,14 +944,23 @@ function hasStorageCapability(tokens) {
   return false;
 }
 
-function matchingBrace(tokens, startIndex) {
-  let depth = 0;
+function matchingDelimiter(tokens, startIndex) {
+  const opening = tokens[startIndex]?.value;
+  const closingByOpening = { "(": ")", "[": "]", "{": "}" };
+  if (!closingByOpening[opening]) {
+    return -1;
+  }
+  const stack = [];
   for (let index = startIndex; index < tokens.length; index += 1) {
-    if (tokens[index].value === "{") {
-      depth += 1;
-    } else if (tokens[index].value === "}") {
-      depth -= 1;
-      if (depth === 0) {
+    const value = tokens[index].value;
+    if (closingByOpening[value]) {
+      stack.push(value);
+    } else if ([")", "]", "}"].includes(value)) {
+      const nestedOpening = stack.pop();
+      if (closingByOpening[nestedOpening] !== value) {
+        return -1;
+      }
+      if (stack.length === 0) {
         return index;
       }
     }
@@ -918,7 +968,7 @@ function matchingBrace(tokens, startIndex) {
   return -1;
 }
 
-function moduleSpecifiers(tokens, relativePath, errors) {
+function moduleSpecifiers(tokens, relativePath, errors, allowStaticImports) {
   const specifiers = [];
 
   function addStringToken(token, context) {
@@ -942,7 +992,28 @@ function moduleSpecifiers(tokens, relativePath, errors) {
         continue;
       }
       if (next?.value === "(") {
-        if (tokens[index + 2]?.type !== "string" || tokens[index + 3]?.value !== ")") {
+        const close = matchingDelimiter(tokens, index + 1);
+        const target = tokens[index + 2];
+        const afterTarget = tokens[index + 3];
+        let supported = close !== -1 && target?.type === "string";
+        if (supported && afterTarget?.value === ",") {
+          supported = index + 4 < close;
+          let depth = 0;
+          for (let cursor = index + 4; supported && cursor < close; cursor += 1) {
+            if (["(", "[", "{"].includes(tokens[cursor].value)) {
+              depth += 1;
+            } else if ([")", "]", "}"].includes(tokens[cursor].value)) {
+              depth -= 1;
+              supported = depth >= 0;
+            } else if (tokens[cursor].value === "," && depth === 0) {
+              supported = false;
+            }
+          }
+          supported = supported && depth === 0;
+        } else {
+          supported = supported && afterTarget?.value === ")";
+        }
+        if (!supported) {
           errors.push(
             error(
               "NON_LITERAL_DYNAMIC_IMPORT",
@@ -952,6 +1023,9 @@ function moduleSpecifiers(tokens, relativePath, errors) {
         } else {
           specifiers.push(tokens[index + 2].value);
         }
+        continue;
+      }
+      if (!allowStaticImports) {
         continue;
       }
       if (next?.type === "string") {
@@ -967,7 +1041,7 @@ function moduleSpecifiers(tokens, relativePath, errors) {
         }
       }
       if (tokens[cursor]?.value === "{") {
-        cursor = matchingBrace(tokens, cursor) + 1;
+        cursor = matchingDelimiter(tokens, cursor) + 1;
       } else if (tokens[cursor]?.value === "*") {
         cursor += 1;
         if (tokens[cursor]?.value === "as" && tokens[cursor + 1]?.type === "identifier") {
@@ -982,12 +1056,12 @@ function moduleSpecifiers(tokens, relativePath, errors) {
       continue;
     }
 
-    if (token.value !== "export") {
+    if (!allowStaticImports || token.value !== "export") {
       continue;
     }
     let cursor = index + 1;
     if (tokens[cursor]?.value === "{") {
-      cursor = matchingBrace(tokens, cursor) + 1;
+      cursor = matchingDelimiter(tokens, cursor) + 1;
       if (cursor > 0 && tokens[cursor]?.value === "from") {
         addStringToken(tokens[cursor + 1], "export-from");
       }
@@ -1047,7 +1121,7 @@ function inspectScript({
   fileSet,
   idsByFile,
   errors,
-  inspectImports = true,
+  allowStaticImports = true,
   sourceKind = "script",
 }) {
   if (SCRIPT_NETWORK_PATTERN.test(script) || REMOTE_URL_PATTERN.test(script)) {
@@ -1078,16 +1152,19 @@ function inspectScript({
       ),
     );
   }
-  if (inspectImports) {
-    for (const specifier of moduleSpecifiers(tokens, relativePath, errors)) {
-      validateModuleSpecifier({
-        specifier,
-        currentFile: relativePath,
-        fileSet,
-        idsByFile,
-        errors,
-      });
-    }
+  for (const specifier of moduleSpecifiers(
+    tokens,
+    relativePath,
+    errors,
+    allowStaticImports,
+  )) {
+    validateModuleSpecifier({
+      specifier,
+      currentFile: relativePath,
+      fileSet,
+      idsByFile,
+      errors,
+    });
   }
 }
 
