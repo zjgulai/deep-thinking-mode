@@ -6,6 +6,7 @@ import test from "node:test";
 import {
   PUBLIC_V3_AGENT_PATHS,
   V3_AGENT_DATA_ERROR,
+  isValidatedV3AgentDataView,
   loadV3AgentData,
   validateV3AgentData
 } from "../tools/lib/v3-agent-data.mjs";
@@ -223,6 +224,8 @@ test("v3 agent data: returns independent, deeply frozen V2 build views", () => {
   assert.ok(Object.isFrozen(result.problemTypes));
   assert.ok(Object.isFrozen(result.routesByProblemAndStage));
   assert.ok(Object.isFrozen(result.routesByProblemAndStage.get("diagnosis::intent").model_ids));
+  assert.equal(isValidatedV3AgentDataView(result), true);
+  assert.equal(isValidatedV3AgentDataView({ ...result }), false);
   assert.throws(() => result.routesByProblemAndStage.set("other", {}), TypeError);
   assert.throws(() => result.chainsById.get("example-chain").phases[0].model_ids.push("other"), TypeError);
   for (const map of [

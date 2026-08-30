@@ -11794,6 +11794,7 @@
     "specs/execution-plans/archive/2026-08-03-b7-recovery-lease-stale-retirement.md",
     "specs/prompt-eval-results.md",
     "specs/system-prompt-quality-standard.md",
+    "tests/agent-knowledge-v2.test.mjs",
     "tests/artifact-hash.test.mjs",
     "tests/build-curation-source-map.test.mjs",
     "tests/chapter-presentation.test.mjs",

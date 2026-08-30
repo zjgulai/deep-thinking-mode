@@ -1,5 +1,9 @@
+import { canonicalJsonBytes } from "./json.mjs";
+import { sha256 } from "./hash.mjs";
+
 const CONTRACT_SCHEMA_VERSION = "1.0.0";
 const ERROR_CODE = "CONTRACT_SCHEMA_INVALID";
+const AGENT_KNOWLEDGE_ERROR_CODE = "AGENT_KNOWLEDGE_SCHEMA_INVALID";
 
 const CONTRACT_KINDS = new Set([
   "curation-source-id",
@@ -44,6 +48,13 @@ function contractError(message, path) {
   const error = new TypeError(message);
   error.code = ERROR_CODE;
   if (path) error.path = path;
+  return error;
+}
+
+function agentKnowledgeError(message, path) {
+  const error = new TypeError(message);
+  error.code = AGENT_KNOWLEDGE_ERROR_CODE;
+  error.path = path;
   return error;
 }
 
@@ -135,6 +146,121 @@ function assertUnique(values, keyGetter, path) {
     if (seen.has(key)) throw contractError(`duplicate value at ${path}`, path);
     seen.add(key);
   }
+}
+
+function assertAgentObject(value, path, keys) {
+  if (!isPlainObject(value)) throw agentKnowledgeError(`invalid object at ${path}`, path);
+  const actual = Object.keys(value).sort();
+  const expected = [...keys].sort();
+  if (actual.length !== expected.length || actual.some((key, index) => key !== expected[index])) {
+    throw agentKnowledgeError(`unknown or missing keys at ${path}`, path);
+  }
+}
+
+function assertAgentString(value, path) {
+  if (typeof value !== "string" || value.trim().length === 0) {
+    throw agentKnowledgeError(`invalid string at ${path}`, path);
+  }
+}
+
+function assertAgentId(value, path, prefix) {
+  assertAgentString(value, path);
+  if (!new RegExp(`^${prefix}[a-z0-9]+(?:-[a-z0-9]+)*$`).test(value)) {
+    throw agentKnowledgeError(`invalid id at ${path}`, path);
+  }
+}
+
+function assertAgentStringArray(value, path, { min = 0, exact = null } = {}) {
+  if (!Array.isArray(value) || value.length < min) {
+    throw agentKnowledgeError(`invalid array at ${path}`, path);
+  }
+  const seen = new Set();
+  for (const [index, item] of value.entries()) {
+    assertAgentString(item, `${path}[${index}]`);
+    if (seen.has(item)) throw agentKnowledgeError(`duplicate value at ${path}[${index}]`, `${path}[${index}]`);
+    seen.add(item);
+  }
+  if (exact && (seen.size !== exact.size || [...exact].some((item) => !seen.has(item)))) {
+    throw agentKnowledgeError(`unexpected values at ${path}`, path);
+  }
+}
+
+function assertAgentEnum(value, allowed, path) {
+  if (!allowed.has(value)) throw agentKnowledgeError(`invalid value at ${path}`, path);
+}
+
+function assertAgentScore(value, path) {
+  if (typeof value !== "number" || !Number.isFinite(value) || value < 0 || value > 1) {
+    throw agentKnowledgeError(`invalid score at ${path}`, path);
+  }
+  if (Math.abs(value * 10_000 - Math.round(value * 10_000)) > 1e-9) {
+    throw agentKnowledgeError(`score exceeds four decimal places at ${path}`, path);
+  }
+}
+
+function scoreBasisPoints(value) {
+  return Math.round(value * 10_000);
+}
+
+function assertAgentDateTime(value, path, { nullable = false } = {}) {
+  if (nullable && value === null) return;
+  assertAgentString(value, path);
+  if (!ISO_8601.test(value)) throw agentKnowledgeError(`invalid RFC3339 datetime at ${path}`, path);
+}
+
+function assertAgentReferenceArray(value, knownIds, path, { min = 0 } = {}) {
+  assertAgentStringArray(value, path, { min });
+  for (const [index, id] of value.entries()) {
+    if (!knownIds.has(id)) throw agentKnowledgeError(`unknown reference at ${path}[${index}]`, `${path}[${index}]`);
+  }
+}
+
+function assertNullableSha256(value, path) {
+  if (value !== null && !/^[0-9a-f]{64}$/.test(value)) {
+    throw agentKnowledgeError(`invalid sha256 at ${path}`, path);
+  }
+}
+
+function assertSequentialSteps(value, path, keys) {
+  if (!Array.isArray(value) || value.length === 0) throw agentKnowledgeError(`invalid steps at ${path}`, path);
+  for (const [index, step] of value.entries()) {
+    assertAgentObject(step, `${path}[${index}]`, keys);
+    if (step.order !== index + 1) throw agentKnowledgeError(`invalid order at ${path}[${index}].order`, `${path}[${index}].order`);
+  }
+}
+
+function assertNoPrivateText(value, path) {
+  const forbiddenKeys = new Set([
+    "reasoning", "encrypted_content", "agent_reasoning", "source_path", "session_id",
+    "thread_id", "root_thread_id", "cwd", "username", "raw_message", "raw_output"
+  ]);
+  const privateTextPatterns = [
+    /(?:\/Users\/|\/home\/|\/tmp\/|file:\/\/|[A-Za-z]:\\)/i,
+    /(?:^|[^a-z0-9_.-])(?:coding_session|\.local)\//i,
+    /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i,
+    /\b(?:sk|ghp|github_pat|xox[baprs])[-_][A-Za-z0-9_-]{12,}\b/,
+    /\b(?:api[_-]?key|access[_-]?token|auth[_-]?token|password|secret)\s*[:=]\s*[^\s,;]+/i,
+    /<\/?(?:analysis|reasoning)>/i,
+    /\b(?:chain[- ]of[- ]thought|private reasoning)\b/i
+  ];
+  const visit = (entry, entryPath) => {
+    if (typeof entry === "string") {
+      if (privateTextPatterns.some((pattern) => pattern.test(entry))) {
+        throw agentKnowledgeError(`private or sensitive text at ${entryPath}`, entryPath);
+      }
+      return;
+    }
+    if (Array.isArray(entry)) {
+      entry.forEach((item, index) => visit(item, `${entryPath}[${index}]`));
+      return;
+    }
+    if (!isPlainObject(entry)) return;
+    for (const [key, child] of Object.entries(entry)) {
+      if (forbiddenKeys.has(key)) throw agentKnowledgeError(`private field at ${entryPath}`, entryPath);
+      visit(child, `${entryPath}.${key}`);
+    }
+  };
+  visit(value, path);
 }
 
 function assertRfc3339Date(value, path) {
@@ -523,6 +649,980 @@ function assertCurationSourceIdRecord(value, path) {
   assertSourceId(value.source_id, `${path}.source_id`);
   assertString(value.created_by, `${path}.created_by`);
   assertRfc3339Date(value.created_at, `${path}.created_at`);
+}
+
+const MODEL_CASE_KEYS = new Set([
+  "id", "title", "primary_model_id", "related_model_ids", "problem_type_ids",
+  "agent_stage_ids", "mapping", "case_kind", "lifecycle_status", "summary",
+  "detail", "evidence", "privacy", "tags", "observed_at", "verified_at", "origin_kind"
+]);
+const CASE_MAPPING_KEYS = new Set([
+  "candidate_model_id", "relation_type", "fit_score", "runner_up_model_id", "runner_up_score",
+  "counterevidence", "status"
+]);
+const CASE_SUMMARY_KEYS = new Set(["situation", "goal", "key_actions", "outcome", "lesson"]);
+const CASE_DETAIL_KEYS = new Set([
+  "constraints", "observable_steps", "decisions", "corrections", "verification",
+  "limitations", "failure_conditions"
+]);
+const CASE_EVIDENCE_KEYS = new Set(["status", "plan_only", "claims"]);
+const CASE_PRIVACY_KEYS = new Set([
+  "deidentified", "dlp_status", "publication_status", "dlp_receipt_sha256", "redaction_summary"
+]);
+
+function validateModelCaseCatalogInternal(value, {
+  modelIds = new Set(),
+  problemTypeIds = new Set(),
+  agentStageIds = new Set()
+} = {}) {
+  const path = "model-cases";
+  assertNoPrivateText(value, path);
+  assertAgentObject(value, path, new Set(["schema_version", "cases"]));
+  if (value.schema_version !== "1.0.0") throw agentKnowledgeError(`invalid schema_version at ${path}.schema_version`, `${path}.schema_version`);
+  if (!Array.isArray(value.cases)) throw agentKnowledgeError(`invalid cases at ${path}.cases`, `${path}.cases`);
+
+  const caseIds = new Set();
+  for (const [index, item] of value.cases.entries()) {
+    const itemPath = `${path}.cases[${index}]`;
+    assertAgentObject(item, itemPath, MODEL_CASE_KEYS);
+    assertAgentId(item.id, `${itemPath}.id`, "case-");
+    if (caseIds.has(item.id)) throw agentKnowledgeError(`duplicate case id at ${itemPath}.id`, `${itemPath}.id`);
+    caseIds.add(item.id);
+    assertAgentString(item.title, `${itemPath}.title`);
+    if (item.primary_model_id !== null && !modelIds.has(item.primary_model_id)) {
+      throw agentKnowledgeError(`unknown primary model at ${itemPath}.primary_model_id`, `${itemPath}.primary_model_id`);
+    }
+    assertAgentReferenceArray(item.related_model_ids, modelIds, `${itemPath}.related_model_ids`);
+    if (item.related_model_ids.length > 3) throw agentKnowledgeError(`too many related models at ${itemPath}.related_model_ids`, `${itemPath}.related_model_ids`);
+    assertAgentReferenceArray(item.problem_type_ids, problemTypeIds, `${itemPath}.problem_type_ids`, { min: 1 });
+    assertAgentReferenceArray(item.agent_stage_ids, agentStageIds, `${itemPath}.agent_stage_ids`, { min: 1 });
+
+    assertAgentObject(item.mapping, `${itemPath}.mapping`, CASE_MAPPING_KEYS);
+    if (item.mapping.candidate_model_id !== null && !modelIds.has(item.mapping.candidate_model_id)) {
+      throw agentKnowledgeError(`unknown candidate model at ${itemPath}.mapping.candidate_model_id`, `${itemPath}.mapping.candidate_model_id`);
+    }
+    if (item.mapping.relation_type !== null) {
+      assertAgentEnum(item.mapping.relation_type, new Set(["explicit", "behavioral", "posthoc"]), `${itemPath}.mapping.relation_type`);
+    }
+    assertAgentScore(item.mapping.fit_score, `${itemPath}.mapping.fit_score`);
+    if (item.mapping.runner_up_model_id !== null && !modelIds.has(item.mapping.runner_up_model_id)) {
+      throw agentKnowledgeError(`unknown runner up model at ${itemPath}.mapping.runner_up_model_id`, `${itemPath}.mapping.runner_up_model_id`);
+    }
+    assertAgentScore(item.mapping.runner_up_score, `${itemPath}.mapping.runner_up_score`);
+    assertAgentStringArray(item.mapping.counterevidence, `${itemPath}.mapping.counterevidence`);
+    assertAgentEnum(item.mapping.status, new Set(["mapped", "awaiting_mapping"]), `${itemPath}.mapping.status`);
+    if ((item.mapping.candidate_model_id === null) !== (item.mapping.relation_type === null)) {
+      throw agentKnowledgeError(`candidate and relation mismatch at ${itemPath}.mapping`, `${itemPath}.mapping`);
+    }
+    if ((item.mapping.runner_up_model_id === null) !== (item.mapping.runner_up_score === 0)) {
+      throw agentKnowledgeError(`runner up and score mismatch at ${itemPath}.mapping`, `${itemPath}.mapping`);
+    }
+    if (item.mapping.candidate_model_id !== null && item.mapping.candidate_model_id === item.mapping.runner_up_model_id) {
+      throw agentKnowledgeError(`candidate duplicated as runner up at ${itemPath}.mapping.runner_up_model_id`, `${itemPath}.mapping.runner_up_model_id`);
+    }
+    if (item.mapping.fit_score < item.mapping.runner_up_score) {
+      throw agentKnowledgeError(`runner up exceeds candidate at ${itemPath}.mapping.runner_up_score`, `${itemPath}.mapping.runner_up_score`);
+    }
+    if (item.mapping.candidate_model_id === null && item.mapping.fit_score !== 0) {
+      throw agentKnowledgeError(`missing candidate has nonzero score at ${itemPath}.mapping.fit_score`, `${itemPath}.mapping.fit_score`);
+    }
+    const reliableMapping = item.mapping.candidate_model_id !== null &&
+      scoreBasisPoints(item.mapping.fit_score) >= 7_500 &&
+      scoreBasisPoints(item.mapping.fit_score) - scoreBasisPoints(item.mapping.runner_up_score) >= 1_000;
+    if ((item.mapping.status === "mapped") !== reliableMapping) {
+      throw agentKnowledgeError(`mapping status contradicts scores at ${itemPath}.mapping.status`, `${itemPath}.mapping.status`);
+    }
+    if (item.mapping.status === "mapped" && item.primary_model_id !== item.mapping.candidate_model_id) {
+      throw agentKnowledgeError(`primary model does not match accepted candidate at ${itemPath}.primary_model_id`, `${itemPath}.primary_model_id`);
+    }
+    if (item.mapping.status === "awaiting_mapping" && item.primary_model_id !== null) {
+      throw agentKnowledgeError(`awaiting case must not assign a primary model at ${itemPath}.primary_model_id`, `${itemPath}.primary_model_id`);
+    }
+    if (item.mapping.status === "awaiting_mapping" && item.related_model_ids.length !== 0) {
+      throw agentKnowledgeError(`awaiting case must not assign related models at ${itemPath}.related_model_ids`, `${itemPath}.related_model_ids`);
+    }
+    if (item.related_model_ids.includes(item.mapping.candidate_model_id)) {
+      throw agentKnowledgeError(`candidate model duplicated at ${itemPath}.related_model_ids`, `${itemPath}.related_model_ids`);
+    }
+
+    assertAgentEnum(item.case_kind, new Set(["plan", "execution"]), `${itemPath}.case_kind`);
+    assertAgentEnum(item.lifecycle_status, new Set(["candidate", "formal", "awaiting_mapping", "quarantined"]), `${itemPath}.lifecycle_status`);
+    if (item.lifecycle_status !== "quarantined" &&
+        (item.lifecycle_status === "awaiting_mapping") !== (item.mapping.status === "awaiting_mapping")) {
+      throw agentKnowledgeError(`case lifecycle contradicts mapping at ${itemPath}.lifecycle_status`, `${itemPath}.lifecycle_status`);
+    }
+    assertAgentObject(item.summary, `${itemPath}.summary`, CASE_SUMMARY_KEYS);
+    for (const key of ["situation", "goal", "outcome", "lesson"]) assertAgentString(item.summary[key], `${itemPath}.summary.${key}`);
+    assertAgentStringArray(item.summary.key_actions, `${itemPath}.summary.key_actions`, { min: 1 });
+
+    assertAgentObject(item.detail, `${itemPath}.detail`, CASE_DETAIL_KEYS);
+    assertAgentStringArray(item.detail.constraints, `${itemPath}.detail.constraints`);
+    assertSequentialSteps(item.detail.observable_steps, `${itemPath}.detail.observable_steps`, new Set(["order", "action", "checkpoint"]));
+    for (const [stepIndex, step] of item.detail.observable_steps.entries()) {
+      assertAgentString(step.action, `${itemPath}.detail.observable_steps[${stepIndex}].action`);
+      assertAgentString(step.checkpoint, `${itemPath}.detail.observable_steps[${stepIndex}].checkpoint`);
+    }
+    if (!Array.isArray(item.detail.decisions)) throw agentKnowledgeError(`invalid decisions at ${itemPath}.detail.decisions`, `${itemPath}.detail.decisions`);
+    item.detail.decisions.forEach((decision, decisionIndex) => {
+      const decisionPath = `${itemPath}.detail.decisions[${decisionIndex}]`;
+      assertAgentObject(decision, decisionPath, new Set(["decision", "rationale_summary"]));
+      assertAgentString(decision.decision, `${decisionPath}.decision`);
+      assertAgentString(decision.rationale_summary, `${decisionPath}.rationale_summary`);
+    });
+    if (!Array.isArray(item.detail.corrections)) throw agentKnowledgeError(`invalid corrections at ${itemPath}.detail.corrections`, `${itemPath}.detail.corrections`);
+    item.detail.corrections.forEach((correction, correctionIndex) => {
+      const correctionPath = `${itemPath}.detail.corrections[${correctionIndex}]`;
+      assertAgentObject(correction, correctionPath, new Set(["failure", "correction", "result"]));
+      for (const key of ["failure", "correction", "result"]) assertAgentString(correction[key], `${correctionPath}.${key}`);
+    });
+    for (const key of ["verification", "limitations", "failure_conditions"]) assertAgentStringArray(item.detail[key], `${itemPath}.detail.${key}`);
+
+    assertAgentObject(item.evidence, `${itemPath}.evidence`, CASE_EVIDENCE_KEYS);
+    assertAgentEnum(item.evidence.status, new Set(["verified_outcome", "partially_verified", "reported_outcome", "plan_only", "failed_with_verified_correction"]), `${itemPath}.evidence.status`);
+    if (typeof item.evidence.plan_only !== "boolean") throw agentKnowledgeError(`invalid boolean at ${itemPath}.evidence.plan_only`, `${itemPath}.evidence.plan_only`);
+    if (item.evidence.plan_only !== (item.case_kind === "plan") || item.evidence.plan_only !== (item.evidence.status === "plan_only")) {
+      throw agentKnowledgeError(`plan evidence mismatch at ${itemPath}.evidence`, `${itemPath}.evidence`);
+    }
+    if (!Array.isArray(item.evidence.claims) || item.evidence.claims.length === 0) throw agentKnowledgeError(`invalid claims at ${itemPath}.evidence.claims`, `${itemPath}.evidence.claims`);
+    item.evidence.claims.forEach((claim, claimIndex) => {
+      const claimPath = `${itemPath}.evidence.claims[${claimIndex}]`;
+      assertAgentObject(claim, claimPath, new Set(["claim", "claim_type", "evidence_grade", "receipt_ids", "freshness", "invalidation_condition"]));
+      assertAgentString(claim.claim, `${claimPath}.claim`);
+      assertAgentEnum(claim.claim_type, new Set(["fact", "inference", "unknown"]), `${claimPath}.claim_type`);
+      assertAgentEnum(claim.evidence_grade, new Set(["tool_receipt", "test_receipt", "artifact_receipt", "independent_verification", "reported_only", "none"]), `${claimPath}.evidence_grade`);
+      assertAgentStringArray(claim.receipt_ids, `${claimPath}.receipt_ids`);
+      claim.receipt_ids.forEach((receiptId, receiptIndex) => assertAgentId(receiptId, `${claimPath}.receipt_ids[${receiptIndex}]`, "receipt-"));
+      const receiptBacked = new Set(["tool_receipt", "test_receipt", "artifact_receipt", "independent_verification"]).has(claim.evidence_grade);
+      if (receiptBacked !== (claim.receipt_ids.length > 0)) {
+        throw agentKnowledgeError(`claim receipt mismatch at ${claimPath}.receipt_ids`, `${claimPath}.receipt_ids`);
+      }
+      if (claim.claim_type === "unknown" && claim.evidence_grade !== "none") {
+        throw agentKnowledgeError(`unknown claim must remain unverified at ${claimPath}.evidence_grade`, `${claimPath}.evidence_grade`);
+      }
+      assertAgentString(claim.freshness, `${claimPath}.freshness`);
+      assertAgentString(claim.invalidation_condition, `${claimPath}.invalidation_condition`);
+    });
+    const hasReceiptBackedClaim = item.evidence.claims.some((claim) => claim.receipt_ids.length > 0);
+    const verifiedEvidence = new Set(["verified_outcome", "partially_verified", "failed_with_verified_correction"])
+      .has(item.evidence.status);
+    if (verifiedEvidence !== hasReceiptBackedClaim) {
+      throw agentKnowledgeError(`evidence status lacks receipt-backed claim at ${itemPath}.evidence.status`, `${itemPath}.evidence.status`);
+    }
+
+    assertAgentObject(item.privacy, `${itemPath}.privacy`, CASE_PRIVACY_KEYS);
+    if (item.privacy.deidentified !== true) throw agentKnowledgeError(`case must be deidentified at ${itemPath}.privacy.deidentified`, `${itemPath}.privacy.deidentified`);
+    assertAgentEnum(item.privacy.dlp_status, new Set(["pending_scan", "passed", "failed", "uncertain"]), `${itemPath}.privacy.dlp_status`);
+    assertAgentEnum(item.privacy.publication_status, new Set(["pending_scan", "pending_mapping", "ready_not_publishable", "auto_publishable", "quarantined"]), `${itemPath}.privacy.publication_status`);
+    assertNullableSha256(item.privacy.dlp_receipt_sha256, `${itemPath}.privacy.dlp_receipt_sha256`);
+    assertAgentString(item.privacy.redaction_summary, `${itemPath}.privacy.redaction_summary`);
+    const dlpPending = item.privacy.dlp_status === "pending_scan";
+    if (dlpPending !== (item.privacy.dlp_receipt_sha256 === null)) {
+      throw agentKnowledgeError(`DLP status lacks bound receipt at ${itemPath}.privacy.dlp_receipt_sha256`, `${itemPath}.privacy.dlp_receipt_sha256`);
+    }
+    const expectedPublication = item.lifecycle_status === "quarantined" || new Set(["failed", "uncertain"]).has(item.privacy.dlp_status)
+      ? "quarantined"
+      : dlpPending ? "pending_scan"
+        : item.mapping.status === "awaiting_mapping" ? "pending_mapping"
+          : "ready_not_publishable";
+    if (item.privacy.publication_status !== expectedPublication) {
+      throw agentKnowledgeError(`publication status contradicts DLP at ${itemPath}.privacy.publication_status`, `${itemPath}.privacy.publication_status`);
+    }
+    if (item.privacy.publication_status === "auto_publishable") {
+      throw agentKnowledgeError(`auto publication remains disabled until DLP receipt production is implemented at ${itemPath}.privacy.publication_status`, `${itemPath}.privacy.publication_status`);
+    }
+    assertAgentStringArray(item.tags, `${itemPath}.tags`);
+    assertAgentDateTime(item.observed_at, `${itemPath}.observed_at`);
+    assertAgentDateTime(item.verified_at, `${itemPath}.verified_at`, { nullable: true });
+    if (new Set(["verified_outcome", "partially_verified", "failed_with_verified_correction"]).has(item.evidence.status) && item.verified_at === null) {
+      throw agentKnowledgeError(`verified case lacks verified_at at ${itemPath}.verified_at`, `${itemPath}.verified_at`);
+    }
+    if (item.lifecycle_status === "formal") {
+      const formalStatuses = new Set(["verified_outcome", "failed_with_verified_correction"]);
+      const factClaims = item.evidence.claims.filter((claim) => claim.claim_type === "fact");
+      const factGrades = new Set(["tool_receipt", "test_receipt", "artifact_receipt", "independent_verification"]);
+      if (!formalStatuses.has(item.evidence.status) || factClaims.length === 0 || factClaims.some((claim) => !factGrades.has(claim.evidence_grade))) {
+        throw agentKnowledgeError(`formal case lacks verified facts at ${itemPath}.lifecycle_status`, `${itemPath}.lifecycle_status`);
+      }
+    }
+    assertAgentEnum(item.origin_kind, new Set(["session_derived", "cursor_plan_derived"]), `${itemPath}.origin_kind`);
+  }
+}
+
+export function validateModelCaseCatalogShape(value, options = {}) {
+  return validateModelCaseCatalogInternal(value, options);
+}
+
+const FRAMEWORK_KEYS = new Set([
+  "id", "name", "lifecycle_status", "promotion_mode", "nearest_existing_asset_ids",
+  "semantic_signature", "human_version", "ai_protocol", "promotion_evidence", "privacy"
+]);
+const SEMANTIC_SIGNATURE_KEYS = new Set([
+  "problem_representation", "decomposition_operators", "control_policy", "structural_invariants",
+  "leaf_task_contract", "replanning_policy", "termination_condition", "evaluation_contract"
+]);
+
+function validateProblemSolvingFrameworkCatalogInternal(value, {
+  caseIds = new Set(),
+  problemTypeIds = new Set(),
+  knownAssetIds = new Set()
+} = {}) {
+  const path = "problem-solving-frameworks";
+  assertNoPrivateText(value, path);
+  assertAgentObject(value, path, new Set(["schema_version", "frameworks"]));
+  if (value.schema_version !== "1.0.0") throw agentKnowledgeError(`invalid schema_version at ${path}.schema_version`, `${path}.schema_version`);
+  if (!Array.isArray(value.frameworks)) throw agentKnowledgeError(`invalid frameworks at ${path}.frameworks`, `${path}.frameworks`);
+  const ids = new Set();
+  for (const [index, framework] of value.frameworks.entries()) {
+    const frameworkPath = `${path}.frameworks[${index}]`;
+    assertAgentObject(framework, frameworkPath, FRAMEWORK_KEYS);
+    assertAgentId(framework.id, `${frameworkPath}.id`, "framework-");
+    if (ids.has(framework.id)) throw agentKnowledgeError(`duplicate framework id at ${frameworkPath}.id`, `${frameworkPath}.id`);
+    ids.add(framework.id);
+    assertAgentString(framework.name, `${frameworkPath}.name`);
+    assertAgentEnum(framework.lifecycle_status, new Set(["candidate", "automatically_promoted", "deprecated", "quarantined"]), `${frameworkPath}.lifecycle_status`);
+    if (framework.promotion_mode !== "automatic") throw agentKnowledgeError(`invalid promotion mode at ${frameworkPath}.promotion_mode`, `${frameworkPath}.promotion_mode`);
+    assertAgentReferenceArray(framework.nearest_existing_asset_ids, knownAssetIds, `${frameworkPath}.nearest_existing_asset_ids`, { min: 1 });
+
+    assertAgentObject(framework.semantic_signature, `${frameworkPath}.semantic_signature`, SEMANTIC_SIGNATURE_KEYS);
+    for (const key of ["problem_representation", "control_policy", "leaf_task_contract", "replanning_policy", "termination_condition", "evaluation_contract"]) {
+      assertAgentString(framework.semantic_signature[key], `${frameworkPath}.semantic_signature.${key}`);
+    }
+    for (const key of ["decomposition_operators", "structural_invariants"]) {
+      assertAgentStringArray(framework.semantic_signature[key], `${frameworkPath}.semantic_signature.${key}`, { min: 1 });
+    }
+
+    assertAgentObject(framework.human_version, `${frameworkPath}.human_version`, new Set(["definition", "triggers", "anti_triggers", "steps", "stop_conditions", "failure_modes"]));
+    assertAgentString(framework.human_version.definition, `${frameworkPath}.human_version.definition`);
+    for (const key of ["triggers", "anti_triggers", "stop_conditions", "failure_modes"]) {
+      assertAgentStringArray(framework.human_version[key], `${frameworkPath}.human_version.${key}`, { min: 1 });
+    }
+    assertSequentialSteps(framework.human_version.steps, `${frameworkPath}.human_version.steps`, new Set(["order", "action", "checkpoint"]));
+    framework.human_version.steps.forEach((step, stepIndex) => {
+      assertAgentString(step.action, `${frameworkPath}.human_version.steps[${stepIndex}].action`);
+      assertAgentString(step.checkpoint, `${frameworkPath}.human_version.steps[${stepIndex}].checkpoint`);
+    });
+
+    assertAgentObject(framework.ai_protocol, `${frameworkPath}.ai_protocol`, new Set(["inputs", "state", "steps", "tool_contracts", "stop_conditions", "rollback_conditions"]));
+    for (const key of ["inputs", "state", "tool_contracts", "stop_conditions", "rollback_conditions"]) {
+      assertAgentStringArray(framework.ai_protocol[key], `${frameworkPath}.ai_protocol.${key}`, { min: 1 });
+    }
+    assertSequentialSteps(framework.ai_protocol.steps, `${frameworkPath}.ai_protocol.steps`, new Set(["order", "action", "branch", "checkpoint"]));
+    framework.ai_protocol.steps.forEach((step, stepIndex) => {
+      for (const key of ["action", "branch", "checkpoint"]) assertAgentString(step[key], `${frameworkPath}.ai_protocol.steps[${stepIndex}].${key}`);
+    });
+
+    assertAgentObject(framework.promotion_evidence, `${frameworkPath}.promotion_evidence`, new Set([
+      "independent_episode_count", "task_type_count", "failure_or_non_trigger_count",
+      "case_ids", "task_type_ids", "failure_or_non_trigger_case_ids", "comparison_summary",
+      "verification_status", "gate_receipt_sha256"
+    ]));
+    for (const key of ["independent_episode_count", "task_type_count", "failure_or_non_trigger_count"]) {
+      if (!Number.isInteger(framework.promotion_evidence[key]) || framework.promotion_evidence[key] < 0) {
+        throw agentKnowledgeError(`invalid count at ${frameworkPath}.promotion_evidence.${key}`, `${frameworkPath}.promotion_evidence.${key}`);
+      }
+    }
+    assertAgentReferenceArray(framework.promotion_evidence.case_ids, caseIds, `${frameworkPath}.promotion_evidence.case_ids`, { min: 1 });
+    assertAgentReferenceArray(framework.promotion_evidence.task_type_ids, problemTypeIds, `${frameworkPath}.promotion_evidence.task_type_ids`, { min: 1 });
+    assertAgentReferenceArray(framework.promotion_evidence.failure_or_non_trigger_case_ids, caseIds, `${frameworkPath}.promotion_evidence.failure_or_non_trigger_case_ids`);
+    const supportingCases = new Set(framework.promotion_evidence.case_ids);
+    for (const [caseIndex, caseId] of framework.promotion_evidence.failure_or_non_trigger_case_ids.entries()) {
+      if (!supportingCases.has(caseId)) {
+        throw agentKnowledgeError(
+          `failure or non-trigger case is not supporting evidence at ${frameworkPath}.promotion_evidence.failure_or_non_trigger_case_ids[${caseIndex}]`,
+          `${frameworkPath}.promotion_evidence.failure_or_non_trigger_case_ids[${caseIndex}]`
+        );
+      }
+    }
+    if (framework.promotion_evidence.independent_episode_count < 1 ||
+        framework.promotion_evidence.independent_episode_count > framework.promotion_evidence.case_ids.length) {
+      throw agentKnowledgeError(`episode count lacks case evidence at ${frameworkPath}.promotion_evidence.independent_episode_count`, `${frameworkPath}.promotion_evidence.independent_episode_count`);
+    }
+    if (framework.promotion_evidence.task_type_count !== framework.promotion_evidence.task_type_ids.length) {
+      throw agentKnowledgeError(`task type count mismatch at ${frameworkPath}.promotion_evidence.task_type_count`, `${frameworkPath}.promotion_evidence.task_type_count`);
+    }
+    if (framework.promotion_evidence.failure_or_non_trigger_count !== framework.promotion_evidence.failure_or_non_trigger_case_ids.length) {
+      throw agentKnowledgeError(`failure evidence count mismatch at ${frameworkPath}.promotion_evidence.failure_or_non_trigger_count`, `${frameworkPath}.promotion_evidence.failure_or_non_trigger_count`);
+    }
+    assertAgentString(framework.promotion_evidence.comparison_summary, `${frameworkPath}.promotion_evidence.comparison_summary`);
+    assertAgentEnum(framework.promotion_evidence.verification_status, new Set(["insufficient_for_promotion", "promotion_gate_passed"]), `${frameworkPath}.promotion_evidence.verification_status`);
+    assertNullableSha256(framework.promotion_evidence.gate_receipt_sha256, `${frameworkPath}.promotion_evidence.gate_receipt_sha256`);
+    const thresholdsMet = framework.promotion_evidence.independent_episode_count >= 3 &&
+      framework.promotion_evidence.task_type_count >= 2 &&
+      framework.promotion_evidence.failure_or_non_trigger_count >= 1;
+    const gatePassed = thresholdsMet &&
+      framework.promotion_evidence.verification_status === "promotion_gate_passed" &&
+      framework.promotion_evidence.gate_receipt_sha256 !== null;
+    if (framework.promotion_evidence.verification_status === "promotion_gate_passed" && !gatePassed) {
+      throw agentKnowledgeError(`unbound promotion receipt at ${frameworkPath}.promotion_evidence.verification_status`, `${frameworkPath}.promotion_evidence.verification_status`);
+    }
+    if (framework.promotion_evidence.verification_status === "insufficient_for_promotion" && framework.promotion_evidence.gate_receipt_sha256 !== null) {
+      throw agentKnowledgeError(`insufficient evidence has gate receipt at ${frameworkPath}.promotion_evidence.gate_receipt_sha256`, `${frameworkPath}.promotion_evidence.gate_receipt_sha256`);
+    }
+    if (framework.lifecycle_status === "automatically_promoted") {
+      throw agentKnowledgeError(`automatic promotion requires private evidence derivation at ${frameworkPath}.lifecycle_status`, `${frameworkPath}.lifecycle_status`);
+    }
+    if (framework.lifecycle_status === "candidate" && gatePassed) {
+      throw agentKnowledgeError(`promotion gate mismatch at ${frameworkPath}.lifecycle_status`, `${frameworkPath}.lifecycle_status`);
+    }
+
+    assertAgentObject(framework.privacy, `${frameworkPath}.privacy`, CASE_PRIVACY_KEYS);
+    if (framework.privacy.deidentified !== true) throw agentKnowledgeError(`framework must be deidentified at ${frameworkPath}.privacy.deidentified`, `${frameworkPath}.privacy.deidentified`);
+    assertAgentEnum(framework.privacy.dlp_status, new Set(["pending_scan", "passed", "failed", "uncertain"]), `${frameworkPath}.privacy.dlp_status`);
+    assertAgentEnum(framework.privacy.publication_status, new Set(["pending_scan", "ready_not_publishable", "auto_publishable", "quarantined"]), `${frameworkPath}.privacy.publication_status`);
+    assertNullableSha256(framework.privacy.dlp_receipt_sha256, `${frameworkPath}.privacy.dlp_receipt_sha256`);
+    assertAgentString(framework.privacy.redaction_summary, `${frameworkPath}.privacy.redaction_summary`);
+    const dlpPending = framework.privacy.dlp_status === "pending_scan";
+    if (dlpPending !== (framework.privacy.dlp_receipt_sha256 === null)) {
+      throw agentKnowledgeError(`DLP status lacks bound receipt at ${frameworkPath}.privacy.dlp_receipt_sha256`, `${frameworkPath}.privacy.dlp_receipt_sha256`);
+    }
+    const expectedPublication = framework.lifecycle_status === "quarantined" || new Set(["failed", "uncertain"]).has(framework.privacy.dlp_status)
+      ? "quarantined"
+      : dlpPending ? "pending_scan" : "ready_not_publishable";
+    if (framework.privacy.publication_status !== expectedPublication) {
+      throw agentKnowledgeError(`publication status contradicts DLP at ${frameworkPath}.privacy.publication_status`, `${frameworkPath}.privacy.publication_status`);
+    }
+    if (framework.privacy.publication_status === "auto_publishable") {
+      throw agentKnowledgeError(`auto publication remains disabled until DLP receipt production is implemented at ${frameworkPath}.privacy.publication_status`, `${frameworkPath}.privacy.publication_status`);
+    }
+  }
+}
+
+export function validateProblemSolvingFrameworkCatalogShape(value, options = {}) {
+  return validateProblemSolvingFrameworkCatalogInternal(value, options);
+}
+
+const REQUIRED_EXCLUDED_FIELDS = new Set(["reasoning", "encrypted_content", "agent_reasoning"]);
+
+export function validateCaseProvenance(value, { caseIds = new Set() } = {}) {
+  const path = "case-provenance";
+  assertAgentObject(value, path, new Set(["schema_version", "records"]));
+  if (value.schema_version !== "1.0.0") throw agentKnowledgeError(`invalid schema_version at ${path}.schema_version`, `${path}.schema_version`);
+  if (!Array.isArray(value.records)) throw agentKnowledgeError(`invalid records at ${path}.records`, `${path}.records`);
+  const seenCases = new Set();
+  for (const [index, record] of value.records.entries()) {
+    const recordPath = `${path}.records[${index}]`;
+    assertAgentObject(record, recordPath, new Set([
+      "case_id", "root_episode_id", "source_spans", "extractor_version", "redactions",
+      "excluded_fields", "created_at", "binding"
+    ]));
+    if (!caseIds.has(record.case_id)) throw agentKnowledgeError(`unknown case at ${recordPath}.case_id`, `${recordPath}.case_id`);
+    if (seenCases.has(record.case_id)) throw agentKnowledgeError(`duplicate case provenance at ${recordPath}.case_id`, `${recordPath}.case_id`);
+    seenCases.add(record.case_id);
+    assertAgentString(record.root_episode_id, `${recordPath}.root_episode_id`);
+    if (!Array.isArray(record.source_spans) || record.source_spans.length === 0) throw agentKnowledgeError(`invalid source spans at ${recordPath}.source_spans`, `${recordPath}.source_spans`);
+    let previousPath = "";
+    let previousEnd = 0;
+    record.source_spans.forEach((span, spanIndex) => {
+      const spanPath = `${recordPath}.source_spans[${spanIndex}]`;
+      assertAgentObject(span, spanPath, new Set(["source_kind", "relative_path", "artifact_sha256", "start_line", "end_line", "event_ids"]));
+      assertAgentEnum(span.source_kind, new Set(["session", "cursor_plan"]), `${spanPath}.source_kind`);
+      assertAgentString(span.relative_path, `${spanPath}.relative_path`);
+      if (span.relative_path.includes("\\") || span.relative_path.includes("\0") || span.relative_path.startsWith("/") || span.relative_path.split("/").includes("..")) {
+        throw agentKnowledgeError(`unsafe source path at ${spanPath}.relative_path`, `${spanPath}.relative_path`);
+      }
+      const expectedPrefix = span.source_kind === "session" ? "coding_session/sessions/" : "coding_session/cursor_plan/";
+      if (!span.relative_path.startsWith(expectedPrefix)) throw agentKnowledgeError(`source path outside allowed root at ${spanPath}.relative_path`, `${spanPath}.relative_path`);
+      if (!/^[0-9a-f]{64}$/.test(span.artifact_sha256)) throw agentKnowledgeError(`invalid sha256 at ${spanPath}.artifact_sha256`, `${spanPath}.artifact_sha256`);
+      if (!Number.isInteger(span.start_line) || span.start_line < 1 || !Number.isInteger(span.end_line) || span.end_line < span.start_line) {
+        throw agentKnowledgeError(`invalid line span at ${spanPath}`, spanPath);
+      }
+      if (span.relative_path < previousPath || (span.relative_path === previousPath && span.start_line <= previousEnd)) {
+        throw agentKnowledgeError(`unordered or overlapping span at ${spanPath}`, spanPath);
+      }
+      previousPath = span.relative_path;
+      previousEnd = span.end_line;
+      assertAgentStringArray(span.event_ids, `${spanPath}.event_ids`);
+    });
+    assertAgentString(record.extractor_version, `${recordPath}.extractor_version`);
+    if (!Array.isArray(record.redactions)) throw agentKnowledgeError(`invalid redactions at ${recordPath}.redactions`, `${recordPath}.redactions`);
+    record.redactions.forEach((redaction, redactionIndex) => {
+      const redactionPath = `${recordPath}.redactions[${redactionIndex}]`;
+      assertAgentObject(redaction, redactionPath, new Set(["kind", "count"]));
+      assertAgentEnum(redaction.kind, new Set(["secret", "email", "local_path", "username", "repository", "production_identifier"]), `${redactionPath}.kind`);
+      if (!Number.isInteger(redaction.count) || redaction.count < 1) throw agentKnowledgeError(`invalid count at ${redactionPath}.count`, `${redactionPath}.count`);
+    });
+    assertAgentStringArray(record.excluded_fields, `${recordPath}.excluded_fields`, { exact: REQUIRED_EXCLUDED_FIELDS });
+    assertAgentDateTime(record.created_at, `${recordPath}.created_at`);
+    assertAgentObject(record.binding, `${recordPath}.binding`, new Set(["status", "public_case_sha256", "bound_at"]));
+    assertAgentEnum(record.binding.status, new Set(["captured", "bound"]), `${recordPath}.binding.status`);
+    const isBound = record.binding.status === "bound";
+    if (isBound) {
+      if (!/^[0-9a-f]{64}$/.test(record.binding.public_case_sha256)) throw agentKnowledgeError(`invalid bound hash at ${recordPath}.binding.public_case_sha256`, `${recordPath}.binding.public_case_sha256`);
+      assertAgentDateTime(record.binding.bound_at, `${recordPath}.binding.bound_at`);
+    } else if (record.binding.public_case_sha256 !== null || record.binding.bound_at !== null) {
+      throw agentKnowledgeError(`unbound provenance has binding values at ${recordPath}.binding`, `${recordPath}.binding`);
+    }
+  }
+}
+
+const CASE_PROVENANCE_V2_VERSION = "2.0.0";
+const P2_SESSION_BINDING_KEYS = new Set([
+  "kind", "root_episode_hmac", "store_digest", "lineage_status", "sources"
+]);
+const P2_CURSOR_PLAN_BINDING_KEYS = new Set(["kind", "plan_hmac", "lineage_status"]);
+const P2_SOURCE_KEYS = new Set(["file_id_hmac", "projection_manifest_hmac", "records"]);
+const P2_RECORD_KEYS = new Set(["record_no", "event_kind", "projection_hmac"]);
+const P2_EVENT_KINDS = new Set([
+  "agent_message", "context_compacted", "response_message", "session_meta",
+  "task_complete", "task_started", "tool_end_status", "tool_output",
+  "tool_request", "turn_aborted", "turn_context", "user_message"
+]);
+const V2_PROVENANCE_RECORD_KEYS = new Set([
+  "case_id", "case_identity_sha256", "source_bindings", "source_binding_sha256",
+  "extractor_version", "redactions", "excluded_fields", "created_at",
+  "receipt_bindings", "binding"
+]);
+const V2_DLP_BINDING_KEYS = new Set([
+  "receipt_id", "receipt_sha256", "subject_sha256", "policy_id", "policy_version",
+  "policy_hash", "result", "status"
+]);
+const V2_CLAIM_BINDING_KEYS = new Set([
+  "claim_index", "claim_sha256", "calibration", "expected_receipt", "receipts"
+]);
+const V2_CLAIM_CALIBRATION_KEYS = new Set([
+  "claim_role", "calibration_status", "basis"
+]);
+const V2_EXPECTED_RECEIPT_KEYS = new Set([
+  "subject_id", "subject_sha256", "evidence_grade", "policy_id", "policy_version",
+  "policy_hash", "result", "status"
+]);
+const V2_RECEIPT_REFERENCE_KEYS = new Set(["receipt_id", "receipt_sha256"]);
+const RECEIPT_ID_V2 = /^receipt-[0-9a-f]{64}$/;
+
+function assertAgentSha256(value, path) {
+  if (typeof value !== "string" || !/^[0-9a-f]{64}$/.test(value)) {
+    throw agentKnowledgeError(`invalid sha256 at ${path}`, path);
+  }
+}
+
+function assertReceiptIdV2(value, path) {
+  if (typeof value !== "string" || !RECEIPT_ID_V2.test(value)) {
+    throw agentKnowledgeError(`invalid receipt id at ${path}`, path);
+  }
+}
+
+function compareAscii(left, right) {
+  if (left === right) return 0;
+  return left < right ? -1 : 1;
+}
+
+function sourceBindingSortKey(binding) {
+  return binding.kind === "p2_session_projection_v1"
+    ? `0:${binding.root_episode_hmac}:${binding.store_digest}`
+    : `1:${binding.plan_hmac}`;
+}
+
+function validateSourceBindingsV2(value, path) {
+  if (!Array.isArray(value) || value.length === 0) {
+    throw agentKnowledgeError(`invalid source bindings at ${path}`, path);
+  }
+  let previousBindingKey = null;
+  for (const [bindingIndex, sourceBinding] of value.entries()) {
+    const bindingPath = `${path}[${bindingIndex}]`;
+    if (!isPlainObject(sourceBinding)) {
+      throw agentKnowledgeError(`invalid source binding at ${bindingPath}`, bindingPath);
+    }
+    if (sourceBinding.kind === "p2_session_projection_v1") {
+      assertAgentObject(sourceBinding, bindingPath, P2_SESSION_BINDING_KEYS);
+      assertAgentSha256(sourceBinding.root_episode_hmac, `${bindingPath}.root_episode_hmac`);
+      assertAgentSha256(sourceBinding.store_digest, `${bindingPath}.store_digest`);
+      if (sourceBinding.lineage_status !== "consistent") {
+        throw agentKnowledgeError(`session lineage is not consistent at ${bindingPath}.lineage_status`, `${bindingPath}.lineage_status`);
+      }
+      if (!Array.isArray(sourceBinding.sources) || sourceBinding.sources.length === 0) {
+        throw agentKnowledgeError(`invalid sources at ${bindingPath}.sources`, `${bindingPath}.sources`);
+      }
+      let previousFile = null;
+      for (const [sourceIndex, source] of sourceBinding.sources.entries()) {
+        const sourcePath = `${bindingPath}.sources[${sourceIndex}]`;
+        assertAgentObject(source, sourcePath, P2_SOURCE_KEYS);
+        assertAgentSha256(source.file_id_hmac, `${sourcePath}.file_id_hmac`);
+        assertAgentSha256(source.projection_manifest_hmac, `${sourcePath}.projection_manifest_hmac`);
+        if (previousFile !== null && compareAscii(previousFile, source.file_id_hmac) >= 0) {
+          throw agentKnowledgeError(`unordered or duplicate source at ${sourcePath}.file_id_hmac`, `${sourcePath}.file_id_hmac`);
+        }
+        previousFile = source.file_id_hmac;
+        if (!Array.isArray(source.records) || source.records.length === 0) {
+          throw agentKnowledgeError(`invalid records at ${sourcePath}.records`, `${sourcePath}.records`);
+        }
+        let previousRecordNo = -1;
+        for (const [recordIndex, record] of source.records.entries()) {
+          const recordPath = `${sourcePath}.records[${recordIndex}]`;
+          assertAgentObject(record, recordPath, P2_RECORD_KEYS);
+          if (!Number.isSafeInteger(record.record_no) || record.record_no < 0 || record.record_no <= previousRecordNo) {
+            throw agentKnowledgeError(`unordered or invalid record at ${recordPath}.record_no`, `${recordPath}.record_no`);
+          }
+          previousRecordNo = record.record_no;
+          assertAgentEnum(record.event_kind, P2_EVENT_KINDS, `${recordPath}.event_kind`);
+          assertAgentSha256(record.projection_hmac, `${recordPath}.projection_hmac`);
+        }
+      }
+    } else if (sourceBinding.kind === "p2_cursor_plan_v1") {
+      assertAgentObject(sourceBinding, bindingPath, P2_CURSOR_PLAN_BINDING_KEYS);
+      assertAgentSha256(sourceBinding.plan_hmac, `${bindingPath}.plan_hmac`);
+      if (sourceBinding.lineage_status !== "not_applicable") {
+        throw agentKnowledgeError(`invalid Cursor Plan lineage status at ${bindingPath}.lineage_status`, `${bindingPath}.lineage_status`);
+      }
+    } else {
+      throw agentKnowledgeError(`unknown source binding kind at ${bindingPath}.kind`, `${bindingPath}.kind`);
+    }
+    const bindingKey = sourceBindingSortKey(sourceBinding);
+    if (previousBindingKey !== null && compareAscii(previousBindingKey, bindingKey) >= 0) {
+      throw agentKnowledgeError(`unordered or duplicate source binding at ${bindingPath}`, bindingPath);
+    }
+    previousBindingKey = bindingKey;
+  }
+}
+
+export function validateP2SourceBindingsV2Shape(value) {
+  return validateSourceBindingsV2(value, "p2-source-bindings-v2");
+}
+
+function caseIdentityProjectionV2(caseRecord) {
+  const { id: _id, ...withoutId } = caseRecord;
+  return {
+    ...withoutId,
+    evidence: {
+      ...withoutId.evidence,
+      claims: withoutId.evidence.claims.map((claim) => ({ ...claim, receipt_ids: [] }))
+    },
+    privacy: {
+      ...withoutId.privacy,
+      dlp_status: "pending_scan",
+      publication_status: "pending_scan",
+      dlp_receipt_sha256: null
+    }
+  };
+}
+
+function dlpSubjectProjectionV2(caseRecord) {
+  return {
+    ...caseRecord,
+    privacy: {
+      ...caseRecord.privacy,
+      dlp_status: "pending_scan",
+      publication_status: "pending_scan",
+      dlp_receipt_sha256: null
+    }
+  };
+}
+
+function normalizeDlpSubjectV2(value) {
+  if (typeof value === "string") {
+    return value.normalize("NFKC").replace(/\p{Default_Ignorable_Code_Point}/gu, "");
+  }
+  if (Array.isArray(value)) return value.map((entry) => normalizeDlpSubjectV2(entry));
+  if (value !== null && typeof value === "object") {
+    const result = {};
+    for (const [key, child] of Object.entries(value)) {
+      const normalizedKey = key.normalize("NFKC").replace(/\p{Default_Ignorable_Code_Point}/gu, "");
+      result[normalizedKey] = normalizeDlpSubjectV2(child);
+    }
+    return result;
+  }
+  return value;
+}
+
+function claimProjectionV2(claim) {
+  const { receipt_ids: _receiptIds, ...withoutReceipts } = claim;
+  return withoutReceipts;
+}
+
+export function deriveSourceBindingSha256V2(sourceBindings) {
+  return sha256(canonicalJsonBytes(sourceBindings));
+}
+
+export function deriveCaseIdentitySha256V2(caseRecord, sourceBindings) {
+  return sha256(canonicalJsonBytes({
+    case: caseIdentityProjectionV2(caseRecord),
+    source_binding_sha256: deriveSourceBindingSha256V2(sourceBindings)
+  }));
+}
+
+export function deriveClaimSha256V2(claim) {
+  return sha256(canonicalJsonBytes(claimProjectionV2(claim)));
+}
+
+export function deriveDlpSubjectSha256V2(caseRecord) {
+  return sha256(canonicalJsonBytes(normalizeDlpSubjectV2(dlpSubjectProjectionV2(caseRecord))));
+}
+
+export function validateCaseProvenanceV2Shape(value, { caseIds = new Set() } = {}) {
+  const path = "case-provenance-v2";
+  assertNoPrivateText(value, path);
+  assertAgentObject(value, path, new Set(["schema_version", "records"]));
+  if (value.schema_version !== CASE_PROVENANCE_V2_VERSION) {
+    throw agentKnowledgeError(`invalid schema_version at ${path}.schema_version`, `${path}.schema_version`);
+  }
+  if (!Array.isArray(value.records)) {
+    throw agentKnowledgeError(`invalid records at ${path}.records`, `${path}.records`);
+  }
+  let previousCaseId = null;
+  const receiptOwners = new Map();
+  function claimReceipt(receiptId, ownerPath) {
+    const existingOwner = receiptOwners.get(receiptId);
+    if (existingOwner !== undefined) {
+      throw agentKnowledgeError(
+        `receipt id is reused at ${ownerPath}.receipt_id`,
+        `${ownerPath}.receipt_id`
+      );
+    }
+    receiptOwners.set(receiptId, ownerPath);
+  }
+  for (const [index, record] of value.records.entries()) {
+    const recordPath = `${path}.records[${index}]`;
+    assertAgentObject(record, recordPath, V2_PROVENANCE_RECORD_KEYS);
+    if (!caseIds.has(record.case_id)) {
+      throw agentKnowledgeError(`unknown case at ${recordPath}.case_id`, `${recordPath}.case_id`);
+    }
+    if (previousCaseId !== null && compareAscii(previousCaseId, record.case_id) >= 0) {
+      throw agentKnowledgeError(`unordered or duplicate case provenance at ${recordPath}.case_id`, `${recordPath}.case_id`);
+    }
+    previousCaseId = record.case_id;
+    assertAgentSha256(record.case_identity_sha256, `${recordPath}.case_identity_sha256`);
+    if (record.case_id !== `case-${record.case_identity_sha256}`) {
+      throw agentKnowledgeError(`case id is not derived from its identity at ${recordPath}.case_id`, `${recordPath}.case_id`);
+    }
+    validateSourceBindingsV2(record.source_bindings, `${recordPath}.source_bindings`);
+    assertAgentSha256(record.source_binding_sha256, `${recordPath}.source_binding_sha256`);
+    if (record.source_binding_sha256 !== deriveSourceBindingSha256V2(record.source_bindings)) {
+      throw agentKnowledgeError(`source binding digest mismatch at ${recordPath}.source_binding_sha256`, `${recordPath}.source_binding_sha256`);
+    }
+    assertAgentString(record.extractor_version, `${recordPath}.extractor_version`);
+    if (!Array.isArray(record.redactions)) {
+      throw agentKnowledgeError(`invalid redactions at ${recordPath}.redactions`, `${recordPath}.redactions`);
+    }
+    let previousRedaction = null;
+    for (const [redactionIndex, redaction] of record.redactions.entries()) {
+      const redactionPath = `${recordPath}.redactions[${redactionIndex}]`;
+      assertAgentObject(redaction, redactionPath, new Set(["kind", "count"]));
+      assertAgentEnum(redaction.kind, new Set([
+        "secret", "email", "local_path", "username", "repository", "production_identifier"
+      ]), `${redactionPath}.kind`);
+      if (previousRedaction !== null && compareAscii(previousRedaction, redaction.kind) >= 0) {
+        throw agentKnowledgeError(`unordered or duplicate redaction at ${redactionPath}.kind`, `${redactionPath}.kind`);
+      }
+      previousRedaction = redaction.kind;
+      if (!Number.isSafeInteger(redaction.count) || redaction.count < 1) {
+        throw agentKnowledgeError(`invalid redaction count at ${redactionPath}.count`, `${redactionPath}.count`);
+      }
+    }
+    const exactExcluded = ["agent_reasoning", "encrypted_content", "reasoning"];
+    if (!Array.isArray(record.excluded_fields) ||
+        record.excluded_fields.length !== exactExcluded.length ||
+        record.excluded_fields.some((field, fieldIndex) => field !== exactExcluded[fieldIndex])) {
+      throw agentKnowledgeError(`invalid excluded fields at ${recordPath}.excluded_fields`, `${recordPath}.excluded_fields`);
+    }
+    assertAgentDateTime(record.created_at, `${recordPath}.created_at`);
+
+    assertAgentObject(record.receipt_bindings, `${recordPath}.receipt_bindings`, new Set(["dlp", "claims"]));
+    const dlpPath = `${recordPath}.receipt_bindings.dlp`;
+    assertAgentObject(record.receipt_bindings.dlp, dlpPath, V2_DLP_BINDING_KEYS);
+    assertReceiptIdV2(record.receipt_bindings.dlp.receipt_id, `${dlpPath}.receipt_id`);
+    claimReceipt(record.receipt_bindings.dlp.receipt_id, dlpPath);
+    for (const field of ["receipt_sha256", "subject_sha256", "policy_hash"]) {
+      assertAgentSha256(record.receipt_bindings.dlp[field], `${dlpPath}.${field}`);
+    }
+    assertAgentString(record.receipt_bindings.dlp.policy_id, `${dlpPath}.policy_id`);
+    assertAgentString(record.receipt_bindings.dlp.policy_version, `${dlpPath}.policy_version`);
+    if (record.receipt_bindings.dlp.result !== "passed" || record.receipt_bindings.dlp.status !== "active") {
+      throw agentKnowledgeError(`DLP receipt is not active and passed at ${dlpPath}`, dlpPath);
+    }
+    if (!Array.isArray(record.receipt_bindings.claims)) {
+      throw agentKnowledgeError(`invalid claim bindings at ${recordPath}.receipt_bindings.claims`, `${recordPath}.receipt_bindings.claims`);
+    }
+    for (const [claimIndex, claimBinding] of record.receipt_bindings.claims.entries()) {
+      const claimPath = `${recordPath}.receipt_bindings.claims[${claimIndex}]`;
+      assertAgentObject(claimBinding, claimPath, V2_CLAIM_BINDING_KEYS);
+      if (claimBinding.claim_index !== claimIndex) {
+        throw agentKnowledgeError(`claim binding index mismatch at ${claimPath}.claim_index`, `${claimPath}.claim_index`);
+      }
+      assertAgentSha256(claimBinding.claim_sha256, `${claimPath}.claim_sha256`);
+      const calibrationPath = `${claimPath}.calibration`;
+      assertAgentObject(claimBinding.calibration, calibrationPath, V2_CLAIM_CALIBRATION_KEYS);
+      assertAgentEnum(claimBinding.calibration.claim_role, new Set([
+        "fact", "inference", "unknown"
+      ]), `${calibrationPath}.claim_role`);
+      assertAgentEnum(claimBinding.calibration.calibration_status, new Set([
+        "receipt_verified", "reported", "unknown"
+      ]), `${calibrationPath}.calibration_status`);
+      assertAgentEnum(claimBinding.calibration.basis, new Set([
+        "authenticated_receipt", "no_receipt"
+      ]), `${calibrationPath}.basis`);
+      if (claimBinding.expected_receipt !== null) {
+        const expectedPath = `${claimPath}.expected_receipt`;
+        assertAgentObject(claimBinding.expected_receipt, expectedPath, V2_EXPECTED_RECEIPT_KEYS);
+        assertAgentString(claimBinding.expected_receipt.subject_id, `${expectedPath}.subject_id`);
+        if (!/^case-[0-9a-f]{64}:claim:[0-9]+$/.test(claimBinding.expected_receipt.subject_id)) {
+          throw agentKnowledgeError(`invalid claim subject at ${expectedPath}.subject_id`, `${expectedPath}.subject_id`);
+        }
+        assertAgentSha256(claimBinding.expected_receipt.subject_sha256, `${expectedPath}.subject_sha256`);
+        assertAgentEnum(claimBinding.expected_receipt.evidence_grade, new Set([
+          "tool_receipt", "test_receipt", "artifact_receipt", "independent_verification"
+        ]), `${expectedPath}.evidence_grade`);
+        assertAgentString(claimBinding.expected_receipt.policy_id, `${expectedPath}.policy_id`);
+        assertAgentString(claimBinding.expected_receipt.policy_version, `${expectedPath}.policy_version`);
+        assertAgentSha256(claimBinding.expected_receipt.policy_hash, `${expectedPath}.policy_hash`);
+        if (claimBinding.expected_receipt.result !== "verified" || claimBinding.expected_receipt.status !== "active") {
+          throw agentKnowledgeError(`claim receipt is not active and verified at ${expectedPath}`, expectedPath);
+        }
+        if (claimBinding.calibration.calibration_status !== "receipt_verified" ||
+            claimBinding.calibration.basis !== "authenticated_receipt") {
+          throw agentKnowledgeError(`claim calibration does not match its receipt at ${calibrationPath}`, calibrationPath);
+        }
+      } else if (claimBinding.calibration.basis !== "no_receipt" ||
+                 claimBinding.calibration.calibration_status === "receipt_verified" ||
+                 (claimBinding.calibration.claim_role === "unknown") !==
+                   (claimBinding.calibration.calibration_status === "unknown")) {
+        throw agentKnowledgeError(`claim calibration does not match an unverified claim at ${calibrationPath}`, calibrationPath);
+      }
+      if (!Array.isArray(claimBinding.receipts)) {
+        throw agentKnowledgeError(`invalid receipt references at ${claimPath}.receipts`, `${claimPath}.receipts`);
+      }
+      let previousReceiptId = null;
+      for (const [receiptIndex, receipt] of claimBinding.receipts.entries()) {
+        const receiptPath = `${claimPath}.receipts[${receiptIndex}]`;
+        assertAgentObject(receipt, receiptPath, V2_RECEIPT_REFERENCE_KEYS);
+        assertReceiptIdV2(receipt.receipt_id, `${receiptPath}.receipt_id`);
+        claimReceipt(receipt.receipt_id, receiptPath);
+        assertAgentSha256(receipt.receipt_sha256, `${receiptPath}.receipt_sha256`);
+        if (previousReceiptId !== null && compareAscii(previousReceiptId, receipt.receipt_id) >= 0) {
+          throw agentKnowledgeError(`unordered or duplicate receipt id at ${receiptPath}.receipt_id`, `${receiptPath}.receipt_id`);
+        }
+        previousReceiptId = receipt.receipt_id;
+      }
+      if ((claimBinding.expected_receipt === null) !== (claimBinding.receipts.length === 0)) {
+        throw agentKnowledgeError(`claim receipt expectation mismatch at ${claimPath}`, claimPath);
+      }
+    }
+
+    assertAgentObject(record.binding, `${recordPath}.binding`, new Set(["status", "public_case_sha256", "bound_at"]));
+    if (record.binding.status !== "bound") {
+      throw agentKnowledgeError(`v2 provenance must be bound at ${recordPath}.binding.status`, `${recordPath}.binding.status`);
+    }
+    assertAgentSha256(record.binding.public_case_sha256, `${recordPath}.binding.public_case_sha256`);
+    assertAgentDateTime(record.binding.bound_at, `${recordPath}.binding.bound_at`);
+  }
+}
+
+function sameStringArray(left, right) {
+  return left.length === right.length && left.every((value, index) => value === right[index]);
+}
+
+export function validateCaseClaimBundleV2Shape(value, {
+  modelIds = new Set(),
+  problemTypeIds = new Set(),
+  agentStageIds = new Set(),
+  dlpPolicy = null,
+  evidencePolicies = new Map()
+} = {}) {
+  const path = "case-claim-bundle-v2";
+  if (dlpPolicy !== null) {
+    assertAgentObject(dlpPolicy, `${path}.options.dlpPolicy`, new Set([
+      "policy_id", "policy_version", "policy_hash"
+    ]));
+    assertAgentString(dlpPolicy.policy_id, `${path}.options.dlpPolicy.policy_id`);
+    assertAgentString(dlpPolicy.policy_version, `${path}.options.dlpPolicy.policy_version`);
+    assertAgentSha256(dlpPolicy.policy_hash, `${path}.options.dlpPolicy.policy_hash`);
+  }
+  if (!(evidencePolicies instanceof Map)) {
+    throw agentKnowledgeError(`invalid evidence policies at ${path}.options.evidencePolicies`, `${path}.options.evidencePolicies`);
+  }
+  assertAgentObject(value, path, new Set(["cases", "provenance", "publication_authority"]));
+  if (value.publication_authority !== false) {
+    throw agentKnowledgeError(`publication authority remains disabled at ${path}.publication_authority`, `${path}.publication_authority`);
+  }
+  validateModelCaseCatalogInternal(value.cases, { modelIds, problemTypeIds, agentStageIds });
+  const caseIds = new Set(value.cases.cases.map((entry) => entry.id));
+  validateCaseProvenanceV2Shape(value.provenance, { caseIds });
+  const provenanceByCaseId = new Map(value.provenance.records.map((entry) => [entry.case_id, entry]));
+  if (caseIds.size !== provenanceByCaseId.size || [...caseIds].some((caseId) => !provenanceByCaseId.has(caseId))) {
+    throw agentKnowledgeError(`cases and provenance differ at ${path}.provenance`, `${path}.provenance`);
+  }
+  for (const caseRecord of value.cases.cases) {
+    const provenance = provenanceByCaseId.get(caseRecord.id);
+    const identitySha256 = deriveCaseIdentitySha256V2(caseRecord, provenance.source_bindings);
+    if (provenance.case_identity_sha256 !== identitySha256 || caseRecord.id !== `case-${identitySha256}`) {
+      throw agentKnowledgeError(`case identity mismatch at ${path}.provenance`, `${path}.provenance`);
+    }
+    if (provenance.binding.public_case_sha256 !== caseDigest(caseRecord)) {
+      throw agentKnowledgeError(`public case digest mismatch at ${path}.provenance`, `${path}.provenance`);
+    }
+    const expectedOriginKind = caseRecord.origin_kind === "session_derived"
+      ? "p2_session_projection_v1"
+      : "p2_cursor_plan_v1";
+    if (provenance.source_bindings.some((binding) => binding.kind !== expectedOriginKind)) {
+      throw agentKnowledgeError(`case origin and source binding differ at ${path}.provenance`, `${path}.provenance`);
+    }
+    if (caseRecord.origin_kind === "cursor_plan_derived" && caseRecord.case_kind !== "plan") {
+      throw agentKnowledgeError(
+        `Cursor Plan provenance must remain plan-only at ${path}.cases.${caseRecord.id}.case_kind`,
+        `${path}.cases.${caseRecord.id}.case_kind`
+      );
+    }
+    if (caseRecord.privacy.dlp_status !== "passed" ||
+        provenance.receipt_bindings.dlp.receipt_sha256 !== caseRecord.privacy.dlp_receipt_sha256 ||
+        provenance.receipt_bindings.dlp.subject_sha256 !== deriveDlpSubjectSha256V2(caseRecord)) {
+      throw agentKnowledgeError(`DLP binding mismatch at ${path}.provenance.${caseRecord.id}.receipt_bindings.dlp`, `${path}.provenance.${caseRecord.id}.receipt_bindings.dlp`);
+    }
+    if (dlpPolicy !== null && (
+      provenance.receipt_bindings.dlp.policy_id !== dlpPolicy.policy_id ||
+      provenance.receipt_bindings.dlp.policy_version !== dlpPolicy.policy_version ||
+      provenance.receipt_bindings.dlp.policy_hash !== dlpPolicy.policy_hash
+    )) {
+      throw agentKnowledgeError(`DLP policy mismatch at ${path}.provenance.${caseRecord.id}.receipt_bindings.dlp`, `${path}.provenance.${caseRecord.id}.receipt_bindings.dlp`);
+    }
+    if (provenance.receipt_bindings.claims.length !== caseRecord.evidence.claims.length) {
+      throw agentKnowledgeError(`claim binding count mismatch at ${path}.provenance.${caseRecord.id}.receipt_bindings.claims`, `${path}.provenance.${caseRecord.id}.receipt_bindings.claims`);
+    }
+    for (const [claimIndex, claim] of caseRecord.evidence.claims.entries()) {
+      const claimBinding = provenance.receipt_bindings.claims[claimIndex];
+      const expectedReceipt = claimBinding.expected_receipt;
+      const expectedSubjectId = `${caseRecord.id}:claim:${claimIndex}`;
+      const receiptIds = claimBinding.receipts.map((receipt) => receipt.receipt_id);
+      const receiptBacked = new Set([
+        "tool_receipt", "test_receipt", "artifact_receipt", "independent_verification"
+      ]).has(claim.evidence_grade);
+      const expectedCalibration = {
+        claim_role: claim.claim_type,
+        calibration_status: receiptBacked
+          ? "receipt_verified"
+          : claim.claim_type === "unknown" ? "unknown" : "reported",
+        basis: receiptBacked ? "authenticated_receipt" : "no_receipt"
+      };
+      const evidencePolicy = expectedReceipt === null
+        ? null
+        : evidencePolicies.get(expectedReceipt.policy_id);
+      if (claimBinding.claim_sha256 !== deriveClaimSha256V2(claim) ||
+          !sameStringArray(receiptIds, claim.receipt_ids) ||
+          receiptBacked !== (expectedReceipt !== null) ||
+          claimBinding.calibration.claim_role !== expectedCalibration.claim_role ||
+          claimBinding.calibration.calibration_status !== expectedCalibration.calibration_status ||
+          claimBinding.calibration.basis !== expectedCalibration.basis ||
+          (expectedReceipt !== null && (
+            expectedReceipt.subject_id !== expectedSubjectId ||
+            expectedReceipt.subject_sha256 !== provenance.case_identity_sha256 ||
+            expectedReceipt.evidence_grade !== claim.evidence_grade ||
+            evidencePolicy === undefined ||
+            !isPlainObject(evidencePolicy) ||
+            Object.keys(evidencePolicy).length !== 2 ||
+            expectedReceipt.policy_version !== evidencePolicy.policy_version ||
+            expectedReceipt.policy_hash !== evidencePolicy.policy_hash
+          ))) {
+        throw agentKnowledgeError(`claim receipt binding mismatch at ${path}.provenance.${caseRecord.id}.receipt_bindings.claims[${claimIndex}]`, `${path}.provenance.${caseRecord.id}.receipt_bindings.claims[${claimIndex}]`);
+      }
+    }
+    const anyReceiptVerified = provenance.receipt_bindings.claims.some(
+      (claimBinding) => claimBinding.calibration.calibration_status === "receipt_verified"
+    );
+    const factClaimIndexes = caseRecord.evidence.claims
+      .map((claim, claimIndex) => ({ claim, claimIndex }))
+      .filter(({ claim }) => claim.claim_type === "fact")
+      .map(({ claimIndex }) => claimIndex);
+    const expectedEvidenceStatus = caseRecord.case_kind === "plan"
+      ? "plan_only"
+      : !anyReceiptVerified
+        ? "reported_outcome"
+        : factClaimIndexes.length > 0 && factClaimIndexes.every(
+          (claimIndex) => provenance.receipt_bindings.claims[claimIndex]
+            .calibration.calibration_status === "receipt_verified"
+        )
+          ? "verified_outcome"
+          : "partially_verified";
+    if (caseRecord.evidence.status !== expectedEvidenceStatus) {
+      throw agentKnowledgeError(
+        `Case evidence status does not match its calibration ledger at ${path}.cases.${caseRecord.id}.evidence.status`,
+        `${path}.cases.${caseRecord.id}.evidence.status`
+      );
+    }
+    const requiresVerifiedAt = expectedEvidenceStatus === "verified_outcome" ||
+      expectedEvidenceStatus === "partially_verified";
+    if ((caseRecord.verified_at !== null) !== requiresVerifiedAt) {
+      throw agentKnowledgeError(
+        `Case verified time does not match its calibration ledger at ${path}.cases.${caseRecord.id}.verified_at`,
+        `${path}.cases.${caseRecord.id}.verified_at`
+      );
+    }
+  }
+}
+
+function caseDigest(caseRecord) {
+  return sha256(canonicalJsonBytes(caseRecord));
+}
+
+function deriveFrameworkPromotionEvidence(framework, casesById, provenanceByCaseId) {
+  const supportingCases = framework.promotion_evidence.case_ids.map((caseId) => casesById.get(caseId));
+  const episodeIds = new Set(framework.promotion_evidence.case_ids.map((caseId) => provenanceByCaseId.get(caseId).root_episode_id));
+  const taskTypes = new Set(supportingCases.flatMap((entry) => entry.problem_type_ids));
+  const exceptionalCases = new Set(framework.promotion_evidence.failure_or_non_trigger_case_ids);
+  return {
+    independent_episode_count: episodeIds.size,
+    task_type_ids: [...taskTypes].sort(),
+    failure_or_non_trigger_count: exceptionalCases.size
+  };
+}
+
+export function validateAgentKnowledgeBundle(value, {
+  modelIds = new Set(),
+  problemTypeIds = new Set(),
+  agentStageIds = new Set(),
+  knownAssetIds = new Set(),
+  receiptIds = new Set(),
+  dlpReceipts = new Map(),
+  promotionReceipts = new Map()
+} = {}) {
+  const path = "agent-knowledge-bundle";
+  assertAgentObject(value, path, new Set(["cases", "frameworks", "provenance"]));
+  validateModelCaseCatalogInternal(value.cases, { modelIds, problemTypeIds, agentStageIds });
+  const caseIds = new Set(value.cases.cases.map((entry) => entry.id));
+  validateCaseProvenance(value.provenance, { caseIds });
+
+  const casesById = new Map(value.cases.cases.map((entry) => [entry.id, entry]));
+  const provenanceByCaseId = new Map(value.provenance.records.map((entry) => [entry.case_id, entry]));
+  if (caseIds.size !== provenanceByCaseId.size || [...caseIds].some((caseId) => !provenanceByCaseId.has(caseId))) {
+    throw agentKnowledgeError(`public cases and private provenance differ at ${path}.provenance`, `${path}.provenance`);
+  }
+  for (const caseRecord of value.cases.cases) {
+    const provenance = provenanceByCaseId.get(caseRecord.id);
+    if (provenance.binding.status !== "bound" || provenance.binding.public_case_sha256 !== caseDigest(caseRecord)) {
+      throw agentKnowledgeError(`case provenance hash mismatch at ${path}.provenance`, `${path}.provenance`);
+    }
+    for (const [claimIndex, claim] of caseRecord.evidence.claims.entries()) {
+      for (const [receiptIndex, receiptId] of claim.receipt_ids.entries()) {
+        if (!receiptIds.has(receiptId)) {
+          throw agentKnowledgeError(`unknown evidence receipt at ${path}.cases.${caseRecord.id}.evidence.claims[${claimIndex}].receipt_ids[${receiptIndex}]`, `${path}.cases.${caseRecord.id}.evidence.claims[${claimIndex}].receipt_ids[${receiptIndex}]`);
+        }
+      }
+    }
+    const dlpReceipt = dlpReceipts.get(caseRecord.id);
+    if (caseRecord.privacy.dlp_status === "passed" && dlpReceipt !== caseRecord.privacy.dlp_receipt_sha256) {
+      throw agentKnowledgeError(`case DLP receipt mismatch at ${path}.cases.${caseRecord.id}.privacy.dlp_receipt_sha256`, `${path}.cases.${caseRecord.id}.privacy.dlp_receipt_sha256`);
+    }
+  }
+
+  validateProblemSolvingFrameworkCatalogInternal(value.frameworks, {
+    caseIds,
+    problemTypeIds,
+    knownAssetIds
+  });
+  for (const framework of value.frameworks.frameworks) {
+    const dlpReceipt = dlpReceipts.get(framework.id);
+    if (framework.privacy.dlp_status === "passed" && dlpReceipt !== framework.privacy.dlp_receipt_sha256) {
+      throw agentKnowledgeError(`framework DLP receipt mismatch at ${path}.frameworks.${framework.id}.privacy.dlp_receipt_sha256`, `${path}.frameworks.${framework.id}.privacy.dlp_receipt_sha256`);
+    }
+    const derived = deriveFrameworkPromotionEvidence(framework, casesById, provenanceByCaseId);
+    const declared = framework.promotion_evidence;
+    const taskTypeIdsMatch = declared.task_type_ids.length === derived.task_type_ids.length &&
+      declared.task_type_ids.every((id, index) => id === derived.task_type_ids[index]);
+    if (declared.independent_episode_count !== derived.independent_episode_count ||
+        declared.task_type_count !== derived.task_type_ids.length || !taskTypeIdsMatch ||
+        declared.failure_or_non_trigger_count !== derived.failure_or_non_trigger_count) {
+      throw agentKnowledgeError(`framework promotion evidence is not derived at ${path}.frameworks.${framework.id}.promotion_evidence`, `${path}.frameworks.${framework.id}.promotion_evidence`);
+    }
+    if (declared.verification_status === "promotion_gate_passed" && promotionReceipts.get(framework.id) !== declared.gate_receipt_sha256) {
+      throw agentKnowledgeError(`framework promotion receipt mismatch at ${path}.frameworks.${framework.id}.promotion_evidence.gate_receipt_sha256`, `${path}.frameworks.${framework.id}.promotion_evidence.gate_receipt_sha256`);
+    }
+  }
 }
 
 export function validateContract(kind, value) {

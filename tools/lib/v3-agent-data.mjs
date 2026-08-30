@@ -43,6 +43,11 @@ const CHAIN_KEYS = new Set(["schema_version", "id", "meta", "phases"]);
 const CHAIN_PHASE_KEYS = new Set(["id", "order", "name", "agent_role", "model_ids", "input", "output", "checkpoint", "stop_condition", "loop_back_to"]);
 const COLLECTION_KEYS = new Set(["title", "desc", "tags", "keywords", "models", "count"]);
 const COLLECTION_MODEL_KEYS = new Set(["model_id"]);
+const validatedV3AgentDataViews = new WeakSet();
+
+export function isValidatedV3AgentDataView(value) {
+  return value !== null && typeof value === "object" && validatedV3AgentDataViews.has(value);
+}
 
 function dataError(message, path) {
   const error = new TypeError(`${message} at ${path}`);
@@ -459,7 +464,7 @@ export function validateV3AgentData({ models, taxonomy, routerIndex, routerPromp
   const chainsById = readonlyMap([...chainContract.chainsById.entries()].map(([id, chain]) => [id, frozenClone(chain)]));
   const compositionsByModelId = readonlyMap([...chainContract.compositionsByModelId.entries()].map(([id, values]) => [id, frozenClone(values)]));
   const compositionsByChapterId = readonlyMap([...chainContract.compositionsByChapterId.entries()].map(([id, values]) => [id, frozenClone(values)]));
-  return deepFreeze({
+  const validatedView = deepFreeze({
     modelsById,
     problemTypes: frozenClone(routerIndex.problem_types),
     agentStages: frozenClone(routerIndex.agent_stages),
@@ -482,6 +487,8 @@ export function validateV3AgentData({ models, taxonomy, routerIndex, routerPromp
       assignedRoleCount: [...roleCounts.values()].reduce((sum, count) => sum + count, 0)
     })
   });
+  validatedV3AgentDataViews.add(validatedView);
+  return validatedView;
 }
 
 async function readJson(path, label) {
