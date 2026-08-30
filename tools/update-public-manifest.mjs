@@ -11,6 +11,7 @@ const ROOT_FILES = new Set([
   ".graphifyignore",
   ".npmrc",
   ".nvmrc",
+  "AGENTS.md",
   "README.md",
   "package-lock.json",
   "package.json",

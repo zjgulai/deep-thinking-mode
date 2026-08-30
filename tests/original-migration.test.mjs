@@ -52,6 +52,7 @@ test("public-safe ignore rules exclude local inputs while retaining named public
     ".local/example.md",
     "inbox/example.md",
     ".local/backup/raw-baseline-f876ce9.bundle",
+    "coding_session/private-placeholder.jsonl",
     ".DS_Store",
     "node_modules/markdown-it/index.mjs",
     "archives/raw-baseline.bundle",
@@ -63,6 +64,12 @@ test("public-safe ignore rules exclude local inputs while retaining named public
   for (const path of ["AGENTS.md", "README.md", "docs/example.md", "knowledge/model.md", "tools/example.mjs", "tests/example.mjs", "site/index.html"]) {
     assert.equal(await isIgnored(path), false, `${path} must remain public`);
   }
+
+  const graphifyIgnore = await readFile(join(REPOSITORY_ROOT, ".graphifyignore"), "utf8");
+  assert.match(graphifyIgnore, /^\/coding_session\/$/m);
+
+  const publicManifest = JSON.parse(await readFile(join(REPOSITORY_ROOT, "tools", "config", "public-paths.json"), "utf8"));
+  assert.equal(publicManifest.paths.some((path) => path === "coding_session" || path.startsWith("coding_session/")), false);
 });
 
 test("local-root assertions reject paths outside .local and symlink traversal", async () => {

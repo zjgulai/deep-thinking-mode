@@ -1,6 +1,7 @@
 # Local-only source material and processing outputs must never enter public history.
 /.local/
 /inbox/
+/coding_session/
 .DS_Store
 node_modules/
 *.bundle
