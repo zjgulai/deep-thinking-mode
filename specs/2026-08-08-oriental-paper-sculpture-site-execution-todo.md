@@ -148,6 +148,19 @@
 | 审计与回滚 | `/opt/xmind-site/audit/20260812T104309Z/`；修复前 image `sha256:0efeed057c2a9191b06ffd4b7c6770259a930a22f872db9c6be17e88e8e33399` 保留为 `xmind-site:rollback-20260812T104309Z` |
 | Git 收口 | 用户已授权 commit 与 push；本记录与 MIME 修复使用同一提交推送，未跟踪的根 `AGENTS.md` 不纳入提交 |
 
+### 2026-08-12 生产全页面对抗审计
+
+| 项目 | 已验收结果 |
+|---|---|
+| 可重复样例 | `tests/production-page-audit.test.mjs` 先以缺 title、重复 main/H1、缺 skip link、图片 alt/尺寸、inline handler、嵌入文档、无名控件、危险外链窗口、canonical 漂移、Router module 缺失和软 404 证明会失败 |
+| 自动回归 | Node 24.18.0 定向 19/19、生产审计相关定向 39/39、全量 `npm test` 1381/1381 通过 |
+| 本地全页合同 | 2812/2812 HTML 通过通用语义合同和八类页面族专属合同 |
+| 生产逐页审计 | `npm run audit:production` 对 2872 文件、2812 HTML、全部页面安全响应头和真实 404 通过，0 finding |
+| 章节与组合 E2E | 13/13 章节导师图加载、本地筛选和溢出通过；5/5 组合详情阶段、Prompt 目标与顺序通过 |
+| 模型与 Router E2E | 模型目录筛选及首/组合引用/末尾三类详情通过；Router 正常匹配、澄清回答、重置与紧急人身安全停止通过 |
+| 移动和运行时 | 390×844 与 320×568 无水平溢出，移动导航 Escape 归还焦点，主要控件至少 44px；全程 0 console warning/error |
+| 已知边界 | 逐页审计证明远程 bytes、响应头和 DOM 合同；浏览器 E2E 按共享脚本/交互族覆盖，不会为 2789 个静态模型页各自重复执行同一 `site.js` |
+
 旧 V1 图片在 V2-G6 前继续作为生产回滚版本，不覆盖、不删除、不在服务器手工替换单张图片。
 
 ### 2026-08-09 第二次工作记录

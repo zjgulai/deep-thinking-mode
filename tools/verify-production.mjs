@@ -15,7 +15,7 @@ import process from "node:process";
 import { fileURLToPath } from "node:url";
 import { checkSite, collectSiteFiles } from "./check-public-artifact.mjs";
 
-const DEFAULT_SITE_URL =
+export const DEFAULT_SITE_URL =
   process.env.PRODUCTION_URL ||
   process.env.PAGES_URL ||
   "https://xmind.lute-tlz-dddd.top/";
@@ -159,6 +159,7 @@ export async function fetchUrl(url, options = {}) {
           resolve({
             body: Buffer.concat(chunks),
             finalUrl: parsedUrl.href,
+            rawHeaders: response.rawHeaders,
             status,
             contentType: response.headers["content-type"] || "",
             redirects,

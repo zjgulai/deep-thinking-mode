@@ -35,13 +35,12 @@
 不声称复原真实容貌，也不使用未经核验的历史引语。完整规则见
 [东方纸雕纪念像与十三章设计规格](specs/2026-08-08-oriental-paper-sculpture-brand-and-chapter-design.md)。
 
-> **当前状态**：V4 东方彩绘导师版本已部署到腾讯云；最新生产构件为
-> `8acae8761f368c441b5f596c201bad139cbd8427faba9402dbc3b8e2655c43d0`（2864 文件）。
-> 全量测试 `1072/1072`，生产逐文件一致性、浏览器 E2E、单一安全响应头和 32 个邻接域名回归均通过。
-> 核心发布提交 `d929e32f4bba1fe35ab4173870c60aae338a984a` 已推送到 `origin/main`，
-> [GitHub Pages 镜像](https://zjgulai.github.io/deep-thinking-mode/) 与腾讯云主站均已通过 2864/2864 文件逐字节验证。
->
-> **Router/组合候选边界**：上述是 V4 历史生产基线。本次 Router 2.0 与组合工坊只完成本地代码、测试和构建候选；尚未 push、未替换腾讯云镜像，也未对生产候选执行逐文件复现验收。
+> **当前状态**：V4 东方彩绘导师、Router 2.0 和组合工坊已部署到腾讯云。
+> 最新生产构件为 `7c85af5d6e2c877216789e73241c7dbba07e2004f126b8531dd8637195418b6c`（2872 文件）；
+> 腾讯云主站已通过 2872/2872 文件逐字节验证、2812/2812 HTML 页面语义与每页安全响应头审计、
+> 真实 404、Router 五状态、章节/组合/模型交互族和 320/390px 浏览器 E2E。
+> 发布修复提交 `96e93726ce397dc2bb860c0ded1c5eb5cb9c80d6` 已推送到 `origin/main`，
+> [GitHub Pages 镜像](https://zjgulai.github.io/deep-thinking-mode/) 也已通过 2872/2872 文件逐字节验证。
 
 ## 快速开始
 
@@ -63,6 +62,7 @@ npm test                   # 全量 Node 测试
 npm run build              # 生成 site/，并完整镜像到 docs/
 npm run check:public       # 校验多页链接、资源、锚点、CSP 边界和 UTF-8
 node tools/verify-production.mjs --url https://xmind.lute-tlz-dddd.top/
+npm run audit:production   # 逐文件 + 2812 页语义/页面族/逐页安全头 + 真实 404
 npm run verify:security
 ```
 
@@ -111,6 +111,8 @@ tools/
   sanitize-public-models.mjs
   check-public-artifact.mjs
   verify-production.mjs
+  audit-production-pages.mjs
+  lib/production-page-audit.mjs
   verify-security-headers.mjs
   site-assets/
     site.css                全局样式（东方纸雕纪念像主题）
