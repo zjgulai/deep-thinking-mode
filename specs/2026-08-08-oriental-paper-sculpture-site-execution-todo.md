@@ -43,8 +43,12 @@
   更新到官方签名提交 `v6.0.0`、`v5.0.0`、`v5.0.0`。其中 configure/deploy 直接声明
   Node 24 runtime；upload-pages-artifact 为 composite action，并固定传递到声明 Node 24 runtime 的
   `actions/upload-artifact@v7.0.0`。focused workflow tests 为 `24/24`。
-- 本批尚未 commit、push 或触发新 workflow，因此“远端不再出现 legacy deployment”和
-  “新 run 无 Node 20 annotation”仍是待完成的远端验收门。
+- 维护提交 `f2e23b32392b1fd89bd9c99be262ef9d42921406` 已推送到 `origin/main`；Actions run
+  `33354834162` 的 build/deploy 全绿，source gate 在 `npm ci` 前通过。该 SHA 只有一条
+  `github-actions` deployment、无 legacy Pages build，build/deploy job 的 annotation count 均为 0。
+- GitHub Pages 最终对 `2872/2872` 文件逐字节通过；首页、Router、章节、模型与组合代表页、`.mjs`
+  MIME、HSTS 和真实 404 均通过。前两轮全站读取曾分别出现 3 个和 2 个非固定文件的瞬时 503，
+  单页立即复查恢复且最终完整轮次 0 error、0 retry；该现象记录为边缘瞬态，不伪称构件漂移。
 - 腾讯主机 TCP 22 曾短暂 `Connection refused`，随后自行恢复。只读证据排除了本地 SSH 配置、
   私钥、持续性 `sshd` 故障和 UFW；当前最强线索是腾讯 `YunJing` 主机安全层的临时 IP REJECT，
   但因临时规则已消失，未宣称确定根因，也未修改防火墙、安全组或服务。
