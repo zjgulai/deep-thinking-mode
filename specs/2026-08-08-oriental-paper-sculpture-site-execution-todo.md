@@ -32,6 +32,26 @@
 现有专属证书和共享 Nginx 保持不动，未来获准部署时也只允许替换 `xmind_site` 不可变镜像，
 不得改证书、共享入口或其他应用。本文仍不授权自动 commit 或 push。
 
+### 2026-08-30 Pages、Actions 与 SSH 维护记录
+
+- GitHub Pages 外部设置已从 `build_type=legacy`、`main:/docs` 切换为
+  `build_type=workflow`；站点切换后保持 HTTP 200。`docs/` 继续作为与 `site/` 逐字节一致的
+  兼容镜像，但不再作为主动发布源。
+- Pages workflow 增加只读 `pages: read` 与 fail-closed source gate；若外部设置不再是
+  `workflow`，将在安装依赖和运行昂贵测试前停止。
+- `actions/configure-pages`、`actions/upload-pages-artifact`、`actions/deploy-pages` 已在本地分别
+  更新到官方签名提交 `v6.0.0`、`v5.0.0`、`v5.0.0`。其中 configure/deploy 直接声明
+  Node 24 runtime；upload-pages-artifact 为 composite action，并固定传递到声明 Node 24 runtime 的
+  `actions/upload-artifact@v7.0.0`。focused workflow tests 为 `24/24`。
+- 本批尚未 commit、push 或触发新 workflow，因此“远端不再出现 legacy deployment”和
+  “新 run 无 Node 20 annotation”仍是待完成的远端验收门。
+- 腾讯主机 TCP 22 曾短暂 `Connection refused`，随后自行恢复。只读证据排除了本地 SSH 配置、
+  私钥、持续性 `sshd` 故障和 UFW；当前最强线索是腾讯 `YunJing` 主机安全层的临时 IP REJECT，
+  但因临时规则已消失，未宣称确定根因，也未修改防火墙、安全组或服务。
+- 恢复后只读复验唯一 `xmind_site/web` 容器：artifact
+  `7c85af5d6e2c877216789e73241c7dbba07e2004f126b8531dd8637195418b6c`、healthy、restart 0、
+  仅 `xmind_site_internal`、0 mounts、仅 `172.20.0.1:18888 -> 8080/tcp`；无需重新部署。
+
 ### V1 2026-08-09 技术执行记录
 
 - [x] G0：完成 main/脏工作区、Graphify、三份规格、构建与服务器基线审计。

@@ -18,6 +18,120 @@ import {
 
 const FULL_SHA_RE = /^[0-9a-f]{40}$/;
 
+// Independently reviewed from each upstream action tag/commit. Keep this map
+// literal: deriving it from the pin configuration would make a tag/SHA typo
+// self-confirming. upload-pages-artifact is composite and its pinned action.yml
+// delegates to upload-artifact@v7.0.0, whose runtime is node24.
+const TRUSTED_NODE24_ACTIONS = Object.freeze({
+  "actions/checkout": Object.freeze({
+    tag: "v6.1.0",
+    sha: "d23441a48e516b6c34aea4fa41551a30e30af803",
+    runtime: "node24",
+  }),
+  "actions/setup-node": Object.freeze({
+    tag: "v6.5.0",
+    sha: "249970729cb0ef3589644e2896645e5dc5ba9c38",
+    runtime: "node24",
+  }),
+  "actions/configure-pages": Object.freeze({
+    tag: "v6.0.0",
+    sha: "45bfe0192ca1faeb007ade9deae92b16b8254a0d",
+    runtime: "node24",
+  }),
+  "actions/upload-pages-artifact": Object.freeze({
+    tag: "v5.0.0",
+    sha: "fc324d3547104276b827a68afc52ff2a11cc49c9",
+    runtime: "composite",
+    delegatesTo: Object.freeze({
+      action: "actions/upload-artifact",
+      tag: "v7.0.0",
+      sha: "bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+      runtime: "node24",
+    }),
+  }),
+  "actions/deploy-pages": Object.freeze({
+    tag: "v5.0.0",
+    sha: "cd2ce8fcbc39b97be8ca5fce6e763baed58fa128",
+    runtime: "node24",
+  }),
+});
+
+function expectedPinsFromTrustSet() {
+  return Object.fromEntries(
+    Object.entries(TRUSTED_NODE24_ACTIONS).map(([action, { tag, sha }]) => [
+      action,
+      { tag, sha },
+    ])
+  );
+}
+
+function getTopLevelBlock(yaml, key) {
+  const lines = yaml.split("\n");
+  const start = lines.indexOf(`${key}:`);
+  assert.notEqual(start, -1, `Missing top-level ${key} block`);
+  const end = lines.findIndex((line, index) => index > start && /^\S/.test(line));
+  return lines.slice(start, end === -1 ? lines.length : end).join("\n").trimEnd();
+}
+
+function getBuildStepBlock(yaml, name) {
+  const lines = yaml.split("\n");
+  const buildStart = lines.indexOf("  build:");
+  const deployStart = lines.indexOf("  deploy:");
+  const marker = `      - name: ${name}`;
+  const start = lines.indexOf(marker);
+  assert.ok(
+    buildStart !== -1 && deployStart !== -1 && start > buildStart && start < deployStart,
+    `Missing build step: ${name}`
+  );
+  const nextStep = lines.findIndex(
+    (line, index) => index > start && index < deployStart && /^      - name: /.test(line)
+  );
+  return lines.slice(start, nextStep === -1 ? deployStart : nextStep).join("\n").trimEnd();
+}
+
+function assertTopLevelPermissionsPolicy(yaml) {
+  assert.deepEqual(
+    yaml.split("\n").filter((line) => /^\s*permissions\s*:/.test(line)),
+    ["permissions:", "    permissions:"]
+  );
+  assert.equal(
+    getTopLevelBlock(yaml, "permissions"),
+    "permissions:\n  contents: read\n  pages: read"
+  );
+}
+
+function assertPublishingSourceGatePolicy(yaml) {
+  const gate = getBuildStepBlock(yaml, "Verify single Pages publishing source");
+  assert.equal(
+    gate,
+    `      - name: Verify single Pages publishing source
+        env:
+          GH_TOKEN: \${{ github.token }}
+        run: |
+          mode="$(gh api "repos/\${GITHUB_REPOSITORY}/pages" --jq '.build_type')"
+          test "$mode" = workflow`
+  );
+  assert.ok(
+    yaml.indexOf("      - name: Verify single Pages publishing source") <
+      yaml.indexOf("      - name: Install dependencies"),
+    "Pages publishing-source gate must run before npm ci"
+  );
+}
+
+await test("current action pins match the independently reviewed Node 24 trust set", async () => {
+  const pins = await loadPins(".");
+  assert.deepEqual(pins, expectedPinsFromTrustSet());
+  assert.deepEqual(
+    TRUSTED_NODE24_ACTIONS["actions/upload-pages-artifact"].delegatesTo,
+    {
+      action: "actions/upload-artifact",
+      tag: "v7.0.0",
+      sha: "bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+      runtime: "node24",
+    }
+  );
+});
+
 // ─── validatePins ─────────────────────────────────────────────────────────────
 await test("validatePins — accepts correct pins", async () => {
   const pins = await loadPins(".");
@@ -103,11 +217,41 @@ await test("renderPagesWorkflow — has workflow_dispatch", async () => {
   assert.ok(yaml.includes("workflow_dispatch"), "Missing workflow_dispatch");
 });
 
-await test("renderPagesWorkflow — top-level permissions is contents: read only", async () => {
+await test("renderPagesWorkflow — top-level permissions are read-only", async () => {
   const pins = await loadPins(".");
   const yaml = renderPagesWorkflow(pins);
-  assert.ok(yaml.includes("permissions:"), "Missing permissions");
-  assert.ok(yaml.includes("contents: read"), "Missing contents: read");
+  assertTopLevelPermissionsPolicy(yaml);
+});
+
+await test("renderPagesWorkflow — fails closed unless Pages uses workflow publishing", async () => {
+  const pins = await loadPins(".");
+  const yaml = renderPagesWorkflow(pins);
+  assertPublishingSourceGatePolicy(yaml);
+});
+
+await test("workflow safety policy rejects permission and source-gate regressions", async () => {
+  const pins = await loadPins(".");
+  const yaml = renderPagesWorkflow(pins);
+  const gate = getBuildStepBlock(yaml, "Verify single Pages publishing source");
+  const install = getBuildStepBlock(yaml, "Install dependencies");
+
+  const permissionMutations = [
+    yaml.replace("  contents: read", "  contents: write"),
+    yaml.replace("  pages: read", "  pages: read\n  issues: read"),
+    yaml.replace("  build:\n", "  build:\n    permissions: write-all\n"),
+  ];
+  for (const mutation of permissionMutations) {
+    assert.throws(() => assertTopLevelPermissionsPolicy(mutation));
+  }
+
+  const gateMutations = [
+    yaml.replace("          GH_TOKEN: ${{ github.token }}\n", ""),
+    yaml.replace('          test "$mode" = workflow', '          test "$mode" != legacy'),
+    yaml.replace(`${gate}\n\n${install}`, `${install}\n\n${gate}`),
+  ];
+  for (const mutation of gateMutations) {
+    assert.throws(() => assertPublishingSourceGatePolicy(mutation));
+  }
 });
 
 await test("renderPagesWorkflow — concurrency group is pages", async () => {
@@ -135,8 +279,14 @@ await test("renderPagesWorkflow — upload artifact path is ./site", async () =>
 await test("renderPagesWorkflow — deploy job has pages: write and id-token: write", async () => {
   const pins = await loadPins(".");
   const yaml = renderPagesWorkflow(pins);
-  assert.ok(yaml.includes("pages: write"), "Missing pages: write");
-  assert.ok(yaml.includes("id-token: write"), "Missing id-token: write");
+  const lines = yaml.split("\n");
+  const start = lines.indexOf("    permissions:");
+  const end = lines.indexOf("    steps:", start);
+  assert.ok(start !== -1 && end > start, "Missing deploy permissions block");
+  assert.equal(
+    lines.slice(start, end).join("\n").trimEnd(),
+    "    permissions:\n      pages: write\n      id-token: write"
+  );
 });
 
 await test("renderPagesWorkflow — no tag-based uses references", async () => {

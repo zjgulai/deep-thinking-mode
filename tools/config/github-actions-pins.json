@@ -8,15 +8,15 @@
     "sha": "249970729cb0ef3589644e2896645e5dc5ba9c38"
   },
   "actions/configure-pages": {
-    "tag": "v5.0.0",
-    "sha": "983d7736d9b0ae728b81ab479565c72886d7745b"
+    "tag": "v6.0.0",
+    "sha": "45bfe0192ca1faeb007ade9deae92b16b8254a0d"
   },
   "actions/upload-pages-artifact": {
-    "tag": "v4.0.0",
-    "sha": "7b1f4a764d45c48632c6b24a0339c27f5614fb0b"
+    "tag": "v5.0.0",
+    "sha": "fc324d3547104276b827a68afc52ff2a11cc49c9"
   },
   "actions/deploy-pages": {
-    "tag": "v4.0.5",
-    "sha": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e"
+    "tag": "v5.0.0",
+    "sha": "cd2ce8fcbc39b97be8ca5fce6e763baed58fa128"
   }
 }

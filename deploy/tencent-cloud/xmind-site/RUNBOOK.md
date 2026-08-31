@@ -812,6 +812,36 @@ rtk curl -fsSIL https://xmind.lute-tlz-dddd.top
 - 根盘空间和 Docker `json-file` 日志体积。
 - 全部现有关键域名的严格 HTTPS 烟测。
 
+### 11.1 SSH 22 间歇性 `Connection refused`
+
+`Connection refused` 发生在 SSH 握手和密钥认证之前，不能据此判断私钥失效，也不得直接
+重启 `sshd`、修改防火墙或放宽安全组。先保留失败时间和客户端公网 IP，再按以下顺序做只读诊断：
+
+```bash
+rtk nc -vz -w 5 101.34.52.232 22
+rtk ssh-keyscan -T 5 -t ed25519 101.34.52.232 2>/dev/null | rtk ssh-keygen -lf -
+rtk ssh -vvv -o BatchMode=yes -o IdentitiesOnly=yes -i DDDD.pem ubuntu@101.34.52.232 true
+rtk dig +short A xmind.lute-tlz-dddd.top
+rtk curl -fsS https://xmind.lute-tlz-dddd.top/healthz
+```
+
+若 80/443 正常而 22 被主动拒绝，优先通过腾讯控制台的备用终端只读检查主机接入层：
+
+```bash
+rtk sudo ss -ltnp '( sport = :22 )'
+rtk sudo systemctl show ssh -p ActiveState -p SubState -p NRestarts
+rtk sudo sshd -t
+rtk sudo ufw status
+rtk sudo nft -a list chain ip filter YJ-FIREWALL-INPUT
+rtk systemctl is-active YDService YDLive
+```
+
+本机网络、密钥、`sshd`、主机防火墙、腾讯主机安全和云安全组必须分层判定。临时规则已经消失时，
+只能记录“最可能层级”，不得伪称已取得确定根因。确认是误封后，仍需单独授权才能为当时可信
+客户端公网 IP 添加最窄 `/32` 白名单；回滚是删除该次新增的唯一规则。恢复连接后必须重新核对
+ED25519 指纹，并重跑 `xmind_site/web` 的 image、artifact label、health、restart count、network、
+mount 与 port 只读验收，不能沿用故障前的旧结果。
+
 ## 12. 验收记录
 
 验收报告必须记录：

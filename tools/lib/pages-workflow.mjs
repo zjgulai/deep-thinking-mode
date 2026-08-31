@@ -72,6 +72,7 @@ on:
 
 permissions:
   contents: read
+  pages: read
 
 concurrency:
   group: pages
@@ -92,6 +93,13 @@ jobs:
         with:
           node-version: ${NODE_VERSION}
           cache: npm
+
+      - name: Verify single Pages publishing source
+        env:
+          GH_TOKEN: \${{ github.token }}
+        run: |
+          mode="$(gh api "repos/\${GITHUB_REPOSITORY}/pages" --jq '.build_type')"
+          test "$mode" = workflow
 
       - name: Install dependencies
         run: npm ci

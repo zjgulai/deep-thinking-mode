@@ -1096,9 +1096,9 @@ transition 提交；不允许单独改写 catalog 或 report。只有初始 base
 - GitHub Actions：
   - `actions/checkout@v6`
   - `actions/setup-node@v6`
-  - `actions/configure-pages@v5`
-  - `actions/upload-pages-artifact@v4`
-  - `actions/deploy-pages@v4`
+  - `actions/configure-pages@v6`
+  - `actions/upload-pages-artifact@v5`
+  - `actions/deploy-pages@v5`
 
 `markdown-it` 只在构建时运行。发布后的 `site/` 不加载 npm 包。
 

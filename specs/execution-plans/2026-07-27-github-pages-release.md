@@ -187,16 +187,16 @@ Use these exact values:
     "sha": "249970729cb0ef3589644e2896645e5dc5ba9c38"
   },
   "actions/configure-pages": {
-    "tag": "v5.0.0",
-    "sha": "983d7736d9b0ae728b81ab479565c72886d7745b"
+    "tag": "v6.0.0",
+    "sha": "45bfe0192ca1faeb007ade9deae92b16b8254a0d"
   },
   "actions/upload-pages-artifact": {
-    "tag": "v4.0.0",
-    "sha": "7b1f4a764d45c48632c6b24a0339c27f5614fb0b"
+    "tag": "v5.0.0",
+    "sha": "fc324d3547104276b827a68afc52ff2a11cc49c9"
   },
   "actions/deploy-pages": {
-    "tag": "v4.0.5",
-    "sha": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e"
+    "tag": "v5.0.0",
+    "sha": "cd2ce8fcbc39b97be8ca5fce6e763baed58fa128"
   }
 }
 ```
@@ -210,9 +210,11 @@ Tests reject non-lowercase or non-40-hex SHAs, missing or extra actions, duplica
 The canonical workflow has:
 
 - `push` restricted to `main` and an explicit `workflow_dispatch`.
-- Top-level `permissions: { contents: read }`.
+- Top-level permissions are read-only: `contents: read` and `pages: read`.
 - `concurrency.group: pages` and `cancel-in-progress: false`.
 - A `build` job on `ubuntu-latest` with pinned checkout (`fetch-depth: 1`, `persist-credentials: false`) and pinned setup-node (`node-version: 24.18.0`, `cache: npm`).
+- Before dependency installation, a fail-closed `gh api` gate requires the repository Pages setting to report
+  `build_type=workflow`; branch publishing must not run beside the reviewed workflow.
 - Separate steps for `npm ci`, `npm test`, `npm run check`, `npm run build`, a failing drift gate equivalent to `git diff --exit-code -- site/index.html`, and `npm run check:public`.
 - A separate public-tree step runs `node tools/check-public-tree.mjs --git-ref HEAD --manifest tools/config/public-paths.json`; it validates exact membership and modes from Git objects without requiring `.local/`.
 - Pinned configure-pages and upload-pages-artifact steps; upload path is exactly `./site`.
@@ -626,6 +628,6 @@ The release is complete only when all of the following are simultaneously true:
 - GitHub Pages custom workflows: <https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages>
 - `actions/checkout` reviewed commit: <https://github.com/actions/checkout/commit/d23441a48e516b6c34aea4fa41551a30e30af803>
 - `actions/setup-node` reviewed commit: <https://github.com/actions/setup-node/commit/249970729cb0ef3589644e2896645e5dc5ba9c38>
-- `actions/configure-pages` reviewed commit: <https://github.com/actions/configure-pages/commit/983d7736d9b0ae728b81ab479565c72886d7745b>
-- `actions/upload-pages-artifact` reviewed commit: <https://github.com/actions/upload-pages-artifact/commit/7b1f4a764d45c48632c6b24a0339c27f5614fb0b>
-- `actions/deploy-pages` reviewed commit: <https://github.com/actions/deploy-pages/commit/d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e>
+- `actions/configure-pages` reviewed commit: <https://github.com/actions/configure-pages/commit/45bfe0192ca1faeb007ade9deae92b16b8254a0d>
+- `actions/upload-pages-artifact` reviewed commit: <https://github.com/actions/upload-pages-artifact/commit/fc324d3547104276b827a68afc52ff2a11cc49c9>
+- `actions/deploy-pages` reviewed commit: <https://github.com/actions/deploy-pages/commit/cd2ce8fcbc39b97be8ca5fce6e763baed58fa128>
