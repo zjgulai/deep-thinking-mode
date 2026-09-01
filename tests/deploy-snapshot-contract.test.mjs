@@ -26,6 +26,8 @@ const CERT_HEADER = [
 const RELEASE_ID = "20260811T010203Z";
 const ARTIFACT_SHA = "a".repeat(64);
 const EXPECTED_TAG = `xmind-site:${ARTIFACT_SHA.slice(0, 12)}`;
+const COMPOSE_ENVIRONMENT_FILE_LABEL = "com.docker.compose.project.environment_file";
+const EXPECTED_COMPOSE_ENVIRONMENT_FILE = "/opt/xmind-site/current/.env";
 
 function stable(value) {
   return `${JSON.stringify(value, null, 2)}\n`;
@@ -52,16 +54,24 @@ function gatewayContract({ startedAt = "before", restartCount = 4 } = {}) {
   };
 }
 
-function web({ id, image, configImage = EXPECTED_TAG, startedAt }) {
+function web({
+  id,
+  image,
+  configImage = EXPECTED_TAG,
+  startedAt,
+  environmentFile = EXPECTED_COMPOSE_ENVIRONMENT_FILE,
+}) {
+  const labels = {
+    "com.docker.compose.project": "xmind_site",
+    "com.docker.compose.service": "web",
+    "com.lute.application": "xmind-site",
+    "com.lute.exposure": "lighthouse-gateway-only",
+  };
+  if (environmentFile !== null) labels[COMPOSE_ENVIRONMENT_FILE_LABEL] = environmentFile;
   return {
     Config: {
       Image: configImage,
-      Labels: {
-        "com.docker.compose.project": "xmind_site",
-        "com.docker.compose.service": "web",
-        "com.lute.application": "xmind-site",
-        "com.lute.exposure": "lighthouse-gateway-only",
-      },
+      Labels: labels,
     },
     Created: startedAt,
     HostConfig: {
@@ -196,7 +206,7 @@ async function runCompare(root, mode, artifact = ARTIFACT_SHA) {
   }
 }
 
-async function createUpgrade(root, mutate = () => {}) {
+async function createUpgrade(root, mutate = () => {}, preEnvironmentFile = null) {
   const oldImage = image({
     id: "sha256:old",
     tags: [EXPECTED_TAG],
@@ -211,7 +221,13 @@ async function createUpgrade(root, mutate = () => {}) {
     markers: serverMarkers("stable-block"),
   };
   await writeSnapshot(root, "pre", {
-    "containers.json": stable([shared.gateway, web({ id: "web-old", image: oldImage.Id, configImage: EXPECTED_TAG, startedAt: "old" })]),
+    "containers.json": stable([shared.gateway, web({
+      id: "web-old",
+      image: oldImage.Id,
+      configImage: EXPECTED_TAG,
+      startedAt: "old",
+      environmentFile: preEnvironmentFile,
+    })]),
     "images.json": stable([commonImage, oldImage]),
     "networks.json": stable([shared.network]),
     "gateway-contract.json": stable(gatewayContract()),
@@ -285,6 +301,16 @@ async function withSnapshots(create, mutate, assertion) {
   }
 }
 
+async function withUpgradeSnapshots(preEnvironmentFile, mutate, assertion) {
+  const root = await mkdtemp(path.join(tmpdir(), "xmind-snapshot-"));
+  try {
+    await createUpgrade(root, mutate, preEnvironmentFile);
+    await assertion(await runCompare(root, "upgrade"));
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+}
+
 test("snapshot producer schema matches the comparator fixtures and stays outside Docker", async () => {
   await execFileAsync("bash", ["-n", SNAPSHOT]);
   await execFileAsync("bash", ["-n", COMPARE]);
@@ -318,8 +344,37 @@ test("deployment staging excludes its repository placeholder from the public art
   );
 });
 
+test("rollback verification uses a private unpredictable root and one fail-closed frozen-evidence shell", async () => {
+  const runbook = await readFile(path.join(DEPLOY_DIR, "RUNBOOK.md"), "utf8");
+  assert.match(runbook, /rollback_root=\$\(mktemp -d "\/tmp\/xmind-rollback-<release-id>[.]XXXXXXXX"\)/u);
+  assert.match(runbook, /set -eu\nset -o pipefail/u);
+  assert.match(runbook, /--frozen-manifest "\$rollback_root\/previous-site[.]files[.]sha256"/u);
+  assert.match(runbook, /--frozen-artifact-sha-file "\$rollback_root\/previous-artifact[.]sha256"/u);
+  assert.match(runbook, /--frozen-file-count-file "\$rollback_root\/previous-site[.]file-count[.]txt"/u);
+  assert.match(
+    runbook,
+    /[|] tee "\$rollback_root\/production-verifier[.]txt"\nrg -F/u,
+  );
+  assert.doesNotMatch(runbook, /install -d -m 0700 \/tmp\/xmind-rollback-<release-id>\/site/u);
+  assert.doesNotMatch(runbook, /hash-public-artifact[.]mjs \/tmp\/xmind-rollback/u);
+  await assert.rejects(
+    execFileAsync("zsh", ["-lc", [
+      "set -eu",
+      "set -o pipefail",
+      "false | tee /dev/null",
+      "printf 'must-not-run\\n'",
+    ].join("\n")]),
+    (error) => error.code !== 0 && !error.stdout.includes("must-not-run"),
+  );
+});
+
 test("upgrade binds the running web and rollback hold to the candidate image", async (t) => {
-  await withSnapshots(createUpgrade, () => {}, ({ code, stdout, stderr }) => assert.equal(code, 0, `${stdout}\n${stderr}`));
+  await withUpgradeSnapshots(null, () => {}, ({ code, stdout, stderr }) => {
+    assert.equal(code, 0, `legacy pre without environment-file label must be accepted\n${stdout}\n${stderr}`);
+  });
+  await withUpgradeSnapshots(EXPECTED_COMPOSE_ENVIRONMENT_FILE, () => {}, ({ code, stdout, stderr }) => {
+    assert.equal(code, 0, `matching environment-file labels must be accepted\n${stdout}\n${stderr}`);
+  });
 
   const mutations = [
     ["candidate image was only loaded", (post) => {
@@ -331,12 +386,25 @@ test("upgrade binds the running web and rollback hold to the candidate image", a
     ["rollback hold tag is absent", (post) => {
       post.images[1].RepoTags = [];
     }],
+    ["post environment-file label is absent", (post) => {
+      delete post.containers[1].Config.Labels[COMPOSE_ENVIRONMENT_FILE_LABEL];
+    }],
+    ["post environment-file label has the wrong path", (post) => {
+      post.containers[1].Config.Labels[COMPOSE_ENVIRONMENT_FILE_LABEL] = "/tmp/untrusted.env";
+    }],
   ];
   for (const [name, mutate] of mutations) {
-    await t.test(name, () => withSnapshots(createUpgrade, mutate, ({ code, stdout, stderr }) => {
+    await t.test(name, () => withUpgradeSnapshots(null, mutate, ({ code, stdout, stderr }) => {
       assert.notEqual(code, 0, `${name} must fail closed\n${stdout}\n${stderr}`);
     }));
   }
+  await t.test("pre environment-file label has the wrong path", () => withUpgradeSnapshots(
+    "/tmp/untrusted.env",
+    () => {},
+    ({ code, stdout, stderr }) => {
+      assert.notEqual(code, 0, `wrong pre environment-file path must fail closed\n${stdout}\n${stderr}`);
+    },
+  ));
 });
 
 test("first install binds web, network, certificate, and marker to the release contract", async (t) => {

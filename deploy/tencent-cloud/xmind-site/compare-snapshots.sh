@@ -32,6 +32,7 @@ test -f "$pre/release-contract.json"
 test -f "$pre/release-contract.sha256"
 (cd "$pre" && sha256sum -c release-contract.sha256)
 expected_tag="xmind-site:${artifact_sha:0:12}"
+expected_compose_environment_file=/opt/xmind-site/current/.env
 jq -e \
   --arg release "$release_id" \
   --arg artifact "$artifact_sha" \
@@ -76,11 +77,15 @@ jq -e --arg sha "$artifact_sha" --arg tag "$expected_tag" '.[] | select(.Labels[
 
 post_web_count=$(jq '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web")] | length' "$post/containers.json")
 test "$post_web_count" -eq 1
-jq -e --arg image_id "$candidate_id" --arg image_ref "$expected_tag" '
+jq -e \
+  --arg image_id "$candidate_id" \
+  --arg image_ref "$expected_tag" \
+  --arg environment_file "$expected_compose_environment_file" '
   .[] |
   select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web") |
   .Image == $image_id and
   .Config.Image == $image_ref and
+  .Config.Labels["com.docker.compose.project.environment_file"] == $environment_file and
   .Config.Labels["com.lute.application"] == "xmind-site" and
   .Config.Labels["com.lute.exposure"] == "lighthouse-gateway-only" and
   .HostConfig.PortBindings == {"8080/tcp": [{"HostIp": "172.20.0.1", "HostPort": "18888"}]} and
@@ -111,12 +116,18 @@ if [[ $mode == upgrade ]]; then
   test "$(jq '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web")] | length' "$post/containers.json")" -eq 1
   test "$(jq '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site")] | length' "$pre/containers.json")" -eq 1
   test "$(jq '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site")] | length' "$post/containers.json")" -eq 1
+  jq -e --arg environment_file "$expected_compose_environment_file" '
+    .[] |
+    select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web") |
+    ((.Config.Labels | has("com.docker.compose.project.environment_file") | not) or
+      .Config.Labels["com.docker.compose.project.environment_file"] == $environment_file)
+  ' "$pre/containers.json" >/dev/null
   jq -S '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web") |
     del(.Id,.Image,.Created,.Config.Image,.State.StartedAt) |
-    del(.Config.Labels["com.docker.compose.config-hash"], .Config.Labels["com.docker.compose.image"], .Config.Labels["com.docker.compose.replace"], .Config.Labels["com.lute.artifact.sha256"], .Config.Labels["org.opencontainers.image.version"])]' "$pre/containers.json" > "$work/pre-xmind-web-static.json"
+    del(.Config.Labels["com.docker.compose.config-hash"], .Config.Labels["com.docker.compose.image"], .Config.Labels["com.docker.compose.project.environment_file"], .Config.Labels["com.docker.compose.replace"], .Config.Labels["com.lute.artifact.sha256"], .Config.Labels["org.opencontainers.image.version"])]' "$pre/containers.json" > "$work/pre-xmind-web-static.json"
   jq -S '[.[] | select(.Config.Labels["com.docker.compose.project"] == "xmind_site" and .Config.Labels["com.docker.compose.service"] == "web") |
     del(.Id,.Image,.Created,.Config.Image,.State.StartedAt) |
-    del(.Config.Labels["com.docker.compose.config-hash"], .Config.Labels["com.docker.compose.image"], .Config.Labels["com.docker.compose.replace"], .Config.Labels["com.lute.artifact.sha256"], .Config.Labels["org.opencontainers.image.version"])]' "$post/containers.json" > "$work/post-xmind-web-static.json"
+    del(.Config.Labels["com.docker.compose.config-hash"], .Config.Labels["com.docker.compose.image"], .Config.Labels["com.docker.compose.project.environment_file"], .Config.Labels["com.docker.compose.replace"], .Config.Labels["com.lute.artifact.sha256"], .Config.Labels["org.opencontainers.image.version"])]' "$post/containers.json" > "$work/post-xmind-web-static.json"
   cmp "$work/pre-xmind-web-static.json" "$work/post-xmind-web-static.json"
   while read -r old_id; do
     jq -e --arg id "$old_id" '.[] | select(.Id == $id)' "$post/images.json" >/dev/null

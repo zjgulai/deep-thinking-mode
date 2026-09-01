@@ -346,10 +346,20 @@ printf '%s\n' \
   "XMIND_ARTIFACT_SHA256=$artifact_sha" \
   "XMIND_IMAGE_TAG=$image_tag" \
   > "$current/.env"
-docker compose --project-name xmind_site config --quiet
 docker compose --project-name xmind_site \
+  --project-directory "$current" \
+  --env-file "$current/.env" \
+  -f "$current/compose.yaml" \
+  config --quiet
+docker compose --project-name xmind_site \
+  --project-directory "$current" \
+  --env-file "$current/.env" \
+  -f "$current/compose.yaml" \
   up -d --no-build --pull never --force-recreate --wait --wait-timeout 90
-docker compose --project-name xmind_site ps
+docker compose --project-name xmind_site \
+  --project-directory "$current" \
+  --env-file "$current/.env" \
+  -f "$current/compose.yaml" ps
 curl -fsS http://172.20.0.1:18888/healthz
 docker exec ai_video_nginx wget -q -O - http://172.20.0.1:18888/healthz
 curl -fsS http://172.20.0.1:18888/ -o "/tmp/xmind-origin-${release_id}.html"
@@ -645,7 +655,12 @@ REMOTE
 - 新增 `172.20.0.1:18888` 监听。
 - 新增 xmind 专属证书和两个 Nginx server block。
 
-升级只允许 `xmind_site/web` 容器 ID 和 image ID/tag 按候选版本变化；network、port、certificate lineage、server blocks 与共享 Nginx config 不新增、不变更，旧 image 及 rollback hold tag 仍存在。`ai_video_nginx` 的 ID、StartedAt、RestartCount、mount、network 和配置 hash 必须与 pre 完全相同。
+升级只允许 `xmind_site/web` 容器 ID 和 image ID/tag 按候选版本变化，并允许旧容器缺失的 Compose
+`com.docker.compose.project.environment_file` provenance label 迁移为精确固定值
+`/opt/xmind-site/current/.env`。pre 中该 label 只能缺失或已经等于固定值，post 必须等于固定值；
+任意其他路径、固定值变缺失或路径切换都失败。network、port、certificate lineage、server blocks
+与共享 Nginx config 不新增、不变更，旧 image 及 rollback hold tag 仍存在。`ai_video_nginx` 的 ID、
+StartedAt、RestartCount、mount、network 和配置 hash 必须与 pre 完全相同。
 
 不允许：
 
@@ -767,21 +782,34 @@ cmp -s "$pre/previous-site/index.html" "$rollback/restored-origin-index.html"
 REMOTE
 ```
 
-容器恢复只是第一层证据。把同一 `<release-id>` 的旧完整树复制到本地独立临时目录，先复核逐文件清单和 artifact SHA，再用旧树执行生产逐文件 bytes 验证：
+容器恢复只是第一层证据。把同一 `<release-id>` 的旧完整树与三份冻结证据复制到本地独立临时目录，先复核逐文件清单，再用 frozen rollback 模式复算 file count、每文件 SHA 和 artifact SHA，并执行生产逐文件 bytes 验证：
 
 ```bash
-rtk install -d -m 0700 /tmp/xmind-rollback-<release-id>/site
-rtk rsync -a --delete -e 'ssh -i DDDD.pem' ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site/ /tmp/xmind-rollback-<release-id>/site/
-rtk scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site.files.sha256 /tmp/xmind-rollback-<release-id>/
-rtk scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site.file-count.txt /tmp/xmind-rollback-<release-id>/
-rtk scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-artifact.sha256 /tmp/xmind-rollback-<release-id>/
-rtk zsh -lc 'cd /tmp/xmind-rollback-<release-id>/site && shasum -a 256 -c ../previous-site.files.sha256'
-rtk zsh -lc 'expected=$(tr -d "[:space:]" < /tmp/xmind-rollback-<release-id>/previous-site.file-count.txt); actual=$(find /tmp/xmind-rollback-<release-id>/site -type f | wc -l | tr -d "[:space:]"); test "$actual" = "$expected"'
-rtk zsh -lc 'expected=$(tr -d "\n" < /tmp/xmind-rollback-<release-id>/previous-artifact.sha256); actual=$(node tools/hash-public-artifact.mjs /tmp/xmind-rollback-<release-id>/site | cut -d " " -f 1); test "$actual" = "$expected"'
-rtk zsh -o pipefail -lc 'expected=$(tr -d "[:space:]" < /tmp/xmind-rollback-<release-id>/previous-site.file-count.txt); node tools/verify-production.mjs --url https://xmind.lute-tlz-dddd.top/ --site-dir /tmp/xmind-rollback-<release-id>/site | tee /tmp/xmind-rollback-<release-id>/production-verifier.txt; rg -F "for ${expected} files." /tmp/xmind-rollback-<release-id>/production-verifier.txt'
+rtk zsh -lc '
+set -eu
+set -o pipefail
+rollback_root=$(mktemp -d "/tmp/xmind-rollback-<release-id>.XXXXXXXX")
+chmod 0700 "$rollback_root"
+install -d -m 0700 "$rollback_root/site"
+rsync -a --delete -e "ssh -i DDDD.pem" ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site/ "$rollback_root/site/"
+scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site.files.sha256 "$rollback_root/"
+scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-site.file-count.txt "$rollback_root/"
+scp -i DDDD.pem ubuntu@101.34.52.232:/opt/xmind-site/audit/<release-id>/pre/previous-artifact.sha256 "$rollback_root/"
+(cd "$rollback_root/site" && shasum -a 256 -c ../previous-site.files.sha256)
+expected=$(tr -d "[:space:]" < "$rollback_root/previous-site.file-count.txt")
+node tools/verify-production.mjs \
+  --url https://xmind.lute-tlz-dddd.top/ \
+  --site-dir "$rollback_root/site" \
+  --frozen-manifest "$rollback_root/previous-site.files.sha256" \
+  --frozen-artifact-sha-file "$rollback_root/previous-artifact.sha256" \
+  --frozen-file-count-file "$rollback_root/previous-site.file-count.txt" \
+  | tee "$rollback_root/production-verifier.txt"
+rg -F "for ${expected} files." "$rollback_root/production-verifier.txt"
+printf "ROLLBACK_EVIDENCE_ROOT=%s\n" "$rollback_root"
+'
 ```
 
-`verify-production.mjs` 必须 exit 0，且 checked-files 等于保存的 `previous-site.file-count.txt`。不能拿本次候选 `site/` 验证旧镜像，也不能只比首页。
+必须由 `mktemp -d` 新建不可预测的 `0700` root，禁止复用预先存在的固定 `/tmp` 目录；传输、验证和 receipt 检查必须在同一个启用 `errexit`、`nounset`、`pipefail` 的 shell 中完成。`verify-production.mjs` 必须 exit 0，且 checked-files 等于保存的 `previous-site.file-count.txt`。三个 `--frozen-*` 参数必须同时出现；该模式只信任本次 pre 快照保存且已自洽验证的旧树、manifest、file count 与 artifact SHA，不要求旧公开脚本等于当前源码。正常候选发布仍不得使用 frozen 模式，必须走默认 `checkSite` trusted-source policy。不能拿本次候选 `site/` 验证旧镜像，也不能只比首页。
 
 对已含 Router 2.0/组合工坊的回滚目标，逐文件验证必须包含 `combinations/**` 与 `assets/router-engine.mjs`、`assets/router-controller.mjs`。若本次回滚目标是不含该功能的 V4 历史基线，则这些新路径必须恢复为该旧树声明的 404，同时旧树的全部已有文件逐字节通过。记录 checked-files、旧 artifact SHA、旧 image ID 和这些路径的预期状态。
 

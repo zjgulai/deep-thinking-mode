@@ -4,10 +4,13 @@
  *
  * Usage:
  *   node tools/verify-production.mjs [--url <site-url>] [--site-dir <path>]
+ *     [--frozen-manifest <path> --frozen-artifact-sha-file <path>
+ *      --frozen-file-count-file <path>]
  */
 
 import { createHash } from "node:crypto";
-import { readFile } from "node:fs/promises";
+import { constants } from "node:fs";
+import { open, readFile } from "node:fs/promises";
 import { get as httpGet } from "node:http";
 import { get as httpsGet } from "node:https";
 import path from "node:path";
@@ -23,6 +26,11 @@ const DEFAULT_SITE_DIR = "site";
 const MAX_REDIRECTS = 5;
 const MAX_RESPONSE_BYTES = 32 * 1024 * 1024;
 const DEFAULT_CONCURRENCY = 12;
+const FROZEN_OPTION_NAMES = [
+  "frozenManifest",
+  "frozenArtifactShaFile",
+  "frozenFileCountFile",
+];
 
 const CONTENT_TYPES = new Map([
   [".avif", ["image/avif"]],
@@ -218,31 +226,179 @@ async function mapWithConcurrency(items, concurrency, mapper) {
   return results;
 }
 
+function isCanonicalFrozenPath(relativePath) {
+  return relativePath.length > 0 && !path.posix.isAbsolute(relativePath) &&
+    path.posix.normalize(relativePath) === relativePath &&
+    !/[\u0000-\u001f\u007f?#%\\]/u.test(relativePath) &&
+    relativePath.split("/").every((segment) =>
+      segment && segment !== "." && segment !== ".." &&
+      (!segment.startsWith(".") || relativePath === ".nojekyll"));
+}
+
+async function readFrozenEvidence(filePath, label) {
+  let handle;
+  try {
+    handle = await open(filePath, constants.O_RDONLY | constants.O_NOFOLLOW);
+    const metadata = await handle.stat();
+    if (!metadata.isFile()) {
+      throw new Error(`${label} must be a regular non-symlink file`);
+    }
+    return await handle.readFile();
+  } catch (error) {
+    if (error.code === "ELOOP") {
+      throw new Error(`${label} must be a regular non-symlink file`);
+    }
+    throw error;
+  } finally {
+    await handle?.close();
+  }
+}
+
+function parseFrozenManifest(source) {
+  if (!source.endsWith("\n") || source.length === 1) {
+    throw new Error("frozen manifest must be a non-empty LF-terminated sha256sum manifest");
+  }
+  const entries = [];
+  const paths = new Set();
+  for (const line of source.slice(0, -1).split("\n")) {
+    const match = line.match(/^([0-9a-f]{64})  \.\/(.+)$/u);
+    const relativePath = match?.[2];
+    if (!match || !isCanonicalFrozenPath(relativePath)) {
+      throw new Error(`frozen manifest has an invalid entry: ${line}`);
+    }
+    if (paths.has(relativePath)) {
+      throw new Error(`frozen manifest repeats path: ${relativePath}`);
+    }
+    paths.add(relativePath);
+    entries.push({ digest: match[1], relativePath });
+  }
+  return entries;
+}
+
+function parseFrozenArtifactSha(source) {
+  if (!/^[0-9a-f]{64}\n$/u.test(source)) {
+    throw new Error("frozen artifact SHA file must contain one lowercase SHA-256 and LF");
+  }
+  return source.slice(0, -1);
+}
+
+function parseFrozenFileCount(source) {
+  const match = source.match(/^[ \t]*([1-9]\d*)[ \t]*\n$/u);
+  const count = Number(match?.[1]);
+  if (!match || !Number.isSafeInteger(count)) {
+    throw new Error("frozen file count file must contain one positive safe integer and LF");
+  }
+  return count;
+}
+
+async function inspectFrozenArtifact({
+  siteDir,
+  frozenManifest,
+  frozenArtifactShaFile,
+  frozenFileCountFile,
+}) {
+  try {
+    const [manifestSource, artifactSource, countSource] = await Promise.all([
+      readFrozenEvidence(frozenManifest, "frozen manifest"),
+      readFrozenEvidence(frozenArtifactShaFile, "frozen artifact SHA file"),
+      readFrozenEvidence(frozenFileCountFile, "frozen file count file"),
+    ]);
+    const entries = parseFrozenManifest(manifestSource.toString("utf8"));
+    const expectedArtifactSha = parseFrozenArtifactSha(artifactSource.toString("utf8"));
+    const expectedFileCount = parseFrozenFileCount(countSource.toString("utf8"));
+    const actualPaths = (await collectSiteFiles(siteDir))
+      .sort((left, right) => left.localeCompare(right, "en"));
+    if (actualPaths.some((relativePath) => !isCanonicalFrozenPath(relativePath))) {
+      throw new Error("site contains a noncanonical relative path");
+    }
+    const manifestPaths = entries.map(({ relativePath }) => relativePath);
+    const manifestSet = new Set(manifestPaths);
+    if (actualPaths.length !== manifestSet.size ||
+        actualPaths.some((relativePath) => !manifestSet.has(relativePath))) {
+      throw new Error("frozen manifest file set differs from the site file set");
+    }
+    if (expectedFileCount !== entries.length || expectedFileCount !== actualPaths.length) {
+      throw new Error("frozen file count differs from the manifest or site file count");
+    }
+
+    const files = [];
+    const artifactHash = createHash("sha256");
+    const digestByPath = new Map(entries.map((entry) => [entry.relativePath, entry.digest]));
+    for (const relativePath of actualPaths) {
+      const bytes = await readFrozenEvidence(
+        path.join(siteDir, relativePath),
+        `site file ${relativePath}`,
+      );
+      if (sha256(bytes) !== digestByPath.get(relativePath)) {
+        throw new Error(`frozen manifest digest mismatch: ${relativePath}`);
+      }
+      artifactHash.update(relativePath, "utf8");
+      artifactHash.update("\0");
+      artifactHash.update(bytes);
+      artifactHash.update("\0");
+      files.push({ bytes, relativePath });
+    }
+    if (artifactHash.digest("hex") !== expectedArtifactSha) {
+      throw new Error("frozen artifact SHA mismatch");
+    }
+    return { errors: [], files };
+  } catch (error) {
+    return { errors: [`FROZEN_ARTIFACT_INVALID: ${error.message}`], files: [] };
+  }
+}
+
 export async function verifyProductionSite({
   targetUrl = DEFAULT_SITE_URL,
   siteDir = DEFAULT_SITE_DIR,
   fetcher = fetchUrl,
   concurrency = DEFAULT_CONCURRENCY,
+  frozenManifest,
+  frozenArtifactShaFile,
+  frozenFileCountFile,
 } = {}) {
   if (!Number.isSafeInteger(concurrency) || concurrency < 1 || concurrency > 32) {
     throw new TypeError("concurrency must be an integer between 1 and 32");
   }
-  const localErrors = await checkSite({ siteDir });
-  if (localErrors.length > 0) {
+  const frozenValues = [frozenManifest, frozenArtifactShaFile, frozenFileCountFile];
+  const frozenCount = frozenValues.filter((value) => value !== undefined).length;
+  if (frozenCount !== 0 && frozenCount !== FROZEN_OPTION_NAMES.length) {
     return {
       checkedFiles: 0,
-      errors: localErrors.map((issue) => `LOCAL_ARTIFACT_INVALID: ${issue}`),
+      errors: ["FROZEN_OPTIONS_INCOMPLETE: all three frozen evidence files are required"],
       results: [],
     };
   }
 
+  let files;
+  let frozenBytes = null;
+  if (frozenCount === FROZEN_OPTION_NAMES.length) {
+    const frozen = await inspectFrozenArtifact({
+      siteDir, frozenManifest, frozenArtifactShaFile, frozenFileCountFile,
+    });
+    if (frozen.errors.length > 0) {
+      return { checkedFiles: 0, errors: frozen.errors, results: [] };
+    }
+    files = frozen.files.map(({ relativePath }) => relativePath);
+    frozenBytes = new Map(frozen.files.map(({ relativePath, bytes }) => [relativePath, bytes]));
+  } else {
+    const localErrors = await checkSite({ siteDir });
+    if (localErrors.length > 0) {
+      return {
+        checkedFiles: 0,
+        errors: localErrors.map((issue) => `LOCAL_ARTIFACT_INVALID: ${issue}`),
+        results: [],
+      };
+    }
+    files = await collectSiteFiles(siteDir);
+  }
+
   const baseUrl = normalizedBaseUrl(targetUrl);
-  const files = await collectSiteFiles(siteDir);
   const results = await mapWithConcurrency(
     files,
     concurrency,
     async (relativePath) => {
-      const localBody = await readFile(path.join(siteDir, relativePath));
+      const localBody = frozenBytes?.get(relativePath) ??
+        await readFile(path.join(siteDir, relativePath));
       const remoteUrl = remoteUrlForFile(baseUrl, relativePath);
       try {
         const response = await fetcher(remoteUrl, {
@@ -274,22 +430,30 @@ export async function verifyProductionSite({
 
 function parseCliArgs(argv) {
   const options = {};
+  const valueOptions = new Map([
+    ["--url", "targetUrl"],
+    ["--site-dir", "siteDir"],
+    ["--frozen-manifest", "frozenManifest"],
+    ["--frozen-artifact-sha-file", "frozenArtifactShaFile"],
+    ["--frozen-file-count-file", "frozenFileCountFile"],
+  ]);
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index];
-    if (argument === "--url" || argument === "--site-dir") {
+    const optionName = valueOptions.get(argument);
+    if (optionName) {
       const value = argv[index + 1];
       if (!value) {
         throw new Error(`${argument} requires a value`);
       }
-      if (argument === "--url") {
-        options.targetUrl = value;
-      } else {
-        options.siteDir = value;
-      }
+      options[optionName] = value;
       index += 1;
     } else {
       throw new Error(`Unknown argument: ${argument}`);
     }
+  }
+  const frozenCount = FROZEN_OPTION_NAMES.filter((name) => options[name] !== undefined).length;
+  if (frozenCount !== 0 && frozenCount !== FROZEN_OPTION_NAMES.length) {
+    throw new Error("--frozen-manifest, --frozen-artifact-sha-file, and --frozen-file-count-file must be provided together");
   }
   return options;
 }

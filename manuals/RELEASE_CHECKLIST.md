@@ -115,3 +115,5 @@ rtk node tools/verify-production.mjs --url https://xmind.lute-tlz-dddd.top/ --si
 出现以下任一情况立即停止或回滚：共享 Nginx `-t` 失败；既有域名回归变化；证书不匹配；origin hash 不符；生产有资源 404；创建了非预期 Docker 资源；根盘异常增长；容器无法在限制条件下稳定运行。
 
 回滚顺序：恢复共享 Nginx 备份并验证/reload → 停止 `xmind_site` Compose → 保留审计日志和镜像 tar → 重新验证既有域名。不得在故障排查中清理其他项目资源。
+
+回滚到历史 XMind 镜像后，必须在 `mktemp -d` 新建的 `0700` 私有根内传输同一 release 的 pre 快照旧树及 `previous-site.files.sha256`、`previous-artifact.sha256`、`previous-site.file-count.txt` 三份冻结证据，并在同一 fail-closed shell 中调用 `verify-production.mjs --frozen-manifest ... --frozen-artifact-sha-file ... --frozen-file-count-file ...`。三参数缺一即失败；正常候选发布禁止使用 frozen 模式，仍执行默认 trusted-source 检查。

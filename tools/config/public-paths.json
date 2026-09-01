@@ -11816,6 +11816,7 @@
     "tests/fixtures/wechat/ordinary-markdown.md",
     "tests/fixtures/wechat/square-export.md",
     "tests/fixtures/wechat/title-mismatch.md",
+    "tests/frozen-production-verifier.test.mjs",
     "tests/helpers/cleaning-state-fixture.mjs",
     "tests/helpers/fake-router-dom.mjs",
     "tests/model-library-performance.test.mjs",
