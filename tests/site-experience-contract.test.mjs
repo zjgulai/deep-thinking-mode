@@ -18,6 +18,39 @@ test("mobile navigation keeps a 44px touch target when the header is narrow", ()
   assert.match(rule, /flex-shrink:\s*0\b/);
 });
 
+test("model library can shrink inside a 390px viewport", () => {
+  const css = read("tools/site-assets/site.css");
+  const layoutRule = css.match(/\.library-layout\s*>\s*\*\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const searchRule = css.match(/\.search-box\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const inputRule = css.match(/\.search-box input\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const summaryRule = css.match(/\.model-summary\s*\{([^}]*)\}/u)?.[1] ?? "";
+
+  assert.match(layoutRule, /min-width:\s*0\b/u);
+  assert.match(searchRule, /min-width:\s*0\b/u);
+  assert.match(searchRule, /width:\s*100%(?:\s*;|\s)/u);
+  assert.match(inputRule, /flex:\s*1\s+1\s+0%/u);
+  assert.match(summaryRule, /min-width:\s*0\b/u);
+  assert.match(summaryRule, /overflow-wrap:\s*anywhere\b/u);
+});
+
+test("model library pagination controls preserve touch and narrow-screen contracts", () => {
+  const css = read("tools/site-assets/site.css");
+  const buttonRule = css.match(/\.library-pager button\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const resultFocusRule = css.match(/\.model-list\[tabindex="-1"\]:focus-visible\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const resultScrollRule = css.match(/\.model-list\[tabindex="-1"\]\s*\{([^}]*)\}/u)?.[1] ?? "";
+  const narrowStart = css.indexOf("@media (max-width: 680px)");
+  const narrowEnd = css.indexOf("@media (prefers-reduced-motion: reduce)", narrowStart);
+  const narrow = css.slice(narrowStart, narrowEnd);
+  const print = css.slice(css.indexOf("@media print"));
+
+  assert.match(buttonRule, /min-height:\s*44px\b/u);
+  assert.match(resultFocusRule, /outline:\s*2px\s+solid/u);
+  assert.match(resultScrollRule, /scroll-margin-top:\s*96px\b/u);
+  assert.match(narrow, /\.library-pager[^{}]*\{[^}]*grid-template-columns:\s*1fr/u);
+  assert.match(print, /\.library-pager[^}]*display:\s*none\s*!important/u);
+  assert.match(print, /\.library-print-note[^}]*display:\s*block\s*!important/u);
+});
+
 test("public model tags reject CSS color fragments", async () => {
   let sanitizePublicModelTags;
   try {

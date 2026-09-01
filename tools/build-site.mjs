@@ -35,6 +35,8 @@ const DOCS_DIR = join(ROOT, "docs");
 const ORIGIN = "https://xmind.lute-tlz-dddd.top";
 const PRODUCT_NAME = "前车之鉴-思维制胜";
 const PRODUCT_SUBTITLE = "在对的方向上前行，效率不值一提";
+const MODEL_LIBRARY_PAGE_SIZE = 48;
+const MODEL_LIBRARY_SEARCH_RENDER_LIMIT = 250;
 
 function writeTextFile(path, content) {
   writeFileSync(path, content.replace(/[ \t]+$/gm, ""));
@@ -96,6 +98,8 @@ function escapeHtml(value) {
 export function serializeScriptJson(value) {
   return JSON.stringify(value)
     .replace(/</gu, "\\u003c")
+    .replace(/>/gu, "\\u003e")
+    .replace(/&/gu, "\\u0026")
     .replace(/\u2028/gu, "\\u2028")
     .replace(/\u2029/gu, "\\u2029");
 }
@@ -479,18 +483,35 @@ function decorateCompositions(compositions, buildView) {
   });
 }
 
-function modelSummaryCard(model, url) {
+function modelSummaryView(model, url) {
   const triggers = model.when_to_use?.triggers?.slice(0, 2) ?? [];
   const title = model.__displayName;
   const skillName = displayName(model.meta?.skill_name) || "思维模型";
   const search = [model.meta?.name, title, model.core_definition, ...(model.meta?.tags ?? []), ...triggers, ...(model.meta?.agent_roles ?? [])].join(" ");
-  return `<article class="model-summary" data-filter-item data-search="${escapeHtml(search.toLowerCase())}">
-    <div class="model-summary-top"><span class="eyebrow">${escapeHtml(skillName)}</span><span class="quality">${model.reasoning_steps?.length ?? 0} 步协议</span></div>
-    <h2><a href="${url}">${escapeHtml(title)}</a></h2>
-    <p>${escapeHtml(excerpt(model.core_definition))}</p>
-    ${triggers.length ? `<div class="signal-line"><strong>适用：</strong>${escapeHtml(triggers.map((item) => excerpt(item, 54)).join(" · "))}</div>` : ""}
+  return {
+    title,
+    url,
+    skill: skillName,
+    steps: model.reasoning_steps?.length ?? 0,
+    definition: excerpt(model.core_definition),
+    signals: triggers.map((item) => excerpt(item, 54)).join(" · "),
+    roles: (model.meta?.agent_roles ?? []).map((role) => AGENT_ROLE_LABELS[role] || role),
+    search: search.toLowerCase(),
+  };
+}
+
+function modelSummaryCard(model, url, { filterable = true } = {}) {
+  const view = modelSummaryView(model, url);
+  const filterAttributes = filterable
+    ? ` data-filter-item data-search="${escapeHtml(view.search)}"`
+    : "";
+  return `<article class="model-summary"${filterAttributes}>
+    <div class="model-summary-top"><span class="eyebrow">${escapeHtml(view.skill)}</span><span class="quality">${view.steps} 步协议</span></div>
+    <h2><a href="${view.url}">${escapeHtml(view.title)}</a></h2>
+    <p>${escapeHtml(view.definition)}</p>
+    ${view.signals ? `<div class="signal-line"><strong>适用：</strong>${escapeHtml(view.signals)}</div>` : ""}
     ${roleChips(model.meta?.agent_roles)}
-    <a class="text-link" href="${url}" aria-label="查看 ${escapeHtml(title)} 的完整推理协议">查看完整协议 <span aria-hidden="true">→</span></a>
+    <a class="text-link" href="${view.url}" aria-label="查看 ${escapeHtml(view.title)} 的完整推理协议">查看完整协议 <span aria-hidden="true">→</span></a>
   </article>`;
 }
 
@@ -654,10 +675,30 @@ export async function buildSite() {
   <section class="section-shell section-block"><div class="section-intro"><p class="kicker">KNOWLEDGE MAP</p><h2>十三章认知地图</h2><p>每个模型只有一个主章节，同时通过标签和 Agent 角色建立跨章节连接。</p></div><div class="chapter-grid">${chapterCards}</div></section>`;
   writeTextFile(join(output, "index.html"), shell({ title: PRODUCT_NAME, description: `${PRODUCT_SUBTITLE}。把复杂问题转化为可理解、可选择、可执行的推理协议。`, pathname: "/", active: "home", body: homeBody, pageClass: "home-page" }));
 
-  const allModelCards = models.map((model) => modelSummaryCard(model, modelFile.get(model.id))).join("");
+  const modelLibraryRecords = models.map((model) => ({
+    name: model.meta.name,
+    url: modelFile.get(model.id),
+    skill_name: model.meta?.skill_name ?? "",
+    steps: model.reasoning_steps?.length ?? 0,
+    core: model.core_definition,
+    tags: model.meta?.tags ?? [],
+    triggers: model.when_to_use?.triggers?.slice(0, 2) ?? [],
+    role_ids: model.meta?.agent_roles ?? [],
+  }));
+  const firstModelCards = models.slice(0, MODEL_LIBRARY_PAGE_SIZE)
+    .map((model) => modelSummaryCard(model, modelFile.get(model.id), { filterable: false }))
+    .join("");
+  const modelLibraryPayload = serializeScriptJson({
+    schema: "model-library.v1",
+    page_size: MODEL_LIBRARY_PAGE_SIZE,
+    search_render_limit: MODEL_LIBRARY_SEARCH_RENDER_LIMIT,
+    role_labels: AGENT_ROLE_LABELS,
+    models: modelLibraryRecords,
+  });
+  const modelLibraryPageCount = Math.ceil(models.length / MODEL_LIBRARY_PAGE_SIZE);
   const modelsBody = `${breadcrumbs([{ href: "../index.html", label: "首页" }, { label: "模型库" }])}
     <section class="page-hero section-shell compact"><p class="kicker">MODEL LIBRARY</p><h1>模型库</h1><p>从 ${models.length} 个模型中按名称、定义、触发信号、标签与 Agent 角色筛选。</p></section>
-    <section class="section-shell library-layout"><aside class="filter-panel"><label for="model-filter">搜索模型</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="model-filter" type="search" placeholder="例如：根因、决策、系统…" autocomplete="off" data-filter-input></div><p><strong data-filter-count>${models.length}</strong> 个结果</p><a href="../router.html">不确定用什么？试试 Agent 路由器 →</a></aside><div><div class="model-list" data-filter-list>${allModelCards}</div><p class="empty-state" hidden data-filter-empty>没有匹配结果。尝试减少关键词，或使用 Agent 路由器描述问题。</p></div></section>`;
+    <section class="section-shell library-layout" data-model-library><aside class="filter-panel"><label for="model-filter">搜索模型</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="model-filter" type="search" maxlength="80" placeholder="例如：根因、决策、系统…" autocomplete="off" aria-controls="model-library-list" data-filter-input data-library-input></div><p><strong data-filter-count data-library-count>${models.length}</strong> 个结果</p><a href="../router.html">不确定用什么？试试 Agent 路由器 →</a></aside><div><div id="model-library-list" class="model-list" role="region" tabindex="-1" aria-label="模型搜索结果" data-filter-list data-library-list>${firstModelCards}</div><p class="empty-state" hidden data-filter-empty>没有匹配结果。尝试减少关键词，或使用 Agent 路由器描述问题。</p><p class="empty-state library-fallback" hidden data-library-fallback>完整模型索引暂不可用，当前仅显示前 ${MODEL_LIBRARY_PAGE_SIZE} 个模型。请<a href="../index.html">按十三章浏览完整模型库</a>。</p><nav class="library-pager" aria-label="模型库分页" data-library-pager hidden><button type="button" data-library-previous aria-controls="model-library-list">上一页</button><p><span data-library-range>1–${MODEL_LIBRARY_PAGE_SIZE}</span><span aria-hidden="true"> · </span>第 <strong data-library-page-number>1</strong> / <strong data-library-page-count>${modelLibraryPageCount}</strong> 页</p><button type="button" data-library-next aria-controls="model-library-list">下一页</button></nav><p class="library-print-note">打印仅包含当前显示范围：<span data-library-print-range>1–${MODEL_LIBRARY_PAGE_SIZE}，共 ${models.length} 个</span>。完整模型库请使用网页搜索或按十三章浏览。</p><p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-library-live></p><noscript><p class="empty-state">当前显示前 ${MODEL_LIBRARY_PAGE_SIZE} 个模型；请启用 JavaScript，或<a href="../index.html">按十三章浏览完整模型库</a>。</p></noscript><script type="application/json" data-model-library-payload>${modelLibraryPayload}</script></div></section>`;
   writeTextFile(join(modelsDir, "index.html"), shell({ title: "模型库", description: `浏览和筛选 ${models.length} 个系统化思维模型。`, pathname: "/models/", depth: 1, active: "models", body: modelsBody, pageClass: "library-page" }));
 
   for (const chapter of chapters) {

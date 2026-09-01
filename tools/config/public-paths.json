@@ -11819,6 +11819,7 @@
     "tests/fixtures/wechat/title-mismatch.md",
     "tests/helpers/cleaning-state-fixture.mjs",
     "tests/helpers/fake-router-dom.mjs",
+    "tests/model-library-performance.test.mjs",
     "tests/ocr-evidence.test.mjs",
     "tests/original-migration.test.mjs",
     "tests/pages-workflow.test.mjs",

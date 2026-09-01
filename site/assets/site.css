@@ -620,6 +620,7 @@ img, svg { max-width: 100%; }
 
 /* ── 模型库 ── */
 .library-layout { display: grid; grid-template-columns: 268px minmax(0, 1fr); gap: 40px; padding-bottom: 100px; }
+.library-layout > * { min-width: 0; }
 .filter-panel {
   position: sticky;
   top: 96px;
@@ -637,6 +638,8 @@ img, svg { max-width: 100%; }
 .search-box {
   display: flex;
   align-items: center;
+  width: 100%;
+  min-width: 0;
   min-height: 46px;
   padding: 0 14px;
   border: 1px solid var(--line-strong);
@@ -646,20 +649,24 @@ img, svg { max-width: 100%; }
 }
 .search-box:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 .search-box span { color: var(--accent); font-size: 18px; flex-shrink: 0; }
-.search-box input { width: 100%; min-width: 0; padding: 10px; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 14px; }
+.search-box input { flex: 1 1 0%; width: auto; min-width: 0; padding: 10px; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 14px; }
 .search-box.small { width: min(100%, 310px); }
 
 /* ── 模型摘要卡 ── */
 .model-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.model-list[tabindex="-1"] { scroll-margin-top: 96px; }
+.model-list[tabindex="-1"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .model-summary {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   min-height: 300px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: 0 1px 0 color-mix(in srgb, var(--line) 50%, transparent), 0 2px 6px rgba(52,38,22,.04);
+  overflow-wrap: anywhere;
   transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
 }
 .model-summary:hover {
@@ -704,6 +711,30 @@ img, svg { max-width: 100%; }
   text-align: center;
   font-size: 14px;
 }
+.library-pager {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+.library-pager button {
+  min-height: 44px;
+  padding: 9px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 700;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+.library-pager button:first-child { justify-self: start; }
+.library-pager button:last-child { justify-self: end; }
+.library-pager button:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); }
+.library-pager button:disabled { cursor: not-allowed; opacity: .45; }
+.library-pager p { min-width: 0; margin: 0; color: var(--muted); font-size: 12.5px; text-align: center; overflow-wrap: anywhere; }
+.library-print-note { display: none; }
 
 /* ── 章节 Hero ── */
 .chapter-hero {
@@ -1467,6 +1498,8 @@ img, svg { max-width: 100%; }
   .mentor-intro h2 { align-items: start; flex-direction: column; gap: 4px; }
   .chapter-toolbar { align-items: stretch; flex-direction: column; }
   .search-box.small { width: 100%; }
+  .library-pager { grid-template-columns: 1fr; }
+  .library-pager button:first-child, .library-pager button:last-child { justify-self: stretch; width: 100%; }
   .chapter-pager, .model-pager { grid-template-columns: 1fr; }
   .model-detail { padding-top: 40px; }
   .model-detail-hero { padding-bottom: 40px; }
@@ -1516,7 +1549,8 @@ img, svg { max-width: 100%; }
 /* ── 打印 ── */
 @media print {
   :root { --canvas: #fff; --surface: #fff; --ink: #000; --body: #222; --muted: #555; --line: #bbb; }
-  body::before, .site-header, .site-footer, .breadcrumbs, .model-pager, .chapter-pager, .toast, .button-copy, .problem-form, .hero-monument, .mentor-figure, .router-shortcuts, .router-copy-button, .combination-copy, .phase-decoration { display: none !important; }
+  body::before, .site-header, .site-footer, .breadcrumbs, .model-pager, .chapter-pager, .library-pager, .toast, .button-copy, .problem-form, .hero-monument, .mentor-figure, .router-shortcuts, .router-copy-button, .combination-copy, .phase-decoration { display: none !important; }
+  .library-print-note { display: block !important; margin-top: 20px; color: #222; }
   .section-shell, .model-detail { width: 100%; }
   .detail-grid { display: block; }
   .detail-aside { margin-top: 32px; }
