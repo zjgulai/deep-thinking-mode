@@ -225,6 +225,212 @@ test("page-family audit rejects unknown routes and a Router without its module",
   assert.ok(errors.includes("ROUTER_MODULE_MISSING: router.html"), errors.join("\n"));
 });
 
+test("model index audit enforces the bounded library contract", async () => {
+  const modelIndex = await readFile(new URL("../site/models/index.html", import.meta.url), "utf8");
+  assert.deepEqual(auditPageFamilyMarkup({
+    html: modelIndex,
+    relativePath: "models/index.html",
+  }), []);
+
+  const requiredMarkers = [
+    "data-library-input", "data-filter-input", "data-library-list", "data-filter-list",
+    "data-library-count", "data-filter-count", "data-filter-empty", "data-library-fallback",
+    "data-library-pager", "data-library-previous", "data-library-next", "data-library-range",
+    "data-library-page-number", "data-library-page-count",
+    "data-library-print-range", "data-library-live",
+  ];
+  for (const marker of requiredMarkers) {
+    const errors = auditPageFamilyMarkup({
+      html: modelIndex.replace(` ${marker}`, ""),
+      relativePath: "models/index.html",
+    });
+    assert.ok(
+      errors.includes(`MODEL_INDEX_LIBRARY_MARKER_INVALID: models/index.html ${marker}`),
+      `${marker}: ${errors.join("\n")}`,
+    );
+  }
+
+  const movedMarker = modelIndex
+    .replace(" data-library-next", "")
+    .replace("</body>", "<span data-library-next></span></body>");
+  const movedMarkerErrors = auditPageFamilyMarkup({ html: movedMarker, relativePath: "models/index.html" });
+  assert.ok(
+    movedMarkerErrors.includes("MODEL_INDEX_LIBRARY_MARKER_INVALID: models/index.html data-library-next"),
+    movedMarkerErrors.join("\n"),
+  );
+
+  const wrongNextElement = modelIndex
+    .replace(" data-library-next", "")
+    .replace("</nav>", "<span data-library-next></span></nav>");
+  const wrongNextErrors = auditPageFamilyMarkup({ html: wrongNextElement, relativePath: "models/index.html" });
+  assert.ok(
+    wrongNextErrors.includes("MODEL_INDEX_LIBRARY_ELEMENT_INVALID: models/index.html data-library-next"),
+    wrongNextErrors.join("\n"),
+  );
+
+  const listAliasesOnRoot = modelIndex
+    .replace(" data-filter-list data-library-list", "")
+    .replace(" data-model-library>", " data-model-library data-filter-list data-library-list>");
+  const listAliasErrors = auditPageFamilyMarkup({ html: listAliasesOnRoot, relativePath: "models/index.html" });
+  assert.ok(
+    listAliasErrors.includes("MODEL_INDEX_LIBRARY_ELEMENT_INVALID: models/index.html data-library-list"),
+    listAliasErrors.join("\n"),
+  );
+
+  const unclosedComment = modelIndex.replace(
+    '<section class="section-shell library-layout" data-model-library>',
+    '<!--<section class="section-shell library-layout" data-model-library>',
+  );
+  const commentErrors = auditPageFamilyMarkup({ html: unclosedComment, relativePath: "models/index.html" });
+  assert.ok(
+    commentErrors.includes("MODEL_INDEX_LIBRARY_ROOT_INVALID: models/index.html"),
+    commentErrors.join("\n"),
+  );
+
+  for (const equivalentMarkup of [
+    modelIndex.replace(
+      'type="application/json" data-model-library-payload',
+      "type='application/json' data-model-library-payload",
+    ),
+    modelIndex.replace(
+      '<aside class="filter-panel">',
+      '<section aria-label="嵌套语义区"></section><aside class="filter-panel">',
+    ),
+  ]) {
+    assert.deepEqual(auditPageFamilyMarkup({
+      html: equivalentMarkup,
+      relativePath: "models/index.html",
+    }), []);
+  }
+
+  for (const decoyMarker of [
+    modelIndex
+      .replace(" data-library-next", "")
+      .replace("</body>", "<!-- data-library-next --></body>"),
+    modelIndex
+      .replace(" data-library-next", "")
+      .replace(
+        '{"schema":"model-library.v1"',
+        '{"decoy":" data-library-next ","schema":"model-library.v1"',
+      ),
+    modelIndex
+      .replace(" data-library-next", "")
+      .replace("</nav>", '<span title=" data-library-next "></span></nav>'),
+  ]) {
+    const errors = auditPageFamilyMarkup({ html: decoyMarker, relativePath: "models/index.html" });
+    assert.ok(
+      errors.includes("MODEL_INDEX_LIBRARY_MARKER_INVALID: models/index.html data-library-next"),
+      errors.join("\n"),
+    );
+  }
+
+  const duplicatePayloadMarker = modelIndex.replace(
+    '<section class="section-shell library-layout" data-model-library>',
+    '<div data-model-library-payload></div><section class="section-shell library-layout" data-model-library>',
+  );
+  const duplicatePayloadErrors = auditPageFamilyMarkup({
+    html: duplicatePayloadMarker,
+    relativePath: "models/index.html",
+  });
+  assert.ok(
+    duplicatePayloadErrors.includes("MODEL_INDEX_LIBRARY_PAYLOAD_MARKER_INVALID: models/index.html"),
+    duplicatePayloadErrors.join("\n"),
+  );
+
+  const splitAliases = modelIndex
+    .replace(" data-filter-input", "")
+    .replace('<aside class="filter-panel">', '<aside class="filter-panel" data-filter-input>');
+  const splitAliasErrors = auditPageFamilyMarkup({ html: splitAliases, relativePath: "models/index.html" });
+  assert.ok(
+    splitAliasErrors.includes(
+      "MODEL_INDEX_LIBRARY_ALIAS_MISMATCH: models/index.html data-library-input+data-filter-input",
+    ),
+    splitAliasErrors.join("\n"),
+  );
+
+  for (const invalidPayload of [
+    modelIndex.replace(" data-model-library-payload", ""),
+    modelIndex.replace(
+      /(<script type="application\/json" data-model-library-payload>)[\s\S]*?(<\/script>)/u,
+      "$1{}$2",
+    ),
+  ]) {
+    const errors = auditPageFamilyMarkup({
+      html: invalidPayload,
+      relativePath: "models/index.html",
+    });
+    assert.ok(
+      errors.includes("MODEL_INDEX_LIBRARY_PAYLOAD_INVALID: models/index.html"),
+      errors.join("\n"),
+    );
+  }
+
+  const mutatePayload = (mutate) => modelIndex.replace(
+    /(<script type="application\/json" data-model-library-payload>)([\s\S]*?)(<\/script>)/u,
+    (_match, opening, json, closing) => {
+      const payload = JSON.parse(json);
+      mutate(payload);
+      return `${opening}${JSON.stringify(payload)}${closing}`;
+    },
+  );
+  for (const invalidRuntimePayload of [
+    mutatePayload((payload) => { payload.models = "x".repeat(2789); }),
+    mutatePayload((payload) => { payload.models = Array(2789).fill(null); }),
+    mutatePayload((payload) => { payload.models[0].url = "../escape.html"; }),
+  ]) {
+    const errors = auditPageFamilyMarkup({
+      html: invalidRuntimePayload,
+      relativePath: "models/index.html",
+    });
+    assert.ok(
+      errors.includes("MODEL_INDEX_LIBRARY_PAYLOAD_INVALID: models/index.html"),
+      errors.join("\n"),
+    );
+  }
+
+  const firstCardPattern = /<article class="model-summary">[\s\S]*?<\/article>/u;
+  const firstCard = modelIndex.match(firstCardPattern)?.[0] ?? "";
+  for (const invalidCardCount of [
+    modelIndex.replace(firstCardPattern, ""),
+    modelIndex.replace(firstCardPattern, `${firstCard}${firstCard}`),
+  ]) {
+    const errors = auditPageFamilyMarkup({ html: invalidCardCount, relativePath: "models/index.html" });
+    assert.ok(
+      errors.includes("MODEL_INDEX_INITIAL_PAGE_COUNT_MISMATCH: models/index.html"),
+      errors.join("\n"),
+    );
+  }
+  const movedCard = modelIndex
+    .replace(firstCardPattern, "")
+    .replace("</script></div></section>", `</script>${firstCard}</div></section>`);
+  const movedCardErrors = auditPageFamilyMarkup({ html: movedCard, relativePath: "models/index.html" });
+  assert.ok(
+    movedCardErrors.includes("MODEL_INDEX_INITIAL_PAGE_COUNT_MISMATCH: models/index.html"),
+    movedCardErrors.join("\n"),
+  );
+  const wrappedCards = modelIndex
+    .replace(" data-filter-list data-library-list>", " data-filter-list data-library-list><div>")
+    .replace("</article></div><p class=\"empty-state\"", "</article></div></div><p class=\"empty-state\"");
+  const wrappedCardErrors = auditPageFamilyMarkup({ html: wrappedCards, relativePath: "models/index.html" });
+  assert.ok(
+    wrappedCardErrors.includes("MODEL_INDEX_INITIAL_PAGE_COUNT_MISMATCH: models/index.html"),
+    wrappedCardErrors.join("\n"),
+  );
+
+  const withLegacyFilterItem = modelIndex.replace(
+    '<article class="model-summary">',
+    '<article class="model-summary" data-filter-item>',
+  );
+  const legacyFilterErrors = auditPageFamilyMarkup({
+    html: withLegacyFilterItem,
+    relativePath: "models/index.html",
+  });
+  assert.ok(
+    legacyFilterErrors.includes("MODEL_INDEX_LEGACY_FILTER_ITEMS_PRESENT: models/index.html"),
+    legacyFilterErrors.join("\n"),
+  );
+});
+
 test("the complete local public tree satisfies every page and family contract", async () => {
   const siteUrl = new URL("../site/", import.meta.url);
   const siteDir = fileURLToPath(siteUrl);

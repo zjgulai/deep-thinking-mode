@@ -72,9 +72,9 @@ rtk npm run check:public
 
 ```bash
 rtk install -d -m 0755 deploy/tencent-cloud/xmind-site/context/site
-rtk rsync -a --delete --exclude='.gitignore' --exclude='.DS_Store' site/ deploy/tencent-cloud/xmind-site/context/site/
-rtk rsync -rcn --delete --exclude='.gitignore' --exclude='.DS_Store' site/ deploy/tencent-cloud/xmind-site/context/site/
-rtk zsh -lc 'find deploy/tencent-cloud/xmind-site/context/site -type f ! -name .gitignore -print | LC_ALL=C sort > /tmp/xmind-site-context-files.txt && wc -l /tmp/xmind-site-context-files.txt'
+rtk rsync -a --delete --exclude='.DS_Store' site/ deploy/tencent-cloud/xmind-site/context/site/
+rtk rsync -rcn --delete --exclude='.DS_Store' site/ deploy/tencent-cloud/xmind-site/context/site/
+rtk zsh -lc 'find deploy/tencent-cloud/xmind-site/context/site -type f -print | LC_ALL=C sort > /tmp/xmind-site-context-files.txt && wc -l /tmp/xmind-site-context-files.txt'
 rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/index.html
 rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/cot-critic-chain.html
 rtk test -f deploy/tencent-cloud/xmind-site/context/site/combinations/deep-research-chain.html
@@ -603,7 +603,7 @@ rtk npm run verify:security
   不能回落成伪 200 首页。
 - `verify-production.mjs` 必须对当次本地 `site/` 的完整文件数逐一返回 200、正确 Content-Type、无转向且 bytes 一致；组合页或 `.mjs` 任一 404、类型错误、意外转向或 byte mismatch 都必须 exit 1。
 - `audit:production` 必须在同一次请求结果上审计所有 HTML：每页安全响应头、canonical 与 `og:url`、唯一 title/main/H1、跳至正文、图片 alt/尺寸、表单名称、页面族专属 DOM 合同和真实 404 正文；未知页面族必须 fail closed。
-- 页面 title 为系统化思维，不再是 `Short Video Factory`。
+- 页面 title 包含 `前车之鉴-思维制胜`，且不包含 `Short Video Factory`。
 - CSP、HSTS、`nosniff`、拒绝 iframe、Referrer Policy 和 Permissions Policy 各出现一次且值精确匹配；不得因 origin 与共享入口叠加而重复。
 - 容器稳定为 healthy，无 restart loop。
 

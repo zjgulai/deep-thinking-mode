@@ -6,6 +6,7 @@ import {
   fetchUrl,
   verifyProductionSite,
 } from "../verify-production.mjs";
+import { auditModelLibraryMarkup } from "./model-library-audit.mjs";
 import { auditSecurityHeaders } from "./site-security.mjs";
 
 const ATTRIBUTE_PATTERN =
@@ -325,11 +326,7 @@ export function auditPageFamilyMarkup({ html, relativePath }) {
     }
   } else if (type === "models-index") {
     requireBodyClass("library-page");
-    if (tagsWithAttribute(tags, "data-filter-input").length !== 1 ||
-        tagsWithAttribute(tags, "data-filter-list").length !== 1 ||
-        tagsWithAttribute(tags, "data-filter-item").length < 1) {
-      errors.push(issue("MODEL_INDEX_FILTER_CONTRACT_MISSING", relativePath));
-    }
+    errors.push(...auditModelLibraryMarkup({ html, relativePath }));
   } else if (type === "models-detail") {
     requireBodyClass("model-page");
     if (tagsWithClass(tags, "model-detail").length !== 1 ||

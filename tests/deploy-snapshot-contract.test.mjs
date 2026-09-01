@@ -303,6 +303,21 @@ test("snapshot producer schema matches the comparator fixtures and stays outside
   assert.match(runbook, /sha256sum release-contract[.]json > release-contract[.]sha256/);
 });
 
+test("deployment staging excludes its repository placeholder from the public artifact", async () => {
+  const [deployIgnore, runbook, publicManifest] = await Promise.all([
+    readFile(path.join(DEPLOY_DIR, ".gitignore"), "utf8"),
+    readFile(path.join(DEPLOY_DIR, "RUNBOOK.md"), "utf8"),
+    readFile(path.resolve(DEPLOY_DIR, "../../../tools/config/public-paths.json"), "utf8"),
+  ]);
+  assert.doesNotMatch(deployIgnore, /context\/site\/[.]gitignore/);
+  assert.doesNotMatch(runbook, /--exclude='[.]gitignore'/);
+  assert.doesNotMatch(publicManifest, /deploy\/tencent-cloud\/xmind-site\/context\/site\/[.]gitignore/);
+  await assert.rejects(
+    readFile(path.join(DEPLOY_DIR, "context/site/.gitignore"), "utf8"),
+    { code: "ENOENT" },
+  );
+});
+
 test("upgrade binds the running web and rollback hold to the candidate image", async (t) => {
   await withSnapshots(createUpgrade, () => {}, ({ code, stdout, stderr }) => assert.equal(code, 0, `${stdout}\n${stderr}`));
 

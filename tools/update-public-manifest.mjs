@@ -39,8 +39,7 @@ function isGeneratedDeploymentPath(path) {
     path === "deploy/tencent-cloud/xmind-site/.env" ||
     path.startsWith("deploy/tencent-cloud/xmind-site/audit/") ||
     path.startsWith("deploy/tencent-cloud/xmind-site/dist/") ||
-    (path.startsWith("deploy/tencent-cloud/xmind-site/context/site/") &&
-      path !== "deploy/tencent-cloud/xmind-site/context/site/.gitignore")
+    path.startsWith("deploy/tencent-cloud/xmind-site/context/site/")
   );
 }
 

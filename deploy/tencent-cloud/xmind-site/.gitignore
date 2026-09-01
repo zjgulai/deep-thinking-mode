@@ -2,4 +2,3 @@
 /audit/
 /dist/
 /context/site/*
-!/context/site/.gitignore
